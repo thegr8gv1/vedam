@@ -35,19 +35,24 @@ from automation.validators.publication_gate import PublicationPreflightGate
 from database.models import ReleaseStatus, Text, Verse, VerseType
 
 
-# Register Nirmala UI fonts once
+# Register Indic and IAST fonts
 def _register_indic_fonts() -> bool:
-    font_path = r"C:\Windows\Fonts\Nirmala.ttc"
-    if os.path.exists(font_path):
-        try:
+    indic_path = r"C:\Windows\Fonts\Nirmala.ttc"
+    calibri_i = r"C:\Windows\Fonts\calibrii.ttf"
+    calibri_r = r"C:\Windows\Fonts\calibri.ttf"
+    try:
+        if os.path.exists(indic_path):
             if "NirmalaUI" not in pdfmetrics.getRegisteredFontNames():
-                pdfmetrics.registerFont(TTFont("NirmalaUI", font_path, subfontIndex=0))
+                pdfmetrics.registerFont(TTFont("NirmalaUI", indic_path, subfontIndex=0))
             if "NirmalaUI-Bold" not in pdfmetrics.getRegisteredFontNames():
-                pdfmetrics.registerFont(TTFont("NirmalaUI-Bold", font_path, subfontIndex=1))
-            return True
-        except Exception:
-            return False
-    return False
+                pdfmetrics.registerFont(TTFont("NirmalaUI-Bold", indic_path, subfontIndex=1))
+        if os.path.exists(calibri_i) and "IAST-Italic" not in pdfmetrics.getRegisteredFontNames():
+            pdfmetrics.registerFont(TTFont("IAST-Italic", calibri_i))
+        if os.path.exists(calibri_r) and "IAST-Regular" not in pdfmetrics.getRegisteredFontNames():
+            pdfmetrics.registerFont(TTFont("IAST-Regular", calibri_r))
+        return True
+    except Exception:
+        return False
 
 
 FONTS_REGISTERED = _register_indic_fonts()
@@ -78,7 +83,8 @@ class NumberedCanvas(canvas.Canvas):
         # Suppress header and footer on cover page (page 1)
         if self._pageNumber > 1:
             self.saveState()
-            self.setFont("Helvetica", 8)
+            header_font = "NirmalaUI" if "NirmalaUI" in pdfmetrics.getRegisteredFontNames() else "Helvetica"
+            self.setFont(header_font, 8)
             self.setFillColor(colors.HexColor("#6B7280"))
 
             # Running Header
@@ -171,6 +177,8 @@ class PDFPublicationExporter:
 
         indic_font = "NirmalaUI" if "NirmalaUI" in pdfmetrics.getRegisteredFontNames() else "Helvetica"
         indic_bold = "NirmalaUI-Bold" if "NirmalaUI-Bold" in pdfmetrics.getRegisteredFontNames() else "Helvetica-Bold"
+        iast_font = "IAST-Italic" if "IAST-Italic" in pdfmetrics.getRegisteredFontNames() else "Helvetica-Oblique"
+        latin_font = "IAST-Regular" if "IAST-Regular" in pdfmetrics.getRegisteredFontNames() else "Helvetica"
 
         custom_styles = {
             "Invocation": ParagraphStyle(
@@ -193,7 +201,7 @@ class PDFPublicationExporter:
             ),
             "EnglishTitle": ParagraphStyle(
                 "EnglishTitle",
-                fontName="Helvetica-Bold",
+                fontName=indic_bold,
                 fontSize=18,
                 leading=24,
                 textColor=cls.COLOR_CHARCOAL,
@@ -202,7 +210,7 @@ class PDFPublicationExporter:
             ),
             "Subtitle": ParagraphStyle(
                 "Subtitle",
-                fontName="Helvetica-Oblique",
+                fontName=latin_font,
                 fontSize=11,
                 leading=15,
                 textColor=cls.COLOR_SLATE,
@@ -211,7 +219,7 @@ class PDFPublicationExporter:
             ),
             "SectionHeader": ParagraphStyle(
                 "SectionHeader",
-                fontName="Helvetica-Bold",
+                fontName=indic_bold,
                 fontSize=13,
                 leading=18,
                 textColor=cls.COLOR_MAROON,
@@ -220,7 +228,7 @@ class PDFPublicationExporter:
             ),
             "BodyTextCustom": ParagraphStyle(
                 "BodyTextCustom",
-                fontName="Helvetica",
+                fontName=latin_font,
                 fontSize=9.5,
                 leading=14,
                 textColor=cls.COLOR_CHARCOAL,
@@ -228,9 +236,9 @@ class PDFPublicationExporter:
             ),
             "VerseBanner": ParagraphStyle(
                 "VerseBanner",
-                fontName="Helvetica-Bold",
-                fontSize=9,
-                leading=12,
+                fontName=indic_bold,
+                fontSize=9.5,
+                leading=13,
                 textColor=cls.COLOR_MAROON,
                 spaceBefore=6,
                 spaceAfter=4,
@@ -246,25 +254,25 @@ class PDFPublicationExporter:
             ),
             "IASTVerse": ParagraphStyle(
                 "IASTVerse",
-                fontName="Helvetica-Oblique",
-                fontSize=9.5,
-                leading=14,
+                fontName=iast_font,
+                fontSize=10,
+                leading=15,
                 textColor=cls.COLOR_CHARCOAL,
                 spaceBefore=2,
                 spaceAfter=5,
             ),
             "MeaningText": ParagraphStyle(
                 "MeaningText",
-                fontName="Helvetica",
-                fontSize=9,
-                leading=13,
+                fontName=latin_font,
+                fontSize=9.5,
+                leading=13.5,
                 textColor=cls.COLOR_SLATE,
                 spaceBefore=2,
                 spaceAfter=6,
             ),
             "ColophonText": ParagraphStyle(
                 "ColophonText",
-                fontName="Helvetica",
+                fontName=latin_font,
                 fontSize=8.5,
                 leading=12,
                 textColor=cls.COLOR_SLATE,
@@ -272,14 +280,14 @@ class PDFPublicationExporter:
             ),
             "TableLabel": ParagraphStyle(
                 "TableLabel",
-                fontName="Helvetica-Bold",
+                fontName=indic_bold,
                 fontSize=8.5,
                 leading=11,
                 textColor=cls.COLOR_SLATE,
             ),
             "TableValue": ParagraphStyle(
                 "TableValue",
-                fontName="Helvetica",
+                fontName=latin_font,
                 fontSize=8.5,
                 leading=11,
                 textColor=cls.COLOR_CHARCOAL,

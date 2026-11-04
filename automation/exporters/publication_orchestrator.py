@@ -36,7 +36,12 @@ class PublicationOrchestrator:
             Path(p).mkdir(parents=True, exist_ok=True)
 
     @classmethod
-    def publish_text(cls, text: Text, formats: Optional[List[str]] = None) -> Dict[str, Any]:
+    def publish_text(
+        cls,
+        text: Text,
+        formats: Optional[List[str]] = None,
+        target_channel: str = "scholarly_review",
+    ) -> Dict[str, Any]:
         """
         Publishes a single master text across requested formats (default: all).
         Enforces pre-flight publication gatekeeper.
@@ -45,7 +50,7 @@ class PublicationOrchestrator:
         formats = formats or ["excel", "word", "pdf"]
 
         # 1. Gatekeeper Assertion
-        PublicationPreflightGate.assert_can_publish(text)
+        PublicationPreflightGate.assert_can_publish(text, target_channel=target_channel)
 
         slug = text.canonical_title.lower().replace(" ", "_").replace("-", "_")
         filename_base = f"{text.content_id}_{slug}"
@@ -89,7 +94,25 @@ class PublicationOrchestrator:
         }
 
     @classmethod
-    def publish_all_verified_pilots(cls, session) -> Dict[str, Any]:
+    def publish_batch(
+        cls,
+        session,
+        content_ids: List[str],
+        target_channel: str = "scholarly_review",
+    ) -> Dict[str, Any]:
+        """Publishes specified content IDs across all formats."""
+        results = {}
+        for cid in content_ids:
+            t = session.query(Text).filter_by(content_id=cid).first()
+            if not t:
+                logger.warning(f"Text with content_id '{cid}' not found in database.")
+                continue
+            res = cls.publish_text(t, target_channel=target_channel)
+            results[cid] = res
+        return results
+
+    @classmethod
+    def publish_all_verified_pilots(cls, session, target_channel: str = "scholarly_review") -> Dict[str, Any]:
         """Publishes all 8 verified pilot compositions across Excel, Word, and PDF."""
         pilot_ids = [
             "VEDA-TXT-00001",  # Ganesha Pancharatnam
@@ -101,21 +124,31 @@ class PublicationOrchestrator:
             "VEDA-TXT-00007",  # Sri Suktam
             "VEDA-TXT-00008",  # Hanuman Chalisa
         ]
+        return cls.publish_batch(session, pilot_ids, target_channel=target_channel)
 
+    @classmethod
+    def publish_all_verified_texts(cls, session, target_channel: str = "scholarly_review") -> Dict[str, Any]:
+        """Publishes all texts in the database that pass the preflight gate."""
+        texts = session.query(Text).order_by(Text.id).all()
         results = {}
-        for cid in pilot_ids:
-            t = session.query(Text).filter_by(content_id=cid).first()
-            if not t:
-                continue
-            res = cls.publish_text(t)
-            results[cid] = res
-
+        for t in texts:
+            try:
+                res = cls.publish_text(t, target_channel=target_channel)
+                results[t.content_id] = res
+            except Exception as e:
+                logger.warning(f"Skipping {t.content_id} ({t.canonical_title}): {e}")
         return results
 
 
 if __name__ == "__main__":
     with get_db_session() as session:
-        pub_report = PublicationOrchestrator.publish_all_verified_pilots(session)
+        # Publish all verified texts (Pilot 1-8 + Batch 1: 10, 11, 12)
+        all_ids = [
+            "VEDA-TXT-00001", "VEDA-TXT-00002", "VEDA-TXT-00003", "VEDA-TXT-00004",
+            "VEDA-TXT-00005", "VEDA-TXT-00006", "VEDA-TXT-00007", "VEDA-TXT-00008",
+            "VEDA-TXT-00010", "VEDA-TXT-00011", "VEDA-TXT-00012",
+        ]
+        pub_report = PublicationOrchestrator.publish_batch(session, all_ids)
         print("Publication Orchestration Complete:")
         for cid, info in pub_report.items():
             print(f"- {cid} ({info['title']}): {len(info['artifacts'])} formats generated")

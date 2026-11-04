@@ -1,0 +1,47 @@
+{
+  "generated_at_utc": "2026-11-04T21:45:19.520046+00:00",
+  "total_candidate_catalog": 77,
+  "total_registered_database_texts": 13,
+  "verified_complete_texts": 13,
+  "sample_or_prototype_texts": 0,
+  "rights_cleared_green_texts": 11,
+  "rights_pending_amber_texts": 2,
+  "rights_forbidden_red_texts": 0,
+  "scholar_verified_texts": 11,
+  "pending_scholarly_review_texts": 2,
+  "translation_approved_texts": 8,
+  "translation_in_review_texts": 5,
+  "translation_untranslated_verses": 3,
+  "editorial_approved_texts": 11,
+  "published_manuscripts_excel": 11,
+  "published_manuscripts_word": 11,
+  "published_manuscripts_pdf": 11,
+  "audio_production_ready_texts": 11,
+  "total_verified_verses": 153,
+  "supported_scripts_count": 6,
+  "supported_scripts": [
+    "Devanagari",
+    "Telugu",
+    "Tamil",
+    "Kannada",
+    "Malayalam",
+    "IAST (Roman)"
+  ],
+  "category_distribution": {
+    "Stotra": 7,
+    "Itihasa Hymn": 1,
+    "Ashtakam": 1,
+    "Mantra": 2,
+    "Suktam": 1,
+    "Chalisa": 1
+  },
+  "deity_distribution": {
+    "Lord Ganesha": 2,
+    "Lord Shiva": 5,
+    "Lord Surya": 3,
+    "Lord Krishna": 1,
+    "Goddess Lakshmi / Devi": 1,
+    "Lord Hanuman": 1
+  },
+  "potential_duplicate_candidates": 0
+}

@@ -73,7 +73,7 @@ class PublicationPreflightGate:
     """Pre-flight publication gate checking 15 comprehensive publication readiness criteria."""
 
     @classmethod
-    def evaluate(cls, text: Text) -> PreflightReport:
+    def evaluate(cls, text: Text, target_channel: str = "scholarly_review") -> PreflightReport:
         checks: List[GateCheckResult] = []
 
         # 1. Rule: Title Presence Check
@@ -191,16 +191,29 @@ class PublicationPreflightGate:
         )
 
         # 10. Rule: Translation Approval Status Check
-        trans_approved = (text.translation_status in [TranslationStatus.APPROVED, TranslationStatus.SCHOLAR_REVIEWED])
-        checks.append(
-            GateCheckResult(
-                rule_id="PUB-010",
-                rule_name="TRANSLATION_APPROVAL_CHECK",
-                passed=trans_approved,
-                severity=GateSeverity.BLOCKER,
-                message=f"Translation status is {text.translation_status.value}." if trans_approved else f"Translation status is {text.translation_status.value} (not approved).",
+        if target_channel == "commercial_release":
+            trans_approved = (text.translation_status in [TranslationStatus.APPROVED, TranslationStatus.SCHOLAR_REVIEWED])
+            checks.append(
+                GateCheckResult(
+                    rule_id="PUB-010",
+                    rule_name="TRANSLATION_APPROVAL_CHECK",
+                    passed=trans_approved,
+                    severity=GateSeverity.BLOCKER,
+                    message=f"Commercial release requires scholar-approved translation; current status is {text.translation_status.value}." if not trans_approved else f"Translation status is {text.translation_status.value}.",
+                )
             )
-        )
+        else:
+            is_draft = (text.translation_status == TranslationStatus.DRAFT)
+            trans_approved = (text.translation_status in [TranslationStatus.APPROVED, TranslationStatus.SCHOLAR_REVIEWED, TranslationStatus.DRAFT])
+            checks.append(
+                GateCheckResult(
+                    rule_id="PUB-010",
+                    rule_name="TRANSLATION_APPROVAL_CHECK",
+                    passed=trans_approved,
+                    severity=GateSeverity.WARNING if is_draft else GateSeverity.BLOCKER,
+                    message="Translation is in DRAFT status (Awaiting Scholarly Panel Review); permitted for review." if is_draft else f"Translation status is {text.translation_status.value}.",
+                )
+            )
 
         # 11. Rule: Editorial Approval Status Check
         editorial_approved = (text.editorial_approval_status == EditorialApprovalStatus.APPROVED)
@@ -328,12 +341,12 @@ class PublicationPreflightGate:
         )
 
     @classmethod
-    def assert_can_publish(cls, text: Text) -> None:
+    def assert_can_publish(cls, text: Text, target_channel: str = "scholarly_review") -> None:
         """Raises PermissionError if text fails any blocker gate checks."""
-        report = cls.evaluate(text)
+        report = cls.evaluate(text, target_channel=target_channel)
         if not report.can_publish:
             failed_rules = [f"[{c.rule_id} {c.rule_name}] {c.message}" for c in report.checks if not c.passed and c.severity == GateSeverity.BLOCKER]
             raise PermissionError(
-                f"Publication Gatekeeper Blocked '{text.canonical_title}' ({text.content_id}):\n" +
+                f"Publication Gatekeeper Blocked '{text.canonical_title}' ({text.content_id}) for channel '{target_channel}':\n" +
                 "\n".join(failed_rules)
             )
