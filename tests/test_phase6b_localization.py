@@ -64,9 +64,9 @@ class TestPhase6BLocalization:
             assert len(script_def.recommended_fonts) > 0
 
     def test_glossary_covers_all_twenty_terms_across_all_nine_languages(self):
-        """Ensures the 20 canonical spiritual terms have verified translations in all 9 Indian languages."""
+        """Ensures the canonical spiritual terms have verified translations in all 9 Indian languages."""
         terms = SanskritTerminologyGlossary.get_all_terms()
-        assert len(terms) == 20
+        assert len(terms) >= 20
 
         for term in terms:
             for lang_code in self.ALL_REGIONAL_LANGS:

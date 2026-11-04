@@ -1,0 +1,153 @@
+{
+  "content_id": "VEDA-TXT-00017",
+  "canonical_title": "Surya Ashtakam",
+  "devanagari_title": "सूर्याष्टकम्",
+  "meter": "Anushtubh",
+  "primary_deity": "Lord Surya",
+  "original_language": "sa",
+  "total_verses": 10,
+  "generated_at_utc": "2026-11-04T23:16:17.566602+00:00",
+  "cues": [
+    {
+      "verse_number": 1,
+      "verse_id": "VEDA-TXT-00017-V001",
+      "original_text": "आदिदेव नमस्तुभ्यं प्रसीद मम भास्कर ।\nदिवाकर नमस्तुभ्यं प्रभाकर नमोऽस्तु ते ॥ १ ॥",
+      "iast_phonetic": "ādidēva namastubhyaṁ prasīda mama bhāskara ।\ndivākara namastubhyaṁ prabhākara namō'stu tē ॥ 1 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "आदिदेव नमस्तुभ्यं प्रसीद मम भास्कर ।\nदिवाकर नमस्तुभ्यं प्रभाकर नमोऽस्तु ते ॥ १ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 2,
+      "verse_id": "VEDA-TXT-00017-V002",
+      "original_text": "सप्ताश्वरथमारूढं प्रचण्डं कश्यपात्मजम् ।\nश्वेतपद्मधरं देवं तं सूर्यं प्रणमाम्यहम् ॥ २ ॥",
+      "iast_phonetic": "saptāśvarathamārūḍhaṁ pracaṇḍaṁ kaśyapātmajam ।\nśvētapadmadharaṁ dēvaṁ taṁ sūryaṁ praṇamāmyaham ॥ 2 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "सप्ताश्वरथमारूढं प्रचण्डं कश्यपात्मजम् ।\nश्वेतपद्मधरं देवं तं सूर्यं प्रणमाम्यहम् ॥ २ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 3,
+      "verse_id": "VEDA-TXT-00017-V003",
+      "original_text": "लोहितं रथमारूढं सर्वलोकपितामहम् ।\nमहापापहरं देवं तं सूर्यं प्रणमाम्यहम् ॥ ३ ॥",
+      "iast_phonetic": "lōhitaṁ rathamārūḍhaṁ sarvalōkapitāmaham ।\nmahāpāpaharaṁ dēvaṁ taṁ sūryaṁ praṇamāmyaham ॥ 3 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "लोहितं रथमारूढं सर्वलोकपितामहम् ।\nमहापापहरं देवं तं सूर्यं प्रणमाम्यहम् ॥ ३ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 4,
+      "verse_id": "VEDA-TXT-00017-V004",
+      "original_text": "त्रैगुण्यं च महाशूरं ब्रह्मविष्णुमहेश्वरम् ।\nमहापापहरं देवं तं सूर्यं प्रणमाम्यहम् ॥ ४ ॥",
+      "iast_phonetic": "traiguṇyaṁ ca mahāśūraṁ brahmaviṣṇumahēśvaram ।\nmahāpāpaharaṁ dēvaṁ taṁ sūryaṁ praṇamāmyaham ॥ 4 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "त्रैगुण्यं च महाशूरं ब्रह्मविष्णुमहेश्वरम् ।\nमहापापहरं देवं तं सूर्यं प्रणमाम्यहम् ॥ ४ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 5,
+      "verse_id": "VEDA-TXT-00017-V005",
+      "original_text": "बृंहितं तेजसां पुञ्जं वायुमाकाशमेव च ।\nप्रभुं च सर्वलोकानां तं सूर्यं प्रणमाम्यहम् ॥ ५ ॥",
+      "iast_phonetic": "bṛṁhitaṁ tējasāṁ puñjaṁ vāyumākāśamēva ca ।\nprabhuṁ ca sarvalōkānāṁ taṁ sūryaṁ praṇamāmyaham ॥ 5 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "बृंहितं तेजसां पुञ्जं वायुमाकाशमेव च ।\nप्रभुं च सर्वलोकानां तं सूर्यं प्रणमाम्यहम् ॥ ५ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 6,
+      "verse_id": "VEDA-TXT-00017-V006",
+      "original_text": "बन्धूकपुष्पसंकाशं हारकुण्डलभूषितम् ।\nएकचक्रधरं देवं तं सूर्यं प्रणमाम्यहम् ॥ ६ ॥",
+      "iast_phonetic": "bandhūkapuṣpasaṁkāśaṁ hārakuṇḍalabhūṣitam ।\nēkacakradharaṁ dēvaṁ taṁ sūryaṁ praṇamāmyaham ॥ 6 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "बन्धूकपुष्पसंकाशं हारकुण्डलभूषितम् ।\nएकचक्रधरं देवं तं सूर्यं प्रणमाम्यहम् ॥ ६ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 7,
+      "verse_id": "VEDA-TXT-00017-V007",
+      "original_text": "तं सूर्यं जगत्कर्तारं महातेजःप्रदीपनम् ।\nमहापापहरं देवं तं सूर्यं प्रणमाम्यहम् ॥ ७ ॥",
+      "iast_phonetic": "taṁ sūryaṁ jagatkartāraṁ mahātējaḥpradīpanam ।\nmahāpāpaharaṁ dēvaṁ taṁ sūryaṁ praṇamāmyaham ॥ 7 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "तं सूर्यं जगत्कर्तारं महातेजःप्रदीपनम् ।\nमहापापहरं देवं तं सूर्यं प्रणमाम्यहम् ॥ ७ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 8,
+      "verse_id": "VEDA-TXT-00017-V008",
+      "original_text": "तं सूर्यं जगतां नाथं ज्ञानविज्ञानमोक्षदम् ।\nमहापापहरं देवं तं सूर्यं प्रणमाम्यहम् ॥ ८ ॥",
+      "iast_phonetic": "taṁ sūryaṁ jagatāṁ nāthaṁ jñānavijñānamōkṣadam ।\nmahāpāpaharaṁ dēvaṁ taṁ sūryaṁ praṇamāmyaham ॥ 8 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "तं सूर्यं जगतां नाथं ज्ञानविज्ञानमोक्षदम् ।\nमहापापहरं देवं तं सूर्यं प्रणमाम्यहम् ॥ ८ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 9,
+      "verse_id": "VEDA-TXT-00017-V009",
+      "original_text": "सूर्याष्टकं पठेन्नित्यं ग्रहपीडाप्रणाशनम् ।\nअपुत्रो लभते पुत्रं दरिद्रो धनवान् भवेत् ॥ ९ ॥",
+      "iast_phonetic": "sūryāṣṭakaṁ paṭhēnnityaṁ grahapīḍāpraṇāśanam ।\naputrō labhatē putraṁ daridrō dhanavān bhavēt ॥ 9 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "सूर्याष्टकं पठेन्नित्यं ग्रहपीडाप्रणाशनम् ।\nअपुत्रो लभते पुत्रं दरिद्रो धनवान् भवेत् ॥ ९ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 10,
+      "verse_id": "VEDA-TXT-00017-V010",
+      "original_text": "आमिषं मधुपानं च यः करोति रवेर्दिने ।\nसप्तजन्म भवेद्रोगी जन्मजन्म दरिद्रता ॥ १० ॥",
+      "iast_phonetic": "āmiṣaṁ madhupānaṁ ca yaḥ karōti ravērdinē ।\nsaptajanma bhavēdrōgī janmajanma daridratā ॥ 10 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "आमिषं मधुपानं च यः करोति रवेर्दिने ।\nसप्तजन्म भवेद्रोगी जन्मजन्म दरिद्रता ॥ १० ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    }
+  ],
+  "translation_reference_note": "Audio recording must recite only the immutable original sacred verse text; translations and regional explanations must be recorded as separate commentary tracks."
+}

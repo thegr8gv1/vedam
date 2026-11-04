@@ -1,0 +1,774 @@
+{
+  "content_id": "VEDA-TXT-00017",
+  "canonical_title": "Surya Ashtakam",
+  "devanagari_title": "सूर्याष्टकम्",
+  "composer": "Samba Purana / Sage Agastya",
+  "source_scripture": "Samba Purana / Saura Stotra Samgraha",
+  "verse_count": 10,
+  "generated_at_utc": "2026-11-04T23:14:39.348946+00:00",
+  "supported_languages": [
+    "sa",
+    "hi",
+    "te",
+    "ta",
+    "kn",
+    "mr",
+    "bn",
+    "gu",
+    "ml",
+    "or",
+    "en"
+  ],
+  "verses": [
+    {
+      "verse_number": 1,
+      "verse_type": "VERSE",
+      "original_sanskrit": "आदिदेव नमस्तुभ्यं प्रसीद मम भास्कर ।\nदिवाकर नमस्तुभ्यं प्रभाकर नमोऽस्तु ते ॥ १ ॥",
+      "iast": "ādidēva namastubhyaṁ prasīda mama bhāskara ।\ndivākara namastubhyaṁ prabhākara namō'stu tē ॥ 1 ॥",
+      "transliterations": {
+        "telugu": "ఆదిదేవ నమస్తుభ్యం ప్రసీద మమ భాస్కర ।\nదివాకర నమస్తుభ్యం ప్రభాకర నమోఽస్తు తే ॥ ౧ ॥",
+        "tamil": "ஆதிதேவ நமஸ்துப்யம் ப்ரஸீத மம பாஸ்கர ।\nதிவாகர நமஸ்துப்யம் ப்ரபாகர நமோऽஸ்து தே ॥ ௧ ॥",
+        "kannada": "ಆದಿದೇವ ನಮಸ್ತುಭ್ಯಂ ಪ್ರಸೀದ ಮಮ ಭಾಸ್ಕರ ।\nದಿವಾಕರ ನಮಸ್ತುಭ್ಯಂ ಪ್ರಭಾಕರ ನಮೋಽಸ್ತು ತೇ ॥ ೧ ॥",
+        "malayalam": "ആദിദേവ നമസ്തുഭ്യം പ്രസീദ മമ ഭാസ്കര ।\nദിവാകര നമസ്തുഭ്യം പ്രഭാകര നമോഽസ്തു തേ ॥ ൧ ॥",
+        "iast": "ādideva namastubhyaṃ prasīda mama bhāskara |\ndivākara namastubhyaṃ prabhākara namo'stu te || 1 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Salutations to You, O Primordial God! Be gracious unto me, O Bhaskara (Creator of Light)! Salutations to You, O Divakara (Maker of the Day)! Salutations unto You, O Prabhakara (Maker of Splendor)!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे आदिदेव, हे दिनकर, हे भास्कर! आपको मेरा सादर प्रणाम है, आप मुझ पर प्रसन्न हों। संपूर्ण जगत को प्रकाशित करने वाले हे सूर्यदेव, आपको बारंबार नमस्कार है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "హే ఆదిదేవా! హే ప్రభాకరా! నీకు ప్రణామములు, నా యందు ప్రసన్నుడవు కమ్ము. సర్వ లోకములను ప్రకాశింపజేయు దివాకరుడవైన హే సూర్యభగవానుడా, నీకు నమస్కారములు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஆதிதேவரே, திவாகரரே, பாஸ்கரரே! தங்களுக்கு என் பணிவான வணக்கங்கள், என்மீது கருணை புரிவீராக. உலகிற்கு ஒளியூட்டும் சூரிய பகவானே, உமக்கு மீண்டும் மீண்டும் நமஸ்காரம்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಹೇ ಆದಿದೇವನೇ, ಭಾಸ್ಕರನೇ, ನಿನಗೆ ನಮಸ್ಕಾರಗಳು; ನನ್ನ ಮೇಲೆ ಪ್ರಸನ್ನನಾಗು. ಸಮಸ್ತ ಜಗತ್ತನ್ನು ಬೆಳಗುವ ದಿವಾಕರನೇ, ಸೂರ್ಯದೇವನೇ, ನಿನಗೆ ಪುನಃಪುನಃ ನಮಸ್ಕರಿಸುತ್ತೇನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे आदिदेव, हे दिवाकर, हे भास्कर! तुम्हाला माझे वंदन असो, आपण माझ्यावर प्रसन्न व्हा. संपूर्ण जगाला प्रकाश देणाऱ्या हे सूर्यदेव, तुम्हाला माझा नमस्कार असो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে আদিদেব, হে দিবাকর, হে ভাস্কর! আপনাকে আমার সশ্রদ্ধ প্রণাম, আপনি আমার প্রতি প্রসন্ন হোন। নিখিল বিশ্বের আলোকময় প্রভু সূর্যদেবকে বারংবার নমস্কার।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હે આદિદેવ, હે દિવાકર, હે ભાસ્કર! આપને મારા પ્રણામ, આપ મારા પર પ્રસન્ન થાઓ. સમસ્ત જગતને પ્રકાશ આપનારા સૂર્યદેવ, આપને વારંવાર નમસ્કાર.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഹേ ആദിദേവാ, ദിവാകരാ, ഭാസ്കരാ! അങ്ങേയ്ക്ക് പ്രണാമം; എന്നിൽ പ്രസാദിച്ചരുളേണമേ. ജഗത്തിനെ പ്രകാശിപ്പിക്കുന്ന സൂര്യഭഗവാനേ, അങ്ങയെ വണങ്ങുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହେ ଆଦିଦେବ, ହେ ଦିବାକର, ହେ ଭାସ୍କର! ଆପଣଙ୍କୁ ମୋର ପ୍ରଣାମ, ଆପଣ ମୋ ଉପରେ ପ୍ରସନ୍ନ ହୁଅନ୍ତୁ । ସମସ୍ତ ଜଗତକୁ ଆଲୋକିତ କରୁଥିବା ସୂର୍ଯ୍ୟଦେବଙ୍କୁ ବାରମ୍ବାର ନମସ୍କାର ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 2,
+      "verse_type": "VERSE",
+      "original_sanskrit": "सप्ताश्वरथमारूढं प्रचण्डं कश्यपात्मजम् ।\nश्वेतपद्मधरं देवं तं सूर्यं प्रणमाम्यहम् ॥ २ ॥",
+      "iast": "saptāśvarathamārūḍhaṁ pracaṇḍaṁ kaśyapātmajam ।\nśvētapadmadharaṁ dēvaṁ taṁ sūryaṁ praṇamāmyaham ॥ 2 ॥",
+      "transliterations": {
+        "telugu": "సప్తాశ్వరథమారూఢం ప్రచణ్డం కశ్యపాత్మజమ్ ।\nశ్వేతపద్మధరం దేవం తం సూర్యం ప్రణమామ్యహమ్ ॥ ౨ ॥",
+        "tamil": "ஸப்தாஶ்வரதமாரூடம் ப்ரசண்டம் கஶ்யபாத்மஜம் ।\nஶ்வேதபத்மதரம் தேவம் தம் ஸூர்யம் ப்ரணமாம்யஹம் ॥ ௨ ॥",
+        "kannada": "ಸಪ್ತಾಶ್ವರಥಮಾರೂಢಂ ಪ್ರಚಣ್ಡಂ ಕಶ್ಯಪಾತ್ಮಜಮ್ ।\nಶ್ವೇತಪದ್ಮಧರಂ ದೇವಂ ತಂ ಸೂರ್ಯಂ ಪ್ರಣಮಾಮ್ಯಹಮ್ ॥ ೨ ॥",
+        "malayalam": "സപ്താശ്വരഥമാരൂഢം പ്രചണ്ഡം കശ്യപാത്മജമ് ।\nശ്വേതപദ്മധരം ദേവം തം സൂര്യം പ്രണമാമ്യഹമ് ॥ ൨ ॥",
+        "iast": "saptāśvarathamārūḍhaṃ pracaṇḍaṃ kaśyapātmajam |\nśvetapadmadharaṃ devaṃ taṃ sūryaṃ praṇamāmyaham || 2 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Mounted upon a chariot drawn by seven horses, immensely powerful, son of Sage Kashyapa, holding a white lotus in His hand, unto that Sun-God I bow down.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "सात घोड़ों के रथ पर आरूढ, प्रचंड तेजस्वी, महर्षि कश्यप के पुत्र, श्वेत कमल धारण करने वाले भगवान सूर्य को मैं प्रणाम करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఏడు గుఱ్ఱముల రథముపై అధివసించినవానిని, ప్రచండ తేజస్సు గలవానిని, కశ్యప ప్రజాపతి కుమారుని, శ్వేతపద్మధారియైన సూర్యదేవునికి నమస్కరింతును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஏழு குதிரைகள் பூட்டிய தேரில் பவனி வருபவரும், எல்லையற்ற பேரொளி கொண்டவரும், கಶ್ಯப முனிவரின் திருமகனும், வெண்தாமரை மலரை ஏந்தியவருமான சூரியனைப் பணிகிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಏಳು ಕುದುರೆಗಳ ರಥವನ್ನೇರಿದ, ಪ್ರಚಂಡ ತೇಜಸ್ವಿಯೂ, ಕಶ್ಯಪಪುತ್ರನೂ, ಶ್ವೇತಕಮಲವನ್ನು ಧರಿಸಿರುವವನೂ ಆದ ಭಗವಾನ್ ಸೂರ್ಯನಿಗೆ ನಮಸ್ಕರಿಸುತ್ತೇನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "सात घोड्यांच्या रथावर आरूढ, प्रचंड तेजस्वी, महर्षी कश्यपांचे पुत्र आणि श्वेत कमळ धारण करणाऱ्या भगवान सूर्याला मी नमन करतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "সপ্তাশ্বরথে সমারূঢ়, প্রচণ্ড তেজস্বী, মহর্ষি কশ্যপের পুত্র এবং শ্বেতপদ্মধারী ভগবান সূর্যকে প্রণাম করি।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "સાત અશ્વોના રથ પર સવાર, અતિશય તેજસ્વી, મહર્ષિ કશ્યપના પુત્ર અને શ્વેત કમળ ધારણ કરનારા સૂર્યદેવને હું નમું છું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സപ്താശ്വരഥത്തിലേറിയവനും, അത്യുഗ്രതേജസ്സുള്ളവനും, കശ്യപപുത്രനും, വെൺതാമര ധരിച്ചവനുമായ സൂര്യഭഗവാനെ ഞാൻ നമിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସାତ ଘୋଡ଼ାର ରଥରେ ବିରାଜମାନ, ପ୍ରଚଣ୍ଡ ତେଜସ୍ୱୀ, ମହର୍ଷି କଶ୍ୟପଙ୍କ ପୁତ୍ର ତଥା ଶ୍ୱେତପଦ୍ମଧାରୀ ସୂର୍ଯ୍ୟଦେବଙ୍କୁ ପ୍ରଣାମ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 3,
+      "verse_type": "VERSE",
+      "original_sanskrit": "लोहितं रथमारूढं सर्वलोकपितामहम् ।\nमहापापहरं देवं तं सूर्यं प्रणमाम्यहम् ॥ ३ ॥",
+      "iast": "lōhitaṁ rathamārūḍhaṁ sarvalōkapitāmaham ।\nmahāpāpaharaṁ dēvaṁ taṁ sūryaṁ praṇamāmyaham ॥ 3 ॥",
+      "transliterations": {
+        "telugu": "లోహితం రథమారూఢం సర్వలోకపితామహమ్ ।\nమహాపాపహరం దేవం తం సూర్యం ప్రణమామ్యహమ్ ॥ ౩ ॥",
+        "tamil": "லோஹிதம் ரதமாரூடம் ஸர்வலோகபிதாமஹம் ।\nமஹாபாபஹரம் தேவம் தம் ஸூர்யம் ப்ரணமாம்யஹம் ॥ ௩ ॥",
+        "kannada": "ಲೋಹಿತಂ ರಥಮಾರೂಢಂ ಸರ್ವಲೋಕಪಿತಾಮಹಮ್ ।\nಮಹಾಪಾಪಹರಂ ದೇವಂ ತಂ ಸೂರ್ಯಂ ಪ್ರಣಮಾಮ್ಯಹಮ್ ॥ ೩ ॥",
+        "malayalam": "ലോഹിതം രഥമാരൂഢം സര്വലോകപിതാമഹമ് ।\nമഹാപാപഹരം ദേവം തം സൂര്യം പ്രണമാമ്യഹമ് ॥ ൩ ॥",
+        "iast": "lohitaṃ rathamārūḍhaṃ sarvalokapitāmaham |\nmahāpāpaharaṃ devaṃ taṃ sūryaṃ praṇamāmyaham || 3 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Mounted upon a radiant reddish chariot, the grand ancestor of all worlds, the divine dispeller of great sins, unto that Sun-God I bow down.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "लाल रंग के रथ पर सवार, संपूर्ण लोकों के पितामह, महापापों का हरण करने वाले भगवान सूर्य को मैं नमस्कार करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "రక్తవర్ణ రథమునందు విరాజిల్లువానిని, సర్వలోకములకు పితామహుని, ఘోర పాపములను హరించు సూర్యభగవానునకు ప్రణమిల్లుదును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "செந்நிறத் தேரில் அமர்ந்திருப்பவரும், மூவுலகிற்கும் பிதாமகரும், பெரும் பாவங்களைத் தீர்ப்பவருமான சூரிய பகவானை வணங்குகிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಕೆಂಪುಬಣ್ಣದ ರಥವನ್ನೇರಿದ, ಸಮಸ್ತ ಲೋಕಗಳ ಪಿತಾಮಹನೂ, ಮಹಾಪಾಪಗಳನ್ನು ಪರಿಹರಿಸುವವನೂ ಆದ ಸೂರ್ಯನಿಗೆ ಪ್ರಣಾಮಗಳು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "रक्तवर्णी रथावर स्वार असणाऱ्या, सर्व लोकांचे पितामह आणि महापापांचे हरण करणाऱ्या सूर्यदेवाला माझा नमस्कार असो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "রক্তবর্ণ রথে আরূঢ়, নিখিল বিশ্বের পিতামহ এবং মহাপাপবিনাশী দেবমূর্তি সূর্যকে প্রণাম জানাই।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "લાલ રંગના રથ પર બિરાજમાન, સમસ્ત લોકોના પિતામહ અને મહાપાપ હરનારા સૂર્યનારાયણને વંદન.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ചുവന്ന രഥത്തിലേറിയവനും, സർവ്വലോകപിതാമഹനും, മഹാപാപങ്ങൾ ഇല്ലാതാക്കുന്നവനുമായ സൂര്യദേവനെ വണങ്ങുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ରକ୍ତବର୍ଣ୍ଣ ରଥରେ ବିରାଜମାନ, ସମସ୍ତ ଲୋକଙ୍କର ପିତାମହ ତଥା ମହାପାପ ବିନାଶକାରୀ ସୂର୍ଯ୍ୟଦେବଙ୍କୁ ପ୍ରଣାମ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 4,
+      "verse_type": "VERSE",
+      "original_sanskrit": "त्रैगुण्यं च महाशूरं ब्रह्मविष्णुमहेश्वरम् ।\nमहापापहरं देवं तं सूर्यं प्रणमाम्यहम् ॥ ४ ॥",
+      "iast": "traiguṇyaṁ ca mahāśūraṁ brahmaviṣṇumahēśvaram ।\nmahāpāpaharaṁ dēvaṁ taṁ sūryaṁ praṇamāmyaham ॥ 4 ॥",
+      "transliterations": {
+        "telugu": "త్రైగుణ్యం చ మహాశూరం బ్రహ్మవిష్ణుమహేశ్వరమ్ ।\nమహాపాపహరం దేవం తం సూర్యం ప్రణమామ్యహమ్ ॥ ౪ ॥",
+        "tamil": "த்ரைகுண்யம் ச மஹாஶூரம் ப்ரஹ்மவிஷ்ணுமஹேஶ்வரம் ।\nமஹாபாபஹரம் தேவம் தம் ஸூர்யம் ப்ரணமாம்யஹம் ॥ ௪ ॥",
+        "kannada": "ತ್ರೈಗುಣ್ಯಂ ಚ ಮಹಾಶೂರಂ ಬ್ರಹ್ಮವಿಷ್ಣುಮಹೇಶ್ವರಮ್ ।\nಮಹಾಪಾಪಹರಂ ದೇವಂ ತಂ ಸೂರ್ಯಂ ಪ್ರಣಮಾಮ್ಯಹಮ್ ॥ ೪ ॥",
+        "malayalam": "ത്രൈഗുണ്യം ച മഹാശൂരം ബ്രഹ്മവിഷ്ണുമഹേശ്വരമ് ।\nമഹാപാപഹരം ദേവം തം സൂര്യം പ്രണമാമ്യഹമ് ॥ ൪ ॥",
+        "iast": "traiguṇyaṃ ca mahāśūraṃ brahmaviṣṇumaheśvaram |\nmahāpāpaharaṃ devaṃ taṃ sūryaṃ praṇamāmyaham || 4 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Embodiment of the three Gunas (Sattva, Rajas, Tamas), valiant warrior, essence of Brahma, Vishnu, and Shiva, dispeller of great sins, unto that Sun-God I bow down.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "सत्त्व, रज और तम तीनों गुणों के स्वामी, महापराक्रमी, ब्रह्मा, विष्णु और महेश के एकात्म स्वरूप भगवान सूर्य को मैं नमन करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "త్రిగుణాతీతుని, పరమ పరాక్రమవంతుని, బ్రహ్మ-విష్ణు-మహేశ్వరుల సమైక్య దివ్యస్వరూపుడైన సూర్యభగవానునికి వందనములు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "முக்குணங்களின் தலைவரும், மகா வீரரும், பிரம்மா-விஷ்ணு-சிவன் ஆகிய மும்மூர்த்திகளின் ஒருமித்த வடிவினருமான சூரியனைப் பணிகிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ತ್ರಿಗುಣಾತ್ಮಕನೂ, ಮಹಾಪರಾಕ್ರಮಿಯೂ, ಬ್ರಹ್ಮ-ವಿಷ್ಣು-ಮಹೇಶ್ವರರ ಏಕೈಕ ಸ್ವರೂಪನೂ ಆದ ಸೂರ್ಯನಿಗೆ ನಮಸ್ಕಾರಗಳು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "सत्त्व, रज आणि तम या तिन्ही गुणांचे स्वामी, महापराक्रमी, ब्रह्मा, विष्णू आणि महेश यांच्या एकात्म रूप असलेल्या सूर्यदेवाला माझे नमन.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "ত্রিগুণের নিয়ামক, পরম পরাক্রমশালী, এবং ব্রহ্মা-বিষ্ণু-শিবের অভিন্ন বিগ্রহস্বরূপ সূর্যদেবকে বন্দনা করি।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "ત્રિગુણમય, મહાપરાક્રમી અને બ્રહ્મા, વિષ્ણુ તથા શિવજીના એકાત્મ સ્વરૂપ એવા સૂર્યદેવને હું નમસ્કાર કરું છું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സത്വ-രജസ്സ്-തമസ്സുകളെന്ന ത്രിഗുണങ്ങളുടെ നാഥനും, മഹാശൂരനും, ബ്രഹ്മ-വിഷ്ണു-മഹേശ്വരന്മാരുടെ ഏകരൂപവുമായ സൂര്യനെ നമിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସତ୍ତ୍ୱ, ରଜ ଓ ତମ ତିନି ଗୁଣର ସ୍ୱାମୀ, ମହାପରାକ୍ରମୀ ତଥା ବ୍ରହ୍ମା, ବିଷ୍ଣୁ ଓ ମହେଶ୍ୱରଙ୍କ ଏକାତ୍ମ ସ୍ୱରୂପ ସୂର୍ଯ୍ୟଦେବଙ୍କୁ ପ୍ରଣାମ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 5,
+      "verse_type": "VERSE",
+      "original_sanskrit": "बृंहितं तेजसां पुञ्जं वायुमाकाशमेव च ।\nप्रभुं च सर्वलोकानां तं सूर्यं प्रणमाम्यहम् ॥ ५ ॥",
+      "iast": "bṛṁhitaṁ tējasāṁ puñjaṁ vāyumākāśamēva ca ।\nprabhuṁ ca sarvalōkānāṁ taṁ sūryaṁ praṇamāmyaham ॥ 5 ॥",
+      "transliterations": {
+        "telugu": "బృంహితం తేజసాం పుఞ్జం వాయుమాకాశమేవ చ ।\nప్రభుం చ సర్వలోకానాం తం సూర్యం ప్రణమామ్యహమ్ ॥ ౫ ॥",
+        "tamil": "ப்ரு'ம்ஹிதம் தேஜஸாம் புஞ்ஜம் வாயுமாகாஶமேவ ச ।\nப்ரபும் ச ஸர்வலோகாநாம் தம் ஸூர்யம் ப்ரணமாம்யஹம் ॥ ௫ ॥",
+        "kannada": "ಬೃಂಹಿತಂ ತೇಜಸಾಂ ಪುಞ್ಜಂ ವಾಯುಮಾಕಾಶಮೇವ ಚ ।\nಪ್ರಭುಂ ಚ ಸರ್ವಲೋಕಾನಾಂ ತಂ ಸೂರ್ಯಂ ಪ್ರಣಮಾಮ್ಯಹಮ್ ॥ ೫ ॥",
+        "malayalam": "ബൃംഹിതം തേജസാം പുഞ്ജം വായുമാകാശമേവ ച ।\nപ്രഭും ച സര്വലോകാനാം തം സൂര്യം പ്രണമാമ്യഹമ് ॥ ൫ ॥",
+        "iast": "bṛṃhitaṃ tejasāṃ puñjaṃ vāyumākāśameva ca |\nprabhuṃ ca sarvalokānāṃ taṃ sūryaṃ praṇamāmyaham || 5 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Magnified mass of radiant energy, pervading the air and the space, Lord of all the realms, unto that Sun-God I bow down.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "असीम तेजोराशि से समृद्ध, वायु और आकाश स्वरूप, समस्त चराचर जगत के स्वामी और पोषक भगवान सूर्य को मैं नमस्कार करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "తేజోపుంజములతో విలసిల్లువానిని, వాయువు ఆకాశము తానై యున్నవానిని, సకల చరాచర సృష్టికి ప్రభువైన సూర్యునికి ప్రణామములు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "பேரொளிப் பிழம்பாய் மிளிர்பவரும், காற்று மற்றும் ஆகாயத்தின் வடிவானவரும், அகில உலக நாயகருமான சூரியனை வணங்குகிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಅನಂತ ತೇಜಸ್ಸಿನ ರಾಶಿಯುಳ್ಳ, ವಾಯು ಮತ್ತು ಆಕಾಶ ಸ್ವರೂಪನೂ, ಸಕಲ ಜಗತ್ತಿನ ಪ್ರಭುವೂ ಆದ ಸೂರ್ಯದೇವನಿಗೆ ನಮಸ್ಕರಿಸುತ್ತೇನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "अफाट तेजाचा पुंज असणाऱ्या, वायू आणि आकाश स्वरूप, चराचर सृष्टीचे स्वामी असणाऱ्या भगवान सूर्याला माझा नमस्कार असो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "অনন্ত তেজরাশির আধার, বায়ু ও আকাশ স্বরূপ এবং নিখিল বিশ্বের অধিপতি সূর্যদেবকে প্রণাম জানাই।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "અગાધ તેજના ભંડાર, વાયુ અને આકાશ સ્વરૂપ તથા સમસ્ત જગતના સ્વામી એવા સૂર્યનારાયણને વંદન.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അനന്തമായ തേജസ്സിന്റെ ഉറവിടവും, വായുവും ആകാശവുമായി വർത്തിക്കുന്നവനും, ജഗത്തിന്റെ പ്രഭുവുമായ സൂര്യനെ വണങ്ങുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଅସୀମ ତେଜୋରାଶିର ଆଧାର, ବାୟୁ ଓ ଆକାଶ ସ୍ୱରୂପ ତଥା ସମସ୍ତ ଜଗତର ସ୍ୱାମୀ ସୂର୍ଯ୍ୟଦେବଙ୍କୁ ପ୍ରଣାମ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 6,
+      "verse_type": "VERSE",
+      "original_sanskrit": "बन्धूकपुष्पसंकाशं हारकुण्डलभूषितम् ।\nएकचक्रधरं देवं तं सूर्यं प्रणमाम्यहम् ॥ ६ ॥",
+      "iast": "bandhūkapuṣpasaṁkāśaṁ hārakuṇḍalabhūṣitam ।\nēkacakradharaṁ dēvaṁ taṁ sūryaṁ praṇamāmyaham ॥ 6 ॥",
+      "transliterations": {
+        "telugu": "బన్ధూకపుష్పసంకాశం హారకుణ్డలభూషితమ్ ।\nఏకచక్రధరం దేవం తం సూర్యం ప్రణమామ్యహమ్ ॥ ౬ ॥",
+        "tamil": "பந்தூகபுஷ்பஸம்காஶம் ஹாரகுண்டலபூஷிதம் ।\nஏகசக்ரதரம் தேவம் தம் ஸூர்யம் ப்ரணமாம்யஹம் ॥ ௬ ॥",
+        "kannada": "ಬನ್ಧೂಕಪುಷ್ಪಸಂಕಾಶಂ ಹಾರಕುಣ್ಡಲಭೂಷಿತಮ್ ।\nಏಕಚಕ್ರಧರಂ ದೇವಂ ತಂ ಸೂರ್ಯಂ ಪ್ರಣಮಾಮ್ಯಹಮ್ ॥ ೬ ॥",
+        "malayalam": "ബന്ധൂകപുഷ്പസംകാശം ഹാരകുണ്ഡലഭൂഷിതമ് ।\nഏകചക്രധരം ദേവം തം സൂര്യം പ്രണമാമ്യഹമ് ॥ ൬ ॥",
+        "iast": "bandhūkapuṣpasaṃkāśaṃ hārakuṇḍalabhūṣitam |\nekacakradharaṃ devaṃ taṃ sūryaṃ praṇamāmyaham || 6 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Radiant like the scarlet Bandhuka flower, adorned with necklaces and glittering ear-pendants, presiding over a chariot with a single wheel (the cycle of time), unto that Sun-God I bow down.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "दुपहरिया (बंधूक) के लाल फूल के समान कांति वाले, सुंदर हार और कुंडलों से सुशोभित, एक चक्र वाले रथ पर विराजमान भगवान सूर्य को मैं नमन करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "మందార పుష్పము వంటి కాంతి గలవానిని, హారములు కర్ణకుండలములతో శోభిల్లువానిని, ఏకచక్ర రథారూఢుడైన సూర్యునికి నమస్కారములు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "செவ்வல்லி மலர் போன்ற சிவந்த காந்தி கொண்டவரும், மணியாரங்களாலும் குண்டலங்களாலும் அலங்கரிக்கப்பட்டவரும், ஒற்றைச் சக்கரத் தேரினருமான சூரியனைப் பணிகிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಬಂಧೂಕ ಪುಷ್ಪದಂತೆ ಕೆಂಪಾದ ಕಾಂತಿಯುಳ್ಳ, ಮುತ್ತಿನ ಹಾರ ಕರ್ಣಕುಂಡಲಗಳಿಂದ ಶೋಭಿಸುವ, ಏಕಚಕ್ರದ ರಥವನ್ನೇರಿದ ಸೂರ್ಯದೇವನಿಗೆ ಪ್ರಣಾಮಗಳು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "दुपारी फुलणाऱ्या लाल बंधूक फुलासारखी कांती असणाऱ्या, सुंदर हार व कुंडलांनी नटलेल्या, एका चाकाच्या रथावर स्वार सूर्यदेवाला मी नमन करतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "রক্তবর্ণ বন্ধূক পুষ্পের ন্যায় কান্তিমান, হার ও কুণ্ডলভূষিত এবং একচক্র রথে আসীন ভগবান সূর্যকে বন্দনা করি।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "બપોરિયાના લાલ પુષ્પ જેવી કાંતિવાળા, સુંદર હાર અને કુંડળોથી શોભતા, એક ચક્રના રથ પર બિરાજમાન સૂર્યનારાયણને નમસ્કાર.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ചുവന്ന ചെമ്പരത്തിപ്പൂവുപോലെ ശോഭിക്കുന്നവനും, രത്നഹാരങ്ങളും കുണ്ഡലങ്ങളും അണിഞ്ഞവനും, ഒറ്റച്ചക്രമുള്ള രഥത്തിലേറിയവനുമായ സൂര്യനെ നമിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ରକ୍ତବର୍ଣ୍ଣ ବନ୍ଧୂକ ପୁଷ୍ପ ସଦୃଶ କାନ୍ତିବିଶିଷ୍ଟ, ହାର ଓ କୁଣ୍ଡଳରେ ଶୋଭିତ ତଥା ଏକଚକ୍ର ରଥରେ ବିରାଜମାନ ସୂର୍ଯ୍ୟଦେବଙ୍କୁ ପ୍ରଣାମ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 7,
+      "verse_type": "VERSE",
+      "original_sanskrit": "तं सूर्यं जगत्कर्तारं महातेजःप्रदीपनम् ।\nमहापापहरं देवं तं सूर्यं प्रणमाम्यहम् ॥ ७ ॥",
+      "iast": "taṁ sūryaṁ jagatkartāraṁ mahātējaḥpradīpanam ।\nmahāpāpaharaṁ dēvaṁ taṁ sūryaṁ praṇamāmyaham ॥ 7 ॥",
+      "transliterations": {
+        "telugu": "తం సూర్యం జగత్కర్తారం మహాతేజఃప్రదీపనమ్ ।\nమహాపాపహరం దేవం తం సూర్యం ప్రణమామ్యహమ్ ॥ ౭ ॥",
+        "tamil": "தம் ஸூர்யம் ஜகத்கர்தாரம் மஹாதேஜஃப்ரதீபநம் ।\nமஹாபாபஹரம் தேவம் தம் ஸூர்யம் ப்ரணமாம்யஹம் ॥ ௭ ॥",
+        "kannada": "ತಂ ಸೂರ್ಯಂ ಜಗತ್ಕರ್ತಾರಂ ಮಹಾತೇಜಃಪ್ರದೀಪನಮ್ ।\nಮಹಾಪಾಪಹರಂ ದೇವಂ ತಂ ಸೂರ್ಯಂ ಪ್ರಣಮಾಮ್ಯಹಮ್ ॥ ೭ ॥",
+        "malayalam": "തം സൂര്യം ജഗത്കര്താരം മഹാതേജഃപ്രദീപനമ് ।\nമഹാപാപഹരം ദേവം തം സൂര്യം പ്രണമാമ്യഹമ് ॥ ൭ ॥",
+        "iast": "taṃ sūryaṃ jagatkartāraṃ mahātejaḥpradīpanam |\nmahāpāpaharaṃ devaṃ taṃ sūryaṃ praṇamāmyaham || 7 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Unto that Sun who is the creator of the world, who blazes with supreme splendor, the divine remover of all sins, unto that Sun-God I bow down.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जगत के रचयिता, महातेज से प्रकाशमान, अंधकार का नाश करने वाले और महापापों का शमन करने वाले उन भगवान सूर्य को मैं प्रणाम करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "జగత్కర్తయైనవానిని, మహాతేజస్సుతో సర్వమును ప్రకాశింపజేయువానిని, చీకట్లను పారద్రోలి పాపములను నశింపజేయు సూర్యునికి ప్రణమిల్లుదును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "உலகைப் படைப்பவரும், பேரொளியால் இருளகற்றுபவரும், மகா பாவங்களைத் தீர்த்து வைப்பவருமான சூரிய பகவானைப் பணிகிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಜಗತ್ತನ್ನು ಸೃಷ್ಟಿಸಿದವನೂ, ಮಹಾ ತೇಜಸ್ಸಿನಿಂದ ಪ್ರಕಾಶಿಸುವವನೂ, ಅಂಧಕಾರವನ್ನು ಕಳೆದು ಪಾಪನಾಶ ಮಾಡುವವನೂ ಆದ ಸೂರ್ಯನಿಗೆ ನಮಸ್ಕರಿಸುತ್ತೇನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जगाची निर्मिती करणाऱ्या, प्रचंड तेजाने तळपणाऱ्या, अंधकाराचा नाश करणाऱ्या आणि महापाप निवारणाऱ्या भगवान सूर्याला माझे वंदन.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "জগৎস্রষ্টা, মহাশক্তিধর তেজে ভাস্বর, অন্ধকারবিনাশী এবং মহাপাপহরা পরমপুরুষ সূর্যকে প্রণাম জানাই।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જગતના સર્જનહાર, મહાતેજથી ઝળહળતા, અંધકારને દૂર કરનારા અને મહાપાપનો નાશ કરનારા સૂર્યદેવને મારા વંદન.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ജഗത്സ്രഷ്ടാവും, മഹാതേജസ്സോടെ വിളങ്ങുന്നവനും, അന്ധകാരത്തെയും പാപങ്ങളെയും നശിപ്പിക്കുന്നവനുമായ സൂര്യഭഗവാനെ വണങ്ങുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଜଗତର ସ୍ରଷ୍ଟା, ମହାତେଜରେ ପ୍ରକାଶିତ, ଅନ୍ଧକାରନାଶକ ତଥା ମହାପାପ ହରଣକାରୀ ସୂର୍ଯ୍ୟଦେବଙ୍କୁ ପ୍ରଣାମ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 8,
+      "verse_type": "VERSE",
+      "original_sanskrit": "तं सूर्यं जगतां नाथं ज्ञानविज्ञानमोक्षदम् ।\nमहापापहरं देवं तं सूर्यं प्रणमाम्यहम् ॥ ८ ॥",
+      "iast": "taṁ sūryaṁ jagatāṁ nāthaṁ jñānavijñānamōkṣadam ।\nmahāpāpaharaṁ dēvaṁ taṁ sūryaṁ praṇamāmyaham ॥ 8 ॥",
+      "transliterations": {
+        "telugu": "తం సూర్యం జగతాం నాథం జ్ఞానవిజ్ఞానమోక్షదమ్ ।\nమహాపాపహరం దేవం తం సూర్యం ప్రణమామ్యహమ్ ॥ ౮ ॥",
+        "tamil": "தம் ஸூர்யம் ஜகதாம் நாதம் ஜ்ஞாநவிஜ்ஞாநமோக்ஷதம் ।\nமஹாபாபஹரம் தேவம் தம் ஸூர்யம் ப்ரணமாம்யஹம் ॥ ௮ ॥",
+        "kannada": "ತಂ ಸೂರ್ಯಂ ಜಗತಾಂ ನಾಥಂ ಜ್ಞಾನವಿಜ್ಞಾನಮೋಕ್ಷದಮ್ ।\nಮಹಾಪಾಪಹರಂ ದೇವಂ ತಂ ಸೂರ್ಯಂ ಪ್ರಣಮಾಮ್ಯಹಮ್ ॥ ೮ ॥",
+        "malayalam": "തം സൂര്യം ജഗതാം നാഥം ജ്ഞാനവിജ്ഞാനമോക്ഷദമ് ।\nമഹാപാപഹരം ദേവം തം സൂര്യം പ്രണമാമ്യഹമ് ॥ ൮ ॥",
+        "iast": "taṃ sūryaṃ jagatāṃ nāthaṃ jñānavijñānamokṣadam |\nmahāpāpaharaṃ devaṃ taṃ sūryaṃ praṇamāmyaham || 8 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Unto that Sun who is the master of all worlds, the bestower of sacred knowledge, empirical discernment, and spiritual liberation, unto that Sun-God I bow down.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "समस्त संसार के स्वामी, ज्ञान, विज्ञान और मोक्ष प्रदान करने वाले, महापापों का नाश करने वाले उन भगवान सूर्य को मैं सादर नमस्कार करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "సర్వ లోకములకు నాథుడైనవానిని, దివ్యజ్ఞానమును విజ్ఞానమును మోక్షమును అనుగ్రహించువానిని, మహాపాపహరుడైన ఆ సూర్యభగవానునకు నమస్కరింతును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அகில உலக நாயகரும், ஞானம், விஞ்ஞானம் மற்றும் முக்தியை அருள்பவரும், மகா பாவங்களைத் தொலைப்பவருமான சூரிய பகவானை வணங்குகிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಜಗದೊಡೆಯನೂ, ಜ್ಞಾನ-ವಿಜ್ಞಾನ-ಮೋಕ್ಷಗಳನ್ನು ಕರುಣಿಸುವವನೂ, ಮಹಾಪಾಪನಾಶಕನೂ ಆದ ಶ್ರೀ ಸೂರ್ಯದೇವನಿಗೆ ಅನಂತ ಪ್ರಣಾಮಗಳು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "समस्त विश्वाचे स्वामी, ज्ञान, विज्ञान व मोक्ष देणाऱ्या आणि महापापांचे हरण करणाऱ्या त्या सूर्यदेवाला माझा नमस्कार असो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "সমগ্র জগতের নাথ, জ্ঞান, বিজ্ঞান ও পরম মোক্ষদাতা এবং মহাপাপনাশক ভগবান সূর্যকে অন্তরের অন্তস্তল থেকে প্রণাম করি।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "સમસ્ત સંસારના સ્વામી, જ્ઞાન, વિજ્ઞાન અને મોક્ષ પ્રદાન કરનારા તથા મહાપાપ હરનારા સૂર્યનારાયણને મારા નમસ્કાર.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ലോകങ്ങളുടെ നാഥനും, ജ്ഞാനവും വിജ്ഞാനവും മോക്ഷവും പ്രദാനം ചെയ്യുന്നവനും, മഹാപാപങ്ങൾ തീർക്കുന്നവനുമായ സൂര്യനെ ഞാൻ ഭക്തിയോടെ നമിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସମସ୍ତ ସଂସାରର ସ୍ୱାମୀ, ଜ୍ଞାନ, ବିଜ୍ଞାନ ତଥା ମୋକ୍ଷ ପ୍ରଦାନକାରୀ ଏବଂ ମହାପାପ ବିନାଶକାରୀ ସୂର୍ଯ୍ୟଦେବଙ୍କୁ ପ୍ରଣାମ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 9,
+      "verse_type": "PHALASRUTI",
+      "original_sanskrit": "सूर्याष्टकं पठेन्नित्यं ग्रहपीडाप्रणाशनम् ।\nअपुत्रो लभते पुत्रं दरिद्रो धनवान् भवेत् ॥ ९ ॥",
+      "iast": "sūryāṣṭakaṁ paṭhēnnityaṁ grahapīḍāpraṇāśanam ।\naputrō labhatē putraṁ daridrō dhanavān bhavēt ॥ 9 ॥",
+      "transliterations": {
+        "telugu": "సూర్యాష్టకం పఠేన్నిత్యం గ్రహపీడాప్రణాశనమ్ ।\nఅపుత్రో లభతే పుత్రం దరిద్రో ధనవాన్ భవేత్ ॥ ౯ ॥",
+        "tamil": "ஸூர்யாஷ்டகம் படேந்நித்யம் க்ரஹபீடாப்ரணாஶநம் ।\nஅபுத்ரோ லபதே புத்ரம் தரித்ரோ தநவாந் பவேத் ॥ ௯ ॥",
+        "kannada": "ಸೂರ್ಯಾಷ್ಟಕಂ ಪಠೇನ್ನಿತ್ಯಂ ಗ್ರಹಪೀಡಾಪ್ರಣಾಶನಮ್ ।\nಅಪುತ್ರೋ ಲಭತೇ ಪುತ್ರಂ ದರಿದ್ರೋ ಧನವಾನ್ ಭವೇತ್ ॥ ೯ ॥",
+        "malayalam": "സൂര്യാഷ്ടകം പഠേന്നിത്യം ഗ്രഹപീഡാപ്രണാശനമ് ।\nഅപുത്രോ ലഭതേ പുത്രം ദരിദ്രോ ധനവാന് ഭവേത് ॥ ൯ ॥",
+        "iast": "sūryāṣṭakaṃ paṭhennityaṃ grahapīḍāpraṇāśanam |\naputro labhate putraṃ daridro dhanavān bhavet || 9 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Whoever daily recites this Suryashtakam is freed from all planetary afflictions; the childless receives a noble child, and the impoverished becomes wealthy.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जो मनुष्य प्रतिदिन इस सूर्याष्टक का पाठ करता है, उसकी सभी ग्रह-पीड़ाएँ शांत हो जाती हैं, निःसंतान को संतान और निर्धन को अटूट धन-संपत्ति प्राप्त होती है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఎవరైతే నిత్యము ఈ సూర్యాష్టకమును పఠింతురో, వారికి నవగ్రహ పీడలన్నియు నివారించబడును, సంతానహీనులకు సత్సంతానము, నిర్ధనులకు అపార ధనసంపదలు కలుగును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இச்சூர்யாஷ்டகத்தை நித்தம் ஓதும் மனிதனுக்கு நவக்கிரக தோஷங்கள் நீங்கும்; மழலைப்பேறு இல்லாதோருக்கு நன்மக்கட்பேறும், வறியோர்க்குப் பெரும் செல்வமும் உண்டாகும்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಯಾರು ನಿತ್ಯವೂ ಈ ಸೂರ್ಯಾಷ್ಟಕವನ್ನು ಪಠಿಸುವರೋ, ಅವರ ಸಮಸ್ತ ಗ್ರಹಪೀಡೆಗಳು ಪರಿಹಾರವಾಗುತ್ತವೆ; ಮಕ್ಕಳಿಲ್ಲದವರಿಗೆ ಮಕ್ಕಳೂ, ಧನವಿಲ್ಲದವರಿಗೆ ಅಪಾರ ಐಶ್ವರ್ಯವೂ ಲಭಿಸುತ್ತದೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जो मनुष्य दररोज या सूर्याष्टकाचे पठण करतो, त्याच्या सर्व ग्रहपीडा नष्ट होतात, अपत्यहीनाला संतान आणि गरिबाला विपुल धनसंपत्ती लाभते.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যে ব্যক্তি প্রত্যহ এই সূর্যাষ্টক পাঠ করেন, তাঁর সর্বপ্রকার গ্রহপীড়া দূরীভূত হয়, সন্তানহীনের সুসন্তান এবং নির্ধনের অক্ষয় ধনসম্পত্তি লাভ হয়।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જે મનુષ્ય નિત્ય આ સૂર્યાષ્ટકનો પાઠ કરે છે, તેની સર્વ ગ્રહપીડાઓ શાંત થાય છે, સંતાનહીનને સંતાન અને નિર્ધનને અખૂટ ધન પ્રાપ્ત થાય છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "നിത്യവും ഈ സൂര്യാഷ്ടകം ജപിക്കുന്ന മനുഷ്യന്റെ ഗ്രഹദോഷങ്ങളെല്ലാം ശമിക്കും; സന്താനമില്ലാത്തവർക്ക് സൽസന്താനങ്ങളും ദരിദ്രർക്ക് ഐശ്വര്യവും ലഭിക്കും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯେଉଁ ମନୁଷ୍ୟ ପ୍ରତ୍ୟହ ଏହି ସୂର୍ଯ୍ୟାଷ୍ଟକ ପାଠ କରେ, ତାହାର ସମସ୍ତ ଗ୍ରହପୀଡ଼ା ଶାନ୍ତ ହୁଏ, ସନ୍ତାନହୀନକୁ ସନ୍ତାନ ଏବଂ ନିର୍ଧନକୁ ଅତୁଟ ଧନସମ୍ପତ୍ତି ପ୍ରାପ୍ତ ହୁଏ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 10,
+      "verse_type": "PHALASRUTI",
+      "original_sanskrit": "आमिषं मधुपानं च यः करोति रवेर्दिने ।\nसप्तजन्म भवेद्रोगी जन्मजन्म दरिद्रता ॥ १० ॥",
+      "iast": "āmiṣaṁ madhupānaṁ ca yaḥ karōti ravērdinē ।\nsaptajanma bhavēdrōgī janmajanma daridratā ॥ 10 ॥",
+      "transliterations": {
+        "telugu": "ఆమిషం మధుపానం చ యః కరోతి రవేర్దినే ।\nసప్తజన్మ భవేద్రోగీ జన్మజన్మ దరిద్రతా ॥ ౧౦ ॥",
+        "tamil": "ஆமிஷம் மதுபாநம் ச யஃ கரோதி ரவேர்திநே ।\nஸப்தஜந்ம பவேத்ரோகீ ஜந்மஜந்ம தரித்ரதா ॥ ௧௦ ॥",
+        "kannada": "ಆಮಿಷಂ ಮಧುಪಾನಂ ಚ ಯಃ ಕರೋತಿ ರವೇರ್ದಿನೇ ।\nಸಪ್ತಜನ್ಮ ಭವೇದ್ರೋಗೀ ಜನ್ಮಜನ್ಮ ದರಿದ್ರತಾ ॥ ೧೦ ॥",
+        "malayalam": "ആമിഷം മധുപാനം ച യഃ കരോതി രവേര്ദിനേ ।\nസപ്തജന്മ ഭവേദ്രോഗീ ജന്മജന്മ ദരിദ്രതാ ॥ ൧൦ ॥",
+        "iast": "āmiṣaṃ madhupānaṃ ca yaḥ karoti raverdine |\nsaptajanma bhavedrogī janmajanma daridratā || 10 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Whoever consumes meat or intoxicating drinks on Sunday (the day of the Sun) suffers illness for seven births and poverty birth after birth. Therefore, let one worship the Sun with purity.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जो व्यक्ति रविवार के दिन तामसिक भोजन (मांसाहार या मदिरापान) का परित्याग कर सूर्यदेव की आराधना करता है, वह सात जन्मों के संचित पापों, रोगों और दरिद्रता से सदा के लिए मुक्त हो जाता है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఎవరైతే ఆదివారమునాడు తామసిక ఆహారములను విడనాడి భక్తితో సూర్యదేవుని ఆరాధింతురో, వారు ఏడు జన్మల పాపముల నుండి, రోగదారిద్ర్యముల నుండి విముక్తులగుదురు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஞாயிற்றுக்கிழமைகளில் தவறான உணவுப் பழக்கங்களை விடுத்துச் சூரிய பகவானை வழிபடும் பக்தன், தன் ஏழு பிறவிகளின் பாவங்கள், பிணிகள், வறுமை ஆகியவற்றிலிருந்து விடுபடுவான்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಯಾರು ಭಾನುವಾರದಂದು ತಾಮಸಿಕ ಆಹಾರ-ಪಾನೀಯಗಳನ್ನು ತ್ಯಜಿಸಿ ಸೂರ್ಯದೇವನನ್ನು ಆರಾಧಿಸುವರೋ, ಅವರು ಏಳು ಜನ್ಮಗಳ ಪಾಪಗಳಿಂದ, ರೋಗಗಳಿಂದ ಮತ್ತು ದಾರಿದ್ರ್ಯದಿಂದ ಮುಕ್ತರಾಗುತ್ತಾರೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जो मनुष्य रविवारी तामसिक आहार व मद्यपान वर्ज्य करून सूर्यदेवांची उपासना करतो, तो सात जन्मांच्या संचित पापांतून, रोगांतून व दारिद्र्यातून कायमचा मुक्त होतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যিনি রবিবার দিনে তামসিক আহার পরিত্যাগ করে ভক্তিভরে সূর্যদেবের আরাধনা করেন, তিনি সপ্তজন্মের সঞ্চিত পাপ, রোগ ও দারিদ্র্য থেকে চিরতরে মুক্তি লাভ করেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જે વ્યક્તિ રવિવારના દિવસે તામસિક આહારનો ત્યાગ કરી સૂર્યદેવની આરાધના કરે છે, તે સાત જન્મોના પાપો, રોગો અને દરિદ્રતામાંથી સદાય માટે મુક્ત થાય છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഞായറാഴ്ചകളിൽ തമോഗുണഭോജനങ്ങളെ വെടിഞ്ഞു സൂര്യദേവനെ ആരാധിക്കുന്ന ഭക്തൻ ഏഴു ജന്മങ്ങളിലെ സഞ്ചിതപാപങ്ങളിൽനിന്നും രോഗങ്ങളിൽനിന്നും ദാരിദ്ര്യത്തിൽനിന്നും മുക്തനാകും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯେଉଁ ବ୍ୟକ୍ତି ରବିବାର ଦିନ ତାମସିକ ଆହାର ତ୍ୟାଗ କରି ସୂର୍ଯ୍ୟଦେବଙ୍କ ଆରାଧନା କରେ, ସେ ସାତ ଜନ୍ମର ପାପ, ରୋଗ ଓ ଦାରିଦ୍ର୍ୟରୁ ସର୍ବଦା ପାଇଁ ମୁକ୍ତ ହୁଏ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    }
+  ]
+}

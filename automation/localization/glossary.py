@@ -42,6 +42,7 @@ class GlossaryTerm:
     translations: Dict[str, str] = field(default_factory=dict)  # {"hi": "...", "te": "...", "ta": "...", "kn": "..."}
     regional_variants: Dict[str, List[str]] = field(default_factory=dict)
     notes: Optional[str] = None
+    is_human_reviewed: bool = True
 
 
 class SanskritTerminologyGlossary:
@@ -309,6 +310,104 @@ class SanskritTerminologyGlossary:
                 "hi": "नक्षत्र", "te": "నక్షత్రము", "ta": "நட்சத்திரம்", "kn": "ನಕ್ಷತ್ರ",
                 "mr": "नक्षत्र", "bn": "নক্ষত্র", "gu": "નક્ષત્ર", "ml": "നക്ഷത്രം", "or": "ନକ୍ଷତ୍ର"
             },
+        ),
+        # 9. Additional Canonical Spiritual Terms (Phase 6C Expansion)
+        GlossaryTerm(
+            term_id="TERM-DEI-005",
+            sanskrit_term="श्रीकृष्णः",
+            iast="Śrīkṛṣṇaḥ",
+            category=TerminologyCategory.DEITY_NAMES,
+            english_definition="Supreme Lord of divine love, joy, and beauty; focal deity of Madhurashtakam.",
+            translations={
+                "hi": "श्रीकृष्ण / श्यामसुंदर", "te": "శ్రీకృష్ణుడు / వేణుగోపాలుడు", "ta": "ஸ்ரீகிருஷ்ணர் / கண்ணன்", "kn": "ಶ್ರೀಕೃಷ್ಣ / ಗೋಪಾಲ",
+                "mr": "श्रीकृष्ण / कान्हा", "bn": "শ্রীকৃষ্ণ / কানহাইয়া", "gu": "શ્રીકૃષ્ણ / ઠાકોરજી", "ml": "ശ്രീകൃഷ്ണൻ / ഗുരുവായൂരപ്പൻ", "or": "ଶ୍ରୀକୃଷ୍ଣ / ଜଗନ୍ନାଥ"
+            },
+            regional_variants={"ta": ["கண்ணன்", "வேணுகோபாலன்"], "gu": ["શ્રીનાથજી", "રણછોડરાય"], "mr": ["विठ्ठल", "पंढरीनाथ"]},
+            is_human_reviewed=True,
+        ),
+        GlossaryTerm(
+            term_id="TERM-VED-005",
+            sanskrit_term="संहिता",
+            iast="Saṁhitā",
+            category=TerminologyCategory.VEDIC_TERMS,
+            english_definition="Continuous metrical collection of sacred Vedic hymns and mantras.",
+            translations={
+                "hi": "संहिता", "te": "సంహిత", "ta": "சம்ஹிதை", "kn": "ಸಂಹಿತೆ",
+                "mr": "संहिता", "bn": "সংহিতা", "gu": "સંહિતા", "ml": "സംഹിത", "or": "ସଂହିତା"
+            },
+            is_human_reviewed=True,
+        ),
+        GlossaryTerm(
+            term_id="TERM-RIT-003",
+            sanskrit_term="आचमनम्",
+            iast="Ācamanam",
+            category=TerminologyCategory.RITUAL_TERMS,
+            english_definition="Ritual sipping of sanctified water purifying internal body and mind before worship.",
+            translations={
+                "hi": "आचमन", "te": "ఆచమనము", "ta": "ஆசமனம்", "kn": "ಆಚಮನ",
+                "mr": "आचमन", "bn": "আচমন", "gu": "આચમન", "ml": "ആചമനം", "or": "ଆଚମନ"
+            },
+            is_human_reviewed=True,
+        ),
+        GlossaryTerm(
+            term_id="TERM-PHI-003",
+            sanskrit_term="भक्तिः",
+            iast="Bhaktiḥ",
+            category=TerminologyCategory.PHILOSOPHICAL_CONCEPTS,
+            english_definition="Unconditional, loving devotional surrender to the Divine.",
+            translations={
+                "hi": "भक्ति", "te": "భక్తి", "ta": "பக்தி", "kn": "ಭಕ್ತಿ",
+                "mr": "भक्ती", "bn": "ভক্তি", "gu": "ભક્તિ", "ml": "ഭക്തി", "or": "ଭକ୍ତି"
+            },
+            is_human_reviewed=True,
+        ),
+        GlossaryTerm(
+            term_id="TERM-GRA-003",
+            sanskrit_term="समासः",
+            iast="Samāsaḥ",
+            category=TerminologyCategory.GRAMMATICAL_TERMS,
+            english_definition="Sanskrit grammatical compound structure combining multiple stems.",
+            translations={
+                "hi": "समास", "te": "సమాసము", "ta": "சமாசம்", "kn": "ಸಮಾಸ",
+                "mr": "समास", "bn": "সমাস", "gu": "સમાસ", "ml": "സമാസം", "or": "ସମାସ"
+            },
+            is_human_reviewed=True,
+        ),
+        GlossaryTerm(
+            term_id="TERM-MAN-003",
+            sanskrit_term="गायत्री",
+            iast="Gāyatrī",
+            category=TerminologyCategory.MANTRA_TERMS,
+            english_definition="The 24-syllable Vedic solar metre and supreme mantra revealed to Vishvamitra.",
+            translations={
+                "hi": "गायत्री", "te": "గాయత్రి", "ta": "காயத்ரி", "kn": "ಗಾಯತ್ರಿ",
+                "mr": "गायत्री", "bn": "গায়ত্রী", "gu": "ગાયત્રી", "ml": "ഗായത്രി", "or": "ଗାୟତ୍ରୀ"
+            },
+            is_human_reviewed=True,
+        ),
+        GlossaryTerm(
+            term_id="TERM-PUJ-003",
+            sanskrit_term="नीराजनम् / आरती",
+            iast="Nīrājanam / Āratī",
+            category=TerminologyCategory.PUJA_TERMS,
+            english_definition="Ceremonial waving of lighted camphor lamp accompanied by devotional hymns.",
+            translations={
+                "hi": "आरती", "te": "హారతి / నీరాజనము", "ta": "தீபாராதனை / ஆரத்தி", "kn": "ಆರತಿ / ಮಂಗಳಾರತಿ",
+                "mr": "आरती", "bn": "আরতি", "gu": "આરતી", "ml": "ദീപારાധന / ആരതി", "or": "ଆଳତି"
+            },
+            is_human_reviewed=True,
+        ),
+        GlossaryTerm(
+            term_id="TERM-CAL-003",
+            sanskrit_term="पक्षः",
+            iast="Pakṣaḥ",
+            category=TerminologyCategory.CALENDAR_TERMS,
+            english_definition="Lunar fortnight in the Hindu calendar (Shukla Paksha or Krishna Paksha).",
+            translations={
+                "hi": "पक्ष (शुक्ल / कृष्ण)", "te": "పక్షము (శుక్ల / కృష్ణ)", "ta": "பட்சம் (சுக்ல / கிருஷ்ண)", "kn": "ಪಕ್ಷ (ಶುಕ್ಲ / ಕೃಷ್ಣ)",
+                "mr": "पक्ष (शुक्ल / कृष्ण)", "bn": "পক্ষ (শুক্ল / কৃষ্ণ)", "gu": "પક્ષ (શુક્લ / કૃષ્ણ)", "ml": "പക്ഷം (ശുക്ല / കൃഷ്ണ)", "or": "ପକ୍ଷ (ଶୁକ୍ଳ / କୃଷ୍ଣ)"
+            },
+            is_human_reviewed=True,
         ),
     ]
 

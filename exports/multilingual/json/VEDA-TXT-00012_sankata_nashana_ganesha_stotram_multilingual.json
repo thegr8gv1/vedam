@@ -1,0 +1,624 @@
+{
+  "content_id": "VEDA-TXT-00012",
+  "canonical_title": "Sankata Nashana Ganesha Stotram",
+  "devanagari_title": "सङ्कटनाशनगणेशस्तोत्रम्",
+  "composer": "Devarshi Narada (Narada Purana)",
+  "source_scripture": "Narada Purana, Uttara Khanda",
+  "verse_count": 8,
+  "generated_at_utc": "2026-11-04T23:14:38.997492+00:00",
+  "supported_languages": [
+    "sa",
+    "hi",
+    "te",
+    "ta",
+    "kn",
+    "mr",
+    "bn",
+    "gu",
+    "ml",
+    "or",
+    "en"
+  ],
+  "verses": [
+    {
+      "verse_number": 1,
+      "verse_type": "VERSE",
+      "original_sanskrit": "प्रणम्य शिरसा देवं गौरीपुत्रं विनायकम् ।\nभक्तावासं स्मरेन्नित्यमायुःकामार्थसिद्धये ॥ १ ॥",
+      "iast": "praṇamya śirasā dēvaṁ gaurīputraṁ vināyakam ।\nbhaktāvāsaṁ smarēnnityamāyuḥkāmārthasiddhayē ॥ 1 ॥",
+      "transliterations": {
+        "telugu": "ప్రణమ్య శిరసా దేవం గౌరీపుత్రం వినాయకమ్ ।\nభక్తావాసం స్మరేన్నిత్యమాయుఃకామార్థసిద్ధయే ॥ ౧ ॥",
+        "tamil": "ப்ரணம்ய ஶிரஸா தேவம் கௌரீபுத்ரம் விநாயகம் ।\nபக்தாவாஸம் ஸ்மரேந்நித்யமாயுஃகாமார்தஸித்தயே ॥ ௧ ॥",
+        "kannada": "ಪ್ರಣಮ್ಯ ಶಿರಸಾ ದೇವಂ ಗೌರೀಪುತ್ರಂ ವಿನಾಯಕಮ್ ।\nಭಕ್ತಾವಾಸಂ ಸ್ಮರೇನ್ನಿತ್ಯಮಾಯುಃಕಾಮಾರ್ಥಸಿದ್ಧಯೇ ॥ ೧ ॥",
+        "malayalam": "പ്രണമ്യ ശിരസാ ദേവം ഗൌരീപുത്രം വിനായകമ് ।\nഭക്താവാസം സ്മരേന്നിത്യമായുഃകാമാര്ഥസിദ്ധയേ ॥ ൧ ॥",
+        "iast": "praṇamya śirasā devaṃ gaurīputraṃ vināyakam |\nbhaktāvāsaṃ smarennityamāyuḥkāmārthasiddhaye || 1 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Bowing down with one's head before the divine Lord Vinayaka, the beloved son of Gauri, residing ever in the hearts of devotees, one should constantly meditate on Him for longevity, fulfillment of desires, and prosperity.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "देवों के देव, माता पार्वती के लाडले पुत्र श्री विनायक को मस्तक झुकाकर प्रणाम करके, भक्त को अपनी आयु, मनोकामना और सर्वार्थ सिद्धि के लिए प्रतिदिन उनका स्मरण करना चाहिए।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "దేవాదిదేవుడు, పార్వతీసుతుడైన శ్రీ వినాయకునికి శిరస్సు వంచి నమస్కరించి, భక్తుడు ఆయురారోగ్యములు, సమస్త కోరికల సిద్ధి కొరకు నిత్యము ఆయనను భక్తితో స్మరించవలెను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தேவாதி தேவரும், பார்வதி தேவியின் செல்லத் திருமகனுமான விநாயகப் பெருமானைத் தலைவணங்கிப் பணிந்து, பக்தன் தன் ஆயுள், நல்வாழ்வு, விருப்பங்கள் யாவும் ஈடேற அவரை நித்தம் தியானிக்க வேண்டும்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ದೇವೋತ್ತಮನೂ, ಪಾರ್ವತೀನಂದನನೂ ಆದ ಶ್ರೀ ವಿನಾಯಕನಿಗೆ ಶಿರಬಾಗಿ ನಮಸ್ಕರಿಸಿ, ಭಕ್ತನು ತನ್ನ ಆಯುಷ್ಯ, ಆರೋಗ್ಯ ಮತ್ತು ಸಕಲ ಇಷ್ಟಾರ್ಥಗಳ ಸಿದ್ಧಿಗಾಗಿ ನಿತ್ಯವೂ ಆತನನ್ನು ಸ್ಮರಿಸಬೇಕು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "देवांचे देव, माता पार्वतीचे लाडके पुत्र श्री विनायकाला नतमस्तक होऊन वंदन करून, भक्ताने आयुष्य, आरोग्य व सर्व मनोकामनांच्या पूर्ततेसाठी दररोज त्यांचे स्मरण करावे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "দেবাদিদেব, মাতা পার্বতীর প্রিয় পুত্র শ্রী বিনায়ককে মস্তক অবনত করে প্রণাম জানিয়ে, ভক্তকে আয়ু, আরোগ্য ও সর্বার্থ সিদ্ধির নিমিত্ত নিত্য তাঁর স্মরণ করা উচিত।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "દેવોના દેવ, માતા પાર્વતીના પુત્ર શ્રી વિનાયકને મસ્તક નમાવી વંદન કરીને, ભક્તે આયુષ્ય, આરોગ્ય અને સકળ મનોકામનાઓની પૂર્તિ માટે નિત્ય તેમનું સ્મરણ કરવું જોઈએ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ദേവാദിദേവനും പാർവ്വതീപുത്രനുമായ ശ്രീ വിനായകനെ ശിരസ്സുനമിച്ചു വണങ്ങി, ഭക്തൻ ആയുസ്സും ആരോഗ്യവും സർവ്വാഭീഷ്ടസിദ്ധിയും ലഭിക്കാനായി നിത്യവും അവിടുത്തെ സ്മരിക്കണം.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଦେବାଦିଦେବ, ମାତା ପାର୍ବତୀଙ୍କ ପ୍ରିୟ ପୁତ୍ର ଶ୍ରୀ ବିନାୟକଙ୍କୁ ମସ୍ତକ ଅବନତ କରି ପ୍ରଣାମ ଜଣାଇ, ଭକ୍ତ ନିଜର ଆୟୁ, ଆରୋଗ୍ୟ ଓ ସମସ୍ତ ମନୋକାମନା ପୂର୍ତ୍ତି ପାଇଁ ନିତ୍ୟ ତାଙ୍କୁ ସ୍ମରଣ କରିବା ଉଚିତ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 2,
+      "verse_type": "VERSE",
+      "original_sanskrit": "प्रथमं वक्रतुण्डं च एकदन्तं द्वितीयकम् ।\nतृतीयं कृष्णपिङ्गाक्षं गजवक्त्रं चतुर्थकम् ॥ २ ॥",
+      "iast": "prathamaṁ vakratuṇḍaṁ ca ēkadantaṁ dvitīyakam ।\ntr̥tīyaṁ kr̥ṣṇapiṅgākṣaṁ gajavaktraṁ caturthakam ॥ 2 ॥",
+      "transliterations": {
+        "telugu": "ప్రథమం వక్రతుణ్డం చ ఏకదన్తం ద్వితీయకమ్ ।\nతృతీయం కృష్ణపిఙ్గాక్షం గజవక్త్రం చతుర్థకమ్ ॥ ౨ ॥",
+        "tamil": "ப்ரதமம் வக்ரதுண்டம் ச ஏகதந்தம் த்விதீயகம் ।\nத்ரு'தீயம் க்ரு'ஷ்ணபிங்காக்ஷம் கஜவக்த்ரம் சதுர்தகம் ॥ ௨ ॥",
+        "kannada": "ಪ್ರಥಮಂ ವಕ್ರತುಣ್ಡಂ ಚ ಏಕದನ್ತಂ ದ್ವಿತೀಯಕಮ್ ।\nತೃತೀಯಂ ಕೃಷ್ಣಪಿಙ್ಗಾಕ್ಷಂ ಗಜವಕ್ತ್ರಂ ಚತುರ್ಥಕಮ್ ॥ ೨ ॥",
+        "malayalam": "പ്രഥമം വക്രതുണ്ഡം ച ഏകദന്തം ദ്വിതീയകമ് ।\nതൃതീയം കൃഷ്ണപിങ്ഗാക്ഷം ഗജവക്ത്രം ചതുര്ഥകമ് ॥ ൨ ॥",
+        "iast": "prathamaṃ vakratuṇḍaṃ ca ekadantaṃ dvitīyakam |\ntṛtīyaṃ kṛṣṇapiṅgākṣaṃ gajavaktraṃ caturthakam || 2 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "First, He with the curved trunk (Vakratunda); second, the single-tusked Lord (Ekadanta); third, He with dark reddish-brown eyes (Krishna-pingaksha); fourth, He with the noble elephant face (Gajavaktra).",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "प्रथम वक्रतुंड, द्वितीय एकदंत, तृतीय कृष्णपिंगाक्ष (काली-भूरी आँखों वाले) और चतुर्थ गजवक्त्र (हाथी के मुख वाले) नाम से विख्यात हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "మొదటి పేరు వక్రతుండుడు, రెండవది ఏకదంతుడు, మూడవది కృష్ణపింగాక్షుడు, నాల్గవది గజవక్త్రుడు అను దివ్య నామములు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "முதலாவது வக்ரதுண்டர், இரண்டாவது ஏகதந்தர், மூன்றாவது கிருஷ்ணபிங்காக்ஷர், நான்காவது கஜவக்த்ரர் என்பனவாம்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಮೊದಲನೆಯದು ವಕ್ರತುಂಡ, ಎರಡನೆಯದು ಏಕದಂತ, ಮೂರನೆಯದು ಕೃಷ್ಣಪಿಂಗಾಕ್ಷ ಮತ್ತು ನಾಲ್ಕನೆಯದು ಗಜವಕ್ತ್ರ ಎಂಬ ಪವಿತ್ರ ನಾಮಗಳು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "पहिले नाव वक्रतुंड, दुसरे एकदंत, तिसरे कृष्णपिंगाक्ष आणि चौथे गजवक्त्र (हत्तीचे मुख असलेले) असे आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "প্রথম নাম বক্রতুণ্ড, দ্বিতীয় একদন্ত, তৃতীয় কৃষ্ণপিঙ্গাক্ষ এবং চতুর্থ গজবক্ত্র নামে অভিহিত।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "પ્રથમ વક્રતુંડ, દ્વિતીય એકદંત, તૃતીય કૃષ્ણપિંગાક્ષ અને ચોથું ગજવક્ત્ર નામ છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഒന്നാമത് വക്രതുണ്ഡൻ, രണ്ടാമത് ഏകദന്തൻ, മൂന്നാമത് കൃഷ്ണപിംഗാക്ഷൻ, നാലാമത് ഗജവക്ത്രൻ എന്നിവയാണ്.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ପ୍ରଥମ ନାମ ବକ୍ରତୁଣ୍ଡ, ଦ୍ୱିତୀୟ ଏକଦନ୍ତ, ତୃତୀୟ କୃଷ୍ଣପିଙ୍ଗାକ୍ଷ ଏବଂ ଚତୁର୍ଥ ଗଜବକ୍ତ୍ର ନାମରେ ବିଖ୍ୟାତ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 3,
+      "verse_type": "VERSE",
+      "original_sanskrit": "लम्बोदरं पञ्चमं च षष्ठं विकटमेव च ।\nसप्तमं विघ्नराजेन्द्रं धूम्रवर्णं तथाष्टमम् ॥ ३ ॥",
+      "iast": "lambōdaraṁ pañcamaṁ ca ṣaṣṭhaṁ vikaṭamēva ca ।\nsaptamaṁ vighnarājēndraṁ dhūmravarṇaṁ tathāṣṭamam ॥ 3 ॥",
+      "transliterations": {
+        "telugu": "లమ్బోదరం పఞ్చమం చ షష్ఠం వికటమేవ చ ।\nసప్తమం విఘ్నరాజేన్ద్రం ధూమ్రవర్ణం తథాష్టమమ్ ॥ ౩ ॥",
+        "tamil": "லம்போதரம் பஞ்சமம் ச ஷஷ்டம் விகடமேவ ச ।\nஸப்தமம் விக்நராஜேந்த்ரம் தூம்ரவர்ணம் ததாஷ்டமம் ॥ ௩ ॥",
+        "kannada": "ಲಮ್ಬೋದರಂ ಪಞ್ಚಮಂ ಚ ಷಷ್ಠಂ ವಿಕಟಮೇವ ಚ ।\nಸಪ್ತಮಂ ವಿಘ್ನರಾಜೇನ್ದ್ರಂ ಧೂಮ್ರವರ್ಣಂ ತಥಾಷ್ಟಮಮ್ ॥ ೩ ॥",
+        "malayalam": "ലമ്ബോദരം പഞ്ചമം ച ഷഷ്ഠം വികടമേവ ച ।\nസപ്തമം വിഘ്നരാജേന്ദ്രം ധൂമ്രവര്ണം തഥാഷ്ടമമ് ॥ ൩ ॥",
+        "iast": "lambodaraṃ pañcamaṃ ca ṣaṣṭhaṃ vikaṭameva ca |\nsaptamaṃ vighnarājendraṃ dhūmravarṇaṃ tathāṣṭamam || 3 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Fifth, the large-bellied Lord (Lambodara); sixth, the formidable and colossal One (Vikata); seventh, the King who rules over all obstacles (Vighnarajendra); eighth, He of smoky hue (Dhumravarna).",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "पाँचवें लंबोदर, छठे विकट, सातवें विघ्नराजेंद्र और आठवें धूम्रवर्ण के नाम से जाने जाते हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఐదవది లంబోదరుడు, ఆరవది వికటుడు, ఏడవది విఘ్నరాజేంద్రుడు, ఎనిమిదవది ధూమ్రవర్ణుడు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஐந்தாவது லம்போதரர், ஆறாவது விகடர், ஏழாவது விக்னராஜேந்திரர், எட்டாவது தூம்ரவர்ணர்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಐದನೆಯದು ಲಂಬೋದರ, ಆರನೆಯದು ವಿಕಟ, ಏಳನೆಯದು ವಿಘ್ನರಾಜೇಂದ್ರ ಮತ್ತು ಎಂಟನೆಯದು ಧೂಮ್ರವರ್ಣ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "पाचवे लंबोदर, सहावे विकट, सातवे विघ्नराजेंद्र आणि आठवे धूम्रवर्ण या नावाने प्रसिद्ध आहेत.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "পঞ্চম নাম লম্বোদর, ষষ্ঠ বিকট, সপ্তম বিঘ্নরাজেন্দ্র এবং অষ্টম ধূম্রবর্ণ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "પાંચમું લંબોદર, છઠ્ઠું વિકટ, સાતમું વિઘ્નરાજેન્દ્ર અને આઠમું ધૂમ્રવર્ણ છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അഞ്ചാമത് ലംബോദരൻ, ആറാമത് വികടൻ, ഏഴാമത് വിഘ്നരാജേന്ദ്രൻ, എട്ടാമത് ധൂമ്രവർണ്ണൻ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ପଞ୍ଚମ ନାମ ଲମ୍ବୋଦର, ଷଷ୍ଠ ବିକଟ, ସପ୍ତମ ବିଘ୍ନରାଜେନ୍ଦ୍ର ଏବଂ ଅଷ୍ଟମ ଧୂମ୍ରବର୍ଣ୍ଣ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 4,
+      "verse_type": "VERSE",
+      "original_sanskrit": "नवमं भालचन्द्रं च दशमं तु विनायकम् ।\nएकादशं गणपतिं द्वादशं तु गजाननम् ॥ ४ ॥",
+      "iast": "navamaṁ bhālacandraṁ ca daśamaṁ tu vināyakam ।\nēkādaśaṁ gaṇapatiṁ dvādaśaṁ tu gajānanam ॥ 4 ॥",
+      "transliterations": {
+        "telugu": "నవమం భాలచన్ద్రం చ దశమం తు వినాయకమ్ ।\nఏకాదశం గణపతిం ద్వాదశం తు గజాననమ్ ॥ ౪ ॥",
+        "tamil": "நவமம் பாலசந்த்ரம் ச தஶமம் து விநாயகம் ।\nஏகாதஶம் கணபதிம் த்வாதஶம் து கஜாநநம் ॥ ௪ ॥",
+        "kannada": "ನವಮಂ ಭಾಲಚನ್ದ್ರಂ ಚ ದಶಮಂ ತು ವಿನಾಯಕಮ್ ।\nಏಕಾದಶಂ ಗಣಪತಿಂ ದ್ವಾದಶಂ ತು ಗಜಾನನಮ್ ॥ ೪ ॥",
+        "malayalam": "നവമം ഭാലചന്ദ്രം ച ദശമം തു വിനായകമ് ।\nഏകാദശം ഗണപതിം ദ്വാദശം തു ഗജാനനമ് ॥ ൪ ॥",
+        "iast": "navamaṃ bhālacandraṃ ca daśamaṃ tu vināyakam |\nekādaśaṃ gaṇapatiṃ dvādaśaṃ tu gajānanam || 4 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Ninth, He who bears the crescent moon on His forehead (Bhalachandra); tenth, the supreme remover of obstacles (Vinayaka); eleventh, the Lord of all Ganas (Ganapati); and twelfth, the elephant-faced Sovereign (Gajanana).",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "नौवें भालचंद्र (मस्तक पर चंद्रमा धारण करने वाले), दसवें विनायक, ग्यारहवें गणपति और बारहवें गजानन हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "తొమ్మిదవది భాలచంద్రుడు, పదవది వినాయకుడు, పదకొండవది గణపతి, పన్నెండవది గజాననుడు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஒன்பதாவது பாலசந்திரர், பத்தாவது விநாயகர், பதினோராவது கணபதி, பன்னிரண்டாவது கஜானனர்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಒಂಬತ್ತನೆಯದು ಭಾಲಚಂದ್ರ, ಹತ್ತನೆಯದು ವಿನಾಯಕ, ಹನ್ನೊಂದನೆಯದು ಗಣಪತಿ ಮತ್ತು ಹನ್ನೆರಡನೆಯದು ಗಜಾನನ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "नववे भालचंद्र, दहावे विनायक, अकरावे गणपती आणि बारावे गजानन म्हणून वंदिले जातात.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "নবম নাম ভালচন্দ্র, দশম বিনায়ক, একাদশ গণপতি এবং দ্বাদশ নাম গজানন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "નવમું ભાલચંદ્ર, દસમું વિનાયક, અગિયારમું ગણપતિ અને બારમું ગજાનન છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഒൻപതാമത് ഭാലചന്ദ്രൻ, പത്താമത് വിനായകൻ, പതിനൊന്നാമത് ഗണപതി, പന്ത്രണ്ടാമത് ഗജാനനൻ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ନବମ ନାମ ଭାଲଚନ୍ଦ୍ର, ଦଶମ ବିନାୟକ, ଏକାଦଶ ଗଣପତି ଏବଂ ଦ୍ୱାଦଶ ଗଜାନନ ଅଟନ୍ତି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 5,
+      "verse_type": "PHALASRUTI",
+      "original_sanskrit": "द्वादशैतानि नामानि त्रिसन्ध्यं यः पठेन्नरः ।\nन च विघ्नभयं तस्य सर्वसिद्धिकरं प्रभो ॥ ५ ॥",
+      "iast": "dvādaśaitāni nāmāni trisandhyaṁ yaḥ paṭhēnnaraḥ ।\nna ca vighnabhayaṁ tasya sarvasiddhikaraṁ prabhō ॥ 5 ॥",
+      "transliterations": {
+        "telugu": "ద్వాదశైతాని నామాని త్రిసన్ధ్యం యః పఠేన్నరః ।\nన చ విఘ్నభయం తస్య సర్వసిద్ధికరం ప్రభో ॥ ౫ ॥",
+        "tamil": "த்வாதஶைதாநி நாமாநி த்ரிஸந்த்யம் யஃ படேந்நரஃ ।\nந ச விக்நபயம் தஸ்ய ஸர்வஸித்திகரம் ப்ரபோ ॥ ௫ ॥",
+        "kannada": "ದ್ವಾದಶೈತಾನಿ ನಾಮಾನಿ ತ್ರಿಸನ್ಧ್ಯಂ ಯಃ ಪಠೇನ್ನರಃ ।\nನ ಚ ವಿಘ್ನಭಯಂ ತಸ್ಯ ಸರ್ವಸಿದ್ಧಿಕರಂ ಪ್ರಭೋ ॥ ೫ ॥",
+        "malayalam": "ദ്വാദശൈതാനി നാമാനി ത്രിസന്ധ്യം യഃ പഠേന്നരഃ ।\nന ച വിഘ്നഭയം തസ്യ സര്വസിദ്ധികരം പ്രഭോ ॥ ൫ ॥",
+        "iast": "dvādaśaitāni nāmāni trisandhyaṃ yaḥ paṭhennaraḥ |\nna ca vighnabhayaṃ tasya sarvasiddhikaraṃ prabho || 5 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "A person who recites these twelve sacred names at the three junctions of the day (dawn, noon, dusk) has no fear of any impediment; this hymn bestows all accomplishments, O Lord!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जो मनुष्य तीनों कालों (प्रातः, मध्याह्न, संध्या) में इन बारह पवित्र नामों का नित्य पाठ करता है, उसे किसी भी प्रकार के विघ्न का भय नहीं रहता और सब कार्यों में सिद्धि मिलती है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఎవరైతే త్రికాలములయందు (ఉదయము, మధ్యాహ్నము, సాయంత్రము) ఈ పన్నెండు దివ్య నామములను పఠింతురో, వారికి ఎటువంటి విఘ్నభయము ఉండదు, సర్వదా విజయము చేకూరును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "முக்காலங்களிலும் (காலை, நண்பகல், மாலை) இந்தப் பன்னிரு திருநாமங்களை நித்தம் ஓதும் மனிதனுக்கு எந்தவிதமான தடைகளும் அச்சமும் ஏற்படுவதில்லை; எல்லா நன்மைகளும் கைகூடும்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಯಾವ ಮಾನವನು ತ್ರಿಕಾಲಗಳಲ್ಲಿಯೂ ಈ ಹನ್ನೆರಡು ಪವಿತ್ರ ನಾಮಗಳನ್ನು ಪಠಿಸುವನೋ, ಅವನಿಗೆ ಯಾವುದೇ ವಿಘ್ನಗಳ ಭಯವಿರುವುದಿಲ್ಲ, ಸರ್ವಕಾರ್ಯಗಳಲ್ಲಿ ಜಯವುಂಟಾಗುತ್ತದೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जो मनुष्य तिन्ही त्रिकाळ या बारा पवित्र नामांचे नित्य पठण करतो, त्याला कोणत्याही विघ्नाची भीती राहत नाही आणि सर्व कार्यांत यश मिळते.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যে ব্যক্তি ত্রিসন্ধ্যায় এই দ্বাদশ পবিত্র নাম ভক্তিভরে পাঠ করেন, তাঁর কোনো বিঘ্নভয় থাকে না এবং সর্বকার্যে সাফল্য লাভ হয়।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જે મનુષ્ય ત્રણેય કાળમાં આ બાર પવિત્ર નામોનો નિત્ય પાઠ કરે છે, તેને કોઈ વિઘ્નનો ભય રહેતો નથી અને સઘળાં કાર્યો નિર્વિઘ્ને પૂર્ણ થાય છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ത്രിസന്ധ്യകളിലും ഈ പന്ത്രണ്ടു പുണ്യനാമങ്ങൾ ഭക്തിയോടെ ജപിക്കുന്ന മനുഷ്യന് യാതൊരുവിധ വിഘ്നഭയവും ഉണ്ടാകില്ല; സകലകാര്യങ്ങളും ശുഭമായിത്തീരും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯେଉଁ ମନୁଷ୍ୟ ତ୍ରିକାଳରେ ଏହି ବାରଟି ପବିତ୍ର ନାମ ନିତ୍ୟ ପାଠ କରେ, ତାହାର କୌଣସି ବିଘ୍ନର ଭୟ ରହେ ନାହିଁ ଏବଂ ସମସ୍ତ କାର୍ଯ୍ୟ ସିଦ୍ଧ ହୁଏ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 6,
+      "verse_type": "PHALASRUTI",
+      "original_sanskrit": "विद्यार्थी लभते विद्यां धनार्थी लभते धनम् ।\nपुत्रार्थी लभते पुत्रान् मोक्षार्थी लभते गतिम् ॥ ६ ॥",
+      "iast": "vidyārthī labhatē vidyāṁ dhanārthī labhatē dhanam ।\nputrārthī labhatē putrān mōkṣārthī labhatē gatim ॥ 6 ॥",
+      "transliterations": {
+        "telugu": "విద్యార్థీ లభతే విద్యాం ధనార్థీ లభతే ధనమ్ ।\nపుత్రార్థీ లభతే పుత్రాన్ మోక్షార్థీ లభతే గతిమ్ ॥ ౬ ॥",
+        "tamil": "வித்யார்தீ லபதே வித்யாம் தநார்தீ லபதே தநம் ।\nபுத்ரார்தீ லபதே புத்ராந் மோக்ஷார்தீ லபதே கதிம் ॥ ௬ ॥",
+        "kannada": "ವಿದ್ಯಾರ್ಥೀ ಲಭತೇ ವಿದ್ಯಾಂ ಧನಾರ್ಥೀ ಲಭತೇ ಧನಮ್ ।\nಪುತ್ರಾರ್ಥೀ ಲಭತೇ ಪುತ್ರಾನ್ ಮೋಕ್ಷಾರ್ಥೀ ಲಭತೇ ಗತಿಮ್ ॥ ೬ ॥",
+        "malayalam": "വിദ്യാര്ഥീ ലഭതേ വിദ്യാം ധനാര്ഥീ ലഭതേ ധനമ് ।\nപുത്രാര്ഥീ ലഭതേ പുത്രാന് മോക്ഷാര്ഥീ ലഭതേ ഗതിമ് ॥ ൬ ॥",
+        "iast": "vidyārthī labhate vidyāṃ dhanārthī labhate dhanam |\nputrārthī labhate putrān mokṣārthī labhate gatim || 6 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "The seeker of knowledge attains wisdom; the seeker of wealth secures abundance; the seeker of offspring is blessed with noble children; and the seeker of liberation attains the supreme spiritual goal.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "विद्या चाहने वाले को विद्या, धन चाहने वाले को धन, संतान चाहने वाले को उत्तम संतान और मोक्ष चाहने वाले को परम गति प्राप्त होती है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "విద్యార్థికి ఉత్తమ విద్య, ధనార్థికి సంపద, సంతానార్థికి సత్సంతానము, మోక్షార్థికి పరమగతి లభించును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "கல்வி வேண்டுவோர்க்குக் கல்வியும், செல்வம் வேண்டுவோர்க்குச் செல்வமும், புத்திரப்பேறு வேண்டுவோர்க்கு நன்மக்கட்பேறும், முக்தி விரும்புவோர்க்கு வீடுபேறும் கிட்டும்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ವಿದ್ಯಾರ್ಥಿಗೆ ವಿದ್ಯೆಯೂ, ಧನಾರ್ಥಿಗೆ ಧನವೂ, ಪುತ್ರಾರ್ಥಿಗೆ ಸತ್ಪುತ್ರನೂ, ಮೋಕ್ಷಾರ್ಥಿಗೆ ಸದ್ಗತಿಯೂ ಪ್ರಾಪ್ತವಾಗುತ್ತದೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "विद्यार्थ्याला विद्या, धन इच्छिणाऱ्याला धन, संतती इच्छिणाऱ्याला उत्तम संतती आणि मोक्ष इच्छिणाऱ्याला परम गती प्राप्त होते.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "বিদ্যার্থী বিদ্যা লাভ করেন, ধনার্থী ধন লাভ করেন, পুত্রকামী সুপুত্র লাভ করেন এবং মোক্ষকামী পরম মুক্তি লাভ করেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "વિદ્યાર્થીને ઉત્તમ વિદ્યા, ધનની ઈચ્છાવાળાને ધન, પુત્રની ઈચ્છાવાળાને સુપુત્ર અને મોક્ષાર્થીને સદ્ગતિ પ્રાપ્ત થાય છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "വിദ്യാർത്ഥിക്ക് വിദ്യയും, ധനാർത്ഥിക്ക് ധനവും, പുത്രാർത്ഥിക്ക് സൽപുത്രനും, മോക്ഷാർത്ഥിക്ക് പരമഗതിയും ലഭിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ବିଦ୍ୟାର୍ଥୀଙ୍କୁ ବିଦ୍ୟା, ଧନାର୍ଥୀଙ୍କୁ ଧନ, ସନ୍ତାନାର୍ଥୀଙ୍କୁ ସୁସନ୍ତାନ ଏବଂ ମୋକ୍ଷାର୍ଥୀଙ୍କୁ ପରମଗତି ପ୍ରାପ୍ତ ହୁଏ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 7,
+      "verse_type": "PHALASRUTI",
+      "original_sanskrit": "जपेद्गणपतिस्तोत्रं षड्भिर्मासैः फलं लभेत् ।\nसंवत्सरेण सिद्धिं च लभते नात्र संशयः ॥ ७ ॥",
+      "iast": "japēdgaṇapatistōtraṁ ṣaḍbhirmāsaiḥ phalaṁ labhēt ।\nsaṁvatsarēṇa siddhiṁ ca labhatē nātra saṁśayaḥ ॥ 7 ॥",
+      "transliterations": {
+        "telugu": "జపేద్గణపతిస్తోత్రం షడ్భిర్మాసైః ఫలం లభేత్ ।\nసంవత్సరేణ సిద్ధిం చ లభతే నాత్ర సంశయః ॥ ౭ ॥",
+        "tamil": "ஜபேத்கணபதிஸ்தோத்ரம் ஷட்பிர்மாஸைஃ பலம் லபேத் ।\nஸம்வத்ஸரேண ஸித்திம் ச லபதே நாத்ர ஸம்ஶயஃ ॥ ௭ ॥",
+        "kannada": "ಜಪೇದ್ಗಣಪತಿಸ್ತೋತ್ರಂ ಷಡ್ಭಿರ್ಮಾಸೈಃ ಫಲಂ ಲಭೇತ್ ।\nಸಂವತ್ಸರೇಣ ಸಿದ್ಧಿಂ ಚ ಲಭತೇ ನಾತ್ರ ಸಂಶಯಃ ॥ ೭ ॥",
+        "malayalam": "ജപേദ്ഗണപതിസ്തോത്രം ഷഡ്ഭിര്മാസൈഃ ഫലം ലഭേത് ।\nസംവത്സരേണ സിദ്ധിം ച ലഭതേ നാത്ര സംശയഃ ॥ ൭ ॥",
+        "iast": "japedgaṇapatistotraṃ ṣaḍbhirmāsaiḥ phalaṃ labhet |\nsaṃvatsareṇa siddhiṃ ca labhate nātra saṃśayaḥ || 7 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "By chanting this Ganapati Stotram, one reaps the fruit within six months, and within one year one attains total spiritual and material success—of this there is no doubt.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "इस गणपति स्तोत्र का जप करने से छह महीने में अभीष्ट फल की प्राप्ति होती है और एक वर्ष तक निरंतर जप करने से मनुष्य पूर्ण सिद्धि को प्राप्त कर लेता है, इसमें संशय नहीं है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఈ గణపతి స్తోత్రమును భక్తితో జపించినచో ఆరు నెలలలో సత్ఫలితము లభించును, ఒక సంవత్సరము నిరంతరము జపించినచో సర్వసిద్ధులు కలుగును, ఇందులో ఎట్టి సంశయము లేదు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இக்கணபதி ஸ்தோத்திரத்தை நித்தம் ஜபித்து வர, ஆறு மாதங்களில் விரும்பிய பலன் கிட்டும்; ஒரு வருடம் தொடர்ந்து ஜபிப்போர்க்குச் சகல சித்திகளும் உண்டாகும், ஐயமில்லை.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಈ ಗಣಪತಿ ಸ್ತೋತ್ರವನ್ನು ಜಪಿಸುವುದರಿಂದ ಆರು ತಿಂಗಳಲ್ಲಿ ಇಷ್ಟಾರ್ಥ ಸಿದ್ಧಿಯಾಗುತ್ತದೆ, ಒಂದು ವರ್ಷ ನಿರಂತರವಾಗಿ ಜಪಿಸಿದರೆ ಸಕಲ ಸಿದ್ಧಿಗಳು ಲಭಿಸುತ್ತವೆ, ಇದರಲ್ಲಿ ಸಂಶಯವಿಲ್ಲ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "या गणपती स्तोत्राचा जप केल्याने सहा महिन्यांत मनोवांछित फळ मिळते आणि एका वर्षात पूर्ण सिद्धी प्राप्त होते, यात तिळमात्र शंका नाही.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "এই গণপতি স্তোত্র জপ করলে ছয় মাসে অভীষ্ট ফল লাভ হয় এবং এক বছর নিয়মিত জপ করলে সর্বসিদ্ধি করায়ত্ত হয়, এতে কোনো সংশয় নেই।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આ ગણપતિ સ્તોત્રનો જપ કરવાથી છ માસમાં મનોવાંચ્છિત ફળ મળે છે અને એક વર્ષ સુધી જપ કરવાથી સર્વ સિદ્ધિઓ પ્રાપ્ત થાય છે, એમાં કોઈ સંશય નથી.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഈ ഗണപതിസ്തോത്രം ജപിക്കുന്നതിലൂടെ ആറുമാസംകൊണ്ട് അഭീഷ്ടഫലം ലഭിക്കുന്നു; ഒരുവർഷം തുടർച്ചയായി ജപിച്ചാൽ സകലസിദ്ധികളും കൈവരുന്നു, ഇതിൽ സംശയമില്ല.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଏହି ଗଣପତି ସ୍ତୋତ୍ର ଜପ କଲେ ଛଅ ମାସ ମଧ୍ୟରେ ଅଭୀଷ୍ଟ ଫଳ ମିଳେ ଏବଂ ଏକ ବର୍ଷ ନିରନ୍ତର ଜପ କଲେ ପୂର୍ଣ୍ଣ ସିଦ୍ଧି ପ୍ରାପ୍ତ ହୁଏ, ଏଥିରେ କୌଣସି ସଂଶୟ ନାହିଁ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 8,
+      "verse_type": "PHALASRUTI",
+      "original_sanskrit": "अष्टभ्यो ब्राह्मणेभ्यश्च लिखित्वा यः समर्पयेत् ।\nतस्य विद्या भवेत्सर्वा गणेशस्य प्रसादतः ॥ ८ ॥",
+      "iast": "aṣṭabhyō brāhmaṇēbhyaśca likhitvā yaḥ samarpayēt ।\ntasya vidyā bhavētsarvā gaṇēśasya prasādataḥ ॥ 8 ॥",
+      "transliterations": {
+        "telugu": "అష్టభ్యో బ్రాహ్మణేభ్యశ్చ లిఖిత్వా యః సమర్పయేత్ ।\nతస్య విద్యా భవేత్సర్వా గణేశస్య ప్రసాదతః ॥ ౮ ॥",
+        "tamil": "அஷ்டப்யோ ப்ராஹ்மணேப்யஶ்ச லிகித்வா யஃ ஸமர்பயேத் ।\nதஸ்ய வித்யா பவேத்ஸர்வா கணேஶஸ்ய ப்ரஸாததஃ ॥ ௮ ॥",
+        "kannada": "ಅಷ್ಟಭ್ಯೋ ಬ್ರಾಹ್ಮಣೇಭ್ಯಶ್ಚ ಲಿಖಿತ್ವಾ ಯಃ ಸಮರ್ಪಯೇತ್ ।\nತಸ್ಯ ವಿದ್ಯಾ ಭವೇತ್ಸರ್ವಾ ಗಣೇಶಸ್ಯ ಪ್ರಸಾದತಃ ॥ ೮ ॥",
+        "malayalam": "അഷ്ടഭ്യോ ബ്രാഹ്മണേഭ്യശ്ച ലിഖിത്വാ യഃ സമര്പയേത് ।\nതസ്യ വിദ്യാ ഭവേത്സര്വാ ഗണേശസ്യ പ്രസാദതഃ ॥ ൮ ॥",
+        "iast": "aṣṭabhyo brāhmaṇebhyaśca likhitvā yaḥ samarpayet |\ntasya vidyā bhavetsarvā gaṇeśasya prasādataḥ || 8 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Whoever transcribes this sacred hymn and offers it to eight learned devotees attains all knowledge through the divine grace of Lord Ganesha.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जो इसे लिखकर आठ सुयोग्य ब्राह्मणों को श्रद्धापूर्वक समर्पित करता है, उस पर भगवान गणेश की ऐसी कृपा होती है कि वह समस्त विद्याओं में पारंगत हो जाता है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఎవరైతే ఈ పవిత్ర స్తోత్రమును స్వయముగా లిఖించి ఎనమండుగురు ఉత్తమ బ్రాహ్మణులకు సమర్పింతురో, వారికి శ్రీ గణేశుని అనుగ్రహము వలన సమస్త విద్యలు కరతలామలకమగును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இப்புனித ஸ்தோத்திரத்தை எழுதி, எட்டு உத்தம அந்தணர்களுக்குத் தானமாக அளிப்பவனுக்கு, விநாயகரின் திருவருளால் சகல கலைகளும் கல்வியும் வசப்படும்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಯಾರು ಈ ಪವಿತ್ರ ಸ್ತೋತ್ರವನ್ನು ಬರೆದು ಎಂಟು ಮಂದಿ ಸದ್ಬ್ರಾಹ್ಮಣರಿಗೆ ಸಮರ್ಪಿಸುವರೋ, ಅವರಿಗೆ ಶ್ರೀ ಗಣಪತಿಯ ಕೃಪೆಯಿಂದ ಸಕಲ ವಿದ್ಯೆಗಳು ಸಿದ್ಧಿಸುತ್ತವೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जो हे स्तोत्र लिहून आठ सुयोग्य ब्राह्मणांना भक्तीभावाने अर्पण करतो, त्याला भगवान गणेशाच्या कृपेने सर्व विद्या प्राप्त होतात.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যিনি এই পবিত্র স্তোত্র লিখে আটজন সৎ ব্রাহ্মণকে সমর্পণ করেন, শ্রীগণেশের কৃপায় তিনি সর্ববিদ্যায় পারঙ্গম হন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જે આ સ્તોત્રને લખીને આઠ સદ્બ્રાહ્મણોને શ્રદ્ધાપૂર્વક અર્પણ કરે છે, તેના પર શ્રી ગણેશજીની કૃપાથી સર્વ વિદ્યાઓ સહજ સિદ્ધ થાય છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഈ പവിത്രസ്തോത്രം എഴുതി എട്ടു സദ്ബ്രാഹ്മണർക്ക് സമർപ്പിക്കുന്നവന്, ഗണപതിഭഗവാന്റെ കൃപയാൽ സകലവിദ്യകളും അനಾಯാസമായി സിദ്ധിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯେଉଁ ବ୍ୟକ୍ତି ଏହାକୁ ଲେଖି ଆଠ ଜଣ ସୁଯୋଗ୍ୟ ବ୍ରାହ୍ମଣଙ୍କୁ ସମର୍ପଣ କରେ, ଶ୍ରୀ ଗଣେଶଙ୍କ କୃପାରୁ ତାହାକୁ ସମସ୍ତ ବିଦ୍ୟା ପ୍ରାପ୍ତ ହୁଏ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    }
+  ]
+}

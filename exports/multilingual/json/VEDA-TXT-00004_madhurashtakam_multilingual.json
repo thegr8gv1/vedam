@@ -1,0 +1,690 @@
+{
+  "content_id": "VEDA-TXT-00004",
+  "canonical_title": "Madhurashtakam",
+  "devanagari_title": "मधुराष्टकम्",
+  "composer": "Jagadguru Vallabhacharya (1479–1531 CE)",
+  "source_scripture": "Shuddhadvaita Pushtimarga Canon",
+  "verse_count": 9,
+  "generated_at_utc": "2026-11-04T23:14:39.169367+00:00",
+  "supported_languages": [
+    "sa",
+    "hi",
+    "te",
+    "ta",
+    "kn",
+    "mr",
+    "bn",
+    "gu",
+    "ml",
+    "or",
+    "en"
+  ],
+  "verses": [
+    {
+      "verse_number": 1,
+      "verse_type": "VERSE",
+      "original_sanskrit": "अधरं मधुरं वदनं मधुरं नयनं मधुरं हसितं मधुरम् ।\nहृदयं मधुरं गमनं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ १ ॥",
+      "iast": "adharaṁ madhuraṁ vadanaṁ madhuraṁ nayanaṁ madhuraṁ hasitaṁ madhuram ।\nhṛdayaṁ madhuraṁ gamanaṁ madhuraṁ madhurādhipaterakhilaṁ madhuram ॥ 1 ॥",
+      "transliterations": {
+        "telugu": "అధరం మధురం వదనం మధురం నయనం మధురం హసితం మధురమ్ ।\nహృదయం మధురం గమనం మధురం మధురాధిపతేరఖిలం మధురమ్ ॥ ౧ ॥",
+        "tamil": "அதரம் மதுரம் வதநம் மதுரம் நயநம் மதுரம் ஹஸிதம் மதுரம் ।\nஹ்ரு'தயம் மதுரம் கமநம் மதுரம் மதுராதிபதேரகிலம் மதுரம் ॥ ௧ ॥",
+        "kannada": "ಅಧರಂ ಮಧುರಂ ವದನಂ ಮಧುರಂ ನಯನಂ ಮಧುರಂ ಹಸಿತಂ ಮಧುರಮ್ ।\nಹೃದಯಂ ಮಧುರಂ ಗಮನಂ ಮಧುರಂ ಮಧುರಾಧಿಪತೇರಖಿಲಂ ಮಧುರಮ್ ॥ ೧ ॥",
+        "malayalam": "അധരം മധുരം വദനം മധുരം നയനം മധുരം ഹസിതം മധുരമ് ।\nഹൃദയം മധുരം ഗമനം മധുരം മധുരാധിപതേരഖിലം മധുരമ് ॥ ൧ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "His lips are sweet, His face is sweet, His eyes are sweet, His gentle smile is sweet; His heart is sweet, His graceful gait is sweet—everything pertaining to the Lord of Sweetness is utterly sweet.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "श्रीकृष्ण के अधर मधुर हैं, मुख मधुर है, नेत्र मधुर हैं, उनकी मधुर मुस्कान मधुर है, उनका हृदय मधुर है और उनकी चाल भी अति मधुर है—मधुराधिपति भगवान श्रीकृष्ण का सब कुछ अत्यंत मधुर है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "శ్రీకృష్ణుని పెదవులు మధురము, ముఖము మధురము, నేత్రములు మధురము, చిరునవ్వు మధురము, హృదయము మధురము, నడకయు మధురము; మధురాధిపతియైన ఆ శ్రీకృష్ణుని సమస్తము అతి మధురము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஸ்ரீகிருஷ்ணரின் இதழ்கள் மதுரமானவை, திருமுகம் மதுரமானது, கண்கள் மதுரமானவை, புன்னகை மதுரமானது, இதயம் மதுரமானது, நடையும் மதுரமானது; மதுராதிபதியான ஸ்ரீகிருஷ்ணரின் எல்லாமே மதுரமானவை.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಶ್ರೀಕೃಷ್ಣನ ತುಟಿಗಳು ಮಧುರ, ಮುಖವು ಮಧುರ, ಕಣ್ಣುಗಳು ಮಧುರ, ಮಂದಹಾಸವು ಮಧುರ, ಹೃದಯವು ಮಧುರ, ನಡಿಗೆಯು ಮಧುರ; ಮಧುರಾಧಿಪತಿಯಾದ ಶ್ರೀಕೃಷ್ಣನ ಸಮಸ್ತವೂ ಪರಮ ಮಧುರ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "श्रीकृष्णांचे ओठ मधुर आहेत, मुख मधुर आहे, डोळे मधुर आहेत, हास्य मधुर आहे, हृदय मधुर आहे आणि चालणेही मधुर आहे; त्या मधुराधिपती श्रीकृष्णांचे सर्व काही अत्यंत मधुर आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "শ্রীকৃষ্ণের অধর মধুর, মুখমণ্ডল মধুর, নয়নযুগল মধুর, মধুর হাসি মধুর, হৃদয় মধুর এবং চরণচালনাও মধুর; মধুরাধি পতি পরমেশ্বরের সবকিছুই পরম মধুর।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "શ્રીકૃષ્ણના હોઠ મધુર છે, મુખારવિંદ મધુર છે, નેત્રો મધુર છે, હાસ્ય મધુર છે, હૃદય મધુર છે અને ગતિ પણ મધુર છે; મધુરાધિપતિ શ્રીકૃષ્ણનું સઘળું અતિ મધુર છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ശ്രീകൃഷ്ണന്റെ അധരങ്ങൾ മധുരം, മുഖം മധുരം, നേത്രങ്ങൾ മധുരം, മന്ദഹാസം മധുരം, ഹൃദയം മധുരം, ഗമനവും മധുരം; മധുരാധിപനായ കൃഷ്ണന്റെ സർവ്വവും പരമമധുരം തന്നെ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଶ୍ରୀକୃଷ୍ଣଙ୍କ ଓଠ ମଧୁର, ମୁଖ ମଧୁର, ନୟନ ମଧୁର, ହସ ମଧୁର, ହୃଦୟ ମଧୁର ତଥା ଗତି ମଧ୍ୟ ମଧୁର; ମଧୁରାଧିପତି ଶ୍ରୀକୃଷ୍ଣଙ୍କ ସମସ୍ତ କିଛି ଅତି ମଧୁର ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 2,
+      "verse_type": "VERSE",
+      "original_sanskrit": "वचनं मधुरं चरितं मधुरं वसनं मधुरं वलितं मधुरम् ।\nचलितं मधुरं भ्रमितं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ २ ॥",
+      "iast": "vacanaṁ madhuraṁ caritaṁ madhuraṁ vasanaṁ madhuraṁ valitaṁ madhuram ।\ncalitaṁ madhuraṁ bhramitaṁ madhuraṁ madhurādhipaterakhilaṁ madhuram ॥ 2 ॥",
+      "transliterations": {
+        "telugu": "వచనం మధురం చరితం మధురం వసనం మధురం వలితం మధురమ్ ।\nచలితం మధురం భ్రమితం మధురం మధురాధిపతేరఖిలం మధురమ్ ॥ ౨ ॥",
+        "tamil": "வசநம் மதுரம் சரிதம் மதுரம் வஸநம் மதுரம் வலிதம் மதுரம் ।\nசலிதம் மதுரம் ப்ரமிதம் மதுரம் மதுராதிபதேரகிலம் மதுரம் ॥ ௨ ॥",
+        "kannada": "ವಚನಂ ಮಧುರಂ ಚರಿತಂ ಮಧುರಂ ವಸನಂ ಮಧುರಂ ವಲಿತಂ ಮಧುರಮ್ ।\nಚಲಿತಂ ಮಧುರಂ ಭ್ರಮಿತಂ ಮಧುರಂ ಮಧುರಾಧಿಪತೇರಖಿಲಂ ಮಧುರಮ್ ॥ ೨ ॥",
+        "malayalam": "വചനം മധുരം ചരിതം മധുരം വസനം മധുരം വലിതം മധുരമ് ।\nചലിതം മധുരം ഭ്രമിതം മധുരം മധുരാധിപതേരഖിലം മധുരമ് ॥ ൨ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "His speech is sweet, His divine character is sweet, His silk attire is sweet, His posture is sweet; His walking is sweet, His wandering about is sweet—everything pertaining to the Lord of Sweetness is utterly sweet.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "उनकी वाणी मधुर है, चरित्र मधुर है, वस्त्र मधुर हैं, उनकी भावभंगिमा मधुर है, उनका भ्रमण मधुर है और उनका भ्रमित होना भी मधुर है—मधुराधिपति का सब कुछ मधुर है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆయన పలుకులు మధురము, చరిత్ర మధురము, వస్త్రధారణ మధురము, భంగిమలు మధురము, సంచారము మధురము, లీలావిహారము మధురము; మధురాధిపతి సమస్తము మధురము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அவரது மொழிகள் மதுரமானவை, சரித்திரம் மதுரமானது, உடைகள் மதுரமானவை, அங்க அசைவுகள் மதுரமானவை, உலவுதல் மதுரமானது, பாவனைகள் மதுரமானவை; மதுராதிபதியின் எல்லாமே மதுரமானவை.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಆತನ ಮಾತುಗಳು ಮಧುರ, ಚರಿತ್ರೆಯು ಮಧುರ, ವಸ್ತ್ರವು ಮಧುರ, ನಿಲುವಿನ ಭಂಗಿಯು ಮಧುರ, ಸಂಚಾರವು ಮಧುರ, ಲೀಲೆಗಳು ಮಧುರ; ಮಧುರಾಧಿಪತಿಯ ಸಮಸ್ತವೂ ಮಧುರ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "त्यांचे बोलणे मधुर आहे, आचरण मधुर आहे, वस्त्रे मधुर आहेत, वळणे मधुर आहेत, संचार मधुर आहे आणि लीलाही मधुर आहेत; मधुराधिपतीचे सर्व काही मधुर आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তাঁর বাক্য মধুর, চরিত্র মধুর, বসন মধুর, অঙ্গভঙ্গি মধুর, পরিভ্রমণ মধুর এবং লীলাবিহারও মধুর; মধুরাধিপতির সবকিছুই মধুর।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તેમની વાણી મધુર છે, ચરિત્ર મધુર છે, વસ્ત્રો મધુર છે, અંગમરોડ મધુર છે, ભ્રમણ મધુર છે અને ભ્રમણા પણ મધુર છે; મધુરાધિપતિનું સઘળું મધુર છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അവിടുത്തെ വചനം മധുരം, ചരിതം മധുരം, വസ്ത്രം മധുരം, അംഗചലനങ്ങൾ മധുരം, സഞ്ചാരം മധുരം, ലീലകളും മധുരം; മധുരാധിപന്റെ സർവ്വവും മധുരം.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତାଙ୍କର ବାଣୀ ମଧୁର, ଚରିତ୍ର ମଧୁର, ବସ୍ତ୍ର ମଧୁର, ଅଙ୍ଗଭଙ୍ଗୀ ମଧୁର, ଭ୍ରମଣ ମଧୁର ଏବଂ ଲୀଳା ମଧ୍ୟ ମଧୁର; ମଧୁରାଧିପତିଙ୍କ ସମସ୍ତ କିଛି ମଧୁର ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 3,
+      "verse_type": "VERSE",
+      "original_sanskrit": "वेणुर्मधुरो रेणुर्मधुरः पाणिर्मधुरः पादौ मधुरौ ।\nनृत्यं मधुरं सख्यं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ ३ ॥",
+      "iast": "veṇurmadhuro reṇurmadhuraḥ pāṇirmadhuraḥ pādau madhurau ।\nnṛtyaṁ madhuraṁ sakhyaṁ madhuraṁ madhurādhipaterakhilaṁ madhuram ॥ 3 ॥",
+      "transliterations": {
+        "telugu": "వేణుర్మధురో రేణుర్మధురః పాణిర్మధురః పాదౌ మధురౌ ।\nనృత్యం మధురం సఖ్యం మధురం మధురాధిపతేరఖిలం మధురమ్ ॥ ౩ ॥",
+        "tamil": "வேணுர்மதுரோ ரேணுர்மதுரஃ பாணிர்மதுரஃ பாதௌ மதுரௌ ।\nந்ரு'த்யம் மதுரம் ஸக்யம் மதுரம் மதுராதிபதேரகிலம் மதுரம் ॥ ௩ ॥",
+        "kannada": "ವೇಣುರ್ಮಧುರೋ ರೇಣುರ್ಮಧುರಃ ಪಾಣಿರ್ಮಧುರಃ ಪಾದೌ ಮಧುರೌ ।\nನೃತ್ಯಂ ಮಧುರಂ ಸಖ್ಯಂ ಮಧುರಂ ಮಧುರಾಧಿಪತೇರಖಿಲಂ ಮಧುರಮ್ ॥ ೩ ॥",
+        "malayalam": "വേണുര്മധുരോ രേണുര്മധുരഃ പാണിര്മധുരഃ പാദൌ മധുരൌ ।\nനൃത്യം മധുരം സഖ്യം മധുരം മധുരാധിപതേരഖിലം മധുരമ് ॥ ൩ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "His flute is sweet, the dust of His lotus feet is sweet, His hands are sweet, His feet are sweet; His dancing is sweet, His friendship is sweet—everything pertaining to the Lord of Sweetness is utterly sweet.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "उनकी बाँसुरी मधुर है, उनके चरण-रज मधुर हैं, उनके कोमल हस्तकमल मधुर हैं, उनके चरणकमल मधुर हैं, उनका नृत्य मधुर है और उनकी सख्य-प्रीति भी मधुर है—मधुराधिपति का सब कुछ मधुर है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆయన వేణుగానము మధురము, పాదధూళి మధురము, హస్తములు మధురము, పాదపద్మములు మధురము, నృత్యము మధురము, మైత్రియు మధురము; మధురాధిపతి సమస్తము మధురము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அவரது புல்லாங்குழல் மதுரமானது, திருப்பாதத் தூசிகள் மதுரமானவை, திருக்கரங்கள் மதுரமானவை, பாதங்கள் மதுரமானவை, நடனம் மதுரமானது, நட்பும் மதுரமானது; மதுராதிபதியின் எல்லாமே மதுரமானவை.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಆತನ ಕೊಳಲು ಮಧುರ, ಪಾದಧೂಳಿಯು ಮಧುರ, ಕರಕಮಲಗಳು ಮಧುರ, ಪಾದಗಳು ಮಧುರ, ನೃತ್ಯವು ಮಧುರ, ಸ್ನೇಹವು ಮಧುರ; ಮಧುರಾಧಿಪತಿಯ ಸಮಸ್ತವೂ ಮಧುರ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "त्यांची बासरी मधुर आहे, चरणधूळ मधुर आहे, हात मधुर आहेत, पाय मधुर आहेत, नृत्य मधुर आहे आणि मैत्रीही मधुर आहे; मधुराधिपतीचे सर्व काही मधुर आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তাঁর বেণুগান মধুর, পদধূলি মধুর, কোমল হস্তযুগল মধুর, চরণযুগল মধুর, নৃত্য মধুর এবং সখ্যভাবও মধুর; মধুরাধিপতির সবকিছুই মধুর।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તેમની વાંસળી મધુર છે, ચરણરજ મધુર છે, હસ્તકમળ મધુર છે, ચરણકમળ મધુર છે, નૃત્ય મધુર છે અને સખ્યભાવ પણ મધુર છે; મધુરાધિપતિનું સઘળું મધુર છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അവിടുത്തെ വേണുനാദം മധുരം, പാദധൂളി മധുരം, കരങ്ങൾ മധുരം, പാദങ്ങൾ മധുരം, നൃത്തം മധുരം, സൗഹൃദവും മധുരം; മധുരാധിപന്റെ സർവ്വവും മധുരം.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତାଙ୍କ ବଂଶୀ ମଧୁର, ପାଦଧୂଳି ମଧୁର, ହାତ ମଧୁର, ପାଦ ମଧୁର, ନୃତ୍ୟ ମଧୁର ଏବଂ ସଖାଭାବ ମଧ୍ୟ ମଧୁର; ମଧୁରାଧିପତିଙ୍କ ସମସ୍ତ କିଛି ମଧୁର ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 4,
+      "verse_type": "VERSE",
+      "original_sanskrit": "गीतं मधुरं पीतं मधुरं भुक्तं मधुरं सुप्तं मधुरम् ।\nरूपं मधुरं तिलकं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ ४ ॥",
+      "iast": "gītaṁ madhuraṁ pītaṁ madhuraṁ bhuktaṁ madhuraṁ suptaṁ madhuram ।\nrūpaṁ madhuraṁ tilakaṁ madhuraṁ madhurādhipaterakhilaṁ madhuram ॥ 4 ॥",
+      "transliterations": {
+        "telugu": "గీతం మధురం పీతం మధురం భుక్తం మధురం సుప్తం మధురమ్ ।\nరూపం మధురం తిలకం మధురం మధురాధిపతేరఖిలం మధురమ్ ॥ ౪ ॥",
+        "tamil": "கீதம் மதுரம் பீதம் மதுரம் புக்தம் மதுரம் ஸுப்தம் மதுரம் ।\nரூபம் மதுரம் திலகம் மதுரம் மதுராதிபதேரகிலம் மதுரம் ॥ ௪ ॥",
+        "kannada": "ಗೀತಂ ಮಧುರಂ ಪೀತಂ ಮಧುರಂ ಭುಕ್ತಂ ಮಧುರಂ ಸುಪ್ತಂ ಮಧುರಮ್ ।\nರೂಪಂ ಮಧುರಂ ತಿಲಕಂ ಮಧುರಂ ಮಧುರಾಧಿಪತೇರಖಿಲಂ ಮಧುರಮ್ ॥ ೪ ॥",
+        "malayalam": "ഗീതം മധുരം പീതം മധുരം ഭുക്തം മധുരം സുപ്തം മധുരമ് ।\nരൂപം മധുരം തിലകം മധുരം മധുരാധിപതേരഖിലം മധുരമ് ॥ ൪ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "His singing is sweet, His yellow garment is sweet, His eating is sweet, His sleeping is sweet; His beauty is sweet, His forehead tilaka is sweet—everything pertaining to the Lord of Sweetness is utterly sweet.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "उनका गायन मधुर है, उनका जलपान मधुर है, उनका भोजन मधुर है, उनका शयन मधुर है, उनका रूप-सौंदर्य मधुर है और उनका तिलक भी मधुर है—मधुराधिपति का सब कुछ मधुर है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆయన గానము మధురము, పానము మధురము, భోజనము మధురము, శయనము మధురము, దివ్యరూపము మధురము, తిలకము మధురము; మధురాధిపతి సమస్తము మధురము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அவரது கீதம் மதுரமானது, பருகுதல் மதுரமானது, உண்ணுதல் மதுரமானது, உறங்குதல் மதுரமானது, எழிலுருவம் மதுரமானது, திருத்திலகம் மதுரமானது; மதுராதிபதியின் எல்லாமே மதுரமானவை.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಆತನ ಗಾಯನವು ಮಧುರ, ಪಾನವು ಮಧುರ, ಭೋಜನವು ಮಧುರ, ನಿದ್ರೆಯು ಮಧುರ, ಸೌಂದರ್ಯವು ಮಧುರ, ಹಣೆಯ ತಿಲಕವು ಮಧುರ; ಮಧುರಾಧಿಪತಿಯ ಸಮಸ್ತವೂ ಮಧುರ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "त्यांचे गायन मधुर आहे, जलपान मधुर आहे, भोजन मधुर आहे, निद्रा मधुर आहे, रूप मधुर आहे आणि टिळाही मधुर आहे; मधुराधिपतीचे सर्व काही मधुर आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তাঁর গান মধুর, পানীয় গ্রহণ মধুর, ভোজন মধুর, শয়ন মধুর, অনুপম রূপ মধুর এবং তিলকও মধুর; মধুরাধিপতির সবকিছুই মধুর।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તેમનું ગાન મધુર છે, પાન મધુર છે, ભોજન મધુર છે, શયન મધુર છે, રૂપ મધુર છે અને તિલક પણ મધુર છે; મધુરાધિપતિનું સઘળું મધુર છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അവിടുത്തെ ഗാനം മധുരം, പാനം മധുരം, ഭോജനം മധുരം, ശയനം മധുരം, രൂപഭംഗി മധുരം, തിലകവും മധുരം; മധുരാധിപന്റെ സർവ്വവും മധുരം.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତାଙ୍କ ଗାନ ମଧୁର, ପାନ ମଧୁର, ଭୋଜନ ମଧୁର, ଶୟନ ମଧୁର, ସୁନ୍ଦର ରୂପ ମଧୁର ଏବଂ ତିଳକ ମଧ୍ୟ ମଧୁର; ମଧୁରାଧିପତିଙ୍କ ସମସ୍ତ କିଛି ମଧୁର ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 5,
+      "verse_type": "VERSE",
+      "original_sanskrit": "करणं मधुरं तरणं मधुरं हरणं मधुरं रमणं मधुरम् ।\nवमितं मधुरं शमितं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ ५ ॥",
+      "iast": "karaṇaṁ madhuraṁ taraṇaṁ madhuraṁ haraṇaṁ madhuraṁ ramaṇaṁ madhuram ।\nvamitaṁ madhuraṁ śamitaṁ madhuraṁ madhurādhipaterakhilaṁ madhuram ॥ 5 ॥",
+      "transliterations": {
+        "telugu": "కరణం మధురం తరణం మధురం హరణం మధురం రమణం మధురమ్ ।\nవమితం మధురం శమితం మధురం మధురాధిపతేరఖిలం మధురమ్ ॥ ౫ ॥",
+        "tamil": "கரணம் மதுரம் தரணம் மதுரம் ஹரணம் மதுரம் ரமணம் மதுரம் ।\nவமிதம் மதுரம் ஶமிதம் மதுரம் மதுராதிபதேரகிலம் மதுரம் ॥ ௫ ॥",
+        "kannada": "ಕರಣಂ ಮಧುರಂ ತರಣಂ ಮಧುರಂ ಹರಣಂ ಮಧುರಂ ರಮಣಂ ಮಧುರಮ್ ।\nವಮಿತಂ ಮಧುರಂ ಶಮಿತಂ ಮಧುರಂ ಮಧುರಾಧಿಪತೇರಖಿಲಂ ಮಧುರಮ್ ॥ ೫ ॥",
+        "malayalam": "കരണം മധുരം തരണം മധുരം ഹരണം മധുരം രമണം മധുരമ് ।\nവമിതം മധുരം ശമിതം മധുരം മധുരാധിപതേരഖിലം മധുരമ് ॥ ൫ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "His deeds are sweet, His swimming across is sweet, His captivating theft of hearts is sweet, His sports are sweet; His offerings are sweet, His peaceful tranquility is sweet—everything pertaining to the Lord of Sweetness is utterly sweet.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "उनके कर्म मधुर हैं, भक्तों को भवसागर से तारना मधुर है, चित्त का हरण करना मधुर है, उनका रमण करना मधुर है, उनका वंदन मधुर है और उनका शांत स्वरूप भी मधुर है—मधुराधिपति का सब कुछ मधुर है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆయన కార్యములు మధురము, భవసాగర తరణము మధురము, చిత్తాపహరణము మధురము, లీలావిహారము మధురము, వందనము మధురము, శాంతియు మధురము; మధురాధిపతి సమస్తము మధురము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அவரது செயல்கள் மதுரமானவை, கரையேற்றுதல் மதுரமானது, மனங்கவர்தல் மதுரமானது, லீலைகள் மதுரமானவை, வணங்குதல் மதுரமானது, சாந்தமும் மதுரமானது; மதுராதிபதியின் எல்லாமே மதுரமானவை.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಆತನ ಕಾರ್ಯಗಳು ಮಧುರ, ಉದ್ಧಾರವು ಮಧುರ, ಮನಸ್ಸನ್ನು ಸೆಳೆಯುವುದು ಮಧುರ, ವಿಹಾರವು ಮಧುರ, ನಮಸ್ಕಾರವು ಮಧುರ, ಪ್ರಶಾಂತತೆಯು ಮಧುರ; ಮಧುರಾಧಿಪತಿಯ ಸಮಸ್ತವೂ ಮಧುರ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "त्यांचे कर्म मधुर आहे, भक्तांना भवसागरातून तारणे मधुर आहे, मन हरण करणे मधुर आहे, रमण मधुर आहे, वंदन मधुर आहे आणि शांतीही मधुर आहे; मधुराधिपतीचे सर्व काही मधुर आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তাঁর কর্ম মধুর, ভবতারণ মধুর, চিত্তহরণ মধুর, রমণ মধুর, বন্দনা মধুর এবং পরম প্রশান্তিও মধুর; মধুরাধিপতির সবকিছুই মধুর।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તેમનાં કાર્ય મધુર છે, ભવતારણ મધુર છે, ચિત્તહરણ મધુર છે, રમણ મધુર છે, વંદન મધુર છે અને શાંતિ પણ મધુર છે; મધુરાધિપતિનું સઘળું મધુર છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അവിടുത്തെ പ്രവൃത്തികൾ മധുരം, ഭവതരണം മധുരം, മനംകവരൽ മധുരം, ലീലാവിലാസങ്ങൾ മധുരം, വന്ദനം മധുരം, ശാന്തഭാവവും മധുരം; മധുരാധിപന്റെ സർവ്വവും മധുരം.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତାଙ୍କ କର୍ମ ମଧୁର, ଭବତାରଣ ମଧୁର, ଚିତ୍ତହରଣ ମଧୁର, ରମଣ ମଧୁର, ବନ୍ଦନା ମଧୁର ଏବଂ ଶାନ୍ତି ମଧ୍ୟ ମଧୁର; ମଧୁରାଧିପତିଙ୍କ ସମସ୍ତ କିଛି ମଧୁର ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 6,
+      "verse_type": "VERSE",
+      "original_sanskrit": "गुञ्जा मधुरा माला मधुरा यमुना मधुरा वीची मधुरा ।\nसलिलं मधुरं कमलं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ ६ ॥",
+      "iast": "guñjā madhurā mālā madhurā yamunā madhurā vīcī madhurā ।\nsalilaṁ madhuraṁ kamalaṁ madhuraṁ madhurādhipaterakhilaṁ madhuram ॥ 6 ॥",
+      "transliterations": {
+        "telugu": "గుఞ్జా మధురా మాలా మధురా యమునా మధురా వీచీ మధురా ।\nసలిలం మధురం కమలం మధురం మధురాధిపతేరఖిలం మధురమ్ ॥ ౬ ॥",
+        "tamil": "குஞ்ஜா மதுரா மாலா மதுரா யமுநா மதுரா வீசீ மதுரா ।\nஸலிலம் மதுரம் கமலம் மதுரம் மதுராதிபதேரகிலம் மதுரம் ॥ ௬ ॥",
+        "kannada": "ಗುಞ್ಜಾ ಮಧುರಾ ಮಾಲಾ ಮಧುರಾ ಯಮುನಾ ಮಧುರಾ ವೀಚೀ ಮಧುರಾ ।\nಸಲಿಲಂ ಮಧುರಂ ಕಮಲಂ ಮಧುರಂ ಮಧುರಾಧಿಪತೇರಖಿಲಂ ಮಧುರಮ್ ॥ ೬ ॥",
+        "malayalam": "ഗുഞ്ജാ മധുരാ മാലാ മധുരാ യമുനാ മധുരാ വീചീ മധുരാ ।\nസലിലം മധുരം കമലം മധുരം മധുരാധിപതേരഖിലം മധുരമ് ॥ ൬ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "His gunja berry necklace is sweet, His flower garland is sweet, the sacred Yamuna river is sweet, its rippling waves are sweet; its water is sweet, the lotuses upon it are sweet—everything pertaining to the Lord of Sweetness is utterly sweet.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "उनकी गुंजा-माला मधुर है, वैजयंती माला मधुर है, यमुना नदी मधुर है, यमुना की तरंगें मधुर हैं, उसका जल मधुर है और जल में खिले कमल भी मधुर हैं—मधुराधिपति का सब कुछ मधुर है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆయన గురిగింజల హారము మధురము, పూలమాల మధురము, యమునా నది మధురము, అలలు మధురము, యమునా జలము మధురము, కమలములు మధురము; మధురాధిపతి సమస్తము మధురము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அவரது குன்றிமணி மாலை மதுரமானது, மலர்மாலை மதுரமானது, யமுனை நதி மதுரமானது, அதன் அலைகள் மதுரமானவை, நன்னீர் மதுரமானது, தாமரைகளும் மதுரமானவை; மதுராதிபதியின் எல்லாமே மதுரமானவை.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಆತನ ಗುಲಗಂಜಿಯ ಮಾಲೆಯು ಮಧುರ, ಪುಷ್ಪಮಾಲೆಯು ಮಧುರ, ಯಮುನಾ ನದಿಯು ಮಧುರ, ಅದರ ಅಲೆಗಳು ಮಧುರ, ಜಲವು ಮಧುರ, ಕಮಲಗಳು ಮಧುರ; ಮಧುರಾಧಿಪತಿಯ ಸಮಸ್ತವೂ ಮಧುರ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "त्यांची गुंजांची माळ मधुर आहे, पुष्पमाळा मधुर आहे, यमुना नदी मधुर आहे, यमुनेच्या लाटा मधुर आहेत, पाणी मधुर आहे आणि कमळेही मधुर आहेत; मधुराधिपतीचे सर्व काही मधुर आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তাঁর গুঞ্জামালিকা মধুর, বনমালা মধুর, যমুনানদী মধুর, যমুনার তরঙ্গ মধুর, জল মধুর এবং প্রস্ফুটিত পদ্মও মধুর; মধুরাধিপতির সবকিছুই মধুর।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તેમની ગૂંજામાળા મધુર છે, પુષ્પમાળા મધુર છે, યમુના નદી મધુર છે, યમુનાના મોજાં મધુર છે, જળ મધુર છે અને કમળો પણ મધુર છે; મધુરાધિપતિનું સઘળું મધુર છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അവിടുത്തെ കുന്നിമണിമാല മധുരം, പൂമാല മധുരം, യമുനാനദി മധുരം, ഓളങ്ങൾ മധുരം, ജലം മധുരം, താമരകളും മധുരം; മധുരാധിപന്റെ സർവ്വവും മധുരം.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତାଙ୍କ ଗୁଞ୍ଜାମାଳା ମଧୁର, ବନମାଳା ମଧୁର, ଯମୁନା ନଦୀ ମଧୁର, ତରଙ୍ଗ ମଧୁର, ଜଳ ମଧୁର ଏବଂ କମଳ ମଧ୍ୟ ମଧୁର; ମଧୁରାଧିପତିଙ୍କ ସମସ୍ତ କିଛି ମଧୁର ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 7,
+      "verse_type": "VERSE",
+      "original_sanskrit": "गोपी मधुरा लीला मधुरा युक्तं मधुरं मुक्तं मधुरम् ।\nदृष्टं मधुरं शिष्टं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ ७ ॥",
+      "iast": "gopī madhurā līlā madhurā yuktaṁ madhuraṁ muktaṁ madhuram ।\ndṛṣṭaṁ madhuraṁ śiṣṭaṁ madhuraṁ madhurādhipaterakhilaṁ madhuram ॥ 7 ॥",
+      "transliterations": {
+        "telugu": "గోపీ మధురా లీలా మధురా యుక్తం మధురం ముక్తం మధురమ్ ।\nదృష్టం మధురం శిష్టం మధురం మధురాధిపతేరఖిలం మధురమ్ ॥ ౭ ॥",
+        "tamil": "கோபீ மதுரா லீலா மதுரா யுக்தம் மதுரம் முக்தம் மதுரம் ।\nத்ரு'ஷ்டம் மதுரம் ஶிஷ்டம் மதுரம் மதுராதிபதேரகிலம் மதுரம் ॥ ௭ ॥",
+        "kannada": "ಗೋಪೀ ಮಧುರಾ ಲೀಲಾ ಮಧುರಾ ಯುಕ್ತಂ ಮಧುರಂ ಮುಕ್ತಂ ಮಧುರಮ್ ।\nದೃಷ್ಟಂ ಮಧುರಂ ಶಿಷ್ಟಂ ಮಧುರಂ ಮಧುರಾಧಿಪತೇರಖಿಲಂ ಮಧುರಮ್ ॥ ೭ ॥",
+        "malayalam": "ഗോപീ മധുരാ ലീലാ മധുരാ യുക്തം മധുരം മുക്തം മധുരമ് ।\nദൃഷ്ടം മധുരം ശിഷ്ടം മധുരം മധുരാധിപതേരഖിലം മധുരമ് ॥ ൭ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "The Gopis who love Him are sweet, His divine pastimes are sweet, union with Him is sweet, liberation bestowed by Him is sweet; His tender glance is sweet, His noble etiquette is sweet—everything pertaining to the Lord of Sweetness is utterly sweet.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "गोपियाँ मधुर हैं, उनकी रासलीला मधुर है, उनका मिलन मधुर है, उनका वियोग मधुर है, उनका अवलोकन मधुर है और उनका शिष्टाचार भी मधुर है—मधुराधिपति का सब कुछ मधुर है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "గోపికలు మధురము, వారి రాసలీలలు మధురము, వారి సంయోగము మధురము, వియోగము మధురము, చూపులు మధురము, శిష్టాచారము మధురము; మధురాధిపతి సమస్తము మధురము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "கோபியர் மதுரமானவர்கள், ராசலீலை மதுரமானது, சேர்க்கை மதுரமானது, பிரிவு மதுரமானது, கடைக்கண் பார்வை மதுரமானது, நல்லியல்புகளும் மதுரமானவை; மதுராதிபதியின் எல்லாமே மதுரமானவை.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಗೋಪಿಕೆಯರು ಮಧುರ, ರಾಸಲೀಲೆಯು ಮಧುರ, ಮಿಲನವು ಮಧುರ, ವಿಯೋಗವು ಮಧುರ, ದೃಷ್ಟಿಯು ಮಧುರ, ಶಿಷ್ಟಾಚಾರವು ಮಧುರ; ಮಧುರಾಧಿಪತಿಯ ಸಮಸ್ತವೂ ಮಧುರ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "गोपी मधुर आहेत, रासलीला मधुर आहे, मिलन मधुर आहे, विरह मधुर आहे, दृष्टी मधुर आहे आणि शिष्टाचारही मधुर आहे; मधुराधिपतीचे सर्व काही मधुर आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "গোপীগণ মধুর, তাঁদের লীলা মধুর, মিলন মধুর, বিরহ মধুর, দৃষ্টিপাত মধুর এবং আচরণও মধুর; মধুরাধিপতির সবকিছুই মধুর।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "ગોપીઓ મધુર છે, તેમની રાસલીલા મધુર છે, મિલન મધુર છે, વિયોગ મધુર છે, દૃષ્ટિ મધુર છે અને શિષ્ટાચાર પણ મધુર છે; મધુરાધિપતિનું સઘળું મધુર છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഗോപികമാർ മധുരം, രാസലീല മധുരം, സംയോഗം മധുരം, വിയോഗം മധുരം, കടാക്ഷം മധുരം, പെരുമാറ്റവും മധുരം; മധുരാധിപന്റെ സർവ്വവും മധുരം.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଗୋପୀମାନେ ମଧୁର, ରାସଲୀଳା ମଧୁର, ମିଳନ ମଧୁର, ବିରହ ମଧୁର, ଦୃଷ୍ଟି ମଧୁର ଏବଂ ଶିଷ୍ଟାଚାର ମଧ୍ୟ ମଧୁର; ମଧୁରାଧିପତିଙ୍କ ସମସ୍ତ କିଛି ମଧୁର ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 8,
+      "verse_type": "VERSE",
+      "original_sanskrit": "गोपा मधुरा गावो मधुरा यष्टिर्मधुरा सृष्टिर्मधुरा ।\nदलनं मधुरं फलनं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ ८ ॥",
+      "iast": "gopā madhurā gāvo madhurā yaṣṭirmadhurā sṛṣṭirmadhurā ।\ndalanaṁ madhuraṁ phalanaṁ madhuraṁ madhurādhipaterakhilaṁ madhuram ॥ 8 ॥",
+      "transliterations": {
+        "telugu": "గోపా మధురా గావో మధురా యష్టిర్మధురా సృష్టిర్మధురా ।\nదలనం మధురం ఫలనం మధురం మధురాధిపతేరఖిలం మధురమ్ ॥ ౮ ॥",
+        "tamil": "கோபா மதுரா காவோ மதுரா யஷ்டிர்மதுரா ஸ்ரு'ஷ்டிர்மதுரா ।\nதலநம் மதுரம் பலநம் மதுரம் மதுராதிபதேரகிலம் மதுரம் ॥ ௮ ॥",
+        "kannada": "ಗೋಪಾ ಮಧುರಾ ಗಾವೋ ಮಧುರಾ ಯಷ್ಟಿರ್ಮಧುರಾ ಸೃಷ್ಟಿರ್ಮಧುರಾ ।\nದಲನಂ ಮಧುರಂ ಫಲನಂ ಮಧುರಂ ಮಧುರಾಧಿಪತೇರಖಿಲಂ ಮಧುರಮ್ ॥ ೮ ॥",
+        "malayalam": "ഗോപാ മധുരാ ഗാവോ മധുരാ യഷ്ടിര്മധുരാ സൃഷ്ടിര്മധുരാ ।\nദലനം മധുരം ഫലനം മധുരം മധുരാധിപതേരഖിലം മധുരമ് ॥ ൮ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "The cowherd boys are sweet, the gentle cows are sweet, His herding staff is sweet, His cosmic creation is sweet; His subduing of evil is sweet, the ultimate fruit of devotion to Him is sweet—everything pertaining to the Lord of Sweetness is utterly sweet.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "ग्वालबाल मधुर हैं, गौएँ मधुर हैं, श्रीकृष्ण की लाठी मधुर है, उनकी सृष्टि मधुर है, उनका संहार मधुर है और उनका वरदान देना भी मधुर है—मधुराधिपति का सब कुछ मधुर है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "గోపాలురు మధురము, గోవులు మధురము, చేతికఱ్ఱ మధురము, సృష్టి మధురము, సంహారము మధురము, వరప్రదానము మధురము; మధురాధిపతి సమస్తము మధురము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இடையர்கள் மதுரமானவர்கள், பசுக்கள் மதுரமானவை, கையில் ஏந்திய கோல் மதுரமானது, சிருஷ்டி மதுரமானது, அடக்குதல் மதுரமானது, அருளுதல் மதுரமானது; மதுராதிபதியின் எல்லாமே மதுரமானவை.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಗೋಪಾಲಕರು ಮಧುರ, ಗೋವುಗಳು ಮಧುರ, ಆತನ ಕೈಬೆತ್ತವು ಮಧುರ, ಸೃಷ್ಟಿಯು ಮಧುರ, ಸಂಹಾರವು ಮಧುರ, ವರಪ್ರದಾನವು ಮಧುರ; ಮಧುರಾಧಿಪತಿಯ ಸಮಸ್ತವೂ ಮಧುರ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "गोपाळ मधुर आहेत, गायी मधुर आहेत, काठी मधुर आहे, सृष्टी मधुर आहे, संहार मधुर आहे आणि वरदान देणेही मधुर आहे; मधुराधिपतीचे सर्व काही मधुर आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "রাখালবালকগণ মধুর, ধেনুগণ মধুর, হাতের যষ্টি মধুর, সৃষ্টি মধুর, সংহার মধুর এবং ফলদানও মধুর; মধুরাধিপতির সবকিছুই মধুর।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "ગોવાળો મધુર છે, ગાયો મધુર છે, હાથની લાકડી મધુર છે, સૃષ્ટિ મધુર છે, દલન મધુર છે અને ફળદાન પણ મધુર છે; મધુરાધિપતિનું સઘળું મધુર છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഗോപാലന്മാർ മധുരം, പശുക്കൾ മധുരം, കയ്യിലെ വടി മധുരം, സൃഷ്ടി മധുരം, സംഹാരം മധുരം, വരദാനവും മധുരം; മധുരാധിപന്റെ സർവ്വവും മധുരം.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଗୋପାଳମାନେ ମଧୁର, ଗାଈମାନେ ମଧୁର, ହାତର ବାଡ଼ି ମଧୁର, ସୃଷ୍ଟି ମଧୁର, ସଂହାର ମଧୁର ଏବଂ ଫଳପ୍ରଦାନ ମଧ୍ୟ ମଧୁର; ମଧୁରାଧିପତିଙ୍କ ସମସ୍ତ କିଛି ମଧୁର ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 9,
+      "verse_type": "PHALASRUTI",
+      "original_sanskrit": "इति श्रीमद्वल्लभाचार्यविरचितं मधुराष्टकं सम्पूर्णम् ।\nयः पठेत् प्रातरुत्थाय भक्तियुक्तः समाहितः ।\nमधुराधिपतेः प्रीतिं लभते नात्र संशयः ॥ ९ ॥",
+      "iast": "iti śrīmadvallabhācāryaviracitaṁ madhurāṣṭakaṁ sampūrṇam ।\nyaḥ paṭhet prātarutthāya bhaktiyuktaḥ samāhitaḥ ।\nmadhurādhipateḥ prītiṁ labhate nātra saṁśayaḥ ॥ 9 ॥",
+      "transliterations": {
+        "telugu": "ఇతి శ్రీమద్వల్లభాచార్యవిరచితం మధురాష్టకం సమ్పూర్ణమ్ ।\nయః పఠేత్ ప్రాతరుత్థాయ భక్తియుక్తః సమాహితః ।\nమధురాధిపతేః ప్రీతిం లభతే నాత్ర సంశయః ॥ ౯ ॥",
+        "tamil": "இதி ஶ்ரீமத்வல்லபாசார்யவிரசிதம் மதுராஷ்டகம் ஸம்பூர்ணம் ।\nயஃ படேத் ப்ராதருத்தாய பக்தியுக்தஃ ஸமாஹிதஃ ।\nமதுராதிபதேஃ ப்ரீதிம் லபதே நாத்ர ஸம்ஶயஃ ॥ ௯ ॥",
+        "kannada": "ಇತಿ ಶ್ರೀಮದ್ವಲ್ಲಭಾಚಾರ್ಯವಿರಚಿತಂ ಮಧುರಾಷ್ಟಕಂ ಸಮ್ಪೂರ್ಣಮ್ ।\nಯಃ ಪಠೇತ್ ಪ್ರಾತರುತ್ಥಾಯ ಭಕ್ತಿಯುಕ್ತಃ ಸಮಾಹಿತಃ ।\nಮಧುರಾಧಿಪತೇಃ ಪ್ರೀತಿಂ ಲಭತೇ ನಾತ್ರ ಸಂಶಯಃ ॥ ೯ ॥",
+        "malayalam": "ഇതി ശ്രീമദ്വല്ലഭാചാര്യവിരചിതം മധുരാഷ്ടകം സമ്പൂര്ണമ് ।\nയഃ പഠേത് പ്രാതരുത്ഥായ ഭക്തിയുക്തഃ സമാഹിതഃ ।\nമധുരാധിപതേഃ പ്രീതിം ലഭതേ നാത്ര സംശയഃ ॥ ൯ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Thus concludes the Madhurashtakam composed by Sri Vallabhacharya. Whoever recites this upon waking in the morning, endowed with devotion and composed in mind, attains the love and boundless grace of the Lord of Sweetness; of this there is no doubt.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "इस प्रकार श्रीमद्वल्लभाचार्य विरचित यह 'मधुराष्टकम्' स्तोत्र यहाँ संपूर्ण होता है, जो भगवान श्रीकृष्ण के परम मधुर स्वरूप का गान करता है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "శ్రీమద్వల్లభాచార్యుల వారిచే విరచితమైన ఈ పవిత్ర 'మధురాష్టకమ్' సంపూర్ణమైనది, ఇది భగవానుడైన శ్రీకృష్ణుని దివ్య మాధుర్యమును కీర్తించుచున్నది.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இத்துடன் ஸ்ரீவல்லபாசாரியாரால் அருளப்பட்ட, ஸ்ரீகிருஷ்ணரின் திவ்விய மாதுரியத்தைப் போற்றும் 'மதுராஷ்டகம்' நிறைவுற்றது.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಶ್ರೀಮದ್ವಲ್ಲಭಾಚಾರ್ಯರಿಂದ ರಚಿತವಾದ ಭಗವಾನ್ ಶ್ರೀಕೃಷ್ಣನ ಪರಮ ಮಾಧುರ್ಯವನ್ನು ಕೊಂಡಾಡುವ 'ಮಧುರಾಷ್ಟಕಂ' ಸ್ತೋತ್ರವು ಇಲ್ಲಿಗೆ ಸಂಪೂರ್ಣವಾಯಿತು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "अशा प्रकारे श्रीमद्वल्लभाचार्यांनी रचलेले भगवान श्रीकृष्णांच्या परम माधुर्याचे वर्णन करणारे 'मधुराष्टकम्' स्तोत्र येथे संपूर्ण झाले.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "এইরূপে শ্রীমদ্বল্লভাচার্য বিরচিত ভগবান শ্রীকৃষ্ণের পরম মাধুৰ্যসূচক 'মধুরাষ্টকম্' সম্পূর্ণ হইল।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આ પ્રકારે શ્રીમદ્ વલ્લભાચાર્યજી દ્વારા વિરચિત ભગવાન શ્રીકૃષ્ણના દિવ્ય માધુર્યનું ગુણગાન કરતું 'મધુરાષ્ટકમ્' સંપૂર્ણ થાય છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഇപ്രകാരം ശ്രീമദ് വല്ലഭാചാര്യരാൽ വിരചിതമായ, ശ്രീകൃഷ്ണന്റെ മാധുര്യത്തെ വാഴ്ത്തുന്ന 'മധുരാഷ്ടകം' സമ്പൂർണ്ണം.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଏହିପରି ଶ୍ରୀମଦ୍ ବଲ୍ଲଭାଚାର୍ଯ୍ୟଙ୍କ ଦ୍ୱାରା ରଚିତ ଭଗବାନ ଶ୍ରୀକୃଷ୍ଣଙ୍କ ଦିବ୍ୟ ମାଧୁର୍ଯ୍ୟ ଗାନ କରୁଥିବା 'ମଧୁରାଷ୍ଟକମ୍' ସମ୍ପୂର୍ଣ୍ଣ ହେଲା ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    }
+  ]
+}

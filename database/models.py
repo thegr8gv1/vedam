@@ -79,6 +79,7 @@ class TranslationType(str, enum.Enum):
     BHAVARTHA = "BHAVARTHA"      # Devotional / interpretive meaning
     PADACHHEDA = "PADACHHEDA"    # Word-by-word grammatical dissection
     TATPARYA = "TATPARYA"        # Extended philosophical commentary
+    CULTURAL_NOTES = "CULTURAL_NOTES"  # Traditional liturgical / cultural context notes
 
 
 class ReviewStatus(str, enum.Enum):
@@ -342,8 +343,45 @@ class Translation(Base):
 
     # Relationships
     verse: Mapped["Verse"] = relationship("Verse", back_populates="translations")
+    review_feedbacks: Mapped[List["TranslationReviewFeedback"]] = relationship("TranslationReviewFeedback", back_populates="translation", cascade="all, delete-orphan")
 
     __table_args__ = (UniqueConstraint("verse_id", "target_language", "translation_type", name="uq_verse_lang_type"),)
+
+
+class TranslationReviewFeedback(Base):
+    """Verse-level human scholarly and native-speaker review audit trails."""
+    __tablename__ = "translation_review_feedbacks"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    translation_id: Mapped[int] = mapped_column(Integer, ForeignKey("translations.id", ondelete="CASCADE"), index=True)
+    reviewer_name: Mapped[str] = mapped_column(String(128))
+    reviewer_qualification: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
+    native_language: Mapped[str] = mapped_column(String(16))
+    linguistic_expertise: Mapped[str] = mapped_column(String(64))  # e.g., "Sanskrit", "Awadhi", "Telugu"
+    review_status: Mapped[ReviewStatus] = mapped_column(Enum(ReviewStatus), default=ReviewStatus.DRAFT)
+    suggested_correction: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
+    scholarly_comment: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
+    terminology_adherence_verified: Mapped[bool] = mapped_column(Boolean, default=False)
+    reviewed_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
+
+    translation: Mapped["Translation"] = relationship("Translation", back_populates="review_feedbacks")
+
+
+class ArchivedTranslation(Base):
+    """Preserves historical or disconnected translation iterations with full forensic audit trail."""
+    __tablename__ = "archived_translations"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    original_translation_id: Mapped[int] = mapped_column(Integer)
+    original_verse_id: Mapped[int] = mapped_column(Integer)
+    target_language: Mapped[str] = mapped_column(String(16))
+    translation_type: Mapped[str] = mapped_column(String(32))
+    translated_text: Mapped[str] = mapped_column(SA_Text)
+    translator: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
+    review_status: Mapped[str] = mapped_column(String(32))
+    archived_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
+    archival_reason: Mapped[str] = mapped_column(String(255))
+
 
 
 class ContentRights(Base):

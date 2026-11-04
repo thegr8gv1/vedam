@@ -1,0 +1,148 @@
+{
+  "content_id": "VEDA-TXT-00004",
+  "canonical_title": "Madhurashtakam",
+  "devanagari_title": "मधुराष्टकम्",
+  "meter": "Totaka",
+  "primary_deity": "Lord Krishna",
+  "original_language": "sa",
+  "total_verses": 9,
+  "generated_at_utc": "2026-11-04T23:14:44.697939+00:00",
+  "cues": [
+    {
+      "verse_number": 1,
+      "verse_id": "VEDA-TXT-00004-V001",
+      "original_text": "अधरं मधुरं वदनं मधुरं नयनं मधुरं हसितं मधुरम् ।\nहृदयं मधुरं गमनं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ १ ॥",
+      "iast_phonetic": "adharaṁ madhuraṁ vadanaṁ madhuraṁ nayanaṁ madhuraṁ hasitaṁ madhuram ।\nhṛdayaṁ madhuraṁ gamanaṁ madhuraṁ madhurādhipaterakhilaṁ madhuram ॥ 1 ॥",
+      "pause_after_verse_sec": 1.8,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "अधरं मधुरं वदनं मधुरं नयनं मधुरं हसितं मधुरम् ।\nहृदयं मधुरं गमनं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ १ ॥",
+      "pronunciation_notes": [
+        "Totaka metre: dynamic anapestic fourfold rhythm (sa-gana sa-gana sa-gana sa-gana).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Rhythmic devotional tempo (Madhya Laya); preserve sweet musical cadence."
+    },
+    {
+      "verse_number": 2,
+      "verse_id": "VEDA-TXT-00004-V002",
+      "original_text": "वचनं मधुरं चरितं मधुरं वसनं मधुरं वलितं मधुरम् ।\nचलितं मधुरं भ्रमितं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ २ ॥",
+      "iast_phonetic": "vacanaṁ madhuraṁ caritaṁ madhuraṁ vasanaṁ madhuraṁ valitaṁ madhuram ।\ncalitaṁ madhuraṁ bhramitaṁ madhuraṁ madhurādhipaterakhilaṁ madhuram ॥ 2 ॥",
+      "pause_after_verse_sec": 1.8,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "वचनं मधुरं चरितं मधुरं वसनं मधुरं वलितं मधुरम् ।\nचलितं मधुरं भ्रमितं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ २ ॥",
+      "pronunciation_notes": [
+        "Totaka metre: dynamic anapestic fourfold rhythm (sa-gana sa-gana sa-gana sa-gana).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Rhythmic devotional tempo (Madhya Laya); preserve sweet musical cadence."
+    },
+    {
+      "verse_number": 3,
+      "verse_id": "VEDA-TXT-00004-V003",
+      "original_text": "वेणुर्मधुरो रेणुर्मधुरः पाणिर्मधुरः पादौ मधुरौ ।\nनृत्यं मधुरं सख्यं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ ३ ॥",
+      "iast_phonetic": "veṇurmadhuro reṇurmadhuraḥ pāṇirmadhuraḥ pādau madhurau ।\nnṛtyaṁ madhuraṁ sakhyaṁ madhuraṁ madhurādhipaterakhilaṁ madhuram ॥ 3 ॥",
+      "pause_after_verse_sec": 1.8,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "वेणुर्मधुरो रेणुर्मधुरः पाणिर्मधुरः पादौ मधुरौ ।\nनृत्यं मधुरं सख्यं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ ३ ॥",
+      "pronunciation_notes": [
+        "Totaka metre: dynamic anapestic fourfold rhythm (sa-gana sa-gana sa-gana sa-gana).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Rhythmic devotional tempo (Madhya Laya); preserve sweet musical cadence."
+    },
+    {
+      "verse_number": 4,
+      "verse_id": "VEDA-TXT-00004-V004",
+      "original_text": "गीतं मधुरं पीतं मधुरं भुक्तं मधुरं सुप्तं मधुरम् ।\nरूपं मधुरं तिलकं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ ४ ॥",
+      "iast_phonetic": "gītaṁ madhuraṁ pītaṁ madhuraṁ bhuktaṁ madhuraṁ suptaṁ madhuram ।\nrūpaṁ madhuraṁ tilakaṁ madhuraṁ madhurādhipaterakhilaṁ madhuram ॥ 4 ॥",
+      "pause_after_verse_sec": 1.8,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "गीतं मधुरं पीतं मधुरं भुक्तं मधुरं सुप्तं मधुरम् ।\nरूपं मधुरं तिलकं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ ४ ॥",
+      "pronunciation_notes": [
+        "Totaka metre: dynamic anapestic fourfold rhythm (sa-gana sa-gana sa-gana sa-gana).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Rhythmic devotional tempo (Madhya Laya); preserve sweet musical cadence."
+    },
+    {
+      "verse_number": 5,
+      "verse_id": "VEDA-TXT-00004-V005",
+      "original_text": "करणं मधुरं तरणं मधुरं हरणं मधुरं रमणं मधुरम् ।\nवमितं मधुरं शमितं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ ५ ॥",
+      "iast_phonetic": "karaṇaṁ madhuraṁ taraṇaṁ madhuraṁ haraṇaṁ madhuraṁ ramaṇaṁ madhuram ।\nvamitaṁ madhuraṁ śamitaṁ madhuraṁ madhurādhipaterakhilaṁ madhuram ॥ 5 ॥",
+      "pause_after_verse_sec": 1.8,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "करणं मधुरं तरणं मधुरं हरणं मधुरं रमणं मधुरम् ।\nवमितं मधुरं शमितं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ ५ ॥",
+      "pronunciation_notes": [
+        "Totaka metre: dynamic anapestic fourfold rhythm (sa-gana sa-gana sa-gana sa-gana).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Rhythmic devotional tempo (Madhya Laya); preserve sweet musical cadence."
+    },
+    {
+      "verse_number": 6,
+      "verse_id": "VEDA-TXT-00004-V006",
+      "original_text": "गुञ्जा मधुरा माला मधुरा यमुना मधुरा वीची मधुरा ।\nसलिलं मधुरं कमलं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ ६ ॥",
+      "iast_phonetic": "guñjā madhurā mālā madhurā yamunā madhurā vīcī madhurā ।\nsalilaṁ madhuraṁ kamalaṁ madhuraṁ madhurādhipaterakhilaṁ madhuram ॥ 6 ॥",
+      "pause_after_verse_sec": 1.8,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "गुञ्जा मधुरा माला मधुरा यमुना मधुरा वीची मधुरा ।\nसलिलं मधुरं कमलं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ ६ ॥",
+      "pronunciation_notes": [
+        "Totaka metre: dynamic anapestic fourfold rhythm (sa-gana sa-gana sa-gana sa-gana).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Rhythmic devotional tempo (Madhya Laya); preserve sweet musical cadence."
+    },
+    {
+      "verse_number": 7,
+      "verse_id": "VEDA-TXT-00004-V007",
+      "original_text": "गोपी मधुरा लीला मधुरा युक्तं मधुरं मुक्तं मधुरम् ।\nदृष्टं मधुरं शिष्टं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ ७ ॥",
+      "iast_phonetic": "gopī madhurā līlā madhurā yuktaṁ madhuraṁ muktaṁ madhuram ।\ndṛṣṭaṁ madhuraṁ śiṣṭaṁ madhuraṁ madhurādhipaterakhilaṁ madhuram ॥ 7 ॥",
+      "pause_after_verse_sec": 1.8,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "गोपी मधुरा लीला मधुरा युक्तं मधुरं मुक्तं मधुरम् ।\nदृष्टं मधुरं शिष्टं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ ७ ॥",
+      "pronunciation_notes": [
+        "Totaka metre: dynamic anapestic fourfold rhythm (sa-gana sa-gana sa-gana sa-gana).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Rhythmic devotional tempo (Madhya Laya); preserve sweet musical cadence."
+    },
+    {
+      "verse_number": 8,
+      "verse_id": "VEDA-TXT-00004-V008",
+      "original_text": "गोपा मधुरा गावो मधुरा यष्टिर्मधुरा सृष्टिर्मधुरा ।\nदलनं मधुरं फलनं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ ८ ॥",
+      "iast_phonetic": "gopā madhurā gāvo madhurā yaṣṭirmadhurā sṛṣṭirmadhurā ।\ndalanaṁ madhuraṁ phalanaṁ madhuraṁ madhurādhipaterakhilaṁ madhuram ॥ 8 ॥",
+      "pause_after_verse_sec": 1.8,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "गोपा मधुरा गावो मधुरा यष्टिर्मधुरा सृष्टिर्मधुरा ।\nदलनं मधुरं फलनं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ ८ ॥",
+      "pronunciation_notes": [
+        "Totaka metre: dynamic anapestic fourfold rhythm (sa-gana sa-gana sa-gana sa-gana).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Rhythmic devotional tempo (Madhya Laya); preserve sweet musical cadence."
+    },
+    {
+      "verse_number": 9,
+      "verse_id": "VEDA-TXT-00004-V009",
+      "original_text": "इति श्रीमद्वल्लभाचार्यविरचितं मधुराष्टकं सम्पूर्णम् ।\nयः पठेत् प्रातरुत्थाय भक्तियुक्तः समाहितः ।\nमधुराधिपतेः प्रीतिं लभते नात्र संशयः ॥ ९ ॥",
+      "iast_phonetic": "iti śrīmadvallabhācāryaviracitaṁ madhurāṣṭakaṁ sampūrṇam ।\nyaḥ paṭhet prātarutthāya bhaktiyuktaḥ samāhitaḥ ।\nmadhurādhipateḥ prītiṁ labhate nātra saṁśayaḥ ॥ 9 ॥",
+      "pause_after_verse_sec": 1.8,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "इति श्रीमद्वल्लभाचार्यविरचितं मधुराष्टकं सम्पूर्णम् ।\nयः पठेत् प्रातरुत्थाय भक्तियुक्तः समाहितः ।\nमधुराधिपतेः प्रीतिं लभते नात्र संशयः ॥ ९ ॥",
+      "pronunciation_notes": [
+        "Totaka metre: dynamic anapestic fourfold rhythm (sa-gana sa-gana sa-gana sa-gana).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Rhythmic devotional tempo (Madhya Laya); preserve sweet musical cadence."
+    }
+  ],
+  "translation_reference_note": "Audio recording must recite only the immutable original sacred verse text; translations and regional explanations must be recorded as separate commentary tracks."
+}

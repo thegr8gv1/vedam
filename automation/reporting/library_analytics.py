@@ -23,7 +23,16 @@ from automation.rights.approval_workflow import (
     TranslationStatus,
 )
 from database.connection import get_db_session
-from database.models import ReleaseStatus, ReviewStatus, Text, Translation, Verse, VerseType
+from database.models import (
+    ArchivedTranslation,
+    ReleaseStatus,
+    ReviewStatus,
+    Text,
+    Translation,
+    TranslationReviewFeedback,
+    Verse,
+    VerseType,
+)
 
 
 @dataclass
@@ -55,6 +64,14 @@ class LibraryDashboardMetrics:
     # Multilingual Localization Metrics
     multilingual_languages_count: int = 10
     multilingual_translation_coverage: Dict[str, Dict[str, int]] = field(default_factory=dict)
+    compositions_with_regional_localization: int = 0
+    compositions_awaiting_regional_localization: int = 0
+    compositions_localized_list: List[str] = field(default_factory=list)
+    compositions_awaiting_list: List[str] = field(default_factory=list)
+    regional_translation_completion_pct: float = 0.0
+    publication_ready_approved_translations: int = 0
+    draft_pending_review_translations: int = 0
+    total_archived_historical_translations: int = 0
     multilingual_artifacts_excel: int = 0
     multilingual_artifacts_word: int = 0
     multilingual_artifacts_json: int = 0
@@ -65,6 +82,8 @@ class LibraryDashboardMetrics:
 
 class LibraryAnalyticsEngine:
     """Computes comprehensive health and expansion metrics across the digital library."""
+
+    REGIONAL_LANGS = {"hi", "te", "ta", "kn", "mr", "bn", "gu", "ml", "or"}
 
     @classmethod
     def generate_dashboard_metrics(
@@ -101,6 +120,9 @@ class LibraryAnalyticsEngine:
         cat_dist: Dict[str, int] = {}
         deity_dist: Dict[str, int] = {}
 
+        localized_cids = []
+        awaiting_cids = []
+
         for t in texts:
             v_len = len(t.verses)
             total_all_verses += v_len
@@ -114,6 +136,16 @@ class LibraryAnalyticsEngine:
             if is_verified:
                 verified_complete += 1
                 total_verified_verses += v_len
+                # Check if text has regional translations
+                has_reg = any(
+                    tr.target_language in cls.REGIONAL_LANGS
+                    for v in t.verses
+                    for tr in v.translations
+                )
+                if has_reg:
+                    localized_cids.append(t.content_id)
+                else:
+                    awaiting_cids.append(t.content_id)
             else:
                 sample_or_prototype += 1
 
@@ -165,7 +197,7 @@ class LibraryAnalyticsEngine:
         word_files = len(list(Path("exports/word").glob("VEDA-TXT-*.docx"))) if os.path.exists("exports/word") else 0
         pdf_files = len(list(Path("exports/pdf").glob("VEDA-TXT-*.pdf"))) if os.path.exists("exports/pdf") else 0
 
-        # Supported Scripts (Devanagari, Telugu, Tamil, Kannada, Malayalam, Bengali, Gujarati, Odia, Gurmukhi, IAST)
+        # Supported Scripts (Devanagari, Telugu, Tamil, Kannada, Malayalam, Bengali, Gujarati, Odia, IAST)
         supported_scripts = [
             "Devanagari",
             "Telugu",
@@ -181,6 +213,9 @@ class LibraryAnalyticsEngine:
         # 4. Multilingual Translation Coverage
         all_translations = session.query(Translation).all()
         translation_coverage: Dict[str, Dict[str, int]] = {}
+        pub_ready_approved = 0
+        draft_pending = 0
+
         for tr in all_translations:
             lang = tr.target_language
             if lang not in translation_coverage:
@@ -188,10 +223,21 @@ class LibraryAnalyticsEngine:
             translation_coverage[lang]["total"] += 1
             if tr.review_status == ReviewStatus.APPROVED:
                 translation_coverage[lang]["approved"] += 1
+                pub_ready_approved += 1
             elif tr.review_status == ReviewStatus.DRAFT:
                 translation_coverage[lang]["draft"] += 1
+                draft_pending += 1
             else:
                 translation_coverage[lang]["in_review"] += 1
+                draft_pending += 1
+
+        # Calculate regional translation completion %
+        total_possible_regional = verified_complete * 9  # 18 * 9 = 162 composition-language units
+        total_actual_regional = len(localized_cids) * 9
+        comp_pct = round((len(localized_cids) / max(1, verified_complete)) * 100, 2)
+
+        # Check archived historical translations count
+        archived_count = session.query(ArchivedTranslation).count()
 
         ml_excel = len(list(Path("exports/multilingual/excel").glob("*.xlsx"))) if os.path.exists("exports/multilingual/excel") else 0
         ml_word = len(list(Path("exports/multilingual/word").glob("*.docx"))) if os.path.exists("exports/multilingual/word") else 0
@@ -224,6 +270,14 @@ class LibraryAnalyticsEngine:
             potential_duplicate_candidates=0,
             multilingual_languages_count=len(translation_coverage),
             multilingual_translation_coverage=translation_coverage,
+            compositions_with_regional_localization=len(localized_cids),
+            compositions_awaiting_regional_localization=len(awaiting_cids),
+            compositions_localized_list=sorted(localized_cids),
+            compositions_awaiting_list=sorted(awaiting_cids),
+            regional_translation_completion_pct=comp_pct,
+            publication_ready_approved_translations=pub_ready_approved,
+            draft_pending_review_translations=draft_pending,
+            total_archived_historical_translations=archived_count,
             multilingual_artifacts_excel=ml_excel,
             multilingual_artifacts_word=ml_word,
             multilingual_artifacts_json=ml_json,
