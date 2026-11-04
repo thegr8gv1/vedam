@@ -2,8 +2,8 @@
 ## Master Execution Plan (Canonical Project Charter)
 
 **Document Status:** Active & Living  
-**Version:** 2.0.0  
-**Current Phase:** Phase 2 Complete — Ready for Phase 3 Authorization  
+**Version:** 3.0.0  
+**Current Phase:** Phase 3 Complete — Ready for Phase 4 Authorization  
 **Workspace:** `C:\Vedam`  
 
 ---
@@ -48,7 +48,7 @@ flowchart TD
     end
     TrackA --> RightsEngine["Jurisdiction Rights & Provenance Engine<br>(GREEN / AMBER / RED)"]
     TrackB --> RightsEngine
-    RightsEngine --> DB[(Relational Master Database)]
+    RightsEngine --> DB[(Relational Master Database & Alembic)]
     DB --> Exporters["Publication Engines (Word, Excel, JSON, Audio, Mobile)"]
 ```
 
@@ -62,8 +62,8 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    P1["Phase 1: Research & Discovery (COMPLETE)"] --> P2["Phase 2: Collection & Processing Engine (COMPLETE)"]
-    P2 --> P3["Phase 3: Relational Content DB Expansion"]
+    P1["Phase 1: Research & Discovery (COMPLETE)"] --> P2["Phase 2: Collection Engine (COMPLETE)"]
+    P2 --> P3["Phase 3: DB Maturity & Master Catalog (COMPLETE)"]
     P3 --> P4["Phase 4: Publication Engine (Excel/Word/PDF)"]
     P4 --> P5["Phase 5: Scholarly Text Verification"]
     P5 --> P6["Phase 6: 22-Language Localization"]
@@ -78,54 +78,30 @@ flowchart LR
 ## 4. Phase Milestone Trackers
 
 ### Phase 1: Research, Source Discovery & Architecture Foundation (COMPLETED)
-
-| Step | Action Item | Status | Deliverable Document / Code |
-| :--- | :--- | :---: | :--- |
-| **Step 1** | Inspect 4 target websites (Vignanam, Drik Panchang, Stotrams.com, Temples.bio) | **COMPLETED** | `documentation/source_research/SRC-001_vaidika_vignanam.md` through `SRC-004_temples_bio.md` |
-| **Step 2** | Identify content structure, taxonomy, and available scripts | **COMPLETED** | `documentation/source_research/CONSOLIDATED_SOURCE_COMPARISON.md` |
-| **Step 3** | Examine content permissions, copyright statements, and robots.txt | **COMPLETED** | Assigned AMBER / RED statuses based on terms of service |
-| **Step 4** | Determine public-domain boundaries vs. restricted editorial content | **COMPLETED** | Demarcated ancient public-domain verses from modern protected editions |
-| **Step 5** | Design modular Python collection architecture | **COMPLETED** | `documentation/architecture/SYSTEM_ARCHITECTURE.md` & `automation/` modules |
-| **Step 6** | Design complete Relational Database Schema (SQLAlchemy + Pydantic) | **COMPLETED** | `database/models.py`, `database/schemas.py`, `documentation/architecture/DATABASE_SCHEMA.md` |
-| **Step 7** | Propose Excel, Word, and JSON export specifications | **COMPLETED** | `automation/exporters/`, `documentation/architecture/EXPORT_SPECIFICATIONS.md` |
-| **Step 8** | Finalize detailed milestone roadmap & dual-track strategies | **COMPLETED** | `documentation/permissions/ACQUISITION_STRATEGY_TRACKS.md` |
-| **Step 9** | Implement First Small Pilot Collection & Working Prototype Exports | **COMPLETED** | `automation/pilot/seed_pilot_data.py`, prototype files in `exports/` |
-| **Step 10** | Present Phase 1 Research & Architecture Report | **COMPLETED** | Formal presentation and user sign-off |
-
----
+- Steps 1 to 10 completed: Technical audits of 4 websites, legal demarcation, initial ORM models, export prototypes, dual-track strategies.
 
 ### Phase 2: Vedic Content Collection & Processing Engine (COMPLETED)
+- Steps 2.1 to 2.6 completed: Jurisdiction-aware rights (`jurisdiction.py`), Unicode Vedic swara preserver (`unicode_preserver.py`), expanded ORM schema (`SourceEdition`, `RightsGrant`, `MediaAsset`), modular pipeline engine, 8 pilot compositions seeded, 33 automated tests.
+
+### Phase 3: Database Maturity & Master Devotional Text Catalog (COMPLETED)
 
 | Step | Component | Status | Key Deliverables & Technical Enhancements |
 | :--- | :--- | :---: | :--- |
-| **Step 2.1** | **Jurisdiction-Aware Rights Framework** | **COMPLETED** | `automation/rights/jurisdiction.py`: Separates IP layers (composition, edition, transcription, commentary, audio, video). Supports India (60 yrs), US (pre-1930), EU/UK (Life+70), and Global rules. Enforces human legal sign-off. |
-| **Step 2.2** | **Unicode Preservation & Transliteration** | **COMPLETED** | `automation/cleaners/unicode_preserver.py`: Vedic accent detector (Anudatta `U+0952`, Svarita `U+0951`, Deergha Svarita `U+0954`, Prachaya `U+1CDA`). Verified round-trip transliteration across Devanagari, Telugu, Tamil, Kannada, Malayalam, and IAST. |
-| **Step 2.3** | **Enhanced Database Schema** | **COMPLETED** | `database/models.py` updated with `SourceEdition`, `RightsGrant`, `MediaAsset`, `Contributor`, `raw_source_script`, `raw_source_text`, `canonical_scholarly_text`, and `vedic_accent_annotations`. |
-| **Step 2.4** | **Modular Pipeline Engine (Phase 2A)** | **COMPLETED** | Connectors (`base.py`), Parsers (`verse_splitter.py`, `metadata_extractor.py`), Classifiers (`text_classifier.py` for Awadhi vs Sanskrit), Validators (`completeness_checker.py`), and Queue (`queue.py`, `checkpoint.py`). |
-| **Step 2.5** | **Expanded Pilot Collection (Phase 2B)** | **COMPLETED** | Seeded all 8 pilot compositions (Ganesha Pancharatnam, Shiva Tandava, Aditya Hrudayam, Madhurashtakam, Mahamrityunjaya, Gayatri Mantra, Sri Suktam, Hanuman Chalisa) with complete Excel, Word, and JSON exports. |
-| **Step 2.6** | **Automated Verification Suite** | **COMPLETED** | 33 automated tests passing 100% across rights, pipeline, Unicode preservation, exporters, and duplicate detection. |
-
----
-
-### Pilot Compositions Registry (Phase 2B)
-
-| Content ID | Canonical Title | Category | Primary Deity | Tradition / Source | Script / Language |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| `TX-GAN-STO-001` | Ganesha Pancharatnam | Stotra | Ganesha | Adi Shankaracharya | Sanskrit (Devanagari + 4 Regional + IAST) |
-| `TX-SHI-STO-002` | Shiva Tandava Stotram | Stotra | Shiva | Ravana Kruta | Sanskrit (Devanagari + 4 Regional + IAST) |
-| `TX-SUR-STO-003` | Aditya Hrudayam | Stotra | Surya | Valmiki Ramayana (Yuddha Kanda) | Sanskrit (Devanagari + 4 Regional + IAST) |
-| `TX-KRI-STO-004` | Madhurashtakam | Ashtakam | Krishna | Vallabhacharya | Sanskrit (Devanagari + 4 Regional + IAST) |
-| `TX-SHI-MAN-005` | Mahamrityunjaya Mantra | Vedic Mantra | Shiva | Rigveda Mandala 7.59.12 | Vedic Sanskrit with Swara Accents |
-| `TX-GAY-MAN-006` | Gayatri Vedic Mantra | Vedic Mantra | Savitr / Gayatri | Rigveda Mandala 3.62.10 | Vedic Sanskrit with Swara Accents |
-| `TX-LAK-SUK-007` | Sri Suktam | Suktam | Lakshmi / Sri | Rigvedic Parishishta / Khila Suktam | Vedic Sanskrit with Swara Accents |
-| `TX-HAN-CHA-008` | Hanuman Chalisa | Chalisa | Hanuman | Goswami Tulsidas | Awadhi (`awa`) / Devanagari (Dohas & Chaupais) |
+| **Step 3A** | **Database Maturity & Alembic** | **COMPLETED** | Initialized Alembic (`alembic.ini`, `database/migrations/`). Generated full initial migration (`d6e0af35f812_...`). Built atomic snapshot backup and recovery engine (`database/backup.py`). Built diagnostic reporter (`database/reporter.py`). Verified clean DB upgrades and rollbacks. |
+| **Step 3B** | **Master Devotional Discovery Catalog** | **COMPLETED** | Curated 77 authentic traditional compositions across Vedic hymns, Ganesha, Shiva, Vishnu, Devis, Surya, Hanuman, Subramanya, Krishna, Rama. Generated structured JSON (`data/catalogs/master_devotional_catalog.json`), styled Excel classification workbook (`exports/catalogs/candidate_classification_master_catalog.xlsx`), and markdown catalog (`documentation/project_roadmap/MASTER_DEVOTIONAL_CATALOG.md`). |
+| **Step 3C** | **Verified Source & Edition Registers** | **COMPLETED** | Established 7-layer IP framework in `documentation/provenance/EDITION_AND_PROVENANCE_REGISTER.md`. Documented multi-jurisdiction copyright thresholds (IN 60 yrs, US pre-1930, EU/UK Life+70) in `documentation/permissions/RIGHTS_ASSESSMENT_REGISTER.md`. |
+| **Step 3D** | **Pilot Texts Audit & Quality Classification** | **COMPLETED** | Audited all 8 pilot texts. Categorized completeness: Gayatri & Mahamrityunjaya as `VERIFIED_FULL_TEXT` (1/1 with Vedic accents); remaining 6 compositions explicitly marked as `SAMPLE_RECORD` awaiting full ingestion. Published `documentation/quality/PILOT_TEXTS_VERIFICATION_REPORT.md`. |
+| **Step 3E** | **Content Quality Assurance Engine** | **COMPLETED** | Built `automation/validators/qa_engine.py` supporting 12 lifecycle quality stages (`DISCOVERED` to `APPROVED_FOR_PUBLICATION`) and 14 automated validation checks (versification, duplicate numbering, sequence gaps, danda syntax, accents, ligatures, corruption, metadata completeness). |
+| **Step 3F** | **Multilingual & Tamil Preparation** | **COMPLETED** | Formulated 24-language support framework. Analyzed Tamil consonant representation (lack of aspirated/voiced letters, Grantha glyph support, and dual-view superscript notation). Verified accent round-trip preservation. Published `documentation/quality/MULTILINGUAL_UNICODE_TEST_REPORT.md`. |
+| **Step 3G** | **Controlled Batch Ingestion Engine** | **COMPLETED** | Implemented `automation/pipeline/batch_processor.py` supporting bounded batch sizes, dry-run simulation, source permission validation, atomic checkpointing, error queues, duplicate checks, and manual human legal approval transitions. |
+| **Step 3H** | **Comprehensive Test Suite Expansion** | **COMPLETED** | Expanded automated test suite to **45 tests passing 100% in 2.92 seconds** (`tests/test_database_maturity.py`, `tests/test_qa_engine.py`, `tests/test_batch_processor.py`, and existing suites). |
 
 ---
 
 ## 5. Technical Acceptance Standards
 
 - **Authenticity Gate**: No Sanskrit text is modified without scholarly or critical-edition proof. Raw source text is stored immutably.
-- **Rights Gate**: Mandatory `ContentRights` and `RightsGrant` entities enforce `release_status == ReleaseStatus.GREEN` with documented jurisdiction clearance and legal sign-off.
+- **Completeness Gate**: Every text is explicitly classified (`METADATA_ONLY`, `SAMPLE_RECORD`, `INCOMPLETE_TEXT`, `FULL_UNVERIFIED_TEXT`, `VERIFIED_FULL_TEXT`). Exported prototypes are not treated as full verified texts.
+- **Rights Gate**: Mandatory `ContentRights` and `RightsGrant` entities enforce `release_status == ReleaseStatus.GREEN` with documented jurisdiction clearance and human legal review sign-off.
 - **Unicode Gate**: Indic texts conform strictly to Unicode Indic standards with Vedic combining characters (Anudatta `U+0952`, Svarita `U+0951`, Deergha Svarita `U+0954`).
-- **Linguistic Gate**: Awadhi devotional works (`awa`) are distinguished from classical Sanskrit (`sa`) with custom verse segmentation (Dohas and Chaupais).
-- **Test Integrity Gate**: 100% test pass rate across unit and compliance test suites (`pytest tests/`). Currently 33 tests passing.
+- **Test Integrity Gate**: 100% test pass rate across unit and compliance test suites (`pytest tests/`). Currently 45 tests passing.
