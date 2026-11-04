@@ -1,0 +1,1208 @@
+{
+  "content_id": "VEDA-TXT-00007",
+  "canonical_title": "Sri Suktam",
+  "devanagari_title": "श्री सूक्तम्",
+  "composer": "Rishis Ananda, Chiklita, Kardama, Sri",
+  "source_scripture": "Rigveda Khilani 5.87",
+  "verse_count": 16,
+  "generated_at_utc": "2026-11-04T23:40:37.115775+00:00",
+  "supported_languages": [
+    "sa",
+    "hi",
+    "te",
+    "ta",
+    "kn",
+    "mr",
+    "bn",
+    "gu",
+    "ml",
+    "or",
+    "en"
+  ],
+  "verses": [
+    {
+      "verse_number": 1,
+      "verse_type": "VERSE",
+      "original_sanskrit": "हि॒र॒ण्यव॑र्णां॒ हरि॑णीं सु॒वर्ण॑रजत॒स्रजा॑म् ।\nच॒न्द्रां हि॒रण्म॑यीं ल॒क्ष्मीं जात॑वेदो म॒ आव॑ह ॥ १ ॥",
+      "iast": "hiraṇyavarṇāṁ hariṇīṁ suvarṇarajatasrajām ।\ncandrāṁ hiraṇmayīṁ lakṣmīṁ jātavedo ma āvaha ॥ 1 ॥",
+      "transliterations": {
+        "telugu": "హి॒ర॒ణ్యవ॑ర్ణాం॒ హరి॑ణీం సు॒వర్ణ॑రజత॒స్రజా॑మ్ ।\nచ॒న్ద్రాం హి॒రణ్మ॑యీం ల॒క్ష్మీం జాత॑వేదో మ॒ ఆవ॑హ ॥ ౧ ॥",
+        "tamil": "ஹி॒ர॒ண்யவ॑ர்ணாம்॒ ஹரி॑ணீம் ஸு॒வர்ண॑ரஜத॒ஸ்ரஜா॑ம் ।\nச॒ந்த்ராம் ஹி॒ரண்ம॑யீம் ல॒க்ஷ்மீம் ஜாத॑வேதோ ம॒ ஆவ॑ஹ ॥ ௧ ॥",
+        "kannada": "ಹಿ॒ರ॒ಣ್ಯವ॑ರ್ಣಾಂ॒ ಹರಿ॑ಣೀಂ ಸು॒ವರ್ಣ॑ರಜತ॒ಸ್ರಜಾ॑ಮ್ ।\nಚ॒ನ್ದ್ರಾಂ ಹಿ॒ರಣ್ಮ॑ಯೀಂ ಲ॒ಕ್ಷ್ಮೀಂ ಜಾತ॑ವೇದೋ ಮ॒ ಆವ॑ಹ ॥ ೧ ॥",
+        "malayalam": "ഹി॒ര॒ണ്യവ॑ര്ണാം॒ ഹരി॑ണീം സു॒വര്ണ॑രജത॒സ്രജാ॑മ് ।\nച॒ന്ദ്രാം ഹി॒രണ്മ॑യീം ല॒ക്ഷ്മീം ജാത॑വേദോ മ॒ ആവ॑ഹ ॥ ൧ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "O Jatavedas (Agni)! Invoke for me that Lakshmi who shines with the golden hue, who is graceful like a deer, adorned with garlands of gold and silver, luminous like the cool moon, and of golden essence.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे जातवेदा अग्निदेव! आप मेरे लिए उस परम कल्याणी महालक्ष्मी का आह्वान कीजिए, जो स्वर्ण जैसी कान्ति वाली हैं, चंचल हरिणी के समान शोभायमान हैं, सोने-चाँदी की मालाओं से सुशोभित हैं, चन्द्रमा के समान शीतल व आह्लाददायिनी हैं और साक्षात् सुवर्णमयी हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఓ జాతవేదుడైన అగ్నిదేవా! బంగారు కాంతులీనుతూ, లేడి వలె మనోహరమై, బంగారు-వెండి హారములను ధరించి, చంద్రుని వలె ఆహ్లాదకరమైన తేజస్సుతో వెలుగొందే ఆ దివ్య శ్రీ మహాలక్ష్మిని నా కొరకు ఆవాహన చేయుము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஓ சகலமும் அறிந்த அக்னி தேவனே! பொன்னிற மேனியும், மான் போன்ற நளினமும், பொன்-வெள்ளி மாலைகளும் பூண்டு, சந்திரனைப் போல் மனதிற்கு அமைதியும் மங்கலமும் அருளும் அந்த ஸ்ரீ மஹாலக்ஷ்மி தேவியை எனக்கு அருள்வாயாக.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಹೇ ಸರ್ವಜ್ಞನಾದ ಅಗ್ನಿದೇವನೇ! ಚಿನ್ನದ ಬಣ್ಣದವಳೂ, ಜಿಂಕೆಯಂತೆ ಮನೋಹರಳೂ, ಚಿನ್ನ-ಬೆಳ್ಳಿ ಹಾರಗಳಿಂದ ಶೋಭಿತಳೂ, ಚಂದ್ರನಂತೆ ಆಹ್ಲಾದಕರಳೂ ಆದ ಶ್ರೀ ಮಹಾಲಕ್ಷ್ಮಿಯನ್ನು ನನಗಾಗಿ ಆವಾಹಿಸು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे जातवेदा अग्निदेवा! सुवर्णकांती असणाऱ्या, हरिणीप्रमाणे मनमोहक, सोने-चांदीच्या माळा धारण करणाऱ्या व चंद्राप्रमाणे शीतल व शांत स्वरूप असणाऱ्या श्रीमहालक्ष्मीचे माझ्यासाठी आवाहन करा.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে সর্বজ্ঞ অগ্নিদেব! স্বর্ণবর্ণা, হরিণীর ন্যায় মনোহরা, স্বর্ণ ও রৌপ্যের মালায় শোভিতা, চন্দ্রের ন্যায় স্নিগ্ধ ও প্রকাশময়ী সেই দেবী লক্ষ্মীকে আমার কল্যাণের জন্য আবাহন করুন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હે સર્વજ્ઞ અગ્નિદેવ! સુવર્ણ જેવી કાંતિવાળાં, હરિણી સમાન મનોહર, સોના-ચાંદીના હારથી સુશોભિત અને ચંદ્ર સમાન આહ્લાદક તેજવાળાં તે શ્રી મહાલક્ષ્મીને મારા માટે બોલાવો.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഹേ സർവ്വജ്ഞനായ അഗ്നിദേവാ! സ്വർണ്ണവർണ്ണമുള്ളവളും, മാനിനെപ്പോലെ സുന്ദരിയും, പൊന്നും വെള്ളിയും കൊണ്ടുള്ള മാലകളണിഞ്ഞവളും, ചന്ദ്രനെപ്പോലെ പ്രകാശിക്കുന്നവളുമായ ആ ശ്രീ മഹാലക്ഷ്മിയെ എനിക്കായി ആവാഹിച്ചാലും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହେ ସର୍ବଜ୍ଞ ଅଗ୍ନିଦେବ! ସୁବର୍ଣ୍ଣ କାନ୍ତିମୟୀ, ହରିଣୀ ଭଳି ମନୋହରା, ସୁନା-ରୂପା ମାଳା ଧାରଣ କରିଥିବା ତଥା ଚନ୍ଦ୍ରଙ୍କ ଭଳି ଶୀତଳ ଆହ୍ଲାଦଦାୟିନୀ ସେହି ଶ୍ରୀ ମହାଲକ୍ଷ୍ମୀଙ୍କୁ ମୋ ପାଇଁ ଆବାହନ କରନ୍ତୁ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 2,
+      "verse_type": "VERSE",
+      "original_sanskrit": "तां म॒ आव॑ह॒ जात॑वेदो ल॒क्ष्मीमन॑पगा॒मिनी॑म् ।\nयस्यां॒ हिर॑ण्यं वि॒न्देयं॒ गामश्वं॒ पुरु॑षान॒हम् ॥ २ ॥",
+      "iast": "tāṁ ma āvaha jātavedo lakṣmīmanapagāminīm ।\nyasyāṁ hiraṇyaṁ vindeyaṁ gāmaśvaṁ puruṣānaham ॥ 2 ॥",
+      "transliterations": {
+        "telugu": "తాం మ॒ ఆవ॑హ॒ జాత॑వేదో ల॒క్ష్మీమన॑పగా॒మినీ॑మ్ ।\nయస్యాం॒ హిర॑ణ్యం వి॒న్దేయం॒ గామశ్వం॒ పురు॑షాన॒హమ్ ॥ ౨ ॥",
+        "tamil": "தாம் ம॒ ஆவ॑ஹ॒ ஜாத॑வேதோ ல॒க்ஷ்மீமந॑பகா॒மிநீ॑ம் ।\nயஸ்யாம்॒ ஹிர॑ண்யம் வி॒ந்தேயம்॒ காமஶ்வம்॒ புரு॑ஷாந॒ஹம் ॥ ௨ ॥",
+        "kannada": "ತಾಂ ಮ॒ ಆವ॑ಹ॒ ಜಾತ॑ವೇದೋ ಲ॒ಕ್ಷ್ಮೀಮನ॑ಪಗಾ॒ಮಿನೀ॑ಮ್ ।\nಯಸ್ಯಾಂ॒ ಹಿರ॑ಣ್ಯಂ ವಿ॒ನ್ದೇಯಂ॒ ಗಾಮಶ್ವಂ॒ ಪುರು॑ಷಾನ॒ಹಮ್ ॥ ೨ ॥",
+        "malayalam": "താം മ॒ ആവ॑ഹ॒ ജാത॑വേദോ ല॒ക്ഷ്മീമന॑പഗാ॒മിനീ॑മ് ।\nയസ്യാം॒ ഹിര॑ണ്യം വി॒ന്ദേയം॒ ഗാമശ്വം॒ പുരു॑ഷാന॒ഹമ് ॥ ൨ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "O Agni! Invoke for me that Lakshmi who will never depart from me, through whose presence I shall obtain gold, cattle, horses, and devoted kin.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे अग्निदेव! मेरे लिए उस स्थिर व कभी दूर न जाने वाली लक्ष्मी को बुलाइए, जिनके अनुग्रह से मैं अक्षय सुवर्ण, गौवें, अश्व और निष्ठावान कुटुम्बीजनों को प्राप्त कर सकूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఓ అగ్నిదేవా! నన్ను ఎన్నడూ వీడిపోని శాశ్వత లక్ష్మీదేవిని నా యొద్దకు రప్పింపుము; ఆమె కటాక్షము వలన నేను బంగారమును, గోవులను, అశ్వములను, సజ్జనులైన సేవకులను, సంతానమును పొందెదను గాక.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஓ அக்னியே! என்னை விட்டு ஒருபோதும் நீங்காத நிலையான லக்ஷ்மி தேவியை என்னிடம் ஆவாகனம் செய்வாயாக; அவளருளால் நான் தங்கம், பசுக்கள், குதிரைகள் மற்றும் உற்ற நல்மக்களைப் பெறுவேனாக.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಹೇ ಅಗ್ನಿಯೇ! ನನ್ನನ್ನು ಎಂದೂ ಬಿಟ್ಟುಹೋಗದ ಅಚಲವಾದ ಲಕ್ಷ್ಮಿಯನ್ನು ಕರೆತರು; ಆಕೆಯ ಅನುಗ್ರಹದಿಂದ ನಾನು ಹೇರಳವಾದ ಚಿನ್ನ, ಗೋವುಗಳು, ಕುದುರೆಗಳು ಮತ್ತು ಸತ್ಪುರುಷರ ಸಹವಾಸವನ್ನು ಪಡೆಯುವಂತಾಗಲಿ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे अग्निदेवा! मला कधीही सोडून न जाणाऱ्या अशा स्थिर लक्ष्मीला माझ्याकडे घेऊन या, ज्यांच्या कृपेने मला सुवर्ण, गाई, घोडे आणि सुयोग्य सेवक व कुटुंबीय प्राप्त होतील.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে অগ্নিদেব! আমার গৃহে সেই অচলা লক্ষ্মীকে আনয়ন করুন, যিনি কখনো ত্যাগ করেন না; যাঁর কৃপায় আমি স্বর্ণ, গোসম্পদ, অশ্ব এবং সুহৃদ পরিবার লাভ করতে পারি।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હે અગ્નિદેવ! મને કદી છોડીને ન જાય તેવી સ્થિર લક્ષ્મીનું આવાહન કરો; જેમની કૃપાથી હું સુવર્ણ, ગાયો, ઘોડા અને સજ્જન પરિજનોને પામી શકું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഹേ അഗ്നിദേവാ! എന്നെ ഒരിക്കലും വിട്ടുപിരിയാത്ത ആ ശാശ്വതലക്ഷ്മിയെ ഇവിടെ കൊണ്ടുവന്നാലും; ആ ദേവിയുടെ കാരുണ്യത്താൽ എനിക്ക് സ്വർണ്ണവും പശുക്കളും കുതിരകളും ഉത്തമരായ ജനങ്ങളും ലഭിക്കുമാറാകട്ടെ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହେ ଅଗ୍ନିଦେବ! ମୋ ପାଇଁ ସେହି ଅଚଳା ଲକ୍ଷ୍ମୀଙ୍କୁ ପ୍ରଦାନ କରନ୍ତୁ, ଯିଏ କେବେ ମୋତେ ତ୍ୟାଗ କରିବେ ନାହିଁ; ଯାହାଙ୍କ କୃପାରୁ ମୁଁ ସ୍ୱର୍ଣ୍ଣ, ଗୋଧନ, ଅଶ୍ୱ ଓ ସୁଯୋଗ୍ୟ ପରିବାର ଲାଭ କରିପାରିବି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 3,
+      "verse_type": "VERSE",
+      "original_sanskrit": "अ॒श्व॒पूर्वां र॑थम॒ध्यां ह॒स्तिना॑दप्र॒बोधि॑नीम् ।\nश्रियं॑ दे॒वीमुप॑ह्वये॒ श्रीर्मा॑ दे॒वीरुप॑स्पृशतु ॥ ३ ॥",
+      "iast": "aśvapūrvāṁ rathamadhyāṁ hastinādaprabodhinīm ।\nśriyaṁ devīmupahvaye śrīrmā devīrupaspṛśatu ॥ 3 ॥",
+      "transliterations": {
+        "telugu": "అ॒శ్వ॒పూర్వాం ర॑థమ॒ధ్యాం హ॒స్తినా॑దప్ర॒బోధి॑నీమ్ ।\nశ్రియం॑ దే॒వీముప॑హ్వయే॒ శ్రీర్మా॑ దే॒వీరుప॑స్పృశతు ॥ ౩ ॥",
+        "tamil": "அ॒ஶ்வ॒பூர்வாம் ர॑தம॒த்யாம் ஹ॒ஸ்திநா॑தப்ர॒போதி॑நீம் ।\nஶ்ரியம்॑ தே॒வீமுப॑ஹ்வயே॒ ஶ்ரீர்மா॑ தே॒வீருப॑ஸ்ப்ரு'ஶது ॥ ௩ ॥",
+        "kannada": "ಅ॒ಶ್ವ॒ಪೂರ್ವಾಂ ರ॑ಥಮ॒ಧ್ಯಾಂ ಹ॒ಸ್ತಿನಾ॑ದಪ್ರ॒ಬೋಧಿ॑ನೀಮ್ ।\nಶ್ರಿಯಂ॑ ದೇ॒ವೀಮುಪ॑ಹ್ವಯೇ॒ ಶ್ರೀರ್ಮಾ॑ ದೇ॒ವೀರುಪ॑ಸ್ಪೃಶತು ॥ ೩ ॥",
+        "malayalam": "അ॒ശ്വ॒പൂര്വാം ര॑ഥമ॒ധ്യാം ഹ॒സ്തിനാ॑ദപ്ര॒ബോധി॑നീമ് ।\nശ്രിയം॑ ദേ॒വീമുപ॑ഹ്വയേ॒ ശ്രീര്മാ॑ ദേ॒വീരുപ॑സ്പൃശതു ॥ ൩ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "I invoke that Goddess Sri, who is heralded by noble steeds, seated amidst glorious chariots, and awakened by the trumpeting of royal elephants. May the divine Goddess Sri touch me with Her grace!",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जिनके आगे-आगे अश्व चलते हैं, जो दिव्य रथ के मध्य में विराजमान हैं और हाथियों की चिंघाड़ से जिनकी वंदना होती है, उन परम देवी श्रीलक्ष्मी का मैं आह्वान करता हूँ; वे दयामयी देवी मुझ पर अपनी कृपा दृष्टि बनाए रखें।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ముందు గుర్రములు నడువగా, రథ మధ్యమందు వేంచేసియుండి, గజరాజుల ఘీంకారములతో మేల్కొల్పబడు దివ్య శ్రీదేవిని నేను ప్రార్థించుచున్నాను; ఆ జగన్మాత తన కరుణాకటాక్షములతో నన్ను అనుగ్రహించుగాక.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "முன்னே குதிரைகள் அணிவகுக்க, தேரின் நடுவே எழுந்தருளி, யானைகளின் பிளிறலால் துயிலெழும் லக்ஷ்மி தேவியை நான் அழைக்கிறேன்; அந்த திவ்ய அன்னை என்னைத் தீண்டி ஆசீர்வதிப்பாளாக.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಮುಂದೆ ಕುದುರೆಗಳು ಸಾಗುತ್ತಿರಲು, ರಥದ ಮಧ್ಯದಲ್ಲಿ ಆಸೀನಳಾಗಿ, ಗಜರಾಜರ ಘೀಂಕಾರದಿಂದ ಸ್ತುತಿಸಲ್ಪಡುವ ಶ್ರೀದೇವಿಯನ್ನು ನಾನು ಆವಾಹಿಸುತ್ತೇನೆ; ಆ ಪರಮದೇವಿ ನನ್ನನ್ನು ಆಶೀರ್ವದಿಸಲಿ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "ज्यांच्या पुढे घोडे धावतात, ज्या रथाच्या मध्यभागी विराजमान आहेत आणि हत्तींच्या गर्जनेने ज्यांची स्तुती होते, त्या श्रीलक्ष्मी देवीचे मी आवाहन करतो; त्या कृपामयी देवीने माझ्यावर अनुग्रह करावा.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যাঁহার অগ্রে অশ্ববাহিনী গমন করে, যিনি দিব্য রথের মধ্যস্থলে অবস্থিতা এবং গজরাজের বৃংহণে বন্দিতা, সেই শ্রীদেবীকে আমি আবাহন করি; সেই কৃপাময়ী দেবী আমাকে স্পর্শ করে ধন্য করুন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જેમની આગળ અશ્વો દોડે છે, જે રથની મધ્યમાં બિરાજે છે અને ગજરાજોના નાદથી જે પ્રસન્ન થાય છે, તે શ્રીદેવીનું હું આવાહન કરું છું; તે ભગવતી મુજ પર કૃપાદ્રષ્ટિ કરે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "മുമ്പിൽ കുതിരകളോടുകൂടിയവളും, രഥമദ്ധ്യത്തിലിരിക്കുന്നവളും, ആനകളുടെ ഗർജ്ജനത്താൽ ഉണർത്തപ്പെടുന്നവളുമായ ആ ശ്രീദേവിയെ ഞാൻ വണങ്ങുന്നു; ആ ജഗദംബിക എന്നെ കാരുണ്യത്തോടെ സ്പർശിക്കുമാറാകട്ടെ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯାହାଙ୍କ ଆଗରେ ଅଶ୍ୱ ଚାଲନ୍ତି, ଯିଏ ରଥ ମଧ୍ୟରେ ବିରାଜମାନ ଏବଂ ହାତୀମାନଙ୍କ ଗର୍ଜନରେ ବନ୍ଦିତ, ସେହି ଶ୍ରୀଦେବୀଙ୍କୁ ମୁଁ ଆବାହନ କରୁଛି; ସେହି ଦିବ୍ୟ ମାତା ମୋତେ କୃପା କରନ୍ତୁ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 4,
+      "verse_type": "VERSE",
+      "original_sanskrit": "कां॒ सो᳚स्मि॒तां हिर॑ण्यप्रा॒कारा॑मा॒र्द्रां ज्वल॑न्तीं तृ॒प्तां त॒र्पय॑न्तीम् ।\nप॒द्मे॒ स्थि॒तां प॒द्मव॑र्णां॒ तामि॒होप॑ह्वये॒ श्रिय॑म् ॥ ४ ॥",
+      "iast": "kāṁ sō'smitāṁ hiraṇyaprākārāmārdrāṁ jvalantīṁ tṛptāṁ tarpayantīm ।\npadmē sthitāṁ padmavarṇāṁ tāmihōpahvayē śriyam ॥ 4 ॥",
+      "transliterations": {
+        "telugu": "కాం॒ సో᳚స్మి॒తాం హిర॑ణ్యప్రా॒కారా॑మా॒ర్ద్రాం జ్వల॑న్తీం తృ॒ప్తాం త॒ర్పయ॑న్తీమ్ ।\nప॒ద్మే॒ స్థి॒తాం ప॒ద్మవ॑ర్ణాం॒ తామి॒హోప॑హ్వయే॒ శ్రియ॑మ్ ॥ ౪ ॥",
+        "tamil": "காம்॒ ஸோ᳚ஸ்மி॒தாம் ஹிர॑ண்யப்ரா॒காரா॑மா॒ர்த்ராம் ஜ்வல॑ந்தீம் த்ரு'॒ப்தாம் த॒ர்பய॑ந்தீம் ।\nப॒த்மே॒ ஸ்தி॒தாம் ப॒த்மவ॑ர்ணாம்॒ தாமி॒ஹோப॑ஹ்வயே॒ ஶ்ரிய॑ம் ॥ ௪ ॥",
+        "kannada": "ಕಾಂ॒ ಸೋ᳚ಸ್ಮಿ॒ತಾಂ ಹಿರ॑ಣ್ಯಪ್ರಾ॒ಕಾರಾ॑ಮಾ॒ರ್ದ್ರಾಂ ಜ್ವಲ॑ನ್ತೀಂ ತೃ॒ಪ್ತಾಂ ತ॒ರ್ಪಯ॑ನ್ತೀಮ್ ।\nಪ॒ದ್ಮೇ॒ ಸ್ಥಿ॒ತಾಂ ಪ॒ದ್ಮವ॑ರ್ಣಾಂ॒ ತಾಮಿ॒ಹೋಪ॑ಹ್ವಯೇ॒ ಶ್ರಿಯ॑ಮ್ ॥ ೪ ॥",
+        "malayalam": "കാം॒ സോ᳚സ്മി॒താം ഹിര॑ണ്യപ്രാ॒കാരാ॑മാ॒ര്ദ്രാം ജ്വല॑ന്തീം തൃ॒പ്താം ത॒ര്പയ॑ന്തീമ് ।\nപ॒ദ്മേ॒ സ്ഥി॒താം പ॒ദ്മവ॑ര്ണാം॒ താമി॒ഹോപ॑ഹ്വയേ॒ ശ്രിയ॑മ് ॥ ൪ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "I invoke here that Goddess Sri, who has a radiant smile, who is enclosed in golden ramparts, ever moist with compassion, blazing with splendor, fully contented and bestowing fulfillment, seated on a lotus, and of lotus hue.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जो अवर्णनीय परमानन्द स्वरूपा हैं, मन्द-मन्द मुस्कुराती हैं, स्वर्ण के परकोटे में सुरक्षित हैं, करुणा से आर्द्र हैं, तेजस्वी हैं, स्वयं तृप्त रहकर भक्तों को तृप्त करती हैं, कमल पर विराजमान और कमल जैसी कान्ति वाली हैं, उन श्रीलक्ष्मी को मैं यहाँ सादर बुलाता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "నిర్వచించరాని పరమానంద స్వరూపిణి, చిరునవ్వులు చిందించునది, సువర్ణ ప్రాకారములలో వెలుగొందునది, కరుణార్ద్ర హృదయ, నిత్యానంద తృప్త, భక్తులను తృప్తిపరచునది, పద్మాసనస్థిత, కమలవర్ణ శోభితయైన శ్రీదేవిని ఇక్కడకు ఆహ్వానించుచున్నాను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "வர்ணிக்கவொண்ணா ஆனந்த வடிவானவள், புன்னகை பூத்த முகத்தவள், பொன் மதில் சுவருக்குள் விளங்குபவள், கருணையால் கனிந்தவள், பேரொளியாய் திகழ்பவள், தாமரையில் வீற்றிருக்கும் செந்தாமரை வண்ணத்தவளான அந்த ஸ்ரீயை இங்கு அழைக்கிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಅನಿರ್ವಾಚ್ಯ ಆನಂದಮಯಿಯಾದ, ಮಂದಸ್ಮಿತೆಯಾದ, ಸುವರ್ಣ ಕೋಟೆಯಲ್ಲಿ ರಾರಾಜಿಸುವ, ಕರುಣಾಮಯಿಯಾದ, ತೃಪ್ತಳೂ ಭಕ್ತರನ್ನು ತಣಿಸುವವಳೂ, ಕಮಲಾಸನದಲ್ಲಿ ಕುಳಿತ ಪದ್ಮವರ್ಣೆಯಾದ ಆ ಶ್ರೀದೇವಿಯನ್ನು ಇಲ್ಲಿಗೆ ಪ್ರಾರ್ಥಿಸುತ್ತೇನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "ज्या अनिर्वचनीय आनंदस्वरूपा आहेत, मंदस्मित करणाऱ्या, सुवर्णाच्या तटबंदीत शोभणाऱ्या, दयेने ओथंबलेल्या, तेजस्वी, तृप्त व सर्वांना तृप्त करणाऱ्या, कमळावर विराजमान त्या श्रीलक्ष्मीचे मी आवाहन करतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যিনি অনির্বচনীয় পরমানন্দময়ী, মধুর হাস্যবদনা, সুবর্ণ প্রাচীরে বেষ্টিতা, করুণায় আর্দ্রা, স্বয়ন্তৃপ্তা ও ভক্তকে তৃপ্তিকারিণী, পদ্মাসনে উপবিষ্টা সেই পদ্মবর্ণা শ্রীদেবীকে আমি এই স্থানে আহ্বান করি।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જે વર્ણવી ન શકાય તેવા આનંદસ્વરૂપ છે, મંદ હાસ્યવાળાં, સુવર્ણકોટથી ઘેરાયેલાં, કરુણામયી, સંતુષ્ટ અને સર્વને સંતુષ્ટ કરનારાં, કમળ પર બિરાજમાન તે શ્રીદેવીને હું અહીં પધરાવું છું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അവാച്യമായ ആനന്ദസ്വരൂപിണിയും, മന്ദഹാസത്തോടുകൂടിയവളും, സ്വർണ്ണമതിലുകളാൽ ചുറ്റപ്പെട്ടവളും, കാരുണ്യാർദ്രയും, പത്മത്തിലിരിക്കുന്നവളുമായ ആ ശ്രീദേവിയെ ഞാൻ ഇവിടേയ്ക്ക് ആവാഹിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯିଏ ଅନିର୍ବଚନୀୟ ଆନନ୍ଦମୟୀ, ମନ୍ଦହାସ୍ୟଯୁକ୍ତା, ସୁବର୍ଣ୍ଣ ପ୍ରାଚୀରରେ ପରିବେଷ୍ଟିତା, କରୁଣାର୍ଦ୍ରା, ସ୍ୱୟଂ ତୃପ୍ତ ଓ ଭକ୍ତଙ୍କୁ ତୃପ୍ତକାରିଣୀ, ପଦ୍ମାସନା ସେହି ପଦ୍ମବର୍ଣ୍ଣା ଶ୍ରୀଦେବୀଙ୍କୁ ମୁଁ ଏଠାରେ ଆବାହନ କରୁଛି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 5,
+      "verse_type": "VERSE",
+      "original_sanskrit": "च॒न्द्रां प्र॑भा॒सां य॒शसा॒ ज्वल॑न्तीं॒ श्रियं॑ लो॒के दे॒वजु॑ष्टामुदा॒राम् ।\nतां प॒द्मिनी॑मीं॒ शर॑णम॒हं प्रप॑द्येऽल॒क्ष्मीर्मे॑ नश्यतां॒ त्वां वृ॑णे ॥ ५ ॥",
+      "iast": "candrāṁ prabhāsāṁ yaśasā jvalantīṁ śriyaṁ lōkē dēvajuṣṭāmudārām ।\ntāṁ padminīmīṁ śaraṇamahaṁ prapadyē'lakṣmīrmē naśyatāṁ tvāṁ vr̥ṇē ॥ 5 ॥",
+      "transliterations": {
+        "telugu": "చ॒న్ద్రాం ప్ర॑భా॒సాం య॒శసా॒ జ్వల॑న్తీం॒ శ్రియం॑ లో॒కే దే॒వజు॑ష్టాముదా॒రామ్ ।\nతాం ప॒ద్మినీ॑మీం॒ శర॑ణమ॒హం ప్రప॑ద్యేఽల॒క్ష్మీర్మే॑ నశ్యతాం॒ త్వాం వృ॑ణే ॥ ౫ ॥",
+        "tamil": "ச॒ந்த்ராம் ப்ர॑பா॒ஸாம் ய॒ஶஸா॒ ஜ்வல॑ந்தீம்॒ ஶ்ரியம்॑ லோ॒கே தே॒வஜு॑ஷ்டாமுதா॒ராம் ।\nதாம் ப॒த்மிநீ॑மீம்॒ ஶர॑ணம॒ஹம் ப்ரப॑த்யேऽல॒க்ஷ்மீர்மே॑ நஶ்யதாம்॒ த்வாம் வ்ரு'॑ணே ॥ ௫ ॥",
+        "kannada": "ಚ॒ನ್ದ್ರಾಂ ಪ್ರ॑ಭಾ॒ಸಾಂ ಯ॒ಶಸಾ॒ ಜ್ವಲ॑ನ್ತೀಂ॒ ಶ್ರಿಯಂ॑ ಲೋ॒ಕೇ ದೇ॒ವಜು॑ಷ್ಟಾಮುದಾ॒ರಾಮ್ ।\nತಾಂ ಪ॒ದ್ಮಿನೀ॑ಮೀಂ॒ ಶರ॑ಣಮ॒ಹಂ ಪ್ರಪ॑ದ್ಯೇಽಲ॒ಕ್ಷ್ಮೀರ್ಮೇ॑ ನಶ್ಯತಾಂ॒ ತ್ವಾಂ ವೃ॑ಣೇ ॥ ೫ ॥",
+        "malayalam": "ച॒ന്ദ്രാം പ്ര॑ഭാ॒സാം യ॒ശസാ॒ ജ്വല॑ന്തീം॒ ശ്രിയം॑ ലോ॒കേ ദേ॒വജു॑ഷ്ടാമുദാ॒രാമ് ।\nതാം പ॒ദ്മിനീ॑മീം॒ ശര॑ണമ॒ഹം പ്രപ॑ദ്യേഽല॒ക്ഷ്മീര്മേ॑ നശ്യതാം॒ ത്വാം വൃ॑ണേ ॥ ൫ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "I seek refuge in that Goddess Sri, who shines like the radiant moon, blazing with glory, revered by the gods in all worlds, most magnanimous, who holds a lotus. May my misfortune (Alakshmi) be destroyed! I surrender unto You.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "चन्द्रमा के समान शीतल, परम दीप्तिमान, सुयश से प्रज्वलित, समस्त लोकों में देवताओं द्वारा वंदित, परम उदार और कमलधारिणी उस महालक्ष्मी की शरण में मैं जाता हूँ। मेरी दरिद्रता व दुर्भाग्य (अलक्ष्मी) नष्ट हो जाए, हे देवि! मैं केवल आपका वरण करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "చంద్రుని వలె ప్రకాశించునది, దివ్య తేజస్సుతో విలసిల్లునది, దేవతలచే సేవింపబడునది, పరమ ఔదార్యవతి, పద్మమును ధరించిన ఆ జగన్మాతను నేను శరణు వేడుచున్నాను; నాలోని దారిద్ర్యము, అరిష్టములు నశించుగాక; ఓ దేవీ! నిన్నే ఆశ్రయించుచున్నాను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "சந்திரனைப் போலக் குளிர்ந்தவள், உலகெலாம் போற்றும் புகழுடையவள், தேவர்களால் தொழப்படுபவள், பேரருள் கொண்டவள், தாமரையேந்திய அந்த லக்ஷ்மியை நான் சரணடைகிறேன்; என் தரித்திரம் தொலையட்டும்; உன்னையே நான் பற்றிக்கொள்கிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಚಂದ್ರನಂತೆ ಕಾಂತಿಯುಕ್ತಳೂ, ದೇವತೆಗಳಿಂದ ಸೇವಿಸಲ್ಪಡುವವಳೂ, ಅತ್ಯಂತ ಉದಾರಳೂ, ಕಮಲಧಾರಣಿಯೂ ಆದ ಆ ಶ್ರೀದೇವಿಯ ಶರಣು ಹೊಂದುತ್ತೇನೆ; ನನ್ನ ದಾರಿದ್ರ್ಯವು ನಾಶವಾಗಲಿ, ಹೇ ದೇವಿಯೇ! ನಿನ್ನನ್ನೇ ಆಶ್ರಯಿಸುತ್ತೇನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "चंद्रासारख्या शीतल, अत्यंत तेजस्वी, कीर्तीने तळपणाऱ्या, देवांनी पूजलेल्या व अत्यंत उदार अशा त्या कमळधारिणी लक्ष्मीला मी शरण जातो. माझे दारिद्र्य नष्ट होवो; हे माते, मी तुझाच आश्रय घेतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "চন্দ্রের ন্যায় উজ্জ্বল, দিব্য তেজে ভাস্বর, দেবতাদের দ্বারা পূজিতা, পরম উধারা ও পদ্মধারিণী সেই মহালক্ষ্মীর শরণাপন্ন হই। আমার অলক্ষ্মী (দারিদ্র্য ও দুর্ভাগ্য) বিনষ্ট হউক; হে দেবী, আমি কেবল তোমাকেই বরণ করি।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "ચંદ્ર સમાન શીતળ, દિવ્ય કીર્તિવાન, દેવો દ્વારા પૂજિત, અત્યંત ઉદાર અને કમળધારિણી તે મહાલક્ષ્મીને હું શરણે જાઉં છું. મારી દરિદ્રતા નષ્ટ થાઓ; હે માતા! હું આપનો જ આશ્રય લઉં છું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ചന്ദ്രനെപ്പോലെ തിളങ്ങുന്നവളും, പ്രഭാപൂർണ്ണയും, ദേവന്മാരാൽ വന്ദിക്കപ്പെടുന്നവളും, പരമ ഉദാരമതിയുമായ ആ പദ്മധാരിണിയെ ഞാൻ ശരണം പ്രാപിക്കുന്നു. എന്റെ ദാരിദ്ര്യം നശിക്കട്ടെ; ദേവീ, അങ്ങയെ ഞാൻ ആശ്രയിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଚନ୍ଦ୍ରଙ୍କ ଭଳି ଶୀତଳ, ଦିବ୍ୟ ଯଶରେ ପ୍ରଜ୍ଜ୍ୱଳିତା, ଦେବତାମାନଙ୍କ ଦ୍ୱାରା ପୂଜିତା, ପରମ ଉଦାରା ଓ ପଦ୍ମଧାରିଣୀ ସେହି ମହାଲକ୍ଷ୍ମୀଙ୍କ ଶରଣ ନେଉଛି । ମୋର ଦାରିଦ୍ର୍ୟ ଓ ଅଲକ୍ଷ୍ମୀ ନଷ୍ଟ ହେଉ; ହେ ମାତା, ମୁଁ କେବଳ ଆପଣଙ୍କୁ ବରଣ କରୁଛି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 6,
+      "verse_type": "VERSE",
+      "original_sanskrit": "आ॒दि॒त्यव॑र्णे॒ तप॒सोऽधि॑जा॒तो वन॒स्पति॒स्तव॑ वृ॒क्षोऽथ बि॒ल्वः ।\nतस्य॒ फला॑नि॒ तप॒सा नु॑दन्तु मा॒यान्त॑रा॒याश्च॑ बा॒ह्या अ॑ल॒क्ष्मीः ॥ ६ ॥",
+      "iast": "ādityavarṇē tapasō'dhijātō vanaspatistava vr̥kṣō'tha bilvaḥ ।\ntasya phalāni tapasā nudantu māyāntarāyāśca bāhyā alakṣmīḥ ॥ 6 ॥",
+      "transliterations": {
+        "telugu": "ఆ॒ది॒త్యవ॑ర్ణే॒ తప॒సోఽధి॑జా॒తో వన॒స్పతి॒స్తవ॑ వృ॒క్షోఽథ బి॒ల్వః ।\nతస్య॒ ఫలా॑ని॒ తప॒సా ను॑దన్తు మా॒యాన్త॑రా॒యాశ్చ॑ బా॒హ్యా అ॑ల॒క్ష్మీః ॥ ౬ ॥",
+        "tamil": "ஆ॒தி॒த்யவ॑ர்ணே॒ தப॒ஸோऽதி॑ஜா॒தோ வந॒ஸ்பதி॒ஸ்தவ॑ வ்ரு'॒க்ஷோऽத பி॒ல்வஃ ।\nதஸ்ய॒ பலா॑நி॒ தப॒ஸா நு॑தந்து மா॒யாந்த॑ரா॒யாஶ்ச॑ பா॒ஹ்யா அ॑ல॒க்ஷ்மீஃ ॥ ௬ ॥",
+        "kannada": "ಆ॒ದಿ॒ತ್ಯವ॑ರ್ಣೇ॒ ತಪ॒ಸೋಽಧಿ॑ಜಾ॒ತೋ ವನ॒ಸ್ಪತಿ॒ಸ್ತವ॑ ವೃ॒ಕ್ಷೋಽಥ ಬಿ॒ಲ್ವಃ ।\nತಸ್ಯ॒ ಫಲಾ॑ನಿ॒ ತಪ॒ಸಾ ನು॑ದನ್ತು ಮಾ॒ಯಾನ್ತ॑ರಾ॒ಯಾಶ್ಚ॑ ಬಾ॒ಹ್ಯಾ ಅ॑ಲ॒ಕ್ಷ್ಮೀಃ ॥ ೬ ॥",
+        "malayalam": "ആ॒ദി॒ത്യവ॑ര്ണേ॒ തപ॒സോഽധി॑ജാ॒തോ വന॒സ്പതി॒സ്തവ॑ വൃ॒ക്ഷോഽഥ ബി॒ല്വഃ ।\nതസ്യ॒ ഫലാ॑നി॒ തപ॒സാ നു॑ദന്തു മാ॒യാന്ത॑രാ॒യാശ്ച॑ ബാ॒ഹ്യാ അ॑ല॒ക്ഷ്മീഃ ॥ ൬ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "O Goddess radiant as the sun! Out of Your intense spiritual austerity was born the king of trees, the holy Bilva tree. May the fruits of that tree, through spiritual merit, dispel inner ignorance and outer poverty.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे सूर्य के समान तेजोमयी भगवती! आपके तप से ही वृक्षों का राजा पवित्र 'बिल्व' (बेल) वृक्ष उत्पन्न हुआ है। आपके तपोबल से पुष्ट उसके फल मेरे भीतर के अज्ञान व मोह रूपी आन्तरिक विघ्नों और बाहर की दरिद्रता को सदा के लिए दूर भगा दें।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "సూర్యకాంతి సమన్వితవైన ఓ దేవీ! నీ దివ్య తపస్సుచేత వృక్షరాజమైన 'బిల్వ వృక్షము' ఆవిర్భవించినది. నీ తపఃప్రభావము గల ఆ బిల్వ ఫలములు నాలోని అజ్ఞానమును, వెలుపలి దారిద్ర్యమును సమూలముగా పారద్రోలు గాక.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "சூரியனைப் போன்ற பேரொளி கொண்டவளே! உன்னுடைய தவத்தினால் மரங்களின் அரசனான வில்வ மரம் தோன்றியது. அதன் கனிகள் உனது தவ வலிமையால் என் உள்ளிருக்கும் அஞ்ஞானத்தையும், வெளியிலிருக்கும் வறுமையையும் அறவே நீக்கட்டும்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಸೂರ್ಯನಂತೆ ತೇಜಸ್ವಿನಿಯಾದ ದೇವಿಯೇ! ನಿನ್ನ ತಪಸ್ಸಿನಿಂದಲೇ ವೃಕ್ಷರಾಜವಾದ ಬಿಲ್ವವೃಕ್ಷವು ಜನಿಸಿತು. ಅದರ ಪವಿತ್ರ ಫಲಗಳು ನನ್ನೊಳಗಿನ ಅಜ್ಞಾನವನ್ನೂ ಹೊರಗಿನ ದಾರಿದ್ರ್ಯವನ್ನೂ ದೂರಮಾಡಲಿ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे सूर्यतुल्य तेजस्वी माते! तुझ्या तपश्चर्येतूनच वृक्षांचा राजा पवित्र 'बेल' निर्माण झाला. त्या बेलाच्या फळांनी माझ्या अंतःकरणातील अज्ञान आणि बाहेरील दारिद्र्य दूर करावे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে সূর্যতেজোময়ী ভগবতী! তোমার তপস্যার প্রভাবেই বৃক্ষরাজ পবিত্র বিল্ববৃক্ষের উৎপত্তি হইয়াছে। তোমার তপস্যাপূত সেই বিল্বফল আমার অন্তরের মায়া ও অজ্ঞান এবং বাহিরের সর্ববিধ দারিদ্র্য দূর করুক।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હે સૂર્ય સમાન તેજસ્વી ભગવતી! આપના તપથી જ પવિત્ર બીલીપત્રનું વૃક્ષ પ્રગટ થયું છે. તેનાં ફળો આપના તપોબળથી મારા ભીતરના અજ્ઞાન અને બહારની દરિદ્રતાને દૂર ભગાવે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സൂര്യതേജസ്സാർന്ന ദേവീ! അങ്ങയുടെ തപസ്സിനാൽ വൃക്ഷരാജാവായ കൂവളവൃക്ഷം (ബിൽവം) ജനിച്ചു. ആ ബിൽവഫലങ്ങൾ എന്റെ ഉള്ളിലെ അജ്ഞാനത്തെയും പുറമെയുള്ള ദാരിദ്ര്യത്തെയും നീക്കിക്കളയട്ടെ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହେ ସୂର୍ଯ୍ୟତୁଲ୍ୟ ତେଜୋମୟୀ ଭଗବତୀ! ଆପଣଙ୍କ ତପସ୍ୟାରୁ ହିଁ ବୃକ୍ଷରାଜ ପବିତ୍ର ବେଲ ଗଛ ଜନ୍ମ ନେଇଛି । ସେହି ଫଳ ଆପଣଙ୍କ ତପୋବଳରେ ମୋ ଭିତରର ଅଜ୍ଞାନ ଓ ବାହାରର ଦାରିଦ୍ର୍ୟକୁ ଦୂର କରୁ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 7,
+      "verse_type": "VERSE",
+      "original_sanskrit": "उपै॑तु॒ मां दे॑वस॒खः की॒र्तिश्च॒ मनि॑ना स॒ह ।\nप्रा॒दु॒र्भू॒तोऽस्मि॑ राष्ट्रे॒ऽस्मिन् की॒र्तिमृ॑द्धिं द॒दातु॑ मे ॥ ७ ॥",
+      "iast": "upaitu māṁ dēvasakhaḥ kīrtiśca maninā saha ।\nprādurbhūtō'smi rāṣṭrē'smin kīrtimr̥ddhiṁ dadātu mē ॥ 7 ॥",
+      "transliterations": {
+        "telugu": "ఉపై॑తు॒ మాం దే॑వస॒ఖః కీ॒ర్తిశ్చ॒ మని॑నా స॒హ ।\nప్రా॒దు॒ర్భూ॒తోఽస్మి॑ రాష్ట్రే॒ఽస్మిన్ కీ॒ర్తిమృ॑ద్ధిం ద॒దాతు॑ మే ॥ ౭ ॥",
+        "tamil": "உபை॑து॒ மாம் தே॑வஸ॒கஃ கீ॒ர்திஶ்ச॒ மநி॑நா ஸ॒ஹ ।\nப்ரா॒து॒ர்பூ॒தோऽஸ்மி॑ ராஷ்ட்ரே॒ऽஸ்மிந் கீ॒ர்திம்ரு'॑த்திம் த॒தாது॑ மே ॥ ௭ ॥",
+        "kannada": "ಉಪೈ॑ತು॒ ಮಾಂ ದೇ॑ವಸ॒ಖಃ ಕೀ॒ರ್ತಿಶ್ಚ॒ ಮನಿ॑ನಾ ಸ॒ಹ ।\nಪ್ರಾ॒ದು॒ರ್ಭೂ॒ತೋಽಸ್ಮಿ॑ ರಾಷ್ಟ್ರೇ॒ಽಸ್ಮಿನ್ ಕೀ॒ರ್ತಿಮೃ॑ದ್ಧಿಂ ದ॒ದಾತು॑ ಮೇ ॥ ೭ ॥",
+        "malayalam": "ഉപൈ॑തു॒ മാം ദേ॑വസ॒ഖഃ കീ॒ര്തിശ്ച॒ മനി॑നാ സ॒ഹ ।\nപ്രാ॒ദു॒ര്ഭൂ॒തോഽസ്മി॑ രാഷ്ട്രേ॒ഽസ്മിന് കീ॒ര്തിമൃ॑ദ്ധിം ദ॒ദാതു॑ മേ ॥ ൭ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "May Kubera (friend of the gods) approach me along with Fame and the wish-fulfilling jewel! I am born into this land; may You grant me renown and prosperity!",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "देवों के सखा कुबेर और चिन्तामणि रत्न सहित कीर्ति मेरे पास आएँ। मैं इस राष्ट्र में उत्पन्न हुआ हूँ; हे भगवती! आप मुझे यश, धर्मानुकूल ऐश्वर्य और आध्यात्मिक समृद्धि प्रदान कीजिए।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "దేవతల మిత్రుడైన కుబేరుడు, చింతామణి మణితో కూడిన కీర్తి నన్ను సమీపించుగాక. ఈ పుణ్యభూమి యందు జన్మించిన నాకు సత్కీర్తిని, సకల ఐశ్వర్యములను ప్రసాదింపుము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தேவர்களின் தோழனான குபேரனும், சிந்தாமணி மணியோடு கூடிய புகழும் என்னை நாடி வரட்டும். இந்த பாரத தேசத்தில் பிறந்த எனக்கு நற்புகழையும், மங்கலச் செல்வத்தையும் அருளுவாயாக.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ದೇವಸಖನಾದ ಕುಬೇರನೂ, ಚಿಂತಾಮಣಿ ರತ್ನಸಹಿತವಾದ ಕೀರ್ತಿಯೂ ನನ್ನ ಬಳಿಗೆ ಬರಲಿ. ಈ ನಾಡಿನಲ್ಲಿ ಜನಿಸಿದ ನನಗೆ ಸತ್ಕೀರ್ತಿಯನ್ನೂ ಸಮಸ್ತ ಸಮೃದ್ಧಿಯನ್ನೂ ದಯಪಾಲಿಸು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "देवांचा सखा कुबेर आणि चिंतामणी रत्नासह कीर्ती माझ्याकडे येवो. या देशात जन्मलेल्या मला हे देवी, उत्तम कीर्ती व सर्व प्रकारची समृद्धी प्रदान कर.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "দেবসখা কুবের এবং চিন্তামণি রত্নের সহিত কীর্তি আমার সমীপে আগমন করুন। এই পুণ্যভূমিতে জাত আমাকে দেবী যশ ও পরম সমৃদ্ধি প্রদান করুন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "દેવોના સખા કુબેર અને ચિંતામણિ રત્ન સહિત કીર્તિ મારી પાસે આવે. આ રાષ્ટ્રમાં જન્મેલા મને ભગવતી ઉત્તમ યશ અને આધ્યાત્મિક સમૃદ્ધિ આપે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ദേവസഖാവായ കുബേരനും ചിന്താമണി രത്നത്തോടുകൂടിയ കീർത്തിയും എന്റെയടുക്കൽ വരട്ടെ. ഈ നാട്ടിൽ ജനിച്ച എനിക്ക് സത്കീർത്തിയും ഐശ്വര്യവും നൽകിയാലും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଦେବସଖା କୁବେର ଓ ଚିନ୍ତାମଣି ରତ୍ନ ସହିତ କୀର୍ତ୍ତି ମୋ ନିକଟକୁ ଆସନ୍ତୁ । ଏହି ରାଷ୍ଟ୍ରରେ ଜନ୍ମିତ ମୋତେ ଦେବୀ ଯଶ ଓ ପରମ ସମୃଦ୍ଧି ପ୍ରଦାନ କରନ୍ତୁ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 8,
+      "verse_type": "VERSE",
+      "original_sanskrit": "क्षुत्पि॑पा॒साम॑लां ज्ये॒ष्ठाम॑ल॒क्ष्मीं ना॑शया॒म्यहम् ।\nअभू॑ति॒मसमृ॑द्धिं च॒ सर्वां॒ निर्णु॑द मे॒ गृहा॑त् ॥ ८ ॥",
+      "iast": "kṣutpipāsāmalāṁ jyēṣṭhāmalakṣmīṁ nāśayāmyaham ।\nabhūtimasamr̥ddhiṁ ca sarvāṁ nirṇuda mē gr̥hāt ॥ 8 ॥",
+      "transliterations": {
+        "telugu": "క్షుత్పి॑పా॒సామ॑లాం జ్యే॒ష్ఠామ॑ల॒క్ష్మీం నా॑శయా॒మ్యహమ్ ।\nఅభూ॑తి॒మసమృ॑ద్ధిం చ॒ సర్వాం॒ నిర్ణు॑ద మే॒ గృహా॑త్ ॥ ౮ ॥",
+        "tamil": "க்ஷுத்பி॑பா॒ஸாம॑லாம் ஜ்யே॒ஷ்டாம॑ல॒க்ஷ்மீம் நா॑ஶயா॒ம்யஹம் ।\nஅபூ॑தி॒மஸம்ரு'॑த்திம் ச॒ ஸர்வாம்॒ நிர்ணு॑த மே॒ க்ரு'ஹா॑த் ॥ ௮ ॥",
+        "kannada": "ಕ್ಷುತ್ಪಿ॑ಪಾ॒ಸಾಮ॑ಲಾಂ ಜ್ಯೇ॒ಷ್ಠಾಮ॑ಲ॒ಕ್ಷ್ಮೀಂ ನಾ॑ಶಯಾ॒ಮ್ಯಹಮ್ ।\nಅಭೂ॑ತಿ॒ಮಸಮೃ॑ದ್ಧಿಂ ಚ॒ ಸರ್ವಾಂ॒ ನಿರ್ಣು॑ದ ಮೇ॒ ಗೃಹಾ॑ತ್ ॥ ೮ ॥",
+        "malayalam": "ക്ഷുത്പി॑പാ॒സാമ॑ലാം ജ്യേ॒ഷ്ഠാമ॑ല॒ക്ഷ്മീം നാ॑ശയാ॒മ്യഹമ് ।\nഅഭൂ॑തി॒മസമൃ॑ദ്ധിം ച॒ സര്വാം॒ നിര്ണു॑ദ മേ॒ ഗൃഹാ॑ത് ॥ ൮ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "I drive away the elder Alakshmi, afflicted by hunger and thirst, impure and destitute. Banish all misfortune and scarcity from my dwelling!",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "भूख और प्यास के मैल से युक्त, दरिद्रता की अधिष्ठात्री ज्येष्ठा अलक्ष्मी का मैं नाश करता हूँ। हे कल्याणी माते! मेरे घर से समस्त अभाव, विपत्ति और हीनता को सर्वथा दूर भगा दीजिए।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆకలిదప్పులచే పీడింపబడు అరిష్ట దేవతయైన జ్యేష్ఠా అలక్ష్మిని నేను నిర్మూలించుచున్నాను. ఓ తల్లీ! నా గృహము నుండి సమస్త దారిద్ర్యమును, అశుభములను శాశ్వతముగా తొలగింపుము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "பசியும் தாகமும் வடிவான தரித்திரத்தின் தேவதையான மூதேவியை (அலக்ஷ்மியை) நான் விரட்டுகிறேன். தாயே! என் இல்லத்திலிருந்து வறுமை, பற்றாக்குறை யாவற்றையும் வெளியேற்றுவாயாக.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಹಸಿವು ಮತ್ತು ಬಾಯಾರಿಕೆಗಳಿಂದ ಕೂಡಿದ ದಾರಿದ್ರ್ಯದ ದೇವತೆಯಾದ ಜ್ಯೇಷ್ಠಾ ಅಲಕ್ಷ್ಮಿಯನ್ನು ನಾನು ತೊಡೆದುಹಾಕುತ್ತೇನೆ. ಹೇ ಜನನಿ! ನನ್ನ ಮನೆಯಿಂದ ಸಮಸ್ತ ಅಭಾವಗಳನ್ನೂ ನಾಶಮಾಡು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "भूक आणि तहानेने मलिन झालेल्या ज्येष्ठा अलक्ष्मीचा (दारिद्र्याचा) मी नाश करतो. हे जगन्माते! माझ्या घरातून सर्व प्रकारचा अभाव व अपकर्ष दूर कर.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "ক্ষুধা ও তৃষ্ণায় মলীমসা জ্যেষ্ঠা অলক্ষ্মীকে আমি ধ্বংস করি। হে কল্যাণময়ী মাতা! আমার গৃহ হইতে যাবতীয় অভাব, দীনতা ও অকল্যাণ দূর করিয়া দাও।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "ભૂખ અને તરસથી પીડિત જ્યેષ્ઠા અલક્ષ્મીનો હું નાશ કરું છું. હે ભગવતી! મારા ઘરમાંથી તમામ દરિદ્રતા અને અશુભ પરિસ્થિતિને દૂર કરી દો.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "വിശപ്പും ദാഹവും നിറഞ്ഞ ജ്യേഷ്ഠാദേവിയായ ദാരിദ്ര്യത്തെ ഞാൻ ഇല്ലാതാക്കുന്നു. ഹേ അമ്മേ! എന്റെ ഗൃഹത്തിൽനിന്ന് എല്ലാവിധ അഭാവങ്ങളെയും ദാരിദ്ര്യത്തെയും അകറ്റിയാലും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଭୋକ ଓ ଶୋଷରେ ମଳିନ ଜ୍ୟେଷ୍ଠା ଅଲକ୍ଷ୍ମୀଙ୍କୁ ମୁଁ ବିନାଶ କରୁଛି । ହେ କଲ୍ୟାଣମୟୀ ମାତା! ମୋ ଘରୁ ସମସ୍ତ ଅଭାବ, ବିପତ୍ତି ଓ ଅଶୁଭକୁ ସର୍ବଦା ପାଇଁ ଦୂର କରନ୍ତୁ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 9,
+      "verse_type": "VERSE",
+      "original_sanskrit": "ग॒न्ध॒द्वा॒रां दु॑राध॒र्षां नि॒त्यपु॑ष्टां करी॒षिणी᳚म् ।\nई॒श्वरीं᳚ सर्व॑भूता॒नां तामि॒होप॑ह्वये॒ श्रिय॑म् ॥ ९ ॥",
+      "iast": "gandhadvārāṁ durādharṣāṁ nityapuṣṭāṁ karīṣiṇīm ।\nīśvarīṁ sarvabhūtānāṁ tāmihōpahvayē śriyam ॥ 9 ॥",
+      "transliterations": {
+        "telugu": "గ॒న్ధ॒ద్వా॒రాం దు॑రాధ॒ర్షాం ని॒త్యపు॑ష్టాం కరీ॒షిణీ᳚మ్ ।\nఈ॒శ్వరీం᳚ సర్వ॑భూతా॒నాం తామి॒హోప॑హ్వయే॒ శ్రియ॑మ్ ॥ ౯ ॥",
+        "tamil": "க॒ந்த॒த்வா॒ராம் து॑ராத॒ர்ஷாம் நி॒த்யபு॑ஷ்டாம் கரீ॒ஷிணீ᳚ம் ।\nஈ॒ஶ்வரீம்᳚ ஸர்வ॑பூதா॒நாம் தாமி॒ஹோப॑ஹ்வயே॒ ஶ்ரிய॑ம் ॥ ௯ ॥",
+        "kannada": "ಗ॒ನ್ಧ॒ದ್ವಾ॒ರಾಂ ದು॑ರಾಧ॒ರ್ಷಾಂ ನಿ॒ತ್ಯಪು॑ಷ್ಟಾಂ ಕರೀ॒ಷಿಣೀ᳚ಮ್ ।\nಈ॒ಶ್ವರೀಂ᳚ ಸರ್ವ॑ಭೂತಾ॒ನಾಂ ತಾಮಿ॒ಹೋಪ॑ಹ್ವಯೇ॒ ಶ್ರಿಯ॑ಮ್ ॥ ೯ ॥",
+        "malayalam": "ഗ॒ന്ധ॒ദ്വാ॒രാം ദു॑രാധ॒ര്ഷാം നി॒ത്യപു॑ഷ്ടാം കരീ॒ഷിണീ᳚മ് ।\nഈ॒ശ്വരീം᳚ സര്വ॑ഭൂതാ॒നാം താമി॒ഹോപ॑ഹ്വയേ॒ ശ്രിയ॑മ് ॥ ൯ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "I invoke here that Goddess Sri, accessible through divine fragrance, invincible, ever bountiful, rich in agricultural abundance and cattle-wealth, the sovereign Ruler of all living beings.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जो दिव्य सुगन्ध से पहचानी जाती हैं, जिन्हें कोई परास्त नहीं कर सकता, जो नित्य परिपूर्ण व पुष्ट हैं, गोधन और कृषि-समृद्धि की स्वामिनी हैं तथा समस्त प्राणियों की अधीश्वरी हैं, उन भगवती महालक्ष्मी का मैं यहाँ सादर आह्वान करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "దివ్య సుగంధము ప్రవేశద్వారముగా గలది, ఎవరిచేతను జయింపబడనిది, నిత్యము పరిపుష్టితో వెలుగొందునది, గోసంపద-ధాన్యసంపదలను కలుగజేయునది, సర్వప్రాణులకు పాలకురాలైన ఆ శ్రీదేవిని భక్తితో ఆవాహన చేయుచున్నాను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "நறுமணத்தினால் அறியப்படுபவள், எவராலும் வெல்ல முடியாதவள், என்றும் வற்றாத செழிப்புடையவள், தானிய-கால்நடை வளங்களை அருளுபவள், அனைத்து உயிர்களுக்கும் அரசியான அந்த ஸ்ரீயை நான் பணிகிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಪವಿತ್ರ ಸುಗಂಧವೇ ದ್ವಾರವಾಗಿ ಉಳ್ಳವಳೂ, ಅಜೇಯಳೂ, ನಿತ್ಯಪುಷ್ಟಳೂ, ಕೃಷಿ-ಗೋಸಂಪತ್ತಿನ ಒಡತಿಯೂ, ಸಕಲ ಜೀವರಾಶಿಗಳ ಈಶ್ವರಿಯೂ ಆದ ಆ ಶ್ರೀದೇವಿಯನ್ನು ಇಲ್ಲಿಗೆ ಪ್ರಾರ್ಥಿಸುತ್ತೇನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "ज्या दिव्य सुवासाने ओळखल्या जातात, ज्या अजिंक्य आहेत, नित्य समृद्ध, गोधन व कृषी-संपन्नतेच्या स्वामिनी व सर्व प्राण्यांच्या ईश्वरी आहेत, त्या श्रीलक्ष्मीचे मी आवाहन करतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যাঁহার প্রবেশদ্বার সুগন্ধে আমোদিত, যিনি অপরাজেয়া, নিত্যপরিপূর্ণা, কৃষিসম্পদ ও গোসম্পদের অধিকারিণী এবং সর্বভূতের ঈশ্বরী, সেই শ্রীদেবীকে আমি এই স্থানে আহ্বান করি।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જે દિવ્ય સુગંધથી ઓળખાય છે, અજય છે, સદા પરિપુષ્ટ છે, ગોધન અને કૃષિ-સમૃદ્ધિનાં સ્વામિની છે અને સમગ્ર સૃષ્ટિનાં ઈશ્વરી છે, તે શ્રીદેવીનું હું આવાહન કરું છું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ദിവ്യസുഗന്ധത്താൽ അറിയപ്പെടുന്നവളും, ആർക്കും പരാജയപ്പെടുത്താനാവാത്തവളും, നിത്യപുഷ്ടിയുള്ളവളും, സർവ്വചരാചരങ്ങളുടെയും ഈശ്വരിയുമായ ആ ശ്രീയെ ഞാൻ സ്തുതിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯିଏ ଦିବ୍ୟ ସୁଗନ୍ଧ ଦ୍ୱାରା ପରିଚିତା, ଅପରାଜେୟା, ନିତ୍ୟ ପରିପୂଷ୍ଟା, କୃଷି ଓ ଗୋଧନର ସ୍ୱାମିନୀ ତଥା ସମସ୍ତ ପ୍ରାଣୀଙ୍କ ଈଶ୍ୱରୀ, ସେହି ଶ୍ରୀଦେବୀଙ୍କୁ ମୁଁ ଏଠାରେ ଆବାହନ କରୁଛି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 10,
+      "verse_type": "VERSE",
+      "original_sanskrit": "मन॑सः॒ काम॒माकू॑तिं वा॒चः स॒त्यम॑शीमहि ।\nप॒शू॒नां रू॒पमन्न॑स्य॒ मयि॒ श्रीः श्र॑यतां॒ यशः॑ ॥ १० ॥",
+      "iast": "manasaḥ kāmamākūtiṁ vācaḥ satyamaśīmahi ।\npaśūnāṁ rūpamannasya mayi śrīḥ śrayatāṁ yaśaḥ ॥ 10 ॥",
+      "transliterations": {
+        "telugu": "మన॑సః॒ కామ॒మాకూ॑తిం వా॒చః స॒త్యమ॑శీమహి ।\nప॒శూ॒నాం రూ॒పమన్న॑స్య॒ మయి॒ శ్రీః శ్ర॑యతాం॒ యశః॑ ॥ ౧౦ ॥",
+        "tamil": "மந॑ஸஃ॒ காம॒மாகூ॑திம் வா॒சஃ ஸ॒த்யம॑ஶீமஹி ।\nப॒ஶூ॒நாம் ரூ॒பமந்ந॑ஸ்ய॒ மயி॒ ஶ்ரீஃ ஶ்ர॑யதாம்॒ யஶஃ॑ ॥ ௧௦ ॥",
+        "kannada": "ಮನ॑ಸಃ॒ ಕಾಮ॒ಮಾಕೂ॑ತಿಂ ವಾ॒ಚಃ ಸ॒ತ್ಯಮ॑ಶೀಮಹಿ ।\nಪ॒ಶೂ॒ನಾಂ ರೂ॒ಪಮನ್ನ॑ಸ್ಯ॒ ಮಯಿ॒ ಶ್ರೀಃ ಶ್ರ॑ಯತಾಂ॒ ಯಶಃ॑ ॥ ೧೦ ॥",
+        "malayalam": "മന॑സഃ॒ കാമ॒മാകൂ॑തിം വാ॒ചഃ സ॒ത്യമ॑ശീമഹി ।\nപ॒ശൂ॒നാം രൂ॒പമന്ന॑സ്യ॒ മയി॒ ശ്രീഃ ശ്ര॑യതാം॒ യശഃ॑ ॥ ൧൦ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "May we realize the noble desires and aspirations of our heart! May our speech be truthful! May the wealth of cattle, nourishment of grains, divine splendor, and holy fame abide in me!",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हमारे मन की शुभ कामनाएँ, उत्तम संकल्प और वाणी की सत्यता सिद्ध हो! गौ आदि पशुओं का कल्याण, उत्तम अन्न, दिव्य कीर्ति और साक्षात् भगवती श्रीलक्ष्मी सदा मुझमें निवास करें।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "మా మనస్సులోని సత్సంకల్పములు, హృదయ వాంఛలు నెరవేరుగాక! మా వాక్కు యందు సత్యము నిలచుగాక! గోసంపద, ఉత్తమ ఆహారము, దివ్య యశస్సు మరియు సాక్షాత్ శ్రీదేవి సదా నా యందు కొలువై ఉండుగాక.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "என் மனதின் நல்லெண்ணங்களும் தூய விருப்பங்களும் ஈடேறட்டும்! என் வாக்கினில் சத்தியம் விளங்கட்டும்! கால்நடைகள், உணவு, நற்புகழ் மற்றும் லக்ஷ்மி தேவி எப்போதும் என்னிடம் தங்குவாளாக.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ನನ್ನ ಮನಸ್ಸಿನ ಸದಿಚ್ಛೆಗಳು, ಶುಭ ಸಂಕಲ್ಪಗಳು ಮತ್ತು ಮಾತಿನ ಸತ್ಯವು ಸಿದ್ಧಿಸಲಿ! ಗೋಸಂಪತ್ತು, ಶ್ರೇಷ್ಠ ಅನ್ನ, ಯಶಸ್ಸು ಮತ್ತು ಶ್ರೀದೇವಿಯು ಸದಾ ನನ್ನಲ್ಲಿ ನೆಲೆಸಲಿ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "माझ्या मनातील शुभ इच्छा, उत्तम संकल्प आणि वाणीचे सत्य सिद्ध होवो! गोधन, उत्तम अन्न, कीर्ती आणि साक्षात श्रीलक्ष्मी सदैव माझ्यामध्ये वास करोत.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "আমার মনের শুভ কামনা, পবিত্র সংকল্প এবং বাক্যের সত্যতা পূর্ণ হউক! গোসম্পদ, উত্তম অন্ন, পরম কীর্তি এবং দেবী লক্ষ্মী সর্বদা আমাতে অধিষ্ঠান করুন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "અમારા મનની શુભકામનાઓ, ઉત્તમ સંકલ્પો અને વાણીનું સત્ય સિદ્ધ થાઓ! ગાયો, ઉત્તમ અન્ન, કીર્તિ અને સાક્ષાત્ શ્રીદેવી સદાય મુજમાં વાસ કરો.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഞങ്ങളുടെ മനസ്സിലെ സദ്വിചാരങ്ങളും വാക്കിന്റെ സത്യവും സഫലമാകട്ടെ! ഗോസമ്പത്തും നല്ല ഭക്ഷണവും യശസ്സും ശ്രീദേവിയും സദാ എന്നിൽ വസിക്കുമാറാകട്ടെ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ମୋ ମନର ଶୁଭ କାମନା, ଉତ୍ତମ ସଂକଳ୍ପ ଓ ବାଣୀର ସତ୍ୟତା ସିଦ୍ଧ ହେଉ! ଗୋସମ୍ପଦ, ଉତ୍ତମ ଅନ୍ନ, ଦିବ୍ୟ ଯଶ ଓ ଶ୍ରୀଦେବୀ ସର୍ବଦା ମୋ ଭିତରେ ବାସ କରନ୍ତୁ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 11,
+      "verse_type": "VERSE",
+      "original_sanskrit": "क॒र्दमे॑न प्र॑जाभू॒ता॒ मयि॒ सम्भ॑व क॒र्दम ।\nश्रियं॑ वा॒सय॑ मे कु॒ले मा॒तरं॑ पद्म॒मालि॑नीम् ॥ ११ ॥",
+      "iast": "kardamēna prajābhūtā mayi sambhava kardama ।\nśriyaṁ vāsaya mē kulē mātaraṁ padmamālīnīm ॥ 11 ॥",
+      "transliterations": {
+        "telugu": "క॒ర్దమే॑న ప్ర॑జాభూ॒తా॒ మయి॒ సమ్భ॑వ క॒ర్దమ ।\nశ్రియం॑ వా॒సయ॑ మే కు॒లే మా॒తరం॑ పద్మ॒మాలి॑నీమ్ ॥ ౧౧ ॥",
+        "tamil": "க॒ர்தமே॑ந ப்ர॑ஜாபூ॒தா॒ மயி॒ ஸம்ப॑வ க॒ர்தம ।\nஶ்ரியம்॑ வா॒ஸய॑ மே கு॒லே மா॒தரம்॑ பத்ம॒மாலி॑நீம் ॥ ௧௧ ॥",
+        "kannada": "ಕ॒ರ್ದಮೇ॑ನ ಪ್ರ॑ಜಾಭೂ॒ತಾ॒ ಮಯಿ॒ ಸಮ್ಭ॑ವ ಕ॒ರ್ದಮ ।\nಶ್ರಿಯಂ॑ ವಾ॒ಸಯ॑ ಮೇ ಕು॒ಲೇ ಮಾ॒ತರಂ॑ ಪದ್ಮ॒ಮಾಲಿ॑ನೀಮ್ ॥ ೧೧ ॥",
+        "malayalam": "ക॒ര്ദമേ॑ന പ്ര॑ജാഭൂ॒താ॒ മയി॒ സമ്ഭ॑വ ക॒ര്ദമ ।\nശ്രിയം॑ വാ॒സയ॑ മേ കു॒ലേ മാ॒തരം॑ പദ്മ॒മാലി॑നീമ് ॥ ൧൧ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "O Kardama! By your austerity, Goddess Sri became manifest as progeny. Reside in me, O Kardama, and establish your Mother, the lotus-garlanded Sri, in my lineage!",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "महर्षि कर्दम के द्वारा भगवती लक्ष्मी संतानवती हुई हैं। हे कर्दम मुनि! आप मुझ पर कृपा कीजिए और कमलों की माला धारण करने वाली जगन्माता महालक्ष्मी को मेरे कुल में सदा के लिए स्थापित कीजिए।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "కర్దమ ప్రజాపతి ద్వారా శ్రీదేవి ప్రసన్నురాలై ఆవిర్భవించినది. ఓ కర్దమ మహర్షీ! నాయందు దయయుంచి, పద్మమాలలను ధరించిన జగన్మాతయైన శ్రీమహాలక్ష్మిని నా వంశమున శాశ్వతముగా నివసింపజేయుము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "கர்தம முனிவரால் லக்ஷ்மி தேவி தோன்றினாள். ஓ கர்தமரே! என்னிடம் தோன்றி, தாமரை மாலை அணிந்த அந்த ஜகன்மாதாவை என் குடும்பத்தில் நிரந்தரமாக வாசம் செய்ய வைப்பாயாக.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಕರ್ದಮ ಮಹರ್ಷಿಯಿಂದ ಶ್ರೀದೇವಿಯು ಆವಿರ್ಭವಿಸಿದಳು. ಹೇ ಕರ್ದಮ ಮುನಿಯೇ! ನನ್ನಲ್ಲಿ ನೆಲೆಸಿ, ಕಮಲಮಾಲೆಯನ್ನು ಧರಿಸಿದ ಜಗನ್ಮಾತೆಯಾದ ಲಕ್ಷ್ಮಿಯನ್ನು ನನ್ನ ಕುಲದಲ್ಲಿ ಶಾಶ್ವತವಾಗಿ ವಾಸಿಸುವಂತೆ ಮಾಡು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "कर्दम ऋषींच्या द्वारे महालक्ष्मी प्रकट झाली. हे कर्दम मुनी! आपण माझ्यावर प्रसन्न व्हा आणि कमळांची माळ घालणाऱ्या जगन्माता लक्ष्मीला माझ्या कुळात स्थिर करा.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "কর্দম মুনির মাধ্যমে দেবী লক্ষ্মী প্রকট হইয়াছেন। হে কর্দম ঋষি! আপনি আমার প্রতি সদয় হউন এবং পদ্মমালিনী জগন্মাতা লক্ষ্মীকে আমার বংশে চিরতরে প্রতিষ্ঠিত করুন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "કર્દમ ઋષિ દ્વારા ભગવતી લક્ષ્મી પ્રગટ થયાં છે. હે કર્દમ મુનિ! આપ મારા પર કૃપા કરો અને કમળની માળા ધારણ કરનારાં જગદંબાને મારા કુળમાં સ્થિર કરો.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "കർദ്ദമ മഹർഷിയാൽ ലക്ഷ്മീദേവി ആവിർഭവിച്ചു. ഹേ കർദ്ദമാ! എന്നിൽ പ്രസാദിച്ചു, താമരമാലയണിഞ്ഞ ആ ജഗദംബികയെ എന്റെ വംശത്തിൽ ശാശ്വതമായി വസിപ്പിച്ചാലും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "କର୍ଦମ ଋଷିଙ୍କ ଦ୍ୱାରା ଭଗବତୀ ଲକ୍ଷ୍ମୀ ପ୍ରକଟ ହୋଇଛନ୍ତି । ହେ କର୍ଦମ ମୁନି! ଆପଣ ମୋତେ କୃପା କରନ୍ତୁ ଏବଂ ପଦ୍ମମାଳିନୀ ଜଗନ୍ମାତା ଲକ୍ଷ୍ମୀଙ୍କୁ ମୋ କୂଳରେ ଚିରଦିନ ପାଇଁ ସ୍ଥାପନ କରନ୍ତୁ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 12,
+      "verse_type": "VERSE",
+      "original_sanskrit": "आपः॑ सृ॒जन्तु॑ स्नि॒ग्धा॒नि॒ चि॒क्ली॒त व॑स मे॒ गृहे ।\nनि च॑ दे॒वीं मा॒तरं॒ श्रियं॑ वा॒सय॑ मे कु॒ले ॥ १२ ॥",
+      "iast": "āpaḥ sr̥jantu snigdhāni ciklīta vasa mē gr̥hē ।\nni ca dēvīṁ mātaraṁ śriyaṁ vāsaya mē kulē ॥ 12 ॥",
+      "transliterations": {
+        "telugu": "ఆపః॑ సృ॒జన్తు॑ స్ని॒గ్ధా॒ని॒ చి॒క్లీ॒త వ॑స మే॒ గృహే ।\nని చ॑ దే॒వీం మా॒తరం॒ శ్రియం॑ వా॒సయ॑ మే కు॒లే ॥ ౧౨ ॥",
+        "tamil": "ஆபஃ॑ ஸ்ரு'॒ஜந்து॑ ஸ்நி॒க்தா॒நி॒ சி॒க்லீ॒த வ॑ஸ மே॒ க்ரு'ஹே ।\nநி ச॑ தே॒வீம் மா॒தரம்॒ ஶ்ரியம்॑ வா॒ஸய॑ மே கு॒லே ॥ ௧௨ ॥",
+        "kannada": "ಆಪಃ॑ ಸೃ॒ಜನ್ತು॑ ಸ್ನಿ॒ಗ್ಧಾ॒ನಿ॒ ಚಿ॒ಕ್ಲೀ॒ತ ವ॑ಸ ಮೇ॒ ಗೃಹೇ ।\nನಿ ಚ॑ ದೇ॒ವೀಂ ಮಾ॒ತರಂ॒ ಶ್ರಿಯಂ॑ ವಾ॒ಸಯ॑ ಮೇ ಕು॒ಲೇ ॥ ೧೨ ॥",
+        "malayalam": "ആപഃ॑ സൃ॒ജന്തു॑ സ്നി॒ഗ്ധാ॒നി॒ ചി॒ക്ലീ॒ത വ॑സ മേ॒ ഗൃഹേ ।\nനി ച॑ ദേ॒വീം മാ॒തരം॒ ശ്രിയം॑ വാ॒സയ॑ മേ കു॒ലേ ॥ ൧൨ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "May the celestial waters produce affectionate abundance! O Chiklita, dwell in my home and firmly establish the divine Mother Sri in my ancestral family!",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "पवित्र जल स्निग्ध व पुष्टिकारक पदार्थों को उत्पन्न करें! हे चिक्लीत (लक्ष्मीपुत्र)! आप मेरे घर में वास कीजिए और अपनी माता परमेश्वरी महालक्ष्मी को मेरे कुल में सदा के लिए निवास कराइए।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "పవిత్ర జలములు స్నిగ్ధమైన సమృద్ధిని సృష్టించుగాక! ఓ చిక్లీతుడా (లక్ష్మీపుత్రా)! నా గృహమందు నివసించుము; మరియు నీ తల్లియైన ఆ దివ్య శ్రీమహాలక్ష్మిని నా వంశమునందు శాశ్వతముగా కొలువుదీర్చుము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தூய நீர்நிலைகள் மங்கலச் செழிப்பை உண்டாக்கட்டும்! லக்ஷ்மியின் புதல்வனான சிக்லீதனே! என் வீட்டில் தங்கி, உன் அன்னையான லக்ஷ்மி தேவியை என் குலத்தில் நிலையாகக் குடியமர்த்துவாயாக.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಪವಿತ್ರ ಜಲಗಳು ಸಮೃದ್ಧಿಯನ್ನು ತರಲಿ! ಹೇ ಚಿಕ್ಲೀತನೇ! ನನ್ನ ಮನೆಯಲ್ಲಿ ವಾಸಿಸು ಮತ್ತು ನಿನ್ನ ತಾಯಿಯಾದ ಶ್ರೀಮಹಾಲಕ್ಷ್ಮಿಯನ್ನು ನನ್ನ ವಂಶದಲ್ಲಿ ನಿತ್ಯವೂ ನೆಲೆಸುವಂತೆ ಮಾಡು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "पवित्र जलाने स्नेह व समृद्धी निर्माण करावी! हे चिक्लीत (लक्ष्मीपुत्र)! तू माझ्या घरात वास कर आणि तुझी माता श्रीमहालक्ष्मीला माझ्या कुळात स्थिर कर.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "পবিত্র জলরাশি স্নেহ ও পুষ্টি উৎপাদন করুক! হে চীক্লীত! তুমি আমার গৃহে বাস কর এবং তোমার মাতা পরমেশ্বরী লক্ষ্মীকে আমার বংশে চিরপ্রতিষ্ঠিত কর।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "પવિત્ર જળ સ્નેહ અને સમૃદ્ધિ પ્રગટાવે! હે ચિક્લીત! તું મારા ઘરમાં નિવાસ કર અને તારી માતા ભગવતી લક્ષ્મીને મારા કુળમાં સદા માટે સ્થિર કર.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "പവിത്രജലം സമൃദ്ധിയെ സൃഷ്ടിക്കട്ടെ! ഹേ ചിക്ലീതകുമാരാ! എന്റെ ഗൃഹത്തിൽ വസിച്ചാലും; അങ്ങയുടെ അമ്മയായ ശ്രീമഹാലക്ഷ്മിയെ എന്റെ വംശത്തിൽ നിത്യവും കുടിയിരുത്തിയാലും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ପବିତ୍ର ଜଳ ସ୍ନେହ ଓ ସମୃଦ୍ଧି ପ୍ରଦାନ କରୁ! ହେ ଚିକ୍ଲୀତ! ତୁମେ ମୋ ଘରେ ବାସ କର ଏବଂ ତୁମର ମାତା ଶ୍ରୀମହାଲକ୍ଷ୍ମୀଙ୍କୁ ମୋ ବଂଶରେ ସର୍ବଦା ପାଇଁ ସ୍ଥାପନ କର ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 13,
+      "verse_type": "VERSE",
+      "original_sanskrit": "आ॒र्द्रां पु॒ष्करि॑णीं पु॒ष्टिं पि॒ङ्ग॒लां प॑द्ममा॒लिनी᳚म् ।\nच॒न्द्रां हि॒रण्म॑यीं ल॒क्ष्मीं जात॑वेदो म॒ आव॑ह ॥ १३ ॥",
+      "iast": "ārdrāṁ puṣkariṇīṁ puṣṭiṁ piṅgalāṁ padmamālinīm ।\ncandrāṁ hiraṇmayīṁ lakṣmīṁ jātavēdō ma āvaha ॥ 13 ॥",
+      "transliterations": {
+        "telugu": "ఆ॒ర్ద్రాం పు॒ష్కరి॑ణీం పు॒ష్టిం పి॒ఙ్గ॒లాం ప॑ద్మమా॒లినీ᳚మ్ ।\nచ॒న్ద్రాం హి॒రణ్మ॑యీం ల॒క్ష్మీం జాత॑వేదో మ॒ ఆవ॑హ ॥ ౧౩ ॥",
+        "tamil": "ஆ॒ர்த்ராம் பு॒ஷ்கரி॑ணீம் பு॒ஷ்டிம் பி॒ங்க॒லாம் ப॑த்மமா॒லிநீ᳚ம் ।\nச॒ந்த்ராம் ஹி॒ரண்ம॑யீம் ல॒க்ஷ்மீம் ஜாத॑வேதோ ம॒ ஆவ॑ஹ ॥ ௧௩ ॥",
+        "kannada": "ಆ॒ರ್ದ್ರಾಂ ಪು॒ಷ್ಕರಿ॑ಣೀಂ ಪು॒ಷ್ಟಿಂ ಪಿ॒ಙ್ಗ॒ಲಾಂ ಪ॑ದ್ಮಮಾ॒ಲಿನೀ᳚ಮ್ ।\nಚ॒ನ್ದ್ರಾಂ ಹಿ॒ರಣ್ಮ॑ಯೀಂ ಲ॒ಕ್ಷ್ಮೀಂ ಜಾತ॑ವೇದೋ ಮ॒ ಆವ॑ಹ ॥ ೧೩ ॥",
+        "malayalam": "ആ॒ര്ദ്രാം പു॒ഷ്കരി॑ണീം പു॒ഷ്ടിം പി॒ങ്ഗ॒ലാം പ॑ദ്മമാ॒ലിനീ᳚മ് ।\nച॒ന്ദ്രാം ഹി॒രണ്മ॑യീം ല॒ക്ഷ്മീം ജാത॑വേദോ മ॒ ആവ॑ഹ ॥ ൧൩ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "O Agni! Invoke for me that Lakshmi who is ever moist with tender grace, holding a lotus, embodiment of nourishment, golden-hued, garlanded with lotuses, radiant like the moon, and made of gold.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे जातवेदा अग्निदेव! आप मेरे लिए उस महालक्ष्मी का आह्वान कीजिए, जो दया से द्रवित हैं, कमल धारण करने वाली हैं, सर्वपुष्टिदात्री हैं, पीत-स्वर्ण कान्ति वाली हैं, कमलमालाओं से विभूषित हैं, चन्द्रमा के समान सुखदायिनी और सुवर्णमयी हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఓ జాతవేదుడైన అగ్నిదేవా! కరుణార్ద్ర హృదయ, పద్మములను ధరించినది, సమస్త పుష్టిని ఇచ్చునది, బంగారు వర్ణ శోభిత, చంద్రుని వలె ఆహ్లాదకరమైన ఆ దివ్య లక్ష్మీదేవిని నా కొరకు ఆవాహన చేయుము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஓ அக்னியே! கருணை பொழியும் கண்களையுடையவளும், தாமரையேந்தியவளும், உடலுக்கும் ஆன்மாவிற்கும் ஊட்டமளிப்பவளும், பொன்னிறத்தவளும், சந்திரனைப் போன்றவளுமான ஸ்ரீ மஹாலக்ஷ்மியை எனக்கு அருள்வாயாக.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಹೇ ಅಗ್ನಿದೇವನೇ! ಕರುಣಾಮಯಿಯೂ, ಕಮಲಧಾರಣಿಯೂ, ಸಕಲ ಪುಷ್ಟಿದಾಯಕಿಯೂ, ಸುವರ್ಣವರ್ಣೆಯೂ, ಚಂದ್ರನಂತೆ ಶೀತಲಳೂ ಆದ ಆ ದಿವ್ಯ ಮಹಾಲಕ್ಷ್ಮಿಯನ್ನು ನನಗಾಗಿ ಕರೆತರು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे जातवेदा अग्निदेवा! दयेने ओथंबलेल्या, कमळ धारण करणाऱ्या, सर्वांना पोषण देणाऱ्या, सुवर्णवर्णीय, चंद्रसम शीतल त्या श्रीमहालक्ष्मीचे माझ्यासाठी आवाहन करा.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে সর্বজ্ঞ অগ্নিদেব! যিনি করুণায় আর্দ্রা, পদ্মধারিণী, পুষ্টিপ্রদায়িনী, পিঙ্গলবর্ণা, পদ্মমালিনী এবং চন্দ্রের ন্যায় স্নিগ্ধাময়ী, সেই সুবর্ণরূপা লক্ষ্মীকে আমার জন্য আনয়ন করুন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હે અગ્નિદેવ! દયાળુ, કમળધારિણી, સર્વપોષક, સુવર્ણકાંતિવાળાં, કમળમાળાથી શોભતાં અને ચંદ્ર સમાન સુખકારી તે મહાલક્ષ્મીને મારા માટે પધરાવો.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഹേ അഗ്നിദേവാ! കാരുണ്യം നിറഞ്ഞവളും, താമരയേന്തിയവളും, സർവ്വപുഷ്ടിപ്രദായിനിയും, സുവർണ്ണവർണ്ണമുള്ളവളും, ചന്ദ്രനെപ്പോലെ ആനന്ദം തരുന്നവളുമായ ആ ശ്രീയെ എനിക്കായി ആവാഹിച്ചാലും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହେ ଅଗ୍ନିଦେବ! କରୁଣାର୍ଦ୍ରା, ପଦ୍ମଧାରିଣୀ, ସର୍ବପୁଷ୍ଟିଦାତ୍ରୀ, ସୁବର୍ଣ୍ଣବର୍ଣ୍ଣା, କମଳମାଳା ବିଭୂଷିତା ତଥା ଚନ୍ଦ୍ରଙ୍କ ଭଳି ସୁଖଦାୟିନୀ ସେହି ଶ୍ରୀଦେବୀଙ୍କୁ ମୋ ପାଇଁ ଆବାହନ କରନ୍ତୁ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 14,
+      "verse_type": "VERSE",
+      "original_sanskrit": "आ॒र्द्रां यः॒ करि॑णीं य॒ष्टिं सु॒व॒र्णां हे॑ममा॒लिनी᳚म् ।\nसूर्यां॑ हि॒रण्म॑यीं ल॒क्ष्मीं जात॑वेदो म॒ आव॑ह ॥ १४ ॥",
+      "iast": "ārdrāṁ yaḥ kariṇīṁ yaṣṭiṁ suvarṇāṁ hēmamālinīm ।\nsūryāṁ hiraṇmayīṁ lakṣmīṁ jātavēdō ma āvaha ॥ 14 ॥",
+      "transliterations": {
+        "telugu": "ఆ॒ర్ద్రాం యః॒ కరి॑ణీం య॒ష్టిం సు॒వ॒ర్ణాం హే॑మమా॒లినీ᳚మ్ ।\nసూర్యాం॑ హి॒రణ్మ॑యీం ల॒క్ష్మీం జాత॑వేదో మ॒ ఆవ॑హ ॥ ౧౪ ॥",
+        "tamil": "ஆ॒ர்த்ராம் யஃ॒ கரி॑ணீம் ய॒ஷ்டிம் ஸு॒வ॒ர்ணாம் ஹே॑மமா॒லிநீ᳚ம் ।\nஸூர்யாம்॑ ஹி॒ரண்ம॑யீம் ல॒க்ஷ்மீம் ஜாத॑வேதோ ம॒ ஆவ॑ஹ ॥ ௧௪ ॥",
+        "kannada": "ಆ॒ರ್ದ್ರಾಂ ಯಃ॒ ಕರಿ॑ಣೀಂ ಯ॒ಷ್ಟಿಂ ಸು॒ವ॒ರ್ಣಾಂ ಹೇ॑ಮಮಾ॒ಲಿನೀ᳚ಮ್ ।\nಸೂರ್ಯಾಂ॑ ಹಿ॒ರಣ್ಮ॑ಯೀಂ ಲ॒ಕ್ಷ್ಮೀಂ ಜಾತ॑ವೇದೋ ಮ॒ ಆವ॑ಹ ॥ ೧೪ ॥",
+        "malayalam": "ആ॒ര്ദ്രാം യഃ॒ കരി॑ണീം യ॒ഷ്ടിം സു॒വ॒ര്ണാം ഹേ॑മമാ॒ലിനീ᳚മ് ।\nസൂര്യാം॑ ഹി॒രണ്മ॑യീം ല॒ക്ഷ്മീം ജാത॑വേദോ മ॒ ആവ॑ഹ ॥ ൧൪ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "O Agni! Invoke for me that Lakshmi who holds the regal staff of power, beautiful in form, adorned with gold necklaces, effulgent like the sun, and golden in nature.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे जातवेदा अग्नि! मेरे लिए उस महालक्ष्मी को बुलाइए, जो करुणा की मूर्ति हैं, धर्म-दंड रूपी यष्टि धारण करती हैं, सुवर्ण जैसी शोभा वाली हैं, सोने के हारों से सजी हैं, सूर्य के समान प्रकाशमान और साक्षात् हिरण्मयी हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఓ అగ్నిదేవా! కరుణామయి, ధర్మదండమును ధరించునది, సువర్ణ కాంతులతో వెలుగునది, బంగారు హారములు కలది, సూర్యుని వలె తేజోవంతమైన ఆ దివ్య లక్ష్మీదేవిని నా కొరకు రప్పింపుము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஓ அக்னியே! கருணை வடிவினள், நீதிச் செங்கோல் ஏந்தியவள், பொன் மாலைகளால் அலங்கரிக்கப்பட்டவள், சூரியனைப் போல் பிரகாசிப்பவள் ஆகிய அந்தப் பொன்மயமான லக்ஷ்மியை எனக்குத் தந்தருள்வாயாக.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಹೇ ಅಗ್ನಿಯೇ! ಕರುಣಾಮಯಿಯೂ, ಧರ್ಮದಂಡವನ್ನು ಧರಿಸಿದವಳೂ, ಸುವರ್ಣಹಾರಗಳಿಂದ ಶೋಭಿಸುವವಳೂ, ಸೂರ್ಯನಂತೆ ಪ್ರಕಾಶಿಸುವವಳೂ ಆದ ಆ ದಿವ್ಯ ಮಹಾಲಕ್ಷ್ಮಿಯನ್ನು ನನಗಾಗಿ ಕರೆತರು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे जातवेदा अग्नि! दयेची मूर्ती असलेल्या, धर्मदंड धारण करणाऱ्या, सुवर्णहारांनी सजलेल्या व सूर्याप्रमाणे तेजस्वी असणाऱ्या त्या हिरण्मयी लक्ष्मीचे आवाहन करा.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে জাতবেদা অগ্নি! করুণাময়ী, ধর্মদণ্ডধারিণী, সুবর্ণভূষিতা, স্বর্ণমালাবিভূষিতা এবং সূর্যের ন্যায় জ্যোতির্ময়ী সেই মহালক্ষ্মীকে আমার গৃহে আনয়ন করুন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હે અગ્નિદેવ! કરુણામૂર્તિ, ધર્મદંડ ધારણ કરનારાં, સુવર્ણહારથી શોભતાં અને સૂર્ય સમાન તેજસ્વી તે હિરણ્મયી લક્ષ્મીનું આવાહન કરો.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഹേ അഗ്നിദേവാ! കാരുണ്യമൂർത്തിയും, നീതിദണ്ഡമേന്തിയവളും, സ്വർണ്ണമാലകളണിഞ്ഞവളും, സൂര്യനെപ്പോലെ തിളങ്ങുന്നവളുമായ ആ ഹിരണ്മയീ ലക്ഷ്മിയെ എനിക്കായി കൊണ്ടുവന്നാലും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହେ ଅଗ୍ନିଦେବ! କରୁଣାମୟୀ, ଧର୍ମଦଣ୍ଡଧାରିଣୀ, ସୁବର୍ଣ୍ଣହାର ବିଭୂଷିତା ଓ ସୂର୍ଯ୍ୟଙ୍କ ଭଳି ତେଜୋମୟୀ ସେହି ହିରଣ୍ମୟୀ ଲକ୍ଷ୍ମୀଙ୍କୁ ମୋ ପାଇଁ ଆବାହନ କରନ୍ତୁ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 15,
+      "verse_type": "VERSE",
+      "original_sanskrit": "तां म॒ आव॑ह॒ जात॑वेदो ल॒क्ष्मीमन॑पगा॒मिनी॑म् ।\nयस्यां॒ हिर॑ण्यं प्रभू॑तं॒ गावो॑ दा॒स्योऽश्वा᳚न् वि॒न्देयं॒ पुरु॑षान॒हम् ॥ १५ ॥",
+      "iast": "tāṁ ma āvaha jātavēdō lakṣmīmanapagāminīm ।\nyasyāṁ hiraṇyaṁ prabhūtaṁ gāvō dāsyō'śvān vindēyaṁ puruṣānaham ॥ 15 ॥",
+      "transliterations": {
+        "telugu": "తాం మ॒ ఆవ॑హ॒ జాత॑వేదో ల॒క్ష్మీమన॑పగా॒మినీ॑మ్ ।\nయస్యాం॒ హిర॑ణ్యం ప్రభూ॑తం॒ గావో॑ దా॒స్యోఽశ్వా᳚న్ వి॒న్దేయం॒ పురు॑షాన॒హమ్ ॥ ౧౫ ॥",
+        "tamil": "தாம் ம॒ ஆவ॑ஹ॒ ஜாத॑வேதோ ல॒க்ஷ்மீமந॑பகா॒மிநீ॑ம் ।\nயஸ்யாம்॒ ஹிர॑ண்யம் ப்ரபூ॑தம்॒ காவோ॑ தா॒ஸ்யோऽஶ்வா᳚ந் வி॒ந்தேயம்॒ புரு॑ஷாந॒ஹம் ॥ ௧௫ ॥",
+        "kannada": "ತಾಂ ಮ॒ ಆವ॑ಹ॒ ಜಾತ॑ವೇದೋ ಲ॒ಕ್ಷ್ಮೀಮನ॑ಪಗಾ॒ಮಿನೀ॑ಮ್ ।\nಯಸ್ಯಾಂ॒ ಹಿರ॑ಣ್ಯಂ ಪ್ರಭೂ॑ತಂ॒ ಗಾವೋ॑ ದಾ॒ಸ್ಯೋಽಶ್ವಾ᳚ನ್ ವಿ॒ನ್ದೇಯಂ॒ ಪುರು॑ಷಾನ॒ಹಮ್ ॥ ೧೫ ॥",
+        "malayalam": "താം മ॒ ആവ॑ഹ॒ ജാത॑വേദോ ല॒ക്ഷ്മീമന॑പഗാ॒മിനീ॑മ് ।\nയസ്യാം॒ ഹിര॑ണ്യം പ്രഭൂ॑തം॒ ഗാവോ॑ ദാ॒സ്യോഽശ്വാ᳚ന് വി॒ന്ദേയം॒ പുരു॑ഷാന॒ഹമ് ॥ ൧൫ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "O Agni! Invoke for me that never-departing Lakshmi, through whom I shall obtain abundant gold, cows, attendants, noble steeds, and faithful kin.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे जातवेदा अग्निदेव! मेरे लिए उस कभी न जाने वाली स्थिर महालक्ष्मी का आह्वान कीजिए, जिनकी कृपा से मैं प्रचुर सुवर्ण, गौवें, सेवक-सेविकाएँ, अश्व और श्रेष्ठ कुटुम्बीजनों को प्राप्त करूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఓ జాతవేదుడా! నన్ను ఎన్నడూ విడిచిపోని శాశ్వత లక్ష్మీదేవిని నా యొద్దకు రప్పింపుము; ఆమె అనుగ్రహము వలన నేను అపారమైన బంగారమును, గోవులను, సేవకులను, అశ్వములను, సత్పురుషులను పొందెదను గాక.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஓ அக்னி பகவானே! என்னை விட்டு நீங்காத நிலையான லக்ஷ்மி தேவியை என்னிடம் கொணர்வீராக; அவளால் நான் அளவற்ற தங்கம், பசுக்கள், பணியாளர்கள், குதிரைகள், நன்மக்களை அடைவேனாக.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಹೇ ಅಗ್ನಿದೇವನೇ! ನನ್ನನ್ನು ಬಿಟ್ಟುಹೋಗದ ಅಚಲ ಲಕ್ಷ್ಮಿಯನ್ನು ಕರೆತರು; ಆಕೆಯ ಕೃಪೆಯಿಂದ ಅಪಾರ ಚಿನ್ನ, ಗೋವುಗಳು, ಆಳು-ಕಾಳುಗಳು, ಕುದುರೆಗಳು ಮತ್ತು ಸತ್ಪುತ್ರರನ್ನು ನಾನು ಪಡೆಯುವಂತಾಗಲಿ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे जातवेदा अग्निदेवा! मला सोडून न जाणाऱ्या अशा स्थिर लक्ष्मीला माझ्याकडे आणा, ज्यांच्या कृपेने मी विपुल सुवर्ण, गाई, सेवक, घोडे आणि उत्तम कुटुंबीय प्राप्त करू शकेन.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে জাতবেদা অগ্নিদেব! অচলা লক্ষ্মীকে আমার জন্য আহ্বান করুন, যাঁর কৃপায় আমি প্রভূত স্বর্ণ, গোসম্পদ, সেবক-সেবিকা, অশ্ব ও সুহৃদজন লাভ করিতে পারি।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હે અગ્નિદેવ! કદી ન જનારી તે સ્થિર લક્ષ્મીનું આવાહન કરો; જેમની કૃપાથી હું પુષ્કળ સોનું, ગાયો, દાસ-દાસીઓ, અશ્વો અને સજ્જનોને પામી શકું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഹേ അഗ്നിദേവാ! ഒരിക്കലും പിരിയാത്ത ആ ശാശ്വതലക്ഷ്മിയെ ഇവിടെ കൊണ്ടുവന്നാലും; ആ ദേവിയുടെ കൃപയാൽ എനിക്ക് ധാരാളം സ്വർണ്ണവും പശുക്കളും ഭൃത്യന്മാരും കുതിരകളും ഉത്തമജനങ്ങളും ലഭിക്കുമാറാകട്ടെ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହେ ଅଗ୍ନିଦେବ! ମୋ ପାଇଁ ସେହି ଅଚଳା ଲକ୍ଷ୍ମୀଙ୍କୁ ପ୍ରଦାନ କରନ୍ତୁ, ଯାହାଙ୍କ କୃପାରୁ ମୁଁ ପ୍ରଚୁର ସ୍ୱର୍ଣ୍ଣ, ଗୋଧନ, ସେବକ, ଅଶ୍ୱ ଓ ସତ୍ପୁତ୍ରମାନଙ୍କୁ ଲାଭ କରିପାରିବି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 16,
+      "verse_type": "PHALASRUTI",
+      "original_sanskrit": "यः शुचिः॑ प्रयोतो भू॒त्वा जु॑हुया॒दाज्य॑मन्व॒हम् ।\nसूक्तं॑ पञ्चदश॒र्चं च॑ श्री॒कामः॑ सत॒तं ज॑पेत् ॥ १६ ॥",
+      "iast": "yaḥ śuciḥ prayatō bhūtvā juhuyādājyamanvaham ।\nsūktaṁ pañcadaśarcaṁ ca śrīkāmaḥ satataṁ japēt ॥ 16 ॥",
+      "transliterations": {
+        "telugu": "యః శుచిః॑ ప్రయోతో భూ॒త్వా జు॑హుయా॒దాజ్య॑మన్వ॒హమ్ ।\nసూక్తం॑ పఞ్చదశ॒ర్చం చ॑ శ్రీ॒కామః॑ సత॒తం జ॑పేత్ ॥ ౧౬ ॥",
+        "tamil": "யஃ ஶுசிஃ॑ ப்ரயோதோ பூ॒த்வா ஜு॑ஹுயா॒தாஜ்ய॑மந்வ॒ஹம் ।\nஸூக்தம்॑ பஞ்சதஶ॒ர்சம் ச॑ ஶ்ரீ॒காமஃ॑ ஸத॒தம் ஜ॑பேத் ॥ ௧௬ ॥",
+        "kannada": "ಯಃ ಶುಚಿಃ॑ ಪ್ರಯೋತೋ ಭೂ॒ತ್ವಾ ಜು॑ಹುಯಾ॒ದಾಜ್ಯ॑ಮನ್ವ॒ಹಮ್ ।\nಸೂಕ್ತಂ॑ ಪಞ್ಚದಶ॒ರ್ಚಂ ಚ॑ ಶ್ರೀ॒ಕಾಮಃ॑ ಸತ॒ತಂ ಜ॑ಪೇತ್ ॥ ೧೬ ॥",
+        "malayalam": "യഃ ശുചിഃ॑ പ്രയോതോ ഭൂ॒ത്വാ ജു॑ഹുയാ॒ദാജ്യ॑മന്വ॒ഹമ് ।\nസൂക്തം॑ പഞ്ചദശ॒ര്ചം ച॑ ശ്രീ॒കാമഃ॑ സത॒തം ജ॑പേത് ॥ ൧൬ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Whoever, being pure in mind and self-restrained, offers oblation of ghee daily and constantly recites this fifteen-versed hymn (suktam pancadasarcam), desiring prosperity, attains enduring divine grace.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जो मनुष्य पवित्र और संयमी होकर प्रतिदिन अग्नि में घृत की आहुति देता है तथा लक्ष्मी की कृपा प्राप्ति की कामना से इस पंद्रह ऋचाओं वाले श्रीसूक्त का निरंतर जप करता है, वह समस्त सुख और समृद्धि प्राप्त करता है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఎవరైతే పవిత్రుడై, ఇంద్రియ నిగ్రహము కలిగి ప్రతిదినము నేతితో హోమము చేయుచు, లక్ష్మీదేవి అనుగ్రహము కొరకు ఈ పదిహేను ఋక్కులు గల శ్రీసూక్తమును నిరంతరము జపించునో, అతడు సర్వ సమృద్ధులను పొందును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "எவர் ஒருவர் உடலும் மனமும் தூய்மை பெற்று, தினமும் அக்னியில் நெய் ஆகுதி வழங்கி, ஸ்ரீதேவியின் அருளை வேண்டி இந்தப் பதினைந்து மந்திரங்கள் கொண்ட ஸ்ரீசூக்தத்தை ஜபிக்கிறாரோ, அவர் சகல நலன்களையும் பெறுவார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಯಾವಾತನು ಶುಚಿಯಾಗಿಯೂ ಜಿತೇಂದ್ರಿಯನಾಗಿಯೂ ನಿತ್ಯವೂ ತುಪ್ಪದಿಂದ ಹೋಮ ಮಾಡುತ್ತಾ, ಲಕ್ಷ್ಮಿಯ ಕೃಪೆಗಾಗಿ ಈ ಹದಿನೈದು ಋಕ್ಕುಗಳ ಶ್ರೀಸೂಕ್ತವನ್ನು ಸತತವಾಗಿ ಜಪಿಸುವನೋ, ಅವನು ಸಮಸ್ತ ಸೌಭಾಗ್ಯಗಳನ್ನು ಪಡೆಯುತ್ತಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जो मनुष्य पवित्र व संयमी होऊन दररोज अग्नीमध्ये तुपाची आहुती देतो आणि लक्ष्मीच्या कृपेसाठी या पंधरा ऋचांच्या श्रीसूक्ताचा नित्य जप करतो, त्याला सर्व प्रकारची समृद्धी लाभते.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যিনি শুচি ও সংযতচিত্ত হইয়া প্রতিদিন অগ্নিতে ঘৃতাহুতি প্রদান করেন এবং লক্ষ্মীকৃপা লাভের কামনায় এই পঞ্চদশ ঋচাযুক্ত শ্রীসূক্ত সতত জপ করেন, তিনি সর্বসিদ্ধি লাভ করেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જે મનુષ્ય પવિત્ર અને સંયમી થઈને નિત્ય અગ્નિમાં ઘીની આહુતિ આપે છે અને શ્રીલક્ષ્મીની પ્રાપ્તિ માટે આ પંદર ઋચાઓવાળા શ્રીસૂક્તનો નિરંતર જપ કરે છે, તે સર્વ સમૃદ્ધિ પામે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ശുദ്ധിയോടും ഇന്ദ്രിയനിഗ്രഹത്തോടും കൂടി ദിവസവും നെയ്യിനാൽ ഹോമം ചെയ്യുകയും, ലക്ഷ്മീപ്രീതിക്കായി ഈ പതിനഞ്ചു മന്ത്രങ്ങൾ നിരന്തരം ജപിക്കുകയും ചെയ്യുന്നവൻ സകല ഐശ്വര്യങ്ങളും നേടുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯେଉଁ ବ୍ୟକ୍ତି ପବିତ୍ର ଓ ସଂଯମୀ ହୋଇ ପ୍ରତିଦିନ ଅଗ୍ନିରେ ଘୃତ ଆହୁତି ଦିଏ ଏବଂ ଲକ୍ଷ୍ମୀଙ୍କ କୃପା ପାଇଁ ଏହି ପନ୍ଦର ଋଚା ବିଶିଷ୍ଟ ଶ୍ରୀସୂକ୍ତ ନିରନ୍ତର ଜପ କରେ, ସେ ସର୍ବ ସମୃଦ୍ଧି ଲାଭ କରେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    }
+  ]
+}

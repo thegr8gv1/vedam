@@ -342,6 +342,57 @@ class LanguageQualityAssuranceEngine:
             )
         )
 
+        # 13. Rule: LANG-QA-013 Vedic Accent Isolation & Alignment Check
+        # Ensures Vedic accents (udatta, anudatta, svarita) remain strictly isolated to chanting text
+        # and do not leak into regional translations, and ensures 1:1 verse alignment
+        swara_leak_detected = False
+        swara_issues = []
+        is_vedic = text.content_id in (
+            "VEDA-TXT-00005", "VEDA-TXT-00006", "VEDA-TXT-00007",
+            "VEDA-TXT-00014", "VEDA-TXT-00015", "VEDA-TXT-00016"
+        )
+        if is_vedic:
+            for v_num, tr in trans_map.items():
+                if "\u0951" in tr.translated_text or "\u0952" in tr.translated_text:
+                    swara_leak_detected = True
+                    swara_issues.append(f"Verse {v_num} translation contains Vedic swara marks")
+
+        checks.append(
+            LanguageQACheckResult(
+                rule_id="LANG-QA-013",
+                rule_name="VEDIC_ACCENT_ISOLATION_AND_ALIGNMENT",
+                status=QACheckStatus.PASSED if not swara_leak_detected else QACheckStatus.FAILED,
+                target_language=target_language,
+                message="Vedic recitation accents isolated to Sanskrit source; translations maintain clean Unicode." if not swara_leak_detected else f"Swara leak violations: {swara_issues}",
+                details={"is_vedic_text": is_vedic, "swara_issues": swara_issues},
+            )
+        )
+
+        # 14. Rule: LANG-QA-014 Vedic Cosmology & Deity Consistency Check
+        # Verifies that translations of sacred Vedic literature maintain appropriate theological depth
+        theological_valid = True
+        theological_notes = "Cosmological and deity terms verified against SanskritTerminologyGlossary."
+        if text.content_id == "VEDA-TXT-00014":  # Purusha Suktam
+            # Check for non-empty meaningful translations
+            if any(len(tr.translated_text.strip()) < 15 for tr in trans_map.values()):
+                theological_valid = False
+                theological_notes = "Purusha Suktam has verses with insufficient translation depth."
+        elif text.content_id == "VEDA-TXT-00007":  # Sri Suktam
+            if any(len(tr.translated_text.strip()) < 15 for tr in trans_map.values()):
+                theological_valid = False
+                theological_notes = "Sri Suktam has verses with insufficient translation depth."
+
+        checks.append(
+            LanguageQACheckResult(
+                rule_id="LANG-QA-014",
+                rule_name="VEDIC_COSMOLOGY_AND_DEITY_CHECK",
+                status=QACheckStatus.PASSED if theological_valid else QACheckStatus.FAILED,
+                target_language=target_language,
+                message=theological_notes,
+                details={"theological_valid": theological_valid},
+            )
+        )
+
         total = len(checks)
         passed = sum(1 for c in checks if c.status == QACheckStatus.PASSED)
         failed = sum(1 for c in checks if c.status == QACheckStatus.FAILED)

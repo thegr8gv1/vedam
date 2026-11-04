@@ -1,0 +1,1224 @@
+{
+  "content_id": "VEDA-TXT-00014",
+  "canonical_title": "Purusha Suktam",
+  "devanagari_title": "पुरुषसूक्तम्",
+  "composer": "Rishi Narayana",
+  "source_scripture": "Rigveda Samhita, Mandala 10, Sukta 90",
+  "verse_count": 16,
+  "generated_at_utc": "2026-11-04T23:40:37.469421+00:00",
+  "supported_languages": [
+    "sa",
+    "hi",
+    "te",
+    "ta",
+    "kn",
+    "mr",
+    "bn",
+    "gu",
+    "ml",
+    "or",
+    "en"
+  ],
+  "verses": [
+    {
+      "verse_number": 1,
+      "verse_type": "VERSE",
+      "original_sanskrit": "सहस्र॑शीर्षा पुरु॑षः सहस्रा॒क्षः स॒हस्र॑पात् ।\nस भूमिं॑ वि॒श्वतो॑ वृ॒त्वात्य॑तिष्ठद्दशाङ्गु॒लम् ॥ १ ॥",
+      "iast": "sahasra॑śīrṣā puru॑ṣaḥ sahasrā॒kṣaḥ sa॒hasra॑pāt ।\nsa bhūmiṁ॑ vi॒śvatō॑ vṛ॒tvātya॑tiṣṭhaddaśāṅgu॒lam ॥ 1 ॥",
+      "transliterations": {
+        "telugu": "సహస్ర॑శీర్షా పురు॑షః సహస్రా॒క్షః స॒హస్ర॑పాత్ ।\nస భూమిం॑ వి॒శ్వతో॑ వృ॒త్వాత్య॑తిష్ఠద్దశాఙ్గు॒లమ్ ॥ ౧ ॥",
+        "tamil": "ஸஹஸ்ர॑ஶீர்ஷா புரு॑ஷஃ ஸஹஸ்ரா॒க்ஷஃ ஸ॒ஹஸ்ர॑பாத் ।\nஸ பூமிம்॑ வி॒ஶ்வதோ॑ வ்ரு'॒த்வாத்ய॑திஷ்டத்தஶாங்கு॒லம் ॥ ௧ ॥",
+        "kannada": "ಸಹಸ್ರ॑ಶೀರ್ಷಾ ಪುರು॑ಷಃ ಸಹಸ್ರಾ॒ಕ್ಷಃ ಸ॒ಹಸ್ರ॑ಪಾತ್ ।\nಸ ಭೂಮಿಂ॑ ವಿ॒ಶ್ವತೋ॑ ವೃ॒ತ್ವಾತ್ಯ॑ತಿಷ್ಠದ್ದಶಾಙ್ಗು॒ಲಮ್ ॥ ೧ ॥",
+        "malayalam": "സഹസ്ര॑ശീര്ഷാ പുരു॑ഷഃ സഹസ്രാ॒ക്ഷഃ സ॒ഹസ്ര॑പാത് ।\nസ ഭൂമിം॑ വി॒ശ്വതോ॑ വൃ॒ത്വാത്യ॑തിഷ്ഠദ്ദശാങ്ഗു॒ലമ് ॥ ൧ ॥",
+        "iast": "sahasra̭śīrṣā purṷṣaḥ sahasrā̱kṣaḥ sa̱hasra̭pāt |\nsa bhūmi̭ṃ vi̱śvato̭ vṛ̱tvātya̭tiṣṭhaddaśāṅgu̱lam || 1 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "The Supreme Purusha has a thousand heads, a thousand eyes, and a thousand feet. Pervading the entire cosmos on all sides, He extends beyond it by ten fingers' length.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "परम पुरुष परमात्मा अनन्त शीश, अनन्त नेत्र और अनन्त चरणों वाले हैं। वे इस सम्पूर्ण ब्रह्माण्ड को सब ओर से व्याप्त करके भी दस अंगुल (अनंत सीमा) ऊपर स्थित हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "విశ్వపురుషుడైన పరమాత్మ వేలకొలది శిరస్సులు, వేలకొలది నేత్రములు, వేలకొలది పాదములు కలవాడు. ఆయన ఈ సృష్టినంతటినీ సర్వత్ర వ్యాపించి, ఇంకా పది అంగుళముల మేర అతీతుడై వెలుగొందుచున్నాడు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அந்தப் பரம புருஷன் ஆயிரமாயிரம் தலைகளும், கண்களும், பாதங்களும் கொண்டவர். இப்பிரபஞ்சம் முழுவதையும் சூழ்ந்து வியாபித்து, பத்தங்குல அளவிற்கு அப்பாலும் அவர் விளங்குகிறார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ವಿರಾಟ್ ಪುರುಷನಾದ ಪರಮಾತ್ಮನು ಅನಂತ ಶಿರಗಳು, ಅನಂತ ನೇತ್ರಗಳು ಮತ್ತು ಅನಂತ ಪಾದಗಳುಳ್ಳವನು. ಈ ಇಡೀ ವಿಶ್ವವನ್ನು ಸುತ್ತುವರಿದು, ಇನ್ನೂ ಹತ್ತು ಬೆರಳುಗಳಷ್ಟು ಮೇಲಕ್ಕೆ ಅತೀತನಾಗಿ ನೆಲೆಸಿದ್ದಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "विराट पुरुष परमात्मा अनंत मस्तक, अनंत डोळे आणि अनंत पाय असणारा आहे. तो या संपूर्ण ब्रह्मांडाला सर्व बाजूंनी व्यापूनही दहा बोटे पलीकडे (अनंतात) स्थित आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "পরম পুরুষ পরমাত্মা সহস্র মস্তক, সহস্র চক্ষু ও সহস্র চরণবিশিষ্ট। তিনি এই সমগ্র ব্রহ্মাণ্ডকে সর্বত্র ব্যাপ্ত করিয়াও দশ অঙ্গুলি ঊর্ধ্বে অবস্থিত রহিয়াছেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "પરમ પુરુષ પરમાત્મા અનંત મસ્તક, અનંત નેત્ર અને અનંત ચરણવાળા છે. તેઓ સમગ્ર બ્રહ્માંડને સર્વત્ર વ્યાપીને પણ દસ આંગળ ઉપર પરમ પદમાં સ્થિત છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "പരമപുരുഷനായ പരമാത്മാവ് ആയിരക്കണക്കിന് ശിരസ്സുകളും കണ്ണുകളും പാദങ്ങളുമുള്ളവനാണ്. അവൻ ഈ പ്രപഞ്ചത്തെ മുഴുവൻ വ്യാപിച്ച് പത്തംഗുലം ഉപരിയായി വിളങ്ങുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ପରମ ପୁରୁଷ ପରମାତ୍ମା ଅନନ୍ତ ମସ୍ତକ, ଅନନ୍ତ ନେତ୍ର ଓ ଅନନ୍ତ ଚରଣ ବିଶିଷ୍ଟ । ସେ ସମଗ୍ର ବ୍ରହ୍ମାଣ୍ଡକୁ ବ୍ୟାପି ମଧ୍ୟ ଦଶ ଅଙ୍ଗୁଳି ଊର୍ଦ୍ଧ୍ୱରେ ବିରାଜମାନ କରୁଛନ୍ତି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 2,
+      "verse_type": "VERSE",
+      "original_sanskrit": "पुरु॑ष ए॒वेदं सर्वं॒ यद्भू॒तं यच्च॒ भव्य॑म् ।\nउ॒तामृ॑त॒त्वस्येशा॑नो॒ यदन्ने॑नाति॒रोह॑ति ॥ २ ॥",
+      "iast": "puru॑ṣa ē॒vēdaṁ sarvaṁ॒ yadbhū॒taṁ yacca॒ bhavya॑m ।\nu॒tāmṛ॑ta॒tvasyēśā॑nō॒ yadannē॑nāti॒rōha॑ti ॥ 2 ॥",
+      "transliterations": {
+        "telugu": "పురు॑ష ఏ॒వేదం సర్వం॒ యద్భూ॒తం యచ్చ॒ భవ్య॑మ్ ।\nఉ॒తామృ॑త॒త్వస్యేశా॑నో॒ యదన్నే॑నాతి॒రోహ॑తి ॥ ౨ ॥",
+        "tamil": "புரு॑ஷ ஏ॒வேதம் ஸர்வம்॒ யத்பூ॒தம் யச்ச॒ பவ்ய॑ம் ।\nஉ॒தாம்ரு'॑த॒த்வஸ்யேஶா॑நோ॒ யதந்நே॑நாதி॒ரோஹ॑தி ॥ ௨ ॥",
+        "kannada": "ಪುರು॑ಷ ಏ॒ವೇದಂ ಸರ್ವಂ॒ ಯದ್ಭೂ॒ತಂ ಯಚ್ಚ॒ ಭವ್ಯ॑ಮ್ ।\nಉ॒ತಾಮೃ॑ತ॒ತ್ವಸ್ಯೇಶಾ॑ನೋ॒ ಯದನ್ನೇ॑ನಾತಿ॒ರೋಹ॑ತಿ ॥ ೨ ॥",
+        "malayalam": "പുരു॑ഷ ഏ॒വേദം സര്വം॒ യദ്ഭൂ॒തം യച്ച॒ ഭവ്യ॑മ് ।\nഉ॒താമൃ॑ത॒ത്വസ്യേശാ॑നോ॒ യദന്നേ॑നാതി॒രോഹ॑തി ॥ ൨ ॥",
+        "iast": "purṷṣa e̱vedaṃ sarva̱ṃ yadbhū̱taṃ yacca̱ bhavya̭m |\nu̱tāmṛ̭ta̱tvasyeśā̭no̱ yadannḙnāti̱roha̭ti || 2 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "The Purusha alone is all this universe — all that has been and all that is yet to come. He is also the immortal Lord of eternal life, who grows beyond mortal existence through sustenance.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जो कुछ भूतकाल में था और जो कुछ भविष्य में होगा, वह सब साक्षात् यह पुरुष ही है। वही अमृतत्व (मोक्ष) का स्वामी है और वही अन्न द्वारा वृद्धि पाने वाले इस नश्वर संसार का भी प्रभु है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "గతించినది, వర్తమానమందున్నది, భవిష్యత్తులో ఉండబోవునది సమస్తమూ ఆ పురుషుడే. ఆయన అమృతత్వమునకు (మోక్షమునకు) అధిపతి; ఆహారముచే ఎదుగు ప్రాణికోటికి ఆయనే ప్రభువు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "முன்னிருந்ததும், இனி வரவிருப்பதும் ஆகிய அனைத்தும் புருஷனே ஆவான். அவன் அழியாத அமிர்தத்துவத்தின் தலைவன்; உணவினால் வளரும் இந்த உலகிற்கும் அவனே ஈசன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಹಿಂದೆ ಇದ್ದದ್ದೂ, ಮುಂದೆ ಆಗಲಿರುವುದೂ ಎಲ್ಲವೂ ಪುರುಷನೇ ಆಗಿದ್ದಾನೆ. ಆತನೇ ಅಮೃತತ್ವದ (ಮೋಕ್ಷದ) ಒಡೆಯನು ಮತ್ತು ಅನ್ನದಿಂದ ಬೆಳೆಯುವ ಸಮಸ್ತ ಸೃಷ್ಟಿಯ ಪ್ರಭು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जे भूतकाळात होते आणि जे भविष्यात घडणार आहे, ते सर्व साक्षात हा पुरुषच आहे. तोच मोक्षाचा स्वामी आहे आणि अन्नामुळे वाढणाऱ्या या नश्वर विश्वाचाही नियंता आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "অতীতে যাহা ছিল এবং ভবিষ্যতে যাহা হইবে, সেই সমস্তই পুরুষ। তিনিই অমৃতত্বের (মোক্ষের) অধিপতি এবং অন্ন দ্বারা পুষ্ট এই নশ্বর জগতেরও ঈশ্বর।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જે ભૂતકાળમાં હતું અને જે ભવિષ્યમાં થવાનું છે, તે સર્વ આ પુરુષ જ છે. તેઓ જ અમૃતત્વના સ્વામી છે અને અન્ન દ્વારા વૃદ્ધિ પામતા આ જગતના પણ નિયંતા છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "കഴിഞ്ഞതും വരാനിരിക്കുന്നതുമെല്ലാം ആ പുരുഷൻ തന്നെയാണ്. അവൻ അമൃതത്വത്തിന്റെ നാഥനാണ്; അന്നത്താൽ വളരുന്ന ജഗത്തിന്റെയും പ്രഭു അവനാണ്.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଅତୀତରେ ଯାହା ଥିଲା ଏବଂ ଭବିଷ୍ୟତରେ ଯାହା ହେବ, ସେହି ସମସ୍ତ କେବଳ ପୁରୁଷ ହିଁ ଅଟନ୍ତି । ସେ ଅମୃତତ୍ୱର ସ୍ୱାମୀ ଏବଂ ଅନ୍ନ ଦ୍ୱାରା ବୃଦ୍ଧି ପାଉଥିବା ସଂସାରର ମଧ୍ୟ ପ୍ରଭୁ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 3,
+      "verse_type": "VERSE",
+      "original_sanskrit": "ए॒तावा॑नस्य महि॒मातो॒ ज्यायां॑श्च॒ पूरु॑षः ।\nपादो॑ऽस्य॒ विश्वा॑ भू॒तानि॑ त्रि॒पाद॑स्या॒मृतं॑ दि॒वि ॥ ३ ॥",
+      "iast": "ē॒tāvā॑nasya mahi॒mātō॒ jyāyāṁ॑śca॒ pūru॑ṣaḥ ।\npādō॑'sya॒ viśvā॑ bhū॒tāni॑ tri॒pāda॑syā॒mṛtaṁ॑ di॒vi ॥ 3 ॥",
+      "transliterations": {
+        "telugu": "ఏ॒తావా॑నస్య మహి॒మాతో॒ జ్యాయాం॑శ్చ॒ పూరు॑షః ।\nపాదో॑ఽస్య॒ విశ్వా॑ భూ॒తాని॑ త్రి॒పాద॑స్యా॒మృతం॑ ది॒వి ॥ ౩ ॥",
+        "tamil": "ஏ॒தாவா॑நஸ்ய மஹி॒மாதோ॒ ஜ்யாயாம்॑ஶ்ச॒ பூரு॑ஷஃ ।\nபாதோ॑ऽஸ்ய॒ விஶ்வா॑ பூ॒தாநி॑ த்ரி॒பாத॑ஸ்யா॒ம்ரு'தம்॑ தி॒வி ॥ ௩ ॥",
+        "kannada": "ಏ॒ತಾವಾ॑ನಸ್ಯ ಮಹಿ॒ಮಾತೋ॒ ಜ್ಯಾಯಾಂ॑ಶ್ಚ॒ ಪೂರು॑ಷಃ ।\nಪಾದೋ॑ಽಸ್ಯ॒ ವಿಶ್ವಾ॑ ಭೂ॒ತಾನಿ॑ ತ್ರಿ॒ಪಾದ॑ಸ್ಯಾ॒ಮೃತಂ॑ ದಿ॒ವಿ ॥ ೩ ॥",
+        "malayalam": "ഏ॒താവാ॑നസ്യ മഹി॒മാതോ॒ ജ്യായാം॑ശ്ച॒ പൂരു॑ഷഃ ।\nപാദോ॑ഽസ്യ॒ വിശ്വാ॑ ഭൂ॒താനി॑ ത്രി॒പാദ॑സ്യാ॒മൃതം॑ ദി॒വി ॥ ൩ ॥",
+        "iast": "e̱tāvā̭nasya mahi̱māto̱ jyāyā̭ṃśca̱ pūrṷṣaḥ |\npādo̭'sya̱ viśvā̭ bhū̱tāni̭ tri̱pāda̭syā̱mṛta̭ṃ di̱vi || 3 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Such is His magnificent greatness, yet greater still is the supreme Purusha. All beings and creations of the universe constitute but one quarter of Him; His immortal three-quarters abide in the transcendent realms.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "यह दृश्य जगत् तो इस परम पुरुष की केवल एक छोटी सी महिमा है; वास्तव में वह इससे कहीं अधिक महान है। समस्त चराचर सृष्टि उसका केवल एक अंश (पाद) मात्र है; उसके तीन चतुर्थांश अमर भाग परम दिव्य धाम में स्थित हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఈ సమస్త సృష్టియు ఆయన మహిమయే; కాని పరమపురుషుడు దీనికంటెను ఎంతో గొప్పవాడు. సమస్త జీవకోటి ఆయనలోని ఒక పాదము (నాల్గవ వంతు) మాత్రమే; ఆయన యొక్క మూడు పాదముల అమృత స్వరూపము దివ్య లోకమందున్నది.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இக்காணும் பிரபஞ்சம் யாவும் அவனது மகிமையே; ஆனால் அந்தப் புருஷனோ இதைவிடவும் மேலானவன். சிருஷ்டி அனைத்தும் அவனது ஒரு பாதமே; அவனது முக்கால் பாகத்து அமிர்த நிலை பரமபதத்தில் உள்ளது.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಈ ದೃಶ್ಯ ಜಗತ್ತು ಆತನ ಮಹಿಮೆಯಷ್ಟೇ; ವಾಸ್ತವವಾಗಿ ಪುರುಷನು ಇದಕ್ಕಿಂತಲೂ ಶ್ರೇಷ್ಠನಾಗಿದ್ದಾನೆ. ಸಕಲ ಸೃಷ್ಟಿಯು ಆತನ ಕೇವಲ ಒಂದು ಅಂಶ (ಕಾಲು ಭಾಗ) ಮಾತ್ರ; ಆತನ ಮೂರು ಅಂಶಗಳ ಅಮೃತ ರೂಪವು ಪರಮಧಾಮದಲ್ಲಿದೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हा संपूर्ण संसार म्हणजे त्या परमपुरुषाचा केवळ एक अंश आहे; वस्तुतः तो याहूनही महान आहे. सर्व चराचर सृष्टी त्याचा एक चतुर्थांश आहे; त्याचे तीन अमृत भाग दिव्य लोकात स्थिर आहेत.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "এই দৃশ্য জগৎ সেই পুরুষের মহিমামাত্র; কিন্তু তিনি ইহার চেয়েও বহুগুণ মহান। নিখিল সৃষ্টি তাঁহার এক চতুর্থাংশ মাত্র; তাঁহার তিন চতুর্থাংশ অমৃতস্বরূপ পরম ধামে বিরাজিত।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આ દૃશ્ય જગત તો આ પરમ પુરુષની માત્ર એક નાની મહિમા છે; વાસ્તવમાં તેઓ આનાથી પણ અત્યંત મહાન છે. સમગ્ર સૃષ્ટિ તેમનો એક અંશ માત્ર છે; તેમના ત્રણ અમૃત ભાગ પરમધામમાં સ્થિત છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഈ കാണപ്പെടുന്ന പ്രപഞ്ചം അവന്റെ മഹിമ മാത്രമാണ്; ആ പുരുഷൻ ഇതിലും എത്രയോ മഹാനാണ്. സർവ്വ ചരാചരങ്ങളും അവന്റെ ഒരു പാദം (നാലിലൊന്ന്) മാത്രമാണ്; അവന്റെ ബാക്കി മുക്കാൽ ഭാഗവും അമൃതമായി പരമപദത്തിൽ വിളങ്ങുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଏହି ଦୃଶ୍ୟ ଜଗତ ସେହି ପରମ ପୁରୁଷଙ୍କର ଗୋଟିଏ ଛୋଟ ମହିମା ମାତ୍ର; ବାସ୍ତବରେ ସେ ଏହାଠାରୁ ବହୁତ ମହାନ । ସମଗ୍ର ସୃଷ୍ଟି ତାଙ୍କର ଏକ ଚତୁର୍ଥାଂଶ ମାତ୍ର; ତାଙ୍କର ତିନି ଚତୁର୍ଥାଂଶ ଅମୃତ ଭାଗ ପରମ ଧାମରେ ବିରାଜମାନ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 4,
+      "verse_type": "VERSE",
+      "original_sanskrit": "त्रि॒पादू॒र्ध्व उदै॒त्पुरु॑षः पादो॑ऽस्ये॒हाभ॑व॒त्पुनः॑ ।\nततो॒ विष्व॒ङ् व्य॑क्रामत्साशनानश॒ने अ॒भि ॥ ४ ॥",
+      "iast": "tri॒pādū॒rdhva udai॒tpuru॑ṣaḥ pādō॑'syē॒hābha॑va॒tpunaḥ॑ ।\ntatō॒ viṣva॒ṅ vya॑krāmatsāśanānaśa॒nē a॒bhi ॥ 4 ॥",
+      "transliterations": {
+        "telugu": "త్రి॒పాదూ॒ర్ధ్వ ఉదై॒త్పురు॑షః పాదో॑ఽస్యే॒హాభ॑వ॒త్పునః॑ ।\nతతో॒ విష్వ॒ఙ్ వ్య॑క్రామత్సాశనానశ॒నే అ॒భి ॥ ౪ ॥",
+        "tamil": "த்ரி॒பாதூ॒ர்த்வ உதை॒த்புரு॑ஷஃ பாதோ॑ऽஸ்யே॒ஹாப॑வ॒த்புநஃ॑ ।\nததோ॒ விஷ்வ॒ங் வ்ய॑க்ராமத்ஸாஶநாநஶ॒நே அ॒பி ॥ ௪ ॥",
+        "kannada": "ತ್ರಿ॒ಪಾದೂ॒ರ್ಧ್ವ ಉದೈ॒ತ್ಪುರು॑ಷಃ ಪಾದೋ॑ಽಸ್ಯೇ॒ಹಾಭ॑ವ॒ತ್ಪುನಃ॑ ।\nತತೋ॒ ವಿಷ್ವ॒ಙ್ ವ್ಯ॑ಕ್ರಾಮತ್ಸಾಶನಾನಶ॒ನೇ ಅ॒ಭಿ ॥ ೪ ॥",
+        "malayalam": "ത്രി॒പാദൂ॒ര്ധ്വ ഉദൈ॒ത്പുരു॑ഷഃ പാദോ॑ഽസ്യേ॒ഹാഭ॑വ॒ത്പുനഃ॑ ।\nതതോ॒ വിഷ്വ॒ങ് വ്യ॑ക്രാമത്സാശനാനശ॒നേ അ॒ഭി ॥ ൪ ॥",
+        "iast": "tri̱pādū̱rdhva udai̱tpurṷṣaḥ pādo̭'sye̱hābha̭va̱tpuna̭ḥ |\ntato̱ viṣva̱ṅ vya̭krāmatsāśanānaśa̱ne a̱bhi || 4 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "With His three-quarters the Purusha ascended into supreme transcendence, while one quarter manifested here again. From that quarter He expanded in all directions over everything that consumes food and that does not.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "अपने तीन भागों के साथ वह परम पुरुष ऊर्ध्व (परम धाम) में स्थित रहा, जबकि उसका एक भाग पुनः-पुनः इस संसार में प्रकट हुआ। वहाँ से वह चेतन (जो भोजन करते हैं) और जड़ (जो भोजन नहीं करते) सभी पदार्थों में सर्वत्र व्याप्त हो गया।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "మూడు పాదములతో ఆ పరమపురుషుడు ఊర్ధ్వలోకమున నిలచెను; ఆయన ఒక పాదము మాత్రమే ఈ జగత్తునందు మాటిమాటికి ఆవిర్భవించెను. అందుండి ఆయన చేతనాచేతనమైన సమస్త ప్రాణికోటి యందు వ్యాపించెను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "முப்பாதங்களுடன் அந்தப் புருஷன் மேலுலகில் எழுந்தருளினான்; அவனது ஒரு பாதமோ இவ்வுலகில் மீண்டும் மீண்டும் தோன்றியது. அங்கிருந்து அவன் உணவருந்தும் உயிரினங்கள், உணவருந்தாத ஜடப் பொருட்கள் யாவற்றிலும் நீக்கமற நிறைந்தான்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ತನ್ನ ಮೂರು ಪಾದಗಳಿಂದ ಪರಮಪುರುಷನು ಮೇಲಿನ ಲೋಕದಲ್ಲೇ ಉಳಿದನು; ಆತನ ಒಂದು ಪಾದವು ಈ ಜಗತ್ತಿನಲ್ಲಿ ಪುನಃ ಪುನಃ ಪ್ರಕಟವಾಯಿತು. ಅಲ್ಲಿಂದ ಆತನು ಚೇತನ ಹಾಗೂ ಅಚೇತನವಾದ ಸಮಸ್ತ ಪದಾರ್ಥಗಳಲ್ಲಿ ವ್ಯಾಪಿಸಿದನು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "आपल्या तीन भागांसह तो परमपुरुष वरच्या दिव्यलोकात स्थित राहिला; त्याचा एक भाग या जगात पुन्हा पुन्हा प्रकट झाला. तिथून तो सजीव आणि निर्जीव सर्व सृष्टीमध्ये व्यापून राहिला.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "নিজের তিন চতুর্থাংশ লইয়া সেই পুরুষ ঊর্ধ্বে বিরাজিত রহিলেন; তাঁহার এক অংশ পুনরায় এই বিশ্বে প্রকট হইল। তথা হইতে তিনি চেতন ও জড় সমস্ত বস্তুতে সর্বত্র পরিব্যাপ্ত হইলেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "પોતાના ત્રણ ભાગો સાથે તે પરમ પુરુષ ઊર્ધ્વલોકમાં સ્થિત રહ્યા; તેમનો એક ભાગ અહીં વારંવાર પ્રગટ થયો. ત્યાંથી તેઓ સચેતન અને અચેતન સમગ્ર સૃષ્ટિમાં વ્યાપી ગયા.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "മുക്കാൽ ഭാഗത്തോടും കൂടി പുരുഷൻ മുകളിലായി വർത്തിച്ചു; അവന്റെ ഒരു ഭാഗം ഈ ലോകത്തിൽ വീണ്ടും വീണ്ടും ആവിർഭവിച്ചു. അവിടുന്നു അവൻ ജീവനുള്ളതിലും ജീവനില്ലാത്തതിലും സർവ്വത്ര നിറഞ്ഞുനിന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଆପଣାର ତିନି ଭାଗ ସହିତ ସେହି ପରମ ପୁରୁଷ ଊର୍ଦ୍ଧ୍ୱରେ ଅବସ୍ଥିତ ରହିଲେ; ତାଙ୍କର ଗୋଟିଏ ଭାଗ ପୁନର୍ବାର ଏହି ସଂସାରରେ ପ୍ରକଟ ହେଲା । ସେଠାରୁ ସେ ଚେତନ ଓ ଅଚେତନ ସମସ୍ତ ସୃଷ୍ଟିରେ ବ୍ୟାପିଗଲେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 5,
+      "verse_type": "VERSE",
+      "original_sanskrit": "तस्मा॑द्वि॒राळ॑जायत वि॒राजो॒ अधि॒ पूरु॑षः ।\nस जा॒तो अत्य॑रिच्यत प॒श्चाद्भूमि॒मथो॑ पु॒रः ॥ ५ ॥",
+      "iast": "tasmā॑dvi॒rāḷa॑jāyata vi॒rājō॒ adhi॒ pūru॑ṣaḥ ।\nsa jā॒tō atya॑ricyata pa॒ścādbhūmi॒mathō॑ pu॒raḥ ॥ 5 ॥",
+      "transliterations": {
+        "telugu": "తస్మా॑ద్వి॒రాళ॑జాయత వి॒రాజో॒ అధి॒ పూరు॑షః ।\nస జా॒తో అత్య॑రిచ్యత ప॒శ్చాద్భూమి॒మథో॑ పు॒రః ॥ ౫ ॥",
+        "tamil": "தஸ்மா॑த்வி॒ராள॑ஜாயத வி॒ராஜோ॒ அதி॒ பூரு॑ஷஃ ।\nஸ ஜா॒தோ அத்ய॑ரிச்யத ப॒ஶ்சாத்பூமி॒மதோ॑ பு॒ரஃ ॥ ௫ ॥",
+        "kannada": "ತಸ್ಮಾ॑ದ್ವಿ॒ರಾಳ॑ಜಾಯತ ವಿ॒ರಾಜೋ॒ ಅಧಿ॒ ಪೂರು॑ಷಃ ।\nಸ ಜಾ॒ತೋ ಅತ್ಯ॑ರಿಚ್ಯತ ಪ॒ಶ್ಚಾದ್ಭೂಮಿ॒ಮಥೋ॑ ಪು॒ರಃ ॥ ೫ ॥",
+        "malayalam": "തസ്മാ॑ദ്വി॒രാള॑ജായത വി॒രാജോ॒ അധി॒ പൂരു॑ഷഃ ।\nസ ജാ॒തോ അത്യ॑രിച്യത പ॒ശ്ചാദ്ഭൂമി॒മഥോ॑ പു॒രഃ ॥ ൫ ॥",
+        "iast": "tasmā̭dvi̱rāḻa̭jāyata vi̱rājo̱ adhi̱ pūrṷṣaḥ |\nsa jā̱to atya̭ricyata pa̱ścādbhūmi̱matho̭ pu̱raḥ || 5 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "From Him was born the cosmic body Viraj, and from Viraj was manifested the cosmic Purusha. Being born, He spread far beyond the earth, both behind and in front.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "उस आदि पुरुष से 'विराट्' (सम्पूर्ण ब्रह्माण्ड शरीर) उत्पन्न हुआ, और उस विराट् से विराट् पुरुष उत्पन्न हुए। प्रकट होने के पश्चात् वे पृथ्वी के आगे और पीछे, सर्वत्र सीमातीत होकर फैल गए।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆ ఆదిపురుషుని నుండి 'విరాట్' ఆవిర్భవించెను; ఆ విరాట్ నుండి విరాట్ పురుషుడు జన్మించెను. అలా జన్మించిన పిమ్మట ఆయన భూమికి ముందూ, వెనుకా అంతటా విస్తరించి ప్రకాశించెను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அந்த மூலப் புருஷனிடமிருந்து 'விராட்' (அண்ட வடிவம்) தோன்றியது; விராட்டிலிருந்து விராட் புருஷன் அவதரித்தான். தோன்றியபின் அவன் பூமிக்கு முன்னும் பின்னும் எங்கும் வியாபித்தான்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಆ ಆದಿಪುರುಷನಿಂದ 'ವಿರಾಟ್' (ಬ್ರಹ್ಮಾಂಡ ಶರೀರ) ಜನಿಸಿತು; ಆ ವಿರಾಟ್‌ನಿಂದ ವಿರಾಟ್ ಪುರುಷನು ಆವಿರ್ಭವಿಸಿದನು. ಹುಟ್ಟಿದ ನಂತರ ಆತನು ಭೂಮಿಯ ಮುಂಬದಿ ಹಾಗೂ ಹಿಂಬದಿಗಳಲ್ಲಿ ಎಲ್ಲೆಲ್ಲೂ ವಿಸ್ತರಿಸಿದನು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "त्या आदिपुरुषापासून 'विराट' (ब्रह्मांड) उत्पन्न झाले; आणि विराटापासून विराट पुरुष उत्पन्न झाला. प्रगट झाल्यावर तो पृथ्वीच्या पुढे व मागे सर्वत्र विस्तारला.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "সেই আদি পুরুষ হইতে বিরাট রূপ উৎপন্ন হইল এবং বিরাট হইতে বিরাট পুরুষ জন্মগ্রহণ করিলেন। উৎপন্ন হইয়া তিনি পৃথিবীর সম্মুখে ও পশ্চাতে সর্বত্র ব্যাপ্ত হইলেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તે આદિ પુરુષમાંથી વિરાટ બ્રહ્માંડ ઉત્પન્ન થયું અને વિરાટમાંથી વિરાટ પુરુષ પ્રગટ થયા. પ્રગટ થઈને તેઓ પૃથ્વીની આગળ અને પાછળ સર્વત્ર વિસ્તરી ગયા.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ആ ആദിപുരുഷനിൽനിന്നും വിരാട് രൂപം ജനിച്ചു; വിരാടിൽനിന്നും വിരാട് പുരുഷൻ ജനിച്ചു. അവൻ ഭൂമിയുടെ മുന്നിലും പിന്നിലും സർവ്വത്ര നിറഞ്ഞുനിന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସେହି ଆଦି ପୁରୁଷଙ୍କଠାରୁ ବିରାଟ ବ୍ରହ୍ମାଣ୍ଡ ଶରୀର ଉତ୍ପନ୍ନ ହେଲା ଏବଂ ବିରାଟରୁ ବିରାଟ ପୁରୁଷ ପ୍ରକଟ ହେଲେ । ପ୍ରକଟ ହେବା ପରେ ସେ ପୃଥିବୀର ଆଗେ ଓ ପଛେ ସର୍ବତ୍ର ବ୍ୟାପିଗଲେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 6,
+      "verse_type": "VERSE",
+      "original_sanskrit": "यत्पुरु॑षेण ह॒विषा॑ दे॒वा य॒ज्ञमत॑न्वत ।\nव॒स॒न्तो अ॑स्यासी॒दाज्यं॑ ग्री॒ष्म इ॒ध्मः श॒रद्ध॒विः ॥ ६ ॥",
+      "iast": "yatpuru॑ṣēṇa ha॒viṣā॑ dē॒vā ya॒jñamata॑nvata ।\nva॒sa॒ntō a॑syāsī॒dājyaṁ॑ grī॒ṣma i॒dhmaḥ śa॒raddha॒viḥ ॥ 6 ॥",
+      "transliterations": {
+        "telugu": "యత్పురు॑షేణ హ॒విషా॑ దే॒వా య॒జ్ఞమత॑న్వత ।\nవ॒స॒న్తో అ॑స్యాసీ॒దాజ్యం॑ గ్రీ॒ష్మ ఇ॒ధ్మః శ॒రద్ధ॒విః ॥ ౬ ॥",
+        "tamil": "யத்புரு॑ஷேண ஹ॒விஷா॑ தே॒வா ய॒ஜ்ஞமத॑ந்வத ।\nவ॒ஸ॒ந்தோ அ॑ஸ்யாஸீ॒தாஜ்யம்॑ க்ரீ॒ஷ்ம இ॒த்மஃ ஶ॒ரத்த॒விஃ ॥ ௬ ॥",
+        "kannada": "ಯತ್ಪುರು॑ಷೇಣ ಹ॒ವಿಷಾ॑ ದೇ॒ವಾ ಯ॒ಜ್ಞಮತ॑ನ್ವತ ।\nವ॒ಸ॒ನ್ತೋ ಅ॑ಸ್ಯಾಸೀ॒ದಾಜ್ಯಂ॑ ಗ್ರೀ॒ಷ್ಮ ಇ॒ಧ್ಮಃ ಶ॒ರದ್ಧ॒ವಿಃ ॥ ೬ ॥",
+        "malayalam": "യത്പുരു॑ഷേണ ഹ॒വിഷാ॑ ദേ॒വാ യ॒ജ്ഞമത॑ന്വത ।\nവ॒സ॒ന്തോ അ॑സ്യാസീ॒ദാജ്യം॑ ഗ്രീ॒ഷ്മ ഇ॒ധ്മഃ ശ॒രദ്ധ॒വിഃ ॥ ൬ ॥",
+        "iast": "yatpurṷṣeṇa ha̱viṣā̭ de̱vā ya̱jñamata̭nvata |\nva̱sa̱nto a̭syāsī̱dājya̭ṃ grī̱ṣma i̱dhmaḥ śa̱raddha̱viḥ || 6 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "When the divine powers performed the cosmic sacrifice with the Purusha as the offering, spring became its clarified butter, summer its sacred fuel, and autumn its oblatory oblation.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जब देवगणों ने उस विराट् पुरुष को ही आहुति (हवि) बनाकर मानसिक यज्ञ का विस्तार किया, तब वसंत ऋतु उस यज्ञ का घृत बनी, ग्रीष्म ऋतु समिधा बनी और शरद ऋतु पवित्र हविष्य बनी।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "దేవతలు ఆ విరాట్ పురుషునియే హవిస్సుగా చేసి సృష్టి యజ్ఞమును నిర్వహించినప్పుడు, వసంత ఋతువు నేతిగాను, గ్రీష్మ ఋతువు సమిధలుగాను, శరదృతువు పవిత్ర హవిస్సుగాను మారెను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தேவர்கள் அந்தப் புருஷனையே ஆகுதியாக்கி வேள்வி இயற்றிய போது, வசந்த காலம் நெய்யாகவும், கோடைக்காலம் சமித்தாகவும், இலையுதிர்காலம் (சரத்) புனித ஹவிஸாகவும் அமைந்தன.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ದೇವತೆಗಳು ಆ ವಿರಾಟ್ ಪುರುಷನನ್ನೇ ಹವಿಸ್ಸನ್ನಾಗಿ ಮಾಡಿ ಸೃಷ್ಟಿ ಯಜ್ಞವನ್ನು ವಿಸ್ತರಿಸಿದಾಗ, ವಸಂತ ಋತುವು ಆಜ್ಯವಾಯಿತು (ತುಪ್ಪ), ಗ್ರೀಷ್ಮ ಋತುವು ಸಮಿಧೆಯಾಯಿತು ಮತ್ತು ಶರತ್ಕಾಲವು ಹವಿಸ್ಸಾಯಿತು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जेव्हा देवांनी त्या विराट पुरुषालाच आहुती बनवून यज्ञ केला, तेव्हा वसंत ऋतू त्याचे तूप बनला, ग्रीष्म ऋतू समिधा बनला आणि शरद ऋतू पवित्र हविष्य बनला.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "দেবগণ যখন সেই বিরাট পুরুষকে হব্য করিয়া সৃষ্টিযজ্ঞের অনুষ্ঠান করিলেন, তখন বসন্ত ঋতু ঘৃত, গ্রীষ্ম ঋতু সমিধ এবং শরৎ ঋতু প্রধান হব্য হইয়াছিল।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જ્યારે દેવોએ તે વિરાટ પુરુષને જ આહુતિ બનાવીને યજ્ઞ કર્યો, ત્યારે વસંત ઋતુ ઘી બની, ગ્રીષ્મ ઋતુ સમિધા બની અને શરદ ઋતુ પવિત્ર હવિષ્ય બની.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ദേവന്മാർ ആ വിരാട്പുരുഷനെത്തന്നെ ഹവിസ്സാക്കിക്കൊണ്ട് സൃഷ്ടിയജ്ഞം നടത്തിയപ്പോൾ, വസന്തം നെയ്യും, ഗ്രീഷ്മം വിറകും, ശരത്കാലം ഹവിസ്സുമായി ഭവിച്ചു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯେତେବେଳେ ଦେବତାମାନେ ସେହି ବିରାଟ ପୁରୁଷଙ୍କୁ ହବିଷ୍ୟ କରି ଯଜ୍ଞ କଲେ, ସେତେବେଳେ ବସନ୍ତ ଋତୁ ଘୃତ, ଗ୍ରୀଷ୍ମ ଋତୁ ସମିଧା ଏବଂ ଶରତ ଋତୁ ପବିତ୍ର ଆହୁତି ହେଲା ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 7,
+      "verse_type": "VERSE",
+      "original_sanskrit": "स॒प्तास्या॑सन्परि॒धय॒स्त्रिः स॒प्त स॒मिधः॑ कृ॒ताः ।\nदे॒वा यद्य॒ज्ञं त॑न्वा॒ना अब॑ध्न॒न्पुरु॑षं प॒शुम् ॥ ७ ॥",
+      "iast": "sa॒ptāsyā॑sanpari॒dhaya॒striḥ sa॒pta sa॒midhaḥ॑ kṛ॒tāḥ ।\ndē॒vā yadya॒jñaṁ ta॑nvā॒nā aba॑dhna॒npuru॑ṣaṁ pa॒śum ॥ 7 ॥",
+      "transliterations": {
+        "telugu": "స॒ప్తాస్యా॑సన్పరి॒ధయ॒స్త్రిః స॒ప్త స॒మిధః॑ కృ॒తాః ।\nదే॒వా యద్య॒జ్ఞం త॑న్వా॒నా అబ॑ధ్న॒న్పురు॑షం ప॒శుమ్ ॥ ౭ ॥",
+        "tamil": "ஸ॒ப்தாஸ்யா॑ஸந்பரி॒தய॒ஸ்த்ரிஃ ஸ॒ப்த ஸ॒மிதஃ॑ க்ரு'॒தாஃ ।\nதே॒வா யத்ய॒ஜ்ஞம் த॑ந்வா॒நா அப॑த்ந॒ந்புரு॑ஷம் ப॒ஶும் ॥ ௭ ॥",
+        "kannada": "ಸ॒ಪ್ತಾಸ್ಯಾ॑ಸನ್ಪರಿ॒ಧಯ॒ಸ್ತ್ರಿಃ ಸ॒ಪ್ತ ಸ॒ಮಿಧಃ॑ ಕೃ॒ತಾಃ ।\nದೇ॒ವಾ ಯದ್ಯ॒ಜ್ಞಂ ತ॑ನ್ವಾ॒ನಾ ಅಬ॑ಧ್ನ॒ನ್ಪುರು॑ಷಂ ಪ॒ಶುಮ್ ॥ ೭ ॥",
+        "malayalam": "സ॒പ്താസ്യാ॑സന്പരി॒ധയ॒സ്ത്രിഃ സ॒പ്ത സ॒മിധഃ॑ കൃ॒താഃ ।\nദേ॒വാ യദ്യ॒ജ്ഞം ത॑ന്വാ॒നാ അബ॑ധ്ന॒ന്പുരു॑ഷം പ॒ശുമ് ॥ ൭ ॥",
+        "iast": "sa̱ptāsyā̭sanpari̱dhaya̱striḥ sa̱pta sa̱midha̭ḥ kṛ̱tāḥ |\nde̱vā yadya̱jñaṃ ta̭nvā̱nā aba̭dhna̱npurṷṣaṃ pa̱śum || 7 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Seven were its enclosing border-sticks, and thrice seven (twenty-one) fuel-logs were prepared, when the divine powers offering the cosmic sacrifice bound the Purusha as the sacred victim.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "यज्ञ की पवित्र कुशा पर सर्वप्रथम उत्पन्न उस आदि पुरुष को आहुति रूप में प्रतिष्ठित कर अभ्युक्षित किया गया। उसी के द्वारा देवों, साध्यगणों और पुरातन ऋषियों ने उस महान् यज्ञ को सम्पन्न किया।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "యజ్ఞవేదిక పై పవిత్ర దర్భల యందు మొట్టమొదట ఆవిర్భవించిన ఆ ఆదిపురుషుని ఉంచి సంప్రోక్షించిరి; ఆయన ద్వారానే దేవతలు, సాధ్యులు మరియు ప్రాచీన ఋషులు ఆ పరమ యజ్ఞమును పూర్తి చేసిరి.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "வேள்வி மேடையில் பரப்பப்பட்ட தருப்பைப் புல்லின் மீது முதலில் தோன்றிய அந்த ஆதி புருஷனை வைத்துப் புனிதப்படுத்தினர். அவனைக் கொண்டு தேவர்களும் சாத்தியர்களும் முனிவர்களும் அந்த யாகத்தை நிறைவேற்றினர்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಯಜ್ಞವೇದಿಕೆಯ ಪವಿತ್ರ ದರ್ಭೆಯ ಮೇಲೆ ಪ್ರಪ್ರಥಮವಾಗಿ ಜನಿಸಿದ ಆ ಆದಿಪುರುಷನನ್ನು ಪ್ರತಿಷ್ಠಾಪಿಸಿ ಅಭಿಷೇಕಿಸಿದರು. ಆತನ ಮೂಲಕವೇ ದೇವತೆಗಳು, ಸಾಧ್ಯರು ಮತ್ತು ಪ್ರಾಚೀನ ಋಷಿಗಳು ಯಜ್ಞವನ್ನು ಪೂರೈಸಿದರು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "यज्ञाच्या पवित्र दर्भांवर सर्वप्रथम प्रकट झालेल्या त्या आदिपुरुषाला हविष्य म्हणून संप्रोक्षित केले गेले; त्याच्या साहाय्यानेच देव, साध्य व ऋषींनी तो यज्ञ पार पाडला.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যজ্ঞবেদির পবিত্র কুশশয্যায় সর্বাগ্রে জাত সেই আদি পুরুষকে প্রোক্ষিত করা হইল; তাঁহার দ্বারাই দেবগণ, সাধ্যগণ এবং প্রাচীন ঋষিগণ সেই যজ্ঞ সম্পন্ন করিলেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "યજ્ઞવેદીના પવિત્ર દર્ભાસન પર સર્વપ્રથમ પ્રગટ થયેલા તે આદિ પુરુષને આહુતિરૂપે સ્થાપીને પ્રોક્ષિત કરવામાં આવ્યા; તેમના દ્વારા જ દેવો, સાધ્યો અને ઋષિઓએ યજ્ઞ સંપન્ન કર્યો.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "യജ്ഞവേദിയിലെ പവിത്രമായ ദർഭപ്പുല്ലിൽ ആദ്യം ജനിച്ച ആ പുരുഷനെ പ്രതിഷ്ഠിച്ചു സംപ്രോക്ഷണം ചെയ്തു; അവനെക്കൊണ്ടുതന്നെ ദേവന്മാരും സാദ്ധ്യന്മാരും ഋഷിമാരും ആ യജ്ഞം നിർവ്വഹിച്ചു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯଜ୍ଞବେଦୀର ପବିତ୍ର କୁଶ ଉପରେ ସର୍ବପ୍ରଥମେ ପ୍ରକଟ ହୋଇଥିବା ଆଦି ପୁରୁଷଙ୍କୁ ପ୍ରୋକ୍ଷିତ କରାଗଲା; ତାଙ୍କ ଦ୍ୱାରା ହିଁ ଦେବତା, ସାଧ୍ୟଗଣ ଓ ପ୍ରାଚୀନ ଋଷିମାନେ ସେହି ଯଜ୍ଞ ସମ୍ପନ୍ନ କଲେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 8,
+      "verse_type": "VERSE",
+      "original_sanskrit": "तं य॒ज्ञं ब॒र्हिषि॒ प्रौक्ष॒न्पुरु॑षं जा॒तम॑ग्र॒तः ।\nतेन॑ दे॒वा अय॑जन्त सा॒ध्या ऋष॑यश्च॒ ये ॥ ८ ॥",
+      "iast": "taṁ ya॒jñaṁ ba॒rhiṣi॒ praukṣa॒npuru॑ṣaṁ jā॒tama॑gra॒taḥ ।\ntēna॑ dē॒vā aya॑janta sā॒dhyā ṛṣa॑yaśca॒ yē ॥ 8 ॥",
+      "transliterations": {
+        "telugu": "తం య॒జ్ఞం బ॒ర్హిషి॒ ప్రౌక్ష॒న్పురు॑షం జా॒తమ॑గ్ర॒తః ।\nతేన॑ దే॒వా అయ॑జన్త సా॒ధ్యా ఋష॑యశ్చ॒ యే ॥ ౮ ॥",
+        "tamil": "தம் ய॒ஜ்ஞம் ப॒ர்ஹிஷி॒ ப்ரௌக்ஷ॒ந்புரு॑ஷம் ஜா॒தம॑க்ர॒தஃ ।\nதேந॑ தே॒வா அய॑ஜந்த ஸா॒த்யா ரு'ஷ॑யஶ்ச॒ யே ॥ ௮ ॥",
+        "kannada": "ತಂ ಯ॒ಜ್ಞಂ ಬ॒ರ್ಹಿಷಿ॒ ಪ್ರೌಕ್ಷ॒ನ್ಪುರು॑ಷಂ ಜಾ॒ತಮ॑ಗ್ರ॒ತಃ ।\nತೇನ॑ ದೇ॒ವಾ ಅಯ॑ಜನ್ತ ಸಾ॒ಧ್ಯಾ ಋಷ॑ಯಶ್ಚ॒ ಯೇ ॥ ೮ ॥",
+        "malayalam": "തം യ॒ജ്ഞം ബ॒ര്ഹിഷി॒ പ്രൌക്ഷ॒ന്പുരു॑ഷം ജാ॒തമ॑ഗ്ര॒തഃ ।\nതേന॑ ദേ॒വാ അയ॑ജന്ത സാ॒ധ്യാ ഋഷ॑യശ്ച॒ യേ ॥ ൮ ॥",
+        "iast": "taṃ ya̱jñaṃ ba̱rhiṣi̱ praukṣa̱npurṷṣaṃ jā̱tama̭gra̱taḥ |\ntena̭ de̱vā aya̭janta sā̱dhyā ṛṣa̭yaśca̱ ye || 8 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "They sprinkled with sacred waters that Purusha, the primordial sacrifice born at the very beginning, upon the sacred sacrificial grass. With Him the deities, the Sadhyas, and the ancient seers offered the sacrifice.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "उस सर्वहुत यज्ञ (जिसमें सब कुछ आहुत कर दिया गया) से दधि-मिश्रित घृत (पृषदाज्य) उत्पन्न हुआ। उससे वायु में उड़ने वाले पक्षी, वनों में विचरने वाले वन्य पशु और गाँवों में रहने वाले पालतू पशु उत्पन्न किए गए।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "సర్వమూ ఆహుతి చేయబడిన ఆ పరమ యజ్ఞము నుండి దధి-ఘృత సమ్మిశ్రితమైన 'పృషదాజ్యము' ఉద్భవించెను. దానినుండి ఆకాశమున ఎగురు పక్షులు, అరణ్య మృగములు, గ్రామములలోని సాధు జంతువులు సృష్టింపబడెను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அனைத்தும் அர்ப்பணிக்கப்பட்ட அந்த வேள்வியிலிருந்து தயிர் கலந்த நெய் திரட்டப்பட்டது. அதிலிருந்து வானில் பறக்கும் பறவைகள், காடுகளில் வாழும் வனவிலங்குகள் மற்றும் கிராமத்துப் பிராணிகள் தோன்றின.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಸರ್ವವನ್ನೂ ಆಹುತಿ ನೀಡಿದ ಆ ಪರಮ ಯಜ್ಞದಿಂದ ಮೊಸರು-ತುಪ್ಪ ಮಿಶ್ರಿತ ಪವಿತ್ರ ಆಜ್ಯವು ಉತ್ಪನ್ನವಾಯಿತು. ಅದರಿಂದ ಆಕಾಶದ ಪಕ್ಷಿಗಳು, ಅರಣ್ಯದ ಪ್ರಾಣಿಗಳು ಮತ್ತು ಗ್ರಾಮದ ಸಾಕುಪ್ರಾಣಿಗಳು ಸೃಷ್ಟಿಯಾದವು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "सर्वस्व अर्पण केलेल्या त्या यज्ञातून दहीमिश्रित तूप निर्माण झाले. त्यातून आकाशातील पक्षी, वनातील वन्य प्राणी आणि गावांमधील पाळीव प्राणी निर्माण झाले.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "সেই সর্বহুত যজ্ঞ হইতে দধি ও ঘৃতের মিশ্রণ সংগৃহীত হইল; তাহা হইতেই আকাশে উড্ডীয়মান পক্ষী, বন্য পশু এবং গৃহপালিত পশুসমূহ উৎপন্ন হইল।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જેમાં સર્વસ્વ હોમાયું તે યજ્ઞમાંથી દહીં-ઘીનું મિશ્રણ ઉત્પન્ન થયું; તેનાથી આકાશના પક્ષીઓ, વનના વન્ય પશુઓ અને ગામના પાલતુ પશુઓનું સર્જન થયું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സർവ്വവും സമർപ്പിക്കപ്പെട്ട ആ യജ്ഞത്തിൽനിന്നും തൈരും നെയ്യും ചേർന്ന പവിത്രദ്രവ്യം രൂപപ്പെട്ടു; അതിൽനിന്ന് വാനിലെ പക്ഷികളും വന്യമൃഗങ്ങളും വളർത്തുമൃഗങ്ങളും സൃഷ്ടിക്കപ്പെട്ടു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯେଉଁ ଯଜ୍ଞରେ ସବୁକିଛି ଆହୁତି ଦିଆଗଲା, ସେଥିରୁ ଦହି ଓ ଘୃତ ମିଶ୍ରିତ ପବିତ୍ର ଦ୍ରବ୍ୟ ପ୍ରାପ୍ତ ହେଲା; ସେଥିରୁ ଆକାଶର ପକ୍ଷୀ, ବଣର ବନ୍ୟପଶୁ ଓ ଗ୍ରାମର ଗୃହପାଳିତ ପଶୁ ସୃଷ୍ଟି ହେଲେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 9,
+      "verse_type": "VERSE",
+      "original_sanskrit": "तस्मा॑द्य॒ज्ञात्स॑र्व॒हुतः॒ संभृ॑तं पृषदा॒ज्यम् ।\nप॒शून्तांश्च॑क्रे वाय॒व्यानार॒ण्यान् ग्राम्या॑श्च॒ ये ॥ ९ ॥",
+      "iast": "tasmā॑dya॒jñātsa॑rva॒hutaḥ॒ saṁbhṛ॑taṁ pṛṣadā॒jyam ।\npa॒śūntāṁśca॑krē vāya॒vyānāra॒ṇyān grāmyā॑śca॒ yē ॥ 9 ॥",
+      "transliterations": {
+        "telugu": "తస్మా॑ద్య॒జ్ఞాత్స॑ర్వ॒హుతః॒ సంభృ॑తం పృషదా॒జ్యమ్ ।\nప॒శూన్తాంశ్చ॑క్రే వాయ॒వ్యానార॒ణ్యాన్ గ్రామ్యా॑శ్చ॒ యే ॥ ౯ ॥",
+        "tamil": "தஸ்மா॑த்ய॒ஜ்ஞாத்ஸ॑ர்வ॒ஹுதஃ॒ ஸம்ப்ரு'॑தம் ப்ரு'ஷதா॒ஜ்யம் ।\nப॒ஶூந்தாம்ஶ்ச॑க்ரே வாய॒வ்யாநார॒ண்யாந் க்ராம்யா॑ஶ்ச॒ யே ॥ ௯ ॥",
+        "kannada": "ತಸ್ಮಾ॑ದ್ಯ॒ಜ್ಞಾತ್ಸ॑ರ್ವ॒ಹುತಃ॒ ಸಂಭೃ॑ತಂ ಪೃಷದಾ॒ಜ್ಯಮ್ ।\nಪ॒ಶೂನ್ತಾಂಶ್ಚ॑ಕ್ರೇ ವಾಯ॒ವ್ಯಾನಾರ॒ಣ್ಯಾನ್ ಗ್ರಾಮ್ಯಾ॑ಶ್ಚ॒ ಯೇ ॥ ೯ ॥",
+        "malayalam": "തസ്മാ॑ദ്യ॒ജ്ഞാത്സ॑ര്വ॒ഹുതഃ॒ സംഭൃ॑തം പൃഷദാ॒ജ്യമ് ।\nപ॒ശൂന്താംശ്ച॑ക്രേ വായ॒വ്യാനാര॒ണ്യാന് ഗ്രാമ്യാ॑ശ്ച॒ യേ ॥ ൯ ॥",
+        "iast": "tasmā̭dya̱jñātsa̭rva̱huta̱ḥ saṃbhṛ̭taṃ pṛṣadā̱jyam |\npa̱śūntāṃśca̭kre vāya̱vyānāra̱ṇyān grāmyā̭śca̱ ye || 9 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "From that cosmic sacrifice in which everything was offered, speckled butter (clarified butter and curds) was collected. From it were formed the creatures ruled by Vayu (air), both wild beasts of the forest and domestic animals.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "उस सर्वहुत यज्ञ से ऋग्वेद के मंत्र और सामवेद के गान प्रकट हुए। उसी से गायत्री आदि वैदिक छन्द उत्पन्न हुए और उसी से यजुर्वेद का प्राकट्य हुआ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆ మహాయజ్ఞము నుండి ఋగ్వేద మంత్రములు, సామవేద గానములు ఆవిర్భవించెను. దానినుండియే గాయత్రీ మొదలైన ఛందస్సులు పుట్టెను; దానినుండియే యజుర్వేదము జన్మించెను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அந்தப் பேரருள் வேள்வியிலிருந்து ரிக் வேத மந்திரங்களும், சாம வேத கானங்களும் தோன்றின. அதிலிருந்தே காயத்ரி முதலான வேத சந்தங்களும், யஜுர் வேதமும் உதித்தன.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಆ ಸರ್ವಹುತ ಯಜ್ಞದಿಂದಲೇ ಋಗ್ವೇದದ ಮಂತ್ರಗಳೂ ಸಾಮವೇದದ ಗಾನಗಳೂ ಹುಟ್ಟಿದವು. ಅದರಿಂದಲೇ ಗಾಯತ್ರಿಯಾದಿ ಛಂದಸ್ಸುಗಳೂ ಮತ್ತು ಯಜುರ್ವೇದವೂ ಆವಿರ್ಭವಿಸಿದವು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "त्या सर्वहुत यज्ञातून ऋग्वेदाच्या ऋचा आणि सामवेदाचे गायन प्रकट झाले; त्यातूनच गायत्री आदी छंद निर्माण झाले आणि यजुर्वेदही त्यातूनच जन्मला.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "সেই সর্বহুত যজ্ঞ হইতেই ঋগ্বেদের মন্ত্রসমূহ এবং সামবেদের গান উৎপন্ন হইল; তাহা হইতেই বৈদিক ছন্দসমূহ এবং যজুর্বেদের আবির্ভাব হইল।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તે સર્વહુત યજ્ઞમાંથી જ ઋગ્વેદના મંત્રો અને સામવેદના ગાન પ્રગટ થયાં; તેમાંથી જ ગાયત્રી આદિ છંદો ઉત્પન્ન થયા અને યજુર્વેદનું પ્રાગટ્ય થયું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ആ മഹായജ്ഞത്തിൽനിന്നുതന്നെ ഋഗ്വേദമന്ത്രങ്ങളും സാമവേദഗാനങ്ങളും ജനിച്ചു; അതിൽനിന്നുതന്നെ ഗായത്രി തുടങ്ങിയ ഛന്ദസ്സുകളും യജുർവേദവും ആവിർഭവിച്ചു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସେହି ସର୍ବହୁତ ଯଜ୍ଞରୁ ହିଁ ଋଗ୍‌ବେଦର ମନ୍ତ୍ର ଓ ସାମବେଦର ଗାନ ପ୍ରକଟ ହେଲା; ସେଥିରୁ ହିଁ ଗାୟତ୍ରୀ ଆଦି ବୈଦିକ ଛନ୍ଦ ଏବଂ ଯଜୁର୍ବେଦର ଆବିର୍ଭାବ ହେଲା ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 10,
+      "verse_type": "VERSE",
+      "original_sanskrit": "तस्मा॑द्य॒ज्ञात्स॑र्व॒हुत॒ ऋचः॒ सामा॑नि जज्ञिरे ।\nच्छन्दां॑सि जज्ञिरे॒ तस्मा॒द्यजु॒स्तस्मा॑दजायत ॥ १० ॥",
+      "iast": "tasmā॑dya॒jñātsa॑rva॒huta॒ ṛcaḥ॒ sāmā॑ni jajñirē ।\ncchandāṁ॑si jajñirē॒ tasmā॒dyaju॒stasmā॑dajāyata ॥ 10 ॥",
+      "transliterations": {
+        "telugu": "తస్మా॑ద్య॒జ్ఞాత్స॑ర్వ॒హుత॒ ఋచః॒ సామా॑ని జజ్ఞిరే ।\nచ్ఛన్దాం॑సి జజ్ఞిరే॒ తస్మా॒ద్యజు॒స్తస్మా॑దజాయత ॥ ౧౦ ॥",
+        "tamil": "தஸ்மா॑த்ய॒ஜ்ஞாத்ஸ॑ர்வ॒ஹுத॒ ரு'சஃ॒ ஸாமா॑நி ஜஜ்ஞிரே ।\nச்சந்தாம்॑ஸி ஜஜ்ஞிரே॒ தஸ்மா॒த்யஜு॒ஸ்தஸ்மா॑தஜாயத ॥ ௧௦ ॥",
+        "kannada": "ತಸ್ಮಾ॑ದ್ಯ॒ಜ್ಞಾತ್ಸ॑ರ್ವ॒ಹುತ॒ ಋಚಃ॒ ಸಾಮಾ॑ನಿ ಜಜ್ಞಿರೇ ।\nಚ್ಛನ್ದಾಂ॑ಸಿ ಜಜ್ಞಿರೇ॒ ತಸ್ಮಾ॒ದ್ಯಜು॒ಸ್ತಸ್ಮಾ॑ದಜಾಯತ ॥ ೧೦ ॥",
+        "malayalam": "തസ്മാ॑ദ്യ॒ജ്ഞാത്സ॑ര്വ॒ഹുത॒ ഋചഃ॒ സാമാ॑നി ജജ്ഞിരേ ।\nച്ഛന്ദാം॑സി ജജ്ഞിരേ॒ തസ്മാ॒ദ്യജു॒സ്തസ്മാ॑ദജായത ॥ ൧൦ ॥",
+        "iast": "tasmā̭dya̱jñātsa̭rva̱huta̱ ṛca̱ḥ sāmā̭ni jajñire |\ncchandā̭ṃsi jajñire̱ tasmā̱dyaju̱stasmā̭dajāyata || 10 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "From that all-embracing sacrifice the Rig hymns and Sama chants were born. From it the sacred metres were produced, and from it the Yajus sacrificial formulas arose.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "उस यज्ञ से अश्व (घोड़े) तथा दोनों जबड़ों में दाँत वाले सभी पशु उत्पन्न हुए। उसी से गौवें उत्पन्न हुईं और उसी से बकरियाँ तथा भेड़ें उत्पन्न हुईं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆ యజ్ఞము నుండి గుర్రములు, రెండు దవడలయందు దంతములు గల సమస్త జంతువులు జన్మించెను. దానినుండియే గోవులు, మేకలు, గొర్రెలు ఉద్భవించెను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அந்த வேள்வியிலிருந்து குதிரைகளும், இரு தாடைகளிலும் பற்களையுடைய விலங்குகளும் பிறந்தன. அதிலிருந்தே பசுக்களும், ஆடுகளும் தோன்றின.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಆ ಯಜ್ಞದಿಂದಲೇ ಕುದುರೆಗಳೂ, ಎರಡು ದವಡೆಗಳಲ್ಲಿ ಹಲ್ಲುಳ್ಳ ಪ್ರಾಣಿಗಳೂ ಜನಿಸಿದವು. ಅದರಿಂದಲೇ ಗೋವುಗಳೂ, ಮೇಕೆ-ಕುರಿಗಳೂ ಉದ್ಭವಿಸಿದವು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "त्या यज्ञातून घोडे आणि दोन्ही जबड्यांत दात असलेले प्राणी निर्माण झाले; त्यातूनच गाई, शेळ्या आणि मेंढ्या उत्पन्न झाल्या.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "সেই যজ্ঞ হইতে অশ্বসমূহ এবং উভয় পাটিতে দন্তবিশিষ্ট জীবসকল জন্মিল; তাহা হইতেই গাভীসমূহ এবং মেষ ও ছাগল উৎপন্ন হইল।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તે યજ્ઞમાંથી ઘોડા અને બંને જડબાંમાં દાંતવાળા પ્રાણીઓ ઉત્પન્ન થયા; તેમાંથી જ ગાયો, બકરીઓ અને ઘેટાંઓનો જન્મ થયો.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ആ യജ്ഞത്തിൽനിന്ന് കുതിരകളും ഇരുതാടികളിലും പല്ലുള്ള മൃഗങ്ങളും ജനിച്ചു; പശുക്കളും ആടുകളും ചെമ്മരിയാടുകളും അതിൽനിന്നുതന്നെ ആവിർഭവിച്ചു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସେହି ଯଜ୍ଞରୁ ଘୋଡ଼ା ଏବଂ ଉଭୟ ପାଟିରେ ଦାନ୍ତ ଥିବା ପଶୁ ଜନ୍ମ ନେଲେ; ସେଥିରୁ ହିଁ ଗାଈ, ଛେଳି ଓ ମେଣ୍ଢାମାନେ ଉତ୍ପନ୍ନ ହେଲେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 11,
+      "verse_type": "VERSE",
+      "original_sanskrit": "तस्मा॒दश्वा॑ अजायन्त॒ ये के चो॑भ॒याद॑तः ।\nगावो॑ ह जज्ञिरे॒ तस्मा॒त्तस्मा॑ज्जा॒ता अ॑जा॒वयः॑ ॥ ११ ॥",
+      "iast": "tasmā॒daśvā॑ ajāyanta॒ yē kē cō॑bha॒yāda॑taḥ ।\ngāvō॑ ha jajñirē॒ tasmā॒ttasmā॑jjā॒tā a॑jā॒vayaḥ॑ ॥ 11 ॥",
+      "transliterations": {
+        "telugu": "తస్మా॒దశ్వా॑ అజాయన్త॒ యే కే చో॑భ॒యాద॑తః ।\nగావో॑ హ జజ్ఞిరే॒ తస్మా॒త్తస్మా॑జ్జా॒తా అ॑జా॒వయః॑ ॥ ౧౧ ॥",
+        "tamil": "தஸ்மா॒தஶ்வா॑ அஜாயந்த॒ யே கே சோ॑ப॒யாத॑தஃ ।\nகாவோ॑ ஹ ஜஜ்ஞிரே॒ தஸ்மா॒த்தஸ்மா॑ஜ்ஜா॒தா அ॑ஜா॒வயஃ॑ ॥ ௧௧ ॥",
+        "kannada": "ತಸ್ಮಾ॒ದಶ್ವಾ॑ ಅಜಾಯನ್ತ॒ ಯೇ ಕೇ ಚೋ॑ಭ॒ಯಾದ॑ತಃ ।\nಗಾವೋ॑ ಹ ಜಜ್ಞಿರೇ॒ ತಸ್ಮಾ॒ತ್ತಸ್ಮಾ॑ಜ್ಜಾ॒ತಾ ಅ॑ಜಾ॒ವಯಃ॑ ॥ ೧೧ ॥",
+        "malayalam": "തസ്മാ॒ദശ്വാ॑ അജായന്ത॒ യേ കേ ചോ॑ഭ॒യാദ॑തഃ ।\nഗാവോ॑ ഹ ജജ്ഞിരേ॒ തസ്മാ॒ത്തസ്മാ॑ജ്ജാ॒താ അ॑ജാ॒വയഃ॑ ॥ ൧൧ ॥",
+        "iast": "tasmā̱daśvā̭ ajāyanta̱ ye ke co̭bha̱yāda̭taḥ |\ngāvo̭ ha jajñire̱ tasmā̱ttasmā̭jjā̱tā a̭jā̱vaya̭ḥ || 11 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "From it horses were generated, and all animals possessing two rows of teeth. Cattle were born from it, and from it were born goats and sheep.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जब ज्ञानियों ने उस विराट् पुरुष की संकल्पना की, तब उन्होंने उसे कितने रूपों में विभक्त किया? उसका मुख क्या बना? उसकी भुजाएँ क्या बनीं? और उसकी जंघाएँ तथा चरण क्या कहलाए?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "జ్ఞానులు ఆ విరాట్ పురుషుని సంకల్పించినప్పుడు, ఆయనను ఎన్ని విధములుగా విభజించిరి? ఆయన ముఖము ఏది? ఆయన బాహువులు ఏవి? ఆయన తొడలు మరియు పాదములు ఏవిగా చెప్పబడెను?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஞானியர் அந்தப் புருஷனைச் சிருஷ்டிக்க நினைத்த போது, அவனை எத்தனை பாகங்களாகப் பகுத்தனர்? அவனது முகம் யாது? புயங்கள் யாவை? தொடைகளும் பாதங்களும் என்னவாயின?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಜ್ಞಾನಿಗಳು ಆ ವಿರಾಟ್ ಪುರುಷನನ್ನು ಸಂಕಲ್ಪಿಸಿದಾಗ ಆತನನ್ನು ಎಷ್ಟು ವಿಧವಾಗಿ ವಿಂಗಡಿಸಿದರು? ಆತನ ಮುಖ ಯಾವುದು? ಬಾಹುಗಳು ಯಾವುವು? ತೊಡೆಗಳು ಮತ್ತು ಪಾದಗಳು ಯಾವುವು?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जेव्हा ज्ञानी देवांनी त्या विराट पुरुषाची संकल्पना केली, तेव्हा त्याचे किती भागांत विभाजन केले? त्याचे मुख कोणते? त्याचे बाहू कोणते? आणि त्याचे मांड्या व पाय कोणते म्हटले गेले?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "ধ্যানী ঋষিগণ যখন সেই পুরুষকে মানস যজ্ঞে বিভক্ত করিলেন, তখন কয় ভাগে তাঁহাকে রূপায়িত করিলেন? তাঁহার মুখ কি হইল? বাহুযুগল কি হইল? এবং তাঁহার ঊরু ও পদদ্বয় কি বলিয়া কথিত হইল?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જ્યારે જ્ઞાનીઓએ તે વિરાટ પુરુષની સંકલ્પના કરી, ત્યારે તેમણે તેમને કેટલા રૂપોમાં વિભાજિત કર્યા? તેમનું મુખ શું બન્યું? બાહુઓ શું બની? અને જાંઘો તથા ચરણો શું કહેવાયાં?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഋഷിമാർ ആ വിരാട്പുരുഷനെ വിഭാവനം ചെയ്തപ്പോൾ എത്രയായി വിഭജിച്ചു? അവന്റെ മുഖം എന്തായിരുന്നു? ബാഹുക്കൾ എന്തായിരുന്നു? തുടകളും പാദങ്ങളും എന്തായി മാറി?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯେତେବେଳେ ଜ୍ଞାନୀମାନେ ସେହି ବିରାଟ ପୁରୁଷଙ୍କୁ ସଂକଳ୍ପ କଲେ, ତାଙ୍କୁ କେତେ ଭାଗରେ ବିଭକ୍ତ କଲେ? ତାଙ୍କର ମୁଖ କ’ଣ ହେଲା? ବାହୁଯୁଗଳ କ’ଣ ହେଲା? ତାଙ୍କର ଜଙ୍ଘ ଓ ଚରଣ କ’ଣ ବୋଲି କୁହାଗଲା?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 12,
+      "verse_type": "VERSE",
+      "original_sanskrit": "यत्पुरु॑षं व्य॒दधुः॒ कति॒धा व्य॑कल्पयन् ।\nमुखं॒ किम॑स्य॒ कौ बा॒हू कावू॒रू पादा॑वुच्येते ॥ १२ ॥",
+      "iast": "yatpuru॑ṣaṁ vya॒dadhuḥ॒ kati॒dhā vya॑kalpayan ।\nmukhaṁ॒ kima॑sya॒ kau bā॒hū kāvū॒rū pādā॑vucyētē ॥ 12 ॥",
+      "transliterations": {
+        "telugu": "యత్పురు॑షం వ్య॒దధుః॒ కతి॒ధా వ్య॑కల్పయన్ ।\nముఖం॒ కిమ॑స్య॒ కౌ బా॒హూ కావూ॒రూ పాదా॑వుచ్యేతే ॥ ౧౨ ॥",
+        "tamil": "யத்புரு॑ஷம் வ்ய॒ததுஃ॒ கதி॒தா வ்ய॑கல்பயந் ।\nமுகம்॒ கிம॑ஸ்ய॒ கௌ பா॒ஹூ காவூ॒ரூ பாதா॑வுச்யேதே ॥ ௧௨ ॥",
+        "kannada": "ಯತ್ಪುರು॑ಷಂ ವ್ಯ॒ದಧುಃ॒ ಕತಿ॒ಧಾ ವ್ಯ॑ಕಲ್ಪಯನ್ ।\nಮುಖಂ॒ ಕಿಮ॑ಸ್ಯ॒ ಕೌ ಬಾ॒ಹೂ ಕಾವೂ॒ರೂ ಪಾದಾ॑ವುಚ್ಯೇತೇ ॥ ೧೨ ॥",
+        "malayalam": "യത്പുരു॑ഷം വ്യ॒ദധുഃ॒ കതി॒ധാ വ്യ॑കല്പയന് ।\nമുഖം॒ കിമ॑സ്യ॒ കൌ ബാ॒ഹൂ കാവൂ॒രൂ പാദാ॑വുച്യേതേ ॥ ൧൨ ॥",
+        "iast": "yatpurṷṣaṃ vya̱dadhu̱ḥ kati̱dhā vya̭kalpayan |\nmukha̱ṃ kima̭sya̱ kau bā̱hū kāvū̱rū pādā̭vucyete || 12 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "When they partitioned the Purusha, into how many portions did they divide Him? What was His mouth called? What were His arms, His thighs, and His feet named?",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "ब्राह्मण (ज्ञानी व शिक्षक) उस विराट् पुरुष का मुख बने; क्षत्रिय (रक्षक) उसकी भुजाएँ बने; वैश्य (व्यापारी व कृषक) उसकी जंघाएँ बने; और शूद्र (श्रमशील सेवक) उसके चरणों से उत्पन्न हुए।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "బ్రాహ్మణుడు (జ్ఞాన ప్రదాత) ఆ విరాట్ పురుషుని ముఖముగాను, క్షత్రియుడు (రక్షకుడు) బాహువులుగాను, వైశ్యుడు (వాణిజ్యకారుడు) తొడలుగాను, శూద్రుడు (సేవాపరుడు) పాదములుగాను ఆవిర్భవించిరి.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அந்தப் புருஷனின் முகத்திலிருந்து பிராம்மணனும் (ஞானி), தோள்களிலிருந்து சத்திரியனும் (வீரன்), தொடைகளிலிருந்து வைசியனும் (வணிகன்), பாதங்களிலிருந்து சூத்திரனும் (உழைப்பாளி) தோன்றினர்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಬ್ರಾಹ್ಮಣನು (ಜ್ಞಾನಿ) ಆ ವಿರಾಟ್ ಪುರುಷನ ಮುಖವಾದನು; ಕ್ಷತ್ರಿಯನು (ರಕ್ಷಕ) ಆತನ ಬಾಹುಗಳಾದನು; ವೈಶ್ಯನು (ಉದ್ಯಮಿ) ಆತನ ತೊಡೆಗಳಾದನು; ಮತ್ತು ಶೂದ್ರನು (ಶ್ರಮಜೀವಿ) ಆತನ ಪಾದಗಳಿಂದ ಜನಿಸಿದನು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "ब्राह्मण (ज्ञानी) त्या विराट पुरुषाचे मुख झाले; क्षत्रिय (योद्धा) त्याचे बाहू झाले; वैश्य (व्यापारी) त्याच्या मांड्या झाले; आणि शूद्र (श्रमकरी) त्याच्या चरणांतून उत्पन्न झाले.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "ব্রাহ্মণ সেই বিরাট পুরুষের মুখমণ্ডল হইলেন; ক্ষত্রিয় তাঁহার বাহুযুগল হইলেন; বৈশ্য তাঁহার ঊরু হইলেন এবং শূদ্র তাঁহার পদযুগল হইতে উৎপন্ন হইলেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "બ્રાહ્મણ તે વિરાટ પુરુષનું મુખ બન્યા; ક્ષત્રિય તેમના બાહુ બન્યા; વૈશ્ય તેમની જાંઘો બન્યા; અને શૂદ્ર તેમના ચરણોમાંથી પ્રગટ થયા.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ബ്രാഹ്മണൻ ആ വിരാട്പുരുഷന്റെ മുഖമായിത്തീർന്നു; ക്ഷത്രിയൻ ബാഹുക്കളായി; വൈശ്യൻ തുടകളായി; ശൂദ്രൻ പാദങ്ങളിൽനിന്നു ജനിച്ചു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ବ୍ରାହ୍ମଣ ସେହି ବିରାଟ ପୁରୁଷଙ୍କ ମୁଖ ହେଲେ; କ୍ଷତ୍ରିୟ ତାଙ୍କର ବାହୁ ହେଲେ; ବୈଶ୍ୟ ତାଙ୍କର ଜଙ୍ଘ ହେଲେ ଏବଂ ଶୂଦ୍ର ତାଙ୍କ ଚରଣରୁ ଜନ୍ମ ନେଲେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 13,
+      "verse_type": "VERSE",
+      "original_sanskrit": "ब्रा॒ह्म॒णो॑ऽस्य॒ मुख॑मासीद्बा॒हू रा॑ज॒न्यः॑ कृ॒तः ।\nऊ॒रू तद॑स्य॒ यद्वैश्यः॑ प॒द्भ्यां शू॒द्रो अ॑जायत ॥ १३ ॥",
+      "iast": "brā॒hma॒ṇō॑'sya॒ mukha॑māsīdbā॒hū rā॑ja॒nyaḥ॑ kṛ॒taḥ ।\nū॒rū tada॑sya॒ yadvaiśyaḥ॑ pa॒dbhyāṁ śū॒drō a॑jāyata ॥ 13 ॥",
+      "transliterations": {
+        "telugu": "బ్రా॒హ్మ॒ణో॑ఽస్య॒ ముఖ॑మాసీద్బా॒హూ రా॑జ॒న్యః॑ కృ॒తః ।\nఊ॒రూ తద॑స్య॒ యద్వైశ్యః॑ ప॒ద్భ్యాం శూ॒ద్రో అ॑జాయత ॥ ౧౩ ॥",
+        "tamil": "ப்ரா॒ஹ்ம॒ணோ॑ऽஸ்ய॒ முக॑மாஸீத்பா॒ஹூ ரா॑ஜ॒ந்யஃ॑ க்ரு'॒தஃ ।\nஊ॒ரூ தத॑ஸ்ய॒ யத்வைஶ்யஃ॑ ப॒த்ப்யாம் ஶூ॒த்ரோ அ॑ஜாயத ॥ ௧௩ ॥",
+        "kannada": "ಬ್ರಾ॒ಹ್ಮ॒ಣೋ॑ಽಸ್ಯ॒ ಮುಖ॑ಮಾಸೀದ್ಬಾ॒ಹೂ ರಾ॑ಜ॒ನ್ಯಃ॑ ಕೃ॒ತಃ ।\nಊ॒ರೂ ತದ॑ಸ್ಯ॒ ಯದ್ವೈಶ್ಯಃ॑ ಪ॒ದ್ಭ್ಯಾಂ ಶೂ॒ದ್ರೋ ಅ॑ಜಾಯತ ॥ ೧೩ ॥",
+        "malayalam": "ബ്രാ॒ഹ്മ॒ണോ॑ഽസ്യ॒ മുഖ॑മാസീദ്ബാ॒ഹൂ രാ॑ജ॒ന്യഃ॑ കൃ॒തഃ ।\nഊ॒രൂ തദ॑സ്യ॒ യദ്വൈശ്യഃ॑ പ॒ദ്ഭ്യാം ശൂ॒ദ്രോ അ॑ജായത ॥ ൧൩ ॥",
+        "iast": "brā̱hma̱ṇo̭'sya̱ mukha̭māsīdbā̱hū rā̭ja̱nya̭ḥ kṛ̱taḥ |\nū̱rū tada̭sya̱ yadvaiśya̭ḥ pa̱dbhyāṃ śū̱dro a̭jāyata || 13 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "The Brahmana (priest/scholar) was His mouth; the Rajanya (warrior/king) was made from His arms; His thighs became the Vaishya (merchant/agriculturist); from His feet the Shudra (service-provider) was born.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "उस विराट् पुरुष के मन से चन्द्रमा का प्राकट्य हुआ; उसके नेत्रों से सूर्य उत्पन्न हुए; उसके मुख से इन्द्र और अग्नि देव प्रकट हुए; और उसके प्राण से वायु देव का जन्म हुआ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆ పరమపురుషుని మనస్సు నుండి చంద్రుడు జన్మించెను; ఆయన కన్నుల నుండి సూర్యుడు ఉద్భవించెను; ఆయన ముఖము నుండి ఇంద్రుడు మరియు అగ్నిదేవుడు, ఆయన ప్రాణము నుండి వాయుదేవుడు ఆవిర్భవించిరి.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அவனது மனதிலிருந்து சந்திரன் உதித்தான்; கண்களிலிருந்து சூரியன் தோன்றினான்; வாயிலிருந்து இந்திரனும் அக்னியும், அவனது மூச்சுக்காற்றிலிருந்து வாயு பகவானும் தோன்றினர்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಆ ವಿರಾಟ್ ಪುರುಷನ ಮನಸ್ಸಿನಿಂದ ಚಂದ್ರನು ಜನಿಸಿದನು; ಕಣ್ಣುಗಳಿಂದ ಸೂರ್ಯನು ಹುಟ್ಟಿದನು; ಮುಖದಿಂದ ಇಂದ್ರನೂ ಅಗ್ನಿಯೂ, ಪ್ರಾಣದಿಂದ ವಾಯುದೇವನೂ ಆವಿರ್ಭವಿಸಿದರು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "त्या विराट पुरुषाच्या मनातून चंद्राचा जन्म झाला; त्याच्या डोळ्यांतून सूर्य निर्माण झाला; त्याच्या मुखातून इंद्र व अग्निदेव आणि त्याच्या श्वासातून वायूदेव प्रकट झाले.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "সেই বিরাট পুরুষের মন হইতে চন্দ্র জন্মিলেন; চক্ষু হইতে সূর্য উৎপন্ন হইলেন; মুখ হইতে ইন্দ্র ও অগ্নি এবং প্রাণবায়ু হইতে বায়ুর জন্ম হইল।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તે વિરાટ પુરુષના મનમાંથી ચંદ્રમા પ્રગટ થયા; આંખોમાંથી સૂર્ય ઉત્પન્ન થયા; મુખમાંથી ઇન્દ્ર અને અગ્નિદેવ તેમજ પ્રાણમાંથી વાયુદેવનો જન્મ થયો.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അവന്റെ മനസ്സിൽനിന്നു ചന്ദ്രൻ ജനിച്ചു; കണ്ണുകളിൽനിന്നു സൂര്യൻ ജനിച്ചു; മുഖത്തുനിന്ന് ഇന്ദ്രനും അഗ്നിയും, ശ്വാസത്തിൽനിന്നു വായുവും ആവിർഭവിച്ചു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସେହି ବିରାଟ ପୁରୁଷଙ୍କ ମନରୁ ଚନ୍ଦ୍ରମା ଜନ୍ମ ନେଲେ; ଚକ୍ଷୁରୁ ସୂର୍ଯ୍ୟ ଉତ୍ପନ୍ନ ହେଲେ; ମୁଖରୁ ଇନ୍ଦ୍ର ଓ ଅଗ୍ନିଦେବ ଏବଂ ପ୍ରାଣରୁ ବାୟୁଦେବ ପ୍ରକଟ ହେଲେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 14,
+      "verse_type": "VERSE",
+      "original_sanskrit": "च॒न्द्रमा॒ मन॑सो जा॒तश्चक्षोः॒ सूर्यो॑ अजायत ।\nमुखा॒दिन्द्र॑श्चा॒ग्निश्च॑ प्रा॒णाद्वा॒युर॑जायत ॥ १४ ॥",
+      "iast": "ca॒ndramā॒ mana॑sō jā॒taścakṣōḥ॒ sūryō॑ ajāyata ।\nmukhā॒dindra॑ścā॒gniśca॑ prā॒ṇādvā॒yura॑jāyata ॥ 14 ॥",
+      "transliterations": {
+        "telugu": "చ॒న్ద్రమా॒ మన॑సో జా॒తశ్చక్షోః॒ సూర్యో॑ అజాయత ।\nముఖా॒దిన్ద్ర॑శ్చా॒గ్నిశ్చ॑ ప్రా॒ణాద్వా॒యుర॑జాయత ॥ ౧౪ ॥",
+        "tamil": "ச॒ந்த்ரமா॒ மந॑ஸோ ஜா॒தஶ்சக்ஷோஃ॒ ஸூர்யோ॑ அஜாயத ।\nமுகா॒திந்த்ர॑ஶ்சா॒க்நிஶ்ச॑ ப்ரா॒ணாத்வா॒யுர॑ஜாயத ॥ ௧௪ ॥",
+        "kannada": "ಚ॒ನ್ದ್ರಮಾ॒ ಮನ॑ಸೋ ಜಾ॒ತಶ್ಚಕ್ಷೋಃ॒ ಸೂರ್ಯೋ॑ ಅಜಾಯತ ।\nಮುಖಾ॒ದಿನ್ದ್ರ॑ಶ್ಚಾ॒ಗ್ನಿಶ್ಚ॑ ಪ್ರಾ॒ಣಾದ್ವಾ॒ಯುರ॑ಜಾಯತ ॥ ೧೪ ॥",
+        "malayalam": "ച॒ന്ദ്രമാ॒ മന॑സോ ജാ॒തശ്ചക്ഷോഃ॒ സൂര്യോ॑ അജായത ।\nമുഖാ॒ദിന്ദ്ര॑ശ്ചാ॒ഗ്നിശ്ച॑ പ്രാ॒ണാദ്വാ॒യുര॑ജായത ॥ ൧൪ ॥",
+        "iast": "ca̱ndramā̱ mana̭so jā̱taścakṣo̱ḥ sūryo̭ ajāyata |\nmukhā̱dindra̭ścā̱gniśca̭ prā̱ṇādvā̱yura̭jāyata || 14 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "The Moon was born from His mind; from His eyes the Sun was generated; from His mouth arose Indra and Agni (fire); and from His breath Vayu (vital air) was born.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "उसकी नाभि से अंतरिक्ष लोक उत्पन्न हुआ; उसके मस्तक से द्युलोक (स्वर्ग) का विस्तार हुआ; उसके चरणों से पृथ्वी उत्पन्न हुई और उसके कानों से समस्त दिशाएँ बनीं। इस प्रकार ज्ञानियों ने समस्त लोकों की रचना की।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆయన నాభి నుండి అంతరిక్ష లోకము, శిరస్సు నుండి ద్యులోకము (స్వర్గము), పాదముల నుండి భూమి, చెవుల నుండి దిక్కులు ఉద్భవించెను. ఈ రీతిగా సమస్త లోకములు నిర్మింపబడెను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அவனது தொப்புளிலிருந்து ஆகாயம் உருவானது; தலையிலிருந்து விண் உலகம் தோன்றியது; பாதங்களிலிருந்து பூமி மலர்ந்தது; காதுகளிலிருந்து திசைகள் உண்டாயின. இவ்வாறு உலகங்களை உருவாக்கினர்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಆತನ ನಾಭಿಯಿಂದ ಅಂತರಿಕ್ಷವುಂಟಾಯಿತು; ಶಿರಸ್ಸಿನಿಂದ ದ್ಯುಲೋಕವು (ಸ್ವರ್ಗ) ವಿಸ್ತರಿಸಿತು; ಪಾದಗಳಿಂದ ಭೂಮಿಯೂ ಮತ್ತು ಕಿವಿಗಳಿಂದ ದಿಕ್ಕುಗಳೂ ನಿರ್ಮಾಣವಾದವು. ಹೀಗೆ ಸಮಸ್ತ ಲೋಕಗಳು ರಚಿಸಲ್ಪಟ್ಟವು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "त्याच्या नाभीतून अंतरिक्ष लोक निर्माण झाला; मस्तकातून स्वर्गलोक विस्तारला; चरणांतून पृथ्वी आणि कानांतून सर्व दिशा उत्पन्न झाल्या. अशा प्रकारे सर्व लोकांची निर्मिती झाली.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তাঁহার নাভিমণ্ডল হইতে অন্তরীক্ষ লোক, মস্তক হইতে দ্যুলোক (স্বর্গ), পদযুগল হইতে পৃথিবী এবং কর্ণদ্বয় হইতে দিকসমূহ গঠিত হইল। এইরূপে সমস্ত লোকসমূহ বিন্যস্ত হইল।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તેમની નાભિમાંથી અંતરિક્ષ લોક, મસ્તકમાંથી સ્વર્ગલોક, ચરણોમાંથી પૃથ્વી અને કાનમાંથી ચારેય દિશાઓ પ્રગટ થઈ. આ રીતે સમગ્ર લોકોનું નિર્માણ થયું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അവന്റെ നാഭിയിൽനിന്ന് അന്തരീക്ഷവും, ശിരസ്സിൽനിന്ന് സ്വർഗ്ഗവും, പാദങ്ങളിൽനിന്ന് ഭൂമിയും, കാതുകളിൽനിന്ന് ദിക്കുകളും ഉണ്ടായി. ഇപ്രകാരം സമസ്ത ലോകങ്ങളും രൂപകൽപ്പന ചെയ്യപ്പെട്ടു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତାଙ୍କ ନାଭିରୁ ଅନ୍ତରୀକ୍ଷ ଲୋକ, ମସ୍ତକରୁ ସ୍ୱର୍ଗଲୋକ, ପାଦରୁ ପୃଥିବୀ ଏବଂ କାନରୁ ସମସ୍ତ ଦିଗ ଉତ୍ପନ୍ନ ହେଲା । ଏହିପରି ଭାବେ ସମସ୍ତ ଲୋକ ରଚିତ ହେଲା ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 15,
+      "verse_type": "VERSE",
+      "original_sanskrit": "नाभ्या॑ आसीद॒न्तरि॑क्षं शी॒र्ष्णो द्यौः सम॑वर्तत ।\nप॒द्भ्यां भूमि॒र्दिशः॒ श्रोत्रा॒त्तथा॑ लो॒काँ अक॑ल्पयन् ॥ १५ ॥",
+      "iast": "nābhyā॑ āsīda॒ntari॑kṣaṁ śī॒rṣṇō dyauḥ sama॑vartata ।\npa॒dbhyāṁ bhūmi॒rdiśaḥ॒ śrōtrā॒ttathā॑ lō॒kām̐ aka॑lpayan ॥ 15 ॥",
+      "transliterations": {
+        "telugu": "నాభ్యా॑ ఆసీద॒న్తరి॑క్షం శీ॒ర్ష్ణో ద్యౌః సమ॑వర్తత ।\nప॒ద్భ్యాం భూమి॒ర్దిశః॒ శ్రోత్రా॒త్తథా॑ లో॒కాఁ అక॑ల్పయన్ ॥ ౧౫ ॥",
+        "tamil": "நாப்யா॑ ஆஸீத॒ந்தரி॑க்ஷம் ஶீ॒ர்ஷ்ணோ த்யௌஃ ஸம॑வர்தத ।\nப॒த்ப்யாம் பூமி॒ர்திஶஃ॒ ஶ்ரோத்ரா॒த்ததா॑ லோ॒காँ அக॑ல்பயந் ॥ ௧௫ ॥",
+        "kannada": "ನಾಭ್ಯಾ॑ ಆಸೀದ॒ನ್ತರಿ॑ಕ್ಷಂ ಶೀ॒ರ್ಷ್ಣೋ ದ್ಯೌಃ ಸಮ॑ವರ್ತತ ।\nಪ॒ದ್ಭ್ಯಾಂ ಭೂಮಿ॒ರ್ದಿಶಃ॒ ಶ್ರೋತ್ರಾ॒ತ್ತಥಾ॑ ಲೋ॒ಕಾಁ ಅಕ॑ಲ್ಪಯನ್ ॥ ೧೫ ॥",
+        "malayalam": "നാഭ്യാ॑ ആസീദ॒ന്തരി॑ക്ഷം ശീ॒ര്ഷ്ണോ ദ്യൌഃ സമ॑വര്തത ।\nപ॒ദ്ഭ്യാം ഭൂമി॒ര്ദിശഃ॒ ശ്രോത്രാ॒ത്തഥാ॑ ലോ॒കാഁ അക॑ല്പയന് ॥ ൧൫ ॥",
+        "iast": "nābhyā̭ āsīda̱ntari̭kṣaṃ śī̱rṣṇo dyauḥ sama̭vartata |\npa̱dbhyāṃ bhūmi̱rdiśa̱ḥ śrotrā̱ttathā̭ lo̱kā~ aka̭lpayan || 15 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "From His navel the intermediate atmosphere arose; from His head the heavens evolved; from His feet the earth emerged, and the cardinal directions from His ears. In this manner they ordered all the cosmic realms.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "उस यज्ञ की सात परिधियाँ (सीमाएँ) थीं और इक्कीस (तीन गुना सात) समिधाएँ तैयार की गई थीं, जब सृष्टि यज्ञ का विस्तार करते हुए देवों ने उस विराट् पुरुष को ही आहुति रूपी पवित्र पशु के रूप में बांधा।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "దేవతలు సృష్టి యజ్ఞమును నిర్వహించుచు విరాట్ పురుషుని పవిత్ర హవిస్సుగా బంధించినప్పుడు, ఆ యజ్ఞమునకు ఏడు పరిధులును, ఇరవై ఒక్క (మూడు సార్లు ఏడు) సమిధలును సిద్ధము చేయబడెను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தேவர்கள் பிரபஞ்ச வேள்வியை வளர்த்து, அந்தப் புருஷனையே வேள்விப் பசுவாகக் கட்டிய போது, ஏழு எல்லைக் கட்டைகளும் (பரிதிகள்), இருபத்தொரு (மூவேழு) சமித்துகளும் அமைக்கப்பட்டன.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ದೇವತೆಗಳು ಸೃಷ್ಟಿ ಯಜ್ಞವನ್ನು ಮಾಡುತ್ತಾ ಆ ವಿರಾಟ್ ಪುರುಷನನ್ನೇ ಹವಿಸ್ಸನ್ನಾಗಿ ಸಂಕಲ್ಪಿಸಿದಾಗ, ಆ ಯಜ್ಞಕ್ಕೆ ಏಳು ಪರಿಧಿಗಳೂ (ಗಡಿಗಳು) ಮತ್ತು ಇಪ್ಪತ್ತೊಂದು (ಮೂರು ಬಾರಿ ಏಳು) ಸಮಿಧೆಗಳೂ ಸಿದ್ಧವಾದವು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "देवांनी जेव्हा सृष्टीयज्ञ विस्तारत त्या विराट पुरुषालाच यज्ञाचे हविष्य मानले, तेव्हा त्या यज्ञाच्या सात परिधी आणि एकवीस समिधा तयार करण्यात आल्या होत्या.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "দেবগণ যখন বিশ্বযজ্ঞের অনুষ্ঠান করিয়া সেই পুরুষকে হবিঃরূপে বন্ধন করিলেন, তখন সেই যজ্ঞের সাতটি পরিধি এবং একুশটি সমিধ প্রস্তুত হইয়াছিল।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "દેવોએ જ્યારે સૃષ્ટિયજ્ઞનો વિસ્તાર કરતાં તે વિરાટ પુરુષને જ પવિત્ર આહુતિરૂપે સ્વીકાર્યા, ત્યારે તે યજ્ઞની સાત પરિધિઓ અને એકવીસ સમિધાઓ તૈયાર કરવામાં આવી હતી.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ദേവന്മാർ വിശ്വയജ്ഞം വിപുലീകരിച്ചുകൊണ്ട് ആ പുരുഷനെത്തന്നെ ഹവിസ്സായി സങ്കൽപ്പിച്ചപ്പോൾ, അതിന് ഏഴ് അതിരുകളും (പരിധികൾ) ഇരുപത്തൊന്നു സമിത്തുകളും ഒരുക്കപ്പെട്ടു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଦେବତାମାନେ ଯେତେବେଳେ ସୃଷ୍ଟି ଯଜ୍ଞ ସମ୍ପାଦନ କରି ସେହି ବିରାଟ ପୁରୁଷଙ୍କୁ ପବିତ୍ର ହବିଷ୍ୟ ରୂପେ ବାନ୍ଧିଲେ, ସେତେବେଳେ ସାତଟି ପରିଧି ଏବଂ ଏକୋଇଶଟି ସମିଧା ପ୍ରସ୍ତୁତ କରାଯାଇଥିଲା ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 16,
+      "verse_type": "VERSE",
+      "original_sanskrit": "य॒ज्ञेन॑ य॒ज्ञम॑यजन्त दे॒वास्तानि॒ धर्मा॑णि प्रथ॒मान्या॑सन् ।\nते ह॒ नाकं॑ महि॒मानः॑ सचन्त॒ यत्र॒ पूर्वे॑ सा॒ध्याः सन्ति॑ दे॒वाः ॥ १६ ॥",
+      "iast": "ya॒jñēna॑ ya॒jñama॑yajanta dē॒vāstāni॒ dharmā॑ṇi pratha॒mānyā॑san ।\ntē ha॒ nākaṁ॑ mahi॒mānaḥ॑ sacanta॒ yatra॒ pūrvē॑ sā॒dhyāḥ santi॑ dē॒vāḥ ॥ 16 ॥",
+      "transliterations": {
+        "telugu": "య॒జ్ఞేన॑ య॒జ్ఞమ॑యజన్త దే॒వాస్తాని॒ ధర్మా॑ణి ప్రథ॒మాన్యా॑సన్ ।\nతే హ॒ నాకం॑ మహి॒మానః॑ సచన్త॒ యత్ర॒ పూర్వే॑ సా॒ధ్యాః సన్తి॑ దే॒వాః ॥ ౧౬ ॥",
+        "tamil": "ய॒ஜ்ஞேந॑ ய॒ஜ்ஞம॑யஜந்த தே॒வாஸ்தாநி॒ தர்மா॑ணி ப்ரத॒மாந்யா॑ஸந் ।\nதே ஹ॒ நாகம்॑ மஹி॒மாநஃ॑ ஸசந்த॒ யத்ர॒ பூர்வே॑ ஸா॒த்யாஃ ஸந்தி॑ தே॒வாஃ ॥ ௧௬ ॥",
+        "kannada": "ಯ॒ಜ್ಞೇನ॑ ಯ॒ಜ್ಞಮ॑ಯಜನ್ತ ದೇ॒ವಾಸ್ತಾನಿ॒ ಧರ್ಮಾ॑ಣಿ ಪ್ರಥ॒ಮಾನ್ಯಾ॑ಸನ್ ।\nತೇ ಹ॒ ನಾಕಂ॑ ಮಹಿ॒ಮಾನಃ॑ ಸಚನ್ತ॒ ಯತ್ರ॒ ಪೂರ್ವೇ॑ ಸಾ॒ಧ್ಯಾಃ ಸನ್ತಿ॑ ದೇ॒ವಾಃ ॥ ೧೬ ॥",
+        "malayalam": "യ॒ജ്ഞേന॑ യ॒ജ്ഞമ॑യജന്ത ദേ॒വാസ്താനി॒ ധര്മാ॑ണി പ്രഥ॒മാന്യാ॑സന് ।\nതേ ഹ॒ നാകം॑ മഹി॒മാനഃ॑ സചന്ത॒ യത്ര॒ പൂര്വേ॑ സാ॒ധ്യാഃ സന്തി॑ ദേ॒വാഃ ॥ ൧൬ ॥",
+        "iast": "ya̱jñena̭ ya̱jñama̭yajanta de̱vāstāni̱ dharmā̭ṇi pratha̱mānyā̭san |\nte ha̱ nāka̭ṃ mahi̱māna̭ḥ sacanta̱ yatra̱ pūrvḙ sā̱dhyāḥ santi̭ de̱vāḥ || 16 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "With sacrifice the deities offered worship to the Supreme Sacrifice (Purusha). These became the primordial cosmic ordinances (Dharmas). Those exalted spiritual beings attain the highest celestial realm where the ancient Sadhyas and gods abide.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "देवों ने यज्ञ (आत्म-समर्पण) के द्वारा यज्ञस्वरूप परमात्मा की आराधना की; वे ही सनातन धर्म के आदि व मौलिक विधान (धर्म) बने। वे महिमामयी पुण्यात्मा उस परम प्रकाशमान धाम को प्राप्त करते हैं, जहाँ पुरातन साध्यगण और देवगण निवास करते हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "దేవతలు యజ్ఞము (ఆత్మసమర్పణ) ద్వారా యజ్ఞపురుషుడైన పరమాత్మను ఆరాధించిరి; అవే సృష్టికి ప్రథమ ధర్మములయ్యెను. ఆ దివ్య మహిమాన్వితులు ప్రాచీన సాధ్యులు మరియు దేవతలు నివసించు పరమ పవిత్రమైన స్వర్గధామమును చేరుదురు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தேவர்கள் தியாகத்தினால் (யாகத்தினால்) யாக புருஷனை வழிபட்டனர்; அவையே முதல் தர்மங்களாயின (விதிகளாயின). ஆதி சாத்தியர்களும் தேவர்களும் வாழும் அந்தப் பேரொளி வீசும் பரமபதத்தை அத்தகைய மஹான்கள் அடைகிறார்கள்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ದೇವತೆಗಳು ಯಜ್ಞದ (ಆತ್ಮಾರ್ಪಣೆಯ) ಮೂಲಕ ಯಜ್ಞಪುರುಷನಾದ ಪರಮಾತ್ಮನನ್ನು ಪೂಜಿಸಿದರು; ಅವೇ ಸೃಷ್ಟಿಯ ಆದಿ ಧರ್ಮಗಳಾದವು. ಪ್ರಾಚೀನ ಸಾಧ್ಯರೂ ದೇವತೆಗಳೂ ನೆಲೆಸಿರುವ ಆ ಪರಮ ದಿವ್ಯಧಾಮವನ್ನು ಪುಣ್ಯಾತ್ಮರು ತಲುಪುತ್ತಾರೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "देवांनी यज्ञाच्या (आत्मसमर्पणाच्या) द्वारे यज्ञस्वरूप परमात्म्याची पूजा केली; तेच सृष्टीचे प्रथम धर्म झाले. प्राचीन साध्य आणि देव जिथे राहतात, त्या परम दिव्य धामाला ते महात्मे प्राप्त होतात.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "দেবগণ যজ্ঞের (আত্মত্যাগের) দ্বারা যজ্ঞস্বরূপ পুরুষের আরাধনা করিলেন; সেইগুলিই আদি ও সনাতন ধর্ম হইল। যেখানে প্রাচীন সাধ্যগণ ও দেবগণ বাস করেন, সেই পরম জ্যোতির্ময় ধামে মহাত্মাগণ গমন করেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "દેવોએ યજ્ઞ (આત્મસમર્પણ) દ્વારા યજ્ઞસ્વરૂપ પરમાત્માની પૂજા કરી; તે જ સૃષ્ટિના પ્રથમ ધર્મો બન્યા. જ્યાં પ્રાચીન સાધ્યો અને દેવો નિવાસ કરે છે, તે પરમ દિવ્યધામને તે મહાપુરુଷો પ્રાપ્ત કરે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ദേവന്മാർ യജ്ഞത്താൽ യജ്ഞപുരുഷനെ ആരാധിച്ചു; അവ ആദ്യത്തെ ധർമ്മങ്ങളായിത്തീർന്നു. പുരാതനരായ സാദ്ധ്യന്മാരും ദേവന്മാരും വസിക്കുന്ന ആ പരമധാമത്തെ ആ മഹാത്മാക്കൾ പ്രാപിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଦେବତାମାନେ ଯଜ୍ଞ (ଆତ୍ମସମର୍ପଣ) ଦ୍ୱାରା ଯଜ୍ଞପୁରୁଷ ପରମାତ୍ମାଙ୍କୁ ପୂଜା କଲେ; ସେହିଗୁଡ଼ିକ ହିଁ ସୃଷ୍ଟିର ପ୍ରଥମ ଧର୍ମ ହେଲା । ଯେଉଁଠାରେ ପ୍ରାଚୀନ ସାଧ୍ୟଗଣ ଓ ଦେବତାମାନେ ବାସ କରନ୍ତି, ସେହି ପରମ ଜ୍ୟୋତିର୍ମୟ ଧାମକୁ ମହାତ୍ମାମାନେ ପ୍ରାପ୍ତ ହୁଅନ୍ତି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    }
+  ]
+}

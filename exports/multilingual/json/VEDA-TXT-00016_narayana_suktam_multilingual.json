@@ -1,0 +1,924 @@
+{
+  "content_id": "VEDA-TXT-00016",
+  "canonical_title": "Narayana Suktam",
+  "devanagari_title": "नारायणसूक्तम्",
+  "composer": "Rishi Narayana",
+  "source_scripture": "Taittiriya Aranyaka 10.13 (Mahanarayana Upanishad 13)",
+  "verse_count": 12,
+  "generated_at_utc": "2026-11-04T23:40:37.932897+00:00",
+  "supported_languages": [
+    "sa",
+    "hi",
+    "te",
+    "ta",
+    "kn",
+    "mr",
+    "bn",
+    "gu",
+    "ml",
+    "or",
+    "en"
+  ],
+  "verses": [
+    {
+      "verse_number": 1,
+      "verse_type": "VERSE",
+      "original_sanskrit": "स॒हस्र॑शीर्षं देवं॒ वि॒श्वाक्षं॑ वि॒श्वश॑म्भुवम् ।\nविश्वं॑ ना॒राय॑णं दे॒व॒म॒क्षरं॑ पर॒मं पदम् ॥ १ ॥",
+      "iast": "sa॒hasra॑śīrṣaṁ dēvaṁ॒ vi॒śvākṣaṁ॑ vi॒śvaśa॑mbhuvam ।\nviśvaṁ॑ nā॒rāya॑ṇaṁ dē॒va॒ma॒kṣaraṁ॑ para॒maṁ padam ॥ 1 ॥",
+      "transliterations": {
+        "telugu": "స॒హస్ర॑శీర్షం దేవం॒ వి॒శ్వాక్షం॑ వి॒శ్వశ॑మ్భువమ్ ।\nవిశ్వం॑ నా॒రాయ॑ణం దే॒వ॒మ॒క్షరం॑ పర॒మం పదమ్ ॥ ౧ ॥",
+        "tamil": "ஸ॒ஹஸ்ர॑ஶீர்ஷம் தேவம்॒ வி॒ஶ்வாக்ஷம்॑ வி॒ஶ்வஶ॑ம்புவம் ।\nவிஶ்வம்॑ நா॒ராய॑ணம் தே॒வ॒ம॒க்ஷரம்॑ பர॒மம் பதம் ॥ ௧ ॥",
+        "kannada": "ಸ॒ಹಸ್ರ॑ಶೀರ್ಷಂ ದೇವಂ॒ ವಿ॒ಶ್ವಾಕ್ಷಂ॑ ವಿ॒ಶ್ವಶ॑ಮ್ಭುವಮ್ ।\nವಿಶ್ವಂ॑ ನಾ॒ರಾಯ॑ಣಂ ದೇ॒ವ॒ಮ॒ಕ್ಷರಂ॑ ಪರ॒ಮಂ ಪದಮ್ ॥ ೧ ॥",
+        "malayalam": "സ॒ഹസ്ര॑ശീര്ഷം ദേവം॒ വി॒ശ്വാക്ഷം॑ വി॒ശ്വശ॑മ്ഭുവമ് ।\nവിശ്വം॑ നാ॒രായ॑ണം ദേ॒വ॒മ॒ക്ഷരം॑ പര॒മം പദമ് ॥ ൧ ॥",
+        "iast": "sa̱hasra̭śīrṣaṃ deva̱ṃ vi̱śvākṣa̭ṃ vi̱śvaśa̭mbhuvam |\nviśva̭ṃ nā̱rāya̭ṇaṃ de̱va̱ma̱kṣara̭ṃ para̱maṃ padam || 1 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "We meditate upon the Supreme Lord Narayana, who has a thousand heads, who is all-seeing (with eyes everywhere), who is the source of all auspiciousness and happiness to the universe, who is the universe itself, imperishable, and the supreme goal.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हम उन परम देव भगवान् नारायण का ध्यान करते हैं, जो अनन्त शीश वाले, सर्वद्रष्टा नेत्रों वाले, सम्पूर्ण विश्व को कल्याण व आनन्द देने वाले, साक्षात् विश्वरूप, अविनाशी और परम धाम स्वरूप हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "అనంత శిరస్సులు గలవాడు, సర్వత్ర వీక్షించు నేత్రములు గలవాడు, సమస్త విశ్వమునకు మంగళమును చేకూర్చువాడు, విశ్వరూపుడు, నాశరహితుడు, పరమపద స్వరూపుడైన శ్రీమన్నారాయణుని మేము ధ్యానించుచున్నాము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஆயிரமாயிரம் தலைகளையுடையவரும், எங்கும் நோக்கும் திருக்கண்களையுடையவரும், அகிலத்திற்கும் மங்கலம் அருள்பவரும், பிரபஞ்ச வடிவினரும், அழிவற்ற பரம பதமுமான நாராயணப் பிரபுவை நாங்கள் தியானிக்கிறோம்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಅನಂತ ಶಿರಗಳುಳ್ಳವನು, ಸರ್ವವ್ಯಾಪಿ ನೇತ್ರಗಳುಳ್ಳವನು, ಸಮಸ್ತ ವಿಶ್ವಕ್ಕೆ ಕಲ್ಯಾಣಕಾರಕನೂ, ವಿಶ್ವಸ್ವರೂಪಿಯೂ, ಅವಿನಾಶಿಯೂ, ಪರಮಧಾಮ ಸ್ವರೂಪನೂ ಆದ ನಾರಾಯಣ ದೇವರನ್ನು ನಾವು ಧ್ಯಾನಿಸುತ್ತೇವೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "अनंत मस्तक असणाऱ्या, सर्वद्रष्ट्या, संपूर्ण जगाला कल्याण व आनंद देणाऱ्या, विश्वरूप, अविनाशी आणि परम धाम असणाऱ्या नारायण देवाला आम्ही वंदन करतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "অনন্ত মস্তকবিশিষ্ট, সর্বত্র ব্যাপ্ত চক্ষুযুক্ত, নিখিল বিশ্বের কল্যাণবিধায়ক, স্বয়ং বিশ্বরূপ, অবিনাশী ও পরম পদস্বরূপ ভগবান নারায়ণকে আমরা ধ্যান করি।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "અનંત મસ્તકવાળા, સર્વત્ર જોનારાં નેત્રોવાળા, સમગ્ર વિશ્વનું કલ્યાણ કરનારા, વિશ્વરૂપ, અવિનાશી અને પરમ પદરૂપ ભગવાન નારાયણનું અમે ધ્યાન ધરીએ છીએ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അനന്തമായ ശിരസ്സുകളുള്ളവനും, സർവ്വവ്യാപിയായ കണ്ണുകളുള്ളവനും, പ്രപഞ്ചത്തിനാകെ മംഗളമരുളുന്നവനും, വിശ്വരൂപനും, അക്ഷരനും പരമപദവുമായ നാരായണനെ ഞങ്ങൾ ധ്യാനിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଅନନ୍ତ ମସ୍ତକଧାରୀ, ସର୍ବଦ୍ରଷ୍ଟା ନେତ୍ର ବିଶିଷ୍ଟ, ସମଗ୍ର ବିଶ୍ୱର ମଙ୍ଗଳବିଧାୟକ, ସ୍ୱୟଂ ବିଶ୍ୱରୂପ, ଅବିନାଶୀ ଓ ପରମ ଧାମ ସ୍ୱରୂପ ଭଗବାନ ନାରାୟଣଙ୍କୁ ଆମେ ଧ୍ୟାନ କରୁଛୁ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 2,
+      "verse_type": "VERSE",
+      "original_sanskrit": "विश्व॑तः पर॒मान्नि॒त्यं॒ वि॒श्वं ना॑राय॒णं हरि॑म् ।\nविश्व॑मे॒वेदं पुरु॑ष॒स्तद्विश्व॒मुप॑जीवति ॥ २ ॥",
+      "iast": "viśva॑taḥ para॒mānni॒tyaṁ॒ vi॒śvaṁ nā॑raya॒ṇaṁ hari॑m ।\nviśva॑mē॒vēdaṁ puru॑ṣa॒stadviśva॒mupa॑jīvati ॥ 2 ॥",
+      "transliterations": {
+        "telugu": "విశ్వ॑తః పర॒మాన్ని॒త్యం॒ వి॒శ్వం నా॑రాయ॒ణం హరి॑మ్ ।\nవిశ్వ॑మే॒వేదం పురు॑ష॒స్తద్విశ్వ॒ముప॑జీవతి ॥ ౨ ॥",
+        "tamil": "விஶ்வ॑தஃ பர॒மாந்நி॒த்யம்॒ வி॒ஶ்வம் நா॑ராய॒ணம் ஹரி॑ம் ।\nவிஶ்வ॑மே॒வேதம் புரு॑ஷ॒ஸ்தத்விஶ்வ॒முப॑ஜீவதி ॥ ௨ ॥",
+        "kannada": "ವಿಶ್ವ॑ತಃ ಪರ॒ಮಾನ್ನಿ॒ತ್ಯಂ॒ ವಿ॒ಶ್ವಂ ನಾ॑ರಾಯ॒ಣಂ ಹರಿ॑ಮ್ ।\nವಿಶ್ವ॑ಮೇ॒ವೇದಂ ಪುರು॑ಷ॒ಸ್ತದ್ವಿಶ್ವ॒ಮುಪ॑ಜೀವತಿ ॥ ೨ ॥",
+        "malayalam": "വിശ്വ॑തഃ പര॒മാന്നി॒ത്യം॒ വി॒ശ്വം നാ॑രായ॒ണം ഹരി॑മ് ।\nവിശ്വ॑മേ॒വേദം പുരു॑ഷ॒സ്തദ്വിശ്വ॒മുപ॑ജീവതി ॥ ൨ ॥",
+        "iast": "viśva̭taḥ para̱mānni̱tya̱ṃ vi̱śvaṃ nā̭rāya̱ṇaṃ hari̭m |\nviśva̭me̱vedaṃ purṷṣa̱stadviśva̱mupa̭jīvati || 2 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Narayana is the supreme transcendent reality beyond all cosmos, eternal. Narayana is Hari, the all-pervading universe. This entire cosmos is the Purusha alone; upon Him the whole universe depends for its existence.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "वे इस विश्व से परे, नित्य, साक्षात् विश्वरूप, भक्तों के कष्ट हरने वाले 'हरि' नारायण हैं। यह सारा दृश्य जगत् साक्षात् वही परम पुरुष है और यह सम्पूर्ण संसार उन्हीं के सहारे जीवन धारण करता है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆయన విశ్వాతీతుడు, నిత్యుడు, విశ్వస్వరూపుడు, భక్తుల దుఃఖములను హరించు 'హరి'యైన నారాయణుడు. ఈ దృశ్యమాన జగత్తంతయు ఆ పురుషుడే; ఈ సృష్టియంతయు ఆయన నాధారము చేసికొనియే జీవించుచున్నది.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "பிரபஞ்சத்திற்கு அப்பாற்பட்டவரும், நித்தியமானவரும், உலகனைத்துமாய் விளங்குபவரும், துன்பங்களை நீக்கும் 'ஹரி'யான நாராயணனே ஆவார். இக்காணும் உலகம் முழுவதும் அந்தப் பரம புருஷனே; அகிலமும் அவரைச் சார்ந்தே உயிர்வாழ்கிறது.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಆತನು ವಿಶ್ವಾತೀತನೂ, ನಿತ್ಯನೂ, ವಿಶ್ವಸ್ವರೂಪನೂ, ಸಕಲ ದುಃಖನಿವಾರಕನಾದ 'ಹರಿ' ನಾರಾಯಣನೂ ಆಗಿದ್ದಾನೆ. ಈ ಇಡೀ ಜಗತ್ತು ಆ ಪರಮಪುರುಷನೇ ಆಗಿದ್ದು, ಸಮಸ್ತ ವಿಶ್ವವು ಆತನನ್ನೇ ಆಶ್ರಯಿಸಿ ಬದುಕಿದೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तो या विश्वाच्या पलीकडचा, नित्य, साक्षात विश्वरूप, भक्तांचे दुःख हरणारा 'हरी' नारायण आहे. हे संपूर्ण दृश्य जग साक्षात तो परमपुरुषच आहे आणि हे जग त्याच्याच आधारावर जगते.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তিনি এই বিশ্বের অতীত, নিত্য, সাক্ষাৎ বিশ্বরূপ, সর্বদুঃখহারী 'হরি' নারায়ণ। এই সমগ্র বিশ্বপ্রপঞ্চ সেই পরম পুরুষই, এবং সমগ্র জগৎ তাঁহারই আশ্রয়ে জীবন ধারণ করে।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તેઓ આ વિશ્વથી પર, નિત્ય, સાક્ષાત્ વિશ્વરૂપ, ભક્તોનાં કષ્ટ હરનારા 'હરિ' નારાયણ છે. આ સમગ્ર જગત તે પરમ પુરુષ જ છે અને આ સંસાર તેમના જ સહારે જીવન જીવે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അവൻ പ്രപഞ്ചത്തിനതീതനും, നിത്യനും, വിശ്വരൂപനും, ദുഃഖങ്ങളെ ഹരിക്കുന്നവനുമായ നാരായണനാണ്. കാണപ്പെടുന്ന ഈ ജഗത്തൊക്കെയും ആ പുരുഷൻ തന്നെയാണ്; പ്രപഞ്ചം അവനെ ആശ്രയിച്ചു ജീവിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସେ ଏହି ବିଶ୍ୱର ଅତୀତ, ନିତ୍ୟ, ସାକ୍ଷାତ ବିଶ୍ୱରୂପ, ସର୍ବଦୁଃଖହାରୀ 'ହରି' ନାରାୟଣ । ଏହି ସମଗ୍ର ଦୃଶ୍ୟମାନ ଜଗତ ସେହି ପରମ ପୁରୁଷ ହିଁ ଅଟନ୍ତି ଏବଂ ଏହି ସଂସାର ତାଙ୍କରି ଆଶ୍ରୟରେ ଜୀବନ ଧାରଣ କରେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 3,
+      "verse_type": "VERSE",
+      "original_sanskrit": "पतिं॒ विश्व॑स्या॒त्मेश्‍व॑रं॒ शाश्व॑तं शि॒वम॑च्युतम् ।\nना॒राय॒णं म॑हाज्ञे॒यं॒ वि॒श्वात्मा॑नं प॑राय॒णम् ॥ ३ ॥",
+      "iast": "patiṁ॒ viśva॑syā॒tmēśva॑raṁ॒ śāśwa॑taṁ śi॒vama॑cyutam ।\nnā॒rāya॒ṇaṁ ma॑hājñē॒yaṁ॒ vi॒śwātmā॑naṁ pa॑rāya॒ṇam ॥ 3 ॥",
+      "transliterations": {
+        "telugu": "పతిం॒ విశ్వ॑స్యా॒త్మేశ్‍వ॑రం॒ శాశ్వ॑తం శి॒వమ॑చ్యుతమ్ ।\nనా॒రాయ॒ణం మ॑హాజ్ఞే॒యం॒ వి॒శ్వాత్మా॑నం ప॑రాయ॒ణమ్ ॥ ౩ ॥",
+        "tamil": "பதிம்॒ விஶ்வ॑ஸ்யா॒த்மேஶ்‍வ॑ரம்॒ ஶாஶ்வ॑தம் ஶி॒வம॑ச்யுதம் ।\nநா॒ராய॒ணம் ம॑ஹாஜ்ஞே॒யம்॒ வி॒ஶ்வாத்மா॑நம் ப॑ராய॒ணம் ॥ ௩ ॥",
+        "kannada": "ಪತಿಂ॒ ವಿಶ್ವ॑ಸ್ಯಾ॒ತ್ಮೇಶ್‍ವ॑ರಂ॒ ಶಾಶ್ವ॑ತಂ ಶಿ॒ವಮ॑ಚ್ಯುತಮ್ ।\nನಾ॒ರಾಯ॒ಣಂ ಮ॑ಹಾಜ್ಞೇ॒ಯಂ॒ ವಿ॒ಶ್ವಾತ್ಮಾ॑ನಂ ಪ॑ರಾಯ॒ಣಮ್ ॥ ೩ ॥",
+        "malayalam": "പതിം॒ വിശ്വ॑സ്യാ॒ത്മേശ്‍വ॑രം॒ ശാശ്വ॑തം ശി॒വമ॑ച്യുതമ് ।\nനാ॒രായ॒ണം മ॑ഹാജ്ഞേ॒യം॒ വി॒ശ്വാത്മാ॑നം പ॑രായ॒ണമ് ॥ ൩ ॥",
+        "iast": "pati̱ṃ viśva̭syā̱tmeś‍va̭ra̱ṃ śāśva̭taṃ śi̱vama̭cyutam |\nnā̱rāya̱ṇaṃ ma̭hājñe̱ya̱ṃ vi̱śvātmā̭naṃ pa̭rāya̱ṇam || 3 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "He is the Sovereign of the universe, the Lord of all souls, eternal, all-auspicious, and imperishable. Narayana is the supreme object of knowledge, the innermost Soul of the universe, and the supreme refuge of all.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "वे सम्पूर्ण विश्व के स्वामी, समस्त जीवात्माओं के ईश्वर, सनातन, परम कल्याणकारी (शिव), नित्य अच्युत, जानने योग्य परम रहस्य, विश्व की आत्मा और समस्त चराचर के अंतिम परम आश्रय हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "సమస్త విశ్వమునకు పాలకుడు, సమస్త జీవుల అంతర్యామి, శాశ్వతుడు, పరమ మంగళప్రదుడైన శివుడు, అచ్యుతుడు, తెలుసుకొనదగిన పరమ సత్యము, విశ్వాత్మ మరియు సర్వోత్కృష్ట శరణాగతియైన నారాయణునకు నమస్కారము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அகிலத்தின் அரசர், ஆன்மாக்களின் ஈசன், நிலையானவர், மங்கல வடிவானவர் (சிவன்), வீழ்ச்சியற்றவர் (அச்சுதன்), அறியப்பட வேண்டிய பரம்பொருள், உலக உயிர்களின் உள்ளுறை ஆன்மாவான நாராயணனே இறுதிப் புகலிடமாவார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ವಿಶ್ವದ ಒಡೆಯನು, ಸಕಲ ಜೀವಾತ್ಮರ ಈಶ್ವರನು, ಸನಾತನನೂ, ಪರಮ ಮಂಗಳಸ್ವರೂಪನೂ (ಶಿವ), ಅಚ್ಯುತನೂ, ತಿಳಿಯಬೇಕಾದ ಪರಮ ಸತ್ಯವೂ, ವಿಶ್ವದ ಆತ್ಮನೂ ಆದ ನಾರಾಯಣನೇ ನಮ್ಮ ಪರಮ ಆಶ್ರಯ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तो संपूर्ण विश्वाचा स्वामी, सर्व जीवात्म्यांचा ईश्वर, सनातन, अत्यंत कल्याणकारी (शिव), अच्युत, ज्ञानाचे अंतिम उद्दिष्ट, विश्वाचा अंतरात्मा आणि अंतिम परम आश्रय आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তিনি সমগ্র বিশ্বের অধিপতি, সমস্ত জীবের ঈশ্বর, শাশ্বত, পরম কল্যাণময় (শিব), চ্যুতিহীন (অচ্যুত), পরম জ্ঞেয় তত্ত্ব, নিখিল বিশ্বের অন্তরাত্মা এবং পরম আশ্রয়স্থল।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તેઓ સમગ્ર વિશ્વના સ્વામી, સર્વ જીવાત્માઓના ઈશ્વર, સનાતન, પરમ કલ્યાણકારી (શિવ), અચ્યુત, જાણવા યોગ્ય પરમ રહસ્ય, વિશ્વના આત્મા અને અંતિમ પરમ આશ્રય છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അവൻ പ്രപഞ്ചത്തിന്റെ നാഥനും, ജീവാത്മാക്കളുടെ ഈശ്വരനും, ശാശ്വതനും, മംഗളസ്വരൂപനും (ശിവൻ), അച്യുതനും, അറിയപ്പെടേണ്ട പരമസത്യവും, സർവ്വരുടെയും പരമമായ ആശ്രയവുമാണ്.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସେ ସମଗ୍ର ବିଶ୍ୱର ସ୍ୱାମୀ, ସମସ୍ତ ଜୀବାତ୍ମାଙ୍କର ଈଶ୍ୱର, ଶାଶ୍ୱତ, ପରମ କଲ୍ୟାଣମୟ (ଶିବ), ଅଚ୍ୟୁତ, ଜାଣିବା ଯୋଗ୍ୟ ପରମ ତତ୍ତ୍ୱ, ବିଶ୍ୱର ଅନ୍ତରାତ୍ମା ଏବଂ ପରମ ଆଶ୍ରୟସ୍ଥଳ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 4,
+      "verse_type": "VERSE",
+      "original_sanskrit": "ना॒राय॒णः प॑रो ज्योति॒रा॒त्मा ना॑राय॒णः प॑रः ।\nना॒राय॒णः प॑रं ब्र॒ह्म॒ तत्त्वं ना॑राय॒णः प॑रः ।\nना॒राय॒णः प॑रो ध्या॒ता॒ ध्या॒नं ना॑राय॒णः प॑रः ॥ ४ ॥",
+      "iast": "nā॒rāya॒ṇaḥ pa॑rō jyōti॒rā॒tmā nā॑raya॒ṇaḥ pa॑raḥ ।\nnā॒rāya॒ṇaḥ pa॑raṁ bra॒hma॒ tattvaṁ nā॑raya॒ṇaḥ pa॑raḥ ।\nnā॒rāya॒ṇaḥ pa॑rō dhyā॒tā॒ dhyā॒naṁ nā॑raya॒ṇaḥ pa॑raḥ ॥ 4 ॥",
+      "transliterations": {
+        "telugu": "నా॒రాయ॒ణః ప॑రో జ్యోతి॒రా॒త్మా నా॑రాయ॒ణః ప॑రః ।\nనా॒రాయ॒ణః ప॑రం బ్ర॒హ్మ॒ తత్త్వం నా॑రాయ॒ణః ప॑రః ।\nనా॒రాయ॒ణః ప॑రో ధ్యా॒తా॒ ధ్యా॒నం నా॑రాయ॒ణః ప॑రః ॥ ౪ ॥",
+        "tamil": "நா॒ராய॒ணஃ ப॑ரோ ஜ்யோதி॒ரா॒த்மா நா॑ராய॒ணஃ ப॑ரஃ ।\nநா॒ராய॒ணஃ ப॑ரம் ப்ர॒ஹ்ம॒ தத்த்வம் நா॑ராய॒ணஃ ப॑ரஃ ।\nநா॒ராய॒ணஃ ப॑ரோ த்யா॒தா॒ த்யா॒நம் நா॑ராய॒ணஃ ப॑ரஃ ॥ ௪ ॥",
+        "kannada": "ನಾ॒ರಾಯ॒ಣಃ ಪ॑ರೋ ಜ್ಯೋತಿ॒ರಾ॒ತ್ಮಾ ನಾ॑ರಾಯ॒ಣಃ ಪ॑ರಃ ।\nನಾ॒ರಾಯ॒ಣಃ ಪ॑ರಂ ಬ್ರ॒ಹ್ಮ॒ ತತ್ತ್ವಂ ನಾ॑ರಾಯ॒ಣಃ ಪ॑ರಃ ।\nನಾ॒ರಾಯ॒ಣಃ ಪ॑ರೋ ಧ್ಯಾ॒ತಾ॒ ಧ್ಯಾ॒ನಂ ನಾ॑ರಾಯ॒ಣಃ ಪ॑ರಃ ॥ ೪ ॥",
+        "malayalam": "നാ॒രായ॒ണഃ പ॑രോ ജ്യോതി॒രാ॒ത്മാ നാ॑രായ॒ണഃ പ॑രഃ ।\nനാ॒രായ॒ണഃ പ॑രം ബ്ര॒ഹ്മ॒ തത്ത്വം നാ॑രായ॒ണഃ പ॑രഃ ।\nനാ॒രായ॒ണഃ പ॑രോ ധ്യാ॒താ॒ ധ്യാ॒നം നാ॑രായ॒ണഃ പ॑രഃ ॥ ൪ ॥",
+        "iast": "nā̱rāya̱ṇaḥ pa̭ro jyoti̱rā̱tmā nā̭rāya̱ṇaḥ pa̭raḥ |\nnā̱rāya̱ṇaḥ pa̭raṃ bra̱hma̱ tattvaṃ nā̭rāya̱ṇaḥ pa̭raḥ |\nnā̱rāya̱ṇaḥ pa̭ro dhyā̱tā̱ dhyā̱naṃ nā̭rāya̱ṇaḥ pa̭raḥ || 4 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Narayana is the supreme light. Narayana is the supreme Self. Narayana is the supreme Brahman. Narayana is the supreme truth. Narayana is the supreme meditator, and Narayana is the supreme meditation.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "नारायण ही परम ज्योति हैं; नारायण ही परम आत्मा हैं; नारायण ही परब्रह्म हैं; नारायण ही परम सत्य हैं; नारायण ही परम ध्याता (ध्यान करने वाले) हैं और नारायण ही ध्यान के परम लक्ष्य हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "నారాయణుడే పరమ జ్యోతి; నారాయణుడే పరమాత్మ; నారాయణుడే పరబ్రహ్మము; నారాయణుడే పరమ తత్త్వము; నారాయణుడే ధ్యానించువాడు (ధ్యాత), మరియు ధ్యానింపబడు పరమ లక్ష్యము (ధ్యానము) కూడా నారాయణుడే.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "நாராயணனே பரஞ்சோதி; நாராயணனே பரமாத்மா; நாராயணனே பரப்பிரம்மம்; நாராயணனே பரம தத்துவம்; நாராயணனே தியானிப்பவன்; தியானிக்கப்படும் பரம்பொருளும் நாராயணனே.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ನಾರಾಯಣನೇ ಪರಂಜ್ಯೋತಿ; ನಾರಾಯಣನೇ ಪರಮಾತ್ಮ; ನಾರಾಯಣನೇ ಪರಬ್ರಹ್ಮ; ನಾರಾಯಣನೇ ಪರಮ ಸತ್ಯ; ನಾರಾಯಣನೇ ಧ್ಯಾನಿಸುವವನು ಮತ್ತು ಧ್ಯಾನಿಸಲ್ಪಡುವ ಪರಮ ಧ್ಯೇಯವೂ ನಾರಾಯಣನೇ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "नारायण हीच परम ज्योती आहे; नारायण हाच परमात्मा आहे; नारायण हाच परब्रह्म आहे; नारायण हेच परम तत्त्व आहे; नारायण हाच ध्याता आहे आणि ध्यानाचे ध्येयही नारायणच आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "নারায়ণই পরম জ্যোতি; নারায়ণই পরমাত্মা; নারায়ণই পরব্রহ্ম; নারায়ণই পরম সত্য; নারায়ণই পরম ধ্যানকারী এবং নারায়ণই ধ্যানের চরম বিষয়।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "નારાયણ જ પરમ જ્યોતિ છે; નારાયણ જ પરમાત્મા છે; નારાયણ જ પરબ્રહ્મ છે; નારાયણ જ પરમ તત્ત્વ છે; નારાયણ જ ધ્યાતા છે અને નારાયણ જ ધ્યાય છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "നാരായണൻ തന്നെയാണ് പരമജ്യോതിസ്സ്; നാരായണനാണ് പരമാത്മാവ്; നാരായണനാണ് പരബ്രഹ്മം; നാരായണനാണ് പരമസത്യം; നാരായണനാണ് ധ്യാനിക്കുന്നവനും ധ്യാനവിഷയവും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ନାରାୟଣ ହିଁ ପରମ ଜ୍ୟୋତି; ନାରାୟଣ ହିଁ ପରମାତ୍ମା; ନାରାୟଣ ହିଁ ପରବ୍ରହ୍ମ; ନାରାୟଣ ହିଁ ପରମ ତତ୍ତ୍ୱ; ନାରାୟଣ ହିଁ ପରମ ଧ୍ୟାତା ଏବଂ ଧ୍ୟାନର ପରମ ଲକ୍ଷ୍ୟ ମଧ୍ୟ ନାରାୟଣ ଅଟନ୍ତି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 5,
+      "verse_type": "VERSE",
+      "original_sanskrit": "यच्च॑ कि॒ञ्चिज्जग॑त्सर्वं॒ दृ॒श्यते॑ श्रूय॒तेऽपि॑ वा ।\nअन्त॑र्ब॒हिश्च॑ तत्सर्वं॒ व्या॒प्य ना॑राय॒णः स्थि॑तः ॥ ५ ॥",
+      "iast": "yacca॑ ki॒ñcijjaga॑tsarvaṁ॒ dṛ॒śyatē॑ śrūya॒tē'pi॑ vā ।\nanta॑rba॒hiśca॑ tatsarvaṁ॒ vyā॒pya nā॑raya॒ṇaḥ sthi॑taḥ ॥ 5 ॥",
+      "transliterations": {
+        "telugu": "యచ్చ॑ కి॒ఞ్చిజ్జగ॑త్సర్వం॒ దృ॒శ్యతే॑ శ్రూయ॒తేఽపి॑ వా ।\nఅన్త॑ర్బ॒హిశ్చ॑ తత్సర్వం॒ వ్యా॒ప్య నా॑రాయ॒ణః స్థి॑తః ॥ ౫ ॥",
+        "tamil": "யச்ச॑ கி॒ஞ்சிஜ்ஜக॑த்ஸர்வம்॒ த்ரு'॒ஶ்யதே॑ ஶ்ரூய॒தேऽபி॑ வா ।\nஅந்த॑ர்ப॒ஹிஶ்ச॑ தத்ஸர்வம்॒ வ்யா॒ப்ய நா॑ராய॒ணஃ ஸ்தி॑தஃ ॥ ௫ ॥",
+        "kannada": "ಯಚ್ಚ॑ ಕಿ॒ಞ್ಚಿಜ್ಜಗ॑ತ್ಸರ್ವಂ॒ ದೃ॒ಶ್ಯತೇ॑ ಶ್ರೂಯ॒ತೇಽಪಿ॑ ವಾ ।\nಅನ್ತ॑ರ್ಬ॒ಹಿಶ್ಚ॑ ತತ್ಸರ್ವಂ॒ ವ್ಯಾ॒ಪ್ಯ ನಾ॑ರಾಯ॒ಣಃ ಸ್ಥಿ॑ತಃ ॥ ೫ ॥",
+        "malayalam": "യച്ച॑ കി॒ഞ്ചിജ്ജഗ॑ത്സര്വം॒ ദൃ॒ശ്യതേ॑ ശ്രൂയ॒തേഽപി॑ വാ ।\nഅന്ത॑ര്ബ॒ഹിശ്ച॑ തത്സര്വം॒ വ്യാ॒പ്യ നാ॑രായ॒ണഃ സ്ഥി॑തഃ ॥ ൫ ॥",
+        "iast": "yacca̭ ki̱ñcijjaga̭tsarva̱ṃ dṛ̱śyatḙ śrūya̱te'pi̭ vā |\nanta̭rba̱hiśca̭ tatsarva̱ṃ vyā̱pya nā̭rāya̱ṇaḥ sthi̭taḥ || 5 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Whatever exists in this universe, whether seen or heard — Narayana pervades all of that completely, both from within and from without.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "इस सम्पूर्ण संसार में जो कुछ भी देखा जाता है अथवा सुना जाता है, उस सबके भीतर और बाहर सब ओर साक्षात् भगवान् नारायण ही व्याप्त होकर स्थित हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఈ సృష్టి యందు కంటికి కనిపించునది, చెవికి వినిపించునది ఏది కలదో, ఆ సమస్తమునకు లోపలా వెలుపలా నారాయణుడే అంతటా వ్యాపించి యున్నాడు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இப்பிரபஞ்சத்தில் கண்ணால் காணப்படுவதும் காதால் கேட்கப்படுவதுமான யாவும் எதுவோ, அவை அனைத்தின் உள்ளும் புறமும் நாராயணனே வியாபித்து நிற்கிறான்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಈ ಇಡೀ ಜಗತ್ತಿನಲ್ಲಿ ಕಣ್ಣಿಗೆ ಕಾಣುವ ಅಥವಾ ಕಿವಿಗೆ ಕೇಳುವ ಎಲ್ಲದರ ಒಳಗೂ ಹೊರಗೂ ಸಾಕ್ಷಾತ್ ನಾರಾಯಣನೇ ವ್ಯಾಪಿಸಿ ನೆಲೆಸಿದ್ದಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "या संपूर्ण विश्वात जे काही पाहिले जाते किंवा ऐकले जाते, त्या सर्वांच्या आत आणि बाहेर साक्षात नारायणच व्यापून राहिला आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "এই সমগ্র জগতে যাহা কিছু দৃষ্ট হয় বা শ্রুত হয়, সেই সমস্ত কিছুর অন্তরে ও বাহিরে ভগবান নারায়ণই পরিব্যাপ্ত হইয়া বিরাজ করিতেছেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આ સમગ્ર સંસારમાં જે કંઈ જોવામાં આવે છે કે સાંભળવામાં આવે છે, તે સર્વની અંદર અને બહાર સાક્ષાત્ ભગવાન નારાયણ જ વ્યાપીને બિરાજે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഈ ലോകത്തിൽ കാണപ്പെടുന്നതും കേൾക്കപ്പെടുന്നതുമായ സകലതിന്റേയും ഉള്ളിലും പുറത്തും സാക്ഷാൽ നാരായണൻ തന്നെ നിറഞ്ഞുനിൽക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଏହି ସମଗ୍ର ଜଗତରେ ଯାହା କିଛି ଦେଖାଯାଏ ବା ଶୁଣାଯାଏ, ସେହି ସମସ୍ତର ଭିତରେ ଓ ବାହାରେ ଭଗବାନ ନାରାୟଣ ହିଁ ବ୍ୟାପ୍ତ ହୋଇ ରହିଛନ୍ତି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 6,
+      "verse_type": "VERSE",
+      "original_sanskrit": "अन॑न्त॒मव्य॑यं क॒विं समु॒द्रेऽन्तं॑ वि॒श्वश॑म्भुवम् ।\nप॒द्म॒को॒शप्र॑तीका॒शं॒ हृ॒दयं॑ चाप्यधोमुखम् ॥ ६ ॥",
+      "iast": "ana॑nta॒mavya॑yaṁ ka॒viṁ samu॒drē'ntaṁ॑ vi॒śvaśa॑mbhuvam ।\npa॒dma॒kō॒śapra॑tīkā॒śaṁ॒ hṛ॒dayaṁ॑ cāpyadhōmukham ॥ 6 ॥",
+      "transliterations": {
+        "telugu": "అన॑న్త॒మవ్య॑యం క॒విం సము॒ద్రేఽన్తం॑ వి॒శ్వశ॑మ్భువమ్ ।\nప॒ద్మ॒కో॒శప్ర॑తీకా॒శం॒ హృ॒దయం॑ చాప్యధోముఖమ్ ॥ ౬ ॥",
+        "tamil": "அந॑ந்த॒மவ்ய॑யம் க॒விம் ஸமு॒த்ரேऽந்தம்॑ வி॒ஶ்வஶ॑ம்புவம் ।\nப॒த்ம॒கோ॒ஶப்ர॑தீகா॒ஶம்॒ ஹ்ரு'॒தயம்॑ சாப்யதோமுகம் ॥ ௬ ॥",
+        "kannada": "ಅನ॑ನ್ತ॒ಮವ್ಯ॑ಯಂ ಕ॒ವಿಂ ಸಮು॒ದ್ರೇಽನ್ತಂ॑ ವಿ॒ಶ್ವಶ॑ಮ್ಭುವಮ್ ।\nಪ॒ದ್ಮ॒ಕೋ॒ಶಪ್ರ॑ತೀಕಾ॒ಶಂ॒ ಹೃ॒ದಯಂ॑ ಚಾಪ್ಯಧೋಮುಖಮ್ ॥ ೬ ॥",
+        "malayalam": "അന॑ന്ത॒മവ്യ॑യം ക॒വിം സമു॒ദ്രേഽന്തം॑ വി॒ശ്വശ॑മ്ഭുവമ് ।\nപ॒ദ്മ॒കോ॒ശപ്ര॑തീകാ॒ശം॒ ഹൃ॒ദയം॑ ചാപ്യധോമുഖമ് ॥ ൬ ॥",
+        "iast": "ana̭nta̱mavya̭yaṃ ka̱viṃ samu̱dre'nta̭ṃ vi̱śvaśa̭mbhuvam |\npa̱dma̱ko̱śapra̭tīkā̱śa̱ṃ hṛ̱daya̭ṃ cāpyadhomukham || 6 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "The infinite, imperishable, all-seeing Seer, who resides in the cosmic waters of consciousness, the source of supreme auspiciousness! Resembling an inverted lotus bud is the subtle spiritual heart.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "वे अनन्त, अविनाशी, सर्वज्ञ, क्षीरसागर (चिदाकाश) में शयन करने वाले और विश्व को आनंद देने वाले हैं। हमारा हृदय-कमल अधोमुख (नीचे की ओर मुख किए हुए) कमल-कली के समान स्थित है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆయన అనంతమైనవాడు, నాశనము లేనివాడు, సర్వద్రష్ట, పాలకడలి యందు శయనించువాడు, జగత్తునకు ఆనందకరుడు. మన హృదయ కమలము అధోముఖముగా (క్రిందికి మొగ్గ తొడిగిన) తామర మొగ్గ వలె ఉన్నది.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அவர் எல்லையற்றவர், அழிவற்றவர், எல்லாம் உணர்ந்த ஞானி, பாற்கடலில் பள்ளி கொள்பவர், உலகிற்கு அமைதி தருபவர். நமது இதயத் தாமரையோ கீழ்நோக்கித் தொங்கும் தாமரை மொட்டைப் போன்றுள்ளது.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಆತನು ಅನಂತನೂ, ಅವಿನಾಶಿಯೂ, ಸರ್ವಜ್ಞನೂ, ಕ್ಷೀರಸಾಗರದಲ್ಲಿ ಶಯನಿಸಿರುವವನೂ, ಜಗತ್ತಿಗೆ ಆನಂದಕಾರಕನೂ ಆಗಿದ್ದಾನೆ. ನಮ್ಮ ಹೃದಯ ಕಮಲವು ಕೆಳಮುಖವಾಗಿ ತೂಗಾಡುವ ಕಮಲದ ಮೊಗ್ಗಿನಂತಿದೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तो अनंत, अविनाशी, सर्वज्ञ, क्षीरसागरात शयन करणारा आणि जगाला आनंद देणारा आहे. आपले हृदयकमळ खाली तोंड केलेल्या कमळाच्या कळीप्रमाणे स्थित आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তিনি অনন্ত, অব্যয়, সর্বজ্ঞ ঋষি, কারণসমুদ্রে শায়িত এবং বিশ্বকল্যাণবিধায়ক। আমাদিগের হৃদয়কমল অধোমুখী পদ্মমুকুলের ন্যায় বিরাজমান।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તેઓ અનંત, અવિનાશી, સર્વજ્ઞ, ક્ષીરસાગરમાં શયન કરનારા અને વિશ્વને આનંદ આપનારા છે. આપણું હૃદય-કમળ નીચેની તરફ મુખવાળી કમળની કળી સમાન છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അവൻ അനന്തനും, നാശമില്ലാത്തവനും, സർവ്വജ്ഞനും, പാലാഴിയിൽ ശയിക്കുന്നവനും, വിശ്വത്തിന് ആനന്ദമേകുന്നവനുമാണ്. ഹൃദയമാകട്ടെ അധോമുഖമായ താമരമൊട്ടുപോലെ സ്ഥിതിചെയ്യുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସେ ଅନନ୍ତ, ଅବିନାଶୀ, ସର୍ବଜ୍ଞ, କାରଣ ସମୁଦ୍ରରେ ଶୟନ କରୁଥିବା ଏବଂ ବିଶ୍ୱକୁ ଆନନ୍ଦ ପ୍ରଦାନକାରୀ । ଆମର ହୃଦୟ-କମଳ ଅଧୋମୁଖୀ ପଦ୍ମ କଢ଼ ଭଳି ଅବସ୍ଥିତ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 7,
+      "verse_type": "VERSE",
+      "original_sanskrit": "अधो॑ नि॒ष्ट्या वि॑तस्त्या॒न्ते॒ नाभ्या॑मुप॑रि तिष्ठति ।\nज्वा॒ल॒मा॒लाकु॑लं भा॒ती॒ वि॒श्वस्या॑यत॒नं म॑हत् ॥ ७ ॥",
+      "iast": "adhō॑ ni॒ṣṭyā vi॑tastyā॒ntē॒ nābhyā॑mupa॑ri tiṣṭhati ।\njvā॒la॒mā॒lāku॑laṁ bhā॒tī॒ vi॒śvasyā॑yata॒naṁ ma॑hat ॥ 7 ॥",
+      "transliterations": {
+        "telugu": "అధో॑ ని॒ష్ట్యా వి॑తస్త్యా॒న్తే॒ నాభ్యా॑ముప॑రి తిష్ఠతి ।\nజ్వా॒ల॒మా॒లాకు॑లం భా॒తీ॒ వి॒శ్వస్యా॑యత॒నం మ॑హత్ ॥ ౭ ॥",
+        "tamil": "அதோ॑ நி॒ஷ்ட்யா வி॑தஸ்த்யா॒ந்தே॒ நாப்யா॑முப॑ரி திஷ்டதி ।\nஜ்வா॒ல॒மா॒லாகு॑லம் பா॒தீ॒ வி॒ஶ்வஸ்யா॑யத॒நம் ம॑ஹத் ॥ ௭ ॥",
+        "kannada": "ಅಧೋ॑ ನಿ॒ಷ್ಟ್ಯಾ ವಿ॑ತಸ್ತ್ಯಾ॒ನ್ತೇ॒ ನಾಭ್ಯಾ॑ಮುಪ॑ರಿ ತಿಷ್ಠತಿ ।\nಜ್ವಾ॒ಲ॒ಮಾ॒ಲಾಕು॑ಲಂ ಭಾ॒ತೀ॒ ವಿ॒ಶ್ವಸ್ಯಾ॑ಯತ॒ನಂ ಮ॑ಹತ್ ॥ ೭ ॥",
+        "malayalam": "അധോ॑ നി॒ഷ്ട്യാ വി॑തസ്ത്യാ॒ന്തേ॒ നാഭ്യാ॑മുപ॑രി തിഷ്ഠതി ।\nജ്വാ॒ല॒മാ॒ലാകു॑ലം ഭാ॒തീ॒ വി॒ശ്വസ്യാ॑യത॒നം മ॑ഹത് ॥ ൭ ॥",
+        "iast": "adho̭ ni̱ṣṭyā vi̭tastyā̱nte̱ nābhyā̭mupa̭ri tiṣṭhati |\njvā̱la̱mā̱lākṷlaṃ bhā̱tī̱ vi̱śvasyā̭yata̱naṃ ma̭hat || 7 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Located below the throat and a span (vitasti) above the navel, glowing with a garland of celestial flames, stands that great sanctuary of the entire universe.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "कंठ के नीचे और नाभि से एक बित्ता (बारह अंगुल) ऊपर यह हृदय स्थित है, जो ज्वालाओं की मालाओं से परिवेष्टित, देदीप्यमान और इस सम्पूर्ण विश्व का महान् आश्रय स्थल है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "కంఠము క్రింద, నాభికి ఒక జానెడు పైన ఈ హృదయస్థానము కలదు; ఇది జ్వాలామాలలచే ఆవృతమై, ప్రకాశించుచు, సమస్త విశ్వమునకు గొప్ప నిలయమై యున్నది.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "கழுத்திற்குக் கீழே, தொப்புளுக்கு ஒரு ஜாண் மேலே இந்த இதயம் அமைந்துள்ளது; இது சுடர்களின் மாலையால் சூழப்பட்டுப் பிரகாசித்து, பிரபஞ்சத்தின் பெரும் உறைவிடமாய் விளங்குகிறது.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಕಂಠದ ಕೆಳಗೆ ಮತ್ತು ನಾಭಿಯಿಂದ ಒಂದು ಗೇಣು (ಹನ್ನೆರಡು ಬೆರಳು) ಮೇಲೆ ಈ ಹೃದಯವು ಜ್ವಾಲೆಗಳ ಮಾಲೆಗಳಿಂದ ಸುತ್ತುವರೆದು, ಪ್ರಕಾಶಿಸುತ್ತಾ ಇಡೀ ವಿಶ್ವದ ಶ್ರೇಷ್ಠ ಆಶ್ರಯಧಾಮವಾಗಿದೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "गळ्याच्या खाली आणि नाभीच्या एका वितभर वर हे हृदय स्थित आहे, जे ज्वालांच्या माळांनी वेढलेले, अत्यंत प्रकाशमान आणि विश्वाचे महान अधिष्ठान आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "কণ্ঠের নিম্নে ও নাভিমণ্ডলের এক বিতস্তি (দ্বাদশ অঙ্গুলি) ঊর্ধ্বে এই হৃদয় অবস্থিত; যাহা জ্যোতিমালার দ্বারা পরিবেষ্টিত, ভাস্বর এবং সমগ্র বিশ্বের মহান আশ্রয়স্থান।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "કંઠ નીચે અને નાભિથી એક વેંત ઉપર આ હૃદય સ્થિત છે, જે જ્વાળાઓની માળાથી ઘેરાયેલું, ઝળહળતું અને સમગ્ર વિશ્વનું મહાન આશ્રયસ્થાન છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "കഴുത്തിന് താഴെയായി, നാഭിയിൽനിന്ന് ഒരു ചാൺ ഉയരത്തിൽ സ്ഥിതിചെയ്യുന്ന ഈ ഹൃദയം ജ്വാലാമാലകളാൽ ചുറ്റപ്പെട്ട് പ്രകാശിക്കുന്ന പ്രപഞ്ചത്തിന്റെ വലിയ വാസസ്ഥലമാണ്.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "କଣ୍ଠ ତଳେ ଏବଂ ନାଭିରୁ ଏକ ବିତା ଊର୍ଦ୍ଧ୍ୱରେ ଏହି ହୃଦୟ ଅବସ୍ଥିତ, ଯାହା ଜ୍ୱାଳାମାଳାରେ ପରିବେଷ୍ଟିତ, ପ୍ରକାଶମାନ ଏବଂ ସମଗ୍ର ବିଶ୍ୱର ମହାନ ଆଶ୍ରୟସ୍ଥଳ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 8,
+      "verse_type": "VERSE",
+      "original_sanskrit": "स॒न्त॒तं शि॒लाभि॑स्तु॒ लम्ब॑त्याकोश॒सन्नि॑भम् ।\nतस्यान्ते॑ सुषि॒रं सू॒क्ष्मं तस्मि॑न्त्सर्वं॒ प्रति॑ष्ठितम् ॥ ८ ॥",
+      "iast": "sa॒nta॒taṁ śi॒lābhi॑stu॒ lamba॑tyākōśa॒sanni॑bham ।\ntasyāntē॑ suṣi॒raṁ sū॒kṣmaṁ tasmi॑ntsarvaṁ॒ prati॑ṣṭhitam ॥ 8 ॥",
+      "transliterations": {
+        "telugu": "స॒న్త॒తం శి॒లాభి॑స్తు॒ లమ్బ॑త్యాకోశ॒సన్ని॑భమ్ ।\nతస్యాన్తే॑ సుషి॒రం సూ॒క్ష్మం తస్మి॑న్త్సర్వం॒ ప్రతి॑ష్ఠితమ్ ॥ ౮ ॥",
+        "tamil": "ஸ॒ந்த॒தம் ஶி॒லாபி॑ஸ்து॒ லம்ப॑த்யாகோஶ॒ஸந்நி॑பம் ।\nதஸ்யாந்தே॑ ஸுஷி॒ரம் ஸூ॒க்ஷ்மம் தஸ்மி॑ந்த்ஸர்வம்॒ ப்ரதி॑ஷ்டிதம் ॥ ௮ ॥",
+        "kannada": "ಸ॒ನ್ತ॒ತಂ ಶಿ॒ಲಾಭಿ॑ಸ್ತು॒ ಲಮ್ಬ॑ತ್ಯಾಕೋಶ॒ಸನ್ನಿ॑ಭಮ್ ।\nತಸ್ಯಾನ್ತೇ॑ ಸುಷಿ॒ರಂ ಸೂ॒ಕ್ಷ್ಮಂ ತಸ್ಮಿ॑ನ್ತ್ಸರ್ವಂ॒ ಪ್ರತಿ॑ಷ್ಠಿತಮ್ ॥ ೮ ॥",
+        "malayalam": "സ॒ന്ത॒തം ശി॒ലാഭി॑സ്തു॒ ലമ്ബ॑ത്യാകോശ॒സന്നി॑ഭമ് ।\nതസ്യാന്തേ॑ സുഷി॒രം സൂ॒ക്ഷ്മം തസ്മി॑ന്ത്സര്വം॒ പ്രതി॑ഷ്ഠിതമ് ॥ ൮ ॥",
+        "iast": "sa̱nta̱taṃ śi̱lābhi̭stu̱ lamba̭tyākośa̱sanni̭bham |\ntasyāntḙ suṣi̱raṃ sū̱kṣmaṃ tasmi̭ntsarva̱ṃ prati̭ṣṭhitam || 8 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Surrounded by delicate veins (nadis), hanging like an unopened flower bud, at its apex is a subtle microscopic aperture (sushira); in that subtle space, everything in creation is established.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "यह हृदय-कमल सूक्ष्म नाड़ियों (रक्त-वाहिनियों) से घिरा हुआ कली के समान नीचे लटका हुआ है। इसके अंत में एक अति सूक्ष्म छिद्र (गुहा) है, जिसमें यह सम्पूर्ण ब्रह्माण्ड प्रतिष्ठित है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఈ హృదయకమలము సూక్ష్మ నాడీజాలములతో చుట్టబడి, తామర మొగ్గ వలె వ్రేలాడుచున్నది. దాని చివరన ఒక అతి సూక్ష్మమైన రంధ్రము (దహరాకాశము) కలదు; దానియందే సమస్తమూ ప్రతిష్ఠితమై యున్నది.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "நாடிகளால் பின்னப்பட்டு, தாமரை மொட்டைப் போல் கீழ்நோக்கித் தொங்கும் இந்த இதயத்தின் நுனியில் ஒரு மிக நுண்ணிய துவாரம் (தஹராகாசம்) உள்ளது; அதில் தான் அனைத்தும் நிலைபெற்றுள்ளது.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಈ ಹೃದಯಕಮಲವು ಸೂಕ್ಷ್ಮ ನಾಡಿಗಳಿಂದ ಆವೃತವಾಗಿ ಮೊಗ್ಗಿನಂತೆ ತೂಗಾಡುತ್ತಿದೆ. ಅದರ ತುದಿಯಲ್ಲಿ ಒಂದು ಅತಿ ಸೂಕ್ಷ್ಮವಾದ ರಂಧ್ರವಿದೆ (ದಹರಾಕಾಶ); ಅದರಲ್ಲೇ ಸಮಸ್ತ ಸೃಷ್ಟಿಯು ನೆಲೆಗೊಂಡಿದೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे हृदयकमळ सूक्ष्म नाड्यांनी वेढलेले असून कळीप्रमाणे लटकलेले आहे. त्याच्या टोकाला एक अत्यंत सूक्ष्म छिद्र (गुहा) आहे, ज्यामध्ये हे सर्व विश्व प्रतिष्ठित आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "এই হৃদয়কমল সূক্ষ্ম নাড়িজাল দ্বারা পরিবেষ্টিত হইয়া মুকুলের ন্যায় লম্বমান রহিয়াছে; ইহার অন্তে একটি অতি সূক্ষ্ম ছিদ্র (দহরাকাশ) বিদ্যমান, যাহার মধ্যে সমস্ত বিশ্ব প্রতিষ্ঠিত।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આ હૃદય-કમળ સૂક્ષ્મ નાડીઓથી ઘેરાયેલું કળી સમાન લટકેલું છે. તેના છેડે એક અતિ સૂક્ષ્મ છિદ્ર (દહરાકાશ) છે, જેમાં આ સઘળું બ્રહ્માંડ પ્રતિષ્ઠિત છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "നാഡികളാൽ ചുറ്റപ്പെട്ട് താമരമൊട്ടുപോലെ തൂങ്ങിക്കിടക്കുന്ന ഈ ഹൃദയത്തിന്റെ അറ്റത്ത് അതിസൂക്ഷ്മമായ ഒരു ഗുഹയുണ്ട് (ദഹരാകാശം); അതിലാണ് സമസ്തവും കുടികൊള്ളുന്നത്.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଏହି ହୃଦୟ-କମଳ ସୂକ୍ଷ୍ମ ନାଡ଼ୀଗୁଡ଼ିକ ଦ୍ୱାରା ପରିବେଷ୍ଟିତ ହୋଇ କଢ଼ ଭଳି ଝୁଲି ରହିଛି । ଏହାର ଅଗ୍ରଭାଗରେ ଏକ ଅତି ସୂକ୍ଷ୍ମ ଗୁହା (ଦହରାକାଶ) ଅଛି, ଯେଉଁଥିରେ ସମସ୍ତ ବ୍ରହ୍ମାଣ୍ଡ ପ୍ରତିଷ୍ଠିତ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 9,
+      "verse_type": "VERSE",
+      "original_sanskrit": "तस्य॒ मध्यें॑ म॒हान॑ग्नि॒र्विश्वार्चि॑र्वि॒श्वतो॑मुखः ।\nसोऽग्र॑भु॒ग्विभ॑जन्ति॒ष्ठ॒न्नाहा॑रमज॒रः क॒विः ॥ ९ ॥",
+      "iast": "tasya॒ madhyē॑ ma॒hāna॑gni॒rviśvārci॑rvi॒śvatō॑mukhaḥ ।\nsō'gra॑bhu॒gvibha॑janti॒ṣṭha॒nnāhā॑ramaja॒raḥ ka॒viḥ ॥ 9 ॥",
+      "transliterations": {
+        "telugu": "తస్య॒ మధ్యేం॑ మ॒హాన॑గ్ని॒ర్విశ్వార్చి॑ర్వి॒శ్వతో॑ముఖః ।\nసోఽగ్ర॑భు॒గ్విభ॑జన్తి॒ష్ఠ॒న్నాహా॑రమజ॒రః క॒విః ॥ ౯ ॥",
+        "tamil": "தஸ்ய॒ மத்யேம்॑ ம॒ஹாந॑க்நி॒ர்விஶ்வார்சி॑ர்வி॒ஶ்வதோ॑முகஃ ।\nஸோऽக்ர॑பு॒க்விப॑ஜந்தி॒ஷ்ட॒ந்நாஹா॑ரமஜ॒ரஃ க॒விஃ ॥ ௯ ॥",
+        "kannada": "ತಸ್ಯ॒ ಮಧ್ಯೇಂ॑ ಮ॒ಹಾನ॑ಗ್ನಿ॒ರ್ವಿಶ್ವಾರ್ಚಿ॑ರ್ವಿ॒ಶ್ವತೋ॑ಮುಖಃ ।\nಸೋಽಗ್ರ॑ಭು॒ಗ್ವಿಭ॑ಜನ್ತಿ॒ಷ್ಠ॒ನ್ನಾಹಾ॑ರಮಜ॒ರಃ ಕ॒ವಿಃ ॥ ೯ ॥",
+        "malayalam": "തസ്യ॒ മധ്യേം॑ മ॒ഹാന॑ഗ്നി॒ര്വിശ്വാര്ചി॑ര്വി॒ശ്വതോ॑മുഖഃ ।\nസോഽഗ്ര॑ഭു॒ഗ്വിഭ॑ജന്തി॒ഷ്ഠ॒ന്നാഹാ॑രമജ॒രഃ ക॒വിഃ ॥ ൯ ॥",
+        "iast": "tasya̱ madhyḙṃ ma̱hāna̭gni̱rviśvārci̭rvi̱śvato̭mukhaḥ |\nso'gra̭bhu̱gvibha̭janti̱ṣṭha̱nnāhā̭ramaja̱raḥ ka̱viḥ || 9 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "In the center of that heart-space burns a great cosmic fire, radiating all rays, facing every direction. He is the first consumer of nourishment, distributing it throughout the body, ageless and all-knowing.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "उस हृदय-गुहा के मध्य में एक महान् दिव्य अग्नि प्रज्वलित है, जिसकी ज्वालाएँ सब ओर फैली हैं और जिसके मुख सब दिशाओं में हैं। वह अजर और सर्वज्ञ अग्नि ही सर्वप्रथम भोजन ग्रहण कर शरीर में ऊर्जा का सम्यक् विभाजन करती है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆ హృదయ కుహరము మధ్యన సర్వతోముఖ జ్వాలలు గల ఒక దివ్య మహాగ్ని వెలుగుచున్నది. అజరుడును, సర్వజ్ఞుడునైన ఆ పరమాత్ముడే వైశ్వానరాగ్ని రూపమున భుజించిన ఆహారమును శరీరమంతటికీ విభజించి పోషించుచున్నాడు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அந்த இதயக் குகையின் நடுவே எத்திசையிலும் சுடர்களையுடைய பெரும் அக்னி எரிகிறது. மூப்பற்றவரும் எல்லாம் அறிந்தவருமான அந்தப் பரம்பொருளே உண்ணும் உணவை முதன்முதலில் ஏற்று, உடலெங்கும் ஆற்றலாகப் பகிர்ந்தளிக்கிறார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಆ ಹೃದಯಗುಹೆಯ ಮಧ್ಯದಲ್ಲಿ ಎಲ್ಲೆಡೆ ವ್ಯಾಪಿಸಿದ ಜ್ವಾಲೆಗಳುಳ್ಳ ಒಂದು ಮಹಾ ಅಗ್ನಿ ಪ್ರಜ್ವಲಿಸುತ್ತಿದೆ. ಮುಪ್ಪಿಲ್ಲದ, ಸರ್ವಜ್ಞನಾದ ಆ ಪರಮಾತ್ಮನೇ ದೇಹದಲ್ಲಿ ಆಹಾರವನ್ನು ಶಕ್ತಿಯನ್ನಾಗಿ ಸಮಾನವಾಗಿ ಹಂಚುತ್ತಿದ್ದಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "त्या हृदयगुहेच्या मध्यभागी एक महान दिव्य अग्नी प्रज्वलित आहे, ज्याच्या ज्वाला सर्वत्र पसरल्या आहेत. अजर व सर्वज्ञ असणारा तो अग्नीच अन्नाचे ऊर्जेत योग्य विभाजन करतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "সেই হৃদয়গুহার অভ্যন্তরে সর্বতোমুখী শিখাযুক্ত একটি পরম অগ্নি প্রজ্বলিত রহিয়াছে। জরাহীন ও সর্বজ্ঞ সেই বৈশ্বানর অগ্নিই গৃহীত আহারকে পরিপাক করিয়া শরীরের সর্বত্র শক্তিরূপে বিতরণ করেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તે હૃદય-ગુહાની મધ્યમાં એક મહાન દિવ્ય અગ્નિ પ્રજ્વલિત છે, જેની જ્વાળાઓ સર્વત્ર પ્રસરેલી છે. અજર અને સર્વજ્ઞ તે અગ્નિ જ આહારનું પાચન કરી શરીરમાં ઊર્જાનું વિભાજન કરે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ആ ഹൃദയഗുഹയ്ക്കുള്ളിൽ എല്ലാ ദിക്കിലേക്കും ജ്വാലകളുള്ള ഒരു മഹാഅഗ്നി കത്തുന്നു. വാർദ്ധക്യമില്ലാത്തവനും സർവ്വജ്ഞനുമായ ആ ഭഗവാൻ തന്നെയാണ് ആഹാരത്തെ ശരീരമാസകലം ഊർജ്ജമായി വിഭജിച്ചു നൽകുന്നത്.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସେହି ହୃଦୟ-ଗୁହା ମଧ୍ୟରେ ଏକ ମହାନ ଦିବ୍ୟ ଅଗ୍ନି ପ୍ରଜ୍ଜ୍ୱଳିତ, ଯାହାର ଶିଖା ସର୍ବତ୍ର ବ୍ୟାପ୍ତ । ଅଜର ଓ ସର୍ବଜ୍ଞ ସେହି ଅଗ୍ନି ହିଁ ଆହାରର ପରିପାକ କରି ଶରୀରରେ ଶକ୍ତି ବିଭାଜନ କରନ୍ତି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 10,
+      "verse_type": "VERSE",
+      "original_sanskrit": "ति॒र्य॒गू॒र्ध्वम॑धःशा॒यी॒ र॒श्मय॑स्तस्य सन्तताः ।\nस॒न्ता॒पय॑ति स्वं दे॒हमापा॑दतलमस्त॒कः ॥ १० ॥",
+      "iast": "ti॒rya॒gū॒rdhvama॑dhaḥśā॒yī॒ ra॒śmaya॑stasya santatāḥ ।\nsa॒ntā॒paya॑ti svaṁ dē॒hamāpā॑datalamasta॒kaḥ ॥ 10 ॥",
+      "transliterations": {
+        "telugu": "తి॒ర్య॒గూ॒ర్ధ్వమ॑ధఃశా॒యీ॒ ర॒శ్మయ॑స్తస్య సన్తతాః ।\nస॒న్తా॒పయ॑తి స్వం దే॒హమాపా॑దతలమస్త॒కః ॥ ౧౦ ॥",
+        "tamil": "தி॒ர்ய॒கூ॒ர்த்வம॑தஃஶா॒யீ॒ ர॒ஶ்மய॑ஸ்தஸ்ய ஸந்ததாஃ ।\nஸ॒ந்தா॒பய॑தி ஸ்வம் தே॒ஹமாபா॑ததலமஸ்த॒கஃ ॥ ௧௦ ॥",
+        "kannada": "ತಿ॒ರ್ಯ॒ಗೂ॒ರ್ಧ್ವಮ॑ಧಃಶಾ॒ಯೀ॒ ರ॒ಶ್ಮಯ॑ಸ್ತಸ್ಯ ಸನ್ತತಾಃ ।\nಸ॒ನ್ತಾ॒ಪಯ॑ತಿ ಸ್ವಂ ದೇ॒ಹಮಾಪಾ॑ದತಲಮಸ್ತ॒ಕಃ ॥ ೧೦ ॥",
+        "malayalam": "തി॒ര്യ॒ഗൂ॒ര്ധ്വമ॑ധഃശാ॒യീ॒ ര॒ശ്മയ॑സ്തസ്യ സന്തതാഃ ।\nസ॒ന്താ॒പയ॑തി സ്വം ദേ॒ഹമാപാ॑ദതലമസ്ത॒കഃ ॥ ൧൦ ॥",
+        "iast": "ti̱rya̱gū̱rdhvama̭dhaḥśā̱yī̱ ra̱śmaya̭stasya santatāḥ |\nsa̱ntā̱paya̭ti svaṃ de̱hamāpā̭datalamasta̱kaḥ || 10 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Its radiant rays spread horizontally, upward, and downward, warming and energizing its own bodily vessel from the soles of the feet to the crown of the head.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "उस हृदय-अग्नि की प्रकाशमान किरणें तिर्यक् (तिरछी), ऊपर और नीचे सर्वत्र निरंतर फैली रहती हैं; वह सिर से लेकर पैर के तलवों तक अपने सम्पूर्ण शरीर को चेतना और ऊर्जा से प्रकाशित व स्पंदित करती है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆ దివ్య అగ్ని యొక్క తేజోకిరణములు అడ్డముగాను, పైకిని, క్రిందికిని అంతటా వ్యాపించి యుండును. అది శిరస్సు నుండి పాదముల వరకు తన శరీరమంతటినీ చైతన్యముతో, ప్రాణశక్తితో నింపుచున్నది.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அந்த அக்னியின் கிரணங்கள் குறுக்கேயும், மேலேயும், கீழேயும் இடைவிடாது பரவுகின்றன. அது பாதங்கள் முதல் தலை உச்சி வரை முழு உடலையும் உயிர் ஆற்றலால் கதகதப்பாகவும் சுறுசுறுப்பாகவும் வைக்கிறது.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಆ ಅಗ್ನಿಯ ಪ್ರಕಾಶಮಾನ ಕಿರಣಗಳು ಅಡ್ಡಲಾಗಿ, ಮೇಲಕ್ಕೆ ಮತ್ತು ಕೆಳಕ್ಕೆ ಸದಾ ಹರಡಿಕೊಂಡಿರುತ್ತವೆ. ಅದು ಶಿರಸ್ಸಿನಿಂದ ಹಿಡಿದು ಪಾದದ ತುದಿಯವರೆಗೆ ಸಮಗ್ರ ಶರೀರವನ್ನು ಪ್ರಾಣಶಕ್ತಿಯಿಂದ ಬೆಳಗಿಸುತ್ತದೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "त्या अग्नीची प्रकाशकिरणे आडवी, वर आणि खाली सर्वत्र अखंड पसरलेली असतात; ती डोक्यापासून पायांच्या तळव्यांपर्यंत संपूर्ण शरीराला प्राणऊर्जेने भरून ठेवतात.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "সেই অগ্নির আলোক রশ্মিসমূহ তির্যক, ঊর্ধ্ব ও নিম্নভাগে সতত প্রসারিত রহিয়াছে; তাহা মস্তক হইতে পদতল পর্যন্ত সমগ্র শরীরকে চৈতন্য ও প্রাণশক্তিতে উদ্বেলিত রাখে।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તે અગ્નિનાં પ્રકાશમાન કિરણો તિર્યક, ઊર્ધ્વ અને અધઃ સર્વત્ર સતત પ્રસરેલાં રહે છે; તે મસ્તકથી પગના તળિયા સુધી સમગ્ર શરીરને પ્રાણશક્તિથી ચેતનવંતું રાખે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ആ അഗ്നിയുടെ രശ്മികൾ കുറുകെയും മേലേക്കും താഴേക്കും എപ്പോഴും പ്രസരിക്കുന്നു. അത് ശിരസ്സുമുതൽ പാദംവരെ ശരീരമാസകലം പ്രാണചൈതന്യത്താൽ നിറയ്ക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସେହି ଅଗ୍ନିର ପ୍ରକାଶମାନ କିରଣ ତେର୍ଚ୍ଛା, ଉପରକୁ ଓ ତଳକୁ ସର୍ବତ୍ର ବ୍ୟାପ୍ତ ହୋଇ ରହିଥାଏ; ତାହା ମସ୍ତକରୁ ପାଦ ପର୍ଯ୍ୟନ୍ତ ସମଗ୍ର ଶରୀରକୁ ପ୍ରାଣଶକ୍ତିରେ ପରିପୂର୍ଣ୍ଣ ରଖେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 11,
+      "verse_type": "VERSE",
+      "original_sanskrit": "तस्य॒ मध्यें॒ वह्निशिखा अणी॑यो॒र्ध्वा व्य॑वस्थि॒ता ।\nनी॒लतो॑यद॒मध्य॑स्थाद् वि॒द्युल्ले॑खेव भास्व॒रा ॥ ११ ॥",
+      "iast": "tasya॒ madhyē॑ vahniśikhā aṇī॑yō॒rdhvā vya॑vasthi॒tā ।\nnī॒latō॑yada॒madhya॑sthād vi॒dyullē॑khēva bhāsva॒rā ॥ 11 ॥",
+      "transliterations": {
+        "telugu": "తస్య॒ మధ్యేం॒ వహ్నిశిఖా అణీ॑యో॒ర్ధ్వా వ్య॑వస్థి॒తా ।\nనీ॒లతో॑యద॒మధ్య॑స్థాద్ వి॒ద్యుల్లే॑ఖేవ భాస్వ॒రా ॥ ౧౧ ॥",
+        "tamil": "தஸ்ய॒ மத்யேம்॒ வஹ்நிஶிகா அணீ॑யோ॒ர்த்வா வ்ய॑வஸ்தி॒தா ।\nநீ॒லதோ॑யத॒மத்ய॑ஸ்தாத் வி॒த்யுல்லே॑கேவ பாஸ்வ॒ரா ॥ ௧௧ ॥",
+        "kannada": "ತಸ್ಯ॒ ಮಧ್ಯೇಂ॒ ವಹ್ನಿಶಿಖಾ ಅಣೀ॑ಯೋ॒ರ್ಧ್ವಾ ವ್ಯ॑ವಸ್ಥಿ॒ತಾ ।\nನೀ॒ಲತೋ॑ಯದ॒ಮಧ್ಯ॑ಸ್ಥಾದ್ ವಿ॒ದ್ಯುಲ್ಲೇ॑ಖೇವ ಭಾಸ್ವ॒ರಾ ॥ ೧೧ ॥",
+        "malayalam": "തസ്യ॒ മധ്യേം॒ വഹ്നിശിഖാ അണീ॑യോ॒ര്ധ്വാ വ്യ॑വസ്ഥി॒താ ।\nനീ॒ലതോ॑യദ॒മധ്യ॑സ്ഥാദ് വി॒ദ്യുല്ലേ॑ഖേവ ഭാസ്വ॒രാ ॥ ൧൧ ॥",
+        "iast": "tasya̱ madhye̱ṃ vahniśikhā aṇī̭yo̱rdhvā vya̭vasthi̱tā |\nnī̱lato̭yada̱madhya̭sthād vi̱dyullḙkheva bhāsva̱rā || 11 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "In the center of that fire stands an exceedingly subtle flame pointing upward, brilliant and dazzling like a flash of golden lightning in the heart of a dark rain-bearing cloud.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "उस अग्नि के ठीक मध्य में एक परम सूक्ष्म, ऊपर की ओर उठने वाली दिव्य ज्योति-शिखा स्थित है; जो गहरे नीले मेघों के बीच कौंधने वाली चमकीली बिजली की रेखा के समान परम प्रकाशमान है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆ అగ్ని మధ్యమందు ఊర్ధ్వముఖముగా వెలుగుచున్న ఒక అతి సూక్ష్మమైన జ్యోతిశ్శిఖ కలదు; అది నల్లని నీలిమేఘముల నడుమ తళుక్కున మెరియు మెరుపుతీగ వలె దేదీప్యమానముగా ప్రకాశించుచున్నది.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அந்த அக்னியின் நடுவே மேல்நோக்கி எழும் மிக நுண்ணிய ஒரு சுடர் உள்ளது; அது நீல மேகத்தின் நடுவே மின்னும் மின்னல் கீற்றைப் போல் பேரொளியோடு ஒளிர்கிறது.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಆ ಅಗ್ನಿಯ ಮಧ್ಯದಲ್ಲಿ ಮೇಲ್ಮುಖವಾಗಿ ಪ್ರಜ್ವಲಿಸುವ ಒಂದು ಅತಿ ಸೂಕ್ಷ್ಮವಾದ ಜ್ಯೋತಿಶ್ಶಿಖೆ ನೆಲೆಸಿದೆ; ಅದು ಕಡುನೀಲಿ ಮೋಡಗಳ ನಡುವೆ ಹೊಳೆಯುವ ಮಿಂಚಿನ ಬಳ್ಳಿಯಂತೆ ಅತ್ಯಂತ ತೇಜೋಮಯವಾಗಿದೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "त्या अग्नीच्या मध्यभागी वरच्या दिशेने जाणारी एक अत्यंत सूक्ष्म ज्योती स्थित आहे; जी काळ्या-निळ्या मेघांच्या मधोमध चमकणाऱ्या विजेच्या रेषेप्रमाणे तेजस्वी आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "সেই অগ্নির কেন্দ্রস্থলে একটি অতি সূক্ষ্ম, ঊর্ধ্বমুখী দিব্য শিখা অবস্থিত; যাহা গাঢ় নীল মেঘের মধ্যস্থিত প্রোজ্জ্বল বিদ্যুৎরেখার ন্যায় মহাতেজে ভাস্বর।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તે અગ્નિની મધ્યમાં ઊર્ધ્વમુખી એક અતિ સૂક્ષ્મ દિવ્ય જ્યોત સ્થિત છે; જે ઘેરા નીલા વાદળોની વચ્ચે ચમકતી વીજળીની રેખા સમાન પરમ તેજસ્વી છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ആ അഗ്നിയുടെ നടുവിലായി മുകളിലേക്ക് ഉയർന്നുനിൽക്കുന്ന അതിസൂക്ഷ്മമായ ഒരു ജ്വാലയുണ്ട്; അത് നീലമേഘങ്ങൾക്കിടയിൽ തിളങ്ങുന്ന മിന്നൽപ്പിണരുപോലെ പ്രഭാപൂർണ്ണമാണ്.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସେହି ଅଗ୍ନିର କେନ୍ଦ୍ରସ୍ଥଳରେ ଏକ ଅତି ସୂକ୍ଷ୍ମ, ଊର୍ଦ୍ଧ୍ୱମୁଖୀ ଦିବ୍ୟ ଶିଖା ଅବସ୍ଥିତ; ଯାହା ଗାଢ଼ ନୀଳ ମେଘ ମଧ୍ୟରେ ଚମକୁଥିବା ବିଜୁଳି ରେଖା ଭଳି ଅତ୍ୟନ୍ତ ତେଜୋମୟ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 12,
+      "verse_type": "VERSE",
+      "original_sanskrit": "तस्याः॑ शिखा॒या म॑ध्ये प॒रमा॑त्मा व्य॒वस्थि॑तः ।\nस ब्र॒ह्मा स शि॒वः स हरिः॒ स इन्द्रः॒ सोऽक्षरः॑ पर॒मः स्व॒राट् ॥ १२ ॥",
+      "iast": "tasyāḥ॑ śikhā॒yā ma॑dhyē pa॒ramā॑tmā vya॒vasthi॑taḥ ।\nsa bra॒hmā sa śi॒vaḥ sa hariḥ॒ sa indraḥ॒ sō'kṣaraḥ॑ para॒maḥ sva॒rāṭ ॥ 12 ॥",
+      "transliterations": {
+        "telugu": "తస్యాః॑ శిఖా॒యా మ॑ధ్యే ప॒రమా॑త్మా వ్య॒వస్థి॑తః ।\nస బ్ర॒హ్మా స శి॒వః స హరిః॒ స ఇన్ద్రః॒ సోఽక్షరః॑ పర॒మః స్వ॒రాట్ ॥ ౧౨ ॥",
+        "tamil": "தஸ்யாஃ॑ ஶிகா॒யா ம॑த்யே ப॒ரமா॑த்மா வ்ய॒வஸ்தி॑தஃ ।\nஸ ப்ர॒ஹ்மா ஸ ஶி॒வஃ ஸ ஹரிஃ॒ ஸ இந்த்ரஃ॒ ஸோऽக்ஷரஃ॑ பர॒மஃ ஸ்வ॒ராட் ॥ ௧௨ ॥",
+        "kannada": "ತಸ್ಯಾಃ॑ ಶಿಖಾ॒ಯಾ ಮ॑ಧ್ಯೇ ಪ॒ರಮಾ॑ತ್ಮಾ ವ್ಯ॒ವಸ್ಥಿ॑ತಃ ।\nಸ ಬ್ರ॒ಹ್ಮಾ ಸ ಶಿ॒ವಃ ಸ ಹರಿಃ॒ ಸ ಇನ್ದ್ರಃ॒ ಸೋಽಕ್ಷರಃ॑ ಪರ॒ಮಃ ಸ್ವ॒ರಾಟ್ ॥ ೧೨ ॥",
+        "malayalam": "തസ്യാഃ॑ ശിഖാ॒യാ മ॑ധ്യേ പ॒രമാ॑ത്മാ വ്യ॒വസ്ഥി॑തഃ ।\nസ ബ്ര॒ഹ്മാ സ ശി॒വഃ സ ഹരിഃ॒ സ ഇന്ദ്രഃ॒ സോഽക്ഷരഃ॑ പര॒മഃ സ്വ॒രാട് ॥ ൧൨ ॥",
+        "iast": "tasyā̭ḥ śikhā̱yā ma̭dhye pa̱ramā̭tmā vya̱vasthi̭taḥ |\nsa bra̱hmā sa śi̱vaḥ sa hari̱ḥ sa indra̱ḥ so'kṣara̭ḥ para̱maḥ sva̱rāṭ || 12 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "In the very core of that subtle flame resides the Supreme Paramatman. He is Brahma, He is Shiva, He is Hari (Vishnu), He is Indra; He is the Imperishable, the Supreme, and the Self-Luminous Sovereign!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "उस दिव्य ज्योति-शिखा के मध्य में साक्षात् 'परमात्मा' स्थित हैं। वही ब्रह्मा हैं, वही शिव हैं, वही श्रीहरि (विष्णु) हैं, वही देवराज इन्द्र हैं, वही अविनाशी परम तत्त्व और स्वयंप्रकाशमान सम्राट् (स्वराट्) हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆ దివ్య శిఖ మధ్యమందు సాక్షాత్ 'పరమాత్మ' కొలువై యున్నాడు. ఆయనే బ్రహ్మ, ఆయనే శివుడు, ఆయనే శ్రీహరి, ఆయనే ఇంద్రుడు, ఆయనే అక్షర పరబ్రహ్మము અને స్వయంప్రకాశమానుడైన పరమేశ్వరుడు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அந்த ஜோதிச் சுடரின் நடுவே சாட்சாத் 'பரமாத்மா' வீற்றிருக்கிறார். அவரே பிரம்மா, அவரே சிவன், அவரே ஸ்ரீஹரி, அவரே இந்திரன், அவரே அழியாத பரம்பொருள், அவரே சுயம்பிரகாசமுடைய பேரரசன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಆ ದಿವ್ಯ ಜ್ಯೋತಿಶ್ಶಿಖೆಯ ಮಧ್ಯದಲ್ಲಿ ಸಾಕ್ಷಾತ್ 'ಪರಮಾತ್ಮನು' ನೆಲೆಸಿದ್ದಾನೆ. ಆತನೇ ಬ್ರಹ್ಮ, ಆತನೇ ಶಿವ, ಆತನೇ ಶ್ರೀಹರಿ, ಆತನೇ ಇಂದ್ರ, ಆತನೇ ಅಕ್ಷರನಾದ ಪರಬ್ರಹ್ಮ ಮತ್ತು ಸ್ವಯಂಪ್ರಕಾಶ ಚಕ್ರವರ್ತಿ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "त्या दिव्य ज्योतीच्या मध्यभागी साक्षात 'परमात्मा' स्थित आहे. तोच ब्रह्मा, तोच शिव, तोच श्रीहरी, तोच इंद्र, तोच अविनाशी परमतत्त्व आणि स्वयंप्रकाशित सम्राट (स्वराट्) आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "সেই দিব্য শিখার অভ্যন্তরে স্বয়ং 'পরমাত্মা' প্রতিষ্ঠিত রহিয়াছেন। তিনিই ব্রহ্মা, তিনিই শিব, তিনিই শ্রীহরি, তিনিই ইন্দ্র, তিনিই অবিনাশী পরব্রহ্ম এবং স্বপ্রকাশ সার্বভৌম সম্রাট।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તે દિવ્ય જ્યોતની મધ્યમાં સાક્ષાત્ 'પરમાત્મા' બિરાજે છે. તેઓ જ બ્રહ્મા છે, તેઓ જ શિવ છે, તેઓ જ શ્રીહરિ છે, તેઓ જ ઇન્દ્ર છે, તેઓ જ અવિનાશી પરમતત્ત્વ અને સ્વયંપ્રકાશિત સમ્રાટ છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ആ ദിവ്യജ്വാലയുടെ നടുവിലാണ് സാക്ഷാൽ 'പരമാത്മാവ്' സ്ഥിതിചെയ്യുന്നത്. അവൻ തന്നെയാണ് ബ്രഹ്മാവ്, അവൻ തന്നെയാണ് ശിവൻ, അവൻ തന്നെയാണ് വിഷ്ണു, അവൻ തന്നെയാണ് ഇന്ദ്രൻ, അവൻ തന്നെയാണ് നാശമില്ലാത്ത പരബ്രഹ്മവും സ്വയംപ്രകാശമാനനായ നാഥനും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସେହି ଦିବ୍ୟ ଶିଖା ମଧ୍ୟରେ ସାକ୍ଷାତ 'ପରମାତ୍ମା' ଅବସ୍ଥିତ । ସେ ହିଁ ବ୍ରହ୍ମା, ସେ ହିଁ ଶିବ, ସେ ହିଁ ଶ୍ରୀହରି, ସେ ହିଁ ଇନ୍ଦ୍ର, ସେ ହିଁ ଅବିନାଶୀ ପରବ୍ରହ୍ମ ଏବଂ ସ୍ୱୟଂପ୍ରକାଶ ସାର୍ବଭୌମ ସମ୍ରାଟ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    }
+  ]
+}

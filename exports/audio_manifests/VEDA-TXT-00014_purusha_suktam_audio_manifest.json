@@ -1,0 +1,381 @@
+{
+  "content_id": "VEDA-TXT-00014",
+  "canonical_title": "Purusha Suktam",
+  "devanagari_title": "पुरुषसूक्तम्",
+  "meter": "Anushtubh (1-15) / Trishtubh (16)",
+  "primary_deity": "Purusha / Supreme Being",
+  "original_language": "sa",
+  "total_verses": 16,
+  "generated_at_utc": "2026-11-04T23:40:37.483932+00:00",
+  "cues": [
+    {
+      "verse_number": 1,
+      "verse_id": "VEDA-TXT-00014-V001",
+      "original_text": "सहस्र॑शीर्षा पुरु॑षः सहस्रा॒क्षः स॒हस्र॑पात् ।\nस भूमिं॑ वि॒श्वतो॑ वृ॒त्वात्य॑तिष्ठद्दशाङ्गु॒लम् ॥ १ ॥",
+      "iast_phonetic": "sahasra॑śīrṣā puru॑ṣaḥ sahasrā॒kṣaḥ sa॒hasra॑pāt ।\nsa bhūmiṁ॑ vi॒śvatō॑ vṛ॒tvātya॑tiṣṭhaddaśāṅgu॒lam ॥ 1 ॥",
+      "pause_after_verse_sec": 2.5,
+      "has_vedic_swaras": true,
+      "swara_annotations": {
+        "anudatta_count": 5,
+        "svarita_count": 6,
+        "udatta_count": 0,
+        "dirgha_svarita_count": 0,
+        "chandrabindu_count": 0,
+        "has_vedic_accents": true,
+        "total_accent_count": 11
+      },
+      "regional_script_rendering": "सहस्र॑शीर्षा पुरु॑षः सहस्रा॒क्षः स॒हस्र॑पात् ।\nस भूमिं॑ वि॒श्वतो॑ वृ॒त्वात्य॑तिष्ठद्दशाङ्गु॒लम् ॥ १ ॥",
+      "pronunciation_notes": [
+        "Taittiriya/Rigvedic Swara markers active: maintain strictly pitch inflection (anudatta low, svarita high).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Slow classical Vedic tempo (Vilambita Laya); do not elide visargas."
+    },
+    {
+      "verse_number": 2,
+      "verse_id": "VEDA-TXT-00014-V002",
+      "original_text": "पुरु॑ष ए॒वेदं सर्वं॒ यद्भू॒तं यच्च॒ भव्य॑म् ।\nउ॒तामृ॑त॒त्वस्येशा॑नो॒ यदन्ने॑नाति॒रोह॑ति ॥ २ ॥",
+      "iast_phonetic": "puru॑ṣa ē॒vēdaṁ sarvaṁ॒ yadbhū॒taṁ yacca॒ bhavya॑m ।\nu॒tāmṛ॑ta॒tvasyēśā॑nō॒ yadannē॑nāti॒rōha॑ti ॥ 2 ॥",
+      "pause_after_verse_sec": 2.5,
+      "has_vedic_swaras": true,
+      "swara_annotations": {
+        "anudatta_count": 8,
+        "svarita_count": 6,
+        "udatta_count": 0,
+        "dirgha_svarita_count": 0,
+        "chandrabindu_count": 0,
+        "has_vedic_accents": true,
+        "total_accent_count": 14
+      },
+      "regional_script_rendering": "पुरु॑ष ए॒वेदं सर्वं॒ यद्भू॒तं यच्च॒ भव्य॑म् ।\nउ॒तामृ॑त॒त्वस्येशा॑नो॒ यदन्ने॑नाति॒रोह॑ति ॥ २ ॥",
+      "pronunciation_notes": [
+        "Taittiriya/Rigvedic Swara markers active: maintain strictly pitch inflection (anudatta low, svarita high).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Slow classical Vedic tempo (Vilambita Laya); do not elide visargas."
+    },
+    {
+      "verse_number": 3,
+      "verse_id": "VEDA-TXT-00014-V003",
+      "original_text": "ए॒तावा॑नस्य महि॒मातो॒ ज्यायां॑श्च॒ पूरु॑षः ।\nपादो॑ऽस्य॒ विश्वा॑ भू॒तानि॑ त्रि॒पाद॑स्या॒मृतं॑ दि॒वि ॥ ३ ॥",
+      "iast_phonetic": "ē॒tāvā॑nasya mahi॒mātō॒ jyāyāṁ॑śca॒ pūru॑ṣaḥ ।\npādō॑'sya॒ viśvā॑ bhū॒tāni॑ tri॒pāda॑syā॒mṛtaṁ॑ di॒vi ॥ 3 ॥",
+      "pause_after_verse_sec": 2.5,
+      "has_vedic_swaras": true,
+      "swara_annotations": {
+        "anudatta_count": 9,
+        "svarita_count": 8,
+        "udatta_count": 0,
+        "dirgha_svarita_count": 0,
+        "chandrabindu_count": 0,
+        "has_vedic_accents": true,
+        "total_accent_count": 17
+      },
+      "regional_script_rendering": "ए॒तावा॑नस्य महि॒मातो॒ ज्यायां॑श्च॒ पूरु॑षः ।\nपादो॑ऽस्य॒ विश्वा॑ भू॒तानि॑ त्रि॒पाद॑स्या॒मृतं॑ दि॒वि ॥ ३ ॥",
+      "pronunciation_notes": [
+        "Taittiriya/Rigvedic Swara markers active: maintain strictly pitch inflection (anudatta low, svarita high).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Slow classical Vedic tempo (Vilambita Laya); do not elide visargas."
+    },
+    {
+      "verse_number": 4,
+      "verse_id": "VEDA-TXT-00014-V004",
+      "original_text": "त्रि॒पादू॒र्ध्व उदै॒त्पुरु॑षः पादो॑ऽस्ये॒हाभ॑व॒त्पुनः॑ ।\nततो॒ विष्व॒ङ् व्य॑क्रामत्साशनानश॒ने अ॒भि ॥ ४ ॥",
+      "iast_phonetic": "tri॒pādū॒rdhva udai॒tpuru॑ṣaḥ pādō॑'syē॒hābha॑va॒tpunaḥ॑ ।\ntatō॒ viṣva॒ṅ vya॑krāmatsāśanānaśa॒nē a॒bhi ॥ 4 ॥",
+      "pause_after_verse_sec": 2.5,
+      "has_vedic_swaras": true,
+      "swara_annotations": {
+        "anudatta_count": 9,
+        "svarita_count": 5,
+        "udatta_count": 0,
+        "dirgha_svarita_count": 0,
+        "chandrabindu_count": 0,
+        "has_vedic_accents": true,
+        "total_accent_count": 14
+      },
+      "regional_script_rendering": "त्रि॒पादू॒र्ध्व उदै॒त्पुरु॑षः पादो॑ऽस्ये॒हाभ॑व॒त्पुनः॑ ।\nततो॒ विष्व॒ङ् व्य॑क्रामत्साशनानश॒ने अ॒भि ॥ ४ ॥",
+      "pronunciation_notes": [
+        "Taittiriya/Rigvedic Swara markers active: maintain strictly pitch inflection (anudatta low, svarita high).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Slow classical Vedic tempo (Vilambita Laya); do not elide visargas."
+    },
+    {
+      "verse_number": 5,
+      "verse_id": "VEDA-TXT-00014-V005",
+      "original_text": "तस्मा॑द्वि॒राळ॑जायत वि॒राजो॒ अधि॒ पूरु॑षः ।\nस जा॒तो अत्य॑रिच्यत प॒श्चाद्भूमि॒मथो॑ पु॒रः ॥ ५ ॥",
+      "iast_phonetic": "tasmā॑dvi॒rāḷa॑jāyata vi॒rājō॒ adhi॒ pūru॑ṣaḥ ।\nsa jā॒tō atya॑ricyata pa॒ścādbhūmi॒mathō॑ pu॒raḥ ॥ 5 ॥",
+      "pause_after_verse_sec": 2.5,
+      "has_vedic_swaras": true,
+      "swara_annotations": {
+        "anudatta_count": 8,
+        "svarita_count": 5,
+        "udatta_count": 0,
+        "dirgha_svarita_count": 0,
+        "chandrabindu_count": 0,
+        "has_vedic_accents": true,
+        "total_accent_count": 13
+      },
+      "regional_script_rendering": "तस्मा॑द्वि॒राळ॑जायत वि॒राजो॒ अधि॒ पूरु॑षः ।\nस जा॒तो अत्य॑रिच्यत प॒श्चाद्भूमि॒मथो॑ पु॒रः ॥ ५ ॥",
+      "pronunciation_notes": [
+        "Taittiriya/Rigvedic Swara markers active: maintain strictly pitch inflection (anudatta low, svarita high).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Slow classical Vedic tempo (Vilambita Laya); do not elide visargas."
+    },
+    {
+      "verse_number": 6,
+      "verse_id": "VEDA-TXT-00014-V006",
+      "original_text": "यत्पुरु॑षेण ह॒विषा॑ दे॒वा य॒ज्ञमत॑न्वत ।\nव॒स॒न्तो अ॑स्यासी॒दाज्यं॑ ग्री॒ष्म इ॒ध्मः श॒रद्ध॒विः ॥ ६ ॥",
+      "iast_phonetic": "yatpuru॑ṣēṇa ha॒viṣā॑ dē॒vā ya॒jñamata॑nvata ।\nva॒sa॒ntō a॑syāsī॒dājyaṁ॑ grī॒ṣma i॒dhmaḥ śa॒raddha॒viḥ ॥ 6 ॥",
+      "pause_after_verse_sec": 2.5,
+      "has_vedic_swaras": true,
+      "swara_annotations": {
+        "anudatta_count": 10,
+        "svarita_count": 5,
+        "udatta_count": 0,
+        "dirgha_svarita_count": 0,
+        "chandrabindu_count": 0,
+        "has_vedic_accents": true,
+        "total_accent_count": 15
+      },
+      "regional_script_rendering": "यत्पुरु॑षेण ह॒विषा॑ दे॒वा य॒ज्ञमत॑न्वत ।\nव॒स॒न्तो अ॑स्यासी॒दाज्यं॑ ग्री॒ष्म इ॒ध्मः श॒रद्ध॒विः ॥ ६ ॥",
+      "pronunciation_notes": [
+        "Taittiriya/Rigvedic Swara markers active: maintain strictly pitch inflection (anudatta low, svarita high).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Slow classical Vedic tempo (Vilambita Laya); do not elide visargas."
+    },
+    {
+      "verse_number": 7,
+      "verse_id": "VEDA-TXT-00014-V007",
+      "original_text": "स॒प्तास्या॑सन्परि॒धय॒स्त्रिः स॒प्त स॒मिधः॑ कृ॒ताः ।\nदे॒वा यद्य॒ज्ञं त॑न्वा॒ना अब॑ध्न॒न्पुरु॑षं प॒शुम् ॥ ७ ॥",
+      "iast_phonetic": "sa॒ptāsyā॑sanpari॒dhaya॒striḥ sa॒pta sa॒midhaḥ॑ kṛ॒tāḥ ।\ndē॒vā yadya॒jñaṁ ta॑nvā॒nā aba॑dhna॒npuru॑ṣaṁ pa॒śum ॥ 7 ॥",
+      "pause_after_verse_sec": 2.5,
+      "has_vedic_swaras": true,
+      "swara_annotations": {
+        "anudatta_count": 11,
+        "svarita_count": 5,
+        "udatta_count": 0,
+        "dirgha_svarita_count": 0,
+        "chandrabindu_count": 0,
+        "has_vedic_accents": true,
+        "total_accent_count": 16
+      },
+      "regional_script_rendering": "स॒प्तास्या॑सन्परि॒धय॒स्त्रिः स॒प्त स॒मिधः॑ कृ॒ताः ।\nदे॒वा यद्य॒ज्ञं त॑न्वा॒ना अब॑ध्न॒न्पुरु॑षं प॒शुम् ॥ ७ ॥",
+      "pronunciation_notes": [
+        "Taittiriya/Rigvedic Swara markers active: maintain strictly pitch inflection (anudatta low, svarita high).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Slow classical Vedic tempo (Vilambita Laya); do not elide visargas."
+    },
+    {
+      "verse_number": 8,
+      "verse_id": "VEDA-TXT-00014-V008",
+      "original_text": "तं य॒ज्ञं ब॒र्हिषि॒ प्रौक्ष॒न्पुरु॑षं जा॒तम॑ग्र॒तः ।\nतेन॑ दे॒वा अय॑जन्त सा॒ध्या ऋष॑यश्च॒ ये ॥ ८ ॥",
+      "iast_phonetic": "taṁ ya॒jñaṁ ba॒rhiṣi॒ praukṣa॒npuru॑ṣaṁ jā॒tama॑gra॒taḥ ।\ntēna॑ dē॒vā aya॑janta sā॒dhyā ṛṣa॑yaśca॒ yē ॥ 8 ॥",
+      "pause_after_verse_sec": 2.5,
+      "has_vedic_swaras": true,
+      "swara_annotations": {
+        "anudatta_count": 9,
+        "svarita_count": 5,
+        "udatta_count": 0,
+        "dirgha_svarita_count": 0,
+        "chandrabindu_count": 0,
+        "has_vedic_accents": true,
+        "total_accent_count": 14
+      },
+      "regional_script_rendering": "तं य॒ज्ञं ब॒र्हिषि॒ प्रौक्ष॒न्पुरु॑षं जा॒तम॑ग्र॒तः ।\nतेन॑ दे॒वा अय॑जन्त सा॒ध्या ऋष॑यश्च॒ ये ॥ ८ ॥",
+      "pronunciation_notes": [
+        "Taittiriya/Rigvedic Swara markers active: maintain strictly pitch inflection (anudatta low, svarita high).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Slow classical Vedic tempo (Vilambita Laya); do not elide visargas."
+    },
+    {
+      "verse_number": 9,
+      "verse_id": "VEDA-TXT-00014-V009",
+      "original_text": "तस्मा॑द्य॒ज्ञात्स॑र्व॒हुतः॒ संभृ॑तं पृषदा॒ज्यम् ।\nप॒शून्तांश्च॑क्रे वाय॒व्यानार॒ण्यान् ग्राम्या॑श्च॒ ये ॥ ९ ॥",
+      "iast_phonetic": "tasmā॑dya॒jñātsa॑rva॒hutaḥ॒ saṁbhṛ॑taṁ pṛṣadā॒jyam ।\npa॒śūntāṁśca॑krē vāya॒vyānāra॒ṇyān grāmyā॑śca॒ yē ॥ 9 ॥",
+      "pause_after_verse_sec": 2.5,
+      "has_vedic_swaras": true,
+      "swara_annotations": {
+        "anudatta_count": 8,
+        "svarita_count": 5,
+        "udatta_count": 0,
+        "dirgha_svarita_count": 0,
+        "chandrabindu_count": 0,
+        "has_vedic_accents": true,
+        "total_accent_count": 13
+      },
+      "regional_script_rendering": "तस्मा॑द्य॒ज्ञात्स॑र्व॒हुतः॒ संभृ॑तं पृषदा॒ज्यम् ।\nप॒शून्तांश्च॑क्रे वाय॒व्यानार॒ण्यान् ग्राम्या॑श्च॒ ये ॥ ९ ॥",
+      "pronunciation_notes": [
+        "Taittiriya/Rigvedic Swara markers active: maintain strictly pitch inflection (anudatta low, svarita high).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Slow classical Vedic tempo (Vilambita Laya); do not elide visargas."
+    },
+    {
+      "verse_number": 10,
+      "verse_id": "VEDA-TXT-00014-V010",
+      "original_text": "तस्मा॑द्य॒ज्ञात्स॑र्व॒हुत॒ ऋचः॒ सामा॑नि जज्ञिरे ।\nच्छन्दां॑सि जज्ञिरे॒ तस्मा॒द्यजु॒स्तस्मा॑दजायत ॥ १० ॥",
+      "iast_phonetic": "tasmā॑dya॒jñātsa॑rva॒huta॒ ṛcaḥ॒ sāmā॑ni jajñirē ।\ncchandāṁ॑si jajñirē॒ tasmā॒dyaju॒stasmā॑dajāyata ॥ 10 ॥",
+      "pause_after_verse_sec": 2.5,
+      "has_vedic_swaras": true,
+      "swara_annotations": {
+        "anudatta_count": 7,
+        "svarita_count": 5,
+        "udatta_count": 0,
+        "dirgha_svarita_count": 0,
+        "chandrabindu_count": 0,
+        "has_vedic_accents": true,
+        "total_accent_count": 12
+      },
+      "regional_script_rendering": "तस्मा॑द्य॒ज्ञात्स॑र्व॒हुत॒ ऋचः॒ सामा॑नि जज्ञिरे ।\nच्छन्दां॑सि जज्ञिरे॒ तस्मा॒द्यजु॒स्तस्मा॑दजायत ॥ १० ॥",
+      "pronunciation_notes": [
+        "Taittiriya/Rigvedic Swara markers active: maintain strictly pitch inflection (anudatta low, svarita high).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Slow classical Vedic tempo (Vilambita Laya); do not elide visargas."
+    },
+    {
+      "verse_number": 11,
+      "verse_id": "VEDA-TXT-00014-V011",
+      "original_text": "तस्मा॒दश्वा॑ अजायन्त॒ ये के चो॑भ॒याद॑तः ।\nगावो॑ ह जज्ञिरे॒ तस्मा॒त्तस्मा॑ज्जा॒ता अ॑जा॒वयः॑ ॥ ११ ॥",
+      "iast_phonetic": "tasmā॒daśvā॑ ajāyanta॒ yē kē cō॑bha॒yāda॑taḥ ।\ngāvō॑ ha jajñirē॒ tasmā॒ttasmā॑jjā॒tā a॑jā॒vayaḥ॑ ॥ 11 ॥",
+      "pause_after_verse_sec": 2.5,
+      "has_vedic_swaras": true,
+      "swara_annotations": {
+        "anudatta_count": 7,
+        "svarita_count": 7,
+        "udatta_count": 0,
+        "dirgha_svarita_count": 0,
+        "chandrabindu_count": 0,
+        "has_vedic_accents": true,
+        "total_accent_count": 14
+      },
+      "regional_script_rendering": "तस्मा॒दश्वा॑ अजायन्त॒ ये के चो॑भ॒याद॑तः ।\nगावो॑ ह जज्ञिरे॒ तस्मा॒त्तस्मा॑ज्जा॒ता अ॑जा॒वयः॑ ॥ ११ ॥",
+      "pronunciation_notes": [
+        "Taittiriya/Rigvedic Swara markers active: maintain strictly pitch inflection (anudatta low, svarita high).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Slow classical Vedic tempo (Vilambita Laya); do not elide visargas."
+    },
+    {
+      "verse_number": 12,
+      "verse_id": "VEDA-TXT-00014-V012",
+      "original_text": "यत्पुरु॑षं व्य॒दधुः॒ कति॒धा व्य॑कल्पयन् ।\nमुखं॒ किम॑स्य॒ कौ बा॒हू कावू॒रू पादा॑वुच्येते ॥ १२ ॥",
+      "iast_phonetic": "yatpuru॑ṣaṁ vya॒dadhuḥ॒ kati॒dhā vya॑kalpayan ।\nmukhaṁ॒ kima॑sya॒ kau bā॒hū kāvū॒rū pādā॑vucyētē ॥ 12 ॥",
+      "pause_after_verse_sec": 2.5,
+      "has_vedic_swaras": true,
+      "swara_annotations": {
+        "anudatta_count": 7,
+        "svarita_count": 4,
+        "udatta_count": 0,
+        "dirgha_svarita_count": 0,
+        "chandrabindu_count": 0,
+        "has_vedic_accents": true,
+        "total_accent_count": 11
+      },
+      "regional_script_rendering": "यत्पुरु॑षं व्य॒दधुः॒ कति॒धा व्य॑कल्पयन् ।\nमुखं॒ किम॑स्य॒ कौ बा॒हू कावू॒रू पादा॑वुच्येते ॥ १२ ॥",
+      "pronunciation_notes": [
+        "Taittiriya/Rigvedic Swara markers active: maintain strictly pitch inflection (anudatta low, svarita high).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Slow classical Vedic tempo (Vilambita Laya); do not elide visargas."
+    },
+    {
+      "verse_number": 13,
+      "verse_id": "VEDA-TXT-00014-V013",
+      "original_text": "ब्रा॒ह्म॒णो॑ऽस्य॒ मुख॑मासीद्बा॒हू रा॑ज॒न्यः॑ कृ॒तः ।\nऊ॒रू तद॑स्य॒ यद्वैश्यः॑ प॒द्भ्यां शू॒द्रो अ॑जायत ॥ १३ ॥",
+      "iast_phonetic": "brā॒hma॒ṇō॑'sya॒ mukha॑māsīdbā॒hū rā॑ja॒nyaḥ॑ kṛ॒taḥ ।\nū॒rū tada॑sya॒ yadvaiśyaḥ॑ pa॒dbhyāṁ śū॒drō a॑jāyata ॥ 13 ॥",
+      "pause_after_verse_sec": 2.5,
+      "has_vedic_swaras": true,
+      "swara_annotations": {
+        "anudatta_count": 10,
+        "svarita_count": 7,
+        "udatta_count": 0,
+        "dirgha_svarita_count": 0,
+        "chandrabindu_count": 0,
+        "has_vedic_accents": true,
+        "total_accent_count": 17
+      },
+      "regional_script_rendering": "ब्रा॒ह्म॒णो॑ऽस्य॒ मुख॑मासीद्बा॒हू रा॑ज॒न्यः॑ कृ॒तः ।\nऊ॒रू तद॑स्य॒ यद्वैश्यः॑ प॒द्भ्यां शू॒द्रो अ॑जायत ॥ १३ ॥",
+      "pronunciation_notes": [
+        "Taittiriya/Rigvedic Swara markers active: maintain strictly pitch inflection (anudatta low, svarita high).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Slow classical Vedic tempo (Vilambita Laya); do not elide visargas."
+    },
+    {
+      "verse_number": 14,
+      "verse_id": "VEDA-TXT-00014-V014",
+      "original_text": "च॒न्द्रमा॒ मन॑सो जा॒तश्चक्षोः॒ सूर्यो॑ अजायत ।\nमुखा॒दिन्द्र॑श्चा॒ग्निश्च॑ प्रा॒णाद्वा॒युर॑जायत ॥ १४ ॥",
+      "iast_phonetic": "ca॒ndramā॒ mana॑sō jā॒taścakṣōḥ॒ sūryō॑ ajāyata ।\nmukhā॒dindra॑ścā॒gniśca॑ prā॒ṇādvā॒yura॑jāyata ॥ 14 ॥",
+      "pause_after_verse_sec": 2.5,
+      "has_vedic_swaras": true,
+      "swara_annotations": {
+        "anudatta_count": 8,
+        "svarita_count": 5,
+        "udatta_count": 0,
+        "dirgha_svarita_count": 0,
+        "chandrabindu_count": 0,
+        "has_vedic_accents": true,
+        "total_accent_count": 13
+      },
+      "regional_script_rendering": "च॒न्द्रमा॒ मन॑सो जा॒तश्चक्षोः॒ सूर्यो॑ अजायत ।\nमुखा॒दिन्द्र॑श्चा॒ग्निश्च॑ प्रा॒णाद्वा॒युर॑जायत ॥ १४ ॥",
+      "pronunciation_notes": [
+        "Taittiriya/Rigvedic Swara markers active: maintain strictly pitch inflection (anudatta low, svarita high).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Slow classical Vedic tempo (Vilambita Laya); do not elide visargas."
+    },
+    {
+      "verse_number": 15,
+      "verse_id": "VEDA-TXT-00014-V015",
+      "original_text": "नाभ्या॑ आसीद॒न्तरि॑क्षं शी॒र्ष्णो द्यौः सम॑वर्तत ।\nप॒द्भ्यां भूमि॒र्दिशः॒ श्रोत्रा॒त्तथा॑ लो॒काँ अक॑ल्पयन् ॥ १५ ॥",
+      "iast_phonetic": "nābhyā॑ āsīda॒ntari॑kṣaṁ śī॒rṣṇō dyauḥ sama॑vartata ।\npa॒dbhyāṁ bhūmi॒rdiśaḥ॒ śrōtrā॒ttathā॑ lō॒kām̐ aka॑lpayan ॥ 15 ॥",
+      "pause_after_verse_sec": 2.5,
+      "has_vedic_swaras": true,
+      "swara_annotations": {
+        "anudatta_count": 7,
+        "svarita_count": 5,
+        "udatta_count": 0,
+        "dirgha_svarita_count": 0,
+        "chandrabindu_count": 1,
+        "has_vedic_accents": true,
+        "total_accent_count": 12
+      },
+      "regional_script_rendering": "नाभ्या॑ आसीद॒न्तरि॑क्षं शी॒र्ष्णो द्यौः सम॑वर्तत ।\nप॒द्भ्यां भूमि॒र्दिशः॒ श्रोत्रा॒त्तथा॑ लो॒काँ अक॑ल्पयन् ॥ १५ ॥",
+      "pronunciation_notes": [
+        "Taittiriya/Rigvedic Swara markers active: maintain strictly pitch inflection (anudatta low, svarita high).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Slow classical Vedic tempo (Vilambita Laya); do not elide visargas."
+    },
+    {
+      "verse_number": 16,
+      "verse_id": "VEDA-TXT-00014-V016",
+      "original_text": "य॒ज्ञेन॑ य॒ज्ञम॑यजन्त दे॒वास्तानि॒ धर्मा॑णि प्रथ॒मान्या॑सन् ।\nते ह॒ नाकं॑ महि॒मानः॑ सचन्त॒ यत्र॒ पूर्वे॑ सा॒ध्याः सन्ति॑ दे॒वाः ॥ १६ ॥",
+      "iast_phonetic": "ya॒jñēna॑ ya॒jñama॑yajanta dē॒vāstāni॒ dharmā॑ṇi pratha॒mānyā॑san ।\ntē ha॒ nākaṁ॑ mahi॒mānaḥ॑ sacanta॒ yatra॒ pūrvē॑ sā॒dhyāḥ santi॑ dē॒vāḥ ॥ 16 ॥",
+      "pause_after_verse_sec": 2.5,
+      "has_vedic_swaras": true,
+      "swara_annotations": {
+        "anudatta_count": 11,
+        "svarita_count": 8,
+        "udatta_count": 0,
+        "dirgha_svarita_count": 0,
+        "chandrabindu_count": 0,
+        "has_vedic_accents": true,
+        "total_accent_count": 19
+      },
+      "regional_script_rendering": "य॒ज्ञेन॑ य॒ज्ञम॑यजन्त दे॒वास्तानि॒ धर्मा॑णि प्रथ॒मान्या॑सन् ।\nते ह॒ नाकं॑ महि॒मानः॑ सचन्त॒ यत्र॒ पूर्वे॑ सा॒ध्याः सन्ति॑ दे॒वाः ॥ १६ ॥",
+      "pronunciation_notes": [
+        "Taittiriya/Rigvedic Swara markers active: maintain strictly pitch inflection (anudatta low, svarita high).",
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Slow classical Vedic tempo (Vilambita Laya); do not elide visargas."
+    }
+  ],
+  "translation_reference_note": "Audio recording must recite only the immutable original sacred verse text; translations and regional explanations must be recorded as separate commentary tracks."
+}

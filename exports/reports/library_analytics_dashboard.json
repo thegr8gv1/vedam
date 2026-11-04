@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-04T23:15:13.932752+00:00",
+  "generated_at_utc": "2026-11-04T23:42:16.322672+00:00",
   "total_candidate_catalog": 77,
   "total_registered_database_texts": 20,
   "verified_complete_texts": 18,
@@ -56,93 +56,96 @@
     "en": {
       "total": 266,
       "draft": 143,
-      "approved": 123,
-      "in_review": 0
+      "approved": 122,
+      "in_review": 1
     },
     "hi": {
-      "total": 54,
-      "draft": 54,
+      "total": 105,
+      "draft": 105,
       "approved": 0,
       "in_review": 0
     },
     "te": {
-      "total": 54,
-      "draft": 54,
+      "total": 105,
+      "draft": 105,
       "approved": 0,
       "in_review": 0
     },
     "ta": {
-      "total": 54,
-      "draft": 54,
+      "total": 105,
+      "draft": 105,
       "approved": 0,
       "in_review": 0
     },
     "kn": {
-      "total": 54,
-      "draft": 54,
+      "total": 105,
+      "draft": 105,
       "approved": 0,
       "in_review": 0
     },
     "mr": {
-      "total": 54,
-      "draft": 54,
+      "total": 105,
+      "draft": 105,
       "approved": 0,
       "in_review": 0
     },
     "bn": {
-      "total": 54,
-      "draft": 54,
+      "total": 105,
+      "draft": 105,
       "approved": 0,
       "in_review": 0
     },
     "gu": {
-      "total": 54,
-      "draft": 54,
+      "total": 105,
+      "draft": 105,
       "approved": 0,
       "in_review": 0
     },
     "ml": {
-      "total": 54,
-      "draft": 54,
+      "total": 105,
+      "draft": 105,
       "approved": 0,
       "in_review": 0
     },
     "or": {
-      "total": 54,
-      "draft": 54,
+      "total": 105,
+      "draft": 105,
       "approved": 0,
       "in_review": 0
     }
   },
-  "compositions_with_regional_localization": 8,
-  "compositions_awaiting_regional_localization": 10,
+  "compositions_with_regional_localization": 12,
+  "compositions_awaiting_regional_localization": 6,
   "compositions_localized_list": [
     "VEDA-TXT-00001",
     "VEDA-TXT-00004",
     "VEDA-TXT-00005",
     "VEDA-TXT-00006",
+    "VEDA-TXT-00007",
     "VEDA-TXT-00010",
     "VEDA-TXT-00011",
     "VEDA-TXT-00012",
+    "VEDA-TXT-00014",
+    "VEDA-TXT-00015",
+    "VEDA-TXT-00016",
     "VEDA-TXT-00017"
   ],
   "compositions_awaiting_list": [
     "VEDA-TXT-00002",
     "VEDA-TXT-00003",
-    "VEDA-TXT-00007",
     "VEDA-TXT-00008",
     "VEDA-TXT-00013",
-    "VEDA-TXT-00014",
-    "VEDA-TXT-00015",
-    "VEDA-TXT-00016",
     "VEDA-TXT-00018",
     "VEDA-TXT-00019"
   ],
-  "regional_translation_completion_pct": 44.44,
-  "publication_ready_approved_translations": 123,
-  "draft_pending_review_translations": 629,
+  "regional_translation_completion_pct": 66.67,
+  "publication_ready_approved_translations": 122,
+  "draft_pending_review_translations": 1089,
+  "number_of_devotional_bhavarthas": 1211,
+  "number_of_literal_translations": 459,
+  "number_of_traditional_meanings": 459,
   "total_archived_historical_translations": 580,
-  "multilingual_artifacts_excel": 8,
-  "multilingual_artifacts_word": 8,
-  "multilingual_artifacts_json": 8
+  "multilingual_artifacts_excel": 12,
+  "multilingual_artifacts_word": 12,
+  "multilingual_artifacts_json": 12
 }

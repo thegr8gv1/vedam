@@ -1,0 +1,549 @@
+{
+  "content_id": "VEDA-TXT-00015",
+  "canonical_title": "Durga Suktam",
+  "devanagari_title": "दुर्गासूक्तम्",
+  "composer": "Sage Jatavedas",
+  "source_scripture": "Taittiriya Aranyaka 10.1-2 (Mahanarayana Upanishad 2)",
+  "verse_count": 7,
+  "generated_at_utc": "2026-11-04T23:40:37.662185+00:00",
+  "supported_languages": [
+    "sa",
+    "hi",
+    "te",
+    "ta",
+    "kn",
+    "mr",
+    "bn",
+    "gu",
+    "ml",
+    "or",
+    "en"
+  ],
+  "verses": [
+    {
+      "verse_number": 1,
+      "verse_type": "VERSE",
+      "original_sanskrit": "जा॒तवे॑दसे सुनवाम॒ सोम॑मरातीय॒तो निद॑हाति॒ वेदः॑ ।\nस नः॑ पर्ष॒दति॑ दु॒र्गाणि॒ विश्वा॑ ना॒वेव॒ सिन्धुं॑ दुरि॒तात्य॒ग्निः ॥ १ ॥",
+      "iast": "jā॒tavē॑dasē sunavāma॒ sōma॑marātīya॒tō nida॑hāti॒ vēdaḥ॑ ।\nsa naḥ॑ parṣa॒dati॑ du॒rgāṇi॒ viśvā॑ nā॒vēva॒ sindhuṁ॑ duri॒tātya॒gniḥ ॥ 1 ॥",
+      "transliterations": {
+        "telugu": "జా॒తవే॑దసే సునవామ॒ సోమ॑మరాతీయ॒తో నిద॑హాతి॒ వేదః॑ ।\nస నః॑ పర్ష॒దతి॑ దు॒ర్గాణి॒ విశ్వా॑ నా॒వేవ॒ సిన్ధుం॑ దురి॒తాత్య॒గ్నిః ॥ ౧ ॥",
+        "tamil": "ஜா॒தவே॑தஸே ஸுநவாம॒ ஸோம॑மராதீய॒தோ நித॑ஹாதி॒ வேதஃ॑ ।\nஸ நஃ॑ பர்ஷ॒ததி॑ து॒ர்காணி॒ விஶ்வா॑ நா॒வேவ॒ ஸிந்தும்॑ துரி॒தாத்ய॒க்நிஃ ॥ ௧ ॥",
+        "kannada": "ಜಾ॒ತವೇ॑ದಸೇ ಸುನವಾಮ॒ ಸೋಮ॑ಮರಾತೀಯ॒ತೋ ನಿದ॑ಹಾತಿ॒ ವೇದಃ॑ ।\nಸ ನಃ॑ ಪರ್ಷ॒ದತಿ॑ ದು॒ರ್ಗಾಣಿ॒ ವಿಶ್ವಾ॑ ನಾ॒ವೇವ॒ ಸಿನ್ಧುಂ॑ ದುರಿ॒ತಾತ್ಯ॒ಗ್ನಿಃ ॥ ೧ ॥",
+        "malayalam": "ജാ॒തവേ॑ദസേ സുനവാമ॒ സോമ॑മരാതീയ॒തോ നിദ॑ഹാതി॒ വേദഃ॑ ।\nസ നഃ॑ പര്ഷ॒ദതി॑ ദു॒ര്ഗാണി॒ വിശ്വാ॑ നാ॒വേവ॒ സിന്ധും॑ ദുരി॒താത്യ॒ഗ്നിഃ ॥ ൧ ॥",
+        "iast": "jā̱tavḙdase sunavāma̱ soma̭marātīya̱to nida̭hāti̱ veda̭ḥ |\nsa na̭ḥ parṣa̱dati̭ du̱rgāṇi̱ viśvā̭ nā̱veva̱ sindhṷṃ duri̱tātya̱gniḥ || 1 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "We press the sacred Soma juice unto Jatavedas (Agni, Knower of all beings). May He consume the enmity of our tormentors. May Agni carry us safely across all formidable perils and difficulties, as a ship conveys passengers across the roaring ocean!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "सर्वज्ञ जातवेदा अग्निदेव के लिए हम सोम रस प्रस्तुत करते हैं; वे हमारे शत्रुओं के अनिष्टकारी धन व पापों को भस्म कर दें! जैसे कोई नौका से भीषण समुद्र को पार कर लेता है, वैसे ही वे अग्निदेव हमें समस्त विपत्तियों, संकटों और पापों से पार करा दें!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "సర్వజ్ఞుడైన జాతవేదునికి మేము పవిత్ర సోమరసమును సమర్పించుచున్నాము; ఆయన మా శత్రువుల దుష్ట సంపదను, పాపములను దహించివేయుగాక! తుఫానుతో కూడిన సముద్రమును పడవ దాటించినట్లుగా, ఆ అగ్నిదేవుడు మమ్ములను సమస్త దుర్గమ సంకటముల నుండి, పాపముల నుండి సురక్షితముగా దాటించుగాక!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "சகலமும் உணர்ந்த ஜாதவேதஸான அக்னி தேவனுக்கு சோம ரசத்தை அர்ப்பணிக்கிறோம்; அவர் எங்கள் பகைவர்களின் தீய சக்திகளை எரிக்கட்டும்! கொந்தளிக்கும் கடலைப் படகு கடப்பது போல, அந்த அக்னி பகவான் எங்களை எல்லா ஆபத்துக்களிலிருந்தும் துயரங்களிலிருந்தும் பாதுகாப்பாகக் கரைசேர்க்கட்டும்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಸರ್ವಜ್ಞನಾದ ಅಗ್ನಿದೇವನಿಗಾಗಿ ನಾವು ಸೋಮರಸವನ್ನು ಅರ್ಪಿಸುತ್ತೇವೆ; ಆತನು ನಮ್ಮ ಶತ್ರುಗಳ ಪಾಪಗಳನ್ನೂ ದುಷ್ಟ ಸಂಪತ್ತನ್ನೂ ಸುಟ್ಟುಹಾಕಲಿ! ನಾವಿಕನು ನಾವೆಯ ಮೂಲಕ ಸಾಗರವನ್ನು ದಾಟಿಸುವಂತೆ, ಆ ಅಗ್ನಿಯು ನಮ್ಮನ್ನು ಸಮಸ್ತ ಸಂಕಟಗಳಿಂದಲೂ ಪಾಪಗಳಿಂದಲೂ ಪಾರುಮಾಡಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "सर्वज्ञ जातवेदा अग्नीसाठी आम्ही सोमरस अर्पण करतो; तो आमच्या शत्रूंची दुष्ट संपत्ती व पाप भस्म करो! वादळी समुद्राला नावेतून पार करावे, तसेच तो अग्निदेव आम्हांला सर्व संकटांतून व पापांतून सुरक्षित पार करो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "সর্বজ্ঞ জাতবেদা অগ্নির উদ্দেশে আমরা সোমরস নিবেদন করিতেছি; তিনি শত্রুর অনিষ্টকর সম্পদ ও পাপ দগ্ধ করুন! নৌকা যেমন তরঙ্গবিক্ষুব্ধ সমুদ্র পার করায়, সেইরূপ সেই অগ্নিদেব আমাদিগকে যাবতীয় সংকট ও পাপ হইতে উদ্ধার করুন!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "સર્વજ્ઞ જાતવેદા અગ્નિદેવ માટે અમે સોમરસ પ્રસ્તુત કરીએ છીએ; તેઓ અમારા શત્રુઓના દુષ્ટ ધન અને પાપને ભસ્મ કરે! જેમ નાવ તોફાની સમુદ્રને પાર કરાવે, તેમ તે અગ્નિદેવ અમને સઘળાં સંકટો અને પાપોમાંથી તારી દે!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സർവ്വജ്ഞനായ അഗ്നിദേവനുവേണ്ടി ഞങ്ങൾ സോമരസം സമർപ്പിക്കുന്നു; അവൻ ഞങ്ങളുടെ ശത്രുക്കളുടെ ദുഷ്ടസമ്പത്തിനെ ദഹിപ്പിക്കട്ടെ! കൊടുങ്കാറ്റുള്ള കടലിനെ തോണി കടത്തുന്നതുപോലെ, ആ അഗ്നി ഞങ്ങളെ എല്ലാ ആപത്തുകളിൽനിന്നും പാപങ്ങളിൽനിന്നും രക്ഷിച്ചു കരകയറ്റട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସର୍ବଜ୍ଞ ଜାତବେଦା ଅଗ୍ନିଙ୍କ ପାଇଁ ଆମେ ସୋମରସ ଅର୍ପଣ କରୁଛୁ; ସେ ଆମର ଶତ୍ରୁଙ୍କ ଦୁଷ୍ଟ ସମ୍ପଦ ଓ ପାପକୁ ଭସ୍ମ କରନ୍ତୁ! ଝଡ଼ପୂର୍ଣ୍ଣ ସମୁଦ୍ରକୁ ଡଙ୍ଗା ପାର କଲା ଭଳି, ସେହି ଅଗ୍ନିଦେବ ଆମକୁ ସମସ୍ତ ବିପଦ ଓ ପାପରୁ ଉଦ୍ଧାର କରନ୍ତୁ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 2,
+      "verse_type": "VERSE",
+      "original_sanskrit": "ताम॒ग्निव॑र्णां॒ तप॑सा ज्वल॒न्तीं वै॑रोच॒नीं क॑र्मफ॒लेषु॒ जुष्टाम् ।\nदु॒र्गां दे॒वीं शर॑णम॒हं प्रप॑द्ये सु॒तर॑सि तरसे॒ नमः॑ ॥ २ ॥",
+      "iast": "tāma॒gniva॑rṇāṁ॒ tapa॑sā jvala॒ntīṁ vai॑rōca॒nīṁ ka॑rmapha॒lēṣu॒ juṣṭām ।\ndu॒rgāṁ dē॒vīṁ śara॑ṇama॒haṁ prapa॑dyē su॒tara॑si tarasē॒ namaḥ॑ ॥ 2 ॥",
+      "transliterations": {
+        "telugu": "తామ॒గ్నివ॑ర్ణాం॒ తప॑సా జ్వల॒న్తీం వై॑రోచ॒నీం క॑ర్మఫ॒లేషు॒ జుష్టామ్ ।\nదు॒ర్గాం దే॒వీం శర॑ణమ॒హం ప్రప॑ద్యే సు॒తర॑సి తరసే॒ నమః॑ ॥ ౨ ॥",
+        "tamil": "தாம॒க்நிவ॑ர்ணாம்॒ தப॑ஸா ஜ்வல॒ந்தீம் வை॑ரோச॒நீம் க॑ர்மப॒லேஷு॒ ஜுஷ்டாம் ।\nது॒ர்காம் தே॒வீம் ஶர॑ணம॒ஹம் ப்ரப॑த்யே ஸு॒தர॑ஸி தரஸே॒ நமஃ॑ ॥ ௨ ॥",
+        "kannada": "ತಾಮ॒ಗ್ನಿವ॑ರ್ಣಾಂ॒ ತಪ॑ಸಾ ಜ್ವಲ॒ನ್ತೀಂ ವೈ॑ರೋಚ॒ನೀಂ ಕ॑ರ್ಮಫ॒ಲೇಷು॒ ಜುಷ್ಟಾಮ್ ।\nದು॒ರ್ಗಾಂ ದೇ॒ವೀಂ ಶರ॑ಣಮ॒ಹಂ ಪ್ರಪ॑ದ್ಯೇ ಸು॒ತರ॑ಸಿ ತರಸೇ॒ ನಮಃ॑ ॥ ೨ ॥",
+        "malayalam": "താമ॒ഗ്നിവ॑ര്ണാം॒ തപ॑സാ ജ്വല॒ന്തീം വൈ॑രോച॒നീം ക॑ര്മഫ॒ലേഷു॒ ജുഷ്ടാമ് ।\nദു॒ര്ഗാം ദേ॒വീം ശര॑ണമ॒ഹം പ്രപ॑ദ്യേ സു॒തര॑സി തരസേ॒ നമഃ॑ ॥ ൨ ॥",
+        "iast": "tāma̱gniva̭rṇā̱ṃ tapa̭sā jvala̱ntīṃ vai̭roca̱nīṃ ka̭rmapha̱leṣu̱ juṣṭām |\ndu̱rgāṃ de̱vīṃ śara̭ṇama̱haṃ prapa̭dye su̱tara̭si tarase̱ nama̭ḥ || 2 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Unto Her who shines with fiery luster, burning with ascetic radiance, daughter of the Divine Light (Vairochani), delighted in the righteous fruits of works — unto that Goddess Durga I take refuge! O Deliverer supreme across the ocean of delusion, salutations unto Your swift rescuing power!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "अग्नि के समान देदीप्यमान वर्ण वाली, तपोबल से प्रज्वलित, परम प्रकाश स्वरूप, शुभ कर्मों के फल में प्रीति रखने वाली उन भगवती दुर्गा देवी की मैं शरण लेता हूँ। हे संकटों से भली-भाँति पार लगाने वाली कृपामयी देवि! पार उतारने के आपके इस अद्भुत सामर्थ्य को हमारा कोटि-कोटि नमन है!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "అగ్నివలె ప్రకాశించు కాంతి గలది, దివ్య తపస్సుచేత వెలుగొందునది, పరమ జ్యోతి స్వరూపిణి, ధర్మబద్ధమైన కర్మఫలముల యందు ప్రీతి కలదియైన ఆ దుర్గాదేవిని నేను శరణు వేడుచున్నాను. సంకటములను సునాయాసముగా దాటించు ఓ జగన్మాతా! మమ్ములను సంరక్షించు నీ దివ్య శక్తికి ప్రణామములు!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அக்னியைப் போல சுடர்விடும் வண்ணத்தவள், தவத்தின் ஒளியால் ஒளிர்பவள், பரம்பொருளின் பேரொளியானவள், தர்மச் செயல்களின் நற்பயனாக விளங்கும் அந்த துர்க்கா தேவியை நான் சரணடைகிறேன். இடர்களை எளிதாகக் கடக்க வைக்கும் அன்னையே! எங்களை ஈடேற்றும் உனது ஆற்றலுக்கு எனது வணக்கங்கள்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಅಗ್ನಿಯಂತೆ ಪ್ರಕಾಶಿಸುವ ಬಣ್ಣದವಳು, ತಪಸ್ಸಿನಿಂದ ಬೆಳಗುವವಳು, ಪರಂಜ್ಯೋತಿ ಸ್ವರೂಪಿಣಿ, ಸತ್ಕರ್ಮಗಳ ಫಲದಲ್ಲಿ ಸಂತುಷ್ಟಳಾದ ಆ ದುರ್ಗಾದೇವಿಯನ್ನು ನಾನು ಶರಣು ಹೊಂದುತ್ತೇನೆ. ಸಂಕಟಗಳನ್ನು ಸುಲಭವಾಗಿ ದಾಟಿಸುವ ಹೇ ತಾಯೇ! ನಮ್ಮನ್ನು ಕಾಪಾಡುವ ನಿನ್ನ ದಿವ್ಯ ಶಕ್ತಿಗೆ ನಮಸ್ಕಾರಗಳು!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "अग्नीप्रमाणे तेजस्वी वर्ण असणाऱ्या, तपश्चर्येने तळपणाऱ्या, स्वयंप्रकाशित, शुभ कर्मांच्या फलांनी प्रसन्न होणाऱ्या त्या दुर्गादेवीला मी शरण जातो. संकटांतून सहजतेने पार करणाऱ्या हे माते! पार नेणाऱ्या तुझ्या अद्भुत शक्तीला माझे नमन असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "অগ্নির ন্যায় দীপ্তিমান বর্ণা, তপস্যার তেজে প্রোজ্জ্বলা, পরমজ্যোতিঃস্বরূপা, পুণ্যকর্মের ফলে প্রীতা সেই দুর্গা দেবীর শরণাপন্ন হই। হে সুখে সংকটতারিণী জননি! সংকট হইতে উদ্ধারকারিণী তোমার সেই অচিন্ত্য শক্তিকে কোটি প্রণাম!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "અગ્નિ સમાન તેજસ્વી વર્ણવાળાં, તપોબળથી ઝળહળતાં, પરમ જ્યોતિસ્વરૂપ, સત્કર્મોના ફળથી પ્રસન્ન થનારાં તે દુર્ગા ભગવતીને હું શરણે જાઉં છું. સંકટોમાંથી સુખેથી તારનારાં હે માતા! આપના આ તારણહાર સામર્થ્યને અમારા વંદન!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അഗ്നിയെപ്പോലെ ജ്വലിക്കുന്ന വർണ്ണമുള്ളവളും, തപസ്സിനാൽ തിളങ്ങുന്നവളും, പരമജ്യോതിസ്സും, സദ്കർമ്മഫലങ്ങളിൽ പ്രസാദിക്കുന്നവളുമായ ആ ദുർഗ്ഗാദേവിയെ ഞാൻ ശരണം പ്രാപിക്കുന്നു. ആപത്തുകളെ അനായാസമായി തരണം ചെയ്യിക്കുന്ന അമ്മേ! അങ്ങയുടെ രക്ഷാശക്തിക്ക് പ്രണാമം!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଅଗ୍ନି ଭଳି ତେଜୋମୟୀ ବର୍ଣ୍ଣ ବିଶିଷ୍ଟା, ତପସ୍ୟା ବଳରେ ପ୍ରଜ୍ଜ୍ୱଳିତା, ପରମ ଜ୍ୟୋତିଃସ୍ୱରୂପା, ପୁଣ୍ୟକର୍ମର ଫଳରେ ପ୍ରସନ୍ନା ସେହି ଦୁର୍ଗା ଦେବୀଙ୍କ ଶରଣ ନେଉଛି । ସଙ୍କଟରୁ ସୁଖରେ ପାର କରାଉଥିବା ହେ ମାତା! ଆପଣଙ୍କ ଉଦ୍ଧାରକାରୀ ଶକ୍ତିକୁ ପ୍ରଣାମ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 3,
+      "verse_type": "VERSE",
+      "original_sanskrit": "अग्ने॒ त्वं पा॑रया॒ नव्यो॑ अ॒स्मान्स्व॒स्तिभि॒रति॑ दु॒र्गाणि॒ विश्वा॑ ।\nपूश्च॑ पृ॒थ्वी ब॑हु॒ला न॑ उ॒र्वी भवा॑ तो॒काय॒ तन॑याय॒ शं योः ॥ ३ ॥",
+      "iast": "agnē॒ tvaṁ pā॑rayā॒ navyō॑ a॒smānswa॒stibhi॒rati॑ du॒rgāṇi॒ viśvā॑ ।\npūśca॑ pṛ॒thvī ba॑hu॒lā na॑ u॒rvī bhavā॑ tō॒kāya॒ tana॑yāya॒ śaṁ yōḥ ॥ 3 ॥",
+      "transliterations": {
+        "telugu": "అగ్నే॒ త్వం పా॑రయా॒ నవ్యో॑ అ॒స్మాన్స్వ॒స్తిభి॒రతి॑ దు॒ర్గాణి॒ విశ్వా॑ ।\nపూశ్చ॑ పృ॒థ్వీ బ॑హు॒లా న॑ ఉ॒ర్వీ భవా॑ తో॒కాయ॒ తన॑యాయ॒ శం యోః ॥ ౩ ॥",
+        "tamil": "அக்நே॒ த்வம் பா॑ரயா॒ நவ்யோ॑ அ॒ஸ்மாந்ஸ்வ॒ஸ்திபி॒ரதி॑ து॒ர்காணி॒ விஶ்வா॑ ।\nபூஶ்ச॑ ப்ரு'॒த்வீ ப॑ஹு॒லா ந॑ உ॒ர்வீ பவா॑ தோ॒காய॒ தந॑யாய॒ ஶம் யோஃ ॥ ௩ ॥",
+        "kannada": "ಅಗ್ನೇ॒ ತ್ವಂ ಪಾ॑ರಯಾ॒ ನವ್ಯೋ॑ ಅ॒ಸ್ಮಾನ್ಸ್ವ॒ಸ್ತಿಭಿ॒ರತಿ॑ ದು॒ರ್ಗಾಣಿ॒ ವಿಶ್ವಾ॑ ।\nಪೂಶ್ಚ॑ ಪೃ॒ಥ್ವೀ ಬ॑ಹು॒ಲಾ ನ॑ ಉ॒ರ್ವೀ ಭವಾ॑ ತೋ॒ಕಾಯ॒ ತನ॑ಯಾಯ॒ ಶಂ ಯೋಃ ॥ ೩ ॥",
+        "malayalam": "അഗ്നേ॒ ത്വം പാ॑രയാ॒ നവ്യോ॑ അ॒സ്മാന്സ്വ॒സ്തിഭി॒രതി॑ ദു॒ര്ഗാണി॒ വിശ്വാ॑ ।\nപൂശ്ച॑ പൃ॒ഥ്വീ ബ॑ഹു॒ലാ ന॑ ഉ॒ര്വീ ഭവാ॑ തോ॒കായ॒ തന॑യായ॒ ശം യോഃ ॥ ൩ ॥",
+        "iast": "agne̱ tvaṃ pā̭rayā̱ navyo̭ a̱smānsva̱stibhi̱rati̭ du̱rgāṇi̱ viśvā̭ |\npūśca̭ pṛ̱thvī ba̭hu̱lā na̭ u̱rvī bhavā̭ to̱kāya̱ tana̭yāya̱ śaṃ yoḥ || 3 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "O Agni, ever youthful and praiseworthy! Carry us across all afflictions and dangers with auspicious blessings. May our city and earth be wide and bountiful; bestow supreme welfare, peace, and protection upon our children and future generations!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे स्तुत्य अग्निदेव! आप अपने कल्याणकारी आशीर्वचनों से हमें समस्त संकटों से पार ले चलिए! हमारे लिए यह पृथ्वी एक विशाल, सुरक्षित दुर्ग के समान आश्रयदात्री बने; और हमारे पुत्र-पौत्रों तथा भावी पीढ़ियों का सदा सर्वथा कल्याण हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "స్తుతింపదగిన ఓ అగ్నిదేవా! నీ మంగళకరమైన అనుగ్రహముతో మమ్ములను సకల ఆపదల నుండి రక్షింపుము! మాకు ఈ భూమి ఒక సురక్షితమైన దుర్గము వలె ఆశ్రయమగుగాక; మా సంతానమునకు, రాబోవు తరములకు సకల శుభములను ప్రసాదింపుము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "போற்றத்தக்க அக்னியே! உனது மங்கல ஆசிகளால் எங்களை எல்லாத் துன்பங்களிலிருந்தும் காப்பாற்றுவாயாக! இந்த பூமி எங்களுக்கு ஒரு பாதுகாப்பான அரணாக அமையட்டும்; எங்கள் குழந்தைகளுக்கும் எதிர்காலத் தலைமுறைகளுக்கும் நன்மையும் அமைதியும் உண்டாகட்டும்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಸ್ತುತ್ಯನಾದ ಹೇ ಅಗ್ನಿದೇವನೇ! ನಿನ್ನ ಕಲ್ಯಾಣಕರವಾದ ಕೃಪೆಯಿಂದ ನಮ್ಮನ್ನು ಸಮಸ್ತ ಸಂಕಷ್ಟಗಳಿಂದ ಪಾರುಮಾಡು! ಈ ಭೂಮಿಯು ನಮಗೆ ಬಲವಾದ ರಕ್ಷಣಾ ಕೋಟೆಯಾಗಲಿ; ನಮ್ಮ ಮಕ್ಕಳು-ಮೊಮ್ಮಕ್ಕಳಿಗೆ ಸದಾ ಶಾಂತಿ ಮತ್ತು ಕಲ್ಯಾಣವನ್ನು ದಯಪಾಲಿಸು!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे स्तुत्य अग्निदेवा! तुझ्या मंगल आशीर्वादाने आम्हांला सर्व संकटांतून पार कर! ही पृथ्वी आमच्यासाठी एक अभेद्य किल्ला व समृद्ध आधार बनो; आणि आमच्या मुलाबाळांचे व पुढच्या पिढ्यांचे कल्याण होवो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে স্তুতিযোগ্য অগ্নিদেব! তোমার শুভ আশীর্বাদে আমাদিগকে সমস্ত দুর্গম সংকট হইতে পার কর! এই বিস্তীর্ণ পৃথিবী যেন আমাদের জন্য সুরক্ষিত দুর্গের ন্যায় হয়; আমাদের পুত্র-কন্যা ও বংশধরগণের সর্বাঙ্গীন কল্যাণ সাধিত হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હે સ્તુતિપાત્ર અગ્નિદેવ! આપના મંગલ આશીર્વાદથી અમને સઘળાં સંકટોમાંથી ઉગારો! આ પૃથ્વી અમારે માટે અભેદ્ય કિલ્લા જેવી આશ્રયદાત્રી બને; અને અમારાં સંતાનો તથા ભાવી પેઢીઓનું સદા કલ્યાણ થાઓ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സ്തുത്യർഹനായ അഗ്നിദേവാ! അങ്ങയുടെ മംഗളകരമായ കാരുണ്യത്താൽ ഞങ്ങളെ എല്ലാ ദുരിതങ്ങളിൽനിന്നും രക്ഷിച്ചാലും! ഈ ഭൂമി ഞങ്ങൾക്ക് സുരക്ഷിതമായ ഒരു കോട്ടയായിത്തീരട്ടെ; ഞങ്ങളുടെ മക്കൾക്കും വരുംതലമുറകൾക്കും സദാ സമാധാനവും ക്ഷേമവും നൽകിയാലും!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହେ ସ୍ତୁତିଯୋଗ୍ୟ ଅଗ୍ନିଦେବ! ଆପଣଙ୍କ ମଙ୍ଗଳମୟ ଆଶୀର୍ବାଦରେ ଆମକୁ ସମସ୍ତ ସଙ୍କଟରୁ ପାର କରନ୍ତୁ! ଏହି ପୃଥିବୀ ଆମ ପାଇଁ ଏକ ସୁରକ୍ଷିତ ଦୁର୍ଗ ଭଳି ଆଶ୍ରୟଦାତ୍ରୀ ହେଉ; ଏବଂ ଆମ ସନ୍ତାନସନ୍ତତି ତଥା ପିଢ଼ୀମାନଙ୍କର ସର୍ବଦା ମଙ୍ଗଳ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 4,
+      "verse_type": "VERSE",
+      "original_sanskrit": "विश्वा॑नि नो दु॒र्गहा॑ जातवेदः॒ सिन्धुं॒ न ना॒वा दु॑रि॒ताऽति॑पर्षि ।\nअग्ने॑ अत्रिव॒न्मन॑सा गृणा॒नोऽस्माकं॑ बोध्यवि॒ता त॒नूनाम् ॥ ४ ॥",
+      "iast": "viśvā॑ni nō du॒rgahā॑ jātavēdaḥ॒ sindhuṁ॒ na nā॒vā du॑ri॒tā'ti॑parṣi ।\nagnē॑ atrizva॒nmana॑sā gṛṇā॒nō'smākaṁ॑ bōdhyavi॒tā ta॒nūnām ॥ 4 ॥",
+      "transliterations": {
+        "telugu": "విశ్వా॑ని నో దు॒ర్గహా॑ జాతవేదః॒ సిన్ధుం॒ న నా॒వా దు॑రి॒తాఽతి॑పర్షి ।\nఅగ్నే॑ అత్రివ॒న్మన॑సా గృణా॒నోఽస్మాకం॑ బోధ్యవి॒తా త॒నూనామ్ ॥ ౪ ॥",
+        "tamil": "விஶ்வா॑நி நோ து॒ர்கஹா॑ ஜாதவேதஃ॒ ஸிந்தும்॒ ந நா॒வா து॑ரி॒தாऽதி॑பர்ஷி ।\nஅக்நே॑ அத்ரிவ॒ந்மந॑ஸா க்ரு'ணா॒நோऽஸ்மாகம்॑ போத்யவி॒தா த॒நூநாம் ॥ ௪ ॥",
+        "kannada": "ವಿಶ್ವಾ॑ನಿ ನೋ ದು॒ರ್ಗಹಾ॑ ಜಾತವೇದಃ॒ ಸಿನ್ಧುಂ॒ ನ ನಾ॒ವಾ ದು॑ರಿ॒ತಾಽತಿ॑ಪರ್ಷಿ ।\nಅಗ್ನೇ॑ ಅತ್ರಿವ॒ನ್ಮನ॑ಸಾ ಗೃಣಾ॒ನೋಽಸ್ಮಾಕಂ॑ ಬೋಧ್ಯವಿ॒ತಾ ತ॒ನೂನಾಮ್ ॥ ೪ ॥",
+        "malayalam": "വിശ്വാ॑നി നോ ദു॒ര്ഗഹാ॑ ജാതവേദഃ॒ സിന്ധും॒ ന നാ॒വാ ദു॑രി॒താഽതി॑പര്ഷി ।\nഅഗ്നേ॑ അത്രിവ॒ന്മന॑സാ ഗൃണാ॒നോഽസ്മാകം॑ ബോധ്യവി॒താ ത॒നൂനാമ് ॥ ൪ ॥",
+        "iast": "viśvā̭ni no du̱rgahā̭ jātaveda̱ḥ sindhu̱ṃ na nā̱vā dṷri̱tā'ti̭parṣi |\nagnḙ atriva̱nmana̭sā gṛṇā̱no'smāka̭ṃ bodhyavi̱tā ta̱nūnām || 4 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "O Jatavedas! Safely convey us past all impassable barriers and sins, just as a boatman ferries passengers across the surging sea. O Agni, celebrated in prayer like Sage Atri, awaken as the perpetual guardian and protector of our lives!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे समस्त दुखों के भंजक जातवेदा अग्निदेव! जैसे नौका नदी को पार करा देती है, वैसे ही आप हमें समस्त पापों व कठिनाइयों से पार उतारिए। हे अग्नि! अत्रि मुनि के समान एकाग्र मन से स्तुत होकर आप हमारे शरीरों के रक्षक बनिए!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "సమస్త దుఃఖములను పోగొట్టు ఓ జాతవేదుడా! నావ నదిని దాటించినట్లుగా, నీవు మమ్ములను పాపముల నుండి, ఆపదల నుండి దాటింపుము. ఓ అగ్నీ! అత్రి మహర్షి వలె ఏకాగ్ర మనస్సుతో స్తుతించబడు నీవు మా శరీరములకు నిత్య సంరక్షకుడవు కమ్ము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "துன்பங்களை அழிப்பவரான ஜாதவேதஸே! படகு நதியைக் கடப்பது போல, எங்களை எல்லாப் பாவங்களிலிருந்தும் இன்னல்களிலிருந்தும் காப்பாற்றுங்கள். அத்ரி முனிவரைப் போல் உள்ளன்போடு வணங்கும் எங்களது உடல்களுக்கு நீங்கள் காவலராய் இருப்பீராக!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಸಕಲ ದುಃಖನಾಶಕನಾದ ಹೇ ಜಾತವೇದನೇ! ದೋಣಿಯು ನದಿಯನ್ನು ದಾಟಿಸುವಂತೆ, ನೀನು ನಮ್ಮನ್ನು ಪಾಪಗಳಿಂದಲೂ ಸಂಕಟಗಳಿಂದಲೂ ಪಾರುಮಾಡು. ಅತ್ರಿ ಮುನಿಯಂತೆ ಶುದ್ಧ ಮನಸ್ಸಿನಿಂದ ಸ್ತುತಿಸಲ್ಪಡುವ ಹೇ ಅಗ್ನಿಯೇ, ನಮ್ಮ ಶರೀರಗಳ ರಕ್ಷಕನಾಗು!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "सर्व दुःखांचे निवारण करणाऱ्या हे जातवेदा अग्निदेवा! जशी नाव नदी पार करून देते, तसेच तू आम्हांला सर्व संकटांतून व पापांतून पार कर. अत्री ऋषींप्रमाणे एकाग्र मनाने स्तुती केलेल्या हे अग्नी, तू आमच्या शरीरांचा रक्षक हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে সর্বদুঃখহারী জাতবেদা অগ্নিদেব! নৌকা যেমন নদী পার করায়, তেমনি আপনি আমাদিগকে সর্ব পাপ ও বিপদ হইতে উত্তীর্ণ করুন। অত্রি মুনির ন্যায় একাগ্র চিত্তে বন্দিত হে অগ্নি, আপনি আমাদের অঙ্গ-প্রত্যঙ্গের রক্ষক হউন!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "સર્વ દુઃખોનું નિવારણ કરનારા હે જાતવેદા અગ્નિદેવ! જેમ નાવ નદી પાર કરાવે, તેમ આપ અમને સર્વ પાપો અને મુશ્કેલીઓમાંથી તારી દો. અત્રિ મુનિ સમાન એકાગ્ર મને સ્તુત થયેલા હે અગ્નિ! આપ અમારા શરીરના રક્ષક બનો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സർവ്വ ദുഃഖങ്ങളെയും ഇല്ലാതാക്കുന്ന ജാതവേദസ്സേ! തോണി പുഴയെ കടത്തുന്നതുപോലെ, അങ്ങ് ഞങ്ങളെ എല്ലാ പാപങ്ങളിൽനിന്നും കഷ്ടപ്പാടുകളിൽനിന്നും കരകയറ്റിയാലും. അത്രി മഹർഷിയെപ്പോലെ ഏകാഗ്രമനസ്സോടെ സ്തുതിക്കപ്പെടുന്ന ഹേ അഗ്നീ, ഞങ്ങളുടെ ശരീരങ്ങളുടെ സംരക്ഷകനായിരുന്നാലും!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସମସ୍ତ ଦୁଃଖହାରୀ ହେ ଜାତବେଦା ଅଗ୍ନିଦେବ! ଡଙ୍ଗା ଯେପରି ନଦୀ ପାର କରାଏ, ସେହିପରି ଆପଣ ଆମକୁ ସମସ୍ତ ପାପ ଓ ବିପଦରୁ ଉଦ୍ଧାର କରନ୍ତୁ । ଅତ୍ରି ମୁନିଙ୍କ ଭଳି ଏକାଗ୍ର ମନରେ ସ୍ତୁତ ହୋଇ ହେ ଅଗ୍ନି, ଆପଣ ଆମ ଶରୀରର ରକ୍ଷକ ହୁଅନ୍ତୁ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 5,
+      "verse_type": "VERSE",
+      "original_sanskrit": "पृत॑ना॒जितं॒ सह॑मानमु॒ग्रम॒ग्निं हु॑वेम पर॒मात्स॒धस्था॑त् ।\nस नः॑ पर्ष॒दति॑ दु॒र्गाणि॒ विश्वा॒ क्षाम॑द्देवो अतिदुरि॒तात्य॒ग्निः ॥ ५ ॥",
+      "iast": "pṛta॑nā॒jitaṁ॒ saha॑mānamu॒grama॒gniṁ hu॑vēma para॒mātsa॒dhasthā॑t ।\nsa naḥ॑ parṣa॒dati॑ du॒rgāṇi॒ viśvā॒ kṣāma॑ddēvō atiduri॒tātya॒gniḥ ॥ 5 ॥",
+      "transliterations": {
+        "telugu": "పృత॑నా॒జితం॒ సహ॑మానము॒గ్రమ॒గ్నిం హు॑వేమ పర॒మాత్స॒ధస్థా॑త్ ।\nస నః॑ పర్ష॒దతి॑ దు॒ర్గాణి॒ విశ్వా॒ క్షామ॑ద్దేవో అతిదురి॒తాత్య॒గ్నిః ॥ ౫ ॥",
+        "tamil": "ப்ரு'த॑நா॒ஜிதம்॒ ஸஹ॑மாநமு॒க்ரம॒க்நிம் ஹு॑வேம பர॒மாத்ஸ॒தஸ்தா॑த் ।\nஸ நஃ॑ பர்ஷ॒ததி॑ து॒ர்காணி॒ விஶ்வா॒ க்ஷாம॑த்தேவோ அதிதுரி॒தாத்ய॒க்நிஃ ॥ ௫ ॥",
+        "kannada": "ಪೃತ॑ನಾ॒ಜಿತಂ॒ ಸಹ॑ಮಾನಮು॒ಗ್ರಮ॒ಗ್ನಿಂ ಹು॑ವೇಮ ಪರ॒ಮಾತ್ಸ॒ಧಸ್ಥಾ॑ತ್ ।\nಸ ನಃ॑ ಪರ್ಷ॒ದತಿ॑ ದು॒ರ್ಗಾಣಿ॒ ವಿಶ್ವಾ॒ ಕ್ಷಾಮ॑ದ್ದೇವೋ ಅತಿದುರಿ॒ತಾತ್ಯ॒ಗ್ನಿಃ ॥ ೫ ॥",
+        "malayalam": "പൃത॑നാ॒ജിതം॒ സഹ॑മാനമു॒ഗ്രമ॒ഗ്നിം ഹു॑വേമ പര॒മാത്സ॒ധസ്ഥാ॑ത് ।\nസ നഃ॑ പര്ഷ॒ദതി॑ ദു॒ര്ഗാണി॒ വിശ്വാ॒ ക്ഷാമ॑ദ്ദേവോ അതിദുരി॒താത്യ॒ഗ്നിഃ ॥ ൫ ॥",
+        "iast": "pṛta̭nā̱jita̱ṃ saha̭mānamu̱grama̱gniṃ hṷvema para̱mātsa̱dhasthā̭t |\nsa na̭ḥ parṣa̱dati̭ du̱rgāṇi̱ viśvā̱ kṣāma̭ddevo atiduri̱tātya̱gniḥ || 5 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "We invoke Agni, the conqueror of hostile armies, triumphant and formidable, from His supreme celestial assembly! May He, the luminous God, consume our transgressions and transport us safely across every tribulation!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "शत्रु सेनाओं को जीतने वाले, समस्त बाधाओं को दबाने वाले, उग्र और परम तेजस्वी अग्निदेव को हम परम धाम से यहाँ बुलाते हैं। वे प्रकाशमान देव हमें समस्त संकटों से पार ले जाएँ और हमारे समस्त पापों व दुखों को भस्म कर दें!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "శత్రు సైన్యములను జయించువాడు, ప్రతికూల శక్తులను అణచివేయువాడు, ఉగ్ర తేజోవంతుడైన అగ్నిదేవుని పరమ లోకము నుండి మేము ఆహ్వానించుచున్నాము. ఆ ప్రకాశమానుడైన దేవుడు మమ్ములను సమస్త ఆపదల నుండి దాటించి, మా పాపములను దహించివేయుగాక!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "பகை சேனைகளை வெல்பவரும், தடைகளை ஒடுக்குபவரும், வீரமிக்க அக்னி பகவானையும் பரம பதத்திலிருந்து அழைக்கிறோம். பேரொளி வீசும் அந்த இறைவன் எங்களை எல்லா இன்னல்களிலிருந்தும் கரைசேர்த்து, பாவங்களைச் சாம்பலாக்கட்டும்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಶತ್ರು ಸೈನ್ಯಗಳನ್ನು ಜಯಿಸುವ, ವಿರೋಧಿ ಶಕ್ತಿಗಳನ್ನು ದಮನಮಾಡುವ, ತೇಜಸ್ವಿಯಾದ ಅಗ್ನಿದೇವನನ್ನು ಪರಮಧಾಮದಿಂದ ನಾವು ಆವಾಹಿಸುತ್ತೇವೆ. ಆ ಪ್ರಕಾಶಮಾನ ದೇವನು ನಮ್ಮನ್ನು ಸಕಲ ಸಂಕಟಗಳಿಂದ ಪಾರುಮಾಡಲಿ ಮತ್ತು ಪಾಪಗಳನ್ನು ಸುಟ್ಟುಹಾಕಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "शत्रूंच्या सैन्याला जिंकणाऱ्या, सर्व संकटांना पराभूत करणाऱ्या आणि तेजस्वी अग्निदेवाला आम्ही परम धामातून पाचारण करतो. तो प्रकाशमान देव आम्हांला सर्व संकटांतून पार करो आणि आमची पापे भस्म करो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "শত্রুবাহিনীর বিজয়ী, সর্ববাধার দমনকারী, পরম তেজস্বী অগ্নিদেবকে আমরা পরম ধাম হইতে আহ্বান করিতেছি। সেই দীপ্তিমান দেব আমাদিগকে সর্ববিধ সংকট হইতে উদ্ধার করুন এবং আমাদের সমস্ত পাপ ভস্মীভূত করুন!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "શત્રુ સેનાઓને જીતનારા, સર્વ બાધાઓને દબાવનારા અને તેજસ્વી અગ્નિદેવને અમે પરમધામમાંથી બોલાવીએ છીએ. તે પ્રકાશવાન દેવ અમને સઘળાં સંકટોમાંથી પાર ઉતારે અને અમારાં પાપોને ભસ્મ કરે!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ശത്രുസൈന്യങ്ങളെ ജയിക്കുന്നവനും, പ്രതിബന്ധങ്ങളെ തകർക്കുന്നവനുമായ തേജസ്വിയായ അഗ്നിയെ ഞങ്ങൾ പരമപദത്തിൽനിന്നു വിളിക്കുന്നു. ആ പ്രകാശസ്വരൂപനായ ദൈവം ഞങ്ങളെ എല്ലാ ആപത്തുകളിൽനിന്നും രക്ഷിക്കുകയും ഞങ്ങളുടെ പാപങ്ങളെ ദഹിപ്പിക്കുകയും ചെയ്യട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଶତ୍ରୁ ସୈନ୍ୟକୁ ଜୟ କରୁଥିବା, ସମସ୍ତ ବାଧାବିଘ୍ନକୁ ଦମନ କରୁଥିବା ଏବଂ ତେଜସ୍ୱୀ ଅଗ୍ନିଦେବଙ୍କୁ ଆମେ ପରମ ଧାମରୁ ଆହ୍ୱାନ କରୁଛୁ । ସେହି ପ୍ରକାଶମାନ ଦେବ ଆମକୁ ସମସ୍ତ ସଙ୍କଟରୁ ପାର କରନ୍ତୁ ଏବଂ ଆମର ସମସ୍ତ ପାପକୁ ଭସ୍ମ କରନ୍ତୁ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 6,
+      "verse_type": "VERSE",
+      "original_sanskrit": "प्र॒त्नोषि॑ क॒मीड्यो॑ अध्व॒रेषु॑ स॒नाच्च॒ होता॒ नव्य॑श्च॒ सत्सि॑ ।\nस्वाञ्चा॑ग्ने त॒नुवं॑ पि॒प्रय॑स्वा॒स्मभ्यं॑ च॒ सौभ॑ग॒माय॑जस्व ॥ ६ ॥",
+      "iast": "pra॒tnōṣi॑ ka॒mīḍyō॑ adhva॒rēṣu॑ sa॒nācca॒ hōtā॒ navya॑śca॒ satsi॑ ।\nsvāñcā॑gnē ta॒nuvaṁ॑ pi॒praya॑swā॒smabhyaṁ॑ ca॒ saubha॑ga॒māya॑jasva ॥ 6 ॥",
+      "transliterations": {
+        "telugu": "ప్ర॒త్నోషి॑ క॒మీడ్యో॑ అధ్వ॒రేషు॑ స॒నాచ్చ॒ హోతా॒ నవ్య॑శ్చ॒ సత్సి॑ ।\nస్వాఞ్చా॑గ్నే త॒నువం॑ పి॒ప్రయ॑స్వా॒స్మభ్యం॑ చ॒ సౌభ॑గ॒మాయ॑జస్వ ॥ ౬ ॥",
+        "tamil": "ப்ர॒த்நோஷி॑ க॒மீட்யோ॑ அத்வ॒ரேஷு॑ ஸ॒நாச்ச॒ ஹோதா॒ நவ்ய॑ஶ்ச॒ ஸத்ஸி॑ ।\nஸ்வாஞ்சா॑க்நே த॒நுவம்॑ பி॒ப்ரய॑ஸ்வா॒ஸ்மப்யம்॑ ச॒ ஸௌப॑க॒மாய॑ஜஸ்வ ॥ ௬ ॥",
+        "kannada": "ಪ್ರ॒ತ್ನೋಷಿ॑ ಕ॒ಮೀಡ್ಯೋ॑ ಅಧ್ವ॒ರೇಷು॑ ಸ॒ನಾಚ್ಚ॒ ಹೋತಾ॒ ನವ್ಯ॑ಶ್ಚ॒ ಸತ್ಸಿ॑ ।\nಸ್ವಾಞ್ಚಾ॑ಗ್ನೇ ತ॒ನುವಂ॑ ಪಿ॒ಪ್ರಯ॑ಸ್ವಾ॒ಸ್ಮಭ್ಯಂ॑ ಚ॒ ಸೌಭ॑ಗ॒ಮಾಯ॑ಜಸ್ವ ॥ ೬ ॥",
+        "malayalam": "പ്ര॒ത്നോഷി॑ ക॒മീഡ്യോ॑ അധ്വ॒രേഷു॑ സ॒നാച്ച॒ ഹോതാ॒ നവ്യ॑ശ്ച॒ സത്സി॑ ।\nസ്വാഞ്ചാ॑ഗ്നേ ത॒നുവം॑ പി॒പ്രയ॑സ്വാ॒സ്മഭ്യം॑ ച॒ സൌഭ॑ഗ॒മായ॑ജസ്വ ॥ ൬ ॥",
+        "iast": "pra̱tnoṣi̭ ka̱mīḍyo̭ adhva̱reṣṷ sa̱nācca̱ hotā̱ navya̭śca̱ satsi̭ |\nsvāñcā̭gne ta̱nuva̭ṃ pi̱praya̭svā̱smabhya̭ṃ ca̱ saubha̭ga̱māya̭jasva || 6 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "You are praiseworthy in all sacred sacrifices since ancient times; You are the eternal Priest (Hota), yet ever fresh and new! O Agni, delight in Your own divine form and bestow glorious auspiciousness, spiritual wealth, and fortune upon us!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे पवित्र यज्ञों में नित्य स्तुत्य अग्निदेव! आप अनादि काल से मुख्य होता (पुरोहित) हैं और नित्य नूतन होकर वेदी पर विराजमान होते हैं। हे अग्नि! आप अपने दिव्य स्वरूप से संतुष्ट होइए और हमें उत्तम सौभाग्य व समृद्धि प्रदान कीजिए!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "పవిత్ర యజ్ఞములందు సదా స్తుతింపబడు ఓ అగ్నీ! నీవు అనాది కాలము నుండియు ప్రథమ హోతవు (పురోహితుడవు); నిత్య నూతనముగా యజ్ఞవేదిక పై ఆసీనుడవగుచున్నావు. ఓ అగ్నిదేవా! నీ దివ్య స్వరూపమున సంతోషించి, మాకు సర్వతోముఖ సౌభాగ్యమును అనుగ్రహింపుము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "புனித வேள்விகளில் என்றும் துதிக்கப்படும் அக்னியே! ஆதி காலம் தொட்டே நீயே முதன்மை ஹோதா (புரோகிதர்); என்றும் புதுமையாய் வேள்விப் பீடத்தில் வீற்றிருக்கிறாய். அக்னியே! உனது திவ்ய திருவுருவில் மகிழ்ந்து, எங்களுக்கு மங்கலச் செல்வத்தையும் நல்வாழ்வையும் அருள்வாயாக!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಪವಿತ್ರ ಯಜ್ಞಗಳಲ್ಲಿ ಸದಾ ಸ್ತುತಿಸಲ್ಪಡುವ ಹೇ ಅಗ್ನಿಯೇ! ನೀನು ಸನಾತನ ಕಾಲದಿಂದಲೂ ಪ್ರಮುಖ ಹೋತನಾಗಿದ್ದು, ನಿತ್ಯ ನೂತನನಾಗಿ ಯಜ್ಞವೇದಿಯಲ್ಲಿ ವಿರಾಜಿಸುತ್ತಿರುವೆ. ಹೇ ಅಗ್ನಿದೇವನೇ! ನಿನ್ನ ದಿವ್ಯ ಶರೀರವನ್ನು ತೃಪ್ತಿಪಡಿಸಿಕೊಂಡು, ನಮಗೆ ಸಕಲ ಸೌಭಾಗ್ಯಗಳನ್ನು ಕರುಣಿಸು!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "पवित्र यज्ञांमध्ये नित्य स्तुती केलेल्या हे अग्निदेवा! तू अनादी काळापासून मुख्य होता (पुरोहित) आहेस आणि नित्य नूतन होऊन वेदीवर विराजमान होतोस. हे अग्नी, तू स्वतःच्या दिव्य स्वरूपाने प्रसन्न हो आणि आम्हांला उत्तम सौभाग्य प्रदान कर!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "পবিত্র যজ্ঞসমূহে সতত স্তুত হে অগ্নিদেব! আপনি সনাতন কাল হইতেই প্রধান হোতা এবং নিত্য নূতন রূপে বেদীতে অধিষ্ঠান করেন। হে অগ্নি, আপনি আপনার দিব্য রূপ তৃপ্ত করিয়া আমাদিগকে সর্বসৌভাগ্য দান করুন!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "પવિત્ર યજ્ઞોમાં સદા સ્તુત્ય હે અગ્નિદેવ! આપ સનાતન કાળથી મુખ્ય હોતા (પુરોહિત) છો અને નિત્ય નૂતન થઈને યજ્ઞવેદી પર બિરાજો છો. હે અગ્નિ! આપ આપના દિવ્ય સ્વરૂપથી પ્રસન્ન થાઓ અને અમને ઉત્તમ સૌભાગ્ય આપો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "പവിത്രയജ്ഞങ്ങളിൽ സദാ സ്തുതിക്കപ്പെടുന്ന അഗ്നീ! അങ്ങ് അനാദികാലം മുതൽക്കേ പ്രധാന ഹോതാവാണ്; നിത്യനൂതനനായി യജ്ഞവേദിയിലിരിക്കുന്നു. ഹേ അഗ്നീ, അങ്ങയുടെ ദിവ്യരൂപത്തിൽ സന്തോഷിച്ചു ഞങ്ങൾക്ക് സകല സൗഭാഗ്യങ്ങളും നൽകിയാലും!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ପବିତ୍ର ଯଜ୍ଞରେ ନିତ୍ୟ ସ୍ତୁତ ହେ ଅଗ୍ନିଦେବ! ଆପଣ ଅନାଦି କାଳରୁ ମୁଖ୍ୟ ହୋତା (ପୁରୋହିତ) ଅଟନ୍ତି ଏବଂ ନିତ୍ୟ ନୂତନ ହୋଇ ବେଦୀରେ ବିରାଜମାନ କରନ୍ତି । ହେ ଅଗ୍ନି, ଆପଣ ନିଜ ଦିବ୍ୟ ସ୍ୱରୂପରେ ପ୍ରସନ୍ନ ହୋଇ ଆମକୁ ଉତ୍ତମ ସୌଭାଗ୍ୟ ପ୍ରଦାନ କରନ୍ତୁ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 7,
+      "verse_type": "VERSE",
+      "original_sanskrit": "गोभि॒र्जुष्ट॒मयु॑जो॒ निषि॑क्तं॒ तवे॑न्द्र विष्णो॒रनु॒संच॑रेम ।\nनाक॑स्य पृ॒ष्ठम॒भि सं॒वसा॑नो॒ वैष्ण॑वीं लो॒क इ॒ह मा॑दयन्ताम् ॥ ७ ॥",
+      "iast": "gōbhi॒rjuṣṭa॒mayu॑jō॒ niṣi॑ktaṁ॒ tavē॑ndra viṣṇō॒ranu॒saṁca॑rēma ।\nnāka॑sya pṛ॒ṣṭhama॒bhi saṁ॒vasā॑nō॒ vaiṣṇa॑vīṁ lō॒ka i॒ha mā॑dayantām ॥ 7 ॥",
+      "transliterations": {
+        "telugu": "గోభి॒ర్జుష్ట॒మయు॑జో॒ నిషి॑క్తం॒ తవే॑న్ద్ర విష్ణో॒రను॒సంచ॑రేమ ।\nనాక॑స్య పృ॒ష్ఠమ॒భి సం॒వసా॑నో॒ వైష్ణ॑వీం లో॒క ఇ॒హ మా॑దయన్తామ్ ॥ ౭ ॥",
+        "tamil": "கோபி॒ர்ஜுஷ்ட॒மயு॑ஜோ॒ நிஷி॑க்தம்॒ தவே॑ந்த்ர விஷ்ணோ॒ரநு॒ஸம்ச॑ரேம ।\nநாக॑ஸ்ய ப்ரு'॒ஷ்டம॒பி ஸம்॒வஸா॑நோ॒ வைஷ்ண॑வீம் லோ॒க இ॒ஹ மா॑தயந்தாம் ॥ ௭ ॥",
+        "kannada": "ಗೋಭಿ॒ರ್ಜುಷ್ಟ॒ಮಯು॑ಜೋ॒ ನಿಷಿ॑ಕ್ತಂ॒ ತವೇ॑ನ್ದ್ರ ವಿಷ್ಣೋ॒ರನು॒ಸಂಚ॑ರೇಮ ।\nನಾಕ॑ಸ್ಯ ಪೃ॒ಷ್ಠಮ॒ಭಿ ಸಂ॒ವಸಾ॑ನೋ॒ ವೈಷ್ಣ॑ವೀಂ ಲೋ॒ಕ ಇ॒ಹ ಮಾ॑ದಯನ್ತಾಮ್ ॥ ೭ ॥",
+        "malayalam": "ഗോഭി॒ര്ജുഷ്ട॒മയു॑ജോ॒ നിഷി॑ക്തം॒ തവേ॑ന്ദ്ര വിഷ്ണോ॒രനു॒സംച॑രേമ ।\nനാക॑സ്യ പൃ॒ഷ്ഠമ॒ഭി സം॒വസാ॑നോ॒ വൈഷ്ണ॑വീം ലോ॒ക ഇ॒ഹ മാ॑ദയന്താമ് ॥ ൭ ॥",
+        "iast": "gobhi̱rjuṣṭa̱mayṷjo̱ niṣi̭kta̱ṃ tavḙndra viṣṇo̱ranu̱saṃca̭rema |\nnāka̭sya pṛ̱ṣṭhama̱bhi sa̱ṃvasā̭no̱ vaiṣṇa̭vīṃ lo̱ka i̱ha mā̭dayantām || 7 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Blessed with spiritual wisdom, may we walk in harmony with Indra and Vishnu! Ascending to the radiant summit of the highest heaven, established in the transcendent Vaishnavi realm, may the seekers rejoice in everlasting bliss!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "गव्य हविष्य से संतुष्ट होकर, हम इन्द्र और सर्वव्यापक भगवान् विष्णु के दिव्य मार्ग का अनुगमन करें! परम दिव्य स्वर्गलोक में स्थान पाकर साधकजन इस संसार में भगवान् की कृपा में परमानन्द का अनुभव करें!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "పవిత్ర గోక్షీర హవిస్సులతో సంతుష్టుడవై, మేము ఇంద్రుడు మరియు విష్ణువుల దివ్య మార్గమున నడచునట్లు చేయుము! పరమ స్వర్గలోకమందు స్థానము పొంది, భక్తులు ఈ లోకమునందు భగవంతుని దివ్య కృపలో నిత్యానందమును పొందుదురు గాక!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "பால் முதலான புனித ஆகுதிகளால் மகிழ்வுற்று, இந்திரன் மற்றும் விஷ்ணுவின் திவ்ய நெறியை நாங்கள் பின்பற்றுவோமாக! மேலான பரமபதத்தில் புகலிடம் பெற்று, அடியார்கள் இவ்வுலகில் இறைவனின் அருளில் பேரானந்தம் அடைவார்களாக!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಪವಿತ್ರ ಹವಿಸ್ಸುಗಳಿಂದ ತೃಪ್ತನಾಗಿ, ನಾವು ಇಂದ್ರ ಮತ್ತು ಮಹಾವಿಷ್ಣುವಿನ ದಿವ್ಯ ಮಾರ್ಗವನ್ನು ಅನುಸರಿಸುವಂತೆ ಮಾಡು! ಪರಮ ಸ್ವರ್ಗಲೋಕದಲ್ಲಿ ನೆಲೆಸಿ, ಭಕ್ತರು ಈ ಜಗತ್ತಿನಲ್ಲಿ ಭಗವಂತನ ದಿವ್ಯ ಕೃಪೆಯಿಂದ ಪರಮಾನಂದವನ್ನು ಅನುಭವಿಸಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "पवित्र गोदुग्ध हविष्याने संतुष्ट होऊन, आम्ही इंद्र व भगवान विष्णूंच्या दिव्य मार्गाचे अनुसरण करावे! परम स्वर्गलोकात स्थान मिळवून भक्तांनी या संसारात भगवंताच्या कृपेत परमानंद अनुभवावा!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "পবিত্র দুগ্ধজাত হব্য দ্বারা পরিতুষ্ট হইয়া আমরা যেন ইন্দ্র ও পরমেশ্বর বিষ্ণুর দিব্য মার্গের অনুগমন করিতে পারি! পরম স্বর্গে স্থান লাভ করিয়া ভক্তগণ এই জগতে ভগবানের কৃপায় পরমানন্দ উপভোগ করুন!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "પવિત્ર ગવ્ય હવિષ્યથી સંતુષ્ટ થઈને, અમે ઇન્દ્ર અને ભગવાન વિષ્ણુના દિવ્ય માર્ગનું અનુસરણ કરીએ! પરમ સ્વર્ગલોકમાં સ્થાન મેળવીને ભક્તો આ સંસારમાં પ્રભુની કૃપામાં પરમાનંદ પામે!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "പവിത്രഹവിസ്സുകളാൽ സന്തുഷ്ടനായി, ഞങ്ങൾ ഇന്ദ്രന്റെയും വിഷ്ണുവിന്റെയും ദിവ്യമാർഗ്ഗത്തെ പിന്തുടരുമാറാകട്ടെ! പരമസ്വർഗ്ഗത്തിൽ ഇടം നേടി, ഭക്തർ ഈ ലോകത്തിൽ ഭഗവാന്റെ കാരുണ്യത്തിൽ പരമാനന്ദം അനുഭവിക്കട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ପବିତ୍ର ଗୋଦୁଗ୍ଧ ହବିଷ୍ୟରେ ସନ୍ତୁଷ୍ଟ ହୋଇ, ଆମେ ଇନ୍ଦ୍ର ଓ ଭଗବାନ ବିଷ୍ଣୁଙ୍କ ଦିବ୍ୟ ମାର୍ଗର ଅନୁସରଣ କରୁ! ପରମ ସ୍ୱର୍ଗଲୋକରେ ସ୍ଥାନ ପାଇ ଭକ୍ତମାନେ ଏହି ସଂସାରରେ ଭଗବାନଙ୍କ କୃପାରେ ପରମାନନ୍ଦ ଅନୁଭବ କରନ୍ତୁ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Vedic Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    }
+  ]
+}

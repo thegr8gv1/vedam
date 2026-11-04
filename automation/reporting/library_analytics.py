@@ -30,6 +30,7 @@ from database.models import (
     Text,
     Translation,
     TranslationReviewFeedback,
+    TranslationType,
     Verse,
     VerseType,
 )
@@ -71,6 +72,9 @@ class LibraryDashboardMetrics:
     regional_translation_completion_pct: float = 0.0
     publication_ready_approved_translations: int = 0
     draft_pending_review_translations: int = 0
+    number_of_devotional_bhavarthas: int = 0
+    number_of_literal_translations: int = 0
+    number_of_traditional_meanings: int = 0
     total_archived_historical_translations: int = 0
     multilingual_artifacts_excel: int = 0
     multilingual_artifacts_word: int = 0
@@ -236,6 +240,11 @@ class LibraryAnalyticsEngine:
         total_actual_regional = len(localized_cids) * 9
         comp_pct = round((len(localized_cids) / max(1, verified_complete)) * 100, 2)
 
+        # Translation Views Breakdown
+        devotional_bhavarthas = sum(1 for tr in all_translations if tr.translation_type == TranslationType.BHAVARTHA)
+        literal_trans_count = sum(1 for tr in all_translations if tr.word_by_word_json and isinstance(tr.word_by_word_json, dict) and tr.word_by_word_json.get("literal_translation"))
+        traditional_meaning_count = sum(1 for tr in all_translations if tr.word_by_word_json and isinstance(tr.word_by_word_json, dict) and tr.word_by_word_json.get("traditional_meaning"))
+
         # Check archived historical translations count
         archived_count = session.query(ArchivedTranslation).count()
 
@@ -277,6 +286,9 @@ class LibraryAnalyticsEngine:
             regional_translation_completion_pct=comp_pct,
             publication_ready_approved_translations=pub_ready_approved,
             draft_pending_review_translations=draft_pending,
+            number_of_devotional_bhavarthas=devotional_bhavarthas,
+            number_of_literal_translations=literal_trans_count,
+            number_of_traditional_meanings=traditional_meaning_count,
             total_archived_historical_translations=archived_count,
             multilingual_artifacts_excel=ml_excel,
             multilingual_artifacts_word=ml_word,

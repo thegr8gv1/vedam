@@ -2,8 +2,8 @@
 ## Master Execution Plan (Canonical Project Charter)
 
 **Document Status:** Active & Living  
-**Version:** 7.1.0  
-**Current Phase:** Phase 6C Batch 1 Complete (8 Compositions Localized across 9 Regional Languages)  
+**Version:** 7.2.0  
+**Current Phase:** Phase 6C Batch 2 Complete (12 Compositions Localized across 9 Regional Languages — 66.67% Coverage)  
 **Workspace:** `C:\Vedam`  
 
 ---
@@ -122,14 +122,23 @@ flowchart LR
   - **Spiritual Glossary Expansion**: Extended `automation/localization/glossary.py` from 20 to 28 terms across 8 liturgical categories with human-review metadata and regional definitions.
   - **QA Engine Enhancement**: Added Rule 11 (Mechanical vs Scholarly Review Distinction) and Rule 12 (Source Language Specificity Check - Awadhi vs Sanskrit) in `qa_framework.py`.
   - **Audio Recording Preparation**: Built `AudioPreparationEngine` (`audio_preparation.py`) generating timing cues, pronunciation guides, and text-translation separation manifests for audio recording teams.
-  - **Batch 1 Ingestion (3 Compositions, 27 Verses, 243 Translations)**:
+  - **Batch 1 Ingestion (3 Compositions, 27 Verses, 243 Translations) (COMPLETED)**:
     - `VEDA-TXT-00012`: Sankata Nashana Ganesha Stotram (8 verses $\times$ 9 languages = 72 translations)
     - `VEDA-TXT-00004`: Madhurashtakam (9 verses $\times$ 9 languages = 81 translations)
     - `VEDA-TXT-00017`: Surya Ashtakam (10 verses $\times$ 9 languages = 90 translations)
     - All 243 translations ingested strictly as `ReviewStatus.DRAFT`.
-  - **Corpus Regional Coverage**: 8 of 18 compositions fully localized in all 9 regional Indian languages ($54 \text{ verses} \times 9 = 486 \text{ active regional translations}$; $752 \text{ total active DB translations}$).
-  - **Batch 1 Publication Outputs**: Exported 13-column Excel workbooks, 12-row Word manuscripts, and JSON bundles for all 3 Batch 1 compositions.
-  - **Analytics Integration**: Updated `library_analytics.py` and exported `library_analytics_dashboard.json` (44.44% regional completion rate).
+  - **Batch 2 Ingestion (4 Vedic Suktams, 51 Verses, 459 Translations) (COMPLETED)**:
+    - `VEDA-TXT-00007`: Sri Suktam (16 verses $\times$ 9 languages = 144 translations; Rigveda Khilani / Scheftelowitz 1906)
+    - `VEDA-TXT-00014`: Purusha Suktam (16 verses $\times$ 9 languages = 144 translations; Rigveda 10.90 / Sayana Bhashya)
+    - `VEDA-TXT-00015`: Durga Suktam (7 verses $\times$ 9 languages = 63 translations; Taittiriya Aranyaka 10.1-2 / Anandashrama 1894)
+    - `VEDA-TXT-00016`: Narayana Suktam (12 verses $\times$ 9 languages = 108 translations; Taittiriya Aranyaka 10.13 / Anandashrama 1894)
+    - Provided **Three Distinct Translation Views**: Literal translation, Traditional meaning (citing Sayanacharya, Bhatta Bhaskara Mishra, Vidyaranya), and Devotional Bhavartha, plus separate Padachheda in `word_by_word_json`.
+    - All 459 translations ingested strictly as `ReviewStatus.DRAFT`.
+  - **Terminology Glossary Expansion**: Extended `automation/localization/glossary.py` to **40 terms** across 8 categories with 12 new canonical Vedic concepts (*Purusha*, *Narayana*, *Sri*, *Agni*, *Jatavedas*, *Hiranyavarna*, *Bhumi*, *Yajna*, *Rishi*, *Chandas*, *Devata*, *Havih*).
+  - **QA Engine Enhancement**: Added Rule 13 (`VEDIC_ACCENT_ISOLATION_AND_ALIGNMENT`) and Rule 14 (`VEDIC_COSMOLOGY_AND_DEITY_CHECK`). All 36 text-language audits passed with 100% compliance.
+  - **Publication & Audio Outputs**: Exported 4 Excel comparison workbooks (13-col), 4 Word manuscripts (12-row), 4 structured JSON bundles, and 4 audio production handoff manifests.
+  - **Corpus Regional Coverage**: **12 of 18 compositions** fully localized in all 9 regional Indian languages ($105 \text{ verses} \times 9 = 945 \text{ active regional translations}$; $1,211 \text{ total active DB translations}$; **66.67% completion rate**).
+  - **Remaining Batches**: Batch 3 (89 verses, Devi/Shiva Stotras) and Batch 4 (72 verses, Epic/Awadhi/Suprabhatam).
 
 ### Test Suite Status:
-- Automated test suite expanded to **159 tests passing with 100% pass rate in 11.36 seconds**.
+- Automated test suite expanded to **169 tests passing with 100% pass rate in 13.18 seconds**.
