@@ -1,7 +1,8 @@
 """
-Vedic Heritage Platform — SQLAlchemy 2.0 Relational Data Models
+Vedic Heritage Platform — SQLAlchemy 2.0 Relational Data Models (Enhanced)
 Canonical representation of sacred texts, verses, translations, multi-script
-transliterations, and the mandatory Content Rights & Provenance Engine.
+transliterations, source editions, media assets, and the jurisdiction-aware
+Content Rights & Provenance Engine.
 """
 
 from datetime import datetime, timezone
@@ -23,6 +24,8 @@ from sqlalchemy import (
     UniqueConstraint,
 )
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
+
+from automation.rights.jurisdiction import IPLayerType, Jurisdiction, RightsReleaseStatus
 
 
 class Base(DeclarativeBase):
@@ -83,6 +86,15 @@ class DuplicateStatus(str, enum.Enum):
     RESOLVED_DISTINCT = "RESOLVED_DISTINCT"
 
 
+class MediaType(str, enum.Enum):
+    AUDIO_CHANT = "AUDIO_CHANT"          # Studio chanting recording
+    AUDIO_JAPA_LOOP = "AUDIO_JAPA_LOOP"  # Repetition loop (108 counts)
+    AUDIO_NARRATION = "AUDIO_NARRATION"  # Puja instruction narration
+    VIDEO_LONG = "VIDEO_LONG"            # YouTube landscape video
+    VIDEO_SHORT = "VIDEO_SHORT"          # YouTube Shorts / Reels (9:16)
+    IMAGE_THUMBNAIL = "IMAGE_THUMBNAIL"  # Social thumbnail
+
+
 # ---------------------------------------------------------------------------
 # Models
 # ---------------------------------------------------------------------------
@@ -104,6 +116,41 @@ class Source(Base):
 
     # Relationships
     rights_records: Mapped[List["ContentRights"]] = relationship("ContentRights", back_populates="source")
+    editions: Mapped[List["SourceEdition"]] = relationship("SourceEdition", back_populates="source")
+
+
+class Contributor(Base):
+    """Scholars, transcribers, reviewers, translators, and legal approvers."""
+    __tablename__ = "contributors"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    name: Mapped[str] = mapped_column(String(128))
+    role: Mapped[str] = mapped_column(String(64))  # 'SCHOLAR', 'TRANSCRIBER', 'LEGAL_REVIEWER', 'TRANSLATOR'
+    affiliation: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
+    email: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
+
+
+class SourceEdition(Base):
+    """Specific historical or modern printed edition of a text."""
+    __tablename__ = "source_editions"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    text_id: Mapped[int] = mapped_column(Integer, ForeignKey("texts.id"), index=True)
+    source_id: Mapped[Optional[int]] = mapped_column(Integer, ForeignKey("sources.id"), nullable=True)
+    edition_title: Mapped[str] = mapped_column(String(255))
+    publisher: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
+    editor_name: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
+    publication_year: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    publication_city: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
+    isbn_or_call_number: Mapped[Optional[str]] = mapped_column(String(64), nullable=True)
+    archive_url: Mapped[Optional[str]] = mapped_column(String(512), nullable=True)
+    is_primary_critical_edition: Mapped[bool] = mapped_column(Boolean, default=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
+
+    # Relationships
+    text: Mapped["Text"] = relationship("Text", back_populates="source_editions")
+    source: Mapped[Optional["Source"]] = relationship("Source", back_populates="editions")
 
 
 class Category(Base):
@@ -111,7 +158,7 @@ class Category(Base):
     __tablename__ = "categories"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    slug: Mapped[str] = mapped_column(String(64), unique=True, index=True)  # e.g., 'stotra', 'mantra'
+    slug: Mapped[str] = mapped_column(String(64), unique=True, index=True)
     name: Mapped[str] = mapped_column(String(128))
     description: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
     parent_id: Mapped[Optional[int]] = mapped_column(Integer, ForeignKey("categories.id"), nullable=True)
@@ -125,9 +172,9 @@ class Deity(Base):
     __tablename__ = "deities"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    slug: Mapped[str] = mapped_column(String(64), unique=True, index=True)  # e.g., 'shiva', 'ganesha'
+    slug: Mapped[str] = mapped_column(String(64), unique=True, index=True)
     name: Mapped[str] = mapped_column(String(128))
-    sanskrit_name: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)  # e.g., 'शिवः'
+    sanskrit_name: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
     description: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
 
     # Relationships
@@ -137,16 +184,21 @@ class Deity(Base):
 class Text(Base):
     """
     Canonical Master Record for an individual sacred composition.
-    Preserves universal unique identifier, titles, liturgical metadata, and relationships.
+    Preserves raw source text, canonical scholarly text, titles, liturgical metadata, and relationships.
     """
     __tablename__ = "texts"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    content_id: Mapped[str] = mapped_column(String(32), unique=True, index=True)  # e.g., 'VEDA-TXT-00001'
-    uuid: Mapped[str] = mapped_column(String(36), unique=True, index=True)         # UUID v4
-    canonical_title: Mapped[str] = mapped_column(String(255), index=True)         # English title
-    devanagari_title: Mapped[str] = mapped_column(String(255))                     # Original Devanagari
-    alternative_titles: Mapped[Optional[list]] = mapped_column(JSON, default=list) # Alternate aliases
+    content_id: Mapped[str] = mapped_column(String(32), unique=True, index=True)
+    uuid: Mapped[str] = mapped_column(String(36), unique=True, index=True)
+    canonical_title: Mapped[str] = mapped_column(String(255), index=True)
+    devanagari_title: Mapped[str] = mapped_column(String(255))
+    alternative_titles: Mapped[Optional[list]] = mapped_column(JSON, default=list)
+
+    # Immutable Raw Ingestion Data
+    raw_source_script: Mapped[Optional[str]] = mapped_column(String(32), default="Devanagari")
+    raw_source_text: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
+    canonical_scholarly_text: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
 
     # Taxonomy Links
     deity_id: Mapped[Optional[int]] = mapped_column(Integer, ForeignKey("deities.id"), nullable=True)
@@ -154,19 +206,19 @@ class Text(Base):
     secondary_category_id: Mapped[Optional[int]] = mapped_column(Integer, ForeignKey("categories.id"), nullable=True)
 
     # Traditional Attribution & Liturgical Context
-    original_language: Mapped[str] = mapped_column(String(16), default="sa")       # ISO 639-1 (sa, awa, etc.)
+    original_language: Mapped[str] = mapped_column(String(16), default="sa")
     original_script: Mapped[str] = mapped_column(String(32), default="Devanagari")
-    composer: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)   # e.g., 'Adi Shankaracharya'
-    rishi: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)      # Vedic Seer
-    chandas: Mapped[Optional[str]] = mapped_column(String(64), nullable=True)     # Metre: Anushtubh, etc.
-    devata: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)     # Addressed Devata
-    source_scripture: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)  # e.g., 'Rigveda 10.90'
+    composer: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
+    rishi: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
+    chandas: Mapped[Optional[str]] = mapped_column(String(64), nullable=True)
+    devata: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
+    source_scripture: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
     associated_festival: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
-    traditional_usage: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)  # e.g., 'Nitya Japa'
+    traditional_usage: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
 
     # Integrity & Counts
     verse_count: Mapped[int] = mapped_column(Integer, default=0)
-    content_hash: Mapped[str] = mapped_column(String(64), index=True)             # SHA-256 of canonical text
+    content_hash: Mapped[str] = mapped_column(String(64), index=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
     updated_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
 
@@ -174,18 +226,17 @@ class Text(Base):
     deity: Mapped[Optional["Deity"]] = relationship("Deity", back_populates="texts")
     primary_category: Mapped["Category"] = relationship("Category", foreign_keys=[primary_category_id])
     secondary_category: Mapped[Optional["Category"]] = relationship("Category", foreign_keys=[secondary_category_id])
+    source_editions: Mapped[List["SourceEdition"]] = relationship("SourceEdition", back_populates="text", cascade="all, delete-orphan")
     versions: Mapped[List["TextVersion"]] = relationship("TextVersion", back_populates="text", cascade="all, delete-orphan")
     verses: Mapped[List["Verse"]] = relationship("Verse", back_populates="text", cascade="all, delete-orphan", order_by="Verse.verse_number")
     rights: Mapped[Optional["ContentRights"]] = relationship("ContentRights", back_populates="text", uselist=False, cascade="all, delete-orphan")
+    rights_grants: Mapped[List["RightsGrant"]] = relationship("RightsGrant", back_populates="text", cascade="all, delete-orphan")
+    media_assets: Mapped[List["MediaAsset"]] = relationship("MediaAsset", back_populates="text", cascade="all, delete-orphan")
     audit_logs: Mapped[List["VerificationAuditLog"]] = relationship("VerificationAuditLog", back_populates="text", cascade="all, delete-orphan")
 
 
 class TextVersion(Base):
-    """
-    Tiered version preservation:
-    Raw Extracted -> Cleaned -> Verified Original -> Chanting Ready.
-    Never silently overwrites earlier versions.
-    """
+    """Preserves raw, cleaned, verified original, and chanting versions."""
     __tablename__ = "text_versions"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
@@ -202,22 +253,21 @@ class TextVersion(Base):
 
 
 class Verse(Base):
-    """
-    Granular verse-level entity.
-    Maintains verse numbering, meter, Vedic swaras, and links to translations/transliterations.
-    """
+    """Granular verse-level entity with swara markup and multi-script links."""
     __tablename__ = "verses"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     text_id: Mapped[int] = mapped_column(Integer, ForeignKey("texts.id"), index=True)
-    verse_id: Mapped[str] = mapped_column(String(48), unique=True, index=True)  # e.g., 'VEDA-TXT-00001-V001'
+    verse_id: Mapped[str] = mapped_column(String(48), unique=True, index=True)
     verse_number: Mapped[int] = mapped_column(Integer, index=True)
     verse_type: Mapped[VerseType] = mapped_column(Enum(VerseType), default=VerseType.VERSE)
     
-    # Original Canonical Rendering
+    # Textual Renderings
+    raw_source_text: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
     devanagari_text: Mapped[str] = mapped_column(SA_Text)
     iast_text: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
     vedic_accents_present: Mapped[bool] = mapped_column(Boolean, default=False)
+    vedic_accent_annotations: Mapped[Optional[dict]] = mapped_column(JSON, nullable=True)
     meter: Mapped[Optional[str]] = mapped_column(String(64), nullable=True)
     notes: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
 
@@ -233,7 +283,7 @@ class Transliteration(Base):
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     verse_id: Mapped[int] = mapped_column(Integer, ForeignKey("verses.id"), index=True)
-    target_script: Mapped[str] = mapped_column(String(32), index=True)  # telugu, tamil, kannada, etc.
+    target_script: Mapped[str] = mapped_column(String(32), index=True)
     script_text: Mapped[str] = mapped_column(SA_Text)
     is_lossless: Mapped[bool] = mapped_column(Boolean, default=True)
     engine_name: Mapped[str] = mapped_column(String(64), default="indic-transliteration")
@@ -250,11 +300,13 @@ class Translation(Base):
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     verse_id: Mapped[int] = mapped_column(Integer, ForeignKey("verses.id"), index=True)
-    target_language: Mapped[str] = mapped_column(String(16), index=True)  # en, hi, te, ta, kn, etc.
+    target_language: Mapped[str] = mapped_column(String(16), index=True)
     translation_type: Mapped[TranslationType] = mapped_column(Enum(TranslationType), default=TranslationType.BHAVARTHA)
     translated_text: Mapped[str] = mapped_column(SA_Text)
-    word_by_word_json: Mapped[Optional[list]] = mapped_column(JSON, nullable=True)  # List of {word, padachheda, meaning}
+    word_by_word_json: Mapped[Optional[list]] = mapped_column(JSON, nullable=True)
+    translator_id: Mapped[Optional[int]] = mapped_column(Integer, ForeignKey("contributors.id"), nullable=True)
     translator: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
+    reviewer_id: Mapped[Optional[int]] = mapped_column(Integer, ForeignKey("contributors.id"), nullable=True)
     reviewer: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
     review_status: Mapped[ReviewStatus] = mapped_column(Enum(ReviewStatus), default=ReviewStatus.DRAFT)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
@@ -267,9 +319,8 @@ class Translation(Base):
 
 class ContentRights(Base):
     """
-    Mandatory Content Rights and Provenance Engine Record.
-    Every text MUST have an associated rights record.
-    Texts CANNOT enter commercial publication or export pipelines without release_status == GREEN.
+    Master Content Rights Record. Maintained for primary text-level clearance.
+    Works in synergy with RightsGrant for layer-specific and jurisdiction-specific audits.
     """
     __tablename__ = "content_rights"
 
@@ -279,7 +330,7 @@ class ContentRights(Base):
 
     # Attribution & Provenance
     original_composition_attribution: Mapped[str] = mapped_column(String(255))
-    primary_source: Mapped[str] = mapped_column(String(255))               # e.g., 'Gita Press Edition No. 1234'
+    primary_source: Mapped[str] = mapped_column(String(255))
     specific_edition: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
     edition_publication_date: Mapped[Optional[str]] = mapped_column(String(64), nullable=True)
     transcription_contributor: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
@@ -287,7 +338,7 @@ class ContentRights(Base):
     copyright_owner: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
 
     # License & Permission Flags
-    license_type: Mapped[str] = mapped_column(String(64))                  # e.g., 'PUBLIC_DOMAIN', 'CC_BY_4_0'
+    license_type: Mapped[str] = mapped_column(String(64))
     license_url: Mapped[Optional[str]] = mapped_column(String(512), nullable=True)
     commercial_reuse_permitted: Mapped[bool] = mapped_column(Boolean, default=False)
     translation_permitted: Mapped[bool] = mapped_column(Boolean, default=False)
@@ -297,9 +348,12 @@ class ContentRights(Base):
     attribution_text: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
     written_permission_reference: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
     permission_expiry: Mapped[Optional[datetime]] = mapped_column(DateTime, nullable=True)
+    territory_restriction: Mapped[str] = mapped_column(String(64), default="GLOBAL")
     
     # Audit & Status
     review_date: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
+    legal_reviewer: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
+    is_legally_approved: Mapped[bool] = mapped_column(Boolean, default=False)
     supporting_evidence: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
     release_status: Mapped[ReleaseStatus] = mapped_column(Enum(ReleaseStatus), default=ReleaseStatus.AMBER)
 
@@ -308,13 +362,58 @@ class ContentRights(Base):
     source: Mapped[Optional["Source"]] = relationship("Source", back_populates="rights_records")
 
 
+class RightsGrant(Base):
+    """
+    Granular, jurisdiction-specific and layer-specific rights grant.
+    Enforces independent clearance for translations, editions, audio, and commentary.
+    """
+    __tablename__ = "rights_grants"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    text_id: Mapped[int] = mapped_column(Integer, ForeignKey("texts.id"), index=True)
+    ip_layer: Mapped[IPLayerType] = mapped_column(Enum(IPLayerType))
+    jurisdiction: Mapped[Jurisdiction] = mapped_column(Enum(Jurisdiction), default=Jurisdiction.GLOBAL)
+    license_type: Mapped[str] = mapped_column(String(64))
+    commercial_reuse_authorized: Mapped[bool] = mapped_column(Boolean, default=False)
+    contract_reference: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
+    contract_expiry: Mapped[Optional[datetime]] = mapped_column(DateTime, nullable=True)
+    is_legally_approved: Mapped[bool] = mapped_column(Boolean, default=False)
+    legal_reviewer: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
+    status: Mapped[RightsReleaseStatus] = mapped_column(Enum(RightsReleaseStatus), default=RightsReleaseStatus.AMBER)
+    notes: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
+
+    # Relationships
+    text: Mapped["Text"] = relationship("Text", back_populates="rights_grants")
+
+
+class MediaAsset(Base):
+    """Audio recordings, Japa counting audio, videos, and visual graphics."""
+    __tablename__ = "media_assets"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    text_id: Mapped[int] = mapped_column(Integer, ForeignKey("texts.id"), index=True)
+    media_type: Mapped[MediaType] = mapped_column(Enum(MediaType))
+    title: Mapped[str] = mapped_column(String(255))
+    file_path: Mapped[str] = mapped_column(String(512))
+    duration_seconds: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
+    repetition_count: Mapped[Optional[int]] = mapped_column(Integer, default=1)
+    license_type: Mapped[str] = mapped_column(String(64), default="ORIGINAL_PLATFORM_PRODUCTION")
+    performer_artist: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
+    commercial_release_cleared: Mapped[bool] = mapped_column(Boolean, default=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
+
+    # Relationships
+    text: Mapped["Text"] = relationship("Text", back_populates="media_assets")
+
+
 class VerificationAuditLog(Base):
     """Auditing trail for text modifications, rights reviews, and scholar approvals."""
     __tablename__ = "verification_audit_logs"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     text_id: Mapped[int] = mapped_column(Integer, ForeignKey("texts.id"), index=True)
-    action: Mapped[str] = mapped_column(String(64))  # 'RIGHTS_REVIEW', 'VERSE_CORRECTION', etc.
+    action: Mapped[str] = mapped_column(String(64))
     previous_value: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
     new_value: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
     performed_by: Mapped[str] = mapped_column(String(128))
@@ -333,7 +432,7 @@ class DuplicateCandidate(Base):
     text_id_a: Mapped[int] = mapped_column(Integer, ForeignKey("texts.id"))
     text_id_b: Mapped[int] = mapped_column(Integer, ForeignKey("texts.id"))
     similarity_score: Mapped[float] = mapped_column(Float)
-    comparison_method: Mapped[str] = mapped_column(String(64))  # 'EXACT_HASH', 'TOKEN_SORT_RATIO'
+    comparison_method: Mapped[str] = mapped_column(String(64))
     status: Mapped[DuplicateStatus] = mapped_column(Enum(DuplicateStatus), default=DuplicateStatus.DETECTED)
     resolved_by: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))

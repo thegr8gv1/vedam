@@ -1,6 +1,6 @@
 # Vedic Heritage Platform — Database Architecture & Schema Specification
-**Version:** 1.0.0  
-**Status:** Approved Specification (Phase 1, Step 6)  
+**Version:** 2.0.0  
+**Status:** Approved Specification (Phase 2 Authorization)  
 **ORM Implementation:** SQLAlchemy 2.0 (`database/models.py`)  
 **Validation Schemas:** Pydantic V2 (`database/schemas.py`)  
 
@@ -10,80 +10,112 @@
 
 ```mermaid
 erDiagram
+    SOURCES ||--o{ SOURCE_EDITIONS : publishes
     SOURCES ||--o{ CONTENT_RIGHTS : provides
     CATEGORIES ||--o{ CATEGORIES : "parent / subcategory"
     CATEGORIES ||--o{ TEXTS : classifies
     DEITIES ||--o{ TEXTS : dedicated_to
+    TEXTS ||--o{ SOURCE_EDITIONS : based_on
     TEXTS ||--o{ TEXT_VERSIONS : preserves
     TEXTS ||--o{ VERSES : contains
     TEXTS ||--|| CONTENT_RIGHTS : governed_by
+    TEXTS ||--o{ RIGHTS_GRANTS : cleared_by
+    TEXTS ||--o{ MEDIA_ASSETS : accompanied_by
     TEXTS ||--o{ VERIFICATION_AUDIT_LOGS : audits
     TEXTS ||--o{ DUPLICATE_CANDIDATES : compares
     VERSES ||--o{ TRANSLITERATIONS : rendered_in
     VERSES ||--o{ TRANSLATIONS : translated_into
-
-    SOURCES {
-        int id PK
-        string source_code UK
-        string name
-        string base_url
-        string acquisition_track
-        string contact_email
-    }
-
-    CATEGORIES {
-        int id PK
-        string slug UK
-        string name
-        int parent_id FK
-    }
-
-    DEITIES {
-        int id PK
-        string slug UK
-        string name
-        string sanskrit_name
-    }
+    CONTRIBUTORS ||--o{ TRANSLATIONS : translates
+    CONTRIBUTORS ||--o{ TRANSLATIONS : reviews
 
     TEXTS {
         int id PK
-        string content_id UK
+        string content_id UK "e.g. VEDA-TXT-00001"
         string uuid UK
         string canonical_title
         string devanagari_title
+        string raw_source_script
+        text raw_source_text "Immutable"
+        text canonical_scholarly_text
         int deity_id FK
         int primary_category_id FK
+        string original_language "sa, awa"
         string composer
         string rishi
         string chandas
-        string content_hash
+        string devata
+        string content_hash "SHA-256"
         int verse_count
     }
 
-    TEXT_VERSIONS {
+    SOURCE_EDITIONS {
         int id PK
         int text_id FK
-        string version_type
-        int version_number
-        text full_text
+        int source_id FK
+        string edition_title
+        string publisher
+        string editor_name
+        int publication_year
+        string isbn_or_call_number
+        boolean is_primary_critical_edition
+    }
+
+    RIGHTS_GRANTS {
+        int id PK
+        int text_id FK
+        string ip_layer "COMPOSITION, EDITION, TRANSLATION, AUDIO"
+        string jurisdiction "IN, US, EU, GB, GLOBAL"
+        string license_type
+        boolean commercial_reuse_authorized
+        string contract_reference
+        boolean is_legally_approved
+        string legal_reviewer
+        string status "GREEN, AMBER, RED"
+    }
+
+    MEDIA_ASSETS {
+        int id PK
+        int text_id FK
+        string media_type "AUDIO_CHANT, JAPA_LOOP, VIDEO_LONG"
+        string title
+        string file_path
+        float duration_seconds
+        int repetition_count "108"
+        string license_type
+        boolean commercial_release_cleared
+    }
+
+    CONTENT_RIGHTS {
+        int id PK
+        int text_id FK, UK
+        string original_author_attribution
+        string primary_source
+        string specific_edition
+        string license_type "PUBLIC_DOMAIN, PARTNER"
+        boolean commercial_reuse_permitted
+        string territory_restriction "GLOBAL, IN"
+        boolean is_legally_approved
+        string legal_reviewer
+        string release_status "GREEN, AMBER, RED"
     }
 
     VERSES {
         int id PK
         int text_id FK
-        string verse_id UK
+        string verse_id UK "e.g. VEDA-TXT-00001-V001"
         int verse_number
-        string verse_type
+        string verse_type "VERSE, DOHA, MANTRA"
+        text raw_source_text
         text devanagari_text
         text iast_text
         boolean vedic_accents_present
-        string meter
+        json vedic_accent_annotations
     }
 
     TRANSLITERATIONS {
         int id PK
         int verse_id FK
-        string target_script
+        string target_script "telugu, tamil, kannada, malayalam"
         text script_text
         boolean is_lossless
     }
@@ -91,90 +123,10 @@ erDiagram
     TRANSLATIONS {
         int id PK
         int verse_id FK
-        string target_language
-        string translation_type
+        string target_language "en, hi, te, ta, kn"
+        string translation_type "BHAVARTHA, PADACHHEDA"
         text translated_text
         json word_by_word_json
-        string review_status
-    }
-
-    CONTENT_RIGHTS {
-        int id PK
-        int text_id FK, UK
-        int source_id FK
-        string original_author_attribution
-        string primary_source
-        string specific_edition
-        string license_type
-        boolean commercial_reuse_permitted
-        boolean translation_permitted
-        string release_status
-    }
-
-    VERIFICATION_AUDIT_LOGS {
-        int id PK
-        int text_id FK
-        string action
-        text previous_value
-        text new_value
-        string performed_by
-        datetime timestamp
-    }
-
-    DUPLICATE_CANDIDATES {
-        int id PK
-        int text_id_a FK
-        int text_id_b FK
-        float similarity_score
-        string comparison_method
-        string status
+        string review_status "DRAFT, APPROVED"
     }
 ```
-
----
-
-## 2. Table Specifications & Cardinalities
-
-### 2.1 `texts` (Master Sacred Text Entity)
-- **Primary Key:** `id` (Integer autoincrement).
-- **Unique Indexes:** `content_id` (`VEDA-TXT-XXXXX`), `uuid` (UUIDv4).
-- **Secondary Indexes:** `canonical_title`, `content_hash`, `primary_category_id`, `deity_id`.
-- **Purpose:** Acts as the single immutable anchor for all versions, verses, translations, and downstream publication handoffs.
-
-### 2.2 `verses` (Granular Stanza Entity)
-- **Primary Key:** `id` (Integer autoincrement).
-- **Unique Index:** `verse_id` (`VEDA-TXT-XXXXX-VXXX`).
-- **Composite Index:** `(text_id, verse_number)`.
-- **Fields:**
-  - `devanagari_text`: Canonical Sanskrit text in UTF-8.
-  - `vedic_accents_present`: Flag indicating presence of combining characters (U+0951 Svarita, U+0952 Anudatta).
-  - `verse_type`: `INVOCATION`, `VERSE`, `DOHA`, `CHAUPAI`, `MANTRA`, `PHALASRUTI`, `COLOPHON`.
-
-### 2.3 `transliterations` (Multi-Script Projections)
-- **Foreign Key:** `verse_id` references `verses.id` (ON DELETE CASCADE).
-- **Unique Constraint:** `(verse_id, target_script)`.
-- **Supported Scripts:** Telugu, Tamil, Kannada, Malayalam, Bengali, Gujarati, Odia, Assamese, Punjabi, Devanagari, Roman IAST.
-
-### 2.4 `translations` (Multilingual Interpretations & Padachheda)
-- **Foreign Key:** `verse_id` references `verses.id` (ON DELETE CASCADE).
-- **Unique Constraint:** `(verse_id, target_language, translation_type)`.
-- **Fields:**
-  - `translation_type`: `LITERAL`, `BHAVARTHA`, `PADACHHEDA`, `TATPARYA`.
-  - `word_by_word_json`: Structured array of grammatical tokens: `[{"word": "...", "padachheda": "...", "meaning": "..."}]`.
-  - `review_status`: `DRAFT`, `SCHOLAR_REVIEWED`, `APPROVED`.
-
-### 2.5 `content_rights` (Rights & Provenance Enforcement)
-- **Foreign Key:** `text_id` references `texts.id` (1-to-1 relationship, UNIQUE).
-- **Foreign Key:** `source_id` references `sources.id`.
-- **Release Status Enum:**
-  - `GREEN`: Approved for commercial publishing and public mobile distribution.
-  - `AMBER`: Pending legal verification or partner contract signature.
-  - `RED`: Prohibited for commercial publication.
-
----
-
-## 3. Database Migration Strategy (Alembic)
-
-- For development, SQLite (`database/vedam.db`) provides instant zero-dependency testing.
-- For production, Alembic handles transactional DDL migrations against PostgreSQL.
-- Migration scripts will reside in `database/migrations/versions/`.
