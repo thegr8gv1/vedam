@@ -2,8 +2,8 @@
 ## Master Execution Plan (Canonical Project Charter)
 
 **Document Status:** Active & Living  
-**Version:** 3.0.0  
-**Current Phase:** Phase 3 Complete — Ready for Phase 4 Authorization  
+**Version:** 4.0.0  
+**Current Phase:** Phase 4 Complete — Ready for Phase 5 Authorization  
 **Workspace:** `C:\Vedam`  
 
 ---
@@ -46,15 +46,15 @@ flowchart TD
         B2["Historical Printed Critical Editions (>60 yrs post-author/editor death)"]
         B3["Scholarly Repositories (GRETIL, Muktabodha, SanskritDocuments - Reference Only)"]
     end
-    TrackA --> RightsEngine["Jurisdiction Rights & Provenance Engine<br>(GREEN / AMBER / RED)"]
+    TrackA --> RightsEngine["Multidimensional Governance & Publication Gate<br>(GREEN_CLEARED)"]
     TrackB --> RightsEngine
     RightsEngine --> DB[(Relational Master Database & Alembic)]
-    DB --> Exporters["Publication Engines (Word, Excel, JSON, Audio, Mobile)"]
+    DB --> Exporters["Publication Engines (11-Tab Excel, Typeset Word, Indic PDF)"]
 ```
 
 1. **Zero Confusion Rule**: Every new website or dataset is cataloged in `documentation/project_roadmap/SOURCE_REGISTRY.md` with an assigned `SRC-xxx` identifier before parsing or ingestion begins.
 2. **Provenance Preservation**: Every verse retains its `source_id`, `source_url`, and `collection_timestamp`.
-3. **Mandatory Rights Clearance**: No text can enter commercial publishing, mobile apps, or audio distribution without **`release_status == ReleaseStatus.GREEN`** signed off by human legal review.
+3. **Mandatory Rights Clearance**: No text can enter commercial publishing, mobile apps, or audio distribution without **`rights_clearance_status == RightsClearanceStatus.GREEN_CLEARED`** signed off by human legal review.
 
 ---
 
@@ -64,9 +64,9 @@ flowchart TD
 flowchart LR
     P1["Phase 1: Research & Discovery (COMPLETE)"] --> P2["Phase 2: Collection Engine (COMPLETE)"]
     P2 --> P3["Phase 3: DB Maturity & Master Catalog (COMPLETE)"]
-    P3 --> P4["Phase 4: Publication Engine (Excel/Word/PDF)"]
-    P4 --> P5["Phase 5: Scholarly Text Verification"]
-    P5 --> P6["Phase 6: 22-Language Localization"]
+    P3 --> P4["Phase 4: Full-Text Ingestion & Publication (COMPLETE)"]
+    P4 --> P5["Phase 5: Systematic Multi-Text Corpus Expansion"]
+    P5 --> P6["Phase 6: Multilingual Localization (22 Languages)"]
     P6 --> P7["Phase 7: Controlled AI Integration"]
     P7 --> P8["Phase 8: Audio & Video Production Handoff"]
     P8 --> P9["Phase 9: Mobile App (Flutter)"]
@@ -78,30 +78,38 @@ flowchart LR
 ## 4. Phase Milestone Trackers
 
 ### Phase 1: Research, Source Discovery & Architecture Foundation (COMPLETED)
-- Steps 1 to 10 completed: Technical audits of 4 websites, legal demarcation, initial ORM models, export prototypes, dual-track strategies.
+- Technical inspection of sources, copyright assessment, modular architecture.
 
-### Phase 2: Vedic Content Collection & Processing Engine (COMPLETED)
-- Steps 2.1 to 2.6 completed: Jurisdiction-aware rights (`jurisdiction.py`), Unicode Vedic swara preserver (`unicode_preserver.py`), expanded ORM schema (`SourceEdition`, `RightsGrant`, `MediaAsset`), modular pipeline engine, 8 pilot compositions seeded, 33 automated tests.
+### Phase 2: Content Collection & Processing Engine (COMPLETED)
+- Connectors, Unicode preservation, deduplication, batch processor.
 
-### Phase 3: Database Maturity & Master Devotional Text Catalog (COMPLETED)
+### Phase 3: Database Maturity & Master Catalog Expansion (COMPLETED)
+- Alembic migrations, database integrity, 77-composition catalog, QA engine.
 
-| Step | Component | Status | Key Deliverables & Technical Enhancements |
-| :--- | :--- | :---: | :--- |
-| **Step 3A** | **Database Maturity & Alembic** | **COMPLETED** | Initialized Alembic (`alembic.ini`, `database/migrations/`). Generated full initial migration (`d6e0af35f812_...`). Built atomic snapshot backup and recovery engine (`database/backup.py`). Built diagnostic reporter (`database/reporter.py`). Verified clean DB upgrades and rollbacks. |
-| **Step 3B** | **Master Devotional Discovery Catalog** | **COMPLETED** | Curated 77 authentic traditional compositions across Vedic hymns, Ganesha, Shiva, Vishnu, Devis, Surya, Hanuman, Subramanya, Krishna, Rama. Generated structured JSON (`data/catalogs/master_devotional_catalog.json`), styled Excel classification workbook (`exports/catalogs/candidate_classification_master_catalog.xlsx`), and markdown catalog (`documentation/project_roadmap/MASTER_DEVOTIONAL_CATALOG.md`). |
-| **Step 3C** | **Verified Source & Edition Registers** | **COMPLETED** | Established 7-layer IP framework in `documentation/provenance/EDITION_AND_PROVENANCE_REGISTER.md`. Documented multi-jurisdiction copyright thresholds (IN 60 yrs, US pre-1930, EU/UK Life+70) in `documentation/permissions/RIGHTS_ASSESSMENT_REGISTER.md`. |
-| **Step 3D** | **Pilot Texts Audit & Quality Classification** | **COMPLETED** | Audited all 8 pilot texts. Categorized completeness: Gayatri & Mahamrityunjaya as `VERIFIED_FULL_TEXT` (1/1 with Vedic accents); remaining 6 compositions explicitly marked as `SAMPLE_RECORD` awaiting full ingestion. Published `documentation/quality/PILOT_TEXTS_VERIFICATION_REPORT.md`. |
-| **Step 3E** | **Content Quality Assurance Engine** | **COMPLETED** | Built `automation/validators/qa_engine.py` supporting 12 lifecycle quality stages (`DISCOVERED` to `APPROVED_FOR_PUBLICATION`) and 14 automated validation checks (versification, duplicate numbering, sequence gaps, danda syntax, accents, ligatures, corruption, metadata completeness). |
-| **Step 3F** | **Multilingual & Tamil Preparation** | **COMPLETED** | Formulated 24-language support framework. Analyzed Tamil consonant representation (lack of aspirated/voiced letters, Grantha glyph support, and dual-view superscript notation). Verified accent round-trip preservation. Published `documentation/quality/MULTILINGUAL_UNICODE_TEST_REPORT.md`. |
-| **Step 3G** | **Controlled Batch Ingestion Engine** | **COMPLETED** | Implemented `automation/pipeline/batch_processor.py` supporting bounded batch sizes, dry-run simulation, source permission validation, atomic checkpointing, error queues, duplicate checks, and manual human legal approval transitions. |
-| **Step 3H** | **Comprehensive Test Suite Expansion** | **COMPLETED** | Expanded automated test suite to **45 tests passing 100% in 2.92 seconds** (`tests/test_database_maturity.py`, `tests/test_qa_engine.py`, `tests/test_batch_processor.py`, and existing suites). |
-
----
-
-## 5. Technical Acceptance Standards
-
-- **Authenticity Gate**: No Sanskrit text is modified without scholarly or critical-edition proof. Raw source text is stored immutably.
-- **Completeness Gate**: Every text is explicitly classified (`METADATA_ONLY`, `SAMPLE_RECORD`, `INCOMPLETE_TEXT`, `FULL_UNVERIFIED_TEXT`, `VERIFIED_FULL_TEXT`). Exported prototypes are not treated as full verified texts.
-- **Rights Gate**: Mandatory `ContentRights` and `RightsGrant` entities enforce `release_status == ReleaseStatus.GREEN` with documented jurisdiction clearance and human legal review sign-off.
-- **Unicode Gate**: Indic texts conform strictly to Unicode Indic standards with Vedic combining characters (Anudatta `U+0952`, Svarita `U+0951`, Deergha Svarita `U+0954`).
-- **Test Integrity Gate**: 100% test pass rate across unit and compliance test suites (`pytest tests/`). Currently 45 tests passing.
+### Phase 4: Full-Text Pilot Ingestion & Professional Publication Engine (COMPLETED)
+- **Phase 4A: Pilot Text Verification Dossiers**:
+  - Researched and established historical critical editions and verse counts for all 6 sample records.
+  - Authored 6 individual philological verification reports under `documentation/quality/`.
+- **Phase 4B: Unabridged Full-Text Pilot Ingestion**:
+  - Ingested 100% complete, authentic verse payloads for all 8 pilot compositions into `vedam.db`.
+  - Preserved raw source text immutably, verified Vedic swaras, generated multi-script transliterations (Telugu, Tamil, Kannada, Malayalam, IAST), and populated approved English Bhavartha translations.
+  - Ingestion verse counts:
+    - `VEDA-TXT-00001` Ganesha Pancharatnam: 6 verses (5 Vasantatilaka + 1 Phalasruti)
+    - `VEDA-TXT-00002` Shiva Tandava Stotram: 16 verses (14 Panchachamara + 2 Phalasruti)
+    - `VEDA-TXT-00003` Aditya Hrudayam: 31 verses (Valmiki Ramayana Yuddha Kanda 105)
+    - `VEDA-TXT-00004` Madhurashtakam: 9 units (8 Totaka + 1 Phalasruti)
+    - `VEDA-TXT-00005` Mahamrityunjaya Vedic Mantra: 1 verse (Rigveda 7.59.12 with swaras)
+    - `VEDA-TXT-00006` Gayatri Vedic Mantra: 1 verse (Rigveda 3.62.10 with swaras)
+    - `VEDA-TXT-00007` Sri Suktam: 16 units (15 Vedic Riks + 1 Phalasruti with swaras)
+    - `VEDA-TXT-00008` Hanuman Chalisa: 43 units (2 Dohas, 40 Chaupais, 1 Doha in Awadhi)
+  - All 8 compositions achieved `VERIFIED_FULL_TEXT` status with 0 QA issues.
+- **Phase 4C: Professional Publication Engine**:
+  - **Excel Exporter** (`automation/exporters/excel_publication_exporter.py`): Built 11-sheet archival workbook generator with royal maroon/gold styling, auto-filters, frozen panes, and auto-fit columns.
+  - **Word Exporter** (`automation/exporters/word_publication_exporter.py`): Built typeset manuscript generator with formal cover page, running headers/footers ("Page X of Y"), dual-view typography, and editorial colophon.
+  - **PDF Exporter** (`automation/exporters/pdf_publication_exporter.py`): Built ReportLab document builder registering native Indic TrueType font (`Nirmala UI` and `Nirmala UI Bold` from Windows Fonts) with custom two-pass `NumberedCanvas` and verified searchability via PyMuPDF.
+  - **Publication Orchestrator** (`automation/exporters/publication_orchestrator.py`): Produced 24 publication deliverables in `exports/excel/`, `exports/word/`, and `exports/pdf/`.
+- **Phase 4D: Governance & Preflight Publication Gate**:
+  - Decoupled 6 independent approval dimensions (`AcquisitionStatus`, `TextualVerificationStatus`, `RightsClearanceStatus`, `TranslationStatus`, `EditorialApprovalStatus`, `PublicationStatus`).
+  - Added Alembic migration `c111d1f4a93d` to `vedam.db`.
+  - Implemented 15-rule preflight gate (`automation/validators/publication_gate.py`) blocking publication if any approval dimension or data criterion is unmet.
+  - Suite of 64 automated tests passing (100% pass rate).

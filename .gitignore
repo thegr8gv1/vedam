@@ -50,6 +50,7 @@ tmp/
 # Exports & Bulky media (Keep directory structure with .gitkeep)
 exports/excel/*.xlsx
 exports/word/*.docx
+exports/pdf/*.pdf
 exports/json/*.json
 media/audio/*
 !media/audio/.gitkeep

@@ -25,6 +25,14 @@ from sqlalchemy import (
 )
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 
+from automation.rights.approval_workflow import (
+    AcquisitionStatus,
+    EditorialApprovalStatus,
+    PublicationStatus,
+    RightsClearanceStatus,
+    TextualVerificationStatus,
+    TranslationStatus,
+)
 from automation.rights.jurisdiction import IPLayerType, Jurisdiction, RightsReleaseStatus
 
 
@@ -219,6 +227,27 @@ class Text(Base):
     # Integrity & Counts
     verse_count: Mapped[int] = mapped_column(Integer, default=0)
     content_hash: Mapped[str] = mapped_column(String(64), index=True)
+
+    # Multidimensional Approval Workflow (Independent Governance Dimensions)
+    acquisition_status: Mapped[AcquisitionStatus] = mapped_column(
+        Enum(AcquisitionStatus), default=AcquisitionStatus.VERIFIED_SOURCE
+    )
+    textual_verification_status: Mapped[TextualVerificationStatus] = mapped_column(
+        Enum(TextualVerificationStatus), default=TextualVerificationStatus.UNVERIFIED
+    )
+    rights_clearance_status: Mapped[RightsClearanceStatus] = mapped_column(
+        Enum(RightsClearanceStatus), default=RightsClearanceStatus.PENDING
+    )
+    translation_status: Mapped[TranslationStatus] = mapped_column(
+        Enum(TranslationStatus), default=TranslationStatus.NOT_STARTED
+    )
+    editorial_approval_status: Mapped[EditorialApprovalStatus] = mapped_column(
+        Enum(EditorialApprovalStatus), default=EditorialApprovalStatus.DRAFT
+    )
+    publication_status: Mapped[PublicationStatus] = mapped_column(
+        Enum(PublicationStatus), default=PublicationStatus.DRAFT
+    )
+
     created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
     updated_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
 

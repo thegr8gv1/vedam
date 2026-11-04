@@ -1,6 +1,6 @@
 # Vedic Heritage Platform — System Architecture & Modular Design
-**Version:** 3.0.0  
-**Status:** Approved Architectural Specification (Phase 3 Complete)  
+**Version:** 4.0.0  
+**Status:** Approved Architectural Specification (Phase 4 Complete)  
 
 ---
 
@@ -9,48 +9,43 @@
 The platform is designed as an enterprise-grade, asynchronous, modular data processing and knowledge distribution ecosystem. It cleanly separates:
 - **Acquisition & Ingestion**: Dual-track (Track A: Partnership; Track B: Independent Public Domain).
 - **Core Persistence**: Multi-version relational schema supporting multi-edition provenance, version history, media assets, granular rights grants, atomic backups, and Alembic migrations.
-- **Compliance & Rights**: Mandatory Content Rights & Provenance Engine with a Jurisdiction-Aware Copyright Assessment Framework.
-- **Quality Assurance**: 12-stage lifecycle quality gates with 14 automated integrity checks.
-- **Export & Delivery**: Typeset Word manuscripts, structured Excel datasets, and mobile JSON bundles.
+- **Multidimensional Approval Governance**: 6 decoupled governance dimensions (`AcquisitionStatus`, `TextualVerificationStatus`, `RightsClearanceStatus`, `TranslationStatus`, `EditorialApprovalStatus`, `PublicationStatus`).
+- **Pre-Flight Publication Quality Gate**: 15 rigorous criteria checking title presence, classification, editions, legal reviewer sign-off, verse continuity, swara accents, and cryptographic integrity.
+- **Publication Engine**: 
+  - 11-sheet archival Excel workbooks (`.xlsx`)
+  - Typeset Word manuscripts (`.docx`)
+  - High-resolution Indic PDF manuscripts (`.pdf`) using Windows native `Nirmala UI` fonts and two-pass `NumberedCanvas`
+  - Mobile JSON bundles
 
 ```mermaid
 flowchart TD
-    subgraph Acquisition ["1. Acquisition Tier"]
-        TA["Track A: Partner Data Handoffs"]
-        TB["Track B: Public Domain Primary Sources"]
-        CAT["catalogs/catalog_builder.py<br>(Master Discovery Catalog - 77 Texts)"]
+    subgraph IngestionTier ["1. Acquisition & Verification Ingestion Tier"]
+        ING["automation/ingestion/verified_pilot_ingestion.py<br>(Full-text historical editions collation)"]
+        PROV["documentation/quality/VERIFICATION_*.md<br>(Critical philological audit dossiers)"]
     end
 
-    subgraph Automation ["2. Python Automation & QA Pipeline (automation/)"]
-        P0["connectors/base.py<br>(Rate limits, Retry, Dry-run)"]
-        P1["identity/generator.py<br>(VEDA-TXT IDs, Hashes)"]
-        P2["cleaners/unicode_preserver.py<br>(Unicode NFC, Swara Preserver)"]
-        P3["parsers/<br>(verse_splitter.py, metadata_extractor.py)"]
-        P4["classifiers/<br>(text_classifier.py)"]
-        P5["validators/<br>(completeness_checker.py, qa_engine.py)"]
-        P6["duplicate_detection/<br>(SHA-256 & Levenshtein)"]
-        P7["rights/jurisdiction.py<br>(Jurisdiction Rights Engine)"]
-        P8["pipeline/<br>(batch_processor.py, queue.py, checkpoint.py)"]
-    end
-
-    subgraph DataStorage ["3. Relational Persistence & Lifecycle Tier (database/)"]
+    subgraph DataStorage ["2. Relational Persistence Tier (database/)"]
         DB[(SQLite Dev / PostgreSQL Prod)]
-        ALEMBIC["alembic/<br>(Migrations & Rollback)"]
-        BACKUP["database/backup.py<br>(Atomic Snapshots & Recovery)"]
-        REPORT["database/reporter.py<br>(Diagnostic Analytics)"]
-        T_ENTITIES["Relational Entities<br>(texts, verses, editions, rights_grants, media)"]
+        ALEMBIC["database/migrations/versions/<br>(Schema evolution: c111d1f4a93d)"]
+        BACKUP["database/backup.py<br>(Atomic snapshots & recovery)"]
     end
 
-    subgraph ExportTier ["4. Publication & Distribution Tier (exports/)"]
-        EX_XLS["excel_exporter.py<br>(Multi-tab Styled .xlsx)"]
-        EX_DOC["word_exporter.py<br>(Typeset .docx Manuscripts)"]
-        EX_JSN["json_exporter.py<br>(Mobile App Bundles)"]
+    subgraph GovernanceTier ["3. Multidimensional Approval & Quality Gates"]
+        APP_WF["automation/rights/approval_workflow.py<br>(Decoupled 6-dimension state machine)"]
+        PUB_GATE["automation/validators/publication_gate.py<br>(15-Rule Preflight Publication Gate)"]
+        QA_ENG["automation/validators/qa_engine.py<br>(14 automated philological checks)"]
     end
 
-    Acquisition --> P0 --> P1 --> P2 --> P3 --> P4 --> P5 --> P6 --> P7 --> P8
-    P8 --> DataStorage
-    DataStorage --> P7
-    P7 --> ExportTier
+    subgraph PublicationTier ["4. Professional Publication Engine (exports/)"]
+        EX_XLS["excel_publication_exporter.py<br>(11-Sheet Archival Workbooks)"]
+        EX_DOC["word_publication_exporter.py<br>(Typeset Word Manuscripts)"]
+        EX_PDF["pdf_publication_exporter.py<br>(Indic TrueType Nirmala UI PDFs)"]
+        EX_ORCH["publication_orchestrator.py<br>(Central Publication Orchestrator)"]
+    end
+
+    IngestionTier --> DataStorage
+    DataStorage --> GovernanceTier
+    GovernanceTier -->|Passed 15/15 Pre-flight Gates| PublicationTier
 ```
 
 ---
@@ -58,56 +53,36 @@ flowchart TD
 ## 2. Python Module Architecture
 
 ```text
-Vedam/
-├── alembic.ini                 # Alembic migration configuration
-├── database/
-│   ├── connection.py           # Database connection and session manager
-│   ├── models.py               # SQLAlchemy 2.0 ORM Declarative Models
-│   ├── schemas.py              # Pydantic V2 validation schemas
-│   ├── backup.py               # Atomic snapshot backup & recovery utility
-│   ├── reporter.py             # Database diagnostic reporting & integrity analytics
-│   ├── backups/                # Timestamped SQLite database snapshots
-│   └── migrations/             # Alembic migration environment and versions
+c:\Vedam\
 ├── automation/
-│   ├── catalogs/
-│   │   └── catalog_builder.py  # Master Devotional Text Catalog builder (77 compositions)
-│   ├── connectors/
-│   │   └── base.py             # Abstract Source Connector with rate limits, retries, dry-run
-│   ├── identity/
-│   │   └── generator.py        # Canonical Content ID (VEDA-TXT-XXXXX), Verse ID, SHA-256
 │   ├── cleaners/
-│   │   └── unicode_preserver.py# Unicode NFC normalizer, Vedic Swara analyzer, transliteration
-│   ├── parsers/
-│   │   ├── verse_splitter.py   # Verse demarcation (Sanskrit stotras, Awadhi dohas & chaupais)
-│   │   └── metadata_extractor.py# Liturgical metadata extractor (Rishi, Chandas, Devata, Viniyoga)
-│   ├── classifiers/
-│   │   └── text_classifier.py  # Category classifier, Awadhi/Sanskrit language detector
-│   ├── validators/
-│   │   ├── completeness_checker.py # Missing verse, duplicate number, truncation detector
-│   │   └── qa_engine.py        # 12-stage lifecycle quality gates and 14 validation checks
-│   ├── duplicate_detection/
-│   │   └── engine.py           # Exact SHA-256 and RapidFuzz fuzzy recension similarity
+│   │   └── unicode_preserver.py         # Unicode NFC & Vedic Swara Preservation
+│   ├── connectors/                      # Rate-limited HTTP adapters
+│   ├── duplicate_detection/             # SHA-256 and Levenshtein distance detectors
+│   ├── exporters/                       # Publication engines
+│   │   ├── excel_publication_exporter.py # 11-Sheet Excel Workbooks
+│   │   ├── word_publication_exporter.py  # Typeset Word Manuscripts
+│   │   ├── pdf_publication_exporter.py   # High-resolution Indic PDF Engine
+│   │   └── publication_orchestrator.py  # Central Publication Orchestrator
+│   ├── identity/
+│   │   └── generator.py                 # VEDA-TXT IDs & SHA-256 hashes
+│   ├── ingestion/
+│   │   └── verified_pilot_ingestion.py  # Full-text verified pilot ingestion
 │   ├── rights/
-│   │   ├── engine.py           # Content Rights & Provenance Engine gatekeeper
-│   │   └── jurisdiction.py     # Multi-jurisdiction copyright evaluation (IN, US, EU, GLOBAL)
-│   ├── pipeline/
-│   │   ├── batch_processor.py  # Controlled batch ingestion engine with checkpoints & error queues
-│   │   ├── queue.py            # Single-item ingestion orchestrator
-│   │   ├── checkpoint.py       # Resumable job state engine saving progress to disk
-│   │   └── logger.py           # Structured JSON and console audit logging
-│   ├── exporters/
-│   │   ├── excel_exporter.py   # OpenPyXL multi-tab styled workbooks
-│   │   ├── word_exporter.py    # Python-docx typeset printable manuscripts
-│   │   └── json_exporter.py    # Mobile-app-ready JSON serializer
-│   └── pilot/
-│       └── seed_pilot_data.py  # Seed script for the 8 authorized pilot compositions
-├── data/
-│   └── catalogs/
-│       └── master_devotional_catalog.json # 77 curated candidate compositions
-├── exports/
-│   ├── catalogs/               # Candidate Classification Master Catalog (.xlsx)
-│   ├── excel/                  # Generated .xlsx publications
-│   ├── word/                   # Generated .docx publications
-│   └── json/                   # Generated .json mobile bundles
-└── tests/                      # 45 automated pytest tests (100% pass rate)
+│   │   ├── approval_workflow.py         # 6 decoupled approval dimensions
+│   │   └── jurisdiction.py              # International copyright evaluation
+│   └── validators/
+│       ├── publication_gate.py          # 15-Rule Preflight Publication Gatekeeper
+│       └── qa_engine.py                 # Content QA audit engine
+├── database/
+│   ├── backups/                         # Atomic database snapshots
+│   ├── migrations/versions/             # Alembic versioned migrations
+│   ├── models.py                        # SQLAlchemy 2.0 ORM domain entities
+│   └── vedam.db                         # Production/Pilot relational database
+├── documentation/                       # Architecture, quality, and legal registers
+├── exports/                             # Publication deliverables
+│   ├── excel/                           # Generated .xlsx publications
+│   ├── word/                            # Generated .docx publications
+│   └── pdf/                             # Generated .pdf publications
+└── tests/                               # 64 Automated Pytest verification tests
 ```
