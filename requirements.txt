@@ -1,0 +1,30 @@
+# Core & CLI
+python-dotenv>=1.0.0
+pydantic>=2.7.0
+rich>=13.7.0
+
+# HTTP & Web Scraping (Respectful & Configurable)
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=5.2.0
+
+# Database & ORM
+SQLAlchemy>=2.0.30
+alembic>=1.13.0
+
+# Document & Spreadsheet Generation
+openpyxl>=3.1.2
+pandas>=2.2.0
+python-docx>=1.1.0
+
+# Indian Languages & Transliteration
+indic-transliteration>=2.3.56
+
+# Testing & Quality Assurance
+pytest>=8.2.0
+pytest-cov>=5.0.0
+ruff>=0.4.0
+
+# Backend & API (Future Phases)
+fastapi>=0.111.0
+uvicorn>=0.30.0

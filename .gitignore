@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+credentials/
+secrets/
+
+# Databases
+*.sqlite
+*.sqlite3
+*.db
+database/backups/*.sql
+database/backups/*.dump
+
+# Logs & Temporary Files
+logs/*.log
+*.log
+scratch/
+tmp/
+.temp/
+
+# Exports & Bulky media (Keep directory structure with .gitkeep)
+exports/excel/*.xlsx
+exports/word/*.docx
+exports/json/*.json
+media/audio/*
+!media/audio/.gitkeep
+media/video/*
+!media/video/.gitkeep
+media/production_handoff/*
+!media/production_handoff/.gitkeep
+data/raw/*
+!data/raw/.gitkeep
+
+# IDEs & OS
+.idea/
+.vscode/
+*.swp
+*.swo
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
