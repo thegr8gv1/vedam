@@ -395,6 +395,8 @@ def execute_expansion_batch_1(session: Session) -> Dict[str, Any]:
         # Update metadata
         text_record.canonical_title = data["canonical_title"]
         text_record.devanagari_title = data["devanagari_title"]
+        text_record.primary_category_id = category.id if category else None
+        text_record.deity_id = deity.id if deity else None
         text_record.composer = data["composer"]
         text_record.chandas = data["chandas"]
         text_record.source_scripture = data["source_scripture"]

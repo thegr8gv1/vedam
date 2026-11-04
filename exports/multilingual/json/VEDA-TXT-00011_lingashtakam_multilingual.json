@@ -1,0 +1,424 @@
+{
+  "content_id": "VEDA-TXT-00011",
+  "canonical_title": "Lingashtakam",
+  "devanagari_title": "लिङ्गाष्टकम्",
+  "composer": "Traditional (Shaiva Agama / Sage Agastya)",
+  "source_scripture": "Shaiva Agama / Linga Purana Tradition",
+  "verse_count": 9,
+  "generated_at_utc": "2026-11-04T22:00:02.976218+00:00",
+  "supported_languages": [
+    "sa",
+    "hi",
+    "te",
+    "ta",
+    "kn",
+    "en"
+  ],
+  "verses": [
+    {
+      "verse_number": 1,
+      "verse_type": "VERSE",
+      "original_sanskrit": "ब्रह्ममुरारिसुरार्चितलिङ्गं निर्मलभासितशोभितलिङ्गम् ।\nजन्मजदुःखविनाशकलिङ्गं तत् प्रणमामि सदाशिवलिङ्गम् ॥ १ ॥",
+      "iast": "brahmamurārisurārcitaliṅgaṁ nirmalabhāsitaśōbhitaliṅgam ।\njanmajadukhavināśakaliṅgaṁ tat praṇamāmi sadāśivaliṅgam ॥ 1 ॥",
+      "transliterations": {
+        "telugu": "బ్రహ్మమురారిసురార్చితలిఙ్గం నిర్మలభాసితశోభితలిఙ్గమ్ ।\nజన్మజదుఃఖవినాశకలిఙ్గం తత్ ప్రణమామి సదాశివలిఙ్గమ్ ॥ ౧ ॥",
+        "tamil": "ப்ரஹ்மமுராரிஸுரார்சிதலிங்கம் நிர்மலபாஸிதஶோபிதலிங்கம் ।\nஜந்மஜதுஃகவிநாஶகலிங்கம் தத் ப்ரணமாமி ஸதாஶிவலிங்கம் ॥ ௧ ॥",
+        "kannada": "ಬ್ರಹ್ಮಮುರಾರಿಸುರಾರ್ಚಿತಲಿಙ್ಗಂ ನಿರ್ಮಲಭಾಸಿತಶೋಭಿತಲಿಙ್ಗಮ್ ।\nಜನ್ಮಜದುಃಖವಿನಾಶಕಲಿಙ್ಗಂ ತತ್ ಪ್ರಣಮಾಮಿ ಸದಾಶಿವಲಿಙ್ಗಮ್ ॥ ೧ ॥",
+        "malayalam": "ബ്രഹ്മമുരാരിസുരാര്ചിതലിങ്ഗം നിര്മലഭാസിതശോഭിതലിങ്ഗമ് ।\nജന്മജദുഃഖവിനാശകലിങ്ഗം തത് പ്രണമാമി സദാശിവലിങ്ഗമ് ॥ ൧ ॥",
+        "iast": "brahmamurārisurārcitaliṅgaṃ nirmalabhāsitaśobhitaliṅgam |\njanmajaduḥkhavināśakaliṅgaṃ tat praṇamāmi sadāśivaliṅgam || 1 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "I bow before that eternal Sadashiva Lingam, which is worshipped by Brahma, Vishnu, and all the gods, effulgent with spotless pure radiance, and the destroyer of grief originating from cyclical birth.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "ब्रह्मा, मुरारी (विष्णु) और देवराज इंद्र द्वारा पूजित, निर्मल सुवासित पुष्पों से सुशोभित, जन्म-मरण के संताप को शांत करने वाले उस सदाशिव लिंग को मैं प्रणाम करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "బ్రహ్మ, విష్ణు, ఇంద్రాది దేవతలచే నిరంతరము పూజింపబడుతూ, నిర్మల సుగంధ పుష్పములతో శోభిల్లుచూ, జననమరణ సంసార దుఃఖములను రూపుమాపు ఆ సదాశివ లింగమునకు ప్రణమిల్లుచున్నాను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "பிரம்மா, விஷ்ணு, இந்திரன் முதலிய தேவர்களால் பூசிக்கப்படுவதும், நறுமண மலர்களால் அலங்கரிக்கப்பட்டதும், பிறவித் துயரங்களைத் தீர்ப்பதுமான அந்த சதாசிவ லிங்கத்தை வணங்குகிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಬ್ರಹ್ಮ, ವಿಷ್ಣು, ಇಂದ್ರಾದಿ ದೇವತೆಗಳಿಂದ ಪೂಜಿಸಲ್ಪಡುವ, ಪರಿಮಳಯುಕ್ತ ಪುಷ್ಪಗಳಿಂದ ಶೋಭಿಸುವ, ಸಂಸಾರ ದುಃಖವನ್ನು ಪರಿಹರಿಸುವ ಆ ಸದಾಶಿವ ಲಿಂಗಕ್ಕೆ ನಮಸ್ಕರಿಸುತ್ತೇನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 2,
+      "verse_type": "VERSE",
+      "original_sanskrit": "देवमुनिप्रवरार्चितलिङ्गं कामदहं करुणाकरलिङ्गम् ।\nरावणदर्पविनाशनलिङ्गं तत् प्रणमामि सदाशिवलिङ्गम् ॥ २ ॥",
+      "iast": "dēvamunipravarārcitaliṅgaṁ kāmadahaṁ karuṇākaraliṅgam ।\nrāvaṇadarpavināśanaliṅgaṁ tat praṇamāmi sadāśivaliṅgam ॥ 2 ॥",
+      "transliterations": {
+        "telugu": "దేవమునిప్రవరార్చితలిఙ్గం కామదహం కరుణాకరలిఙ్గమ్ ।\nరావణదర్పవినాశనలిఙ్గం తత్ ప్రణమామి సదాశివలిఙ్గమ్ ॥ ౨ ॥",
+        "tamil": "தேவமுநிப்ரவரார்சிதலிங்கம் காமதஹம் கருணாகரலிங்கம் ।\nராவணதர்பவிநாஶநலிங்கம் தத் ப்ரணமாமி ஸதாஶிவலிங்கம் ॥ ௨ ॥",
+        "kannada": "ದೇವಮುನಿಪ್ರವರಾರ್ಚಿತಲಿಙ್ಗಂ ಕಾಮದಹಂ ಕರುಣಾಕರಲಿಙ್ಗಮ್ ।\nರಾವಣದರ್ಪವಿನಾಶನಲಿಙ್ಗಂ ತತ್ ಪ್ರಣಮಾಮಿ ಸದಾಶಿವಲಿಙ್ಗಮ್ ॥ ೨ ॥",
+        "malayalam": "ദേവമുനിപ്രവരാര്ചിതലിങ്ഗം കാമദഹം കരുണാകരലിങ്ഗമ് ।\nരാവണദര്പവിനാശനലിങ്ഗം തത് പ്രണമാമി സദാശിവലിങ്ഗമ് ॥ ൨ ॥",
+        "iast": "devamunipravarārcitaliṅgaṃ kāmadahaṃ karuṇākaraliṅgam |\nrāvaṇadarpavināśanaliṅgaṃ tat praṇamāmi sadāśivaliṅgam || 2 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "I bow before that eternal Sadashiva Lingam, revered by the foremost of gods and sages, consumer of lust (Kamadeva), treasury of compassion, and destroyer of the pride of Ravana.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "देवों और मुनियों द्वारा वंदित, कामदेव का दमन करने वाले, परम करुणाशील, रावण के अहंकार को चूर्ण करने वाले उस सदाशिव लिंग को मैं प्रणाम करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "దేవతలచే, మునులచే సేవింపబడుతూ, మన్మథుని భస్మము చేసి, పరమ దయాళువై, రావణాసురుని గర్వమణచిన ఆ పరమ పవిత్ర సదాశివ లింగమునకు వందనములు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தேவர்களாலும் முனிவர்களாலும் போற்றப்படுவதும், காமனை எரித்ததும், அளப்பரிய கருணை பொழிவதும், இராவணனின் கர்வத்தை அடக்கியதுமான சதாசிவ லிங்கத்தைப் பணிகிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ದೇವ-ಮುನಿಗಳಿಂದ ವಂದಿಸಲ್ಪಡುವ, ಕಾಮನನ್ನು ಭಸ್ಮಮಾಡಿದ, ಕರುಣಾಮಯಿಯಾದ, ರಾವಣನ ಗರ್ವಭಂಗ ಮಾಡಿದ ಆ ಸದಾಶಿವ ಲಿಂಗಕ್ಕೆ ಪ್ರಣಾಮಗಳು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 3,
+      "verse_type": "VERSE",
+      "original_sanskrit": "सर्वसुगन्धिसुलेपितलिङ्गं बुद्धिविवर्धनकारणलिङ्गम् ।\nसिद्धसुरासुरवन्दितलिङ्गं तत् प्रणमामि सदाशिवलिङ्गम् ॥ ३ ॥",
+      "iast": "sarvasugandhisulēpitaliṅgaṁ buddhivivardhanakāraṇaliṅgam ।\nsiddhasurāsuravanditaliṅgaṁ tat praṇamāmi sadāśivaliṅgam ॥ 3 ॥",
+      "transliterations": {
+        "telugu": "సర్వసుగన్ధిసులేపితలిఙ్గం బుద్ధివివర్ధనకారణలిఙ్గమ్ ।\nసిద్ధసురాసురవన్దితలిఙ్గం తత్ ప్రణమామి సదాశివలిఙ్గమ్ ॥ ౩ ॥",
+        "tamil": "ஸர்வஸுகந்திஸுலேபிதலிங்கம் புத்திவிவர்தநகாரணலிங்கம் ।\nஸித்தஸுராஸுரவந்திதலிங்கம் தத் ப்ரணமாமி ஸதாஶிவலிங்கம் ॥ ௩ ॥",
+        "kannada": "ಸರ್ವಸುಗನ್ಧಿಸುಲೇಪಿತಲಿಙ್ಗಂ ಬುದ್ಧಿವಿವರ್ಧನಕಾರಣಲಿಙ್ಗಮ್ ।\nಸಿದ್ಧಸುರಾಸುರವನ್ದಿತಲಿಙ್ಗಂ ತತ್ ಪ್ರಣಮಾಮಿ ಸದಾಶಿವಲಿಙ್ಗಮ್ ॥ ೩ ॥",
+        "malayalam": "സര്വസുഗന്ധിസുലേപിതലിങ്ഗം ബുദ്ധിവിവര്ധനകാരണലിങ്ഗമ് ।\nസിദ്ധസുരാസുരവന്ദിതലിങ്ഗം തത് പ്രണമാമി സദാശിവലിങ്ഗമ് ॥ ൩ ॥",
+        "iast": "sarvasugandhisulepitaliṅgaṃ buddhivivardhanakāraṇaliṅgam |\nsiddhasurāsuravanditaliṅgaṃ tat praṇamāmi sadāśivaliṅgam || 3 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "I bow before that eternal Sadashiva Lingam, anointed with fragrant perfumes, the sovereign cause of intellectual elevation, adored by Siddhas, gods, and demons alike.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "सर्व सुगन्धित लेपों से सुरभित, बुद्धि और ज्ञान के वर्धक, सिद्धों, सुरों और असुरों द्वारा पूजित उस सदाशिव लिंग को मैं प्रणाम करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "సకల సుగంధ చందన లేపనములతో సువాసితమై, సద్బుద్ధిని, జ్ఞానమును వృద్ధి చేయుచూ, సిద్ధులు, దేవతలు, దానవులచే పూజింపబడు ఆ సదాశివ లింగమునకు నమస్కారము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "சகல நறுமண சந்தனங்களால் பூசப்பட்டதும், ஞானத்தையும் நற்புத்தியையும் வளர்ப்பதும், சித்தர்கள், தேவர்கள், அசுரர்களால் வணங்கப்படுவதுமான சதாசிவ லிங்கத்தைப் போற்றுகிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಸರ್ವ ಸುಗಂಧಿತ ಲೇಪನಗಳಿಂದ ಸುಶೋಭಿತವಾದ, ಬುದ್ಧಿ-ಜ್ಞಾನವನ್ನು ಬೆಳೆಸುವ, ಸಿದ್ಧರು, ದೇವತೆಗಳು ಮತ್ತು ಅಸುರರಿಂದ ಪೂಜಿಸಲ್ಪಡುವ ಆ ಸದಾಶಿವ ಲಿಂಗಕ್ಕೆ ನಮಸ್ಕಾರ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 4,
+      "verse_type": "VERSE",
+      "original_sanskrit": "कनकमहामणिभूषितलिङ्गं फणिपतिवेष्टितशोभितलिङ्गम् ।\nदक्षसुयज्ञविनाशनलिङ्गं तत् प्रणमामि सदाशिवलिङ्गम् ॥ ४ ॥",
+      "iast": "kanakamahāmaṇibhūṣitaliṅgaṁ phaṇipativēṣṭitaśōbhitaliṅgam ।\ndakṣasuyajñavināśanaliṅgaṁ tat praṇamāmi sadāśivaliṅgam ॥ 4 ॥",
+      "transliterations": {
+        "telugu": "కనకమహామణిభూషితలిఙ్గం ఫణిపతివేష్టితశోభితలిఙ్గమ్ ।\nదక్షసుయజ్ఞవినాశనలిఙ్గం తత్ ప్రణమామి సదాశివలిఙ్గమ్ ॥ ౪ ॥",
+        "tamil": "கநகமஹாமணிபூஷிதலிங்கம் பணிபதிவேஷ்டிதஶோபிதலிங்கம் ।\nதக்ஷஸுயஜ்ஞவிநாஶநலிங்கம் தத் ப்ரணமாமி ஸதாஶிவலிங்கம் ॥ ௪ ॥",
+        "kannada": "ಕನಕಮಹಾಮಣಿಭೂಷಿತಲಿಙ್ಗಂ ಫಣಿಪತಿವೇಷ್ಟಿತಶೋಭಿತಲಿಙ್ಗಮ್ ।\nದಕ್ಷಸುಯಜ್ಞವಿನಾಶನಲಿಙ್ಗಂ ತತ್ ಪ್ರಣಮಾಮಿ ಸದಾಶಿವಲಿಙ್ಗಮ್ ॥ ೪ ॥",
+        "malayalam": "കനകമഹാമണിഭൂഷിതലിങ്ഗം ഫണിപതിവേഷ്ടിതശോഭിതലിങ്ഗമ് ।\nദക്ഷസുയജ്ഞവിനാശനലിങ്ഗം തത് പ്രണമാമി സദാശിവലിങ്ഗമ് ॥ ൪ ॥",
+        "iast": "kanakamahāmaṇibhūṣitaliṅgaṃ phaṇipativeṣṭitaśobhitaliṅgam |\ndakṣasuyajñavināśanaliṅgaṃ tat praṇamāmi sadāśivaliṅgam || 4 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "I bow before that eternal Sadashiva Lingam, embellished with gold and lustrous gems, adorned by the serpent king coiled around it, the vanquisher of the proud sacrifice of Daksha.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "स्वर्ण और मणियों से सुशोभित, शेषनाग के अलंकरण से वेष्टित, दक्ष प्रजापति के यज्ञ का विध्वंस करने वाले उस सदाशिव लिंग को मैं प्रणाम करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "స్వర్ణ, రత్న మణులతో అలంకరింపబడి, సర్పరాజును ఆభరణముగా ధరించి, దక్షయజ్ఞమును భంజించిన ఆ పరమ ప్రభావ సదాశివ లింగమునకు ప్రణామములు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "பொன்னாலும் மணிகளாலும் அலங்கரிக்கப்பட்டதும், வாசுகி பாம்பை மாலையாகக் கொண்டதும், தட்ச யாகத்தை அழித்ததுமான சதாசிவ லிங்கத்திற்கு நமஸ்காரம்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಚಿನ್ನ ಮತ್ತು ರತ್ನಗಳಿಂದ ಕಂಗೊಳಿಸುವ, ನಾಗರಾಜನನ್ನು ಆಭರಣವಾಗಿ ಧರಿಸಿರುವ, ದಕ್ಷಯಜ್ಞವನ್ನು ಧ್ವಂಸಗೊಳಿಸಿದ ಆ ಸದಾಶಿವ ಲಿಂಗಕ್ಕೆ ವಂದನೆಗಳು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 5,
+      "verse_type": "VERSE",
+      "original_sanskrit": "कुङ्कुमचन्दनलेपितलिङ्गं पङ्कजहारसुशोभितलिङ्गम् ।\nसञ्चितपापविनाशनलिङ्गं तत् प्रणमामि सदाशिवलिङ्गम् ॥ ५ ॥",
+      "iast": "kuṅkumacandanalēpitaliṅgaṁ paṅkajahārasuśōbhitaliṅgam ।\nsañcitapāpavināśanaliṅgaṁ tat praṇamāmi sadāśivaliṅgam ॥ 5 ॥",
+      "transliterations": {
+        "telugu": "కుఙ్కుమచన్దనలేపితలిఙ్గం పఙ్కజహారసుశోభితలిఙ్గమ్ ।\nసఞ్చితపాపవినాశనలిఙ్గం తత్ ప్రణమామి సదాశివలిఙ్గమ్ ॥ ౫ ॥",
+        "tamil": "குங்குமசந்தநலேபிதலிங்கம் பங்கஜஹாரஸுஶோபிதலிங்கம் ।\nஸஞ்சிதபாபவிநாஶநலிங்கம் தத் ப்ரணமாமி ஸதாஶிவலிங்கம் ॥ ௫ ॥",
+        "kannada": "ಕುಙ್ಕುಮಚನ್ದನಲೇಪಿತಲಿಙ್ಗಂ ಪಙ್ಕಜಹಾರಸುಶೋಭಿತಲಿಙ್ಗಮ್ ।\nಸಞ್ಚಿತಪಾಪವಿನಾಶನಲಿಙ್ಗಂ ತತ್ ಪ್ರಣಮಾಮಿ ಸದಾಶಿವಲಿಙ್ಗಮ್ ॥ ೫ ॥",
+        "malayalam": "കുങ്കുമചന്ദനലേപിതലിങ്ഗം പങ്കജഹാരസുശോഭിതലിങ്ഗമ് ।\nസഞ്ചിതപാപവിനാശനലിങ്ഗം തത് പ്രണമാമി സദാശിവലിങ്ഗമ് ॥ ൫ ॥",
+        "iast": "kuṅkumacandanalepitaliṅgaṃ paṅkajahārasuśobhitaliṅgam |\nsañcitapāpavināśanaliṅgaṃ tat praṇamāmi sadāśivaliṅgam || 5 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "I bow before that eternal Sadashiva Lingam, anointed with kumkuma and sandal paste, adorned with garlands of lotuses, the absolver of all accumulated sins.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "कुमकुम और चंदन से लेपित, सुंदर मल्लिका पुष्पों के हार से अलंकृत, संचित पापों का विनाश करने वाले उस सदाशिव लिंग को मैं प्रणाम करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "కుంకుమ, చందన లేపనములతో విలసిల్లుచూ, సుగంధ మల్లెల మాలలతో అలంకరింపబడి, సంచిత పాపములను దగ్ధము చేయు ఆ సదాశివ లింగమునకు నమస్కారము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "குங்குமம், சந்தனப் பூச்சுகளால் பிரகாசிப்பதும், மல்லிகை மலர் மாலைகளால் சூட்டப்பட்டதும், பிறவிப் பாவங்களை அழிப்பதுமான சதாசிவ லிங்கத்தை வணங்குகிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಕುಂಕುಮ ಮತ್ತು ಚಂದನದಿಂದ ಲೇಪಿತವಾದ, ಮಲ್ಲಿಗೆಯ ಹೂಮಾಲೆಗಳಿಂದ ಶೃಂಗರಿಸಲ್ಪಟ್ಟ, ಸಕಲ ಪಾಪಗಳನ್ನು ಸಂಹರಿಸುವ ಆ ಸದಾಶಿವ ಲಿಂಗಕ್ಕೆ ನಮಸ್ಕಾರ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 6,
+      "verse_type": "VERSE",
+      "original_sanskrit": "देवगणार्चितसेवितलिङ्गं भावैर्भक्तिभिरेव च लिङ्गम् ।\nदिनकरकोटिप्रभाकरलिङ्गं तत् प्रणमामि सदाशिवलिङ्गम् ॥ ६ ॥",
+      "iast": "dēvagaṇārcitasēvitaliṅgaṁ bhāvairbhaktibhirēva ca liṅgam ।\ndinakarakōṭiprabhākaraliṅgaṁ tat praṇamāmi sadāśivaliṅgam ॥ 6 ॥",
+      "transliterations": {
+        "telugu": "దేవగణార్చితసేవితలిఙ్గం భావైర్భక్తిభిరేవ చ లిఙ్గమ్ ।\nదినకరకోటిప్రభాకరలిఙ్గం తత్ ప్రణమామి సదాశివలిఙ్గమ్ ॥ ౬ ॥",
+        "tamil": "தேவகணார்சிதஸேவிதலிங்கம் பாவைர்பக்திபிரேவ ச லிங்கம் ।\nதிநகரகோடிப்ரபாகரலிங்கம் தத் ப்ரணமாமி ஸதாஶிவலிங்கம் ॥ ௬ ॥",
+        "kannada": "ದೇವಗಣಾರ್ಚಿತಸೇವಿತಲಿಙ್ಗಂ ಭಾವೈರ್ಭಕ್ತಿಭಿರೇವ ಚ ಲಿಙ್ಗಮ್ ।\nದಿನಕರಕೋಟಿಪ್ರಭಾಕರಲಿಙ್ಗಂ ತತ್ ಪ್ರಣಮಾಮಿ ಸದಾಶಿವಲಿಙ್ಗಮ್ ॥ ೬ ॥",
+        "malayalam": "ദേവഗണാര്ചിതസേവിതലിങ്ഗം ഭാവൈര്ഭക്തിഭിരേവ ച ലിങ്ഗമ് ।\nദിനകരകോടിപ്രഭാകരലിങ്ഗം തത് പ്രണമാമി സദാശിവലിങ്ഗമ് ॥ ൬ ॥",
+        "iast": "devagaṇārcitasevitaliṅgaṃ bhāvairbhaktibhireva ca liṅgam |\ndinakarakoṭiprabhākaraliṅgaṃ tat praṇamāmi sadāśivaliṅgam || 6 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "I bow before that eternal Sadashiva Lingam, served and worshipped by assemblies of gods with profound devotional sentiment, blazing with the effulgence of ten million suns.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "देवों और ऋषियों के समूह द्वारा वंदित, निर्मल भावयुक्त अंतःकरण से पूजित, सूर्य के समान तेजस्वी करोड़ों किरणों वाले उस सदाशिव लिंग को मैं प्रणाम करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "దేవతలచే, పరమర్షులచే సేవింపబడుతూ, నిర్మల భక్తిభావముతో పూజింపబడుచూ, కోటి సూర్యుల దివ్యతేజస్సుతో ప్రకాశించు ఆ సదాశివ లింగమునకు వందనము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தேவாதி தேவர்களாலும் முனிவர்களாலும் பூஜிக்கப்படுவதும், தூய பக்தியால் வழிபடப்படுவதும், கோடி சூரியப் பிரகாசமாய் விளங்குவதுமான சதாசிவ லிங்கத்தைப் பணிகிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ದೇವತೆಗಳು ಮತ್ತು ಋಷಿಶ್ರೇಷ್ಠರಿಂದ ಪೂಜಿಸಲ್ಪಡುವ, ಪರಿಶುದ್ಧ ಭಕ್ತಿಯಿಂದ ಆರಾಧಿಸಲ್ಪಡುವ, ಕೋಟಿಸೂರ್ಯರಂತೆ ಪ್ರಕಾಶಿಸುವ ಆ ಸದಾಶಿವ ಲಿಂಗಕ್ಕೆ ನಮಸ್ಕಾರ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 7,
+      "verse_type": "VERSE",
+      "original_sanskrit": "अष्टदलोपरिवेष्टितलिङ्गं सर्वसमुद्भवकारणलिङ्गम् ।\nअष्टदरिद्रविनाशनलिङ्गं तत् प्रणमामि सदाशिवलिङ्गम् ॥ ७ ॥",
+      "iast": "aṣṭadalōparivēṣṭitaliṅgaṁ sarvasamudbhavakāraṇaliṅgam ।\naṣṭadaridravināśanaliṅgaṁ tat praṇamāmi sadāśivaliṅgam ॥ 7 ॥",
+      "transliterations": {
+        "telugu": "అష్టదలోపరివేష్టితలిఙ్గం సర్వసముద్భవకారణలిఙ్గమ్ ।\nఅష్టదరిద్రవినాశనలిఙ్గం తత్ ప్రణమామి సదాశివలిఙ్గమ్ ॥ ౭ ॥",
+        "tamil": "அஷ்டதலோபரிவேஷ்டிதலிங்கம் ஸர்வஸமுத்பவகாரணலிங்கம் ।\nஅஷ்டதரித்ரவிநாஶநலிங்கம் தத் ப்ரணமாமி ஸதாஶிவலிங்கம் ॥ ௭ ॥",
+        "kannada": "ಅಷ್ಟದಲೋಪರಿವೇಷ್ಟಿತಲಿಙ್ಗಂ ಸರ್ವಸಮುದ್ಭವಕಾರಣಲಿಙ್ಗಮ್ ।\nಅಷ್ಟದರಿದ್ರವಿನಾಶನಲಿಙ್ಗಂ ತತ್ ಪ್ರಣಮಾಮಿ ಸದಾಶಿವಲಿಙ್ಗಮ್ ॥ ೭ ॥",
+        "malayalam": "അഷ്ടദലോപരിവേഷ്ടിതലിങ്ഗം സര്വസമുദ്ഭവകാരണലിങ്ഗമ് ।\nഅഷ്ടദരിദ്രവിനാശനലിങ്ഗം തത് പ്രണമാമി സദാശിവലിങ്ഗമ് ॥ ൭ ॥",
+        "iast": "aṣṭadalopariveṣṭitaliṅgaṃ sarvasamudbhavakāraṇaliṅgam |\naṣṭadaridravināśanaliṅgaṃ tat praṇamāmi sadāśivaliṅgam || 7 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "I bow before that eternal Sadashiva Lingam, surrounded upon an eight-petaled lotus pedestal, the prime cause of universal creation, and the dispeller of eightfold poverty.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "अष्टदल कमल पर आसीन, सृष्टि के समस्त कारणों के परम कारण, आठों प्रकार की दरिद्रता का नाश करने वाले उस सदाशिव लिंग को मैं प्रणाम करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "అష్టదళ పద్మముపై కొలువైయుండి, సమస్త సృష్టికి మూలకారణమై, అష్టదరిద్రములను సమూలముగా హరింపజేయు ఆ సదాశివ లింగమునకు ప్రణామములు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "எட்டிதழ் தாமரையில் வீற்றிருப்பதும், அனைத்து உலகங்களுக்கும் மூலகாரணமானதும், அஷ்ட தரித்திரங்களையும் வேரறுப்பதுமான சதாசிவ லிங்கத்திற்கு நமஸ்காரம்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಅಷ್ಟದಳ ಕಮಲದಲ್ಲಿ ನೆಲೆಸಿರುವ, ಸಕಲ ಸೃಷ್ಟಿಗೆ ಆದಿಕಾರಣವಾದ, ಅಷ್ಟದರಿದ್ರಗಳನ್ನು ನಾಶಪಡಿಸುವ ಆ ಸದಾಶಿವ ಲಿಂಗಕ್ಕೆ ಪ್ರಣಾಮಗಳು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 8,
+      "verse_type": "VERSE",
+      "original_sanskrit": "सुरगुरुसुरवरपूजितलिङ्गं सुरवनपुष्पसदार्चितलिङ्गम् ।\nपरात्परं परमात्मकलिङ्गं तत् प्रणमामि सदाशिवलिङ्गम् ॥ ८ ॥",
+      "iast": "suragurusuravarapūjitaliṅgaṁ suravanapuṣpasadārcitaliṅgam ।\nparātparaṁ paramātmakaliṅgaṁ tat praṇamāmi sadāśivaliṅgam ॥ 8 ॥",
+      "transliterations": {
+        "telugu": "సురగురుసురవరపూజితలిఙ్గం సురవనపుష్పసదార్చితలిఙ్గమ్ ।\nపరాత్పరం పరమాత్మకలిఙ్గం తత్ ప్రణమామి సదాశివలిఙ్గమ్ ॥ ౮ ॥",
+        "tamil": "ஸுரகுருஸுரவரபூஜிதலிங்கம் ஸுரவநபுஷ்பஸதார்சிதலிங்கம் ।\nபராத்பரம் பரமாத்மகலிங்கம் தத் ப்ரணமாமி ஸதாஶிவலிங்கம் ॥ ௮ ॥",
+        "kannada": "ಸುರಗುರುಸುರವರಪೂಜಿತಲಿಙ್ಗಂ ಸುರವನಪುಷ್ಪಸದಾರ್ಚಿತಲಿಙ್ಗಮ್ ।\nಪರಾತ್ಪರಂ ಪರಮಾತ್ಮಕಲಿಙ್ಗಂ ತತ್ ಪ್ರಣಮಾಮಿ ಸದಾಶಿವಲಿಙ್ಗಮ್ ॥ ೮ ॥",
+        "malayalam": "സുരഗുരുസുരവരപൂജിതലിങ്ഗം സുരവനപുഷ്പസദാര്ചിതലിങ്ഗമ് ।\nപരാത്പരം പരമാത്മകലിങ്ഗം തത് പ്രണമാമി സദാശിവലിങ്ഗമ് ॥ ൮ ॥",
+        "iast": "suragurusuravarapūjitaliṅgaṃ suravanapuṣpasadārcitaliṅgam |\nparātparaṃ paramātmakaliṅgaṃ tat praṇamāmi sadāśivaliṅgam || 8 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "I bow before that eternal Sadashiva Lingam, worshipped by Brihaspati and the highest celestial beings, ever adored with blossoms from divine celestial gardens, transcendent beyond the highest, the supreme Self.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "सुरगुरु (बृहस्पति) और देवों द्वारा पूजित, मंदार पुष्पों से अर्चित, परम पावन, सर्वोत्कृष्ट परमात्मा रूप उस सदाशिव लिंग को मैं प्रणाम करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "దేవగురువైన బృహస్పతిచే, సకల దేవతలచే పూజింపబడుచూ, పవిత్ర మందార పుష్పములతో అర్చింపబడి, సర్వోత్కృష్ట పరమాత్మ స్వరూపమైన ఆ సదాశివ లింగమునకు నమస్కారము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தேவகுருவாலும் அனைத்து தேவர்களாலும் வழிபடப்படுவதும், மந்தார மலர்களால் அர்ச்சிக்கப்படுவதும், பரம்பொருளாய் விளங்குவதுமான சதாசிவ லிங்கத்தைப் போற்றுகிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ದೇವಗುರು ಬೃಹಸ್ಪತಿಯಿಂದಲೂ ದೇವತೆಗಳಿಂದಲೂ ಪೂಜಿಸಲ್ಪಡುವ, ಮಂದಾರ ಪುಷ್ಪಗಳಿಂದ ಅರ್ಚಿಸಲ್ಪಡುವ, ಪರಮಪಾವನ ಪರಮಾತ್ಮ ರೂಪವಾದ ಆ ಸದಾಶಿವ ಲಿಂಗಕ್ಕೆ ನಮಸ್ಕಾರ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 9,
+      "verse_type": "PHALASRUTI",
+      "original_sanskrit": "लिङ्गाष्टकमिदं पुण्यं यः पठेत् शिवसन्निधौ ।\nशिवलोकमवाप्नोति शिवेन सह मोदते ॥ ९ ॥",
+      "iast": "liṅgāṣṭakamidaṁ puṇyaṁ yaḥ paṭhēt śivasannidhau ।\nśivalōkamavāpnōti śivēna saha mōdatē ॥ 9 ॥",
+      "transliterations": {
+        "telugu": "లిఙ్గాష్టకమిదం పుణ్యం యః పఠేత్ శివసన్నిధౌ ।\nశివలోకమవాప్నోతి శివేన సహ మోదతే ॥ ౯ ॥",
+        "tamil": "லிங்காஷ்டகமிதம் புண்யம் யஃ படேத் ஶிவஸந்நிதௌ ।\nஶிவலோகமவாப்நோதி ஶிவேந ஸஹ மோததே ॥ ௯ ॥",
+        "kannada": "ಲಿಙ್ಗಾಷ್ಟಕಮಿದಂ ಪುಣ್ಯಂ ಯಃ ಪಠೇತ್ ಶಿವಸನ್ನಿಧೌ ।\nಶಿವಲೋಕಮವಾಪ್ನೋತಿ ಶಿವೇನ ಸಹ ಮೋದತೇ ॥ ೯ ॥",
+        "malayalam": "ലിങ്ഗാഷ്ടകമിദം പുണ്യം യഃ പഠേത് ശിവസന്നിധൌ ।\nശിവലോകമവാപ്നോതി ശിവേന സഹ മോദതേ ॥ ൯ ॥",
+        "iast": "liṅgāṣṭakamidaṃ puṇyaṃ yaḥ paṭhet śivasannidhau |\nśivalokamavāpnoti śivena saha modate || 9 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Whoever recites this sacred Lingashtakam in the holy presence of Lord Shiva attains the supreme realm of Shiva (Shivaloka) and rejoices with Shiva in eternal beatitude.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जो मनुष्य भगवान शिव के समीप इस पावन लिंगाष्टक का नित्य पाठ करता है, वह शिवलोक को प्राप्त होता है और भगवान शिव के साथ शाश्वत आनंद का अनुभव करता है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఎవరైతే పరమశివుని సన్నిధియందు ఈ పవిత్ర లింగాష్టకమును నిత్యము భక్తితో పఠింతురో, వారు శివసాయుజ్యమును పొంది, పరమేశ్వరునితో శాశ్వతానందమును అనుభవింతురు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "யார் ஒருவர் சிவபெருமானின் சந்நிதியில் இந்த புனித லிங்காஷ்டகத்தை நாள்தோறும் படிக்கிறாரோ, அவர் சிவலோகத்தை அடைந்து, சிவபெருமானோடு என்றும் அழியாப் பேரின்பம் பெறுவர்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಯಾವ ಭಕ್ತನು ಶಿವನ ಸನ್ನಿಧಿಯಲ್ಲಿ ಈ ಪವಿತ್ರ ಲಿಂಗಾಷ್ಟಕವನ್ನು ನಿತ್ಯವೂ ಭಕ್ತಿಯಿಂದ ಪಠಿಸುವನೋ, ಅವನು ಶಿವಲೋಕವನ್ನು ಸೇರಿ ಪರಮೇಶ್ವರನ ಸಾನ್ನಿಧ್ಯದಲ್ಲಿ ಶಾಶ್ವತ ಆನಂದವನ್ನು ಹೊಂದುತ್ತಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    }
+  ]
+}

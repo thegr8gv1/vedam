@@ -1,0 +1,283 @@
+{
+  "content_id": "VEDA-TXT-00001",
+  "canonical_title": "Ganesha Pancharatnam",
+  "devanagari_title": "गणेशपञ्चरत्नम्",
+  "composer": "Adi Shankaracharya (c. 788–820 CE)",
+  "source_scripture": "Advaita Smartha Stotra Samgraha",
+  "verse_count": 6,
+  "generated_at_utc": "2026-11-04T22:00:02.717938+00:00",
+  "supported_languages": [
+    "sa",
+    "hi",
+    "te",
+    "ta",
+    "kn",
+    "en"
+  ],
+  "verses": [
+    {
+      "verse_number": 1,
+      "verse_type": "VERSE",
+      "original_sanskrit": "मुदाकरात्तमोदकं सदा विमुक्तिसाधकं कलाधरावतंसकं विलासिलोकरक्षकम् ।\nअनायकैकनायकं विनाशितेभदैत्यकं नताशुभाशुकर्तकं नमामि तं विनायकम् ॥ १ ॥",
+      "iast": "mudākarāttamōdakaṁ sadā vimuktisādhakaṁ kalādharāvataṁsakaṁ vilāsilōkarakṣakam ।\nanāyakaikanāyakaṁ vināśitēbhadaityakaṁ natāśubhāśukartakaṁ namāmi taṁ vināyakam ॥ 1 ॥",
+      "transliterations": {
+        "telugu": "ముదాకరాత్తమోదకం సదా విముక్తిసాధకం కలాధరావతంసకం విలాసిలోకరక్షకమ్ ।\nఅనాయకైకనాయకం వినాశితేభదైత్యకం నతాశుభాశుకర్తకం నమామి తం వినాయకమ్ ॥ ౧ ॥",
+        "tamil": "முதாகராத்தமோதகம் ஸதா விமுக்திஸாதகம் கலாதராவதம்ஸகம் விலாஸிலோகரக்ஷகம் ।\nஅநாயகைகநாயகம் விநாஶிதேபதைத்யகம் நதாஶுபாஶுகர்தகம் நமாமி தம் விநாயகம் ॥ ௧ ॥",
+        "kannada": "ಮುದಾಕರಾತ್ತಮೋದಕಂ ಸದಾ ವಿಮುಕ್ತಿಸಾಧಕಂ ಕಲಾಧರಾವತಂಸಕಂ ವಿಲಾಸಿಲೋಕರಕ್ಷಕಮ್ ।\nಅನಾಯಕೈಕನಾಯಕಂ ವಿನಾಶಿತೇಭದೈತ್ಯಕಂ ನತಾಶುಭಾಶುಕರ್ತಕಂ ನಮಾಮಿ ತಂ ವಿನಾಯಕಮ್ ॥ ೧ ॥",
+        "malayalam": "മുദാകരാത്തമോദകം സദാ വിമുക്തിസാധകം കലാധരാവതംസകം വിലാസിലോകരക്ഷകമ് ।\nഅനായകൈകനായകം വിനാശിതേഭദൈത്യകം നതാശുഭാശുകര്തകം നമാമി തം വിനായകമ് ॥ ൧ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "I bow to that Vinayaka who joyfully holds a sweet modaka in His hand, who always bestows liberation, who wears the crescent moon as an ornament, who protects the joyous worlds, who is the sole refuge for the helpless, who destroyed the demon Gajasura, and who swiftly dispels the misfortunes of those who bow to Him.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हाथ में मोदक धारण करने वाले, भक्तों को मुक्ति प्रदान करने वाले, मस्तक पर अर्धचंद्र की शोभा वाले, लोकों के रक्षक, अनाथों के एकमात्र बंधु, गजासुर का उद्धार करने वाले, शीघ्र पापों का नाश करने वाले विनायक को मैं नमन करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "చేతియందు మోదకమును ధరించువానిని, ముక్తిని ప్రసాదించువానిని, శిరస్సున చంద్రకళను అలంకరించువానిని, లోకరక్షకుడైన అనాథబంధువును, గజాసురసంహారుని, పాపములను పటాపంచలు చేయు వినాయకునకు ప్రణమిల్లుచున్నాను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "கரங்களில் மோதகம் ஏந்தியவரும், முக்தியை அருள்பவரும், தலையில் பிறைச்சந்திரனைச் சூடியவரும், உலகைக் காப்பவரும், அநாதை ரட்சகரும், கஜாசுரனை அடக்கியவரும், பாவங்களைப் போக்குபவருமான விநாயகப் பெருமானை வணங்குகிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಕೈಯಲ್ಲಿ ಮೋದಕವನ್ನು ಹಿಡಿದಿರುವ, ಭಕ್ತರಿಗೆ ಮುಕ್ತಿಯನ್ನು ಕರುಣಿಸುವ, ಶಿರದಲ್ಲಿ ಅರ್ಧಚಂದ್ರನನ್ನು ಧರಿಸಿರುವ, ಲೋಕರಕ್ಷಕನೂ ಅನಾಥಬಂಧುವೂ ಆದ, ಪಾಪಗಳನ್ನು ನಾಶಪಡಿಸುವ ಶ್ರೀ ವಿನಾಯಕನಿಗೆ ನಮಸ್ಕರಿಸುತ್ತೇನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 2,
+      "verse_type": "VERSE",
+      "original_sanskrit": "नतेतरातिभीकरं नवोदितार्कभास्वरं नमत्सुरारिनिर्जरं नताधिकापदुद्धरम् ।\nसुरेश्वरं निधीश्वरं गजेश्वरं गणेश्वरं महेश्वरं तमाश्रये परात्परं निरन्तरम् ॥ २ ॥",
+      "iast": "natētarātibhīkaraṁ navōditārkabhāsvaraṁ namatsurārinirjaraṁ natādhikāpaduddharam ।\nsurēśvaraṁ nidhīśvaraṁ gajēśvaraṁ gaṇēśvaraṁ mahēśvaraṁ tamāśrayē parātparaṁ nirantaram ॥ 2 ॥",
+      "transliterations": {
+        "telugu": "నతేతరాతిభీకరం నవోదితార్కభాస్వరం నమత్సురారినిర్జరం నతాధికాపదుద్ధరమ్ ।\nసురేశ్వరం నిధీశ్వరం గజేశ్వరం గణేశ్వరం మహేశ్వరం తమాశ్రయే పరాత్పరం నిరన్తరమ్ ॥ ౨ ॥",
+        "tamil": "நதேதராதிபீகரம் நவோதிதார்கபாஸ்வரம் நமத்ஸுராரிநிர்ஜரம் நதாதிகாபதுத்தரம் ।\nஸுரேஶ்வரம் நிதீஶ்வரம் கஜேஶ்வரம் கணேஶ்வரம் மஹேஶ்வரம் தமாஶ்ரயே பராத்பரம் நிரந்தரம் ॥ ௨ ॥",
+        "kannada": "ನತೇತರಾತಿಭೀಕರಂ ನವೋದಿತಾರ್ಕಭಾಸ್ವರಂ ನಮತ್ಸುರಾರಿನಿರ್ಜರಂ ನತಾಧಿಕಾಪದುದ್ಧರಮ್ ।\nಸುರೇಶ್ವರಂ ನಿಧೀಶ್ವರಂ ಗಜೇಶ್ವರಂ ಗಣೇಶ್ವರಂ ಮಹೇಶ್ವರಂ ತಮಾಶ್ರಯೇ ಪರಾತ್ಪರಂ ನಿರನ್ತರಮ್ ॥ ೨ ॥",
+        "malayalam": "നതേതരാതിഭീകരം നവോദിതാര്കഭാസ്വരം നമത്സുരാരിനിര്ജരം നതാധികാപദുദ്ധരമ് ।\nസുരേശ്വരം നിധീശ്വരം ഗജേശ്വരം ഗണേശ്വരം മഹേശ്വരം തമാശ്രയേ പരാത്പരം നിരന്തരമ് ॥ ൨ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "I constantly take refuge in that Supreme Being beyond all—He who is terrifying to those who do not bow, radiant like the newly risen sun, adored by both gods and demons, who rescues devotees from dire distress, Lord of the devas, Lord of divine treasures, King of elephants, Lord of the Ganas, and Great Lord.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "क्रोधरहित, प्रलयकारी तेज वाले, देवताओं और असुरों द्वारा वंदित, दयालु, शरणार्थियों के क्लेश दूर करने वाले, शांतस्वरूप, विघ्नों के निवारक, गजानन भगवान गणेश को मैं वंदना करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "శాంతమూర్తిని, ప్రలయకాల రుద్రతేజము గలవానిని, సురాసుర పూజితుని, శరణాగత దుఃఖనివారకుని, విఘ్నవినాశకుడైన గజముఖుని సదా సంస్మరింతును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "சினமற்றவரும், ஒப்பற்ற பேரொளி பொருந்தியவரும், தேவர்களும் அசுரர்களும் வணங்குபவரும், சரணடைந்தோரின் துன்பங்களைத் துடைப்பவருமான யானைமுகக் கணபதியை எப்போதும் வணங்குகிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಶಾಂತಸ್ವರೂಪನೂ, ಪ್ರಚಂಡ ತೇಜಸ್ವಿಯೂ, ದೇವದಾನವರಿಂದ ಪೂಜಿಸಲ್ಪಡುವವನೂ, ಭಕ್ತರ ಕಷ್ಟಗಳನ್ನು ಕಳೆಯುವವನೂ ಆದ ಗಜಮುಖ ಗಣೇಶನನ್ನು ನಿತ್ಯವೂ ಧ್ಯಾನಿಸುತ್ತೇನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 3,
+      "verse_type": "VERSE",
+      "original_sanskrit": "समस्तलोकशङ्करं निरस्तदैत्यकुञ्जरं दरेतरोदरं वरं वरेभवक्त्रमक्षरम् ।\nकृपाकरं क्षमाकरं मुदाकरं यशस्करं मनस्करं नमस्कृतां नमस्करोमि भास्वरम् ॥ ३ ॥",
+      "iast": "samastalōkaśaṅkaraṁ nirastadaityakuñjaraṁ darētarōdaraṁ varaṁ varēbhavaktramakṣaram ।\nkṛpākaraṁ kṣamākaraṁ mudākaraṁ yaśaskaraṁ manaskaraṁ namaskṛtāṁ namaskarōmi bhāsvaram ॥ 3 ॥",
+      "transliterations": {
+        "telugu": "సమస్తలోకశఙ్కరం నిరస్తదైత్యకుఞ్జరం దరేతరోదరం వరం వరేభవక్త్రమక్షరమ్ ।\nకృపాకరం క్షమాకరం ముదాకరం యశస్కరం మనస్కరం నమస్కృతాం నమస్కరోమి భాస్వరమ్ ॥ ౩ ॥",
+        "tamil": "ஸமஸ்தலோகஶங்கரம் நிரஸ்ததைத்யகுஞ்ஜரம் தரேதரோதரம் வரம் வரேபவக்த்ரமக்ஷரம் ।\nக்ரு'பாகரம் க்ஷமாகரம் முதாகரம் யஶஸ்கரம் மநஸ்கரம் நமஸ்க்ரு'தாம் நமஸ்கரோமி பாஸ்வரம் ॥ ௩ ॥",
+        "kannada": "ಸಮಸ್ತಲೋಕಶಙ್ಕರಂ ನಿರಸ್ತದೈತ್ಯಕುಞ್ಜರಂ ದರೇತರೋದರಂ ವರಂ ವರೇಭವಕ್ತ್ರಮಕ್ಷರಮ್ ।\nಕೃಪಾಕರಂ ಕ್ಷಮಾಕರಂ ಮುದಾಕರಂ ಯಶಸ್ಕರಂ ಮನಸ್ಕರಂ ನಮಸ್ಕೃತಾಂ ನಮಸ್ಕರೋಮಿ ಭಾಸ್ವರಮ್ ॥ ೩ ॥",
+        "malayalam": "സമസ്തലോകശങ്കരം നിരസ്തദൈത്യകുഞ്ജരം ദരേതരോദരം വരം വരേഭവക്ത്രമക്ഷരമ് ।\nകൃപാകരം ക്ഷമാകരം മുദാകരം യശസ്കരം മനസ്കരം നമസ്കൃതാം നമസ്കരോമി ഭാസ്വരമ് ॥ ൩ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "I bow to that luminous Lord who brings auspiciousness to the whole world, who conquered the demonic elephant, who has a noble capacious abdomen, the excellent immutable One with the face of a majestic elephant, who showers compassion, forgiveness, joy, renown, and pure intellect upon those who salute Him.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "संसार के समस्त सुखों के दाता, वेदों के सारभूत अर्थ को जानने वाले, ज्ञानियों द्वारा प्रशंसित, सामगान से प्रसन्न होने वाले, पार्वती और शंकर के प्रिय पुत्र गणेश का मैं आश्रय लेता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "సమస్త లోకములకు ఆనంద ప్రదాతను, వేదసారమును గ్రహించిన జ్ఞానిని, సామగానప్రియుని, గౌరీశంకరుల ముద్దుల బిడ్డడైన గణపతిని శరణువేడుచున్నాను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அகில உலகிற்கும் ஆனந்தத்தை அருள்பவரும், வேதங்களின் சாரமானவரும், ஞானிகளால் போற்றப்படுபவரும், பார்வதி-பரமேஸ்வரரின் செல்லத் திருமகனுமான கணபதியைச் சரணடைகிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಜಗತ್ತಿಗೆಲ್ಲ ಸಂತೋಷವನ್ನು ಕರುಣಿಸುವವನೂ, ವೇದಾರ್ಥಗಳನ್ನು ಬಲ್ಲವನೂ, ಸಾಮವೇದ ಗಾನಪ್ರಿಯನೂ, ಪಾರ್ವತೀಪರಮೇಶ್ವರರ ಪ್ರಿಯ ಪುತ್ರನೂ ಆದ ಶ್ರೀ ಗಣೇಶನನ್ನು ಶರಣುಹೋಗುತ್ತೇನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 4,
+      "verse_type": "VERSE",
+      "original_sanskrit": "अकिञ्चनार्तिमार्जनं चिरन्तनोक्तिभाजनं पुरारिपूर्वनन्दनं सुरारिगर्वचर्वणम् ।\nप्रपञ्चनाशभीषणं धनञ्जयादिभूषणं कपोलदानवारणं भजे पुराणवारणम् ॥ ४ ॥",
+      "iast": "akiñcanārtimārjanaṁ cirantanōktibhājanaṁ purāripūrvanandanaṁ surārigarvacarvaṇam ।\nprapañcanāśabhīṣaṇaṁ dhanañjayādibhūṣaṇaṁ kapōladānavāraṇaṁ bhajē purāṇavāraṇam ॥ 4 ॥",
+      "transliterations": {
+        "telugu": "అకిఞ్చనార్తిమార్జనం చిరన్తనోక్తిభాజనం పురారిపూర్వనన్దనం సురారిగర్వచర్వణమ్ ।\nప్రపఞ్చనాశభీషణం ధనఞ్జయాదిభూషణం కపోలదానవారణం భజే పురాణవారణమ్ ॥ ౪ ॥",
+        "tamil": "அகிஞ்சநார்திமார்ஜநம் சிரந்தநோக்திபாஜநம் புராரிபூர்வநந்தநம் ஸுராரிகர்வசர்வணம் ।\nப்ரபஞ்சநாஶபீஷணம் தநஞ்ஜயாதிபூஷணம் கபோலதாநவாரணம் பஜே புராணவாரணம் ॥ ௪ ॥",
+        "kannada": "ಅಕಿಞ್ಚನಾರ್ತಿಮಾರ್ಜನಂ ಚಿರನ್ತನೋಕ್ತಿಭಾಜನಂ ಪುರಾರಿಪೂರ್ವನನ್ದನಂ ಸುರಾರಿಗರ್ವಚರ್ವಣಮ್ ।\nಪ್ರಪಞ್ಚನಾಶಭೀಷಣಂ ಧನಞ್ಜಯಾದಿಭೂಷಣಂ ಕಪೋಲದಾನವಾರಣಂ ಭಜೇ ಪುರಾಣವಾರಣಮ್ ॥ ೪ ॥",
+        "malayalam": "അകിഞ്ചനാര്തിമാര്ജനം ചിരന്തനോക്തിഭാജനം പുരാരിപൂര്വനന്ദനം സുരാരിഗര്വചര്വണമ് ।\nപ്രപഞ്ചനാശഭീഷണം ധനഞ്ജയാദിഭൂഷണം കപോലദാനവാരണം ഭജേ പുരാണവാരണമ് ॥ ൪ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "I worship the primeval elephant-faced Lord who wipes away the afflictions of the destitute, who is the abode of ancient Vedic wisdom, the elder son of Shiva (conqueror of Tripura), the crusher of the arrogance of the enemies of the gods, who is fearsome at the dissolution of the cosmos, adorned with fire and serpents, from whose temples flows the sacred ichor.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "दीन-दुखियों पर कृपा बरसाने वाले, प्रणव (ॐ) स्वरूप, योगियों के हृदय में वास करने वाले, निष्कलंक, असीम महिमा से युक्त, समस्त उपद्रवों के नाशक भगवान एकदंत को मैं प्रणाम करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "దీనులను కరుణతో బ్రోచువానిని, ఓంకార స్వరూపుని, యోగుల హృదయ కమలములందు వసించు నిర్మలుని, సమస్త ఉపద్రవములను పోకార్చు ఏకదంతునికి వందనములు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "எளியோரிடம் கருணை பொழிபவரும், ஓங்காரப் பிரணவ வடிவானவரும், யோகிகளின் இதயத்தில் வீற்றிருப்பவரும், அனைத்து இடர்களையும் களையும் ஏகதந்தனைப் பணிகிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ದೀನಬಂಧುವೂ, ಓಂಕಾರ ಸ್ವರೂಪನೂ, ಯೋಗಿಗಳ ಹೃದಯದಲ್ಲಿ ನೆಲೆಸಿರುವ ನಿರ್ಮಲನೂ, ಸಮಸ್ತ ವಿಘ್ನಗಳನ್ನು ಪರಿಹರಿಸುವ ಶ್ರೀ ಏಕದಂತನಿಗೆ ನಮಸ್ಕಾರಗಳು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 5,
+      "verse_type": "VERSE",
+      "original_sanskrit": "नितान्तकान्तदन्तकान्तिमन्तकान्तकात्मजं अचिन्त्यरूपमन्तहीनमन्तरायकृन्तनम् ।\nहृदन्तरे निरन्तरं वसन्तमेव योगिनां तमेकदन्तमेव तं विचिन्तयामि सन्ततम् ॥ ५ ॥",
+      "iast": "nitāntakāntadantakāntimantakāntakātmajaṁ acintyarūpamantahīnamantarāyakṛntanam ।\nhṛdantarē nirantaraṁ vasantamēva yōgināṁ tamēkadantamēva taṁ vicintayāmi santatam ॥ 5 ॥",
+      "transliterations": {
+        "telugu": "నితాన్తకాన్తదన్తకాన్తిమన్తకాన్తకాత్మజం అచిన్త్యరూపమన్తహీనమన్తరాయకృన్తనమ్ ।\nహృదన్తరే నిరన్తరం వసన్తమేవ యోగినాం తమేకదన్తమేవ తం విచిన్తయామి సన్తతమ్ ॥ ౫ ॥",
+        "tamil": "நிதாந்தகாந்ததந்தகாந்திமந்தகாந்தகாத்மஜம் அசிந்த்யரூபமந்தஹீநமந்தராயக்ரு'ந்தநம் ।\nஹ்ரு'தந்தரே நிரந்தரம் வஸந்தமேவ யோகிநாம் தமேகதந்தமேவ தம் விசிந்தயாமி ஸந்ததம் ॥ ௫ ॥",
+        "kannada": "ನಿತಾನ್ತಕಾನ್ತದನ್ತಕಾನ್ತಿಮನ್ತಕಾನ್ತಕಾತ್ಮಜಂ ಅಚಿನ್ತ್ಯರೂಪಮನ್ತಹೀನಮನ್ತರಾಯಕೃನ್ತನಮ್ ।\nಹೃದನ್ತರೇ ನಿರನ್ತರಂ ವಸನ್ತಮೇವ ಯೋಗಿನಾಂ ತಮೇಕದನ್ತಮೇವ ತಂ ವಿಚಿನ್ತಯಾಮಿ ಸನ್ತತಮ್ ॥ ೫ ॥",
+        "malayalam": "നിതാന്തകാന്തദന്തകാന്തിമന്തകാന്തകാത്മജം അചിന്ത്യരൂപമന്തഹീനമന്തരായകൃന്തനമ് ।\nഹൃദന്തരേ നിരന്തരം വസന്തമേവ യോഗിനാം തമേകദന്തമേവ തം വിചിന്തയാമി സന്തതമ് ॥ ൫ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "I perpetually meditate on that single-tusked Lord whose beautiful tusk shines with exquisite radiance, the son of the Destroyer of Death (Shiva), whose form is beyond conception, who is without end, who cleaves all obstacles asunder, and who abides eternally in the hearts of yogis.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "विशाल कांति वाले, सुंदर गंडस्थल से मदजल बहाने वाले, सिंदूर से सुशोभित, समस्त चराचर जगत के स्वामी, मोदकप्रिय भगवान विघ्नराज को मैं बारंबार नमस्कार करता हूँ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "విశాలమైన దివ్యదేహము గలవానిని, చెక్కిళ్ళ నుండి మదజలము ప్రవహించు సుందరుని, సిందూర శోభితుని, సకల చరాచర సృష్టికి అధిపతియైన విఘ్నరాజునకు పునఃపునః ప్రణామములు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "பேரொளி வீசும் திருமேனியரும், மதநீர்ப் பெருக்கினால் பொலிபவரும், செந்தூரத் திலகம் அணிந்தவரும், அகில உலக நாயகருமான விக்னராஜனை மீண்டும் மீண்டும் பணிகிறேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ದೈತ್ಯಾಕಾರದ ತೇಜಸ್ವಿಯೂ, ಮದಜಲವನ್ನು ಸುರಿಸುವ ಗಂಡಸ್ಥಲವುಳ್ಳವನೂ, ಸಿಂಧೂರ ಶೋಭಿತನೂ, ಸಕಲ ಜಗತ್ತಿನ ಒಡೆಯನೂ ಆದ ವಿಘ್ನರಾಜನಿಗೆ ಪುನಃಪುನಃ ನಮಸ್ಕರಿಸುತ್ತೇನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 6,
+      "verse_type": "PHALASRUTI",
+      "original_sanskrit": "महागणेशपञ्चरत्नमादरेण योऽन्वहम् ।\nप्रगायति प्रभातके हृदि स्मरन् गणेश्वरम् ।\nअरोगतामदोषतां सुसाहितीं सुपुत्रतां समाहितायुरष्टभूतिमभ्युपैति सोऽचिरात् ॥ ६ ॥",
+      "iast": "mahāgaṇēśapañcaratnamādarēṇa yō'nvaham ।\npragāyati prabhātakē hṛdi smaran gaṇēśvaram ।\narōgatāmadōṣatāṁ susāhitīṁ suputratāṁ samāhitāyuraṣṭabhūtimabhyupaiti sō'cirāt ॥ 6 ॥",
+      "transliterations": {
+        "telugu": "మహాగణేశపఞ్చరత్నమాదరేణ యోఽన్వహమ్ ।\nప్రగాయతి ప్రభాతకే హృది స్మరన్ గణేశ్వరమ్ ।\nఅరోగతామదోషతాం సుసాహితీం సుపుత్రతాం సమాహితాయురష్టభూతిమభ్యుపైతి సోఽచిరాత్ ॥ ౬ ॥",
+        "tamil": "மஹாகணேஶபஞ்சரத்நமாதரேண யோऽந்வஹம் ।\nப்ரகாயதி ப்ரபாதகே ஹ்ரு'தி ஸ்மரந் கணேஶ்வரம் ।\nஅரோகதாமதோஷதாம் ஸுஸாஹிதீம் ஸுபுத்ரதாம் ஸமாஹிதாயுரஷ்டபூதிமப்யுபைதி ஸோऽசிராத் ॥ ௬ ॥",
+        "kannada": "ಮಹಾಗಣೇಶಪಞ್ಚರತ್ನಮಾದರೇಣ ಯೋಽನ್ವಹಮ್ ।\nಪ್ರಗಾಯತಿ ಪ್ರಭಾತಕೇ ಹೃದಿ ಸ್ಮರನ್ ಗಣೇಶ್ವರಮ್ ।\nಅರೋಗತಾಮದೋಷತಾಂ ಸುಸಾಹಿತೀಂ ಸುಪುತ್ರತಾಂ ಸಮಾಹಿತಾಯುರಷ್ಟಭೂತಿಮಭ್ಯುಪೈತಿ ಸೋಽಚಿರಾತ್ ॥ ೬ ॥",
+        "malayalam": "മഹാഗണേശപഞ്ചരത്നമാദരേണ യോഽന്വഹമ് ।\nപ്രഗായതി പ്രഭാതകേ ഹൃദി സ്മരന് ഗണേശ്വരമ് ।\nഅരോഗതാമദോഷതാം സുസാഹിതീം സുപുത്രതാം സമാഹിതായുരഷ്ടഭൂതിമഭ്യുപൈതി സോഽചിരാത് ॥ ൬ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Whoever devoutly recites this Maha Ganesha Pancharatnam every morning, remembering the Lord of Ganas in his heart, swiftly attains freedom from disease, faultlessness, profound scholarship, noble progeny, a peaceful and full lifespan, and the eightfold spiritual and material splendors.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जो मनुष्य प्रातःकाल उठकर एकाग्रचित्त से भगवान गणेश के इस पञ्चरत्न स्तोत्र का पाठ करता है, उसे उत्तम स्वास्थ्य, दोषरहित विद्या, विपुल धन, श्रेष्ठ संतान और दीर्घायु की प्राप्ति होती है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఎవరైతే ప్రాతఃకాలమున శుచియై, ఏకాగ్రతతో ఈ గణేశ పంచరత్న స్తోత్రమును పఠింతురో, వారు సంపూర్ణ ఆరోగ్యమును, నిర్దోషమైన విద్యాసంపదను, సుపుత్రులను, చిరాయువును పొందుదురు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "யார் ஒருவர் விடியற்காலையில் எழுந்து பக்தியுடன் இந்த கணேச பஞ்சரத்ன ஸ்தோத்திரத்தைப் படிக்கிறாரோ, அவர் பூரண ஆரோக்கியம், குற்றமற்ற கல்வி, பெரும் செல்வம், நன்மக்கள் மற்றும் நீண்ட ஆயுளைப் பெறுவர்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಯಾವ ಮಾನವನು ಪ್ರಾತಃಕಾಲದಲ್ಲಿ ಎದ್ದು ಭಕ್ತಿಯಿಂದ ಈ ಗಣೇಶ ಪಂಚರತ್ನ ಸ್ತೋತ್ರವನ್ನು ಪಠಿಸುವನೋ, ಅವನು ಆರೋಗ್ಯ, ಪರಿಶುದ್ಧ ವಿದ್ಯೆ, ಸಕಲ ಸಂಪತ್ತು, ಸತ್ಪುತ್ರರು ಮತ್ತು ದೀರ್ಘಾಯುಷ್ಯವನ್ನು ಪಡೆಯುತ್ತಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    }
+  ]
+}

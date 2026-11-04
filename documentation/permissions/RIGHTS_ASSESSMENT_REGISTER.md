@@ -50,6 +50,9 @@ The platform separates legal copyright clearance from editorial and automated te
 | **`VEDA-TXT-00010`** | Mahalakshmi Ashtakam | Ancient Purana | 1912 (Nirnaya Sagar) | GLOBAL | `PUBLIC_DOMAIN` | **YES** | Lead Legal Counsel | `GREEN_CLEARED` |
 | **`VEDA-TXT-00011`** | Lingashtakam | Ancient (c. 800 CE) | 1912 (Nirnaya Sagar) | GLOBAL | `PUBLIC_DOMAIN` | **YES** | Lead Legal Counsel | `GREEN_CLEARED` |
 | **`VEDA-TXT-00012`** | Sankata Nashana Ganesha Stotram | Ancient Purana | 1912 (Nirnaya Sagar) | GLOBAL | `PUBLIC_DOMAIN` | **YES** | Lead Legal Counsel | `GREEN_CLEARED` |
+| **`VEDA-TXT-00013`** | Venkateswara Suprabhatam | c. 1400 CE | 1918 (Vavilla) | GLOBAL | `PUBLIC_DOMAIN` | **YES** | Lead Legal Counsel | `GREEN_CLEARED` |
+| **`VEDA-TXT-00014`** | Purusha Suktam | Vedic (Ancient) | 1890 (Max Müller) | GLOBAL | `PUBLIC_DOMAIN` | **YES** | Lead Legal Counsel | `GREEN_CLEARED` |
+| **`VEDA-TXT-00015`** | Durga Suktam | Vedic (Taittiriya) | 1894 (Anandashrama) | GLOBAL | `PUBLIC_DOMAIN` | **YES** | Lead Legal Counsel | `GREEN_CLEARED` |
 
 *\* Note: Modern editorial notes from VSM 1933 and VSM 1946 are sequestered under `AMBER_RESTRICTED`; core Vedic texts are anchored to universal public domain editions (Max Müller 1890, Scheftelowitz 1906).*
 

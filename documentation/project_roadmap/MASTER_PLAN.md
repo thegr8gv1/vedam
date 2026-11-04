@@ -2,8 +2,8 @@
 ## Master Execution Plan (Canonical Project Charter)
 
 **Document Status:** Active & Living  
-**Version:** 5.0.0  
-**Current Phase:** Phase 5 Complete — Ready for Phase 6 Authorization  
+**Version:** 6.0.0  
+**Current Phase:** Phase 5 (Batch 1 & 2) Complete | Phase 6A (Multilingual Foundation) Complete  
 **Workspace:** `C:\Vedam`  
 
 ---
@@ -49,12 +49,8 @@ flowchart TD
     TrackA --> RightsEngine["Multidimensional Governance & Publication Gate<br>(GREEN_CLEARED)"]
     TrackB --> RightsEngine
     RightsEngine --> DB[(Relational Master Database & Alembic)]
-    DB --> Exporters["Publication Engines (11-Tab Excel, Typeset Word, Indic PDF)"]
+    DB --> Exporters["Publication Engines (11-Tab Excel, Typeset Word, Indic PDF, Multilingual)"]
 ```
-
-1. **Zero Confusion Rule**: Every new website or dataset is cataloged in `documentation/project_roadmap/SOURCE_REGISTRY.md` with an assigned `SRC-xxx` identifier before parsing or ingestion begins.
-2. **Provenance Preservation**: Every verse retains its `source_id`, `source_url`, and `collection_timestamp`.
-3. **Mandatory Rights Clearance**: No text can enter commercial publishing, mobile apps, or audio distribution without **`rights_clearance_status == RightsClearanceStatus.GREEN_CLEARED`** signed off by human legal review.
 
 ---
 
@@ -66,7 +62,7 @@ flowchart LR
     P2 --> P3["Phase 3: DB & Catalog (DONE)"]
     P3 --> P4["Phase 4: Pilots & Gate (DONE)"]
     P4 --> P5["Phase 5: Corpus Expansion (DONE)"]
-    P5 --> P6["Phase 6: Multilingual Localization"]
+    P5 --> P6["Phase 6: Multilingual Localization (6A DONE)"]
     P6 --> P7["Phase 7: Controlled AI Integration"]
     P7 --> P8["Phase 8: Audio & Video Handoff"]
     P8 --> P9["Phase 9: Mobile App (Flutter)"]
@@ -83,34 +79,41 @@ flowchart LR
 ### Phase 2: Content Collection & Processing Engine (COMPLETED)
 - Connectors, Unicode preservation, deduplication, batch processor.
 
-### Phase 3: Database Maturity & Master Catalog Expansion (COMPLETED)
+### Phase 3: Database Maturity & Master Devotional Text Catalog (COMPLETED)
 - Alembic migrations, database integrity, 77-composition catalog, QA engine.
 
 ### Phase 4: Full-Text Pilot Ingestion & Professional Publication Engine (COMPLETED)
-- Verified and ingested 8 pilot compositions (Ganesha Pancharatnam, Shiva Tandava Stotram, Aditya Hrudayam, Madhurashtakam, Mahamrityunjaya Mantra, Gayatri Mantra, Sri Suktam, Hanuman Chalisa).
+- Verified and ingested 8 pilot compositions.
 - Built 11-sheet Excel, Word manuscript, and Indic PDF exporters.
 - Implemented 15-rule publication preflight gate (`PublicationPreflightGate`).
 
 ### Phase 5: Systematic Multi-Text Corpus Expansion (COMPLETED)
-- **Part 1 — Re-Audit Phase 4**:
-  - *Rights & Edition Re-Audit*: Sequestered modern editorial apparatus for VSM 1933 and VSM 1946 to `AMBER_RESTRICTED`; anchored underlying public domain texts strictly to out-of-copyright editions (Max Müller 1890, Scheftelowitz 1906, Vani Vilas 1910, NSP 1912, Nawal Kishore 1874). Documented in `documentation/quality/PHASE4_RIGHTS_REAUDIT_REPORT.md`.
-  - *Translation Audit*: Classified all internal Bhavartha translations as `ReviewStatus.DRAFT` (`TranslationStatus.DRAFT`) awaiting external scholarly panel review. Documented in `documentation/quality/TRANSLATION_PROVENANCE_AUDIT_REPORT.md`.
-  - *Publication & PDF Typography Audit*: Integrated HarfBuzz OpenType shaping (`uharfbuzz`) and dual font loading (`Nirmala UI` + `Calibri` for IAST). Produced 24-file SHA-256 publication manifest in `documentation/quality/PUBLICATION_MANIFEST_REPORT.md` and visual report in `documentation/quality/PDF_VISUAL_VALIDATION_REPORT.md`.
-- **Part 2 — Master Catalog Preservation**:
-  - Preserved complete 77-candidate catalog (`CAND-001` to `CAND-077`).
-- **Part 3 — Prioritized Top 10 Shortlist**:
-  - Formulated prioritized expansion shortlist in `documentation/quality/SHORTLIST_FIRST_10_EXPANSION.md` covering Venkateswara, Vishnu, Shiva, Ganesha, Lakshmi, Durga, and Surya.
-- **Part 4 — Controlled Expansion Batch 1 Ingestion**:
-  - Ingested 3 prioritized compositions into `vedam.db` with full verse structures, raw immutability, multi-script transliterations, and rights grants:
-    - `VEDA-TXT-00010`: **Mahalakshmi Ashtakam** (10 verses: 8 stanzas + 2 phalasruti)
-    - `VEDA-TXT-00011`: **Lingashtakam** (9 verses: 8 stanzas + 1 phalasruti)
-    - `VEDA-TXT-00012`: **Sankata Nashana Ganesha Stotram** (8 verses: 4 stuti + 4 phalasruti)
-- **Part 5 — Publication Orchestration & Quality Gate**:
-  - Enhanced `PublicationPreflightGate` to support dual-channel validation (`scholarly_review` vs `commercial_release`).
-  - Generated all 9 publication files (3 Excel 11-sheet, 3 Word manuscripts, 3 Indic PDFs) for Batch 1.
-  - Platform now maintains 33 verified publication artifacts across 11 master compositions.
-- **Part 6 — Future Library Architecture & Analytics Dashboard**:
-  - Implemented `automation/reporting/library_analytics.py` and exported dashboard metrics to `exports/reports/library_analytics_dashboard.json`.
-- **Testing & Verification**:
-  - Created `tests/test_expansion_batch_1.py` with 15 tests.
-  - Full suite of 79 automated tests passing with 100% pass rate.
+- **Part 1 — Final Reconciliation & Discrepancy Resolution**:
+  - Reconciled all 11 active compositions individually.
+  - Mathematically resolved the 153 vs 150 verse count: 123 pilot units + 27 Batch 1 units = exactly 150 verified units; the +3 units arose from 2 unverified prototype records. Updated `library_analytics.py` to filter strictly for verified texts.
+  - Confirmed edition-specific legal clearance across all compositions. Documented in `documentation/quality/PHASE5_FINAL_RECONCILIATION_REPORT.md`.
+- **Part 2 — Shortlist Audit & Batch 2 Selection**:
+  - Audited the remaining 7 shortlisted compositions in `documentation/quality/PHASE5_BATCH2_AUDIT_REPORT.md`.
+  - Authorized first 3 eligible compositions: Venkateswara Suprabhatam (29 verses), Purusha Suktam (16 verses with swaras), Durga Suktam (7 verses with swaras).
+- **Part 3 — Batch 2 Ingestion & Publication**:
+  - Ingested all 3 compositions via `automation/ingestion/expansion_batch_2_ingestion.py`.
+  - Generated all publication formats (Excel 11-sheet, Word, Indic PDF).
+  - Total verified compositions: **14**; total verified verses: **202**; total publication files: **42**.
+
+### Phase 6A: Multilingual Localization Architecture Foundation (COMPLETED)
+- **1. Language and Script Architecture**:
+  - Created `automation/localization/registry.py` formalizing all **22 Scheduled Indian Languages of the Eighth Schedule** + **English** (23 total). Sanskrit properly included as one of the 22.
+  - Decoupled Language (ISO 639-1/3) and Script (ISO 15924) identifiers. Registered font stacks and OpenType HarfBuzz shaping requirements.
+- **2. Sanskrit Terminology Glossary**:
+  - Built `automation/localization/glossary.py` across 8 theological/liturgical categories (Deity names, Vedic terms, Ritual terms, Philosophical concepts, Grammatical terms, Mantra terms, Puja terms, Calendar terms) with standardized translations in Hindi, Telugu, Tamil, Kannada, and English.
+- **3. Specialized Transliteration Engine**:
+  - Built `automation/localization/transliteration.py` with multi-script projections (IAST, Telugu, Kannada, Malayalam, Grantha) and three distinct Tamil modes: Standard, Grantha-Extended, and Scholarly Phonetic ($க_1, க_2, க_3, க_4$).
+- **4. First Localization Pilot (4 Languages, 5 Compositions)**:
+  - Built `automation/localization/pilot_localizer.py` localizing Gayatri Mantra, Mahamrityunjaya Mantra, Ganesha Pancharatnam, Mahalakshmi Ashtakam, and Lingashtakam into **Hindi, Telugu, Tamil, and Kannada** (108 translated records).
+  - Strictly enforced `ReviewStatus.DRAFT` awaiting external scholarly panel evaluation.
+- **5. Ten-Rule Language Quality Assurance Engine**:
+  - Built `automation/localization/qa_framework.py` validating completeness, missing verses, repeated translations, terminology glossary adherence, Unicode integrity, OpenType shaping, verse alignment, transliterations, Sanskrit immutability, and review provenance.
+- **6. Multilingual Exporters**:
+  - Built `automation/localization/exporters.py` generating comparative all-language workbooks in Excel, typeset Word manuscripts, and structured JSON payloads under `exports/multilingual/`.
+- **7. Test Suite Status**:
+  - Expanded automated test suite to **113 tests passing with 100% pass rate in 5.58 seconds**.

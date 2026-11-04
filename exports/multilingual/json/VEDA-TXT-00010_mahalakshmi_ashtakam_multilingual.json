@@ -1,0 +1,469 @@
+{
+  "content_id": "VEDA-TXT-00010",
+  "canonical_title": "Mahalakshmi Ashtakam",
+  "devanagari_title": "महालक्ष्म्यष्टकम्",
+  "composer": "Deva Indra (Padma Purana)",
+  "source_scripture": "Padma Purana, Uttara Khanda",
+  "verse_count": 10,
+  "generated_at_utc": "2026-11-04T22:00:02.850687+00:00",
+  "supported_languages": [
+    "sa",
+    "hi",
+    "te",
+    "ta",
+    "kn",
+    "en"
+  ],
+  "verses": [
+    {
+      "verse_number": 1,
+      "verse_type": "VERSE",
+      "original_sanskrit": "नमस्तेऽस्तु महामाये श्रीपीठे सुरपूजिते ।\nशङ्खचक्रगदाहस्ते महालक्ष्मि नमोऽस्तु ते ॥ १ ॥",
+      "iast": "namastē'stu mahāmāyē śrīpīṭhē surapūjitē ।\nśaṅkhacakragadāhastē mahālakṣmi namō'stu tē ॥ 1 ॥",
+      "transliterations": {
+        "telugu": "నమస్తేఽస్తు మహామాయే శ్రీపీఠే సురపూజితే ।\nశఙ్ఖచక్రగదాహస్తే మహాలక్ష్మి నమోఽస్తు తే ॥ ౧ ॥",
+        "tamil": "நமஸ்தேऽஸ்து மஹாமாயே ஶ்ரீபீடே ஸுரபூஜிதே ।\nஶங்கசக்ரகதாஹஸ்தே மஹாலக்ஷ்மி நமோऽஸ்து தே ॥ ௧ ॥",
+        "kannada": "ನಮಸ್ತೇಽಸ್ತು ಮಹಾಮಾಯೇ ಶ್ರೀಪೀಠೇ ಸುರಪೂಜಿತೇ ।\nಶಙ್ಖಚಕ್ರಗದಾಹಸ್ತೇ ಮಹಾಲಕ್ಷ್ಮಿ ನಮೋಽಸ್ತು ತೇ ॥ ೧ ॥",
+        "malayalam": "നമസ്തേഽസ്തു മഹാമായേ ശ്രീപീഠേ സുരപൂജിതേ ।\nശങ്ഖചക്രഗദാഹസ്തേ മഹാലക്ഷ്മി നമോഽസ്തു തേ ॥ ൧ ॥",
+        "iast": "namaste'stu mahāmāye śrīpīṭhe surapūjite |\nśaṅkhacakragadāhaste mahālakṣmi namo'stu te || 1 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Salutations unto You, O Mahamaya, who abide upon the holy Sri Peetha, adored by all gods! Holding the conch, discus, and mace in Your hands, O Mahalakshmi, salutations unto You!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे महामाये! हे श्रीपीठ पर स्थित और देवताओं द्वारा पूजित देवी! हे शंख, चक्र और गदा धारण करने वाली महालक्ष्मी! आपको मेरा नमस्कार है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఓ మహామాయా స్వరూపిణీ! శ్రీపీఠమందు విరాజిల్లుతూ సమస్త దేవతలచే పూజింపబడు దేవీ! శంఖము, చక్రము, గదను ధరించిన ఓ శ్రీ మహాలక్ష్మీ, నీకు నమస్కారము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "மகா மாயை வடிவானவளே! ஸ்ரீபீடத்தில் வீற்றிருந்து தேவர்களால் வழிபடப்படுபவளே! சங்கு, சக்கரம், கதாயுதம் ஏந்திய மகாலட்சுமியே, உனக்கு நமஸ்காரம்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಓ ಮಹಾಮಾಯೆಯೇ! ಶ್ರೀಪೀಠದಲ್ಲಿ ವಿರಾಜಮಾನಳಾಗಿ ದೇವತೆಗಳಿಂದ ಪೂಜಿಸಲ್ಪಡುವ ದೇವಿಯೇ! ಶಂಖ, ಚಕ್ರ, ಗದೆಯನ್ನು ಹಿಡಿದಿರುವ ಓ ಮಹಾಲಕ್ಷ್ಮಿ, ನಿನಗೆ ನಮಸ್ಕಾರ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 2,
+      "verse_type": "VERSE",
+      "original_sanskrit": "नमस्ते गरुडारूढे कोलासुरभयङ्करि ।\nसर्वपापहरे देवि महालक्ष्मि नमोऽस्तु ते ॥ २ ॥",
+      "iast": "namastē garuḍārūḍhē kōlāsurabhayaṅkari ।\nsarvapāpaharē dēvi mahālakṣmi namō'stu tē ॥ 2 ॥",
+      "transliterations": {
+        "telugu": "నమస్తే గరుడారూఢే కోలాసురభయఙ్కరి ।\nసర్వపాపహరే దేవి మహాలక్ష్మి నమోఽస్తు తే ॥ ౨ ॥",
+        "tamil": "நமஸ்தே கருடாரூடே கோலாஸுரபயங்கரி ।\nஸர்வபாபஹரே தேவி மஹாலக்ஷ்மி நமோऽஸ்து தே ॥ ௨ ॥",
+        "kannada": "ನಮಸ್ತೇ ಗರುಡಾರೂಢೇ ಕೋಲಾಸುರಭಯಙ್ಕರಿ ।\nಸರ್ವಪಾಪಹರೇ ದೇವಿ ಮಹಾಲಕ್ಷ್ಮಿ ನಮೋಽಸ್ತು ತೇ ॥ ೨ ॥",
+        "malayalam": "നമസ്തേ ഗരുഡാരൂഢേ കോലാസുരഭയങ്കരി ।\nസര്വപാപഹരേ ദേവി മഹാലക്ഷ്മി നമോഽസ്തു തേ ॥ ൨ ॥",
+        "iast": "namaste garuḍārūḍhe kolāsurabhayaṅkari |\nsarvapāpahare devi mahālakṣmi namo'stu te || 2 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Salutations unto You who ride upon Garuda, who brought dread to the demon Kolasura, dispeller of all sins, O Goddess Mahalakshmi, salutations unto You!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "गरुड़ पर आरूढ़ होने वाली, कोलासुर का संहार करने वाली, समस्त पापों का नाश करने वाली भगवती महालक्ष्मी! आपको बार-बार प्रणाम है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "గరుడవాహనారూఢవై, కోలాసురుని సంహరించినట్టి, సర్వపాపములను హరింపజేయు ఓ మహాలక్ష్మీ దేవీ, నీకు ప్రణామములు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "கருட வாகனத்தில் எழுந்தருள்பவளே, கோலாசுரனை வதம் செய்தவளே, பக்தர்களின் சகல பாவங்களையும் போக்குபவளே, மகாலட்சுமியே உனக்கு நமஸ்காரம்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಗರುಡವಾಹನಳಾಗಿ, ಕೋಲಾಸುರನನ್ನು ಸಂಹರಿಸಿದ, ಸಕಲ ಪಾಪಗಳನ್ನು ನಿವಾರಿಸುವ ಹೇ ಮಹಾಲಕ್ಷ್ಮೀ, ನಿನಗೆ ಪ್ರಣಾಮಗಳು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 3,
+      "verse_type": "VERSE",
+      "original_sanskrit": "सर्वज्ञे सर्ववरदे सर्वदुष्टभयङ्करि ।\nसर्वदुःखहरे देवि महालक्ष्मि नमोऽस्तु ते ॥ ३ ॥",
+      "iast": "sarvajñē sarvavaradē sarvaduṣṭabhayaṅkari ।\nsarvaduḥkhaharē dēvi mahālakṣmi namō'stu tē ॥ 3 ॥",
+      "transliterations": {
+        "telugu": "సర్వజ్ఞే సర్వవరదే సర్వదుష్టభయఙ్కరి ।\nసర్వదుఃఖహరే దేవి మహాలక్ష్మి నమోఽస్తు తే ॥ ౩ ॥",
+        "tamil": "ஸர்வஜ்ஞே ஸர்வவரதே ஸர்வதுஷ்டபயங்கரி ।\nஸர்வதுஃகஹரே தேவி மஹாலக்ஷ்மி நமோऽஸ்து தே ॥ ௩ ॥",
+        "kannada": "ಸರ್ವಜ್ಞೇ ಸರ್ವವರದೇ ಸರ್ವದುಷ್ಟಭಯಙ್ಕರಿ ।\nಸರ್ವದುಃಖಹರೇ ದೇವಿ ಮಹಾಲಕ್ಷ್ಮಿ ನಮೋಽಸ್ತು ತೇ ॥ ೩ ॥",
+        "malayalam": "സര്വജ്ഞേ സര്വവരദേ സര്വദുഷ്ടഭയങ്കരി ।\nസര്വദുഃഖഹരേ ദേവി മഹാലക്ഷ്മി നമോഽസ്തു തേ ॥ ൩ ॥",
+        "iast": "sarvajñe sarvavarade sarvaduṣṭabhayaṅkari |\nsarvaduḥkhahare devi mahālakṣmi namo'stu te || 3 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Omniscient One, bestower of all boons, terror to all wicked beings, allayer of all distress, O Goddess Mahalakshmi, salutations unto You!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "सब कुछ जानने वाली, सभी मनोकामनाएं पूर्ण करने वाली, दुष्टों को भयभीत करने वाली और सब दुखों को हरने वाली हे देवी महालक्ष्मी! आपको नमस्कार है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "సర్వజ్ఞురాలవై, సమస్త వరములను ప్రసాదించుదానవై, దుష్టులకు భయంకరివై, సమస్త దుఃఖములను రూపుమాపు ఓ మహాలక్ష్మీ, నీకు వందనము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "எல்லாம் அறிந்தவளே, சகல வரங்களையும் அருள்பவளே, தீயோருக்கு அச்சமூட்டுபவளே, அனைத்துத் துயரங்களையும் போக்குபவளே, மகாலட்சுமியே உனக்கு நமஸ்காரம்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಸರ್ವಜ್ಞೆಯೂ, ಸಕಲ ವರಗಳನ್ನು ಕರುಣಿಸುವವಳೂ, ದುಷ್ಟರಿಗೆ ಭಯಂಕರಳೂ, ಸಮಸ್ತ ದುಃಖಗಳನ್ನು ಪರಿಹರಿಸುವವಳೂ ಆದ ಹೇ ಮಹಾಲಕ್ಷ್ಮಿ, ನಿನಗೆ ನಮಸ್ಕಾರ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 4,
+      "verse_type": "VERSE",
+      "original_sanskrit": "सिद्धिबुद्धिप्रदे देवि भुक्तिमुक्तिप्रदायिनि ।\nमन्त्रमूर्ते सदा देवि महालक्ष्मि नमोऽस्तु ते ॥ ४ ॥",
+      "iast": "siddhibuddhipradē dēvi bhuktimuktipradāyini ।\nmantramūrtē sadā dēvi mahālakṣmi namō'stu tē ॥ 4 ॥",
+      "transliterations": {
+        "telugu": "సిద్ధిబుద్ధిప్రదే దేవి భుక్తిముక్తిప్రదాయిని ।\nమన్త్రమూర్తే సదా దేవి మహాలక్ష్మి నమోఽస్తు తే ॥ ౪ ॥",
+        "tamil": "ஸித்திபுத்திப்ரதே தேவி புக்திமுக்திப்ரதாயிநி ।\nமந்த்ரமூர்தே ஸதா தேவி மஹாலக்ஷ்மி நமோऽஸ்து தே ॥ ௪ ॥",
+        "kannada": "ಸಿದ್ಧಿಬುದ್ಧಿಪ್ರದೇ ದೇವಿ ಭುಕ್ತಿಮುಕ್ತಿಪ್ರದಾಯಿನಿ ।\nಮನ್ತ್ರಮೂರ್ತೇ ಸದಾ ದೇವಿ ಮಹಾಲಕ್ಷ್ಮಿ ನಮೋಽಸ್ತು ತೇ ॥ ೪ ॥",
+        "malayalam": "സിദ്ധിബുദ്ധിപ്രദേ ദേവി ഭുക്തിമുക്തിപ്രദായിനി ।\nമന്ത്രമൂര്തേ സദാ ദേവി മഹാലക്ഷ്മി നമോഽസ്തു തേ ॥ ൪ ॥",
+        "iast": "siddhibuddhiprade devi bhuktimuktipradāyini |\nmantramūrte sadā devi mahālakṣmi namo'stu te || 4 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Bestower of spiritual success and pure intellect, granter of worldly enjoyment and supreme liberation, eternal embodiment of sacred mantras, O Goddess Mahalakshmi, salutations unto You!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "सिद्धि और बुद्धि प्रदान करने वाली, भोग और मोक्ष देने वाली, मंत्र स्वरूपिणी भगवती महालक्ष्मी! आपको सदा मेरा प्रणाम है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "సిద్ధిని, బుద్ధిని ప్రసాదించుదానవై, భోగమోక్షములను అనుగ్రహించుదానవై, మంత్రస్వరూపిణియైన ఓ మహాలక్ష్మీ, నీకు సదా నమస్కారము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "வெற்றியையும் நற்புத்தியையும் தருபவளே, இகலோக வாழ்வையும் மோட்சத்தையும் அருள்பவளே, மந்திர வடிவினளான மகாலட்சுமியே உனக்கு எப்போதும் நமஸ்காரம்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಸಿದ್ಧಿ-ಬುದ್ಧಿಗಳನ್ನು ಕರುಣಿಸುವ, ಭೋಗ ಮತ್ತು ಮೋಕ್ಷವನ್ನು ನೀಡುವ, ಮಂತ್ರಸ್ವರೂಪಿಣಿಯಾದ ಹೇ ಮಹಾಲಕ್ಷ್ಮಿ, ನಿನಗೆ ಸದಾ ನಮಸ್ಕಾರ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 5,
+      "verse_type": "VERSE",
+      "original_sanskrit": "आद्यन्तरहिते देवि आद्यशक्तिमहेश्वरि ।\nयोगजे योगसम्भूते महालक्ष्मि नमोऽस्तु ते ॥ ५ ॥",
+      "iast": "ādyantarahitē dēvi ādyaśaktimahēśvari ।\nyōgajē yōgasambhūtē mahālakṣmi namō'stu tē ॥ 5 ॥",
+      "transliterations": {
+        "telugu": "ఆద్యన్తరహితే దేవి ఆద్యశక్తిమహేశ్వరి ।\nయోగజే యోగసమ్భూతే మహాలక్ష్మి నమోఽస్తు తే ॥ ౫ ॥",
+        "tamil": "ஆத்யந்தரஹிதே தேவி ஆத்யஶக்திமஹேஶ்வரி ।\nயோகஜே யோகஸம்பூதே மஹாலக்ஷ்மி நமோऽஸ்து தே ॥ ௫ ॥",
+        "kannada": "ಆದ್ಯನ್ತರಹಿತೇ ದೇವಿ ಆದ್ಯಶಕ್ತಿಮಹೇಶ್ವರಿ ।\nಯೋಗಜೇ ಯೋಗಸಮ್ಭೂತೇ ಮಹಾಲಕ್ಷ್ಮಿ ನಮೋಽಸ್ತು ತೇ ॥ ೫ ॥",
+        "malayalam": "ആദ്യന്തരഹിതേ ദേവി ആദ്യശക്തിമഹേശ്വരി ।\nയോഗജേ യോഗസമ്ഭൂതേ മഹാലക്ഷ്മി നമോഽസ്തു തേ ॥ ൫ ॥",
+        "iast": "ādyantarahite devi ādyaśaktimaheśvari |\nyogaje yogasambhūte mahālakṣmi namo'stu te || 5 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "O Goddess devoid of beginning or end, primordial cosmic energy, supreme Sovereign! Born of yoga and manifest through meditation, O Goddess Mahalakshmi, salutations unto You!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "आदि-अंत से रहित, आद्यशक्ति, परमेश्वरी, योग से उत्पन्न और योगमार्ग में ध्यान करने योग्य हे महालक्ष्मी! आपको नमस्कार है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆద్యంతములు లేనిదానవై, ఆదిశక్తివై, మహేశ్వరివై, యోగమువలన ఉద్భవించి యోగధ్యానమునకు పాత్రురాలవైన ఓ మహాలక్ష్మీ, నీకు ప్రణామము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஆதியும் அந்தமும் இல்லாதவளே, ஆதிசக்தியே, பரமேஸ்வரியே, யோகத்தில் உதித்து யோகிகளால் தியானிக்கப்படுபவளே, மகாலட்சுமியே உனக்கு நமஸ்காரம்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಆದಿ-ಅಂತಗಳಿಲ್ಲದ ಆದಿಶಕ್ತಿಯೇ, ಮಹೇಶ್ವರಿಯೇ, ಯೋಗದಿಂದ ಉದ್ಭವಿಸಿ ಯೋಗಿಗಳಿಂದ ಧ್ಯಾನಿಸಲ್ಪಡುವ ಹೇ ಮಹಾಲಕ್ಷ್ಮಿ, ನಿನಗೆ ಪ್ರಣಾಮಗಳು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 6,
+      "verse_type": "VERSE",
+      "original_sanskrit": "स्थूलसूक्ष्ममहारौद्रे महाशक्तिमहोदरे ।\nमहापापहरे देवि महालक्ष्मि नमोऽस्तु ते ॥ ६ ॥",
+      "iast": "sthūlasūkṣmamahāraudrē mahāśaktimahōdarē ।\nmahāpāpaharē dēvi mahālakṣmi namō'stu tē ॥ 6 ॥",
+      "transliterations": {
+        "telugu": "స్థూలసూక్ష్మమహారౌద్రే మహాశక్తిమహోదరే ।\nమహాపాపహరే దేవి మహాలక్ష్మి నమోఽస్తు తే ॥ ౬ ॥",
+        "tamil": "ஸ்தூலஸூக்ஷ்மமஹாரௌத்ரே மஹாஶக்திமஹோதரே ।\nமஹாபாபஹரே தேவி மஹாலக்ஷ்மி நமோऽஸ்து தே ॥ ௬ ॥",
+        "kannada": "ಸ್ಥೂಲಸೂಕ್ಷ್ಮಮಹಾರೌದ್ರೇ ಮಹಾಶಕ್ತಿಮಹೋದರೇ ।\nಮಹಾಪಾಪಹರೇ ದೇವಿ ಮಹಾಲಕ್ಷ್ಮಿ ನಮೋಽಸ್ತು ತೇ ॥ ೬ ॥",
+        "malayalam": "സ്ഥൂലസൂക്ഷ്മമഹാരൌദ്രേ മഹാശക്തിമഹോദരേ ।\nമഹാപാപഹരേ ദേവി മഹാലക്ഷ്മി നമോഽസ്തു തേ ॥ ൬ ॥",
+        "iast": "sthūlasūkṣmamahāraudre mahāśaktimahodare |\nmahāpāpahare devi mahālakṣmi namo'stu te || 6 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Embodying both the gross and the subtle, fiercely majestic, of boundless power and containing all worlds within Your womb, destroyer of heinous sins, O Mahalakshmi, salutations unto You!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "स्थूल और सूक्ष्म दोनों रूपों में स्थित, महाशक्ति स्वरूपिणी, महान पापों का शमन करने वाली हे देवी महालक्ष्मी! आपको प्रणाम है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "స్థూల సూక్ష్మ రూపములతో విలసిల్లుదానవై, మహాశక్తివై, మహాపాతకములను భస్మము చేయు ఓ దేవీ మహాలక్ష్మీ, నీకు నమస్కారము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தூலமாகவும் நுட்பமாகவும் விளங்குபவளே, மகா சக்தியே, கொடிய பாவங்களை வேரறுப்பவளே, தேவி மகாலட்சுமியே உனக்கு நமஸ்காரம்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಸ್ಥೂಲ ಮತ್ತು ಸೂಕ್ಷ್ಮ ರೂಪಗಳಲ್ಲಿರುವ, ಮಹಾಶಕ್ತಿ ಸ್ವರೂಪಿಣಿಯಾದ, ಮಹಾಪಾಪಗಳನ್ನು ನಿವಾರಿಸುವ ಹೇ ಮಹಾಲಕ್ಷ್ಮಿ, ನಿನಗೆ ನಮಸ್ಕಾರ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 7,
+      "verse_type": "VERSE",
+      "original_sanskrit": "पद्मासनस्थिते देवि परब्रह्मस्वरूपिणि ।\nपरमेशि जगन्मातर्महालक्ष्मि नमोऽस्तु ते ॥ ७ ॥",
+      "iast": "padmāsanasthitē dēvi parabrahmasvarūpiṇi ।\nparamēśi jaganmātarmahālakṣmi namō'stu tē ॥ 7 ॥",
+      "transliterations": {
+        "telugu": "పద్మాసనస్థితే దేవి పరబ్రహ్మస్వరూపిణి ।\nపరమేశి జగన్మాతర్మహాలక్ష్మి నమోఽస్తు తే ॥ ౭ ॥",
+        "tamil": "பத்மாஸநஸ்திதே தேவி பரப்ரஹ்மஸ்வரூபிணி ।\nபரமேஶி ஜகந்மாதர்மஹாலக்ஷ்மி நமோऽஸ்து தே ॥ ௭ ॥",
+        "kannada": "ಪದ್ಮಾಸನಸ್ಥಿತೇ ದೇವಿ ಪರಬ್ರಹ್ಮಸ್ವರೂಪಿಣಿ ।\nಪರಮೇಶಿ ಜಗನ್ಮಾತರ್ಮಹಾಲಕ್ಷ್ಮಿ ನಮೋಽಸ್ತು ತೇ ॥ ೭ ॥",
+        "malayalam": "പദ്മാസനസ്ഥിതേ ദേവി പരബ്രഹ്മസ്വരൂപിണി ।\nപരമേശി ജഗന്മാതര്മഹാലക്ഷ്മി നമോഽസ്തു തേ ॥ ൭ ॥",
+        "iast": "padmāsanasthite devi parabrahmasvarūpiṇi |\nparameśi jaganmātarmahālakṣmi namo'stu te || 7 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Seated upon the divine lotus, the very embodiment of the Supreme Absolute Reality (Parabrahman), supreme Ruler, Mother of the universe, O Mahalakshmi, salutations unto You!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "कमल के आसन पर विराजमान, परब्रह्म स्वरूपिणी, जगन्माता, परम ऐश्वर्यशालिनी हे महालक्ष्मी! आपको मेरा नमस्कार है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "పద్మాసనమందు ఆసీనురాలవై, పరబ్రహ్మ స్వరూపిణివై, లోకమాతవై వెలుగొందు ఓ పరమేశ్వరీ మహాలక్ష్మీ, నీకు ప్రణామము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தாமரை மலரில் அமர்ந்திருப்பவளே, பரப்பிரம்ம வடிவினளே, ஜகன்மாதாவே, பரமேஸ்வரியான மகாலட்சுமியே உனக்கு நமஸ்காரம்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಕಮಲದಾಸನದಲ್ಲಿ ಕುಳಿತಿರುವ, ಪರಬ್ರಹ್ಮ ಸ್ವರೂಪಿಣಿಯಾದ, ಜಗನ್ಮಾತೆಯಾದ ಹೇ ಮಹಾಲಕ್ಷ್ಮಿ, ನಿನಗೆ ಪ್ರಣಾಮಗಳು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 8,
+      "verse_type": "VERSE",
+      "original_sanskrit": "श्वेताम्बरधरे देवि नानालङ्कारभूषिते ।\nजगत्स्थिते जगन्मातर्महालक्ष्मि नमोऽस्तु ते ॥ ८ ॥",
+      "iast": "śvētāmbaradharē dēvi nānālaṅkārabhūṣitē ।\njagatsthitē jaganmātarmahālakṣmi namō'stu tē ॥ 8 ॥",
+      "transliterations": {
+        "telugu": "శ్వేతామ్బరధరే దేవి నానాలఙ్కారభూషితే ।\nజగత్స్థితే జగన్మాతర్మహాలక్ష్మి నమోఽస్తు తే ॥ ౮ ॥",
+        "tamil": "ஶ்வேதாம்பரதரே தேவி நாநாலங்காரபூஷிதே ।\nஜகத்ஸ்திதே ஜகந்மாதர்மஹாலக்ஷ்மி நமோऽஸ்து தே ॥ ௮ ॥",
+        "kannada": "ಶ್ವೇತಾಮ್ಬರಧರೇ ದೇವಿ ನಾನಾಲಙ್ಕಾರಭೂಷಿತೇ ।\nಜಗತ್ಸ್ಥಿತೇ ಜಗನ್ಮಾತರ್ಮಹಾಲಕ್ಷ್ಮಿ ನಮೋಽಸ್ತು ತೇ ॥ ೮ ॥",
+        "malayalam": "ശ്വേതാമ്ബരധരേ ദേവി നാനാലങ്കാരഭൂഷിതേ ।\nജഗത്സ്ഥിതേ ജഗന്മാതര്മഹാലക്ഷ്മി നമോഽസ്തു തേ ॥ ൮ ॥",
+        "iast": "śvetāmbaradhare devi nānālaṅkārabhūṣite |\njagatsthite jaganmātarmahālakṣmi namo'stu te || 8 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Adorned in pure white raiment, decorated with diverse celestial ornaments, abiding throughout creation, Mother of all worlds, O Mahalakshmi, salutations unto You!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "श्वेत वस्त्र धारण करने वाली, नाना प्रकार के आभूषणों से सुसज्जित, जगत की माता और भक्तों का कल्याण करने वाली हे महालक्ष्मी! आपको नमस्कार है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "శ్వేతాంబరములను ధరించి, సమస్త రత్నాభరణములతో భాసిల్లుతూ, జగజ్జననియై భక్తుల ననుగ్రహించు ఓ మహాలక్ష్మీ, నీకు నమస్కారము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தூய வெண்ணிற ஆடை அணிந்தவளே, பலவித ரத்தின ஆபரணங்களால் அலங்கரிக்கப்பட்டவளே, உலக அன்னையே, மகாலட்சுமியே உனக்கு நமஸ்காரம்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಶ್ವೇತವಸ್ತ್ರಧಾರಿಣಿಯೂ, ನಾನಾವಿಧ ಆಭರಣಗಳಿಂದ ಶೋಭಿಸುವವಳೂ, ಜಗನ್ಮಾತೆಯೂ ಆದ ಹೇ ಮಹಾಲಕ್ಷ್ಮಿ, ನಿನಗೆ ನಮಸ್ಕಾರಗಳು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 9,
+      "verse_type": "PHALASRUTI",
+      "original_sanskrit": "महालक्ष्म्यष्टकं स्तोत्रं यः पठेद्भक्तिमान्नरः ।\nसर्वसिद्धिमवाप्नोति राज्यं प्राप्नोति सर्वदा ॥ ९ ॥",
+      "iast": "mahālakṣmyaṣṭakaṁ stōtraṁ yaḥ paṭhēdbhaktimānnaraḥ ।\nsarvasiddhimavāpnōti rājyaṁ prāpnōti sarvadā ॥ 9 ॥",
+      "transliterations": {
+        "telugu": "మహాలక్ష్మ్యష్టకం స్తోత్రం యః పఠేద్భక్తిమాన్నరః ।\nసర్వసిద్ధిమవాప్నోతి రాజ్యం ప్రాప్నోతి సర్వదా ॥ ౯ ॥",
+        "tamil": "மஹாலக்ஷ்ம்யஷ்டகம் ஸ்தோத்ரம் யஃ படேத்பக்திமாந்நரஃ ।\nஸர்வஸித்திமவாப்நோதி ராஜ்யம் ப்ராப்நோதி ஸர்வதா ॥ ௯ ॥",
+        "kannada": "ಮಹಾಲಕ್ಷ್ಮ್ಯಷ್ಟಕಂ ಸ್ತೋತ್ರಂ ಯಃ ಪಠೇದ್ಭಕ್ತಿಮಾನ್ನರಃ ।\nಸರ್ವಸಿದ್ಧಿಮವಾಪ್ನೋತಿ ರಾಜ್ಯಂ ಪ್ರಾಪ್ನೋತಿ ಸರ್ವದಾ ॥ ೯ ॥",
+        "malayalam": "മഹാലക്ഷ്മ്യഷ്ടകം സ്തോത്രം യഃ പഠേദ്ഭക്തിമാന്നരഃ ।\nസര്വസിദ്ധിമവാപ്നോതി രാജ്യം പ്രാപ്നോതി സര്വദാ ॥ ൯ ॥",
+        "iast": "mahālakṣmyaṣṭakaṃ stotraṃ yaḥ paṭhedbhaktimānnaraḥ |\nsarvasiddhimavāpnoti rājyaṃ prāpnoti sarvadā || 9 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Whoever devoutly recites this Mahalakshmi Ashtakam hymn attains all perfections and secures sovereignty and spiritual triumph for all time.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जो मनुष्य भक्तिपूर्वक इस महालक्ष्मी अष्टक का पाठ करता है, वह समस्त सिद्धियों को प्राप्त करता है और उसे सदा राज्य-वैभव तथा सुख-शांति मिलती है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఈ మహాలక్ష్మ్యష్టకమును భక్తిశ్రద్ధలతో పఠించు భక్తుడు సకల కార్యసిద్ధులను పొంది, శాశ్వత సంపదలతో సుఖశాంతులను పొందును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "பக்தியுடன் இந்த மகாலட்சுமி அஷ்டகத்தைப் படிப்பவர் சகல சித்திகளையும் அடைந்து, எப்போதும் செல்வச் செழிப்புடன் வாழ்வர்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಭಕ್ತಿಯಿಂದ ಈ ಮಹಾಲಕ್ಷ್ಮ್ಯಷ್ಟಕವನ್ನು ಪಠಿಸುವ ಮಾನವನು ಸಕಲ ಸಿದ್ಧಿಗಳನ್ನು ಪಡೆದು, ಸದಾಕಾಲ ಸಕಲ ಸುಖ-ಸಂಪತ್ತುಗಳನ್ನು ಹೊಂದುತ್ತಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 10,
+      "verse_type": "PHALASRUTI",
+      "original_sanskrit": "एककाले पठेन्नित्यं महापापविनाशनम् ।\nद्विकालं यः पठेन्नित्यं धनधान्यसमन्वितः ।\nत्रिकालं यः पठेन्नित्यं महाशत्रुविनाशनम् ।\nमहालक्ष्मीर्भवेन्नित्यं प्रसन्ना वरदा शुभा ॥ १० ॥",
+      "iast": "ēkakālē paṭhēnnityaṁ mahāpāpavināśanam ।\ndvikālaṁ yaḥ paṭhēnnityaṁ dhanadhānyasamanvitaḥ ।\ntrikālaṁ yaḥ paṭhēnnityaṁ mahāśatruvināśanam ।\nmahālakṣmīrbhavēnnityaṁ prasannā varadā śubhā ॥ 10 ॥",
+      "transliterations": {
+        "telugu": "ఏకకాలే పఠేన్నిత్యం మహాపాపవినాశనమ్ ।\nద్వికాలం యః పఠేన్నిత్యం ధనధాన్యసమన్వితః ।\nత్రికాలం యః పఠేన్నిత్యం మహాశత్రువినాశనమ్ ।\nమహాలక్ష్మీర్భవేన్నిత్యం ప్రసన్నా వరదా శుభా ॥ ౧౦ ॥",
+        "tamil": "ஏககாலே படேந்நித்யம் மஹாபாபவிநாஶநம் ।\nத்விகாலம் யஃ படேந்நித்யம் தநதாந்யஸமந்விதஃ ।\nத்ரிகாலம் யஃ படேந்நித்யம் மஹாஶத்ருவிநாஶநம் ।\nமஹாலக்ஷ்மீர்பவேந்நித்யம் ப்ரஸந்நா வரதா ஶுபா ॥ ௧௦ ॥",
+        "kannada": "ಏಕಕಾಲೇ ಪಠೇನ್ನಿತ್ಯಂ ಮಹಾಪಾಪವಿನಾಶನಮ್ ।\nದ್ವಿಕಾಲಂ ಯಃ ಪಠೇನ್ನಿತ್ಯಂ ಧನಧಾನ್ಯಸಮನ್ವಿತಃ ।\nತ್ರಿಕಾಲಂ ಯಃ ಪಠೇನ್ನಿತ್ಯಂ ಮಹಾಶತ್ರುವಿನಾಶನಮ್ ।\nಮಹಾಲಕ್ಷ್ಮೀರ್ಭವೇನ್ನಿತ್ಯಂ ಪ್ರಸನ್ನಾ ವರದಾ ಶುಭಾ ॥ ೧೦ ॥",
+        "malayalam": "ഏകകാലേ പഠേന്നിത്യം മഹാപാപവിനാശനമ് ।\nദ്വികാലം യഃ പഠേന്നിത്യം ധനധാന്യസമന്വിതഃ ।\nത്രികാലം യഃ പഠേന്നിത്യം മഹാശത്രുവിനാശനമ് ।\nമഹാലക്ഷ്മീര്ഭവേന്നിത്യം പ്രസന്നാ വരദാ ശുഭാ ॥ ൧൦ ॥",
+        "iast": "ekakāle paṭhennityaṃ mahāpāpavināśanam |\ndvikālaṃ yaḥ paṭhennityaṃ dhanadhānyasamanvitaḥ |\ntrikālaṃ yaḥ paṭhennityaṃ mahāśatruvināśanam |\nmahālakṣmīrbhavennityaṃ prasannā varadā śubhā || 10 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Reciting once daily dispels monumental sins; reciting twice daily blesses one with abundant wealth and sustenance; reciting thrice daily vanquishes formidable adversaries; and Goddess Mahalakshmi remains ever pleased, auspicious, and ready to bestow boons.",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "एक बार पाठ करने से पाप नष्ट होते हैं, दो बार पाठ से धन-धान्य की प्राप्ति होती है, और नित्य तीन बार पाठ करने से महाशत्रु का नाश होता है तथा महालक्ष्मी की अचल कृपा प्राप्त होती है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఒక్కమారు పఠించిన పాపములు నశించును; రెండుసార్లు పఠించిన ధనధాన్యములు లభించును; నిత్యము మూడుసార్లు పఠించిన మహాశత్రువులు నశించి, మహాలక్ష్మి ప్రసన్నురాలగును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஒருமுறை படித்தால் பாவம் அகலும்; இருமுறை படித்தால் தனதான்யம் பெருகும்; நாள்தோறும் மும்முறை படித்தால் கொடிய பகை அழியும், மகாலட்சுமியின் அருள் நிலைக்கும்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಒಮ್ಮೆ ಪಠಿಸಿದರೆ ಪಾಪಗಳು ನಾಶವಾಗುತ್ತವೆ; ದಿನಕ್ಕೆರಡು ಬಾರಿ ಪಠಿಸಿದರೆ ಧನಧಾನ್ಯ ಪ್ರಾಪ್ತಿಯಾಗುತ್ತದೆ; ನಿತ್ಯ ಮೂರು ಬಾರಿ ಪಠಿಸಿದರೆ ಶತ್ರುನಾಶವಾಗಿ ಮಹಾಲಕ್ಷ್ಮಿಯ ಶಾಶ್ವತ ಕೃಪೆ ಲಭಿಸುತ್ತದೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    }
+  ]
+}

@@ -87,17 +87,26 @@ class LibraryAnalyticsEngine:
         trans_in_review = 0
         editorial_approved = 0
         audio_ready = 0
-        total_verses = 0
+        total_verified_verses = 0
+        total_all_verses = 0
         untranslated_verses = 0
 
         cat_dist: Dict[str, int] = {}
         deity_dist: Dict[str, int] = {}
 
         for t in texts:
-            # Completeness & Verses
-            total_verses += len(t.verses)
-            if t.verse_count > 0 and len(t.verses) == t.verse_count:
+            v_len = len(t.verses)
+            total_all_verses += v_len
+
+            is_verified = (
+                t.textual_verification_status == TextualVerificationStatus.SCHOLAR_VERIFIED
+                and t.verse_count > 0
+                and v_len == t.verse_count
+            )
+
+            if is_verified:
                 verified_complete += 1
+                total_verified_verses += v_len
             else:
                 sample_or_prototype += 1
 
@@ -171,7 +180,7 @@ class LibraryAnalyticsEngine:
             published_manuscripts_word=word_files,
             published_manuscripts_pdf=pdf_files,
             audio_production_ready_texts=audio_ready,
-            total_verified_verses=total_verses,
+            total_verified_verses=total_verified_verses,
             supported_scripts_count=len(supported_scripts),
             supported_scripts=supported_scripts,
             category_distribution=cat_dist,

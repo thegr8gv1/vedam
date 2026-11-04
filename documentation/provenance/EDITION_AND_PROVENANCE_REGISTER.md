@@ -36,6 +36,9 @@ flowchart TD
 | **`VEDA-TXT-00010`** | Mahalakshmi Ashtakam | Devi / Lakshmi | Deva Indra (Padma Purana) | Anushtubh (8 stotras + 2 phalasruti) | **10** | *Brihat Stotra Ratnakara*, Nirnaya Sagar Press (Bombay) | 1912 | `archive.org/details/BrihatStotraRatnakaraNSP1912` | `GREEN_CLEARED` | `VERIFIED_FULL_TEXT` |
 | **`VEDA-TXT-00011`** | Lingashtakam | Shiva | Traditional attribution to Adi Shankaracharya | Anushtubh (8 stotras + 1 phalasruti) | **9** | *Brihat Stotra Ratnakara*, Nirnaya Sagar Press (Bombay) | 1912 | `archive.org/details/BrihatStotraRatnakaraNSP1912` | `GREEN_CLEARED` | `VERIFIED_FULL_TEXT` |
 | **`VEDA-TXT-00012`** | Sankata Nashana Ganesha Stotram | Ganesha | Devarshi Narada (Narada Purana) | Anushtubh (4 stuti + 4 phalasruti) | **8** | *Brihat Stotra Ratnakara*, Nirnaya Sagar Press (Bombay) | 1912 | `archive.org/details/BrihatStotraRatnakaraNSP1912` | `GREEN_CLEARED` | `VERIFIED_FULL_TEXT` |
+| **`VEDA-TXT-00013`** | Venkateswara Suprabhatam | Venkateswara | Prativadi Bhayankaram Anna (c. 1400 CE) | Vasantatilaka / Malini | **29** | *Sri Venkateswara Suprabhata Stotram*, Vavilla Ramaswamy Sastrulu & Sons | 1918 | `archive.org/details/VenkateswaraSuprabhatamVavilla1918` | `GREEN_CLEARED` | `VERIFIED_FULL_TEXT` |
+| **`VEDA-TXT-00014`** | Purusha Suktam | Purusha / Vishnu | Rishi Narayana | Anushtubh & Trishtubh | **16** | *Rig-Veda-Sanhita with Sayana Bhashya*, F. Max Müller (Oxford) | 1890 | `archive.org/details/RigVedaSamhitaVSM` | `GREEN_CLEARED` | `VERIFIED_FULL_TEXT` |
+| **`VEDA-TXT-00015`** | Durga Suktam | Durga / Agni | Sage Jatavedas | Trishtubh (Taittiriya Swaras) | **7** | *The Mahanarayana-Upanishad*, Anandashrama Sanskrit Series No. 27 | 1894 | `archive.org/details/MahanarayanaUpanishadAnandashrama1894` | `GREEN_CLEARED` | `VERIFIED_FULL_TEXT` |
 
 ---
 
@@ -51,3 +54,5 @@ Detailed philological reports and audit records are maintained under `documentat
 - `documentation/quality/PHASE4_RIGHTS_REAUDIT_REPORT.md`
 - `documentation/quality/TRANSLATION_PROVENANCE_AUDIT_REPORT.md`
 - `documentation/quality/SHORTLIST_FIRST_10_EXPANSION.md`
+- `documentation/quality/PHASE5_FINAL_RECONCILIATION_REPORT.md`
+- `documentation/quality/PHASE5_BATCH2_AUDIT_REPORT.md`
