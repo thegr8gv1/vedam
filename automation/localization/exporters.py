@@ -1,7 +1,7 @@
 """
 Vedic Heritage Platform — Multilingual Publication Exporter
-Part E: Generates multilingual Excel, Word, and JSON publication artifacts
-incorporating Sanskrit, Hindi, Telugu, Tamil, Kannada, and English.
+Generates multilingual Excel, Word, and JSON publication artifacts
+incorporating Sanskrit, Hindi, Telugu, Tamil, Kannada, Marathi, Bengali, Gujarati, Malayalam, Odia, and English.
 """
 
 from datetime import datetime, timezone
@@ -81,15 +81,30 @@ class MultilingualPublicationExporter:
         # 1. Comparative All-Languages Sheet
         ws_comp = wb.create_sheet(title="Comparative All-Languages")
         ws_comp.sheet_view.showGridLines = True
-        ws_comp.merge_cells("A1:G1")
-        ws_comp["A1"] = f"{text.canonical_title} — Multilingual Comparative Matrix"
+        ws_comp.merge_cells("A1:M1")
+        ws_comp["A1"] = f"{text.canonical_title} — Multilingual Comparative Matrix (10 Languages + IAST)"
         ws_comp["A1"].font = cls.TITLE_FONT
 
-        headers = ["Verse #", "Original Sanskrit", "IAST (Roman)", "Hindi (हिन्दी)", "Telugu (తెలుగు)", "Tamil (தமிழ்)", "Kannada (ಕನ್ನಡ)"]
+        headers = [
+            "Verse #",
+            "Original Sanskrit",
+            "IAST (Roman)",
+            "Hindi (हिन्दी)",
+            "Telugu (తెలుగు)",
+            "Tamil (தமிழ்)",
+            "Kannada (ಕನ್ನಡ)",
+            "Marathi (मराठी)",
+            "Bengali (বাংলা)",
+            "Gujarati (ગુજરાતી)",
+            "Malayalam (മലയാളം)",
+            "Odia (ଓଡ଼ିଆ)",
+            "English (Bhavartha)",
+        ]
         ws_comp.append([])
         ws_comp.append(headers)
 
-        for col_idx in range(1, 8):
+        num_cols = len(headers)
+        for col_idx in range(1, num_cols + 1):
             cell = ws_comp.cell(row=3, column=col_idx)
             cell.fill = cls.MAROON_HEADER
             cell.font = cls.HEADER_FONT
@@ -105,8 +120,14 @@ class MultilingualPublicationExporter:
             ws_comp.cell(row=row, column=5, value=trans_by_lang.get("te", "")).font = cls.INDIC_FONT
             ws_comp.cell(row=row, column=6, value=trans_by_lang.get("ta", "")).font = cls.INDIC_FONT
             ws_comp.cell(row=row, column=7, value=trans_by_lang.get("kn", "")).font = cls.INDIC_FONT
+            ws_comp.cell(row=row, column=8, value=trans_by_lang.get("mr", "")).font = cls.INDIC_FONT
+            ws_comp.cell(row=row, column=9, value=trans_by_lang.get("bn", "")).font = cls.INDIC_FONT
+            ws_comp.cell(row=row, column=10, value=trans_by_lang.get("gu", "")).font = cls.INDIC_FONT
+            ws_comp.cell(row=row, column=11, value=trans_by_lang.get("ml", "")).font = cls.INDIC_FONT
+            ws_comp.cell(row=row, column=12, value=trans_by_lang.get("or", "")).font = cls.INDIC_FONT
+            ws_comp.cell(row=row, column=13, value=trans_by_lang.get("en", "")).font = cls.REGULAR_FONT
 
-            for c in range(1, 8):
+            for c in range(1, num_cols + 1):
                 ws_comp.cell(row=row, column=c).border = cls.BORDER_THIN
                 ws_comp.cell(row=row, column=c).alignment = Alignment(wrap_text=True, vertical="top")
                 if row % 2 == 1:
@@ -114,7 +135,7 @@ class MultilingualPublicationExporter:
             row += 1
 
         # Auto-fit columns
-        widths = {1: 10, 2: 38, 3: 35, 4: 40, 5: 40, 6: 40, 7: 40}
+        widths = {1: 10, 2: 38, 3: 35, 4: 40, 5: 40, 6: 40, 7: 40, 8: 40, 9: 40, 10: 40, 11: 40, 12: 40, 13: 45}
         for col_idx, w in widths.items():
             ws_comp.column_dimensions[get_column_letter(col_idx)].width = w
 
@@ -134,7 +155,9 @@ class MultilingualPublicationExporter:
         run_title.font.bold = True
         run_title.font.color.rgb = RGBColor(128, 0, 32)
 
-        p_sub = doc.add_paragraph("Multilingual Scholarly Edition — Sanskrit, Hindi, Telugu, Tamil, Kannada, and English")
+        p_sub = doc.add_paragraph(
+            "Multilingual Scholarly Edition — Sanskrit, Hindi, Telugu, Tamil, Kannada, Marathi, Bengali, Gujarati, Malayalam, Odia, and English"
+        )
         p_sub.runs[0].font.name = "Georgia"
         p_sub.runs[0].font.size = Pt(11)
         p_sub.runs[0].font.italic = True
@@ -149,22 +172,29 @@ class MultilingualPublicationExporter:
             r_vnum.font.color.rgb = RGBColor(128, 0, 32)
 
             # Table for verse renderings
-            tbl = doc.add_table(rows=7, cols=2)
-            tbl.autofit = False
-            tbl.columns[0].width = Inches(1.8)
-            tbl.columns[1].width = Inches(5.0)
-
-            trans_map = {t.target_language: t.translated_text for t in v.translations}
-
             labels_data = [
                 ("Original Sanskrit", v.devanagari_text, "Nirmala UI", True),
                 ("IAST (Roman)", v.iast_text or "", "Calibri", False),
+            ]
+            trans_map = {t.target_language: t.translated_text for t in v.translations}
+            lang_items = [
                 ("Hindi (हिन्दी)", trans_map.get("hi", ""), "Nirmala UI", False),
                 ("Telugu (తెలుగు)", trans_map.get("te", ""), "Nirmala UI", False),
                 ("Tamil (தமிழ்)", trans_map.get("ta", ""), "Nirmala UI", False),
                 ("Kannada (ಕನ್ನಡ)", trans_map.get("kn", ""), "Nirmala UI", False),
+                ("Marathi (मराठी)", trans_map.get("mr", ""), "Nirmala UI", False),
+                ("Bengali (বাংলা)", trans_map.get("bn", ""), "Nirmala UI", False),
+                ("Gujarati (ગુજરાતી)", trans_map.get("gu", ""), "Nirmala UI", False),
+                ("Malayalam (മലയാളം)", trans_map.get("ml", ""), "Nirmala UI", False),
+                ("Odia (ଓଡ଼ିଆ)", trans_map.get("or", ""), "Nirmala UI", False),
                 ("English (Bhavartha)", trans_map.get("en", ""), "Calibri", False),
             ]
+            labels_data.extend(lang_items)
+
+            tbl = doc.add_table(rows=len(labels_data), cols=2)
+            tbl.autofit = False
+            tbl.columns[0].width = Inches(1.8)
+            tbl.columns[1].width = Inches(5.0)
 
             for idx, (label, val, font_name, is_bold) in enumerate(labels_data):
                 cell_lbl = tbl.cell(idx, 0)
@@ -196,7 +226,7 @@ class MultilingualPublicationExporter:
             "source_scripture": text.source_scripture,
             "verse_count": len(sorted_verses),
             "generated_at_utc": datetime.now(timezone.utc).isoformat(),
-            "supported_languages": ["sa", "hi", "te", "ta", "kn", "en"],
+            "supported_languages": ["sa", "hi", "te", "ta", "kn", "mr", "bn", "gu", "ml", "or", "en"],
             "verses": [
                 {
                     "verse_number": v.verse_number,

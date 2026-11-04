@@ -1,7 +1,7 @@
 # Vedic Heritage Platform — Edition and Provenance Register
-**Version:** 5.0.0  
+**Version:** 7.0.0  
 **Last Updated:** 2026-11-04  
-**Scope:** Exhaustive layer-by-layer provenance, critical edition mapping, and full-text verification register for all 11 verified compositions (8 Pilot Compositions + 3 Expansion Batch 1 Compositions).
+**Scope:** Exhaustive layer-by-layer provenance, critical edition mapping, and full-text verification register for all 18 verified compositions (8 Pilot Compositions + 3 Batch 1 + 3 Batch 2 + 4 Batch 3 Compositions).
 
 ---
 
@@ -39,6 +39,10 @@ flowchart TD
 | **`VEDA-TXT-00013`** | Venkateswara Suprabhatam | Venkateswara | Prativadi Bhayankaram Anna (c. 1400 CE) | Vasantatilaka / Malini | **29** | *Sri Venkateswara Suprabhata Stotram*, Vavilla Ramaswamy Sastrulu & Sons | 1918 | `archive.org/details/VenkateswaraSuprabhatamVavilla1918` | `GREEN_CLEARED` | `VERIFIED_FULL_TEXT` |
 | **`VEDA-TXT-00014`** | Purusha Suktam | Purusha / Vishnu | Rishi Narayana | Anushtubh & Trishtubh | **16** | *Rig-Veda-Sanhita with Sayana Bhashya*, F. Max Müller (Oxford) | 1890 | `archive.org/details/RigVedaSamhitaVSM` | `GREEN_CLEARED` | `VERIFIED_FULL_TEXT` |
 | **`VEDA-TXT-00015`** | Durga Suktam | Durga / Agni | Sage Jatavedas | Trishtubh (Taittiriya Swaras) | **7** | *The Mahanarayana-Upanishad*, Anandashrama Sanskrit Series No. 27 | 1894 | `archive.org/details/MahanarayanaUpanishadAnandashrama1894` | `GREEN_CLEARED` | `VERIFIED_FULL_TEXT` |
+| **`VEDA-TXT-00016`** | Narayana Suktam | Purusha / Narayana | Sage Narayana | Anushtubh / Trishtubh (Taittiriya Swaras) | **12** | *The Taittiriya Aranyaka with Sayana Bhashya*, Anandashrama Sanskrit Series No. 36 | 1894 | `archive.org/details/TaittiriyaAranyakaAnandashrama` | `GREEN_CLEARED` | `VERIFIED_FULL_TEXT` |
+| **`VEDA-TXT-00017`** | Surya Ashtakam | Surya | Traditional Puranic (Samba Purana) | Anushtubh (8 stuti + 2 phalasruti) | **10** | *Brihat Stotra Ratnakara*, Nirnaya Sagar Press (Bombay) | 1912 | `archive.org/details/BrihatStotraRatnakaraNSP1912` | `GREEN_CLEARED` | `VERIFIED_FULL_TEXT` |
+| **`VEDA-TXT-00018`** | Kanakadhara Stotram | Devi / Lakshmi | Adi Shankaracharya (c. 788–820 CE) | Totaka / Bhujangaprayata / Malini | **21** | *Complete Works of Sri Sankaracharya*, Vol. 11, Vani Vilas Press (Srirangam) | 1910 | `archive.org/details/brihatstotraratn00khem` | `GREEN_CLEARED` | `VERIFIED_FULL_TEXT` |
+| **`VEDA-TXT-00019`** | Mahishasura Mardini Stotram | Devi / Durga | Traditional attribution to Adi Shankaracharya | Shardulavikridita-variant (Signature Refrain) | **21** | *Brihat Stotra Ratnakara*, Nirnaya Sagar Press (Bombay) | 1912 | `archive.org/details/BrihatStotraRatnakaraNSP1912` | `GREEN_CLEARED` | `VERIFIED_FULL_TEXT` |
 
 ---
 
@@ -56,3 +60,4 @@ Detailed philological reports and audit records are maintained under `documentat
 - `documentation/quality/SHORTLIST_FIRST_10_EXPANSION.md`
 - `documentation/quality/PHASE5_FINAL_RECONCILIATION_REPORT.md`
 - `documentation/quality/PHASE5_BATCH2_AUDIT_REPORT.md`
+- `documentation/quality/PHASE5_BATCH3_RESEARCH_REPORT.md`

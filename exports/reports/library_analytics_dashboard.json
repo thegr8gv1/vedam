@@ -1,51 +1,120 @@
 {
-  "generated_at_utc": "2026-11-04T21:55:22.389624+00:00",
+  "generated_at_utc": "2026-11-04T22:18:06.238068+00:00",
   "total_candidate_catalog": 77,
-  "total_registered_database_texts": 16,
-  "verified_complete_texts": 14,
+  "total_registered_database_texts": 20,
+  "verified_complete_texts": 18,
   "sample_or_prototype_texts": 2,
-  "rights_cleared_green_texts": 14,
+  "rights_cleared_green_texts": 18,
   "rights_pending_amber_texts": 2,
   "rights_forbidden_red_texts": 0,
-  "scholar_verified_texts": 14,
+  "scholar_verified_texts": 18,
   "pending_scholarly_review_texts": 2,
   "translation_approved_texts": 8,
-  "translation_in_review_texts": 8,
+  "translation_in_review_texts": 12,
   "translation_untranslated_verses": 3,
-  "editorial_approved_texts": 14,
-  "published_manuscripts_excel": 14,
-  "published_manuscripts_word": 14,
-  "published_manuscripts_pdf": 14,
-  "audio_production_ready_texts": 14,
-  "total_verified_verses": 202,
-  "supported_scripts_count": 6,
+  "editorial_approved_texts": 18,
+  "published_manuscripts_excel": 18,
+  "published_manuscripts_word": 18,
+  "published_manuscripts_pdf": 18,
+  "audio_production_ready_texts": 18,
+  "total_verified_verses": 266,
+  "supported_scripts_count": 9,
   "supported_scripts": [
     "Devanagari",
     "Telugu",
     "Tamil",
     "Kannada",
     "Malayalam",
+    "Bengali",
+    "Gujarati",
+    "Odia",
     "IAST (Roman)"
   ],
   "category_distribution": {
-    "Stotra": 7,
+    "Stotra": 9,
     "Itihasa Hymn": 1,
-    "Ashtakam": 1,
+    "Ashtakam": 2,
     "Mantra": 2,
-    "Suktam": 3,
+    "Suktam": 4,
     "Chalisa": 1,
     "Suprabhatam": 1
   },
   "deity_distribution": {
     "Lord Ganesha": 2,
     "Lord Shiva": 4,
-    "Lord Surya": 3,
+    "Lord Surya": 4,
     "Lord Krishna": 1,
-    "Goddess Lakshmi / Devi": 2,
+    "Goddess Lakshmi / Devi": 3,
     "Lord Hanuman": 1,
     "Lord Venkateswara": 1,
-    "Purusha / Supreme Being": 1,
-    "Goddess Durga": 1
+    "Purusha / Supreme Being": 2,
+    "Goddess Durga": 2
   },
-  "potential_duplicate_candidates": 0
+  "potential_duplicate_candidates": 0,
+  "multilingual_languages_count": 10,
+  "multilingual_translation_coverage": {
+    "en": {
+      "total": 846,
+      "draft": 239,
+      "approved": 607,
+      "in_review": 0
+    },
+    "hi": {
+      "total": 27,
+      "draft": 27,
+      "approved": 0,
+      "in_review": 0
+    },
+    "te": {
+      "total": 27,
+      "draft": 27,
+      "approved": 0,
+      "in_review": 0
+    },
+    "ta": {
+      "total": 27,
+      "draft": 27,
+      "approved": 0,
+      "in_review": 0
+    },
+    "kn": {
+      "total": 27,
+      "draft": 27,
+      "approved": 0,
+      "in_review": 0
+    },
+    "mr": {
+      "total": 27,
+      "draft": 27,
+      "approved": 0,
+      "in_review": 0
+    },
+    "bn": {
+      "total": 27,
+      "draft": 27,
+      "approved": 0,
+      "in_review": 0
+    },
+    "gu": {
+      "total": 27,
+      "draft": 27,
+      "approved": 0,
+      "in_review": 0
+    },
+    "ml": {
+      "total": 27,
+      "draft": 27,
+      "approved": 0,
+      "in_review": 0
+    },
+    "or": {
+      "total": 27,
+      "draft": 27,
+      "approved": 0,
+      "in_review": 0
+    }
+  },
+  "multilingual_artifacts_excel": 5,
+  "multilingual_artifacts_word": 5,
+  "multilingual_artifacts_json": 5
 }

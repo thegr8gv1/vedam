@@ -5,13 +5,18 @@
   "composer": "Deva Indra (Padma Purana)",
   "source_scripture": "Padma Purana, Uttara Khanda",
   "verse_count": 10,
-  "generated_at_utc": "2026-11-04T22:00:02.850687+00:00",
+  "generated_at_utc": "2026-11-04T22:17:22.826966+00:00",
   "supported_languages": [
     "sa",
     "hi",
     "te",
     "ta",
     "kn",
+    "mr",
+    "bn",
+    "gu",
+    "ml",
+    "or",
     "en"
   ],
   "verses": [
@@ -55,6 +60,36 @@
         "kn": {
           "type": "BHAVARTHA",
           "text": "ಓ ಮಹಾಮಾಯೆಯೇ! ಶ್ರೀಪೀಠದಲ್ಲಿ ವಿರಾಜಮಾನಳಾಗಿ ದೇವತೆಗಳಿಂದ ಪೂಜಿಸಲ್ಪಡುವ ದೇವಿಯೇ! ಶಂಖ, ಚಕ್ರ, ಗದೆಯನ್ನು ಹಿಡಿದಿರುವ ಓ ಮಹಾಲಕ್ಷ್ಮಿ, ನಿನಗೆ ನಮಸ್ಕಾರ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे श्रीपीठावर निवास करणाऱ्या, देवांनी पूजिलेल्या, शंख, चक्र आणि गदा हातात धारण करणाऱ्या महामाये महालक्ष्मी, तुला माझा नमस्कार असो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে শ্রীপীঠবাসিনী, দেবগণবন্দিতা, শঙ্খ-চক্র-গদাধারিণী পরমেশ্বরী মহামায়ে মহালক্ষ্মী, আপনাকে আমার ভক্তিপূর্ণ প্রণাম।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હે શ્રીપીઠ પર બિરાજમાન, દેવતાઓ દ્વારા પૂજિત, હાથમાં શંખ, ચક્ર અને ગદા ધારણ કરનારી હે મહામાયા મહાલક્ષ્મી, તમને મારા વંદન.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ശ്രീ പീഠത്തിൽ വസിക്കുന്നവളും, ദേവന്മാരാൽ പൂജിക്കപ്പെടുന്നവളും, ശംഖ്-ചക്ര-ഗദാധാരിണിയുമായ ഹേ മഹാമായേ മഹാലക്ഷ്മീ, അങ്ങേയ്ക്ക് പ്രണാമം.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହେ ଶ୍ରୀପୀଠବାସିନୀ, ଦେବତାମାନଙ୍କ ଦ୍ୱାରା ପୂଜିତା, ଶଙ୍ଖ-ଚକ୍ର-ଗଦାଧାରିଣୀ ହେ ମହାମାୟେ ମହାଲକ୍ଷ୍ମୀ, ଆପଣଙ୍କୁ ନମସ୍କାର ।",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
         }
@@ -102,6 +137,36 @@
           "text": "ಗರುಡವಾಹನಳಾಗಿ, ಕೋಲಾಸುರನನ್ನು ಸಂಹರಿಸಿದ, ಸಕಲ ಪಾಪಗಳನ್ನು ನಿವಾರಿಸುವ ಹೇ ಮಹಾಲಕ್ಷ್ಮೀ, ನಿನಗೆ ಪ್ರಣಾಮಗಳು.",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "गरुडावर आरूढ होणाऱ्या, कोलासूर राक्षसाचा नाश करणाऱ्या, सर्व पापांचे हरण करणाऱ्या हे देवी महालक्ष्मी, तुला नमस्कार असो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে গরুড়বাহনা, কোলাসুরবিনাশিনী, সর্বপাপহরা পরমকল্যাণময়ী দেবী মহালক্ষ্মী, আপনাকে প্রণাম।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "ગરુડ પર સવાર થનારી, કોલાસુર દૈત્યનો નાશ કરનારી અને ભક્તોના સર્વ પાપ હરનારી હે દેવી મહાલક્ષ્મી, તમને નમસ્કાર.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഗരുഡാരൂഢയും, കോലാസുരനെ നിഗ്രഹിച്ചവളും, സകല പാപങ്ങളും നശിപ്പിക്കുന്നവളുമായ ഹേ ദേവീ മഹാലക്ഷ്മീ, അങ്ങേയ്ക്ക് നമസ്കാരം.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଗରୁଡ଼ବାହନା, କୋଳାସୁରକୁ ବିନାଶ କରିଥିବା ତଥା ସମସ୍ତ ପାପନାଶିନୀ ହେ ଦେବୀ ମହାଲକ୍ଷ୍ମୀ, ଆପଣଙ୍କୁ ପ୍ରଣାମ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
         }
       }
     },
@@ -145,6 +210,36 @@
         "kn": {
           "type": "BHAVARTHA",
           "text": "ಸರ್ವಜ್ಞೆಯೂ, ಸಕಲ ವರಗಳನ್ನು ಕರುಣಿಸುವವಳೂ, ದುಷ್ಟರಿಗೆ ಭಯಂಕರಳೂ, ಸಮಸ್ತ ದುಃಖಗಳನ್ನು ಪರಿಹರಿಸುವವಳೂ ಆದ ಹೇ ಮಹಾಲಕ್ಷ್ಮಿ, ನಿನಗೆ ನಮಸ್ಕಾರ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "सर्व जाणणाऱ्या, सर्व वरदान देणाऱ्या, दुष्टांना भय दाखवणाऱ्या आणि भक्तांचे सर्व दुःख दूर करणाऱ्या हे महालक्ष्मी, तुला नमन असो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যিনি সর্বজ্ঞা, সর্ববরপ্রদায়িনী, দুষ্টদলনী এবং ভক্তের নিখিল দুঃখহারিণী, সেই দেবী মহালক্ষ্মীকে প্রণাম।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "સર્વજ્ઞ, સર્વ વરદાન આપનારી, દુષ્ટોમાં ભય પેદા કરનારી અને ભક્તોના સઘળાં દુઃખ હરનારી હે મહાલક્ષ્મી, તમને નમન.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സർവ്വജ്ഞയും, സർവ്വവരദായിനിയും, ദുഷ്ടജനഭയങ്കരിയും, സകല ദുരിതങ്ങളും നീക്കുന്നവളുമായ ഹേ മഹാലക്ഷ്മീ, അങ്ങയെ വണങ്ങുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସର୍ବଜ୍ଞା, ସର୍ବବରଦାତ୍ରୀ, ଦୁଷ୍ଟମାନଙ୍କୁ ଭୟ ପ୍ରଦାନକାରିଣୀ ତଥା ସମସ୍ତ ଦୁଃଖନାଶିନୀ ହେ ମହାଲକ୍ଷ୍ମୀ, ଆପଣଙ୍କୁ ନମସ୍କାର ।",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
         }
@@ -192,6 +287,36 @@
           "text": "ಸಿದ್ಧಿ-ಬುದ್ಧಿಗಳನ್ನು ಕರುಣಿಸುವ, ಭೋಗ ಮತ್ತು ಮೋಕ್ಷವನ್ನು ನೀಡುವ, ಮಂತ್ರಸ್ವರೂಪಿಣಿಯಾದ ಹೇ ಮಹಾಲಕ್ಷ್ಮಿ, ನಿನಗೆ ಸದಾ ನಮಸ್ಕಾರ.",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "सिद्धि आणि बुद्धी देणाऱ्या, भोग व मोक्ष दोन्ही प्रदान करणाऱ्या, मंत्रस्वरूपी हे भगवती महालक्ष्मी, तुला नमस्कार असो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে সিদ্ধি ও বুদ্ধিপ্রদায়িনী, ইহলৌকিক সুখ ও পারমার্থিক মুক্তি উভয় প্রদানকারিণী, মন্ত্ররূপিণী দেবী মহালক্ষ্মী, আপনাকে প্রণাম।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "સિદ્ધિ અને બુદ્ધિ આપનારી, ભોગ અને મોક્ષ બંને પ્રદાન કરનારી તથા મંત્રસ્વરૂપા હે દેવી મહાલક્ષ્મી, તમને વંદન.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സിദ്ധിയും ബുദ്ധിയും നൽകുന്നവളും, ഭോഗവും മോക്ഷവും ഒരുപോലെ തരുന്നവളും, മന്ത്രസ്വരൂപിണിയുമായ ഹേ ദേവീ മഹാലക്ഷ്മീ, അങ്ങേയ്ക്ക് പ്രണാമം.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସିଦ୍ଧି ଓ ବୁଦ୍ଧି ପ୍ରଦାନକାରିଣୀ, ଭୋଗ ତଥା ମୋକ୍ଷ ଦାତ୍ରୀ, ମନ୍ତ୍ରସ୍ୱରୂପିଣୀ ହେ ଭଗବତୀ ମହାଲକ୍ଷ୍ମୀ, ଆପଣଙ୍କୁ ପ୍ରଣାମ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
         }
       }
     },
@@ -235,6 +360,36 @@
         "kn": {
           "type": "BHAVARTHA",
           "text": "ಆದಿ-ಅಂತಗಳಿಲ್ಲದ ಆದಿಶಕ್ತಿಯೇ, ಮಹೇಶ್ವರಿಯೇ, ಯೋಗದಿಂದ ಉದ್ಭವಿಸಿ ಯೋಗಿಗಳಿಂದ ಧ್ಯಾನಿಸಲ್ಪಡುವ ಹೇ ಮಹಾಲಕ್ಷ್ಮಿ, ನಿನಗೆ ಪ್ರಣಾಮಗಳು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जन्म व अंतापासून रहित असलेल्या, आद्यशक्ती, महेश्वरी, योगसाधनेतून प्रगट होणाऱ्या हे महालक्ष्मी, तुला माझा नमस्कार.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে জন্ম ও অন্তহীনা অনন্তরূপা, পরমাপ্রকৃতি আদ্যাশক্তি, যোগীদের অন্তরে প্রকাশমানা মহেশ্বরী মহালক্ষ্মী, আপনাকে প্রণাম।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આદિ અને અંતથી રહિત, મૂળ આદ્યશક્તિ, યોગસાધનાથી પ્રાપ્ત થતી પરમેશ્વરી હે મહાલક્ષ્મી, તમને મારા નમસ્કાર.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ആദിയും അന്തവുമില്ലാത്തവളും, ആദിശക്തിയും, യോഗത്തിലൂടെ അറിയപ്പെടുന്നവളുമായ ഹേ മഹേശ്വരീ മഹാലക്ഷ്മീ, അങ്ങേയ്ക്ക് നമസ്കാരം.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଆଦି ଓ ଅନ୍ତ ରହିତା, ଆଦ୍ୟାଶକ୍ତି, ଯୋଗସାଧନାରୁ ଉତ୍ପନ୍ନ ମହେଶ୍ୱରୀ ହେ ମହାଲକ୍ଷ୍ମୀ, ଆପଣଙ୍କୁ ନମସ୍କାର ।",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
         }
@@ -282,6 +437,36 @@
           "text": "ಸ್ಥೂಲ ಮತ್ತು ಸೂಕ್ಷ್ಮ ರೂಪಗಳಲ್ಲಿರುವ, ಮಹಾಶಕ್ತಿ ಸ್ವರೂಪಿಣಿಯಾದ, ಮಹಾಪಾಪಗಳನ್ನು ನಿವಾರಿಸುವ ಹೇ ಮಹಾಲಕ್ಷ್ಮಿ, ನಿನಗೆ ನಮಸ್ಕಾರ.",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "स्थूल, सूक्ष्म आणि संहाराच्या वेळी महाभयंकर रूप धारण करणाऱ्या, अफाट शक्ती असलेल्या आणि सर्व महापापांचे हरण करणाऱ्या हे महालक्ष्मी, तुला नमन.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যিনি স্থূল ও সূক্ষ্ম উভয়রূপা, সংহারকালে মহারৌদ্রী, মহাশক্তিময়ী এবং ভক্তের ঘোর পাপবিনাশিনী, সেই মহালক্ষ্মীকে প্রণাম।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "સ્થૂળ, સૂક્ષ્મ અને પ્રલયકાળે મહારોદ્ર સ્વરૂપ ધારણ કરનારી, મહાશક્તિશાળી અને મહાપાપ હરનારી હે મહાલક્ષ્મી, તમને નમન.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സ്ഥൂലവും സൂക്ഷ്മവുമായ രൂപമുള്ളവളും, സംഹാരത്തിൽ രൗദ്രഭാവം പൂണ്ടവളും, മഹാപാപങ്ങൾ നശിപ്പിക്കുന്നവളുമായ ഹേ മഹാലക്ഷ്മീ, പ്രണാമം.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସ୍ଥୂଳ, ସୂକ୍ଷ୍ମ ତଥା ମହାରୌଦ୍ର ରୂପଧାରିଣୀ, ମହାଶକ୍ତିମୟୀ ଏବଂ ସମସ୍ତ ମହାପାପ ହରଣକାରିଣୀ ହେ ମହାଲକ୍ଷ୍ମୀ, ଆପଣଙ୍କୁ ପ୍ରଣାମ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
         }
       }
     },
@@ -325,6 +510,36 @@
         "kn": {
           "type": "BHAVARTHA",
           "text": "ಕಮಲದಾಸನದಲ್ಲಿ ಕುಳಿತಿರುವ, ಪರಬ್ರಹ್ಮ ಸ್ವರೂಪಿಣಿಯಾದ, ಜಗನ್ಮಾತೆಯಾದ ಹೇ ಮಹಾಲಕ್ಷ್ಮಿ, ನಿನಗೆ ಪ್ರಣಾಮಗಳು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "कमळावर विराजमान झालेल्या, परब्रह्मस्वरूपिणी, परमेश्वरी आणि संपूर्ण जगाची माता असणाऱ्या हे महालक्ष्मी, तुला नमस्कार असो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে পদ্মাসনস্থিতা, পরব্রহ্মস্বরূপিণী, পরমেশ্বরী ও জগজ্জননী দেবী মহালক্ষ্মী, আপনাকে আমার অন্তরের ভক্তিপূর্ণ প্রণাম।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "કમળાસન પર બિરાજમાન, પરબ્રહ્મસ્વરૂપા, પરમેશ્વરી અને જગતજનની હે દેવી મહાલક્ષ્મી, તમને વંદન.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "പത്മത്തിൽ ഉപവിഷ്ടയായവളും, പരബ്രഹ്മസ്വരൂപിണിയും, ജഗന്മാതാവുമായ ഹേ പരമേശ്വരീ മഹാലക്ഷ്മീ, അങ്ങയെ ഭക്തിയോടെ വണങ്ങുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ପଦ୍ମାସନରେ ବିରାଜମାନା, ପରବ୍ରହ୍ମସ୍ୱରୂପିଣୀ, ପରମେଶ୍ୱରୀ ତଥା ଜଗତଜନନୀ ହେ ଦେବୀ ମହାଲକ୍ଷ୍ମୀ, ଆପଣଙ୍କୁ ପ୍ରଣାମ ।",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
         }
@@ -372,6 +587,36 @@
           "text": "ಶ್ವೇತವಸ್ತ್ರಧಾರಿಣಿಯೂ, ನಾನಾವಿಧ ಆಭರಣಗಳಿಂದ ಶೋಭಿಸುವವಳೂ, ಜಗನ್ಮಾತೆಯೂ ಆದ ಹೇ ಮಹಾಲಕ್ಷ್ಮಿ, ನಿನಗೆ ನಮಸ್ಕಾರಗಳು.",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "श्वेत वस्त्र परिधान करणाऱ्या, विविध दिव्य अलंकारांनी सुशोभित, सर्व विश्वाची आधार असणाऱ्या हे जगन्माता महालक्ष्मी, तुला नमन.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে শ্বেতবস্ত্রপরিহিতা, দিব্য অলঙ্কারে ভূষিতা, জগতের আধারভূতা জগন্মাতা দেবী মহালক্ষ্মী, আপনাকে প্রণাম।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "શ્વેત વસ્ત્રો ધારણ કરનારી, નાનાવિધ આભૂષણોથી શોભતી, જગતની આધારભૂત હે જગદંબા મહાલક્ષ્મી, તમને નમન.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "വെള്ളവസ്ത്രം ധരിച്ചവളും, നാനാവിധ ആഭരണങ്ങളാൽ അലംകൃതയായവളും, ജഗത്തിൻറെ ആധാരവുമായ ഹേ ജഗന്മാതാവേ മഹാലക്ഷ്മീ, പ്രണാമം.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଶ୍ୱେତବସ୍ତ୍ର ପରିଧାନ କରିଥିବା, ବିବିଧ ଅଳଙ୍କାରରେ ଶୋଭିତା ତଥା ସମସ୍ତ ଜଗତର ଆଧାରଭୂତା ହେ ଜଗନ୍ମାତା ମହାଲକ୍ଷ୍ମୀ, ଆପଣଙ୍କୁ ପ୍ରଣାମ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
         }
       }
     },
@@ -417,6 +662,36 @@
           "text": "ಭಕ್ತಿಯಿಂದ ಈ ಮಹಾಲಕ್ಷ್ಮ್ಯಷ್ಟಕವನ್ನು ಪಠಿಸುವ ಮಾನವನು ಸಕಲ ಸಿದ್ಧಿಗಳನ್ನು ಪಡೆದು, ಸದಾಕಾಲ ಸಕಲ ಸುಖ-ಸಂಪತ್ತುಗಳನ್ನು ಹೊಂದುತ್ತಾನೆ.",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जो भक्त या महालक्ष्मी अष्टक स्तोत्राचे भक्तीने पठण करतो, त्याला सर्व सिद्धी प्राप्त होतात आणि राज्य व वैभव कायमचे प्राप्त होते.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যে ভক্তিমান সাধক এই মহালক্ষ্ম্যষ্টক স্তোত্র শ্রদ্ধাপূর্বক পাঠ করেন, তিনি সকল সিদ্ধি ও পরম ঐশ্বর্য লাভ করেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જે મનુષ્ય આ મહાલક્ષ્મી અષ્ટક સ્તોત્રનો ભક્તિભાવથી પાઠ કરે છે, તે સર્વ સિદ્ધિઓ પ્રાપ્ત કરે છે અને ચિરંતન વૈભવ પામે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഭക്തിയോടെ ഈ മഹാലക്ഷ്മ്യഷ്ടക സ്തോത്രം ജപിക്കുന്ന ഭക്തന് സകല സിദ്ധികളും ഐശ്വര്യങ്ങളും സുനിശ്ചിതമായി സിദ്ധിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯେଉଁ ଭକ୍ତ ଏହି ମହାଲକ୍ଷ୍ମୀ ଅଷ୍ଟକ ସ୍ତୋତ୍ରକୁ ଭକ୍ତିପୂର୍ବକ ପାଠ କରନ୍ତି, ସେ ସମସ୍ତ ସିଦ୍ଧି ଓ ସ୍ଥାୟୀ ଐଶ୍ୱର୍ଯ୍ୟ ଲାଭ କରନ୍ତି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
         }
       }
     },
@@ -460,6 +735,36 @@
         "kn": {
           "type": "BHAVARTHA",
           "text": "ಒಮ್ಮೆ ಪಠಿಸಿದರೆ ಪಾಪಗಳು ನಾಶವಾಗುತ್ತವೆ; ದಿನಕ್ಕೆರಡು ಬಾರಿ ಪಠಿಸಿದರೆ ಧನಧಾನ್ಯ ಪ್ರಾಪ್ತಿಯಾಗುತ್ತದೆ; ನಿತ್ಯ ಮೂರು ಬಾರಿ ಪಠಿಸಿದರೆ ಶತ್ರುನಾಶವಾಗಿ ಮಹಾಲಕ್ಷ್ಮಿಯ ಶಾಶ್ವತ ಕೃಪೆ ಲಭಿಸುತ್ತದೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "दिवसातून एकदा पठण केल्यास महापापांचा नाश होतो, दोनदा पठण केल्यास धनधान्याची समृद्धी मिळते, आणि तीनदा पठण केल्यास महाशत्रूंचा नाश होऊन महालक्ष्मीची अखंड कृपा लाभते.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "দিনে একবার পাঠে মহাপাপ নাশ হয়, দুইবার পাঠে ধনধান্যের অক্ষয় প্রাচুর্য ঘটে, আর ত্রিসন্ধ্যা পাঠে সকল শত্রু পরাভূত হয় এবং মহালক্ষ্মীর অচলা কৃপা লাভ হয়।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "નિયમિત એક વાર પાઠ કરવાથી મહાપાપ નષ્ટ થાય છે, બે વાર પાઠ કરવાથી ધન-ધાન્ય વધે છે, અને ત્રણ વાર પાઠ કરવાથી શત્રુઓનો નાશ થઈ મહાલક્ષ્મી સદા પ્રસન્ન રહે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "നിത്യവും ഒരു നേരം ജപിച്ചാൽ മഹാപാപങ്ങൾ നശിക്കും, രണ്ടു നേരം ജപിച്ചാൽ ധനധാന്യസമൃദ്ധിയുണ്ടാകും, മൂന്നു നേരം ജപിച്ചാൽ മഹാശത്രുക്കൾ നശിച്ചു മഹാലക്ഷ്മിയുടെ ശാശ്വതകൃപ ലഭിക്കും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ପ୍ରତ୍ୟହ ଏକଥର ପାଠ କଲେ ମହାପାପ ବିନାଶ ହୁଏ, ଦୁଇଥର ପାଠ କଲେ ଧନଧାନ୍ୟ ବୃଦ୍ଧି ପାଏ, ଏବଂ ତିନିଥର ପାଠ କଲେ ଶତ୍ରୁନାଶ ହୋଇ ମହାଲକ୍ଷ୍ମୀଙ୍କ ଅଖଣ୍ଡ କୃପା ମିଳେ ।",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
         }

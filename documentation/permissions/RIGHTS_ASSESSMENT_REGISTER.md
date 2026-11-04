@@ -1,7 +1,7 @@
 # Vedic Heritage Platform — Rights Assessment & Legal Clearance Register
-**Version:** 5.0.0  
+**Version:** 7.0.0  
 **Last Updated:** 2026-11-04  
-**Scope:** Multidimensional rights assessment, legal counsel sign-offs, and commercial publication clearance for all 11 verified compositions (8 Pilot Compositions + 3 Expansion Batch 1 Compositions).
+**Scope:** Multidimensional rights assessment, legal counsel sign-offs, and commercial publication clearance for all 18 verified compositions (8 Pilot Compositions + 3 Batch 1 + 3 Batch 2 + 4 Batch 3 Compositions).
 
 ---
 
@@ -53,6 +53,10 @@ The platform separates legal copyright clearance from editorial and automated te
 | **`VEDA-TXT-00013`** | Venkateswara Suprabhatam | c. 1400 CE | 1918 (Vavilla) | GLOBAL | `PUBLIC_DOMAIN` | **YES** | Lead Legal Counsel | `GREEN_CLEARED` |
 | **`VEDA-TXT-00014`** | Purusha Suktam | Vedic (Ancient) | 1890 (Max Müller) | GLOBAL | `PUBLIC_DOMAIN` | **YES** | Lead Legal Counsel | `GREEN_CLEARED` |
 | **`VEDA-TXT-00015`** | Durga Suktam | Vedic (Taittiriya) | 1894 (Anandashrama) | GLOBAL | `PUBLIC_DOMAIN` | **YES** | Lead Legal Counsel | `GREEN_CLEARED` |
+| **`VEDA-TXT-00016`** | Narayana Suktam | Vedic (Taittiriya) | 1894 (Anandashrama) | GLOBAL | `PUBLIC_DOMAIN` | **YES** | Lead Legal Counsel | `GREEN_CLEARED` |
+| **`VEDA-TXT-00017`** | Surya Ashtakam | Puranic (Samba) | 1912 (Nirnaya Sagar) | GLOBAL | `PUBLIC_DOMAIN` | **YES** | Lead Legal Counsel | `GREEN_CLEARED` |
+| **`VEDA-TXT-00018`** | Kanakadhara Stotram | c. 800 CE | 1910 (Vani Vilas) | GLOBAL | `PUBLIC_DOMAIN` | **YES** | Lead Legal Counsel | `GREEN_CLEARED` |
+| **`VEDA-TXT-00019`** | Mahishasura Mardini Stotram | Classical Stotra | 1912 (Nirnaya Sagar) | GLOBAL | `PUBLIC_DOMAIN` | **YES** | Lead Legal Counsel | `GREEN_CLEARED` |
 
 *\* Note: Modern editorial notes from VSM 1933 and VSM 1946 are sequestered under `AMBER_RESTRICTED`; core Vedic texts are anchored to universal public domain editions (Max Müller 1890, Scheftelowitz 1906).*
 

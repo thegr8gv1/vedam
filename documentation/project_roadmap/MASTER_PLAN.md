@@ -2,8 +2,8 @@
 ## Master Execution Plan (Canonical Project Charter)
 
 **Document Status:** Active & Living  
-**Version:** 6.0.0  
-**Current Phase:** Phase 5 (Batch 1 & 2) Complete | Phase 6A (Multilingual Foundation) Complete  
+**Version:** 7.0.0  
+**Current Phase:** Phase 5 (Batch 1, 2 & 3) Complete | Phase 6 (6A & 6B) Complete  
 **Workspace:** `C:\Vedam`  
 
 ---
@@ -62,7 +62,7 @@ flowchart LR
     P2 --> P3["Phase 3: DB & Catalog (DONE)"]
     P3 --> P4["Phase 4: Pilots & Gate (DONE)"]
     P4 --> P5["Phase 5: Corpus Expansion (DONE)"]
-    P5 --> P6["Phase 6: Multilingual Localization (6A DONE)"]
+    P5 --> P6["Phase 6: Multilingual Localization (DONE)"]
     P6 --> P7["Phase 7: Controlled AI Integration"]
     P7 --> P8["Phase 8: Audio & Video Handoff"]
     P8 --> P9["Phase 9: Mobile App (Flutter)"]
@@ -88,32 +88,34 @@ flowchart LR
 - Implemented 15-rule publication preflight gate (`PublicationPreflightGate`).
 
 ### Phase 5: Systematic Multi-Text Corpus Expansion (COMPLETED)
-- **Part 1 — Final Reconciliation & Discrepancy Resolution**:
-  - Reconciled all 11 active compositions individually.
-  - Mathematically resolved the 153 vs 150 verse count: 123 pilot units + 27 Batch 1 units = exactly 150 verified units; the +3 units arose from 2 unverified prototype records. Updated `library_analytics.py` to filter strictly for verified texts.
-  - Confirmed edition-specific legal clearance across all compositions. Documented in `documentation/quality/PHASE5_FINAL_RECONCILIATION_REPORT.md`.
-- **Part 2 — Shortlist Audit & Batch 2 Selection**:
-  - Audited the remaining 7 shortlisted compositions in `documentation/quality/PHASE5_BATCH2_AUDIT_REPORT.md`.
-  - Authorized first 3 eligible compositions: Venkateswara Suprabhatam (29 verses), Purusha Suktam (16 verses with swaras), Durga Suktam (7 verses with swaras).
-- **Part 3 — Batch 2 Ingestion & Publication**:
-  - Ingested all 3 compositions via `automation/ingestion/expansion_batch_2_ingestion.py`.
-  - Generated all publication formats (Excel 11-sheet, Word, Indic PDF).
-  - Total verified compositions: **14**; total verified verses: **202**; total publication files: **42**.
+- **Batch 1 (Compositions 10, 11, 12)**:
+  - Mahalakshmi Ashtakam (10 verses), Lingashtakam (9 verses), Sankata Nashana Ganesha Stotram (8 verses).
+- **Batch 2 (Compositions 13, 14, 15)**:
+  - Venkateswara Suprabhatam (29 verses), Purusha Suktam (16 verses with swaras), Durga Suktam (7 verses with swaras).
+- **Batch 3 (Compositions 16, 17, 18, 19)**:
+  - Narayana Suktam (`VEDA-TXT-00016`, 12 verses with mandatory Taittiriya swaras; Anandashrama 1894).
+  - Surya Ashtakam (`VEDA-TXT-00017`, 10 verses; NSP 1912).
+  - Kanakadhara Stotram (`VEDA-TXT-00018`, 21 verses; Vani Vilas 1910).
+  - Mahishasura Mardini Stotram (`VEDA-TXT-00019`, 21 verses; NSP 1912).
+- **Corpus Totals**:
+  - Total verified compositions in database: **18**.
+  - Total verified verse units: **266**.
+  - Total publication deliverables: **54** (18 Excel 11-sheet, 18 Word manuscripts, 18 Indic PDFs).
+  - All 54 deliverables cryptographically validated in `documentation/quality/PUBLICATION_MANIFEST_REPORT.md`.
 
-### Phase 6A: Multilingual Localization Architecture Foundation (COMPLETED)
-- **1. Language and Script Architecture**:
-  - Created `automation/localization/registry.py` formalizing all **22 Scheduled Indian Languages of the Eighth Schedule** + **English** (23 total). Sanskrit properly included as one of the 22.
-  - Decoupled Language (ISO 639-1/3) and Script (ISO 15924) identifiers. Registered font stacks and OpenType HarfBuzz shaping requirements.
-- **2. Sanskrit Terminology Glossary**:
-  - Built `automation/localization/glossary.py` across 8 theological/liturgical categories (Deity names, Vedic terms, Ritual terms, Philosophical concepts, Grammatical terms, Mantra terms, Puja terms, Calendar terms) with standardized translations in Hindi, Telugu, Tamil, Kannada, and English.
-- **3. Specialized Transliteration Engine**:
-  - Built `automation/localization/transliteration.py` with multi-script projections (IAST, Telugu, Kannada, Malayalam, Grantha) and three distinct Tamil modes: Standard, Grantha-Extended, and Scholarly Phonetic ($க_1, க_2, க_3, க_4$).
-- **4. First Localization Pilot (4 Languages, 5 Compositions)**:
-  - Built `automation/localization/pilot_localizer.py` localizing Gayatri Mantra, Mahamrityunjaya Mantra, Ganesha Pancharatnam, Mahalakshmi Ashtakam, and Lingashtakam into **Hindi, Telugu, Tamil, and Kannada** (108 translated records).
-  - Strictly enforced `ReviewStatus.DRAFT` awaiting external scholarly panel evaluation.
-- **5. Ten-Rule Language Quality Assurance Engine**:
-  - Built `automation/localization/qa_framework.py` validating completeness, missing verses, repeated translations, terminology glossary adherence, Unicode integrity, OpenType shaping, verse alignment, transliterations, Sanskrit immutability, and review provenance.
-- **6. Multilingual Exporters**:
-  - Built `automation/localization/exporters.py` generating comparative all-language workbooks in Excel, typeset Word manuscripts, and structured JSON payloads under `exports/multilingual/`.
-- **7. Test Suite Status**:
-  - Expanded automated test suite to **113 tests passing with 100% pass rate in 5.58 seconds**.
+### Phase 6: Multilingual Localization Architecture & Expansion (COMPLETED)
+- **Phase 6A Foundation (4 Languages: hi, te, ta, kn)**:
+  - Built `automation/localization/registry.py` covering all 22 Eighth Schedule languages + English (23 total).
+  - Built `automation/localization/glossary.py` covering 20 core spiritual terms.
+  - Built `automation/localization/transliteration.py` with multi-script projections and three Tamil modes.
+  - Localized 5 pilot compositions across Hindi, Telugu, Tamil, and Kannada (108 translation records).
+  - Built 10-rule `LanguageQualityAssuranceEngine` (`qa_framework.py`).
+- **Phase 6B Expansion (5 Additional Languages: mr, bn, gu, ml, or)**:
+  - Extended glossary with authentic spiritual terminology across all 9 regional languages.
+  - Ingested 135 new Bhavartha translations across Marathi, Bengali, Gujarati, Malayalam, and Odia (`phase6b_localizer.py`).
+  - Total regional translation records: **243** ($27 \times 9$), strictly categorized as `ReviewStatus.DRAFT`.
+  - Upgraded `MultilingualPublicationExporter` to support 13-column comparative Excel, 12-row per verse Word manuscripts, and 11-language JSON payloads.
+  - All 45 language audits (5 texts $\times$ 9 languages) passed all 10 QA checks.
+
+### Test Suite Status:
+- Automated test suite expanded to **148 tests passing with 100% pass rate in 7.43 seconds**.

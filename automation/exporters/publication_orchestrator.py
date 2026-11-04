@@ -142,12 +142,13 @@ class PublicationOrchestrator:
 
 if __name__ == "__main__":
     with get_db_session() as session:
-        # Publish all verified texts (Pilot 1-8 + Batch 1: 10, 11, 12 + Batch 2: 13, 14, 15)
+        # Publish all verified texts (Pilot 1-8 + Batch 1: 10, 11, 12 + Batch 2: 13, 14, 15 + Batch 3: 16, 17, 18, 19)
         all_ids = [
             "VEDA-TXT-00001", "VEDA-TXT-00002", "VEDA-TXT-00003", "VEDA-TXT-00004",
             "VEDA-TXT-00005", "VEDA-TXT-00006", "VEDA-TXT-00007", "VEDA-TXT-00008",
             "VEDA-TXT-00010", "VEDA-TXT-00011", "VEDA-TXT-00012",
             "VEDA-TXT-00013", "VEDA-TXT-00014", "VEDA-TXT-00015",
+            "VEDA-TXT-00016", "VEDA-TXT-00017", "VEDA-TXT-00018", "VEDA-TXT-00019",
         ]
         pub_report = PublicationOrchestrator.publish_batch(session, all_ids)
         print("Publication Orchestration Complete:")

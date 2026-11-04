@@ -5,13 +5,18 @@
   "composer": "Traditional (Shaiva Agama / Sage Agastya)",
   "source_scripture": "Shaiva Agama / Linga Purana Tradition",
   "verse_count": 9,
-  "generated_at_utc": "2026-11-04T22:00:02.976218+00:00",
+  "generated_at_utc": "2026-11-04T22:17:23.004396+00:00",
   "supported_languages": [
     "sa",
     "hi",
     "te",
     "ta",
     "kn",
+    "mr",
+    "bn",
+    "gu",
+    "ml",
+    "or",
     "en"
   ],
   "verses": [
@@ -55,6 +60,36 @@
         "kn": {
           "type": "BHAVARTHA",
           "text": "ಬ್ರಹ್ಮ, ವಿಷ್ಣು, ಇಂದ್ರಾದಿ ದೇವತೆಗಳಿಂದ ಪೂಜಿಸಲ್ಪಡುವ, ಪರಿಮಳಯುಕ್ತ ಪುಷ್ಪಗಳಿಂದ ಶೋಭಿಸುವ, ಸಂಸಾರ ದುಃಖವನ್ನು ಪರಿಹರಿಸುವ ಆ ಸದಾಶಿವ ಲಿಂಗಕ್ಕೆ ನಮಸ್ಕರಿಸುತ್ತೇನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "ब्रह्मा, विष्णू आणि सर्व देवांनी पूजिलेले, निर्मळ व सुवासिक फुलांनी शोभणारे, जन्म-मरणाचा फेरा मिटवणारे ते सदाशिव लिंग मी वंदन करतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "ব্রহ্মা, বিষ্ণু ও দেবগণ কর্তৃক অর্চিত, সুবাসিত নির্মল কুসুমে সুশোভিত, এবং জন্ম-মৃত্যুর কারণবিনাশী সেই পরম পবিত্র সদাশিবলিঙ্গকে আমি প্রণাম করি।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "બ્રહ્મા, વિષ્ણુ અને સકળ દેવો દ્વારા પૂજાયેલા, પવિત્ર સુગંધી પુષ્પોથી શોભતા અને સંસારના બંધનો છોડાવનારા તે સદાશિવ લિંગને હું વંદન કરું છું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ബ്രഹ്മാവിനാലും വിഷ്ണുവിനാലും ദേവന്മാരാലും പൂജിക്കപ്പെടുന്നതും, നിർമ്മലമായ പുഷ്പങ്ങളാൽ ശോഭിക്കുന്നതും, ജനനമരണ ദുരിതങ്ങൾ തീർക്കുന്നതുമായ സദാശിവലിംഗത്തെ ഞാൻ നമിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ବ୍ରହ୍ମା, ବିଷ୍ଣୁ ତଥା ସମସ୍ତ ଦେବତାଙ୍କ ଦ୍ୱାରା ପୂଜିତ, ନିର୍ମଳ ସୁଗନ୍ଧି ପୁଷ୍ପରେ ଶୋଭିତ ଏବଂ ଜନ୍ମ-ମୃତ୍ୟୁର ବନ୍ଧନ ଛେଦନକାରୀ ସେହି ସଦାଶିବ ଲିଙ୍ଗଙ୍କୁ ମୁଁ ପ୍ରଣାମ କରୁଛି ।",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
         }
@@ -102,6 +137,36 @@
           "text": "ದೇವ-ಮುನಿಗಳಿಂದ ವಂದಿಸಲ್ಪಡುವ, ಕಾಮನನ್ನು ಭಸ್ಮಮಾಡಿದ, ಕರುಣಾಮಯಿಯಾದ, ರಾವಣನ ಗರ್ವಭಂಗ ಮಾಡಿದ ಆ ಸದಾಶಿವ ಲಿಂಗಕ್ಕೆ ಪ್ರಣಾಮಗಳು.",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "देव आणि श्रेष्ठ मुनींनी पूजिलेले, कामवासनेचे दहन करणारे, भक्तांवर दया करणारे, रावणाचा गर्व हरण करणारे ते सदाशिव लिंग मी वंदन करतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "দেব ও শ্রেষ্ঠ ঋষিগণ দ্বারা পূজিত, কামদহনকারী, পরমকরুণাময় এবং রাবণের অহংকার চূর্ণকারী সেই পবিত্র সদাশিবলিঙ্গকে আমি বন্দনা করি।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "દેવો અને શ્રેષ્ઠ ઋષિઓ દ્વારા પૂજિત, કામદેવનું દહન કરનારા, ભક્તો પર પરમ દયાળુ અને રાવણના અહંકારને હરનારા સદાશિવ લિંગને હું નમન કરું છું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ദേവന്മാരാലും മുനിശ്രേഷ്ഠന്മാരാലും പൂജിതമായതും, കാമനെ ദഹിപ്പിച്ചതും, ഭക്തവത്സലവും, രാവണന്റെ ഗർവ്വ് ശമിപ്പിച്ചതുമായ സദാശിവലിംഗത്തെ ഞാൻ വണങ്ങുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଦେବତା ଓ ଶ୍ରେଷ୍ଠ ମୁନିମାନଙ୍କ ଦ୍ୱାରା ପୂଜିତ, କାମନାଭସ୍ମକାରୀ, ପରମ କରୁଣାମୟ ତଥା ରାବଣର ଦର୍ପହାରୀ ସେହି ସଦାଶିବ ଲିଙ୍ଗଙ୍କୁ ମୁଁ ବନ୍ଦନା କରୁଛି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
         }
       }
     },
@@ -145,6 +210,36 @@
         "kn": {
           "type": "BHAVARTHA",
           "text": "ಸರ್ವ ಸುಗಂಧಿತ ಲೇಪನಗಳಿಂದ ಸುಶೋಭಿತವಾದ, ಬುದ್ಧಿ-ಜ್ಞಾನವನ್ನು ಬೆಳೆಸುವ, ಸಿದ್ಧರು, ದೇವತೆಗಳು ಮತ್ತು ಅಸುರರಿಂದ ಪೂಜಿಸಲ್ಪಡುವ ಆ ಸದಾಶಿವ ಲಿಂಗಕ್ಕೆ ನಮಸ್ಕಾರ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "सर्व सुगंधी द्रव्यांनी लेपलेले, बुद्धीची वृद्धी करणारे, सिद्ध, सुर व असुरांनी वंदिलेले ते सदाशिव लिंग मी वंदन करतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "চন্দন ও সুগন্ধি চন্দনে অনুলেপিত, শুদ্ধবুদ্ধি ও জ্ঞানের উন্মেষকারী, সিদ্ধ-দেব-দানবগণের পরম পূজনীয় সেই সদাশিবলিঙ্গকে প্রণাম।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "દિવ્ય સુગંધી પદાર્થોથી સુલેપિત, વિવેક અને બુદ્ધિનો વિકાસ કરનારા, સિદ્ધો, સુર અને અસુરો દ્વારા વંદિત તે સદાશિવ લિંગને હું પ્રણામ કરું છું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സുഗന്ധദ്രവ്യങ്ങളാൽ ലേപനം ചെയ്യപ്പെട്ടതും, ബുദ്ധിശക്തിയെ വളർത്തുന്നതും, സിദ്ധന്മാരാലും ദേവാസുരന്മാരാലും വന്ദിക്കപ്പെടുന്നതുമായ സദാശിവലിംഗത്തെ വണങ്ങുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଦିବ୍ୟ ସୁଗନ୍ଧି ଦ୍ରବ୍ୟରେ ଅନୁଲେପିତ, ସଦବୁଦ୍ଧି ପ୍ରଦାୟକ, ସିଦ୍ଧ, ଦେବ ଓ ଦାନବମାନଙ୍କ ଦ୍ୱାରା ବନ୍ଦିତ ସେହି ସଦାଶିବ ଲିଙ୍ଗଙ୍କୁ ମୁଁ ପ୍ରଣାମ କରୁଛି ।",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
         }
@@ -192,6 +287,36 @@
           "text": "ಚಿನ್ನ ಮತ್ತು ರತ್ನಗಳಿಂದ ಕಂಗೊಳಿಸುವ, ನಾಗರಾಜನನ್ನು ಆಭರಣವಾಗಿ ಧರಿಸಿರುವ, ದಕ್ಷಯಜ್ಞವನ್ನು ಧ್ವಂಸಗೊಳಿಸಿದ ಆ ಸದಾಶಿವ ಲಿಂಗಕ್ಕೆ ವಂದನೆಗಳು.",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "सुवर्ण आणि मौल्यवान रत्नांनी विभूषित, वासुकी नागाने वेढलेले, दक्षाच्या यज्ञाचा विध्वंस करणारे ते सदाशिव लिंग मी वंदन करतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "স্বর্ণ ও বহুমূল্য রত্নরাজিতে বিভূষিত, ফণীন্দ্র বাসুকীনাগ দ্বারা বেষ্টিত, এবং দক্ষযজ্ঞবিনাশক সেই পবিত্র সদাশিবলিঙ্গকে আমি বন্দনা করি।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "સુવર્ણ અને મહામૂલ્યવાન મણિઓથી વિભૂષિત, વાસુકી નાગથી વીંટળાયેલા અને દક્ષના યજ્ઞનો વિધ્વંસ કરનારા તે સદાશિવ લિંગને હું નમું છું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സ്വർണ്ണരത്നങ്ങളാൽ അലംകൃതമായതും, വാസുകിനാഗത്താൽ ചുറ്റപ്പെട്ടതും, ദക്ഷയാഗത്തെ നശിപ്പിച്ചതുമായ സദാശിവലിംഗത്തെ ഞാൻ നമസ്കരിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସ୍ୱର୍ଣ୍ଣ ଓ ମହାରତ୍ନରେ ବିଭୂଷିତ, ବାସୁକୀ ନାଗଦ୍ୱାରା ବେଷ୍ଟିତ ତଥା ଦକ୍ଷଯଜ୍ଞ ବିନାଶକାରୀ ସେହି ସଦାଶିବ ଲିଙ୍ଗଙ୍କୁ ମୁଁ ବନ୍ଦନା କରୁଛି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
         }
       }
     },
@@ -235,6 +360,36 @@
         "kn": {
           "type": "BHAVARTHA",
           "text": "ಕುಂಕುಮ ಮತ್ತು ಚಂದನದಿಂದ ಲೇಪಿತವಾದ, ಮಲ್ಲಿಗೆಯ ಹೂಮಾಲೆಗಳಿಂದ ಶೃಂಗರಿಸಲ್ಪಟ್ಟ, ಸಕಲ ಪಾಪಗಳನ್ನು ಸಂಹರಿಸುವ ಆ ಸದಾಶಿವ ಲಿಂಗಕ್ಕೆ ನಮಸ್ಕಾರ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "कुंकू व चंदनाने लेपलेले, कमळांच्या सुंदर हारांनी सजलेले, संचित पापांचा नाश करणारे ते सदाशिव लिंग मी वंदन करतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "কুঙ্কুম ও চন্দনে সুশোভিত, বিকশিত পদ্মমালায় অলঙ্কৃত, এবং ভক্তের পুঞ্জীভূত পাপরাশি বিনাশকারী সেই সদাশিবলিঙ্গকে প্রণাম।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "કંકુ અને ચંદનથી શોભતા, ખીલેલા કમળોના હારથી સજ્જ અને પૂર્વજન્મના પાપો હરનારા તે સદાશિવ લિંગને હું વંદન કરું છું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "കുങ്കുമവും ചന്ദനവും ചാർത്തിയതും, പങ്കജമാലകളാൽ അലംകൃതമായതും, സഞ്ചിതപാപങ്ങൾ തീർക്കുന്നതുമായ സദാശിവലിംഗത്തെ ഞാൻ വണങ്ങുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "କୁଙ୍କୁମ ଓ ଚନ୍ଦନରେ ସୁଶୋଭିତ, କମଳ ମାଳାରେ ଅଳଙ୍କୃତ ଏବଂ ସମସ୍ତ ସଞ୍ଚିତ ପାପନାଶକ ସେହି ସଦାଶିବ ଲିଙ୍ଗଙ୍କୁ ମୁଁ ପ୍ରଣାମ କରୁଛି ।",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
         }
@@ -282,6 +437,36 @@
           "text": "ದೇವತೆಗಳು ಮತ್ತು ಋಷಿಶ್ರೇಷ್ಠರಿಂದ ಪೂಜಿಸಲ್ಪಡುವ, ಪರಿಶುದ್ಧ ಭಕ್ತಿಯಿಂದ ಆರಾಧಿಸಲ್ಪಡುವ, ಕೋಟಿಸೂರ್ಯರಂತೆ ಪ್ರಕಾಶಿಸುವ ಆ ಸದಾಶಿವ ಲಿಂಗಕ್ಕೆ ನಮಸ್ಕಾರ.",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "सर्व देवगणांनी मनोभावे पूजिलेले, निष्कपट भक्तीने वश होणारे, कोटी सूर्यांसारखे दैदिप्यमान ते सदाशिव लिंग मी वंदन करतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "দেবমণ্ডলী দ্বারা নিত্য সেবিত, পরম ভক্তিতে পরিতুষ্ট, কোটি সূর্যের সমান প্রদীপ্ত ও ভাস্বর সেই পরমপবিত্র সদাশিবলিঙ্গকে আমি প্রণাম করি।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "સર્વ દેવગણો દ્વારા નિત્ય પૂજાયેલા, નિઃસ્વાર્થ ભક્તિથી પ્રસન્ન થનારા અને કરોડો સૂર્ય સમાન પ્રકાશી રહેલા તે સદાશિવ લિંગને હું પ્રણામ કરું છું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ദേവഗണങ്ങളാൽ സേവിക്കപ്പെടുന്നതും, ഭക്തിഭാവത്താൽ സന്തോഷിക്കുന്നതും, കോടി സൂര്യന്മാരെപ്പോലെ പ്രകാശിക്കുന്നതുമായ സദാശിവലിംഗത്തെ വണങ്ങുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଦେବଗଣଙ୍କ ଦ୍ୱାରା ନିତ୍ୟ ପୂଜିତ, ନିଷ୍କପଟ ଭକ୍ତିରେ ସନ୍ତୁଷ୍ଟ ତଥା କୋଟିସୂର୍ଯ୍ୟ ସଦୃଶ ତେଜୋମୟ ସେହି ସଦାଶିବ ଲିଙ୍ଗଙ୍କୁ ମୁଁ ବନ୍ଦନା କରୁଛି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
         }
       }
     },
@@ -325,6 +510,36 @@
         "kn": {
           "type": "BHAVARTHA",
           "text": "ಅಷ್ಟದಳ ಕಮಲದಲ್ಲಿ ನೆಲೆಸಿರುವ, ಸಕಲ ಸೃಷ್ಟಿಗೆ ಆದಿಕಾರಣವಾದ, ಅಷ್ಟದರಿದ್ರಗಳನ್ನು ನಾಶಪಡಿಸುವ ಆ ಸದಾಶಿವ ಲಿಂಗಕ್ಕೆ ಪ್ರಣಾಮಗಳು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "अष्टदल कमळावर विराजमान, सर्व सृष्टीच्या निर्मितीचे मूळ कारण, अष्टदारिद्र्याचा नाश करणारे ते सदाशिव लिंग मी वंदन करतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "অষ্টদল পদ্মের উপরি সুশোভিত, বিশ্বব্রহ্মাণ্ডের সৃষ্টির পরম কারণ, এবং সর্বপ্রকার দারিদ্র্য ও দীনতানাশক সেই সদাশিবলিঙ্গকে প্রণাম।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "અષ્ટદળ કમળ પર બિરાજમાન, સમગ્ર સૃષ્ટિના સર્જનના મૂળ કારણ અને આઠેય પ્રકારના દારિદ્ર્યને હરનારા તે સદાશિવ લિંગને હું નમન કરું છું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അഷ്ടദളപത്മത്തിൽ പ്രതിഷ്ഠിതമായതും, സർവ്വലോകസൃഷ്ടിയുടെ കാരണമായതും, അഷ്ടദാരിദ്ര്യങ്ങളെ ഇല്ലാതാക്കുന്നതുമായ സദാശിവലിംഗത്തെ നമിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଅଷ୍ଟଦଳ ପଦ୍ମରେ ବିରାଜମାନ, ସମସ୍ତ ସୃଷ୍ଟିର ମୂଳ କାରଣ ଏବଂ ସମସ୍ତ ଦାରିଦ୍ର୍ୟ ବିନାଶକାରୀ ସେହି ସଦାଶିବ ଲିଙ୍ଗଙ୍କୁ ମୁଁ ପ୍ରଣାମ କରୁଛି ।",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
         }
@@ -372,6 +587,36 @@
           "text": "ದೇವಗುರು ಬೃಹಸ್ಪತಿಯಿಂದಲೂ ದೇವತೆಗಳಿಂದಲೂ ಪೂಜಿಸಲ್ಪಡುವ, ಮಂದಾರ ಪುಷ್ಪಗಳಿಂದ ಅರ್ಚಿಸಲ್ಪಡುವ, ಪರಮಪಾವನ ಪರಮಾತ್ಮ ರೂಪವಾದ ಆ ಸದಾಶಿವ ಲಿಂಗಕ್ಕೆ ನಮಸ್ಕಾರ.",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "देवगुरू बृहस्पती आणि श्रेष्ठ देवांनी पूजिलेले, नंदनवनातील पारिजात पुष्पांनी अर्चिलेले, परब्रह्म स्वरूप ते सदाशिव लिंग मी वंदन करतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "দেবগুরু বৃহস্পতি ও শ্রেষ্ঠ দেবগণ দ্বারা অর্চিত, স্বর্গীয় মন্দার পুষ্পে সুপূজিত, পরাৎপর পরব্রহ্মস্বরূপ সেই সদাশিবলিঙ্গকে আমি বন্দনা করি।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "દેવગુરુ બૃહસ્પતિ અને શ્રેષ્ઠ દેવો દ્વારા પૂજાયેલા, સ્વર્ગના દિવ્ય પુષ્પોથી અર્ચિત અને પરમાત્મા સ્વરૂપ તે સદાશિવ લિંગને હું વંદન કરું છું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ദേവഗുരുവായ ബൃഹസ്പതിയോടും ദേവന്മാരോടും കൂടി പൂജിക്കപ്പെട്ടതും, സ്വർഗ്ഗീയപുഷ്പങ്ങളാൽ അർച്ചിതമായതും, പരബ്രഹ്മസ്വരൂപവുമായ സദാശിവലിംഗത്തെ ഞാൻ വണങ്ങുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଦେବଗୁରୁ ବୃହସ୍ପତି ତଥା ଶ୍ରେଷ୍ଠ ଦେବତାଙ୍କ ଦ୍ୱାରା ପୂଜିତ, ସ୍ୱର୍ଗୀୟ ଦିବ୍ୟ ପୁଷ୍ପରେ ଅର୍ଚ୍ଚିତ ତଥା ପରଂବ୍ରହ୍ମ ସ୍ୱରୂପ ସେହି ସଦାଶିବ ଲିଙ୍ଗଙ୍କୁ ମୁଁ ପ୍ରଣାମ କରୁଛି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
         }
       }
     },
@@ -415,6 +660,36 @@
         "kn": {
           "type": "BHAVARTHA",
           "text": "ಯಾವ ಭಕ್ತನು ಶಿವನ ಸನ್ನಿಧಿಯಲ್ಲಿ ಈ ಪವಿತ್ರ ಲಿಂಗಾಷ್ಟಕವನ್ನು ನಿತ್ಯವೂ ಭಕ್ತಿಯಿಂದ ಪಠಿಸುವನೋ, ಅವನು ಶಿವಲೋಕವನ್ನು ಸೇರಿ ಪರಮೇಶ್ವರನ ಸಾನ್ನಿಧ್ಯದಲ್ಲಿ ಶಾಶ್ವತ ಆನಂದವನ್ನು ಹೊಂದುತ್ತಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जो मनुष्य शिवसमीप या पवित्र लिंगाष्टकाचे नित्य भक्तीने पठण करतो, तो शिवलोकात जाऊन भगवान शंकरांच्या सान्निध्यात परमानंद अनुभवतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যিনি শিবের সমীপে প্রত্যহ ভক্তিভরে এই পবিত্র লিঙ্গাষ্টক পাঠ করেন, তিনি শিবলোক লাভ করে পরমেশ্বরের সান্নিধ্যে নিত্য আনন্দ উপভোগ করেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જે મનુષ્ય શિવજીની સમીપ આ પવિત્ર લિંગાષ્ટક સ્તોત્રનો નિત્ય ભક્તિભાવથી પાઠ કરે છે, તે શિવલોકને પ્રાપ્ત કરી ભગવાન સદાશિવના સાંનિધ્યમાં પરમાનંદ પામે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ശിവസന്നിധിയിൽ ഈ പുണ്യമായ ലിംഗാഷ്ടകം നിത്യവും ഭക്തിയോടെ ജപിക്കുന്ന മനുഷ്യൻ ശിവലോകം പ്രാപിച്ചു പരമേശ്വരന്റെ സന്നിധിയിൽ സദാ ആനന്ദം അനുഭവിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯେଉଁ ମନୁଷ୍ୟ ଶିବଙ୍କ ସମ୍ମୁଖରେ ଏହି ପବିତ୍ର ଲିଙ୍ଗାଷ୍ଟକ ପ୍ରତ୍ୟହ ଭକ୍ତିପୂର୍ବକ ପାଠ କରେ, ସେ ଶିବଲୋକ ପ୍ରାପ୍ତ ହୋଇ ଭଗବାନ ଶିବଙ୍କ ସାନ୍ନିଧ୍ୟରେ ପରମାନନ୍ଦ ଉପଭୋଗ କରେ ।",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
         }

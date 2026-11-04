@@ -5,13 +5,18 @@
   "composer": "Adi Shankaracharya (c. 788–820 CE)",
   "source_scripture": "Advaita Smartha Stotra Samgraha",
   "verse_count": 6,
-  "generated_at_utc": "2026-11-04T22:00:02.717938+00:00",
+  "generated_at_utc": "2026-11-04T22:17:22.629601+00:00",
   "supported_languages": [
     "sa",
     "hi",
     "te",
     "ta",
     "kn",
+    "mr",
+    "bn",
+    "gu",
+    "ml",
+    "or",
     "en"
   ],
   "verses": [
@@ -54,6 +59,36 @@
         "kn": {
           "type": "BHAVARTHA",
           "text": "ಕೈಯಲ್ಲಿ ಮೋದಕವನ್ನು ಹಿಡಿದಿರುವ, ಭಕ್ತರಿಗೆ ಮುಕ್ತಿಯನ್ನು ಕರುಣಿಸುವ, ಶಿರದಲ್ಲಿ ಅರ್ಧಚಂದ್ರನನ್ನು ಧರಿಸಿರುವ, ಲೋಕರಕ್ಷಕನೂ ಅನಾಥಬಂಧುವೂ ಆದ, ಪಾಪಗಳನ್ನು ನಾಶಪಡಿಸುವ ಶ್ರೀ ವಿನಾಯಕನಿಗೆ ನಮಸ್ಕರಿಸುತ್ತೇನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हातात मोदक धारण करणाऱ्या, भक्तांना मुक्ती देणाऱ्या, मस्तकावर चंद्रकला धारण करणाऱ्या, लोकरक्षक, अनाथबंधू आणि पापनाशक श्री विनायकाला मी वंदन करतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যিনি হস্তে মোদক ধারণ করেন, ভক্তদের মুক্তিদান করেন, মস্তকে চন্দ্রকলা ধারণ করেন, সর্বলোকের রক্ষক, অনাথের বন্ধু ও পাপনাশক সেই শ্রীগণেশকে আমি প্রণাম জানাই।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જે હાથમાં મોદક ધારણ કરે છે, ભક્તોને મુક્તિ પ્રદાન કરે છે, મસ્તક પર ચંદ્રકળા ધારણ કરે છે, જગતના રક્ષક, અનાથના બંધુ અને પાપનાશક શ્રી વિનાયકને હું પ્રણામ કરું છું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "കയ്യിൽ മോദകമേന്തിയവനും, ഭക്തർക്ക് മുക്തി നൽകുന്നവനും, ശിരസ്സിൽ ചന്ദ്രക്കല അണിഞ്ഞവനും, ലോകരക്ഷകനും, അനാഥബന്ധുവും, പാപങ്ങൾ തീർക്കുന്നവനുമായ ശ്രീ വിനായകനെ ഞാൻ നമസ്കരിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହାତରେ ମୋଦକ ଧାରଣ କରିଥିବା, ଭକ୍ତଙ୍କୁ ମୁକ୍ତି ପ୍ରଦାନ କରୁଥିବା, ମସ୍ତକରେ ଚନ୍ଦ୍ରକଳା ଶୋଭିତ, ଲୋକରକ୍ଷକ, ଅନାଥବନ୍ଧୁ ଓ ପାପନାଶକ ଶ୍ରୀ ବିନାୟକଙ୍କୁ ମୁଁ ପ୍ରଣାମ କରୁଛି ।",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
         }
@@ -100,6 +135,36 @@
           "text": "ಶಾಂತಸ್ವರೂಪನೂ, ಪ್ರಚಂಡ ತೇಜಸ್ವಿಯೂ, ದೇವದಾನವರಿಂದ ಪೂಜಿಸಲ್ಪಡುವವನೂ, ಭಕ್ತರ ಕಷ್ಟಗಳನ್ನು ಕಳೆಯುವವನೂ ಆದ ಗಜಮುಖ ಗಣೇಶನನ್ನು ನಿತ್ಯವೂ ಧ್ಯಾನಿಸುತ್ತೇನೆ.",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "अहंकारांचा संहार करणाऱ्या, प्रलयकालीन प्रचंड तेज असणाऱ्या, देव व दानवांनी वंदिलेल्या, दयाळू, शरण आलेल्यांच्या दुःखांचे निवारण करणाऱ्या मंगलमूर्ती गजाननाला मी नमन करतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যিনি অভক্তদের জন্য ভয়ংকর অথচ শরণাগতদের প্রতি পরম দয়ালু, সুর ও অসুরের দ্বারা বন্দিত, এবং ভক্তের সকল বিঘ্ন নাশ করেন, সেই গজাননকে আমি নিত্য পূজা করি।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "અહંકારીઓ માટે ભયંકર પરંતુ શરણાગતો પર પરમ કૃપાળુ, સુર અને અસુરો દ્વારા વંદિત અને ભક્તોના સકળ કષ્ટો હરનારા ગજાનનને હું નમન કરું છું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ദുഷ്ടന്മാർക്ക് ഭയങ്കരനും ശരണാഗതർക്ക് പരമകാരുണ്യവാനും, ദേവാസുരന്മാരാൽ വന്ദിക്കപ്പെടുന്നവനും, വിഘ്നങ്ങൾ തീർക്കുന്നവനുമായ ആ ഗജമുഖനെ ഞാൻ വണങ്ങുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଅଭକ୍ତଙ୍କ ପ୍ରତି ଭୟଙ୍କର ଅଥଚ ଶରଣାଗତଙ୍କ ପ୍ରତି ପରମ କୃପାଳୁ, ଦେବ ଓ ଦାନବମାନଙ୍କ ଦ୍ୱାରା ବନ୍ଦିତ ତଥା ବିଘ୍ନବିନାଶକ ଗଜାନନଙ୍କୁ ମୁଁ ନମସ୍କାର କରୁଛି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
         }
       }
     },
@@ -142,6 +207,36 @@
         "kn": {
           "type": "BHAVARTHA",
           "text": "ಜಗತ್ತಿಗೆಲ್ಲ ಸಂತೋಷವನ್ನು ಕರುಣಿಸುವವನೂ, ವೇದಾರ್ಥಗಳನ್ನು ಬಲ್ಲವನೂ, ಸಾಮವೇದ ಗಾನಪ್ರಿಯನೂ, ಪಾರ್ವತೀಪರಮೇಶ್ವರರ ಪ್ರಿಯ ಪುತ್ರನೂ ಆದ ಶ್ರೀ ಗಣೇಶನನ್ನು ಶರಣುಹೋಗುತ್ತೇನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "समस्त जगताला कल्याण प्रदान करणाऱ्या, वेदांच्या गुह्य रहस्याचे ज्ञाता, सामगानाने प्रसन्न होणाऱ्या, जगन्माता पार्वती व भगवान शंकरांच्या लाडक्या पुत्राला मी शरण जातो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যিনি নিখিল বিশ্বের কল্যাণসাধক, বেদরহস্যের পরম জ্ঞাতা, সামগানে প্রীত এবং শিব-পার্বতীর প্রিয়তম পুত্র, সেই বিঘ্নেশ্বরকে আমি শরণ করি।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "સમસ્ત જગતનું કલ્યાણ કરનારા, વેદોના ગૂઢ અર્થને જાણનારા, સામગાનથી પ્રસન્ન થનારા અને માતા પાર્વતી તથા શિવજીના પ્રિય પુત્ર એવા શ્રી ગણેશને હું શરણે જાઉં છું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ലോകങ്ങൾക്കെല്ലാം മംഗളം അരുളുന്നവനും, വേദസാരങ്ങൾ അറിയുന്നവനും, സാമഗാനപ്രിയനും, പാർവ്വതീപരമേശ്വരന്മാരുടെ പ്രിയസുതനുമായ ശ്രീഗണേശനെ ഞാൻ ശരണം പ്രാപിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସମସ୍ତ ଜଗତର କଲ୍ୟାଣକାରୀ, ବେଦର ନିଗୂଢ଼ ଅର୍ଥ ଜାଣିଥିବା, ସାମଗାନପ୍ରିୟ ତଥା ମାତା ପାର୍ବତୀ ଓ ଶିବଙ୍କ ପ୍ରିୟ ପୁତ୍ର ଶ୍ରୀ ଗଣେଶଙ୍କ ଶରଣାପନ୍ନ ହେଉଛି ।",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
         }
@@ -188,6 +283,36 @@
           "text": "ದೀನಬಂಧುವೂ, ಓಂಕಾರ ಸ್ವರೂಪನೂ, ಯೋಗಿಗಳ ಹೃದಯದಲ್ಲಿ ನೆಲೆಸಿರುವ ನಿರ್ಮಲನೂ, ಸಮಸ್ತ ವಿಘ್ನಗಳನ್ನು ಪರಿಹರಿಸುವ ಶ್ರೀ ಏಕದಂತನಿಗೆ ನಮಸ್ಕಾರಗಳು.",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "दीन-दुबळ्यांवर निरंतर कृपा करणाऱ्या, ॐकार प्रणव स्वरूप, योग्यांच्या हृदयकमलात निवास करणाऱ्या, निष्कलंक आणि सर्व संकटांचे हरण करणाऱ्या एकदंताला माझे प्रणाम.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যিনি দীনের প্রতি চিরদয়ালু, প্রণব ওঙ্কার রূপ, যোগীদের হৃদয়পদ্মে বিরাজমান, সর্বসংকট হরণকারী সেই পরম সুন্দর একদন্তকে প্রণাম জানাই।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "દીન-દુખિયા પર સદા કરુણા વરસાવનારા, ઓંકાર સ્વરૂપ, યોગીઓના હૃદયમાં વસનારા અને સર્વ આપત્તિઓનું નિવારણ કરનારા એકદંતને મારા પ્રણામ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ദീനജനങ്ങളെ സദാ കാത്തുരക്ഷിക്കുന്നവനും, പ്രണവ സ്വരൂപനും, യോഗികളുടെ ഹൃദയത്തിൽ വസിക്കുന്നവനും, സകല ആപത്തുകളെയും അകറ്റുന്നവനുമായ ഏകദന്തനെ നമിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଦୀନଜନଙ୍କ ଉପରେ ସଦା କୃପାବର୍ଷଣ କରୁଥିବା, ପ୍ରଣବ ଓଁକାର ସ୍ୱରୂପ, ଯୋଗୀମାନଙ୍କ ହୃଦୟରେ ବିରାଜମାନ ତଥା ସମସ୍ତ ସଙ୍କଟହାରୀ ଏକଦନ୍ତଙ୍କୁ ପ୍ରଣାମ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
         }
       }
     },
@@ -232,6 +357,36 @@
           "text": "ದೈತ್ಯಾಕಾರದ ತೇಜಸ್ವಿಯೂ, ಮದಜಲವನ್ನು ಸುರಿಸುವ ಗಂಡಸ್ಥಲವುಳ್ಳವನೂ, ಸಿಂಧೂರ ಶೋಭಿತನೂ, ಸಕಲ ಜಗತ್ತಿನ ಒಡೆಯನೂ ಆದ ವಿಘ್ನರಾಜನಿಗೆ ಪುನಃಪುನಃ ನಮಸ್ಕರಿಸುತ್ತೇನೆ.",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "प्रचंड तेजोमय कांती असणाऱ्या, ज्यांच्या गंडस्थलावरून मदजल पाझरते, सिंदूराने शोभणाऱ्या आणि समस्त चराचर सृष्टीचे स्वामी असणाऱ्या मोदकप्रिय विघ्नराजाला मी वारंवार नमन करतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যাঁর বিশাল দেহকান্তি মহিমান্বিত, যাঁর গণ্ডস্থল থেকে মদজল প্রবাহিত, যিনি সিন্দূরভূষিত এবং সমস্ত জগতের অধিপতি, সেই মোদকপ্রিয় বিঘ্নরাজকে বারংবার প্রণাম।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "અલૌકિક તેજથી ઝળહળતા, મસ્તક પર સિંદૂર શોભતા, જેના ગંડસ્થળમાંથી મદજળ વહે છે તેવા સમસ્ત સૃષ્ટિના સ્વામી શ્રી વિઘ્નરાજને વારંવાર નમસ્કાર.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "തേജസ്സാൽ പ്രശോഭിക്കുന്നവനും, മദജലം ഒഴുക്കുന്ന കവിളുകളോടുകൂടിയവനും, സിന്ദൂരാലങ്കൃതനും, സർവ്വചരാചരങ്ങളുടെ നാഥനുമായ വിഘ്നരാജനെ വീണ്ടും വീണ്ടും വണങ്ങുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଅତ୍ୟନ୍ତ ତେଜୋମୟ କାନ୍ତିବିଶିଷ୍ଟ, ଯାହାଙ୍କ ଗଣ୍ଡସ୍ଥଳରୁ ମଦଜଳ ପ୍ରବାହିତ, ସିନ୍ଦୂରଶୋଭିତ ତଥା ସମସ୍ତ ଜଗତର ସ୍ୱାମୀ ଶ୍ରୀ ବିଘ୍ନରାଜଙ୍କୁ ବାରମ୍ବାର ପ୍ରଣାମ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
         }
       }
     },
@@ -274,6 +429,36 @@
         "kn": {
           "type": "BHAVARTHA",
           "text": "ಯಾವ ಮಾನವನು ಪ್ರಾತಃಕಾಲದಲ್ಲಿ ಎದ್ದು ಭಕ್ತಿಯಿಂದ ಈ ಗಣೇಶ ಪಂಚರತ್ನ ಸ್ತೋತ್ರವನ್ನು ಪಠಿಸುವನೋ, ಅವನು ಆರೋಗ್ಯ, ಪರಿಶುದ್ಧ ವಿದ್ಯೆ, ಸಕಲ ಸಂಪತ್ತು, ಸತ್ಪುತ್ರರು ಮತ್ತು ದೀರ್ಘಾಯುಷ್ಯವನ್ನು ಪಡೆಯುತ್ತಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जो मनुष्य दररोज सकाळी उठून पवित्र अंतःकरणाने या गणेश पंचरत्नाचे मनोभावे पठण करतो, त्याला भगवान गणेश आरोग्य, दीर्घायुष्य, विद्या, उत्तम पुत्र, अष्टसिद्धी आणि चिरंतन शांती प्रदान करतात.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যে ব্যক্তি প্রত্যহ প্রাতে শুদ্ধচিত্তে এই পবিত্র গণেশ পঞ্চরত্ন পাঠ করেন, ভগবান গণেশ তাঁকে সুস্বাস্থ্য, দীর্ঘায়ু, বিদ্যা, সৎপুত্র, অমোঘ সৌভাগ্য ও পরম শান্তি প্রদান করেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જે મનુષ્ય પ્રાતઃકાળે પવિત્ર ભાવથી આ ગણેશ પંચરત્ન સ્તોત્રનું પઠન કરે છે, તેને શ્રી ગણેશજી આરોગ્ય, દીર્ઘાયુષ્ય, વિદ્યા, સુપુત્ર, સર્વ સમૃદ્ધિ અને પરમ શાંતિ અર્પે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "പ്രഭാതത്തിൽ ശുദ്ധഹൃദയത്തോടെ ഈ ഗണേശ പഞ്ചരത്നം നിത്യവും ഭക്തിയോടെ ജപിക്കുന്ന മനുഷ്യന് ഭഗവാൻ ആരോഗ്യവും ദീർഘായുസ്സും വിദ്യയും സൽസന്താനങ്ങളും സകല സൗഭാഗ്യങ്ങളും നൽകി അനുഗ്രഹിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯେଉଁ ମନୁଷ୍ୟ ପ୍ରତ୍ୟହ ପ୍ରାତଃକାଳରେ ଶୁଦ୍ଧଚିତ୍ତରେ ଏହି ଗଣେଶ ପଞ୍ଚରତ୍ନ ସ୍ତୋତ୍ର ପାଠ କରେ, ଭଗବାନ ଗଣେଶ ତାଙ୍କୁ ଆରୋଗ୍ୟ, ଦୀର୍ଘାୟୁ, ବିଦ୍ୟା, ସୁସନ୍ତାନ, ଅଷ୍ଟସିଦ୍ଧି ଓ ପରମ ଶାନ୍ତି ପ୍ରଦାନ କରନ୍ତି ।",
           "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
           "review_status": "DRAFT"
         }

@@ -1,9 +1,10 @@
 """
 Vedic Heritage Platform — Global Library Analytics & Dashboard Engine
 Computes real-time repository health, catalog coverage, rights clearance,
-scholarly review backlog, and publication readiness for thousands of sacred texts.
+scholarly review backlog, multilingual coverage, and publication readiness for sacred texts.
 """
 
+from collections import Counter
 from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
 import json
@@ -22,7 +23,7 @@ from automation.rights.approval_workflow import (
     TranslationStatus,
 )
 from database.connection import get_db_session
-from database.models import ReleaseStatus, Text, Verse, VerseType
+from database.models import ReleaseStatus, ReviewStatus, Text, Translation, Verse, VerseType
 
 
 @dataclass
@@ -51,6 +52,12 @@ class LibraryDashboardMetrics:
     category_distribution: Dict[str, int]
     deity_distribution: Dict[str, int]
     potential_duplicate_candidates: int
+    # Multilingual Localization Metrics
+    multilingual_languages_count: int = 10
+    multilingual_translation_coverage: Dict[str, Dict[str, int]] = field(default_factory=dict)
+    multilingual_artifacts_excel: int = 0
+    multilingual_artifacts_word: int = 0
+    multilingual_artifacts_json: int = 0
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
@@ -158,8 +165,37 @@ class LibraryAnalyticsEngine:
         word_files = len(list(Path("exports/word").glob("VEDA-TXT-*.docx"))) if os.path.exists("exports/word") else 0
         pdf_files = len(list(Path("exports/pdf").glob("VEDA-TXT-*.pdf"))) if os.path.exists("exports/pdf") else 0
 
-        # Supported Scripts (Devanagari, Telugu, Tamil, Kannada, Malayalam, IAST)
-        supported_scripts = ["Devanagari", "Telugu", "Tamil", "Kannada", "Malayalam", "IAST (Roman)"]
+        # Supported Scripts (Devanagari, Telugu, Tamil, Kannada, Malayalam, Bengali, Gujarati, Odia, Gurmukhi, IAST)
+        supported_scripts = [
+            "Devanagari",
+            "Telugu",
+            "Tamil",
+            "Kannada",
+            "Malayalam",
+            "Bengali",
+            "Gujarati",
+            "Odia",
+            "IAST (Roman)",
+        ]
+
+        # 4. Multilingual Translation Coverage
+        all_translations = session.query(Translation).all()
+        translation_coverage: Dict[str, Dict[str, int]] = {}
+        for tr in all_translations:
+            lang = tr.target_language
+            if lang not in translation_coverage:
+                translation_coverage[lang] = {"total": 0, "draft": 0, "approved": 0, "in_review": 0}
+            translation_coverage[lang]["total"] += 1
+            if tr.review_status == ReviewStatus.APPROVED:
+                translation_coverage[lang]["approved"] += 1
+            elif tr.review_status == ReviewStatus.DRAFT:
+                translation_coverage[lang]["draft"] += 1
+            else:
+                translation_coverage[lang]["in_review"] += 1
+
+        ml_excel = len(list(Path("exports/multilingual/excel").glob("*.xlsx"))) if os.path.exists("exports/multilingual/excel") else 0
+        ml_word = len(list(Path("exports/multilingual/word").glob("*.docx"))) if os.path.exists("exports/multilingual/word") else 0
+        ml_json = len(list(Path("exports/multilingual/json").glob("*.json"))) if os.path.exists("exports/multilingual/json") else 0
 
         return LibraryDashboardMetrics(
             generated_at_utc=datetime.now(timezone.utc).isoformat(),
@@ -186,6 +222,11 @@ class LibraryAnalyticsEngine:
             category_distribution=cat_dist,
             deity_distribution=deity_dist,
             potential_duplicate_candidates=0,
+            multilingual_languages_count=len(translation_coverage),
+            multilingual_translation_coverage=translation_coverage,
+            multilingual_artifacts_excel=ml_excel,
+            multilingual_artifacts_word=ml_word,
+            multilingual_artifacts_json=ml_json,
         )
 
     @classmethod

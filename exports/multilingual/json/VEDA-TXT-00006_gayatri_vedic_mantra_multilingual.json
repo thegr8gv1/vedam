@@ -1,0 +1,98 @@
+{
+  "content_id": "VEDA-TXT-00006",
+  "canonical_title": "Gayatri Vedic Mantra",
+  "devanagari_title": "सावित्रीगायत्रीमन्त्रः",
+  "composer": "Brahmarshi Vishvamitra (Gathina)",
+  "source_scripture": "Rigveda Samhita 3.62.10; Shukla Yajurveda Samhita 36.3",
+  "verse_count": 1,
+  "generated_at_utc": "2026-11-04T22:17:22.440903+00:00",
+  "supported_languages": [
+    "sa",
+    "hi",
+    "te",
+    "ta",
+    "kn",
+    "mr",
+    "bn",
+    "gu",
+    "ml",
+    "or",
+    "en"
+  ],
+  "verses": [
+    {
+      "verse_number": 1,
+      "verse_type": "MANTRA",
+      "original_sanskrit": "ॐ भूर्भुव॒स्स॒वः॑ ।\nतत्स॑वि॒तुर्वरे॑ण्यं॒ भर्गो॑ दे॒वस्य॑ धीमहि ।\nधियो॒ यो नः॑ प्रचो॒दया॑त् ॥",
+      "iast": "oṁ bhūrbhuva॒ssa॒vaḥ॑ ।\ntatsa॑vi॒turvare॑ṇyaṁ॒ bhargo॑ de॒vasya॑ dhīmahi ।\ndhiyo॒ yo naḥ॑ praco॒dayā॑t ॥",
+      "transliterations": {
+        "telugu": "ఓం భూర్భువ॒స్స॒వః॑ ।\nతత్స॑వి॒తుర్వరే॑ణ్యం॒ భర్గో॑ దే॒వస్య॑ ధీమహి ।\nధియో॒ యో నః॑ ప్రచో॒దయా॑త్ ॥",
+        "tamil": "ௐ பூர்புவ॒ஸ்ஸ॒வஃ॑ ।\nதத்ஸ॑வி॒துர்வரே॑ண்யம்॒ பர்கோ॑ தே॒வஸ்ய॑ தீமஹி ।\nதியோ॒ யோ நஃ॑ ப்ரசோ॒தயா॑த் ॥",
+        "kannada": "ಓಂ ಭೂರ್ಭುವ॒ಸ್ಸ॒ವಃ॑ ।\nತತ್ಸ॑ವಿ॒ತುರ್ವರೇ॑ಣ್ಯಂ॒ ಭರ್ಗೋ॑ ದೇ॒ವಸ್ಯ॑ ಧೀಮಹಿ ।\nಧಿಯೋ॒ ಯೋ ನಃ॑ ಪ್ರಚೋ॒ದಯಾ॑ತ್ ॥",
+        "malayalam": "ഓം ഭൂര്ഭുവ॒സ്സ॒വഃ॑ ।\nതത്സ॑വി॒തുര്വരേ॑ണ്യം॒ ഭര്ഗോ॑ ദേ॒വസ്യ॑ ധീമഹി ।\nധിയോ॒ യോ നഃ॑ പ്രചോ॒ദയാ॑ത് ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Om. We meditate upon the supreme, adorable radiance of the Divine Illuminator (Savitr). May that Divine Light inspire, guide, and illuminate our intellects and consciousness.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हम उस प्राणस्वरूप, दुःखनाशक, सुखस्वरूप, श्रेष्ठ, तेजस्वी, पापनाशक, देवस्वरूप परमात्मा का ध्यान करते हैं। वह परमात्मा हमारी बुद्धि को सन्मार्ग की ओर प्रेरित करे।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "సమస్త లోకములను సృష్టించి ప్రకాశింపజేయు ఆ పరమ దివ్య సవితృ భగవానుని తేజస్సును మేము ధ్యానించుచున్నాము. ఆ పరమాత్ముడు మా బుద్ధులను సత్యమార్గమునందు ప్రేరేపించును గాక.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அனைத்து உலகங்களையும் படைத்து ஒளிரச்செய்யும் அந்த பரம்பொருளின் மேலான தெய்வீக ஒளியை நாங்கள் தியானிக்கிறோம். அந்த பரமாத்மா எங்கள் அறிவை நல்வழியில் வழிநடத்துவாராக.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಸಮಸ್ತ ಜಗತ್ತನ್ನು ಸೃಷ್ಟಿಸಿ ಪ್ರಕಾಶಿಸುವ ಆ ಪರಮ ದಿವ್ಯ ಸವಿತೃ ದೇವನ ತೇಜಸ್ಸನ್ನು ನಾವು ಧ್ಯಾನಿಸುತ್ತೇವೆ. ಆ ಪರಮಾತ್ಮನು ನಮ್ಮ ಬುದ್ಧಿಗಳನ್ನು ಸನ್ಮಾರ್ಗದಲ್ಲಿ ಪ್ರೇರೇಪಿಸಲಿ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "आम्ही त्या प्राणस्वरूप, दुःखनाशक, सुखस्वरूप, श्रेष्ठ, तेजस्वी, पापनाशक अशा दिव्य सविता परमात्म्याचे ध्यान करतो. तो परमात्मा आमच्या बुद्धीला सन्मार्गाकडे प्रेरित करो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "আমরা সেই প্রাণস্বরূপ, দুঃখবিনাশক, আনন্দময়, পরম তেজস্বী ও পাপনাশক দিব্য সবিতা পরমাত্মার ধ্যান করি। সেই পরমেশ্বর আমাদের বুদ্ধিকে সত্য ও ধর্মের পথে পরিচালিত করুন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "અમે તે પ્રાણસ્વરૂપ, દુઃખનાશક, સુખસ્વરૂપ, શ્રેષ્ઠ, તેજસ્વી અને પાપનાશક દિવ્ય સવિતા પરમાત્માનું ધ્યાન ધરીએ છીએ. તે પરમેશ્વર આપણી બુદ્ધિને સન્માર્ગ તરફ પ્રેરિત કરે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സകല ലോകങ്ങളെയും സൃഷ്ടിച്ചു പരിപാലിക്കുന്ന ആ പരമ ദിവ്യനായ സവിതൃ ഭഗവാന്റെ ശ്രേഷ്ഠമായ തേജസ്സിനെ ഞങ്ങൾ ധ്യാനിക്കുന്നു. ആ പരമാത്മാവ് ഞങ്ങളുടെ ബുദ്ധിയെ സന്മാർഗ്ഗത്തിലേക്ക് നയിക്കുമാറാകട്ടെ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଆମ୍ଭେ ସେହି ପ୍ରାଣସ୍ୱରୂପ, ଦୁଃଖହାରୀ, ଆନନ୍ଦମୟ, ଶ୍ରେଷ୍ଠ, ତେଜୋମୟ ଓ ପାପନାଶକ ଦିବ୍ୟ ସବିତା ପରମାତ୍ମାଙ୍କୁ ଧ୍ୟାନ କରୁଛୁ । ସେହି ପରମେଶ୍ୱର ଆମ୍ଭର ବୁଦ୍ଧିକୁ ସନ୍ମାର୍ଗରେ ପ୍ରେରିତ କରନ୍ତୁ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    }
+  ]
+}

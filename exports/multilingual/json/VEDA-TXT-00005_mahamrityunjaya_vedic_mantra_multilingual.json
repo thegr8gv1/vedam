@@ -1,0 +1,98 @@
+{
+  "content_id": "VEDA-TXT-00005",
+  "canonical_title": "Mahamrityunjaya Vedic Mantra",
+  "devanagari_title": "महामृत्युञ्जयमन्त्रः",
+  "composer": "Rishi Maitravaruni Vasishtha / Rishi Markandeya",
+  "source_scripture": "Rigveda Samhita 7.59.12; Shukla Yajurveda Samhita 3.60",
+  "verse_count": 1,
+  "generated_at_utc": "2026-11-04T22:17:22.492437+00:00",
+  "supported_languages": [
+    "sa",
+    "hi",
+    "te",
+    "ta",
+    "kn",
+    "mr",
+    "bn",
+    "gu",
+    "ml",
+    "or",
+    "en"
+  ],
+  "verses": [
+    {
+      "verse_number": 1,
+      "verse_type": "MANTRA",
+      "original_sanskrit": "ॐ त्र्य॑म्बकं यजामहे सु॒गन्धिं॑ पुष्टि॒वर्ध॑नम् ।\nउ॒र्वा॒रु॒कमि॑व॒ बन्ध॑नान्मृ॒त्योर्मु॑क्षीय॒ माऽमृता॑त् ॥",
+      "iast": "oṁ trya॑mbakaṁ yajāmahe su॒gandhiṁ॑ puṣṭi॒vardha॑nam ।\nu॒rvā॒ru॒kami॑va॒ bandha॑nānmṛ॒tyormu॑kṣīya॒ mā'mṛtā॑t ॥",
+      "transliterations": {
+        "telugu": "ఓం త్ర్య॑మ్బకం యజామహే సు॒గన్ధిం॑ పుష్టి॒వర్ధ॑నమ్ ।\nఉ॒ర్వా॒రు॒కమి॑వ॒ బన్ధ॑నాన్మృ॒త్యోర్ము॑క్షీయ॒ మాఽమృతా॑త్ ॥",
+        "tamil": "ௐ த்ர்ய॑ம்பகம் யஜாமஹே ஸு॒கந்திம்॑ புஷ்டி॒வர்த॑நம் ।\nஉ॒ர்வா॒ரு॒கமி॑வ॒ பந்த॑நாந்ம்ரு'॒த்யோர்மு॑க்ஷீய॒ மாऽம்ரு'தா॑த் ॥",
+        "kannada": "ಓಂ ತ್ರ್ಯ॑ಮ್ಬಕಂ ಯಜಾಮಹೇ ಸು॒ಗನ್ಧಿಂ॑ ಪುಷ್ಟಿ॒ವರ್ಧ॑ನಮ್ ।\nಉ॒ರ್ವಾ॒ರು॒ಕಮಿ॑ವ॒ ಬನ್ಧ॑ನಾನ್ಮೃ॒ತ್ಯೋರ್ಮು॑ಕ್ಷೀಯ॒ ಮಾಽಮೃತಾ॑ತ್ ॥",
+        "malayalam": "ഓം ത്ര്യ॑മ്ബകം യജാമഹേ സു॒ഗന്ധിം॑ പുഷ്ടി॒വര്ധ॑നമ് ।\nഉ॒ര്വാ॒രു॒കമി॑വ॒ ബന്ധ॑നാന്മൃ॒ത്യോര്മു॑ക്ഷീയ॒ മാഽമൃതാ॑ത് ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Om. We worship the Three-Eyed Lord (Shiva), who is fragrant and who nourishes all beings. Just as a ripe melon is released from its vine, may He liberate us from death and attachment, for the sake of Immortality.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हम सुगंधित और भक्तों का पोषण करने वाले त्रिनेत्रधारी भगवान शिव की आराधना करते हैं। जिस प्रकार पका हुआ ककड़ी रूपी फल अपनी बेल के बंधन से मुक्त हो जाता है, उसी प्रकार हम मृत्यु के पाश से मुक्त हों, किंतु अमरता के अमृत से विमुख न हों।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "సుగంధ భరితుడు, సర్వ ప్రాణులను పోషించువాడైన త్రినేత్రుడగు పరమశివుని మేము ఆరాధించుచున్నాము. దోసపండు తొడిమ నుండి సహజముగా వీడిపోవునట్లు, మేము సంసార బంధనముల నుండి, మృత్యువు నుండి విముక్తులమై అమృతత్వమును పొందుదుము గాక.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "நறுமணமிக்கவரும், அனைத்து உயிர்களையும் போஷிப்பவருமான முக்கண்ணனாம் சிவபெருமானை நாங்கள் வணங்குகிறோம். முதிர்ந்த வெள்ளரிப்பழம் காம்பிலிருந்து விடுபடுவது போல, நாங்கள் மரணத்தின் பிடியிலிருந்து விடுபட்டு அழியாப் பேரின்ப முக்தியை அடைவோமாக.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಸುಗಂಧಭರಿತನೂ, ಸಮಸ್ತ ಜೀವಿಗಳನ್ನು ಪೋಷಿಸುವವನೂ ಆದ ಮುಕ್ಕಣ್ಣ ಶಿವನನ್ನು ನಾವು ಭಕ್ತಿಯಿಂದ ಆರಾಧಿಸುತ್ತೇವೆ. ಬಲಿತ ಸೌತೆಕಾಯಿಯು ಬಳ್ಳಿಯಿಂದ ಮುಕ್ತವಾಗುವಂತೆ, ನಾವು ಮೃತ್ಯುವಿನ ಬಂಧನದಿಂದ ಮುಕ್ತರಾಗಿ ಅಮೃತತ್ವವನ್ನು ಪಡೆಯೋಣ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "आम्ही सुगंधी आणि सर्व भक्तांचे पोषण करणाऱ्या त्रिनेत्रधारी भगवान शिवांची भक्तीने आराधना करतो. ज्याप्रमाणे पिकलेली काकडी वेलीच्या बंधनातून सहज गळून पडते, त्याचप्रमाणे आम्ही मृत्यूच्या पाशातून मुक्त होऊन अमरत्वाच्या आनंदाप्रत पोहोचावे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "আমরা সুগন্ধিযুক্ত ও সমস্ত জীবের পুষ্টিবর্ধনকারী ত্রিনেত্রধারী ভগবান শিবের আরাধনা করি। সুপক্ক শসা যেমন লতার বন্ধন থেকে স্বাভাবিকভাবে মুক্ত হয়, তেমনই আমরাও যেন সংসার ও মৃত্যুর বন্ধন থেকে মুক্ত হয়ে অমৃতত্ব লাভ করি।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "અમે સુગંધિત અને સમસ્ત જીવોનું પોષણ કરનારા ત્રિનેત્રધારી ભગવાન શિવની આરાધના કરીએ છીએ. પાકેલું ટેટી જેમ વેલાના બંધનમાંથી સહજ મુક્ત થાય છે, તેમ આપણે સંસાર અને મૃત્યુના ભયથી મુક્ત થઈ અમૃતત્વને પામીએ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സുഗന്ധമുള്ളവനും സമസ്ത പ്രാണികളെയും പരിപോഷിപ്പിക്കുന്നവനുമായ മുക്കണ്ണനായ പരമശിവനെ ഞങ്ങൾ ആരാധിക്കുന്നു. പഴുത്ത വെള്ളരിക്ക വള്ളിയിൽനിന്നും സ്വയം വേർപെടുന്നതുപോലെ, ഞങ്ങൾ മൃത്യുവിന്റെ പാശത്തിൽനിന്നും മോചിതരായി അമൃതത്വത്തിലേക്ക് എത്തപ്പെടുമാറാകട്ടെ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଆମ୍ଭେ ସୁଗନ୍ଧିଯୁକ୍ତ ଓ ସମସ୍ତ ପ୍ରାଣୀଙ୍କର ପୁଷ୍ଟିବର୍ଦ୍ଧନକାରୀ ତ୍ରିନେତ୍ରଧାରୀ ଭଗବାନ ଶିବଙ୍କର ଆରାଧନା କରୁଛୁ । ପାଚିଲା କାକୁଡ଼ି ଯେପରି ଲତାର ବନ୍ଧନରୁ ସହଜରେ ମୁକ୍ତ ହୁଏ, ସେହିପରି ଆମ୍ଭେ ମୃତ୍ୟୁର ବନ୍ଧନରୁ ମୁକ୍ତ ହୋଇ ଅମୃତତ୍ୱ ଲାଭ କରୁ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Synthesis; Awaiting Native Scholarly Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    }
+  ]
+}
