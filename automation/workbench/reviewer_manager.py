@@ -21,6 +21,7 @@ from database.schemas import (
 )
 
 from automation.workbench.auth import hash_password
+from automation.workbench.multilingual_rbac import MultilingualRBACEngine
 
 logger = logging.getLogger("vedam.automation.workbench.reviewer_manager")
 
@@ -33,24 +34,8 @@ class ReviewerGovernanceError(Exception):
 class ReviewerManager:
     """Manages verified scholar profiles and credential verification."""
 
-    ROLE_CAPABILITIES = {
-        ReviewerRole.SANSKRIT_TEXTUAL: {"sa_textual_critique", "variant_analysis", "meter_verification"},
-        ReviewerRole.VEDIC_RECENSION: {"swara_accent_verification", "shakha_critique", "samhita_alignment"},
-        ReviewerRole.HINDI_TRANSLATOR: {"hi_translation_critique", "bhakti_idiom_review"},
-        ReviewerRole.TELUGU_TRANSLATOR: {"te_translation_critique", "telugu_poetic_meter"},
-        ReviewerRole.TAMIL_TRANSLATOR: {"ta_translation_critique", "grantha_subscript_phonetics"},
-        ReviewerRole.KANNADA_TRANSLATOR: {"kn_translation_critique", "kannada_prosody"},
-        ReviewerRole.MARATHI_TRANSLATOR: {"mr_translation_critique", "abhanga_style_critique"},
-        ReviewerRole.BENGALI_TRANSLATOR: {"bn_translation_critique", "gaudiya_vaishnava_exegesis"},
-        ReviewerRole.GUJARATI_TRANSLATOR: {"gu_translation_critique", "gujarati_devotional_lexicon"},
-        ReviewerRole.MALAYALAM_TRANSLATOR: {"ml_translation_critique", "manipravalam_knowledge"},
-        ReviewerRole.ODIA_TRANSLATOR: {"or_translation_critique", "jagannatha_sampradaya_lexicon"},
-        ReviewerRole.AWADHI_SPECIALIST: {"awadhi_linguistics", "chaupai_doha_prosody", "tulsidas_exegesis"},
-        ReviewerRole.SANSKRIT_GRAMMAR: {"padachheda_analysis", "paninian_grammar", "sandhi_splitting", "samasa_analysis"},
-        ReviewerRole.TRADITIONAL_COMMENTARY: {"bhashya_citation_verification", "sampradaya_fidelity"},
-        ReviewerRole.LEGAL_COPYRIGHT: {"public_domain_clearance", "jurisdiction_rights_audit"},
-        ReviewerRole.EDITORIAL_BOARD: {"dispute_adjudication", "final_canonical_signoff", "reassignment_authorization"},
-    }
+    # Canonical role capabilities loaded from unified Multilingual RBAC engine
+    ROLE_CAPABILITIES = MultilingualRBACEngine.ROLE_CAPABILITIES
 
     @classmethod
     def register_reviewer(

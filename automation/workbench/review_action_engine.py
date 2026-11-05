@@ -22,6 +22,11 @@ from database.models import (
     Verse,
 )
 from database.schemas import ReviewActionLogCreate
+from automation.workbench.multilingual_rbac import (
+    MultilingualRBACEngine,
+    SelfApprovalViolationError,
+    UnauthorizedLanguageReviewError,
+)
 
 logger = logging.getLogger("vedam.automation.workbench.review_action_engine")
 
@@ -61,6 +66,28 @@ class ReviewActionEngine:
         translation = session.query(Translation).filter_by(id=action_data.translation_id).first()
         if not translation:
             raise ReviewActionError(f"Translation ID {action_data.translation_id} not found.")
+
+        # 3a. Multilingual RBAC: Language Authorization Check
+        target_lang = getattr(translation, "target_language", None)
+        if target_lang and not MultilingualRBACEngine.is_reviewer_authorized_for_language(reviewer, target_lang):
+            role_val = reviewer.primary_role.value if hasattr(reviewer.primary_role, "value") else str(reviewer.primary_role)
+            raise ReviewActionError(
+                f"Unauthorized language: Reviewer '{reviewer.full_name}' ({role_val}) "
+                f"is not authorized to review target language '{target_lang}'."
+            )
+
+        # 3b. Multilingual RBAC: Anti-Self-Approval Check
+        if action_data.action_type in (ReviewActionType.APPROVE, ReviewActionType.APPROVE_WITH_CORRECTIONS):
+            try:
+                MultilingualRBACEngine.check_self_approval_restriction(reviewer, translation)
+            except SelfApprovalViolationError as e:
+                raise ReviewActionError(str(e))
+
+            # 3c. Approval capability vs Translator-only check
+            if target_lang:
+                can_approve, reason = MultilingualRBACEngine.can_reviewer_approve_language(reviewer, target_lang)
+                if not can_approve:
+                    raise ReviewActionError(reason or "Reviewer lacks approval authority.")
 
         verse = session.query(Verse).filter_by(id=action_data.verse_id).first()
         if not verse:

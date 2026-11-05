@@ -1,0 +1,61 @@
+{
+  "timestamp": "20261105_043221",
+  "commit": "640a65b099128ba88cbee5e455f852d525ae6eea",
+  "backup_path": "database/backups\\vedam_pre_phase11b_20261105_043221.db",
+  "backup_size_bytes": 20455424,
+  "database_file_sha256": "8315040257dc3e490646e6e7138f9fd8bb38eae835b84e1f15849badae7318aa",
+  "census": {
+    "canonical_texts": 18,
+    "total_texts": 20,
+    "canonical_verses": 307,
+    "total_verses": 310,
+    "active_translations": 3070,
+    "draft_translations": 3070,
+    "approved_translations": 0,
+    "archived_translations": 580,
+    "total_translation_views": 7716,
+    "bhavartha_views": 3070,
+    "literal_views": 2323,
+    "tatparya_views": 2323,
+    "total_reviewers": 6,
+    "total_review_logs": 20
+  },
+  "table_fingerprints": {
+    "texts": {
+      "count": 20,
+      "sha256": "2e1ad8b0f41558e6d6c4d2dbb72a9d3d17bed120367ec7ba0ca0842b35f222e8"
+    },
+    "verses": {
+      "count": 310,
+      "sha256": "c66d714d581796ec8b48905c68a58a28c66d27cb3320b1cba04333f80362a855"
+    },
+    "translations": {
+      "count": 3070,
+      "sha256": "a3513592fb628edcc2cf66fc646e00ad470a3c2abfeb38fd38818163047118a4"
+    },
+    "translation_views": {
+      "count": 7716,
+      "sha256": "c0c6c51bcf47144ce0358424deaf011ebe7eae37401cfd92457499b813f3f17a"
+    },
+    "reviewer_profiles": {
+      "count": 6,
+      "sha256": "9affd721ff283c78bfb05bc67a712853615bf5b8530043bd29818f434c7a721d"
+    },
+    "review_action_logs": {
+      "count": 20,
+      "sha256": "d8b4258cf1a32d97fb584b7ffe2049958653c23b51ac20b810a204a2c80f1ad8"
+    },
+    "sources": {
+      "count": 2,
+      "sha256": "14f94871664fe32f1d2af3bb3923f712578f7ae3f6e5878f49e9afa69afffb59"
+    },
+    "categories": {
+      "count": 7,
+      "sha256": "b5116ab9dcd62897d55f7d516a68a3c80327c467d16194be812b53be529a2550"
+    },
+    "content_rights": {
+      "count": 19,
+      "sha256": "dc47d155e7fad595f2bcef589db9c67e28a168a9d9e0b1b8546b27e4c2f06233"
+    }
+  }
+}

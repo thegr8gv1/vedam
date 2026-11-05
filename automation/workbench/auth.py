@@ -613,3 +613,53 @@ class PermissionGuard:
             raise PermissionDeniedError(
                 f"Reviewer '{reviewer.reviewer_id}' does not possess required role in {allowed_values}."
             )
+
+    @classmethod
+    def require_language_permission(
+        cls,
+        reviewer: ReviewerProfile,
+        target_language: str,
+        action: str = "review",
+    ) -> None:
+        """
+        Validates that an authenticated reviewer has language-specific authority
+        for the given target language under Multilingual RBAC rules.
+        """
+        from automation.workbench.multilingual_rbac import MultilingualRBACEngine
+
+        if action.lower() in ("approve", "approval"):
+            is_allowed, reason = MultilingualRBACEngine.can_reviewer_approve_language(reviewer, target_language)
+            if not is_allowed:
+                raise PermissionDeniedError(reason or f"Reviewer '{reviewer.reviewer_id}' cannot approve '{target_language}'.")
+        else:
+            if not MultilingualRBACEngine.is_reviewer_authorized_for_language(reviewer, target_language):
+                raise PermissionDeniedError(
+                    f"Reviewer '{reviewer.reviewer_id}' is not authorized to review language '{target_language}'."
+                )
+
+    @classmethod
+    def require_non_self_approval(
+        cls,
+        reviewer: ReviewerProfile,
+        translator_field: Optional[str],
+    ) -> None:
+        """
+        Enforces anti-self-approval rule: reviewer cannot approve work where they are listed as translator.
+        """
+        if not translator_field:
+            return
+        t_lower = translator_field.strip().lower()
+        if reviewer.full_name and reviewer.full_name.strip().lower() in t_lower:
+            raise PermissionDeniedError(
+                f"Self-approval prohibited: '{reviewer.full_name}' is the author/translator."
+            )
+        if reviewer.reviewer_id and reviewer.reviewer_id.strip().lower() in t_lower:
+            raise PermissionDeniedError(
+                f"Self-approval prohibited: Reviewer ID '{reviewer.reviewer_id}' matches translator."
+            )
+
+
+# Backwards compatibility alias
+ScholarlyAuthService = AuthService
+
+
