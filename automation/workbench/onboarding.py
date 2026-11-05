@@ -11,7 +11,7 @@ import json
 import logging
 import re
 from typing import Any, Dict, List, Optional, Set
-from sqlalchemy import func
+from sqlalchemy import func, update
 from sqlalchemy.orm import Session
 
 from automation.workbench.auth import AuthService, hash_password, PermissionGuard, PermissionDeniedError
@@ -503,7 +503,7 @@ class ReviewerOnboardingService:
         if not applicant:
             raise OnboardingGovernanceError(f"Applicant '{applicant_reviewer_id}' not found.")
 
-        # Optimistic Concurrency Control Guard (SEC-12A1-002)
+        # Optimistic Concurrency Control Guard (SEC-12A1-002 / Phase 12B.2)
         if expected_current_stage is not None:
             expected_norm = expected_current_stage.strip().upper()
             if applicant.verification_status != expected_norm:
@@ -511,6 +511,8 @@ class ReviewerOnboardingService:
                     f"Concurrency Conflict: Applicant '{applicant_reviewer_id}' state has concurrently changed "
                     f"from expected '{expected_norm}' to actual '{applicant.verification_status}'. Please refresh and retry."
                 )
+        else:
+            expected_norm = applicant.verification_status.strip().upper()
 
         # Guard: Quarantined demo accounts cannot be accredited or verified
         if applicant.is_demonstration or getattr(applicant, "account_category", "") == "DEMONSTRATION_HARNESS" or applicant.verification_status == OnboardingStage.DEMO.value:
@@ -565,108 +567,135 @@ class ReviewerOnboardingService:
                     f"Administrator '{admin_reviewer.reviewer_id}' lacks required permission: 'CAN_VERIFY_CREDENTIALS'."
                 )
 
-        # Stage-specific mutations
-        applicant.verification_status = target_stage
-        applicant.updated_at = datetime.now(timezone.utc)
-        if admin_reviewer:
-            applicant.verified_by_admin = admin_reviewer.reviewer_id
-
+        # Prepare stage-specific mutations for atomic conditional update
+        now = datetime.now(timezone.utc)
         note_prefix = f"[{target_stage}] {sanitized_notes.strip()}" if sanitized_notes else f"[{target_stage}] Stage updated"
-        applicant.verification_notes = (
-            f"{applicant.verification_notes}\n{note_prefix}" if applicant.verification_notes else note_prefix
-        )
+        new_notes = f"{applicant.verification_notes}\n{note_prefix}" if applicant.verification_notes else note_prefix
+
+        update_values: Dict[str, Any] = {
+            "verification_status": target_stage,
+            "updated_at": now,
+            "verification_notes": new_notes,
+        }
+        if admin_reviewer:
+            update_values["verified_by_admin"] = admin_reviewer.reviewer_id
 
         if target_stage == OnboardingStage.IDENTITY_VERIFIED.value:
-            applicant.verification_method = verification_method or "GOVERNMENT_IDENTITY_DOCUMENT"
-            applicant.verification_date = datetime.now(timezone.utc)
-            # Identity verification confirms physical personhood but explicitly does NOT verify scholarly credentials
-            applicant.is_credentials_verified = False
-            applicant.is_human_verified = False
+            update_values["verification_method"] = verification_method or "GOVERNMENT_IDENTITY_DOCUMENT"
+            update_values["verification_date"] = now
+            update_values["is_credentials_verified"] = False
+            update_values["is_human_verified"] = False
 
         elif target_stage == OnboardingStage.CREDENTIALS_VERIFIED.value:
-            applicant.is_credentials_verified = True
-            applicant.verification_method = verification_method or "ACADEMIC_DOSSIER_REVIEW"
-            applicant.verification_date = datetime.now(timezone.utc)
+            update_values["is_credentials_verified"] = True
+            update_values["verification_method"] = verification_method or "ACADEMIC_DOSSIER_REVIEW"
+            update_values["verification_date"] = now
             if verification_doc_hash:
-                applicant.verification_doc_hash = verification_doc_hash
+                update_values["verification_doc_hash"] = verification_doc_hash
             if verification_authority:
-                applicant.verification_authority = verification_authority
-            # Credential verification confirms academic qualifications but does NOT grant human accreditation
-            applicant.is_human_verified = False
-            applicant.account_category = "SYNTHETIC_TEST_PERSONA"
+                update_values["verification_authority"] = verification_authority
+            update_values["is_human_verified"] = False
+            update_values["account_category"] = "SYNTHETIC_TEST_PERSONA"
 
         elif target_stage == OnboardingStage.SCHOLARSHIP_ASSESSED.value:
-            applicant.verification_date = datetime.now(timezone.utc)
-            applicant.is_human_verified = False
+            update_values["verification_date"] = now
+            update_values["is_human_verified"] = False
 
         elif target_stage == OnboardingStage.ACCREDITED.value:
-            # Explicit human accreditation decision by Editorial Board
-            applicant.account_category = "REAL_HUMAN_SCHOLAR"
-            applicant.is_human_verified = True
-            applicant.verification_date = datetime.now(timezone.utc)
+            update_values["account_category"] = "REAL_HUMAN_SCHOLAR"
+            update_values["is_human_verified"] = True
+            update_values["verification_date"] = now
             if verification_authority:
-                applicant.verification_authority = verification_authority
+                update_values["verification_authority"] = verification_authority
             if verification_doc_hash:
-                applicant.verification_doc_hash = verification_doc_hash
+                update_values["verification_doc_hash"] = verification_doc_hash
             perms = list(applicant.permissions or [])
             if "APPROVE_TRANSLATION" not in perms:
                 perms.append("APPROVE_TRANSLATION")
-            applicant.permissions = perms
+            update_values["permissions"] = perms
 
         elif target_stage == OnboardingStage.ACTIVE_REVIEWER.value:
-            applicant.is_active = True
+            update_values["is_active"] = True
 
         elif target_stage == OnboardingStage.REJECTED.value:
-            applicant.is_active = False
-            applicant.is_credentials_verified = False
-            applicant.is_human_verified = False
-            AuthService.revoke_all_sessions(
-                session,
-                reviewer_id=applicant.id,
-                reason=f"Application rejected by {admin_reviewer.reviewer_id if admin_reviewer else 'admin'}: {sanitized_notes}",
-            )
+            update_values["is_active"] = False
+            update_values["is_credentials_verified"] = False
+            update_values["is_human_verified"] = False
 
         elif target_stage == OnboardingStage.SUSPENDED.value:
-            applicant.is_active = False
-            AuthService.revoke_all_sessions(
-                session,
-                reviewer_id=applicant.id,
-                reason=f"Account suspended by {admin_reviewer.reviewer_id if admin_reviewer else 'admin'}: {sanitized_notes}",
-            )
+            update_values["is_active"] = False
 
         elif target_stage == OnboardingStage.WITHDRAWN.value:
-            applicant.is_active = False
-            AuthService.revoke_all_sessions(
-                session,
-                reviewer_id=applicant.id,
-                reason=f"Application withdrawn: {sanitized_notes}",
+            update_values["is_active"] = False
+
+        # Phase 12B.2: Atomic Compare-and-Set conditional database update
+        stmt = (
+            update(ReviewerProfile)
+            .where(
+                ReviewerProfile.id == applicant.id,
+                func.upper(func.trim(ReviewerProfile.verification_status)) == expected_norm,
+                ReviewerProfile.is_demonstration == False,
+            )
+            .values(**update_values)
+        )
+        result = session.execute(stmt)
+
+        if result.rowcount == 0:
+            session.rollback()
+            raise OnboardingGovernanceError(
+                f"Concurrency Conflict: Applicant '{applicant_reviewer_id}' stage was concurrently modified or "
+                f"expected stage '{expected_norm}' is no longer current. Update aborted."
+            )
+        elif result.rowcount > 1:
+            session.rollback()
+            raise OnboardingGovernanceError(
+                f"Integrity Violation: Multiple rows ({result.rowcount}) matched during transition for '{applicant_reviewer_id}'."
             )
 
-        session.flush()
+        try:
+            # Synchronize SQLAlchemy session identity map so applicant reflects committed DB values
+            session.expire(applicant)
+            _ = applicant.verification_status
 
-        # Immutable Append-Only Audit Trail
-        audit_payload = {
-            "action": "STAGE_TRANSITION",
-            "applicant_id": applicant.reviewer_id,
-            "admin_id": admin_reviewer.reviewer_id if admin_reviewer else "SYSTEM",
-            "from_stage": current_stage,
-            "to_stage": target_stage,
-            "notes": sanitized_notes,
-            "doc_hash": verification_doc_hash,
-            "authority": verification_authority,
-            "scansion_score": scansion_score,
-            "timestamp": datetime.now(timezone.utc).isoformat(),
-        }
-        AuthService.log_event(
-            session,
-            event_type=f"ONBOARDING_{target_stage}",
-            reviewer_id=applicant.id,
-            details=json.dumps(audit_payload),
-        )
+            # Stage-specific session revocations executed in the same transaction
+            if target_stage in (OnboardingStage.REJECTED.value, OnboardingStage.SUSPENDED.value, OnboardingStage.WITHDRAWN.value):
+                action_name = "Application rejected" if target_stage == OnboardingStage.REJECTED.value else (
+                    "Account suspended" if target_stage == OnboardingStage.SUSPENDED.value else "Application withdrawn"
+                )
+                admin_id_str = admin_reviewer.reviewer_id if admin_reviewer else "system"
+                AuthService.revoke_all_sessions(
+                    session,
+                    reviewer_id=applicant.id,
+                    reason=f"{action_name} by {admin_id_str}: {sanitized_notes}",
+                )
+
+            # Immutable Append-Only Audit Trail (Committed together with transition)
+            audit_payload = {
+                "action": "STAGE_TRANSITION",
+                "applicant_id": applicant.reviewer_id,
+                "admin_id": admin_reviewer.reviewer_id if admin_reviewer else "SYSTEM",
+                "from_stage": expected_norm,
+                "to_stage": target_stage,
+                "notes": sanitized_notes,
+                "doc_hash": verification_doc_hash,
+                "authority": verification_authority,
+                "scansion_score": scansion_score,
+                "timestamp": now.isoformat(),
+            }
+            AuthService.log_event(
+                session,
+                event_type=f"ONBOARDING_{target_stage}",
+                reviewer_id=applicant.id,
+                details=json.dumps(audit_payload),
+            )
+            session.flush()
+        except Exception:
+            session.rollback()
+            raise
 
         logger.info(
-            "Applicant %s transitioned %s -> %s by %s",
-            applicant.reviewer_id, current_stage, target_stage,
+            "Applicant %s transitioned %s -> %s by %s (atomic rowcount=1)",
+            applicant.reviewer_id, expected_norm, target_stage,
             admin_reviewer.reviewer_id if admin_reviewer else "SYSTEM",
         )
         return applicant
@@ -678,6 +707,7 @@ class ReviewerOnboardingService:
         admin_reviewer: ReviewerProfile,
         applicant_reviewer_id: str,
         notes: str = "Advancing to identity review",
+        expected_current_stage: Optional[str] = None,
     ) -> ReviewerProfile:
         """Transitions applicant from APPLICATION_RECEIVED to IDENTITY_REVIEW_PENDING."""
         return cls.transition_stage(
@@ -686,6 +716,7 @@ class ReviewerOnboardingService:
             applicant_reviewer_id=applicant_reviewer_id,
             target_stage=OnboardingStage.IDENTITY_REVIEW_PENDING.value,
             notes=notes,
+            expected_current_stage=expected_current_stage,
         )
 
     @classmethod
@@ -696,6 +727,7 @@ class ReviewerOnboardingService:
         applicant_reviewer_id: str,
         verification_method: str = "GOVERNMENT_IDENTITY_DOCUMENT",
         notes: str = "Identity verified via official documentation",
+        expected_current_stage: Optional[str] = None,
     ) -> ReviewerProfile:
         """
         Confirms the physical/legal identity of the applicant.
@@ -708,6 +740,7 @@ class ReviewerOnboardingService:
             target_stage=OnboardingStage.IDENTITY_VERIFIED.value,
             notes=notes,
             verification_method=verification_method,
+            expected_current_stage=expected_current_stage,
         )
 
     @classmethod
@@ -717,6 +750,7 @@ class ReviewerOnboardingService:
         admin_reviewer: ReviewerProfile,
         applicant_reviewer_id: str,
         notes: str = "Advancing to academic credential review",
+        expected_current_stage: Optional[str] = None,
     ) -> ReviewerProfile:
         """Transitions applicant from IDENTITY_VERIFIED to CREDENTIAL_REVIEW_PENDING."""
         return cls.transition_stage(
@@ -725,6 +759,7 @@ class ReviewerOnboardingService:
             applicant_reviewer_id=applicant_reviewer_id,
             target_stage=OnboardingStage.CREDENTIAL_REVIEW_PENDING.value,
             notes=notes,
+            expected_current_stage=expected_current_stage,
         )
 
     @classmethod
@@ -837,6 +872,7 @@ class ReviewerOnboardingService:
         admin_reviewer: ReviewerProfile,
         applicant_reviewer_id: str,
         notes: str = "Advancing to scholarship and scansion assessment",
+        expected_current_stage: Optional[str] = None,
     ) -> ReviewerProfile:
         """Transitions applicant from CREDENTIALS_VERIFIED to SCHOLARSHIP_ASSESSMENT_PENDING."""
         return cls.transition_stage(
@@ -845,6 +881,7 @@ class ReviewerOnboardingService:
             applicant_reviewer_id=applicant_reviewer_id,
             target_stage=OnboardingStage.SCHOLARSHIP_ASSESSMENT_PENDING.value,
             notes=notes,
+            expected_current_stage=expected_current_stage,
         )
 
     @classmethod
@@ -855,6 +892,7 @@ class ReviewerOnboardingService:
         applicant_reviewer_id: str,
         assessment_notes: str,
         scansion_score: Optional[float] = None,
+        expected_current_stage: Optional[str] = None,
     ) -> ReviewerProfile:
         """
         Records the results of a blinded scholarship assessment, swara recitation check,
@@ -868,6 +906,7 @@ class ReviewerOnboardingService:
             target_stage=OnboardingStage.SCHOLARSHIP_ASSESSED.value,
             notes=notes,
             scansion_score=scansion_score,
+            expected_current_stage=expected_current_stage,
         )
 
     @classmethod
@@ -877,6 +916,7 @@ class ReviewerOnboardingService:
         admin_reviewer: ReviewerProfile,
         applicant_reviewer_id: str,
         notes: str = "Advancing assessed scholar to Editorial Board for accreditation decision",
+        expected_current_stage: Optional[str] = None,
     ) -> ReviewerProfile:
         """Transitions applicant from SCHOLARSHIP_ASSESSED to ACCREDITATION_PENDING."""
         return cls.transition_stage(
@@ -885,6 +925,7 @@ class ReviewerOnboardingService:
             applicant_reviewer_id=applicant_reviewer_id,
             target_stage=OnboardingStage.ACCREDITATION_PENDING.value,
             notes=notes,
+            expected_current_stage=expected_current_stage,
         )
 
     @classmethod
@@ -896,6 +937,7 @@ class ReviewerOnboardingService:
         accreditation_authority: str,
         notes: str,
         doc_hash: Optional[str] = None,
+        expected_current_stage: Optional[str] = None,
     ) -> ReviewerProfile:
         """
         Formally accredits a verified living human scholar upon Editorial Board resolution.
@@ -910,6 +952,7 @@ class ReviewerOnboardingService:
             verification_authority=accreditation_authority,
             verification_doc_hash=doc_hash,
             is_real_human=True,
+            expected_current_stage=expected_current_stage,
         )
 
     @classmethod
@@ -919,6 +962,7 @@ class ReviewerOnboardingService:
         admin_reviewer: ReviewerProfile,
         applicant_reviewer_id: str,
         notes: str = "Reviewer activated for multilingual workbench assignments",
+        expected_current_stage: Optional[str] = None,
     ) -> ReviewerProfile:
         """Activates an accredited reviewer for active task allocation under RBAC."""
         return cls.transition_stage(
@@ -927,6 +971,7 @@ class ReviewerOnboardingService:
             applicant_reviewer_id=applicant_reviewer_id,
             target_stage=OnboardingStage.ACTIVE_REVIEWER.value,
             notes=notes,
+            expected_current_stage=expected_current_stage,
         )
 
     @classmethod
@@ -936,6 +981,7 @@ class ReviewerOnboardingService:
         admin_reviewer: ReviewerProfile,
         applicant_reviewer_id: str,
         information_requested: str,
+        expected_current_stage: Optional[str] = None,
     ) -> ReviewerProfile:
         """Requests clarifying documents or details from applicant, pausing review."""
         return cls.transition_stage(
@@ -944,6 +990,7 @@ class ReviewerOnboardingService:
             applicant_reviewer_id=applicant_reviewer_id,
             target_stage=OnboardingStage.MORE_INFORMATION_REQUIRED.value,
             notes=information_requested,
+            expected_current_stage=expected_current_stage,
         )
 
     @classmethod
@@ -953,6 +1000,7 @@ class ReviewerOnboardingService:
         admin_reviewer: ReviewerProfile,
         applicant_reviewer_id: str,
         rejection_reason: str,
+        expected_current_stage: Optional[str] = None,
     ) -> ReviewerProfile:
         """Rejects the onboarding application, terminating review and revoking sessions."""
         return cls.transition_stage(
@@ -961,6 +1009,7 @@ class ReviewerOnboardingService:
             applicant_reviewer_id=applicant_reviewer_id,
             target_stage=OnboardingStage.REJECTED.value,
             notes=rejection_reason,
+            expected_current_stage=expected_current_stage,
         )
 
     @classmethod
@@ -970,6 +1019,7 @@ class ReviewerOnboardingService:
         admin_reviewer: ReviewerProfile,
         applicant_reviewer_id: str,
         suspension_reason: str,
+        expected_current_stage: Optional[str] = None,
     ) -> ReviewerProfile:
         """Suspends active reviewer status and revokes all active HTTP sessions."""
         return cls.transition_stage(
@@ -978,6 +1028,7 @@ class ReviewerOnboardingService:
             applicant_reviewer_id=applicant_reviewer_id,
             target_stage=OnboardingStage.SUSPENDED.value,
             notes=suspension_reason,
+            expected_current_stage=expected_current_stage,
         )
 
     @classmethod
@@ -987,6 +1038,7 @@ class ReviewerOnboardingService:
         admin_reviewer: ReviewerProfile,
         applicant_reviewer_id: str,
         reactivate_reason: str,
+        expected_current_stage: Optional[str] = None,
     ) -> ReviewerProfile:
         """Restores a suspended reviewer to active status following board resolution."""
         return cls.transition_stage(
@@ -995,6 +1047,7 @@ class ReviewerOnboardingService:
             applicant_reviewer_id=applicant_reviewer_id,
             target_stage=OnboardingStage.ACTIVE_REVIEWER.value,
             notes=reactivate_reason,
+            expected_current_stage=expected_current_stage,
         )
 
     @classmethod
@@ -1003,6 +1056,7 @@ class ReviewerOnboardingService:
         session: Session,
         applicant_reviewer_id: str,
         withdrawal_reason: str,
+        expected_current_stage: Optional[str] = None,
     ) -> ReviewerProfile:
         """Withdraws an applicant's submission upon their request."""
         return cls.transition_stage(
@@ -1011,6 +1065,7 @@ class ReviewerOnboardingService:
             applicant_reviewer_id=applicant_reviewer_id,
             target_stage=OnboardingStage.WITHDRAWN.value,
             notes=withdrawal_reason,
+            expected_current_stage=expected_current_stage,
         )
 
     @classmethod

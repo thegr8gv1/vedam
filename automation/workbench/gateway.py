@@ -11,6 +11,7 @@ Features:
 - Security middleware: request-scoped DB sessions, rate limiting, error sanitization, and security headers
 """
 
+import asyncio
 from datetime import datetime, timezone
 import html
 import json
@@ -21,6 +22,7 @@ from typing import Any, Callable, Dict, List, Optional
 import urllib.parse
 
 from aiohttp import web
+from sqlalchemy.exc import OperationalError
 from sqlalchemy.orm import Session
 
 from automation.workbench.auth import (
@@ -129,10 +131,27 @@ async def error_handling_middleware(request: web.Request, handler: Callable) -> 
             status=403,
         )
     except OnboardingGovernanceError as gov_ex:
+        is_conflict = "Concurrency Conflict" in str(gov_ex)
+        use_409 = is_conflict and (request.headers.get("X-Conflict-409") == "true" or request.headers.get("Accept-Conflict-409") == "true")
+        status_code = 409 if use_409 else 400
+        err_code = "CONCURRENCY_CONFLICT" if use_409 else "ONBOARDING_GOVERNANCE_ERROR"
         return web.json_response(
-            {"error": str(gov_ex), "status": 400, "code": "ONBOARDING_GOVERNANCE_ERROR"},
-            status=400,
+            {"error": str(gov_ex), "status": status_code, "code": err_code},
+            status=status_code,
         )
+    except OperationalError as op_ex:
+        err_msg = str(op_ex).lower()
+        if "locked" in err_msg or "busy" in err_msg:
+            return web.json_response(
+                {
+                    "error": "Database contention: operation could not be completed safely. Please retry.",
+                    "status": 503,
+                    "code": "DATABASE_CONTENTION",
+                },
+                status=503,
+                headers={"Retry-After": "1"},
+            )
+        raise
     except RateLimitExceededError as rl_ex:
         return web.json_response(
             {"error": str(rl_ex), "status": 429, "code": "RATE_LIMIT_EXCEEDED"},
@@ -813,23 +832,57 @@ async def onboarding_admin_transition_handler(request: web.Request) -> web.Respo
         )
 
     db = request["db"]
-    try:
-        applicant = ReviewerOnboardingService.transition_stage(
-            session=db,
-            admin_reviewer=reviewer,
-            applicant_reviewer_id=applicant_reviewer_id,
-            target_stage=target_stage,
-            notes=notes,
-            verification_doc_hash=verification_doc_hash,
-            verification_authority=verification_authority,
-            verification_method=verification_method,
-            scansion_score=scansion_score,
-            expected_current_stage=expected_current_stage,
-        )
-        db.commit()
-    except Exception:
-        db.rollback()
-        raise
+    max_retries = 3
+    applicant = None
+    for attempt in range(max_retries):
+        try:
+            applicant = ReviewerOnboardingService.transition_stage(
+                session=db,
+                admin_reviewer=reviewer,
+                applicant_reviewer_id=applicant_reviewer_id,
+                target_stage=target_stage,
+                notes=notes,
+                verification_doc_hash=verification_doc_hash,
+                verification_authority=verification_authority,
+                verification_method=verification_method,
+                scansion_score=scansion_score,
+                expected_current_stage=expected_current_stage,
+            )
+            db.commit()
+            break
+        except OnboardingGovernanceError as gov_ex:
+            db.rollback()
+            is_conflict = "Concurrency Conflict" in str(gov_ex)
+            use_409 = is_conflict and (request.headers.get("X-Conflict-409") == "true" or request.headers.get("Accept-Conflict-409") == "true")
+            status_code = 409 if use_409 else 400
+            err_code = "CONCURRENCY_CONFLICT" if use_409 else "ONBOARDING_GOVERNANCE_ERROR"
+            return web.json_response(
+                {"error": str(gov_ex), "status": status_code, "code": err_code},
+                status=status_code,
+            )
+        except OperationalError as op_ex:
+            db.rollback()
+            err_msg = str(op_ex).lower()
+            if ("locked" in err_msg or "busy" in err_msg) and attempt < max_retries - 1:
+                # Transient SQLite contention: back off, then retry with fresh query evaluation
+                await asyncio.sleep(0.05 * (2 ** attempt))
+                continue
+            elif "locked" in err_msg or "busy" in err_msg:
+                # Contention unresolved after bounded retries: truthful retryable 503 response
+                return web.json_response(
+                    {
+                        "error": "Database contention: operation could not be completed safely. Please retry.",
+                        "status": 503,
+                        "code": "DATABASE_CONTENTION",
+                    },
+                    status=503,
+                    headers={"Retry-After": "1"},
+                )
+            else:
+                raise
+        except Exception:
+            db.rollback()
+            raise
 
     return web.json_response({
         "status": "TRANSITIONED",
