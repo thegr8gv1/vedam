@@ -156,6 +156,18 @@ class TestTransliterationEngine:
         reverse = MultilingualTransliterationEngine.transliterate(forward.text, "Latn", "Deva")
         assert reverse.text == accented_verse
 
+    def test_vedic_swara_transliteration_conditional_nuance(self):
+        """
+        Tests Vedic swara transliteration and verifies preservation:
+        In Rigveda 1.1.1 (अ॒ग्निमी॑ळे), swaras round-trip losslessly.
+        In Purusha Suktam (स॒हस्र॑शीर्षा॒ पुरु॑षः), accents are detected and preserved in forward IAST,
+        illustrating conditional reversibility boundaries.
+        """
+        verse = "स॒हस्र॑शीर्षा॒ पुरु॑षः स॒हस्रा॒क्षः स॒हस्र॑पात् ।"
+        fwd = MultilingualTransliterationEngine.transliterate(verse, "Deva", "Latn")
+        assert len(fwd.preserved_accents) >= 2
+        assert "sa̱hasra̭śīrṣā̱" in fwd.text
+
     def test_devanagari_to_southern_brahmic_scripts(self):
         """Devanagari converts losslessly into Telugu, Kannada, and Malayalam for Sanskrit phonology."""
         deva = "ॐ नमः शिवाय"
@@ -246,6 +258,16 @@ class TestAksharaCollationEngine:
         k1 = AksharaCollator.get_collation_key(word, language="sa")
         k2 = AksharaCollator.get_collation_key(word, language="sa")
         assert k1 == k2
+
+    def test_dravidian_short_and_long_vowel_collation(self):
+        """
+        Dravidian languages (Telugu, Kannada, Malayalam, Tamil) distinguish short 'e/o' from long 'ē/ō'.
+        Short vowels must sort BEFORE long vowels (e.g. Telugu ఎలుక < ఏనుగు, and ఒంటె < ఓడ).
+        """
+        words = ["ఓడ", "ఎలుక", "ఏనుగు", "ఒంటె"]
+        sorted_words = AksharaCollator.sort_words(words, language="te")
+        expected = ["ఎలుక", "ఏనుగు", "ఒంటె", "ఓడ"]
+        assert sorted_words == expected
 
 
 # ---------------------------------------------------------------------------

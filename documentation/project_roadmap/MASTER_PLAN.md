@@ -3,7 +3,7 @@
 
 **Document Status:** Active & Living  
 **Version:** 11.3.0  
-**Current Phase:** Phase 11C Complete (Multilingual Script Engines, Akshara Collation, and Transliteration Architecture — 336 Tests Passing 100% Green)  
+**Current Phase:** Phase 11C Complete (Multilingual Script Engines, Akshara Collation, and Transliteration Architecture — 338 Tests Passing 100% Green)  
 **Workspace:** `C:\Vedam`  
 
 ---
@@ -361,8 +361,8 @@ flowchart LR
   - Detected normalization drift (NFC vs NFD), combining mark anomalies, Vedic accent counts, and zero-width characters (ZWJ `U+200D` / ZWNJ `U+200C`).
 - **Automated Regression Suite**:
   - Added 23 new isolated tests in `tests/test_phase11c_script_collation_transliteration.py`.
-  - Full project test suite expanded to **336 tests passing with 100% pass rate in 19.65s** across 33 test modules.
+  - Full project test suite expanded to **338 tests passing with 100% pass rate in 22.48s** across 33 test modules.
   - Verified production database `database/vedam.db` is 100% bit-for-bit unmodified.
 
 ### Test Suite Status:
-- Automated test suite expanded to **336 tests passing with 100% pass rate in 19.65s** across 33 test modules.
+- Automated test suite expanded to **338 tests passing with 100% pass rate in 22.48s** across 33 test modules.

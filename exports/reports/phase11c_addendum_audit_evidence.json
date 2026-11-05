@@ -1,0 +1,1966 @@
+{
+  "language_script_matrix": [
+    {
+      "language_name": "Assamese",
+      "language_code": "as",
+      "iso_639_3": "asm",
+      "bcp47": "as-Beng",
+      "script_name": "Bengali-Assamese",
+      "script_code": "Beng",
+      "is_default": true,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "Assamese uses Eastern Nagari with distinct letters Ra (ৰ U+09F0) and Va (ৱ U+09F1); shared block with Bengali."
+      ]
+    },
+    {
+      "language_name": "Assamese",
+      "language_code": "as",
+      "iso_639_3": "asm",
+      "bcp47": "as-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Bengali",
+      "language_code": "bn",
+      "iso_639_3": "ben",
+      "bcp47": "bn-Beng",
+      "script_name": "Bengali-Assamese",
+      "script_code": "Beng",
+      "is_default": true,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "Bengali lacks separate representation for Assamese Ra/Va; uses Ra (র U+09B0) and Ba (ব U+09AC)."
+      ]
+    },
+    {
+      "language_name": "Bengali",
+      "language_code": "bn",
+      "iso_639_3": "ben",
+      "bcp47": "bn-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Bodo",
+      "language_code": "brx",
+      "iso_639_3": "brx",
+      "bcp47": "brx-Deva",
+      "script_name": "Devanagari",
+      "script_code": "Deva",
+      "is_default": true,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Bodo",
+      "language_code": "brx",
+      "iso_639_3": "brx",
+      "bcp47": "brx-Beng",
+      "script_name": "Bengali-Assamese",
+      "script_code": "Beng",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Bodo",
+      "language_code": "brx",
+      "iso_639_3": "brx",
+      "bcp47": "brx-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Dogri",
+      "language_code": "doi",
+      "iso_639_3": "doi",
+      "bcp47": "doi-Deva",
+      "script_name": "Devanagari",
+      "script_code": "Deva",
+      "is_default": true,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Dogri",
+      "language_code": "doi",
+      "iso_639_3": "doi",
+      "bcp47": "doi-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "English",
+      "language_code": "en",
+      "iso_639_3": "eng",
+      "bcp47": "en-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": true,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Gujarati",
+      "language_code": "gu",
+      "iso_639_3": "guj",
+      "bcp47": "gu-Gujr",
+      "script_name": "Gujarati",
+      "script_code": "Gujr",
+      "is_default": true,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Gujarati",
+      "language_code": "gu",
+      "iso_639_3": "guj",
+      "bcp47": "gu-Deva",
+      "script_name": "Devanagari",
+      "script_code": "Deva",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Gujarati",
+      "language_code": "gu",
+      "iso_639_3": "guj",
+      "bcp47": "gu-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Hindi",
+      "language_code": "hi",
+      "iso_639_3": "hin",
+      "bcp47": "hi-Deva",
+      "script_name": "Devanagari",
+      "script_code": "Deva",
+      "is_default": true,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Hindi",
+      "language_code": "hi",
+      "iso_639_3": "hin",
+      "bcp47": "hi-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Kannada",
+      "language_code": "kn",
+      "iso_639_3": "kan",
+      "bcp47": "kn-Knda",
+      "script_name": "Kannada",
+      "script_code": "Knda",
+      "is_default": true,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Kannada",
+      "language_code": "kn",
+      "iso_639_3": "kan",
+      "bcp47": "kn-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Kashmiri",
+      "language_code": "ks",
+      "iso_639_3": "kas",
+      "bcp47": "ks-Arab",
+      "script_name": "Perso-Arabic",
+      "script_code": "Arab",
+      "is_default": true,
+      "direction": "rtl",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe) + Bi-directional RTL Flow (dir='rtl')",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "Kashmiri Arabic orthography requires specialized vowels (waw-e-majhool, tse U+0685); high font shaping dependency."
+      ]
+    },
+    {
+      "language_name": "Kashmiri",
+      "language_code": "ks",
+      "iso_639_3": "kas",
+      "bcp47": "ks-Deva",
+      "script_name": "Devanagari",
+      "script_code": "Deva",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Kashmiri",
+      "language_code": "ks",
+      "iso_639_3": "kas",
+      "bcp47": "ks-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Konkani",
+      "language_code": "kok",
+      "iso_639_3": "kok",
+      "bcp47": "kok-Deva",
+      "script_name": "Devanagari",
+      "script_code": "Deva",
+      "is_default": true,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Konkani",
+      "language_code": "kok",
+      "iso_639_3": "kok",
+      "bcp47": "kok-Knda",
+      "script_name": "Kannada",
+      "script_code": "Knda",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Konkani",
+      "language_code": "kok",
+      "iso_639_3": "kok",
+      "bcp47": "kok-Mlym",
+      "script_name": "Malayalam",
+      "script_code": "Mlym",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Konkani",
+      "language_code": "kok",
+      "iso_639_3": "kok",
+      "bcp47": "kok-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Maithili",
+      "language_code": "mai",
+      "iso_639_3": "mai",
+      "bcp47": "mai-Deva",
+      "script_name": "Devanagari",
+      "script_code": "Deva",
+      "is_default": true,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Maithili",
+      "language_code": "mai",
+      "iso_639_3": "mai",
+      "bcp47": "mai-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Malayalam",
+      "language_code": "ml",
+      "iso_639_3": "mal",
+      "bcp47": "ml-Mlym",
+      "script_name": "Malayalam",
+      "script_code": "Mlym",
+      "is_default": true,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Malayalam",
+      "language_code": "ml",
+      "iso_639_3": "mal",
+      "bcp47": "ml-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Manipuri",
+      "language_code": "mni",
+      "iso_639_3": "mni",
+      "bcp47": "mni-Beng",
+      "script_name": "Bengali-Assamese",
+      "script_code": "Beng",
+      "is_default": true,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "Traditional Meetei Mayek orthography is transitioning from Bengali script; both scripts coexist in Manipur."
+      ]
+    },
+    {
+      "language_name": "Manipuri",
+      "language_code": "mni",
+      "iso_639_3": "mni",
+      "bcp47": "mni-Mtei",
+      "script_name": "Meetei Mayek",
+      "script_code": "Mtei",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "Meetei Mayek script has 27 native letters (Iyek Ipi) + extensions; transliteration from Sanskrit has phonetic inventory reduction."
+      ]
+    },
+    {
+      "language_name": "Manipuri",
+      "language_code": "mni",
+      "iso_639_3": "mni",
+      "bcp47": "mni-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Marathi",
+      "language_code": "mr",
+      "iso_639_3": "mar",
+      "bcp47": "mr-Deva",
+      "script_name": "Devanagari",
+      "script_code": "Deva",
+      "is_default": true,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Marathi",
+      "language_code": "mr",
+      "iso_639_3": "mar",
+      "bcp47": "mr-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Nepali",
+      "language_code": "ne",
+      "iso_639_3": "nep",
+      "bcp47": "ne-Deva",
+      "script_name": "Devanagari",
+      "script_code": "Deva",
+      "is_default": true,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Nepali",
+      "language_code": "ne",
+      "iso_639_3": "nep",
+      "bcp47": "ne-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Odia",
+      "language_code": "or",
+      "iso_639_3": "ori",
+      "bcp47": "or-Orya",
+      "script_name": "Odia",
+      "script_code": "Orya",
+      "is_default": true,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Odia",
+      "language_code": "or",
+      "iso_639_3": "ori",
+      "bcp47": "or-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Punjabi",
+      "language_code": "pa",
+      "iso_639_3": "pan",
+      "bcp47": "pa-Guru",
+      "script_name": "Gurmukhi",
+      "script_code": "Guru",
+      "is_default": true,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Punjabi",
+      "language_code": "pa",
+      "iso_639_3": "pan",
+      "bcp47": "pa-Deva",
+      "script_name": "Devanagari",
+      "script_code": "Deva",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Punjabi",
+      "language_code": "pa",
+      "iso_639_3": "pan",
+      "bcp47": "pa-Arab",
+      "script_name": "Perso-Arabic",
+      "script_code": "Arab",
+      "is_default": false,
+      "direction": "rtl",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe) + Bi-directional RTL Flow (dir='rtl')",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Punjabi",
+      "language_code": "pa",
+      "iso_639_3": "pan",
+      "bcp47": "pa-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Sanskrit",
+      "language_code": "sa",
+      "iso_639_3": "san",
+      "bcp47": "sa-Deva",
+      "script_name": "Devanagari",
+      "script_code": "Deva",
+      "is_default": true,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Sanskrit",
+      "language_code": "sa",
+      "iso_639_3": "san",
+      "bcp47": "sa-Telu",
+      "script_name": "Telugu",
+      "script_code": "Telu",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Sanskrit",
+      "language_code": "sa",
+      "iso_639_3": "san",
+      "bcp47": "sa-Gran",
+      "script_name": "Grantha",
+      "script_code": "Gran",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Sanskrit",
+      "language_code": "sa",
+      "iso_639_3": "san",
+      "bcp47": "sa-Taml",
+      "script_name": "Tamil",
+      "script_code": "Taml",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Sanskrit",
+      "language_code": "sa",
+      "iso_639_3": "san",
+      "bcp47": "sa-Knda",
+      "script_name": "Kannada",
+      "script_code": "Knda",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Sanskrit",
+      "language_code": "sa",
+      "iso_639_3": "san",
+      "bcp47": "sa-Mlym",
+      "script_name": "Malayalam",
+      "script_code": "Mlym",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Sanskrit",
+      "language_code": "sa",
+      "iso_639_3": "san",
+      "bcp47": "sa-Beng",
+      "script_name": "Bengali-Assamese",
+      "script_code": "Beng",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Sanskrit",
+      "language_code": "sa",
+      "iso_639_3": "san",
+      "bcp47": "sa-Gujr",
+      "script_name": "Gujarati",
+      "script_code": "Gujr",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Sanskrit",
+      "language_code": "sa",
+      "iso_639_3": "san",
+      "bcp47": "sa-Orya",
+      "script_name": "Odia",
+      "script_code": "Orya",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Sanskrit",
+      "language_code": "sa",
+      "iso_639_3": "san",
+      "bcp47": "sa-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Santali",
+      "language_code": "sat",
+      "iso_639_3": "sat",
+      "bcp47": "sat-Olck",
+      "script_name": "Ol Chiki",
+      "script_code": "Olck",
+      "is_default": true,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "Ol Chiki is a non-alphasyllabic alphabet for Santali; lacks traditional Sanskrit aspirated conjunct ligatures."
+      ]
+    },
+    {
+      "language_name": "Santali",
+      "language_code": "sat",
+      "iso_639_3": "sat",
+      "bcp47": "sat-Deva",
+      "script_name": "Devanagari",
+      "script_code": "Deva",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Santali",
+      "language_code": "sat",
+      "iso_639_3": "sat",
+      "bcp47": "sat-Beng",
+      "script_name": "Bengali-Assamese",
+      "script_code": "Beng",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Santali",
+      "language_code": "sat",
+      "iso_639_3": "sat",
+      "bcp47": "sat-Orya",
+      "script_name": "Odia",
+      "script_code": "Orya",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Santali",
+      "language_code": "sat",
+      "iso_639_3": "sat",
+      "bcp47": "sat-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Sindhi",
+      "language_code": "sd",
+      "iso_639_3": "snd",
+      "bcp47": "sd-Arab",
+      "script_name": "Perso-Arabic",
+      "script_code": "Arab",
+      "is_default": true,
+      "direction": "rtl",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe) + Bi-directional RTL Flow (dir='rtl')",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "Sindhi Arabic uses 52-letter alphabet with 4-dot extensions; complex positional variants."
+      ]
+    },
+    {
+      "language_name": "Sindhi",
+      "language_code": "sd",
+      "iso_639_3": "snd",
+      "bcp47": "sd-Deva",
+      "script_name": "Devanagari",
+      "script_code": "Deva",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Sindhi",
+      "language_code": "sd",
+      "iso_639_3": "snd",
+      "bcp47": "sd-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Tamil",
+      "language_code": "ta",
+      "iso_639_3": "tam",
+      "bcp47": "ta-Taml",
+      "script_name": "Tamil",
+      "script_code": "Taml",
+      "is_default": true,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "Native Tamil lacks voiced stops and aspirates; standard transliteration merges Sanskrit vargas unless phonetic subscripts are used."
+      ]
+    },
+    {
+      "language_name": "Tamil",
+      "language_code": "ta",
+      "iso_639_3": "tam",
+      "bcp47": "ta-Gran",
+      "script_name": "Grantha",
+      "script_code": "Gran",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "Grantha script enables full Sanskrit liturgical phonology in Tamil regions; requires Grantha Unicode font (Noto Sans Grantha)."
+      ]
+    },
+    {
+      "language_name": "Tamil",
+      "language_code": "ta",
+      "iso_639_3": "tam",
+      "bcp47": "ta-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Telugu",
+      "language_code": "te",
+      "iso_639_3": "tel",
+      "bcp47": "te-Telu",
+      "script_name": "Telugu",
+      "script_code": "Telu",
+      "is_default": true,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Telugu",
+      "language_code": "te",
+      "iso_639_3": "tel",
+      "bcp47": "te-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Urdu",
+      "language_code": "ur",
+      "iso_639_3": "urd",
+      "bcp47": "ur-Arab",
+      "script_name": "Perso-Arabic",
+      "script_code": "Arab",
+      "is_default": true,
+      "direction": "rtl",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe) + Bi-directional RTL Flow (dir='rtl')",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "Requires Nastaliq calligraphy shaping (Noto Nastaliq Urdu); abjad script omits short vowels in unpointed text."
+      ]
+    },
+    {
+      "language_name": "Urdu",
+      "language_code": "ur",
+      "iso_639_3": "urd",
+      "bcp47": "ur-Deva",
+      "script_name": "Devanagari",
+      "script_code": "Deva",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "OpenType Complex Shaping (HarfBuzz/Uniscribe)",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    },
+    {
+      "language_name": "Urdu",
+      "language_code": "ur",
+      "iso_639_3": "urd",
+      "bcp47": "ur-Latn",
+      "script_name": "Latin (IAST / English)",
+      "script_code": "Latn",
+      "is_default": false,
+      "direction": "ltr",
+      "shaping_requirements": "Standard Alphabetic Rendering",
+      "compatibility_valid": true,
+      "known_limitations": [
+        "None; standard orthographic profile."
+      ]
+    }
+  ],
+  "specific_script_verifications": {
+    "assamese_bengali": {
+      "assamese_lang": "Assamese",
+      "assamese_primary_script": "Beng",
+      "bengali_lang": "Bengali",
+      "bengali_primary_script": "Beng",
+      "scripts_share_block": true,
+      "distinct_language_identity": true,
+      "assamese_ra_char": "ৰ",
+      "assamese_va_char": "ৱ",
+      "bengali_ra_char": "র",
+      "bengali_ba_char": "ব"
+    },
+    "manipuri": {
+      "manipuri_primary": "Beng",
+      "manipuri_supported": [
+        "Beng",
+        "Mtei",
+        "Latn"
+      ],
+      "has_bengali": true,
+      "has_meetei": true
+    },
+    "perso_arabic": {
+      "urdu_rtl": true,
+      "kashmiri_rtl": true,
+      "sindhi_rtl": true,
+      "script_direction": "rtl",
+      "recommended_font": "Noto Nastaliq Urdu"
+    },
+    "sanskrit": {
+      "sanskrit_primary": "Deva",
+      "sanskrit_supported": [
+        "Deva",
+        "Telu",
+        "Gran",
+        "Taml",
+        "Knda",
+        "Mlym",
+        "Beng",
+        "Gujr",
+        "Orya",
+        "Latn"
+      ],
+      "has_devanagari": true,
+      "has_iast": true,
+      "has_grantha": true
+    },
+    "tamil": {
+      "tamil_primary": "Taml",
+      "tamil_supported": [
+        "Taml",
+        "Gran",
+        "Latn"
+      ],
+      "has_grantha": true
+    }
+  },
+  "conversion_pair_audit": [
+    {
+      "source_script": "Deva",
+      "target_script": "Latn",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "dharmakṣetre kurukṣetre samavetā yuyutsavaḥ | māmakāḥ pāṇḍav...",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Deva",
+      "target_script": "Telu",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ధర్మక్షేత్రే కురుక్షేత్రే సమవేతా యుయుత్సవః । మామకాః పాణ్డవాశ...",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Deva",
+      "target_script": "Knda",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ಧರ್ಮಕ್ಷೇತ್ರೇ ಕುರುಕ್ಷೇತ್ರೇ ಸಮವೇತಾ ಯುಯುತ್ಸವಃ । ಮಾಮಕಾಃ ಪಾಣ್ಡವಾಶ...",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Deva",
+      "target_script": "Mlym",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ധര്മക്ഷേത്രേ കുരുക്ഷേത്രേ സമവേതാ യുയുത്സവഃ । മാമകാഃ പാണ്ഡവാശ...",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Deva",
+      "target_script": "Beng",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ধর্মক্ষেত্রে কুরুক্ষেত্রে সমবেতা যুযুত্সবঃ । মামকাঃ পাণ্ডবাশ...",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Deva",
+      "target_script": "Gujr",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ધર્મક્ષેત્રે કુરુક્ષેત્રે સમવેતા યુયુત્સવઃ । મામકાઃ પાણ્ડવાશ...",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Deva",
+      "target_script": "Gran",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "𑌧𑌰𑍍𑌮𑌕𑍍𑌷𑍇𑌤𑍍𑌰𑍇 𑌕𑍁𑌰𑍁𑌕𑍍𑌷𑍇𑌤𑍍𑌰𑍇 𑌸𑌮𑌵𑍇𑌤𑌾 𑌯𑍁𑌯𑍁𑌤𑍍𑌸𑌵𑌃 । 𑌮𑌾𑌮𑌕𑌾𑌃 𑌪𑌾𑌣𑍍𑌡𑌵𑌾𑌶...",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Deva",
+      "target_script": "Orya",
+      "claimed_reversibility": "CONDITIONALLY_REVERSIBLE",
+      "actual_reversibility": "CONDITIONALLY_REVERSIBLE",
+      "is_lossless": false,
+      "sample_forward_output": "ଧର୍ମକ୍ଷେତ୍ରେ କୁରୁକ୍ଷେତ୍ରେ ସମଵେତା ଯୁଯୁତ୍ସଵଃ । ମାମକାଃ ପାଣ୍ଡଵାଶ...",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": [
+        "Conversion from 'Deva' to 'Orya' is conditionally reversible depending on orthographic context."
+      ]
+    },
+    {
+      "source_script": "Deva",
+      "target_script": "Guru",
+      "claimed_reversibility": "CONDITIONALLY_REVERSIBLE",
+      "actual_reversibility": "CONDITIONALLY_REVERSIBLE",
+      "is_lossless": false,
+      "sample_forward_output": "ਧਰ੍ਮਕ੍ਸ਼ੇਤ੍ਰੇ ਕੁਰੁਕ੍ਸ਼ੇਤ੍ਰੇ ਸਮਵੇਤਾ ਯੁਯੁਤ੍ਸਵਃ । ਮਾਮਕਾਃ ਪਾਣ੍ਡਵ...",
+      "round_trip_exact_match": false,
+      "round_trip_diff_count": 74,
+      "warnings": [
+        "Conversion from 'Deva' to 'Guru' is conditionally reversible depending on orthographic context."
+      ]
+    },
+    {
+      "source_script": "Deva",
+      "target_script": "Taml",
+      "claimed_reversibility": "LOSSY",
+      "actual_reversibility": "LOSSY",
+      "is_lossless": false,
+      "sample_forward_output": "தர்மக்ஷேத்ரே குருக்ஷேத்ரே ஸமவேதா யுயுத்ஸவஃ । மாமகாஃ பாண்டவாஶ...",
+      "round_trip_exact_match": false,
+      "round_trip_diff_count": 0,
+      "warnings": [
+        "Conversion from 'Deva' to 'Taml' is lossy. Character distinctions may be merged."
+      ]
+    },
+    {
+      "source_script": "Deva",
+      "target_script": "Olck",
+      "claimed_reversibility": "LOSSY",
+      "actual_reversibility": "LOSSY",
+      "is_lossless": false,
+      "sample_forward_output": "ᱫᱷᱚᱨᱚᱢᱚᱠᱥᱚᱮᱛᱚᱨᱚᱮ ᱠᱚᱩᱨᱚᱩᱠᱥᱚᱮᱛᱚᱨᱚᱮ ᱥᱚᱢᱚᱣᱚᱮᱛᱚᱟ ᱭᱚᱩᱭᱚᱩᱛᱚᱥᱚᱣᱚᱷ ᱾ ...",
+      "round_trip_exact_match": false,
+      "round_trip_diff_count": 0,
+      "warnings": [
+        "Conversion from 'Deva' to 'Olck' is lossy. Character distinctions may be merged."
+      ]
+    },
+    {
+      "source_script": "Deva",
+      "target_script": "Mtei",
+      "claimed_reversibility": "LOSSY",
+      "actual_reversibility": "LOSSY",
+      "is_lossless": false,
+      "sample_forward_output": "ꯙꯔ꯭ꯃꯛꯁꯦꯇ꯭ꯔꯦ ꯀꯨꯔꯨꯛꯁꯦꯇ꯭ꯔꯦ ꯁꯃꯋꯦꯇꯥ ꯌꯨꯌꯨꯇ꯭ꯁꯋꯍ꯭ । ꯃꯥꯃꯀꯥꯍ꯭ ꯄꯥꯅ꯭ꯗꯋꯥꯁ...",
+      "round_trip_exact_match": false,
+      "round_trip_diff_count": 0,
+      "warnings": [
+        "Conversion from 'Deva' to 'Mtei' is lossy. Character distinctions may be merged."
+      ]
+    },
+    {
+      "source_script": "Deva",
+      "target_script": "Arab",
+      "claimed_reversibility": "LOSSY",
+      "actual_reversibility": "LOSSY",
+      "is_lossless": false,
+      "sample_forward_output": "دھَرَْمَکْشَےتَْرَے کَُرَُکْشَےتَْرَے سَمَوَےتَا یَُیَُتَْسَ...",
+      "round_trip_exact_match": false,
+      "round_trip_diff_count": 0,
+      "warnings": [
+        "Conversion from 'Deva' to 'Arab' is lossy. Character distinctions may be merged."
+      ]
+    },
+    {
+      "source_script": "Latn",
+      "target_script": "Deva",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः । मामकाः पाण्डवाश...",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Latn",
+      "target_script": "Telu",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ధర్మక్షేత్రే కురుక్షేత్రే సమవేతా యుయుత్సవః । మామకాః పాణ్డవాశ...",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Latn",
+      "target_script": "Knda",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ಧರ್ಮಕ್ಷೇತ್ರೇ ಕುರುಕ್ಷೇತ್ರೇ ಸಮವೇತಾ ಯುಯುತ್ಸವಃ । ಮಾಮಕಾಃ ಪಾಣ್ಡವಾಶ...",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Latn",
+      "target_script": "Mlym",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ധര്മക്ഷേത്രേ കുരുക്ഷേത്രേ സമവേതാ യുയുത്സവഃ । മാമകാഃ പാണ്ഡവാശ...",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Latn",
+      "target_script": "Beng",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ধর্মক্ষেত্রে কুরুক্ষেত্রে সমবেতা যুযুত্সবঃ । মামকাঃ পাণ্ডবাশ...",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Latn",
+      "target_script": "Gujr",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ધર્મક્ષેત્રે કુરુક્ષેત્રે સમવેતા યુયુત્સવઃ । મામકાઃ પાણ્ડવાશ...",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Latn",
+      "target_script": "Gran",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "𑌧𑌰𑍍𑌮𑌕𑍍𑌷𑍇𑌤𑍍𑌰𑍇 𑌕𑍁𑌰𑍁𑌕𑍍𑌷𑍇𑌤𑍍𑌰𑍇 𑌸𑌮𑌵𑍇𑌤𑌾 𑌯𑍁𑌯𑍁𑌤𑍍𑌸𑌵𑌃 । 𑌮𑌾𑌮𑌕𑌾𑌃 𑌪𑌾𑌣𑍍𑌡𑌵𑌾𑌶...",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Latn",
+      "target_script": "Orya",
+      "claimed_reversibility": "CONDITIONALLY_REVERSIBLE",
+      "actual_reversibility": "CONDITIONALLY_REVERSIBLE",
+      "is_lossless": false,
+      "sample_forward_output": "ଧର୍ମକ୍ଷେତ୍ରେ କୁରୁକ୍ଷେତ୍ରେ ସମଵେତା ଯୁଯୁତ୍ସଵଃ । ମାମକାଃ ପାଣ୍ଡଵାଶ...",
+      "round_trip_exact_match": false,
+      "round_trip_diff_count": 88,
+      "warnings": [
+        "Conversion from 'Latn' to 'Orya' is conditionally reversible depending on orthographic context."
+      ]
+    },
+    {
+      "source_script": "Latn",
+      "target_script": "Guru",
+      "claimed_reversibility": "CONDITIONALLY_REVERSIBLE",
+      "actual_reversibility": "CONDITIONALLY_REVERSIBLE",
+      "is_lossless": false,
+      "sample_forward_output": "ਧਰ੍ਮਕ੍ਸ਼ੇਤ੍ਰੇ ਕੁਰੁਕ੍ਸ਼ੇਤ੍ਰੇ ਸਮਵੇਤਾ ਯੁਯੁਤ੍ਸਵਃ । ਮਾਮਕਾਃ ਪਾਣ੍ਡਵ...",
+      "round_trip_exact_match": false,
+      "round_trip_diff_count": 88,
+      "warnings": [
+        "Conversion from 'Latn' to 'Guru' is conditionally reversible depending on orthographic context."
+      ]
+    },
+    {
+      "source_script": "Latn",
+      "target_script": "Taml",
+      "claimed_reversibility": "LOSSY",
+      "actual_reversibility": "LOSSY",
+      "is_lossless": false,
+      "sample_forward_output": "தர்மக்ஷேத்ரே குருக்ஷேத்ரே ஸமவேதா யுயுத்ஸவஃ । மாமகாஃ பாண்டவாஶ...",
+      "round_trip_exact_match": false,
+      "round_trip_diff_count": 0,
+      "warnings": [
+        "Conversion from 'Latn' to 'Taml' is lossy. Character distinctions may be merged."
+      ]
+    },
+    {
+      "source_script": "Latn",
+      "target_script": "Olck",
+      "claimed_reversibility": "LOSSY",
+      "actual_reversibility": "LOSSY",
+      "is_lossless": false,
+      "sample_forward_output": "ᱫᱷᱚᱨᱚᱢᱚᱠᱥᱚᱮᱛᱚᱨᱚᱮ ᱠᱚᱩᱨᱚᱩᱠᱥᱚᱮᱛᱚᱨᱚᱮ ᱥᱚᱢᱚᱣᱚᱮᱛᱚᱟ ᱭᱚᱩᱭᱚᱩᱛᱚᱥᱚᱣᱚᱷ ᱾ ...",
+      "round_trip_exact_match": false,
+      "round_trip_diff_count": 0,
+      "warnings": [
+        "Conversion from 'Latn' to 'Olck' is lossy. Character distinctions may be merged."
+      ]
+    },
+    {
+      "source_script": "Latn",
+      "target_script": "Mtei",
+      "claimed_reversibility": "LOSSY",
+      "actual_reversibility": "LOSSY",
+      "is_lossless": false,
+      "sample_forward_output": "ꯙꯔ꯭ꯃꯛꯁꯦꯇ꯭ꯔꯦ ꯀꯨꯔꯨꯛꯁꯦꯇ꯭ꯔꯦ ꯁꯃꯋꯦꯇꯥ ꯌꯨꯌꯨꯇ꯭ꯁꯋꯍ꯭ । ꯃꯥꯃꯀꯥꯍ꯭ ꯄꯥꯅ꯭ꯗꯋꯥꯁ...",
+      "round_trip_exact_match": false,
+      "round_trip_diff_count": 0,
+      "warnings": [
+        "Conversion from 'Latn' to 'Mtei' is lossy. Character distinctions may be merged."
+      ]
+    },
+    {
+      "source_script": "Latn",
+      "target_script": "Arab",
+      "claimed_reversibility": "LOSSY",
+      "actual_reversibility": "LOSSY",
+      "is_lossless": false,
+      "sample_forward_output": "دھَرَْمَکْشَےتَْرَے کَُرَُکْشَےتَْرَے سَمَوَےتَا یَُیَُتَْسَ...",
+      "round_trip_exact_match": false,
+      "round_trip_diff_count": 0,
+      "warnings": [
+        "Conversion from 'Latn' to 'Arab' is lossy. Character distinctions may be merged."
+      ]
+    },
+    {
+      "source_script": "Telu",
+      "target_script": "Deva",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ॐ नमः शिवाय",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Telu",
+      "target_script": "Latn",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "oṃ namaḥ śivāya",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Telu",
+      "target_script": "Knda",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ಓಂ ನಮಃ ಶಿವಾಯ",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Telu",
+      "target_script": "Mlym",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ഓം നമഃ ശിവായ",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Knda",
+      "target_script": "Deva",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ॐ नमः शिवाय",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Knda",
+      "target_script": "Latn",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "oṃ namaḥ śivāya",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Knda",
+      "target_script": "Telu",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ఓం నమః శివాయ",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Knda",
+      "target_script": "Mlym",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ഓം നമഃ ശിവായ",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Mlym",
+      "target_script": "Deva",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ॐ नमः शिवाय",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Mlym",
+      "target_script": "Latn",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "oṃ namaḥ śivāya",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Mlym",
+      "target_script": "Telu",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ఓం నమః శివాయ",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Mlym",
+      "target_script": "Knda",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ಓಂ ನಮಃ ಶಿವಾಯ",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Beng",
+      "target_script": "Deva",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ॐ नमः शिवाय",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Beng",
+      "target_script": "Latn",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "oṃ namaḥ śivāya",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Orya",
+      "target_script": "Deva",
+      "claimed_reversibility": "CONDITIONALLY_REVERSIBLE",
+      "actual_reversibility": "CONDITIONALLY_REVERSIBLE",
+      "is_lossless": false,
+      "sample_forward_output": "ॐ नमः शिवाय",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": [
+        "Conversion from 'Orya' to 'Deva' is conditionally reversible depending on orthographic context."
+      ]
+    },
+    {
+      "source_script": "Gujr",
+      "target_script": "Deva",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ॐ नमः शिवाय",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Gujr",
+      "target_script": "Latn",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "oṃ namaḥ śivāya",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Guru",
+      "target_script": "Deva",
+      "claimed_reversibility": "CONDITIONALLY_REVERSIBLE",
+      "actual_reversibility": "CONDITIONALLY_REVERSIBLE",
+      "is_lossless": false,
+      "sample_forward_output": "ॐ नमः स਼िवाय",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": [
+        "Conversion from 'Guru' to 'Deva' is conditionally reversible depending on orthographic context."
+      ]
+    },
+    {
+      "source_script": "Gran",
+      "target_script": "Deva",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "ॐ नमः शिवाय",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Gran",
+      "target_script": "Latn",
+      "claimed_reversibility": "REVERSIBLE",
+      "actual_reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "sample_forward_output": "oṃ namaḥ śivāya",
+      "round_trip_exact_match": true,
+      "round_trip_diff_count": 0,
+      "warnings": []
+    },
+    {
+      "source_script": "Taml",
+      "target_script": "Deva",
+      "claimed_reversibility": "LOSSY",
+      "actual_reversibility": "LOSSY",
+      "is_lossless": false,
+      "sample_forward_output": "ॐ नमः शिवाय",
+      "round_trip_exact_match": false,
+      "round_trip_diff_count": 0,
+      "warnings": [
+        "Conversion from 'Taml' to 'Deva' is lossy. Character distinctions may be merged."
+      ]
+    },
+    {
+      "source_script": "Taml",
+      "target_script": "Latn",
+      "claimed_reversibility": "LOSSY",
+      "actual_reversibility": "LOSSY",
+      "is_lossless": false,
+      "sample_forward_output": "oṃ namaḥ śivāya",
+      "round_trip_exact_match": false,
+      "round_trip_diff_count": 0,
+      "warnings": [
+        "Conversion from 'Taml' to 'Latn' is lossy. Character distinctions may be merged."
+      ]
+    },
+    {
+      "source_script": "Olck",
+      "target_script": "Deva",
+      "claimed_reversibility": "LOSSY",
+      "actual_reversibility": "LOSSY",
+      "is_lossless": false,
+      "sample_forward_output": "ॐ नमः सिवाय़",
+      "round_trip_exact_match": false,
+      "round_trip_diff_count": 0,
+      "warnings": [
+        "Conversion from 'Olck' to 'Deva' is lossy. Character distinctions may be merged."
+      ]
+    },
+    {
+      "source_script": "Mtei",
+      "target_script": "Deva",
+      "claimed_reversibility": "LOSSY",
+      "actual_reversibility": "LOSSY",
+      "is_lossless": false,
+      "sample_forward_output": "ॐ नमः सीवाय",
+      "round_trip_exact_match": false,
+      "round_trip_diff_count": 0,
+      "warnings": [
+        "Conversion from 'Mtei' to 'Deva' is lossy. Character distinctions may be merged."
+      ]
+    },
+    {
+      "source_script": "Arab",
+      "target_script": "Deva",
+      "claimed_reversibility": "LOSSY",
+      "actual_reversibility": "LOSSY",
+      "is_lossless": false,
+      "sample_forward_output": "ओم् नमः षिवाय़",
+      "round_trip_exact_match": false,
+      "round_trip_diff_count": 0,
+      "warnings": [
+        "Conversion from 'Arab' to 'Deva' is lossy. Character distinctions may be merged."
+      ]
+    }
+  ],
+  "detailed_transliteration_vectors": {
+    "vector_a_iast_deva": {
+      "is_exact_match": true,
+      "source_script": "Deva",
+      "target_script": "Latn",
+      "forward_text": "dharmakṣetre kurukṣetre samavetā yuyutsavaḥ | māmakāḥ pāṇḍavāścaiva kimakurvata sañjaya ||",
+      "reverse_text": "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः । मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥",
+      "character_diff_count": 0,
+      "reversibility": "REVERSIBLE",
+      "is_lossless": true,
+      "warnings": []
+    },
+    "vector_b_vedic_accents": {
+      "input": "स॒हस्र॑शीर्षा॒ पुरु॑षः स॒हस्रा॒क्षः स॒हस्र॑पात् ।",
+      "forward": "sa̱hasra̭śīrṣā̱ purṷṣaḥ sa̱hasrā̱kṣaḥ sa̱hasra̭pāt |",
+      "reverse": "स॒हस्र॑शीर्षा॒ पुर्ṷषः स॒हस्रा॒क्षः स॒हस्र॑पात् ।",
+      "match": false,
+      "accents": [
+        "॑",
+        "॒"
+      ]
+    },
+    "vector_c_southern_brahmic": {
+      "Telu": {
+        "exact_match": true,
+        "diffs": 0
+      },
+      "Knda": {
+        "exact_match": true,
+        "diffs": 0
+      },
+      "Mlym": {
+        "exact_match": true,
+        "diffs": 0
+      }
+    },
+    "vector_d_tamil_modes": {
+      "standard": {
+        "text": "தர்மக்ஷேத்ரே குருக்ஷேத்ரே ஸமவேதா யுயுத்ஸவஃ । மாமகா",
+        "rev": "LOSSY"
+      },
+      "phonetic": {
+        "text": "த₄ர்மக₁்ஷேத₁்ரே க₁ுருக₁்ஷேத₁்ரே ஸமவேத₁ா யுயுத₁்ஸவஃ",
+        "rev": "CONDITIONALLY_REVERSIBLE"
+      }
+    },
+    "vector_e_lossy_scripts": {
+      "Olck": {
+        "reversibility": "LOSSY",
+        "is_lossless": false,
+        "output": "ᱳᱸ ᱱᱚᱢᱚᱷ ᱥᱚᱤᱣᱚᱟᱭᱚ",
+        "warnings": [
+          "Conversion from 'Deva' to 'Olck' is lossy. Character distinctions may be merged."
+        ]
+      },
+      "Mtei": {
+        "reversibility": "LOSSY",
+        "is_lossless": false,
+        "output": "ꯑꯣꯪ ꯅꯃꯍ꯭ ꯁꯤꯋꯥꯌ",
+        "warnings": [
+          "Conversion from 'Deva' to 'Mtei' is lossy. Character distinctions may be merged."
+        ]
+      },
+      "Arab": {
+        "reversibility": "LOSSY",
+        "is_lossless": false,
+        "output": "اومْ نَمَہ شَِوَایَ",
+        "warnings": [
+          "Conversion from 'Deva' to 'Arab' is lossy. Character distinctions may be merged."
+        ]
+      }
+    }
+  },
+  "collation_audit": {
+    "deva_raw_sorted": [
+      "अग्नि",
+      "आनन्द",
+      "इन्द्र",
+      "ईश्वर",
+      "ऋषि",
+      "ओष्ठ",
+      "औषध",
+      "कमल",
+      "काम",
+      "किरण",
+      "कृष्ण",
+      "केशव",
+      "क्रोध"
+    ],
+    "deva_collator_sorted": [
+      "अग्नि",
+      "आनन्द",
+      "इन्द्र",
+      "ईश्वर",
+      "ऋषि",
+      "ओष्ठ",
+      "औषध",
+      "कमल",
+      "काम",
+      "किरण",
+      "कृष्ण",
+      "केशव",
+      "क्रोध"
+    ],
+    "iast_raw_sorted": [
+      "agni",
+      "auṣadha",
+      "kamala",
+      "krodha",
+      "kṛṣṇa",
+      "zebra",
+      "ātman",
+      "īśvara",
+      "ṛṣi"
+    ],
+    "iast_collator_sorted": [
+      "agni",
+      "ātman",
+      "īśvara",
+      "ṛṣi",
+      "auṣadha",
+      "kamala",
+      "kṛṣṇa",
+      "krodha",
+      "zebra"
+    ],
+    "raw_unicode_defect_proved": true,
+    "defect_resolved_by_collator": true,
+    "telugu_dravidian_sorted": [
+      "ఎలుక",
+      "ఏనుగు",
+      "ఒంటె",
+      "ఓడ"
+    ],
+    "documentation": {
+      "profile_type": "Implementation-Specific Scholarly Sanskrit Profile",
+      "traditional_principles_embodied": [
+        "Independent vowels precede consonants (a, ā, i, ī, u, ū, ṛ, ṝ, ḷ, ḹ, e, ai, o, au)",
+        "Consonants follow classical Paninian vargas (ka, ca, ṭa, ta, pa, antastha, ushman)",
+        "Within a base consonant, full syllabic vocalizations (ka, kā, ki, kī, ku, kū, kṛ, kṝ, ke, kai, ko, kau) precede pure consonant conjuncts (k + virama + C)",
+        "Anusvara and Visarga are treated as secondary syllable-closing modifiers",
+        "Vedic accents (udatta, anudatta, svarita) act as quaternary tie-breakers",
+        "IAST romanization accurately preserves Sanskrit varnamala order rather than Latin alphabet order (e.g. ā precedes b, ṛ precedes e)"
+      ],
+      "explicit_lexicographical_scope_and_boundary": "While this collator implements the syllabic ordering principles recognized by V.S. Apte (The Practical Sanskrit-English Dictionary, 1890) and Sir M. Monier-Williams (Sanskrit-English Dictionary, 1899), it is formally classified as an 'Implementation-Specific Scholarly Profile'. It does not claim 100% facsimile equivalence to historical print dictionaries for complex prefix-compound decomposition or editorial headword lemmatization."
+    }
+  },
+  "unicode_fidelity_audit": [
+    {
+      "label": "Canonical Sanskrit NFC",
+      "input_char_count": 11,
+      "input_byte_count": 29,
+      "is_nfc_normalized": true,
+      "combining_marks": 3,
+      "vedic_accent_count": 0,
+      "has_zwj": false,
+      "has_zwnj": false,
+      "script_detected": "Deva",
+      "nfd_is_nfc_reported": true,
+      "nfd_is_nfd_reported": true,
+      "fidelity_verified": true
+    },
+    {
+      "label": "Vedic Rigveda 1.1.1 Accented",
+      "input_char_count": 23,
+      "input_byte_count": 67,
+      "is_nfc_normalized": true,
+      "combining_marks": 12,
+      "vedic_accent_count": 4,
+      "has_zwj": false,
+      "has_zwnj": false,
+      "script_detected": "Deva",
+      "nfd_is_nfc_reported": true,
+      "nfd_is_nfd_reported": true,
+      "fidelity_verified": true
+    },
+    {
+      "label": "Taittiriya Karshana Swara (U+1CDA)",
+      "input_char_count": 17,
+      "input_byte_count": 49,
+      "is_nfc_normalized": true,
+      "combining_marks": 9,
+      "vedic_accent_count": 4,
+      "has_zwj": false,
+      "has_zwnj": false,
+      "script_detected": "Deva",
+      "nfd_is_nfc_reported": true,
+      "nfd_is_nfd_reported": true,
+      "fidelity_verified": true
+    },
+    {
+      "label": "Malayalam Chillu / Conjunct with ZWJ",
+      "input_char_count": 4,
+      "input_byte_count": 12,
+      "is_nfc_normalized": true,
+      "combining_marks": 1,
+      "vedic_accent_count": 0,
+      "has_zwj": true,
+      "has_zwnj": false,
+      "script_detected": "Mlym",
+      "nfd_is_nfc_reported": true,
+      "nfd_is_nfd_reported": true,
+      "fidelity_verified": true
+    },
+    {
+      "label": "Bengali Ligature with ZWNJ",
+      "input_char_count": 4,
+      "input_byte_count": 12,
+      "is_nfc_normalized": true,
+      "combining_marks": 1,
+      "vedic_accent_count": 0,
+      "has_zwj": false,
+      "has_zwnj": true,
+      "script_detected": "Beng",
+      "nfd_is_nfc_reported": true,
+      "nfd_is_nfd_reported": true,
+      "fidelity_verified": true
+    },
+    {
+      "label": "Perso-Arabic Urdu with Aerab",
+      "input_char_count": 14,
+      "input_byte_count": 27,
+      "is_nfc_normalized": true,
+      "combining_marks": 6,
+      "vedic_accent_count": 0,
+      "has_zwj": false,
+      "has_zwnj": false,
+      "script_detected": "Arab",
+      "nfd_is_nfc_reported": true,
+      "nfd_is_nfd_reported": true,
+      "fidelity_verified": true
+    },
+    {
+      "label": "Santali Ol Chiki",
+      "input_char_count": 15,
+      "input_byte_count": 41,
+      "is_nfc_normalized": true,
+      "combining_marks": 0,
+      "vedic_accent_count": 0,
+      "has_zwj": false,
+      "has_zwnj": false,
+      "script_detected": "Olck",
+      "nfd_is_nfc_reported": true,
+      "nfd_is_nfd_reported": true,
+      "fidelity_verified": true
+    },
+    {
+      "label": "Meitei Mayek Manipuri",
+      "input_char_count": 9,
+      "input_byte_count": 25,
+      "is_nfc_normalized": true,
+      "combining_marks": 3,
+      "vedic_accent_count": 0,
+      "has_zwj": false,
+      "has_zwnj": false,
+      "script_detected": "Mtei",
+      "nfd_is_nfc_reported": true,
+      "nfd_is_nfd_reported": true,
+      "fidelity_verified": true
+    }
+  ],
+  "dependency_info": {
+    "package": "indic-transliteration",
+    "installed_version": "2.3.82",
+    "license": "MIT",
+    "license_compatibility": "Fully Compatible (MIT License permits commercial and non-commercial redistribution)",
+    "maintenance_status": "Active community package maintained by sanskrit-coders; widely adopted standard in digital Indology.",
+    "known_limitations": [
+      "Native indic-transliteration focuses primarily on Brahmic scripts and standard IAST/ITRANS/Harvard-Kyoto.",
+      "Non-Brahmic scripts (Ol Chiki, Meetei Mayek, Urdu) require dedicated phonetic adapters.",
+      "Tamil standard transliteration reduces consonants without subscript disambiguation (addressed by our specialized phonetic mode)."
+    ]
+  },
+  "performance_metrics": {
+    "iterations": 1000,
+    "environment": "Python 3.12.0 on win32",
+    "sample_text_chars": 82,
+    "transliteration": {
+      "total_time_seconds": 0.0833,
+      "ops_per_second": 11999.76,
+      "avg_latency_ms": 0.083
+    },
+    "script_detection": {
+      "total_time_seconds": 0.028,
+      "ops_per_second": 35684.46,
+      "avg_latency_ms": 0.028
+    },
+    "unicode_inspection": {
+      "total_time_seconds": 0.0336,
+      "ops_per_second": 29741.02,
+      "avg_latency_ms": 0.034
+    },
+    "akshara_collation": {
+      "total_time_seconds": 0.1192,
+      "ops_per_second": 8389.38,
+      "avg_latency_ms": 0.119
+    }
+  }
+}

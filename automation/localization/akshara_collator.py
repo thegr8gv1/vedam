@@ -43,7 +43,13 @@ class AksharaCollator:
     # Sanskrit / Devanagari Base Phonological Order
     # -----------------------------------------------------------------------
     DEVA_VOWELS = [
-        "अ", "आ", "इ", "ई", "उ", "ऊ", "ऋ", "ॠ", "ऌ", "ॡ", "ए", "ऐ", "ओ", "औ",
+        "अ", "आ", "इ", "ई", "उ", "ऊ", "ऋ", "ॠ", "ऌ", "ॡ",
+        "ऎ",  # U+090E Dravidian Short E (Telugu/Kannada/Malayalam short e)
+        "ए",  # U+090F Sanskrit / Long E
+        "ऐ",  # U+0910 Diphthong Ai
+        "ऒ",  # U+0912 Dravidian Short O (Telugu/Kannada/Malayalam short o)
+        "ओ",  # U+0913 Sanskrit / Long O
+        "औ",  # U+0914 Diphthong Au
     ]
     DEVA_MATRAS = {
         "": 0,          # Inherent 'a'
@@ -56,10 +62,12 @@ class AksharaCollator:
         "ॄ": 7,         # rr
         "ॢ": 8,         # l
         "ॣ": 9,         # ll
-        "े": 10,        # e
-        "ै": 11,        # ai
-        "ो": 12,        # o
-        "ौ": 13,        # au
+        "ॆ": 10,        # U+0946 Dravidian Short E matra
+        "े": 11,        # U+0947 Sanskrit / Long E matra
+        "ै": 12,        # U+0948 Ai matra
+        "ॊ": 13,        # U+094A Dravidian Short O matra
+        "ो": 14,        # U+094B Sanskrit / Long O matra
+        "ौ": 15,        # U+094C Au matra
     }
     DEVA_CONSONANTS = [
         # Ka-varga
