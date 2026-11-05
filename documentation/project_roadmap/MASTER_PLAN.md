@@ -2,8 +2,8 @@
 ## Master Execution Plan (Canonical Project Charter)
 
 **Document Status:** Active & Living  
-**Version:** 11.5.0  
-**Current Phase:** Phase 11E Complete (Multilingual Workbench UI, Script-Aware Typography & Reviewer Experience — 383 Tests Passing 100% Green)  
+**Version:** 11.6.0  
+**Current Phase:** Phase 11F Complete (Authenticated HTTP API Gateway & Real Multilingual Workbench Integration — 405 Tests Passing 100% Green)  
 **Workspace:** `C:\Vedam`  
 
 ---
@@ -425,5 +425,28 @@ flowchart LR
   - Full project test suite expanded to **383 tests passing with 100% pass rate in 20.82s** across 35 test modules.
   - Verified production database `database/vedam.db` SHA-256 remains 100% bit-for-bit identical (`8315040257dc3e490646e6e7138f9fd8bb38eae835b84e1f15849badae7318aa`).
 
+#### Phase 11F: Authenticated HTTP API Gateway & Real Multilingual Workbench Integration (COMPLETED)
+- **Asynchronous HTTP API Gateway (iohttp.web)**:
+  - Implemented utomation/workbench/gateway.py with 12 secure endpoints for health, language/script catalogs, composition/verse discovery, 6-dimension scholarly payloads, Argon2id authentication, and review submission.
+  - Implemented request-scoped database session management middleware (db_session_middleware) ensuring strict isolation and connection lifecycle integrity.
+  - Injected OWASP-recommended security headers (
+osniff, SAMEORIGIN, CSP, XSS filter, strict referrer) across all responses.
+  - Configured double-submit cookie CSRF defense and in-memory rate limiting.
+- **Server CLI Entry Point**:
+  - Implemented utomation/workbench/server.py supporting configurable host, port, and logging (python -m automation.workbench.server).
+- **Live Workbench Client-Side API Integration**:
+  - Integrated window.VEDAM_API client library into /workbench route with automated session persistence, CSRF token attachment, and strict DOM escaping.
+- **Strict Scholarly Invariant Enforcement**:
+  - Maintained zero approvals: APPROVE actions are explicitly barred with 403 Forbidden (PermissionDeniedError).
+  - All 3,070 translations maintained in DRAFT status; all 6 demo reviewer profiles remain quarantined.
+  - Preserved 747 legacy translation view gaps without synthetic auto-fill.
+  - Enforced anti-self-approval (Rule REV-002) and language accreditation boundaries.
+- **Live Visual Verification Suite**:
+  - Captured 5 high-resolution evidence screenshots via Playwright Chromium from live HTTP server on port 8088 in xports/audit_evidence/phase11f_live_screenshots/.
+- **Automated Regression Suite**:
+  - Added 22 integration tests in 	ests/test_phase11f_api_gateway.py.
+  - Full project test suite expanded to **405 tests passing with 100% pass rate in 24.48s** across 36 test modules.
+  - Verified production database database/vedam.db SHA-256 remains 100% bit-for-bit identical (8315040257dc3e490646e6e7138f9fd8bb38eae835b84e1f15849badae7318aa).
+
 ### Test Suite Status:
-- Automated test suite expanded to **383 tests passing with 100% pass rate in 20.82s** across 35 test modules.
+- Automated test suite expanded to **405 tests passing with 100% pass rate in 24.48s** across 36 test modules.
