@@ -31,6 +31,7 @@ from automation.workbench.auth import (
     PermissionDeniedError,
     PermissionGuard,
     RateLimitExceededError,
+    RateLimiter,
     generate_csrf_token,
     get_secure_cookie_config,
     global_rate_limiter,
@@ -68,6 +69,9 @@ logger = logging.getLogger("vedam.automation.workbench.gateway")
 
 COOKIE_NAME = "vedam_session"
 CSRF_HEADER = "X-CSRF-Token"
+
+# Administrative stage transition rate limiter (SEC-12A1-007): max 30 transitions / minute per session
+admin_transition_rate_limiter = RateLimiter()
 
 
 # ---------------------------------------------------------------------------
@@ -624,7 +628,8 @@ async def onboarding_apply_handler(request: web.Request) -> web.Response:
 
     reviewer_id = (data.get("reviewer_id") or "").strip()
     full_name = (data.get("full_name") or "").strip()
-    email = (data.get("email") or "").strip() or None
+    raw_email = data.get("email")
+    email = raw_email.strip().lower() if raw_email and isinstance(raw_email, str) and raw_email.strip() else None
     raw_password = (data.get("password") or "").strip()
     primary_role_str = (data.get("primary_role") or "").strip()
 
@@ -666,13 +671,17 @@ async def onboarding_apply_handler(request: web.Request) -> web.Response:
     )
 
     db = request["db"]
-    applicant = ReviewerOnboardingService.register_applicant(
-        session=db,
-        application_data=create_data,
-        raw_password=raw_password,
-        initial_stage=OnboardingStage.APPLICATION_RECEIVED.value,
-    )
-    db.commit()
+    try:
+        applicant = ReviewerOnboardingService.register_applicant(
+            session=db,
+            application_data=create_data,
+            raw_password=raw_password,
+            initial_stage=OnboardingStage.APPLICATION_RECEIVED.value,
+        )
+        db.commit()
+    except Exception:
+        db.rollback()
+        raise
 
     return web.json_response(
         {
@@ -765,10 +774,18 @@ async def onboarding_admin_queue_handler(request: web.Request) -> web.Response:
 async def onboarding_admin_transition_handler(request: web.Request) -> web.Response:
     """
     Administrative stage transition endpoint with Origin, Host, and CSRF validation,
-    anti-self-accreditation guards, and immutable audit logging.
+    anti-self-accreditation guards, rate limiting, and immutable audit logging.
     """
     validate_state_changing_security(request)
     reviewer = request.get("reviewer")
+    session_token = request.get("session_token") or (reviewer.reviewer_id if reviewer else "admin")
+
+    # Per-session administrative transition rate limiting (SEC-12A1-007)
+    admin_transition_rate_limiter.check_rate_limit(
+        f"admin_transition:{session_token}",
+        max_requests=30,
+        window_seconds=60,
+    )
 
     try:
         data = await request.json()
@@ -778,6 +795,7 @@ async def onboarding_admin_transition_handler(request: web.Request) -> web.Respo
     applicant_reviewer_id = (data.get("applicant_reviewer_id") or "").strip()
     target_stage = (data.get("target_stage") or "").strip()
     notes = (data.get("notes") or "").strip()
+    expected_current_stage = (data.get("expected_current_stage") or "").strip() or None
     verification_doc_hash = data.get("verification_doc_hash")
     verification_authority = data.get("verification_authority")
     verification_method = data.get("verification_method")
@@ -795,18 +813,23 @@ async def onboarding_admin_transition_handler(request: web.Request) -> web.Respo
         )
 
     db = request["db"]
-    applicant = ReviewerOnboardingService.transition_stage(
-        session=db,
-        admin_reviewer=reviewer,
-        applicant_reviewer_id=applicant_reviewer_id,
-        target_stage=target_stage,
-        notes=notes,
-        verification_doc_hash=verification_doc_hash,
-        verification_authority=verification_authority,
-        verification_method=verification_method,
-        scansion_score=scansion_score,
-    )
-    db.commit()
+    try:
+        applicant = ReviewerOnboardingService.transition_stage(
+            session=db,
+            admin_reviewer=reviewer,
+            applicant_reviewer_id=applicant_reviewer_id,
+            target_stage=target_stage,
+            notes=notes,
+            verification_doc_hash=verification_doc_hash,
+            verification_authority=verification_authority,
+            verification_method=verification_method,
+            scansion_score=scansion_score,
+            expected_current_stage=expected_current_stage,
+        )
+        db.commit()
+    except Exception:
+        db.rollback()
+        raise
 
     return web.json_response({
         "status": "TRANSITIONED",

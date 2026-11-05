@@ -9,7 +9,9 @@ from datetime import datetime, timezone
 import enum
 import json
 import logging
+import re
 from typing import Any, Dict, List, Optional, Set
+from sqlalchemy import func
 from sqlalchemy.orm import Session
 
 from automation.workbench.auth import AuthService, hash_password, PermissionGuard, PermissionDeniedError
@@ -31,6 +33,47 @@ logger = logging.getLogger("vedam.automation.workbench.onboarding")
 class OnboardingGovernanceError(Exception):
     """Raised when onboarding or credential verification rules are violated."""
     pass
+
+
+def sanitize_audit_notes(notes: Optional[str], max_length: int = 2000) -> str:
+    """
+    Sanitizes administrative and onboarding notes prior to persistence in ReviewerProfile
+    or serialization into AuthAuditLog.details (SEC-12A1-005).
+    - Enforces max length truncation to prevent denial-of-service / buffer bloating.
+    - Redacts government IDs: Aadhaar (12 digits), US SSN (9 digits), Passports.
+    - Redacts phone numbers.
+    - Redacts credentials, passwords, tokens, API keys.
+    """
+    if not notes:
+        return ""
+    cleaned = str(notes).strip()
+    if len(cleaned) > max_length:
+        cleaned = cleaned[:max_length] + "... [TRUNCATED]"
+
+    # 1. Credentials, passwords, API keys, bearer tokens
+    cleaned = re.sub(
+        r"(?i)\b(password|secret|api[_-]?key|token|bearer|credential)\b\s*[:=]\s*\S+",
+        r"\1: [REDACTED_SECRET]",
+        cleaned,
+    )
+
+    # 2. Aadhaar numbers: 12 digits (with optional spaces or dashes)
+    cleaned = re.sub(r"\b\d{4}[ -]\d{4}[ -]\d{4}\b|\b\d{12}\b", "[REDACTED_AADHAAR]", cleaned)
+
+    # 3. US SSN numbers: 3-2-4 digit format
+    cleaned = re.sub(r"\b\d{3}[ -]\d{2}[ -]\d{4}\b", "[REDACTED_SSN]", cleaned)
+
+    # 4. Passport numbers: 1 uppercase letter followed by 7-8 digits
+    cleaned = re.sub(r"\b[A-Z][0-9]{7,8}\b", "[REDACTED_PASSPORT]", cleaned)
+
+    # 5. Phone numbers: international + domestic formats
+    cleaned = re.sub(
+        r"(?:\+\d{1,3}[-.\s]*)?(?:\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}|\b\d{5}[-.\s]?\d{5}\b|\b\d{10}\b)",
+        "[REDACTED_PHONE]",
+        cleaned,
+    )
+
+    return cleaned
 
 
 class OnboardingStage(str, enum.Enum):
@@ -161,7 +204,22 @@ ALLOWED_TRANSITIONS: Dict[str, Set[str]] = {
 
 
 class ReviewerOnboardingService:
-    """Manages reviewer applications, multi-stage credential verification, and status transitions."""
+    """
+    Manages reviewer applications, multi-stage credential verification, and status transitions.
+    
+    Identity vs. Accreditation Semantics (SEC-12A1-004):
+    - is_credentials_verified: Confirms that academic degrees, diplomas, and scholastic dossiers
+      have been validated by an administrator holding CAN_VERIFY_CREDENTIALS authority.
+    - is_human_verified: Confirms formal living human scholar accreditation by the Editorial Board
+      (holding EDITORIAL_BOARD or ADMIN_ALL authority). Crucially, this does NOT merely denote
+      biological personhood.
+    - IDENTITY_VERIFIED stage: Verifies that an applicant is a real biological human being via
+      government identification documents. At this stage, both is_credentials_verified and
+      is_human_verified are explicitly set to False, and account_category remains
+      'SYNTHETIC_TEST_PERSONA' to prevent unaccredited individuals from asserting reviewer provenance.
+    - Demonstration Quarantine: Demonstration accounts (is_demonstration=True, status DEMO)
+      are permanently isolated and cannot satisfy downstream human review provenance under any condition.
+    """
 
     ROLE_COMPETENCY_REQUIREMENTS = {
         ReviewerRole.VEDIC_RECENSION: {
@@ -291,6 +349,18 @@ class ReviewerOnboardingService:
         if existing:
             raise OnboardingGovernanceError(f"Reviewer with ID '{reviewer_id}' already exists.")
 
+        # Duplicate Application & Email Normalization Guard (SEC-12A1-003)
+        raw_email = application_data.email
+        normalized_email = raw_email.strip().lower() if raw_email and isinstance(raw_email, str) and raw_email.strip() else None
+        if normalized_email:
+            existing_email = (
+                session.query(ReviewerProfile)
+                .filter(func.lower(func.trim(ReviewerProfile.email)) == normalized_email)
+                .first()
+            )
+            if existing_email:
+                raise OnboardingGovernanceError("An application with this email address has already been submitted.")
+
         pwd_hash = hash_password(raw_password)
 
         if initial_stage:
@@ -303,7 +373,7 @@ class ReviewerOnboardingService:
         profile = ReviewerProfile(
             reviewer_id=reviewer_id,
             full_name=application_data.full_name.strip(),
-            email=application_data.email.strip() if application_data.email else None,
+            email=normalized_email,
             primary_role=application_data.primary_role,
             secondary_roles=application_data.secondary_roles or [],
             areas_of_expertise=application_data.areas_of_expertise or [],
@@ -413,6 +483,7 @@ class ReviewerOnboardingService:
         verification_method: Optional[str] = None,
         scansion_score: Optional[float] = None,
         is_real_human: bool = False,
+        expected_current_stage: Optional[str] = None,
     ) -> ReviewerProfile:
         """
         Universal stage transition engine enforcing:
@@ -423,11 +494,23 @@ class ReviewerOnboardingService:
         5. Role-based administrative permissions
         6. Stage-specific state mutations and session revocations
         7. Append-only immutable audit logging
+        8. Optimistic Concurrency Control (SEC-12A1-002) via expected_current_stage
+        9. PII and Secret Sanitization (SEC-12A1-005)
         """
+        sanitized_notes = sanitize_audit_notes(notes)
         target_stage = target_stage.strip().upper()
         applicant = session.query(ReviewerProfile).filter_by(reviewer_id=applicant_reviewer_id).first()
         if not applicant:
             raise OnboardingGovernanceError(f"Applicant '{applicant_reviewer_id}' not found.")
+
+        # Optimistic Concurrency Control Guard (SEC-12A1-002)
+        if expected_current_stage is not None:
+            expected_norm = expected_current_stage.strip().upper()
+            if applicant.verification_status != expected_norm:
+                raise OnboardingGovernanceError(
+                    f"Concurrency Conflict: Applicant '{applicant_reviewer_id}' state has concurrently changed "
+                    f"from expected '{expected_norm}' to actual '{applicant.verification_status}'. Please refresh and retry."
+                )
 
         # Guard: Quarantined demo accounts cannot be accredited or verified
         if applicant.is_demonstration or getattr(applicant, "account_category", "") == "DEMONSTRATION_HARNESS" or applicant.verification_status == OnboardingStage.DEMO.value:
@@ -488,7 +571,7 @@ class ReviewerOnboardingService:
         if admin_reviewer:
             applicant.verified_by_admin = admin_reviewer.reviewer_id
 
-        note_prefix = f"[{target_stage}] {notes.strip()}" if notes else f"[{target_stage}] Stage updated"
+        note_prefix = f"[{target_stage}] {sanitized_notes.strip()}" if sanitized_notes else f"[{target_stage}] Stage updated"
         applicant.verification_notes = (
             f"{applicant.verification_notes}\n{note_prefix}" if applicant.verification_notes else note_prefix
         )
@@ -540,7 +623,7 @@ class ReviewerOnboardingService:
             AuthService.revoke_all_sessions(
                 session,
                 reviewer_id=applicant.id,
-                reason=f"Application rejected by {admin_reviewer.reviewer_id if admin_reviewer else 'admin'}: {notes}",
+                reason=f"Application rejected by {admin_reviewer.reviewer_id if admin_reviewer else 'admin'}: {sanitized_notes}",
             )
 
         elif target_stage == OnboardingStage.SUSPENDED.value:
@@ -548,7 +631,7 @@ class ReviewerOnboardingService:
             AuthService.revoke_all_sessions(
                 session,
                 reviewer_id=applicant.id,
-                reason=f"Account suspended by {admin_reviewer.reviewer_id if admin_reviewer else 'admin'}: {notes}",
+                reason=f"Account suspended by {admin_reviewer.reviewer_id if admin_reviewer else 'admin'}: {sanitized_notes}",
             )
 
         elif target_stage == OnboardingStage.WITHDRAWN.value:
@@ -556,7 +639,7 @@ class ReviewerOnboardingService:
             AuthService.revoke_all_sessions(
                 session,
                 reviewer_id=applicant.id,
-                reason=f"Application withdrawn: {notes}",
+                reason=f"Application withdrawn: {sanitized_notes}",
             )
 
         session.flush()
@@ -568,7 +651,7 @@ class ReviewerOnboardingService:
             "admin_id": admin_reviewer.reviewer_id if admin_reviewer else "SYSTEM",
             "from_stage": current_stage,
             "to_stage": target_stage,
-            "notes": notes,
+            "notes": sanitized_notes,
             "doc_hash": verification_doc_hash,
             "authority": verification_authority,
             "scansion_score": scansion_score,
@@ -660,10 +743,29 @@ class ReviewerOnboardingService:
         """
         Administratively reviews and approves/rejects an applicant's scholarly credentials.
         Maintains backwards compatibility with Phase 8 & Phase 9 interfaces while enforcing
-        anti-self-accreditation and demonstration quarantine rules.
+        anti-self-accreditation, demonstration quarantine rules, and Editorial Board authority
+        requirements for living scholar accreditation (SEC-12A1-001).
         """
-        # Guard: Check that admin has permission
+        # Guard: Check that admin has credential verification permission
         PermissionGuard.require_permission(admin_reviewer, "CAN_VERIFY_CREDENTIALS")
+
+        # PII & Secret Sanitization (SEC-12A1-005)
+        sanitized_notes = sanitize_audit_notes(verification_notes)
+
+        # Accreditation Authorization Guard (SEC-12A1-001):
+        # Setting is_real_human=True grants living scholar accreditation (REAL_HUMAN_SCHOLAR).
+        # This requires EDITORIAL_BOARD or ADMIN_ALL authority, not merely CAN_VERIFY_CREDENTIALS.
+        if approve and is_real_human:
+            perms = admin_reviewer.permissions or []
+            if (
+                admin_reviewer.primary_role != ReviewerRole.EDITORIAL_BOARD
+                and "EDITORIAL_BOARD" not in perms
+                and "ADMIN_ALL" not in perms
+            ):
+                raise PermissionDeniedError(
+                    f"Administrator '{admin_reviewer.reviewer_id}' lacks Editorial Board authority "
+                    "to accredit living human scholar status via verify_credentials (SEC-12A1-001)."
+                )
 
         applicant = session.query(ReviewerProfile).filter_by(reviewer_id=applicant_reviewer_id).first()
         if not applicant:
@@ -687,7 +789,7 @@ class ReviewerOnboardingService:
                 applicant.verification_status = OnboardingStage.CREDENTIALS_VERIFIED.value
             applicant.verified_by_admin = admin_reviewer.reviewer_id
             applicant.verification_method = verification_method
-            applicant.verification_notes = verification_notes
+            applicant.verification_notes = sanitized_notes
             applicant.verification_date = datetime.now(timezone.utc)
             applicant.verification_doc_hash = verification_doc_hash
             applicant.verification_authority = verification_authority
@@ -712,7 +814,7 @@ class ReviewerOnboardingService:
             applicant.is_human_verified = False
             applicant.verification_status = OnboardingStage.REJECTED.value
             applicant.verified_by_admin = admin_reviewer.reviewer_id
-            applicant.verification_notes = verification_notes
+            applicant.verification_notes = sanitized_notes
             applicant.verification_date = datetime.now(timezone.utc)
             event_type = "CREDENTIALS_REJECTED"
             logger.info("Admin %s rejected credentials for %s", admin_reviewer.reviewer_id, applicant.reviewer_id)
@@ -724,7 +826,7 @@ class ReviewerOnboardingService:
             session,
             event_type=event_type,
             reviewer_id=applicant.id,
-            details=f"Admin: {admin_reviewer.reviewer_id} | Category: {applicant.account_category} | Method: {verification_method} | Notes: {verification_notes}",
+            details=f"Admin: {admin_reviewer.reviewer_id} | Category: {applicant.account_category} | Method: {verification_method} | Notes: {sanitized_notes}",
         )
         return applicant
 
@@ -975,7 +1077,17 @@ class ReviewerOnboardingService:
         admin_reviewer: ReviewerProfile,
         applicant_reviewer_id: str,
     ) -> List[Dict[str, Any]]:
-        """Retrieves the immutable audit log history for an applicant."""
+        """
+        Retrieves the immutable audit log history for an applicant.
+        
+        Audit Integrity & Immutability Architecture (SEC-12A1-006):
+        - Audit records in AuthAuditLog are append-only.
+        - The application layer exposes zero UPDATE or DELETE interfaces for AuthAuditLog.
+        - Known Architectural Limitation: The current SQLite database schema does not register
+          engine-level BEFORE UPDATE OR DELETE triggers to abort modifications at the C/driver level.
+          Full write-only triggers are slated for a future phase when database schema migrations
+          are authorized. Application-level immutability is strictly enforced in the interim.
+        """
         perms = admin_reviewer.permissions or []
         if (
             "CAN_VERIFY_CREDENTIALS" not in perms
