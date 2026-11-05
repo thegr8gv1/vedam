@@ -10,11 +10,16 @@ import '../screens/library/library_screen.dart';
 import '../screens/mantras/mantras_screen.dart';
 import '../screens/sadhana/sadhana_screen.dart';
 import '../screens/settings/settings_screen.dart';
+import '../../data/repositories/panchangam_repository.dart';
+import '../../state/panchangam_state.dart';
+import '../screens/panchangam/panchangam_screen.dart';
 
 class MainScreen extends StatefulWidget {
   final ScriptureRepository repository;
   final MantraRepository? mantraRepository;
   final AudioState? audioState;
+  final PanchangamRepository? panchangamRepository;
+  final PanchangamState? panchangamState;
   final AppState appState;
   final int initialIndex;
 
@@ -23,6 +28,8 @@ class MainScreen extends StatefulWidget {
     required this.repository,
     this.mantraRepository,
     this.audioState,
+    this.panchangamRepository,
+    this.panchangamState,
     required this.appState,
     this.initialIndex = 0,
   });
@@ -35,6 +42,8 @@ class _MainScreenState extends State<MainScreen> {
   late int _currentIndex;
   late final MantraRepository _mantraRepository;
   late final AudioState _audioState;
+  late final PanchangamRepository _panchangamRepository;
+  late final PanchangamState _panchangamState;
 
   @override
   void initState() {
@@ -43,6 +52,21 @@ class _MainScreenState extends State<MainScreen> {
     _mantraRepository = widget.mantraRepository ?? MantraRepositoryImpl();
     _audioState = widget.audioState ??
         AudioState(audioService: AudioPlaybackServiceImpl());
+    _panchangamRepository = widget.panchangamRepository ?? PanchangamRepositoryImpl();
+    _panchangamState = widget.panchangamState ??
+        PanchangamState(repository: _panchangamRepository);
+  }
+
+  void _openPanchangamScreen() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => PanchangamScreen(
+          state: _panchangamState,
+          repository: _panchangamRepository,
+        ),
+      ),
+    );
   }
 
   void _onTabSelected(int index) {
@@ -71,6 +95,8 @@ class _MainScreenState extends State<MainScreen> {
         appState: widget.appState,
         onNavigateToTab: _onTabSelected,
         onOpenMantras: _openMantrasScreen,
+        onOpenPanchangam: _openPanchangamScreen,
+        panchangamState: _panchangamState,
       ),
       LibraryScreen(
         repository: widget.repository,
@@ -79,6 +105,7 @@ class _MainScreenState extends State<MainScreen> {
       SadhanaScreen(
         appState: widget.appState,
         onOpenMantras: _openMantrasScreen,
+        onOpenPanchangam: _openPanchangamScreen,
       ),
       FavoritesScreen(
         repository: widget.repository,

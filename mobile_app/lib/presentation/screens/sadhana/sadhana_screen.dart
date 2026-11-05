@@ -8,11 +8,13 @@ import '../../widgets/section_header.dart';
 class SadhanaScreen extends StatefulWidget {
   final AppState appState;
   final VoidCallback? onOpenMantras;
+  final VoidCallback? onOpenPanchangam;
 
   const SadhanaScreen({
     super.key,
     required this.appState,
     this.onOpenMantras,
+    this.onOpenPanchangam,
   });
 
   @override
@@ -104,6 +106,59 @@ class _SadhanaScreenState extends State<SadhanaScreen> {
                   ),
                 ),
               ),
+            if (widget.onOpenPanchangam != null)
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+                child: Card(
+                  elevation: 0,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                    side: BorderSide(
+                      color: AppColors.goldPrimary.withAlpha(120),
+                      width: 1,
+                    ),
+                  ),
+                  color: isDark ? AppColors.nightSurfaceElevated : AppColors.creamBackground,
+                  child: InkWell(
+                    onTap: widget.onOpenPanchangam,
+                    borderRadius: BorderRadius.circular(16),
+                    child: Padding(
+                      padding: const EdgeInsets.all(16),
+                      child: Row(
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                              color: AppColors.goldPrimary,
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: const Icon(Icons.wb_sunny_outlined, color: Colors.white, size: 24),
+                          ),
+                          const SizedBox(width: 14),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Text(
+                                  'Daily Panchangam & Muhurtas',
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                                ),
+                                const SizedBox(height: 2),
+                                Text(
+                                  'Location-Aware Tithi, Nakshatra & Rahu Kalam',
+                                  style: AppTextStyles.caption(isDark),
+                                ),
+                              ],
+                            ),
+                          ),
+                          const Icon(Icons.arrow_forward_ios, size: 14, color: AppColors.goldPrimary),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
 
             // 1. Japa Mala Counter Card
             Card(

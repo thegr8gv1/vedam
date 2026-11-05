@@ -14,12 +14,15 @@ import '../../widgets/section_header.dart';
 import '../library/scripture_detail_screen.dart';
 import 'widgets/daily_verse_card.dart';
 import 'widgets/panchangam_preview_card.dart';
+import '../../../state/panchangam_state.dart';
 
 class HomeScreen extends StatelessWidget {
   final ScriptureRepository repository;
   final AppState appState;
   final Function(int tabIndex) onNavigateToTab;
   final VoidCallback? onOpenMantras;
+  final VoidCallback? onOpenPanchangam;
+  final PanchangamState? panchangamState;
 
   const HomeScreen({
     super.key,
@@ -27,6 +30,8 @@ class HomeScreen extends StatelessWidget {
     required this.appState,
     required this.onNavigateToTab,
     this.onOpenMantras,
+    this.onOpenPanchangam,
+    this.panchangamState,
   });
 
   @override
@@ -124,7 +129,7 @@ class HomeScreen extends StatelessWidget {
                 ),
 
                 // 3. Today's Panchangam Preview
-                PanchangamPreviewCard(darshan: darshan),
+                PanchangamPreviewCard(darshan: darshan, panchangamState: panchangamState, onTap: onOpenPanchangam),
 
                 // 4. Quick Portals Grid
                 SectionHeader(
