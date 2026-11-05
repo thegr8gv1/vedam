@@ -48,11 +48,74 @@ class _MantrasScreenState extends State<MantrasScreen> {
     return list;
   }
 
+  void _showVaultArchiveDialog(BuildContext context, MantraItem mantra, List<MantraItem> currentList) {
+    showDialog<void>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        title: const Row(
+          children: [
+            Icon(Icons.inventory_2_outlined, color: Colors.orange),
+            SizedBox(width: 8),
+            Expanded(child: Text('Desktop Vault Archive')),
+          ],
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              '${mantra.title} (${mantra.deity})',
+              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+            ),
+            const SizedBox(height: 6),
+            Text(
+              'Master File: ${mantra.filename}\nDuration: ${mantra.formattedDuration}',
+              style: const TextStyle(fontSize: 12, color: AppColors.saffronPrimary),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              'This authentic recording is preserved in the master desktop vault (C:\\ttv youtube premium\\Mantras\\). To keep the mobile app size compact (<100MB), 31 core recordings are bundled offline, and this recording is not packaged with audio.\n\nYou can chant using the digital Japa Mala counter in Manual Chanting mode.',
+              style: TextStyle(fontSize: 12.5, height: 1.4),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Dismiss'),
+          ),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppColors.saffronPrimary,
+              foregroundColor: Colors.white,
+            ),
+            onPressed: () {
+              Navigator.pop(ctx);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => MantraPlayerScreen(
+                    mantra: mantra,
+                    audioState: widget.audioState,
+                    playlist: currentList,
+                  ),
+                ),
+              );
+            },
+            child: const Text('Open Manual Japa Counter'),
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final allCollections = ['All', ...widget.repository.getAllCollections()];
     final mantras = _getFilteredMantras();
+    final bundledCount = widget.repository.getAllMantras().where((m) => m.isBundled).length;
 
     return ListenableBuilder(
       listenable: widget.audioState,
@@ -147,7 +210,7 @@ class _MantrasScreenState extends State<MantrasScreen> {
                 ),
               ),
 
-              // Mantras Count Header
+              // Mantras Count Header with Now Chanting Indicator
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
                 child: Row(
@@ -170,6 +233,7 @@ class _MantrasScreenState extends State<MantrasScreen> {
                               builder: (_) => MantraPlayerScreen(
                                 mantra: widget.audioState.activeMantra!,
                                 audioState: widget.audioState,
+                                playlist: mantras,
                               ),
                             ),
                           );
@@ -245,10 +309,12 @@ class _MantrasScreenState extends State<MantrasScreen> {
                                   child: Icon(
                                     isCurrentlyActive && widget.audioState.isPlaying
                                         ? Icons.equalizer
-                                        : Icons.music_note,
+                                        : (mantra.isBundled ? Icons.music_note : Icons.touch_app),
                                     color: isCurrentlyActive
                                         ? Colors.white
-                                        : (isDark ? AppColors.goldLight : AppColors.goldDark),
+                                        : (mantra.isBundled
+                                            ? (isDark ? AppColors.goldLight : AppColors.goldDark)
+                                            : Colors.orange),
                                     size: 22,
                                   ),
                                 ),
@@ -265,6 +331,18 @@ class _MantrasScreenState extends State<MantrasScreen> {
                                     const Padding(
                                       padding: EdgeInsets.only(left: 4),
                                       child: Icon(Icons.offline_pin, size: 14, color: Colors.green),
+                                    )
+                                  else
+                                    Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                                      decoration: BoxDecoration(
+                                        color: Colors.orange.withAlpha(20),
+                                        borderRadius: BorderRadius.circular(6),
+                                      ),
+                                      child: const Text(
+                                        'Vault',
+                                        style: TextStyle(fontSize: 9, fontWeight: FontWeight.bold, color: Colors.orange),
+                                      ),
                                     ),
                                 ],
                               ),
@@ -314,44 +392,64 @@ class _MantrasScreenState extends State<MantrasScreen> {
                                       size: 20,
                                       color: isFav ? Colors.red : null,
                                     ),
+                                    tooltip: isFav ? 'Remove Favorite' : 'Save Favorite',
                                     onPressed: () => widget.audioState.toggleFavorite(mantra.id),
                                   ),
-                                  IconButton(
-                                    icon: Icon(
-                                      isCurrentlyActive && widget.audioState.isPlaying
-                                          ? Icons.pause_circle_filled
-                                          : Icons.play_circle_fill,
-                                      color: AppColors.saffronPrimary,
-                                      size: 32,
-                                    ),
-                                    onPressed: () {
-                                      if (isCurrentlyActive && widget.audioState.isPlaying) {
-                                        widget.audioState.pause();
-                                      } else {
-                                        Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                            builder: (_) => MantraPlayerScreen(
-                                              mantra: mantra,
-                                              audioState: widget.audioState,
+                                  // Playable button for bundled; Info/Manual button for unbundled
+                                  if (mantra.isBundled)
+                                    IconButton(
+                                      icon: Icon(
+                                        isCurrentlyActive && widget.audioState.isPlaying
+                                            ? Icons.pause_circle_filled
+                                            : Icons.play_circle_fill,
+                                        color: AppColors.saffronPrimary,
+                                        size: 32,
+                                      ),
+                                      tooltip: isCurrentlyActive && widget.audioState.isPlaying ? 'Pause' : 'Play Offline',
+                                      onPressed: () {
+                                        if (isCurrentlyActive && widget.audioState.isPlaying) {
+                                          widget.audioState.pause();
+                                        } else {
+                                          Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (_) => MantraPlayerScreen(
+                                                mantra: mantra,
+                                                audioState: widget.audioState,
+                                                playlist: mantras,
+                                              ),
                                             ),
-                                          ),
-                                        );
-                                      }
-                                    },
-                                  ),
+                                          );
+                                        }
+                                      },
+                                    )
+                                  else
+                                    IconButton(
+                                      icon: const Icon(
+                                        Icons.info_outline,
+                                        color: Colors.orange,
+                                        size: 26,
+                                      ),
+                                      tooltip: 'Vault Archive Information',
+                                      onPressed: () => _showVaultArchiveDialog(context, mantra, mantras),
+                                    ),
                                 ],
                               ),
                               onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (_) => MantraPlayerScreen(
-                                      mantra: mantra,
-                                      audioState: widget.audioState,
+                                if (mantra.isBundled) {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (_) => MantraPlayerScreen(
+                                        mantra: mantra,
+                                        audioState: widget.audioState,
+                                        playlist: mantras,
+                                      ),
                                     ),
-                                  ),
-                                );
+                                  );
+                                } else {
+                                  _showVaultArchiveDialog(context, mantra, mantras);
+                                }
                               },
                             ),
                           );

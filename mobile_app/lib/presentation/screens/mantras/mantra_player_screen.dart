@@ -9,11 +9,13 @@ import 'package:vedam_app/state/audio_state.dart';
 class MantraPlayerScreen extends StatefulWidget {
   final MantraItem mantra;
   final AudioState audioState;
+  final List<MantraItem>? playlist;
 
   const MantraPlayerScreen({
     super.key,
     required this.mantra,
     required this.audioState,
+    this.playlist,
   });
 
   @override
@@ -27,8 +29,19 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
   void initState() {
     super.initState();
     widget.audioState.addListener(_onAudioStateChanged);
+
+    if (widget.playlist != null && widget.playlist!.isNotEmpty) {
+      widget.audioState.setPlaylist(widget.playlist!);
+    }
+
     if (widget.audioState.activeMantra?.id != widget.mantra.id) {
-      widget.audioState.playMantra(widget.mantra, resetSessionCount: true);
+      if (widget.mantra.isBundled) {
+        widget.audioState.playMantra(widget.mantra, resetSessionCount: true);
+      } else {
+        // Set active mantra in state without triggering audio playback
+        // to maintain clean manual Japa mode
+        widget.audioState.stop();
+      }
     }
   }
 
@@ -149,6 +162,143 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
     JapaTargetModal.show(context, widget.audioState);
   }
 
+  void _cyclePlaybackSpeed() {
+    final speeds = [0.75, 1.0, 1.25, 1.5];
+    final current = widget.audioState.playbackSpeed;
+    final nextIndex = (speeds.indexOf(current) + 1) % speeds.length;
+    final nextSpeed = speeds[nextIndex];
+    widget.audioState.setPlaybackSpeed(nextSpeed);
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text('Playback speed set to ${nextSpeed}x'),
+        duration: const Duration(seconds: 1),
+      ),
+    );
+  }
+
+  void _showSleepTimerModal(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    showModalBottomSheet<void>(
+      context: context,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+      ),
+      builder: (ctx) {
+        return Container(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Row(
+                children: [
+                  const Icon(Icons.bedtime, color: AppColors.saffronPrimary),
+                  const SizedBox(width: 8),
+                  Text(
+                    'Sleep Timer',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: isDark ? AppColors.goldLight : AppColors.goldDark,
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 8),
+              const Text(
+                'Playback pauses automatically when the timer expires.',
+                style: TextStyle(fontSize: 12),
+              ),
+              const SizedBox(height: 16),
+              Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: [
+                  ChoiceChip(
+                    label: const Text('Off'),
+                    selected: !widget.audioState.isSleepTimerActive,
+                    onSelected: (val) {
+                      widget.audioState.cancelSleepTimer();
+                      Navigator.pop(ctx);
+                    },
+                  ),
+                  for (final mins in [5, 10, 15, 30, 60])
+                    ChoiceChip(
+                      label: Text('$mins min'),
+                      selected: widget.audioState.isSleepTimerActive &&
+                          widget.audioState.sleepTimerRemaining?.inMinutes == mins,
+                      onSelected: (val) {
+                        widget.audioState.setSleepTimer(Duration(minutes: mins));
+                        Navigator.pop(ctx);
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(content: Text('Sleep timer set for $mins minutes')),
+                        );
+                      },
+                    ),
+                ],
+              ),
+              const SizedBox(height: 12),
+              ListTile(
+                contentPadding: EdgeInsets.zero,
+                leading: const Icon(Icons.flag_outlined, color: AppColors.saffronPrimary),
+                title: const Text('Stop at Japa Target Completion', style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold)),
+                subtitle: const Text('Pauses audio as soon as the chosen mala count is reached.', style: TextStyle(fontSize: 11)),
+                onTap: () {
+                  widget.audioState.setAutoPauseAtTarget(true);
+                  Navigator.pop(ctx);
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Audio will pause when Japa target is completed')),
+                  );
+                },
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  void _showUnavailableRecordingDialog(BuildContext context, MantraItem mantra) {
+    showDialog<void>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        title: const Row(
+          children: [
+            Icon(Icons.inventory_2_outlined, color: Colors.orange),
+            SizedBox(width: 8),
+            Expanded(child: Text('Vault Archive Recording')),
+          ],
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Recording: ${mantra.filename}\nDuration: ${mantra.formattedDuration} (1 repetition, 48 kHz)',
+              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              'This master recording is preserved in the desktop vault (C:\\ttv youtube premium\\Mantras\\). To keep the mobile app size compact (<100MB), it is not bundled for offline audio playback in this release.\n\nYou can chant using the interactive Japa Mala counter in Manual Chanting mode.',
+              style: TextStyle(fontSize: 13, height: 1.4),
+            ),
+          ],
+        ),
+        actions: [
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppColors.saffronPrimary,
+              foregroundColor: Colors.white,
+            ),
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Use Manual Counter'),
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
@@ -157,18 +307,29 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
       listenable: widget.audioState,
       builder: (context, _) {
         final state = widget.audioState;
-        final isFav = state.isFavorite(widget.mantra.id);
+        // Use active mantra from state if available (for next/previous navigation), else initial mantra
+        final currentMantra = state.activeMantra ?? widget.mantra;
+        final isFav = state.isFavorite(currentMantra.id);
 
         return Scaffold(
           appBar: AppBar(
-            title: Text(widget.mantra.title),
+            title: Text(currentMantra.title),
             actions: [
+              IconButton(
+                icon: Icon(
+                  widget.audioState.isSleepTimerActive ? Icons.bedtime : Icons.bedtime_outlined,
+                  color: widget.audioState.isSleepTimerActive ? AppColors.saffronPrimary : null,
+                ),
+                tooltip: 'Sleep Timer',
+                onPressed: () => _showSleepTimerModal(context),
+              ),
               IconButton(
                 icon: Icon(
                   isFav ? Icons.favorite : Icons.favorite_border,
                   color: isFav ? Colors.red : null,
                 ),
-                onPressed: () => state.toggleFavorite(widget.mantra.id),
+                tooltip: isFav ? 'Remove Favorite' : 'Save Favorite',
+                onPressed: () => state.toggleFavorite(currentMantra.id),
               ),
             ],
           ),
@@ -189,7 +350,7 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                         border: Border.all(color: AppColors.saffronPrimary),
                       ),
                       child: Text(
-                        widget.mantra.deity.toUpperCase(),
+                        currentMantra.deity.toUpperCase(),
                         style: const TextStyle(
                           fontSize: 11,
                           fontWeight: FontWeight.bold,
@@ -201,26 +362,30 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                       decoration: BoxDecoration(
-                        color: widget.mantra.isBundled
+                        color: currentMantra.isBundled
                             ? Colors.green.withAlpha(30)
                             : Colors.orange.withAlpha(30),
                         borderRadius: BorderRadius.circular(12),
+                        border: Border.all(
+                          color: currentMantra.isBundled ? Colors.green : Colors.orange,
+                          width: 1.0,
+                        ),
                       ),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Icon(
-                            widget.mantra.isBundled ? Icons.offline_pin : Icons.storage,
+                            currentMantra.isBundled ? Icons.offline_pin : Icons.storage,
                             size: 14,
-                            color: widget.mantra.isBundled ? Colors.green : Colors.orange,
+                            color: currentMantra.isBundled ? Colors.green : Colors.orange,
                           ),
                           const SizedBox(width: 4),
                           Text(
-                            widget.mantra.isBundled ? 'Offline Bundled' : 'Local Vault',
+                            currentMantra.isBundled ? 'Offline Bundled' : 'Vault Archive',
                             style: TextStyle(
                               fontSize: 10,
                               fontWeight: FontWeight.bold,
-                              color: widget.mantra.isBundled ? Colors.green : Colors.orange,
+                              color: currentMantra.isBundled ? Colors.green : Colors.orange,
                             ),
                           ),
                         ],
@@ -228,7 +393,52 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                     ),
                   ],
                 ),
-                const SizedBox(height: 16),
+                const SizedBox(height: 14),
+
+                // Vault Archive Notice if unbundled
+                if (!currentMantra.isBundled) ...[
+                  Container(
+                    padding: const EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                      color: Colors.amber.withAlpha(20),
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(color: Colors.amber.shade700),
+                    ),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Icon(Icons.info_outline, size: 20, color: Colors.amber),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text(
+                                'VAULT ARCHIVE • MANUAL JAPA MODE',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 11,
+                                  color: Colors.amber,
+                                  letterSpacing: 0.6,
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              Text(
+                                'Audio recording (${currentMantra.filename}) is archived in the desktop vault. The digital Japa Mala counter is fully functional in Manual Chanting mode.',
+                                style: TextStyle(
+                                  fontSize: 11,
+                                  height: 1.4,
+                                  color: isDark ? AppColors.textLightSecondary : AppColors.textDarkSecondary,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 14),
+                ],
 
                 // Sanskrit Mantra Card
                 Container(
@@ -258,7 +468,7 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                       ),
                       const SizedBox(height: 12),
                       Text(
-                        widget.mantra.mantraText,
+                        currentMantra.mantraText,
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 20,
@@ -270,7 +480,48 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                     ],
                   ),
                 ),
-                const SizedBox(height: 16),
+                const SizedBox(height: 14),
+
+                // Explicit Counting Mode Banner
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+                  decoration: BoxDecoration(
+                    color: state.isAudioChantingMode
+                        ? AppColors.saffronPrimary.withAlpha(20)
+                        : (isDark ? AppColors.nightSurfaceElevated : AppColors.creamBackground),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: state.isAudioChantingMode
+                          ? AppColors.saffronPrimary
+                          : (isDark ? AppColors.nightBorder : AppColors.chandanBorder),
+                    ),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        state.isAudioChantingMode ? Icons.volume_up : Icons.touch_app,
+                        size: 15,
+                        color: state.isAudioChantingMode ? AppColors.saffronPrimary : AppColors.goldDark,
+                      ),
+                      const SizedBox(width: 8),
+                      Text(
+                        state.isAudioChantingMode
+                            ? 'COUNTING MODE: Audio-Assisted (+1 on completed recording)'
+                            : 'COUNTING MODE: Manual Touch (+1 on bead tap)',
+                        style: TextStyle(
+                          fontSize: 11,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 0.4,
+                          color: state.isAudioChantingMode
+                              ? AppColors.saffronPrimary
+                              : (isDark ? AppColors.goldLight : AppColors.goldDark),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 14),
 
                 // Active Target Banner & Target Selector Button
                 Container(
@@ -284,7 +535,7 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                   ),
                   child: Row(
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.track_changes,
                         size: 20,
                         color: AppColors.saffronPrimary,
@@ -331,53 +582,77 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                 ),
                 const SizedBox(height: 16),
 
-                // Audio Progress Bar
-                Column(
-                  children: [
-                    Slider(
-                      value: state.position.inMilliseconds
-                          .clamp(0, state.duration.inMilliseconds > 0 ? state.duration.inMilliseconds : 1)
-                          .toDouble(),
-                      max: (state.duration.inMilliseconds > 0 ? state.duration.inMilliseconds : 1).toDouble(),
-                      activeColor: AppColors.saffronPrimary,
-                      onChanged: (val) {
-                        state.seek(Duration(milliseconds: val.round()));
-                      },
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            _formatDuration(state.position),
-                            style: const TextStyle(fontSize: 11),
-                          ),
-                          Text(
-                            _formatDuration(state.duration),
-                            style: const TextStyle(fontSize: 11),
-                          ),
-                        ],
+                // Audio Progress Bar (Active for bundled recordings)
+                if (currentMantra.isBundled) ...[
+                  Column(
+                    children: [
+                      Slider(
+                        value: state.position.inMilliseconds
+                            .clamp(0, state.duration.inMilliseconds > 0 ? state.duration.inMilliseconds : 1)
+                            .toDouble(),
+                        max: (state.duration.inMilliseconds > 0 ? state.duration.inMilliseconds : 1).toDouble(),
+                        activeColor: AppColors.saffronPrimary,
+                        onChanged: (val) {
+                          state.seek(Duration(milliseconds: val.round()));
+                        },
                       ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 10),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              _formatDuration(state.position),
+                              style: const TextStyle(fontSize: 11),
+                            ),
+                            Text(
+                              _formatDuration(state.duration),
+                              style: const TextStyle(fontSize: 11),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 10),
+                ],
 
-                // Playback Controls Row
+                // Playback & Playlist Controls Row
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    // Repeat Mode Toggle
                     IconButton(
-                      icon: const Icon(Icons.restart_alt, size: 28),
-                      tooltip: 'Reset Session',
-                      onPressed: () => state.resetSession(),
+                      icon: Icon(
+                        state.repeatMode == DevotionalRepeatMode.repeatOne
+                            ? Icons.repeat_one
+                            : (state.repeatMode == DevotionalRepeatMode.sequential
+                                ? Icons.playlist_play
+                                : Icons.repeat),
+                        color: state.repeatMode != DevotionalRepeatMode.repeatOff
+                            ? AppColors.saffronPrimary
+                            : null,
+                      ),
+                      tooltip: 'Repeat: ${state.repeatMode.name}',
+                      onPressed: () => state.cycleRepeatMode(),
                     ),
-                    const SizedBox(width: 24),
+                    const SizedBox(width: 8),
+
+                    // Previous Mantra in Playlist
+                    IconButton(
+                      icon: const Icon(Icons.skip_previous, size: 28),
+                      tooltip: 'Previous Mantra',
+                      onPressed: state.hasPreviousMantra
+                          ? () => state.playPreviousMantra()
+                          : null,
+                    ),
+                    const SizedBox(width: 12),
+
+                    // Primary Play/Pause Button
                     Container(
-                      decoration: const BoxDecoration(
+                      decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: AppColors.saffronPrimary,
+                        color: currentMantra.isBundled ? AppColors.saffronPrimary : Colors.grey,
                       ),
                       child: IconButton(
                         iconSize: 42,
@@ -386,21 +661,55 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                           state.isPlaying ? Icons.pause : Icons.play_arrow,
                         ),
                         onPressed: () {
+                          if (!currentMantra.isBundled) {
+                            _showUnavailableRecordingDialog(context, currentMantra);
+                            return;
+                          }
+
                           if (state.isPlaying) {
                             state.pause();
                           } else if (state.isPaused) {
                             state.resume();
                           } else {
-                            state.playMantra(widget.mantra, resetSessionCount: false);
+                            state.playMantra(currentMantra, resetSessionCount: false);
                           }
                         },
                       ),
                     ),
-                    const SizedBox(width: 24),
+                    const SizedBox(width: 12),
+
+                    // Next Mantra in Playlist
                     IconButton(
-                      icon: const Icon(Icons.stop, size: 28),
-                      tooltip: 'Stop',
-                      onPressed: () => state.stop(),
+                      icon: const Icon(Icons.skip_next, size: 28),
+                      tooltip: 'Next Mantra',
+                      onPressed: state.hasNextMantra
+                          ? () => state.playNextMantra()
+                          : null,
+                    ),
+                    const SizedBox(width: 8),
+
+                    // Playback Speed Toggle
+                    InkWell(
+                      borderRadius: BorderRadius.circular(8),
+                      onTap: _cyclePlaybackSpeed,
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+                        decoration: BoxDecoration(
+                          color: isDark ? AppColors.nightSurfaceElevated : AppColors.creamBackground,
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(
+                            color: isDark ? AppColors.nightBorder : AppColors.chandanBorder,
+                          ),
+                        ),
+                        child: Text(
+                          '${state.playbackSpeed}x',
+                          style: const TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                            color: AppColors.saffronPrimary,
+                          ),
+                        ),
+                      ),
                     ),
                   ],
                 ),
@@ -464,7 +773,6 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                       spacing: 8,
                       runSpacing: 8,
                       children: [
-                        // Includes 1 (for testing/quick single chant) and traditional presets
                         for (final count in [1, 11, 21, 27, 54, 108, 111, 1008])
                           ChoiceChip(
                             label: Text('$count'),
@@ -489,10 +797,23 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                     ),
                   ],
                 ),
-                const SizedBox(height: 24),
+                const SizedBox(height: 20),
+
+                // Reset Session Button
+                Center(
+                  child: TextButton.icon(
+                    icon: const Icon(Icons.restart_alt, size: 18),
+                    label: const Text('Reset Japa Session'),
+                    style: TextButton.styleFrom(
+                      foregroundColor: isDark ? AppColors.textLightMuted : AppColors.textDarkMuted,
+                    ),
+                    onPressed: () => state.resetSession(),
+                  ),
+                ),
+                const SizedBox(height: 16),
 
                 // Spiritual Significance Container
-                if (widget.mantra.significance.isNotEmpty)
+                if (currentMantra.significance.isNotEmpty)
                   Container(
                     padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
@@ -528,7 +849,7 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                         ),
                         const SizedBox(height: 8),
                         Text(
-                          widget.mantra.significance,
+                          currentMantra.significance,
                           style: TextStyle(
                             fontSize: 13,
                             height: 1.5,

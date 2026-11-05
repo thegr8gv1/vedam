@@ -278,5 +278,116 @@ void main() {
       expect(audioState.isContinuingBeyondTarget, isTrue);
       expect(audioState.completedRepetitions, equals(11));
     });
+
+    testWidgets('Renders repeat mode, speed, sleep timer, and playlist navigation controls',
+        (WidgetTester tester) async {
+      tester.view.physicalSize = const Size(800, 1400);
+      tester.view.devicePixelRatio = 1.0;
+      addTearDown(() {
+        tester.view.resetPhysicalSize();
+        tester.view.resetDevicePixelRatio();
+      });
+
+      const nextMantra = MantraItem(
+        id: 'VEDA-MTR-0002',
+        collection: 'Shiva',
+        deity: 'Shiva',
+        title: 'Maha Mrityunjaya Mantra',
+        filename: 'Maha Mrityunjaya Mantra.wav',
+        mantraText: 'ॐ त्र्यम्बकं यजामहे',
+        significance: 'Grants liberation and vitality.',
+        form: '',
+        durationSeconds: 5.0,
+        sampleRate: 48000,
+        bitDepth: 16,
+        channels: 2,
+        fileSizeBytes: 800000,
+        sha256: 'xyz789',
+        sourceTxt: 'Shiva Chants.txt',
+        isBundled: true,
+        bundledAssetPath: 'assets/audio/bundled/maha_mrityunjaya_mantra.mp3',
+      );
+
+      await tester.pumpWidget(
+        MaterialApp(
+          theme: AppTheme.lightTheme,
+          home: MantraPlayerScreen(
+            mantra: sampleMantra,
+            audioState: audioState,
+            playlist: [sampleMantra, nextMantra],
+          ),
+        ),
+      );
+
+      await tester.pumpAndSettle();
+
+      // Repeat Mode icon is present
+      expect(find.byIcon(Icons.repeat_one), findsOneWidget);
+
+      // Playback speed chip is present
+      expect(find.text('1.0x'), findsOneWidget);
+
+      // Tap speed button
+      await tester.tap(find.text('1.0x'));
+      await tester.pumpAndSettle();
+      expect(audioState.playbackSpeed, equals(1.25));
+      expect(find.text('1.25x'), findsOneWidget);
+
+      // Next navigation icon is enabled
+      final nextBtn = find.byIcon(Icons.skip_next);
+      expect(nextBtn, findsOneWidget);
+      await tester.tap(nextBtn);
+      await tester.pumpAndSettle();
+      expect(audioState.activeMantra?.id, equals('VEDA-MTR-0002'));
+
+      // Sleep Timer icon is present
+      expect(find.byIcon(Icons.bedtime_outlined), findsOneWidget);
+    });
+
+    testWidgets('Unbundled vault recording displays Vault Archive banner and manual mode',
+        (WidgetTester tester) async {
+      tester.view.physicalSize = const Size(800, 1400);
+      tester.view.devicePixelRatio = 1.0;
+      addTearDown(() {
+        tester.view.resetPhysicalSize();
+        tester.view.resetDevicePixelRatio();
+      });
+
+      const vaultMantra = MantraItem(
+        id: 'VEDA-MTR-0099',
+        collection: 'Surya',
+        deity: 'Surya',
+        title: 'Aditya Hridaya Mantra',
+        filename: 'Aditya Hridaya.wav',
+        mantraText: 'Om Adityaya Namah',
+        significance: 'Illuminates solar consciousness.',
+        form: '',
+        durationSeconds: 4.0,
+        sampleRate: 48000,
+        bitDepth: 16,
+        channels: 2,
+        fileSizeBytes: 700000,
+        sha256: 'aaa111',
+        sourceTxt: 'Surya Chants.txt',
+        isBundled: false,
+        bundledAssetPath: null,
+      );
+
+      await tester.pumpWidget(
+        MaterialApp(
+          theme: AppTheme.lightTheme,
+          home: MantraPlayerScreen(
+            mantra: vaultMantra,
+            audioState: audioState,
+          ),
+        ),
+      );
+
+      await tester.pumpAndSettle();
+
+      expect(find.text('Vault Archive'), findsOneWidget);
+      expect(find.textContaining('VAULT ARCHIVE • MANUAL JAPA MODE'), findsOneWidget);
+      expect(find.textContaining('COUNTING MODE: Manual Touch'), findsOneWidget);
+    });
   });
 }

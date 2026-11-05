@@ -343,6 +343,7 @@ class VedamApp extends StatelessWidget {
           homeWidget = MantraPlayerScreen(
             mantra: m,
             audioState: aState,
+            playlist: mRepo.getAllMantras(),
           );
         } else if (learnScriptureId != null) {
           final s = kAuthenticScriptures.firstWhere(

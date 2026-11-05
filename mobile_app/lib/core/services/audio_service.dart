@@ -19,6 +19,7 @@ abstract class AudioPlaybackService {
   Future<void> resume();
   Future<void> stop();
   Future<void> seek(Duration position);
+  Future<void> setPlaybackRate(double rate);
   Future<void> dispose();
 }
 
@@ -46,7 +47,21 @@ class AudioPlaybackServiceImpl implements AudioPlaybackService {
     AudioPlayer? player,
     this.localVaultDirectory = r'C:\ttv youtube premium\Mantras',
   }) : _player = player ?? AudioPlayer() {
+    _initAudioContext();
     _initListeners();
+  }
+
+  void _initAudioContext() {
+    try {
+      AudioPlayer.global.setAudioContext(
+        AudioContextConfig(
+          stayAwake: true,
+          focus: AudioContextConfigFocus.gain,
+        ).build(),
+      );
+    } catch (e) {
+      debugPrint('AudioContext init note: $e');
+    }
   }
 
   void _initListeners() {
@@ -142,6 +157,11 @@ class AudioPlaybackServiceImpl implements AudioPlaybackService {
   @override
   Future<void> seek(Duration position) async {
     await _player.seek(position);
+  }
+
+  @override
+  Future<void> setPlaybackRate(double rate) async {
+    await _player.setPlaybackRate(rate);
   }
 
   @override

@@ -6,11 +6,26 @@ import '../core/models/japa_target_preset.dart';
 import '../core/models/mantra_item.dart';
 import '../core/services/audio_service.dart';
 
+/// Available devotional repeat modes.
+enum DevotionalRepeatMode {
+  /// Repeats the single chosen mantra continuously or until Japa target is met (Default for Japa).
+  repeatOne,
+
+  /// Plays the current mantra once and stops.
+  repeatOff,
+
+  /// Plays sequentially through the current playlist/collection.
+  sequential,
+}
+
 class AudioState extends ChangeNotifier {
   static const String _prefsKeyTargetRepetitions = 'vedam_japa_target_v1';
   static const String _prefsKeyAutoPause = 'vedam_japa_auto_pause_v1';
   static const String _prefsKeyCompletedRepetitions = 'vedam_japa_completed_v1';
   static const String _prefsKeyActiveMantraId = 'vedam_japa_active_mantra_id_v1';
+  static const String _prefsKeyFavorites = 'vedam_audio_favorites_v1';
+  static const String _prefsKeyPlaybackSpeed = 'vedam_audio_speed_v1';
+  static const String _prefsKeyRepeatMode = 'vedam_audio_repeat_mode_v1';
 
   final AudioPlaybackService _audioService;
   final SharedPreferences? _injectedPrefs;
@@ -19,6 +34,17 @@ class AudioState extends ChangeNotifier {
   PlayerState _playerState = PlayerState.stopped;
   Duration _position = Duration.zero;
   Duration _duration = Duration.zero;
+
+  // Playlist navigation
+  List<MantraItem> _playlist = [];
+
+  // Repeat and Speed
+  DevotionalRepeatMode _repeatMode = DevotionalRepeatMode.repeatOne;
+  double _playbackSpeed = 1.0;
+
+  // Sleep Timer
+  Timer? _sleepTimer;
+  DateTime? _sleepTimerTarget;
 
   int _targetRepetitions = 108;
   int _completedRepetitions = 0;
@@ -72,7 +98,7 @@ class AudioState extends ChangeNotifier {
     return await SharedPreferences.getInstance();
   }
 
-  /// Initialize and restore persisted target and session settings
+  /// Initialize and restore persisted target, speed, favorites, and session settings
   Future<void> init() async {
     try {
       final prefs = await _getPrefs();
@@ -89,6 +115,25 @@ class AudioState extends ChangeNotifier {
       final savedCompleted = prefs.getInt(_prefsKeyCompletedRepetitions);
       if (savedCompleted != null && savedCompleted >= 0) {
         _completedRepetitions = savedCompleted;
+      }
+
+      final savedSpeed = prefs.getDouble(_prefsKeyPlaybackSpeed);
+      if (savedSpeed != null && savedSpeed > 0) {
+        _playbackSpeed = savedSpeed;
+        await _audioService.setPlaybackRate(_playbackSpeed);
+      }
+
+      final savedRepeatModeIndex = prefs.getInt(_prefsKeyRepeatMode);
+      if (savedRepeatModeIndex != null &&
+          savedRepeatModeIndex >= 0 &&
+          savedRepeatModeIndex < DevotionalRepeatMode.values.length) {
+        _repeatMode = DevotionalRepeatMode.values[savedRepeatModeIndex];
+      }
+
+      final savedFavs = prefs.getStringList(_prefsKeyFavorites);
+      if (savedFavs != null) {
+        _favoriteMantraIds.clear();
+        _favoriteMantraIds.addAll(savedFavs);
       }
 
       notifyListeners();
@@ -129,6 +174,27 @@ class AudioState extends ChangeNotifier {
     } catch (_) {}
   }
 
+  Future<void> _saveFavorites() async {
+    try {
+      final prefs = await _getPrefs();
+      await prefs.setStringList(_prefsKeyFavorites, _favoriteMantraIds.toList());
+    } catch (_) {}
+  }
+
+  Future<void> _saveSpeed() async {
+    try {
+      final prefs = await _getPrefs();
+      await prefs.setDouble(_prefsKeyPlaybackSpeed, _playbackSpeed);
+    } catch (_) {}
+  }
+
+  Future<void> _saveRepeatMode() async {
+    try {
+      final prefs = await _getPrefs();
+      await prefs.setInt(_prefsKeyRepeatMode, _repeatMode.index);
+    } catch (_) {}
+  }
+
   // Getters
   MantraItem? get activeMantra => _activeMantra;
   PlayerState get playerState => _playerState;
@@ -151,6 +217,35 @@ class AudioState extends ChangeNotifier {
   bool get hasAcknowledgedCompletion => _hasTriggeredCompletionAlert;
   bool get autoPauseAtTarget => _autoPauseAtTarget;
 
+  // Counting Mode Indicators
+  bool get isAudioChantingMode => isPlaying || isPaused;
+  String get countingModeLabel => isAudioChantingMode ? 'Audio-Assisted Chanting' : 'Manual Bead Chanting';
+
+  // Playlist Navigation Getters
+  List<MantraItem> get playlist => List.unmodifiable(_playlist);
+  int get currentPlaylistIndex {
+    if (_activeMantra == null || _playlist.isEmpty) return -1;
+    return _playlist.indexWhere((m) => m.id == _activeMantra!.id);
+  }
+
+  bool get hasPreviousMantra => currentPlaylistIndex > 0;
+  bool get hasNextMantra =>
+      currentPlaylistIndex >= 0 && currentPlaylistIndex < _playlist.length - 1;
+
+  // Repeat & Speed
+  DevotionalRepeatMode get repeatMode => _repeatMode;
+  double get playbackSpeed => _playbackSpeed;
+
+  // Sleep Timer Getters
+  bool get isSleepTimerActive =>
+      _sleepTimerTarget != null && _sleepTimerTarget!.isAfter(DateTime.now());
+
+  Duration? get sleepTimerRemaining {
+    if (_sleepTimerTarget == null) return null;
+    final diff = _sleepTimerTarget!.difference(DateTime.now());
+    return diff.isNegative ? Duration.zero : diff;
+  }
+
   double get progressFraction => _targetRepetitions > 0
       ? (_completedRepetitions / _targetRepetitions).clamp(0.0, 1.0)
       : 0.0;
@@ -158,6 +253,80 @@ class AudioState extends ChangeNotifier {
   String? get errorMessage => _errorMessage;
   Set<String> get favoriteMantraIds => Set.unmodifiable(_favoriteMantraIds);
   bool isFavorite(String mantraId) => _favoriteMantraIds.contains(mantraId);
+
+  /// Configure active playlist for navigation
+  void setPlaylist(List<MantraItem> list) {
+    _playlist = List.from(list);
+    notifyListeners();
+  }
+
+  /// Play the next mantra in the active playlist
+  Future<void> playNextMantra() async {
+    if (!hasNextMantra) return;
+    final nextMantra = _playlist[currentPlaylistIndex + 1];
+    await playMantra(nextMantra, resetSessionCount: true);
+  }
+
+  /// Play the previous mantra in the active playlist
+  Future<void> playPreviousMantra() async {
+    if (!hasPreviousMantra) return;
+    final prevMantra = _playlist[currentPlaylistIndex - 1];
+    await playMantra(prevMantra, resetSessionCount: true);
+  }
+
+  /// Update repeat mode
+  void setRepeatMode(DevotionalRepeatMode mode) {
+    _repeatMode = mode;
+    _saveRepeatMode();
+    notifyListeners();
+  }
+
+  /// Cycle through available repeat modes: repeatOne -> repeatOff -> sequential -> repeatOne
+  void cycleRepeatMode() {
+    switch (_repeatMode) {
+      case DevotionalRepeatMode.repeatOne:
+        setRepeatMode(DevotionalRepeatMode.repeatOff);
+        break;
+      case DevotionalRepeatMode.repeatOff:
+        setRepeatMode(DevotionalRepeatMode.sequential);
+        break;
+      case DevotionalRepeatMode.sequential:
+        setRepeatMode(DevotionalRepeatMode.repeatOne);
+        break;
+    }
+  }
+
+  /// Update playback speed (0.75x, 1.0x, 1.25x, 1.5x)
+  Future<void> setPlaybackSpeed(double speed) async {
+    if (speed <= 0) return;
+    _playbackSpeed = speed;
+    await _audioService.setPlaybackRate(speed);
+    _saveSpeed();
+    notifyListeners();
+  }
+
+  /// Set sleep timer with duration
+  void setSleepTimer(Duration? duration) {
+    _sleepTimer?.cancel();
+    _sleepTimer = null;
+    _sleepTimerTarget = null;
+
+    if (duration != null && duration > Duration.zero) {
+      _sleepTimerTarget = DateTime.now().add(duration);
+      _sleepTimer = Timer(duration, () {
+        pause();
+        _sleepTimerTarget = null;
+        notifyListeners();
+      });
+    }
+
+    notifyListeners();
+  }
+
+  /// Cancel active sleep timer
+  void cancelSleepTimer() {
+    setSleepTimer(null);
+  }
 
   /// Check whether target can be changed without warning (only if session hasn't started)
   bool canChangeTargetWithoutConfirmation() => _completedRepetitions == 0;
@@ -276,6 +445,7 @@ class AudioState extends ChangeNotifier {
     } else {
       _favoriteMantraIds.add(mantraId);
     }
+    _saveFavorites();
     notifyListeners();
   }
 
@@ -309,18 +479,43 @@ class AudioState extends ChangeNotifier {
       }
     }
 
-    // Continue to next repetition
-    try {
-      await _audioService.playMantra(_activeMantra!);
-    } catch (e) {
-      _errorMessage = 'Auto-repeat error: $e';
-    } finally {
-      _isTransitioningRepetition = false;
+    // Handle repeat mode
+    switch (_repeatMode) {
+      case DevotionalRepeatMode.repeatOff:
+        // Do not loop; stop playback after single completion
+        await _audioService.stop();
+        _isTransitioningRepetition = false;
+        notifyListeners();
+        return;
+
+      case DevotionalRepeatMode.sequential:
+        if (hasNextMantra) {
+          _isTransitioningRepetition = false;
+          await playNextMantra();
+          return;
+        } else {
+          await _audioService.stop();
+          _isTransitioningRepetition = false;
+          notifyListeners();
+          return;
+        }
+
+      case DevotionalRepeatMode.repeatOne:
+        // Continue repeating current mantra
+        try {
+          await _audioService.playMantra(_activeMantra!);
+        } catch (e) {
+          _errorMessage = 'Auto-repeat error: $e';
+        } finally {
+          _isTransitioningRepetition = false;
+        }
+        break;
     }
   }
 
   @override
   void dispose() {
+    _sleepTimer?.cancel();
     _stateSub?.cancel();
     _positionSub?.cancel();
     _durationSub?.cancel();

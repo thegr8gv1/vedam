@@ -95,6 +95,13 @@ class MockAudioPlaybackService implements AudioPlaybackService {
     _posController.add(position);
   }
 
+  double playbackRate = 1.0;
+
+  @override
+  Future<void> setPlaybackRate(double rate) async {
+    playbackRate = rate;
+  }
+
   @override
   Future<void> dispose() async {
     await _stateController.close();
@@ -442,6 +449,99 @@ void main() {
       expect(freshState.remainingRepetitions, equals(27));
 
       freshState.dispose();
+    });
+
+    test('Playlist navigation: next and previous mantra controls', () async {
+      const mantra2 = MantraItem(
+        id: 'TEST-MTR-002',
+        collection: 'Shiva',
+        deity: 'Shiva',
+        title: 'Maha Mrityunjaya Mantra',
+        filename: 'Maha Mrityunjaya Mantra.wav',
+        mantraText: 'Tryambakam Yajamahe',
+        significance: 'Grants liberation and supreme vitality.',
+        form: '',
+        durationSeconds: 6.0,
+        sampleRate: 48000,
+        bitDepth: 16,
+        channels: 2,
+        fileSizeBytes: 900000,
+        sha256: 'def456',
+        sourceTxt: 'Shiva Chants.txt',
+        isBundled: true,
+        bundledAssetPath: 'assets/audio/bundled/maha_mrityunjaya_mantra.mp3',
+      );
+
+      audioState.setPlaylist([sampleMantra, mantra2]);
+      await audioState.playMantra(sampleMantra);
+
+      expect(audioState.hasPreviousMantra, isFalse);
+      expect(audioState.hasNextMantra, isTrue);
+
+      await audioState.playNextMantra();
+      expect(audioState.activeMantra?.id, equals('TEST-MTR-002'));
+      expect(audioState.hasPreviousMantra, isTrue);
+      expect(audioState.hasNextMantra, isFalse);
+
+      await audioState.playPreviousMantra();
+      expect(audioState.activeMantra?.id, equals('TEST-MTR-001'));
+    });
+
+    test('Repeat modes: repeatOff stops after 1 repetition; repeatOne loops', () async {
+      // Test repeatOff
+      audioState.setRepeatMode(DevotionalRepeatMode.repeatOff);
+      await audioState.playMantra(sampleMantra);
+
+      mockAudio.emitState(PlayerState.completed);
+      await Future.delayed(const Duration(milliseconds: 50));
+
+      expect(audioState.completedRepetitions, equals(1));
+      expect(mockAudio.stopCallCount, greaterThanOrEqualTo(1));
+
+      // Test repeatOne
+      audioState.setRepeatMode(DevotionalRepeatMode.repeatOne);
+      expect(audioState.repeatMode, equals(DevotionalRepeatMode.repeatOne));
+      audioState.cycleRepeatMode();
+      expect(audioState.repeatMode, equals(DevotionalRepeatMode.repeatOff));
+      audioState.cycleRepeatMode();
+      expect(audioState.repeatMode, equals(DevotionalRepeatMode.sequential));
+    });
+
+    test('Playback speed controls and persistence', () async {
+      await audioState.setPlaybackSpeed(1.25);
+      expect(audioState.playbackSpeed, equals(1.25));
+      expect(mockAudio.playbackRate, equals(1.25));
+
+      await audioState.setPlaybackSpeed(1.5);
+      expect(audioState.playbackSpeed, equals(1.5));
+    });
+
+    test('Sleep timer behavior: setting, active status, and expiration', () async {
+      expect(audioState.isSleepTimerActive, isFalse);
+
+      audioState.setSleepTimer(const Duration(minutes: 15));
+      expect(audioState.isSleepTimerActive, isTrue);
+      expect(audioState.sleepTimerRemaining?.inMinutes, equals(14)); // rounded/computed
+
+      // Cancel timer
+      audioState.cancelSleepTimer();
+      expect(audioState.isSleepTimerActive, isFalse);
+
+      // Short timer triggering pause
+      await audioState.playMantra(sampleMantra);
+      audioState.setSleepTimer(const Duration(milliseconds: 50));
+      await Future.delayed(const Duration(milliseconds: 70));
+      expect(mockAudio.pauseCallCount, greaterThanOrEqualTo(1));
+    });
+
+    test('Counting mode label accurately distinguishes audio vs manual chanting', () async {
+      expect(audioState.countingModeLabel, contains('Manual'));
+
+      await audioState.playMantra(sampleMantra);
+      expect(audioState.countingModeLabel, contains('Audio-Assisted'));
+
+      await audioState.stop();
+      expect(audioState.countingModeLabel, contains('Manual'));
     });
   });
 }
