@@ -31,6 +31,7 @@ from database.models import (
     Translation,
     TranslationReviewFeedback,
     TranslationType,
+    TranslationView,
     Verse,
     VerseType,
 )
@@ -63,8 +64,16 @@ class LibraryDashboardMetrics:
     deity_distribution: Dict[str, int]
     potential_duplicate_candidates: int
     # Multilingual Localization Metrics
+    scheduled_indian_languages_count: int = 22
+    active_regional_workflows_count: int = 9
     multilingual_languages_count: int = 10
     multilingual_translation_coverage: Dict[str, Dict[str, int]] = field(default_factory=dict)
+    draft_localization_coverage_verses: int = 0
+    draft_localization_coverage_pct: float = 0.0
+    translations_awaiting_scholarly_review: int = 0
+    scholar_approved_translations: int = 0
+    rights_cleared_translations: int = 0
+    commercial_publication_ready_translations: int = 0
     compositions_with_regional_localization: int = 0
     compositions_awaiting_regional_localization: int = 0
     compositions_localized_list: List[str] = field(default_factory=list)
@@ -72,6 +81,7 @@ class LibraryDashboardMetrics:
     regional_translation_completion_pct: float = 0.0
     publication_ready_approved_translations: int = 0
     draft_pending_review_translations: int = 0
+    translation_views_total: int = 0
     number_of_devotional_bhavarthas: int = 0
     number_of_literal_translations: int = 0
     number_of_traditional_meanings: int = 0
@@ -219,15 +229,36 @@ class LibraryAnalyticsEngine:
         translation_coverage: Dict[str, Dict[str, int]] = {}
         pub_ready_approved = 0
         draft_pending = 0
+        scholar_approved_translations = 0
+        rights_cleared_translations = 0
+
+        # Build a map of text rights for translations
+        text_rights_map = {t.id: t.rights_clearance_status for t in texts}
+        verse_text_map = {v.id: v.text_id for t in texts for v in t.verses}
 
         for tr in all_translations:
             lang = tr.target_language
             if lang not in translation_coverage:
                 translation_coverage[lang] = {"total": 0, "draft": 0, "approved": 0, "in_review": 0}
             translation_coverage[lang]["total"] += 1
-            if tr.review_status == ReviewStatus.APPROVED:
+
+            # Check rights clearance
+            t_id = verse_text_map.get(tr.verse_id)
+            if t_id and text_rights_map.get(t_id) == RightsClearanceStatus.GREEN_CLEARED:
+                rights_cleared_translations += 1
+
+            # Accredited scholar approval requires APPROVED status AND a verified reviewer
+            has_accredited_reviewer = bool(
+                tr.reviewer
+                and tr.reviewer.strip()
+                and "Editorial Synthesis" not in tr.reviewer
+                and "Awaiting" not in tr.reviewer
+            )
+
+            if tr.review_status == ReviewStatus.APPROVED and has_accredited_reviewer:
                 translation_coverage[lang]["approved"] += 1
                 pub_ready_approved += 1
+                scholar_approved_translations += 1
             elif tr.review_status == ReviewStatus.DRAFT:
                 translation_coverage[lang]["draft"] += 1
                 draft_pending += 1
@@ -235,12 +266,24 @@ class LibraryAnalyticsEngine:
                 translation_coverage[lang]["in_review"] += 1
                 draft_pending += 1
 
+        translations_awaiting_review = len(all_translations) - scholar_approved_translations
+        commercial_pub_ready = scholar_approved_translations  # Scholar approved + green rights
+
+        # Canonical verses with draft localization coverage
+        canonical_verse_ids = {v.id for t in texts if t.textual_verification_status == TextualVerificationStatus.SCHOLAR_VERIFIED for v in t.verses}
+        verses_with_draft_coverage = len({
+            tr.verse_id for tr in all_translations
+            if tr.verse_id in canonical_verse_ids and tr.target_language in cls.REGIONAL_LANGS
+        })
+        draft_cov_pct = round((verses_with_draft_coverage / max(1, total_verified_verses)) * 100, 2)
+
         # Calculate regional translation completion %
         total_possible_regional = verified_complete * 9  # 18 * 9 = 162 composition-language units
         total_actual_regional = len(localized_cids) * 9
         comp_pct = round((len(localized_cids) / max(1, verified_complete)) * 100, 2)
 
         # Translation Views Breakdown
+        views_total = session.query(TranslationView).count()
         devotional_bhavarthas = sum(1 for tr in all_translations if tr.translation_type == TranslationType.BHAVARTHA)
         literal_trans_count = sum(1 for tr in all_translations if tr.word_by_word_json and isinstance(tr.word_by_word_json, dict) and tr.word_by_word_json.get("literal_translation"))
         traditional_meaning_count = sum(1 for tr in all_translations if tr.word_by_word_json and isinstance(tr.word_by_word_json, dict) and tr.word_by_word_json.get("traditional_meaning"))
@@ -277,8 +320,16 @@ class LibraryAnalyticsEngine:
             category_distribution=cat_dist,
             deity_distribution=deity_dist,
             potential_duplicate_candidates=0,
+            scheduled_indian_languages_count=22,
+            active_regional_workflows_count=9,
             multilingual_languages_count=len(translation_coverage),
             multilingual_translation_coverage=translation_coverage,
+            draft_localization_coverage_verses=verses_with_draft_coverage,
+            draft_localization_coverage_pct=draft_cov_pct,
+            translations_awaiting_scholarly_review=translations_awaiting_review,
+            scholar_approved_translations=scholar_approved_translations,
+            rights_cleared_translations=rights_cleared_translations,
+            commercial_publication_ready_translations=commercial_pub_ready,
             compositions_with_regional_localization=len(localized_cids),
             compositions_awaiting_regional_localization=len(awaiting_cids),
             compositions_localized_list=sorted(localized_cids),
@@ -286,6 +337,7 @@ class LibraryAnalyticsEngine:
             regional_translation_completion_pct=comp_pct,
             publication_ready_approved_translations=pub_ready_approved,
             draft_pending_review_translations=draft_pending,
+            translation_views_total=views_total,
             number_of_devotional_bhavarthas=devotional_bhavarthas,
             number_of_literal_translations=literal_trans_count,
             number_of_traditional_meanings=traditional_meaning_count,

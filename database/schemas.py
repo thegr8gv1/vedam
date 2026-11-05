@@ -86,7 +86,7 @@ class TranslationCreate(SchemaBase):
     target_language: str = Field(..., min_length=2, max_length=16, description="ISO 639-1: en, hi, te, ta, kn")
     translation_type: TranslationType = TranslationType.BHAVARTHA
     translated_text: str = Field(..., min_length=1)
-    word_by_word_json: Optional[List[Dict[str, Any]]] = None
+    word_by_word_json: Optional[Any] = None
     translator: Optional[str] = None
     reviewer: Optional[str] = None
     review_status: ReviewStatus = ReviewStatus.DRAFT
@@ -96,6 +96,35 @@ class TranslationRead(TranslationCreate):
     id: int
     verse_id: int
     created_at: datetime
+
+
+class TranslationViewBase(SchemaBase):
+    view_id: str = Field(..., min_length=3, max_length=64)
+    target_language: str = Field(..., min_length=2, max_length=16)
+    view_type: TranslationType = TranslationType.BHAVARTHA
+    view_text: str = Field(..., min_length=1)
+    version: int = Field(1, ge=1)
+    source_reference: Optional[str] = None
+    translator_provenance: Optional[str] = None
+    review_status: ReviewStatus = ReviewStatus.DRAFT
+    reviewer: Optional[str] = None
+    reviewer_affiliation: Optional[str] = None
+    reviewed_at: Optional[datetime] = None
+    approval_notes: Optional[str] = None
+    approval_history_json: Optional[Any] = None
+
+
+class TranslationViewCreate(TranslationViewBase):
+    translation_id: int
+    verse_id: int
+
+
+class TranslationViewRead(TranslationViewBase):
+    id: int
+    translation_id: int
+    verse_id: int
+    created_at: datetime
+    updated_at: datetime
 
 
 # ---------------------------------------------------------------------------

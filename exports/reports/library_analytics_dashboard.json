@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-05T01:42:23.473903+00:00",
+  "generated_at_utc": "2026-11-05T02:02:10.586744+00:00",
   "total_candidate_catalog": 77,
   "total_registered_database_texts": 20,
   "verified_complete_texts": 18,
@@ -9,8 +9,8 @@
   "rights_forbidden_red_texts": 0,
   "scholar_verified_texts": 18,
   "pending_scholarly_review_texts": 2,
-  "translation_approved_texts": 8,
-  "translation_in_review_texts": 12,
+  "translation_approved_texts": 0,
+  "translation_in_review_texts": 20,
   "translation_untranslated_verses": 3,
   "editorial_approved_texts": 18,
   "published_manuscripts_excel": 18,
@@ -51,12 +51,14 @@
     "Goddess Durga": 2
   },
   "potential_duplicate_candidates": 0,
+  "scheduled_indian_languages_count": 22,
+  "active_regional_workflows_count": 9,
   "multilingual_languages_count": 10,
   "multilingual_translation_coverage": {
     "en": {
       "total": 307,
-      "draft": 184,
-      "approved": 122,
+      "draft": 306,
+      "approved": 0,
       "in_review": 1
     },
     "hi": {
@@ -114,6 +116,12 @@
       "in_review": 0
     }
   },
+  "draft_localization_coverage_verses": 307,
+  "draft_localization_coverage_pct": 100.0,
+  "translations_awaiting_scholarly_review": 3070,
+  "scholar_approved_translations": 0,
+  "rights_cleared_translations": 3070,
+  "commercial_publication_ready_translations": 0,
   "compositions_with_regional_localization": 18,
   "compositions_awaiting_regional_localization": 0,
   "compositions_localized_list": [
@@ -138,8 +146,9 @@
   ],
   "compositions_awaiting_list": [],
   "regional_translation_completion_pct": 100.0,
-  "publication_ready_approved_translations": 122,
-  "draft_pending_review_translations": 2948,
+  "publication_ready_approved_translations": 0,
+  "draft_pending_review_translations": 3070,
+  "translation_views_total": 7706,
   "number_of_devotional_bhavarthas": 3070,
   "number_of_literal_translations": 2318,
   "number_of_traditional_meanings": 2318,

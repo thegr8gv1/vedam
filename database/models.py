@@ -305,6 +305,7 @@ class Verse(Base):
     text: Mapped["Text"] = relationship("Text", back_populates="verses")
     transliterations: Mapped[List["Transliteration"]] = relationship("Transliteration", back_populates="verse", cascade="all, delete-orphan")
     translations: Mapped[List["Translation"]] = relationship("Translation", back_populates="verse", cascade="all, delete-orphan")
+    translation_views: Mapped[List["TranslationView"]] = relationship("TranslationView", back_populates="verse", cascade="all, delete-orphan")
 
 
 class Transliteration(Base):
@@ -344,8 +345,46 @@ class Translation(Base):
     # Relationships
     verse: Mapped["Verse"] = relationship("Verse", back_populates="translations")
     review_feedbacks: Mapped[List["TranslationReviewFeedback"]] = relationship("TranslationReviewFeedback", back_populates="translation", cascade="all, delete-orphan")
+    views: Mapped[List["TranslationView"]] = relationship("TranslationView", back_populates="translation", cascade="all, delete-orphan")
 
     __table_args__ = (UniqueConstraint("verse_id", "target_language", "translation_type", name="uq_verse_lang_type"),)
+
+
+class TranslationView(Base):
+    """
+    Granular, independently reviewable view of a verse translation.
+    Supports distinct views: Literal (Word-by-word / Padachheda), Traditional Meaning (Tatparya),
+    and Devotional Expression (Bhavartha), each with its own review lifecycle, translator provenance,
+    and approval history.
+    """
+    __tablename__ = "translation_views"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    view_id: Mapped[str] = mapped_column(String(64), unique=True, index=True)
+    translation_id: Mapped[int] = mapped_column(Integer, ForeignKey("translations.id", ondelete="CASCADE"), index=True)
+    verse_id: Mapped[int] = mapped_column(Integer, ForeignKey("verses.id", ondelete="CASCADE"), index=True)
+    target_language: Mapped[str] = mapped_column(String(16), index=True)
+    view_type: Mapped[TranslationType] = mapped_column(Enum(TranslationType), index=True)
+    view_text: Mapped[str] = mapped_column(SA_Text)
+    version: Mapped[int] = mapped_column(Integer, default=1)
+    source_reference: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
+    translator_provenance: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
+    review_status: Mapped[ReviewStatus] = mapped_column(Enum(ReviewStatus), default=ReviewStatus.DRAFT, index=True)
+    reviewer: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
+    reviewer_affiliation: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
+    reviewed_at: Mapped[Optional[datetime]] = mapped_column(DateTime, nullable=True)
+    approval_notes: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
+    approval_history_json: Mapped[Optional[list]] = mapped_column(JSON, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
+
+    # Relationships
+    translation: Mapped["Translation"] = relationship("Translation", back_populates="views")
+    verse: Mapped["Verse"] = relationship("Verse", back_populates="translation_views")
+
+    __table_args__ = (
+        UniqueConstraint("translation_id", "view_type", "version", name="uq_translation_view_type_version"),
+    )
 
 
 class TranslationReviewFeedback(Base):

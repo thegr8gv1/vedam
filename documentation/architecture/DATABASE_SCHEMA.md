@@ -25,6 +25,8 @@ erDiagram
     TEXTS ||--o{ DUPLICATE_CANDIDATES : compares
     VERSES ||--o{ TRANSLITERATIONS : rendered_in
     VERSES ||--o{ TRANSLATIONS : translated_into
+    VERSES ||--o{ TRANSLATION_VIEWS : expressed_in
+    TRANSLATIONS ||--o{ TRANSLATION_VIEWS : decomposes_into
     CONTRIBUTORS ||--o{ TRANSLATIONS : translates
     CONTRIBUTORS ||--o{ TRANSLATIONS : reviews
 
@@ -128,5 +130,24 @@ erDiagram
         text translated_text
         json word_by_word_json
         string review_status "DRAFT, APPROVED"
+    }
+
+    TRANSLATION_VIEWS {
+        int id PK
+        string view_id UK "e.g. VIEW-TR-00001-BHAVARTHA-v1"
+        int translation_id FK
+        int verse_id FK
+        string target_language "en, hi, te, ta, kn, mr, bn, gu, ml, or"
+        string view_type "BHAVARTHA, LITERAL, TATPARYA"
+        text view_text
+        int version "1"
+        string source_reference
+        string translator_provenance
+        string review_status "DRAFT, SCHOLAR_REVIEWED, APPROVED"
+        string reviewer
+        string reviewer_affiliation
+        datetime reviewed_at
+        text approval_notes
+        json approval_history_json
     }
 ```

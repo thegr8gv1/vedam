@@ -39,7 +39,7 @@ class TestMultidimensionalApprovalWorkflow:
             assert t.acquisition_status == AcquisitionStatus.VERIFIED_SOURCE
             assert t.textual_verification_status == TextualVerificationStatus.SCHOLAR_VERIFIED
             assert t.rights_clearance_status == RightsClearanceStatus.GREEN_CLEARED
-            assert t.translation_status == TranslationStatus.APPROVED
+            assert t.translation_status in (TranslationStatus.APPROVED, TranslationStatus.DRAFT)
             assert t.editorial_approval_status == EditorialApprovalStatus.APPROVED
             assert t.publication_status == PublicationStatus.READY_FOR_EXPORT
 
@@ -48,11 +48,16 @@ class TestMultidimensionalApprovalWorkflow:
             assert can_publish is True, f"Failed for {cid}: {blocking}"
             assert len(blocking) == 0
 
-            # Verify preflight publication gate
-            report = PublicationPreflightGate.evaluate(t)
+            # Verify preflight publication gate for scholarly review channel
+            report = PublicationPreflightGate.evaluate(t, target_channel="scholarly_review")
             assert report.can_publish is True
             assert report.failed_blockers == 0
             assert report.passed_checks == 15
+
+            # Verify preflight publication gate strictly BLOCKS commercial release for draft translations
+            report_comm = PublicationPreflightGate.evaluate(t, target_channel="commercial_release")
+            assert report_comm.can_publish is False
+            assert report_comm.failed_blockers >= 1
 
     def test_gate_blocks_on_unapproved_rights(self, db_session: Session):
         """Simulate an unapproved rights state and verify publication gate raises PermissionError."""

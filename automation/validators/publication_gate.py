@@ -22,7 +22,7 @@ from automation.rights.approval_workflow import (
     TranslationStatus,
 )
 from automation.rights.jurisdiction import RightsReleaseStatus
-from database.models import ReleaseStatus, Text, Verse, VerseType
+from database.models import ReleaseStatus, ReviewStatus, Text, Verse, VerseType
 
 logger = logging.getLogger("vedam.automation.publication_gate")
 
@@ -192,14 +192,35 @@ class PublicationPreflightGate:
 
         # 10. Rule: Translation Approval Status Check
         if target_channel == "commercial_release":
-            trans_approved = (text.translation_status in [TranslationStatus.APPROVED, TranslationStatus.SCHOLAR_REVIEWED])
+            has_drafts = any(
+                t.review_status == ReviewStatus.DRAFT
+                for v in text.verses for t in v.translations
+            )
+            has_uncredited_approvals = any(
+                t.review_status in (ReviewStatus.APPROVED, ReviewStatus.SCHOLAR_REVIEWED) and not t.reviewer
+                for v in text.verses for t in v.translations
+            )
+            trans_status_ok = (text.translation_status in [TranslationStatus.APPROVED, TranslationStatus.SCHOLAR_REVIEWED])
+            
+            if trans_status_ok and not has_drafts and not has_uncredited_approvals:
+                trans_approved = True
+                msg = f"Translation status is '{text.translation_status.value}' with accredited scholarly panel sign-off."
+            else:
+                trans_approved = False
+                msg = (
+                    f"Commercial release requires independent accredited scholar panel approval; "
+                    f"current translation status is '{text.translation_status.value}'. "
+                    f"Internal editorial synthesis without accredited human reviewer sign-off cannot bypass "
+                    f"the scholarly approval requirement for commercial distribution."
+                )
+
             checks.append(
                 GateCheckResult(
                     rule_id="PUB-010",
                     rule_name="TRANSLATION_APPROVAL_CHECK",
                     passed=trans_approved,
                     severity=GateSeverity.BLOCKER,
-                    message=f"Commercial release requires scholar-approved translation; current status is {text.translation_status.value}." if not trans_approved else f"Translation status is {text.translation_status.value}.",
+                    message=msg,
                 )
             )
         else:

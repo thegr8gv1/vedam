@@ -61,3 +61,18 @@ stateDiagram-v2
 - **`RED` (Prohibited / Restricted):**
   - Commercial reuse is prohibited or rights are held by third parties without license.
   - Strictly blocked from all export pipelines.
+
+---
+
+## 3. Publication Preflight Gate & Translation Governance (`Rule PUB-010`)
+
+To prevent unverified editorial text or AI synthesis from reaching commercial release channels, the publication preflight gate enforces strict governance:
+
+1. **Target Channel Distinction:**
+   - **`scholarly_review`**: Allows exporting draft translations and internal synthesis for verification by academic scholars, transliteration testers, and language experts.
+   - **`commercial_release`**: Enforces strict commercial readiness gates.
+
+2. **Accredited Scholar Requirement (`PUB-010`):**
+   - For `commercial_release`, any text having translations marked as `DRAFT`, or translations originating from internal editorial synthesis without an accredited human scholar sign-off, is **strictly blocked**.
+   - Reviewer must be an identifiable human scholar with documented academic or traditional institutional affiliation (e.g. PhD in Sanskrit / Darshana or Rashtriya Sanskrit Sansthan credentials).
+   - "Editorial Synthesis" or internal draft commissions cannot bypass human scholarly approval.

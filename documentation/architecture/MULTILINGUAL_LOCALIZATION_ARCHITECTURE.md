@@ -125,3 +125,33 @@ Every localized text is audited against 10 strict automated criteria before rele
 8. `LANG-QA-008` **Transliteration Coverage Check:** Verifies presence of all primary regional script projections.
 9. `LANG-QA-009` **Original Text Preservation Check:** Confirms original Sanskrit SHA-256 content hash matches raw source text.
 10. `LANG-QA-010` **Review Provenance Check:** Asserts that approved status is accompanied by verified reviewer credentials.
+
+---
+
+## 6. Language Coverage Tiers & Dedicated Translation Views
+
+### A. 22 Scheduled Indian Languages vs 9 Active Regional Workflows
+The platform formally architected support for all **22 Scheduled Languages of the Eighth Schedule of the Constitution of India** (plus English as global bridge language).
+The active production pipeline is organized in phases:
+- **Active Operational Tier (9 Regional Languages + English):**
+  - Hindi (`hi`), Telugu (`te`), Tamil (`ta`), Kannada (`kn`), Marathi (`mr`), Bengali (`bn`), Gujarati (`gu`), Malayalam (`ml`), Odia (`or`), and English (`en`).
+  - 100% draft coverage across all 18 canonical compositions (307 source verses $\times$ 9 languages = 2,763 regional translations + 307 English = 3,070 total active translations).
+- **Expansion Tier (Remaining 13 Scheduled Languages):**
+  - Assamese (`as`), Punjabi (`pa`), Maithili (`mai`), Nepali (`ne`), Konkani (`kok`), Dogri (`doi`), Bodo (`brx`), Santali (`sat`), Kashmiri (`ks`), Sindhi (`sd`), Manipuri (`mni`), Urdu (`ur`), Sanskrit (`sa` as root).
+  - Slated for staged ingestion with dedicated academic institution partnerships.
+
+### B. Dedicated Translation View Architecture (`TranslationView`)
+To eliminate ambiguous monolithic translations, each translation record decomposes into three independently versioned and reviewable granular views:
+1. **Devotional Bhavartha (`BHAVARTHA`):**
+   - Poetic, devotional rendering capturing the emotional essence and spiritual sentiment for prayer and liturgical chanting.
+2. **Literal / Padachheda Dissection (`LITERAL`):**
+   - Direct, word-by-word grammatical dissection reflecting the exact syntactical structure and root etymologies of the Sanskrit text.
+3. **Traditional Exegesis (`TATPARYA`):**
+   - Contextual commentary aligning with historical Sampradaya exegesis (e.g. Adi Shankaracharya, Sayana, Ramanuja, Raghavendra Swami).
+
+Each `TranslationView` is tracked in the `translation_views` database entity with:
+- Unique deterministic `view_id`
+- Discrete `version` number
+- Granular `review_status` (`DRAFT`, `SCHOLAR_REVIEWED`, `APPROVED`)
+- Dedicated `translator_provenance` and accredited `reviewer` credentials
+- Append-only `approval_history_json` forensic audit log.
