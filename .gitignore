@@ -9,12 +9,16 @@ venv/
 .venv/
 ENV/
 build/
+!mobile_app/
+mobile_app/build/
+mobile_app/.dart_tool/
 develop-eggs/
 dist/
 downloads/
 eggs/
 .eggs/
-lib/
+/lib/
+!mobile_app/lib/
 lib64/
 parts/
 sdist/
