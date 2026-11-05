@@ -43,7 +43,12 @@ class WorkbenchComparisonEngine:
         target_language: str = "te",
     ) -> Dict[str, Any]:
         """Builds complete 6-column comparative payload for a single verse."""
-        verse = session.query(Verse).filter_by(verse_id=verse_id).first()
+        # Accept either integer primary key or verse_id string identifier
+        if isinstance(verse_id, int) or (isinstance(verse_id, str) and verse_id.isdigit()):
+            verse = session.query(Verse).filter_by(id=int(verse_id)).first()
+        else:
+            verse = session.query(Verse).filter_by(verse_id=str(verse_id)).first()
+
         if not verse:
             raise ValueError(f"Verse '{verse_id}' not found.")
 

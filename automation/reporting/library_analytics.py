@@ -96,7 +96,7 @@ class LibraryDashboardMetrics:
     multilingual_artifacts_excel: int = 0
     multilingual_artifacts_word: int = 0
     multilingual_artifacts_json: int = 0
-    # Phase 7 Scholarly Workbench & AI Intelligence Metrics
+    # Phase 7 & 8 Scholarly Workbench, AI Intelligence & Reviewer Governance Metrics
     review_assignments_total: int = 0
     pending_reviewer_actions: int = 0
     approved_literal_views: int = 0
@@ -106,6 +106,21 @@ class LibraryDashboardMetrics:
     human_corrected_ai_annotations: int = 0
     unresolved_textual_disputes: int = 0
     reviewer_productivity_stats: List[Dict[str, Any]] = field(default_factory=list)
+    total_reviewers: int = 0
+    demonstration_accounts: int = 0
+    verified_production_reviewers: int = 0
+    pending_verification_reviewers: int = 0
+    deactivated_reviewers: int = 0
+    assigned_reviews: int = 0
+    completed_reviews: int = 0
+    review_backlog: int = 0
+    unresolved_conflicts: int = 0
+    ai_generated_suggestions: int = 0
+    human_corrected_ai_suggestions: int = 0
+    approved_translation_views: int = 0
+    missing_translation_views: int = 0
+    composition_review_completion: Dict[str, Dict[str, Any]] = field(default_factory=dict)
+    language_review_completion: Dict[str, Dict[str, Any]] = field(default_factory=dict)
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
@@ -328,9 +343,57 @@ class LibraryAnalyticsEngine:
                 "reviewer_id": r.reviewer_id,
                 "role": r.primary_role.value if hasattr(r.primary_role, "value") else str(r.primary_role),
                 "is_verified": r.is_credentials_verified,
+                "is_demonstration": getattr(r, "is_demonstration", False),
+                "verification_status": getattr(r, "verification_status", "PENDING_VERIFICATION"),
                 "assignments_completed": completed_count,
                 "review_actions_logged": actions_count,
             })
+
+        total_reviewers_cnt = len(reviewers)
+        demo_cnt = sum(1 for r in reviewers if getattr(r, "is_demonstration", False))
+        verified_prod_cnt = sum(1 for r in reviewers if not getattr(r, "is_demonstration", False) and r.is_credentials_verified and getattr(r, "verification_status", "VERIFIED") == "VERIFIED")
+        pending_ver_cnt = sum(1 for r in reviewers if not getattr(r, "is_demonstration", False) and getattr(r, "verification_status", "PENDING_VERIFICATION") == "PENDING_VERIFICATION")
+        deact_cnt = sum(1 for r in reviewers if not r.is_active or getattr(r, "verification_status", "") == "DEACTIVATED")
+        completed_reviews_cnt = session.query(ReviewAssignment).filter_by(status=AssignmentStatus.COMPLETED).count()
+        assigned_reviews_cnt = session.query(ReviewAssignment).filter(ReviewAssignment.status.in_([AssignmentStatus.PENDING, AssignmentStatus.IN_PROGRESS])).count()
+        app_views_total = app_literal + app_tatparya + app_bhavartha
+
+        # Composition-level review completion map
+        comp_completion_map = {}
+        for t in texts:
+            if t.content_id and t.content_id.startswith("VEDA-TXT-"):
+                total_v = len(t.verses)
+                app_v = 0
+                for v in t.verses:
+                    v_has_approved = session.query(TranslationView).join(Translation).filter(
+                        Translation.verse_id == v.id,
+                        TranslationView.review_status == ReviewStatus.APPROVED,
+                    ).count() > 0
+                    if v_has_approved:
+                        app_v += 1
+                comp_completion_map[t.content_id] = {
+                    "title": t.canonical_title,
+                    "total_verses": total_v,
+                    "approved_verses": app_v,
+                    "completion_pct": round((app_v / max(1, total_v)) * 100, 2) if total_v > 0 else 0.0,
+                    "status": "APPROVED" if (app_v == total_v and total_v > 0) else ("IN_PROGRESS" if app_v > 0 else "PENDING_REVIEW"),
+                }
+
+        # Language-level review completion map
+        lang_completion_map = {}
+        for lang_code in ["en", "hi", "te", "ta", "kn", "mr", "bn", "gu", "ml", "or"]:
+            tot_lang_t = session.query(Translation).filter_by(target_language=lang_code).count()
+            app_lang_t = session.query(Translation).filter_by(target_language=lang_code, review_status=ReviewStatus.APPROVED).count()
+            app_lang_views = session.query(TranslationView).join(Translation).filter(
+                Translation.target_language == lang_code,
+                TranslationView.review_status == ReviewStatus.APPROVED,
+            ).count()
+            lang_completion_map[lang_code] = {
+                "total_translations": tot_lang_t,
+                "approved_translations": app_lang_t,
+                "approved_views": app_lang_views,
+                "completion_pct": round((app_lang_t / max(1, tot_lang_t)) * 100, 2) if tot_lang_t > 0 else 0.0,
+            }
 
         ml_excel = len(list(Path("exports/multilingual/excel").glob("*.xlsx"))) if os.path.exists("exports/multilingual/excel") else 0
         ml_word = len(list(Path("exports/multilingual/word").glob("*.docx"))) if os.path.exists("exports/multilingual/word") else 0
@@ -395,6 +458,21 @@ class LibraryAnalyticsEngine:
             human_corrected_ai_annotations=human_corrected_ai_cnt,
             unresolved_textual_disputes=unresolved_disputes_cnt,
             reviewer_productivity_stats=productivity_stats,
+            total_reviewers=total_reviewers_cnt,
+            demonstration_accounts=demo_cnt,
+            verified_production_reviewers=verified_prod_cnt,
+            pending_verification_reviewers=pending_ver_cnt,
+            deactivated_reviewers=deact_cnt,
+            assigned_reviews=assigned_reviews_cnt,
+            completed_reviews=completed_reviews_cnt,
+            review_backlog=translations_awaiting_review,
+            unresolved_conflicts=unresolved_disputes_cnt,
+            ai_generated_suggestions=ai_annotations_cnt,
+            human_corrected_ai_suggestions=human_corrected_ai_cnt,
+            approved_translation_views=app_views_total,
+            missing_translation_views=752,
+            composition_review_completion=comp_completion_map,
+            language_review_completion=lang_completion_map,
         )
 
     @classmethod

@@ -20,6 +20,8 @@ from database.schemas import (
     ReviewerProfilePublicRead,
 )
 
+from automation.workbench.auth import hash_password
+
 logger = logging.getLogger("vedam.automation.workbench.reviewer_manager")
 
 
@@ -62,6 +64,8 @@ class ReviewerManager:
         if existing:
             raise ReviewerGovernanceError(f"Reviewer with ID '{reviewer_data.reviewer_id}' already exists.")
 
+        pwd_hash = hash_password(reviewer_data.password) if getattr(reviewer_data, "password", None) else None
+
         profile = ReviewerProfile(
             reviewer_id=reviewer_data.reviewer_id,
             full_name=reviewer_data.full_name.strip(),
@@ -74,7 +78,10 @@ class ReviewerManager:
             vedic_specialization=reviewer_data.vedic_specialization,
             academic_qualifications=reviewer_data.academic_qualifications,
             institutional_affiliation=reviewer_data.institutional_affiliation,
+            password_hash=pwd_hash,
+            is_demonstration=getattr(reviewer_data, "is_demonstration", False),
             is_credentials_verified=reviewer_data.is_credentials_verified,
+            verification_status="VERIFIED" if reviewer_data.is_credentials_verified else ("DEMO" if getattr(reviewer_data, "is_demonstration", False) else "PENDING_VERIFICATION"),
             verification_method=reviewer_data.verification_method,
             verification_date=reviewer_data.verification_date,
             permissions=reviewer_data.permissions or ["REVIEW_TEXT", "SUBMIT_CORRECTIONS", "FLAG_ISSUES"],
@@ -100,7 +107,12 @@ class ReviewerManager:
         if not profile:
             raise ReviewerGovernanceError(f"Reviewer '{reviewer_id}' not found.")
 
+        if profile.is_demonstration:
+            raise ReviewerGovernanceError(f"Cannot verify demonstration account '{reviewer_id}' as production scholar.")
+
         profile.is_credentials_verified = True
+        profile.verification_status = "VERIFIED"
+        profile.verified_by_admin = verified_by_admin
         profile.verification_method = f"{verification_method} (Verified by: {verified_by_admin})"
         profile.verification_date = datetime.now(timezone.utc)
         profile.updated_at = datetime.now(timezone.utc)

@@ -156,6 +156,16 @@ class PadachhedaEngine:
         }
 
     @classmethod
+    def split_padas(
+        cls,
+        verse_text: str,
+        language: str = "sa",
+        is_vedic: bool = False,
+    ) -> Dict[str, Any]:
+        """Convenience alias for analyze_padachheda."""
+        return cls.analyze_padachheda(verse_text, language=language, is_vedic=is_vedic)
+
+    @classmethod
     def _analyze_awadhi(cls, tokens: List[str], raw_text: str) -> Dict[str, Any]:
         """Specialized Awadhi morphological parser for Hanuman Chalisa and Tulsidas literature."""
         awadhi_words: List[str] = []

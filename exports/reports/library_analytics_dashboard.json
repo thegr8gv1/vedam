@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-05T02:20:00.119303+00:00",
+  "generated_at_utc": "2026-11-05T02:42:46.269737+00:00",
   "total_candidate_catalog": 77,
   "total_registered_database_texts": 20,
   "verified_complete_texts": 18,
@@ -160,9 +160,281 @@
   "pending_reviewer_actions": 0,
   "approved_literal_views": 0,
   "approved_traditional_meaning_views": 0,
-  "approved_bhavartha_views": 0,
-  "ai_generated_annotations": 0,
+  "approved_bhavartha_views": 9,
+  "ai_generated_annotations": 2,
   "human_corrected_ai_annotations": 0,
-  "unresolved_textual_disputes": 0,
-  "reviewer_productivity_stats": []
+  "unresolved_textual_disputes": 2,
+  "reviewer_productivity_stats": [
+    {
+      "reviewer_id": "REV-ADMIN-001",
+      "role": "EDITORIAL_BOARD",
+      "is_verified": true,
+      "is_demonstration": false,
+      "verification_status": "VERIFIED",
+      "assignments_completed": 0,
+      "review_actions_logged": 0
+    },
+    {
+      "reviewer_id": "REV-PROD-VEDIC",
+      "role": "VEDIC_RECENSION",
+      "is_verified": true,
+      "is_demonstration": false,
+      "verification_status": "VERIFIED",
+      "assignments_completed": 0,
+      "review_actions_logged": 5
+    },
+    {
+      "reviewer_id": "REV-PROD-CLASSICAL",
+      "role": "SANSKRIT_GRAMMAR",
+      "is_verified": true,
+      "is_demonstration": false,
+      "verification_status": "VERIFIED",
+      "assignments_completed": 0,
+      "review_actions_logged": 4
+    },
+    {
+      "reviewer_id": "REV-PROD-AWADHI",
+      "role": "AWADHI_SPECIALIST",
+      "is_verified": true,
+      "is_demonstration": false,
+      "verification_status": "VERIFIED",
+      "assignments_completed": 0,
+      "review_actions_logged": 4
+    },
+    {
+      "reviewer_id": "REV-DEMO-SIM",
+      "role": "SANSKRIT_TEXTUAL",
+      "is_verified": false,
+      "is_demonstration": true,
+      "verification_status": "DEMO",
+      "assignments_completed": 0,
+      "review_actions_logged": 0
+    },
+    {
+      "reviewer_id": "REV-APPLICANT-PENDING",
+      "role": "HINDI_TRANSLATOR",
+      "is_verified": false,
+      "is_demonstration": false,
+      "verification_status": "PENDING_VERIFICATION",
+      "assignments_completed": 0,
+      "review_actions_logged": 0
+    }
+  ],
+  "total_reviewers": 6,
+  "demonstration_accounts": 1,
+  "verified_production_reviewers": 4,
+  "pending_verification_reviewers": 1,
+  "deactivated_reviewers": 0,
+  "assigned_reviews": 0,
+  "completed_reviews": 0,
+  "review_backlog": 3070,
+  "unresolved_conflicts": 2,
+  "ai_generated_suggestions": 2,
+  "human_corrected_ai_suggestions": 0,
+  "approved_translation_views": 9,
+  "missing_translation_views": 752,
+  "composition_review_completion": {
+    "VEDA-TXT-00001": {
+      "title": "Ganesha Pancharatnam",
+      "total_verses": 6,
+      "approved_verses": 0,
+      "completion_pct": 0.0,
+      "status": "PENDING_REVIEW"
+    },
+    "VEDA-TXT-00002": {
+      "title": "Shiva Tandava Stotram",
+      "total_verses": 16,
+      "approved_verses": 3,
+      "completion_pct": 18.75,
+      "status": "IN_PROGRESS"
+    },
+    "VEDA-TXT-00003": {
+      "title": "Aditya Hrudayam",
+      "total_verses": 31,
+      "approved_verses": 0,
+      "completion_pct": 0.0,
+      "status": "PENDING_REVIEW"
+    },
+    "VEDA-TXT-00004": {
+      "title": "Madhurashtakam",
+      "total_verses": 9,
+      "approved_verses": 0,
+      "completion_pct": 0.0,
+      "status": "PENDING_REVIEW"
+    },
+    "VEDA-TXT-00005": {
+      "title": "Mahamrityunjaya Vedic Mantra",
+      "total_verses": 1,
+      "approved_verses": 1,
+      "completion_pct": 100.0,
+      "status": "APPROVED"
+    },
+    "VEDA-TXT-00006": {
+      "title": "Gayatri Vedic Mantra",
+      "total_verses": 1,
+      "approved_verses": 1,
+      "completion_pct": 100.0,
+      "status": "APPROVED"
+    },
+    "VEDA-TXT-00007": {
+      "title": "Sri Suktam",
+      "total_verses": 16,
+      "approved_verses": 0,
+      "completion_pct": 0.0,
+      "status": "PENDING_REVIEW"
+    },
+    "VEDA-TXT-00008": {
+      "title": "Hanuman Chalisa",
+      "total_verses": 43,
+      "approved_verses": 3,
+      "completion_pct": 6.98,
+      "status": "IN_PROGRESS"
+    },
+    "VEDA-TXT-00009": {
+      "title": "Test Shiva Stuti 1",
+      "total_verses": 1,
+      "approved_verses": 0,
+      "completion_pct": 0.0,
+      "status": "PENDING_REVIEW"
+    },
+    "VEDA-TXT-00010": {
+      "title": "Mahalakshmi Ashtakam",
+      "total_verses": 10,
+      "approved_verses": 0,
+      "completion_pct": 0.0,
+      "status": "PENDING_REVIEW"
+    },
+    "VEDA-TXT-00011": {
+      "title": "Lingashtakam",
+      "total_verses": 9,
+      "approved_verses": 0,
+      "completion_pct": 0.0,
+      "status": "PENDING_REVIEW"
+    },
+    "VEDA-TXT-00012": {
+      "title": "Sankata Nashana Ganesha Stotram",
+      "total_verses": 8,
+      "approved_verses": 0,
+      "completion_pct": 0.0,
+      "status": "PENDING_REVIEW"
+    },
+    "VEDA-TXT-00013": {
+      "title": "Venkateswara Suprabhatam",
+      "total_verses": 70,
+      "approved_verses": 0,
+      "completion_pct": 0.0,
+      "status": "PENDING_REVIEW"
+    },
+    "VEDA-TXT-00014": {
+      "title": "Purusha Suktam",
+      "total_verses": 16,
+      "approved_verses": 0,
+      "completion_pct": 0.0,
+      "status": "PENDING_REVIEW"
+    },
+    "VEDA-TXT-00015": {
+      "title": "Durga Suktam",
+      "total_verses": 7,
+      "approved_verses": 0,
+      "completion_pct": 0.0,
+      "status": "PENDING_REVIEW"
+    },
+    "VEDA-TXT-00016": {
+      "title": "Narayana Suktam",
+      "total_verses": 12,
+      "approved_verses": 0,
+      "completion_pct": 0.0,
+      "status": "PENDING_REVIEW"
+    },
+    "VEDA-TXT-00017": {
+      "title": "Surya Ashtakam",
+      "total_verses": 10,
+      "approved_verses": 0,
+      "completion_pct": 0.0,
+      "status": "PENDING_REVIEW"
+    },
+    "VEDA-TXT-00018": {
+      "title": "Kanakadhara Stotram",
+      "total_verses": 21,
+      "approved_verses": 0,
+      "completion_pct": 0.0,
+      "status": "PENDING_REVIEW"
+    },
+    "VEDA-TXT-00019": {
+      "title": "Mahishasura Mardini Stotram",
+      "total_verses": 21,
+      "approved_verses": 0,
+      "completion_pct": 0.0,
+      "status": "PENDING_REVIEW"
+    },
+    "VEDA-TXT-00099": {
+      "title": "Aditya Hrudayam Sample",
+      "total_verses": 2,
+      "approved_verses": 0,
+      "completion_pct": 0.0,
+      "status": "PENDING_REVIEW"
+    }
+  },
+  "language_review_completion": {
+    "en": {
+      "total_translations": 307,
+      "approved_translations": 0,
+      "approved_views": 8,
+      "completion_pct": 0.0
+    },
+    "hi": {
+      "total_translations": 307,
+      "approved_translations": 0,
+      "approved_views": 0,
+      "completion_pct": 0.0
+    },
+    "te": {
+      "total_translations": 307,
+      "approved_translations": 0,
+      "approved_views": 1,
+      "completion_pct": 0.0
+    },
+    "ta": {
+      "total_translations": 307,
+      "approved_translations": 0,
+      "approved_views": 0,
+      "completion_pct": 0.0
+    },
+    "kn": {
+      "total_translations": 307,
+      "approved_translations": 0,
+      "approved_views": 0,
+      "completion_pct": 0.0
+    },
+    "mr": {
+      "total_translations": 307,
+      "approved_translations": 0,
+      "approved_views": 0,
+      "completion_pct": 0.0
+    },
+    "bn": {
+      "total_translations": 307,
+      "approved_translations": 0,
+      "approved_views": 0,
+      "completion_pct": 0.0
+    },
+    "gu": {
+      "total_translations": 307,
+      "approved_translations": 0,
+      "approved_views": 0,
+      "completion_pct": 0.0
+    },
+    "ml": {
+      "total_translations": 307,
+      "approved_translations": 0,
+      "approved_views": 0,
+      "completion_pct": 0.0
+    },
+    "or": {
+      "total_translations": 307,
+      "approved_translations": 0,
+      "approved_views": 0,
+      "completion_pct": 0.0
+    }
+  }
 }

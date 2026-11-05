@@ -48,9 +48,13 @@ class ReviewActionEngine:
 
         # 2. Check affirmative credentials for APPROVE or APPROVE_WITH_CORRECTIONS
         if action_data.action_type in (ReviewActionType.APPROVE, ReviewActionType.APPROVE_WITH_CORRECTIONS):
-            if not reviewer.is_credentials_verified:
+            if reviewer.is_demonstration:
                 raise ReviewActionError(
-                    f"Reviewer '{reviewer.full_name}' credentials are unverified. Cannot issue scholarly approval."
+                    f"Reviewer '{reviewer.full_name}' is a demonstration account. Demonstration accounts cannot issue production approvals."
+                )
+            if not reviewer.is_credentials_verified or reviewer.verification_status != "VERIFIED":
+                raise ReviewActionError(
+                    f"Reviewer '{reviewer.full_name}' credentials are unverified ({reviewer.verification_status}). Cannot issue scholarly approval."
                 )
 
         # 3. Retrieve Entities
@@ -162,6 +166,7 @@ class ReviewActionEngine:
             previous_text=previous_text,
             proposed_text=action_data.proposed_text,
             scholarly_commentary=action_data.scholarly_commentary,
+            feedback_category=getattr(action_data, 'feedback_category', None),
             traditional_references=action_data.traditional_references or [],
             alternative_readings=action_data.alternative_readings or [],
             created_at=datetime.now(timezone.utc),

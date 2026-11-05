@@ -20,7 +20,9 @@ from database.models import (
     ReleaseStatus,
     ReviewActionType,
     ReviewStatus,
+    ReviewerFeedbackCategory,
     ReviewerRole,
+    ReviewerVerificationStatus,
     TranslationType,
     VerseType,
     VersionType,
@@ -280,26 +282,57 @@ class ReviewerProfileBase(SchemaBase):
     verification_method: Optional[str] = None
     verification_date: Optional[datetime] = None
     is_active: bool = True
+    is_demonstration: bool = False
+    verification_status: str = "PENDING_VERIFICATION"
 
 
 class ReviewerProfileCreate(ReviewerProfileBase):
     email: Optional[str] = None
+    password: Optional[str] = None
     permissions: Optional[List[str]] = Field(default_factory=list)
 
 
 class ReviewerProfilePublicRead(ReviewerProfileBase):
-    """Sanitized public profile hiding sensitive email and internal permission flags."""
+    """Sanitized public profile hiding sensitive email, internal permissions and credential notes."""
     id: int
     created_at: datetime
 
 
 class ReviewerProfileAdminRead(ReviewerProfileBase):
-    """Full administrative view with email and permissions."""
+    """Full administrative view with email, verification details, and permissions."""
     id: int
     email: Optional[str] = None
     permissions: Optional[List[str]] = Field(default_factory=list)
+    verified_by_admin: Optional[str] = None
+    verification_notes: Optional[str] = None
+    last_login_at: Optional[datetime] = None
+    failed_login_attempts: int = 0
+    is_locked: bool = False
     created_at: datetime
     updated_at: datetime
+
+
+class LoginRequest(SchemaBase):
+    reviewer_id: str
+    password: str
+
+
+class LoginResponse(SchemaBase):
+    session_token: str
+    reviewer_id: str
+    full_name: str
+    primary_role: ReviewerRole
+    is_demonstration: bool
+    verification_status: str
+    expires_at: datetime
+
+
+class CredentialVerificationRequest(SchemaBase):
+    reviewer_id: str
+    verified_by_admin: str
+    verification_method: str
+    verification_notes: Optional[str] = None
+    approve: bool = True
 
 
 class ReviewAssignmentCreate(SchemaBase):
@@ -343,6 +376,7 @@ class ReviewActionLogCreate(SchemaBase):
     new_status: str
     previous_text: Optional[str] = None
     proposed_text: Optional[str] = None
+    feedback_category: Optional[str] = None
     scholarly_commentary: str = Field(..., min_length=5)
     traditional_references: Optional[List[Dict[str, Any]]] = Field(default_factory=list)
     alternative_readings: Optional[List[Dict[str, Any]]] = Field(default_factory=list)

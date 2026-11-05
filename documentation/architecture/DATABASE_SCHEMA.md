@@ -169,6 +169,34 @@ erDiagram
         datetime verification_date
         json permissions
         boolean is_active
+        string password_hash "PBKDF2-HMAC-SHA256 100k iterations"
+        boolean is_demonstration "True for test harness fixtures, False for production scholars"
+        string verification_status "DEMO, PENDING_VERIFICATION, VERIFIED, REJECTED, DEACTIVATED"
+        string verified_by_admin
+        text verification_notes
+        datetime last_login_at
+        int failed_login_attempts
+        boolean is_locked
+    }
+
+    REVIEWER_SESSIONS {
+        int id PK
+        string session_token UK "32-byte cryptographic random token"
+        int reviewer_id FK
+        datetime created_at
+        datetime expires_at
+        boolean is_revoked
+        string client_ip
+        string user_agent
+    }
+
+    AUTH_AUDIT_LOGS {
+        int id PK
+        int reviewer_id
+        string event_type "LOGIN_SUCCESS, LOGIN_FAILED, ACCOUNT_LOCKED, LOGOUT, CREDENTIALS_VERIFIED"
+        string ip_address
+        text details
+        datetime created_at
     }
 
     REVIEW_ASSIGNMENTS {
@@ -202,6 +230,7 @@ erDiagram
         string new_status
         text previous_text
         text proposed_text
+        string feedback_category "ORIGINAL_TEXT_CONCERN, SANSKRIT_GRAMMAR_ISSUE, etc."
         text scholarly_commentary
         json traditional_references
         json alternative_readings

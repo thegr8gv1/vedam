@@ -137,13 +137,6 @@ class ChandasEngine:
             "scansion_pattern": "".join(weights),
         }
 
-        return {
-            "text": line.strip(),
-            "syllable_count": len(aksharas),
-            "matra_count": sum(2 if w == "G" else 1 for w in weights),
-            "scansion_pattern": "".join(weights),
-        }
-
     @classmethod
     def _count_syllables(cls, text: str) -> int:
         clean = re.sub(r"[।॥०-९0-9\s\n\r]+", "", text)

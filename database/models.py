@@ -167,6 +167,28 @@ class AIAnnotationType(str, enum.Enum):
     SOURCE_CITATION = "SOURCE_CITATION"
 
 
+class ReviewerVerificationStatus(str, enum.Enum):
+    DEMO = "DEMO"
+    PENDING_VERIFICATION = "PENDING_VERIFICATION"
+    VERIFIED = "VERIFIED"
+    REJECTED = "REJECTED"
+    DEACTIVATED = "DEACTIVATED"
+
+
+class ReviewerFeedbackCategory(str, enum.Enum):
+    ORIGINAL_TEXT_CONCERN = "ORIGINAL_TEXT_CONCERN"
+    SANSKRIT_GRAMMAR_ISSUE = "SANSKRIT_GRAMMAR_ISSUE"
+    TRANSLITERATION_ISSUE = "TRANSLITERATION_ISSUE"
+    INCORRECT_WORD_MEANING = "INCORRECT_WORD_MEANING"
+    TRANSLATION_ISSUE = "TRANSLATION_ISSUE"
+    TRADITIONAL_INTERPRETATION_ISSUE = "TRADITIONAL_INTERPRETATION_ISSUE"
+    METER_ISSUE = "METER_ISSUE"
+    PRONUNCIATION_ISSUE = "PRONUNCIATION_ISSUE"
+    SOURCE_REFERENCE_CONCERN = "SOURCE_REFERENCE_CONCERN"
+    ALTERNATIVE_RECENSION = "ALTERNATIVE_RECENSION"
+    CULTURAL_DEVOTIONAL_NUANCE = "CULTURAL_DEVOTIONAL_NUANCE"
+
+
 # ---------------------------------------------------------------------------
 # Models
 # ---------------------------------------------------------------------------
@@ -635,6 +657,17 @@ class ReviewerProfile(Base):
     verification_date: Mapped[Optional[datetime]] = mapped_column(DateTime, nullable=True)
     permissions: Mapped[Optional[list]] = mapped_column(JSON, nullable=True)
     is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+
+    # Phase 8: Authentication, Security & Onboarding Status
+    password_hash: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
+    is_demonstration: Mapped[bool] = mapped_column(Boolean, default=False)
+    verification_status: Mapped[str] = mapped_column(String(32), default="PENDING_VERIFICATION")
+    verified_by_admin: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
+    verification_notes: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
+    last_login_at: Mapped[Optional[datetime]] = mapped_column(DateTime, nullable=True)
+    failed_login_attempts: Mapped[int] = mapped_column(Integer, default=0)
+    is_locked: Mapped[bool] = mapped_column(Boolean, default=False)
+
     created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
     updated_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
 
@@ -642,6 +675,7 @@ class ReviewerProfile(Base):
     assignments: Mapped[List["ReviewAssignment"]] = relationship("ReviewAssignment", foreign_keys="ReviewAssignment.reviewer_id", back_populates="reviewer")
     actions: Mapped[List["ReviewActionLog"]] = relationship("ReviewActionLog", back_populates="reviewer")
     reviewed_annotations: Mapped[List["AIAnnotationProvenance"]] = relationship("AIAnnotationProvenance", back_populates="human_reviewer")
+    sessions: Mapped[List["ReviewerSession"]] = relationship("ReviewerSession", back_populates="reviewer")
 
 
 class ReviewAssignment(Base):
@@ -694,6 +728,7 @@ class ReviewActionLog(Base):
     previous_text: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
     proposed_text: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
     scholarly_commentary: Mapped[str] = mapped_column(SA_Text)
+    feedback_category: Mapped[Optional[str]] = mapped_column(String(64), nullable=True)
     traditional_references: Mapped[Optional[list]] = mapped_column(JSON, nullable=True)
     alternative_readings: Mapped[Optional[list]] = mapped_column(JSON, nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
@@ -761,3 +796,39 @@ class AIAnnotationProvenance(Base):
     # Relationships
     verse: Mapped["Verse"] = relationship("Verse")
     human_reviewer: Mapped[Optional["ReviewerProfile"]] = relationship("ReviewerProfile", back_populates="reviewed_annotations")
+
+
+class ReviewerSession(Base):
+    """
+    Active cryptographic session tokens for authenticated scholars,
+    supporting expiry, IP tracking, and instant revocation.
+    """
+    __tablename__ = "reviewer_sessions"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    session_token: Mapped[str] = mapped_column(String(64), unique=True, index=True)
+    reviewer_id: Mapped[int] = mapped_column(Integer, ForeignKey("reviewer_profiles.id"), index=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
+    expires_at: Mapped[datetime] = mapped_column(DateTime)
+    is_revoked: Mapped[bool] = mapped_column(Boolean, default=False)
+    client_ip: Mapped[Optional[str]] = mapped_column(String(64), nullable=True)
+    user_agent: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
+
+    # Relationships
+    reviewer: Mapped["ReviewerProfile"] = relationship("ReviewerProfile", back_populates="sessions")
+
+
+class AuthAuditLog(Base):
+    """
+    Immutable audit trail of authentication events, credential modifications,
+    login attempts, lockout enforcements, and unauthorized requests.
+    """
+    __tablename__ = "auth_audit_logs"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    reviewer_id: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    event_type: Mapped[str] = mapped_column(String(64), index=True)
+    ip_address: Mapped[Optional[str]] = mapped_column(String(64), nullable=True)
+    details: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
+

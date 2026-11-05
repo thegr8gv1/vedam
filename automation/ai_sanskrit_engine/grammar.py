@@ -33,10 +33,11 @@ class GrammarEngine:
 
     # Awadhi Grammatical Affixes & Patterns
     AWADHI_GRAMMAR = {
-        "verbal_past_yo": ("Past Tense (भूतकाल -यो प्रत्यय)", "e.g., भयो, कियो - indicative completed action"),
-        "verbal_past_nh": ("Past Tense (भूतकाल -न्ह प्रत्यय)", "e.g., दीन्ह, लीन्ह - perfective action marker"),
-        "case_ke": ("Genitive/Relation (सम्बन्ध कारक)", "e.g., राम के, कपीस के - equivalent to Sanskrit षष्ठी"),
-        "case_te": ("Ablative/Instrumental (अपादान/करण)", "e.g., चरन ते, कृपा ते - origin or cause marker"),
+        "यो": ("Past Tense (भूतकाल -यो प्रत्यय)", "e.g., भयो, कियो - indicative completed action"),
+        "न्ह": ("Past Tense (भूतकाल -न्ह प्रत्यय)", "e.g., दीन्ह, लीन्ह - perfective action marker"),
+        "के": ("Genitive/Relation (सम्बन्ध कारक)", "e.g., राम के, कपीस के - equivalent to Sanskrit षष्ठी"),
+        "ते": ("Ablative/Instrumental (अपादान/करण)", "e.g., चरन ते, कृपा ते - origin or cause marker"),
+        "हि": ("Locative/Dative (अधिकरण/कर्म)", "e.g., मनहि, ताहि - spatial or recipient marker"),
     }
 
     @classmethod
@@ -126,7 +127,7 @@ class GrammarEngine:
         rule = "Eastern Hindi / Awadhi morphology"
 
         for suffix, (gram_type, desc) in cls.AWADHI_GRAMMAR.items():
-            if pada.endswith(suffix.replace("verbal_past_", "").replace("case_", "")):
+            if pada.endswith(suffix):
                 feature = gram_type
                 rule = desc
                 break
