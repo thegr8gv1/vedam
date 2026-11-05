@@ -33,6 +33,9 @@ import 'state/sadhana_state.dart';
 import 'state/scripture_reader_state.dart';
 import 'state/vrat_state.dart';
 
+import 'presentation/screens/festivals/festival_calendar_screen.dart';
+import 'presentation/screens/festivals/festival_detail_screen.dart';
+import 'data/fixtures/authentic_festival_catalog_data.dart';
 import 'data/fixtures/authentic_scriptures_data.dart';
 import 'presentation/screens/library/verse_reader_screen.dart';
 
@@ -70,6 +73,8 @@ void main() {
   bool showTargetModal = false;
   bool showTargetSelector = false;
   bool showCompletionDialog = false;
+  bool showFestivalCalendar = false;
+  String? openFestivalId;
 
   String? cardParam;
 
@@ -83,6 +88,13 @@ void main() {
     if (tab == 'mantras') showMantrasList = true;
     if (tab == 'panchangam') showPanchangam = true;
     if (tab == 'vrat') showVratCalendar = true;
+    if (tab == 'festivals' || Uri.base.queryParameters['festivals'] == 'true' || Uri.base.queryParameters['calendar'] == 'true') {
+      showFestivalCalendar = true;
+    }
+    final fest = Uri.base.queryParameters['festival'];
+    if (fest != null) {
+      openFestivalId = fest;
+    }
     if (tab == 'reminders') showReminders = true;
     if (tab == 'bookmarks') showBookmarks = true;
     if (Uri.base.queryParameters['prefs'] == 'true') showPreferences = true;
@@ -172,6 +184,8 @@ void main() {
     showTargetSelector: showTargetSelector,
     showCompletionDialog: showCompletionDialog,
     cardParam: cardParam,
+    showFestivalCalendar: showFestivalCalendar,
+    openFestivalId: openFestivalId,
   ));
 }
 
@@ -207,6 +221,8 @@ class VedamApp extends StatelessWidget {
   final bool showTargetSelector;
   final bool showCompletionDialog;
   final String? cardParam;
+  final bool showFestivalCalendar;
+  final String? openFestivalId;
 
   const VedamApp({
     super.key,
@@ -241,6 +257,8 @@ class VedamApp extends StatelessWidget {
     this.showTargetSelector = false,
     this.showCompletionDialog = false,
     this.cardParam,
+    this.showFestivalCalendar = false,
+    this.openFestivalId,
   });
 
   @override
@@ -269,7 +287,27 @@ class VedamApp extends StatelessWidget {
           initialIndex: initialTab,
         );
 
-        if (cardParam == 'panchangam') {
+        if (openFestivalId != null) {
+          final event = AuthenticFestivalCatalogData.getEventById(openFestivalId!) ??
+              AuthenticFestivalCatalogData.allEvents.first;
+          homeWidget = FestivalDetailScreen(
+            event: event,
+            vratState: vState,
+            panchangamState: pState,
+            sadhanaState: sState,
+            mantraRepository: mRepo,
+            audioState: aState,
+          );
+        } else if (showFestivalCalendar) {
+          homeWidget = FestivalCalendarScreen(
+            vratState: vState,
+            panchangamState: pState,
+            panchangamRepository: pRepo,
+            sadhanaState: sState,
+            mantraRepository: mRepo,
+            audioState: aState,
+          );
+        } else if (cardParam == 'panchangam') {
           homeWidget = Scaffold(
             appBar: AppBar(title: const Text("Today's Panchangam")),
             body: SafeArea(

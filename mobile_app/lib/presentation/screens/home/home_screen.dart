@@ -15,6 +15,7 @@ import '../../../state/vrat_state.dart';
 import '../../widgets/empty_state_view.dart';
 import '../../widgets/sacred_app_bar.dart';
 import '../../widgets/section_header.dart';
+import '../festivals/festival_calendar_screen.dart';
 import '../library/scripture_detail_screen.dart';
 import 'widgets/daily_routine_card.dart';
 import 'widgets/daily_verse_card.dart';
@@ -114,6 +115,26 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     }
   }
 
+  void _openFestivalCalendar(
+    BuildContext context,
+    VratState vrat,
+    SadhanaState sadhana,
+    AudioState audio,
+  ) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => FestivalCalendarScreen(
+          vratState: vrat,
+          panchangamState: widget.panchangamState,
+          sadhanaState: sadhana,
+          mantraRepository: widget.mantraRepository,
+          audioState: audio,
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
@@ -136,6 +157,11 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     return Scaffold(
       appBar: SacredAppBar(
         actions: [
+          IconButton(
+            icon: const Icon(Icons.event_available_outlined),
+            onPressed: () => _openFestivalCalendar(context, vrat, sadhana, audio),
+            tooltip: 'Festival Calendar',
+          ),
           IconButton(
             icon: const Icon(Icons.search),
             onPressed: () => widget.onNavigateToTab(1), // Go to library
@@ -257,6 +283,9 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
         UpcomingVratCard(
           vratState: vrat,
           panchangamState: widget.panchangamState,
+          sadhanaState: sadhana,
+          mantraRepository: widget.mantraRepository,
+          audioState: audio,
         ),
         const SizedBox(height: 12),
 
@@ -369,6 +398,9 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                   UpcomingVratCard(
                     vratState: vrat,
                     panchangamState: widget.panchangamState,
+                    sadhanaState: sadhana,
+                    mantraRepository: widget.mantraRepository,
+                    audioState: audio,
                   ),
                   const SizedBox(height: 14),
                   ScriptureProgressCard(

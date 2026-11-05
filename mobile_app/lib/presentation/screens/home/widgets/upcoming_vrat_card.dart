@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 import '../../../../core/models/vrat_observance.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/text_styles.dart';
+import '../../../../data/repositories/mantra_repository.dart';
+import '../../../../state/audio_state.dart';
 import '../../../../state/panchangam_state.dart';
+import '../../../../state/sadhana_state.dart';
 import '../../../../state/vrat_state.dart';
+import '../../festivals/festival_calendar_screen.dart';
 import '../../vrat/vrat_calendar_screen.dart';
 import '../../vrat/vrat_detail_screen.dart';
 
@@ -13,16 +17,22 @@ import '../../vrat/vrat_detail_screen.dart';
 /// - Reuses VratState to show the next upcoming or active observance.
 /// - Displays observance title, target date, fasting status, and checklist completion progress.
 /// - Clearly distinguishes calculated calendar observances from user-created vrats.
-/// - Handles empty state with an invitation to explore traditional vrat templates.
-/// - Direct actions to open observance details/checklist or view the full Vrat Calendar.
+/// - Handles empty state with direct pathways to both Festival Calendar and Vrat templates.
+/// - Direct actions to open observance details/checklist, Festival Calendar, or Vrat Calendar.
 class UpcomingVratCard extends StatelessWidget {
   final VratState vratState;
   final PanchangamState? panchangamState;
+  final SadhanaState? sadhanaState;
+  final MantraRepository? mantraRepository;
+  final AudioState? audioState;
 
   const UpcomingVratCard({
     super.key,
     required this.vratState,
     this.panchangamState,
+    this.sadhanaState,
+    this.mantraRepository,
+    this.audioState,
   });
 
   void _openVratDetail(BuildContext context, VratObservance observance) {
@@ -32,6 +42,10 @@ class UpcomingVratCard extends StatelessWidget {
         builder: (_) => VratDetailScreen(
           observanceId: observance.id,
           vratState: vratState,
+          sadhanaState: sadhanaState,
+          mantraRepository: mantraRepository,
+          audioState: audioState,
+          panchangamState: panchangamState,
         ),
       ),
     );
@@ -44,6 +58,24 @@ class UpcomingVratCard extends StatelessWidget {
         builder: (_) => VratCalendarScreen(
           vratState: vratState,
           panchangamState: panchangamState,
+          sadhanaState: sadhanaState,
+          mantraRepository: mantraRepository,
+          audioState: audioState,
+        ),
+      ),
+    );
+  }
+
+  void _openFestivalCalendar(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => FestivalCalendarScreen(
+          vratState: vratState,
+          panchangamState: panchangamState,
+          sadhanaState: sadhanaState,
+          mantraRepository: mantraRepository,
+          audioState: audioState,
         ),
       ),
     );
@@ -97,27 +129,48 @@ class UpcomingVratCard extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(width: 8),
-                InkWell(
-                  onTap: () => _openVratCalendar(context),
-                  borderRadius: BorderRadius.circular(8),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Text(
-                          'Vrat Calendar',
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    InkWell(
+                      onTap: () => _openFestivalCalendar(context),
+                      borderRadius: BorderRadius.circular(8),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                        child: Text(
+                          'Festivals',
                           style: TextStyle(
                             fontSize: 11,
                             fontWeight: FontWeight.bold,
                             color: isDark ? AppColors.goldLight : AppColors.saffronDark,
                           ),
                         ),
-                        const SizedBox(width: 3),
-                        const Icon(Icons.arrow_forward_ios, size: 11, color: AppColors.saffronPrimary),
-                      ],
+                      ),
                     ),
-                  ),
+                    const Text(' • ', style: TextStyle(fontSize: 11, color: Colors.grey)),
+                    InkWell(
+                      onTap: () => _openVratCalendar(context),
+                      borderRadius: BorderRadius.circular(8),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              'My Vrat',
+                              style: TextStyle(
+                                fontSize: 11,
+                                fontWeight: FontWeight.bold,
+                                color: isDark ? AppColors.goldLight : AppColors.saffronDark,
+                              ),
+                            ),
+                            const SizedBox(width: 2),
+                            const Icon(Icons.arrow_forward_ios, size: 10, color: AppColors.saffronPrimary),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
@@ -285,15 +338,34 @@ class UpcomingVratCard extends StatelessWidget {
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(height: 10),
-                    OutlinedButton.icon(
-                      icon: const Icon(Icons.add, size: 15),
-                      label: const Text('Explore Vrat Calendar', style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold)),
-                      style: OutlinedButton.styleFrom(
-                        foregroundColor: AppColors.saffronPrimary,
-                        side: const BorderSide(color: AppColors.saffronPrimary, width: 1.0),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-                      ),
-                      onPressed: () => _openVratCalendar(context),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: OutlinedButton.icon(
+                            icon: const Icon(Icons.event, size: 14),
+                            label: const Text('Festivals', style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold)),
+                            style: OutlinedButton.styleFrom(
+                              foregroundColor: AppColors.saffronPrimary,
+                              side: const BorderSide(color: AppColors.saffronPrimary, width: 1.0),
+                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                            ),
+                            onPressed: () => _openFestivalCalendar(context),
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: OutlinedButton.icon(
+                            icon: const Icon(Icons.calendar_month, size: 14),
+                            label: const Text('Explore Vrat Calendar', style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold)),
+                            style: OutlinedButton.styleFrom(
+                              foregroundColor: isDark ? AppColors.goldLight : AppColors.goldDark,
+                              side: BorderSide(color: isDark ? AppColors.goldLight : AppColors.goldDark, width: 1.0),
+                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                            ),
+                            onPressed: () => _openVratCalendar(context),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
