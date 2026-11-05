@@ -1,0 +1,101 @@
+import '../../core/models/sadhana_practice.dart';
+
+/// Default catalog of traditional personal Sadhana practices.
+class DefaultSadhanaPracticesData {
+  static const List<SadhanaPractice> allCatalogPractices = [
+    SadhanaPractice(
+      id: 'practice_morning_prayer',
+      title: 'Prātah Smaraṇam (Morning Prayer)',
+      sanskritTitle: 'प्रातः स्मरणम्',
+      category: SadhanaCategory.morningPrayer,
+      deity: 'Universal',
+      description: 'Traditional morning waking prayers: Kara Darshanam, Bhumi Vandanam, and Gayatri contemplation.',
+      estimatedMinutes: 5,
+      pujaGuideId: 'guide_morning_prayer',
+      linkedMantraId: 'VEDA-MTR-0399',
+    ),
+    SadhanaPractice(
+      id: 'practice_ganesh_puja',
+      title: 'Daily Ganesha Puja',
+      sanskritTitle: 'श्री गणेश पञ्चोपचार पूजा',
+      category: SadhanaCategory.dailyPuja,
+      deity: 'Ganesha',
+      description: 'Pancha Upachara worship to Bhagavan Ganesha for removal of obstacles, wisdom, and auspicious beginnings.',
+      estimatedMinutes: 10,
+      pujaGuideId: 'guide_ganesh_puja',
+      linkedMantraId: 'VEDA-MTR-0454',
+    ),
+    SadhanaPractice(
+      id: 'practice_gayatri_japa',
+      title: 'Gayatri Mahamantra Japa',
+      sanskritTitle: 'गायत्री महामन्त्र जप',
+      category: SadhanaCategory.japaPractice,
+      deity: 'Savitr / Gayatri',
+      description: 'Vedic solar illumination mantra for mental vitality, spiritual wisdom, and righteous intellect.',
+      estimatedMinutes: 10,
+      linkedMantraId: 'VEDA-MTR-0399',
+    ),
+    SadhanaPractice(
+      id: 'practice_shiva_puja',
+      title: 'Daily Shiva Puja',
+      sanskritTitle: 'श्री शिव पञ्चोपचार पूजा',
+      category: SadhanaCategory.dailyPuja,
+      deity: 'Shiva',
+      description: 'Pancha Upachara offerings of pure water, sacred ash, and Bilva leaves to Lord Shiva for deep inner peace.',
+      estimatedMinutes: 12,
+      pujaGuideId: 'guide_shiva_puja',
+      linkedMantraId: 'VEDA-MTR-0429',
+    ),
+    SadhanaPractice(
+      id: 'practice_vishnu_puja',
+      title: 'Daily Vishnu Puja',
+      sanskritTitle: 'श्री विष्णु पञ्चोपचार पूजा',
+      category: SadhanaCategory.dailyPuja,
+      deity: 'Vishnu',
+      description: 'Upachara reverence for Lord Narayana with Tulasi, flowers, and holy names for harmony and surrender.',
+      estimatedMinutes: 12,
+      pujaGuideId: 'guide_vishnu_puja',
+      linkedMantraId: 'VEDA-MTR-0378',
+    ),
+    SadhanaPractice(
+      id: 'practice_lakshmi_puja',
+      title: 'Daily Mahalakshmi Puja',
+      sanskritTitle: 'श्री महालक्ष्मी पूजा',
+      category: SadhanaCategory.dailyPuja,
+      deity: 'Lakshmi',
+      description: 'Reverent household adoration of Mother Mahalakshmi for auspiciousness, purity, and noble prosperity.',
+      estimatedMinutes: 10,
+      pujaGuideId: 'guide_lakshmi_puja',
+      linkedMantraId: 'VEDA-MTR-0415',
+    ),
+    SadhanaPractice(
+      id: 'practice_scripture_reading',
+      title: 'Daily Scripture Reading (Svādhyāya)',
+      sanskritTitle: 'स्वाध्याय (शास्त्र पठन)',
+      category: SadhanaCategory.scriptureReading,
+      deity: 'Saraswati',
+      description: 'Contemplative study of the Bhagavad Gita, Upanishads, or devotional stotras to cultivate spiritual understanding.',
+      estimatedMinutes: 15,
+    ),
+    SadhanaPractice(
+      id: 'practice_evening_prayer',
+      title: 'Sandhyā Dīpa Prārthanā (Evening Prayer)',
+      sanskritTitle: 'सन्ध्या दीप प्रार्थना',
+      category: SadhanaCategory.eveningPrayer,
+      deity: 'Universal',
+      description: 'Twilight lamp lighting and quiet reflection: Subham Karoti, breath contemplation, and universal peace.',
+      estimatedMinutes: 6,
+      pujaGuideId: 'guide_evening_prayer',
+      linkedMantraId: 'VEDA-MTR-0448',
+    ),
+  ];
+
+  /// Default starting routine for a new devotee (balanced across morning, puja, and evening).
+  static const List<String> defaultActiveRoutineIds = [
+    'practice_morning_prayer',
+    'practice_ganesh_puja',
+    'practice_gayatri_japa',
+    'practice_scripture_reading',
+    'practice_evening_prayer',
+  ];
+}

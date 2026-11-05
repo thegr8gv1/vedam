@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'core/constants/app_constants.dart';
 import 'core/services/audio_service.dart';
 import 'core/theme/app_theme.dart';
+import 'data/fixtures/authentic_puja_guides_data.dart';
 import 'data/repositories/mantra_repository.dart';
 import 'data/repositories/scripture_repository_impl.dart';
 import 'presentation/navigation/main_screen.dart';
@@ -9,9 +10,11 @@ import 'presentation/screens/mantras/mantra_player_screen.dart';
 import 'presentation/screens/mantras/mantras_screen.dart';
 import 'data/repositories/panchangam_repository.dart';
 import 'presentation/screens/panchangam/panchangam_screen.dart';
+import 'presentation/screens/sadhana/guided_puja_screen.dart';
 import 'state/panchangam_state.dart';
 import 'state/app_state.dart';
 import 'state/audio_state.dart';
+import 'state/sadhana_state.dart';
 
 import 'data/fixtures/authentic_scriptures_data.dart';
 import 'presentation/screens/library/verse_reader_screen.dart';
@@ -25,12 +28,16 @@ void main() {
   final appState = AppState();
   final panchangamRepository = PanchangamRepositoryImpl();
   final panchangamState = PanchangamState(repository: panchangamRepository);
+  final sadhanaState = SadhanaState();
 
   int initialTab = 0;
   int? readerScriptureId;
   String? openMantraId;
   bool showMantrasList = false;
   bool showPanchangam = false;
+  String? openGuideId;
+  int openGuideStep = 0;
+  bool openGuideCompleted = false;
 
   try {
     final tab = Uri.base.queryParameters['tab'];
@@ -50,6 +57,20 @@ void main() {
     if (mantra != null) {
       openMantraId = mantra;
     }
+
+    final guide = Uri.base.queryParameters['guide'];
+    if (guide != null) {
+      openGuideId = guide;
+    }
+
+    final step = Uri.base.queryParameters['step'];
+    if (step != null) {
+      openGuideStep = int.tryParse(step) ?? 0;
+    }
+
+    if (Uri.base.queryParameters['completed'] == 'true') {
+      openGuideCompleted = true;
+    }
   } catch (_) {}
 
   runApp(VedamApp(
@@ -58,12 +79,16 @@ void main() {
     audioState: audioState,
     panchangamRepository: panchangamRepository,
     panchangamState: panchangamState,
+    sadhanaState: sadhanaState,
     appState: appState,
     initialTab: initialTab,
     readerScriptureId: readerScriptureId,
     openMantraId: openMantraId,
     showMantrasList: showMantrasList,
     showPanchangam: showPanchangam,
+    openGuideId: openGuideId,
+    openGuideStep: openGuideStep,
+    openGuideCompleted: openGuideCompleted,
   ));
 }
 
@@ -73,12 +98,16 @@ class VedamApp extends StatelessWidget {
   final AudioState? audioState;
   final PanchangamRepository? panchangamRepository;
   final PanchangamState? panchangamState;
+  final SadhanaState? sadhanaState;
   final AppState appState;
   final int initialTab;
   final int? readerScriptureId;
   final String? openMantraId;
   final bool showMantrasList;
   final bool showPanchangam;
+  final String? openGuideId;
+  final int openGuideStep;
+  final bool openGuideCompleted;
 
   const VedamApp({
     super.key,
@@ -87,12 +116,16 @@ class VedamApp extends StatelessWidget {
     this.audioState,
     this.panchangamRepository,
     this.panchangamState,
+    this.sadhanaState,
     required this.appState,
     this.initialTab = 0,
     this.readerScriptureId,
     this.openMantraId,
     this.showMantrasList = false,
     this.showPanchangam = false,
+    this.openGuideId,
+    this.openGuideStep = 0,
+    this.openGuideCompleted = false,
   });
 
   @override
@@ -101,6 +134,7 @@ class VedamApp extends StatelessWidget {
     final aState = audioState ?? AudioState(audioService: AudioPlaybackServiceImpl());
     final pRepo = panchangamRepository ?? PanchangamRepositoryImpl();
     final pState = panchangamState ?? PanchangamState(repository: pRepo);
+    final sState = sadhanaState ?? SadhanaState();
 
     return ListenableBuilder(
       listenable: appState,
@@ -115,7 +149,19 @@ class VedamApp extends StatelessWidget {
           initialIndex: initialTab,
         );
 
-        if (showPanchangam) {
+        if (openGuideId != null) {
+          final guide = AuthenticPujaGuidesData.getGuideById(openGuideId!) ?? AuthenticPujaGuidesData.allGuides.first;
+          sState.startGuide(guide, stepIndex: openGuideStep);
+          if (openGuideCompleted) {
+            sState.completeGuide();
+          }
+          homeWidget = GuidedPujaScreen(
+            guide: guide,
+            sadhanaState: sState,
+            mantraRepository: mRepo,
+            audioState: aState,
+          );
+        } else if (showPanchangam) {
           homeWidget = PanchangamScreen(
             state: pState,
             repository: pRepo,

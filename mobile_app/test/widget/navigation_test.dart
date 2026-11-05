@@ -36,7 +36,7 @@ void main() {
     await tester.tap(find.text('Sadhana'));
     await tester.pumpAndSettle();
     expect(find.text('Daily Sadhana'), findsOneWidget);
-    expect(find.text('DIGITAL JAPA MALA COUNTER'), findsOneWidget);
+    expect(find.text('DAILY PRACTICE OVERVIEW'), findsOneWidget);
 
     // Tap Saved Tab
     await tester.tap(find.text('Saved'));

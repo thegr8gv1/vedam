@@ -56,6 +56,13 @@ class AppTextStyles {
         color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
       );
 
+  static TextStyle bodyMedium(bool isDark) => TextStyle(
+        fontSize: 14,
+        fontWeight: FontWeight.w400,
+        height: 1.5,
+        color: isDark ? AppColors.textLightPrimary : AppColors.textDarkPrimary,
+      );
+
   static TextStyle bodySmall(bool isDark) => TextStyle(
         fontSize: 13,
         fontWeight: FontWeight.w400,

@@ -104,8 +104,11 @@ class _MainScreenState extends State<MainScreen> {
       ),
       SadhanaScreen(
         appState: widget.appState,
+        mantraRepository: _mantraRepository,
+        audioState: _audioState,
         onOpenMantras: _openMantrasScreen,
         onOpenPanchangam: _openPanchangamScreen,
+        onOpenLibrary: () => _onTabSelected(1),
       ),
       FavoritesScreen(
         repository: widget.repository,
