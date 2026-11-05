@@ -1,0 +1,22 @@
+[
+  {
+    "category": "Ligatures",
+    "severity": "HIGH",
+    "defect": "DEFECT: Lam-Alef ligature (U+FEFB / U+FEFC) is NOT implemented; Lam and Alef are kept as separate glyphs."
+  },
+  {
+    "category": "Kashmiri Coverage",
+    "severity": "HIGH",
+    "defect": "LIMITATION: Kashmiri Perso-Arabic vowels and special consonants ['Kashmiri Waaw with small circle (\u06c6)', 'Kashmiri Yeh with tail (\u0620)', 'Kashmiri Yeh with small V (\u0621)', 'Kashmiri Wavy Hamza below (\u25cc\u065f)', 'Kashmiri Kashmiri Yeh (\u0620)'] are NOT supported in custom shaper."
+  },
+  {
+    "category": "Sindhi Coverage",
+    "severity": "HIGH",
+    "defect": "LIMITATION: Sindhi Perso-Arabic letters (13 characters: ['Sindhi Be / Tteh (\u067b)', 'Sindhi Pe / Theh (\u067f)', 'Sindhi Te / Tteh (\u067a)', 'Sindhi Be with 4 dots (\u067d)', 'Sindhi Jye / Nye (\u0684)']...) are completely absent from the custom shaper."
+  },
+  {
+    "category": "Nastaliq Layout",
+    "severity": "MEDIUM",
+    "defect": "ARCHITECTURAL FINDING: ReportLab renders Urdu in Tahoma/Arial, which are standard Arabic NASKH fonts. True Nastaliq calligraphic layout is NOT supported in PDF/ReportLab due to lack of an OpenType Nastaliq shaping engine in ReportLab."
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "file": "VEDA-TXT-00001_ganesha_pancharatnam_hi-Deva_draft_export.epub",
+    "is_valid": true,
+    "errors": [],
+    "warnings": [],
+    "details": {
+      "total_entries": 7,
+      "entries": [
+        "mimetype",
+        "META-INF/container.xml",
+        "OEBPS/content.opf",
+        "OEBPS/nav.xhtml",
+        "OEBPS/styles.css",
+        "OEBPS/titlepage.xhtml",
+        "OEBPS/content.xhtml"
+      ],
+      "opf_path": "OEBPS/content.opf",
+      "opf_media_type": "application/oebps-package+xml",
+      "opf_version": "3.0",
+      "manifest_count": 4,
+      "page_progression_direction": "ltr",
+      "nav_lang": "hi-Deva",
+      "nav_dir": "ltr"
+    }
+  },
+  {
+    "file": "VEDA-TXT-00006_gayatri_vedic_mantra_te-Telu_draft_export.epub",
+    "is_valid": true,
+    "errors": [],
+    "warnings": [],
+    "details": {
+      "total_entries": 7,
+      "entries": [
+        "mimetype",
+        "META-INF/container.xml",
+        "OEBPS/content.opf",
+        "OEBPS/nav.xhtml",
+        "OEBPS/styles.css",
+        "OEBPS/titlepage.xhtml",
+        "OEBPS/content.xhtml"
+      ],
+      "opf_path": "OEBPS/content.opf",
+      "opf_media_type": "application/oebps-package+xml",
+      "opf_version": "3.0",
+      "manifest_count": 4,
+      "page_progression_direction": "ltr",
+      "nav_lang": "te-Telu",
+      "nav_dir": "ltr"
+    }
+  },
+  {
+    "file": "VEDA-TXT-00006_gayatri_vedic_mantra_ur-Arab_draft_export.epub",
+    "is_valid": true,
+    "errors": [],
+    "warnings": [],
+    "details": {
+      "total_entries": 7,
+      "entries": [
+        "mimetype",
+        "META-INF/container.xml",
+        "OEBPS/content.opf",
+        "OEBPS/nav.xhtml",
+        "OEBPS/styles.css",
+        "OEBPS/titlepage.xhtml",
+        "OEBPS/content.xhtml"
+      ],
+      "opf_path": "OEBPS/content.opf",
+      "opf_media_type": "application/oebps-package+xml",
+      "opf_version": "3.0",
+      "manifest_count": 4,
+      "page_progression_direction": "rtl",
+      "nav_lang": "ur-Arab",
+      "nav_dir": "rtl"
+    }
+  }
+]

@@ -135,7 +135,10 @@ class MultilingualHTMLExporter:
 
             # 1. Literal View
             if ve.literal_translation:
-                safe_lit = html.escape(ve.literal_translation)
+                if target.is_rtl:
+                    safe_lit = BidiLayoutEngine.wrap_html_bidi(ve.literal_translation, is_rtl=True)
+                else:
+                    safe_lit = html.escape(ve.literal_translation)
                 lit_badge = f'<span class="badge-mini status-{ve.literal_status.lower()}">{ve.literal_status}</span>'
                 views_html_parts.append(f"""
                 <div class="translation-view literal-view" dir="{doc_dir}">
@@ -143,7 +146,7 @@ class MultilingualHTMLExporter:
                         <span class="view-title">Literal Translation (Grammatical)</span>
                         {lit_badge}
                     </div>
-                    <p class="view-content" style="font-family: {font_family};">{safe_lit}</p>
+                    <div class="view-content" style="font-family: {font_family};">{safe_lit}</div>
                 </div>
                 """)
             else:
@@ -156,7 +159,10 @@ class MultilingualHTMLExporter:
 
             # 2. Tatparya View
             if ve.tatparya_translation:
-                safe_tat = html.escape(ve.tatparya_translation)
+                if target.is_rtl:
+                    safe_tat = BidiLayoutEngine.wrap_html_bidi(ve.tatparya_translation, is_rtl=True)
+                else:
+                    safe_tat = html.escape(ve.tatparya_translation)
                 tat_badge = f'<span class="badge-mini status-{ve.tatparya_status.lower()}">{ve.tatparya_status}</span>'
                 views_html_parts.append(f"""
                 <div class="translation-view tatparya-view" dir="{doc_dir}">
@@ -164,7 +170,7 @@ class MultilingualHTMLExporter:
                         <span class="view-title">Traditional Meaning (Tātparya / Bhāṣya)</span>
                         {tat_badge}
                     </div>
-                    <p class="view-content" style="font-family: {font_family};">{safe_tat}</p>
+                    <div class="view-content" style="font-family: {font_family};">{safe_tat}</div>
                 </div>
                 """)
             else:
@@ -177,7 +183,10 @@ class MultilingualHTMLExporter:
 
             # 3. Bhavartha View
             if ve.bhavartha_translation:
-                safe_bhav = html.escape(ve.bhavartha_translation)
+                if target.is_rtl:
+                    safe_bhav = BidiLayoutEngine.wrap_html_bidi(ve.bhavartha_translation, is_rtl=True)
+                else:
+                    safe_bhav = html.escape(ve.bhavartha_translation)
                 bhav_badge = f'<span class="badge-mini status-{ve.bhavartha_status.lower()}">{ve.bhavartha_status}</span>'
                 views_html_parts.append(f"""
                 <div class="translation-view bhavartha-view" dir="{doc_dir}">
@@ -185,7 +194,7 @@ class MultilingualHTMLExporter:
                         <span class="view-title">Devotional Bhavartha</span>
                         {bhav_badge}
                     </div>
-                    <p class="view-content" style="font-family: {font_family};">{safe_bhav}</p>
+                    <div class="view-content" style="font-family: {font_family};">{safe_bhav}</div>
                 </div>
                 """)
 

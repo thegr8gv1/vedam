@@ -40,6 +40,13 @@ class MultilingualDOCXExporter:
     COLOR_BLUE = RGBColor(30, 58, 138)        # Blue (#1E3A8A)
 
     @classmethod
+    def _apply_rtl_paragraph(cls, p: Any) -> None:
+        """Applies right-alignment and OOXML <w:bidi/> attribute for native Word RTL rendering."""
+        p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+        bidi_elm = parse_xml(r'<w:bidi {}/>'.format(nsdecls('w')))
+        p._p.get_or_add_pPr().append(bidi_elm)
+
+    @classmethod
     def export(
         cls,
         document: PublicationDocument,
@@ -185,8 +192,9 @@ class MultilingualDOCXExporter:
             if ve.target_script_transliteration and target.script_code != "Deva":
                 p_rec = doc.add_paragraph()
                 if target.is_rtl:
-                    p_rec.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-                r_lbl = p_rec.add_run(f"{target.script_name} Recitation:\n")
+                    cls._apply_rtl_paragraph(p_rec)
+                rec_label = f"Sanskrit Recitation in {target.script_name} Script:\n" if target.is_rtl else f"{target.script_name} Recitation:\n"
+                r_lbl = p_rec.add_run(rec_label)
                 r_lbl.bold = True
                 r_lbl.font.size = Pt(8.5)
                 r_lbl.font.color.rgb = cls.COLOR_BLUE
@@ -199,7 +207,7 @@ class MultilingualDOCXExporter:
             # 1. Literal View
             p_lit = doc.add_paragraph()
             if target.is_rtl:
-                p_lit.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+                cls._apply_rtl_paragraph(p_lit)
             r_ltitle = p_lit.add_run(f"Literal Translation ({ve.literal_status}):\n")
             r_ltitle.bold = True
             r_ltitle.font.size = Pt(8.5)
@@ -217,7 +225,7 @@ class MultilingualDOCXExporter:
             # 2. Tatparya View
             p_tat = doc.add_paragraph()
             if target.is_rtl:
-                p_tat.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+                cls._apply_rtl_paragraph(p_tat)
             r_ttitle = p_tat.add_run(f"Traditional Tātparya ({ve.tatparya_status}):\n")
             r_ttitle.bold = True
             r_ttitle.font.size = Pt(8.5)
@@ -236,7 +244,7 @@ class MultilingualDOCXExporter:
             if ve.bhavartha_translation:
                 p_bhav = doc.add_paragraph()
                 if target.is_rtl:
-                    p_bhav.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+                    cls._apply_rtl_paragraph(p_bhav)
                 r_btitle = p_bhav.add_run(f"Devotional Bhavartha ({ve.bhavartha_status}):\n")
                 r_btitle.bold = True
                 r_btitle.font.size = Pt(8.5)

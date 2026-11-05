@@ -1,0 +1,108 @@
+[
+  {
+    "file": "VEDA-TXT-00001_ganesha_pancharatnam_hi-Deva_draft_export.docx",
+    "is_valid": true,
+    "errors": [],
+    "warnings": [],
+    "details": {
+      "entries": [
+        "[Content_Types].xml",
+        "_rels/.rels",
+        "docProps/core.xml",
+        "docProps/app.xml",
+        "word/document.xml",
+        "word/_rels/document.xml.rels",
+        "word/styles.xml",
+        "word/stylesWithEffects.xml",
+        "word/settings.xml",
+        "word/webSettings.xml",
+        "word/fontTable.xml",
+        "word/theme/theme1.xml",
+        "customXml/item1.xml",
+        "customXml/_rels/item1.xml.rels",
+        "customXml/itemProps1.xml",
+        "word/numbering.xml",
+        "docProps/thumbnail.jpeg"
+      ],
+      "doc_xml_size": 23090,
+      "paragraph_count": 55,
+      "table_count": 8,
+      "fonts_referenced": [
+        "Georgia",
+        "Nirmala UI"
+      ]
+    }
+  },
+  {
+    "file": "VEDA-TXT-00006_gayatri_vedic_mantra_te-Telu_draft_export.docx",
+    "is_valid": true,
+    "errors": [],
+    "warnings": [],
+    "details": {
+      "entries": [
+        "[Content_Types].xml",
+        "_rels/.rels",
+        "docProps/core.xml",
+        "docProps/app.xml",
+        "word/document.xml",
+        "word/_rels/document.xml.rels",
+        "word/styles.xml",
+        "word/stylesWithEffects.xml",
+        "word/settings.xml",
+        "word/webSettings.xml",
+        "word/fontTable.xml",
+        "word/theme/theme1.xml",
+        "customXml/item1.xml",
+        "customXml/_rels/item1.xml.rels",
+        "customXml/itemProps1.xml",
+        "word/numbering.xml",
+        "docProps/thumbnail.jpeg"
+      ],
+      "doc_xml_size": 8236,
+      "paragraph_count": 21,
+      "table_count": 3,
+      "fonts_referenced": [
+        "Georgia",
+        "Nirmala UI"
+      ]
+    }
+  },
+  {
+    "file": "VEDA-TXT-00006_gayatri_vedic_mantra_ur-Arab_draft_export.docx",
+    "is_valid": true,
+    "errors": [],
+    "warnings": [],
+    "details": {
+      "entries": [
+        "[Content_Types].xml",
+        "_rels/.rels",
+        "docProps/core.xml",
+        "docProps/app.xml",
+        "word/document.xml",
+        "word/_rels/document.xml.rels",
+        "word/styles.xml",
+        "word/stylesWithEffects.xml",
+        "word/settings.xml",
+        "word/webSettings.xml",
+        "word/fontTable.xml",
+        "word/theme/theme1.xml",
+        "customXml/item1.xml",
+        "customXml/_rels/item1.xml.rels",
+        "customXml/itemProps1.xml",
+        "word/numbering.xml",
+        "docProps/thumbnail.jpeg"
+      ],
+      "doc_xml_size": 7727,
+      "paragraph_count": 20,
+      "table_count": 3,
+      "bidi_paragraphs": 3,
+      "right_aligned_paragraphs": 3,
+      "rtl_runs": 0,
+      "fonts_referenced": [
+        "Arial",
+        "Georgia",
+        "Nirmala UI"
+      ]
+    }
+  }
+]

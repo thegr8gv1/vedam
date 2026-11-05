@@ -4,31 +4,31 @@
   "target_bcp47": "hi-Deva",
   "publication_channel": "draft_export",
   "gate_verdict": "CONDITIONAL_DRAFT_ONLY",
-  "created_at": "2026-11-05T06:39:11.739124+00:00",
+  "created_at": "2026-11-05T06:57:30.402245+00:00",
   "artifacts": {
     "html": {
       "format_type": "html",
       "file_path": "C:\\Vedam\\exports\\multilingual_publication\\demonstrations\\hindi_deva\\html\\VEDA-TXT-00001_ganesha_pancharatnam_hi-Deva_draft_export.html",
-      "file_size_bytes": 26761,
-      "sha256": "501466424d3902b10e87613bb958a627e41784b5b6780db41cba62ccd06a55f7"
+      "file_size_bytes": 26785,
+      "sha256": "3b9a5fdb218f822bd64ca055d619b1aa4cf383fff7aba1628f6664fb83d4ca08"
     },
     "pdf": {
       "format_type": "pdf",
       "file_path": "C:\\Vedam\\exports\\multilingual_publication\\demonstrations\\hindi_deva\\pdf\\VEDA-TXT-00001_ganesha_pancharatnam_hi-Deva_draft_export.pdf",
-      "file_size_bytes": 90598,
-      "sha256": "4ff7878e92fb19dafaa13721b86dfa6bd4b03e5b0273bfd2ac968a0d6987fd23"
+      "file_size_bytes": 90554,
+      "sha256": "9346b1488c7847ab6ff38e7f5ca3a8de5c8044458d3bdd328df66ce2f91d1728"
     },
     "docx": {
       "format_type": "docx",
       "file_path": "C:\\Vedam\\exports\\multilingual_publication\\demonstrations\\hindi_deva\\docx\\VEDA-TXT-00001_ganesha_pancharatnam_hi-Deva_draft_export.docx",
       "file_size_bytes": 40126,
-      "sha256": "d737c75d7ce15f93c55c189dc43db9090e1ba9216c1bb8113a3670211e4950cd"
+      "sha256": "8659c9c52f778602a109934c27a5e32bc60662a6d85d7db940db052f5a87437f"
     },
     "epub": {
       "format_type": "epub",
       "file_path": "C:\\Vedam\\exports\\multilingual_publication\\demonstrations\\hindi_deva\\epub\\VEDA-TXT-00001_ganesha_pancharatnam_hi-Deva_draft_export.epub",
       "file_size_bytes": 6988,
-      "sha256": "7de9d5fac53f857a35131fa8057f3022f051f29c32e5e462c9e156b8f55973ce"
+      "sha256": "03ba1db8138c27aebda8f80a4367d4b5bdc81a59ca10fcdb5ed946ee9b5f2e38"
     }
   }
 }

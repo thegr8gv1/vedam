@@ -1,0 +1,42 @@
+[
+  {
+    "test_name": "test_gate_blocks_draft_approved_channel",
+    "passed": true,
+    "verdict": "ReleaseGateVerdict.REJECTED"
+  },
+  {
+    "test_name": "test_gate_blocks_unaccredited_reviewer",
+    "passed": true,
+    "verdict": "ReleaseGateVerdict.REJECTED"
+  },
+  {
+    "test_name": "test_gate_blocks_quarantined_demo_account",
+    "passed": true,
+    "verdict": "ReleaseGateVerdict.REJECTED"
+  },
+  {
+    "test_name": "test_direct_bypass_blocked_html",
+    "passed": true,
+    "status": "BLOCKED"
+  },
+  {
+    "test_name": "test_direct_bypass_blocked_pdf",
+    "passed": true,
+    "status": "BLOCKED"
+  },
+  {
+    "test_name": "test_direct_bypass_blocked_docx",
+    "passed": true,
+    "status": "BLOCKED"
+  },
+  {
+    "test_name": "test_direct_bypass_blocked_epub",
+    "passed": true,
+    "status": "BLOCKED"
+  },
+  {
+    "test_name": "test_draft_channel_conditional_only",
+    "passed": true,
+    "verdict": "ReleaseGateVerdict.CONDITIONAL_DRAFT_ONLY"
+  }
+]

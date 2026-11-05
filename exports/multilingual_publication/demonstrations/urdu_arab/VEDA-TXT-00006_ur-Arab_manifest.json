@@ -4,31 +4,31 @@
   "target_bcp47": "ur-Arab",
   "publication_channel": "draft_export",
   "gate_verdict": "CONDITIONAL_DRAFT_ONLY",
-  "created_at": "2026-11-05T06:39:11.995289+00:00",
+  "created_at": "2026-11-05T06:57:30.633439+00:00",
   "artifacts": {
     "html": {
       "format_type": "html",
       "file_path": "C:\\Vedam\\exports\\multilingual_publication\\demonstrations\\urdu_arab\\html\\VEDA-TXT-00006_gayatri_vedic_mantra_ur-Arab_draft_export.html",
       "file_size_bytes": 12234,
-      "sha256": "d83da2b33392e61379882e21f0d26b88d9c25d13eca69596a6efbdae1bd5d739"
+      "sha256": "2324db476504724146e61333c5bfd8ffcd6ca978aecf68bb35f473ebe542a1b9"
     },
     "pdf": {
       "format_type": "pdf",
       "file_path": "C:\\Vedam\\exports\\multilingual_publication\\demonstrations\\urdu_arab\\pdf\\VEDA-TXT-00006_gayatri_vedic_mantra_ur-Arab_draft_export.pdf",
-      "file_size_bytes": 112643,
-      "sha256": "95688d4e1328d6102eea48dfd7d11817e2565ea80c44be729df1d59af7705f47"
+      "file_size_bytes": 112652,
+      "sha256": "a66812babb92b3ea42fd4e91b4dbe8b2f0c2e4c2bd413c3b62918692afc36348"
     },
     "docx": {
       "format_type": "docx",
       "file_path": "C:\\Vedam\\exports\\multilingual_publication\\demonstrations\\urdu_arab\\docx\\VEDA-TXT-00006_gayatri_vedic_mantra_ur-Arab_draft_export.docx",
-      "file_size_bytes": 38136,
-      "sha256": "5560bdb996b340312c6e7ffdc3f4fd2fbe9d600e276fd8c9b6918a0815651910"
+      "file_size_bytes": 38151,
+      "sha256": "fe00d347f533a153223a1475e7d93768a98809888fa001d02b9b7a842d4ba91f"
     },
     "epub": {
       "format_type": "epub",
       "file_path": "C:\\Vedam\\exports\\multilingual_publication\\demonstrations\\urdu_arab\\epub\\VEDA-TXT-00006_gayatri_vedic_mantra_ur-Arab_draft_export.epub",
       "file_size_bytes": 5000,
-      "sha256": "7847b0e6acd4eb04669551aebc9cc7cc7dd43503baa4baa15d94697d529429de"
+      "sha256": "86d0770a0b483796b4d1ceb6034702fe4498853fa6e5c555e614e66973c5c000"
     }
   }
 }

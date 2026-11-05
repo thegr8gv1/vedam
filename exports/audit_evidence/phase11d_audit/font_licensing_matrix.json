@@ -1,0 +1,228 @@
+[
+  {
+    "script_code": "Deva",
+    "family_name": "Devanagari Font Stack",
+    "reportlab_font": "NirmalaUI",
+    "windows_files": [
+      "Nirmala.ttc",
+      "mangal.ttf"
+    ],
+    "css_stack": "'Noto Sans Devanagari', 'Siddhanta', 'Nirmala UI', sans-serif",
+    "word_font": "Nirmala UI",
+    "license": "Microsoft Typography License (Windows) / OFL (Noto)",
+    "embedding_rights": "Editable Embedding / Print and Preview",
+    "is_microsoft_proprietary": true,
+    "open_source_alternative": "Google Noto Sans Deva",
+    "cross_platform_risk": "High: Font is proprietary to Windows. Linux CI/CD or server environments will fail to find Nirmala.ttc unless Google Noto packages (fonts-noto) are installed."
+  },
+  {
+    "script_code": "Telu",
+    "family_name": "Telugu Font Stack",
+    "reportlab_font": "NirmalaUI",
+    "windows_files": [
+      "Nirmala.ttc",
+      "gautami.ttf"
+    ],
+    "css_stack": "'Noto Sans Telugu', 'Gautami', 'Nirmala UI', sans-serif",
+    "word_font": "Nirmala UI",
+    "license": "Microsoft Typography License / OFL (Noto)",
+    "embedding_rights": "Editable Embedding",
+    "is_microsoft_proprietary": true,
+    "open_source_alternative": "Google Noto Sans Telu",
+    "cross_platform_risk": "High: Font is proprietary to Windows. Linux CI/CD or server environments will fail to find Nirmala.ttc unless Google Noto packages (fonts-noto) are installed."
+  },
+  {
+    "script_code": "Taml",
+    "family_name": "Tamil Font Stack",
+    "reportlab_font": "NirmalaUI",
+    "windows_files": [
+      "Nirmala.ttc",
+      "latha.ttf"
+    ],
+    "css_stack": "'Noto Sans Tamil', 'Latha', 'Nirmala UI', sans-serif",
+    "word_font": "Nirmala UI",
+    "license": "Microsoft Typography License / OFL (Noto)",
+    "embedding_rights": "Editable Embedding",
+    "is_microsoft_proprietary": true,
+    "open_source_alternative": "Google Noto Sans Taml",
+    "cross_platform_risk": "High: Font is proprietary to Windows. Linux CI/CD or server environments will fail to find Nirmala.ttc unless Google Noto packages (fonts-noto) are installed."
+  },
+  {
+    "script_code": "Gran",
+    "family_name": "Grantha Font Stack",
+    "reportlab_font": "NirmalaUI",
+    "windows_files": [
+      "NotoSansGrantha-Regular.ttf",
+      "Nirmala.ttc"
+    ],
+    "css_stack": "'Noto Sans Grantha', 'e-Grantha', 'Siddhanta', sans-serif",
+    "word_font": "Noto Sans Grantha",
+    "license": "SIL Open Font License (OFL)",
+    "embedding_rights": "Installable / Embeddable",
+    "is_microsoft_proprietary": false,
+    "open_source_alternative": "Google Noto Sans Gran",
+    "cross_platform_risk": "Low"
+  },
+  {
+    "script_code": "Knda",
+    "family_name": "Kannada Font Stack",
+    "reportlab_font": "NirmalaUI",
+    "windows_files": [
+      "Nirmala.ttc",
+      "tunga.ttf"
+    ],
+    "css_stack": "'Noto Sans Kannada', 'Tunga', 'Nirmala UI', sans-serif",
+    "word_font": "Nirmala UI",
+    "license": "Microsoft Typography License / OFL (Noto)",
+    "embedding_rights": "Editable Embedding",
+    "is_microsoft_proprietary": true,
+    "open_source_alternative": "Google Noto Sans Knda",
+    "cross_platform_risk": "High: Font is proprietary to Windows. Linux CI/CD or server environments will fail to find Nirmala.ttc unless Google Noto packages (fonts-noto) are installed."
+  },
+  {
+    "script_code": "Mlym",
+    "family_name": "Malayalam Font Stack",
+    "reportlab_font": "NirmalaUI",
+    "windows_files": [
+      "Nirmala.ttc",
+      "kartika.ttf"
+    ],
+    "css_stack": "'Noto Sans Malayalam', 'Kartika', 'Nirmala UI', sans-serif",
+    "word_font": "Nirmala UI",
+    "license": "Microsoft Typography License / OFL (Noto)",
+    "embedding_rights": "Editable Embedding",
+    "is_microsoft_proprietary": true,
+    "open_source_alternative": "Google Noto Sans Mlym",
+    "cross_platform_risk": "High: Font is proprietary to Windows. Linux CI/CD or server environments will fail to find Nirmala.ttc unless Google Noto packages (fonts-noto) are installed."
+  },
+  {
+    "script_code": "Beng",
+    "family_name": "Bengali-Assamese Font Stack",
+    "reportlab_font": "NirmalaUI",
+    "windows_files": [
+      "Nirmala.ttc",
+      "vrinda.ttf"
+    ],
+    "css_stack": "'Noto Sans Bengali', 'Vrinda', 'Nirmala UI', sans-serif",
+    "word_font": "Nirmala UI",
+    "license": "Microsoft Typography License / OFL (Noto)",
+    "embedding_rights": "Editable Embedding",
+    "is_microsoft_proprietary": true,
+    "open_source_alternative": "Google Noto Sans Beng",
+    "cross_platform_risk": "High: Font is proprietary to Windows. Linux CI/CD or server environments will fail to find Nirmala.ttc unless Google Noto packages (fonts-noto) are installed."
+  },
+  {
+    "script_code": "Gujr",
+    "family_name": "Gujarati Font Stack",
+    "reportlab_font": "NirmalaUI",
+    "windows_files": [
+      "Nirmala.ttc",
+      "shruti.ttf"
+    ],
+    "css_stack": "'Noto Sans Gujarati', 'Shruti', 'Nirmala UI', sans-serif",
+    "word_font": "Nirmala UI",
+    "license": "Microsoft Typography License / OFL (Noto)",
+    "embedding_rights": "Editable Embedding",
+    "is_microsoft_proprietary": true,
+    "open_source_alternative": "Google Noto Sans Gujr",
+    "cross_platform_risk": "High: Font is proprietary to Windows. Linux CI/CD or server environments will fail to find Nirmala.ttc unless Google Noto packages (fonts-noto) are installed."
+  },
+  {
+    "script_code": "Guru",
+    "family_name": "Gurmukhi Font Stack",
+    "reportlab_font": "NirmalaUI",
+    "windows_files": [
+      "Nirmala.ttc",
+      "raavi.ttf"
+    ],
+    "css_stack": "'Noto Sans Gurmukhi', 'Raavi', 'Nirmala UI', sans-serif",
+    "word_font": "Nirmala UI",
+    "license": "Microsoft Typography License / OFL (Noto)",
+    "embedding_rights": "Editable Embedding",
+    "is_microsoft_proprietary": true,
+    "open_source_alternative": "Google Noto Sans Guru",
+    "cross_platform_risk": "High: Font is proprietary to Windows. Linux CI/CD or server environments will fail to find Nirmala.ttc unless Google Noto packages (fonts-noto) are installed."
+  },
+  {
+    "script_code": "Orya",
+    "family_name": "Odia Font Stack",
+    "reportlab_font": "NirmalaUI",
+    "windows_files": [
+      "Nirmala.ttc",
+      "kalinga.ttf"
+    ],
+    "css_stack": "'Noto Sans Oriya', 'Kalinga', 'Nirmala UI', sans-serif",
+    "word_font": "Nirmala UI",
+    "license": "Microsoft Typography License / OFL (Noto)",
+    "embedding_rights": "Editable Embedding",
+    "is_microsoft_proprietary": true,
+    "open_source_alternative": "Google Noto Sans Orya",
+    "cross_platform_risk": "High: Font is proprietary to Windows. Linux CI/CD or server environments will fail to find Nirmala.ttc unless Google Noto packages (fonts-noto) are installed."
+  },
+  {
+    "script_code": "Olck",
+    "family_name": "Ol Chiki Font Stack",
+    "reportlab_font": "NirmalaUI",
+    "windows_files": [
+      "Nirmala.ttc"
+    ],
+    "css_stack": "'Noto Sans Ol Chiki', 'Nirmala UI', sans-serif",
+    "word_font": "Nirmala UI",
+    "license": "Microsoft Typography License / OFL (Noto)",
+    "embedding_rights": "Editable Embedding",
+    "is_microsoft_proprietary": true,
+    "open_source_alternative": "Google Noto Sans Olck",
+    "cross_platform_risk": "High: Font is proprietary to Windows. Linux CI/CD or server environments will fail to find Nirmala.ttc unless Google Noto packages (fonts-noto) are installed."
+  },
+  {
+    "script_code": "Mtei",
+    "family_name": "Meetei Mayek Font Stack",
+    "reportlab_font": "NirmalaUI",
+    "windows_files": [
+      "Nirmala.ttc"
+    ],
+    "css_stack": "'Noto Sans Meetei Mayek', 'Nirmala UI', sans-serif",
+    "word_font": "Nirmala UI",
+    "license": "SIL Open Font License / Microsoft",
+    "embedding_rights": "Installable",
+    "is_microsoft_proprietary": true,
+    "open_source_alternative": "Google Noto Sans Mtei",
+    "cross_platform_risk": "High: Font is proprietary to Windows. Linux CI/CD or server environments will fail to find Nirmala.ttc unless Google Noto packages (fonts-noto) are installed."
+  },
+  {
+    "script_code": "Arab",
+    "family_name": "Perso-Arabic Nastaliq Font Stack",
+    "reportlab_font": "Arabic-Regular",
+    "windows_files": [
+      "tahoma.ttf",
+      "tahomabd.ttf",
+      "arial.ttf",
+      "arialbd.ttf"
+    ],
+    "css_stack": "'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Tahoma', 'Arial', sans-serif",
+    "word_font": "Arial",
+    "license": "Microsoft Typography License / SIL OFL",
+    "embedding_rights": "Editable Embedding",
+    "is_microsoft_proprietary": true,
+    "open_source_alternative": "Google Noto Sans Arab",
+    "cross_platform_risk": "High: Font is proprietary to Windows. Linux CI/CD or server environments will fail to find tahoma.ttf unless Google Noto packages (fonts-noto) are installed."
+  },
+  {
+    "script_code": "Latn",
+    "family_name": "Latin / IAST Font Stack",
+    "reportlab_font": "IAST-Regular",
+    "windows_files": [
+      "calibri.ttf",
+      "calibrib.ttf",
+      "georgia.ttf",
+      "georgiab.ttf"
+    ],
+    "css_stack": "'Charis SIL', 'Gentium Plus', 'Georgia', 'Calibri', serif",
+    "word_font": "Georgia",
+    "license": "Microsoft Typography License / SIL OFL",
+    "embedding_rights": "Editable Embedding",
+    "is_microsoft_proprietary": true,
+    "open_source_alternative": "Charis SIL / Gentium",
+    "cross_platform_risk": "High: Font is proprietary to Windows. Linux CI/CD or server environments will fail to find calibri.ttf unless Google Noto packages (fonts-noto) are installed."
+  }
+]

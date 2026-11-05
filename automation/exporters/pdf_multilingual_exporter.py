@@ -371,7 +371,8 @@ class MultilingualPDFExporter:
                 rec_text = ve.target_script_transliteration
                 if target.is_rtl:
                     rec_text = BidiLayoutEngine.shape_arabic_for_pdf(rec_text)
-                verse_elements.append(Paragraph(f"<b>{target.script_name} Recitation:</b>", view_label_style))
+                rec_label = f"Sanskrit Recitation in {target.script_name} Script:" if target.is_rtl else f"{target.script_name} Recitation:"
+                verse_elements.append(Paragraph(f"<b>{rec_label}</b>", view_label_style))
                 verse_elements.append(Paragraph(rec_text, recitation_style))
 
             # Views
@@ -388,10 +389,10 @@ class MultilingualPDFExporter:
                 tat_t = ve.tatparya_translation
                 if target.is_rtl:
                     tat_t = BidiLayoutEngine.shape_arabic_for_pdf(tat_t)
-                verse_elements.append(Paragraph(f"<b>Traditional Tātparya ({ve.tatparya_status}):</b>", view_label_style))
+                verse_elements.append(Paragraph(f"<b>Traditional Tatparya ({ve.tatparya_status}):</b>", view_label_style))
                 verse_elements.append(Paragraph(tat_t, view_text_style))
             else:
-                verse_elements.append(Paragraph("<i>Traditional Tātparya: Pending commentary collation.</i>", missing_text_style))
+                verse_elements.append(Paragraph("<i>Traditional Tatparya: Pending commentary collation.</i>", missing_text_style))
 
             if ve.bhavartha_translation:
                 bhav_t = ve.bhavartha_translation
