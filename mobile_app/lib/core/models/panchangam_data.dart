@@ -166,12 +166,16 @@ class Observance {
   final String sanskritName;
   final String category;
   final String description;
+  final bool isInformational;
+  final String? disclaimer;
 
   const Observance({
     required this.name,
     required this.sanskritName,
     required this.category,
     required this.description,
+    this.isInformational = true,
+    this.disclaimer,
   });
 
   factory Observance.fromJson(Map<String, dynamic> json) {
@@ -180,6 +184,8 @@ class Observance {
       sanskritName: json['sanskrit_name'] as String? ?? '',
       category: json['category'] as String? ?? '',
       description: json['description'] as String? ?? '',
+      isInformational: json['is_informational'] as bool? ?? true,
+      disclaimer: json['disclaimer'] as String?,
     );
   }
 }

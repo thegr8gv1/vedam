@@ -280,6 +280,101 @@ def test_reference_benchmark_varanasi(calculator):
     assert res.tithi.name == "Krishna Ekadashi"
 
 
+def test_reference_benchmark_london(calculator):
+    """
+    Reference comparison for London (51.5074° N, 0.1278° W) on Nov 5, 2026:
+    - Expected Sunrise: 07:00 AM ± 2 mins
+    - Expected Sunset:  04:26 PM ± 2 mins
+    - Expected Tithi at Sunrise: Krishna Dvadashi (elongation moved past Ekadashi before UK sunrise)
+    """
+    loc = PanchangamLocation(name="London", latitude=51.5074, longitude=-0.1278, timezone="Europe/London")
+    res = calculator.calculate(date(2026, 11, 5), loc)
+
+    sr = res.sun_moon.sunrise
+    assert sr.hour == 7 and abs(sr.minute - 0) <= 2
+    ss = res.sun_moon.sunset
+    assert ss.hour == 16 and abs(ss.minute - 26) <= 2
+    assert res.tithi.name == "Krishna Dvadashi"
+    assert res.vara.name == "Guruvara"
+
+
+def test_reference_benchmark_new_york(calculator):
+    """
+    Reference comparison for New York (40.7128° N, 74.0060° W) on Nov 5, 2026:
+    - Expected Sunrise: 06:31 AM ± 2 mins
+    - Expected Sunset:  04:47 PM ± 2 mins
+    - Expected Tithi at Sunrise: Krishna Dvadashi
+    """
+    loc = PanchangamLocation(name="New York", latitude=40.7128, longitude=-74.0060, timezone="America/New_York")
+    res = calculator.calculate(date(2026, 11, 5), loc)
+
+    sr = res.sun_moon.sunrise
+    assert sr.hour == 6 and abs(sr.minute - 31) <= 2
+    ss = res.sun_moon.sunset
+    assert ss.hour == 16 and abs(ss.minute - 47) <= 2
+    assert res.tithi.name == "Krishna Dvadashi"
+    assert res.vara.name == "Guruvara"
+
+
+def test_dst_transitions_london_and_new_york(calculator):
+    """
+    Validates daylight saving transitions:
+    - London transitions from BST (UTC+1) to GMT (UTC+0) on Oct 25, 2026.
+    - New York transitions from EDT (UTC-4) to EST (UTC-5) on Nov 1, 2026.
+    Sunrise clock jumps reflect the 1-hour change cleanly.
+    """
+    loc_lon = PanchangamLocation(name="London", latitude=51.5074, longitude=-0.1278, timezone="Europe/London")
+    res_lon_pre = calculator.calculate(date(2026, 10, 24), loc_lon)
+    res_lon_post = calculator.calculate(date(2026, 10, 26), loc_lon)
+
+    assert res_lon_pre.sun_moon.sunrise.utcoffset() == timedelta(hours=1)
+    assert res_lon_post.sun_moon.sunrise.utcoffset() == timedelta(hours=0)
+    # 1-hour clock setback shifts civil sunrise from ~07:39 BST to ~06:43 GMT
+    assert res_lon_pre.sun_moon.sunrise.hour == 7
+    assert res_lon_post.sun_moon.sunrise.hour == 6
+
+    loc_ny = PanchangamLocation(name="New York", latitude=40.7128, longitude=-74.0060, timezone="America/New_York")
+    res_ny_pre = calculator.calculate(date(2026, 10, 31), loc_ny)
+    res_ny_post = calculator.calculate(date(2026, 11, 2), loc_ny)
+
+    assert res_ny_pre.sun_moon.sunrise.utcoffset() == timedelta(hours=-4)
+    assert res_ny_post.sun_moon.sunrise.utcoffset() == timedelta(hours=-5)
+    # 1-hour clock setback shifts civil sunrise from ~07:25 EDT to ~06:27 EST
+    assert res_ny_pre.sun_moon.sunrise.hour == 7
+    assert res_ny_post.sun_moon.sunrise.hour == 6
+
+
+def test_tithi_transition_near_sunrise(calculator):
+    """
+    Validates Udaya Tithi determination when tithi transition is close to sunrise.
+    On Nov 5, 2026 in Varanasi, Krishna Ekadashi begins before sunrise and ends at ~10:35 AM.
+    Since Ekadashi is active at sunrise, the day is governed by Krishna Ekadashi.
+    On Nov 6, 2026, Krishna Dvadashi is active at sunrise.
+    """
+    loc = PanchangamLocation(name="Varanasi", latitude=25.3176, longitude=82.9739, timezone="Asia/Kolkata")
+    res_nov5 = calculator.calculate(date(2026, 11, 5), loc)
+    res_nov6 = calculator.calculate(date(2026, 11, 6), loc)
+
+    assert res_nov5.tithi.name == "Krishna Ekadashi"
+    assert res_nov6.tithi.name == "Krishna Dvadashi"
+    assert res_nov5.tithi.end_time is not None
+
+
+def test_observances_informational_safeguards(calculator):
+    """
+    Validates that liturgical observances carry is_informational=True
+    and include sectarian/sampradaya disclaimers.
+    """
+    loc = PanchangamLocation(name="Varanasi", latitude=25.3176, longitude=82.9739, timezone="Asia/Kolkata")
+    res = calculator.calculate(date(2026, 11, 5), loc)
+
+    assert len(res.observances) > 0
+    for obs in res.observances:
+        assert obs.is_informational is True
+        assert obs.disclaimer is not None
+        assert "sampradaya" in obs.disclaimer.lower() or "tradition" in obs.disclaimer.lower() or "temple" in obs.disclaimer.lower()
+
+
 # --- 7. FASTAPI REST CONTRACTS ---
 
 def test_api_curated_locations(client):
@@ -305,8 +400,29 @@ def test_api_conventions_transparency(client):
     assert "rahu_kalam" in data["inauspicious_periods"]
 
 
-def test_api_health(client):
+def test_api_panchangam_health(client):
     """GET /api/v1/panchangam/health reports operational status."""
     res = client.get("/api/v1/panchangam/health")
     assert res.status_code == 200
     assert res.json()["status"] == "operational"
+
+
+def test_api_system_health(client):
+    """GET /api/v1/health reports system status, version, and governance mode."""
+    res = client.get("/api/v1/health")
+    assert res.status_code == 200
+    data = res.json()
+    assert data["status"] == "healthy"
+    assert data["service"] == "vedam-api"
+    assert data["version"] == "1.0.0"
+    assert data["ephemeris_engine"] == "Astronomy Engine 2.1 (VSOP87/ELP2000-82, MIT License)"
+    assert data["governance_mode"] == "read_only_astronomical"
+
+
+def test_api_root(client):
+    """GET / returns platform information and endpoints."""
+    res = client.get("/")
+    assert res.status_code == 200
+    data = res.json()
+    assert data["platform"] == "Vedam"
+    assert data["status"] == "online"

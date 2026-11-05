@@ -356,6 +356,23 @@ class _PanchangamScreenState extends State<PanchangamScreen> {
                     letterSpacing: 1.0,
                   ),
                 ),
+                const Spacer(),
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                  decoration: BoxDecoration(
+                    color: isDark ? const Color(0xFF3E2C1A) : const Color(0xFFEBDBC6),
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                  child: Text(
+                    'INFORMATIONAL',
+                    style: TextStyle(
+                      fontSize: 9,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 0.8,
+                      color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                    ),
+                  ),
+                ),
               ],
             ),
             const SizedBox(height: 8),
@@ -378,6 +395,31 @@ class _PanchangamScreenState extends State<PanchangamScreen> {
                       obs.description,
                       style: AppTextStyles.verseMeaning(isDark).copyWith(fontSize: 12),
                     ),
+                    if (obs.disclaimer != null) ...[
+                      const SizedBox(height: 4),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Icon(
+                            Icons.info_outline,
+                            size: 13,
+                            color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                          ),
+                          const SizedBox(width: 5),
+                          Expanded(
+                            child: Text(
+                              obs.disclaimer!,
+                              style: TextStyle(
+                                fontSize: 11,
+                                fontStyle: FontStyle.italic,
+                                height: 1.3,
+                                color: isDark ? const Color(0xFFB8A48B) : const Color(0xFF6B5C4A),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
                   ],
                 ),
               ),

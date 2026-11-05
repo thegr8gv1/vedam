@@ -428,7 +428,7 @@ class PanchangamCalculator:
             description="Sacred pre-dawn ambrosial period optimal for Japa, Pranayama, and profound Vedic contemplation.",
         )
 
-        # 9. Liturgical Observances
+        # 9. Liturgical Observances (Informational Guidance Safeguard)
         observances: List[Observance] = []
         if tithi_idx in (10, 25):  # Ekadashi
             ek_type = "Shukla" if tithi_idx == 10 else "Krishna"
@@ -438,6 +438,8 @@ class PanchangamCalculator:
                     sanskrit_name=f"{'शुक्ल' if tithi_idx == 10 else 'कृष्ण'} एकादशी व्रतम्",
                     category="Ekadashi",
                     description="Sacred Vaishnava fasting day dedicated to Lord Narayana. Harivasara and nocturnal Japa observed.",
+                    is_informational=True,
+                    disclaimer="Calculated from Udaya Tithi. Vaishnava and Smartha traditions may differ regarding Viddha Ekadashi and Arunodaya vedha rules. Please verify with your sampradaya or local temple.",
                 )
             )
         if tithi_idx in (12, 27):  # Trayodashi / Pradosham
@@ -447,6 +449,8 @@ class PanchangamCalculator:
                     sanskrit_name="प्रदोष व्रतम्",
                     category="Pradosham",
                     description="Twilight worship of Lord Shiva and Nandi Bhagavan during Trayodashi sandhyakala.",
+                    is_informational=True,
+                    disclaimer="Calculated for Trayodashi coinciding with evening sunset/sandhyakala. Local temple puja timings may vary.",
                 )
             )
         if tithi_idx == 14:  # Purnima
@@ -456,6 +460,8 @@ class PanchangamCalculator:
                     sanskrit_name="पूर्णिमा व्रतम्",
                     category="Purnima",
                     description="Full moon day observed with Sri Satyanarayana Vratha and charity.",
+                    is_informational=True,
+                    disclaimer="Calculated for informational guidance. Fasting or puja schedule may depend on whether Purnima touches Pradosha or sunrise.",
                 )
             )
         if tithi_idx == 29:  # Amavasya
@@ -465,6 +471,8 @@ class PanchangamCalculator:
                     sanskrit_name="अमावास्या (दर्पण)",
                     category="Amavasya",
                     description="New moon day dedicated to Tarpanam, ancestral prayers, and quiet reflection.",
+                    is_informational=True,
+                    disclaimer="Calculated for informational reference. Tarpanam and Shraddha sankalpam conventions depend on Aparahna or Kutapa muhurta.",
                 )
             )
 

@@ -85,6 +85,11 @@ class Observance(BaseModel):
     sanskrit_name: str = Field(..., description="Devanagari name")
     category: str = Field(..., description="Category: 'Ekadashi', 'Vrata', 'Purnima', 'Amavasya', 'Sankranti'")
     description: str = Field(..., description="Religious and scriptural context")
+    is_informational: bool = Field(default=True, description="Flag indicating observance calculation is informational rather than dogmatic")
+    disclaimer: Optional[str] = Field(
+        default="Calculated for reference. Specific fasting or ritual timings may vary by sampradaya (Smartha vs Vaishnava) and local temple sankalpam. Please consult your family acharya or local temple authority.",
+        description="Sectarian and regional observance disclaimer"
+    )
 
 
 class CalculationConventions(BaseModel):

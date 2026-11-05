@@ -1,6 +1,6 @@
 import 'dart:convert';
-import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
+import '../../core/config/api_config.dart';
 import '../../core/models/panchangam_data.dart';
 
 class PanchangamUnavailableException implements Exception {
@@ -34,19 +34,7 @@ class PanchangamRepositoryImpl implements PanchangamRepository {
     http.Client? client,
     String? baseUrl,
   })  : _client = client ?? http.Client(),
-        _baseUrl = baseUrl ?? _resolveDefaultBaseUrl();
-
-  static String _resolveDefaultBaseUrl() {
-    // In Flutter web or local dev, port 8000 is default
-    if (kIsWeb) {
-      return 'http://localhost:8000';
-    }
-    // Android emulator loops back to host via 10.0.2.2
-    if (defaultTargetPlatform == TargetPlatform.android) {
-      return 'http://10.0.2.2:8000';
-    }
-    return 'http://localhost:8000';
-  }
+        _baseUrl = baseUrl ?? ApiConfig.baseUrl;
 
   @override
   Future<DailyPanchangamData> getDailyPanchangam({

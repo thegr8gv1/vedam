@@ -111,6 +111,8 @@ class StubPanchangamRepository implements PanchangamRepository {
           sanskritName: 'कृष्ण एकादशी व्रतम्',
           category: 'Ekadashi',
           description: 'Sacred fast',
+          isInformational: true,
+          disclaimer: 'Calculated from Udaya Tithi. Vaishnava and Smartha traditions may differ.',
         )
       ],
       conventions: const CalculationConventions(
@@ -180,8 +182,10 @@ void main() {
     expect(find.text('01:04 PM - 02:28 PM'), findsOneWidget); // Rahu Kalam
     expect(find.text('11:45 AM - 12:33 PM'), findsOneWidget); // Abhijit
 
-    // Verify Observance
+    // Verify Observance and Informational tag
     expect(find.textContaining('Krishna Ekadashi Vratam'), findsOneWidget);
+    expect(find.text('INFORMATIONAL'), findsOneWidget);
+    expect(find.textContaining('Vaishnava and Smartha'), findsOneWidget);
 
     // Verify Calculation Conventions card
     expect(find.text('ASTRONOMICAL CALCULATION STANDARDS'), findsOneWidget);

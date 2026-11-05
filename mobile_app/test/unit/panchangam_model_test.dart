@@ -126,6 +126,8 @@ void main() {
             'sanskrit_name': 'कृष्ण एकादशी व्रतम्',
             'category': 'Ekadashi',
             'description': 'Rama Ekadashi fasting',
+            'is_informational': true,
+            'disclaimer': 'Calculated from Udaya Tithi. Vaishnava and Smartha traditions may differ.',
           }
         ],
         'conventions': {
@@ -152,6 +154,8 @@ void main() {
       expect(data.abhijitMuhurat?.formatted, '11:29 AM - 12:15 PM');
       expect(data.observances.length, 1);
       expect(data.observances.first.name, 'Krishna Ekadashi Vratam');
+      expect(data.observances.first.isInformational, isTrue);
+      expect(data.observances.first.disclaimer, contains('Vaishnava and Smartha'));
       expect(data.conventions.ayanamsaUsed, 'Lahiri (Chitra Paksha)');
     });
   });
