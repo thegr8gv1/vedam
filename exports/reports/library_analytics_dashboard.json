@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-05T02:02:10.586744+00:00",
+  "generated_at_utc": "2026-11-05T02:20:00.119303+00:00",
   "total_candidate_catalog": 77,
   "total_registered_database_texts": 20,
   "verified_complete_texts": 18,
@@ -57,9 +57,9 @@
   "multilingual_translation_coverage": {
     "en": {
       "total": 307,
-      "draft": 306,
+      "draft": 307,
       "approved": 0,
-      "in_review": 1
+      "in_review": 0
     },
     "hi": {
       "total": 307,
@@ -155,5 +155,14 @@
   "total_archived_historical_translations": 580,
   "multilingual_artifacts_excel": 18,
   "multilingual_artifacts_word": 18,
-  "multilingual_artifacts_json": 18
+  "multilingual_artifacts_json": 18,
+  "review_assignments_total": 0,
+  "pending_reviewer_actions": 0,
+  "approved_literal_views": 0,
+  "approved_traditional_meaning_views": 0,
+  "approved_bhavartha_views": 0,
+  "ai_generated_annotations": 0,
+  "human_corrected_ai_annotations": 0,
+  "unresolved_textual_disputes": 0,
+  "reviewer_productivity_stats": []
 }

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Vedic Scholarly Review Workbench — Shiva Tandava Stotram</title>
+<style>
+  :root {
+    --bg-primary: #0f141c;
+    --bg-card: #182232;
+    --bg-hover: #223046;
+    --border-color: #2c3e55;
+    --accent-gold: #e5b567;
+    --accent-teal: #4fd1c5;
+    --accent-coral: #f56565;
+    --accent-green: #48bb78;
+    --text-primary: #f7fafc;
+    --text-secondary: #a0aec0;
+    --font-indic: "Nirmala UI", "Gautami", "Noto Sans Devanagari", sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    padding: 20px;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+  .logo-title h1 { font-size: 1.6rem; color: var(--accent-gold); }
+  .logo-title p { font-size: 0.85rem; color: var(--text-secondary); }
+  .governance-pill {
+    background-color: rgba(229, 181, 103, 0.15);
+    border: 1px solid var(--accent-gold);
+    color: var(--accent-gold);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .nav-bar {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  select {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    width: 100%;
+  }
+  .workbench-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+  }
+  @media (max-width: 1400px) {
+    .workbench-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (max-width: 900px) {
+    .workbench-grid { grid-template-columns: 1fr; }
+  }
+  .column-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+  }
+  .column-card h3 {
+    font-size: 1.05rem;
+    color: var(--accent-gold);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .column-number {
+    background-color: rgba(79, 209, 197, 0.2);
+    color: var(--accent-teal);
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 12px;
+  }
+  .indic-text {
+    font-family: var(--font-indic);
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.25);
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    white-space: pre-wrap;
+  }
+  .meta-tag {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-bottom: 6px;
+  }
+  .meta-tag strong { color: var(--text-primary); }
+  .script-card {
+    background-color: rgba(0,0,0,0.2);
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .indic-script {
+    font-family: var(--font-indic);
+    font-size: 1.05rem;
+    color: #edf2f7;
+    margin-top: 4px;
+  }
+  .badge {
+    background-color: var(--border-color);
+    color: var(--text-secondary);
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  .badge-action {
+    background-color: rgba(72, 187, 120, 0.2);
+    color: var(--accent-green);
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  .badge-amber {
+    background-color: rgba(229, 181, 103, 0.2);
+    color: var(--accent-gold);
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  .action-form textarea {
+    width: 100%;
+    background-color: #0b1017;
+    border: 1px solid var(--border-color);
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    resize: vertical;
+    min-height: 80px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  .btn-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .btn {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+  }
+  .btn-approve { background-color: #2f855a; color: #fff; }
+  .btn-correct { background-color: #2b6cb0; color: #fff; }
+  .btn-revise { background-color: #d69e2e; color: #000; }
+  .btn-dispute { background-color: #c53030; color: #fff; }
+  .action-item {
+    border-left: 2px solid var(--accent-green);
+    padding-left: 8px;
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+  }
+  .dispute-box {
+    background-color: rgba(245, 101, 101, 0.1);
+    border: 1px solid rgba(245, 101, 101, 0.3);
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+  }
+  .text-muted { color: var(--text-secondary); font-size: 0.85rem; font-style: italic; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-title">
+    <h1>Vedic Scholarly Review Workbench</h1>
+    <p>Rigorous Human-in-the-Loop Sanskrit Analysis, Multi-Script Verification & Governance Engine</p>
+  </div>
+  <div class="governance-pill">
+    Strict Review Gate: Rule PUB-010 Active
+  </div>
+</header>
+
+<div class="nav-bar">
+  <div>
+    <label class="meta-tag">Select Sacred Composition:</label>
+    <select onchange="alert('In interactive API mode, switching updates live context.')">
+      <option value="VEDA-TXT-00001" >VEDA-TXT-00001 — Ganesha Pancharatnam (6 verses)</option><option value="VEDA-TXT-00002" selected>VEDA-TXT-00002 — Shiva Tandava Stotram (16 verses)</option><option value="VEDA-TXT-00003" >VEDA-TXT-00003 — Aditya Hrudayam (31 verses)</option><option value="VEDA-TXT-00004" >VEDA-TXT-00004 — Madhurashtakam (9 verses)</option><option value="VEDA-TXT-00005" >VEDA-TXT-00005 — Mahamrityunjaya Vedic Mantra (1 verses)</option><option value="VEDA-TXT-00006" >VEDA-TXT-00006 — Gayatri Vedic Mantra (1 verses)</option><option value="VEDA-TXT-00007" >VEDA-TXT-00007 — Sri Suktam (16 verses)</option><option value="VEDA-TXT-00008" >VEDA-TXT-00008 — Hanuman Chalisa (43 verses)</option><option value="VEDA-TXT-00010" >VEDA-TXT-00010 — Mahalakshmi Ashtakam (10 verses)</option><option value="VEDA-TXT-00011" >VEDA-TXT-00011 — Lingashtakam (9 verses)</option><option value="VEDA-TXT-00012" >VEDA-TXT-00012 — Sankata Nashana Ganesha Stotram (8 verses)</option><option value="VEDA-TXT-00013" >VEDA-TXT-00013 — Venkateswara Suprabhatam (70 verses)</option><option value="VEDA-TXT-00014" >VEDA-TXT-00014 — Purusha Suktam (16 verses)</option><option value="VEDA-TXT-00015" >VEDA-TXT-00015 — Durga Suktam (7 verses)</option><option value="VEDA-TXT-00016" >VEDA-TXT-00016 — Narayana Suktam (12 verses)</option><option value="VEDA-TXT-00017" >VEDA-TXT-00017 — Surya Ashtakam (10 verses)</option><option value="VEDA-TXT-00018" >VEDA-TXT-00018 — Kanakadhara Stotram (21 verses)</option><option value="VEDA-TXT-00019" >VEDA-TXT-00019 — Mahishasura Mardini Stotram (21 verses)</option>
+    </select>
+  </div>
+  <div>
+    <label class="meta-tag">Select Verse / Stanza:</label>
+    <select>
+      <option value="1" selected>Verse 1 (VERSE)</option><option value="2" >Verse 2 (VERSE)</option><option value="3" >Verse 3 (VERSE)</option><option value="4" >Verse 4 (VERSE)</option><option value="5" >Verse 5 (VERSE)</option><option value="6" >Verse 6 (VERSE)</option><option value="7" >Verse 7 (VERSE)</option><option value="8" >Verse 8 (VERSE)</option><option value="9" >Verse 9 (VERSE)</option><option value="10" >Verse 10 (VERSE)</option><option value="11" >Verse 11 (VERSE)</option><option value="12" >Verse 12 (VERSE)</option><option value="13" >Verse 13 (VERSE)</option><option value="14" >Verse 14 (VERSE)</option><option value="15" >Verse 15 (PHALASRUTI)</option><option value="16" >Verse 16 (PHALASRUTI)</option>
+    </select>
+  </div>
+  <div>
+    <label class="meta-tag">Target Regional Language:</label>
+    <select>
+      <option value="te" selected>Telugu (తెలుగు)</option>
+      <option value="hi" >Hindi (हिन्दी)</option>
+      <option value="ta" >Tamil (தமிழ்)</option>
+      <option value="kn" >Kannada (ಕನ್ನಡ)</option>
+      <option value="mr" >Marathi (मराठी)</option>
+      <option value="bn" >Bengali (বাংলা)</option>
+      <option value="gu" >Gujarati (ગુજરાતી)</option>
+      <option value="ml" >Malayalam (മലയാളം)</option>
+      <option value="or" >Odia (ଓଡ଼ିଆ)</option>
+      <option value="en" >English (Bridge)</option>
+    </select>
+  </div>
+</div>
+
+<div class="workbench-grid">
+
+  <!-- COLUMN 1 -->
+  <div class="column-card">
+    <h3>Original Source <span class="column-number">Col 1</span></h3>
+    <div class="meta-tag">Source Language: <strong>SA</strong></div>
+    <div class="meta-tag">Liturgical Meter: <strong>Panchachamara</strong></div>
+    <div class="meta-tag">Vedic Swaras: <strong>Classical / Stotra Recension</strong></div>
+    <div class="indic-text">जटाटवीगलज्जलप्रवाहपावितस्थले गलेऽवलम्ब्य लम्बितां भुजङ्गतुङ्गमालिकाम् ।
+डमड्डमड्डमड्डमन्निनादवड्डमर्वयं चकार चण्डताण्डवं तनोतु नः शिवः शिवम् ॥ १ ॥</div>
+    <div class="meta-tag">Verse Type: <strong>VERSE</strong></div>
+    <div class="meta-tag">Composer/Rishi: <strong>Lankadhipati Ravana</strong></div>
+  </div>
+
+  <!-- COLUMN 2 -->
+  <div class="column-card">
+    <h3>Transliterations <span class="column-number">Col 2</span></h3>
+    <div class="meta-tag">Scholarly Roman (IAST):</div>
+    <div style="font-family: serif; color: var(--accent-gold); margin-bottom: 12px; font-size: 1.05rem;">jaṭāṭavīgalajjala-pravāha-pāvitasthale gale'valambya lambitāṁ bhujaṅgatuṅgamālikām ।
+ḍamaḍ-ḍamaḍ-ḍamaḍ-ḍaman-ninādavad-ḍamarvayaṁ cakāra caṇḍatāṇḍavaṁ tanotu naḥ śivaḥ śivam ॥ 1 ॥</div>
+    <div class="meta-tag">Lossless Indic Script Projections:</div>
+    <div style="overflow-y: auto; max-height: 480px;">
+      <div class="script-card"><span class="badge">Telugu</span><div class="indic-script">జటాటవీగలజ్జలప్రవాహపావితస్థలే గలేఽవలమ్బ్య లమ్బితాం భుజఙ్గతుఙ్గమాలికామ్ ।
+డమడ్డమడ్డమడ్డమన్నినాదవడ్డమర్వయం చకార చణ్డతాణ్డవం తనోతు నః శివః శివమ్ ॥ ౧ ॥</div></div><div class="script-card"><span class="badge">Tamil</span><div class="indic-script">ஜடாடவீகலஜ்ஜலப்ரவாஹபாவிதஸ்தலே கலேऽவலம்ப்ய லம்பிதாம் புஜங்கதுங்கமாலிகாம் ।
+டமட்டமட்டமட்டமந்நிநாதவட்டமர்வயம் சகார சண்டதாண்டவம் தநோது நஃ ஶிவஃ ஶிவம் ॥ ௧ ॥</div></div><div class="script-card"><span class="badge">Kannada</span><div class="indic-script">ಜಟಾಟವೀಗಲಜ್ಜಲಪ್ರವಾಹಪಾವಿತಸ್ಥಲೇ ಗಲೇಽವಲಮ್ಬ್ಯ ಲಮ್ಬಿತಾಂ ಭುಜಙ್ಗತುಙ್ಗಮಾಲಿಕಾಮ್ ।
+ಡಮಡ್ಡಮಡ್ಡಮಡ್ಡಮನ್ನಿನಾದವಡ್ಡಮರ್ವಯಂ ಚಕಾರ ಚಣ್ಡತಾಣ್ಡವಂ ತನೋತು ನಃ ಶಿವಃ ಶಿವಮ್ ॥ ೧ ॥</div></div><div class="script-card"><span class="badge">Malayalam</span><div class="indic-script">ജടാടവീഗലജ്ജലപ്രവാഹപാവിതസ്ഥലേ ഗലേഽവലമ്ബ്യ ലമ്ബിതാം ഭുജങ്ഗതുങ്ഗമാലികാമ് ।
+ഡമഡ്ഡമഡ്ഡമഡ്ഡമന്നിനാദവഡ്ഡമര്വയം ചകാര ചണ്ഡതാണ്ഡവം തനോതു നഃ ശിവഃ ശിവമ് ॥ ൧ ॥</div></div>
+    </div>
+  </div>
+
+  <!-- COLUMN 3 -->
+  <div class="column-card">
+    <h3>Literal Translation <span class="column-number">Col 3</span></h3>
+    <div class="meta-tag">View Status: <span class="badge-amber">DRAFT</span> (v1)</div>
+    <div class="meta-tag">Source: <strong>Padachheda & Grammatical Word Dissection</strong></div>
+    <div class="indic-text" style="font-size: 1rem; color: #e2e8f0;">With His neck purified by the torrential streams of the celestial river Ganges cascading from the dense forest of His matted locks, wearing the lofty serpent hanging down like a garland, and with His sacred Damaru sounding damad-damad-damad-damat, Lord Shiva performed the fierce cosmic Tandava dance; may that Shiva extend all auspiciousness unto us!</div>
+    <div class="meta-tag">Padachheda Analysis:</div>
+    <div style="font-size: 0.85rem; color: var(--text-secondary);">
+      जटा-अटवी-गलत्-जल-प्रवाह-पावित-स्थले, गले, अवलम्ब्य, लम्बिताम्, भुजङ्ग-तुङ्ग-मालिकाम्, डमत्-डमत्-डमत्-डमत्-निनादवत्-डमरु-अयम्, चकार, चण्ड-ताण्डवम्, तनोतु, नः, शिवः, शिवम्
+    </div>
+  </div>
+
+  <!-- COLUMN 4 -->
+  <div class="column-card">
+    <h3>Traditional Tatparya <span class="column-number">Col 4</span></h3>
+    <div class="meta-tag">View Status: <span class="badge-amber">DRAFT</span> (v1)</div>
+    <div class="meta-tag">Commentator Citation: <strong>Traditional Shaiva Sampradaya (Attributed to Ravana)</strong></div>
+    <div class="indic-text" style="font-size: 1rem; color: #cbd5e0;">The opening verse sets the cosmic tempo in the Panchachamara metre. The matted hair represents the cosmic forest (Jata-atavi); the descending Ganga signifies the cleansing grace of consciousness descending into manifestation; the Damaru's rhythmic pulse is the primordial sound (Nada Brahman) sparking creation.</div>
+    <div class="meta-tag">Source Reference: <strong>Sampradaya Exegesis (Traditional Shaiva Sampradaya (Attributed to Ravana))</strong></div>
+  </div>
+
+  <!-- COLUMN 5 -->
+  <div class="column-card">
+    <h3>Devotional Bhavartha <span class="column-number">Col 5</span></h3>
+    <div class="meta-tag">View Status: <span class="badge-amber">DRAFT</span> (v1)</div>
+    <div class="meta-tag">Liturgical Chanting & Bhakti Expression:</div>
+    <div class="indic-text" style="font-size: 1.05rem; color: #edf2f7; border-left: 3px solid var(--accent-gold);">దట్టమైన జటాజూటమను అరణ్యము నుండి జాలువారు గంగా ప్రవాహముచే పవిత్రమైన కంఠము కలవాడు, మెడలో పొడవైన సర్పరాజుల హారమును ధరించినవాడు, 'డమ-డమ-డమ'యని మోగు డమరుక నాదముతో ప్రచండ తాండవ నృత్యమును చేయు ఆ పరమశివుడు మనకు సకల మంగళములను ప్రసాదించుగాక!</div>
+    <div class="meta-tag">Target Language: <strong>TE</strong></div>
+  </div>
+
+  <!-- COLUMN 6 -->
+  <div class="column-card">
+    <h3>Reviewer Action Log <span class="column-number">Col 6</span></h3>
+    <div class="meta-tag">Overall Translation Status: <span class="badge-amber">DRAFT</span></div>
+    
+    <div class="action-form">
+      <label class="meta-tag">Proposed Correction / Scholarly Rationale:</label>
+      <textarea placeholder="Enter grammatical, theological, or idiomatic correction notes..."></textarea>
+      <div class="btn-group">
+        <button class="btn btn-approve">Approve View</button>
+        <button class="btn btn-correct">Approve w/ Edit</button>
+        <button class="btn btn-revise">Request Revision</button>
+        <button class="btn btn-dispute">Flag Dispute</button>
+      </div>
+    </div>
+
+    <div class="meta-tag" style="margin-top: 10px;">Audit Trail & Past Actions:</div>
+    <div style="overflow-y: auto; max-height: 200px; margin-bottom: 12px;">
+      <p class='text-muted'>No previous review actions logged for this verse.</p>
+    </div>
+
+    <div class="meta-tag">Preserved Textual Disputes:</div>
+    <div style="overflow-y: auto; max-height: 150px;">
+      <p class='text-muted'>No open disputes on this verse.</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -68,38 +68,48 @@ class TestPhase6CLocalization:
         """Verifies that translations CANNOT be marked APPROVED without accredited human reviewer credentials."""
         first_trans = db_session.query(Translation).first()
         assert first_trans is not None
+        orig_status = first_trans.review_status
+        orig_reviewer = first_trans.reviewer
 
-        # 1. Attempt approval without credentials -> Must fail
-        with pytest.raises(TranslationReviewWorkflowError):
-            HumanReviewWorkflowEngine.record_verse_feedback(
+        try:
+            # 1. Attempt approval without credentials -> Must fail
+            with pytest.raises(TranslationReviewWorkflowError):
+                HumanReviewWorkflowEngine.record_verse_feedback(
+                    session=db_session,
+                    translation_id=first_trans.id,
+                    reviewer_name="Anonymous Tester",
+                    native_language="hi",
+                    linguistic_expertise="Hindi",
+                    review_status=ReviewStatus.APPROVED,
+                    reviewer_qualification=None,  # Missing qualification
+                )
+
+            # 2. Record qualified draft review feedback with suggestion
+            feedback = HumanReviewWorkflowEngine.record_verse_feedback(
                 session=db_session,
                 translation_id=first_trans.id,
-                reviewer_name="Anonymous Tester",
-                native_language="hi",
-                linguistic_expertise="Hindi",
-                review_status=ReviewStatus.APPROVED,
-                reviewer_qualification=None,  # Missing qualification
+                reviewer_name="Dr. Vidwan Sharma",
+                reviewer_qualification="PhD in Sanskrit Literature, Rashtriya Sanskrit Sansthan",
+                native_language="sa",
+                linguistic_expertise="Sanskrit",
+                review_status=ReviewStatus.SCHOLAR_REVIEWED,
+                scholarly_comment="Bhavartha faithfully captures the devotional sentiment of the traditional bhashya.",
+                terminology_adherence_verified=True,
             )
+            assert feedback.id is not None
+            assert feedback.review_status == ReviewStatus.SCHOLAR_REVIEWED
 
-        # 2. Record qualified draft review feedback with suggestion
-        feedback = HumanReviewWorkflowEngine.record_verse_feedback(
-            session=db_session,
-            translation_id=first_trans.id,
-            reviewer_name="Dr. Vidwan Sharma",
-            reviewer_qualification="PhD in Sanskrit Literature, Rashtriya Sanskrit Sansthan",
-            native_language="sa",
-            linguistic_expertise="Sanskrit",
-            review_status=ReviewStatus.SCHOLAR_REVIEWED,
-            scholarly_comment="Bhavartha faithfully captures the devotional sentiment of the traditional bhashya.",
-            terminology_adherence_verified=True,
-        )
-        assert feedback.id is not None
-        assert feedback.review_status == ReviewStatus.SCHOLAR_REVIEWED
-
-        # 3. Retrieve feedback history
-        history = HumanReviewWorkflowEngine.get_feedback_history(db_session, first_trans.id)
-        assert len(history) >= 1
-        assert history[-1]["reviewer_name"] == "Dr. Vidwan Sharma"
+            # 3. Retrieve feedback history
+            history = HumanReviewWorkflowEngine.get_feedback_history(db_session, first_trans.id)
+            assert len(history) >= 1
+            assert history[-1]["reviewer_name"] == "Dr. Vidwan Sharma"
+        finally:
+            # Revert test modifications to maintain database integrity
+            first_trans.review_status = orig_status
+            first_trans.reviewer = orig_reviewer
+            if "feedback" in locals() and feedback.id:
+                db_session.delete(feedback)
+            db_session.commit()
 
     def test_glossary_expanded_twenty_eight_terms_all_nine_languages(self):
         """Verifies the Sanskrit terminology glossary contains at least 28 canonical terms across all 9 regional languages."""

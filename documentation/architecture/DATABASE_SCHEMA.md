@@ -150,4 +150,96 @@ erDiagram
         text approval_notes
         json approval_history_json
     }
+
+    REVIEWER_PROFILES {
+        int id PK
+        string reviewer_id UK "e.g. REV-SCH-001"
+        string full_name
+        string email
+        string primary_role "SANSKRIT_TEXTUAL, VEDIC_RECENSION, etc."
+        json secondary_roles
+        json areas_of_expertise
+        json language_proficiency
+        string sanskrit_proficiency
+        string vedic_specialization
+        string academic_qualifications
+        string institutional_affiliation
+        boolean is_credentials_verified
+        string verification_method
+        datetime verification_date
+        json permissions
+        boolean is_active
+    }
+
+    REVIEW_ASSIGNMENTS {
+        int id PK
+        string assignment_id UK "e.g. ASGN-20261105-001"
+        int reviewer_id FK
+        int text_id FK
+        int verse_id FK
+        string target_language
+        string view_type
+        string priority "LOW, NORMAL, HIGH, URGENT"
+        string status "PENDING, IN_PROGRESS, COMPLETED, REASSIGNED, DISPUTED"
+        datetime deadline
+        text notes
+        string assigned_by
+        datetime assigned_at
+        datetime completed_at
+        int reassigned_to_id FK
+    }
+
+    REVIEW_ACTION_LOGS {
+        int id PK
+        string action_id UK "e.g. ACT-20261105-001"
+        int assignment_id FK
+        int translation_id FK
+        int translation_view_id FK
+        int verse_id FK
+        int reviewer_id FK
+        string action_type "APPROVE, APPROVE_WITH_CORRECTIONS, REQUEST_REVISION, REJECT, ESCALATE"
+        string previous_status
+        string new_status
+        text previous_text
+        text proposed_text
+        text scholarly_commentary
+        json traditional_references
+        json alternative_readings
+        datetime created_at
+    }
+
+    TEXTUAL_DISPUTES {
+        int id PK
+        string dispute_id UK "e.g. DSP-20261105-001"
+        int verse_id FK
+        int translation_id FK
+        int translation_view_id FK
+        string dispute_nature
+        json opinion_a_json
+        json opinion_b_json
+        string status "OPEN, UNDER_SECONDARY_REVIEW, REFERRED_TO_EDITORIAL_BOARD, RESOLVED_PRESERVED_BOTH"
+        text editorial_resolution_notes
+        string resolved_by
+        datetime resolved_at
+        datetime created_at
+    }
+
+    AI_ANNOTATION_PROVENANCES {
+        int id PK
+        string annotation_id UK "e.g. AI-ANN-20261105-001"
+        int verse_id FK
+        string annotation_type "PADACHHEDA, ANVAYA, GRAMMAR, WORD_MEANING, CHANDAS, PRONUNCIATION, SOURCE_CITATION"
+        string provider_name
+        string model_version
+        string prompt_template_version
+        string prompt_hash
+        json output_payload_json
+        float confidence_score
+        boolean is_suggestion_only "True"
+        boolean is_human_reviewed "False"
+        int human_reviewer_id FK
+        text human_correction_notes
+        float estimated_cost_usd
+        datetime created_at
+    }
 ```

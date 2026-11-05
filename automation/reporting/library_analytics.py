@@ -24,10 +24,17 @@ from automation.rights.approval_workflow import (
 )
 from database.connection import get_db_session
 from database.models import (
+    AIAnnotationProvenance,
     ArchivedTranslation,
+    AssignmentStatus,
+    DisputeStatus,
     ReleaseStatus,
+    ReviewActionLog,
+    ReviewAssignment,
     ReviewStatus,
+    ReviewerProfile,
     Text,
+    TextualDispute,
     Translation,
     TranslationReviewFeedback,
     TranslationType,
@@ -89,6 +96,16 @@ class LibraryDashboardMetrics:
     multilingual_artifacts_excel: int = 0
     multilingual_artifacts_word: int = 0
     multilingual_artifacts_json: int = 0
+    # Phase 7 Scholarly Workbench & AI Intelligence Metrics
+    review_assignments_total: int = 0
+    pending_reviewer_actions: int = 0
+    approved_literal_views: int = 0
+    approved_traditional_meaning_views: int = 0
+    approved_bhavartha_views: int = 0
+    ai_generated_annotations: int = 0
+    human_corrected_ai_annotations: int = 0
+    unresolved_textual_disputes: int = 0
+    reviewer_productivity_stats: List[Dict[str, Any]] = field(default_factory=list)
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
@@ -291,6 +308,30 @@ class LibraryAnalyticsEngine:
         # Check archived historical translations count
         archived_count = session.query(ArchivedTranslation).count()
 
+        # Phase 7 Scholarly Review & AI Metrics
+        total_assignments = session.query(ReviewAssignment).count()
+        pending_actions = session.query(ReviewAssignment).filter(ReviewAssignment.status.in_([AssignmentStatus.PENDING, AssignmentStatus.IN_PROGRESS])).count()
+        app_literal = session.query(TranslationView).filter_by(view_type=TranslationType.LITERAL, review_status=ReviewStatus.APPROVED).count()
+        app_tatparya = session.query(TranslationView).filter_by(view_type=TranslationType.TATPARYA, review_status=ReviewStatus.APPROVED).count()
+        app_bhavartha = session.query(TranslationView).filter_by(view_type=TranslationType.BHAVARTHA, review_status=ReviewStatus.APPROVED).count()
+        ai_annotations_cnt = session.query(AIAnnotationProvenance).count()
+        human_corrected_ai_cnt = session.query(AIAnnotationProvenance).filter(AIAnnotationProvenance.is_human_reviewed.is_(True)).count()
+        unresolved_disputes_cnt = session.query(TextualDispute).filter(TextualDispute.status.in_([DisputeStatus.OPEN, DisputeStatus.UNDER_SECONDARY_REVIEW, DisputeStatus.REFERRED_TO_EDITORIAL_BOARD])).count()
+
+        # Reviewer productivity stats (Privacy-preserving: only reviewer_id and role)
+        productivity_stats = []
+        reviewers = session.query(ReviewerProfile).all()
+        for r in reviewers:
+            completed_count = sum(1 for a in r.assignments if a.status == AssignmentStatus.COMPLETED)
+            actions_count = len(r.actions)
+            productivity_stats.append({
+                "reviewer_id": r.reviewer_id,
+                "role": r.primary_role.value if hasattr(r.primary_role, "value") else str(r.primary_role),
+                "is_verified": r.is_credentials_verified,
+                "assignments_completed": completed_count,
+                "review_actions_logged": actions_count,
+            })
+
         ml_excel = len(list(Path("exports/multilingual/excel").glob("*.xlsx"))) if os.path.exists("exports/multilingual/excel") else 0
         ml_word = len(list(Path("exports/multilingual/word").glob("*.docx"))) if os.path.exists("exports/multilingual/word") else 0
         ml_json = len(list(Path("exports/multilingual/json").glob("*.json"))) if os.path.exists("exports/multilingual/json") else 0
@@ -345,6 +386,15 @@ class LibraryAnalyticsEngine:
             multilingual_artifacts_excel=ml_excel,
             multilingual_artifacts_word=ml_word,
             multilingual_artifacts_json=ml_json,
+            review_assignments_total=total_assignments,
+            pending_reviewer_actions=pending_actions,
+            approved_literal_views=app_literal,
+            approved_traditional_meaning_views=app_tatparya,
+            approved_bhavartha_views=app_bhavartha,
+            ai_generated_annotations=ai_annotations_cnt,
+            human_corrected_ai_annotations=human_corrected_ai_cnt,
+            unresolved_textual_disputes=unresolved_disputes_cnt,
+            reviewer_productivity_stats=productivity_stats,
         )
 
     @classmethod

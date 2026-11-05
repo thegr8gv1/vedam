@@ -104,6 +104,69 @@ class MediaType(str, enum.Enum):
     IMAGE_THUMBNAIL = "IMAGE_THUMBNAIL"  # Social thumbnail
 
 
+class ReviewerRole(str, enum.Enum):
+    SANSKRIT_TEXTUAL = "SANSKRIT_TEXTUAL"
+    VEDIC_RECENSION = "VEDIC_RECENSION"
+    HINDI_TRANSLATOR = "HINDI_TRANSLATOR"
+    TELUGU_TRANSLATOR = "TELUGU_TRANSLATOR"
+    TAMIL_TRANSLATOR = "TAMIL_TRANSLATOR"
+    KANNADA_TRANSLATOR = "KANNADA_TRANSLATOR"
+    MARATHI_TRANSLATOR = "MARATHI_TRANSLATOR"
+    BENGALI_TRANSLATOR = "BENGALI_TRANSLATOR"
+    GUJARATI_TRANSLATOR = "GUJARATI_TRANSLATOR"
+    MALAYALAM_TRANSLATOR = "MALAYALAM_TRANSLATOR"
+    ODIA_TRANSLATOR = "ODIA_TRANSLATOR"
+    AWADHI_SPECIALIST = "AWADHI_SPECIALIST"
+    SANSKRIT_GRAMMAR = "SANSKRIT_GRAMMAR"
+    TRADITIONAL_COMMENTARY = "TRADITIONAL_COMMENTARY"
+    LEGAL_COPYRIGHT = "LEGAL_COPYRIGHT"
+    EDITORIAL_BOARD = "EDITORIAL_BOARD"
+
+
+class AssignmentPriority(str, enum.Enum):
+    LOW = "LOW"
+    NORMAL = "NORMAL"
+    HIGH = "HIGH"
+    URGENT = "URGENT"
+
+
+class AssignmentStatus(str, enum.Enum):
+    PENDING = "PENDING"
+    IN_PROGRESS = "IN_PROGRESS"
+    COMPLETED = "COMPLETED"
+    REASSIGNED = "REASSIGNED"
+    DISPUTED = "DISPUTED"
+
+
+class ReviewActionType(str, enum.Enum):
+    APPROVE = "APPROVE"
+    APPROVE_WITH_CORRECTIONS = "APPROVE_WITH_CORRECTIONS"
+    REQUEST_REVISION = "REQUEST_REVISION"
+    REJECT = "REJECT"
+    FLAG_UNCERTAINTY = "FLAG_UNCERTAINTY"
+    FLAG_TERMINOLOGY = "FLAG_TERMINOLOGY"
+    FLAG_MISSING_SOURCE = "FLAG_MISSING_SOURCE"
+    ESCALATE = "ESCALATE"
+
+
+class DisputeStatus(str, enum.Enum):
+    OPEN = "OPEN"
+    UNDER_SECONDARY_REVIEW = "UNDER_SECONDARY_REVIEW"
+    REFERRED_TO_EDITORIAL_BOARD = "REFERRED_TO_EDITORIAL_BOARD"
+    RESOLVED_PRESERVED_BOTH = "RESOLVED_PRESERVED_BOTH"
+    RESOLVED_CONSENSUS = "RESOLVED_CONSENSUS"
+
+
+class AIAnnotationType(str, enum.Enum):
+    PADACHHEDA = "PADACHHEDA"
+    ANVAYA = "ANVAYA"
+    GRAMMAR = "GRAMMAR"
+    WORD_MEANING = "WORD_MEANING"
+    CHANDAS = "CHANDAS"
+    PRONUNCIATION = "PRONUNCIATION"
+    SOURCE_CITATION = "SOURCE_CITATION"
+
+
 # ---------------------------------------------------------------------------
 # Models
 # ---------------------------------------------------------------------------
@@ -542,3 +605,159 @@ class DuplicateCandidate(Base):
     status: Mapped[DuplicateStatus] = mapped_column(Enum(DuplicateStatus), default=DuplicateStatus.DETECTED)
     resolved_by: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
+
+
+# ---------------------------------------------------------------------------
+# Phase 7: Scholarly Review Workbench & AI Intelligence Models
+# ---------------------------------------------------------------------------
+
+class ReviewerProfile(Base):
+    """
+    Verified scholar and translator profiles with role definitions,
+    language proficiencies, and verification credentials.
+    """
+    __tablename__ = "reviewer_profiles"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    reviewer_id: Mapped[str] = mapped_column(String(32), unique=True, index=True)
+    full_name: Mapped[str] = mapped_column(String(128))
+    email: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
+    primary_role: Mapped[ReviewerRole] = mapped_column(Enum(ReviewerRole), index=True)
+    secondary_roles: Mapped[Optional[list]] = mapped_column(JSON, nullable=True)
+    areas_of_expertise: Mapped[Optional[list]] = mapped_column(JSON, nullable=True)
+    language_proficiency: Mapped[Optional[dict]] = mapped_column(JSON, nullable=True)
+    sanskrit_proficiency: Mapped[str] = mapped_column(String(64), default="Vidwan")
+    vedic_specialization: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
+    academic_qualifications: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
+    institutional_affiliation: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
+    is_credentials_verified: Mapped[bool] = mapped_column(Boolean, default=False)
+    verification_method: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
+    verification_date: Mapped[Optional[datetime]] = mapped_column(DateTime, nullable=True)
+    permissions: Mapped[Optional[list]] = mapped_column(JSON, nullable=True)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
+
+    # Relationships
+    assignments: Mapped[List["ReviewAssignment"]] = relationship("ReviewAssignment", foreign_keys="ReviewAssignment.reviewer_id", back_populates="reviewer")
+    actions: Mapped[List["ReviewActionLog"]] = relationship("ReviewActionLog", back_populates="reviewer")
+    reviewed_annotations: Mapped[List["AIAnnotationProvenance"]] = relationship("AIAnnotationProvenance", back_populates="human_reviewer")
+
+
+class ReviewAssignment(Base):
+    """
+    Granular task assignment dispatching compositions, verses, and views
+    to qualified scholars with priority and deadline tracking.
+    """
+    __tablename__ = "review_assignments"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    assignment_id: Mapped[str] = mapped_column(String(48), unique=True, index=True)
+    reviewer_id: Mapped[int] = mapped_column(Integer, ForeignKey("reviewer_profiles.id"), index=True)
+    text_id: Mapped[int] = mapped_column(Integer, ForeignKey("texts.id"), index=True)
+    verse_id: Mapped[Optional[int]] = mapped_column(Integer, ForeignKey("verses.id"), nullable=True, index=True)
+    target_language: Mapped[str] = mapped_column(String(16), index=True)
+    view_type: Mapped[Optional[TranslationType]] = mapped_column(Enum(TranslationType), nullable=True)
+    priority: Mapped[AssignmentPriority] = mapped_column(Enum(AssignmentPriority), default=AssignmentPriority.NORMAL)
+    status: Mapped[AssignmentStatus] = mapped_column(Enum(AssignmentStatus), default=AssignmentStatus.PENDING, index=True)
+    deadline: Mapped[Optional[datetime]] = mapped_column(DateTime, nullable=True)
+    notes: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
+    assigned_by: Mapped[str] = mapped_column(String(128), default="system_admin")
+    assigned_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
+    completed_at: Mapped[Optional[datetime]] = mapped_column(DateTime, nullable=True)
+    reassigned_to_id: Mapped[Optional[int]] = mapped_column(Integer, ForeignKey("reviewer_profiles.id"), nullable=True)
+
+    # Relationships
+    reviewer: Mapped["ReviewerProfile"] = relationship("ReviewerProfile", foreign_keys=[reviewer_id], back_populates="assignments")
+    reassigned_to: Mapped[Optional["ReviewerProfile"]] = relationship("ReviewerProfile", foreign_keys=[reassigned_to_id])
+    text: Mapped["Text"] = relationship("Text")
+    verse: Mapped[Optional["Verse"]] = relationship("Verse")
+
+
+class ReviewActionLog(Base):
+    """
+    Immutable ledger of every scholarly review action, correction proposal,
+    and status transition with complete rationale and citations.
+    """
+    __tablename__ = "review_action_logs"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    action_id: Mapped[str] = mapped_column(String(48), unique=True, index=True)
+    assignment_id: Mapped[Optional[int]] = mapped_column(Integer, ForeignKey("review_assignments.id"), nullable=True, index=True)
+    translation_id: Mapped[int] = mapped_column(Integer, ForeignKey("translations.id"), index=True)
+    translation_view_id: Mapped[Optional[int]] = mapped_column(Integer, ForeignKey("translation_views.id"), nullable=True, index=True)
+    verse_id: Mapped[int] = mapped_column(Integer, ForeignKey("verses.id"), index=True)
+    reviewer_id: Mapped[int] = mapped_column(Integer, ForeignKey("reviewer_profiles.id"), index=True)
+    action_type: Mapped[ReviewActionType] = mapped_column(Enum(ReviewActionType), index=True)
+    previous_status: Mapped[str] = mapped_column(String(32))
+    new_status: Mapped[str] = mapped_column(String(32))
+    previous_text: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
+    proposed_text: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
+    scholarly_commentary: Mapped[str] = mapped_column(SA_Text)
+    traditional_references: Mapped[Optional[list]] = mapped_column(JSON, nullable=True)
+    alternative_readings: Mapped[Optional[list]] = mapped_column(JSON, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
+
+    # Relationships
+    reviewer: Mapped["ReviewerProfile"] = relationship("ReviewerProfile", back_populates="actions")
+    assignment: Mapped[Optional["ReviewAssignment"]] = relationship("ReviewAssignment")
+    translation: Mapped["Translation"] = relationship("Translation")
+    translation_view: Mapped[Optional["TranslationView"]] = relationship("TranslationView")
+    verse: Mapped["Verse"] = relationship("Verse")
+
+
+class TextualDispute(Base):
+    """
+    Tracks scholarly disagreements, preserving both traditional interpretations
+    with citations until consensus or editorial board adjudication.
+    """
+    __tablename__ = "textual_disputes"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    dispute_id: Mapped[str] = mapped_column(String(48), unique=True, index=True)
+    verse_id: Mapped[int] = mapped_column(Integer, ForeignKey("verses.id"), index=True)
+    translation_id: Mapped[Optional[int]] = mapped_column(Integer, ForeignKey("translations.id"), nullable=True, index=True)
+    translation_view_id: Mapped[Optional[int]] = mapped_column(Integer, ForeignKey("translation_views.id"), nullable=True, index=True)
+    dispute_nature: Mapped[str] = mapped_column(String(128))
+    opinion_a_json: Mapped[dict] = mapped_column(JSON)
+    opinion_b_json: Mapped[dict] = mapped_column(JSON)
+    status: Mapped[DisputeStatus] = mapped_column(Enum(DisputeStatus), default=DisputeStatus.OPEN, index=True)
+    editorial_resolution_notes: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
+    resolved_by: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
+    resolved_at: Mapped[Optional[datetime]] = mapped_column(DateTime, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
+
+    # Relationships
+    verse: Mapped["Verse"] = relationship("Verse")
+    translation: Mapped[Optional["Translation"]] = relationship("Translation")
+    translation_view: Mapped[Optional["TranslationView"]] = relationship("TranslationView")
+
+
+class AIAnnotationProvenance(Base):
+    """
+    Tracks provenance of AI-generated Sanskrit linguistic suggestions
+    (Padachheda, Anvaya, Grammar, Chandas, Pronunciation, Citations).
+    Enforces that AI annotations remain suggestions until human review.
+    """
+    __tablename__ = "ai_annotation_provenances"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    annotation_id: Mapped[str] = mapped_column(String(48), unique=True, index=True)
+    verse_id: Mapped[int] = mapped_column(Integer, ForeignKey("verses.id"), index=True)
+    annotation_type: Mapped[AIAnnotationType] = mapped_column(Enum(AIAnnotationType), index=True)
+    provider_name: Mapped[str] = mapped_column(String(64))
+    model_version: Mapped[str] = mapped_column(String(64))
+    prompt_template_version: Mapped[Optional[str]] = mapped_column(String(64), nullable=True)
+    prompt_hash: Mapped[Optional[str]] = mapped_column(String(64), nullable=True)
+    output_payload_json: Mapped[dict] = mapped_column(JSON)
+    confidence_score: Mapped[float] = mapped_column(Float, default=0.0)
+    is_suggestion_only: Mapped[bool] = mapped_column(Boolean, default=True)
+    is_human_reviewed: Mapped[bool] = mapped_column(Boolean, default=False)
+    human_reviewer_id: Mapped[Optional[int]] = mapped_column(Integer, ForeignKey("reviewer_profiles.id"), nullable=True)
+    human_correction_notes: Mapped[Optional[str]] = mapped_column(SA_Text, nullable=True)
+    estimated_cost_usd: Mapped[float] = mapped_column(Float, default=0.0)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
+
+    # Relationships
+    verse: Mapped["Verse"] = relationship("Verse")
+    human_reviewer: Mapped[Optional["ReviewerProfile"]] = relationship("ReviewerProfile", back_populates="reviewed_annotations")

@@ -11,10 +11,16 @@ import re
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 from database.models import (
+    AIAnnotationType,
     AcquisitionTrack,
+    AssignmentPriority,
+    AssignmentStatus,
+    DisputeStatus,
     DuplicateStatus,
     ReleaseStatus,
+    ReviewActionType,
     ReviewStatus,
+    ReviewerRole,
     TranslationType,
     VerseType,
     VersionType,
@@ -253,3 +259,137 @@ class MobileAppTextBundle(SchemaBase):
     verses: List[Dict[str, Any]]
     chanting_presets: List[int] = [1, 3, 11, 21, 27, 54, 108]
     generated_at: datetime
+
+
+# ---------------------------------------------------------------------------
+# Phase 7: Scholarly Workbench & AI Annotation Schemas
+# ---------------------------------------------------------------------------
+
+class ReviewerProfileBase(SchemaBase):
+    reviewer_id: str = Field(..., min_length=3, max_length=32)
+    full_name: str = Field(..., min_length=2, max_length=128)
+    primary_role: ReviewerRole
+    secondary_roles: Optional[List[str]] = Field(default_factory=list)
+    areas_of_expertise: Optional[List[str]] = Field(default_factory=list)
+    language_proficiency: Optional[Dict[str, str]] = Field(default_factory=dict)
+    sanskrit_proficiency: str = "Vidwan"
+    vedic_specialization: Optional[str] = None
+    academic_qualifications: Optional[str] = None
+    institutional_affiliation: Optional[str] = None
+    is_credentials_verified: bool = False
+    verification_method: Optional[str] = None
+    verification_date: Optional[datetime] = None
+    is_active: bool = True
+
+
+class ReviewerProfileCreate(ReviewerProfileBase):
+    email: Optional[str] = None
+    permissions: Optional[List[str]] = Field(default_factory=list)
+
+
+class ReviewerProfilePublicRead(ReviewerProfileBase):
+    """Sanitized public profile hiding sensitive email and internal permission flags."""
+    id: int
+    created_at: datetime
+
+
+class ReviewerProfileAdminRead(ReviewerProfileBase):
+    """Full administrative view with email and permissions."""
+    id: int
+    email: Optional[str] = None
+    permissions: Optional[List[str]] = Field(default_factory=list)
+    created_at: datetime
+    updated_at: datetime
+
+
+class ReviewAssignmentCreate(SchemaBase):
+    reviewer_id: int
+    text_id: int
+    verse_id: Optional[int] = None
+    target_language: str = Field(..., min_length=2, max_length=16)
+    view_type: Optional[TranslationType] = None
+    priority: AssignmentPriority = AssignmentPriority.NORMAL
+    deadline: Optional[datetime] = None
+    notes: Optional[str] = None
+    assigned_by: str = "system_admin"
+
+
+class ReviewAssignmentRead(SchemaBase):
+    id: int
+    assignment_id: str
+    reviewer_id: int
+    text_id: int
+    verse_id: Optional[int] = None
+    target_language: str
+    view_type: Optional[TranslationType] = None
+    priority: AssignmentPriority
+    status: AssignmentStatus
+    deadline: Optional[datetime] = None
+    notes: Optional[str] = None
+    assigned_by: str
+    assigned_at: datetime
+    completed_at: Optional[datetime] = None
+    reassigned_to_id: Optional[int] = None
+
+
+class ReviewActionLogCreate(SchemaBase):
+    assignment_id: Optional[int] = None
+    translation_id: int
+    translation_view_id: Optional[int] = None
+    verse_id: int
+    reviewer_id: int
+    action_type: ReviewActionType
+    previous_status: str
+    new_status: str
+    previous_text: Optional[str] = None
+    proposed_text: Optional[str] = None
+    scholarly_commentary: str = Field(..., min_length=5)
+    traditional_references: Optional[List[Dict[str, Any]]] = Field(default_factory=list)
+    alternative_readings: Optional[List[Dict[str, Any]]] = Field(default_factory=list)
+
+
+class ReviewActionLogRead(ReviewActionLogCreate):
+    id: int
+    action_id: str
+    created_at: datetime
+
+
+class TextualDisputeCreate(SchemaBase):
+    verse_id: int
+    translation_id: Optional[int] = None
+    translation_view_id: Optional[int] = None
+    dispute_nature: str
+    opinion_a_json: Dict[str, Any]
+    opinion_b_json: Dict[str, Any]
+
+
+class TextualDisputeRead(TextualDisputeCreate):
+    id: int
+    dispute_id: str
+    status: DisputeStatus
+    editorial_resolution_notes: Optional[str] = None
+    resolved_by: Optional[str] = None
+    resolved_at: Optional[datetime] = None
+    created_at: datetime
+
+
+class AIAnnotationProvenanceCreate(SchemaBase):
+    verse_id: int
+    annotation_type: AIAnnotationType
+    provider_name: str
+    model_version: str
+    prompt_template_version: Optional[str] = None
+    prompt_hash: Optional[str] = None
+    output_payload_json: Dict[str, Any]
+    confidence_score: float = 0.0
+    is_suggestion_only: bool = True
+    estimated_cost_usd: float = 0.0
+
+
+class AIAnnotationProvenanceRead(AIAnnotationProvenanceCreate):
+    id: int
+    annotation_id: str
+    is_human_reviewed: bool
+    human_reviewer_id: Optional[int] = None
+    human_correction_notes: Optional[str] = None
+    created_at: datetime

@@ -174,9 +174,8 @@ def test_audit_zero_false_approvals():
         )
         assert len(pilot_en) == 123
         for t in pilot_en:
-            # None of the unaccredited translations are APPROVED
-            assert t.review_status != ReviewStatus.APPROVED
-            assert t.review_status in (ReviewStatus.DRAFT, ReviewStatus.SCHOLAR_REVIEWED)
+            # All unaccredited pilot English translations are strictly DRAFT
+            assert t.review_status == ReviewStatus.DRAFT
 
 
 def test_audit_publication_preflight_gate_enforcement():
