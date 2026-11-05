@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-05T02:42:46.269737+00:00",
+  "generated_at_utc": "2026-11-05T03:11:56.463017+00:00",
   "total_candidate_catalog": 77,
   "total_registered_database_texts": 20,
   "verified_complete_texts": 18,
@@ -181,7 +181,7 @@
       "is_demonstration": false,
       "verification_status": "VERIFIED",
       "assignments_completed": 0,
-      "review_actions_logged": 5
+      "review_actions_logged": 8
     },
     {
       "reviewer_id": "REV-PROD-CLASSICAL",
@@ -190,7 +190,7 @@
       "is_demonstration": false,
       "verification_status": "VERIFIED",
       "assignments_completed": 0,
-      "review_actions_logged": 4
+      "review_actions_logged": 6
     },
     {
       "reviewer_id": "REV-PROD-AWADHI",
@@ -199,7 +199,7 @@
       "is_demonstration": false,
       "verification_status": "VERIFIED",
       "assignments_completed": 0,
-      "review_actions_logged": 4
+      "review_actions_logged": 6
     },
     {
       "reviewer_id": "REV-DEMO-SIM",
@@ -233,6 +233,11 @@
   "human_corrected_ai_suggestions": 0,
   "approved_translation_views": 9,
   "missing_translation_views": 752,
+  "real_human_scholars_count": 0,
+  "synthetic_test_personas_count": 5,
+  "ai_benchmark_overall_accuracy": 0.967,
+  "ai_benchmark_human_correction_rate": 0.033,
+  "translation_view_gaps_count": 752,
   "composition_review_completion": {
     "VEDA-TXT-00001": {
       "title": "Ganesha Pancharatnam",

@@ -245,10 +245,14 @@ class ReviewerOnboardingService:
         verification_method: str,
         verification_notes: str,
         approve: bool = True,
+        verification_doc_hash: Optional[str] = None,
+        verification_authority: Optional[str] = None,
+        is_real_human: bool = False,
     ) -> ReviewerProfile:
         """
         Administratively reviews and approves/rejects an applicant's scholarly credentials.
         Requires administrative or editorial board permissions.
+        Distinguishes living accredited human scholars from synthetic test personas.
         """
         # Guard: Check that admin has permission
         PermissionGuard.require_permission(admin_reviewer, "CAN_VERIFY_CREDENTIALS")
@@ -267,15 +271,27 @@ class ReviewerOnboardingService:
             applicant.verification_method = verification_method
             applicant.verification_notes = verification_notes
             applicant.verification_date = datetime.now(timezone.utc)
+            applicant.verification_doc_hash = verification_doc_hash
+            applicant.verification_authority = verification_authority
+
+            if is_real_human:
+                applicant.account_category = "REAL_HUMAN_SCHOLAR"
+                applicant.is_human_verified = True
+            else:
+                applicant.account_category = "SYNTHETIC_TEST_PERSONA"
+                applicant.is_human_verified = False
+
             # Grant approval permission once verified
             perms = list(applicant.permissions or [])
             if "APPROVE_TRANSLATION" not in perms:
                 perms.append("APPROVE_TRANSLATION")
             applicant.permissions = perms
             event_type = "CREDENTIALS_VERIFIED"
-            logger.info("Admin %s verified credentials for %s", admin_reviewer.reviewer_id, applicant.reviewer_id)
+            logger.info("Admin %s verified credentials for %s (Category: %s, Human: %s)",
+                        admin_reviewer.reviewer_id, applicant.reviewer_id, applicant.account_category, applicant.is_human_verified)
         else:
             applicant.is_credentials_verified = False
+            applicant.is_human_verified = False
             applicant.verification_status = "REJECTED"
             applicant.verified_by_admin = admin_reviewer.reviewer_id
             applicant.verification_notes = verification_notes
@@ -290,9 +306,83 @@ class ReviewerOnboardingService:
             session,
             event_type=event_type,
             reviewer_id=applicant.id,
-            details=f"Admin: {admin_reviewer.reviewer_id} | Method: {verification_method} | Notes: {verification_notes}",
+            details=f"Admin: {admin_reviewer.reviewer_id} | Category: {applicant.account_category} | Method: {verification_method} | Notes: {verification_notes}",
         )
         return applicant
+
+    @classmethod
+    def validate_reviewer_competency(
+        cls,
+        reviewer: ReviewerProfile,
+        content_genre: str,
+        target_language: Optional[str] = None,
+    ) -> bool:
+        """
+        Validates whether a reviewer possesses accredited domain competence
+        for the given text genre (Vedic, Classical, Awadhi) and target language.
+        Prevents scholars from approving material outside their verified discipline.
+        """
+        perms = reviewer.permissions or []
+        if "ADMIN_ALL" in perms:
+            return True
+
+        roles = {reviewer.primary_role}
+        if reviewer.secondary_roles:
+            for r in reviewer.secondary_roles:
+                roles.add(ReviewerRole(r) if isinstance(r, str) else r)
+
+        # 1. Vedic Recension and Mantra verification
+        if "vedic" in content_genre.lower():
+            if ReviewerRole.VEDIC_RECENSION not in roles and ReviewerRole.EDITORIAL_BOARD not in roles:
+                if not reviewer.vedic_specialization:
+                    raise OnboardingGovernanceError(
+                        f"Reviewer '{reviewer.reviewer_id}' lacks verified Vedic Recension credentials for Vedic text."
+                    )
+
+        # 2. Awadhi Devotional literature (Hanuman Chalisa)
+        if "awadhi" in content_genre.lower():
+            if ReviewerRole.AWADHI_SPECIALIST not in roles and ReviewerRole.EDITORIAL_BOARD not in roles:
+                areas = [a.lower() for a in (reviewer.areas_of_expertise or [])]
+                if not any("awadhi" in a or "tulsidas" in a for a in areas):
+                    raise OnboardingGovernanceError(
+                        f"Reviewer '{reviewer.reviewer_id}' lacks verified Awadhi specialization."
+                    )
+
+        # 3. Classical Sanskrit Stotras
+        if "classical" in content_genre.lower() or "stotra" in content_genre.lower():
+            classical_roles = {
+                ReviewerRole.SANSKRIT_GRAMMAR,
+                ReviewerRole.SANSKRIT_TEXTUAL,
+                ReviewerRole.TRADITIONAL_COMMENTARY,
+                ReviewerRole.EDITORIAL_BOARD,
+            }
+            if not (roles & classical_roles):
+                raise OnboardingGovernanceError(
+                    f"Reviewer '{reviewer.reviewer_id}' lacks Classical Sanskrit / Vyakarana credentials."
+                )
+
+        # 4. Regional Target Language Localization
+        if target_language and target_language.lower() != "sa":
+            lang_role_map = {
+                "hi": ReviewerRole.HINDI_TRANSLATOR,
+                "te": ReviewerRole.TELUGU_TRANSLATOR,
+                "ta": ReviewerRole.TAMIL_TRANSLATOR,
+                "kn": ReviewerRole.KANNADA_TRANSLATOR,
+                "ml": ReviewerRole.MALAYALAM_TRANSLATOR,
+                "mr": ReviewerRole.MARATHI_TRANSLATOR,
+                "bn": ReviewerRole.BENGALI_TRANSLATOR,
+                "gu": ReviewerRole.GUJARATI_TRANSLATOR,
+                "or": ReviewerRole.ODIA_TRANSLATOR,
+            }
+            required_role = lang_role_map.get(target_language.lower())
+            if required_role and required_role not in roles and ReviewerRole.EDITORIAL_BOARD not in roles:
+                langs = reviewer.language_proficiency or {}
+                if target_language not in langs or langs[target_language].lower() not in ("native", "fluent", "scholar"):
+                    raise OnboardingGovernanceError(
+                        f"Reviewer '{reviewer.reviewer_id}' lacks verified native/fluent translation competency in '{target_language}'."
+                    )
+
+        return True
 
     @classmethod
     def deactivate_reviewer(
@@ -328,11 +418,13 @@ class ReviewerOnboardingService:
 
     @classmethod
     def get_reviewer_census(cls, session: Session) -> Dict[str, Any]:
-        """Returns census breakdown distinguishing demo, verified production, pending, and deactivated."""
+        """Returns census breakdown distinguishing real human scholars, synthetic personas, demo, and pending accounts."""
         all_profiles = session.query(ReviewerProfile).all()
 
         total = len(all_profiles)
-        demos = [p for p in all_profiles if p.is_demonstration]
+        demos = [p for p in all_profiles if p.is_demonstration or getattr(p, "account_category", "") == "DEMONSTRATION_HARNESS"]
+        real_humans = [p for p in all_profiles if getattr(p, "account_category", "") == "REAL_HUMAN_SCHOLAR" and getattr(p, "is_human_verified", False) and p.is_active]
+        personas = [p for p in all_profiles if getattr(p, "account_category", "") == "SYNTHETIC_TEST_PERSONA" and not p.is_demonstration]
         verified_prod = [p for p in all_profiles if not p.is_demonstration and p.verification_status == "VERIFIED" and p.is_active]
         pending = [p for p in all_profiles if not p.is_demonstration and p.verification_status == "PENDING_VERIFICATION" and p.is_active]
         rejected = [p for p in all_profiles if p.verification_status == "REJECTED"]
@@ -340,6 +432,8 @@ class ReviewerOnboardingService:
 
         return {
             "total_profiles": total,
+            "real_human_scholars": len(real_humans),
+            "synthetic_test_personas": len(personas),
             "demonstration_accounts": len(demos),
             "verified_production_reviewers": len(verified_prod),
             "pending_verification": len(pending),

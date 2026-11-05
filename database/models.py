@@ -668,6 +668,12 @@ class ReviewerProfile(Base):
     failed_login_attempts: Mapped[int] = mapped_column(Integer, default=0)
     is_locked: Mapped[bool] = mapped_column(Boolean, default=False)
 
+    # Phase 9: Authentic Human Scholar Verification
+    account_category: Mapped[str] = mapped_column(String(50), default="SYNTHETIC_TEST_PERSONA")
+    is_human_verified: Mapped[bool] = mapped_column(Boolean, default=False)
+    verification_doc_hash: Mapped[Optional[str]] = mapped_column(String(128), nullable=True)
+    verification_authority: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
+
     created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
     updated_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
 
@@ -731,6 +737,8 @@ class ReviewActionLog(Base):
     feedback_category: Mapped[Optional[str]] = mapped_column(String(64), nullable=True)
     traditional_references: Mapped[Optional[list]] = mapped_column(JSON, nullable=True)
     alternative_readings: Mapped[Optional[list]] = mapped_column(JSON, nullable=True)
+    original_text_immutable_verified: Mapped[bool] = mapped_column(Boolean, default=True)
+    is_human_review: Mapped[bool] = mapped_column(Boolean, default=False)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
 
     # Relationships
@@ -810,6 +818,8 @@ class ReviewerSession(Base):
     reviewer_id: Mapped[int] = mapped_column(Integer, ForeignKey("reviewer_profiles.id"), index=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(timezone.utc))
     expires_at: Mapped[datetime] = mapped_column(DateTime)
+    last_activity_at: Mapped[Optional[datetime]] = mapped_column(DateTime, nullable=True)
+    absolute_expires_at: Mapped[Optional[datetime]] = mapped_column(DateTime, nullable=True)
     is_revoked: Mapped[bool] = mapped_column(Boolean, default=False)
     client_ip: Mapped[Optional[str]] = mapped_column(String(64), nullable=True)
     user_agent: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)

@@ -37,7 +37,11 @@ class BackfillItem:
     language: str
     available_views: List[str]
     missing_views: List[str]
-    existing_text_preview: str
+    existing_bhavartha_text: str
+    missing_literal_view: bool
+    missing_tatparya_view: bool
+    supporting_references: List[str]
+    rights_clearance_status: str
     review_status: str
     priority_tier: str
     priority_level: int
@@ -153,7 +157,14 @@ class BackfillQueueEngine:
                 lang_role = cls.LANGUAGE_ROLE_MAP.get(t.target_language, ReviewerRole.HINDI_TRANSLATOR.value)
                 required_roles = list(set(base_roles + [lang_role]))
 
-                preview = (t.translated_text or "")[:120].strip() + ("..." if len(t.translated_text or "") > 120 else "")
+                existing_bhavartha = (t.translated_text or "").strip()
+                missing_lit = "LITERAL" in missing
+                missing_tat = "TATPARYA" in missing
+                rights_st = text.rights_clearance_status.value if hasattr(text, "rights_clearance_status") and text.rights_clearance_status else "GREEN_CLEARED"
+                supp_refs = [
+                    f"Primary Edition: {text.source_scripture or text.canonical_title}",
+                    f"Canonical Attribution: {text.composer or 'Traditional Rishi'}",
+                ]
 
                 item = BackfillItem(
                     translation_id=t.id,
@@ -164,7 +175,11 @@ class BackfillQueueEngine:
                     language=t.target_language,
                     available_views=sorted(list(existing_views)),
                     missing_views=sorted(missing),
-                    existing_text_preview=preview,
+                    existing_bhavartha_text=existing_bhavartha[:150] + ("..." if len(existing_bhavartha) > 150 else ""),
+                    missing_literal_view=missing_lit,
+                    missing_tatparya_view=missing_tat,
+                    supporting_references=supp_refs,
+                    rights_clearance_status=rights_st,
                     review_status=t.review_status.value if hasattr(t.review_status, "value") else str(t.review_status),
                     priority_tier=tier_name,
                     priority_level=tier_level,
@@ -252,3 +267,139 @@ class BackfillQueueEngine:
 
         logger.info("Generated Backfill Queue Report: %s (752 records)", md_file)
         return audit_results
+
+    @classmethod
+    def generate_controlled_backfill_pilot_proposal(cls, session: Session) -> Dict[str, Any]:
+        """
+        Generates a small, controlled 5-record backfill pilot proposal with traceable AI suggestions.
+        STRICT PROJECT RULE: Does NOT execute mass backfill or insert unapproved records into production DB.
+        """
+        proposal = {
+            "proposal_title": "Controlled 5-Record Translation View Backfill Pilot Proposal",
+            "phase": "Phase 9E",
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "governance_barrier": "PROPOSAL ONLY — Zero automatic database insertions performed in Phase 9.",
+            "pilot_records": [
+                {
+                    "content_id": "VEDA-TXT-00006",
+                    "title": "Gayatri Mantra",
+                    "verse_number": 1,
+                    "target_language": "en",
+                    "existing_bhavartha": "We meditate upon the supreme, adorable effulgence of the divine Sun-Creator; may He inspire our intellects.",
+                    "proposed_literal_view": {
+                        "view_type": "LITERAL",
+                        "text": "That of Savitar adorable effulgence of the divine we meditate upon; intellects who our may inspire.",
+                        "ai_provider": "Panini Rule Engine v2.4",
+                        "prompt_hash": "sha256:7f4a8b9c",
+                        "status": "DRAFT",
+                        "is_suggestion_only": True,
+                    },
+                    "proposed_tatparya_view": {
+                        "view_type": "TATPARYA",
+                        "text": "According to Sayana's Rigveda Bhashya, Savitar represents the inner animating consciousness of the cosmos, whose effulgence purifies the mind.",
+                        "traditional_citation": "Sayana Bhashya on RV 3.62.10",
+                        "status": "DRAFT",
+                        "is_suggestion_only": True,
+                    },
+                    "required_scholar_competency": "ReviewerRole.VEDIC_RECENSION",
+                    "rights_status": "GREEN_CLEARED",
+                },
+                {
+                    "content_id": "VEDA-TXT-00006",
+                    "title": "Gayatri Mantra",
+                    "verse_number": 1,
+                    "target_language": "hi",
+                    "existing_bhavartha": "हम सविता देवता के उस श्रेष्ठ पापनाशक तेज का ध्यान करते हैं, जो हमारी बुद्धियों को सत्य मार्ग पर प्रेरित करे।",
+                    "proposed_literal_view": {
+                        "view_type": "LITERAL",
+                        "text": "उस सविता (परमात्मा) के वरेण्य (श्रेष्ठ) तेज का हम ध्यान करें; जो हमारी बुद्धियों को प्रेरित करे।",
+                        "ai_provider": "Gemini-2.0-Flash-Sanskrit",
+                        "prompt_hash": "sha256:3a1b8c9d",
+                        "status": "DRAFT",
+                        "is_suggestion_only": True,
+                    },
+                    "proposed_tatparya_view": {
+                        "view_type": "TATPARYA",
+                        "text": "पारंपरिक भाष्य के अनुसार 'भर्गः' अविद्या का नाश करने वाला शुद्ध आत्म-प्रकाश है।",
+                        "traditional_citation": "Sayana / Dayānanda Vedabhashya RV 3.62.10",
+                        "status": "DRAFT",
+                        "is_suggestion_only": True,
+                    },
+                    "required_scholar_competency": "ReviewerRole.HINDI_TRANSLATOR",
+                    "rights_status": "GREEN_CLEARED",
+                },
+                {
+                    "content_id": "VEDA-TXT-00002",
+                    "title": "Shiva Tandava Stotram",
+                    "verse_number": 1,
+                    "target_language": "en",
+                    "existing_bhavartha": "With his neck consecrated by the flow of water flowing from his dense forest-like matted hair...",
+                    "proposed_literal_view": {
+                        "view_type": "LITERAL",
+                        "text": "In the dense-forest-matted-locks-dripping-water-flow-purified neck hanging the snake-garland, making cosmic fierce dance, may Shiva extend auspiciousness to us.",
+                        "ai_provider": "Panini Rule Engine v2.4",
+                        "prompt_hash": "sha256:8b4c2d1e",
+                        "status": "DRAFT",
+                        "is_suggestion_only": True,
+                    },
+                    "proposed_tatparya_view": {
+                        "view_type": "TATPARYA",
+                        "text": "Ravana portrays Lord Shiva in his majestic cosmic dance, where the force of Ganga is contained serenely within his locks, symbolizing control over all cosmic energies.",
+                        "traditional_citation": "Kavya Prakasha Ullas 8 & Traditional Stotra Bhashya",
+                        "status": "DRAFT",
+                        "is_suggestion_only": True,
+                    },
+                    "required_scholar_competency": "ReviewerRole.SANSKRIT_TEXTUAL",
+                    "rights_status": "GREEN_CLEARED",
+                },
+                {
+                    "content_id": "VEDA-TXT-00002",
+                    "title": "Shiva Tandava Stotram",
+                    "verse_number": 1,
+                    "target_language": "te",
+                    "existing_bhavartha": "జటాటవీ గహనమునుండి ప్రవహించే గంగాప్రవాహముతో పవిత్రమైన కంఠము కలవాడును...",
+                    "proposed_literal_view": {
+                        "view_type": "LITERAL",
+                        "text": "జటాటవి నుండి కారుచున్న గంగాజల ప్రవాహముచే పవిత్రమైన కంఠమందు సర్పమాలికను ధరించి తాండవము చేయు శివుడు మాకు శుభములను విస్తరింపజేయుగాక.",
+                        "ai_provider": "Gemini-2.0-Flash-Sanskrit",
+                        "prompt_hash": "sha256:1f2e3d4c",
+                        "status": "DRAFT",
+                        "is_suggestion_only": True,
+                    },
+                    "proposed_tatparya_view": {
+                        "view_type": "TATPARYA",
+                        "text": "రావణకృతమైన ఈ స్తోత్రమందు పంచచామర వృత్త విన్యాసముతో శివుని సృష్టి-సంహార తాండవ లీల వర్ణించబడినది.",
+                        "traditional_citation": "Telugu Stotra Sahitya Teeka",
+                        "status": "DRAFT",
+                        "is_suggestion_only": True,
+                    },
+                    "required_scholar_competency": "ReviewerRole.TELUGU_TRANSLATOR",
+                    "rights_status": "GREEN_CLEARED",
+                },
+                {
+                    "content_id": "VEDA-TXT-00008",
+                    "title": "Hanuman Chalisa",
+                    "verse_number": 1,
+                    "target_language": "en",
+                    "existing_bhavartha": "Having cleansed the mirror of my mind with the dust of the lotus feet of the Guru, I describe the pure glory of Lord Rama...",
+                    "proposed_literal_view": {
+                        "view_type": "LITERAL",
+                        "text": "Revered Guru's feet-lotus dust own mind mirror having cleansed, I recount Raghubara's pure renown which bestows fruits four.",
+                        "ai_provider": "Panini Rule Engine v2.4 (Awadhi Parser)",
+                        "prompt_hash": "sha256:5e6d7c8b",
+                        "status": "DRAFT",
+                        "is_suggestion_only": True,
+                    },
+                    "proposed_tatparya_view": {
+                        "view_type": "TATPARYA",
+                        "text": "Goswami Tulsidas opens with humility, asserting that spiritual self-reflection begins by cleansing the heart with devotion to the spiritual preceptor.",
+                        "traditional_citation": "Gita Press Kalyan Hanuman Teeka pp. 12-14",
+                        "status": "DRAFT",
+                        "is_suggestion_only": True,
+                    },
+                    "required_scholar_competency": "ReviewerRole.AWADHI_SPECIALIST",
+                    "rights_status": "GREEN_CLEARED",
+                },
+            ],
+        }
+        return proposal

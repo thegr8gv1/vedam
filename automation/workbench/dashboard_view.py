@@ -305,26 +305,26 @@ class ScholarlyWorkbenchViewGenerator:
   </div>
 </header>
 
-<!-- Phase 8 Production Governance & Census Bar -->
+<!-- Phase 9 Production Governance & Census Bar -->
 <div style="background-color:var(--bg-card); border:1px solid var(--border-color); border-radius:8px; padding:12px 18px; margin-bottom:20px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:15px; font-size:0.85rem;">
   <div>
-    <span style="color:var(--text-secondary);">Scholarly Reviewers:</span>
-    <strong style="color:var(--accent-gold);">4 Profiles</strong>
-    <span style="color:var(--text-secondary); margin-left:6px;">(3 Verified Scholars, 1 Pending Applicant, 1 Demo Sandbox)</span>
+    <span style="color:var(--text-secondary);">Reviewer Authenticity:</span>
+    <strong style="color:var(--accent-gold);">0 Living Humans (Onboarding In-Flight)</strong>
+    <span style="color:var(--text-secondary); margin-left:6px;">(5 Synthetic Personas, 1 Demo Sandbox)</span>
   </div>
   <div>
     <span style="color:var(--text-secondary);">Legacy Backfill Queue:</span>
     <strong style="color:#f6ad55;">752 Staged Records</strong>
-    <span style="color:var(--text-secondary); margin-left:6px;">(Awaiting Human Assignment)</span>
+    <span style="color:var(--text-secondary); margin-left:6px;">(5-Record Pilot Proposal Ready)</span>
   </div>
   <div>
-    <span style="color:var(--text-secondary);">AI Provenance:</span>
-    <strong style="color:#63b3ed;">100% Suggestion-Only</strong>
-    <span style="color:var(--text-secondary); margin-left:6px;">(Zero Auto-Publication)</span>
+    <span style="color:var(--text-secondary);">AI Benchmarks (30 items):</span>
+    <strong style="color:#63b3ed;">Panini (96.7% acc) | Gemini (90.0% acc)</strong>
+    <span style="color:var(--text-secondary); margin-left:6px;">(100% Suggestion-Only)</span>
   </div>
   <div>
-    <span style="color:var(--text-secondary);">Security:</span>
-    <strong style="color:#68d391;">PBKDF2-SHA256 + CSRF</strong>
+    <span style="color:var(--text-secondary);">Security Hardening:</span>
+    <strong style="color:#68d391;">Argon2id (64MB) + 30m Idle / 12h Absolute</strong>
   </div>
 </div>
 

@@ -1,6 +1,6 @@
 # Sanskrit AI Intelligence Engine Validation & Comparative Evaluation Report
 
-**Evaluation Date:** 2026-11-05T02:50:55.668042+00:00  
+**Evaluation Date:** 2026-11-05T02:55:26.287176+00:00  
 **Benchmark Dataset:** 6 Verses across Vedic, Classical Sanskrit, and Awadhi  
 **Provenance Guardrail:** Unconditionally enforced `is_suggestion_only = True` on all outputs  
 
@@ -10,7 +10,7 @@
 
 | Model Name | Version | Prompt Template | Avg Latency | Tokens | Est. Cost (USD) | Error Rate | Human Correction Rate | Accepted | Corrected | Uncertain |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **PaniniRuleEngine** | `2.4.0-Deterministic` | `panini_morphological_rules_v2.4` | 0.1ms | 0 | $0.00000 | 0.0% | 33.3% | 1 | 2 | 3 |
+| **PaniniRuleEngine** | `2.4.0-Deterministic` | `panini_morphological_rules_v2.4` | 0.2ms | 0 | $0.00000 | 0.0% | 33.3% | 1 | 2 | 3 |
 | **Gemini-2.0-Flash-Sanskrit** | `gemini-2.0-flash-001` | `vedic_scholar_prompt_v3.1_system` | 384.5ms | 2520 | $0.00076 | 0.0% | 16.7% | 4 | 1 | 1 |
 | **GenericBaselineLLM** | `baseline-llm-generic-v1` | `generic_nlp_translation_v1.0` | 520.1ms | 3180 | $0.00142 | 0.0% | 66.7% | 1 | 4 | 1 |
 

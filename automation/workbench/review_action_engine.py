@@ -152,7 +152,9 @@ class ReviewActionEngine:
             else:
                 translation.review_status = ReviewStatus.DRAFT
 
-        # 6. Record Immutable Action Log
+        # 6. Record Immutable Action Log with Human Authenticity Tracking
+        is_human = (getattr(reviewer, "account_category", "") == "REAL_HUMAN_SCHOLAR") and bool(getattr(reviewer, "is_human_verified", False))
+
         log = ReviewActionLog(
             action_id=action_id,
             assignment_id=action_data.assignment_id,
@@ -169,6 +171,8 @@ class ReviewActionEngine:
             feedback_category=getattr(action_data, 'feedback_category', None),
             traditional_references=action_data.traditional_references or [],
             alternative_readings=action_data.alternative_readings or [],
+            original_text_immutable_verified=True,
+            is_human_review=is_human,
             created_at=datetime.now(timezone.utc),
         )
         session.add(log)

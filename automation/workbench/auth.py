@@ -5,6 +5,7 @@ account lockout protections, sliding-window rate limiting, CSRF tokens, and tamp
 """
 
 from datetime import datetime, timedelta, timezone
+import base64
 import hashlib
 import hmac
 import logging
@@ -13,6 +14,7 @@ import secrets
 import threading
 import time
 from typing import Any, Dict, List, Optional, Set, Tuple
+from cryptography.hazmat.primitives.kdf.argon2 import Argon2id
 from sqlalchemy.orm import Session
 
 from database.models import (
@@ -27,6 +29,8 @@ logger = logging.getLogger("vedam.automation.workbench.auth")
 SECRET_KEY = os.getenv("VEDAM_AUTH_SECRET", "vedam-scholarly-workbench-production-secret-key-2026")
 MAX_FAILED_ATTEMPTS = 5
 DEFAULT_SESSION_DURATION_HOURS = 12
+DEFAULT_IDLE_TIMEOUT_MINUTES = 30
+DEFAULT_ABSOLUTE_SESSION_HOURS = 12
 
 
 class AuthError(Exception):
@@ -99,37 +103,95 @@ global_rate_limiter = RateLimiter()
 # ---------------------------------------------------------------------------
 # Password Hashing and Cryptographic Utilities
 # ---------------------------------------------------------------------------
+# Password Hashing and Cryptographic Utilities (OWASP Argon2id + PBKDF2 Migration)
+# ---------------------------------------------------------------------------
 
 def hash_password(raw_password: str) -> str:
     """
-    Hashes a password using PBKDF2-HMAC-SHA256 with 100,000 iterations
-    and a cryptographically random 16-byte salt.
-    Format: 'pbkdf2_sha256$100000$<salt_hex>$<hash_hex>'
+    Hashes a password using Argon2id with OWASP-aligned configuration:
+    memory_cost=65536 KiB (64 MiB), iterations=3, parallelism=4, 16-byte salt, 32-byte key.
+    Format: '$argon2id$v=19$m=65536,t=3,p=4$<salt_b64>$<key_b64>'
     """
     if not raw_password or len(raw_password) < 8:
         raise ValueError("Password must be at least 8 characters long.")
     salt = secrets.token_bytes(16)
-    iterations = 100000
-    derived = hashlib.pbkdf2_hmac("sha256", raw_password.encode("utf-8"), salt, iterations)
-    return f"pbkdf2_sha256${iterations}${salt.hex()}${derived.hex()}"
+    kdf = Argon2id(salt=salt, length=32, iterations=3, lanes=4, memory_cost=65536)
+    derived = kdf.derive(raw_password.encode("utf-8"))
+    salt_b64 = base64.b64encode(salt).decode("ascii")
+    derived_b64 = base64.b64encode(derived).decode("ascii")
+    return f"$argon2id$v=19$m=65536,t=3,p=4${salt_b64}${derived_b64}"
 
 
 def verify_password(raw_password: str, hashed: str) -> bool:
-    """Verifies a raw password against the stored PBKDF2 hash using constant-time comparison."""
+    """
+    Verifies a raw password against the stored hash.
+    Supports modern Argon2id ($argon2id$...) and legacy PBKDF2-HMAC-SHA256 (pbkdf2_sha256$...).
+    """
+    valid, _ = verify_and_upgrade_password(raw_password, hashed)
+    return valid
+
+
+def verify_and_upgrade_password(raw_password: str, hashed: str) -> Tuple[bool, Optional[str]]:
+    """
+    Verifies password and determines if the stored hash should be upgraded to Argon2id.
+    Returns (is_valid, upgraded_hash_if_migration_needed).
+    """
     if not hashed or not raw_password:
-        return False
-    parts = hashed.split("$")
-    if len(parts) != 4 or parts[0] != "pbkdf2_sha256":
-        return False
-    try:
-        iterations = int(parts[1])
-        salt = bytes.fromhex(parts[2])
-        expected_hash = bytes.fromhex(parts[3])
-        computed = hashlib.pbkdf2_hmac("sha256", raw_password.encode("utf-8"), salt, iterations)
-        return hmac.compare_digest(computed, expected_hash)
-    except Exception as exc:
-        logger.error("Error verifying password hash: %s", exc)
-        return False
+        return False, None
+
+    # Case 1: Modern Argon2id
+    if hashed.startswith("$argon2id$"):
+        parts = hashed.split("$")
+        if len(parts) != 6 or parts[1] != "argon2id":
+            return False, None
+        try:
+            params = dict(kv.split("=") for kv in parts[3].split(","))
+            m = int(params.get("m", 65536))
+            t = int(params.get("t", 3))
+            p = int(params.get("p", 4))
+            salt = base64.b64decode(parts[4])
+            expected_key = base64.b64decode(parts[5])
+            kdf = Argon2id(salt=salt, length=len(expected_key), iterations=t, lanes=p, memory_cost=m)
+            kdf.verify(raw_password.encode("utf-8"), expected_key)
+            return True, None
+        except Exception as exc:
+            logger.debug("Argon2id verification failed: %s", exc)
+            return False, None
+
+    # Case 2: Legacy PBKDF2-HMAC-SHA256 (Phase 8 format)
+    if hashed.startswith("pbkdf2_sha256$") or hashed.startswith("$pbkdf2-sha256$"):
+        parts = hashed.split("$")
+        if len(parts) == 4 and parts[0] == "pbkdf2_sha256":
+            try:
+                iterations = int(parts[1])
+                salt = bytes.fromhex(parts[2])
+                expected_hash = bytes.fromhex(parts[3])
+                computed = hashlib.pbkdf2_hmac("sha256", raw_password.encode("utf-8"), salt, iterations)
+                if hmac.compare_digest(computed, expected_hash):
+                    upgraded = hash_password(raw_password)
+                    return True, upgraded
+                return False, None
+            except Exception as exc:
+                logger.error("Error verifying legacy PBKDF2 hash: %s", exc)
+                return False, None
+
+    return False, None
+
+
+def get_secure_cookie_config(session_token: str, secure: bool = True) -> Dict[str, Any]:
+    """
+    Returns production OWASP-compliant secure cookie attributes for the session token.
+    Enforces HttpOnly, SameSite=Strict, Secure flag, and 12-hour max-age.
+    """
+    return {
+        "key": "vedam_session",
+        "value": session_token,
+        "httponly": True,
+        "samesite": "Strict",
+        "secure": secure,
+        "max_age": DEFAULT_ABSOLUTE_SESSION_HOURS * 3600,
+        "path": "/",
+    }
 
 
 def generate_csrf_token(session_token: str) -> str:
@@ -222,8 +284,9 @@ class AuthService:
             )
             raise AuthenticationRequiredError("Reviewer account has been deactivated.")
 
-        # Check password
-        if not reviewer.password_hash or not verify_password(raw_password, reviewer.password_hash):
+        # Check password with automatic Argon2id upgrade
+        is_valid, upgraded_hash = verify_and_upgrade_password(raw_password, reviewer.password_hash)
+        if not is_valid:
             reviewer.failed_login_attempts = (reviewer.failed_login_attempts or 0) + 1
             if reviewer.failed_login_attempts >= MAX_FAILED_ATTEMPTS:
                 reviewer.is_locked = True
@@ -245,18 +308,31 @@ class AuthService:
             session.flush()
             raise AuthenticationRequiredError("Invalid reviewer ID or password.")
 
+        if upgraded_hash:
+            reviewer.password_hash = upgraded_hash
+            cls.log_event(
+                session,
+                event_type="PASSWORD_HASH_UPGRADED_TO_ARGON2ID",
+                reviewer_id=reviewer.id,
+                ip_address=client_ip,
+                details="Migrated legacy PBKDF2 hash to modern Argon2id ($argon2id$v=19$m=65536,t=3,p=4).",
+            )
+
         # Successful authentication
         reviewer.failed_login_attempts = 0
         reviewer.last_login_at = datetime.now(timezone.utc)
 
         # Create active session
+        now_utc = datetime.now(timezone.utc)
         session_token = secrets.token_urlsafe(32)
-        expires_at = datetime.now(timezone.utc) + timedelta(hours=DEFAULT_SESSION_DURATION_HOURS)
+        expires_at = now_utc + timedelta(hours=DEFAULT_ABSOLUTE_SESSION_HOURS)
         active_session = ReviewerSession(
             session_token=session_token,
             reviewer_id=reviewer.id,
-            created_at=datetime.now(timezone.utc),
+            created_at=now_utc,
             expires_at=expires_at,
+            last_activity_at=now_utc,
+            absolute_expires_at=expires_at,
             is_revoked=False,
             client_ip=client_ip,
             user_agent=user_agent,
@@ -267,7 +343,7 @@ class AuthService:
             event_type="LOGIN_SUCCESS",
             reviewer_id=reviewer.id,
             ip_address=client_ip,
-            details=f"Successful login for {reviewer.reviewer_id} (Demo: {reviewer.is_demonstration}).",
+            details=f"Successful login for {reviewer.reviewer_id} (Category: {getattr(reviewer, 'account_category', 'UNKNOWN')}, Demo: {reviewer.is_demonstration}).",
         )
         session.flush()
         return reviewer, active_session
@@ -289,11 +365,39 @@ class AuthService:
             raise AuthenticationRequiredError("Session has been revoked.")
 
         now_utc = datetime.now(timezone.utc)
-        expires_at = sess.expires_at.replace(tzinfo=timezone.utc) if sess.expires_at.tzinfo is None else sess.expires_at
-        if expires_at <= now_utc:
+
+        # 1. Absolute expiration check (12 hours)
+        abs_exp = getattr(sess, "absolute_expires_at", None) or sess.expires_at
+        abs_exp_utc = abs_exp.replace(tzinfo=timezone.utc) if abs_exp.tzinfo is None else abs_exp
+        if abs_exp_utc <= now_utc:
             sess.is_revoked = True
             session.flush()
-            raise AuthenticationRequiredError("Session has expired. Please log in again.")
+            cls.log_event(
+                session,
+                event_type="SESSION_EXPIRED_ABSOLUTE",
+                reviewer_id=sess.reviewer_id,
+                details="Absolute session duration limit reached (12 hours).",
+            )
+            raise AuthenticationRequiredError("Session has expired (absolute duration reached). Please log in again.")
+
+        # 2. Server-side idle inactivity timeout check (30 minutes)
+        last_act = getattr(sess, "last_activity_at", None)
+        if last_act:
+            last_act_utc = last_act.replace(tzinfo=timezone.utc) if last_act.tzinfo is None else last_act
+            if (now_utc - last_act_utc).total_seconds() > DEFAULT_IDLE_TIMEOUT_MINUTES * 60:
+                sess.is_revoked = True
+                session.flush()
+                cls.log_event(
+                    session,
+                    event_type="SESSION_EXPIRED_IDLE",
+                    reviewer_id=sess.reviewer_id,
+                    details=f"Session expired due to inactivity ({DEFAULT_IDLE_TIMEOUT_MINUTES} min idle timeout).",
+                )
+                raise AuthenticationRequiredError(f"Session expired due to inactivity ({DEFAULT_IDLE_TIMEOUT_MINUTES} minutes). Please log in again.")
+
+        # Update last activity timestamp
+        sess.last_activity_at = now_utc
+        session.flush()
 
         reviewer = session.query(ReviewerProfile).filter_by(id=sess.reviewer_id).first()
         if not reviewer or not reviewer.is_active:
@@ -303,6 +407,86 @@ class AuthService:
             raise AccountLockedError("Account is currently locked.")
 
         return reviewer
+
+    @classmethod
+    def rotate_session(
+        cls,
+        session: Session,
+        old_session_token: str,
+        client_ip: Optional[str] = None,
+        user_agent: Optional[str] = None,
+    ) -> Tuple[ReviewerProfile, ReviewerSession]:
+        """
+        Rotates session token upon privilege elevation or security revalidation.
+        Invalidates old session and issues a fresh token while maintaining absolute lifetime.
+        """
+        reviewer = cls.validate_session(session, old_session_token)
+        old_sess = session.query(ReviewerSession).filter_by(session_token=old_session_token).first()
+        if old_sess:
+            old_sess.is_revoked = True
+
+        now_utc = datetime.now(timezone.utc)
+        abs_exp = getattr(old_sess, "absolute_expires_at", None) if old_sess else None
+        if not abs_exp:
+            abs_exp = now_utc + timedelta(hours=DEFAULT_ABSOLUTE_SESSION_HOURS)
+
+        new_token = secrets.token_urlsafe(32)
+        new_session = ReviewerSession(
+            session_token=new_token,
+            reviewer_id=reviewer.id,
+            created_at=now_utc,
+            expires_at=abs_exp,
+            last_activity_at=now_utc,
+            absolute_expires_at=abs_exp,
+            is_revoked=False,
+            client_ip=client_ip or (old_sess.client_ip if old_sess else None),
+            user_agent=user_agent or (old_sess.user_agent if old_sess else None),
+        )
+        session.add(new_session)
+        cls.log_event(
+            session,
+            event_type="SESSION_ROTATED",
+            reviewer_id=reviewer.id,
+            ip_address=client_ip,
+            details=f"Rotated session token {old_session_token[:8]}... -> {new_token[:8]}...",
+        )
+        session.flush()
+        return reviewer, new_session
+
+    @classmethod
+    def require_reauthentication(
+        cls,
+        session: Session,
+        reviewer_id: str,
+        raw_password: str,
+        client_ip: Optional[str] = None,
+    ) -> bool:
+        """
+        Validates password for high-privilege/sensitive administrative modifications
+        (e.g., credential verification, role modification, or credential revocation).
+        """
+        reviewer = session.query(ReviewerProfile).filter_by(reviewer_id=reviewer_id).first()
+        if not reviewer or not reviewer.is_active or reviewer.is_locked:
+            return False
+        is_valid, _ = verify_and_upgrade_password(raw_password, reviewer.password_hash)
+        if not is_valid:
+            cls.log_event(
+                session,
+                event_type="REAUTHENTICATION_FAILED",
+                reviewer_id=reviewer.id,
+                ip_address=client_ip,
+                details="Failed re-authentication attempt for sensitive administrative operation.",
+            )
+            return False
+        cls.log_event(
+            session,
+            event_type="REAUTHENTICATION_SUCCESS",
+            reviewer_id=reviewer.id,
+            ip_address=client_ip,
+            details="Successful re-authentication for sensitive operation.",
+        )
+        session.flush()
+        return True
 
     @classmethod
     def revoke_session(cls, session: Session, session_token: str, reason: str = "User logout") -> None:
@@ -382,16 +566,36 @@ class PermissionGuard:
     @classmethod
     def require_production_endorsement_capability(cls, reviewer: ReviewerProfile) -> None:
         """
-        Enforces that demonstration profiles can never issue production approvals
-        or count as real scholarly endorsements.
+        Enforces that demonstration profiles and synthetic personas cannot issue
+        canonical production approvals or masquerade as living scholars.
         """
-        if reviewer.is_demonstration:
+        if reviewer.is_demonstration or getattr(reviewer, "account_category", "") == "DEMONSTRATION_HARNESS":
             raise PermissionDeniedError(
                 f"Reviewer '{reviewer.reviewer_id}' is a demonstration profile and cannot issue canonical approvals."
             )
         if not reviewer.is_credentials_verified or reviewer.verification_status != "VERIFIED":
             raise PermissionDeniedError(
                 f"Reviewer '{reviewer.reviewer_id}' is not in verified status ({reviewer.verification_status})."
+            )
+
+    @classmethod
+    def require_human_scholar(cls, reviewer: ReviewerProfile) -> None:
+        """
+        Enforces that only verified living human scholars can issue production sign-offs.
+        Synthetic test personas and demonstration harnesses are strictly rejected.
+        """
+        if reviewer.is_demonstration or getattr(reviewer, "account_category", "") == "DEMONSTRATION_HARNESS":
+            raise PermissionDeniedError(
+                f"Reviewer '{reviewer.reviewer_id}' is a demonstration harness and cannot issue production approvals."
+            )
+        if getattr(reviewer, "account_category", "") == "SYNTHETIC_TEST_PERSONA":
+            raise PermissionDeniedError(
+                f"Reviewer '{reviewer.reviewer_id}' is a synthetic test persona. "
+                "Production sign-off strictly requires an accredited living human scholar."
+            )
+        if not getattr(reviewer, "is_human_verified", False) or getattr(reviewer, "account_category", "") != "REAL_HUMAN_SCHOLAR":
+            raise PermissionDeniedError(
+                f"Reviewer '{reviewer.reviewer_id}' is not an accredited human scholar with verified physical credentials."
             )
 
     @classmethod

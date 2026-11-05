@@ -169,9 +169,13 @@ erDiagram
         datetime verification_date
         json permissions
         boolean is_active
-        string password_hash "PBKDF2-HMAC-SHA256 100k iterations"
+        string password_hash "Argon2id (m=64MB, t=3, p=4) with legacy PBKDF2 migration"
         boolean is_demonstration "True for test harness fixtures, False for production scholars"
         string verification_status "DEMO, PENDING_VERIFICATION, VERIFIED, REJECTED, DEACTIVATED"
+        string account_category "REAL_HUMAN_SCHOLAR, SYNTHETIC_TEST_PERSONA, DEMONSTRATION_HARNESS"
+        boolean is_human_verified "True only for verified living human scholars"
+        string verification_doc_hash "SHA-256 hash of credential documents"
+        string verification_authority
         string verified_by_admin
         text verification_notes
         datetime last_login_at
@@ -181,10 +185,12 @@ erDiagram
 
     REVIEWER_SESSIONS {
         int id PK
-        string session_token UK "32-byte cryptographic random token"
+        string session_token UK "32-byte cryptographic random token (256-bit entropy)"
         int reviewer_id FK
         datetime created_at
         datetime expires_at
+        datetime last_activity_at "Server-side 30-min idle inactivity timeout"
+        datetime absolute_expires_at "Absolute 12-hour expiration limit"
         boolean is_revoked
         string client_ip
         string user_agent
@@ -193,7 +199,7 @@ erDiagram
     AUTH_AUDIT_LOGS {
         int id PK
         int reviewer_id
-        string event_type "LOGIN_SUCCESS, LOGIN_FAILED, ACCOUNT_LOCKED, LOGOUT, CREDENTIALS_VERIFIED"
+        string event_type "LOGIN_SUCCESS, LOGIN_FAILED, ACCOUNT_LOCKED, SESSION_ROTATED, CREDENTIALS_VERIFIED"
         string ip_address
         text details
         datetime created_at

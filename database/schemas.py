@@ -284,6 +284,8 @@ class ReviewerProfileBase(SchemaBase):
     is_active: bool = True
     is_demonstration: bool = False
     verification_status: str = "PENDING_VERIFICATION"
+    account_category: str = "SYNTHETIC_TEST_PERSONA"
+    is_human_verified: bool = False
 
 
 class ReviewerProfileCreate(ReviewerProfileBase):
@@ -305,6 +307,8 @@ class ReviewerProfileAdminRead(ReviewerProfileBase):
     permissions: Optional[List[str]] = Field(default_factory=list)
     verified_by_admin: Optional[str] = None
     verification_notes: Optional[str] = None
+    verification_doc_hash: Optional[str] = None
+    verification_authority: Optional[str] = None
     last_login_at: Optional[datetime] = None
     failed_login_attempts: int = 0
     is_locked: bool = False
@@ -324,7 +328,10 @@ class LoginResponse(SchemaBase):
     primary_role: ReviewerRole
     is_demonstration: bool
     verification_status: str
+    account_category: str = "SYNTHETIC_TEST_PERSONA"
+    is_human_verified: bool = False
     expires_at: datetime
+    idle_timeout_minutes: int = 30
 
 
 class CredentialVerificationRequest(SchemaBase):
@@ -380,6 +387,8 @@ class ReviewActionLogCreate(SchemaBase):
     scholarly_commentary: str = Field(..., min_length=5)
     traditional_references: Optional[List[Dict[str, Any]]] = Field(default_factory=list)
     alternative_readings: Optional[List[Dict[str, Any]]] = Field(default_factory=list)
+    original_text_immutable_verified: bool = True
+    is_human_review: bool = False
 
 
 class ReviewActionLogRead(ReviewActionLogCreate):
