@@ -14,6 +14,7 @@ import '../screens/sadhana/sadhana_screen.dart';
 import '../screens/settings/settings_screen.dart';
 import '../../data/repositories/panchangam_repository.dart';
 import '../../state/panchangam_state.dart';
+import '../../state/personalization_state.dart';
 import '../../state/vrat_state.dart';
 import '../screens/panchangam/panchangam_screen.dart';
 
@@ -26,6 +27,7 @@ class MainScreen extends StatefulWidget {
   final SadhanaState? sadhanaState;
   final VratState? vratState;
   final ScriptureReaderState? readerState;
+  final PersonalizationState? personalizationState;
   final AppState appState;
   final int initialIndex;
 
@@ -39,6 +41,7 @@ class MainScreen extends StatefulWidget {
     this.sadhanaState,
     this.vratState,
     this.readerState,
+    this.personalizationState,
     required this.appState,
     this.initialIndex = 0,
   });
@@ -56,6 +59,7 @@ class _MainScreenState extends State<MainScreen> {
   late final SadhanaState _sadhanaState;
   late final VratState _vratState;
   late final ScriptureReaderState _readerState;
+  late final PersonalizationState _personalizationState;
 
   @override
   void initState() {
@@ -70,6 +74,12 @@ class _MainScreenState extends State<MainScreen> {
     _sadhanaState = widget.sadhanaState ?? SadhanaState();
     _vratState = widget.vratState ?? VratState();
     _readerState = widget.readerState ?? ScriptureReaderState();
+    _personalizationState = widget.personalizationState ??
+        PersonalizationState(
+          appState: widget.appState,
+          panchangamState: _panchangamState,
+          audioState: _audioState,
+        );
   }
 
   void _openPanchangamScreen() {
@@ -117,6 +127,7 @@ class _MainScreenState extends State<MainScreen> {
         vratState: _vratState,
         readerState: _readerState,
         mantraRepository: _mantraRepository,
+        personalizationState: _personalizationState,
       ),
       LibraryScreen(
         repository: widget.repository,
@@ -142,6 +153,11 @@ class _MainScreenState extends State<MainScreen> {
       ),
       SettingsScreen(
         appState: widget.appState,
+        personalizationState: _personalizationState,
+        panchangamState: _panchangamState,
+        panchangamRepository: _panchangamRepository,
+        audioState: _audioState,
+        sadhanaState: _sadhanaState,
       ),
     ];
 

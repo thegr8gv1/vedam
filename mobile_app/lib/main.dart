@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'core/constants/app_constants.dart';
+import 'core/models/app_settings.dart';
 import 'core/models/daily_darshan.dart';
 import 'core/models/vrat_observance.dart';
 import 'core/services/audio_service.dart';
@@ -29,12 +30,14 @@ import 'presentation/screens/vrat/vrat_detail_screen.dart';
 import 'state/panchangam_state.dart';
 import 'state/app_state.dart';
 import 'state/audio_state.dart';
+import 'state/personalization_state.dart';
 import 'state/sadhana_state.dart';
 import 'state/scripture_reader_state.dart';
 import 'state/vrat_state.dart';
 
 import 'presentation/screens/festivals/festival_calendar_screen.dart';
 import 'presentation/screens/festivals/festival_detail_screen.dart';
+import 'presentation/screens/onboarding/onboarding_wizard_screen.dart';
 import 'data/fixtures/authentic_festival_catalog_data.dart';
 import 'data/fixtures/authentic_scriptures_data.dart';
 import 'presentation/screens/library/verse_reader_screen.dart';
@@ -51,6 +54,11 @@ void main() {
   final sadhanaState = SadhanaState();
   final vratState = VratState();
   final scriptureReaderState = ScriptureReaderState();
+  final personalizationState = PersonalizationState(
+    appState: appState,
+    panchangamState: panchangamState,
+    audioState: audioState,
+  );
 
   int initialTab = 0;
   int? readerScriptureId;
@@ -75,6 +83,8 @@ void main() {
   bool showCompletionDialog = false;
   bool showFestivalCalendar = false;
   String? openFestivalId;
+  bool showOnboarding = false;
+  int? initialOnboardingStep;
 
   String? cardParam;
 
@@ -97,10 +107,24 @@ void main() {
     }
     if (tab == 'reminders') showReminders = true;
     if (tab == 'bookmarks') showBookmarks = true;
+    if (tab == 'onboarding' || Uri.base.queryParameters['onboarding'] == 'true') {
+      showOnboarding = true;
+    }
+    final stepStr = Uri.base.queryParameters['onboarding_step'] ?? Uri.base.queryParameters['step'];
+    if (stepStr != null) {
+      initialOnboardingStep = int.tryParse(stepStr);
+    }
     if (Uri.base.queryParameters['prefs'] == 'true') showPreferences = true;
     if (Uri.base.queryParameters['target_modal'] == 'true') showTargetModal = true;
     if (Uri.base.queryParameters['target_selector'] == 'true') showTargetSelector = true;
     if (Uri.base.queryParameters['completion'] == 'true') showCompletionDialog = true;
+
+    final theme = Uri.base.queryParameters['theme'];
+    if (theme == 'dark') {
+      appState.setThemePreference(ThemePreference.dark);
+    } else if (theme == 'light') {
+      appState.setThemePreference(ThemePreference.light);
+    }
 
     final targetParam = Uri.base.queryParameters['target'];
     if (targetParam != null) {
@@ -186,6 +210,9 @@ void main() {
     cardParam: cardParam,
     showFestivalCalendar: showFestivalCalendar,
     openFestivalId: openFestivalId,
+    personalizationState: personalizationState,
+    showOnboarding: showOnboarding,
+    initialOnboardingStep: initialOnboardingStep,
   ));
 }
 
@@ -198,6 +225,7 @@ class VedamApp extends StatelessWidget {
   final SadhanaState? sadhanaState;
   final VratState? vratState;
   final ScriptureReaderState? scriptureReaderState;
+  final PersonalizationState? personalizationState;
   final AppState appState;
   final int initialTab;
   final int? readerScriptureId;
@@ -223,6 +251,8 @@ class VedamApp extends StatelessWidget {
   final String? cardParam;
   final bool showFestivalCalendar;
   final String? openFestivalId;
+  final bool showOnboarding;
+  final int? initialOnboardingStep;
 
   const VedamApp({
     super.key,
@@ -234,6 +264,7 @@ class VedamApp extends StatelessWidget {
     this.sadhanaState,
     this.vratState,
     this.scriptureReaderState,
+    this.personalizationState,
     required this.appState,
     this.initialTab = 0,
     this.readerScriptureId,
@@ -259,6 +290,8 @@ class VedamApp extends StatelessWidget {
     this.cardParam,
     this.showFestivalCalendar = false,
     this.openFestivalId,
+    this.showOnboarding = false,
+    this.initialOnboardingStep,
   });
 
   @override
@@ -270,9 +303,15 @@ class VedamApp extends StatelessWidget {
     final sState = sadhanaState ?? SadhanaState();
     final vState = vratState ?? VratState();
     final rState = scriptureReaderState ?? ScriptureReaderState();
+    final pzState = personalizationState ??
+        PersonalizationState(
+          appState: appState,
+          panchangamState: pState,
+          audioState: aState,
+        );
 
     return ListenableBuilder(
-      listenable: appState,
+      listenable: Listenable.merge([appState, pzState]),
       builder: (context, _) {
         Widget homeWidget = MainScreen(
           repository: repository,
@@ -283,11 +322,21 @@ class VedamApp extends StatelessWidget {
           sadhanaState: sState,
           vratState: vState,
           readerState: rState,
+          personalizationState: pzState,
           appState: appState,
           initialIndex: initialTab,
         );
 
-        if (openFestivalId != null) {
+        if (showOnboarding || (pzState.showOnboardingFlow && !pzState.onboardingCompleted && !pzState.isReturningUser)) {
+          homeWidget = OnboardingWizardScreen(
+            personalizationState: pzState,
+            panchangamRepository: pRepo,
+            initialStep: initialOnboardingStep ?? 0,
+            onFinish: () {
+              pzState.dismissOnboardingFlow();
+            },
+          );
+        } else if (openFestivalId != null) {
           final event = AuthenticFestivalCatalogData.getEventById(openFestivalId!) ??
               AuthenticFestivalCatalogData.allEvents.first;
           homeWidget = FestivalDetailScreen(

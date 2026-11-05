@@ -9,6 +9,7 @@ import '../../../data/repositories/scripture_repository.dart';
 import '../../../state/app_state.dart';
 import '../../../state/audio_state.dart';
 import '../../../state/panchangam_state.dart';
+import '../../../state/personalization_state.dart';
 import '../../../state/sadhana_state.dart';
 import '../../../state/scripture_reader_state.dart';
 import '../../../state/vrat_state.dart';
@@ -22,6 +23,7 @@ import 'widgets/daily_verse_card.dart';
 import 'widgets/dashboard_japa_card.dart';
 import 'widgets/devotional_welcome_header.dart';
 import 'widgets/panchangam_preview_card.dart';
+import 'widgets/personalized_devotional_card.dart';
 import 'widgets/saved_devotional_card.dart';
 import 'widgets/scripture_progress_card.dart';
 import 'widgets/upcoming_vrat_card.dart';
@@ -50,6 +52,7 @@ class HomeScreen extends StatefulWidget {
   final VratState? vratState;
   final ScriptureReaderState? readerState;
   final MantraRepository? mantraRepository;
+  final PersonalizationState? personalizationState;
 
   const HomeScreen({
     super.key,
@@ -64,6 +67,7 @@ class HomeScreen extends StatefulWidget {
     this.vratState,
     this.readerState,
     this.mantraRepository,
+    this.personalizationState,
   });
 
   @override
@@ -76,6 +80,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
   late final AudioState _localAudio;
   late final VratState _localVrat;
   late final ScriptureReaderState _localReader;
+  late final PersonalizationState _localPersonalization;
 
   @override
   void initState() {
@@ -88,6 +93,12 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     _localAudio = widget.audioState ?? AudioState(audioService: AudioPlaybackServiceImpl());
     _localVrat = widget.vratState ?? VratState();
     _localReader = widget.readerState ?? ScriptureReaderState();
+    _localPersonalization = widget.personalizationState ??
+        PersonalizationState(
+          appState: widget.appState,
+          panchangamState: widget.panchangamState,
+          audioState: widget.audioState ?? _localAudio,
+        );
   }
 
   @override
@@ -144,6 +155,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     final audio = widget.audioState ?? _localAudio;
     final vrat = widget.vratState ?? _localVrat;
     final reader = widget.readerState ?? _localReader;
+    final personalization = widget.personalizationState ?? _localPersonalization;
 
     final listenables = <Listenable>[
       widget.appState,
@@ -151,6 +163,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
       audio,
       vrat,
       reader,
+      personalization,
       if (widget.panchangamState != null) widget.panchangamState!,
     ];
 
@@ -207,9 +220,9 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
 
                         // 2. Responsive Dashboard Body
                         if (!isWide)
-                          _buildSingleColumnLayout(context, isDark, darshan, sadhana, audio, vrat, reader)
+                          _buildSingleColumnLayout(context, isDark, darshan, sadhana, audio, vrat, reader, personalization)
                         else
-                          _buildDualColumnLayout(context, isDark, darshan, sadhana, audio, vrat, reader),
+                          _buildDualColumnLayout(context, isDark, darshan, sadhana, audio, vrat, reader, personalization),
                       ],
                     ),
                   ),
@@ -231,6 +244,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     AudioState audio,
     VratState vrat,
     ScriptureReaderState reader,
+    PersonalizationState personalization,
   ) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -252,6 +266,17 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
               );
             }
           },
+        ),
+        const SizedBox(height: 12),
+
+        // Personalized Devotional Focus & Daily Sadhana Goals
+        PersonalizedDevotionalCard(
+          personalizationState: personalization,
+          audioState: audio,
+          sadhanaState: sadhana,
+          repository: widget.repository,
+          mantraRepository: widget.mantraRepository,
+          appState: widget.appState,
         ),
         const SizedBox(height: 12),
 
@@ -329,6 +354,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     AudioState audio,
     VratState vrat,
     ScriptureReaderState reader,
+    PersonalizationState personalization,
   ) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -357,6 +383,15 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                         );
                       }
                     },
+                  ),
+                  const SizedBox(height: 14),
+                  PersonalizedDevotionalCard(
+                    personalizationState: personalization,
+                    audioState: audio,
+                    sadhanaState: sadhana,
+                    repository: widget.repository,
+                    mantraRepository: widget.mantraRepository,
+                    appState: widget.appState,
                   ),
                   const SizedBox(height: 14),
                   PanchangamPreviewCard(
