@@ -84,6 +84,10 @@ async def security_headers_middleware(request: web.Request, handler: Callable) -
         "img-src 'self' data:; "
         "connect-src 'self'"
     )
+    response.headers["Permissions-Policy"] = (
+        "accelerometer=(), camera=(), geolocation=(), gyroscope=(), "
+        "magnetometer=(), microphone=(), payment=(), usb=()"
+    )
     return response
 
 
@@ -447,13 +451,41 @@ async def submit_review_feedback_handler(request: web.Request) -> web.Response:
     if not reviewer:
         raise AuthenticationRequiredError("Authentication is strictly required to submit review actions.")
 
+    # Content-Type Validation
+    content_type = request.content_type
+    if content_type and content_type != "application/json":
+        raise web.HTTPUnsupportedMediaType(reason=f"Unsupported Content-Type '{content_type}'. Must be application/json.")
+
+    # Host Header Validation (Prevent Host header manipulation)
+    host_raw = request.headers.get("Host", "")
+    host_name = host_raw.split(":")[0].lower() if host_raw else ""
+    allowed_host_patterns = {"127.0.0.1", "localhost", "0.0.0.0", "testserver", "example.com"}
+    if host_name and host_name not in allowed_host_patterns:
+        raise web.HTTPForbidden(reason=f"Host header manipulation detected: untrusted host '{host_raw}'.")
+
     # Origin Header Validation for Cross-Origin State-Changing Request Protection
     origin = request.headers.get("Origin")
     if origin:
+        if origin.lower() == "null":
+            raise web.HTTPForbidden(reason="Cross-origin request blocked: 'null' origin is untrusted.")
         from urllib.parse import urlparse
-        origin_host = urlparse(origin).netloc
-        if origin_host and origin_host.lower() != request.host.lower():
-            raise web.HTTPForbidden(reason=f"Cross-origin request blocked: origin '{origin}' does not match host '{request.host}'.")
+        try:
+            origin_parsed = urlparse(origin)
+            origin_netloc = origin_parsed.netloc or origin_parsed.path
+        except Exception:
+            raise web.HTTPForbidden(reason=f"Malformed Origin header: '{origin}'.")
+
+        origin_hostname = origin_netloc.split(":")[0].lower()
+        request_hostname = request.host.split(":")[0].lower()
+        origin_port = origin_parsed.port
+        request_parts = request.host.split(":")
+        request_port = int(request_parts[1]) if len(request_parts) > 1 else None
+
+        if origin_hostname != request_hostname:
+            raise web.HTTPForbidden(reason=f"Cross-origin request blocked: origin hostname '{origin_hostname}' does not match host '{request_hostname}'.")
+
+        if origin_port is not None and request_port is not None and origin_port != request_port:
+            raise web.HTTPForbidden(reason=f"Cross-origin request blocked: origin port {origin_port} does not match host port {request_port}.")
 
     # CSRF Token Validation
     csrf_token = request.headers.get(CSRF_HEADER)

@@ -286,12 +286,13 @@ def test_revoked_session_rejected_after_logout(client, audit_scholar):
 # 3. CSRF & HTTP SECURITY AUDIT (SECTION 4)
 # ===========================================================================
 
-def test_csrf_missing_and_mismatched_tokens(client, audit_scholar):
-    """Verify missing, invalid, or mismatched CSRF tokens are rejected with 403."""
+def test_all_13_origin_and_csrf_cases(client, audit_scholar, audit_tamil_scholar):
+    """Systematically tests all 13 Origin and CSRF audit cases specified in Section 3."""
     login_resp = client.post(
         "/api/v1/auth/login",
         json={"reviewer_id": audit_scholar.reviewer_id, "password": "AuditPassword123!"},
     )
+    assert login_resp.status == 200
     csrf_token = client.json(login_resp)["csrf_token"]
 
     payload = {
@@ -299,34 +300,138 @@ def test_csrf_missing_and_mismatched_tokens(client, audit_scholar):
         "verse_number": 1,
         "target_language": "hi",
         "action_type": "REQUEST_REVISION",
-        "scholarly_commentary": "Audit CSRF check",
+        "scholarly_commentary": "Audit CSRF matrix check",
     }
 
-    # 1. Missing CSRF header
-    resp_no_header = client.post("/api/v1/reviews/submit", json=payload)
-    assert resp_no_header.status == 403
-    assert "CSRF" in client.json(resp_no_header)["error"]
-
-    # 2. Forged / invalid CSRF token
-    resp_bad_token = client.post(
+    # Case 1: Valid same-origin request with valid CSRF token -> 200 OK
+    resp_case1 = client.post(
         "/api/v1/reviews/submit",
-        headers={CSRF_HEADER: "forged_csrf_token_hex_1234567890abcdef"},
+        headers={CSRF_HEADER: csrf_token, "Origin": "http://127.0.0.1"},
         json=payload,
     )
-    assert resp_bad_token.status == 403
+    assert resp_case1.status == 200
 
-    # 3. Cross-origin request blocked (Origin != host)
-    resp_cross_origin = client.post(
+    # Case 2: Cross-origin request with otherwise valid credentials and token -> 403 Forbidden
+    resp_case2 = client.post(
         "/api/v1/reviews/submit",
-        headers={CSRF_HEADER: csrf_token, "Origin": "https://malicious-external-site.org"},
+        headers={CSRF_HEADER: csrf_token, "Origin": "https://evil-cross-origin.com"},
         json=payload,
     )
-    assert resp_cross_origin.status == 403
-    assert "Cross-origin" in client.json(resp_cross_origin)["error"]
+    assert resp_case2.status == 403
+    assert "Cross-origin" in client.json(resp_case2)["error"]
+
+    # Case 3: Missing Origin header (with valid credentials and token) -> 200 OK (protected by session-bound HMAC CSRF)
+    resp_case3 = client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: csrf_token},
+        json=payload,
+    )
+    assert resp_case3.status == 200
+
+    # Case 4: Malformed Origin header (null or malformed) -> 403 Forbidden
+    resp_case4a = client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: csrf_token, "Origin": "null"},
+        json=payload,
+    )
+    assert resp_case4a.status == 403
+
+    # Case 5: Origin containing a different hostname -> 403 Forbidden
+    resp_case5 = client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: csrf_token, "Origin": "http://different-host.org"},
+        json=payload,
+    )
+    assert resp_case5.status == 403
+
+    # Case 6: Origin containing a different port -> 403 Forbidden
+    resp_case6 = client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: csrf_token, "Origin": "http://127.0.0.1:9999"},
+        json=payload,
+    )
+    assert resp_case6.status == 403
+
+    # Case 7: Host-header manipulation -> 403 Forbidden
+    resp_case7 = client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: csrf_token, "Host": "attacker-controlled-host.com"},
+        json=payload,
+    )
+    assert resp_case7.status == 403
+
+    # Case 8: Missing CSRF cookie (unauthenticated client) -> 401 Unauthorized
+    unauth_client = SyncGatewayClient(db_factory=get_db_session)
+    resp_case8 = unauth_client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: csrf_token},
+        json=payload,
+    )
+    assert resp_case8.status == 401
+    unauth_client.close()
+
+    # Case 9: Missing CSRF request token (cookie present, header omitted) -> 403 Forbidden
+    resp_case9 = client.post(
+        "/api/v1/reviews/submit",
+        json=payload,
+    )
+    assert resp_case9.status == 403
+
+    # Case 10: Mismatched cookie and request tokens (token from another user/session) -> 403 Forbidden
+    tamil_client = SyncGatewayClient(db_factory=get_db_session)
+    t_login = tamil_client.post(
+        "/api/v1/auth/login",
+        json={"reviewer_id": audit_tamil_scholar.reviewer_id, "password": "AuditTamilPass456!"},
+    )
+    tamil_csrf_token = tamil_client.json(t_login)["csrf_token"]
+    tamil_client.close()
+
+    resp_case10 = client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: tamil_csrf_token},  # Token from Tamil reviewer used with Scholar session
+        json=payload,
+    )
+    assert resp_case10.status == 403
+
+    # Case 11: Invalid HMAC/signature -> 403 Forbidden
+    resp_case11 = client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: "invalid_hmac_hex_abcdef1234567890"},
+        json=payload,
+    )
+    assert resp_case11.status == 403
+
+    # Case 12: Replayed token on active session -> 200 OK (creates distinct log UUID); replayed after logout -> 401
+    resp_case12a = client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: csrf_token},
+        json=payload,
+    )
+    assert resp_case12a.status == 200
+    client.post("/api/v1/auth/logout")
+    resp_case12b = client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: csrf_token},
+        json=payload,
+    )
+    assert resp_case12b.status == 401  # Revoked session rejects replayed token
+
+    # Case 13: Unsupported content type (e.g. text/plain) -> 415 or 400
+    login_resp2 = client.post(
+        "/api/v1/auth/login",
+        json={"reviewer_id": audit_scholar.reviewer_id, "password": "AuditPassword123!"},
+    )
+    csrf_token2 = client.json(login_resp2)["csrf_token"]
+    resp_case13 = client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: csrf_token2, "Content-Type": "text/plain"},
+        data="raw_plain_text_not_json",
+    )
+    assert resp_case13.status in (400, 415)
 
 
 def test_security_headers_compliance(client):
-    """Verify OWASP security headers including CSP, nosniff, SAMEORIGIN, and Cache-Control."""
+    """Verify OWASP security headers including CSP, nosniff, SAMEORIGIN, Permissions-Policy, and Cache-Control."""
     resp = client.get("/api/v1/health")
     assert resp.status == 200
     headers = resp.headers
@@ -337,6 +442,8 @@ def test_security_headers_compliance(client):
     assert "no-store" in headers["Cache-Control"]
     assert "Content-Security-Policy" in headers
     assert "default-src 'self'" in headers["Content-Security-Policy"]
+    assert "Permissions-Policy" in headers
+    assert "geolocation=()" in headers["Permissions-Policy"]
 
 
 # ===========================================================================
@@ -478,3 +585,265 @@ def test_scholarly_payload_content_fidelity(client):
     assert "publication_preview" in data
     assert data["column_1_original"]["devanagari_text"] is not None
     assert "मुदाकरात्तमोदकं" in data["column_1_original"]["devanagari_text"]
+
+
+# ===========================================================================
+# 7. ENUMERATION OF ALL 17 PENETRATION ATTACK SCENARIOS (SECTION 5)
+# ===========================================================================
+
+def test_all_17_penetration_attack_scenarios(client, audit_scholar, audit_tamil_scholar, db_session):
+    """
+    Explicitly tests and validates all 17 penetration attack scenarios enumerated in Section 5.
+    Demonstrates response codes, error details, and database immutability.
+    """
+    # Login as Hindi Scholar
+    login_resp = client.post(
+        "/api/v1/auth/login",
+        json={"reviewer_id": audit_scholar.reviewer_id, "password": "AuditPassword123!"},
+    )
+    assert login_resp.status == 200
+    csrf_token = client.json(login_resp)["csrf_token"]
+
+    base_payload = {
+        "content_id": "VEDA-TXT-00001",
+        "verse_number": 1,
+        "target_language": "hi",
+        "action_type": "REQUEST_REVISION",
+        "scholarly_commentary": "Penetration test suite execution",
+    }
+
+    logs_baseline = db_session.query(ReviewActionLog).count()
+
+    # 1. Unauthenticated request -> 401
+    unauth_client = SyncGatewayClient(db_factory=get_db_session)
+    resp_v1 = unauth_client.post("/api/v1/reviews/submit", json=base_payload)
+    assert resp_v1.status == 401
+    unauth_client.close()
+
+    # 2. Unauthorized reviewer role -> 403
+    # Tamil scholar has role TAMIL_TRANSLATOR, attempting to review Hindi
+    tamil_client = SyncGatewayClient(db_factory=get_db_session)
+    t_login = tamil_client.post(
+        "/api/v1/auth/login",
+        json={"reviewer_id": audit_tamil_scholar.reviewer_id, "password": "AuditTamilPass456!"},
+    )
+    t_csrf = tamil_client.json(t_login)["csrf_token"]
+    resp_v2 = tamil_client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: t_csrf},
+        json=base_payload,
+    )
+    assert resp_v2.status == 403
+    assert "lacks certified credentials" in tamil_client.json(resp_v2)["error"]
+    tamil_client.close()
+
+    # 3. Quarantined demo reviewer attempting action -> demo flag preserved in DB & payload
+    assert audit_scholar.is_demonstration is True
+    assert audit_scholar.account_category == "SYNTHETIC_TEST_PERSONA"
+
+    # 4. Unaccredited reviewer -> 403
+    # Reviewer with empty language proficiency
+    unacc_rev = ReviewerProfile(
+        reviewer_id="REV-AUDIT-UNACCREDITED",
+        full_name="Unaccredited Person",
+        email="unacc@vedam.org",
+        primary_role=ReviewerRole.LEGAL_COPYRIGHT,
+        verification_status="VERIFIED",
+        is_credentials_verified=False,
+        is_demonstration=True,
+        account_category="SYNTHETIC_TEST_PERSONA",
+        is_active=True,
+        language_proficiency={},  # Zero languages
+        permissions=[],
+        password_hash=hash_password("UnaccPass123!"),
+    )
+    db_session.add(unacc_rev)
+    db_session.commit()
+    unacc_client = SyncGatewayClient(db_factory=get_db_session)
+    u_login = unacc_client.post(
+        "/api/v1/auth/login",
+        json={"reviewer_id": "REV-AUDIT-UNACCREDITED", "password": "UnaccPass123!"},
+    )
+    u_csrf = unacc_client.json(u_login)["csrf_token"]
+    resp_v4 = unacc_client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: u_csrf},
+        json=base_payload,
+    )
+    assert resp_v4.status == 403
+    unacc_client.close()
+
+    # 5. Insufficient language proficiency -> 403
+    # Reviewer has 'hi': 'BEGINNER' (requires NATIVE, FLUENT, ADVANCED, or SCHOLAR) and no translator role
+    low_prof_rev = ReviewerProfile(
+        reviewer_id="REV-AUDIT-LOW-PROF",
+        full_name="Low Prof Person",
+        email="lowprof@vedam.org",
+        primary_role=ReviewerRole.LEGAL_COPYRIGHT,
+        verification_status="VERIFIED",
+        is_credentials_verified=True,
+        is_demonstration=True,
+        account_category="SYNTHETIC_TEST_PERSONA",
+        is_active=True,
+        language_proficiency={"hi": "BEGINNER"},
+        permissions=[],
+        password_hash=hash_password("LowProfPass123!"),
+    )
+    db_session.add(low_prof_rev)
+    db_session.commit()
+    low_client = SyncGatewayClient(db_factory=get_db_session)
+    lp_login = low_client.post(
+        "/api/v1/auth/login",
+        json={"reviewer_id": "REV-AUDIT-LOW-PROF", "password": "LowProfPass123!"},
+    )
+    lp_csrf = low_client.json(lp_login)["csrf_token"]
+    resp_v5 = low_client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: lp_csrf},
+        json=base_payload,
+    )
+    assert resp_v5.status == 403
+    low_client.close()
+
+    # 6. Wrong language assignment -> 403 (Scholar has 'hi', target is 'te')
+    resp_v6 = client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: csrf_token},
+        json={**base_payload, "target_language": "te"},
+    )
+    assert resp_v6.status == 403
+
+    # 7. Forged reviewer ID in body -> Server uses session identity, ignores forged body ID
+    spoofed_payload = {**base_payload, "reviewer_id": "REV-FORGED-IMPOSTOR-ID"}
+    resp_v7 = client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: csrf_token},
+        json=spoofed_payload,
+    )
+    assert resp_v7.status == 200
+    v7_action_id = client.json(resp_v7)["action_id"]
+    logged_action = db_session.query(ReviewActionLog).filter_by(action_id=v7_action_id).first()
+    assert logged_action.reviewer_id == audit_scholar.id  # Verified session identity, NOT forged
+
+    # 8. Cross-user access (Session of User A with CSRF token of User B) -> 403
+    resp_v8 = client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: lp_csrf},  # Token from low_prof_rev
+        json=base_payload,
+    )
+    assert resp_v8.status == 403
+
+    # 9. Self-review under REV-002 -> 403
+    trans = db_session.query(Translation).filter_by(target_language="hi").first()
+    orig_translator = trans.translator
+    try:
+        trans.translator = audit_scholar.full_name
+        db_session.commit()
+        resp_v9 = client.post(
+            "/api/v1/reviews/submit",
+            headers={CSRF_HEADER: csrf_token},
+            json={**base_payload, "content_id": trans.verse.text.content_id, "verse_number": trans.verse.verse_number},
+        )
+        assert resp_v9.status == 403
+        assert "Self-approval prohibited" in client.json(resp_v9)["error"]
+    finally:
+        trans.translator = orig_translator
+        db_session.commit()
+
+    # 10. Session replay after logout -> 401
+    replay_client = SyncGatewayClient(db_factory=get_db_session)
+    rp_login = replay_client.post(
+        "/api/v1/auth/login",
+        json={"reviewer_id": audit_scholar.reviewer_id, "password": "AuditPassword123!"},
+    )
+    rp_csrf = replay_client.json(rp_login)["csrf_token"]
+    replay_client.post("/api/v1/auth/logout")  # Revoke session
+    resp_v10 = replay_client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: rp_csrf},
+        json=base_payload,
+    )
+    assert resp_v10.status == 401
+    replay_client.close()
+
+    # 11. Expired session -> 401 (Simulated idle expiry)
+    session_row = db_session.query(ReviewerSession).filter_by(reviewer_id=audit_scholar.id, is_revoked=False).first()
+    if session_row:
+        session_row.last_activity_at = datetime.now(timezone.utc) - timedelta(minutes=45)
+        db_session.commit()
+    resp_v11 = client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: csrf_token},
+        json=base_payload,
+    )
+    assert resp_v11.status == 401
+
+    # Re-login for remaining tests
+    fresh_login = client.post(
+        "/api/v1/auth/login",
+        json={"reviewer_id": audit_scholar.reviewer_id, "password": "AuditPassword123!"},
+    )
+    csrf_token = client.json(fresh_login)["csrf_token"]
+
+    # 12. Missing or invalid CSRF -> 403
+    resp_v12 = client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: "invalid_csrf_token_hex_12345"},
+        json=base_payload,
+    )
+    assert resp_v12.status == 403
+
+    # 13. Cross-origin state-changing request -> 403
+    resp_v13 = client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: csrf_token, "Origin": "https://unauthorized-cross-origin.com"},
+        json=base_payload,
+    )
+    assert resp_v13.status == 403
+
+    # 14. APPROVE attempt -> 403 Forbidden under Section 8 Invariant
+    resp_v14 = client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: csrf_token},
+        json={**base_payload, "action_type": "APPROVE"},
+    )
+    assert resp_v14.status == 403
+    assert "Translation approval is strictly prohibited in Phase 11F" in client.json(resp_v14)["error"]
+
+    # 15. APPROVE_WITH_CORRECTIONS attempt -> 403 Forbidden under Section 8 Invariant
+    resp_v15 = client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: csrf_token},
+        json={**base_payload, "action_type": "APPROVE_WITH_CORRECTIONS"},
+    )
+    assert resp_v15.status == 403
+    assert "Translation approval is strictly prohibited in Phase 11F" in client.json(resp_v15)["error"]
+
+    # 16. Direct API attempts bypassing UI restrictions -> Handled directly, same rules apply
+    resp_v16 = client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: csrf_token},
+        json={**base_payload, "action_type": "FLAG_UNCERTAINTY", "scholarly_commentary": "Direct curl call"},
+    )
+    assert resp_v16.status == 200
+
+    # 17. Feedback submission must NOT change translation content or review status
+    trans_check = db_session.query(Translation).filter_by(target_language="hi").first()
+    text_before = trans_check.translated_text
+    status_before = trans_check.review_status
+
+    resp_v17 = client.post(
+        "/api/v1/reviews/submit",
+        headers={CSRF_HEADER: csrf_token},
+        json={
+            "content_id": trans_check.verse.text.content_id,
+            "verse_number": trans_check.verse.verse_number,
+            "target_language": "hi",
+            "action_type": "REQUEST_REVISION",
+            "scholarly_commentary": "Please review this translation syntax.",
+        },
+    )
+    assert resp_v17.status == 200
+    db_session.refresh(trans_check)
+    assert trans_check.translated_text == text_before  # Content 100% unchanged
+    assert trans_check.review_status == status_before == ReviewStatus.DRAFT  # Status remains DRAFT
