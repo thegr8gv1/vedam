@@ -254,6 +254,17 @@ class AudioState extends ChangeNotifier {
   Set<String> get favoriteMantraIds => Set.unmodifiable(_favoriteMantraIds);
   bool isFavorite(String mantraId) => _favoriteMantraIds.contains(mantraId);
 
+  /// Toggle favorite status of a mantra
+  void toggleFavoriteMantra(String mantraId) {
+    if (_favoriteMantraIds.contains(mantraId)) {
+      _favoriteMantraIds.remove(mantraId);
+    } else {
+      _favoriteMantraIds.add(mantraId);
+    }
+    _saveFavorites();
+    notifyListeners();
+  }
+
   /// Configure active playlist for navigation
   void setPlaylist(List<MantraItem> list) {
     _playlist = List.from(list);

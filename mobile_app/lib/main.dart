@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'core/constants/app_constants.dart';
+import 'core/models/daily_darshan.dart';
 import 'core/models/vrat_observance.dart';
 import 'core/services/audio_service.dart';
 import 'core/theme/app_theme.dart';
@@ -7,6 +8,11 @@ import 'data/fixtures/authentic_puja_guides_data.dart';
 import 'data/repositories/mantra_repository.dart';
 import 'data/repositories/scripture_repository_impl.dart';
 import 'presentation/navigation/main_screen.dart';
+import 'presentation/screens/home/widgets/daily_routine_card.dart';
+import 'presentation/screens/home/widgets/dashboard_japa_card.dart';
+import 'presentation/screens/home/widgets/panchangam_preview_card.dart';
+import 'presentation/screens/home/widgets/scripture_progress_card.dart';
+import 'presentation/screens/home/widgets/upcoming_vrat_card.dart';
 import 'presentation/screens/library/bookmarks_screen.dart';
 import 'presentation/screens/library/verse_learning_screen.dart';
 import 'presentation/screens/mantras/mantra_player_screen.dart';
@@ -65,7 +71,10 @@ void main() {
   bool showTargetSelector = false;
   bool showCompletionDialog = false;
 
+  String? cardParam;
+
   try {
+    cardParam = Uri.base.queryParameters['card'];
     final tab = Uri.base.queryParameters['tab'];
     if (tab == 'library') initialTab = 1;
     if (tab == 'sadhana') initialTab = 2;
@@ -162,6 +171,7 @@ void main() {
     showTargetModal: showTargetModal,
     showTargetSelector: showTargetSelector,
     showCompletionDialog: showCompletionDialog,
+    cardParam: cardParam,
   ));
 }
 
@@ -196,6 +206,7 @@ class VedamApp extends StatelessWidget {
   final bool showTargetModal;
   final bool showTargetSelector;
   final bool showCompletionDialog;
+  final String? cardParam;
 
   const VedamApp({
     super.key,
@@ -229,6 +240,7 @@ class VedamApp extends StatelessWidget {
     this.showTargetModal = false,
     this.showTargetSelector = false,
     this.showCompletionDialog = false,
+    this.cardParam,
   });
 
   @override
@@ -250,13 +262,92 @@ class VedamApp extends StatelessWidget {
           audioState: aState,
           panchangamRepository: pRepo,
           panchangamState: pState,
+          sadhanaState: sState,
           vratState: vState,
           readerState: rState,
           appState: appState,
           initialIndex: initialTab,
         );
 
-        if (showBookmarks) {
+        if (cardParam == 'panchangam') {
+          homeWidget = Scaffold(
+            appBar: AppBar(title: const Text("Today's Panchangam")),
+            body: SafeArea(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.all(16),
+                child: PanchangamPreviewCard(
+                  panchangamState: pState,
+                  darshan: DailyDarshan.today(),
+                  onTap: () {},
+                ),
+              ),
+            ),
+          );
+        } else if (cardParam == 'routine') {
+          homeWidget = Scaffold(
+            appBar: AppBar(title: const Text("Daily Spiritual Routine")),
+            body: SafeArea(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.all(16),
+                child: DailyRoutineCard(
+                  sadhanaState: sState,
+                  appState: appState,
+                  onOpenSadhana: () {},
+                ),
+              ),
+            ),
+          );
+        } else if (cardParam == 'japa') {
+          if (initialJapaTarget != null) {
+            aState.setTargetRepetitions(initialJapaTarget!);
+          }
+          if (initialJapaCompleted != null) {
+            for (int i = 0; i < initialJapaCompleted!; i++) {
+              aState.incrementManualRepetition();
+            }
+          }
+          homeWidget = Scaffold(
+            appBar: AppBar(title: const Text("Daily Japa Practice")),
+            body: SafeArea(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.all(16),
+                child: DashboardJapaCard(
+                  audioState: aState,
+                  mantraRepository: mRepo,
+                ),
+              ),
+            ),
+          );
+        } else if (cardParam == 'vrat') {
+          homeWidget = Scaffold(
+            appBar: AppBar(title: const Text("Upcoming Vrat & Observances")),
+            body: SafeArea(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.all(16),
+                child: UpcomingVratCard(
+                  vratState: vState,
+                  panchangamState: pState,
+                ),
+              ),
+            ),
+          );
+        } else if (cardParam == 'scripture') {
+          homeWidget = Scaffold(
+            appBar: AppBar(title: const Text("Scripture Learning Progress")),
+            body: SafeArea(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.all(16),
+                child: ScriptureProgressCard(
+                  repository: repository,
+                  appState: appState,
+                  readerState: rState,
+                  audioState: aState,
+                  onOpenLibrary: () {},
+                ),
+              ),
+            ),
+          );
+        } else if (showBookmarks) {
           homeWidget = BookmarksScreen(
             repository: repository,
             readerState: rState,

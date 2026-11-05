@@ -43,23 +43,29 @@ class DailyVerseCard extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Row(
-                  children: [
-                    const Icon(
-                      Icons.wb_sunny_outlined,
-                      size: 18,
-                      color: AppColors.saffronPrimary,
-                    ),
-                    const SizedBox(width: 6),
-                    Text(
-                      'DAILY DEVOTIONAL DARSHAN',
-                      style: AppTextStyles.metadataTag(isDark).copyWith(
-                        fontWeight: FontWeight.w700,
-                        letterSpacing: 0.8,
+                Expanded(
+                  child: Row(
+                    children: [
+                      const Icon(
+                        Icons.wb_sunny_outlined,
+                        size: 18,
+                        color: AppColors.saffronPrimary,
                       ),
-                    ),
-                  ],
+                      const SizedBox(width: 6),
+                      Flexible(
+                        child: Text(
+                          'DAILY DEVOTIONAL DARSHAN',
+                          style: AppTextStyles.metadataTag(isDark).copyWith(
+                            fontWeight: FontWeight.w700,
+                            letterSpacing: 0.8,
+                          ),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
+                const SizedBox(width: 8),
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                   decoration: BoxDecoration(

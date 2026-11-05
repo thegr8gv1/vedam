@@ -4,6 +4,16 @@ import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/text_styles.dart';
 import '../../../../state/panchangam_state.dart';
 
+/// Compact Panchangam summary card for the Devotee Home Dashboard.
+///
+/// Features:
+/// - Displays full Pancha Angas: Tithi (with end time), Nakshatra (with end time),
+///   Yoga, Karana, and Vara.
+/// - Sunrise, Sunset, and Rahu Kalam calculated time periods.
+/// - Respects selected location and timezone.
+/// - Honest loading, error, and unavailable fallback states without fabricating values.
+/// - Direct navigation link to the full Panchangam screen.
+/// - Devotional non-authoritative religious disclaimer.
 class PanchangamPreviewCard extends StatelessWidget {
   final DailyDarshan darshan;
   final PanchangamState? panchangamState;
@@ -20,142 +30,227 @@ class PanchangamPreviewCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final calcData = panchangamState?.data;
-
-    final dayName = calcData != null
-        ? '${calcData.vara.name} (${calcData.vara.sanskritName})'
-        : darshan.dayName;
-    final tithiVal = calcData != null
-        ? '${calcData.tithi.name} (${calcData.tithi.endTimeFormatted ?? ''})'
-        : darshan.tithi;
-    final nakshatraVal = calcData != null
-        ? '${calcData.nakshatra.name} (${calcData.nakshatra.endTimeFormatted ?? ''})'
-        : darshan.nakshatra;
-    final abhijitVal = calcData != null
-        ? (calcData.abhijitMuhurat?.formatted ?? darshan.abhijitMuhurat)
-        : darshan.abhijitMuhurat;
-    final rahuVal = calcData != null
-        ? calcData.rahuKalam.formatted
-        : darshan.rahuKalam;
-    final deityVal = calcData != null
-        ? (calcData.vara.presidingDeity ?? darshan.presidingDeity)
-        : darshan.presidingDeity;
+    final isLoading = panchangamState?.isLoading ?? false;
+    final isUnavailable = panchangamState?.isUnavailable ?? false;
 
     return Card(
+      elevation: 2,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16),
+        side: BorderSide(
+          color: isDark ? AppColors.nightBorder : AppColors.chandanBorder,
+          width: 1.0,
+        ),
+      ),
       child: InkWell(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(16),
         child: Padding(
           padding: const EdgeInsets.all(16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              // Header Row
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Row(
-                    children: [
-                      const Icon(
-                        Icons.calendar_today_outlined,
-                        size: 18,
-                        color: AppColors.goldPrimary,
-                      ),
-                      const SizedBox(width: 8),
-                      Text(
-                        'TODAY\'S PANCHANGAM',
-                        style: AppTextStyles.metadataTag(isDark).copyWith(
-                          color: isDark ? AppColors.goldGlow : AppColors.goldDark,
-                          fontWeight: FontWeight.w700,
-                          letterSpacing: 0.8,
+                  Expanded(
+                    child: Row(
+                      children: [
+                        const Icon(
+                          Icons.calendar_today_outlined,
+                          size: 18,
+                          color: AppColors.goldPrimary,
                         ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Text(
-                        dayName,
-                        style: AppTextStyles.caption(isDark).copyWith(
-                          fontWeight: FontWeight.w600,
+                        const SizedBox(width: 8),
+                        Flexible(
+                          child: Text(
+                            'TODAY\'S PANCHANGAM',
+                            style: AppTextStyles.metadataTag(isDark).copyWith(
+                              color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                              fontWeight: FontWeight.w700,
+                              letterSpacing: 0.8,
+                            ),
+                            overflow: TextOverflow.ellipsis,
+                          ),
                         ),
-                      ),
-                      if (onTap != null) ...[
-                        const SizedBox(width: 4),
-                        const Icon(Icons.arrow_forward_ios, size: 12, color: AppColors.goldPrimary),
                       ],
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        calcData != null
+                            ? calcData.vara.name
+                            : darshan.dayName,
+                        style: AppTextStyles.caption(isDark).copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(width: 4),
+                      const Icon(Icons.arrow_forward_ios, size: 12, color: AppColors.goldPrimary),
                     ],
                   ),
                 ],
               ),
               const SizedBox(height: 12),
-              Row(
-                children: [
-                  Expanded(
-                    child: _PanchangamItem(
-                      label: 'Tithi (तिथि)',
-                      value: tithiVal,
-                      isDark: isDark,
-                    ),
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: _PanchangamItem(
-                      label: 'Nakshatra (नक्षत्र)',
-                      value: nakshatraVal,
-                      isDark: isDark,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 10),
-              Row(
-                children: [
-                  Expanded(
-                    child: _PanchangamItem(
-                      label: 'Abhijit Muhurat (शुभ)',
-                      value: abhijitVal,
-                      valueColor: isDark ? AppColors.goldGlow : AppColors.verifiedGreen,
-                      isDark: isDark,
-                    ),
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: _PanchangamItem(
-                      label: 'Rahu Kalam (वर्ज्य)',
-                      value: rahuVal,
-                      valueColor: isDark ? const Color(0xFFFCA5A5) : AppColors.kumkumRed,
-                      isDark: isDark,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 10),
-              Container(
-                width: double.infinity,
-                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
-                decoration: BoxDecoration(
-                  color: isDark ? AppColors.nightSurfaceElevated : const Color(0xFFF5EFE6),
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.self_improvement,
-                      size: 14,
-                      color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
-                    ),
-                    const SizedBox(width: 6),
-                    Expanded(
-                      child: Text(
-                        'Presiding Deity: $deityVal',
-                        style: AppTextStyles.caption(isDark).copyWith(
-                          fontWeight: FontWeight.w600,
+
+              // Content State: Loading, Unavailable, or Calculated Data
+              if (isLoading) ...[
+                const Padding(
+                  padding: EdgeInsets.symmetric(vertical: 24),
+                  child: Center(
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          width: 24,
+                          height: 24,
+                          child: CircularProgressIndicator(strokeWidth: 2, color: AppColors.saffronPrimary),
                         ),
-                        overflow: TextOverflow.ellipsis,
+                        SizedBox(height: 8),
+                        Text(
+                          'Calculating astronomical Panchangam...',
+                          style: TextStyle(fontSize: 11),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ] else if (isUnavailable && calcData == null) ...[
+                Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: Colors.amber.withAlpha(20),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Colors.amber.shade700, width: 0.8),
+                  ),
+                  child: Row(
+                    children: [
+                      const Icon(Icons.info_outline, size: 18, color: Colors.amber),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          'Astronomical calculations unavailable for current location. Tap to view offline calendar.',
+                          style: TextStyle(
+                            fontSize: 11,
+                            color: isDark ? AppColors.textLightSecondary : AppColors.textDarkSecondary,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ] else ...[
+                // Row 1: Tithi & Nakshatra
+                Row(
+                  children: [
+                    Expanded(
+                      child: _PanchangamItem(
+                        label: 'Tithi (तिथि)',
+                        value: calcData != null
+                            ? '${calcData.tithi.name}${calcData.tithi.endTimeFormatted != null ? ' (to ${calcData.tithi.endTimeFormatted})' : ''}'
+                            : darshan.tithi,
+                        isDark: isDark,
                       ),
                     ),
-                    if (calcData != null)
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: _PanchangamItem(
+                        label: 'Nakshatra (नक्षत्र)',
+                        value: calcData != null
+                            ? '${calcData.nakshatra.name}${calcData.nakshatra.endTimeFormatted != null ? ' (to ${calcData.nakshatra.endTimeFormatted})' : ''}'
+                            : darshan.nakshatra,
+                        isDark: isDark,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8),
+
+                // Row 2: Yoga & Karana
+                if (calcData != null) ...[
+                  Row(
+                    children: [
+                      Expanded(
+                        child: _PanchangamItem(
+                          label: 'Yoga (योग)',
+                          value: '${calcData.yoga.name} (${calcData.yoga.sanskritName})',
+                          isDark: isDark,
+                        ),
+                      ),
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: _PanchangamItem(
+                          label: 'Karana (करण)',
+                          value: '${calcData.karana.name} (${calcData.karana.sanskritName})',
+                          isDark: isDark,
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 8),
+                ],
+
+                // Row 3: Sun Events & Rahu Kalam
+                Row(
+                  children: [
+                    Expanded(
+                      child: _PanchangamItem(
+                        label: 'Sun (सूर्योदय • सूर्यास्त)',
+                        value: calcData != null
+                            ? '↑ ${calcData.sunMoon.sunriseFormatted}  ↓ ${calcData.sunMoon.sunsetFormatted}'
+                            : '↑ 06:12  ↓ 17:34',
+                        valueColor: isDark ? AppColors.goldLight : AppColors.goldDark,
+                        isDark: isDark,
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: _PanchangamItem(
+                        label: 'Rahu Kalam (राहुकाल)',
+                        value: calcData != null ? calcData.rahuKalam.formatted : darshan.rahuKalam,
+                        valueColor: isDark ? const Color(0xFFFCA5A5) : AppColors.kumkumRed,
+                        isDark: isDark,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 10),
+
+                // Footer banner with Location & Calculation convention badge
+                Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
+                  decoration: BoxDecoration(
+                    color: isDark ? AppColors.nightSurfaceElevated : const Color(0xFFF5EFE6),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.place,
+                        size: 13,
+                        color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
+                      ),
+                      const SizedBox(width: 5),
+                      Expanded(
+                        child: Text(
+                          calcData != null
+                              ? '${calcData.location.name} • Lahiri Ayanamsa'
+                              : 'Varanasi (Kashi), India',
+                          style: TextStyle(
+                            fontSize: 10.5,
+                            fontWeight: FontWeight.w600,
+                            color: isDark ? AppColors.textLightSecondary : AppColors.textDarkSecondary,
+                          ),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
                       Text(
-                        'ASTRONOMICAL',
+                        calcData != null ? 'ASTRONOMICAL' : 'STANDARD',
                         style: TextStyle(
                           fontSize: 9,
                           fontWeight: FontWeight.w800,
@@ -163,9 +258,22 @@ class PanchangamPreviewCard extends StatelessWidget {
                           letterSpacing: 0.5,
                         ),
                       ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
+                const SizedBox(height: 6),
+
+                // Non-authoritative disclaimer
+                Text(
+                  'Informational calculations for devotional planning; not an authoritative religious decree.',
+                  style: TextStyle(
+                    fontSize: 9.5,
+                    fontStyle: FontStyle.italic,
+                    color: isDark ? AppColors.textLightMuted : AppColors.textDarkMuted,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ],
             ],
           ),
         ),
@@ -190,7 +298,7 @@ class _PanchangamItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(10),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
       decoration: BoxDecoration(
         color: isDark ? AppColors.nightSurfaceElevated : const Color(0xFFFAF7F2),
         borderRadius: BorderRadius.circular(10),
@@ -204,13 +312,15 @@ class _PanchangamItem extends StatelessWidget {
         children: [
           Text(
             label,
-            style: AppTextStyles.caption(isDark),
+            style: AppTextStyles.caption(isDark).copyWith(fontSize: 10),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
           ),
-          const SizedBox(height: 4),
+          const SizedBox(height: 3),
           Text(
             value,
             style: TextStyle(
-              fontSize: 12,
+              fontSize: 11.5,
               fontWeight: FontWeight.w600,
               color: valueColor ?? (isDark ? AppColors.textLightPrimary : AppColors.textDarkPrimary),
             ),

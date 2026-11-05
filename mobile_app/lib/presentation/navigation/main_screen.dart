@@ -4,6 +4,7 @@ import '../../data/repositories/mantra_repository.dart';
 import '../../data/repositories/scripture_repository.dart';
 import '../../state/app_state.dart';
 import '../../state/audio_state.dart';
+import '../../state/sadhana_state.dart';
 import '../../state/scripture_reader_state.dart';
 import '../screens/favorites/favorites_screen.dart';
 import '../screens/home/home_screen.dart';
@@ -22,6 +23,7 @@ class MainScreen extends StatefulWidget {
   final AudioState? audioState;
   final PanchangamRepository? panchangamRepository;
   final PanchangamState? panchangamState;
+  final SadhanaState? sadhanaState;
   final VratState? vratState;
   final ScriptureReaderState? readerState;
   final AppState appState;
@@ -34,6 +36,7 @@ class MainScreen extends StatefulWidget {
     this.audioState,
     this.panchangamRepository,
     this.panchangamState,
+    this.sadhanaState,
     this.vratState,
     this.readerState,
     required this.appState,
@@ -50,6 +53,7 @@ class _MainScreenState extends State<MainScreen> {
   late final AudioState _audioState;
   late final PanchangamRepository _panchangamRepository;
   late final PanchangamState _panchangamState;
+  late final SadhanaState _sadhanaState;
   late final VratState _vratState;
   late final ScriptureReaderState _readerState;
 
@@ -63,6 +67,7 @@ class _MainScreenState extends State<MainScreen> {
     _panchangamRepository = widget.panchangamRepository ?? PanchangamRepositoryImpl();
     _panchangamState = widget.panchangamState ??
         PanchangamState(repository: _panchangamRepository);
+    _sadhanaState = widget.sadhanaState ?? SadhanaState();
     _vratState = widget.vratState ?? VratState();
     _readerState = widget.readerState ?? ScriptureReaderState();
   }
@@ -107,6 +112,11 @@ class _MainScreenState extends State<MainScreen> {
         onOpenMantras: _openMantrasScreen,
         onOpenPanchangam: _openPanchangamScreen,
         panchangamState: _panchangamState,
+        sadhanaState: _sadhanaState,
+        audioState: _audioState,
+        vratState: _vratState,
+        readerState: _readerState,
+        mantraRepository: _mantraRepository,
       ),
       LibraryScreen(
         repository: widget.repository,
@@ -116,6 +126,7 @@ class _MainScreenState extends State<MainScreen> {
       ),
       SadhanaScreen(
         appState: widget.appState,
+        sadhanaState: _sadhanaState,
         mantraRepository: _mantraRepository,
         audioState: _audioState,
         panchangamState: _panchangamState,
