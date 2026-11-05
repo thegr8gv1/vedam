@@ -3,7 +3,7 @@
 
 **Document Status:** Active & Living  
 **Version:** 10.0.0  
-**Current Phase:** Phase 10 Complete (Controlled TranslationView Completion, Scholarly Certification Governance & Tripartite Exports — 266 Tests Passing 100% Green)  
+**Current Phase:** Phase 10.1 Complete (Test Database Isolation, Production Data Protection & Regression Hardening — 277 Tests Passing 100% Green)  n, Scholarly Certification Governance & Tripartite Exports — 266 Tests Passing 100% Green)  
 **Workspace:** `C:\Vedam`  
 
 ---
@@ -291,5 +291,23 @@ flowchart LR
   - Full project test suite expanded to **266 tests passing with 100% pass rate in 50.73 seconds** across 25 test modules.
   - Published [Full Regression Test Report](file:///c:/Vedam/documentation/quality/FULL_REGRESSION_TEST_REPORT_PHASE10.md).
 
+#### Phase 10.1: Test Database Isolation, Production Data Protection & Regression Hardening (COMPLETED)
+- **Production Forensic Investigation**:
+  - Discovered that review action tests in Phases 7 and 8 previously connected directly to database/vedam.db, incrementing version counters on 4 TranslationViews (VIEW-TR-00006-BHAVARTHA-v1, VIEW-TR-00508-BHAVARTHA-v1, VIEW-TR-00524-BHAVARTHA-v1, VIEW-TR-00752-BHAVARTHA-v1).
+  - Captured complete forensic snapshot to xports/reports/phase10_1_forensic_snapshot_affected_records.json.
+  - Preserved historical version numbers (24, 24, 24, 15) and proved that text and sacred verses remained 100% uncorrupted. Published [Production Database Forensic Report](file:///c:/Vedam/documentation/quality/PHASE10_1_PRODUCTION_DATABASE_FORENSIC_REPORT.md).
+- **Safety Guard Implementation**:
+  - Created utomation/database/safety.py implementing ssert_not_production_database() and ProductionDatabaseProtectionError.
+  - Prohibits test suites or automated scripts from targeting the production database file.
+- **Centralized Pytest Isolation Architecture**:
+  - Created 	ests/conftest.py with automatic cloning of the production database into a disposable temporary SQLite database using SQLite's online backup API.
+  - Rebinds DATABASE_URL, ngine, and SessionLocal to the isolated clone.
+  - Enforced per-test safety checks via an autouse fixture and post-session cryptographic table-hash verification (pytest_sessionfinish).
+- **Regression Hardening**:
+  - Added 11 new tests in 	ests/test_database_isolation_and_protection.py verifying production path refusal, version counter preservation, rollback fidelity, and execution order independence.
+  - Adapted 	ests/test_database_backup_and_recovery.py to target the active isolated test database, preserving all assertion checks.
+  - Full test suite expanded to **277 tests passing with 100% pass rate in 26.04s** across 30 test modules.
+  - Confirmed database/vedam.db is 100% byte-for-byte identical before and after testing. Published [Database Integrity Before-and-After Report](file:///c:/Vedam/documentation/quality/DATABASE_INTEGRITY_BEFORE_AND_AFTER_REPORT.md).
+
 ### Test Suite Status:
-- Automated test suite expanded to **266 tests passing with 100% pass rate in 50.73 seconds** across 25 test modules.
+- Automated test suite expanded to **277 tests passing with 100% pass rate in 26.04s** across 30 test modules.

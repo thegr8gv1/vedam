@@ -278,3 +278,13 @@ erDiagram
         datetime created_at
     }
 ```
+
+---
+
+## 8. Phase 10.1 Test Isolation & Production Immutability Governance
+
+Phase 10.1 established complete test database isolation without requiring database schema alterations or Alembic migrations:
+- **Alembic Head Revision:** Remains identical at `9f3c8a1b2d4e (head)`.
+- **Database Safety Guard:** Implemented in `automation/database/safety.py`, enforcing that all automated test executions operate against disposable temporary SQLite clones.
+- **Production Immutability:** The production database `database/vedam.db` is strictly locked against test connections, guaranteeing that TranslationView version counters and review histories are never altered during test runs.
+

@@ -16,9 +16,10 @@ from database.models import Base
 # access to the values within the .ini file in use.
 config = context.config
 
-# Allow environment override for database URL
+# Allow environment override for database URL if not programmatically configured
+ini_url = config.get_main_option("sqlalchemy.url")
 env_db_url = os.getenv("DATABASE_URL")
-if env_db_url:
+if env_db_url and (not ini_url or ini_url == "sqlite:///./database/vedam.db"):
     config.set_main_option("sqlalchemy.url", env_db_url)
 
 # Interpret the config file for Python logging.

@@ -1,0 +1,39 @@
+{
+  "census": {
+    "canonical_texts": 20,
+    "total_texts": 20,
+    "canonical_verses": 310,
+    "total_verses": 310,
+    "active_translations": 3070,
+    "draft_translations": 3070,
+    "approved_translations": 0,
+    "archived_translations": 580,
+    "total_translation_views": 7716,
+    "bhavartha_views": 3070,
+    "literal_views": 2323,
+    "tatparya_views": 2323
+  },
+  "table_hashes": {
+    "texts": {
+      "row_count": 20,
+      "sha256": "2e1ad8b0f41558e6d6c4d2dbb72a9d3d17bed120367ec7ba0ca0842b35f222e8"
+    },
+    "verses": {
+      "row_count": 310,
+      "sha256": "c66d714d581796ec8b48905c68a58a28c66d27cb3320b1cba04333f80362a855"
+    },
+    "translations": {
+      "row_count": 3070,
+      "sha256": "a3513592fb628edcc2cf66fc646e00ad470a3c2abfeb38fd38818163047118a4"
+    },
+    "translation_views": {
+      "row_count": 7716,
+      "sha256": "c0c6c51bcf47144ce0358424deaf011ebe7eae37401cfd92457499b813f3f17a"
+    },
+    "sources": {
+      "row_count": 2,
+      "sha256": "14f94871664fe32f1d2af3bb3923f712578f7ae3f6e5878f49e9afa69afffb59"
+    }
+  },
+  "backup_path": "database/backups\\vedam_pre_phase10_1_20261105_035237.db"
+}
