@@ -76,6 +76,14 @@ async def security_headers_middleware(request: web.Request, handler: Callable) -
     response.headers["X-Frame-Options"] = "SAMEORIGIN"
     response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
     response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate"
+    response.headers["Content-Security-Policy"] = (
+        "default-src 'self'; "
+        "script-src 'self' 'unsafe-inline'; "
+        "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
+        "font-src 'self' https://fonts.gstatic.com data:; "
+        "img-src 'self' data:; "
+        "connect-src 'self'"
+    )
     return response
 
 
@@ -438,6 +446,14 @@ async def submit_review_feedback_handler(request: web.Request) -> web.Response:
 
     if not reviewer:
         raise AuthenticationRequiredError("Authentication is strictly required to submit review actions.")
+
+    # Origin Header Validation for Cross-Origin State-Changing Request Protection
+    origin = request.headers.get("Origin")
+    if origin:
+        from urllib.parse import urlparse
+        origin_host = urlparse(origin).netloc
+        if origin_host and origin_host.lower() != request.host.lower():
+            raise web.HTTPForbidden(reason=f"Cross-origin request blocked: origin '{origin}' does not match host '{request.host}'.")
 
     # CSRF Token Validation
     csrf_token = request.headers.get(CSRF_HEADER)

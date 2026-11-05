@@ -7,8 +7,12 @@ executes live browser interactions with Playwright Chromium, and captures live s
 import asyncio
 import os
 from pathlib import Path
+import sys
 import threading
 import time
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from aiohttp import web
 from playwright.sync_api import sync_playwright
 
