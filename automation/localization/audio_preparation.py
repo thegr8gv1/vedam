@@ -135,3 +135,48 @@ class AudioPreparationEngine:
             json.dump(pkg.to_dict(), f, indent=2, ensure_ascii=False)
 
         return out_path
+
+    @classmethod
+    def export_section_audio_manifests(
+        cls,
+        text: Text,
+        regional_script: str = "Devanagari",
+    ) -> List[str]:
+        """
+        Exports distinct audio production manifests for compositions with discrete liturgical sections
+        (specifically Sri Venkateswara Suprabhatam Collection across its 4 sections).
+        """
+        cls.ensure_export_dir()
+        manifest_paths: List[str] = []
+
+        if text.content_id == "VEDA-TXT-00013":
+            sections = [
+                ("SEC-SV-01", "suprabhatam", "Sri Venkateswara Suprabhatam (Awakening)", 1, 29),
+                ("SEC-SV-02", "stotram", "Sri Venkateswara Stotram (Eulogy of Glories)", 30, 40),
+                ("SEC-SV-03", "prapatti", "Sri Venkateswara Prapatti (Solemn Surrender)", 41, 56),
+                ("SEC-SV-04", "mangalasasanam", "Sri Venkateswara Mangalasasanam (Benediction)", 57, 70),
+            ]
+
+            full_pkg = cls.prepare_handoff_package(text, regional_script=regional_script)
+            cues_by_vnum = {cue.verse_number: cue for cue in full_pkg.cues}
+
+            for sec_id, sec_slug, sec_name, v_start, v_end in sections:
+                sec_cues = [cues_by_vnum[v] for v in range(v_start, v_end + 1) if v in cues_by_vnum]
+                sec_pkg = AudioProductionHandoffPackage(
+                    content_id=f"{text.content_id}-{sec_id}",
+                    canonical_title=f"{text.canonical_title} — {sec_name}",
+                    devanagari_title=text.devanagari_title,
+                    meter=text.chandas,
+                    primary_deity=text.deity.name if text.deity else None,
+                    original_language=text.original_language,
+                    total_verses=len(sec_cues),
+                    generated_at_utc=datetime.now(timezone.utc).isoformat(),
+                    cues=sec_cues,
+                )
+                filename = f"{text.content_id}_{sec_id}_{sec_slug}_audio_manifest.json"
+                out_path = os.path.join(cls.EXPORT_DIR, filename)
+                with open(out_path, "w", encoding="utf-8") as f:
+                    json.dump(sec_pkg.to_dict(), f, indent=2, ensure_ascii=False)
+                manifest_paths.append(out_path)
+
+        return manifest_paths

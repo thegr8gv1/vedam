@@ -87,7 +87,7 @@ class MultilingualPublicationExporter:
 
         headers = [
             "Verse #",
-            "Original Sanskrit",
+            "Original Awadhi (अवधी)" if text.content_id == "VEDA-TXT-00008" else "Original Sanskrit",
             "IAST (Roman)",
             "Hindi (हिन्दी)",
             "Telugu (తెలుగు)",
@@ -156,24 +156,107 @@ class MultilingualPublicationExporter:
         run_title.font.color.rgb = RGBColor(128, 0, 32)
 
         p_sub = doc.add_paragraph(
-            "Multilingual Scholarly Edition — Sanskrit, Hindi, Telugu, Tamil, Kannada, Marathi, Bengali, Gujarati, Malayalam, Odia, and English"
+            f"Multilingual Scholarly Edition — {'Awadhi' if text.content_id == 'VEDA-TXT-00008' else 'Sanskrit'}, Hindi, Telugu, Tamil, Kannada, Marathi, Bengali, Gujarati, Malayalam, Odia, and English"
         )
         p_sub.runs[0].font.name = "Georgia"
         p_sub.runs[0].font.size = Pt(11)
         p_sub.runs[0].font.italic = True
         doc.add_paragraph()
 
+        # Sri Venkateswara Suprabhatam Table of Contents
+        if text.content_id == "VEDA-TXT-00013":
+            p_toc_head = doc.add_paragraph()
+            p_toc_head.paragraph_format.space_after = Pt(2)
+            r_th = p_toc_head.add_run("Canonical Four-Section Liturgical Architecture (Tirumala Canon):")
+            r_th.font.name = "Georgia"
+            r_th.font.size = Pt(11.5)
+            r_th.font.bold = True
+            r_th.font.color.rgb = RGBColor(128, 0, 32)
+
+            sections_info = [
+                ("Section 1: श्रीवेङ्कटेशसुप्रभातम् (Suprabhatam)", "Verses 1–29", "Awakening of the Lord & Vishvarupa Darshana"),
+                ("Section 2: श्रीवेङ्कटेशस्तोत्रम् (Stotram)", "Verses 30–40", "Eulogy of Transcendent Form, Krishna & Rama Identity"),
+                ("Section 3: श्रीवेङ्कटेशप्रपत्तिः (Prapatti)", "Verses 41–56", "Purushakara & Absolute Sharanagati at Lotus Feet"),
+                ("Section 4: श्रीवेङ्कटेशमङ्गलाशासनम् (Mangalasasanam)", "Verses 57–70", "Auspicious Benediction wishing eternal victory"),
+            ]
+            tbl_toc = doc.add_table(rows=len(sections_info) + 1, cols=3)
+            tbl_toc.autofit = False
+            tbl_toc.columns[0].width = Inches(3.2)
+            tbl_toc.columns[1].width = Inches(1.1)
+            tbl_toc.columns[2].width = Inches(2.7)
+
+            hdr_cells = tbl_toc.rows[0].cells
+            for idx, title in enumerate(["Canonical Section", "Verse Range", "Liturgical & Theological Role"]):
+                r = hdr_cells[idx].paragraphs[0].add_run(title)
+                r.font.bold = True
+                r.font.size = Pt(9.5)
+                r.font.color.rgb = RGBColor(128, 0, 32)
+
+            for s_idx, (sec_title, v_range, role) in enumerate(sections_info):
+                row_cells = tbl_toc.rows[s_idx + 1].cells
+                row_cells[0].paragraphs[0].add_run(sec_title).font.size = Pt(9)
+                row_cells[1].paragraphs[0].add_run(v_range).font.size = Pt(9)
+                row_cells[2].paragraphs[0].add_run(role).font.size = Pt(9)
+            doc.add_paragraph()
+
         sorted_verses = sorted(text.verses, key=lambda v: v.verse_number)
+        current_section = None
+
         for v in sorted_verses:
+            # Section header insertion for Suprabhatam
+            if text.content_id == "VEDA-TXT-00013":
+                sec_banner = None
+                if v.verse_number == 1:
+                    sec_banner = "॥ प्रथमः भागः — श्रीवेङ्कटेशसुप्रभातम् (श्लोकाः १–२९) ॥\nSection 1: Sri Venkateswara Suprabhatam (Awakening of the Lord)"
+                elif v.verse_number == 30:
+                    sec_banner = "॥ द्वितीयः भागः — श्रीवेङ्कटेशस्तोत्रम् (श्लोकाः १–११ / ३०–४०) ॥\nSection 2: Sri Venkateswara Stotram (Eulogy of Divine Glories)"
+                elif v.verse_number == 41:
+                    sec_banner = "॥ तृतीयः भागः — श्रीवेङ्कटेशप्रपत्तिः (श्लोकाः १–१६ / ४१–५६) ॥\nSection 3: Sri Venkateswara Prapatti (Solemn Surrender at Lotus Feet)"
+                elif v.verse_number == 57:
+                    sec_banner = "॥ चतुर्थः भागः — श्रीवेङ्कटेशमङ्गलाशासनम् (श्लोकाः १–१४ / ५७–७०) ॥\nSection 4: Sri Venkateswara Mangalasasanam (Auspicious Benediction)"
+
+                if sec_banner:
+                    doc.add_paragraph()
+                    p_sb = doc.add_paragraph()
+                    r_sb = p_sb.add_run(sec_banner)
+                    r_sb.font.name = "Nirmala UI"
+                    r_sb.font.size = Pt(13)
+                    r_sb.font.bold = True
+                    r_sb.font.color.rgb = RGBColor(128, 0, 32)
+                    doc.add_paragraph()
+
+            # Verse header
             p_vnum = doc.add_paragraph()
-            r_vnum = p_vnum.add_run(f"❖ श्लोकः {v.verse_number} / Verse {v.verse_number}")
+            if text.content_id == "VEDA-TXT-00008":
+                if v.verse_number == 1:
+                    v_title = "❖ प्रारम्भिक दोहा १ / Opening Doha 1"
+                elif v.verse_number == 2:
+                    v_title = "❖ प्रारम्भिक दोहा २ / Opening Doha 2"
+                elif v.verse_number == 43:
+                    v_title = "❖ समापन दोहा / Concluding Doha"
+                else:
+                    v_title = f"❖ चौपाई {v.verse_number - 2} / Chaupai {v.verse_number - 2} (Verse {v.verse_number})"
+            elif text.content_id == "VEDA-TXT-00013":
+                if v.verse_number <= 29:
+                    v_title = f"❖ सुप्रभात श्लोकः {v.verse_number} / Suprabhatam Sloka {v.verse_number}"
+                elif v.verse_number <= 40:
+                    v_title = f"❖ स्तोत्र श्लोकः {v.verse_number - 29} (Verse {v.verse_number}) / Stotram Sloka {v.verse_number - 29}"
+                elif v.verse_number <= 56:
+                    v_title = f"❖ प्रपत्ति श्लोकः {v.verse_number - 40} (Verse {v.verse_number}) / Prapatti Sloka {v.verse_number - 40}"
+                else:
+                    v_title = f"❖ मङ्गलाशासन श्लोकः {v.verse_number - 56} (Verse {v.verse_number}) / Mangalasasanam Sloka {v.verse_number - 56}"
+            else:
+                v_title = f"❖ श्लोकः {v.verse_number} / Verse {v.verse_number}"
+
+            r_vnum = p_vnum.add_run(v_title)
             r_vnum.font.bold = True
             r_vnum.font.size = Pt(11)
             r_vnum.font.color.rgb = RGBColor(128, 0, 32)
 
             # Table for verse renderings
+            orig_label = "Original Awadhi (अवधी)" if text.content_id == "VEDA-TXT-00008" else "Original Sanskrit"
             labels_data = [
-                ("Original Sanskrit", v.devanagari_text, "Nirmala UI", True),
+                (orig_label, v.devanagari_text, "Nirmala UI", True),
                 ("IAST (Roman)", v.iast_text or "", "Calibri", False),
             ]
             trans_map = {t.target_language: t.translated_text for t in v.translations}

@@ -1,0 +1,91 @@
+{
+  "batch": "Phase 6C Batch 4",
+  "generated_at_utc": "2026-11-05T01:46:32.862098+00:00",
+  "total_artifacts": 12,
+  "artifacts": [
+    {
+      "content_id": "VEDA-TXT-00008",
+      "file_path": "exports/multilingual/excel\\VEDA-TXT-00008_hanuman_chalisa_multilingual.xlsx",
+      "file_name": "VEDA-TXT-00008_hanuman_chalisa_multilingual.xlsx",
+      "file_size_bytes": 60386,
+      "sha256": "91a81c68a46c05dd137426d34b2c1140dfe990a2b76948e15d01dc90f482bd50"
+    },
+    {
+      "content_id": "VEDA-TXT-00008",
+      "file_path": "exports/multilingual/word\\VEDA-TXT-00008_hanuman_chalisa_multilingual.docx",
+      "file_name": "VEDA-TXT-00008_hanuman_chalisa_multilingual.docx",
+      "file_size_bytes": 84867,
+      "sha256": "aad750ec496f90474d9a96b05a5f7a93b3443ecf7c509aad1615791474851c90"
+    },
+    {
+      "content_id": "VEDA-TXT-00008",
+      "file_path": "exports/multilingual/json\\VEDA-TXT-00008_hanuman_chalisa_multilingual.json",
+      "file_name": "VEDA-TXT-00008_hanuman_chalisa_multilingual.json",
+      "file_size_bytes": 283102,
+      "sha256": "eb4683f704047ca148dc523efc24ed550ecdc7152ae27cb2536c8f18fe43b56f"
+    },
+    {
+      "content_id": "VEDA-TXT-00008",
+      "file_path": "exports/audio_manifests\\VEDA-TXT-00008_hanuman_chalisa_audio_manifest.json",
+      "file_name": "VEDA-TXT-00008_hanuman_chalisa_audio_manifest.json",
+      "file_size_bytes": 37827,
+      "sha256": "197e58efaaca3fb563eda03a915dd2c9984d04e05b8c5c1d609ed5a78c640041"
+    },
+    {
+      "content_id": "VEDA-TXT-00013",
+      "file_path": "exports/multilingual/excel\\VEDA-TXT-00013_venkateswara_suprabhatam_multilingual.xlsx",
+      "file_name": "VEDA-TXT-00013_venkateswara_suprabhatam_multilingual.xlsx",
+      "file_size_bytes": 120008,
+      "sha256": "b52334340a1d29322d016d0e1dacfcbdc380182517982707293ab200d51b954b"
+    },
+    {
+      "content_id": "VEDA-TXT-00013",
+      "file_path": "exports/multilingual/word\\VEDA-TXT-00013_venkateswara_suprabhatam_multilingual.docx",
+      "file_name": "VEDA-TXT-00013_venkateswara_suprabhatam_multilingual.docx",
+      "file_size_bytes": 134418,
+      "sha256": "8b68f6f524aaca5561fcaf268d130a47ff5dc51df89ded8e8af683005dfbed1c"
+    },
+    {
+      "content_id": "VEDA-TXT-00013",
+      "file_path": "exports/multilingual/json\\VEDA-TXT-00013_venkateswara_suprabhatam_multilingual.json",
+      "file_name": "VEDA-TXT-00013_venkateswara_suprabhatam_multilingual.json",
+      "file_size_bytes": 647827,
+      "sha256": "ed7700906c9053af0080a955295c897fa41a68973265e78c750b44ed1a7fb633"
+    },
+    {
+      "content_id": "VEDA-TXT-00013",
+      "file_path": "exports/audio_manifests\\VEDA-TXT-00013_venkateswara_suprabhatam_audio_manifest.json",
+      "file_name": "VEDA-TXT-00013_venkateswara_suprabhatam_audio_manifest.json",
+      "file_size_bytes": 93057,
+      "sha256": "d453bab9e896d697a7d1713edd74f13f4c7ef37e888fa737b1dd5e5318f1b59e"
+    },
+    {
+      "content_id": "VEDA-TXT-00013",
+      "file_path": "exports/audio_manifests\\VEDA-TXT-00013_SEC-SV-01_suprabhatam_audio_manifest.json",
+      "file_name": "VEDA-TXT-00013_SEC-SV-01_suprabhatam_audio_manifest.json",
+      "file_size_bytes": 41577,
+      "sha256": "4a2a1f072376a0e308b2882718cbb8f0e2c11dbd111700e7e81901657a7e7952"
+    },
+    {
+      "content_id": "VEDA-TXT-00013",
+      "file_path": "exports/audio_manifests\\VEDA-TXT-00013_SEC-SV-02_stotram_audio_manifest.json",
+      "file_name": "VEDA-TXT-00013_SEC-SV-02_stotram_audio_manifest.json",
+      "file_size_bytes": 13523,
+      "sha256": "ba6f8dbb90a684ab7e19e1eb8b14861bfd88417ea01dcafe9b78f21f6cbb9756"
+    },
+    {
+      "content_id": "VEDA-TXT-00013",
+      "file_path": "exports/audio_manifests\\VEDA-TXT-00013_SEC-SV-03_prapatti_audio_manifest.json",
+      "file_name": "VEDA-TXT-00013_SEC-SV-03_prapatti_audio_manifest.json",
+      "file_size_bytes": 24176,
+      "sha256": "711e32aa285243ff164d702e43f892bc9d769f8400310d677d02ba0690547303"
+    },
+    {
+      "content_id": "VEDA-TXT-00013",
+      "file_path": "exports/audio_manifests\\VEDA-TXT-00013_SEC-SV-04_mangalasasanam_audio_manifest.json",
+      "file_name": "VEDA-TXT-00013_SEC-SV-04_mangalasasanam_audio_manifest.json",
+      "file_size_bytes": 15805,
+      "sha256": "6d19263bb18f256f35ffa15fac9a5eedcb2b53610c6be98afbb6e05aee730712"
+    }
+  ]
+}

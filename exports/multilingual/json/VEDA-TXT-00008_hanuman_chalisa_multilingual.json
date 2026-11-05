@@ -1,0 +1,3206 @@
+{
+  "content_id": "VEDA-TXT-00008",
+  "canonical_title": "Hanuman Chalisa",
+  "devanagari_title": "हनुमान चालीसा",
+  "composer": "Goswami Tulsidas (c. 1532–1623 CE)",
+  "source_scripture": "Traditional Awadhi Bhakti Canon",
+  "verse_count": 43,
+  "generated_at_utc": "2026-11-05T01:46:31.344286+00:00",
+  "supported_languages": [
+    "sa",
+    "hi",
+    "te",
+    "ta",
+    "kn",
+    "mr",
+    "bn",
+    "gu",
+    "ml",
+    "or",
+    "en"
+  ],
+  "verses": [
+    {
+      "verse_number": 1,
+      "verse_type": "DOHA",
+      "original_sanskrit": "श्रीगुरु चरन सरोज रज निज मनु मुकुरु सुधारि ।\nबरनउँ रघुबर बिमल जसु जो दायकु फल चारि ॥",
+      "iast": "śrīguru carana sarōja raja nija manu mukuru sudhāri ।\nbaranauṁ raghubara bimala jasu jō dāyaku phala cāri ॥",
+      "transliterations": {
+        "telugu": "శ్రీగురు చరన సరోజ రజ నిజ మను ముకురు సుధారి ।\nబరనఉఁ రఘుబర బిమల జసు జో దాయకు ఫల చారి ॥",
+        "tamil": "ஶ்ரீகுரு சரந ஸரோஜ ரஜ நிஜ மநு முகுரு ஸுதாரி ।\nபரநஉँ ரகுபர பிமல ஜஸு ஜோ தாயகு பல சாரி ॥",
+        "kannada": "ಶ್ರೀಗುರು ಚರನ ಸರೋಜ ರಜ ನಿಜ ಮನು ಮುಕುರು ಸುಧಾರಿ ।\nಬರನಉಁ ರಘುಬರ ಬಿಮಲ ಜಸು ಜೋ ದಾಯಕು ಫಲ ಚಾರಿ ॥",
+        "malayalam": "ശ്രീഗുരു ചരന സരോജ രജ നിജ മനു മുകുരു സുധാരി ।\nബരനഉഁ രഘുബര ബിമല ജസു ജോ ദായകു ഫല ചാരി ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Cleansing the mirror of my mind with the dust of the holy lotus feet of my Guru, I narrate the pure renown of Lord Raghuvira (Sri Rama), which bestows the four fruits of human existence (Dharma, Artha, Kama, Moksha).",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "श्री गुरुदेव के चरण-कमलों की पावन धूलि से अपने मन रूपी दर्पण को पवित्र करके, मैं श्री रघुनाथ जी के उस निर्मल यश का वर्णन करता हूँ, जो धर्म, अर्थ, काम और मोक्ष—इन चारों फलों को देने वाला है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "శ్రీ గురుదేవుని పాదపద్మముల ధూళిచే నా మనస్సను అద్దమును పరిశుభ్రపరచుకొని, ధర్మార్థకామమోక్షములను నాలుగు పురుషార్థములను ప్రసాదించు శ్రీ రఘునాథుని నిర్మలమైన యశస్సును గానము చేయుచున్నాను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஸ்ரீ குருவின் திருவடித் தாமரைகளின் தூசியால் என் மனமாகிய கண்ணாடியைத் தூய்மை செய்து, அறம், பொருள், இன்பம், வீடு ஆகிய நான்கு பேறுகளையும் அள்ளி வழங்கும் ஸ்ரீராமபிரானின் களங்கமற்ற புகழைப் பாடுகின்றேன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಶ್ರೀ ಗುರುದೇವರ ಚರಣಕಮಲಗಳ ಧೂಳಿನಿಂದ ನನ್ನ ಮನಸ್ಸೆಂಬ ಕನ್ನடியನ್ನು ಶುದ್ಧಿಗೊಳಿಸಿ, ಧರ್ಮ, ಅರ್ಥ, ಕಾಮ ಮತ್ತು ಮೋಕ್ಷವೆಂಬ ನಾಲ್ಕು ಫಲಗಳನ್ನು ಕರುಣಿಸುವ ಶ್ರೀ ರಘುವೀರನ ನಿರ್ಮಲ ಯಶಸ್ಸನ್ನು ಕೀರ್ತಿಸುತ್ತೇನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "श्री सद्गुरूंच्या चरणकमलांच्या धुळीने आपल्या मनरूपी आरशाला स्वच्छ करून, धर्म, अर्थ, काम आणि मोक्ष ही चार फळे देणाऱ्या श्रीरामांच्या निर्मळ यशाचे मी वर्णन करतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "শ্রীগুরুদেবের পাদপদ্মের রেণু দ্বারা নিজ মনরূপ দর্পণকে নির্মল করিয়া, ধর্ম-অর্থ-কাম-মোক্ষরূপ চতুৰ্বর্গফলপ্রদায়ী শ্রীরামচন্দ্রের বিমল কীর্তি গান করিতেছি।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "શ્રી ગુરુદેવના ચરણકમળની રજથી પોતાના મન રૂપી દર્પણને પવિત્ર કરીને, ધર્મ, અર્થ, કામ અને મોક્ષ—આ ચાર ફળો આપનારા શ્રી રઘુનાથજીના નિર્મળ યશનું હું ગાન કરું છું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ശ്രീ ഗുരുദേവന്റെ പാദപത്മങ്ങളിലെ ധൂളികൊണ്ട് എന്റെ മനസ്സാകുന്ന കണ്ണാടിയെ കഴുകിത്തൂത്തു, ധർമ്മാർത്ഥകാമമോക്ഷങ്ങളാകുന്ന നാലു ഫലങ്ങളെയും നൽകുന്ന ശ്രീരാമന്റെ പവിത്രമായ കീർത്തിയെ ഞാൻ വാഴ്ത്തുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଶ୍ରୀ ଗୁରୁଦେବଙ୍କ ପାଦପଦ୍ମର ଧୂଳିରେ ନିଜ ମନରୂପୀ ଦର୍ପଣକୁ ଶୁଦ୍ଧ କରି, ଧର୍ମ, ଅର୍ଥ, କାମ ଓ ମୋକ୍ଷ—ଏହି ଚାରୋଟି ଫଳ ଦାନ କରୁଥିବା ଶ୍ରୀରାମଚନ୍ଦ୍ରଙ୍କ ନିର୍ମଳ ଯଶ ମୁଁ ଗାନ କରୁଛି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 2,
+      "verse_type": "DOHA",
+      "original_sanskrit": "बुद्धिहीन तनु जानिके सुमिरौ पवन-कुमार ।\nबल बुधि बिद्या देहु मोहिं हरहु कलेस बिकार ॥",
+      "iast": "buddhihīna tanu jānikē sumirau pavana-kumāra ।\nbala budhi bidyā dēhu mohiṁ harahu kalēsa bikāra ॥",
+      "transliterations": {
+        "telugu": "బుద్ధిహీన తను జానికే సుమిరౌ పవన-కుమార ।\nబల బుధి బిద్యా దేహు మోహిం హరహు కలేస బికార ॥",
+        "tamil": "புத்திஹீந தநு ஜாநிகே ஸுமிரௌ பவந-குமார ।\nபல புதி பித்யா தேஹு மோஹிம் ஹரஹு கலேஸ பிகார ॥",
+        "kannada": "ಬುದ್ಧಿಹೀನ ತನು ಜಾನಿಕೇ ಸುಮಿರೌ ಪವನ-ಕುಮಾರ ।\nಬಲ ಬುಧಿ ಬಿದ್ಯಾ ದೇಹು ಮೋಹಿಂ ಹರಹು ಕಲೇಸ ಬಿಕಾರ ॥",
+        "malayalam": "ബുദ്ധിഹീന തനു ജാനികേ സുമിരൌ പവന-കുമാര ।\nബല ബുധി ബിദ്യാ ദേഹു മോഹിം ഹരഹു കലേസ ബികാര ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Knowing myself to be devoid of wisdom, I contemplate You, O Son of the Wind! Bestow upon me strength, intellect, and spiritual knowledge, and dispel all my afflictions and inner blemishes.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "स्वयं को बुद्धि और सामर्थ्य से हीन जानकर, मैं पवनपुत्र श्री हनुमान जी का स्मरण करता हूँ। हे प्रभो! आप मुझे बल, सद्बुद्धि और विद्या प्रदान कीजिए तथा मेरे समस्त क्लेशों और मानसिक विकारों को हर लीजिए।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "నన్ను నేను బుద్ధిహీనుడనని ఎరిగి, పవనపుత్రుడైన శ్రీ హనుమంతుని స్మరించుచున్నాను. ఓ ప్రభూ! నాకు శారీరక బలమును, సద్బుద్ధిని, ఆధ్యాత్మిక విద్యను ప్రసాదించి, నా సమస్త దుఃఖములను దోషములను తొలగింపుము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "என்னை அறிவற்றவனாக உணர்ந்து, வாயுபுத்திரனான ஸ்ரீ அனுமனைத் தியானிக்கின்றேன். எனக்கு உடல்பலத்தையும், நல்லறிவையும், ஞானக் கல்வியையும் வழங்கி, என் துன்பங்களையும் மனமாச்சரியங்களையும் போக்கியருள்வீராக.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ನನ್ನನ್ನು ಬುದ್ಧಿಹೀನನೆಂದು ತಿಳಿದು ಪವನಪುತ್ರ ಶ್ರೀ ಹನುಮಂತನನ್ನು ಸ್ಮರಿಸುತ್ತೇನೆ. ಹೇ ಸ್ವಾಮಿ! ನನಗೆ ಬಲ, ಸದ್ಬುದ್ಧಿ ಮತ್ತು ವಿದ್ಯೆಯನ್ನು ಕರುಣಿಸಿ, ನನ್ನ ಸಮಸ್ತ ದುಃಖಗಳನ್ನು ಹಾಗೂ ಮನೋವಿಕಾರಗಳನ್ನು ನಿವಾರಿಸು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "स्वतःला बुद्धिहीन जाणून मी पवनपुत्र हनुमंतांचे स्मरण करतो. हे प्रभू! मला बल, बुद्धी आणि विद्या प्रदान करा आणि माझे सर्व क्लेश व मानसिक विकार दूर करा.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "নিজেকে বুদ্ধিহীন জানিয়া আমি পবননন্দন শ্রীহনুমানকে স্মরণ করিতেছি। হে প্রভু! আমাকে বল, শুভবুদ্ধি ও বিদ্যা প্রদান করিয়া আমার সকল ক্লেশ ও চিত্তবিকার হরণ করুন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "પોતાને બુદ્ધિહીન જાણીને હું પવનપુત્ર શ્રી હનુમાનજીનું સ્મરણ કરું છું. હે પ્રભુ! મને બળ, સદ્બુદ્ધિ અને વિદ્યા આપો તથા મારા સર્વ કષ્ટો અને મનના વિકારોને હરી લો.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഞാൻ ബുദ്ധിഹീനനാണെന്നറിഞ്ഞ് പവനപുത്രനായ ഹനുമാനെ സ്മരിക്കുന്നു. ഹേ സ്വാമീ! എനിക്ക് ശക്തിയും സദ്ബുദ്ധിയും വിദ്യയും നൽകി എന്റെ ദുരിതങ്ങളെയും അഴുക്കുകളെയും അകറ്റേണമേ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ନିଜକୁ ବୁଦ୍ଧିହୀନ ଜାଣି ମୁଁ ପବନପୁତ୍ର ଶ୍ରୀ ହନୁମାନଙ୍କୁ ସ୍ମରଣ କରୁଛି । ହେ ପ୍ରଭୁ ! ମୋତେ ଶକ୍ତି, ସଦ୍‌ବୁଦ୍ଧି ଓ ବିଦ୍ୟା ପ୍ରଦାନ କରନ୍ତୁ ଏବଂ ମୋର ସମସ୍ତ କ୍ଲେଶ ଓ ମାନସିକ ବିକାର ଦୂର କରନ୍ତୁ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 3,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "जय हनुमान ज्ञान गुन सागर । जय कपीस तिहुँ लोक उजागर ॥ १ ॥",
+      "iast": "jaya hanumāna jñāna guna sāgara । jaya kapīsa tihuṁ lōka ujāgara ॥ 1 ॥",
+      "transliterations": {
+        "telugu": "జయ హనుమాన జ్ఞాన గున సాగర । జయ కపీస తిహుఁ లోక ఉజాగర ॥ ౧ ॥",
+        "tamil": "ஜய ஹநுமாந ஜ்ஞாந குந ஸாகர । ஜய கபீஸ திஹுँ லோக உஜாகர ॥ ௧ ॥",
+        "kannada": "ಜಯ ಹನುಮಾನ ಜ್ಞಾನ ಗುನ ಸಾಗರ । ಜಯ ಕಪೀಸ ತಿಹುಁ ಲೋಕ ಉಜಾಗರ ॥ ೧ ॥",
+        "malayalam": "ജയ ഹനുമാന ജ്ഞാന ഗുന സാഗര । ജയ കപീസ തിഹുഁ ലോക ഉജാഗര ॥ ൧ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Hail, Hanuman, ocean of wisdom and virtues! Hail, lord among monkeys, illuminator of the three worlds!",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे ज्ञान और सद्गुणों के अथाह सागर श्री हनुमान जी! आपकी जय हो! तीनों लोकों में अपनी कीर्ति का प्रकाश फैलाने वाले वानरराज! आपकी सदा जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "జ్ఞానమునకు, సకల సద్గుణములకు సముద్రమువంటి ఓ హనుమంతుడా! నీకు జయము! ముల్లోకములలో కీర్తిజ్యోతిని వెలిగించిన వానరరాజా! నీకు జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஞானத்திற்கும் நற்குணங்களுக்கும் சமுத்திரம் போன்ற ஆஞ்சநேயனே! உனக்கு வெற்றி! மூவுலகிலும் தன் புகழொளியைப் பரப்பிய வானர வேந்தனே! உனக்கு வெற்றி உண்டாகட்டும்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಜ್ಞಾನ ಹಾಗೂ ಸದ್ಗುಣಗಳ ಸಾಗರವಾದ ಹೇ ಹನುಮಂತನೇ! ನಿನಗೆ ಜಯವಾಗಲಿ! ಮೂರೂ ಲೋಕಗಳಲ್ಲಿ ಕೀರ್ತಿಯನ್ನು ಬೆಳಗಿಸಿದ ಕಪಿಶ್ರೇಷ್ಠನೇ! ನಿನಗೆ ಸದಾ ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "ज्ञान आणि सद्गुणांचे महासागर असणाऱ्या श्रीहनुमानांचा जय असो! तिन्ही लोकांत आपल्या कीर्तीचा प्रकाश पाडणाऱ्या वानरश्रेष्ठांचा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে জ্ঞান ও অশেষ গুণের পারাবার শ্রীহনুমান! তোমার জয় হউক! ত্রিভুবনে নিজ যশোভায় আলোকবিস্তারকারী হে কপীশ্বর! তোমার জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જ્ઞાન અને સદ્ગુણોના અથાગ સાગર શ્રી હનુમાનજી! આપનો જય હો! ત્રણેય લોકોમાં પોતાની કીર્તિનો પ્રકાશ ફેલાવનારા વાનરરાજ! આપનો જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ജ്ഞാനത്തിന്റെയും സൽഗുണങ്ങളുടെയും സാഗരമായ ഹനുമാനേ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ! മൂന്നുലോകങ്ങളിലും തന്റെ പ്രഭ പരത്തിയ വാനരരാജാവേ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଜ୍ଞାନ ଓ ସଦ୍‌ଗୁଣର ସାଗର ଶ୍ରୀ ହନୁମାନଙ୍କର ଜୟ ହେଉ ! ତିନି ଲୋକରେ ନିଜ କୀର୍ତ୍ତିର ଆଲୋକ ବିତରଣ କରିଥିବା ହେ କପୀଶ୍ୱର ! ତୁମର ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 4,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "राम दूत अतुलित बल धामा । अञ्जनि-पुत्र पवनसुत नामा ॥ २ ॥",
+      "iast": "rāma dūta atulita bala dhāmā । añjani-putra pavanasuta nāmā ॥ 2 ॥",
+      "transliterations": {
+        "telugu": "రామ దూత అతులిత బల ధామా । అఞ్జని-పుత్ర పవనసుత నామా ॥ ౨ ॥",
+        "tamil": "ராம தூத அதுலித பல தாமா । அஞ்ஜநி-புத்ர பவநஸுத நாமா ॥ ௨ ॥",
+        "kannada": "ರಾಮ ದೂತ ಅತುಲಿತ ಬಲ ಧಾಮಾ । ಅಞ್ಜನಿ-ಪುತ್ರ ಪವನಸುತ ನಾಮಾ ॥ ೨ ॥",
+        "malayalam": "രാമ ദൂത അതുലിത ബല ധാമാ । അഞ്ജനി-പുത്ര പവനസുത നാമാ ॥ ൨ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Messenger of Rama, abode of incomparable strength, son of Anjani, known as the Son of the Wind.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "आप भगवान् श्रीराम के अनन्य दूत और अतुलनीय बल के परम धाम हैं। आप माता अञ्जना के पुत्र हैं और संसार में पवनसुत के नाम से विख्यात हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "నీవు శ్రీరాముని నమ్మకమైన దూతవు మరియు సాటిలేని అపార బలమునకు నిలయమైనవాడవు. అంజనాదేవి పుత్రుడవై, లోకమున పవనసుతుడను పవిత్ర నామముతో ప్రసిద్ధి గాంచితివి.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "நீ ஸ்ரீராமபிரானின் ஒப்பற்ற தூதுவனும், அளவிட முடியாத மகாபலத்தின் உறைவிடமும் ஆவாய். அன்னை அஞ்சனையின் மைந்தனான நீ, உலகில் பவனசுதன் என்ற பெயரால் புகழ்பெற்றவன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ನೀವು ಶ್ರೀರಾಮಚಂದ್ರನ ಅನನ್ಯ ದೂತರೂ, ಸಾಟಿಯಿಲ್ಲದ ಅತುಲಿತ ಬಲದ ತಾಣವೂ ಆಗಿದ್ದೀರಿ. ನೀವು ತಾಯಿ ಅಂಜನೆಯ ಪುತ್ರರಾಗಿದ್ದು, ಜಗತ್ತಿನಲ್ಲಿ ಪವನಸುತನೆಂಬ ಹೆಸರಿನಿಂದ ಪ್ರಸಿದ್ಧರಾಗಿದ್ದೀರಿ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तुम्ही प्रभू श्रीरामांचे अद्वितीय दूत आणि अतुलनीय शक्तीचे भांडार आहात. तुम्ही माता अंजनीचे सुपुत्र असून जगात पवनसुत या नावाने प्रसिद्ध आहात.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তুমি শ্রীরামচন্দ্রের একনিষ্ঠ দূত এবং অতুলনীয় মহাশক্তির আধার। তুমি মাতা অঞ্জনাদেবীর পুত্র এবং জগতে পবননন্দন নামে সমধিক পরিচিত।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આપ ભગવાન શ્રીરામના પરમ દૂત અને અતુલનીય બળના ધામ છો. આપ માતા અંજનાના પુત્ર છો અને વિશ્વમાં પવનસુત નામે જાણીતા છો.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അങ്ങ് ശ്രീരാമന്റെ പരമദൂതനും അളവറ്റ ശക്തിയുടെ ഇരിപ്പിടവുമാണ്. അഞ്ജനാപുത്രനായ അങ്ങ് ജഗത്തിൽ പവനസുതൻ എന്ന നാമത്തിൽ പ്രസിദ്ധനാണ്.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତୁମେ ଶ୍ରୀରାମଙ୍କ ଅନନ୍ୟ ଦୂତ ଏବଂ ଅତୁଳନୀୟ ବଳର ଧାମ । ତୁମେ ମାତା ଅଞ୍ଜନାଙ୍କ ପୁତ୍ର ତଥା ସଂସାରରେ ପବନସୁତ ନାମରେ ବିଖ୍ୟାତ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 5,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "महाबीर बिक्रम बजरङ्गी । कुमति निवार सुमति के सङ्गी ॥ ३ ॥",
+      "iast": "mahābīra bikrama bajaraṅgī । kumati nivāra sumati kē saṅgī ॥ 3 ॥",
+      "transliterations": {
+        "telugu": "మహాబీర బిక్రమ బజరఙ్గీ । కుమతి నివార సుమతి కే సఙ్గీ ॥ ౩ ॥",
+        "tamil": "மஹாபீர பிக்ரம பஜரங்கீ । குமதி நிவார ஸுமதி கே ஸங்கீ ॥ ௩ ॥",
+        "kannada": "ಮಹಾಬೀರ ಬಿಕ್ರಮ ಬಜರಙ್ಗೀ । ಕುಮತಿ ನಿವಾರ ಸುಮತಿ ಕೇ ಸಙ್ಗೀ ॥ ೩ ॥",
+        "malayalam": "മഹാബീര ബിക്രമ ബജരങ്ഗീ । കുമതി നിവാര സുമതി കേ സങ്ഗീ ॥ ൩ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Valiant hero of thunderbolt limbs, dispeller of evil thoughts, companion of the wise.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे महाबली, असीम पराक्रमी और वज्र के समान सुदृढ़ अंगों वाले श्री हनुमान जी! आप दुर्बुद्धि और कुविचारों को दूर करने वाले तथा सद्बुद्धि के सदा संगी हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "మహా పరాక్రమవంతుడవై, వజ్రమువంటి దృఢమైన శరీరము గల ఓ బజరంగబలీ! నీవు చెడు ఆలోచనలను తొలగించి, సద్బుద్ధిని ప్రసాదించు సత్సాంగత్యానివి.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "மகா வீரனே! எல்லையற்ற பராக்கிரமம் கொண்டவனே! வஜ்ராயுதம் போன்ற உறுதியான திருமேனி கொண்ட பஜ்ரங்பலியே! நீ தீய எண்ணங்களைப் போக்கி, நல்லறிவுக்கு உற்ற துணையாய் விளங்குபவன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಮಹಾ ಪರಾಕ್ರಮಿಯೂ, ವಜ್ರದಂತಹ ಬಲಿಷ್ಠ ಶರೀರವುಳ್ಳ ಬಜರಂಗಬಲಿಯೂ ಆದ ಹೇ ಹನುಮಂತನೇ! ನೀನು ಕೆಟ್ಟ ಯೋಚನೆಗಳನ್ನು ದೂರಮಾಡಿ ಸದ್ಬುದ್ಧಿಗೆ ಸದಾ ಜೊತೆಯಾಗುವವನು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे महापराक्रमी, असीम वीर आणि वज्रासारखे मजबूत अंग असणाऱ्या बजरंगबली! तुम्ही दुर्बुद्धीचा नाश करणारे आणि सद्बुद्धीचे नित्य सोबती आहात.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে মহাবীর, অপার পরাক্রমশালী এবং বজ্রসম সুদৃঢ় অঙ্গবিশিষ্ট বজরংবলী! তুমি কুচিন্তা ও দুর্ভাবনার বিনাশকারী এবং সুমতি ও শুভবুদ্ধির চিরসঙ্গী।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હે મહાવીર, અસીમ પરાક્રમી અને વજ્ર જેવાં મજબૂત અંગોવાળા બજરંગબલી! આપ કુબુદ્ધિનો નાશ કરનારા અને સદ્બુદ્ધિના પરમ સાથી છો.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "മഹാധീരനും അജയ്യപരാക്രമിയും വജ്രംപോലെ ദൃഢമായ ശരീരമുള്ള ബജ്‌രംഗബലിയുമായ അങ്ങ് ദുർബുദ്ധിയെ അകറ്റി സദ്ബുദ്ധിക്ക് കൂട്ടിരിക്കുന്നവനാണ്.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହେ ମହାବୀର, ଅସୀମ ପରାକ୍ରମୀ ଏବଂ ବଜ୍ର ସଦୃଶ ଅଙ୍ଗଯୁକ୍ତ ବଜରଙ୍ଗବଳୀ ! ତୁମେ କୁବୁଦ୍ଧି ଦୂରକାରୀ ଏବଂ ସଦ୍‌ବୁଦ୍ଧିର ଚିରସଙ୍ଗୀ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 6,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "कञ्चन बरन बिराज सुबेसा । कानन कुण्डल कुञ्चित केसा ॥ ४ ॥",
+      "iast": "kañcana barana birāja subēsā । kānana kuṇḍala kuñcita kēsā ॥ 4 ॥",
+      "transliterations": {
+        "telugu": "కఞ్చన బరన బిరాజ సుబేసా । కానన కుణ్డల కుఞ్చిత కేసా ॥ ౪ ॥",
+        "tamil": "கஞ்சந பரந பிராஜ ஸுபேஸா । காநந குண்டல குஞ்சித கேஸா ॥ ௪ ॥",
+        "kannada": "ಕಞ್ಚನ ಬರನ ಬಿರಾಜ ಸುಬೇಸಾ । ಕಾನನ ಕುಣ್ಡಲ ಕುಞ್ಚಿತ ಕೇಸಾ ॥ ೪ ॥",
+        "malayalam": "കഞ്ചന ബരന ബിരാജ സുബേസാ । കാനന കുണ്ഡല കുഞ്ചിത കേസാ ॥ ൪ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "With golden complexion and splendid attire, with sparkling earrings and curly locks.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "आपका वर्ण सुवर्ण के समान कान्तिमान् है और आप सुन्दर वेश में सुशोभित हैं। आपके कानों में कुण्डल और मस्तक पर घुँघराले बाल शोभायमान हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "బంగారు కాంతితో మెరయు శరీరవర్ణము కలవాడవై, దివ్యమైన వస్త్రాలంకారములతో ప్రకాశించుచున్నావు. నీ చెవులకు కుండలములు, శిరస్సున ముంగురులు మిక్కిలి మనోహరముగా శోభిల్లుచున్నవి.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "பொன்னிற மேனியோடு அழகுற விளங்கும் ஆஞ்சநேயனே! உன் காதுகளில் மின்னும் குண்டலங்களும், சுருண்ட அழகிய தலைமுடியும் கண்ணைக் கவர்கின்றன.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಚಿನ್ನದಂತಹ ಪ್ರಕಾಶಮಾನ ಮೈಬಣ್ಣವುಳ್ಳ ನೀವು ಸುಂದರ ವಸ್ತ್ರಗಳಿಂದ ಶೋಭಿಸುತ್ತಿದ್ದೀರಿ. ನಿಮ್ಮ ಕಿವಿಗಳಲ್ಲಿ ಕುಂಡಲಗಳೂ, ತಲೆಯ ಮೇಲೆ ಸುರುಳಿಯಾದ ಮುಂಗುರುಳುಗಳೂ ರಮಣೀಯವಾಗಿ ಶೋಭಿಸುತ್ತಿವೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तुमचा वर्ण सोन्यासारखा तेजस्वी असून तुम्ही सुंदर वेशभूषेत शोभत आहात. तुमच्या कानात कुंडल आणि डोक्यावर कुरळे केस अतिशय देखणे दिसत आहेत.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তোমার গাত্রবর্ণ তপ্তকাঞ্চনের ন্যায় দীপ্তিময় এবং তুমি দিব্য পরিচ্ছদে সুশোভিত। তোমার কর্ণদ্বয়ে কুন্তল ও মস্তকে কুঞ্চিত কেশদাম পরম শোভা পাইতেছে।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આપનો વર્ણ સોના જેવો તેજસ્વી છે અને આપ સુંદર વસ્ત્રોથી શોભો છો. આપના કાનમાં કુંડળ અને મસ્તક પર ઘૂંઘરાળા વાળ મનોહર શોભે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "തങ്കത്തിന്റെ നിറത്തോടുകൂടിയ തിരുമേനിയോടെ സുന്ദരമായി വിളങ്ങുന്ന അങ്ങയുടെ കാതുകളിൽ കുണ്ഡലങ്ങളും തലയിൽ ചുരുണ്ട തലമുടിയും ശോഭിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତୁମର ଅଙ୍ଗକାନ୍ତି ସୁବର୍ଣ୍ଣ ପରି ଉଜ୍ଜ୍ୱଳ ଏବଂ ତୁମେ ଦିବ୍ୟ ବେଶରେ ଶୋଭିତ । ତୁମ କାନରେ କୁଣ୍ଡଳ ଏବଂ କୁଞ୍ଚିତ କେଶରାଶି ଅତ୍ୟନ୍ତ ମନୋହର ଦିଶୁଛି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 7,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "हाथ बज्र औ ध्वजा बिराजै । काँधे मूँज जनेऊ साजै ॥ ५ ॥",
+      "iast": "hātha bajra au dhvajā birājai । kām̐dhē mūn̐ja janēū sājai ॥ 5 ॥",
+      "transliterations": {
+        "telugu": "హాథ బజ్ర ఔ ధ్వజా బిరాజై । కాఁధే మూఁజ జనేఊ సాజై ॥ ౫ ॥",
+        "tamil": "ஹாத பஜ்ர ஔ த்வஜா பிராஜை । காँதே மூँஜ ஜநேஊ ஸாஜை ॥ ௫ ॥",
+        "kannada": "ಹಾಥ ಬಜ್ರ ಔ ಧ್ವಜಾ ಬಿರಾಜೈ । ಕಾಁಧೇ ಮೂಁಜ ಜನೇಊ ಸಾಜೈ ॥ ೫ ॥",
+        "malayalam": "ഹാഥ ബജ്ര ഔ ധ്വജാ ബിരാജൈ । കാഁധേ മൂഁജ ജനേഊ സാജൈ ॥ ൫ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "In Your hands gleam the thunderbolt and flag, upon Your shoulder rests the sacred munja grass thread.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "आपके हाथों में वज्र के समान गदा और विजय-पताका सुशोभित है, तथा आपके कन्धे पर मूंज की बनी पवित्र यज्ञोपवीत (जनेऊ) शोभा दे रही है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "నీ చేతులలో వజ్రాయుధము వంటి గదయు, ధర్మ విజయ ధ్వజమును ప్రకాశించుచున్నవి. నీ భుజముపై ముంజగడ్డితో పేనిన పవిత్ర యజ్ఞోపవీతము శోభిల్లుచున్నది.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "உன் கரங்களில் வஜ்ராயுதமும் தர்மக் கொடியும் மிளிர்கின்றன. உன் தோளில் முஞ்சைப் புல்லால் செய்யப்பட்ட புனிதமான பூணூல் அழகாகத் திகழ்கின்றது.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ನಿಮ್ಮ ಕೈಗಳಲ್ಲಿ ವಜ್ರದಂತಹ ಗದೆಯೂ, ವಿಜಯಧ್ವಜವೂ ಶೋಭಿಸುತ್ತಿವೆ. ನಿಮ್ಮ ಹೆಗಲ ಮೇಲೆ ಮುಂಜ ಹುಲ್ಲಿನಿಂದ ನೇಯ್ದ ಪವಿತ್ರವಾದ ಜನಿವಾರವು ರಂಜಿಸುತ್ತಿದೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तुमच्या हातात वज्रासारखी गदा आणि ध्वज शोभत आहे, आणि तुमच्या खांद्यावर मुंज गवताचे पवित्र जानवे शोभा देत आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তোমার করে বজ্রসম গদা ও বিজয়পতাকা বিরাজমান, এবং তোমার স্কন্ধদেশে মুঞ্জাতৃণনির্মিত পবিত্র যজ্ঞোপবীত অনুপম শোভা পাইতেছে।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આપના હાથમાં વજ્ર જેવી ગદા અને વિજય-ધ્વજ શોભે છે, તથા આપના ખભા પર મૂંજ ઘાસનું પવિત્ર જનોઈ સુંદર શોભે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "കൈകളിൽ ഗദയും ധ്വജവും ശോഭിക്കുന്ന അങ്ങയുടെ തോളിൽ മൂഞ്ഞപ്പുല്ലുകൊണ്ടുള്ള പവിത്രമായ പൂണൂൽ അഴകോടെ വിളങ്ങുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତୁମ ହାତରେ ବଜ୍ରତୁଲ୍ୟ ଗଦା ଓ ବିଜୟ ପତାକା ଶୋଭାପାଉଛି, ଏବଂ କାନ୍ଧରେ ମୁଞ୍ଜତୃଣରେ ନିର୍ମିତ ପବିତ୍ର ଯଜ୍ଞୋପବୀତ ଶୋଭିତ ହେଉଛି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 8,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "सङ्कर सुवन केसरीनन्दन । तेज प्रताप महा जग बन्दन ॥ ६ ॥",
+      "iast": "saṅkara suvana kēsarīnandana । tēja pratāpa mahā jaga bandana ॥ 6 ॥",
+      "transliterations": {
+        "telugu": "సఙ్కర సువన కేసరీనన్దన । తేజ ప్రతాప మహా జగ బన్దన ॥ ౬ ॥",
+        "tamil": "ஸங்கர ஸுவந கேஸரீநந்தந । தேஜ ப்ரதாப மஹா ஜக பந்தந ॥ ௬ ॥",
+        "kannada": "ಸಙ್ಕರ ಸುವನ ಕೇಸರೀನನ್ದನ । ತೇಜ ಪ್ರತಾಪ ಮಹಾ ಜಗ ಬನ್ದನ ॥ ೬ ॥",
+        "malayalam": "സങ്കര സുവന കേസരീനന്ദന । തേജ പ്രതാപ മഹാ ജഗ ബന്ദന ॥ ൬ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Incarnation of Shiva, son of Kesari, Your blazing glory is revered throughout the universe.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "आप भगवान् शंकर के रुद्रावतार और वानरराज केसरी के नन्दन हैं। आपका तेज और महान् पराक्रम सम्पूर्ण संसार में वन्दनीय है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "నీవు సాక్షాత్ పరమశివుని రుద్రాంశ సంభూతుడవు, కేసరి మహారాజునకు ప్రియపుత్రుడవు. నీ దివ్య తేజస్సు మరియు మహా పరాక్రమము సమస్త లోకములచే పూజింపబడుచున్నవి.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "பரமசிவனின் ருத்ர அவதாரமும், கேசரி மன்னனின் அருந்தவப் புதல்வனுமான ஆஞ்சநேயனே! உனது பேரொளியும் பெரும் வீரமும் அகில உலகத்தாலும் போற்றப்படுகின்றன.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ನೀವು ಸಾಕ್ಷಾತ್ ಪರಮಶಿವನ ರುದ್ರಾವತಾರವೂ, ಕೇಸರಿಯ ಪ್ರಿಯಪುತ್ರರೂ ಆಗಿದ್ದೀರಿ. ನಿಮ್ಮ ಅಪಾರ ತೇಜಸ್ಸು ಹಾಗೂ ಪರಾಕ್ರಮವು ಇಡೀ ಜಗತ್ತಿನಿಂದಲೇ ವಂದಿಸಲ್ಪಡುತ್ತಿದೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तुम्ही भगवान शंकरांचे रुद्रावतार आणि केसरीराजांचे सुपुत्र आहात. तुमचे तेज आणि महापराक्रम संपूर्ण जगतात वंदनीय आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তুমি সাক্ষাৎ ভগবান শংকরের রুদ্রাবতার এবং বানররাজ কেশরীর আনন্দনন্দন। তোমার দিব্য তেজ ও মহিমাময় প্রতাপ সমগ্র বিশ্বে বন্দিত।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આપ સાક્ષાત્ શંકરના રુદ્રાવતાર અને કેસરીનંદન છો. આપનું તેજ અને મહાન પરાક્રમ સમગ્ર જગતમાં વંદનીય છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "പരമശിവന്റെ രുദ്രാംശമായ അങ്ങ് കേസരിയുടെ പുത്രനാണ്. അങ്ങയുടെ തേജസ്സും വീര്യവും ലോകമെമ്പാടും വണങ്ങപ്പെടുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତୁମେ ଶଙ୍କରଙ୍କ ରୁଦ୍ରାବତାର ଏବଂ କେଶରୀନନ୍ଦନ । ତୁମର ଦିବ୍ୟ ତେଜ ଓ ମହାପରାକ୍ରମ ସମଗ୍ର ସଂସାରରେ ବନ୍ଦନୀୟ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 9,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "बिद्यावान गुनी अति चातुर । राम काज करिबे को आतुर ॥ ७ ॥",
+      "iast": "bidyāvāna gunī ati cātura । rāma kāja karibē kō ātura ॥ 7 ॥",
+      "transliterations": {
+        "telugu": "బిద్యావాన గునీ అతి చాతుర । రామ కాజ కరిబే కో ఆతుర ॥ ౭ ॥",
+        "tamil": "பித்யாவாந குநீ அதி சாதுர । ராம காஜ கரிபே கோ ஆதுர ॥ ௭ ॥",
+        "kannada": "ಬಿದ್ಯಾವಾನ ಗುನೀ ಅತಿ ಚಾತುರ । ರಾಮ ಕಾಜ ಕರಿಬೇ ಕೋ ಆತುರ ॥ ೭ ॥",
+        "malayalam": "ബിദ്യാവാന ഗുനീ അതി ചാതുര । രാമ കാജ കരിബേ കോ ആതുര ॥ ൭ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Learned, virtuous, profoundly wise, always eager to accomplish Sri Rama's work.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "आप समस्त विद्याओं के ज्ञाता, परम गुणी और अत्यन्त चतुर हैं; और प्रभु श्रीराम के कार्यों को सिद्ध करने के लिए सदा आतुर (उत्सुक) रहते हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "నీవు సకల విద్యలలో నిష్ణాతుడవు, సద్గుణసంపన్నుడవు మరియు మిక్కిలి కార్యదక్షుడవు; ప్రభువైన శ్రీరాముని కార్యములను నెరవేర్చుటకు ఎల్లప్పుడు ఉత్సాహముతో తపించువాడవు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "சகல கலைகளையும் கற்ற வித்வானே! நற்குணக் குன்றே! மகா சாமர்த்தியசாலியே! ஸ்ரீராமபிரானின் திருப்பணிகளைச் செய்து முடிக்க எப்போதும் பேரார்வத்தோடு துடிப்பவனே!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ನೀವು ಸಕಲ ವಿದ್ಯೆಗಳಲ್ಲಿ ಪ್ರವೀಣರೂ, ಸದ್ಗುಣ ಸಂಪನ್ನರೂ, ಅತ್ಯಂತ ಜಾಣರೂ ಆಗಿದ್ದು, ಪ್ರಭು ಶ್ರೀರಾಮನ ಕಾರ್ಯಗಳನ್ನು ನೆರವೇರಿಸಲು ಸದಾ ಕಾತರರಾಗಿರುತ್ತೀರಿ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तुम्ही सर्व विद्यांमध्ये पारंगत, परम गुणी आणि अत्यंत चतुर आहात; आणि प्रभू श्रीरामांची कार्ये करण्यासाठी सदैव तत्पर असता.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তুমি সকল বিদ্যায় পারদর্শী, পরম গুণবান ও পরম চতুর; এবং প্রভু শ্রীরামচন্দ্রের কার্যসাধনে সতত ব্যাকুল ও উদ্যমী।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આપ સઘળી વિદ્યાઓના જ્ઞાતા, પરમ ગુણી અને અત્યંત ચતુર છો; અને પ્રભુ શ્રીરામનું કાર્ય કરવા માટે સદાય આતુર રહો છો.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സകലവിദ്യകളും തികഞ്ഞവനും സൽഗുണസമ്പന്നനും അതിസമർത്ഥനുമായ അങ്ങ് ശ്രീരാമന്റെ സേവനത്തിൽ മുഴുകാൻ എപ്പോഴും വെമ്പൽകൊള്ളുന്നവനാണ്.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତୁମେ ସକଳ ବିଦ୍ୟାରେ ପାରଙ୍ଗମ, ପରମ ଗୁଣୀ ଓ ଅତ୍ୟନ୍ତ ଚତୁର; ଏବଂ ପ୍ରଭୁ ଶ୍ରୀରାମଙ୍କ କାର୍ଯ୍ୟ ସମ୍ପନ୍ନ କରିବାକୁ ସଦା ବ୍ୟାକୁଳ ଥାଅ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 10,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "प्रभु चरित्र सुनिबे को रसिया । राम लखन सीता मन बसिया ॥ ८ ॥",
+      "iast": "prabhu caritra sunibē kō rasiyā । rāma lakhana sītā mana basiyā ॥ 8 ॥",
+      "transliterations": {
+        "telugu": "ప్రభు చరిత్ర సునిబే కో రసియా । రామ లఖన సీతా మన బసియా ॥ ౮ ॥",
+        "tamil": "ப்ரபு சரித்ர ஸுநிபே கோ ரஸியா । ராம லகந ஸீதா மந பஸியா ॥ ௮ ॥",
+        "kannada": "ಪ್ರಭು ಚರಿತ್ರ ಸುನಿಬೇ ಕೋ ರಸಿಯಾ । ರಾಮ ಲಖನ ಸೀತಾ ಮನ ಬಸಿಯಾ ॥ ೮ ॥",
+        "malayalam": "പ്രഭു ചരിത്ര സുനിബേ കോ രസിയാ । രാമ ലഖന സീതാ മന ബസിയാ ॥ ൮ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Relishing the narration of the Lord's deeds, in Your heart ever dwell Rama, Lakshmana, and Sita.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "आप भगवान् श्रीराम की पावन कथाओं और चरित्र को सुनने के परम प्रेमी (रसिया) हैं; और श्रीराम, लक्ष्मण तथा माता सीता आपके हृदय में सदा निवास करते हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "శ్రీరామకథా సుధను గ్రోలుటయందు నీవు పరమ రసికుడవు; శ్రీరాముడు, లక్ష్మణుడు, సీతాదేవి నీ హృదయకమలమున సదా కొలువై యున్నారు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஸ்ரீராமனின் திவ்ய சரித்திரத்தைக் கேட்பதில் எல்லையற்ற ஆனந்தம் கொள்பவனே! ஸ்ரீராமர், லக்ஷ்மணர், சீதாதேவி ஆகியோரின் இதயத்தில் நீ நீங்காது வீற்றிருக்கின்றாய்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ನೀವು ಪ್ರಭು ಶ್ರೀರಾಮನ ಪಾವನ ಚರಿತ್ರೆಯನ್ನು ಕೇಳುವ ಪರಮ ರಸಿಕರಾಗಿದ್ದೀರಿ; ಮತ್ತು ಶ್ರೀರಾಮ, ಲಕ್ಷ್ಮಣ ಹಾಗೂ ಸೀತಾದೇವಿಯರು ನಿಮ್ಮ ಹೃದಯದಲ್ಲಿ ಸದಾ ನೆಲೆಸಿದ್ದಾರೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तुम्ही प्रभू श्रीरामांची कथा ऐकण्याचे परम रसिक आहात; आणि श्रीराम, लक्ष्मण व सीतामाता यांच्या हृदयात सदैव वास करता.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তুমি প্রভু শ্রীরামচন্দ্রের পবিত্র লীলাকথা শ্রবণে পরম অনুরাগী রসিক ভক্ত; এবং রাম-লক্ষণ-সীতার হৃদয়ে তুমি নিরন্তর বাস কর।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આપ ભગવાન શ્રીરામની કથા સાંભળવાના પરમ રસિક છો; અને શ્રીરામ, લક્ષ્મણ તથા સીતાજી આપના હૃદયમાં સદાય વાસ કરે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ശ്രീരാമന്റെ ദിവ്യചരിതങ്ങൾ കേൾക്കുന്നതിൽ പരമാനന്ദം കൊള്ളുന്ന അങ്ങ് രാമലക്ഷ്മണന്മാരുടെയും സീതമ്മയുടെയും ഹൃദയത്തിൽ കുടികൊള്ളുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତୁମେ ପ୍ରଭୁ ଶ୍ରୀରାମଙ୍କ ଦିବ୍ୟ ଚରିତ୍ର ଶ୍ରବଣ କରିବାରେ ପରମ ରସିକ; ଏବଂ ଶ୍ରୀରାମ, ଲକ୍ଷ୍ମଣ ଓ ମାତା ସୀତାଙ୍କ ହୃଦୟରେ ସଦା ବିରାଜମାନ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 11,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "सूक्ष्म रूप धरि सियहिं दिखावा । बिकट रूप धरि लङ्क जरावा ॥ ९ ॥",
+      "iast": "sūkṣma rūpa dhari siyahiṁ dikhāvā । bikaṭa rūpa dhari laṅka jarāvā ॥ 9 ॥",
+      "transliterations": {
+        "telugu": "సూక్ష్మ రూప ధరి సియహిం దిఖావా । బికట రూప ధరి లఙ్క జరావా ॥ ౯ ॥",
+        "tamil": "ஸூக்ஷ்ம ரூப தரி ஸியஹிம் திகாவா । பிகட ரூப தரி லங்க ஜராவா ॥ ௯ ॥",
+        "kannada": "ಸೂಕ್ಷ್ಮ ರೂಪ ಧರಿ ಸಿಯಹಿಂ ದಿಖಾವಾ । ಬಿಕಟ ರೂಪ ಧರಿ ಲಙ್ಕ ಜರಾವಾ ॥ ೯ ॥",
+        "malayalam": "സൂക്ഷ്മ രൂപ ധരി സിയഹിം ദിഖാവാ । ബികട രൂപ ധരി ലങ്ക ജരാവാ ॥ ൯ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Assuming a minute form You appeared before Mother Sita, assuming a colossal form You burnt Lanka.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "आपने अत्यंत सूक्ष्म रूप धारण करके माता सीता को अपने दर्शन कराए, और विकराल (विशाल) रूप धारण करके सोने की लंका को जलाकर भस्म कर दिया।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "నీవు అతి సూక్ష్మ రూపమును ధరించి అశోకవనమున సీతమ్మకు దర్శనమిచ్చితివి, మరియు భయంకరమైన బ్రహ్మాండ రూపమును ధరించి రావణుని లంకా నగరమును దహించివేసితివి.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அசோகவனத்தில் மிக நுண்ணிய உருவம் கொண்டு அன்னை சீதைக்குக் காட்சியளித்தாய்; பின்னர் விஸ்வரூபம் எடுத்து பொன் லங்கையைத் தீக்கிரையாக்கினாய்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಅತ್ಯಂತ ಸೂಕ್ಷ್ಮ ರೂಪವನ್ನು ಧರಿಸಿ ಸೀತಾದೇವಿಗೆ ದರ್ಶನ ನೀಡಿದಿರಿ; ತದನಂತರ ವಿಕರಾಳ ಮಹಾರೂಪವನ್ನು ತಾಳಿ ಲಂಕಾನಗರಿಯನ್ನು ಸುಟ್ಟು ಭಸ್ಮಮಾಡಿದಿರಿ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तुम्ही अत्यंत सूक्ष्म रूप घेऊन सीतामातेला दर्शन दिले, आणि विक्राळ रूप धारण करून सोन्याची लंका जाळून टाकली.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তুমি অতি ক্ষুদ্র রূপ ধারণ করিয়া মাতা সীতাকে দর্শন দান করিলে, এবং বিকট বিশাল রূপ পরিগ্রহ করিয়া রাবণের লঙ্কাপুরী দগ্ধ করিলে।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આપે અતિ સૂક્ષ્મ રૂપ ધરીને માતા સીતાજીને દર્શન આપ્યાં, અને વિકરાળ રૂપ ધારણ કરીને સુવર્ણ લંકાને બાળીને ભસ્મ કરી દીધી.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അതിസൂക്ഷ്മമായ രൂപമെടുത്ത് സീതാദേവിക്ക് ദർശനം നൽകിയ അങ്ങ് പിന്നീട് ഭയങ്കരമായ വിശ്വരൂപം പൂണ്ട് ലങ്കയെ അഗ്നിക്കിരയാക്കി.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତୁମେ ଅତି କ୍ଷୁଦ୍ର ରୂପ ଧାରଣ କରି ମାତା ସୀତାଙ୍କୁ ଦର୍ଶନ ଦେଲ, ଏବଂ ବିକରାଳ ରୂପ ଧାରଣ କରି ଲଙ୍କାପୁରୀକୁ ଭସ୍ମ କରିଦେଲ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 12,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "भीम रूप धरि असुर सँहारे । रामचन्द्र के काज सँवारे ॥ १० ॥",
+      "iast": "bhīma rūpa dhari asura sam̐hārē । rāmacandra kē kāja sam̐vārē ॥ 10 ॥",
+      "transliterations": {
+        "telugu": "భీమ రూప ధరి అసుర సఁహారే । రామచన్ద్ర కే కాజ సఁవారే ॥ ౧౦ ॥",
+        "tamil": "பீம ரூப தரி அஸுர ஸँஹாரே । ராமசந்த்ர கே காஜ ஸँவாரே ॥ ௧௦ ॥",
+        "kannada": "ಭೀಮ ರೂಪ ಧರಿ ಅಸುರ ಸಁಹಾರೇ । ರಾಮಚನ್ದ್ರ ಕೇ ಕಾಜ ಸಁವಾರೇ ॥ ೧೦ ॥",
+        "malayalam": "ഭീമ രൂപ ധരി അസുര സഁഹാരേ । രാമചന്ദ്ര കേ കാജ സഁവാരേ ॥ ൧൦ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Assuming a formidable form You destroyed demons, successfully carrying out all the missions of Sri Ramachandra.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "आपने भीमकाय (विशाल) रूप धारण करके दुष्ट राक्षसों का संहार किया और प्रभु श्री रामचन्द्र जी के समस्त कार्यों को कुशलतापूर्वक संवार दिया।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "భీమరూపమును దాల్చి దుష్ట రాక్షసులను సంహరించి, శ్రీరామచంద్రప్రభువు యొక్క సకల కార్యములను దిగ్విజయముగా నెరవేర్చితివి.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "பிரம்மாண்டமான தோற்றம் கொண்டு கொடிய அசுரர்களை அழித்தொழித்தாய்; ஸ்ரீராமசந்திர மூர்த்தியின் காரியங்களை வெற்றிகரமாக முடித்துக் கொடுத்தாய்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಭೀಮಾಕಾರದ ಬೃಹತ್ ರೂಪವನ್ನು ಧರಿಸಿ ರಾಕ್ಷಸರನ್ನು ಸಂಹರಿಸಿದಿರಿ ಮತ್ತು ಪ್ರಭು ಶ್ರೀರಾಮಚಂದ್ರರ ಎಲ್ಲ ಕಾರ್ಯಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ ನೆರವೇರಿಸಿದಿರಿ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तुम्ही महाकाय रूप घेऊन दुष्ट असुरांचा संहार केला आणि प्रभू श्रीरामांची सर्व कार्ये सिद्धीस नेली.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তুমি বিশাল ভীমরূপ ধারণ করিয়া দুর্ধর্ষ অসুরদলকে বিনাশ করিলে এবং শ্রীরামচন্দ্রের সকল কার্য নিখুঁতভাবে সম্পন্ন করিলে।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આપે વિશાળ રૂપ ધારણ કરીને દુષ્ટ રાક્ષસોનો સંહાર કર્યો અને પ્રભુ શ્રીરામચંદ્રજીના તમામ કાર્યોને સફળ બનાવ્યા.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഭീമാകാരമായ രൂപംപൂണ്ട് രാക്ഷസന്മാരെ നിഗ്രഹിച്ച് ശ്രീരാമചന്ദ്രന്റെ സകല കാര്യങ്ങളെയും അങ്ങ് മംഗളമായി നിറവേറ്റി.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତୁମେ ଭୀମକାୟ ରୂପ ଧାରଣ କରି ଅସୁରମାନଙ୍କୁ ସଂହାର କଲ ଏବଂ ଶ୍ରୀରାମଚନ୍ଦ୍ରଙ୍କ ସମସ୍ତ କାର୍ଯ୍ୟ ସଫଳତାର ସହ ସମ୍ପାଦନ କଲ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 13,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "लाय सजीवन लखन जियाये । श्रीरघुबीर हरषि उर लाये ॥ ११ ॥",
+      "iast": "lāya sajīvana lakhana jiyāyē । śrīraghubīra haraṣi ura lāyē ॥ 11 ॥",
+      "transliterations": {
+        "telugu": "లాయ సజీవన లఖన జియాయే । శ్రీరఘుబీర హరషి ఉర లాయే ॥ ౧౧ ॥",
+        "tamil": "லாய ஸஜீவந லகந ஜியாயே । ஶ்ரீரகுபீர ஹரஷி உர லாயே ॥ ௧௧ ॥",
+        "kannada": "ಲಾಯ ಸಜೀವನ ಲಖನ ಜಿಯಾಯೇ । ಶ್ರೀರಘುಬೀರ ಹರಷಿ ಉರ ಲಾಯೇ ॥ ೧೧ ॥",
+        "malayalam": "ലായ സജീവന ലഖന ജിയായേ । ശ്രീരഘുബീര ഹരഷി ഉര ലായേ ॥ ൧൧ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Bringing the Sanjivani herb You revived Lakshmana, whereupon Sri Rama joyfully embraced You.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "आप संजीवनी बूटी लाकर लक्ष्मण जी को नया जीवन प्रदान किया, जिससे परम हर्षित होकर श्री रघुनाथ जी ने आपको अपने हृदय से लगा लिया।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "సంజీవని మూలికను తెచ్చి లక్ష్మణుని ప్రాణములను కాపాడితివి; ఆ ఆనందముతో రఘునాథుడైన శ్రీరాముడు నిన్ను పరవశముతో ఆలింగనము చేసికొనెను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "சஞ்சீவினி மூலிகையைக் கொண்டுவந்து லக்ஷ்மணனின் உயிரைக் காப்பாற்றினாய்; அதனால் எல்லையற்ற மகிழ்ச்சியடைந்த ஸ்ரீராமர் உன்னைத் தன் மார்போடு தழுவிக்கொண்டார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಸಂಜೀವಿನಿ ಮೂಲಿಕೆಯನ್ನು ತಂದು ಲಕ್ಷ್ಮಣನ ಪ್ರಾಣವನ್ನು ಉಳಿಸಿದಿರಿ; ಇದರಿಂದ ಪರಮಾನಂದಭರಿತರಾದ ಶ್ರೀರಾಮಚಂದ್ರರು ನಿಮ್ಮನ್ನು ಪ್ರೀತಿಯಿಂದ ಎದೆಗಪ್ಪಿಕೊಂಡರು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तुम्ही संजीवनी वनस्पती आणून लक्ष्मणाचे प्राण वाचवले, ज्यामुळे अत्यंत आनंदित होऊन प्रभू श्रीरामांनी तुम्हाला प्रेमाने हृदयाशी धरले.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তুমি সঞ্জীবনী লতা আনয়ন করিয়া লক্ষ্মণকে পুনর্জীবন দান করিলে; তাহাতে পরম আনন্দিত হইয়া শ্রীরামচন্দ্র তোমাকে গাঢ় আলিঙ্গনে বক্ষে টানিয়া লইলেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આપ સંજીવની બૂટી લાવીને લક્ષ્મણજીને જીવતદાન આપ્યું, જેથી અત્યંત હર્ષિત થઈને શ્રીરામચંદ્રજીએ આપને હૃદય સરસા ચાંપી લીધા.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സഞ്ജീവനി കൊണ്ടുവന്ന് ലക്ഷ്മണന്റെ ജീവൻ രക്ഷിച്ചപ്പോൾ സന്തോഷാതിരേകത്താൽ ശ്രീരാമൻ അങ്ങയെ വാരിപ്പുണർന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତୁମେ ସଞ୍ଜୀବନୀ ବୃକ୍ଷ ଆଣି ଲକ୍ଷ୍ମଣଙ୍କ ପ୍ରାଣ ବଞ୍ଚାଇଲ, ଯାହା ଦେଖି ପରମ ଆନନ୍ଦରେ ଶ୍ରୀରାମ ତୁମକୁ ହୃଦୟରେ ଆଲିଙ୍ଗନ କଲେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 14,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "रघुपति कीन्ही बहुत बड़ाई । तुम मम प्रिय भरतहि सम भाई ॥ १२ ॥",
+      "iast": "raghupati kīnhī bahuta baṛāī । tuma mama priya bharatahi sama bhāī ॥ 12 ॥",
+      "transliterations": {
+        "telugu": "రఘుపతి కీన్హీ బహుత బड़ాఈ । తుమ మమ ప్రియ భరతహి సమ భాఈ ॥ ౧౨ ॥",
+        "tamil": "ரகுபதி கீந்ஹீ பஹுத பஃட²ாஈ । தும மம ப்ரிய பரதஹி ஸம பாஈ ॥ ௧௨ ॥",
+        "kannada": "ರಘುಪತಿ ಕೀನ್ಹೀ ಬಹುತ ಬಡ಼ಾಈ । ತುಮ ಮಮ ಪ್ರಿಯ ಭರತಹಿ ಸಮ ಭಾಈ ॥ ೧೨ ॥",
+        "malayalam": "രഘുപതി കീന്ഹീ ബഹുത ബड़ാഈ । തുമ മമ പ്രിയ ഭരതഹി സമ ഭാഈ ॥ ൧൨ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Raghupati praised You lavishly, saying: 'You are as dear to Me as My brother Bharata!'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "श्री रघुनाथ जी ने आपकी मुक्तकंठ से भूरि-भूरि प्रशंसा की और कहा: 'हे हनुमान! तुम मुझे मेरे भाई भरत के समान ही परम प्रिय हो!'",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "శ్రీరామచంద్రుడు నిన్ను ఎంతగానో ప్రశంసించుచు: 'ఓ హనుమా! నీవు నాకు నా ప్రాణసమానుడైన సోదరుడు భరతునితో సమానముగా ప్రియమైనవాడవు' అని పలికెను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஸ்ரீராமர் உன்னைப் பெரிதும் பாராட்டி: 'நீ எனக்கு என் அருமைத் தம்பி பரதனைப் போன்ற அன்புச் சகோதரன்!' என்று மனமுருகிக் கூறினார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಶ್ರೀ ರಾಘವೇಂದ್ರನು ನಿಮ್ಮನ್ನು ಅಪಾರವಾಗಿ ಹೊಗಳಿ: 'ಹೇ ಹನುಮಂತ, ನೀನು ನನಗೆ ನನ್ನ ಪ್ರೀತಿಯ ಸಹೋದರ ಭರತನಿಗೆ ಸಮಾನನಾದ ಪ್ರಿಯ ಬಂಧು!' ಎಂದು ನುಡಿದರು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "श्रीरामांनी तुमची मनभरून स्तुती केली आणि म्हणाले: 'हे हनुमंता, तू मला माझ्या बंधू भरतासारखाच अत्यंत प्रिय आहेस!'",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "রঘুপতি তোমার ভূয়সী প্রশংসা করিয়া কহিলেন: 'হে হনুমান! তুমি আমার সহোদর ভরতসম পরম প্রিয় ভাই!'",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "શ્રી રઘુનાથજીએ આપની ખૂબ પ્રશંસા કરી અને કહ્યું: 'હે હનુમાન! તમે મને મારા ભાઈ ભરત સમાન જ પરમ પ્રિય છો!'",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ശ്രീരാമൻ അങ്ങയെ വളരെയധികം പുകഴ്ത്തിക്കൊണ്ട്: 'അങ്ങ് എനിക്ക് എന്റെ അനുജനായ ഭരതനെപ്പോലെ പ്രിയപ്പെട്ടവനാണ്' എന്ന് അരുളിച്ചെയ്തു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଶ୍ରୀରଘୁନାଥ ତୁମର ଅଶେଷ ପ୍ରଶଂସା କରି କହିଲେ: 'ହେ ହନୁମାନ ! ତୁମେ ମୋତେ ମୋର ଭାଇ ଭରତଙ୍କ ସଦୃଶ ଅତ୍ୟନ୍ତ ପ୍ରିୟ !'",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 15,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "सहस बदन तुम्हरो जस गावैं । अस कहि श्रीपति कण्ठ लगावैं ॥ १३ ॥",
+      "iast": "sahasa badana tumharō jasa gāvaiṁ । asa kahi śrīpati kaṇṭha lagāvaiṁ ॥ 13 ॥",
+      "transliterations": {
+        "telugu": "సహస బదన తుమ్హరో జస గావైం । అస కహి శ్రీపతి కణ్ఠ లగావైం ॥ ౧౩ ॥",
+        "tamil": "ஸஹஸ பதந தும்ஹரோ ஜஸ காவைம் । அஸ கஹி ஶ்ரீபதி கண்ட லகாவைம் ॥ ௧௩ ॥",
+        "kannada": "ಸಹಸ ಬದನ ತುಮ್ಹರೋ ಜಸ ಗಾವೈಂ । ಅಸ ಕಹಿ ಶ್ರೀಪತಿ ಕಣ್ಠ ಲಗಾವೈಂ ॥ ೧೩ ॥",
+        "malayalam": "സഹസ ബദന തുമ്ഹരോ ജസ ഗാവൈം । അസ കഹി ശ്രീപതി കണ്ഠ ലഗാവൈം ॥ ൧൩ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'May the thousand-mouthed Shesha sing Your renown!' Saying this, the Lord of Sri embraced You.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "'हजार मुख वाले शेषनाग तुम्हारे यश का गान करते हैं'—ऐसा कहकर लक्ष्मीपति भगवान् श्रीराम ने आपको पुनः अपने कंठ से लगा लिया।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "'వేయి పడగల ఆదిశేషుడు నీ యశస్సును గానము చేయుగాక' అని పలుకుచు, లక్ష్మీపతియైన శ్రీరాముడు నిన్ను ప్రేమతో తన కంఠమున కౌగిలించుకొనెను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "'ஆயிரமாயிரம் தலைகளையுடைய ஆதிசேஷனே உனது புகழைப் பாடுவான்' என்று கூறி, லட்சுமிநாதனான ஸ்ரீராமர் உன்னை அன்போடு தழுவிக்கொண்டார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "'ಸಾವಿರ ಮುಖಗಳ ಶೇಷನಾಗನು ನಿನ್ನ ಯಶಸ್ಸನ್ನು ಕೀರ್ತಿಸಲಿ' ಎಂದು ಹೇಳಿ ಶ್ರೀಪತಿಯಾದ ಶ್ರೀರಾಮನು ನಿಮ್ಮನ್ನು ಪ್ರೇಮದಿಂದ ಅಪ್ಪಿಕೊಂಡರು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "'हजार मुखांचा शेषनाग तुझ्या यशाचे गुणगान करतो' असे म्हणून श्रीरामांनी तुम्हाला पुन्हा प्रेमाने आलिंगन दिले.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "'সহস্রবদনা শেষনাগও তোমার যশোগান করিবেন'—এই বলিয়া লক্ষ্মীপতি শ্রীরামচন্দ্র তোমাকে প্রীতির সহিত বক্ষে জড়াইয়া ধরিলেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "'હજાર મુખવાળા શેષનાગ આપના યશનું ગાન કરે છે'—એમ કહીને લક્ષ્મીપતિ શ્રીરામે આપને સ્નેહપૂર્વક ગળે લગાવી લીધા.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "'ആയിരം തലയുള്ള അനന്തൻ അങ്ങയുടെ യശസ്സിനെ പാടിപ്പുകഴ്ത്തട്ടെ' എന്ന് അരുളിച്ചെയ്ത് ലക്ഷ്മീപതിയായ ഭഗവാൻ അങ്ങയെ വീണ്ടും പുണർന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "'ହଜାର ମୁଖ ଥିବା ଶେଷନାଗ ତୁମର ଯଶ ଗାନ କରନ୍ତି'—ଏହା କହି ଶ୍ରୀପତି ରାମ ତୁମକୁ ପୁନର୍ବାର ଆଲିଙ୍ଗନ କଲେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 16,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "सनकादिक ब्रह्मादि मुनीसा । नारद सारद सहित अहीसा ॥ १४ ॥",
+      "iast": "sanakādika brahmādi munīsā । nārada sārada sahita ahīsā ॥ 14 ॥",
+      "transliterations": {
+        "telugu": "సనకాదిక బ్రహ్మాది మునీసా । నారద సారద సహిత అహీసా ॥ ౧౪ ॥",
+        "tamil": "ஸநகாதிக ப்ரஹ்மாதி முநீஸா । நாரத ஸாரத ஸஹித அஹீஸா ॥ ௧௪ ॥",
+        "kannada": "ಸನಕಾದಿಕ ಬ್ರಹ್ಮಾದಿ ಮುನೀಸಾ । ನಾರದ ಸಾರದ ಸಹಿತ ಅಹೀಸಾ ॥ ೧೪ ॥",
+        "malayalam": "സനകാദിക ബ്രഹ്മാദി മുനീസാ । നാരദ സാരദ സഹിത അഹീസാ ॥ ൧൪ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Sages like Sanaka, Brahma, Narada, Saraswati, and the serpent king sing Your praises.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "सनक आदि महामुनि, ब्रह्मा आदि देवगण, देवर्षि नारद, वाणी की देवी सरस्वती और शेषनाग सहित समस्त मुनीश्वर...",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "సనక, సనందనాది బ్రహ్మర్షులు, బ్రహ్మాది దేవతలు, నారదుడు, సరస్వతీదేవి এবং ఆదిశేషునితో కూడిన సమస్త మునీశ్వరులు...",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "சனகர் முதலான தவமுனிவர்களும், பிரம்மா முதலான தேவர்களும், நாரதர், சரஸ்வதி தேவி மற்றும் ஆதிசேஷனும் கூட...",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಸನಕಾದಿ ಪರಮ ಮುನಿಗಳು, ಬ್ರಹ್ಮ ಮೊದಲಾದ ದೇವತೆಗಳು, ನಾರದ, ಸರಸ್ವತೀದೇವಿ ಹಾಗೂ ಶೇಷನಾಗನ ಸಮೇತ ಸಮಸ್ತ ಋಷಿಮುನಿಗಳು...",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "सनकादिक महर्षी, ब्रह्मा इत्यादी देव, नारद, सरस्वती देवी आणि शेषनागासहित सर्व मुनीश्वर...",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "সনকাদি পরম ঋষিগণ, ব্রহ্মা প্রমুখ প্রধান দেবমণ্ডলী, দেবর্ষি নারদ, বাগ্দেবী সরস্বতী এবং শেষনাগ সহ নিখিল মুনিবৃন্দ...",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "સનકાદિ મહામુનિઓ, બ્રહ્માદિ દેવતાઓ, દેવર્ષિ નારદ, સરસ્વતી દેવી અને શેષનાગ સહિત સર્વ ઋષિગણ...",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സനകാദി മഹർഷിമാരും ബ്രഹ്മാവ് തുടങ്ങിയ ദേവന്മാരും നാരദനും സരസ്വതീദേവിയും അനന്തനും...",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସନକ ଆଦି ମହାମୁନି, ବ୍ରହ୍ମାଦି ଦେବତା, ନାରଦ, ସରସ୍ୱତୀ ଏବଂ ଶେଷନାଗଙ୍କ ସମେତ ସମସ୍ତ ମୁନିଗଣ...",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 17,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "जम कुबेर दिगपाल जहाँ ते । कबि कोबिद कहि सकैं कहाँ ते ॥ १५ ॥",
+      "iast": "jama kubēra digapāla jahām̐ tē । kabi kōbida kahi sakaiṁ kahām̐ tē ॥ 15 ॥",
+      "transliterations": {
+        "telugu": "జమ కుబేర దిగపాల జహాఁ తే । కబి కోబిద కహి సకైం కహాఁ తే ॥ ౧౫ ॥",
+        "tamil": "ஜம குபேர திகபால ஜஹாँ தே । கபி கோபித கஹி ஸகைம் கஹாँ தே ॥ ௧௫ ॥",
+        "kannada": "ಜಮ ಕುಬೇರ ದಿಗಪಾಲ ಜಹಾಁ ತೇ । ಕಬಿ ಕೋಬಿದ ಕಹಿ ಸಕೈಂ ಕಹಾಁ ತೇ ॥ ೧೫ ॥",
+        "malayalam": "ജമ കുബേര ദിഗപാല ജഹാഁ തേ । കബി കോബിദ കഹി സകൈം കഹാഁ തേ ॥ ൧൫ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Yama, Kubera, and the guardians of directions—how can worldly poets and scholars describe Your full glory?",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "यमराज, कुबेर और समस्त दिशाओं के दिक्पाल—जब वे सब भी आपकी महिमा का पूरा वर्णन नहीं कर सकते, तो फिर सांसारिक कवि और विद्वान् भला कहाँ तक कह सकते हैं!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "యముడు, కుబేరుడు, అష్టదిక్పాలకులు సైతము నీ మహిమను పూర్తిగా వర్ణింపజాలనప్పుడు, సామాన్య కవులు మరియు పండితులు ఎంతమాత్రము చెప్పగలరు!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "எமதர்மன், குபேரன், திசைக்காவலர்கள் ஆகியோராலேயே உனது பெருமையை முழுமையாக விவரிக்க முடியாத போது, உலகக் கவிஞர்களும் அறிஞர்களும் எவ்வாறு விவரிக்க இயலும்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಯಮರಾಜ, ಕುಬೇರ ಮತ್ತು ಅಷ್ಟದಿಕ್ಪಾಲಕರೂ ಕೂಡ ನಿಮ್ಮ ಮಹಿಮೆಯನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ವರ್ಣಿಸಲಾಗದಿದ್ದಾಗ, ಲೌಕಿಕ ಕವಿಗಳು ಮತ್ತು ಪಂಡಿತರು ಎಷ್ಟೆಂದು ತಾನೇ ವರ್ಣಿಸಬಲ್ಲರು!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "यमराज, कुबेर आणि दिशांचे रक्षक दिक्पाल—जेव्हा हे सर्वही तुमच्या महिमेचे पूर्ण वर्णन करू शकत नाहीत, तेव्हा सामान्य कवी आणि विद्वानांची काय कथा!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যমরাজ, কুবের ও অষ্টদিগ্পালগণও যেখানে তোমার মহিমার সম্যক বর্ণনে অসমর্থ, তথায় প্রাকৃত কবি ও পণ্ডিতেরা কিরূপে তাহা প্রকাশ করিবে!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "યમરાજ, કુબેર અને સર્વ દિક્પાલો પણ જ્યારે આપની મહિમાનું સંપૂર્ણ વર્ણન નથી કરી શકતા, તો પછી સામાન્ય કવિઓ અને વિદ્વાનો ક્યાંથી કરી શકે!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "യമനും കുബേരനും ദിക്പാലകന്മാരുംപോലും അങ്ങയുടെ മഹിമ പൂർണ്ണമായി വർണ്ണിക്കാൻ കഴിയാത്തപ്പോൾ ലൗകികരായ കവികൾക്കും പണ്ഡിതന്മാർക്കും അത് എങ്ങനെ സാധിക്കും!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯମରାଜ, କୁବେର ଓ ଦିଗପାଳମାନେ ଯେଉଁଠି ଆପଣଙ୍କ ମହିମାର ସମ୍ପୂର୍ଣ୍ଣ ବର୍ଣ୍ଣନା କରିପାରନ୍ତି ନାହିଁ, ସେଠାରେ ସାଧାରଣ କବି ଓ ପଣ୍ଡିତମାନେ କିପରି ବା କହିପାରିବେ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 18,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "तुम उपकार सुग्रीवहिं कीन्हा । राम मिलाय राजपद दीन्हा ॥ १६ ॥",
+      "iast": "tuma upakāra sugrīvahiṁ kīnhā । rāma milāya rājapada dīnhā ॥ 16 ॥",
+      "transliterations": {
+        "telugu": "తుమ ఉపకార సుగ్రీవహిం కీన్హా । రామ మిలాయ రాజపద దీన్హా ॥ ౧౬ ॥",
+        "tamil": "தும உபகார ஸுக்ரீவஹிம் கீந்ஹா । ராம மிலாய ராஜபத தீந்ஹா ॥ ௧௬ ॥",
+        "kannada": "ತುಮ ಉಪಕಾರ ಸುಗ್ರೀವಹಿಂ ಕೀನ್ಹಾ । ರಾಮ ಮಿಲಾಯ ರಾಜಪದ ದೀನ್ಹಾ ॥ ೧೬ ॥",
+        "malayalam": "തുമ ഉപകാര സുഗ്രീവഹിം കീന്ഹാ । രാമ മിലായ രാജപദ ദീന്ഹാ ॥ ൧൬ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "You rendered great service to Sugriva: introducing him to Sri Rama and restoring his royal throne.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "आपने सुग्रीव पर महान् उपकार किया—उन्हें भगवान् श्रीराम से मिलाया और उन्हें किष्किन्धा का राजपद दिलवाया।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "నీవు సుగ్రీవునికి మహోపకారము చేసితివి—అతనిని శ్రీరామునితో కలిపి, అతనికి కిష్కింధా రాజ్యమును సమకూర్చి పెట్టితివి.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "நீ சுக்ரீவனுக்குப் பெருவுபகாரம் செய்தாய்—அவனை ஸ்ரீராமபிரானோடு நட்பு கொள்ளச் செய்து, கிஷ்கிந்தையின் அரச பதவியைப் பெற்றுத் தந்தாய்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ನೀವು ಸುಗ್ರೀವನಿಗೆ ಮಹೋಪಕಾರವನ್ನು ಮಾಡಿದಿರಿ—ಅವನನ್ನು ಶ್ರೀರಾಮನೊಂದಿಗೆ ಸೇರಿಸಿ ಕಿಷ್ಕಿಂಧೆಯ ರಾಜಪದವಿಯನ್ನು ಕೊಡಿಸಿದಿರಿ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तुम्ही सुग्रीवावर मोठा उपकार केला—त्याची श्रीरामांशी भेट घडवून दिली आणि त्याला किष्किंधेचे राज्य मिळवून दिले.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তুমি সুগ্রীবের পরম উপকার সাধন করিলে—তাহাকে শ্রীরামচন্দ্রের সহিত মিলিত করিয়া কিষ্কিন্ধার সিংহাসন ও রাজপদ প্রদান করিলে।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આપે સુગ્રીવ પર મોટો ઉપકાર કર્યો—તેમને શ્રીરામ સાથે મિલાવ્યા અને તેમને કિષ્કિંધાનું રાજપદ અપાવ્યું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സുഗ്രീവനെ ശ്രീരാമനുമായി ബന്ധിപ്പിച്ച് കിഷ്കിന്ധയുടെ രാജപദവി നേടിക്കൊടുത്ത് അങ്ങ് അദ്ദേഹത്തിന് വലിയ ഉപകാരം ചെയ്തു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତୁମେ ସୁଗ୍ରୀବଙ୍କ ଉପରେ ମହାନ୍ ଉପକାର କଲ—ତାଙ୍କୁ ଶ୍ରୀରାମଙ୍କ ସହ ମିଳାଇ କିଷ୍କିନ୍ଧାର ରାଜପଦ ପ୍ରଦାନ କଲ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 19,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "तुम्हरो मन्त्र बिभीषन माना । लङ्केस्वर भए सब जग जाना ॥ १७ ॥",
+      "iast": "tumharō mantra bibhīṣana mānā । laṅkēsvara bhaē saba jaga jānā ॥ 17 ॥",
+      "transliterations": {
+        "telugu": "తుమ్హరో మన్త్ర బిభీషన మానా । లఙ్కేస్వర భఏ సబ జగ జానా ॥ ౧౭ ॥",
+        "tamil": "தும்ஹரோ மந்த்ர பிபீஷந மாநா । லங்கேஸ்வர பஏ ஸப ஜக ஜாநா ॥ ௧௭ ॥",
+        "kannada": "ತುಮ್ಹರೋ ಮನ್ತ್ರ ಬಿಭೀಷನ ಮಾನಾ । ಲಙ್ಕೇಸ್ವರ ಭಏ ಸಬ ಜಗ ಜಾನಾ ॥ ೧೭ ॥",
+        "malayalam": "തുമ്ഹരോ മന്ത്ര ബിഭീഷന മാനാ । ലങ്കേസ്വര ഭഏ സബ ജഗ ജാനാ ॥ ൧൭ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Vibhishana heeded Your counsel, becoming the Lord of Lanka, as known to the whole world.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "आपके परामर्श को विभीषण ने स्वीकार किया, जिसके फलस्वरूप वे लंका के अधिपति बने; यह बात सम्पूर्ण संसार में विख्यात है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "నీ హితబోధను విభీషణుడు స్వీకరించెను, దానిఫలముగా అతడు లంకాధిపతియైన సంగతి సమస్త లోకమునకు తెలిసినదే.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "உனது நல்லுரையை விபீஷணன் ஏற்றுக்கொண்டான்; அதன் பயனாய் அவன் லங்கையின் மன்னனானான் என்பதை அகில உலகமும் அறியும்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ನಿಮ್ಮ ಹಿತವಚನವನ್ನು ವಿಭೀಷಣನು ಪಾಲಿಸಿದನು, ಅದರ ಫಲವಾಗಿ ಅವನು ಲಂಕಾಧಿಪತಿಯಾದ ಸಂಗತಿಯು ಇಡೀ ಜಗತ್ತಿಗೇ ತಿಳಿದಿದೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तुमचा उपदेश विभीषणाने मानला, ज्यामुळे तो लंकेचा राजा बनला; हे संपूर्ण जग जाणते.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তোমার হিতোপদেশ শিরোধার্য করিয়া বিভীষণ লঙ্কার রাজপদে অভিষিক্ত হইল; ইহা সর্বলোকবিদিত।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આપની સલાહ વિભીષણે માની, જેના કારણે તેઓ લંકાના રાજા બન્યા; આ વાત સમગ્ર સંસાર જાણે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അങ്ങയുടെ ഉപദേശം സ്വീകരിച്ചതിനാലാണ് വിഭീഷണൻ ലങ്കാരാജാവായതെന്ന കാര്യം ലോകമെമ്പാടും പ്രശസ്തമാണ്.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତୁମର ଉପଦେଶ ବିଭୀଷଣ ମାନିଲେ, ଯାହାର ଫଳରେ ସେ ଲଙ୍କାର ରାଜା ହେଲେ; ଏହା ସମସ୍ତ ସଂସାର ଜାଣେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 20,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "जुग सहस्र जोजन पर भानू । लील्यो ताहि मधुर फल जानू ॥ १८ ॥",
+      "iast": "juga sahasra jōjana para bhānū । līlyō tāhi madhura phala jānū ॥ 18 ॥",
+      "transliterations": {
+        "telugu": "జుగ సహస్ర జోజన పర భానూ । లీల్యో తాహి మధుర ఫల జానూ ॥ ౧౮ ॥",
+        "tamil": "ஜுக ஸஹஸ்ர ஜோஜந பர பாநூ । லீல்யோ தாஹி மதுர பல ஜாநூ ॥ ௧௮ ॥",
+        "kannada": "ಜುಗ ಸಹಸ್ರ ಜೋಜನ ಪರ ಭಾನೂ । ಲೀಲ್ಯೋ ತಾಹಿ ಮಧುರ ಫಲ ಜಾನೂ ॥ ೧೮ ॥",
+        "malayalam": "ജുഗ സഹസ്ര ജോജന പര ഭാനൂ । ലീല്യോ താഹി മധുര ഫല ജാനൂ ॥ ൧൮ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "The sun situated thousands of leagues away—You swallowed it, mistaking it for a sweet fruit!",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हजारों योजन की दूरी पर स्थित सूर्य को आपने बाल्यावस्था में एक मीठा लाल फल समझकर अनायास ही निगल लिया था।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "వేల కొలది యోజనముల దూరమున నున్న సూర్యభగవానుని, బాల్యమున ఒక మధురమైన ఎర్రని పండుగా భావించి సులభముగా మ్రింగివేసితివి.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஆயிரக்கணக்கான யோசனை தூரத்தில் உள்ள சூரியனை, குழந்தை பருவத்தில் சுவையான செம்பழம் என்று கருதி ஒரே தாவலில் விழுங்கினாய்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಸಾವಿರಾರು ಯೋಜನಗಳ ದೂರದಲ್ಲಿದ್ದ ಸೂರ್ಯನನ್ನು ಬಾಲ್ಯದಲ್ಲಿ ಒಂದು ಸಿಹಿಯಾದ ಕೆಂಪು ಹಣ್ಣೆಂದು ಭಾವಿಸಿ ಲೀಲಾಜಾಲವಾಗಿ ನುಂಗಿಬಿಟ್ಟಿರಿ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हजारो योजनांच्या अंतरावर असलेल्या सूर्याला तुम्ही बालवयात एक गोड फळ समजून सहज गिळून टाकले होते.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "সহস্র যোজন দূরে অবস্থিত প্রখর সূর্যদেবকে তুমি বাল্যকালে সুমিষ্ট রক্তিম ফলজ্ঞানে অনায়াসে গ্রাস করিয়াছিলে।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હજારો યોજન દૂર રહેલા સૂર્યને આપે બાળપણમાં એક મીઠું ફળ સમજીને સહજતાથી ગળી લીધો હતો.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അനേകായിരം യോജന ദൂരത്തിലുള്ള സൂര്യനെ ബാല്യത്തിൽ മധുരമുള്ള ഒരു പഴമാണെന്നു വിചാരിച്ച് അങ്ങ് നിഷ്പ്രയാസം വിഴുങ്ങി.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହଜାର ହଜାର ଯୋଜନ ଦୂରରେ ଥିବା ସୂର୍ଯ୍ୟଙ୍କୁ ତୁମେ ବାଲ୍ୟକାଳରେ ମିଠା ଲାଲ ଫଳ ଭାବି ସହଜରେ ଗିଳି ଦେଇଥିଲ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 21,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "प्रभु मुद्रिका मेलि मुख माहीं । जलधि लाँघि गये अचरज नाहीं ॥ १९ ॥",
+      "iast": "prabhu mudrikā mēli mukha māhīṁ । jaladhi lām̐ghi gayē acaraja nāhīṁ ॥ 19 ॥",
+      "transliterations": {
+        "telugu": "ప్రభు ముద్రికా మేలి ముఖ మాహీం । జలధి లాఁఘి గయే అచరజ నాహీం ॥ ౧౯ ॥",
+        "tamil": "ப்ரபு முத்ரிகா மேலி முக மாஹீம் । ஜலதி லாँகி கயே அசரஜ நாஹீம் ॥ ௧௯ ॥",
+        "kannada": "ಪ್ರಭು ಮುದ್ರಿಕಾ ಮೇಲಿ ಮುಖ ಮಾಹೀಂ । ಜಲಧಿ ಲಾಁಘಿ ಗಯೇ ಅಚರಜ ನಾಹೀಂ ॥ ೧೯ ॥",
+        "malayalam": "പ്രഭു മുദ്രികാ മേലി മുഖ മാഹീം । ജലധി ലാഁഘി ഗയേ അചരജ നാഹീം ॥ ൧൯ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Holding the Lord's signet ring in Your mouth, You leaped across the mighty ocean—no wonder at all!",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "प्रभु श्रीराम की अंगूठी (मुद्रिका) को अपने मुख में रखकर आप विशाल समुद्र को लाँघ गए; आपके असीम बल को देखते हुए इसमें कोई आश्चर्य नहीं है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "శ్రీరాముని ముద్రికను నోటియందు ఉంచుకొని, అగాధమైన సముద్రమును అలవోకగా దాటితివి; నీ అపార సామర్థ్యమునకు ఇది ఏమాత్రము ఆశ్చర్యము కాదు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஸ்ரீராமபிரானின் கணையாழியைத் தன் வாயில் அடக்கிக்கொண்டு, விரிந்த பெருங்கடலை ஒரே மூச்சில் தாண்டினாய்; இதில் வியப்பேதுமில்லை!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಪ್ರಭು ಶ್ರೀರಾಮನ ಉಂಗುರವನ್ನು ಬಾಯಲ್ಲಿಟ್ಟುಕೊಂಡು ವಿಶಾಲ ಸಾಗರವನ್ನು ಲೀಲಾಜಾಲವಾಗಿ ದಾಟಿದಿರಿ; ನಿಮ್ಮ ಅಪಾರ ಸಾಮರ್ಥ್ಯಕ್ಕೆ ಇದರಲ್ಲಿ ಯಾವುದೇ ಆಶ್ಚರ್ಯವಿಲ್ಲ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "प्रभू श्रीरामांची अंगठी मुखात ठेवून तुम्ही अथांग समुद्र ओलांडून गेलात; यात काहीच आश्चर्य नाही.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "প্রভু শ্রীরামচন্দ্রের অভিজ্ঞান-অঙ্গুরীয় মুখে ধারণ করিয়া তুমি অকূল জলধি উল্লঙ্ঘন করিলে; তোমার অপার সামর্থ্যে ইহা কিছুমাত্র বিচিত্র নহে।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "પ્રભુ શ્રીરામની વીંટી મોઢામાં રાખીને આપ વિશાળ સમુદ્રને ઓળંગી ગયા; આપના અગાધ બળને જોતાં એમાં કોઈ આશ્ચર્ય નથી.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ശ്രീരാമന്റെ മോതിരം വായിൽവെച്ച് അങ്ങ് മഹാസമുദ്രം ചാടിക്കടന്നു; അങ്ങയുടെ ശക്തിക്കു മുന്നിൽ ഇതിൽ ഒട്ടും അത്ഭുതമില്ല.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ପ୍ରଭୁ ଶ୍ରୀରାମଙ୍କ ମୁଦ୍ରିକା ମୁଖରେ ଧାରଣ କରି ତୁମେ ବିଶାଳ ସମୁଦ୍ରକୁ ଡେଇଁଗଲ; ତୁମ ଅତୁଳ ବଳ ଆଗରେ ଏଥିରେ କୌଣସି ଆଶ୍ଚର୍ଯ୍ୟ ନାହିଁ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 22,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "दुर्गम काज जगत के जेते । सुगम अनुग्रह तुम्हरे तेते ॥ २० ॥",
+      "iast": "durgama kāja jagata kē jētē । sugama anugraha tumharē tētē ॥ 20 ॥",
+      "transliterations": {
+        "telugu": "దుర్గమ కాజ జగత కే జేతే । సుగమ అనుగ్రహ తుమ్హరే తేతే ॥ ౨౦ ॥",
+        "tamil": "துர்கம காஜ ஜகத கே ஜேதே । ஸுகம அநுக்ரஹ தும்ஹரே தேதே ॥ ௨௦ ॥",
+        "kannada": "ದುರ್ಗಮ ಕಾಜ ಜಗತ ಕೇ ಜೇತೇ । ಸುಗಮ ಅನುಗ್ರಹ ತುಮ್ಹರೇ ತೇತೇ ॥ ೨೦ ॥",
+        "malayalam": "ദുര്ഗമ കാജ ജഗത കേ ജേതേ । സുഗമ അനുഗ്രഹ തുമ്ഹരേ തേതേ ॥ ൨൦ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "All arduous tasks in this world become effortlessly accomplished by Your divine grace.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "इस संसार में जितने भी कठिन और असाध्य कार्य हैं, वे सब आपकी कृपा-दृष्टि से सहज और सुगम हो जाते हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఈ లోకమునందు ఎంతటి దుష్కరమైన, అసాధ్యమైన కార్యములైనను, నీ దివ్య కృపాకటాక్షముచే సులభముగా నెరవేరును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இவ்வுலகில் தீர்க்க முடியாத கடினமான காரியங்கள் எவையாயினும், உனது பேரருளால் அவை யாவும் எளிதாகி விடுகின்றன.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಈ ಜಗತ್ತಿನಲ್ಲಿ ಎಷ್ಟೇ ಕಠಿಣವಾದ ಅಸಾಧ್ಯ ಕೆಲಸಗಳಿದ್ದರೂ, ನಿಮ್ಮ ಕೃಪಾದೃಷ್ಟಿಯಿಂದ ಅವೆಲ್ಲವೂ ಸುಲಭವಾಗಿ ನೆರವೇರುತ್ತವೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "या जगात जेवढी कठीण आणि अशक्य कामे आहेत, ती सर्व तुमच्या कृपेने सहज व सुलभ होतात.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "এই সংসারে যত দুরূহ ও অসাধ্য কার্য বিদ্যমান, তোমার অনুকম্পায় সে সমুদয়ই পরম সুগম ও সিদ্ধ হইয়া যায়।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આ સંસારમાં જેટલાં પણ કઠિન કાર્યો છે, તે બધાં આપની કૃપાથી સરળ અને સુગમ થઈ જાય છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഈ ലോകത്തിൽ എത്രയൊക്കെ ദുർഘടമായ കാര്യങ്ങളുണ്ടെങ്കിലും അങ്ങയുടെ അനുഗ്രഹത്താൽ അവയെല്ലാം എളുപ്പമായിത്തീരുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଏହି ସଂସାରରେ ଯେତେ କଠିନ କାର୍ଯ୍ୟ ଅଛି, ତୁମର କୃପାଦୃଷ୍ଟିରେ ସେସବୁ ଅତି ସହଜ ଓ ସୁଗମ ହୋଇଯାଏ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 23,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "राम दुआरे तुम रखवारे । होत न आज्ञा बिनु पैसारे ॥ २१ ॥",
+      "iast": "rāma duārē tuma rakhavārē । hōta na ājñā binu paisārē ॥ 21 ॥",
+      "transliterations": {
+        "telugu": "రామ దుఆరే తుమ రఖవారే । హోత న ఆజ్ఞా బిను పైసారే ॥ ౨౧ ॥",
+        "tamil": "ராம துஆரே தும ரகவாரே । ஹோத ந ஆஜ்ஞா பிநு பைஸாரே ॥ ௨௧ ॥",
+        "kannada": "ರಾಮ ದುಆರೇ ತುಮ ರಖವಾರೇ । ಹೋತ ನ ಆಜ್ಞಾ ಬಿನು ಪೈಸಾರೇ ॥ ೨೧ ॥",
+        "malayalam": "രാമ ദുആരേ തുമ രഖവാരേ । ഹോത ന ആജ്ഞാ ബിനു പൈസാരേ ॥ ൨൧ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "You are the gatekeeper at Rama's portal; no one can enter without Your sanction.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "आप भगवान् श्रीराम के द्वार के रक्षक (द्वारपाल) हैं; आपकी अनुमति और आज्ञा के बिना कोई भी उनके दरबार में प्रवेश नहीं कर सकता।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "నీవు శ్రీరామచంద్రుని దివ్య ద్వారమునకు రక్షకుడవు; నీ అనుమతి లేనిదే ఎవ్వరును ఆయన సన్నిధిని చేరలేరు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஸ்ரீராமபிரானின் திருவாசலின் காவலாளி நீயே; உனது அனுமதியின்றி எவரும் அவனது சந்நிதியை அடைய முடியாது.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ನೀವು ಪ್ರಭು ಶ್ರೀರಾಮನ ದ್ವಾರದ ರಕ್ಷಕರಾಗಿದ್ದೀರಿ; ನಿಮ್ಮ ಅನುಮತಿಯಿಲ್ಲದೆ ಯಾರೂ ಆತನ ದರ್ಬಾರಿನಲ್ಲಿ ಪ್ರವೇಶಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तुम्ही प्रभू श्रीरामांच्या दरबाराचे द्वारपाल आहात; तुमच्या आज्ञेशिवाय कोणालाही तिथे प्रवेश मिळत नाही.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তুমি শ্রীরামচন্দ্রের দ্বারের নিত্যপ্রহরী; তোমার অনুজ্ঞা ব্যতীত কেহই তাঁহার অন্তঃপুরে প্রবেশাধিকার পায় না।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આપ ભગવાન શ્રીરામના દ્વારના રક્ષક છો; આપની પરવાનગી વગર કોઈ તેમના દરબારમાં પ્રવેશ કરી શકતું નથી.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ശ്രീരാമസന്നിധിയുടെ കാവൽക്കാരനായ അങ്ങയുടെ അനുവാദമില്ലാതെ ആർക്കും അവിടേക്ക് കടക്കാനാവില്ല.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତୁମେ ପ୍ରଭୁ ଶ୍ରୀରାମଙ୍କ ଦ୍ୱାରର ରକ୍ଷକ; ତୁମ ଅନୁମତି ବିନା କେହି ତାଙ୍କ ଦରବାରରେ ପ୍ରବେଶ କରିପାରିବେ ନାହିଁ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 24,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "सब सुख लहै तुम्हारी सरना । तुम रक्षक काहू को डर ना ॥ २२ ॥",
+      "iast": "saba sukha lahai tumhārī saranā । tuma rakṣaka kāhū kō ḍara nā ॥ 22 ॥",
+      "transliterations": {
+        "telugu": "సబ సుఖ లహై తుమ్హారీ సరనా । తుమ రక్షక కాహూ కో డర నా ॥ ౨౨ ॥",
+        "tamil": "ஸப ஸுக லஹை தும்ஹாரீ ஸரநா । தும ரக்ஷக காஹூ கோ டர நா ॥ ௨௨ ॥",
+        "kannada": "ಸಬ ಸುಖ ಲಹೈ ತುಮ್ಹಾರೀ ಸರನಾ । ತುಮ ರಕ್ಷಕ ಕಾಹೂ ಕೋ ಡರ ನಾ ॥ ೨೨ ॥",
+        "malayalam": "സബ സുഖ ലഹൈ തുമ്ഹാരീ സരനാ । തുമ രക്ഷക കാഹൂ കോ ഡര നാ ॥ ൨൨ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "All joy is attained under Your shelter; when You are the protector, who can fear anything?",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "आपकी शरण में आने वाले को समस्त सुख प्राप्त होते हैं; और जब आप रक्षक हैं, तो फिर किसी का भी भय नहीं रह जाता।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "నీ పాదములను శరణువేడిన భక్తునకు సకల సుఖసంతోషములు లభించును; నీవే రక్షకుడవై యుండగా ఇక ఎవ్వరికీ ఏ భయమును ఉండదు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "உன்னைச் சரணடைந்தவர்களுக்கு எல்லா இன்பங்களும் வந்து சேரும்; நீயே எங்களைக் காப்பவனாக இருக்கும் போது, யாருக்கும் எந்தப் பயமும் இல்லை.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ನಿಮ್ಮ ಶರಣುಬಂದ ಭಕ್ತನಿಗೆ ಸಕಲ ಸುಖಗಳೂ ಲಭಿಸುತ್ತವೆ; ನೀವೇ ರಕ್ಷಕರಾಗಿರುವಾಗ ಯಾರೊಬ್ಬರಿಗೂ ಯಾವುದೇ ಭಯವಿರುವುದಿಲ್ಲ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तुमच्या चरणी शरण आलेल्याला सर्व सुखे प्राप्त होतात; आणि तुम्ही रक्षक असताना कोणाला कशाचीही भीती उरत नाही.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তোমার শরণাগত ভক্ত নিখিল সুখ প্রাপ্ত হয়; এবং তুমি যাহার রক্ষক, তাহার ত্রিভুবনে কোন ভয়ই থাকে না।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આપના શરણે આવનારને સઘળાં સુખ મળે છે; અને જ્યારે આપ રક્ષક છો, ત્યારે કોઈનો પણ ભય રહેતો નથી.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അങ്ങയെ ശരണം പ്രാപിച്ചാൽ എല്ലാ സുഖങ്ങളും കൈവരുന്നു; അങ്ങ് കാവലാളായിരിക്കുമ്പോൾ ആർക്കും ഒന്നിനെയും ഭയപ്പെടേണ്ടതില്ല.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତୁମ ଶରଣ ନେବା ମାତ୍ରେ ସକଳ ସୁଖ ପ୍ରାପ୍ତ ହୁଏ; ଏବଂ ତୁମେ ରକ୍ଷକ ଥିବାବେଳେ କାହାରିକୁ କୌଣସି ଭୟ ରହେ ନାହିଁ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 25,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "आपन तेज सम्हारो आपै । तीनों लोक हाँक तें काँपै ॥ २३ ॥",
+      "iast": "āpana tēja samhārō āpai । tīnōṁ lōka hām̐ka tēṁ kām̐pai ॥ 23 ॥",
+      "transliterations": {
+        "telugu": "ఆపన తేజ సమ్హారో ఆపై । తీనోం లోక హాఁక తేం కాఁపై ॥ ౨౩ ॥",
+        "tamil": "ஆபந தேஜ ஸம்ஹாரோ ஆபை । தீநோம் லோக ஹாँக தேம் காँபை ॥ ௨௩ ॥",
+        "kannada": "ಆಪನ ತೇಜ ಸಮ್ಹಾರೋ ಆಪೈ । ತೀನೋಂ ಲೋಕ ಹಾಁಕ ತೇಂ ಕಾಁಪೈ ॥ ೨೩ ॥",
+        "malayalam": "ആപന തേജ സമ്ഹാരോ ആപൈ । തീനോം ലോക ഹാഁക തേം കാഁപൈ ॥ ൨൩ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "You alone can withstand Your immense radiance; all three worlds tremble when You roar!",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "अपने प्रचण्ड तेज और वेग को आप स्वयं ही सम्भाल सकते हैं; आपकी एक सिंह-गर्जना मात्र से तीनों लोक थर-थर काँपने लगते हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "నీ అపార తేజస్సును నీవు మాత్రమే నియంత్రించుకోగలవు; నీ యొక్క ఒక్క సింహగర్జనకు ముల్లోకములు వణికిపోవును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "உனது பேரொளியையும் வேகத்தையும் உன்னால் மட்டுமே அடக்க இயலும்; உனது ஒரே ஒரு வீரகர்ஜனையைக் கேட்டு மூவுலகமும் நடுநடுங்குகின்றது.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ನಿಮ್ಮ ಪ್ರಚಂಡ ತೇಜಸ್ಸನ್ನು ನಿಯಂತ್ರಿಸಲು ನಿಮ್ಮಿಂದ ಮಾತ್ರವೇ ಸಾಧ್ಯ; ನಿಮ್ಮ ಒಂದೇ ಒಂದು ಸಿಂಹಗರ್ಜನೆಗೆ ಮೂರೂ ಲೋಕಗಳು ನಡುಗಿಹೋಗುತ್ತವೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "आपले प्रचंड तेज तुम्ही स्वतःच सांभाळू शकता; तुमच्या एका गर्जनेने तिन्ही लोक थरथर कापू लागतात.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তোমার অমিত তেজপ্রভাব তুমি ব্যতীত অন্য কেহই সংবরণ করিতে পারে না; তোমার এক হুংকারে ত্রিভুবন কম্পিত হয়।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આપના પ્રચંડ તેજને આપ પોતે જ સંભાળી શકો છો; આપની એક જ ગર્જનાથી ત્રણેય લોક થરથર કાંપવા લાગે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അങ്ങയുടെ ഉഗ്രതേജസ്സിനെ താങ്ങാൻ അങ്ങേക്കു മാത്രമേ കഴിയൂ; അങ്ങയുടെ ഒരൊറ്റ അലർച്ചകേട്ട് മൂന്നുലോകങ്ങളും വിറയ്ക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ନିଜର ପ୍ରଚଣ୍ଡ ତେଜକୁ ତୁମେ ନିଜେ ହିଁ ସମ୍ଭାଳିପାର; ତୁମର ଗୋଟିଏ ଗର୍ଜନରେ ତିନି ଲୋକ ଥରହର କମ୍ପିଉଠେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 26,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "भूत पिसाच निकट नहिं आवै । महाबीर जब नाम सुनावै ॥ २४ ॥",
+      "iast": "bhūta pisāca nikaṭa nahiṁ āvai । mahābīra jaba nāma sunāvai ॥ 24 ॥",
+      "transliterations": {
+        "telugu": "భూత పిసాచ నికట నహిం ఆవై । మహాబీర జబ నామ సునావై ॥ ౨౪ ॥",
+        "tamil": "பூத பிஸாச நிகட நஹிம் ஆவை । மஹாபீர ஜப நாம ஸுநாவை ॥ ௨௪ ॥",
+        "kannada": "ಭೂತ ಪಿಸಾಚ ನಿಕಟ ನಹಿಂ ಆವೈ । ಮಹಾಬೀರ ಜಬ ನಾಮ ಸುನಾವೈ ॥ ೨೪ ॥",
+        "malayalam": "ഭൂത പിസാച നികട നഹിം ആവൈ । മഹാബീര ജബ നാമ സുനാവൈ ॥ ൨൪ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Ghosts and evil spirits dare not approach when the name of Mahavira is uttered.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जहाँ 'महावीर' श्री हनुमान जी का नाम उच्चारण किया जाता है, वहाँ भूत और पिशाच आदि दुष्ट आत्माएँ निकट भी नहीं फटक सकतीं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "'మహావీరుడైన' హనుమంతుని నామమును ఉచ్చరించినంతనే, దయ్యములు, భూతప్రేత పిశాచములు దరిదాపులకు కూడా రాలేవు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "'மகாவீரன்' ஆகிய அனுமனின் திருநாமத்தை ஒலிக்கும் இடத்திற்குப் பேய்களும் பிசாசுகளும் நெருங்கக் கூட அஞ்சுகின்றன.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "'ಮಹಾವೀರ' ಹನುಮಂತನ ಹೆಸರನ್ನು ಜಪಿಸುತ್ತಿದ್ದಂತೆ, ಭೂತ-ಪಿಶಾಚಿಗಳು ಹತ್ತಿರಕ್ಕೂ ಸುಳಿಯಲು ಧೈರ್ಯಮಾಡುವುದಿಲ್ಲ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जिथे 'महावीर' हनुमंतांचे नाव उच्चारले जाते, तिथे भूत-पिशाच्च जवळही फिरकू शकत नाहीत.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যেখানে 'মহাবীর' শ্রীহনুমানের নাম উচ্চারিত হয়, তথায় ভূত-প্রেত-পিশাচ প্রভৃতি অনিষ্টকারী শক্তি নিকটেও আসিতে পারে না।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જ્યાં 'મહાવીર' હનુમાનજીનું નામ લેવામાં આવે છે, ત્યાં ભૂત-પિશાચ જેવી કોઈ પણ અનિષ્ટ શક્તિઓ નજીક પણ ફરકતી નથી.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "'മഹാവീരനായ' ഹനുമാന്റെ നാമം ചൊല്ലുമ്പോൾ ഭൂതങ്ങളും പ്രേതങ്ങളും പിശാചുക്കളും അടുത്തുപോലും വരാൻ ഭയപ്പെടുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯେଉଁଠି 'ମହାବୀର' ହନୁମାନଙ୍କ ନାମ ଉଚ୍ଚାରଣ କରାଯାଏ, ସେଠାରେ ଭୂତପିଶାଚମାନେ ପାଖ ମାଡ଼ିପାରନ୍ତି ନାହିଁ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 27,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "नासै रोग हरै सब पीरा । जपत निरन्तर हनुमत बीरा ॥ २५ ॥",
+      "iast": "nāsai rōga harai saba pīrā । japata nirantara hanumata bīrā ॥ 25 ॥",
+      "transliterations": {
+        "telugu": "నాసై రోగ హరై సబ పీరా । జపత నిరన్తర హనుమత బీరా ॥ ౨౫ ॥",
+        "tamil": "நாஸை ரோக ஹரை ஸப பீரா । ஜபத நிரந்தர ஹநுமத பீரா ॥ ௨௫ ॥",
+        "kannada": "ನಾಸೈ ರೋಗ ಹರೈ ಸಬ ಪೀರಾ । ಜಪತ ನಿರನ್ತರ ಹನುಮತ ಬೀರಾ ॥ ೨೫ ॥",
+        "malayalam": "നാസൈ രോഗ ഹരൈ സബ പീരാ । ജപത നിരന്തര ഹനുമത ബീരാ ॥ ൨൫ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "All diseases perish and all grief vanishes when one constantly chants the name of courageous Hanuman.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "वीर हनुमान जी के नाम का निरन्तर जप करने से समस्त रोग नष्ट हो जाते हैं और सारी पीड़ाएँ दूर हो जाती हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "వీరాంజనేయుని పవిత్ర నామమును నిరంతరము జపించువానికి సకల రోగములు నశించి, సమస్త బాధలు సమసిపోవును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "வீர ஆஞ்சநேயனின் திருநாமத்தை இடைவிடாது ஜபிப்பவருக்கு நோய்கள் யாவும் நீங்கி, எல்லாத் துன்பங்களும் தீர்ந்துவிடும்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ವೀರ ಹನುಮಂತನ ಹೆಸರನ್ನು ನಿರಂತರವಾಗಿ ಜಪಿಸುವುದರಿಂದ ಸಕಲ ರೋಗಗಳೂ ನಾಶವಾಗಿ, ಎಲ್ಲ ನೋವು-ಯಾತನೆಗಳೂ ನಿವಾರಣೆಯಾಗುತ್ತವೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "वीर हनुमंतांच्या नावाचा सतत जप केल्याने सर्व रोग नष्ट होतात आणि सर्व प्रकारच्या वेदना नाहीशा होतात.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "বীর হনুমানের নাম নিরন্তর জপ করিলে নিখিল ব্যাধি বিনষ্ট হয় এবং সকল শারীরিক ও মানসিক ক্লেশ বিদূরিত হয়।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "વીર હનુમાનજીના નામનો નિરંતર જપ કરવાથી સઘળા રોગો નષ્ટ થાય છે અને તમામ પીડાઓ દૂર થઈ જાય છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "വീരഹനുമാന്റെ നാമം നിരന്തരം ജപിച്ചാൽ സകല രോഗങ്ങളും നശിക്കുകയും എല്ലാ വേദനകളും വിട്ടുമാറുകയും ചെയ്യും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ବୀର ହନୁମାନଙ୍କ ନାମ ନିରନ୍ତର ଜପ କଲେ ସମସ୍ତ ରୋଗ ବିନାଶ ହୁଏ ଏବଂ ସକଳ ପୀଡ଼ା ଦୂର ହୋଇଯାଏ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 28,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "सङ्कट तें हनुमान छुड़ावै । मन क्रम बचन ध्यान जो लावै ॥ २६ ॥",
+      "iast": "saṅkaṭa tēṁ hanumāna chuṛāvai । mana krama bacana dhyāna jō lāvai ॥ 26 ॥",
+      "transliterations": {
+        "telugu": "సఙ్కట తేం హనుమాన ఛుड़ావై । మన క్రమ బచన ధ్యాన జో లావై ॥ ౨౬ ॥",
+        "tamil": "ஸங்கட தேம் ஹநுமாந சுஃட²ாவை । மந க்ரம பசந த்யாந ஜோ லாவை ॥ ௨௬ ॥",
+        "kannada": "ಸಙ್ಕಟ ತೇಂ ಹನುಮಾನ ಛುಡ಼ಾವೈ । ಮನ ಕ್ರಮ ಬಚನ ಧ್ಯಾನ ಜೋ ಲಾವೈ ॥ ೨೬ ॥",
+        "malayalam": "സങ്കട തേം ഹനുമാന ഛുड़ാവൈ । മന ക്രമ ബചന ധ്യാന ജോ ലാവൈ ॥ ൨൬ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Hanuman liberates from all distress those who meditate on Him in thought, deed, and word.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जो मनुष्य मन, कर्म और वचन से श्री हनुमान जी का ध्यान करता है, हनुमान जी उसे जीवन के प्रत्येक संकट से छुड़ा लेते हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "మనస్సుతో, కర్మలతో, వాక్కుతో హనుమంతుని ధ్యానించు భక్తుని ఆయన సమస్త ఆపదల నుండి విముక్తుని చేయును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "மனம், சொல், செயல் மூன்றினாலும் ஆஞ்சநேயரைத் தியானிப்பவனை, அவன் எதிர்கொள்ளும் எத்தகைய துன்பத்திலிருந்தும் அனுமன் காத்தருள்வான்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಯಾವ ಮನುಷ್ಯನು ಮನಸ್ಸು, ಕರ್ಮ ಮತ್ತು ಮಾತುಗಳಿಂದ ಹನುಮಂತನನ್ನು ಧ್ಯಾನಿಸುವನೋ, ಆತನನ್ನು ಹನುಮಂತನು ಸಕಲ ಸಂಕಟಗಳಿಂದ ಪಾರುಮಾಡುತ್ತಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जो मनुष्य मन, कर्म आणि वचनाने हनुमंतांचे ध्यान करतो, हनुमंत त्याला सर्व संकटांतून मुक्त करतात.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যিনি কায়মনোবাক্যে শ্রীহনুমানকে ধ্যান করেন, হনুমান তাঁহাকে জীবনের সকল সংকট হইতে মুক্ত করেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જે મનુષ્ય મન, કર્મ અને વચનથી હનુમાનજીનું ધ્યાન ધરે છે, તેને હનુમાનજી દરેક સંકટમાંથી મુક્ત કરે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "മനസ്സുകൊണ്ടും വാക്കുകൊണ്ടും പ്രവൃത്തികൊണ്ടും ഹനുമാനെ ധ്യാനിക്കുന്നവനെ അവിടുന്ന് സകല ആപത്തുകളിൽനിന്നും രക്ഷിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯେଉଁ ବ୍ୟକ୍ତି ମନ, ବଚନ ଓ କର୍ମରେ ଶ୍ରୀ ହନୁମାନଙ୍କୁ ଧ୍ୟାନ କରେ, ହନୁମାନ ତାକୁ ସମସ୍ତ ସଙ୍କଟରୁ ମୁକ୍ତ କରନ୍ତି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 29,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "सब पर राम तपस्वी राजा । तिन के काज सकल तुम साजा ॥ २७ ॥",
+      "iast": "saba para rāma tapasvī rājā । tina kē kāja sakala tuma sājā ॥ 27 ॥",
+      "transliterations": {
+        "telugu": "సబ పర రామ తపస్వీ రాజా । తిన కే కాజ సకల తుమ సాజా ॥ ౨౭ ॥",
+        "tamil": "ஸப பர ராம தபஸ்வீ ராஜா । திந கே காஜ ஸகல தும ஸாஜா ॥ ௨௭ ॥",
+        "kannada": "ಸಬ ಪರ ರಾಮ ತಪಸ್ವೀ ರಾಜಾ । ತಿನ ಕೇ ಕಾಜ ಸಕಲ ತುಮ ಸಾಜಾ ॥ ೨೭ ॥",
+        "malayalam": "സബ പര രാമ തപസ്വീ രാജാ । തിന കേ കാജ സകല തുമ സാജാ ॥ ൨൭ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Supreme over all is Rama, the ascetic Sovereign; You accomplished every task on His behalf.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "तपस्वी राजा श्रीरामचन्द्र जी सबमें श्रेष्ठ और सबके स्वामी हैं; और उनके सभी कठिन कार्यों को आपने सहज ही संवार दिया।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "తపస్వియైన శ్రీరామచంద్రుడు సర్వలోకములకు ప్రభువు; అటువంటి సార్వభౌముని సకల కార్యములను నీవు విజయవంతముగా పూర్తి చేసితివి.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தவக்கோலம் பூண்ட சக்கரவர்த்தியான ஸ்ரீராமர் அனைவரிலும் மேலானவர்; அத்தகைய பெருமானின் சகல காரியங்களையும் நீ குறைவற முடித்து வைத்தாய்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ತಪಸ್ವೀ ರಾಜನಾದ ಶ್ರೀರಾಮಚಂದ್ರನು ಎಲ್ಲರಿಗೂ ಶ್ರೇಷ್ಠ ಪ್ರಭು; ಆತನ ಸಮಸ್ತ ಕಾರ್ಯಗಳನ್ನೂ ನೀವು ಯಶಸ್ವಿಯಾಗಿ ನೆರವೇರಿಸಿದಿರಿ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तपस्वी राजा श्रीराम हे सर्वांचे स्वामी आहेत; आणि त्यांची सर्व कामे तुम्ही अत्यंत कुशलतेने पार पाडली.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তপস্বী রাজা শ্রীরামচন্দ্র সর্বলোকের অধীশ্বর; তুমি তাঁহার সকল কার্য পরম সফলতার সহিত সম্পন্ন করিয়াছিলে।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તપસ્વી રાજા શ્રીરામચંદ્રજી સર્વોપરી સ્વામી છે; અને તેમનાં સઘળાં કાર્યો આપે સહજતાથી પાર પાડ્યાં.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "തപസ്വിയായ രാജാവ് ശ്രീരാമനാണ് സർവ്വരുടെയും നാഥൻ; അങ്ങനെയുള്ള ഭഗവാന്റെ എല്ലാ കാര്യങ്ങളും അങ്ങ് ഭംഗിയായി പൂർത്തിയാക്കി.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତପସ୍ୱୀ ରାଜା ଶ୍ରୀରାମଚନ୍ଦ୍ର ସମସ୍ତଙ୍କର ପ୍ରଭୁ; ଏବଂ ତାଙ୍କର ସକଳ କାର୍ଯ୍ୟକୁ ତୁମେ ସଫଳତାର ସହ ସମ୍ପନ୍ନ କଲ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 30,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "और मनोरथ जो कोई लावै । सोइ अमित जीवन फल पावै ॥ २८ ॥",
+      "iast": "aura manōratha jō kōī lāvai । sōi amita jīvana phala pāvai ॥ 28 ॥",
+      "transliterations": {
+        "telugu": "ఔర మనోరథ జో కోఈ లావై । సోఇ అమిత జీవన ఫల పావై ॥ ౨౮ ॥",
+        "tamil": "ஔர மநோரத ஜோ கோஈ லாவை । ஸோஇ அமித ஜீவந பல பாவை ॥ ௨௮ ॥",
+        "kannada": "ಔರ ಮನೋರಥ ಜೋ ಕೋಈ ಲಾವೈ । ಸೋಇ ಅಮಿತ ಜೀವನ ಫಲ ಪಾವೈ ॥ ೨೮ ॥",
+        "malayalam": "ഔര മനോരഥ ജോ കോഈ ലാവൈ । സോഇ അമിത ജീവന ഫല പാവൈ ॥ ൨൮ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Whatever wish anyone brings before You, he secures the inexhaustible fruit of life.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जो कोई भी अपनी अभिलाषा (मनोरथ) आपके सम्मुख लेकर आता है, वह अपने जीवन में असीम और अक्षय फल प्राप्त करता है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఎవరైతే తమ మనోవాంఛలను నీ యెదుట నివేదింతురో, వారు తమ జీవితమునందు అపరిమితమైన ఉత్తమ ఫలములను పొందెదరు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "உன்னிடம் தன் மனவிருப்பத்தை வைக்கும் எவரும், தன் வாழ்வில் அளவிடற்கரிய அழியாத நற்பயனைப் பெறுகின்றார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಯಾರೇ ಆಗಲಿ ತಮ್ಮ ಮನದ ಇಷ್ಟಾರ್ಥಗಳನ್ನು ನಿಮ್ಮ ಮುಂದೆ ತೋಡಿಕೊಂಡರೆ, ಅವರು ತಮ್ಮ ಜೀವನದಲ್ಲಿ ಅಪಾರವಾದ ಶಾಶ್ವತ ಫಲವನ್ನು ಪಡೆಯುತ್ತಾರೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जी व्यक्ती आपल्या मनोकामना तुमच्यासमोर घेऊन येते, ती आपल्या जीवनात अमर्याद व अक्षय फळ प्राप्त करते.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যে কেহ নিজ আন্তরিক মনোরথ তোমার চরণে নিবেদন করে, সে নিজ জীবনে অমিত ও অক্ষয় সদ্গতি লাভ করে।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જે કોઈ પોતાની મનોકામના આપની સમક્ષ લાવે છે, તે પોતાના જીવનમાં અપરિમિત અને અક્ષય ફળ પ્રાપ્ત કરે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ആരെങ്കിലും തങ്ങളുടെ ആഗ്രഹങ്ങൾ അങ്ങയുടെ മുന്നിൽ സമർപ്പിച്ചാൽ അവർക്ക് ജീവിതത്തിൽ അളവറ്റ പുണ്യഫലങ്ങൾ ലഭിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯିଏ ନିଜର ମନସ୍କାମନା ତୁମ ସମ୍ମୁଖରେ ରଖେ, ସେ ଜୀବନରେ ଅସୀମ ଓ ଅକ୍ଷୟ ଫଳ ପ୍ରାପ୍ତ କରେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 31,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "चारों जुग परताप तुम्हारा । है परसिद्ध जगत उजियारा ॥ २९ ॥",
+      "iast": "cārōṁ juga paratāpa tumhārā । hai parasiddha jagata ujiyārā ॥ 29 ॥",
+      "transliterations": {
+        "telugu": "చారోం జుగ పరతాప తుమ్హారా । హై పరసిద్ధ జగత ఉజియారా ॥ ౨౯ ॥",
+        "tamil": "சாரோம் ஜுக பரதாப தும்ஹாரா । ஹை பரஸித்த ஜகத உஜியாரா ॥ ௨௯ ॥",
+        "kannada": "ಚಾರೋಂ ಜುಗ ಪರತಾಪ ತುಮ್ಹಾರಾ । ಹೈ ಪರಸಿದ್ಧ ಜಗತ ಉಜಿಯಾರಾ ॥ ೨೯ ॥",
+        "malayalam": "ചാരോം ജുഗ പരതാപ തുമ്ഹാരാ । ഹൈ പരസിദ്ധ ജഗത ഉജിയാരാ ॥ ൨൯ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Your glory shines across all four Yugas; Your renown is celebrated as illumination for the world.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "चारों युगों (सत्य, त्रेता, द्वापर और कलि) में आपका प्रताप विद्यमान है; और आपकी उज्ज्वल कीर्ति सम्पूर्ण जगत् को प्रकाशित कर रही है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "నాలుగు యుగములందునూ నీ ప్రతాపము నిలిచియున్నది; నీ నిర్మల కీర్తిజ్యోతి అఖిల జగత్తును ప్రకాశింపజేయుచున్నది.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "நான்கு யுகங்களிலும் உனது வீரம் நிலைத்து நிற்கின்றது; உனது புகழொளி அகில உலகையும் பிரகாசிக்கச் செய்கின்றது.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ನಾಲ್ಕೂ ಯುಗಗಳಲ್ಲಿಯೂ ನಿಮ್ಮ ಪ್ರತಾಪವು ಬೆಳಗುತ್ತಿದೆ; ನಿಮ್ಮ ದಿವ್ಯ ಕೀರ್ತಿಯು ಇಡೀ ಜಗತ್ತನ್ನೇ ಪ್ರಕಾಶಮಾನವಾಗಿಸಿದೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "चारही युगांत तुमचा प्रताप पसरलेला आहे; आणि तुमची कीर्ती संपूर्ण जगाला प्रकाशित करत आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "সত্য, ত্রেতা, দ্বাপর ও কলি—এই চারি যুগেই তোমার প্রতাপ সমভাবে বিরাজমান; এবং তোমার যশোজ্যোতি সমগ্র বিশ্বকে আলোকিত করিতেছে।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "ચારેય યુગોમાં આપનો પ્રતાપ વ્યાપ્ત છે; અને આપની ઉજ્જવળ કીર્તિ સમગ્ર સંસારને પ્રકાશિત કરે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "നാലു യുഗങ്ങളിലും അങ്ങയുടെ പ്രതാപം നിറഞ്ഞുനിൽക്കുന്നു; അങ്ങയുടെ യശസ്സ് ലോകത്തെ മുഴുവൻ പ്രകാശിപ്പിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଚାରି ଯୁଗରେ ତୁମର ପ୍ରତାପ ବିଦ୍ୟମାନ; ଏବଂ ତୁମର ଉଜ୍ଜ୍ୱଳ କୀର୍ତ୍ତି ସମଗ୍ର ସଂସାରକୁ ଆଲୋକିତ କରୁଛି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 32,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "साधु सन्त के तुम रखवारे । असुर निकन्दन राम दुलारे ॥ ३० ॥",
+      "iast": "sādhu santa kē tuma rakhavārē । asura nikandana rāma dulārē ॥ 30 ॥",
+      "transliterations": {
+        "telugu": "సాధు సన్త కే తుమ రఖవారే । అసుర నికన్దన రామ దులారే ॥ ౩౦ ॥",
+        "tamil": "ஸாது ஸந்த கே தும ரகவாரே । அஸுர நிகந்தந ராம துலாரே ॥ ௩௦ ॥",
+        "kannada": "ಸಾಧು ಸನ್ತ ಕೇ ತುಮ ರಖವಾರೇ । ಅಸುರ ನಿಕನ್ದನ ರಾಮ ದುಲಾರೇ ॥ ೩೦ ॥",
+        "malayalam": "സാധു സന്ത കേ തുമ രഖവാരേ । അസുര നികന്ദന രാമ ദുലാരേ ॥ ൩൦ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "You are the guardian of saints and ascetics, slayer of demons, darling of Sri Rama.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "आप साधु-सन्तों और सज्जनों के रक्षक हैं, दुष्ट असुरों का संहार करने वाले हैं और भगवान् श्रीराम के अति दुलारे (प्रिय) हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "నీవు సాధుసంతులకు, భక్తులకు రక్షకుడవు; దుష్ట రాక్షసులను అంతమొందించువాడవు మరియు శ్రీరాముని ప్రాణప్రియుడవు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "நீ சாதுக்களையும் நல்லோரையும் காப்பவன்; கொடிய அரக்கர்களை வேரறுப்பவன்; ஸ்ரீராமபிரானின் அன்பிற்குரிய செல்லப்பிள்ளை நீயே.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ನೀವು ಸಾಧು-ಸಂತರನ್ನೂ ಸಜ್ಜನರನ್ನೂ ರಕ್ಷಿಸುವವರು, ದುಷ್ಟ ಅಸುರರನ್ನು ಸಂಹರಿಸುವವರು ಮತ್ತು ಪ್ರಭು ಶ್ರೀರಾಮನ ಅತಿ ಮುದ್ದಿನ ಭಕ್ತರಾಗಿದ್ದೀರಿ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तुम्ही साधु-संतांचे रक्षणकर्ते आहात, दुष्ट असुरांचा नाश करणारे आणि प्रभू श्रीरामांचे अतिशय लाडके आहात.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তুমি সাধু-সন্ত ও ধার্মিকগণের নিত্যপালক, অসুরদলনকারী এবং শ্রীরামচন্দ্রের পরম স্নেহভাজন ভক্ত।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આપ સાધુ-સંતોના રક્ષક છો, અસુરોનો નાશ કરનારા છો અને ભગવાન શ્રીરામના અત્યંત વહાલા છો.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സാധുക്കളെയും സജ്ജനങ്ങളെയും കാത്തുരക്ഷിക്കുന്ന അങ്ങ് അസുരന്മാരെ നിഗ്രഹിക്കുന്നവനും ശ്രീരാമന്റെ പ്രിയപ്പെട്ടവനുമാണ്.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତୁମେ ସାଧୁସନ୍ଥମାନଙ୍କ ରକ୍ଷକ, ଅସୁରମାନଙ୍କ ବିନାଶକାରୀ ଏବଂ ପ୍ରଭୁ ଶ୍ରୀରାମଙ୍କ ଅତି ପ୍ରିୟ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 33,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "अष्ट सिद्धि नौ निधि के दाता । अस बर दीन जानकी माता ॥ ३१ ॥",
+      "iast": "aṣṭa siddhi nau nidhi kē dātā । asa bara dīna jānakī mātā ॥ 31 ॥",
+      "transliterations": {
+        "telugu": "అష్ట సిద్ధి నౌ నిధి కే దాతా । అస బర దీన జానకీ మాతా ॥ ౩౧ ॥",
+        "tamil": "அஷ்ட ஸித்தி நௌ நிதி கே தாதா । அஸ பர தீந ஜாநகீ மாதா ॥ ௩௧ ॥",
+        "kannada": "ಅಷ್ಟ ಸಿದ್ಧಿ ನೌ ನಿಧಿ ಕೇ ದಾತಾ । ಅಸ ಬರ ದೀನ ಜಾನಕೀ ಮಾತಾ ॥ ೩೧ ॥",
+        "malayalam": "അഷ്ട സിദ്ധി നൌ നിധി കേ ദാതാ । അസ ബര ദീന ജാനകീ മാതാ ॥ ൩൧ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Bestower of the eight spiritual siddhis and nine divine treasures, as blessed by Mother Janaki.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "माता जानकी (सीता जी) ने आपको यह वरदान दिया है कि आप अपने भक्तों को आठों सिद्धियाँ और नवों निधियाँ प्रदान करने में समर्थ हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "జానకీమాత నీకు అష్టసిద్ధులను మరియు నవనిధులను భక్తులకు అనుగ్రహించగల అద్భుత వరమును ప్రసాదించెను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அன்னை ஜானகி உனக்கு அளித்த வரத்தினால், நீ உனது பக்தர்களுக்கு அஷ்டமாசித்திகளையும் நவநிதிகளையும் வாரி வழங்கும் கொடைவள்ளலாய் விளங்குகின்றாய்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ತಾಯಿ ಜಾನಕಿಯು ನಿಮಗೆ ಭಕ್ತರಿಗೆ ಅಷ್ಟಸಿದ್ಧಿಗಳನ್ನೂ ನವನಿಧಿಗಳನ್ನೂ ಕರುಣಿಸಬಲ್ಲ ಇಂತಹ ಅದ್ಭುತ ವರವನ್ನು ನೀಡಿದ್ದಾಳೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "माता सीतेने तुम्हाला असा वर दिला आहे की, तुम्ही आपल्या भक्तांना आठ सिद्धी आणि नऊ निधी प्रदान करण्यास समर्थ आहात.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "মাতা জানকী তোমাকে এই বরদান করিয়াছেন যে, তুমি ভক্তগণকে অষ্টসিদ্ধি ও নवनिধি প্রদান করিতে সমর্থ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "માતા જાનકીએ આપને એવું વરદાન આપ્યું છે કે આપ પોતાના ભક્તોને આઠેય સિદ્ધિઓ અને નવેય નિધિઓ આપવા સમર્થ છો.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അഷ്ടസിദ്ധികളെയും നവനിധികളെയും ഭക്തർക്ക് നൽകാമെന്ന വരമാണ് ജാനകിമാതാവ് അങ്ങേയ്ക്ക് കനിഞ്ഞുനൽകിയത്.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ମାତା ଜାନକୀ ତୁମକୁ ଏହି ବରଦାନ ଦେଇଛନ୍ତି ଯେ ତୁମେ ଭକ୍ତମାନଙ୍କୁ ଅଷ୍ଟସିଦ୍ଧି ଓ ନବନିଧି ପ୍ରଦାନ କରିବାକୁ ସମର୍ଥ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 34,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "राम रसायन तुम्हरे पासा । सदा रहो रघुपति के दासा ॥ ३२ ॥",
+      "iast": "rāma rasāyana tumharē pāsā । sadā rahō raghupati kē dāsā ॥ 32 ॥",
+      "transliterations": {
+        "telugu": "రామ రసాయన తుమ్హరే పాసా । సదా రహో రఘుపతి కే దాసా ॥ ౩౨ ॥",
+        "tamil": "ராம ரஸாயந தும்ஹரே பாஸா । ஸதா ரஹோ ரகுபதி கே தாஸா ॥ ௩௨ ॥",
+        "kannada": "ರಾಮ ರಸಾಯನ ತುಮ್ಹರೇ ಪಾಸಾ । ಸದಾ ರಹೋ ರಘುಪತಿ ಕೇ ದಾಸಾ ॥ ೩೨ ॥",
+        "malayalam": "രാമ രസായന തുമ്ഹരേ പാസാ । സദാ രഹോ രഘുപതി കേ ദാസാ ॥ ൩൨ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "You hold the elixir of Rama's name; You are forever the devoted servant of Raghupati.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "आपके पास 'रामायण' रूपी राम-नाम का दिव्य रसायन (अमृत) है; आप सदैव श्री रघुनाथ जी के अनन्य दास बने रहते हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "నీ వద్ద 'రామనామమను' దివ్య దివ్యౌషధ రసాయనము కలదు; నీవు ఎల్లప్పుడు శ్రీ రఘునాథుని పరమ భక్తుడవు మరియు దాసుడవుగా విరాజిల్లుచున్నావు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ராமநாமம் என்னும் திவ்ய அமுத ரசாயனம் உன்னிடம் உள்ளது; நீ எந்நாளும் ஸ்ரீராமர் பால் மாறாத பக்தி கொண்ட தொண்டனாய் விளங்குகின்றாய்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ನಿಮ್ಮ ಬಳಿ ರಾಮನಾಮವೆಂಬ ದಿವ್ಯ ಅಮೃತ ರಸಾಯನವಿದೆ; ನೀವು ಸದಾಕಾಲವೂ ಶ್ರೀ ರಘುನಾಥನ ಪರಮ ದಾಸರಾಗಿ ಶೋಭಿಸುತ್ತೀರಿ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तुमच्याकडे रामनामाचे दिव्य रसायन (अमृत) आहे; तुम्ही सदैव प्रभू श्रीरामांचे अनन्य दास म्हणून वास करता.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তোমার নিকট রাম-নামরূপ পরম অমৃতময় রসায়ন রহিয়াছে; তুমি অনন্তকাল রঘুপতির একান্ত প্রিয় সেবকরূপে বিরাজিত।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આપની પાસે રામનામ રૂપી દિવ્ય રસાયણ છે; આપ સદાય શ્રી રઘુનાથજીના પરમ દાસ બનીને રહો છો.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അങ്ങയുടെ പക്കൽ രാമനാമമാകുന്ന അമൃതരസായനമുണ്ട്; അങ്ങ് സദാ രഘുനാഥന്റെ പ്രിയദാസനായി വിളങ്ങുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତୁମ ପାଖରେ ରାମନାମରୂପୀ ଦିବ୍ୟ ଅମୃତ ରସାୟନ ଅଛି; ତୁମେ ସଦା ଶ୍ରୀରଘୁନାଥଙ୍କ ଅନନ୍ୟ ଦାସ ହୋଇ ରହିଥାଅ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 35,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "तुम्हरे भजन राम को पावै । जनम जनम के दुख बिसरावै ॥ ३३ ॥",
+      "iast": "tumharē bhajana rāma kō pāvai । janama janama kē dukha bisarāvai ॥ 33 ॥",
+      "transliterations": {
+        "telugu": "తుమ్హరే భజన రామ కో పావై । జనమ జనమ కే దుఖ బిసరావై ॥ ౩౩ ॥",
+        "tamil": "தும்ஹரே பஜந ராம கோ பாவை । ஜநம ஜநம கே துக பிஸராவை ॥ ௩௩ ॥",
+        "kannada": "ತುಮ್ಹರೇ ಭಜನ ರಾಮ ಕೋ ಪಾವೈ । ಜನಮ ಜನಮ ಕೇ ದುಖ ಬಿಸರಾವೈ ॥ ೩೩ ॥",
+        "malayalam": "തുമ്ഹരേ ഭജന രാമ കോ പാവൈ । ജനമ ജനമ കേ ദുഖ ബിസരാവൈ ॥ ൩൩ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Through devotion to You, one reaches Sri Rama and sheds the sorrows of countless lifetimes.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "आपका भजन करने से साधक को भगवान् श्रीराम की प्राप्ति होती है, और उसके जन्म-जन्मान्तरों के सारे दुःख दूर हो जाते हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "నిన్ను భజించుట ద్వారా భక్తుడు శ్రీరాముని అనుగ్రహమును పొందును, మరియు అతని జన్మజన్మాంతరముల సకల దుఃఖములు పటాపంచలగును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "உன்னைத் துதிப்பதன் மூலம் ஒருவன் ஸ்ரீராமபிரானின் திருவருளைப் பெறுகின்றான்; அவனது பல பிறவிகளாகத் தொடரும் துயரங்கள் யாவும் நீங்கி விடுகின்றன.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ನಿಮ್ಮನ್ನು ಭಜಿಸುವುದರಿಂದ ಭಕ್ತನು ಶ್ರೀರಾಮಚಂದ್ರನನ್ನು ಹೊಂದುತ್ತಾನೆ ಮತ್ತು ಅವನ ಜನ್ಮಜನ್ಮಾಂತರಗಳ ಸಮಸ್ತ ದುಃಖಗಳೂ ದೂರವಾಗುತ್ತವೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तुमचे भजन केल्याने भक्ताला श्रीरामांची प्राप्ती होते, आणि त्याचे जन्मोजन्मीचे सर्व दुःख नाहीसे होते.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তোমার ভজন করিলে জীব সাক্ষাৎ শ্রীরামকে লাভ করে, এবং তাহার জন্মজন্মান্তরের সঞ্চিত দুঃখ দূর হইয়া যায়।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આપનું ભજન કરવાથી ભક્તને ભગવાન શ્રીરામની પ્રાપ્તિ થાય છે, અને તેના જન્મજન્માંતરના સઘળા દુઃખો દૂર થઈ જાય છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അങ്ങയെ ഭജിക്കുന്നതിലൂടെ ഭക്തൻ ശ്രീരാമനെ പ്രാപിക്കുകയും ജന്മാന്തരങ്ങളായുള്ള സകല ദുരിതങ്ങളും മറക്കുകയും ചെയ്യുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତୁମକୁ ଭଜନ କଲେ ଜୀବ ଶ୍ରୀରାମଙ୍କୁ ପ୍ରାପ୍ତ ହୁଏ, ଏବଂ ତାର ଜନ୍ମଜନ୍ମାନ୍ତରର ସମସ୍ତ ଦୁଃଖ ଦୂର ହୋଇଯାଏ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 36,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "अन्त काल रघुबर पुर जाई । जहाँ जन्म हरि-भक्त कहाई ॥ ३४ ॥",
+      "iast": "anta kāla raghubara pura jāī । jahām̐ janma hari-bhakta kahāī ॥ 34 ॥",
+      "transliterations": {
+        "telugu": "అన్త కాల రఘుబర పుర జాఈ । జహాఁ జన్మ హరి-భక్త కహాఈ ॥ ౩౪ ॥",
+        "tamil": "அந்த கால ரகுபர புர ஜாஈ । ஜஹாँ ஜந்ம ஹரி-பக்த கஹாஈ ॥ ௩௪ ॥",
+        "kannada": "ಅನ್ತ ಕಾಲ ರಘುಬರ ಪುರ ಜಾಈ । ಜಹಾಁ ಜನ್ಮ ಹರಿ-ಭಕ್ತ ಕಹಾಈ ॥ ೩೪ ॥",
+        "malayalam": "അന്ത കാല രഘുബര പുര ജാഈ । ജഹാഁ ജന്മ ഹരി-ഭക്ത കഹാഈ ॥ ൩൪ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "At the final hour he departs to Raghuvira's supreme abode, remembered forever as Hari's devotee.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "अंतकाल में ऐसा भक्त श्री रघुनाथ जी के परम धाम (साकेत) को जाता है; और यदि उसका पुनः जन्म हो, तो वह हरिभक्त के रूप में ही जाना जाता है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "అటువంటి భక్తుడు అంత్యకాలమున శ్రీరాముని పరమధామమైన సాకేతమును చేరును; ఒకవేళ పునర్జన్మ కలిగినను హరిభక్తునిగానే ఖ్యాతికెక్కును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இறுதிக் காலத்தில் அத்தகைய பக்தன் ஸ்ரீராமனின் பரமபதமான சாகேதத்தை அடைகின்றான்; ஒருவேளை மறுபிறவி எடுத்தாலும் ஹரிபக்தனாகவே போற்றப்படுகின்றான்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಅಂತ್ಯಕಾಲದಲ್ಲಿ ಅಂತಹ ಭಕ್ತನು ಶ್ರೀ ರಘುನಾಥನ ಪರಮಧಾಮವಾದ ಸಾಕೇತಲೋಕಕ್ಕೆ ತೆರಳುತ್ತಾನೆ; ಪುನರ್ಜನ್ಮವಿದ್ದರೂ ಹರಿಭಕ್ತನೆಂದೇ ಪ್ರಸಿದ್ಧಿ ಪಡೆಯುತ್ತಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "अंतिम समयी असा भक्त श्रीरामांच्या परम धामास (साकेत) जातो; आणि जर पुनर्जन्म झाला, तरी हरिभक्त म्हणूनच जन्माला येतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "দেহত্যাগান্তে ভক্ত শ্রীরামচন্দ্রের পরম ধামে গমন করে; এবং পুনর্বার জন্ম হইলেও সে জগতে হরিভক্তরূপেই পরিচিত হয়।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "અંતકાળે આવો ભક્ત શ્રી રઘુનાથજીના પરમ ધામમાં જાય છે; અને જો ફરી જન્મ થાય, તો હરિભક્ત તરીકે જ ઓળખાય છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അന്ത്യകാലത്ത് അങ്ങനെയുള്ള ഭക്തൻ ശ്രീരാമന്റെ പരമപദത്തിൽ എത്തിച്ചേരുകയും വീണ്ടും ജനിച്ചാൽത്തന്നെ ഹരിഭക്തനായിത്തീരുകയും ചെയ്യും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଅନ୍ତକାଳରେ ଏହିପରି ଭକ୍ତ ଶ୍ରୀରଘୁନାଥଙ୍କ ପରମଧାମକୁ ଯାଏ; ଏବଂ ପୁନର୍ଜନ୍ମ ହେଲେ ମଧ୍ୟ ହରିଭକ୍ତ ରୂପେ ଖ୍ୟାତି ଲାଭ କରେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 37,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "और देवता चित्त न धरई । हनुमत सेइ सर्ब सुख करई ॥ ३५ ॥",
+      "iast": "aura dēvatā citta na dharaī । hanumata sēi sarba sukha karaī ॥ 35 ॥",
+      "transliterations": {
+        "telugu": "ఔర దేవతా చిత్త న ధరఈ । హనుమత సేఇ సర్బ సుఖ కరఈ ॥ ౩౫ ॥",
+        "tamil": "ஔர தேவதா சித்த ந தரஈ । ஹநுமத ஸேஇ ஸர்ப ஸுக கரஈ ॥ ௩௫ ॥",
+        "kannada": "ಔರ ದೇವತಾ ಚಿತ್ತ ನ ಧರಈ । ಹನುಮತ ಸೇಇ ಸರ್ಬ ಸುಖ ಕರಈ ॥ ೩೫ ॥",
+        "malayalam": "ഔര ദേവതാ ചിത്ത ന ധരഈ । ഹനുമത സേഇ സര്ബ സുഖ കരഈ ॥ ൩൫ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Even without contemplating any other deity, serving Hanuman alone yields all supreme bliss.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "किसी अन्य देवता का ध्यान न करते हुए भी, केवल श्री हनुमान जी की सेवा-भक्ति करने से साधक को सभी प्रकार के सुख प्राप्त हो जाते हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఇతర దేవతలను ఆశ్రయించకున్నను, కేవలము హనుమంతుని సేవించుట ద్వారానే భక్తునికి సకల సుఖములు ప్రాప్తించును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "வேறெந்த தெய்வத்தையும் நாடாமல், ஸ்ரீ அனுமனை மட்டுமே அன்போடு வழிபடுபவன் எல்லாவிதமான இன்பங்களையும் பெறுகின்றான்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಇತರ ದೇವತೆಗಳ ಧ್ಯಾನ ಮಾಡದಿದ್ದರೂ, ಕೇವಲ ಶ್ರೀ ಹನುಮಂತನನ್ನು ಶ್ರದ್ಧೆಯಿಂದ ಸೇವಿಸುವುದರಿಂದಲೇ ಸಕಲ ಸುಖಗಳೂ ಲಭಿಸುತ್ತವೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "इतर कोणत्याही देवाचे ध्यान न धरताही, केवळ हनुमंतांची सेवा केल्याने सर्व सुखांची प्राप्ती होते.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "অন্য কোন দেবতার আরাধনা না করিলেও, কেবল শ্রীহনুমানের শরণ ও সেবা করিলেই সর্বপ্রকার সুখ-শান্তি অধিগত হয়।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "અન્ય કોઈ દેવતાનું ધ્યાન ન ધરતાં પણ, કેવળ હનુમાનજીની સેવા કરવાથી મનુષ્યને સઘળાં સુખ પ્રાપ્ત થઈ જાય છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "മറ്റു ദേവന്മാരെ ധ്യാനിച്ചില്ലെങ്കിൽപ്പോലും ഹനുമാനെ മാത്രം സേവിച്ചാൽത്തന്നെ സകല സൗഭാഗ്യങ്ങളും ലഭിക്കും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଅନ୍ୟ ଦେବତାଙ୍କ ଧ୍ୟାନ ନ କରି ମଧ୍ୟ, କେବଳ ଶ୍ରୀ ହନୁମାନଙ୍କ ସେବା କରିବା ଦ୍ୱାରା ସକଳ ସୁଖ ପ୍ରାପ୍ତ ହୁଏ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 38,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "सङ्कट कटै मिटै सब पीरा । जो सुमिरै हनुमत बलबीरा ॥ ३६ ॥",
+      "iast": "saṅkaṭa kaṭai miṭai saba pīrā । jō sumirai hanumata balabīrā ॥ 36 ॥",
+      "transliterations": {
+        "telugu": "సఙ్కట కటై మిటై సబ పీరా । జో సుమిరై హనుమత బలబీరా ॥ ౩౬ ॥",
+        "tamil": "ஸங்கட கடை மிடை ஸப பீரா । ஜோ ஸுமிரை ஹநுமத பலபீரா ॥ ௩௬ ॥",
+        "kannada": "ಸಙ್ಕಟ ಕಟೈ ಮಿಟೈ ಸಬ ಪೀರಾ । ಜೋ ಸುಮಿರೈ ಹನುಮತ ಬಲಬೀರಾ ॥ ೩೬ ॥",
+        "malayalam": "സങ്കട കടൈ മിടൈ സബ പീരാ । ജോ സുമിരൈ ഹനുമത ബലബീരാ ॥ ൩൬ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "All crises are severed and all pain erased for him who remembers the mighty hero Hanuman.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जो व्यक्ति महाबली वीर हनुमान जी का स्मरण करता है, उसके सारे संकट कट जाते हैं और सारी पीड़ाएं मिट जाती हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "మహా బలవంతుడైన వీరాంజనేయుని స్మరించువానికి సమస్త ఆపదలు తొలగిపోయి, సర్వ దుఃఖములు నశించును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "மகா பலவானான வீர அனுமனைத் தியானிப்பவனின் சங்கடங்கள் யாவும் அறுபட்டு, சகல துன்பங்களும் அடியோடு நீங்கிவிடும்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಮಹಾ ಬಲಶಾಲಿಯಾದ ವೀರ ಹನುಮಂತನನ್ನು ಸ್ಮರಿಸುವವನ ಎಲ್ಲ ಸಂಕಟಗಳೂ ದೂರವಾಗಿ, ಸಕಲ ನೋವುಗಳೂ ಕರಗಿಹೋಗುತ್ತವೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जो महाबली वीर हनुमंतांचे स्मरण करतो, त्याचे सर्व संकट टळतात आणि सर्व वेदना नाहीशा होतात.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যিনি মহাবলী বীর হনুমানকে স্মরণ করেন, তাঁহার সকল সংকট ছিন্ন হয় এবং সকল যন্ত্রণা চিরতরে বিদূরিত হয়।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જે વ્યક્તિ મહાબલી વીર હનુમાનજીનું સ્મરણ કરે છે, તેના બધા સંકટો ટળી જાય છે અને તમામ પીડાઓ મટી જાય છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "മഹാബലവാനായ ഹനുമാനെ സ്മരിക്കുന്നവന്റെ സകല ആപത്തുകളും ഒഴിഞ്ഞുപോവുകയും എല്ലാ ദുരിതങ്ങളും ശമിക്കുകയും ചെയ്യും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯେଉଁ ବ୍ୟକ୍ତି ମହାବଳୀ ବୀର ହନୁମାନଙ୍କୁ ସ୍ମରଣ କରେ, ତାର ସମସ୍ତ ସଙ୍କଟ କଟିଯାଏ ଏବଂ ସମସ୍ତ ପୀଡ଼ା ମିଳାଇଯାଏ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 39,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "जय जय जय हनुमान गोसाईं । कृपा करहु गुरुदेव की नाईं ॥ ३७ ॥",
+      "iast": "jaya jaya jaya hanumāna gōsāīṁ । kṛpā karahu gurudēva kī nāīṁ ॥ 37 ॥",
+      "transliterations": {
+        "telugu": "జయ జయ జయ హనుమాన గోసాఈం । కృపా కరహు గురుదేవ కీ నాఈం ॥ ౩౭ ॥",
+        "tamil": "ஜய ஜய ஜய ஹநுமாந கோஸாஈம் । க்ரு'பா கரஹு குருதேவ கீ நாஈம் ॥ ௩௭ ॥",
+        "kannada": "ಜಯ ಜಯ ಜಯ ಹನುಮಾನ ಗೋಸಾಈಂ । ಕೃಪಾ ಕರಹು ಗುರುದೇವ ಕೀ ನಾಈಂ ॥ ೩೭ ॥",
+        "malayalam": "ജയ ജയ ജയ ഹനുമാന ഗോസാഈം । കൃപാ കരഹു ഗുരുദേവ കീ നാഈം ॥ ൩൭ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Hail, hail, hail to Lord Hanuman! Shower Your grace upon me like a divine spiritual Guru!",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे इन्द्रियों के स्वामी प्रभु श्री हनुमान जी! आपकी जय हो, जय हो, जय हो! आप सद्गुरुदेव के समान मुझ पर अपनी अहैतुकी कृपा कीजिए!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఓ హనుమత్ప్రభూ! నీకు జయము, జయము, జయము! పూజ్యుడైన సద్గురువు వలె నాయందు అమితమైన దయను చూపుము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இந்திரியங்களை வென்ற ஆஞ்சநேயப் பெருமானே! உனக்கு வெற்றி, வெற்றி, வெற்றி உண்டாகட்டும்! சற்குருவைப் போல என் மீது கருணை பொழிவாயாக!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಹೇ ಹನುಮಂತ ಪ್ರಭುವೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ! ಪೂಜ್ಯ ಸದ್ಗುರುಗಳಂತೆ ನನ್ನ ಮೇಲೆ ದಯವಿಟ್ಟು ಕೃಪೆ ತೋರು!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे प्रभो हनुमंता! तुमचा जय असो, जय असो, जय असो! सद्गुरूंप्रमाणे माझ्यावर आपली असीम कृपा करा!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে সর্বেন্দ্রিয়জয়ী শ্রীহনুমান প্রভু! তোমার জয় হউক, জয় হউক, পুনঃপুনঃ জয় হউক! সদগুরুদেবের ন্যায় আমার প্রতি পরম কৃপা বর্ষণ কর!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હે ઇન્દ્રિયોના સ્વામી શ્રી હનુમાનજી! આપનો જય હો, જય હો, જય હો! સદ્ગુરુદેવની જેમ મારા પર આપની દયા કરો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഹേ ഹനുമാൻ പ്രഭോ! അങ്ങേയ്ക്ക് ജയം, ജയം, ജയമുണ്ടാകട്ടെ! സദ്ഗുരുവിനെപ്പോലെ എന്റെമേൽ കരുണ ചൊരിയേണമേ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହେ ସର୍ବେନ୍ଦ୍ରିୟଜୟୀ ଶ୍ରୀ ହନୁମାନ ପ୍ରଭୁ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ, ଜୟ ହେଉ ! ସଦ୍‌ଗୁରୁଙ୍କ ପରି ମୋ ଉପରେ କୃପା ବର୍ଷଣ କର !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 40,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "जो सत बार पाठ कर कोई । छूटहि बन्दि महा सुख होई ॥ ३८ ॥",
+      "iast": "jō sata bāra pāṭha kara kōī । chūṭahi bandi mahā sukha hōī ॥ 38 ॥",
+      "transliterations": {
+        "telugu": "జో సత బార పాఠ కర కోఈ । ఛూటహి బన్ది మహా సుఖ హోఈ ॥ ౩౮ ॥",
+        "tamil": "ஜோ ஸத பார பாட கர கோஈ । சூடஹி பந்தி மஹா ஸுக ஹோஈ ॥ ௩௮ ॥",
+        "kannada": "ಜೋ ಸತ ಬಾರ ಪಾಠ ಕರ ಕೋಈ । ಛೂಟಹಿ ಬನ್ದಿ ಮಹಾ ಸುಖ ಹೋಈ ॥ ೩೮ ॥",
+        "malayalam": "ജോ സത ബാര പാഠ കര കോഈ । ഛൂടഹി ബന്ദി മഹാ സുഖ ഹോഈ ॥ ൩൮ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Whoever recites this one hundred times is freed from all bondage and attains supreme happiness.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जो कोई भी इस चालीसा का सौ बार पाठ करता है, वह संसार के समस्त बंधनों और कष्टों से मुक्त हो जाता है तथा उसे परम सुख की प्राप्ति होती है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఎవరైతే ఈ హనుమాన్ చాలీసాను వంద మార్లు భక్తితో పారాయణము చేయుదురో, వారు సమస్త బంధనముల నుండి విముక్తులై పరమానందమును పొందుదురు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "எவர் ஒருவர் இந்த அனுமன் சாலிசாவை நூறு முறை பாராயணம் செய்கின்றாரோ, அவர் சகல தளைகளிலிருந்தும் விடுபட்டுப் பேரின்பத்தை எய்துவார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಯಾರು ಈ ಹನುಮಾನ್ ಚಾಲೀಸಾವನ್ನು ನೂರು ಬಾರಿ ಶ್ರದ್ಧೆಯಿಂದ ಪಠಿಸುವರೋ, ಅವರು ಸಕಲ ಬಂಧನಗಳಿಂದ ಮುಕ್ತರಾಗಿ ಪರಮ ಸುಖವನ್ನು ಹೊಂದುತ್ತಾರೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जो कोणी या चालीसाचे शंभर वेळा पाठ करतो, तो सर्व बंधनांतून मुक्त होतो आणि त्याला परमानंद प्राप्त होतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যিনি এই চালীসা শতবার ভক্তিভরে পাঠ করেন, তিনি ভববন্ধন হইতে মুক্তি লাভ করিয়া পরমানন্দ উপভোগ করেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જે કોઈ આ હનુમાન ચાલીસાનો સો વાર પાઠ કરે છે, તે તમામ બંધનોમાંથી મુક્ત થઈને પરમ સુખ પ્રાપ્ત કરે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഈ ഹനുമാൻ ചാലീസ നൂറുതവണ ഭക്തിയോടെ ജപിക്കുന്നവൻ സർവ്വബന്ധനങ്ങളിൽനിന്നും മുക്തനായി പരമാനന്ദം പ്രാപിക്കും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯିଏ ଏହି ଚାଳୀଶାକୁ ଶହେ ଥର ଭକ୍ତିର ସହ ପାଠ କରେ, ସେ ସମସ୍ତ ବନ୍ଧନରୁ ମୁକ୍ତ ହୋଇ ପରମ ସୁଖ ଲାଭ କରେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 41,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "जो यह पढ़ै हनुमान चालीसा । होय सिद्धि साखी गौरीसा ॥ ३९ ॥",
+      "iast": "jō yaha paṛhai hanumāna cālīsā । hōya siddhi sākhī gaurīsā ॥ 39 ॥",
+      "transliterations": {
+        "telugu": "జో యహ పढ़ై హనుమాన చాలీసా । హోయ సిద్ధి సాఖీ గౌరీసా ॥ ౩౯ ॥",
+        "tamil": "ஜோ யஹ பஃட³ை ஹநுமாந சாலீஸா । ஹோய ஸித்தி ஸாகீ கௌரீஸா ॥ ௩௯ ॥",
+        "kannada": "ಜೋ ಯಹ ಪಢ಼ೈ ಹನುಮಾನ ಚಾಲೀಸಾ । ಹೋಯ ಸಿದ್ಧಿ ಸಾಖೀ ಗೌರೀಸಾ ॥ ೩೯ ॥",
+        "malayalam": "ജോ യഹ പढ़ൈ ഹനുമാന ചാലീസാ । ഹോയ സിദ്ധി സാഖീ ഗൌരീസാ ॥ ൩൯ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Whoever recites this Hanuman Chalisa attains all perfection, as witnessed by Lord Shiva Himself.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जो मनुष्य इस हनुमान चालीसा का नियमित पाठ करता है, उसे निश्चित ही सिद्धि प्राप्त होती है—इस बात के साक्षी स्वयं भगवान् शिव हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఎవరు ఈ హనుమాన్ చాలీసాను నిత్యము పఠింతురో, వారు నిస్సందేహముగా సర్వసిద్ధులను పొందెదరు—దీనికి సాక్షాత్ పరమశివుడే సాక్షి.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "எவர் இந்த அனுமன் சாலிசாவைத் தினமும் ஓதுகின்றாரோ, அவர் சகல சித்திகளையும் அடைவார்—இதற்குச் சாட்சியாகக் கௌரிநாதனான சிவனே விளங்குகின்றார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಯಾರು ಈ ಹನುಮಾನ್ ಚಾಲೀಸಾವನ್ನು ನಿತ್ಯವೂ ಪಠಿಸುವರೋ, ಅವರು ಖಂಡಿತವಾಗಿಯೂ ಸಿದ್ಧಿಯನ್ನು ಹೊಂದುತ್ತಾರೆ—ಇದಕ್ಕೆ ಸ್ವತಃ ಗೌರೀಶನಾದ ಶಿವನೇ ಸಾಕ್ಷಿ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जो मनुष्य या हनुमान चालीसाचे नियमित वाचन करतो, त्याला नक्कीच सिद्धी प्राप्त होते—याचे साक्षीदार स्वतः भगवान शंकर आहेत.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যিনি এই হনুমান চালীসা নিয়মিত পাঠ করেন, তিনি সিদ্ধিলাভ করেন—ইহাতে স্বয়ং গৌরীপতি শিব সাক্ষী রহিয়াছেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જે મનુષ્ય આ હનુમાન ચાલીસાનો નિયમિત પાઠ કરે છે, તેને ચોક્કસ સિદ્ધિ પ્રાપ્ત થાય છે—આ વાતના સાક્ષી ખુદ ભગવાન શિવ છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഈ ഹനുമാൻ ചാലീസ നിത്യവും ചൊല്ലുന്നവന് സർവ്വസിദ്ധികളും ലഭിക്കുമെന്നതിന് സാക്ഷാൽ പരമശിവൻതന്നെ സാക്ഷിയാണ്.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯେଉଁ ବ୍ୟକ୍ତି ଏହି ହନୁମାନ ଚାଳୀଶାକୁ ନିୟମିତ ପାଠ କରେ, ସେ ନିଶ୍ଚୟ ସିଦ୍ଧି ଲାଭ କରେ—ଏହାର ସାକ୍ଷୀ ସ୍ୱୟଂ ଭଗବାନ ଶିବ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 42,
+      "verse_type": "CHAUPAI",
+      "original_sanskrit": "तुलसीदास सदा हरि चेरा । कीजै नाथ हृदय मँह डेरा ॥ ४० ॥",
+      "iast": "tulasīdāsa sadā hari cērā । kījai nātha hṛdaya mam̐ha ḍērā ॥ 40 ॥",
+      "transliterations": {
+        "telugu": "తులసీదాస సదా హరి చేరా । కీజై నాథ హృదయ మఁహ డేరా ॥ ౪౦ ॥",
+        "tamil": "துலஸீதாஸ ஸதா ஹரி சேரா । கீஜை நாத ஹ்ரு'தய மँஹ டேரா ॥ ௪௦ ॥",
+        "kannada": "ತುಲಸೀದಾಸ ಸದಾ ಹರಿ ಚೇರಾ । ಕೀಜೈ ನಾಥ ಹೃದಯ ಮಁಹ ಡೇರಾ ॥ ೪೦ ॥",
+        "malayalam": "തുലസീദാസ സദാ ഹരി ചേരാ । കീജൈ നാഥ ഹൃദയ മഁഹ ഡേരാ ॥ ൪൦ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Tulsidas is ever the servant of the Lord; O Master, make Your permanent abode in my heart!",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "तुलसीदास सदा भगवान् श्रीहरि के विनम्र सेवक हैं; अतः हे नाथ! आप सदैव मेरे हृदय में अपना स्थायी निवास बना लीजिए।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "తులసీదాసు ఎల్లప్పుడు శ్రీహరి యొక్క దాసుడు; కావున ఓ ప్రభూ! నీవు ఎల్లవేళలా నా హృదయమునందు శాశ్వత నివాసము చేయుము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "துளசிதாசன் எப்போதும் ஸ்ரீஹரியின் தொண்டன்; எனவே என் நாதனே! நீ எப்போதும் என் இதயத்தில் நிலையாகக் குடிகொண்டருள்வாயாக.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ತುಳಸೀದಾಸನು ಸದಾ ಶ್ರೀಹರಿಯ ವಿನಮ್ರ ದಾಸನಾಗಿದ್ದಾನೆ; ಆದ್ದರಿಂದ ಹೇ ಪ್ರಭೋ, ನೀವು ಸದಾ ನನ್ನ ಹೃದಯದಲ್ಲಿ ನೆಲೆಸಿರಿ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तुलसीदास सदैव प्रभू श्रीहरींचे नम्र सेवक आहेत; म्हणून हे नाथ! तुम्ही सदैव माझ्या हृदयात वास करा.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তুলসীদাস চিরকালই শ্রীহরির দাস; অতএব হে নাথ! তুমি কৃপা করিয়া সতত আমার হৃদয়ে নিত্যনিবাস স্থাপন কর।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તુલસીદાસ સદાય શ્રીહરિના નમ્ર દાસ છે; માટે હે નાથ! આપ સદા મારા હૃદયમાં વાસ કરો.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "തുളസീദാസ് സദാ ശ്രീഹരിയുടെ ദാസനാണ്; അതുകൊണ്ട് ഹേ നാഥാ! അങ്ങ് എന്റെ ഹൃദയത്തിൽ സ്ഥിരമായി വസിക്കേണമേ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତୁଳସୀଦାସ ସଦା ଶ୍ରୀହରିଙ୍କର ବିନମ୍ର ଦାସ; ତେଣୁ ହେ ନାଥ ! ତୁମେ ସଦା ମୋର ହୃଦୟରେ ବାସ କର ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 43,
+      "verse_type": "DOHA",
+      "original_sanskrit": "पवनतनय संकट हरन मंगल मूरति रूप ।\nराम लखन सीता सहित हृदय बसहु सुर भूप ॥",
+      "iast": "pavanatanaya saṅkaṭa harana maṅgala mūrati rūpa ।\nrāma lakhana sītā sahita hṛdaya basahu sura bhūpa ॥",
+      "transliterations": {
+        "telugu": "పవనతనయ సంకట హరన మంగల మూరతి రూప ।\nరామ లఖన సీతా సహిత హృదయ బసహు సుర భూప ॥",
+        "tamil": "பவநதநய ஸம்கட ஹரந மம்கல மூரதி ரூப ।\nராம லகந ஸீதா ஸஹித ஹ்ரு'தய பஸஹு ஸுர பூப ॥",
+        "kannada": "ಪವನತನಯ ಸಂಕಟ ಹರನ ಮಂಗಲ ಮೂರತಿ ರೂಪ ।\nರಾಮ ಲಖನ ಸೀತಾ ಸಹಿತ ಹೃದಯ ಬಸಹು ಸುರ ಭೂಪ ॥",
+        "malayalam": "പവനതനയ സംകട ഹരന മംഗല മൂരതി രൂപ ।\nരാമ ലഖന സീതാ സഹിത ഹൃദയ ബസഹു സുര ഭൂപ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "O Son of the Wind, dispeller of calamities, embodiment of auspiciousness! Abide in my heart forever along with Rama, Lakshmana, and Sita, O King of Gods!",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे पवनपुत्र! संकटों का नाश करने वाले और साक्षात् मंगल की मूर्ति! हे देवों के शिरोमणि! आप भगवान् श्रीराम, लक्ष्मण और माता सीता सहित सदैव मेरे हृदय में निवास कीजिए।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఓ పవనపుత్రా! సకల ఆపదలను హరించువాడా! మంగళస్వరూపుడా! దేవదేవుడవైన ఓ హనుమా! శ్రీరాముడు, లక్ష్మణుడు మరియు సీతాదేవితో కూడి నీవు ఎల్లప్పుడు నా హృదయమునందు కొలువై యుండుము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "வாயுபுத்திரனே! சங்கடங்களை வேரறுப்பவனே! மங்கள வடிவினனே! தேவநாயகனே! நீ ஸ்ரீராமர், லக்ஷ்மணர், அன்னை சீதையோடு என் இதயத்தில் என்றும் வீற்றிருப்பாயாக.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಹೇ ಪವನಪುತ್ರನೇ! ಸಂಕಟಗಳನ್ನು ನಿವಾರಿಸುವ ಮಂಗಳಮೂರ್ತಿಯೇ! ದೇವತೆಗಳ ಶಿರೋಮಣಿಯೇ! ನೀವು ಶ್ರೀರಾಮ, ಲಕ್ಷ್ಮಣ ಮತ್ತು ಸೀತಾದೇವಿಯೊಂದಿಗೆ ಸದಾ ನನ್ನ ಹೃದಯದಲ್ಲಿ ನೆಲೆಸಿರಿ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे पवनपुत्र! सर्व संकटांचे हरण करणारे आणि साक्षात् मंगलमूर्ती! हे देवांच्या राजा! तुम्ही श्रीराम, लक्ष्मण आणि सीतामातेसहित सदैव माझ्या हृदयात वास करा.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে পবননন্দন! নিখিল সংকটহারী মঙ্গলমূর্তি! হে দেবশিরোমণি! তুমি প্রভু শ্রীরাম, লক্ষণ ও মাতা সীতার সহিত নিয়ত আমার হৃদয়ে নিবাস কর।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હે પવનપુત્ર! સર્વ સંકટોને હરનારા અને સાક્ષાત્ મંગલમૂર્તિ! હે દેવોના શિરોમણિ! આપ શ્રીરામ, લક્ષ્મણ અને માતા સીતા સહિત સદાય મારા હૃદયમાં બિરાજો.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സകല ആപത്തുകളുമകറ്റുന്ന മംഗളസ്വരൂപനായ പവനപുത്രാ! ദേവരാജാവേ! അങ്ങ് ശ്രീരാമനും ലക്ഷ്മണനും സീതമ്മയ്ക്കുമൊപ്പം എന്റെ ഹൃദയത്തിൽ സദാ വാഴേണമേ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହେ ପବନପୁତ୍ର ! ସଙ୍କଟନାଶନ ଓ ମଙ୍ଗଳମୂର୍ତ୍ତି ! ହେ ଦେବଶିରୋମଣି ! ତୁମେ ଶ୍ରୀରାମ, ଲକ୍ଷ୍ମଣ ଓ ମାତା ସୀତାଙ୍କ ସହିତ ସଦା ମୋ ହୃଦୟରେ ବାସ କର ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Awadhi Devotional Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    }
+  ]
+}

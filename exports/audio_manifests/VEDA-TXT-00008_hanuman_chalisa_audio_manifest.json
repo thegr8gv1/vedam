@@ -1,0 +1,615 @@
+{
+  "content_id": "VEDA-TXT-00008",
+  "canonical_title": "Hanuman Chalisa",
+  "devanagari_title": "हनुमान चालीसा",
+  "meter": "Doha & Chaupai (Awadhi Matra Meter)",
+  "primary_deity": "Lord Hanuman",
+  "original_language": "awa",
+  "total_verses": 43,
+  "generated_at_utc": "2026-11-05T01:46:31.368289+00:00",
+  "cues": [
+    {
+      "verse_number": 1,
+      "verse_id": "VEDA-TXT-00008-V001",
+      "original_text": "श्रीगुरु चरन सरोज रज निज मनु मुकुरु सुधारि ।\nबरनउँ रघुबर बिमल जसु जो दायकु फल चारि ॥",
+      "iast_phonetic": "śrīguru carana sarōja raja nija manu mukuru sudhāri ।\nbaranauṁ raghubara bimala jasu jō dāyaku phala cāri ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "श्रीगुरु चरन सरोज रज निज मनु मुकुरु सुधारि ।\nबरनउँ रघुबर बिमल जसु जो दायकु फल चारि ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 2,
+      "verse_id": "VEDA-TXT-00008-V002",
+      "original_text": "बुद्धिहीन तनु जानिके सुमिरौ पवन-कुमार ।\nबल बुधि बिद्या देहु मोहिं हरहु कलेस बिकार ॥",
+      "iast_phonetic": "buddhihīna tanu jānikē sumirau pavana-kumāra ।\nbala budhi bidyā dēhu mohiṁ harahu kalēsa bikāra ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "बुद्धिहीन तनु जानिके सुमिरौ पवन-कुमार ।\nबल बुधि बिद्या देहु मोहिं हरहु कलेस बिकार ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 3,
+      "verse_id": "VEDA-TXT-00008-V003",
+      "original_text": "जय हनुमान ज्ञान गुन सागर । जय कपीस तिहुँ लोक उजागर ॥ १ ॥",
+      "iast_phonetic": "jaya hanumāna jñāna guna sāgara । jaya kapīsa tihuṁ lōka ujāgara ॥ 1 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "जय हनुमान ज्ञान गुन सागर । जय कपीस तिहुँ लोक उजागर ॥ १ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 4,
+      "verse_id": "VEDA-TXT-00008-V004",
+      "original_text": "राम दूत अतुलित बल धामा । अञ्जनि-पुत्र पवनसुत नामा ॥ २ ॥",
+      "iast_phonetic": "rāma dūta atulita bala dhāmā । añjani-putra pavanasuta nāmā ॥ 2 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "राम दूत अतुलित बल धामा । अञ्जनि-पुत्र पवनसुत नामा ॥ २ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 5,
+      "verse_id": "VEDA-TXT-00008-V005",
+      "original_text": "महाबीर बिक्रम बजरङ्गी । कुमति निवार सुमति के सङ्गी ॥ ३ ॥",
+      "iast_phonetic": "mahābīra bikrama bajaraṅgī । kumati nivāra sumati kē saṅgī ॥ 3 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "महाबीर बिक्रम बजरङ्गी । कुमति निवार सुमति के सङ्गी ॥ ३ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 6,
+      "verse_id": "VEDA-TXT-00008-V006",
+      "original_text": "कञ्चन बरन बिराज सुबेसा । कानन कुण्डल कुञ्चित केसा ॥ ४ ॥",
+      "iast_phonetic": "kañcana barana birāja subēsā । kānana kuṇḍala kuñcita kēsā ॥ 4 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "कञ्चन बरन बिराज सुबेसा । कानन कुण्डल कुञ्चित केसा ॥ ४ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 7,
+      "verse_id": "VEDA-TXT-00008-V007",
+      "original_text": "हाथ बज्र औ ध्वजा बिराजै । काँधे मूँज जनेऊ साजै ॥ ५ ॥",
+      "iast_phonetic": "hātha bajra au dhvajā birājai । kām̐dhē mūn̐ja janēū sājai ॥ 5 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "हाथ बज्र औ ध्वजा बिराजै । काँधे मूँज जनेऊ साजै ॥ ५ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 8,
+      "verse_id": "VEDA-TXT-00008-V008",
+      "original_text": "सङ्कर सुवन केसरीनन्दन । तेज प्रताप महा जग बन्दन ॥ ६ ॥",
+      "iast_phonetic": "saṅkara suvana kēsarīnandana । tēja pratāpa mahā jaga bandana ॥ 6 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "सङ्कर सुवन केसरीनन्दन । तेज प्रताप महा जग बन्दन ॥ ६ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 9,
+      "verse_id": "VEDA-TXT-00008-V009",
+      "original_text": "बिद्यावान गुनी अति चातुर । राम काज करिबे को आतुर ॥ ७ ॥",
+      "iast_phonetic": "bidyāvāna gunī ati cātura । rāma kāja karibē kō ātura ॥ 7 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "बिद्यावान गुनी अति चातुर । राम काज करिबे को आतुर ॥ ७ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 10,
+      "verse_id": "VEDA-TXT-00008-V010",
+      "original_text": "प्रभु चरित्र सुनिबे को रसिया । राम लखन सीता मन बसिया ॥ ८ ॥",
+      "iast_phonetic": "prabhu caritra sunibē kō rasiyā । rāma lakhana sītā mana basiyā ॥ 8 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "प्रभु चरित्र सुनिबे को रसिया । राम लखन सीता मन बसिया ॥ ८ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 11,
+      "verse_id": "VEDA-TXT-00008-V011",
+      "original_text": "सूक्ष्म रूप धरि सियहिं दिखावा । बिकट रूप धरि लङ्क जरावा ॥ ९ ॥",
+      "iast_phonetic": "sūkṣma rūpa dhari siyahiṁ dikhāvā । bikaṭa rūpa dhari laṅka jarāvā ॥ 9 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "सूक्ष्म रूप धरि सियहिं दिखावा । बिकट रूप धरि लङ्क जरावा ॥ ९ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 12,
+      "verse_id": "VEDA-TXT-00008-V012",
+      "original_text": "भीम रूप धरि असुर सँहारे । रामचन्द्र के काज सँवारे ॥ १० ॥",
+      "iast_phonetic": "bhīma rūpa dhari asura sam̐hārē । rāmacandra kē kāja sam̐vārē ॥ 10 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "भीम रूप धरि असुर सँहारे । रामचन्द्र के काज सँवारे ॥ १० ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 13,
+      "verse_id": "VEDA-TXT-00008-V013",
+      "original_text": "लाय सजीवन लखन जियाये । श्रीरघुबीर हरषि उर लाये ॥ ११ ॥",
+      "iast_phonetic": "lāya sajīvana lakhana jiyāyē । śrīraghubīra haraṣi ura lāyē ॥ 11 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "लाय सजीवन लखन जियाये । श्रीरघुबीर हरषि उर लाये ॥ ११ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 14,
+      "verse_id": "VEDA-TXT-00008-V014",
+      "original_text": "रघुपति कीन्ही बहुत बड़ाई । तुम मम प्रिय भरतहि सम भाई ॥ १२ ॥",
+      "iast_phonetic": "raghupati kīnhī bahuta baṛāī । tuma mama priya bharatahi sama bhāī ॥ 12 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "रघुपति कीन्ही बहुत बड़ाई । तुम मम प्रिय भरतहि सम भाई ॥ १२ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 15,
+      "verse_id": "VEDA-TXT-00008-V015",
+      "original_text": "सहस बदन तुम्हरो जस गावैं । अस कहि श्रीपति कण्ठ लगावैं ॥ १३ ॥",
+      "iast_phonetic": "sahasa badana tumharō jasa gāvaiṁ । asa kahi śrīpati kaṇṭha lagāvaiṁ ॥ 13 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "सहस बदन तुम्हरो जस गावैं । अस कहि श्रीपति कण्ठ लगावैं ॥ १३ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 16,
+      "verse_id": "VEDA-TXT-00008-V016",
+      "original_text": "सनकादिक ब्रह्मादि मुनीसा । नारद सारद सहित अहीसा ॥ १४ ॥",
+      "iast_phonetic": "sanakādika brahmādi munīsā । nārada sārada sahita ahīsā ॥ 14 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "सनकादिक ब्रह्मादि मुनीसा । नारद सारद सहित अहीसा ॥ १४ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 17,
+      "verse_id": "VEDA-TXT-00008-V017",
+      "original_text": "जम कुबेर दिगपाल जहाँ ते । कबि कोबिद कहि सकैं कहाँ ते ॥ १५ ॥",
+      "iast_phonetic": "jama kubēra digapāla jahām̐ tē । kabi kōbida kahi sakaiṁ kahām̐ tē ॥ 15 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "जम कुबेर दिगपाल जहाँ ते । कबि कोबिद कहि सकैं कहाँ ते ॥ १५ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 18,
+      "verse_id": "VEDA-TXT-00008-V018",
+      "original_text": "तुम उपकार सुग्रीवहिं कीन्हा । राम मिलाय राजपद दीन्हा ॥ १६ ॥",
+      "iast_phonetic": "tuma upakāra sugrīvahiṁ kīnhā । rāma milāya rājapada dīnhā ॥ 16 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "तुम उपकार सुग्रीवहिं कीन्हा । राम मिलाय राजपद दीन्हा ॥ १६ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 19,
+      "verse_id": "VEDA-TXT-00008-V019",
+      "original_text": "तुम्हरो मन्त्र बिभीषन माना । लङ्केस्वर भए सब जग जाना ॥ १७ ॥",
+      "iast_phonetic": "tumharō mantra bibhīṣana mānā । laṅkēsvara bhaē saba jaga jānā ॥ 17 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "तुम्हरो मन्त्र बिभीषन माना । लङ्केस्वर भए सब जग जाना ॥ १७ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 20,
+      "verse_id": "VEDA-TXT-00008-V020",
+      "original_text": "जुग सहस्र जोजन पर भानू । लील्यो ताहि मधुर फल जानू ॥ १८ ॥",
+      "iast_phonetic": "juga sahasra jōjana para bhānū । līlyō tāhi madhura phala jānū ॥ 18 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "जुग सहस्र जोजन पर भानू । लील्यो ताहि मधुर फल जानू ॥ १८ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 21,
+      "verse_id": "VEDA-TXT-00008-V021",
+      "original_text": "प्रभु मुद्रिका मेलि मुख माहीं । जलधि लाँघि गये अचरज नाहीं ॥ १९ ॥",
+      "iast_phonetic": "prabhu mudrikā mēli mukha māhīṁ । jaladhi lām̐ghi gayē acaraja nāhīṁ ॥ 19 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "प्रभु मुद्रिका मेलि मुख माहीं । जलधि लाँघि गये अचरज नाहीं ॥ १९ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 22,
+      "verse_id": "VEDA-TXT-00008-V022",
+      "original_text": "दुर्गम काज जगत के जेते । सुगम अनुग्रह तुम्हरे तेते ॥ २० ॥",
+      "iast_phonetic": "durgama kāja jagata kē jētē । sugama anugraha tumharē tētē ॥ 20 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "दुर्गम काज जगत के जेते । सुगम अनुग्रह तुम्हरे तेते ॥ २० ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 23,
+      "verse_id": "VEDA-TXT-00008-V023",
+      "original_text": "राम दुआरे तुम रखवारे । होत न आज्ञा बिनु पैसारे ॥ २१ ॥",
+      "iast_phonetic": "rāma duārē tuma rakhavārē । hōta na ājñā binu paisārē ॥ 21 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "राम दुआरे तुम रखवारे । होत न आज्ञा बिनु पैसारे ॥ २१ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 24,
+      "verse_id": "VEDA-TXT-00008-V024",
+      "original_text": "सब सुख लहै तुम्हारी सरना । तुम रक्षक काहू को डर ना ॥ २२ ॥",
+      "iast_phonetic": "saba sukha lahai tumhārī saranā । tuma rakṣaka kāhū kō ḍara nā ॥ 22 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "सब सुख लहै तुम्हारी सरना । तुम रक्षक काहू को डर ना ॥ २२ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 25,
+      "verse_id": "VEDA-TXT-00008-V025",
+      "original_text": "आपन तेज सम्हारो आपै । तीनों लोक हाँक तें काँपै ॥ २३ ॥",
+      "iast_phonetic": "āpana tēja samhārō āpai । tīnōṁ lōka hām̐ka tēṁ kām̐pai ॥ 23 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "आपन तेज सम्हारो आपै । तीनों लोक हाँक तें काँपै ॥ २३ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 26,
+      "verse_id": "VEDA-TXT-00008-V026",
+      "original_text": "भूत पिसाच निकट नहिं आवै । महाबीर जब नाम सुनावै ॥ २४ ॥",
+      "iast_phonetic": "bhūta pisāca nikaṭa nahiṁ āvai । mahābīra jaba nāma sunāvai ॥ 24 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "भूत पिसाच निकट नहिं आवै । महाबीर जब नाम सुनावै ॥ २४ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 27,
+      "verse_id": "VEDA-TXT-00008-V027",
+      "original_text": "नासै रोग हरै सब पीरा । जपत निरन्तर हनुमत बीरा ॥ २५ ॥",
+      "iast_phonetic": "nāsai rōga harai saba pīrā । japata nirantara hanumata bīrā ॥ 25 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "नासै रोग हरै सब पीरा । जपत निरन्तर हनुमत बीरा ॥ २५ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 28,
+      "verse_id": "VEDA-TXT-00008-V028",
+      "original_text": "सङ्कट तें हनुमान छुड़ावै । मन क्रम बचन ध्यान जो लावै ॥ २६ ॥",
+      "iast_phonetic": "saṅkaṭa tēṁ hanumāna chuṛāvai । mana krama bacana dhyāna jō lāvai ॥ 26 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "सङ्कट तें हनुमान छुड़ावै । मन क्रम बचन ध्यान जो लावै ॥ २६ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 29,
+      "verse_id": "VEDA-TXT-00008-V029",
+      "original_text": "सब पर राम तपस्वी राजा । तिन के काज सकल तुम साजा ॥ २७ ॥",
+      "iast_phonetic": "saba para rāma tapasvī rājā । tina kē kāja sakala tuma sājā ॥ 27 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "सब पर राम तपस्वी राजा । तिन के काज सकल तुम साजा ॥ २७ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 30,
+      "verse_id": "VEDA-TXT-00008-V030",
+      "original_text": "और मनोरथ जो कोई लावै । सोइ अमित जीवन फल पावै ॥ २८ ॥",
+      "iast_phonetic": "aura manōratha jō kōī lāvai । sōi amita jīvana phala pāvai ॥ 28 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "और मनोरथ जो कोई लावै । सोइ अमित जीवन फल पावै ॥ २८ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 31,
+      "verse_id": "VEDA-TXT-00008-V031",
+      "original_text": "चारों जुग परताप तुम्हारा । है परसिद्ध जगत उजियारा ॥ २९ ॥",
+      "iast_phonetic": "cārōṁ juga paratāpa tumhārā । hai parasiddha jagata ujiyārā ॥ 29 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "चारों जुग परताप तुम्हारा । है परसिद्ध जगत उजियारा ॥ २९ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 32,
+      "verse_id": "VEDA-TXT-00008-V032",
+      "original_text": "साधु सन्त के तुम रखवारे । असुर निकन्दन राम दुलारे ॥ ३० ॥",
+      "iast_phonetic": "sādhu santa kē tuma rakhavārē । asura nikandana rāma dulārē ॥ 30 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "साधु सन्त के तुम रखवारे । असुर निकन्दन राम दुलारे ॥ ३० ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 33,
+      "verse_id": "VEDA-TXT-00008-V033",
+      "original_text": "अष्ट सिद्धि नौ निधि के दाता । अस बर दीन जानकी माता ॥ ३१ ॥",
+      "iast_phonetic": "aṣṭa siddhi nau nidhi kē dātā । asa bara dīna jānakī mātā ॥ 31 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "अष्ट सिद्धि नौ निधि के दाता । अस बर दीन जानकी माता ॥ ३१ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 34,
+      "verse_id": "VEDA-TXT-00008-V034",
+      "original_text": "राम रसायन तुम्हरे पासा । सदा रहो रघुपति के दासा ॥ ३२ ॥",
+      "iast_phonetic": "rāma rasāyana tumharē pāsā । sadā rahō raghupati kē dāsā ॥ 32 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "राम रसायन तुम्हरे पासा । सदा रहो रघुपति के दासा ॥ ३२ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 35,
+      "verse_id": "VEDA-TXT-00008-V035",
+      "original_text": "तुम्हरे भजन राम को पावै । जनम जनम के दुख बिसरावै ॥ ३३ ॥",
+      "iast_phonetic": "tumharē bhajana rāma kō pāvai । janama janama kē dukha bisarāvai ॥ 33 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "तुम्हरे भजन राम को पावै । जनम जनम के दुख बिसरावै ॥ ३३ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 36,
+      "verse_id": "VEDA-TXT-00008-V036",
+      "original_text": "अन्त काल रघुबर पुर जाई । जहाँ जन्म हरि-भक्त कहाई ॥ ३४ ॥",
+      "iast_phonetic": "anta kāla raghubara pura jāī । jahām̐ janma hari-bhakta kahāī ॥ 34 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "अन्त काल रघुबर पुर जाई । जहाँ जन्म हरि-भक्त कहाई ॥ ३४ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 37,
+      "verse_id": "VEDA-TXT-00008-V037",
+      "original_text": "और देवता चित्त न धरई । हनुमत सेइ सर्ब सुख करई ॥ ३५ ॥",
+      "iast_phonetic": "aura dēvatā citta na dharaī । hanumata sēi sarba sukha karaī ॥ 35 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "और देवता चित्त न धरई । हनुमत सेइ सर्ब सुख करई ॥ ३५ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 38,
+      "verse_id": "VEDA-TXT-00008-V038",
+      "original_text": "सङ्कट कटै मिटै सब पीरा । जो सुमिरै हनुमत बलबीरा ॥ ३६ ॥",
+      "iast_phonetic": "saṅkaṭa kaṭai miṭai saba pīrā । jō sumirai hanumata balabīrā ॥ 36 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "सङ्कट कटै मिटै सब पीरा । जो सुमिरै हनुमत बलबीरा ॥ ३६ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 39,
+      "verse_id": "VEDA-TXT-00008-V039",
+      "original_text": "जय जय जय हनुमान गोसाईं । कृपा करहु गुरुदेव की नाईं ॥ ३७ ॥",
+      "iast_phonetic": "jaya jaya jaya hanumāna gōsāīṁ । kṛpā karahu gurudēva kī nāīṁ ॥ 37 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "जय जय जय हनुमान गोसाईं । कृपा करहु गुरुदेव की नाईं ॥ ३७ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 40,
+      "verse_id": "VEDA-TXT-00008-V040",
+      "original_text": "जो सत बार पाठ कर कोई । छूटहि बन्दि महा सुख होई ॥ ३८ ॥",
+      "iast_phonetic": "jō sata bāra pāṭha kara kōī । chūṭahi bandi mahā sukha hōī ॥ 38 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "जो सत बार पाठ कर कोई । छूटहि बन्दि महा सुख होई ॥ ३८ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 41,
+      "verse_id": "VEDA-TXT-00008-V041",
+      "original_text": "जो यह पढ़ै हनुमान चालीसा । होय सिद्धि साखी गौरीसा ॥ ३९ ॥",
+      "iast_phonetic": "jō yaha paṛhai hanumāna cālīsā । hōya siddhi sākhī gaurīsā ॥ 39 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "जो यह पढ़ै हनुमान चालीसा । होय सिद्धि साखी गौरीसा ॥ ३९ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 42,
+      "verse_id": "VEDA-TXT-00008-V042",
+      "original_text": "तुलसीदास सदा हरि चेरा । कीजै नाथ हृदय मँह डेरा ॥ ४० ॥",
+      "iast_phonetic": "tulasīdāsa sadā hari cērā । kījai nātha hṛdaya mam̐ha ḍērā ॥ 40 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "तुलसीदास सदा हरि चेरा । कीजै नाथ हृदय मँह डेरा ॥ ४० ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 43,
+      "verse_id": "VEDA-TXT-00008-V043",
+      "original_text": "पवनतनय संकट हरन मंगल मूरति रूप ।\nराम लखन सीता सहित हृदय बसहु सुर भूप ॥",
+      "iast_phonetic": "pavanatanaya saṅkaṭa harana maṅgala mūrati rūpa ।\nrāma lakhana sītā sahita hṛdaya basahu sura bhūpa ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "पवनतनय संकट हरन मंगल मूरति रूप ।\nराम लखन सीता सहित हृदय बसहु सुर भूप ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    }
+  ],
+  "translation_reference_note": "Audio recording must recite only the immutable original sacred verse text; translations and regional explanations must be recorded as separate commentary tracks."
+}

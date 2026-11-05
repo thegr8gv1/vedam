@@ -1,0 +1,993 @@
+{
+  "content_id": "VEDA-TXT-00013",
+  "canonical_title": "Venkateswara Suprabhatam",
+  "devanagari_title": "श्रीवेङ्कटेश्वरसुप्रभातम्",
+  "meter": "Vasantatilaka / Malini",
+  "primary_deity": "Lord Venkateswara",
+  "original_language": "sa",
+  "total_verses": 70,
+  "generated_at_utc": "2026-11-05T01:46:32.762270+00:00",
+  "cues": [
+    {
+      "verse_number": 1,
+      "verse_id": "VEDA-TXT-00013-V001",
+      "original_text": "कौसल्या सुप्रजा राम पूर्वा सन्ध्या प्रवर्तते ।\nउत्तिष्ठ नरशार्दूल कर्त्तव्यं दैवमाह्निकम् ॥ १ ॥",
+      "iast_phonetic": "kausalyā suprajā rāma pūrvā sandhyā pravartatē ।\nuttiṣṭha naraśārdūla karttavyaṁ daivamāhnikam ॥ 1 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "कौसल्या सुप्रजा राम पूर्वा सन्ध्या प्रवर्तते ।\nउत्तिष्ठ नरशार्दूल कर्त्तव्यं दैवमाह्निकम् ॥ १ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 2,
+      "verse_id": "VEDA-TXT-00013-V002",
+      "original_text": "उत्तिष्ठोत्तिष्ठ गोविन्द उत्तिष्ठ गरुडध्वज ।\nउत्तिष्ठ कमलाकान्त त्रैलोक्यं मङ्गलं कुरु ॥ २ ॥",
+      "iast_phonetic": "uttiṣṭhōttiṣṭha gōvinda uttiṣṭha garuḍadhvaja ।\nuttiṣṭha kamalākānta trailōkyaṁ maṅgalaṁ kuru ॥ 2 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "उत्तिष्ठोत्तिष्ठ गोविन्द उत्तिष्ठ गरुडध्वज ।\nउत्तिष्ठ कमलाकान्त त्रैलोक्यं मङ्गलं कुरु ॥ २ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 3,
+      "verse_id": "VEDA-TXT-00013-V003",
+      "original_text": "मातस्समस्तजगतां मधुकैटभारे-\nर्वक्षोविहारिणि मनोहरदिव्यमूर्ते ।\nश्रीचन्दनोक्षितपयोधरदिव्यगन्धे\nश्रीवेङ्कटेशदयिते तव सुप्रभातम् ॥ ३ ॥",
+      "iast_phonetic": "mātassamastajagatāṁ madhukaiṭabhārē-\nrrakṣōvihāriṇi manōharadivyamūrtē ।\nśrīcandanōkṣitapayōdharadivyagandhē\nśrīveṅkaṭēśadayitē tava suprabhātam ॥ 3 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "मातस्समस्तजगतां मधुकैटभारे-\nर्वक्षोविहारिणि मनोहरदिव्यमूर्ते ।\nश्रीचन्दनोक्षितपयोधरदिव्यगन्धे\nश्रीवेङ्कटेशदयिते तव सुप्रभातम् ॥ ३ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 4,
+      "verse_id": "VEDA-TXT-00013-V004",
+      "original_text": "तव सुप्रभातमरविन्दलोचने\nभवतु प्रसन्नमुखचन्द्रमण्डले ।\nविधिशङ्करेन्द्रवनिताभिरर्चिते\nवृषशैलनाथदयिते दयानिधे ॥ ४ ॥",
+      "iast_phonetic": "tava suprabhātam aravindalōcanē\nbhavatu prasannamukhacandramaṇḍalē ।\nvidhiśaṅkarēndravanitābhirarcitē\nvṛṣaśailanāthadayitē dayānidhē ॥ 4 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "तव सुप्रभातमरविन्दलोचने\nभवतु प्रसन्नमुखचन्द्रमण्डले ।\nविधिशङ्करेन्द्रवनिताभिरर्चिते\nवृषशैलनाथदयिते दयानिधे ॥ ४ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 5,
+      "verse_id": "VEDA-TXT-00013-V005",
+      "original_text": "अत्र्यादिमुख्यऋषयस्समुपास्य सन्ध्यां\nसरोरुहमुकुलोपमदिव्यनेत्राः ।\nहर्षोत्फुल्लकमलाक्ष तवाभिवन्द्य\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ ५ ॥",
+      "iast_phonetic": "atryādimukhya-ṛṣayassamupāsya sandhyāṁ\nsarōruhamukulōpamadivyanētrāḥ ।\nharṣōtphullakamalākṣa tavābhivandya\nśrīveṅkaṭācalapatē tava suprabhātam ॥ 5 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "अत्र्यादिमुख्यऋषयस्समुपास्य सन्ध्यां\nसरोरुहमुकुलोपमदिव्यनेत्राः ।\nहर्षोत्फुल्लकमलाक्ष तवाभिवन्द्य\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ ५ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 6,
+      "verse_id": "VEDA-TXT-00013-V006",
+      "original_text": "पञ्चाननादिदिक्पालमुख्यास्सर्वे\nसमागत्य तिष्ठन्ति साञ्जलिबन्धाः ।\nआदिशेषाद्यखिलविहगेश्वराद्याः\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ ६ ॥",
+      "iast_phonetic": "pañcānanādidikpālamukhyāssarvē\nsamāgatya tiṣṭhanti sāñjalibandhāḥ ।\nādiśēṣādyakhilavihagēśvarādyāḥ\nśrīveṅkaṭācalapatē tava suprabhātam ॥ 6 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "पञ्चाननादिदिक्पालमुख्यास्सर्वे\nसमागत्य तिष्ठन्ति साञ्जलिबन्धाः ।\nआदिशेषाद्यखिलविहगेश्वराद्याः\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ ६ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 7,
+      "verse_id": "VEDA-TXT-00013-V007",
+      "original_text": "ईषत्प्रफुल्लसरसीरुहनारिकेल-\nपूगद्रुमादिसुमनोहरकान्तिभाजा ।\nप्राची विभाति परिपालितसर्वलोक\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ ७ ॥",
+      "iast_phonetic": "īṣatpraphullasarasīruhanārikēla-\npūgadrumādisumanōharakāntibhājā ।\nprācī vibhāti paripālitasarvalōka\nśrīveṅkaṭācalapatē tava suprabhātam ॥ 7 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "ईषत्प्रफुल्लसरसीरुहनारिकेल-\nपूगद्रुमादिसुमनोहरकान्तिभाजा ।\nप्राची विभाति परिपालितसर्वलोक\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ ७ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 8,
+      "verse_id": "VEDA-TXT-00013-V008",
+      "original_text": "फुल्लारविन्दपरिमलपवनेन मन्दं\nसञ्चारितेन परिकल्पितसौख्यलेशाः ।\nगानं प्रकुर्वति वराङ्गिकुलानि देव\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ ८ ॥",
+      "iast_phonetic": "phullāravindaparimalapavanēna mandaṁ\nsañcāritēna parikalpitasaukhyalēśāḥ ।\ngānaṁ prakurvati varāṅgikulāni dēva\nśrīveṅkaṭācalapatē tava suprabhātam ॥ 8 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "फुल्लारविन्दपरिमलपवनेन मन्दं\nसञ्चारितेन परिकल्पितसौख्यलेशाः ।\nगानं प्रकुर्वति वराङ्गिकुलानि देव\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ ८ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 9,
+      "verse_id": "VEDA-TXT-00013-V009",
+      "original_text": "वृक्षावलिषु विचरद्भिरनेकपक्षी-\nसङ्घैः समुद्गतमनोहरनादनाना ।\nलोको विबोध्यत इवास्ति समस्तनाथ\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ ९ ॥",
+      "iast_phonetic": "vṛkṣāvaliṣu vicaradbhiranēkapakṣī-\nsaṅghaiḥ samudgatamanōharanādanānā ।\nlōkō vibōdhyata ivāsti samastanātha\nśrīveṅkaṭācalapatē tava suprabhātam ॥ 9 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "वृक्षावलिषु विचरद्भिरनेकपक्षी-\nसङ्घैः समुद्गतमनोहरनादनाना ।\nलोको विबोध्यत इवास्ति समस्तनाथ\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ ९ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 10,
+      "verse_id": "VEDA-TXT-00013-V010",
+      "original_text": "सप्तर्षिमण्डलमुपास्य सुपूज्यपादौ\nसूर्यादितेजसमिहाभिसमीक्ष्य हृष्टाः ।\nगायन्ति साम विविधैः पदपङ्क्तिभेदैः\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ १० ॥",
+      "iast_phonetic": "saptarṣimaṇḍalamupāsya supūjyapādau\nsūryāditējasamihābhisamīkṣya hṛṣṭāḥ ।\ngāyanti sāma vividhaiḥ padapaṅktibhēdaiḥ\nśrīveṅkaṭācalapatē tava suprabhātam ॥ 10 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "सप्तर्षिमण्डलमुपास्य सुपूज्यपादौ\nसूर्यादितेजसमिहाभिसमीक्ष्य हृष्टाः ।\nगायन्ति साम विविधैः पदपङ्क्तिभेदैः\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ १० ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 11,
+      "verse_id": "VEDA-TXT-00013-V011",
+      "original_text": "भ्रातुस्तदीयविमुखैः प्रतिपाद्यमानं\nस्तोत्रं निशम्य मुदितैर्मुनिभिश्च मुख्यैः ।\nआशीर्वचांसि विबुधाः प्रपठन्ति मोदात्\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ ११ ॥",
+      "iast_phonetic": "bhrātustadīyavimukhaiḥ pratipādyamānaṁ\nstōtraṁ niśamya muditairmunibhiśca mukhyaiḥ ।\nāśīrvacāṁsi vibudhāḥ prapaṭhanti mōdāt\nśrīveṅkaṭācalapatē tava suprabhātam ॥ 11 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "भ्रातुस्तदीयविमुखैः प्रतिपाद्यमानं\nस्तोत्रं निशम्य मुदितैर्मुनिभिश्च मुख्यैः ।\nआशीर्वचांसि विबुधाः प्रपठन्ति मोदात्\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ ११ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 12,
+      "verse_id": "VEDA-TXT-00013-V012",
+      "original_text": "देवेन्द्रमुख्यसुरसङ्घमहर्षिसंघाः\nसंसेवितुं तव विभो चरणौ प्रपन्नाः ।\nनेत्रोत्सवाय सुमुखं कुरु मे प्रसन्नं\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ १२ ॥",
+      "iast_phonetic": "dēvēndramukhyasurasaṅghamaharṣisaṁghāḥ\nsaṁsēvituṁ tava vibhō caraṇau prapannāḥ ।\nnētrōtsavāya sumukhaṁ kuru mē prasannaṁ\nśrīveṅkaṭācalapatē tava suprabhātam ॥ 12 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "देवेन्द्रमुख्यसुरसङ्घमहर्षिसंघाः\nसंसेवितुं तव विभो चरणौ प्रपन्नाः ।\nनेत्रोत्सवाय सुमुखं कुरु मे प्रसन्नं\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ १२ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 13,
+      "verse_id": "VEDA-TXT-00013-V013",
+      "original_text": "कञ्जासनादिकविशेखरवन्दिताङ्घ्रे\nगङ्गाधरप्रणतपादसरोरुहाक्ष ।\nसंसारपारमधिगम्य सुपुण्यराशिं\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ १३ ॥",
+      "iast_phonetic": "kañjāsanādikaviśēkharavanditāṅghrē\ngaṅgādharapraṇatapādasarōruhākṣa ।\nsaṁsārapāramadhigamya supuṇyarāśiṁ\nśrīveṅkaṭācalapatē tava suprabhātam ॥ 13 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "कञ्जासनादिकविशेखरवन्दिताङ्घ्रे\nगङ्गाधरप्रणतपादसरोरुहाक्ष ।\nसंसारपारमधिगम्य सुपुण्यराशिं\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ १३ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 14,
+      "verse_id": "VEDA-TXT-00013-V014",
+      "original_text": "वीणाप्रपञ्चविपञ्चीश्रुतिमण्डितानि\nनानाविधानि मधुरस्वरगीतिकानि ।\nशृण्वन्प्रहृष्टहृदयो विबुधैर्नमस्यः\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ १४ ॥",
+      "iast_phonetic": "vīṇāprapañcavipañcīśrutimaṇḍitāni\nnānāvidhāni madhurasvaragītikāni ।\nśṛṇvanprahṛṣṭahṛdayō vibudhairnamasyaḥ\nśrīveṅkaṭācalapatē tava suprabhātam ॥ 14 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "वीणाप्रपञ्चविपञ्चीश्रुतिमण्डितानि\nनानाविधानि मधुरस्वरगीतिकानि ।\nशृण्वन्प्रहृष्टहृदयो विबुधैर्नमस्यः\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ १४ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 15,
+      "verse_id": "VEDA-TXT-00013-V015",
+      "original_text": "सप्ताञ्जनाचलपते करुणापयोधि-\nकल्लोलशीकरविमिश्रितनेत्रपातैः ।\nलोकान्समस्तभुवनान्यभिरक्षमाण\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ १५ ॥",
+      "iast_phonetic": "saptāñjanācalapatē karuṇāpayōdhi-\nkallōlaśīkaravimiśritanētrapātaiḥ ।\nlōkānsamastabhuvanānyabhirakṣamāṇa\nśrīveṅkaṭācalapatē tava suprabhātam ॥ 15 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "सप्ताञ्जनाचलपते करुणापयोधि-\nकल्लोलशीकरविमिश्रितनेत्रपातैः ।\nलोकान्समस्तभुवनान्यभिरक्षमाण\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ १५ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 16,
+      "verse_id": "VEDA-TXT-00013-V016",
+      "original_text": "लक्ष्मीनिकास निरवद्य सुपूर्णकाम\nसर्वज्ञ सर्वसुहृदभयदानदक्ष ।\nकारुण्यवारिनिधिरभ्युदयाय नॄणां\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ १६ ॥",
+      "iast_phonetic": "lakṣmīnikāsa niravadya supūrṇakāma\nsarvajña sarvasuhṛdabhayadānadakṣa ।\nkāruṇyavārinidhirabhyudayāya nṝṇāṁ\nśrīveṅkaṭācalapatē tava suprabhātam ॥ 16 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "लक्ष्मीनिकास निरवद्य सुपूर्णकाम\nसर्वज्ञ सर्वसुहृदभयदानदक्ष ।\nकारुण्यवारिनिधिरभ्युदयाय नॄणां\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ १६ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 17,
+      "verse_id": "VEDA-TXT-00013-V017",
+      "original_text": "कामारिपूजितपदाम्बुज दिव्यमूर्ते\nश्रीमत्सहस्रकिरणप्रतिमाप्रभाव ।\nभक्तार्तिभञ्जन दयापर सर्वलोके\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ १७ ॥",
+      "iast_phonetic": "kāmāripūjitapadāmbuja divyamūrtē\nśrīmatsahasrakiraṇapratimāprabhāva ।\nbhaktārtibhañjana dayāpara sarvalōkē\nśrīveṅkaṭācalapatē tava suprabhātam ॥ 17 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "कामारिपूजितपदाम्बुज दिव्यमूर्ते\nश्रीमत्सहस्रकिरणप्रतिमाप्रभाव ।\nभक्तार्तिभञ्जन दयापर सर्वलोके\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ १७ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 18,
+      "verse_id": "VEDA-TXT-00013-V018",
+      "original_text": "श्रीपद्मनाभ पुरुषोत्तम वासुदेव\nवैकुण्ठ माधव जनार्दन चक्रपाणे ।\nश्रीवत्सचिह्न शरणागतपारिजात\nश्रीवेङ्कटेश भगवन् तव सुप्रभातम् ॥ १८ ॥",
+      "iast_phonetic": "śrīpadmanābha puruṣōttama vāsudēva\nvaikuṇṭha mādhava janārdana cakrapāṇē ।\nśrīvatsacihna śaraṇāgatapārijāta\nśrīveṅkaṭēśa bhagavan tava suprabhātam ॥ 18 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "श्रीपद्मनाभ पुरुषोत्तम वासुदेव\nवैकुण्ठ माधव जनार्दन चक्रपाणे ।\nश्रीवत्सचिह्न शरणागतपारिजात\nश्रीवेङ्कटेश भगवन् तव सुप्रभातम् ॥ १८ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 19,
+      "verse_id": "VEDA-TXT-00013-V019",
+      "original_text": "कन्दर्पदर्पहर सुन्दर दिव्यमूर्ते\nकान्तानुकूल कमनीयगुणाभिरामा ।\nसर्वप्रपन्नपरिपालनबद्धदीक्ष\nश्रीवेङ्कटेश भगवन् तव सुप्रभातम् ॥ १९ ॥",
+      "iast_phonetic": "kandarpadarpahara sundara divyamūrtē\nkāntānukūla kamanīyaguṇābhirāmā ।\nsarvaprapannaparipālanabaddhadīkṣa\nśrīveṅkaṭēśa bhagavan tava suprabhātam ॥ 19 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "कन्दर्पदर्पहर सुन्दर दिव्यमूर्ते\nकान्तानुकूल कमनीयगुणाभिरामा ।\nसर्वप्रपन्नपरिपालनबद्धदीक्ष\nश्रीवेङ्कटेश भगवन् तव सुप्रभातम् ॥ १९ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 20,
+      "verse_id": "VEDA-TXT-00013-V020",
+      "original_text": "श्रीशैलवास विबुधार्चितपादपद्म\nलक्ष्मीनिवास कमलायतपद्मनेत्र ।\nश्रीमन् दयानिधिरमन्दगुणामृताब्धे\nश्रीवेङ्कटेश भगवन् तव सुप्रभातम् ॥ २० ॥",
+      "iast_phonetic": "śrīśailavāsa vibudhārcitapādapadma\nlakṣmīnivāsa kamalāyatapadmanētra ।\nśrīman dayānidhiramandaguṇāmṛtābdhē\nśrīveṅkaṭēśa bhagavan tava suprabhātam ॥ 20 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "श्रीशैलवास विबुधार्चितपादपद्म\nलक्ष्मीनिवास कमलायतपद्मनेत्र ।\nश्रीमन् दयानिधिरमन्दगुणामृताब्धे\nश्रीवेङ्कटेश भगवन् तव सुप्रभातम् ॥ २० ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 21,
+      "verse_id": "VEDA-TXT-00013-V021",
+      "original_text": "विप्राग्र्यसङ्घपरिगीतसुपुण्यकीर्ते\nवेदार्थतत्वनिधये शरणं प्रपन्नाः ।\nकारुण्यपूरपरिपोषितसर्वलोक\nश्रीवेङ्कटेश भगवन् तव सुप्रभातम् ॥ २१ ॥",
+      "iast_phonetic": "viprāgryasaṅghaparigītasupuṇyakīrtē\nvēdārthatatvanidhayē śaraṇaṁ prapannāḥ ।\nkāruṇyapūraparipōṣitasarvalōka\nśrīveṅkaṭēśa bhagavan tava suprabhātam ॥ 21 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "विप्राग्र्यसङ्घपरिगीतसुपुण्यकीर्ते\nवेदार्थतत्वनिधये शरणं प्रपन्नाः ।\nकारुण्यपूरपरिपोषितसर्वलोक\nश्रीवेङ्कटेश भगवन् तव सुप्रभातम् ॥ २१ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 22,
+      "verse_id": "VEDA-TXT-00013-V022",
+      "original_text": "ब्राह्मे मुहूर्ते विनतानुकृतेन भक्त्या\nसंसेवितुं समुपगम्य महर्षिसङ्घाः ।\nतिष्ठन्ति द्वारि वरदाभयहस्तयुक्त\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ २२ ॥",
+      "iast_phonetic": "brāhmē muhūrtē vinatānukṛtēna bhaktyā\nsaṁsēvituṁ samupagamya maharṣisaṅghāḥ ।\ntiṣṭhanti dvāri varadābhayahastayukta\nśrīveṅkaṭācalapatē tava suprabhātam ॥ 22 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "ब्राह्मे मुहूर्ते विनतानुकृतेन भक्त्या\nसंसेवितुं समुपगम्य महर्षिसङ्घाः ।\nतिष्ठन्ति द्वारि वरदाभयहस्तयुक्त\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ २२ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 23,
+      "verse_id": "VEDA-TXT-00013-V023",
+      "original_text": "स्नानोदकैः परिमलोपमशीततोयैः\nसंस्थापितैरहिकुलेन्द्रसुरैर्विमिश्रैः ।\nअभिषेचनाय भवतो मुदिता भवन्ति\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ २३ ॥",
+      "iast_phonetic": "snānōdakaiḥ parimalōpamaśītatōyaiḥ\nsaṁsthāpitairahikulēndrasurairvimiśraiḥ ।\nabhiṣēcanāya bhavatō muditā bhavanti\nśrīveṅkaṭācalapatē tava suprabhātam ॥ 23 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "स्नानोदकैः परिमलोपमशीततोयैः\nसंस्थापितैरहिकुलेन्द्रसुरैर्विमिश्रैः ।\nअभिषेचनाय भवतो मुदिता भवन्ति\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ २३ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 24,
+      "verse_id": "VEDA-TXT-00013-V024",
+      "original_text": "छत्रचामरवरैरभिशोभमानाः\nपादारविन्दयुगलप्रणताः समन्तात् ।\nसूर्येन्दुवह्निनयनस्य विभोः प्रपन्नाः\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ २४ ॥",
+      "iast_phonetic": "chatracāmaravarairabhiśōbhamānāḥ\npādāravindayugalapraṇatāḥ samantāt ।\nsūryēnduvahninayanasya vibhōḥ prapannāḥ\nśrīveṅkaṭācalapatē tava suprabhātam ॥ 24 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "छत्रचामरवरैरभिशोभमानाः\nपादारविन्दयुगलप्रणताः समन्तात् ।\nसूर्येन्दुवह्निनयनस्य विभोः प्रपन्नाः\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ २४ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 25,
+      "verse_id": "VEDA-TXT-00013-V025",
+      "original_text": "वरदाभयमुद्रायुक्तकराञ्चितदिव्यमूर्ते\nसर्वज्ञ सर्ववरद प्रथितप्रताप ।\nआश्रित्य पादयुगलं कृतकृत्यभाजां\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ २५ ॥",
+      "iast_phonetic": "varadābhayamudrāyuktakarāñcitadivyamūrtē\nsarvajña sarvavarada prathitapratāpa ।\nāśritya pādayugalaṁ kṛtakṛtyabhājāṁ\nśrīveṅkaṭācalapatē tava suprabhātam ॥ 25 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "वरदाभयमुद्रायुक्तकराञ्चितदिव्यमूर्ते\nसर्वज्ञ सर्ववरद प्रथितप्रताप ।\nआश्रित्य पादयुगलं कृतकृत्यभाजां\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ २५ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 26,
+      "verse_id": "VEDA-TXT-00013-V026",
+      "original_text": "रामानुजप्रमुखसर्वमहायतीन्द्रैः\nसंसेव्यमानपदपङ्कजपावनार्ह ।\nसंसारपारतरणैकसुपोतभूत\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ २६ ॥",
+      "iast_phonetic": "rāmānujapramukhasarvamahāyatīndraiḥ\nsaṁsēvyamānapadapaṅkajapāvanārha ।\nsaṁsārapārataraṇaikasupōtabhūta\nśrīveṅkaṭācalapatē tava suprabhātam ॥ 26 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "रामानुजप्रमुखसर्वमहायतीन्द्रैः\nसंसेव्यमानपदपङ्कजपावनार्ह ।\nसंसारपारतरणैकसुपोतभूत\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ २६ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 27,
+      "verse_id": "VEDA-TXT-00013-V027",
+      "original_text": "देवदुर्लभसुपुण्यकथानुभावैः\nलोकान्पुनान परमोत्तमकीर्तिभाजा ।\nश्रीशैलशेखरमहारथवाहनाढ्य\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ २७ ॥",
+      "iast_phonetic": "dēvadurlabhasupuṇyakathānubhāvaiḥ\nlōkānpunāna paramōttamakīrtibhājā ।\nśrīśailaśēkharamahārathavāhanāḍhya\nśrīveṅkaṭācalapatē tava suprabhātam ॥ 27 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "देवदुर्लभसुपुण्यकथानुभावैः\nलोकान्पुनान परमोत्तमकीर्तिभाजा ।\nश्रीशैलशेखरमहारथवाहनाढ्य\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ २७ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 28,
+      "verse_id": "VEDA-TXT-00013-V028",
+      "original_text": "श्रीमत्क्रियासमुदितैरहरहः प्रवृत्तैः\nपुण्याहवाचनपुरस्सरवेदघोषैः ।\nउद्घोषितात्मविभवाय मुदान्विताय\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ २८ ॥",
+      "iast_phonetic": "śrīmatkriyāsamuditairaharahpravṛttaiḥ\npuṇyāhavācanapurassaravēdaghōṣaiḥ ।\nudghōṣitātmavibhavāya mudānvitāya\nśrīveṅkaṭācalapatē tava suprabhātam ॥ 28 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "श्रीमत्क्रियासमुदितैरहरहः प्रवृत्तैः\nपुण्याहवाचनपुरस्सरवेदघोषैः ।\nउद्घोषितात्मविभवाय मुदान्विताय\nश्रीवेङ्कटाचलपते तव सुप्रभातम् ॥ २८ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 29,
+      "verse_id": "VEDA-TXT-00013-V029",
+      "original_text": "इत्थं वृषाचलपतेरिह सुप्रभातं\nये मानवाः प्रतिदिनं पठितुं प्रवृत्ताः ।\nतेषां प्रभातसमये स्मृतिकर्तृभाजां\nप्रज्ञां परां च परमां श्रियमिन्दुरुचिं प्रयच्छ ॥ २९ ॥",
+      "iast_phonetic": "itthaṁ vṛṣācalapatēriha suprabhātaṁ\nyē mānavāḥ pratidinaṁ paṭhituṁ pravṛttāḥ ।\ntēṣāṁ prabhātasamayē smṛtikartṛbhājāṁ\nprajñāṁ parāṁ ca paramāṁ śriyaminduruciṁ prayaccha ॥ 29 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "इत्थं वृषाचलपतेरिह सुप्रभातं\nये मानवाः प्रतिदिनं पठितुं प्रवृत्ताः ।\nतेषां प्रभातसमये स्मृतिकर्तृभाजां\nप्रज्ञां परां च परमां श्रियमिन्दुरुचिं प्रयच्छ ॥ २९ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 30,
+      "verse_id": "VEDA-TXT-00013-V030",
+      "original_text": "कमलाकुचचूचुककुङ्कुमतो नियतारुणितातुलनीलतनो ।\nकमलायतलोचन लोकपते विजयी भव वेङ्कटशैलपते ॥ १ ॥",
+      "iast_phonetic": "kamalākuca-cūcuka-kuṅkumato niyatāruṇitātula-nīlatanō .\nkamalāyata-lōcana lōkapatē vijayī bhava vēṅkaṭa-śailapatē .. 1 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "कमलाकुचचूचुककुङ्कुमतो नियतारुणितातुलनीलतनो ।\nकमलायतलोचन लोकपते विजयी भव वेङ्कटशैलपते ॥ १ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 31,
+      "verse_id": "VEDA-TXT-00013-V031",
+      "original_text": "सचतुर्मुखषण्मुखपञ्चमुख-प्रमुखाखिलदैवतमौलिमणे ।\nशरणागतवत्सल सारनिधे परिपालय मां वृषशैलपते ॥ २ ॥",
+      "iast_phonetic": "sa-caturmukha-ṣaṇmukha-pañcamukha-pramukhākhila-daivata-maulimaṇē .\nśaraṇāgata-vatsala sāra-nidhē paripālaya māṁ vṛṣa-śailapatē .. 2 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "सचतुर्मुखषण्मुखपञ्चमुख-प्रमुखाखिलदैवतमौलिमणे ।\nशरणागतवत्सल सारनिधे परिपालय मां वृषशैलपते ॥ २ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 32,
+      "verse_id": "VEDA-TXT-00013-V032",
+      "original_text": "अतिवेलतया तव दुर्विषहैरनुवेलकृतैरपराधशतैः ।\nभरितं त्वरितं वृषशैलपते परया कृपया परिपाहि हरे ॥ ३ ॥",
+      "iast_phonetic": "ativēlatayā tava durviṣahair-anuvēlakṛtair-aparādha-śataiḥ .\nbharitaṁ tvaritaṁ vṛṣa-śailapatē parayā kṛpayā paripāhi harē .. 3 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "अतिवेलतया तव दुर्विषहैरनुवेलकृतैरपराधशतैः ।\nभरितं त्वरितं वृषशैलपते परया कृपया परिपाहि हरे ॥ ३ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 33,
+      "verse_id": "VEDA-TXT-00013-V033",
+      "original_text": "अधिवेङ्कटशैलमुदारमतेर्जनताभिमताधिकदानरतात् ।\nपरदेवतया गदितान्निगमैः कमलादयितान्न परं कलये ॥ ४ ॥",
+      "iast_phonetic": "adhi-vēṅkaṭa-śailam-udāramatēr-janatābhimatādhika-dāna-ratāt .\nparadaivatayā gaditān-nigamaiḥ kamalā-dayitān-na paraṁ kalayē .. 4 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "अधिवेङ्कटशैलमुदारमतेर्जनताभिमताधिकदानरतात् ।\nपरदेवतया गदितान्निगमैः कमलादयितान्न परं कलये ॥ ४ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 34,
+      "verse_id": "VEDA-TXT-00013-V034",
+      "original_text": "कलवेणुरवावशगोपवधू-शतकोटिवृतात्स्मरकोटिसमात् ।\nप्रतिवल्लविकाभिमतात्सुखदाद्वसुदेवसुतान्न परं कलये ॥ ५ ॥",
+      "iast_phonetic": "kala-vēṇu-ravāvaśa-gōpa-vadhū-śata-kōṭi-vṛtāt-smara-kōṭi-samāt .\nprativallavikābhimatāt-sukhadād-vasudēva-sutān-na paraṁ kalayē .. 5 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "कलवेणुरवावशगोपवधू-शतकोटिवृतात्स्मरकोटिसमात् ।\nप्रतिवल्लविकाभिमतात्सुखदाद्वसुदेवसुतान्न परं कलये ॥ ५ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 35,
+      "verse_id": "VEDA-TXT-00013-V035",
+      "original_text": "अभिरामगुणाकर दाशरथे जगदेकधनुर्धर धीरमते ।\nरघुनायक राम रमेश विभो वरदो भव देव दयाजलधे ॥ ६ ॥",
+      "iast_phonetic": "abhirāma-guṇākara dāśarathē jagad-ēka-dhanurdhara dhīramatē .\nraghu-nāyaka rāma ramēśa vibhō varadō bhava dēva dayā-jaladhē .. 6 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "अभिरामगुणाकर दाशरथे जगदेकधनुर्धर धीरमते ।\nरघुनायक राम रमेश विभो वरदो भव देव दयाजलधे ॥ ६ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 36,
+      "verse_id": "VEDA-TXT-00013-V036",
+      "original_text": "अवनीतनयाकमनीयकरं रजनीचरचक्रतमःपतितम् ।\nअमरीपरिवन्दितपादयुगं वरदो भव देव दयाजलधे ॥ ७ ॥",
+      "iast_phonetic": "avanī-tanayā-kamanīya-karaṁ rajanīcara-cakra-tamaḥ-patitam .\namarī-parivandita-pāda-yugaṁ varadō bhava dēva dayā-jaladhē .. 7 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "अवनीतनयाकमनीयकरं रजनीचरचक्रतमःपतितम् ।\nअमरीपरिवन्दितपादयुगं वरदो भव देव दयाजलधे ॥ ७ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 37,
+      "verse_id": "VEDA-TXT-00013-V037",
+      "original_text": "मनसा वचसा च तथा वपुषा जनतोपकृतं न विचिन्तयताम् ।\nप्रतिपक्षरथैरपराजितयोः सहसा पततोर्न भयं विदुषाम् ॥ ८ ॥",
+      "iast_phonetic": "manasā vacasā ca tathā vapuṣā janatōpakṛtaṁ na vicintayatām .\npratipakṣa-rathair-aparājitayōḥ sahasā patatōr-na bhayaṁ viduṣām .. 8 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "मनसा वचसा च तथा वपुषा जनतोपकृतं न विचिन्तयताम् ।\nप्रतिपक्षरथैरपराजितयोः सहसा पततोर्न भयं विदुषाम् ॥ ८ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 38,
+      "verse_id": "VEDA-TXT-00013-V038",
+      "original_text": "अकुतोभयमेतदनेकदिवं जनतोपकृतं सततं भजताम् ।\nपरमं पदमात्मविदो विदुषः शरणं वृषशैलपतेर्भवतः ॥ ९ ॥",
+      "iast_phonetic": "akutōbhayam-ētad-anēka-divaṁ janatōpakṛtaṁ satataṁ bhajatām .\nparamaṁ padam-ātmavidō viduṣaḥ śaraṇaṁ vṛṣa-śailapatēr-bhavataḥ .. 9 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "अकुतोभयमेतदनेकदिवं जनतोपकृतं सततं भजताम् ।\nपरमं पदमात्मविदो विदुषः शरणं वृषशैलपतेर्भवतः ॥ ९ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 39,
+      "verse_id": "VEDA-TXT-00013-V039",
+      "original_text": "विमलाभरणैरुपशोभितयोः कमलाकरकान्तिसमाहतयोः ।\nकमलापतिपादयुगं भजतो न भयं न भयं नरकस्य कदा ॥ १० ॥",
+      "iast_phonetic": "vimalābharaṇair-upaśōbhitayōḥ kamalākara-kānti-samāhatayōḥ .\nkamalāpati-pāda-yugaṁ bhajato na bhayaṁ na bhayaṁ narakasya kadā .. 10 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "विमलाभरणैरुपशोभितयोः कमलाकरकान्तिसमाहतयोः ।\nकमलापतिपादयुगं भजतो न भयं न भयं नरकस्य कदा ॥ १० ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 40,
+      "verse_id": "VEDA-TXT-00013-V040",
+      "original_text": "यदि वेङ्कटेशमहिमातिशयं यदि वेङ्कटेशपदपङ्कजयुग्मम् ।\nअविशङ्कितमेति मनो मनुजः स परं पदमभ्युपैति शुभम् ॥ ११ ॥",
+      "iast_phonetic": "yadi vēṅkaṭēśa-mahimātiśayaṁ yadi vēṅkaṭēśa-pada-paṅkaja-yugmam .\naviśaṅkitam-ēti manō manujaḥ sa paraṁ padam-abhyupaiti śubham .. 11 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "यदि वेङ्कटेशमहिमातिशयं यदि वेङ्कटेशपदपङ्कजयुग्मम् ।\nअविशङ्कितमेति मनो मनुजः स परं पदमभ्युपैति शुभम् ॥ ११ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 41,
+      "verse_id": "VEDA-TXT-00013-V041",
+      "original_text": "ईशानां जगतोऽस्य वेङ्कटपतेर्विष्णोः परां प्रेयसीं\nतद्वक्षःस्थलनित्यवासरसिकां तत्क्षान्तिसंवर्धिनीम् ।\nपद्मालङ्कृतपाणिपल्लवयुगां पद्मासनस्थां श्रियं\nवात्सल्यादिगुणोज्ज्वलां भगवतीं वन्दे जगन्मातरम् ॥ १ ॥",
+      "iast_phonetic": "īśānāṁ jagatō’sya vēṅkaṭapatēr-viṣṇōḥ parāṁ prēyasīṁ\ntad-vakṣasthala-nityavāsa-rasikāṁ tat-kṣānti-saṁvardhinīm .\npadmālaṅkṛta-pāṇi-pallava-yugāṁ padmāsanasthāṁ śriyaṁ\nvātsalyādi-guṇōjjvalāṁ bhagavatīṁ vandē jagan-mātaram .. 1 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "ईशानां जगतोऽस्य वेङ्कटपतेर्विष्णोः परां प्रेयसीं\nतद्वक्षःस्थलनित्यवासरसिकां तत्क्षान्तिसंवर्धिनीम् ।\nपद्मालङ्कृतपाणिपल्लवयुगां पद्मासनस्थां श्रियं\nवात्सल्यादिगुणोज्ज्वलां भगवतीं वन्दे जगन्मातरम् ॥ १ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 42,
+      "verse_id": "VEDA-TXT-00013-V042",
+      "original_text": "श्रीमन् कृपाजलनिधे कृतसर्वलोक\nसर्वज्ञ शक्त नतवत्सल सर्वशेषिन् ।\nस्वामिन् सुशील सुलभाश्रितपारिजात\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ २ ॥",
+      "iast_phonetic": "śrīman kṛpā-jala-nidhe kṛta-sarva-lōka\nsarvajña śakta nata-vatsala sarva-śēṣin .\nsvāmin suśīla sulabhāśrita-pārijāta\nśrī-vēṅkaṭēśa-caraṇau śaraṇaṁ prapadyē .. 2 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "श्रीमन् कृपाजलनिधे कृतसर्वलोक\nसर्वज्ञ शक्त नतवत्सल सर्वशेषिन् ।\nस्वामिन् सुशील सुलभाश्रितपारिजात\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ २ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 43,
+      "verse_id": "VEDA-TXT-00013-V043",
+      "original_text": "आनूपुरार्पितसुजातसुगन्धिपुष्प-\nसौरभ्यसौरभकरौ समसन्निवेशौ ।\nसौम्यौ सदानुभवेऽपि नवानुभाव्यौ\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ ३ ॥",
+      "iast_phonetic": "ānūpurārpita-sujāta-sugandhi-puṣpa-\nsaurabhya-saurabha-karau sama-sannivēśau .\nsaumyau sadānubhavē’pi navānubhāvyau\nśrī-vēṅkaṭēśa-caraṇau śaraṇaṁ prapadyē .. 3 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "आनूपुरार्पितसुजातसुगन्धिपुष्प-\nसौरभ्यसौरभकरौ समसन्निवेशौ ।\nसौम्यौ सदानुभवेऽपि नवानुभाव्यौ\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ ३ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 44,
+      "verse_id": "VEDA-TXT-00013-V044",
+      "original_text": "सद्योविकाशिसमुदित्वरसान्द्रराग-\nसौरभ्यनिर्भरसरोरुहसाम्यवार्ताम् ।\nसम्यक्षु साहसपदेषु विलेखयन्तौ\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ ४ ॥",
+      "iast_phonetic": "sadyō-vikāśi-samuditvara-sāndra-rāga-\nsaurabhya-nirbhara-sarōruha-sāmya-vārtām .\nsamyakṣu sāhasa-padēṣu vilēkhayantau\nśrī-vēṅkaṭēśa-caraṇau śaraṇaṁ prapadyē .. 4 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "सद्योविकाशिसमुदित्वरसान्द्रराग-\nसौरभ्यनिर्भरसरोरुहसाम्यवार्ताम् ।\nसम्यक्षु साहसपदेषु विलेखयन्तौ\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ ४ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 45,
+      "verse_id": "VEDA-TXT-00013-V045",
+      "original_text": "रेखामयध्वजसुधाकलशातपत्र-\nवज्राङ्कुशाम्बुरुहकल्पकशङ्खचक्रैः ।\nभव्यैरलङ्कृततलौ परतत्त्वचिह्नैः\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ ५ ॥",
+      "iast_phonetic": "rēkhāmaya-dhvaja-sudhā-kalaśātapatra-\nvajrāṅkuśāmburuha-kalpaka-śaṅkha-cakraiḥ .\nbhavyair-alaṅkṛta-talau paratattva-cihnaiḥ\nśrī-vēṅkaṭēśa-caraṇau śaraṇaṁ prapadyē .. 5 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "रेखामयध्वजसुधाकलशातपत्र-\nवज्राङ्कुशाम्बुरुहकल्पकशङ्खचक्रैः ।\nभव्यैरलङ्कृततलौ परतत्त्वचिह्नैः\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ ५ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 46,
+      "verse_id": "VEDA-TXT-00013-V046",
+      "original_text": "ताम्रोदरद्युतिपराजितपद्मरागौ\nबाह्यैर्महोभिरभिभूतमहेंद्रनीलौ ।\nउद्यन्नखांशुभिरुदस्तशशाङ्कभासौ\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ ६ ॥",
+      "iast_phonetic": "tāmrōdara-dyuti-parājita-padmarāgau\nbāhyair-mahōbhir-abhibhūta-mahēndranīlau .\nudyan-nakhāṁśubhir-udasta-śaśāṅka-bhāsau\nśrī-vēṅkaṭēśa-caraṇau śaraṇaṁ prapadyē .. 6 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "ताम्रोदरद्युतिपराजितपद्मरागौ\nबाह्यैर्महोभिरभिभूतमहेंद्रनीलौ ।\nउद्यन्नखांशुभिरुदस्तशशाङ्कभासौ\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ ६ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 47,
+      "verse_id": "VEDA-TXT-00013-V047",
+      "original_text": "सप्रेमभीतिकमलाकरपल्लवाभ्यां\nसंवाहनेऽपि सपदि क्लममादधानौ ।\nकान्ताववाङ्मनसगोचरसौकुमार्यौ\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ ७ ॥",
+      "iast_phonetic": "sa-prēma-bhīti-kamalā-kara-pallavābhyāṁ\nsaṁvāhanē’pi sapadi klamam-ādadhānau .\nkāntāv-avāṅ-manasa-gōcara-saukumāryau\nśrī-vēṅkaṭēśa-caraṇau śaraṇaṁ prapadyē .. 7 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "सप्रेमभीतिकमलाकरपल्लवाभ्यां\nसंवाहनेऽपि सपदि क्लममादधानौ ।\nकान्ताववाङ्मनसगोचरसौकुमार्यौ\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ ७ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 48,
+      "verse_id": "VEDA-TXT-00013-V048",
+      "original_text": "लक्ष्मीमहीतदनुरूपनिजानुभाव-\nनीलादिदिव्यमहिषीकरपल्लवानाम् ।\nआरुण्यसङ्क्रमणतः किल सान्द्ररागौ\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ ८ ॥",
+      "iast_phonetic": "lakṣmī-mahī-tad-anurūpa-nijānubhāva-\nnīlādi-divya-mahiṣī-kara-pallavānām .\nāruṇya-saṅkramaṇataḥ kila sāndra-rāgau\nśrī-vēṅkaṭēśa-caraṇau śaraṇaṁ prapadyē .. 8 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "लक्ष्मीमहीतदनुरूपनिजानुभाव-\nनीलादिदिव्यमहिषीकरपल्लवानाम् ।\nआरुण्यसङ्क्रमणतः किल सान्द्ररागौ\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ ८ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 49,
+      "verse_id": "VEDA-TXT-00013-V049",
+      "original_text": "नित्यनमद्विधिशिवादिगिरीटकोटि-\nप्रत्युप्तदीप्तनवरत्नमहाप्ररोहैः ।\nनीराजनाविधिमुदारमुपादधानौ\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ ९ ॥",
+      "iast_phonetic": "nitya-namad-vidhi-śivādi-kirīṭa-kōṭi-\npratyupta-dīpta-navaratna-mahā-prarōhaiḥ .\nnīrājanā-vidhim-udāram-upādadhānau\nśrī-vēṅkaṭēśa-caraṇau śaraṇaṁ prapadyē .. 9 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "नित्यनमद्विधिशिवादिगिरीटकोटि-\nप्रत्युप्तदीप्तनवरत्नमहाप्ररोहैः ।\nनीराजनाविधिमुदारमुपादधानौ\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ ९ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 50,
+      "verse_id": "VEDA-TXT-00013-V050",
+      "original_text": "विष्णोः पदे परमतीव मुदितप्रशंसौ\nयौ मध्व उत्स इति भोग्यतयाप्युपात्तौ ।\nभूयस्तथेति तव पाणितलप्रदिष्टौ\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ १० ॥",
+      "iast_phonetic": "viṣṇōḥ padē paramatīva mudita-praśaṁsau\nyau madhva utsa iti bhōgyatayā’pyupāttau .\nbhūyas-tathēti tava pāṇitala-pradiṣṭau\nśrī-vēṅkaṭēśa-caraṇau śaraṇaṁ prapadyē .. 10 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "विष्णोः पदे परमतीव मुदितप्रशंसौ\nयौ मध्व उत्स इति भोग्यतयाप्युपात्तौ ।\nभूयस्तथेति तव पाणितलप्रदिष्टौ\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ १० ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 51,
+      "verse_id": "VEDA-TXT-00013-V051",
+      "original_text": "पार्थाय तत्सदृशसारथिना त्वयैव\nयौ दर्शितौ स्वचरणौ शरणं व्रजेति ।\nभूयोऽपि मह्यमिह तौ करदर्शितौ ते\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ ११ ॥",
+      "iast_phonetic": "pārthāya tat-sadṛśa-sārathinā tvayaiva\nyau darśitau sva-caraṇau śaraṇaṁ vrajēti .\nbhūyō’pi mahyam-iha tau kara-darśitau tē\nśrī-vēṅkaṭēśa-caraṇau śaraṇaṁ prapadyē .. 11 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "पार्थाय तत्सदृशसारथिना त्वयैव\nयौ दर्शितौ स्वचरणौ शरणं व्रजेति ।\nभूयोऽपि मह्यमिह तौ करदर्शितौ ते\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ ११ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 52,
+      "verse_id": "VEDA-TXT-00013-V052",
+      "original_text": "मन्मूर्ध्नि कालियफणे विकटाटवीषु\nश्रीवेङ्कटाद्रिशिखरे शिरसि श्रुतीनाम् ।\nचित्तेऽप्यनन्यमनसां सममाहितौ ते\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ १२ ॥",
+      "iast_phonetic": "man-mūrdhni kāliya-phaṇē vikaṭāṭavīṣu\nśrī-vēṅkaṭādri-śikharē śirasi śrutīnām .\ncittē’py-ananya-manasāṁ samam-āhitau tē\nśrī-vēṅkaṭēśa-caraṇau śaraṇaṁ prapadyē .. 12 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "मन्मूर्ध्नि कालियफणे विकटाटवीषु\nश्रीवेङ्कटाद्रिशिखरे शिरसि श्रुतीनाम् ।\nचित्तेऽप्यनन्यमनसां सममाहितौ ते\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ १२ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 53,
+      "verse_id": "VEDA-TXT-00013-V053",
+      "original_text": "अम्लानहृष्यदवनीतराकीर्णपुष्पौ\nश्रीवेङ्कटाद्रिशिखराभरणायमानौ ।\nआनन्दिताखिलमनोनयनौ तवैतौ\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ १३ ॥",
+      "iast_phonetic": "amlāna-hṛṣyad-avanītalā-kīrṇa-puṣpau\nśrī-vēṅkaṭādri-śikharābharaṇāyamānau .\nānanditākhila-manō-nayanau tavaitau\nśrī-vēṅkaṭēśa-caraṇau śaraṇaṁ prapadyē .. 13 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "अम्लानहृष्यदवनीतराकीर्णपुष्पौ\nश्रीवेङ्कटाद्रिशिखराभरणायमानौ ।\nआनन्दिताखिलमनोनयनौ तवैतौ\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ १३ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 54,
+      "verse_id": "VEDA-TXT-00013-V054",
+      "original_text": "प्रायः प्रपन्नजनताप्रथमावगाह्यौ\nमातुः स्तनाविव शिशोरमृतायमानौ ।\nप्राप्तौ परस्परतुलामप्यतुलान्तरौ ते\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ १४ ॥",
+      "iast_phonetic": "prāyaḥ prapanna-janatā-prathamāvagāhyau\nmātuḥ stanāviva śiśōr-amṛtāyamānau .\nprāptau paraspara-tulām-apy-atulāntarau tē\nśrī-vēṅkaṭēśa-caraṇau śaraṇaṁ prapadyē .. 14 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "प्रायः प्रपन्नजनताप्रथमावगाह्यौ\nमातुः स्तनाविव शिशोरमृतायमानौ ।\nप्राप्तौ परस्परतुलामप्यतुलान्तरौ ते\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ १४ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 55,
+      "verse_id": "VEDA-TXT-00013-V055",
+      "original_text": "सत्त्वोत्तरैः सततसेव्यपदांबुजेन\nसंसारतारकदयार्द्रदृगञ्चलेन ।\nसौम्योपयन्तृमुनिना मम दर्शितौ ते\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ १५ ॥",
+      "iast_phonetic": "sattvōttaraiḥ satata-sēvya-padāmbujēna\nsaṁsāra-tāraka-dayārdra-dṛgañcalēna .\nsaumyōpayantṛ-muninā mama darśitau tē\nśrī-vēṅkaṭēśa-caraṇau śaraṇaṁ prapadyē .. 15 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "सत्त्वोत्तरैः सततसेव्यपदांबुजेन\nसंसारतारकदयार्द्रदृगञ्चलेन ।\nसौम्योपयन्तृमुनिना मम दर्शितौ ते\nश्रीवेङ्कटेशचरणौ शरणं प्रपद्ये ॥ १५ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 56,
+      "verse_id": "VEDA-TXT-00013-V056",
+      "original_text": "श्रीश श्रिया घटिकया त्वदुपायभावे\nप्राप्ये त्वयि स्वयमुपेयतया स्फुरन्त्या ।\nनित्याश्रिताय निरवद्यगुणाय तुभ्यं\nस्यां किङ्करो वृषगिरीश न जातु मह्यम् ॥ १६ ॥",
+      "iast_phonetic": "śrīśa śriyā ghaṭikayā tvad-upāya-bhāvē\nprāpyē tvayi svayam-upēyatayā sphurantyā .\nnityāśritāya niravadya-guṇāya tubhyaṁ\nsyāṁ kiṅkarō vṛṣagirīśa na jātu mahyam .. 16 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "श्रीश श्रिया घटिकया त्वदुपायभावे\nप्राप्ये त्वयि स्वयमुपेयतया स्फुरन्त्या ।\nनित्याश्रिताय निरवद्यगुणाय तुभ्यं\nस्यां किङ्करो वृषगिरीश न जातु मह्यम् ॥ १६ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 57,
+      "verse_id": "VEDA-TXT-00013-V057",
+      "original_text": "श्रियः कान्ताय कल्याणनिधये निधयेऽर्थिनाम् ।\nश्रीवेङ्कटनिवासाय श्रीनिवासाय मङ्गलम् ॥ १ ॥",
+      "iast_phonetic": "śriyaḥ kāntāya kalyāṇa-nidhayē nidhayē’rthinām .\nśrī-vēṅkaṭa-nivāsāya śrīnivāsāya maṅgalam .. 1 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "श्रियः कान्ताय कल्याणनिधये निधयेऽर्थिनाम् ।\nश्रीवेङ्कटनिवासाय श्रीनिवासाय मङ्गलम् ॥ १ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 58,
+      "verse_id": "VEDA-TXT-00013-V058",
+      "original_text": "लक्ष्मीसविभ्रमालोकसुभ्रूविभ्रमचक्षुषे ।\nचक्षुषे सर्वलोकानां वेङ्कटेशाय मङ्गलम् ॥ २ ॥",
+      "iast_phonetic": "lakṣmī-sa-vibhramālōka-subhrū-vibhrama-cakṣuṣē .\ncakṣuṣē sarva-lōkānāṁ vēṅkaṭēśāya maṅgalam .. 2 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "लक्ष्मीसविभ्रमालोकसुभ्रूविभ्रमचक्षुषे ।\nचक्षुषे सर्वलोकानां वेङ्कटेशाय मङ्गलम् ॥ २ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 59,
+      "verse_id": "VEDA-TXT-00013-V059",
+      "original_text": "श्रीवेङ्कटाद्रिशृङ्गाग्रमङ्गलाभरणाङ्घ्रये ।\nमङ्गलानां निवासाय श्रीनिवासाय मङ्गलम् ॥ ३ ॥",
+      "iast_phonetic": "śrī-vēṅkaṭādri-śṛṅgāgra-maṅgalābharaṇāṅghrayē .\nmaṅgalānāṁ nivāsāya śrīnivāsāya maṅgalam .. 3 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "श्रीवेङ्कटाद्रिशृङ्गाग्रमङ्गलाभरणाङ्घ्रये ।\nमङ्गलानां निवासाय श्रीनिवासाय मङ्गलम् ॥ ३ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 60,
+      "verse_id": "VEDA-TXT-00013-V060",
+      "original_text": "सर्वावयवसौन्दर्यसम्पदा सर्वचेतसाम् ।\nसदा सम्मोहनायास्तु वेङ्कटेशाय मङ्गलम् ॥ ४ ॥",
+      "iast_phonetic": "sarvāvayava-saundarya-sampadā sarva-cētasām .\nsadā sammōhanāyāstu vēṅkaṭēśāya maṅgalam .. 4 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "सर्वावयवसौन्दर्यसम्पदा सर्वचेतसाम् ।\nसदा सम्मोहनायास्तु वेङ्कटेशाय मङ्गलम् ॥ ४ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 61,
+      "verse_id": "VEDA-TXT-00013-V061",
+      "original_text": "नित्य्याय निरवद्याय सत्यानन्दचिदात्मने ।\nसर्वान्तरात्मने श्रीमद्वेङ्कटेशाय मङ्गलम् ॥ ५ ॥",
+      "iast_phonetic": "nityāya niravadyāya satyānanda-cidātmanē .\nsarvāntarātmanē śrīmad-vēṅkaṭēśāya maṅgalam .. 5 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "नित्य्याय निरवद्याय सत्यानन्दचिदात्मने ।\nसर्वान्तरात्मने श्रीमद्वेङ्कटेशाय मङ्गलम् ॥ ५ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 62,
+      "verse_id": "VEDA-TXT-00013-V062",
+      "original_text": "स्वतः सर्वविदे सर्वशक्तये सर्वशेषिणे ।\nसुलभाय सुशीलाय वेङ्कटेशाय मङ्गलम् ॥ ६ ॥",
+      "iast_phonetic": "svataḥ sarvavidē sarva-śaktayē sarva-śēṣiṇē .\nsulabhāya suśīlāya vēṅkaṭēśāya maṅgalam .. 6 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "स्वतः सर्वविदे सर्वशक्तये सर्वशेषिणे ।\nसुलभाय सुशीलाय वेङ्कटेशाय मङ्गलम् ॥ ६ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 63,
+      "verse_id": "VEDA-TXT-00013-V063",
+      "original_text": "परस्मै ब्रह्मणे पूर्णकामाय परमात्मने ।\nप्रयुञ्जे परतत्त्वाय वेङ्कटेशाय मङ्गलम् ॥ ७ ॥",
+      "iast_phonetic": "parasmai brahmaṇē pūrṇa-kāmāya paramātmanē .\nprayuñjē paratattvāya vēṅkaṭēśāya maṅgalam .. 7 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "परस्मै ब्रह्मणे पूर्णकामाय परमात्मने ।\nप्रयुञ्जे परतत्त्वाय वेङ्कटेशाय मङ्गलम् ॥ ७ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 64,
+      "verse_id": "VEDA-TXT-00013-V064",
+      "original_text": "आकालतत्त्वमश्रान्तमात्मनामनुपश्यताम् ।\nअतृप्त्यमृतरूपाय वेङ्कटेशाय मङ्गलम् ॥ ८ ॥",
+      "iast_phonetic": "ākāla-tattvam-aśrāntam-ātmanām-anupaśyatām .\natṛpty-amṛta-rūpāya vēṅkaṭēśāya maṅgalam .. 8 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "आकालतत्त्वमश्रान्तमात्मनामनुपश्यताम् ।\nअतृप्त्यमृतरूपाय वेङ्कटेशाय मङ्गलम् ॥ ८ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 65,
+      "verse_id": "VEDA-TXT-00013-V065",
+      "original_text": "प्रायः स्वचरणौ पुंसां शरण्यत्वेन पाणिना ।\nकृपयाऽऽदिशते श्रीमद्वेङ्कटेशाय मङ्गलम् ॥ ९ ॥",
+      "iast_phonetic": "prāyaḥ sva-caraṇau puṁsāṁ śaraṇyatvēna pāṇinā .\nkṛpayā''diśatē śrīmad-vēṅkaṭēśāya maṅgalam .. 9 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "प्रायः स्वचरणौ पुंसां शरण्यत्वेन पाणिना ।\nकृपयाऽऽदिशते श्रीमद्वेङ्कटेशाय मङ्गलम् ॥ ९ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 66,
+      "verse_id": "VEDA-TXT-00013-V066",
+      "original_text": "दयाऽमृततरङ्गिण्यास्तरङ्गैरिव शीतलbehind/शीतलैः ।\nअपाङ्गैः सिञ्चते विश्वं वेङ्कटेशाय मङ्गलम् ॥ १० ॥",
+      "iast_phonetic": "dayā'mṛta-taraṅgiṇyās-taraṅgair-iva śītalaiḥ .\napāṅgaiḥ siñcatē viśvaṁ vēṅkaṭēśāya maṅgalam .. 10 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "दयाऽमृततरङ्गिण्यास्तरङ्गैरिव शीतलbehind/शीतलैः ।\nअपाङ्गैः सिञ्चते विश्वं वेङ्कटेशाय मङ्गलम् ॥ १० ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 67,
+      "verse_id": "VEDA-TXT-00013-V067",
+      "original_text": "स्रग्भूषाम्बरहेतीनां सुषमाऽऽवहमूर्तये ।\nसर्वार्र्तिशमनायास्तु वेङ्कटेशाय मङ्गलम् ॥ ११ ॥",
+      "iast_phonetic": "srag-bhūṣāmbara-hētīnāṁ suṣamā''vaha-mūrtayē .\nsarvārtī-śamanāyāstu vēṅkaṭēśāya maṅgalam .. 11 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "स्रग्भूषाम्बरहेतीनां सुषमाऽऽवहमूर्तये ।\nसर्वार्र्तिशमनायास्तु वेङ्कटेशाय मङ्गलम् ॥ ११ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 68,
+      "verse_id": "VEDA-TXT-00013-V068",
+      "original_text": "श्रीवैकुण्ठविरक्ताय स्वामिपुष्करिणीतटे ।\nरमया रममाणाय वेङ्कटेशाय मङ्गलम् ॥ १२ ॥",
+      "iast_phonetic": "śrī-vaikuṇṭha-viraktāya svāmi-puṣkariṇī-taṭē .\nramayā ramamāṇāya vēṅkaṭēśāya maṅgalam .. 2 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "श्रीवैकुण्ठविरक्ताय स्वामिपुष्करिणीतटे ।\nरमया रममाणाय वेङ्कटेशाय मङ्गलम् ॥ १२ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 69,
+      "verse_id": "VEDA-TXT-00013-V069",
+      "original_text": "श्रीमत्सुन्दरजामातृमुनिमानसवासिने ।\nसर्वलोकनवासाय श्रीनिवासाय मङ्गलम् ॥ १३ ॥",
+      "iast_phonetic": "śrīmat-sundara-jāmātṛ-muni-mānasa-vāsinē .\nsarva-lōka-nivāsāya śrīnivāsāya maṅgalam .. 13 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "श्रीमत्सुन्दरजामातृमुनिमानसवासिने ।\nसर्वलोकनवासाय श्रीनिवासाय मङ्गलम् ॥ १३ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 70,
+      "verse_id": "VEDA-TXT-00013-V070",
+      "original_text": "मङ्गलाशासनपरैर्मदाचार्यपुरोगमैः ।\nसर्वैश्च पूर्वैराचार्यैः सत्कृतायास्तु मङ्गलम् ॥ १४ ॥",
+      "iast_phonetic": "maṅgalāśāsana-parair-madācārya-purōgamaiḥ .\nsarvaiś-ca pūrvair-ācāryaiḥ satkṛtāyāstu maṅgalam .. 14 ..",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "मङ्गलाशासनपरैर्मदाचार्यपुरोगमैः ।\nसर्वैश्च पूर्वैराचार्यैः सत्कृतायास्तु मङ्गलम् ॥ १४ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    }
+  ],
+  "translation_reference_note": "Audio recording must recite only the immutable original sacred verse text; translations and regional explanations must be recorded as separate commentary tracks."
+}
