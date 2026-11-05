@@ -566,7 +566,10 @@ async def submit_review_feedback_handler(request: web.Request) -> web.Response:
         scholarly_commentary=scholarly_commentary,
         proposed_text=proposed_text,
         original_text_immutable_verified=True,
-        is_human_review=getattr(reviewer, "is_human_verified", False),
+        is_human_review=bool(
+            getattr(reviewer, "is_human_verified", False)
+            and getattr(reviewer, "account_category", "") == "REAL_HUMAN_SCHOLAR"
+        ),
         created_at=datetime.now(timezone.utc),
     )
     db.add(action_log)

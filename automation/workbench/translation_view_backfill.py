@@ -146,7 +146,10 @@ class TranslationViewBackfillEngine:
             previous_text=view.view_text,
             proposed_text=view.view_text,
             scholarly_commentary=scholarly_commentary,
-            is_human_review=bool(getattr(reviewer, "is_human_verified", False)),
+            is_human_review=bool(
+                getattr(reviewer, "is_human_verified", False)
+                and getattr(reviewer, "account_category", "") == "REAL_HUMAN_SCHOLAR"
+            ),
             created_at=datetime.now(timezone.utc),
         )
         session.add(log)
