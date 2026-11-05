@@ -1,0 +1,243 @@
+{
+  "export_metadata": {
+    "title": "Phase 10 Controlled TranslationView Pilot Bundle",
+    "generated_at": "2026-11-05T03:34:20.124713+00:00",
+    "target_cohort": "Tier 1 Canonical Vedic Core (5 Records)",
+    "governance_alert": "STRICT SCHOLARLY REVIEW DRAFT — FOR INTERNAL ACADEMIC VERIFICATION ONLY. RULE PUB-010 ENFORCED: NOT CLEARED FOR COMMERCIAL PRODUCTION OR MOBILE RELEASE UNTIL ACCREDITED LIVING HUMAN SCHOLARS CERTIFY TRANSLATIONS.",
+    "record_count": 5,
+    "views_per_record": 3,
+    "total_views_included": 15
+  },
+  "records": [
+    {
+      "translation_id": 5,
+      "composition_id": "VEDA-TXT-00005",
+      "composition_title": "Mahamrityunjaya Vedic Mantra",
+      "source_scripture": "Rigveda Samhita 7.59.12; Shukla Yajurveda Samhita 3.60",
+      "composer": "Rishi Maitravaruni Vasishtha / Rishi Markandeya",
+      "original_language": "sa",
+      "rights_status": "GREEN_CLEARED",
+      "verse_id": "VEDA-TXT-00005-V001",
+      "verse_number": 1,
+      "meter": "Anushtubh",
+      "vedic_accents_present": true,
+      "devanagari_text": "ॐ त्र्य॑म्बकं यजामहे सु॒गन्धिं॑ पुष्टि॒वर्ध॑नम् ।\nउ॒र्वा॒रु॒कमि॑व॒ बन्ध॑नान्मृ॒त्योर्मु॑क्षीय॒ माऽमृता॑त् ॥",
+      "iast_text": "oṁ trya॑mbakaṁ yajāmahe su॒gandhiṁ॑ puṣṭi॒vardha॑nam ।\nu॒rvā॒ru॒kami॑va॒ bandha॑nānmṛ॒tyormu॑kṣīya॒ mā'mṛtā॑t ॥",
+      "target_language": "en",
+      "overall_review_status": "DRAFT",
+      "views": {
+        "BHAVARTHA": {
+          "view_id": "VIEW-TR-00005-BHAVARTHA-v1",
+          "view_type": "BHAVARTHA",
+          "view_text": "Om. We worship the Three-Eyed Lord (Shiva), who is fragrant and who nourishes all beings. Just as a ripe melon is released from its vine, may He liberate us from death and attachment, for the sake of Immortality.",
+          "version": 1,
+          "source_reference": "Traditional Devotional Chanting Practice",
+          "translator_provenance": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "LITERAL": {
+          "view_id": "VIEW-TR-00005-LITERAL-v1",
+          "view_type": "LITERAL",
+          "view_text": "Om. We worship the Three-Eyed One (Tryambaka), who is fragrant (sugandhi), who increases nourishment and growth (puṣṭi-vardhana). Like a cucumber from its stem-bondage (urvārukam iva bandhanāt), from death may I be released (mṛtyoḥ mukṣīya), not from immortality (mā amṛtāt).",
+          "version": 1,
+          "source_reference": "Rigveda Samhita 7.59.12; Paninian Ashtadhyayi morphological scansion; Apte Sanskrit-English Dictionary.",
+          "translator_provenance": "AI Sanskrit Engine (Panini Rule Engine v2.4 + Gemini-2.0-Flash-001 Editorial Synthesis)",
+          "review_status": "DRAFT"
+        },
+        "TATPARYA": {
+          "view_id": "VIEW-TR-00005-TATPARYA-v1",
+          "view_type": "TATPARYA",
+          "view_text": "According to Sayanacharya's Rigveda Bhashya on RV 7.59.12, 'Tryambaka' designates the Lord who is the master of the three worlds (heaven, atmosphere, and earth), or the Lord of the three primal divinities (Brahma, Vishnu, and Rudra). 'Sugandhim' signifies He whose fame and auspicious presence diffuse like a fragrant scent throughout creation, while 'pushtivardhanam' denotes Him who grants physical sustenance as well as inner spiritual vigor. The renowned Vedic simile compares the mortal seeker to a ripe cucumber (urvaruka) that detaches spontaneously from the vine without pain or resistance: thus may the devotee effortlessly transcend mortal death and attachment while remaining eternally united with supreme immortality (amrita). Mahidhara's commentary on Vajasaneyi Samhita 3.60 similarly glosses this as an earnest prayer for Moksha through Rudra's divine grace.",
+          "version": 1,
+          "source_reference": "Rigveda Samhita 7.59.12; Sayana Bhashya (Vaidika Samsodhana Mandala, 1933); Vajasaneyi Samhita 3.60 with Mahidhara commentary (NSP, 1912).",
+          "translator_provenance": "AI Sanskrit Engine (Gemini-2.0-Flash-001 Classical Exegesis Suggestion)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "translation_id": 6,
+      "composition_id": "VEDA-TXT-00006",
+      "composition_title": "Gayatri Vedic Mantra",
+      "source_scripture": "Rigveda Samhita 3.62.10; Shukla Yajurveda Samhita 36.3",
+      "composer": "Brahmarshi Vishvamitra (Gathina)",
+      "original_language": "sa",
+      "rights_status": "GREEN_CLEARED",
+      "verse_id": "VEDA-TXT-00006-V001",
+      "verse_number": 1,
+      "meter": "Gayatri (8-8-8 syllables)",
+      "vedic_accents_present": true,
+      "devanagari_text": "ॐ भूर्भुव॒स्स॒वः॑ ।\nतत्स॑वि॒तुर्वरे॑ण्यं॒ भर्गो॑ दे॒वस्य॑ धीमहि ।\nधियो॒ यो नः॑ प्रचो॒दया॑त् ॥",
+      "iast_text": "oṁ bhūrbhuva॒ssa॒vaḥ॑ ।\ntatsa॑vi॒turvare॑ṇyaṁ॒ bhargo॑ de॒vasya॑ dhīmahi ।\ndhiyo॒ yo naḥ॑ praco॒dayā॑t ॥",
+      "target_language": "en",
+      "overall_review_status": "DRAFT",
+      "views": {
+        "BHAVARTHA": {
+          "view_id": "VIEW-TR-00006-BHAVARTHA-v1",
+          "view_type": "BHAVARTHA",
+          "view_text": "Om. We meditate upon the supreme, adorable effulgence of the divine Sun-Creator (Savitar); may He inspire and direct our collective intellects toward the highest Truth.",
+          "version": 18,
+          "source_reference": "Traditional Devotional Chanting Practice",
+          "translator_provenance": "Vedic Heritage Scholarly Commission (Editorial Synthesis; Awaiting Accredited Scholar Panel Review)",
+          "review_status": "APPROVED"
+        },
+        "LITERAL": {
+          "view_id": "VIEW-TR-00006-LITERAL-v1",
+          "view_type": "LITERAL",
+          "view_text": "Om. Earth, Atmosphere, Heaven. That desirable, supreme effulgence (tat vareṇyam bhargaḥ) of the divine Sun-Creator (devasya savituḥ) we meditate upon (dhīmahi); who (yaḥ) our intellects and inner visions (dhiyaḥ naḥ) may impel forward and inspire (pracodayāt).",
+          "version": 1,
+          "source_reference": "Rigveda Samhita 3.62.10; Taittiriya Aranyaka 10.27; Monier-Williams Sanskrit Dictionary.",
+          "translator_provenance": "AI Sanskrit Engine (Panini Rule Engine v2.4 + Gemini-2.0-Flash-001 Editorial Synthesis)",
+          "review_status": "DRAFT"
+        },
+        "TATPARYA": {
+          "view_id": "VIEW-TR-00006-TATPARYA-v1",
+          "view_type": "TATPARYA",
+          "view_text": "In his commentary on Rigveda 3.62.10, Sayanacharya explains that 'Savitr' is the inner animating Lord of all celestial luminaries who stimulates the cosmic order and inner faculties of all beings (sarvasya prasavitā). 'Bhargas' is interpreted as the supreme light that burns away the darkness of ignorance and sin (avidyā-nāśakam tejah). 'Varenyam' indicates that which is fit to be sought and prayed for by all seekers of liberation. The prayer concludes with a collective plural petition ('nah dhiyah'): may that supreme illuminating consciousness illuminate the intellects of all beings toward truth, virtue, and contemplation of the Supreme Brahman. Bhatta Bhaskara Mishra's commentary on Taittiriya Aranyaka 10.27 further elucidates that the Vyahritis (bhur bhuvas suvah) establish the pervasive presence of this divine light across the tripartite cosmos.",
+          "version": 1,
+          "source_reference": "Rigveda Samhita 3.62.10; Sayana Bhashya (VSM, 1933); Taittiriya Aranyaka 10.27 with Bhatta Bhaskara Mishra's Jnana Yajna Bhashya (Govt. Oriental Library, Mysore, 1900).",
+          "translator_provenance": "AI Sanskrit Engine (Gemini-2.0-Flash-001 Classical Exegesis Suggestion)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "translation_id": 567,
+      "composition_id": "VEDA-TXT-00007",
+      "composition_title": "Sri Suktam",
+      "source_scripture": "Rigveda Khilani 5.87",
+      "composer": "Rishis Ananda, Chiklita, Kardama, Sri",
+      "original_language": "sa",
+      "rights_status": "GREEN_CLEARED",
+      "verse_id": "VEDA-TXT-00007-V001",
+      "verse_number": 1,
+      "meter": "Anushtubh",
+      "vedic_accents_present": true,
+      "devanagari_text": "हि॒र॒ण्यव॑र्णां॒ हरि॑णीं सु॒वर्ण॑रजत॒स्रजा॑म् ।\nच॒न्द्रां हि॒रण्म॑यीं ल॒क्ष्मीं जात॑वेदो म॒ आव॑ह ॥ १ ॥",
+      "iast_text": "hiraṇyavarṇāṁ hariṇīṁ suvarṇarajatasrajām ।\ncandrāṁ hiraṇmayīṁ lakṣmīṁ jātavedo ma āvaha ॥ 1 ॥",
+      "target_language": "en",
+      "overall_review_status": "DRAFT",
+      "views": {
+        "BHAVARTHA": {
+          "view_id": "VIEW-TR-00567-BHAVARTHA-v1",
+          "view_type": "BHAVARTHA",
+          "view_text": "O Jatavedas (Agni)! Invoke for me that Lakshmi who shines with the golden hue, who is graceful like a deer, adorned with garlands of gold and silver, luminous like the cool moon, and of golden essence.",
+          "version": 1,
+          "source_reference": "Traditional Devotional Chanting Practice",
+          "translator_provenance": "Vedic Heritage Scholarly Commission (Editorial Synthesis; Awaiting Accredited Scholar Panel Review)",
+          "review_status": "DRAFT"
+        },
+        "LITERAL": {
+          "view_id": "VIEW-TR-00567-LITERAL-v1",
+          "view_type": "LITERAL",
+          "view_text": "O Jatavedas (Agni)! Bring unto me (āvaha me) Lakshmi, who possesses a golden complexion (hiraṇya-varṇām), who is gazelle-like and shining (hariṇīm), who is adorned with garlands of gold and silver (suvarṇa-rajata-srajām), who is luminous like the moon (candrām), and who is of pure golden essence (hiraṇmayīm).",
+          "version": 1,
+          "source_reference": "Rigveda Khilani 5.87 (Scheftelowitz 1906); Paninian Sandhi and Vibhakti resolution.",
+          "translator_provenance": "AI Sanskrit Engine (Panini Rule Engine v2.4 + Gemini-2.0-Flash-001 Editorial Synthesis)",
+          "review_status": "DRAFT"
+        },
+        "TATPARYA": {
+          "view_id": "VIEW-TR-00567-TATPARYA-v1",
+          "view_type": "TATPARYA",
+          "view_text": "The classical commentary on the Rigvedic Sri Sukta Khilani (as preserved in the Anandashrama and Vani Vilas recensions) explains that Agni is addressed as 'Jatavedas'—the omniscient sacrificial flame—because Agni serves as the universal messenger (deva-dūta) conveying mortal supplication to Sri Mahalakshmi. 'Hiranyavarnam' and 'Hiranmayim' emphasize that Lakshmi's nature is imperishable divine luminosity, pure sattva, and spiritual wealth. 'Harinim' denotes both her golden, fawn-like beauty and her swiftness in showering compassion upon devotees. 'Chandram' evokes the cool, soothing grace that pacifies the scorching miseries of worldly existence (samsara-tapa-nashini). The invocation of gold and silver garlands symbolizes the harmonious union of divine prosperity (aisvarya) and moral purity.",
+          "version": 1,
+          "source_reference": "Rigveda Khilani 5.87; Die Apokryphen des Rgveda (Scheftelowitz, 1906); Sri Sukta Bhashya attributed to Sri Vidyaranya / Sayana-school (Vani Vilas Press, 1910).",
+          "translator_provenance": "AI Sanskrit Engine (Gemini-2.0-Flash-001 Classical Exegesis Suggestion)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "translation_id": 724,
+      "composition_id": "VEDA-TXT-00014",
+      "composition_title": "Purusha Suktam",
+      "source_scripture": "Rigveda Samhita, Mandala 10, Sukta 90",
+      "composer": "Rishi Narayana",
+      "original_language": "sa",
+      "rights_status": "GREEN_CLEARED",
+      "verse_id": "VEDA-TXT-00014-V001",
+      "verse_number": 1,
+      "meter": "Anushtubh",
+      "vedic_accents_present": true,
+      "devanagari_text": "सहस्र॑शीर्षा पुरु॑षः सहस्रा॒क्षः स॒हस्र॑पात् ।\nस भूमिं॑ वि॒श्वतो॑ वृ॒त्वात्य॑तिष्ठद्दशाङ्गु॒लम् ॥ १ ॥",
+      "iast_text": "sahasra॑śīrṣā puru॑ṣaḥ sahasrā॒kṣaḥ sa॒hasra॑pāt ।\nsa bhūmiṁ॑ vi॒śvatō॑ vṛ॒tvātya॑tiṣṭhaddaśāṅgu॒lam ॥ 1 ॥",
+      "target_language": "en",
+      "overall_review_status": "DRAFT",
+      "views": {
+        "BHAVARTHA": {
+          "view_id": "VIEW-TR-00724-BHAVARTHA-v1",
+          "view_type": "BHAVARTHA",
+          "view_text": "The Supreme Purusha has a thousand heads, a thousand eyes, and a thousand feet. Pervading the entire cosmos on all sides, He extends beyond it by ten fingers' length.",
+          "version": 1,
+          "source_reference": "Traditional Devotional Chanting Practice",
+          "translator_provenance": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "LITERAL": {
+          "view_id": "VIEW-TR-00724-LITERAL-v1",
+          "view_type": "LITERAL",
+          "view_text": "The Supreme Cosmic Person (puruṣaḥ) has a thousand heads (sahasra-śīrṣā), a thousand eyes (sahasrākṣaḥ), and a thousand feet (sahasrapāt). Having completely enveloped the earth and cosmic sphere on all sides (sa bhūmim viśvataḥ vṛtvā), He stands exceeding it (ati atiṣṭhat) by ten fingers' measure (daśāṅgulam).",
+          "version": 1,
+          "source_reference": "Rigveda Samhita 10.90.1; Vajasaneyi Samhita 31.1; Paninian Bahuvrihi compound analysis.",
+          "translator_provenance": "AI Sanskrit Engine (Panini Rule Engine v2.4 + Gemini-2.0-Flash-001 Editorial Synthesis)",
+          "review_status": "DRAFT"
+        },
+        "TATPARYA": {
+          "view_id": "VIEW-TR-00724-TATPARYA-v1",
+          "view_type": "TATPARYA",
+          "view_text": "Sayanacharya's bhashya on Rigveda 10.90.1 clarifies that 'thousand' (sahasra) in Vedic usage is non-literal and signifies infinity (anantam): all heads, eyes, and limbs of all living entities in the cosmos are essentially the heads, eyes, and limbs of the universal Purusha (Virat Purusha), as all individual consciousness participates in the one Universal Self. The phrase 'having enveloped the cosmos on all sides' demonstrates the immanence of the Supreme Being throughout all manifest creation. Furthermore, 'atyatishthad dashangulam' ('exceeded by ten fingers') signifies divine transcendence: after pervading the entire created universe, the Supreme Being remains unexhausted and transcendent, infinitely greater than His creation. Sri Vaishnava commentators (including Ranganatha Muni and Sudarshana Suri) also interpret 'ten fingers' metaphorically as the heart lotus (hridaya-padma) measuring ten finger-widths, wherein the infinite Lord resides as the Antaryamin (inner ruler).",
+          "version": 1,
+          "source_reference": "Rigveda Samhita 10.90.1; Sayana Bhashya (VSM, 1946); Vajasaneyi Samhita 31.1 with Uvvata and Mahidhara Bhashya (NSP, 1912).",
+          "translator_provenance": "AI Sanskrit Engine (Gemini-2.0-Flash-001 Classical Exegesis Suggestion)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "translation_id": 855,
+      "composition_id": "VEDA-TXT-00016",
+      "composition_title": "Narayana Suktam",
+      "source_scripture": "Taittiriya Aranyaka 10.13 (Mahanarayana Upanishad 13)",
+      "composer": "Rishi Narayana",
+      "original_language": "sa",
+      "rights_status": "GREEN_CLEARED",
+      "verse_id": "VEDA-TXT-00016-V001",
+      "verse_number": 1,
+      "meter": "Anushtubh",
+      "vedic_accents_present": true,
+      "devanagari_text": "स॒हस्र॑शीर्षं देवं॒ वि॒श्वाक्षं॑ वि॒श्वश॑म्भुवम् ।\nविश्वं॑ ना॒राय॑णं दे॒व॒म॒क्षरं॑ पर॒मं पदम् ॥ १ ॥",
+      "iast_text": "sa॒hasra॑śīrṣaṁ dēvaṁ॒ vi॒śvākṣaṁ॑ vi॒śvaśa॑mbhuvam ।\nviśvaṁ॑ nā॒rāya॑ṇaṁ dē॒va॒ma॒kṣaraṁ॑ para॒maṁ padam ॥ 1 ॥",
+      "target_language": "en",
+      "overall_review_status": "DRAFT",
+      "views": {
+        "BHAVARTHA": {
+          "view_id": "VIEW-TR-00855-BHAVARTHA-v1",
+          "view_type": "BHAVARTHA",
+          "view_text": "We meditate upon the Supreme Lord Narayana, who has a thousand heads, who is all-seeing (with eyes everywhere), who is the source of all auspiciousness and happiness to the universe, who is the universe itself, imperishable, and the supreme goal.",
+          "version": 1,
+          "source_reference": "Traditional Devotional Chanting Practice",
+          "translator_provenance": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "LITERAL": {
+          "view_id": "VIEW-TR-00855-LITERAL-v1",
+          "view_type": "LITERAL",
+          "view_text": "The thousand-headed divine Lord (sahasra-śīrṣam devam), who has eyes everywhere (viśvākṣam), who is the creator and fountainhead of universal auspiciousness (viśva-śambhuvam), the cosmic reality (viśvam), the luminous Lord Narayana (nārāyaṇam devam), the imperishable (akṣaram), the supreme state and ultimate goal (paramam padam).",
+          "version": 1,
+          "source_reference": "Taittiriya Aranyaka 10.13.1 (Mahanarayana Upanishad); Paninian accusative syntax alignment.",
+          "translator_provenance": "AI Sanskrit Engine (Panini Rule Engine v2.4 + Gemini-2.0-Flash-001 Editorial Synthesis)",
+          "review_status": "DRAFT"
+        },
+        "TATPARYA": {
+          "view_id": "VIEW-TR-00855-TATPARYA-v1",
+          "view_type": "TATPARYA",
+          "view_text": "Bhatta Bhaskara Mishra in his Jnana Yajna commentary on Taittiriya Aranyaka 10.13.1 explains that the opening verse establishes the supreme ontological identity of Narayana as both the Saguna manifestation (the cosmic Virat with infinite heads and eyes) and the Nirguna Parabrahman (the imperishable aksharam and paramam padam). Sayanacharya notes in his Aranyaka bhashya that 'visva-sambhuvam' highlights Narayana as the source of all welfare, auspiciousness, and peace (ananda-hetum) across all realms. By identifying Narayana directly with 'visvam' (the universe itself) and simultaneously designating Him as 'paramam padam' (the supreme transcendence), the Vedic text asserts that the cosmos is Narayana's body and expression, while His ultimate truth remains beyond all decay and cycle of time.",
+          "version": 1,
+          "source_reference": "Taittiriya Aranyaka 10.13.1 (Mahanarayana Upanishad); Sayana Bhashya (Anandashrama Sanskrit Series No. 36, 1894); Bhatta Bhaskara Mishra's Jnana Yajna Bhashya (Mysore Govt. Oriental Library, 1900).",
+          "translator_provenance": "AI Sanskrit Engine (Gemini-2.0-Flash-001 Classical Exegesis Suggestion)",
+          "review_status": "DRAFT"
+        }
+      }
+    }
+  ]
+}

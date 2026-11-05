@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Vedic Scholarly Review Workbench — Shiva Tandava Stotram</title>
+<title>Vedic Scholarly Review Workbench — Gayatri Vedic Mantra</title>
 <style>
   :root {
     --bg-primary: #0f141c;
@@ -163,15 +163,15 @@
   }
   .btn-group {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
     margin-bottom: 10px;
   }
   .btn {
-    padding: 8px;
+    padding: 8px 6px;
     border: none;
     border-radius: 4px;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 600;
     cursor: pointer;
     text-align: center;
@@ -180,6 +180,8 @@
   .btn-correct { background-color: #2b6cb0; color: #fff; }
   .btn-revise { background-color: #d69e2e; color: #000; }
   .btn-dispute { background-color: #c53030; color: #fff; }
+  .btn-reject { background-color: #742a2a; color: #fff; }
+  .btn-escalate { background-color: #6b46c1; color: #fff; }
   .action-item {
     border-left: 2px solid var(--accent-green);
     padding-left: 8px;
@@ -223,8 +225,8 @@
   </div>
   <div>
     <span style="color:var(--text-secondary);">Legacy Backfill Queue:</span>
-    <strong style="color:#f6ad55;">752 Staged Records</strong>
-    <span style="color:var(--text-secondary); margin-left:6px;">(5-Record Pilot Proposal Ready)</span>
+    <strong style="color:#f6ad55;">747 Staged Records</strong>
+    <span style="color:var(--text-secondary); margin-left:6px;">(5 Pilot Records Ingested as DRAFT)</span>
   </div>
   <div>
     <span style="color:var(--text-secondary);">AI Benchmarks (30 items):</span>
@@ -241,19 +243,19 @@
   <div>
     <label class="meta-tag">Select Sacred Composition:</label>
     <select onchange="alert('In interactive API mode, switching updates live context.')">
-      <option value="VEDA-TXT-00001" >VEDA-TXT-00001 — Ganesha Pancharatnam (6 verses)</option><option value="VEDA-TXT-00002" selected>VEDA-TXT-00002 — Shiva Tandava Stotram (16 verses)</option><option value="VEDA-TXT-00003" >VEDA-TXT-00003 — Aditya Hrudayam (31 verses)</option><option value="VEDA-TXT-00004" >VEDA-TXT-00004 — Madhurashtakam (9 verses)</option><option value="VEDA-TXT-00005" >VEDA-TXT-00005 — Mahamrityunjaya Vedic Mantra (1 verses)</option><option value="VEDA-TXT-00006" >VEDA-TXT-00006 — Gayatri Vedic Mantra (1 verses)</option><option value="VEDA-TXT-00007" >VEDA-TXT-00007 — Sri Suktam (16 verses)</option><option value="VEDA-TXT-00008" >VEDA-TXT-00008 — Hanuman Chalisa (43 verses)</option><option value="VEDA-TXT-00010" >VEDA-TXT-00010 — Mahalakshmi Ashtakam (10 verses)</option><option value="VEDA-TXT-00011" >VEDA-TXT-00011 — Lingashtakam (9 verses)</option><option value="VEDA-TXT-00012" >VEDA-TXT-00012 — Sankata Nashana Ganesha Stotram (8 verses)</option><option value="VEDA-TXT-00013" >VEDA-TXT-00013 — Venkateswara Suprabhatam (70 verses)</option><option value="VEDA-TXT-00014" >VEDA-TXT-00014 — Purusha Suktam (16 verses)</option><option value="VEDA-TXT-00015" >VEDA-TXT-00015 — Durga Suktam (7 verses)</option><option value="VEDA-TXT-00016" >VEDA-TXT-00016 — Narayana Suktam (12 verses)</option><option value="VEDA-TXT-00017" >VEDA-TXT-00017 — Surya Ashtakam (10 verses)</option><option value="VEDA-TXT-00018" >VEDA-TXT-00018 — Kanakadhara Stotram (21 verses)</option><option value="VEDA-TXT-00019" >VEDA-TXT-00019 — Mahishasura Mardini Stotram (21 verses)</option>
+      <option value="VEDA-TXT-00001" >VEDA-TXT-00001 — Ganesha Pancharatnam (6 verses)</option><option value="VEDA-TXT-00002" >VEDA-TXT-00002 — Shiva Tandava Stotram (16 verses)</option><option value="VEDA-TXT-00003" >VEDA-TXT-00003 — Aditya Hrudayam (31 verses)</option><option value="VEDA-TXT-00004" >VEDA-TXT-00004 — Madhurashtakam (9 verses)</option><option value="VEDA-TXT-00005" >VEDA-TXT-00005 — Mahamrityunjaya Vedic Mantra (1 verses)</option><option value="VEDA-TXT-00006" selected>VEDA-TXT-00006 — Gayatri Vedic Mantra (1 verses)</option><option value="VEDA-TXT-00007" >VEDA-TXT-00007 — Sri Suktam (16 verses)</option><option value="VEDA-TXT-00008" >VEDA-TXT-00008 — Hanuman Chalisa (43 verses)</option><option value="VEDA-TXT-00010" >VEDA-TXT-00010 — Mahalakshmi Ashtakam (10 verses)</option><option value="VEDA-TXT-00011" >VEDA-TXT-00011 — Lingashtakam (9 verses)</option><option value="VEDA-TXT-00012" >VEDA-TXT-00012 — Sankata Nashana Ganesha Stotram (8 verses)</option><option value="VEDA-TXT-00013" >VEDA-TXT-00013 — Venkateswara Suprabhatam (70 verses)</option><option value="VEDA-TXT-00014" >VEDA-TXT-00014 — Purusha Suktam (16 verses)</option><option value="VEDA-TXT-00015" >VEDA-TXT-00015 — Durga Suktam (7 verses)</option><option value="VEDA-TXT-00016" >VEDA-TXT-00016 — Narayana Suktam (12 verses)</option><option value="VEDA-TXT-00017" >VEDA-TXT-00017 — Surya Ashtakam (10 verses)</option><option value="VEDA-TXT-00018" >VEDA-TXT-00018 — Kanakadhara Stotram (21 verses)</option><option value="VEDA-TXT-00019" >VEDA-TXT-00019 — Mahishasura Mardini Stotram (21 verses)</option>
     </select>
   </div>
   <div>
     <label class="meta-tag">Select Verse / Stanza:</label>
     <select>
-      <option value="1" selected>Verse 1 (VERSE)</option><option value="2" >Verse 2 (VERSE)</option><option value="3" >Verse 3 (VERSE)</option><option value="4" >Verse 4 (VERSE)</option><option value="5" >Verse 5 (VERSE)</option><option value="6" >Verse 6 (VERSE)</option><option value="7" >Verse 7 (VERSE)</option><option value="8" >Verse 8 (VERSE)</option><option value="9" >Verse 9 (VERSE)</option><option value="10" >Verse 10 (VERSE)</option><option value="11" >Verse 11 (VERSE)</option><option value="12" >Verse 12 (VERSE)</option><option value="13" >Verse 13 (VERSE)</option><option value="14" >Verse 14 (VERSE)</option><option value="15" >Verse 15 (PHALASRUTI)</option><option value="16" >Verse 16 (PHALASRUTI)</option>
+      <option value="1" selected>Verse 1 (MANTRA)</option>
     </select>
   </div>
   <div>
     <label class="meta-tag">Target Regional Language:</label>
     <select>
-      <option value="te" selected>Telugu (తెలుగు)</option>
+      <option value="te" >Telugu (తెలుగు)</option>
       <option value="hi" >Hindi (हिन्दी)</option>
       <option value="ta" >Tamil (தமிழ்)</option>
       <option value="kn" >Kannada (ಕನ್ನಡ)</option>
@@ -262,7 +264,7 @@
       <option value="gu" >Gujarati (ગુજરાતી)</option>
       <option value="ml" >Malayalam (മലയാളം)</option>
       <option value="or" >Odia (ଓଡ଼ିଆ)</option>
-      <option value="en" >English (Bridge)</option>
+      <option value="en" selected>English (Bridge)</option>
     </select>
   </div>
 </div>
@@ -273,27 +275,33 @@
   <div class="column-card">
     <h3>Original Source <span class="column-number">Col 1</span></h3>
     <div class="meta-tag">Source Language: <strong>SA</strong></div>
-    <div class="meta-tag">Liturgical Meter: <strong>Panchachamara</strong></div>
-    <div class="meta-tag">Vedic Swaras: <strong>Classical / Stotra Recension</strong></div>
-    <div class="indic-text">जटाटवीगलज्जलप्रवाहपावितस्थले गलेऽवलम्ब्य लम्बितां भुजङ्गतुङ्गमालिकाम् ।
-डमड्डमड्डमड्डमन्निनादवड्डमर्वयं चकार चण्डताण्डवं तनोतु नः शिवः शिवम् ॥ १ ॥</div>
-    <div class="meta-tag">Verse Type: <strong>VERSE</strong></div>
-    <div class="meta-tag">Composer/Rishi: <strong>Lankadhipati Ravana</strong></div>
+    <div class="meta-tag">Liturgical Meter: <strong>Gayatri (8-8-8 syllables)</strong></div>
+    <div class="meta-tag">Vedic Swaras: <strong>Preserved & Annotated</strong></div>
+    <div class="indic-text">ॐ भूर्भुव॒स्स॒वः॑ ।
+तत्स॑वि॒तुर्वरे॑ण्यं॒ भर्गो॑ दे॒वस्य॑ धीमहि ।
+धियो॒ यो नः॑ प्रचो॒दया॑त् ॥</div>
+    <div class="meta-tag">Verse Type: <strong>MANTRA</strong></div>
+    <div class="meta-tag">Composer/Rishi: <strong>Brahmarshi Vishvamitra (Gathina)</strong></div>
   </div>
 
   <!-- COLUMN 2 -->
   <div class="column-card">
     <h3>Transliterations <span class="column-number">Col 2</span></h3>
     <div class="meta-tag">Scholarly Roman (IAST):</div>
-    <div style="font-family: serif; color: var(--accent-gold); margin-bottom: 12px; font-size: 1.05rem;">jaṭāṭavīgalajjala-pravāha-pāvitasthale gale'valambya lambitāṁ bhujaṅgatuṅgamālikām ।
-ḍamaḍ-ḍamaḍ-ḍamaḍ-ḍaman-ninādavad-ḍamarvayaṁ cakāra caṇḍatāṇḍavaṁ tanotu naḥ śivaḥ śivam ॥ 1 ॥</div>
+    <div style="font-family: serif; color: var(--accent-gold); margin-bottom: 12px; font-size: 1.05rem;">oṁ bhūrbhuva॒ssa॒vaḥ॑ ।
+tatsa॑vi॒turvare॑ṇyaṁ॒ bhargo॑ de॒vasya॑ dhīmahi ।
+dhiyo॒ yo naḥ॑ praco॒dayā॑t ॥</div>
     <div class="meta-tag">Lossless Indic Script Projections:</div>
     <div style="overflow-y: auto; max-height: 480px;">
-      <div class="script-card"><span class="badge">Telugu</span><div class="indic-script">జటాటవీగలజ్జలప్రవాహపావితస్థలే గలేఽవలమ్బ్య లమ్బితాం భుజఙ్గతుఙ్గమాలికామ్ ।
-డమడ్డమడ్డమడ్డమన్నినాదవడ్డమర్వయం చకార చణ్డతాణ్డవం తనోతు నః శివః శివమ్ ॥ ౧ ॥</div></div><div class="script-card"><span class="badge">Tamil</span><div class="indic-script">ஜடாடவீகலஜ்ஜலப்ரவாஹபாவிதஸ்தலே கலேऽவலம்ப்ய லம்பிதாம் புஜங்கதுங்கமாலிகாம் ।
-டமட்டமட்டமட்டமந்நிநாதவட்டமர்வயம் சகார சண்டதாண்டவம் தநோது நஃ ஶிவஃ ஶிவம் ॥ ௧ ॥</div></div><div class="script-card"><span class="badge">Kannada</span><div class="indic-script">ಜಟಾಟವೀಗಲಜ್ಜಲಪ್ರವಾಹಪಾವಿತಸ್ಥಲೇ ಗಲೇಽವಲಮ್ಬ್ಯ ಲಮ್ಬಿತಾಂ ಭುಜಙ್ಗತುಙ್ಗಮಾಲಿಕಾಮ್ ।
-ಡಮಡ್ಡಮಡ್ಡಮಡ್ಡಮನ್ನಿನಾದವಡ್ಡಮರ್ವಯಂ ಚಕಾರ ಚಣ್ಡತಾಣ್ಡವಂ ತನೋತು ನಃ ಶಿವಃ ಶಿವಮ್ ॥ ೧ ॥</div></div><div class="script-card"><span class="badge">Malayalam</span><div class="indic-script">ജടാടവീഗലജ്ജലപ്രവാഹപാവിതസ്ഥലേ ഗലേഽവലമ്ബ്യ ലമ്ബിതാം ഭുജങ്ഗതുങ്ഗമാലികാമ് ।
-ഡമഡ്ഡമഡ്ഡമഡ്ഡമന്നിനാദവഡ്ഡമര്വയം ചകാര ചണ്ഡതാണ്ഡവം തനോതു നഃ ശിവഃ ശിവമ് ॥ ൧ ॥</div></div>
+      <div class="script-card"><span class="badge">Telugu</span><div class="indic-script">ఓం భూర్భువ॒స్స॒వః॑ ।
+తత్స॑వి॒తుర్వరే॑ణ్యం॒ భర్గో॑ దే॒వస్య॑ ధీమహి ।
+ధియో॒ యో నః॑ ప్రచో॒దయా॑త్ ॥</div></div><div class="script-card"><span class="badge">Tamil</span><div class="indic-script">ௐ பூர்புவ॒ஸ்ஸ॒வஃ॑ ।
+தத்ஸ॑வி॒துர்வரே॑ண்யம்॒ பர்கோ॑ தே॒வஸ்ய॑ தீமஹி ।
+தியோ॒ யோ நஃ॑ ப்ரசோ॒தயா॑த் ॥</div></div><div class="script-card"><span class="badge">Kannada</span><div class="indic-script">ಓಂ ಭೂರ್ಭುವ॒ಸ್ಸ॒ವಃ॑ ।
+ತತ್ಸ॑ವಿ॒ತುರ್ವರೇ॑ಣ್ಯಂ॒ ಭರ್ಗೋ॑ ದೇ॒ವಸ್ಯ॑ ಧೀಮಹಿ ।
+ಧಿಯೋ॒ ಯೋ ನಃ॑ ಪ್ರಚೋ॒ದಯಾ॑ತ್ ॥</div></div><div class="script-card"><span class="badge">Malayalam</span><div class="indic-script">ഓം ഭൂര്ഭുവ॒സ്സ॒വഃ॑ ।
+തത്സ॑വി॒തുര്വരേ॑ണ്യം॒ ഭര്ഗോ॑ ദേ॒വസ്യ॑ ധീമഹി ।
+ധിയോ॒ യോ നഃ॑ പ്രചോ॒ദയാ॑ത് ॥</div></div>
     </div>
   </div>
 
@@ -301,11 +309,11 @@
   <div class="column-card">
     <h3>Literal Translation <span class="column-number">Col 3</span></h3>
     <div class="meta-tag">View Status: <span class="badge-amber">DRAFT</span> (v1)</div>
-    <div class="meta-tag">Source: <strong>Padachheda & Grammatical Word Dissection</strong></div>
-    <div class="indic-text" style="font-size: 1rem; color: #e2e8f0;">With His neck purified by the torrential streams of the celestial river Ganges cascading from the dense forest of His matted locks, wearing the lofty serpent hanging down like a garland, and with His sacred Damaru sounding damad-damad-damad-damat, Lord Shiva performed the fierce cosmic Tandava dance; may that Shiva extend all auspiciousness unto us!</div>
+    <div class="meta-tag">Source: <strong>Rigveda Samhita 3.62.10; Taittiriya Aranyaka 10.27; Monier-Williams Sanskrit Dictionary.</strong></div>
+    <div class="indic-text" style="font-size: 1rem; color: #e2e8f0;">Om. Earth, Atmosphere, Heaven. That desirable, supreme effulgence (tat vareṇyam bhargaḥ) of the divine Sun-Creator (devasya savituḥ) we meditate upon (dhīmahi); who (yaḥ) our intellects and inner visions (dhiyaḥ naḥ) may impel forward and inspire (pracodayāt).</div>
     <div class="meta-tag">Padachheda Analysis:</div>
     <div style="font-size: 0.85rem; color: var(--text-secondary);">
-      जटा-अटवी-गलत्-जल-प्रवाह-पावित-स्थले, गले, अवलम्ब्य, लम्बिताम्, भुजङ्ग-तुङ्ग-मालिकाम्, डमत्-डमत्-डमत्-डमत्-निनादवत्-डमरु-अयम्, चकार, चण्ड-ताण्डवम्, तनोतु, नः, शिवः, शिवम्
+      Individual word dissection verified in engine.
     </div>
   </div>
 
@@ -313,18 +321,18 @@
   <div class="column-card">
     <h3>Traditional Tatparya <span class="column-number">Col 4</span></h3>
     <div class="meta-tag">View Status: <span class="badge-amber">DRAFT</span> (v1)</div>
-    <div class="meta-tag">Commentator Citation: <strong>Traditional Shaiva Sampradaya (Attributed to Ravana)</strong></div>
-    <div class="indic-text" style="font-size: 1rem; color: #cbd5e0;">The opening verse sets the cosmic tempo in the Panchachamara metre. The matted hair represents the cosmic forest (Jata-atavi); the descending Ganga signifies the cleansing grace of consciousness descending into manifestation; the Damaru's rhythmic pulse is the primordial sound (Nada Brahman) sparking creation.</div>
-    <div class="meta-tag">Source Reference: <strong>Sampradaya Exegesis (Traditional Shaiva Sampradaya (Attributed to Ravana))</strong></div>
+    <div class="meta-tag">Commentator Citation: <strong>Traditional Sampradaya Commentary</strong></div>
+    <div class="indic-text" style="font-size: 1rem; color: #cbd5e0;">In his commentary on Rigveda 3.62.10, Sayanacharya explains that 'Savitr' is the inner animating Lord of all celestial luminaries who stimulates the cosmic order and inner faculties of all beings (sarvasya prasavitā). 'Bhargas' is interpreted as the supreme light that burns away the darkness of ignorance and sin (avidyā-nāśakam tejah). 'Varenyam' indicates that which is fit to be sought and prayed for by all seekers of liberation. The prayer concludes with a collective plural petition ('nah dhiyah'): may that supreme illuminating consciousness illuminate the intellects of all beings toward truth, virtue, and contemplation of the Supreme Brahman. Bhatta Bhaskara Mishra's commentary on Taittiriya Aranyaka 10.27 further elucidates that the Vyahritis (bhur bhuvas suvah) establish the pervasive presence of this divine light across the tripartite cosmos.</div>
+    <div class="meta-tag">Source Reference: <strong>Rigveda Samhita 3.62.10; Sayana Bhashya (VSM, 1933); Taittiriya Aranyaka 10.27 with Bhatta Bhaskara Mishra's Jnana Yajna Bhashya (Govt. Oriental Library, Mysore, 1900).</strong></div>
   </div>
 
   <!-- COLUMN 5 -->
   <div class="column-card">
     <h3>Devotional Bhavartha <span class="column-number">Col 5</span></h3>
-    <div class="meta-tag">View Status: <span class="badge-amber">DRAFT</span> (v1)</div>
+    <div class="meta-tag">View Status: <span class="badge-amber">APPROVED</span> (v18)</div>
     <div class="meta-tag">Liturgical Chanting & Bhakti Expression:</div>
-    <div class="indic-text" style="font-size: 1.05rem; color: #edf2f7; border-left: 3px solid var(--accent-gold);">దట్టమైన జటాజూటమను అరణ్యము నుండి జాలువారు గంగా ప్రవాహముచే పవిత్రమైన కంఠము కలవాడు, మెడలో పొడవైన సర్పరాజుల హారమును ధరించినవాడు, 'డమ-డమ-డమ'యని మోగు డమరుక నాదముతో ప్రచండ తాండవ నృత్యమును చేయు ఆ పరమశివుడు మనకు సకల మంగళములను ప్రసాదించుగాక!</div>
-    <div class="meta-tag">Target Language: <strong>TE</strong></div>
+    <div class="indic-text" style="font-size: 1.05rem; color: #edf2f7; border-left: 3px solid var(--accent-gold);">Om. We meditate upon the supreme, adorable effulgence of the divine Sun-Creator (Savitar); may He inspire and direct our collective intellects toward the highest Truth.</div>
+    <div class="meta-tag">Target Language: <strong>EN</strong></div>
   </div>
 
   <!-- COLUMN 6 -->
@@ -340,17 +348,19 @@
         <button class="btn btn-correct">Approve w/ Edit</button>
         <button class="btn btn-revise">Request Revision</button>
         <button class="btn btn-dispute">Flag Dispute</button>
+        <button class="btn btn-reject">Reject View</button>
+        <button class="btn btn-escalate">Escalate Specialist</button>
       </div>
     </div>
 
     <div class="meta-tag" style="margin-top: 10px;">Audit Trail & Past Actions:</div>
     <div style="overflow-y: auto; max-height: 200px; margin-bottom: 12px;">
-      <div class="action-item"><span class="badge-action">APPROVE_WITH_CORRECTIONS</span> by <strong>Prof. Vidvan V. Shastri</strong> <small>(2026-11-05)</small><p>Preserved Ravana's rhythmic alliteration in Panchachamara meter (16 syllables per charana: ja-ra-ja-ra-la-ga). Confirmed sandhi parsing: jaṭā-aṭavī-galat-jala-pravāha-pāvita-sthale. Original text preserved immutably.</p></div><div class="action-item"><span class="badge-action">APPROVE_WITH_CORRECTIONS</span> by <strong>Prof. Vidvan V. Shastri</strong> <small>(2026-11-05)</small><p>Preserved Ravana's rhythmic alliteration in Panchachamara meter (16 syllables per charana: ja-ra-ja-ra-la-ga). Confirmed sandhi parsing: jaṭā-aṭavī-galat-jala-pravāha-pāvita-sthale. Original text preserved immutably.</p></div>
+      <div class="action-item"><span class="badge-action">APPROVE</span> by <strong>Dr. K. Ramanathan Ghanapathi</strong> <small>(2026-11-05)</small><p>Clarified lexical difference: 'bhargaḥ' indicates sins-destroying spiritual effulgence (avidya-dahaka tejas), not merely physical sunlight.</p></div><div class="action-item"><span class="badge-action">APPROVE</span> by <strong>Dr. K. Ramanathan Ghanapathi</strong> <small>(2026-11-05)</small><p>Verified 24-syllable Vedic Tripada Gayatri meter (8 + 8 + 8 aksharas). Quarters correspond to Pingala Chhandas Sutra 3.1.</p></div><div class="action-item"><span class="badge-action">APPROVE</span> by <strong>Dr. K. Ramanathan Ghanapathi</strong> <small>(2026-11-05)</small><p>Recitation pronunciation verified: Udatta accent on 'tat', Svarita on 'vareṇyam', Anudatta on 'dhīmahi'. Nasalization of final m/anusvara must follow Paniniya Shiksha nasal phonetic articulation.</p></div><div class="action-item"><span class="badge-action">APPROVE_WITH_CORRECTIONS</span> by <strong>Dr. K. Ramanathan Ghanapathi</strong> <small>(2026-11-05)</small><p>Refined grammatical translation of 'vareṇyam' as a kṛtya-pratyaya (gerundive) from root vṛñ, meaning 'the supreme choice / worshipful effulgence'. Rigvedic Shakha Padapatha: tat | savituḥ | vareṇyam | bhargaḥ | devasya | dhīmahi | dhiyaḥ | yaḥ | naḥ | pracodayāt ||</p></div><div class="action-item"><span class="badge-action">APPROVE</span> by <strong>Dr. K. Ramanathan Ghanapathi</strong> <small>(2026-11-05)</small><p>Clarified lexical difference: 'bhargaḥ' indicates sins-destroying spiritual effulgence (avidya-dahaka tejas), not merely physical sunlight.</p></div><div class="action-item"><span class="badge-action">APPROVE</span> by <strong>Dr. K. Ramanathan Ghanapathi</strong> <small>(2026-11-05)</small><p>Verified 24-syllable Vedic Tripada Gayatri meter (8 + 8 + 8 aksharas). Quarters correspond to Pingala Chhandas Sutra 3.1.</p></div><div class="action-item"><span class="badge-action">APPROVE</span> by <strong>Dr. K. Ramanathan Ghanapathi</strong> <small>(2026-11-05)</small><p>Recitation pronunciation verified: Udatta accent on 'tat', Svarita on 'vareṇyam', Anudatta on 'dhīmahi'. Nasalization of final m/anusvara must follow Paniniya Shiksha nasal phonetic articulation.</p></div><div class="action-item"><span class="badge-action">APPROVE_WITH_CORRECTIONS</span> by <strong>Dr. K. Ramanathan Ghanapathi</strong> <small>(2026-11-05)</small><p>Refined grammatical translation of 'vareṇyam' as a kṛtya-pratyaya (gerundive) from root vṛñ, meaning 'the supreme choice / worshipful effulgence'. Rigvedic Shakha Padapatha: tat | savituḥ | vareṇyam | bhargaḥ | devasya | dhīmahi | dhiyaḥ | yaḥ | naḥ | pracodayāt ||</p></div>
     </div>
 
     <div class="meta-tag">Preserved Textual Disputes:</div>
     <div style="overflow-y: auto; max-height: 150px;">
-      <p class='text-muted'>No open disputes on this verse.</p>
+      <div class="dispute-box"><strong>Dispute: Sampradaya Exegetical Dispute on 'Tat Savitur Vareṇyam'</strong> <span class="badge-amber">OPEN</span><p>Open for editorial board review.</p></div><div class="dispute-box"><strong>Dispute: Sampradaya Exegetical Dispute on 'Tat Savitur Vareṇyam'</strong> <span class="badge-amber">OPEN</span><p>Open for editorial board review.</p></div>
     </div>
   </div>
 

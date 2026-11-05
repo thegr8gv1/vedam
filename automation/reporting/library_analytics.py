@@ -321,9 +321,22 @@ class LibraryAnalyticsEngine:
 
         # Translation Views Breakdown
         views_total = session.query(TranslationView).count()
-        devotional_bhavarthas = sum(1 for tr in all_translations if tr.translation_type == TranslationType.BHAVARTHA)
-        literal_trans_count = sum(1 for tr in all_translations if tr.word_by_word_json and isinstance(tr.word_by_word_json, dict) and tr.word_by_word_json.get("literal_translation"))
-        traditional_meaning_count = sum(1 for tr in all_translations if tr.word_by_word_json and isinstance(tr.word_by_word_json, dict) and tr.word_by_word_json.get("traditional_meaning"))
+        devotional_bhavarthas = session.query(TranslationView).filter_by(view_type=TranslationType.BHAVARTHA).count()
+        literal_trans_count = session.query(TranslationView).filter_by(view_type=TranslationType.LITERAL).count()
+        traditional_meaning_count = session.query(TranslationView).filter_by(view_type=TranslationType.TATPARYA).count()
+
+        # Dynamic TranslationView gap count
+        remaining_gap_count = session.query(Translation).filter(
+            ~session.query(TranslationView).filter(
+                TranslationView.translation_id == Translation.id,
+                TranslationView.view_type == TranslationType.LITERAL,
+            ).exists()
+            |
+            ~session.query(TranslationView).filter(
+                TranslationView.translation_id == Translation.id,
+                TranslationView.view_type == TranslationType.TATPARYA,
+            ).exists()
+        ).count()
 
         # Check archived historical translations count
         archived_count = session.query(ArchivedTranslation).count()
@@ -475,12 +488,12 @@ class LibraryAnalyticsEngine:
             ai_generated_suggestions=ai_annotations_cnt,
             human_corrected_ai_suggestions=human_corrected_ai_cnt,
             approved_translation_views=app_views_total,
-            missing_translation_views=752,
+            missing_translation_views=remaining_gap_count,
             real_human_scholars_count=sum(1 for r in reviewers if getattr(r, "account_category", "") == "REAL_HUMAN_SCHOLAR" and getattr(r, "is_human_verified", False)),
             synthetic_test_personas_count=sum(1 for r in reviewers if getattr(r, "account_category", "") == "SYNTHETIC_TEST_PERSONA"),
             ai_benchmark_overall_accuracy=0.967,
             ai_benchmark_human_correction_rate=0.033,
-            translation_view_gaps_count=752,
+            translation_view_gaps_count=remaining_gap_count,
             composition_review_completion=comp_completion_map,
             language_review_completion=lang_completion_map,
         )

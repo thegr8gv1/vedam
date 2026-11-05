@@ -1,6 +1,6 @@
 # Vedic Heritage Platform — Database Architecture & Schema Specification
-**Version:** 2.0.0  
-**Status:** Approved Specification (Phase 2 Authorization)  
+**Version:** 2.1.0  
+**Status:** Approved Specification (Phase 10 Tripartite TranslationView & Scholarly Certification)  
 **ORM Implementation:** SQLAlchemy 2.0 (`database/models.py`)  
 **Validation Schemas:** Pydantic V2 (`database/schemas.py`)  
 

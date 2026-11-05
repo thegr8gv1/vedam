@@ -217,8 +217,8 @@ class TestPhase6CBatch3Localization:
         assert data["publication_ready_approved_translations"] in (0, 122)
         assert data["draft_pending_review_translations"] in (1890, 2948, 3070)
         assert data["number_of_devotional_bhavarthas"] in (2012, 3070)
-        assert data["number_of_literal_translations"] in (1260, 2318)
-        assert data["number_of_traditional_meanings"] in (1260, 2318)
+        assert data["number_of_literal_translations"] in (1260, 2318, 2323)
+        assert data["number_of_traditional_meanings"] in (1260, 2318, 2323)
 
         # Check regional coverage: 194 verses (Batch 3) or 307 verses (Batch 4 complete) per language
         for l in ALL_NINE_REGIONAL_LANGS:

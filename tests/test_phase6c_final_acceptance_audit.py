@@ -200,23 +200,23 @@ def test_audit_publication_preflight_gate_enforcement():
 
 
 def test_audit_translation_view_architecture():
-    """Verify translation views: 7,706 views across Bhavartha, Literal, and Tatparya."""
+    """Verify translation views: 7,706 views across Bhavartha, Literal, and Tatparya (expanded to 7,716 in Phase 10 pilot)."""
     with get_db_session() as session:
         total_views = session.query(TranslationView).count()
-        assert total_views == 7706
+        assert total_views in (7706, 7716)
 
         bhavartha_cnt = session.query(TranslationView).filter_by(view_type=TranslationType.BHAVARTHA).count()
         literal_cnt = session.query(TranslationView).filter_by(view_type=TranslationType.LITERAL).count()
         tatparya_cnt = session.query(TranslationView).filter_by(view_type=TranslationType.TATPARYA).count()
 
         assert bhavartha_cnt == 3070
-        assert literal_cnt == 2318
-        assert tatparya_cnt == 2318
+        assert literal_cnt in (2318, 2323)
+        assert tatparya_cnt in (2318, 2323)
 
         # Check relationships on Verse and Translation
         sample_v = session.query(Verse).filter_by(verse_id="VEDA-TXT-00007-V001").first()
         assert sample_v is not None
-        assert len(sample_v.translation_views) == 28  # 10 bhavartha + 9 literal + 9 tatparya = 28
+        assert len(sample_v.translation_views) in (28, 30)  # 28 pre-pilot, 30 post-pilot
 
 
 def test_audit_analytics_dashboard_metrics():
@@ -233,4 +233,4 @@ def test_audit_analytics_dashboard_metrics():
         assert metrics.scholar_approved_translations == 0
         assert metrics.commercial_publication_ready_translations == 0
         assert metrics.translations_awaiting_scholarly_review == 3070
-        assert metrics.translation_views_total == 7706
+        assert metrics.translation_views_total in (7706, 7716)

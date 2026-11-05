@@ -254,15 +254,15 @@ class ScholarlyWorkbenchViewGenerator:
   }}
   .btn-group {{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
     margin-bottom: 10px;
   }}
   .btn {{
-    padding: 8px;
+    padding: 8px 6px;
     border: none;
     border-radius: 4px;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 600;
     cursor: pointer;
     text-align: center;
@@ -271,6 +271,8 @@ class ScholarlyWorkbenchViewGenerator:
   .btn-correct {{ background-color: #2b6cb0; color: #fff; }}
   .btn-revise {{ background-color: #d69e2e; color: #000; }}
   .btn-dispute {{ background-color: #c53030; color: #fff; }}
+  .btn-reject {{ background-color: #742a2a; color: #fff; }}
+  .btn-escalate {{ background-color: #6b46c1; color: #fff; }}
   .action-item {{
     border-left: 2px solid var(--accent-green);
     padding-left: 8px;
@@ -314,8 +316,8 @@ class ScholarlyWorkbenchViewGenerator:
   </div>
   <div>
     <span style="color:var(--text-secondary);">Legacy Backfill Queue:</span>
-    <strong style="color:#f6ad55;">752 Staged Records</strong>
-    <span style="color:var(--text-secondary); margin-left:6px;">(5-Record Pilot Proposal Ready)</span>
+    <strong style="color:#f6ad55;">747 Staged Records</strong>
+    <span style="color:var(--text-secondary); margin-left:6px;">(5 Pilot Records Ingested as DRAFT)</span>
   </div>
   <div>
     <span style="color:var(--text-secondary);">AI Benchmarks (30 items):</span>
@@ -425,6 +427,8 @@ class ScholarlyWorkbenchViewGenerator:
         <button class="btn btn-correct">Approve w/ Edit</button>
         <button class="btn btn-revise">Request Revision</button>
         <button class="btn btn-dispute">Flag Dispute</button>
+        <button class="btn btn-reject">Reject View</button>
+        <button class="btn btn-escalate">Escalate Specialist</button>
       </div>
     </div>
 

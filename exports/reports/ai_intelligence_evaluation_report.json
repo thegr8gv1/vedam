@@ -1,6 +1,6 @@
 {
   "benchmark_title": "Vedam AI Sanskrit Intelligence Benchmark Report",
-  "evaluation_timestamp": "2026-11-05T03:18:13.245212+00:00",
+  "evaluation_timestamp": "2026-11-05T03:38:33.214127+00:00",
   "reference_dataset": "exports/reports/ai_benchmark_reference_dataset.json",
   "total_benchmark_items": 30,
   "scoring_rubric": {
@@ -19,7 +19,7 @@
       "api_version": "internal-offline-v1",
       "evaluation_date": "2026-11-05",
       "total_samples": 30,
-      "avg_latency_ms": 0.14,
+      "avg_latency_ms": 0.1,
       "total_prompt_tokens": 0,
       "total_completion_tokens": 0,
       "estimated_cost_usd": 0.0,
@@ -111,7 +111,7 @@
       "api_version": "internal-offline-v1",
       "evaluation_date": "2026-11-05",
       "total_samples": 30,
-      "avg_latency_ms": 0.14,
+      "avg_latency_ms": 0.1,
       "total_prompt_tokens": 0,
       "total_completion_tokens": 0,
       "estimated_cost_usd": 0.0,
