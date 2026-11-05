@@ -7,10 +7,14 @@ import '../../../data/fixtures/authentic_puja_guides_data.dart';
 import '../../../data/repositories/mantra_repository.dart';
 import '../../../state/app_state.dart';
 import '../../../state/audio_state.dart';
+import '../../../state/panchangam_state.dart';
 import '../../../state/sadhana_state.dart';
+import '../../../state/vrat_state.dart';
 import '../../widgets/sacred_app_bar.dart';
 import '../../widgets/section_header.dart';
 import '../mantras/mantra_player_screen.dart';
+import '../vrat/reminders_settings_screen.dart';
+import '../vrat/vrat_calendar_screen.dart';
 import 'guided_puja_screen.dart';
 import 'widgets/customize_routine_modal.dart';
 import 'widgets/puja_guide_overview_modal.dart';
@@ -18,8 +22,10 @@ import 'widgets/puja_guide_overview_modal.dart';
 class SadhanaScreen extends StatefulWidget {
   final AppState appState;
   final SadhanaState? sadhanaState;
+  final VratState? vratState;
   final MantraRepository? mantraRepository;
   final AudioState? audioState;
+  final PanchangamState? panchangamState;
   final VoidCallback? onOpenMantras;
   final VoidCallback? onOpenPanchangam;
   final VoidCallback? onOpenLibrary;
@@ -28,8 +34,10 @@ class SadhanaScreen extends StatefulWidget {
     super.key,
     required this.appState,
     this.sadhanaState,
+    this.vratState,
     this.mantraRepository,
     this.audioState,
+    this.panchangamState,
     this.onOpenMantras,
     this.onOpenPanchangam,
     this.onOpenLibrary,
@@ -39,23 +47,51 @@ class SadhanaScreen extends StatefulWidget {
   State<SadhanaScreen> createState() => _SadhanaScreenState();
 }
 
-class _SadhanaScreenState extends State<SadhanaScreen> {
+class _SadhanaScreenState extends State<SadhanaScreen> with WidgetsBindingObserver {
   late final SadhanaState _state;
+  late final VratState _vratState;
   int _manualJapaCount = 0;
   final int _targetJapa = 108;
+
+  int get _currentJapaCount {
+    if (widget.audioState != null) {
+      return widget.audioState!.completedRepetitions;
+    }
+    return _manualJapaCount;
+  }
+
+  int get _targetJapaCount {
+    if (widget.audioState != null) {
+      return widget.audioState!.targetRepetitions;
+    }
+    return _targetJapa;
+  }
 
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
     _state = widget.sadhanaState ?? SadhanaState();
+    _vratState = widget.vratState ?? VratState();
     _state.addListener(_onStateChange);
+    widget.audioState?.addListener(_onStateChange);
     _state.checkDateRollOver();
   }
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     _state.removeListener(_onStateChange);
+    widget.audioState?.removeListener(_onStateChange);
     super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) {
+      _state.checkDateRollOver();
+      if (mounted) setState(() {});
+    }
   }
 
   void _onStateChange() {
@@ -63,17 +99,25 @@ class _SadhanaScreenState extends State<SadhanaScreen> {
   }
 
   void _incrementJapa() {
-    setState(() {
-      if (_manualJapaCount < _targetJapa) {
-        _manualJapaCount++;
-      }
-    });
+    if (widget.audioState != null) {
+      widget.audioState!.incrementManualRepetition();
+    } else {
+      setState(() {
+        if (_manualJapaCount < _targetJapa) {
+          _manualJapaCount++;
+        }
+      });
+    }
   }
 
   void _resetManualJapa() {
-    setState(() {
-      _manualJapaCount = 0;
-    });
+    if (widget.audioState != null) {
+      widget.audioState!.resetSession();
+    } else {
+      setState(() {
+        _manualJapaCount = 0;
+      });
+    }
   }
 
   void _openGuide(PujaGuide guide) {
@@ -254,6 +298,90 @@ class _SadhanaScreenState extends State<SadhanaScreen> {
                       'Perform each worship discipline with shraddha (steadfast reverence) and a calm presence. '
                       'True sadhana is measured by sincerity and devotion, free of pressure.',
                       style: AppTextStyles.verseMeaning(isDark).copyWith(fontSize: 12, height: 1.35),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+
+            // 2b. Personal Vrat & Observances Portal Card
+            Card(
+              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(16),
+                side: BorderSide(
+                  color: isDark ? AppColors.goldDark.withAlpha(120) : AppColors.goldPrimary.withAlpha(120),
+                ),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            const Icon(Icons.calendar_month_outlined, size: 20, color: AppColors.saffronPrimary),
+                            const SizedBox(width: 8),
+                            Text(
+                              'PERSONAL VRAT & OBSERVANCES',
+                              style: AppTextStyles.metadataTag(isDark).copyWith(
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: 0.6,
+                              ),
+                            ),
+                          ],
+                        ),
+                        IconButton(
+                          icon: const Icon(Icons.notifications_outlined, size: 20),
+                          tooltip: 'Devotional Reminders',
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => RemindersSettingsScreen(
+                                  vratState: _vratState,
+                                ),
+                              ),
+                            );
+                          },
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 6),
+                    Text(
+                      'Plan and track Ekadashi, Pradosham, Purnima, and custom personal fasts with transparent calendar conventions.',
+                      style: AppTextStyles.caption(isDark),
+                    ),
+                    const SizedBox(height: 12),
+                    SizedBox(
+                      width: double.infinity,
+                      height: 42,
+                      child: OutlinedButton.icon(
+                        icon: const Icon(Icons.event_note, size: 18),
+                        label: const Text('OPEN VRAT CALENDAR', style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold)),
+                        style: OutlinedButton.styleFrom(
+                          foregroundColor: AppColors.saffronPrimary,
+                          side: const BorderSide(color: AppColors.saffronPrimary),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => VratCalendarScreen(
+                                vratState: _vratState,
+                                sadhanaState: _state,
+                                mantraRepository: widget.mantraRepository,
+                                audioState: widget.audioState,
+                                panchangamState: widget.panchangamState,
+                              ),
+                            ),
+                          );
+                        },
+                      ),
                     ),
                   ],
                 ),
@@ -589,7 +717,7 @@ class _SadhanaScreenState extends State<SadhanaScreen> {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      '$_manualJapaCount',
+                      '$_currentJapaCount',
                       style: TextStyle(
                         fontSize: 56,
                         fontWeight: FontWeight.bold,
@@ -597,14 +725,14 @@ class _SadhanaScreenState extends State<SadhanaScreen> {
                       ),
                     ),
                     Text(
-                      'Target: $_targetJapa Repetitions',
+                      'Target: $_targetJapaCount Repetitions',
                       style: AppTextStyles.caption(isDark).copyWith(
                         fontWeight: FontWeight.w600,
                       ),
                     ),
                     const SizedBox(height: 14),
                     LinearProgressIndicator(
-                      value: _manualJapaCount / _targetJapa,
+                      value: _targetJapaCount > 0 ? (_currentJapaCount / _targetJapaCount).clamp(0.0, 1.0) : 0.0,
                       backgroundColor: isDark ? AppColors.nightSurfaceElevated : const Color(0xFFF0EAE1),
                       valueColor: const AlwaysStoppedAnimation<Color>(AppColors.saffronPrimary),
                       borderRadius: BorderRadius.circular(8),

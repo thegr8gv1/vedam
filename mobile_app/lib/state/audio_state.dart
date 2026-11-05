@@ -82,6 +82,12 @@ class AudioState extends ChangeNotifier {
     notifyListeners();
   }
 
+  // Manual bead increment (shares state with audio repetitions)
+  void incrementManualRepetition() {
+    _completedRepetitions++;
+    notifyListeners();
+  }
+
   // Play mantra
   Future<void> playMantra(MantraItem mantra, {bool resetSessionCount = true}) async {
     _errorMessage = null;

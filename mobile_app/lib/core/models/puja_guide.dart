@@ -10,6 +10,8 @@ class PujaStep {
   final String? sanskritMantra;
   final String? transliteration;
   final String? meaning;
+  final String? scripturalSource;
+  final String? stepProvenance; // 'canonical_verse', 'traditional_grihya_action', 'editorial_guidance'
   final String? linkedMantraId;
   final String? linkedMantraTitle;
   final List<String> expandedInstructions;
@@ -22,6 +24,8 @@ class PujaStep {
     this.sanskritMantra,
     this.transliteration,
     this.meaning,
+    this.scripturalSource,
+    this.stepProvenance,
     this.linkedMantraId,
     this.linkedMantraTitle,
     this.expandedInstructions = const [],
@@ -35,6 +39,8 @@ class PujaStep {
         'sanskrit_mantra': sanskritMantra,
         'transliteration': transliteration,
         'meaning': meaning,
+        'scriptural_source': scripturalSource,
+        'step_provenance': stepProvenance,
         'linked_mantra_id': linkedMantraId,
         'linked_mantra_title': linkedMantraTitle,
         'expanded_instructions': expandedInstructions,
@@ -49,6 +55,8 @@ class PujaStep {
       sanskritMantra: json['sanskrit_mantra'] as String?,
       transliteration: json['transliteration'] as String?,
       meaning: json['meaning'] as String?,
+      scripturalSource: json['scriptural_source'] as String?,
+      stepProvenance: json['step_provenance'] as String?,
       linkedMantraId: json['linked_mantra_id'] as String?,
       linkedMantraTitle: json['linked_mantra_title'] as String?,
       expandedInstructions: (json['expanded_instructions'] as List<dynamic>?)
@@ -72,6 +80,8 @@ class PujaGuide {
   final List<PujaStep> steps;
   final int estimatedDurationMinutes;
   final String editorialStatus;
+  final String contentVerificationStatus; // Explicit provenance status
+  final List<String> primarySourceReferences;
   final String sourceInfo;
   final String regionalVarianceNote;
   final String lastReviewedDate;
@@ -89,6 +99,8 @@ class PujaGuide {
     required this.steps,
     this.estimatedDurationMinutes = 10,
     this.editorialStatus = 'Verified Editorial Guide',
+    this.contentVerificationStatus = 'Curated Traditional Grihya Paddhati',
+    this.primarySourceReferences = const [],
     required this.sourceInfo,
     required this.regionalVarianceNote,
     required this.lastReviewedDate,
@@ -107,6 +119,8 @@ class PujaGuide {
         'steps': steps.map((s) => s.toJson()).toList(),
         'estimated_duration_minutes': estimatedDurationMinutes,
         'editorial_status': editorialStatus,
+        'content_verification_status': contentVerificationStatus,
+        'primary_source_references': primarySourceReferences,
         'source_info': sourceInfo,
         'regional_variance_note': regionalVarianceNote,
         'last_reviewed_date': lastReviewedDate,
@@ -135,6 +149,11 @@ class PujaGuide {
           const [],
       estimatedDurationMinutes: json['estimated_duration_minutes'] as int? ?? 10,
       editorialStatus: json['editorial_status'] as String? ?? 'Verified Editorial Guide',
+      contentVerificationStatus: json['content_verification_status'] as String? ?? 'Curated Traditional Grihya Paddhati',
+      primarySourceReferences: (json['primary_source_references'] as List<dynamic>?)
+              ?.map((e) => e.toString())
+              .toList() ??
+          const [],
       sourceInfo: json['source_info'] as String? ?? '',
       regionalVarianceNote: json['regional_variance_note'] as String? ?? '',
       lastReviewedDate: json['last_reviewed_date'] as String? ?? '',

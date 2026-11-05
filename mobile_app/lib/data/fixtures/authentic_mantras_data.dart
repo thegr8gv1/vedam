@@ -5,6 +5,13 @@
 import '../../core/models/mantra_item.dart';
 
 class AuthenticMantrasData {
+  static MantraItem? getMantraById(String id) {
+    try {
+      return allMantras.firstWhere((m) => m.id == id);
+    } catch (_) {
+      return null;
+    }
+  }
   static const List<MantraItem> allMantras = [
     MantraItem(
       id: "VEDA-MTR-0001",

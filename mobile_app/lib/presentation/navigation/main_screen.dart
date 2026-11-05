@@ -12,6 +12,7 @@ import '../screens/sadhana/sadhana_screen.dart';
 import '../screens/settings/settings_screen.dart';
 import '../../data/repositories/panchangam_repository.dart';
 import '../../state/panchangam_state.dart';
+import '../../state/vrat_state.dart';
 import '../screens/panchangam/panchangam_screen.dart';
 
 class MainScreen extends StatefulWidget {
@@ -20,6 +21,7 @@ class MainScreen extends StatefulWidget {
   final AudioState? audioState;
   final PanchangamRepository? panchangamRepository;
   final PanchangamState? panchangamState;
+  final VratState? vratState;
   final AppState appState;
   final int initialIndex;
 
@@ -30,6 +32,7 @@ class MainScreen extends StatefulWidget {
     this.audioState,
     this.panchangamRepository,
     this.panchangamState,
+    this.vratState,
     required this.appState,
     this.initialIndex = 0,
   });
@@ -44,6 +47,7 @@ class _MainScreenState extends State<MainScreen> {
   late final AudioState _audioState;
   late final PanchangamRepository _panchangamRepository;
   late final PanchangamState _panchangamState;
+  late final VratState _vratState;
 
   @override
   void initState() {
@@ -55,6 +59,7 @@ class _MainScreenState extends State<MainScreen> {
     _panchangamRepository = widget.panchangamRepository ?? PanchangamRepositoryImpl();
     _panchangamState = widget.panchangamState ??
         PanchangamState(repository: _panchangamRepository);
+    _vratState = widget.vratState ?? VratState();
   }
 
   void _openPanchangamScreen() {
@@ -106,6 +111,8 @@ class _MainScreenState extends State<MainScreen> {
         appState: widget.appState,
         mantraRepository: _mantraRepository,
         audioState: _audioState,
+        panchangamState: _panchangamState,
+        vratState: _vratState,
         onOpenMantras: _openMantrasScreen,
         onOpenPanchangam: _openPanchangamScreen,
         onOpenLibrary: () => _onTabSelected(1),

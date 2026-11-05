@@ -48,7 +48,7 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.text('STEP 2 OF ${guide.steps.length}'), findsOneWidget);
-    expect(find.text('ĀVĀHANAM'), findsOneWidget);
+    expect(find.text('GANDHAM'), findsOneWidget);
     expect(find.text('PREVIOUS'), findsOneWidget);
 
     // 3. Navigate back to Step 1

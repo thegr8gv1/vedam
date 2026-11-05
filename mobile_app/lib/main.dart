@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'core/constants/app_constants.dart';
+import 'core/models/vrat_observance.dart';
 import 'core/services/audio_service.dart';
 import 'core/theme/app_theme.dart';
 import 'data/fixtures/authentic_puja_guides_data.dart';
@@ -11,10 +12,14 @@ import 'presentation/screens/mantras/mantras_screen.dart';
 import 'data/repositories/panchangam_repository.dart';
 import 'presentation/screens/panchangam/panchangam_screen.dart';
 import 'presentation/screens/sadhana/guided_puja_screen.dart';
+import 'presentation/screens/vrat/reminders_settings_screen.dart';
+import 'presentation/screens/vrat/vrat_calendar_screen.dart';
+import 'presentation/screens/vrat/vrat_detail_screen.dart';
 import 'state/panchangam_state.dart';
 import 'state/app_state.dart';
 import 'state/audio_state.dart';
 import 'state/sadhana_state.dart';
+import 'state/vrat_state.dart';
 
 import 'data/fixtures/authentic_scriptures_data.dart';
 import 'presentation/screens/library/verse_reader_screen.dart';
@@ -29,6 +34,7 @@ void main() {
   final panchangamRepository = PanchangamRepositoryImpl();
   final panchangamState = PanchangamState(repository: panchangamRepository);
   final sadhanaState = SadhanaState();
+  final vratState = VratState();
 
   int initialTab = 0;
   int? readerScriptureId;
@@ -38,6 +44,10 @@ void main() {
   String? openGuideId;
   int openGuideStep = 0;
   bool openGuideCompleted = false;
+  bool showVratCalendar = false;
+  String? openVratId;
+  String? openVratStatus;
+  bool showReminders = false;
 
   try {
     final tab = Uri.base.queryParameters['tab'];
@@ -47,6 +57,8 @@ void main() {
     if (tab == 'settings') initialTab = 4;
     if (tab == 'mantras') showMantrasList = true;
     if (tab == 'panchangam') showPanchangam = true;
+    if (tab == 'vrat') showVratCalendar = true;
+    if (tab == 'reminders') showReminders = true;
 
     final reader = Uri.base.queryParameters['reader'];
     if (reader != null) {
@@ -71,6 +83,12 @@ void main() {
     if (Uri.base.queryParameters['completed'] == 'true') {
       openGuideCompleted = true;
     }
+
+    final vrat = Uri.base.queryParameters['vrat'];
+    if (vrat != null) {
+      openVratId = vrat;
+    }
+    openVratStatus = Uri.base.queryParameters['status'];
   } catch (_) {}
 
   runApp(VedamApp(
@@ -80,6 +98,7 @@ void main() {
     panchangamRepository: panchangamRepository,
     panchangamState: panchangamState,
     sadhanaState: sadhanaState,
+    vratState: vratState,
     appState: appState,
     initialTab: initialTab,
     readerScriptureId: readerScriptureId,
@@ -89,6 +108,10 @@ void main() {
     openGuideId: openGuideId,
     openGuideStep: openGuideStep,
     openGuideCompleted: openGuideCompleted,
+    showVratCalendar: showVratCalendar,
+    openVratId: openVratId,
+    openVratStatus: openVratStatus,
+    showReminders: showReminders,
   ));
 }
 
@@ -99,6 +122,7 @@ class VedamApp extends StatelessWidget {
   final PanchangamRepository? panchangamRepository;
   final PanchangamState? panchangamState;
   final SadhanaState? sadhanaState;
+  final VratState? vratState;
   final AppState appState;
   final int initialTab;
   final int? readerScriptureId;
@@ -108,6 +132,10 @@ class VedamApp extends StatelessWidget {
   final String? openGuideId;
   final int openGuideStep;
   final bool openGuideCompleted;
+  final bool showVratCalendar;
+  final String? openVratId;
+  final String? openVratStatus;
+  final bool showReminders;
 
   const VedamApp({
     super.key,
@@ -117,6 +145,7 @@ class VedamApp extends StatelessWidget {
     this.panchangamRepository,
     this.panchangamState,
     this.sadhanaState,
+    this.vratState,
     required this.appState,
     this.initialTab = 0,
     this.readerScriptureId,
@@ -126,6 +155,10 @@ class VedamApp extends StatelessWidget {
     this.openGuideId,
     this.openGuideStep = 0,
     this.openGuideCompleted = false,
+    this.showVratCalendar = false,
+    this.openVratId,
+    this.openVratStatus,
+    this.showReminders = false,
   });
 
   @override
@@ -135,6 +168,7 @@ class VedamApp extends StatelessWidget {
     final pRepo = panchangamRepository ?? PanchangamRepositoryImpl();
     final pState = panchangamState ?? PanchangamState(repository: pRepo);
     final sState = sadhanaState ?? SadhanaState();
+    final vState = vratState ?? VratState();
 
     return ListenableBuilder(
       listenable: appState,
@@ -145,11 +179,40 @@ class VedamApp extends StatelessWidget {
           audioState: aState,
           panchangamRepository: pRepo,
           panchangamState: pState,
+          vratState: vState,
           appState: appState,
           initialIndex: initialTab,
         );
 
-        if (openGuideId != null) {
+        if (showReminders) {
+          homeWidget = RemindersSettingsScreen(vratState: vState);
+        } else if (openVratId != null) {
+          final targetId = (openVratId == 'default' || vState.getObservanceById(openVratId!) == null)
+              ? (vState.observances.isNotEmpty ? vState.observances.first.id : openVratId!)
+              : openVratId!;
+          if (openVratStatus == 'completed') {
+            final existing = vState.getObservanceById(targetId);
+            if (existing != null && existing.status != ObservanceStatus.completed) {
+              vState.updateObservanceStatus(targetId, ObservanceStatus.completed);
+            }
+          }
+          homeWidget = VratDetailScreen(
+            observanceId: targetId,
+            vratState: vState,
+            sadhanaState: sState,
+            mantraRepository: mRepo,
+            audioState: aState,
+            panchangamState: pState,
+          );
+        } else if (showVratCalendar) {
+          homeWidget = VratCalendarScreen(
+            vratState: vState,
+            sadhanaState: sState,
+            mantraRepository: mRepo,
+            audioState: aState,
+            panchangamState: pState,
+          );
+        } else if (openGuideId != null) {
           final guide = AuthenticPujaGuidesData.getGuideById(openGuideId!) ?? AuthenticPujaGuidesData.allGuides.first;
           sState.startGuide(guide, stepIndex: openGuideStep);
           if (openGuideCompleted) {
