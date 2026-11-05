@@ -2,8 +2,8 @@
 ## Master Execution Plan (Canonical Project Charter)
 
 **Document Status:** Active & Living  
-**Version:** 11.0.0  
-**Current Phase:** Phase 11B Complete (Multilingual Database and Reviewer RBAC Expansion — 313 Tests Passing 100% Green)  
+**Version:** 11.3.0  
+**Current Phase:** Phase 11C Complete (Multilingual Script Engines, Akshara Collation, and Transliteration Architecture — 336 Tests Passing 100% Green)  
 **Workspace:** `C:\Vedam`  
 
 ---
@@ -326,5 +326,43 @@ flowchart LR
   - Full project test suite expanded to **290 tests passing with 100% pass rate in 19.60s** across 31 test modules.
   - Verified production database `database/vedam.db` is 100% bit-for-bit unmodified.
 
+
+#### Phase 11B: Multilingual Database and Reviewer RBAC Expansion (COMPLETED)
+- **Database Schema Expansion**:
+  - Implemented Alembic migration `e3a7b1c9f2d5` adding 13 new language-specific reviewer roles (`ReviewerRole` enum) covering all 22 Scheduled Indian Languages plus English.
+  - Expanded total reviewer roles from 16 to 29.
+  - Successfully verified backward compatibility without altering existing tables or foreign keys.
+- **Reviewer Profile & RBAC Expansion**:
+  - Updated `automation/workbench/reviewer_manager.py` and `database/models.py` to support 29 reviewer roles.
+  - Verified demonstration profile isolation and permission enforcement.
+- **Automated Regression Testing**:
+  - Added 23 new isolated tests in `tests/test_phase11b_multilingual_database_and_rbac.py`.
+  - Full test suite expanded to **313 tests passing with 100% pass rate in 25.96s** across 32 test modules.
+  - Verified production database `database/vedam.db` is 100% bit-for-bit unmodified.
+
+#### Phase 11C: Multilingual Script Engines, Akshara Collation & Transliteration (COMPLETED)
+- **14-Script Universal Registry**:
+  - Implemented `automation/localization/script_registry.py` defining 14 script profiles (`Deva`, `Telu`, `Taml`, `Gran`, `Knda`, `Mlym`, `Beng`, `Gujr`, `Guru`, `Orya`, `Olck`, `Arab`, `Mtei`, `Latn`).
+  - Supported directionality (`LTR` vs `RTL` for Arabic/Urdu/Sindhi/Kashmiri), OpenType shaping requirements, recommended Unicode font stacks, and language-script validity mappings.
+  - Built script detection with confidence scores, script distribution histograms, and mixed-script detection.
+- **Multi-Script Transliteration Engine & Reversibility Matrix**:
+  - Implemented `automation/localization/transliteration_engine.py` integrating `indic_transliteration` with Grantha and Tamil specializations.
+  - Codified formal reversibility matrix across all script pairs (`REVERSIBLE`, `CONDITIONALLY_REVERSIBLE`, `LOSSY`, `UNSUPPORTED`).
+  - Preserved Taittiriya and Rigvedic swaras (`U+0951`, `U+0952`, `U+0954`, `U+1CDA`) during transliteration.
+  - Provided three distinct Tamil transliteration modes: standard (`ta`), Grantha-enabled (`ta_grantha`), and phonetic subscripts (`ta_phonetic`).
+  - Implemented round-trip verification audit reporting character difference indices.
+- **Akshara-Aware Lexicographical Collation Engine**:
+  - Implemented `automation/localization/akshara_collator.py` eliminating raw Unicode sorting defects (e.g., `ā` sorting after `z` in raw Unicode).
+  - Decomposes Aksharas into base consonants, independent vowels, matras, halanta/virama, and modifiers.
+  - Enforced scholarly Sanskrit collation order (Vowels -> Simple Syllables -> Conjuncts) matching Apte and Monier-Williams dictionaries.
+  - Handled Dravidian short/long vowels (`e/ē`, `o/ō`), Tamil phonetic order, and regional alphabetical nuances.
+- **Non-Destructive Unicode Fidelity Inspector**:
+  - Implemented `automation/localization/unicode_inspector.py` providing non-destructive Unicode inspection.
+  - Detected normalization drift (NFC vs NFD), combining mark anomalies, Vedic accent counts, and zero-width characters (ZWJ `U+200D` / ZWNJ `U+200C`).
+- **Automated Regression Suite**:
+  - Added 23 new isolated tests in `tests/test_phase11c_script_collation_transliteration.py`.
+  - Full project test suite expanded to **336 tests passing with 100% pass rate in 19.65s** across 33 test modules.
+  - Verified production database `database/vedam.db` is 100% bit-for-bit unmodified.
+
 ### Test Suite Status:
-- Automated test suite expanded to **313 tests passing with 100% pass rate in 25.96s** across 32 test modules.
+- Automated test suite expanded to **336 tests passing with 100% pass rate in 19.65s** across 33 test modules.
