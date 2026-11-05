@@ -1,0 +1,34 @@
+{
+  "content_id": "VEDA-TXT-00006",
+  "canonical_title": "Gayatri Vedic Mantra",
+  "target_bcp47": "te-Telu",
+  "publication_channel": "draft_export",
+  "gate_verdict": "CONDITIONAL_DRAFT_ONLY",
+  "created_at": "2026-11-05T06:39:11.864795+00:00",
+  "artifacts": {
+    "html": {
+      "format_type": "html",
+      "file_path": "C:\\Vedam\\exports\\multilingual_publication\\demonstrations\\telugu_telu\\html\\VEDA-TXT-00006_gayatri_vedic_mantra_te-Telu_draft_export.html",
+      "file_size_bytes": 13088,
+      "sha256": "3b4a293c3ce288db705b5dabd0c42d939bc595438b7fff9878ce9d9ebc68beda"
+    },
+    "pdf": {
+      "format_type": "pdf",
+      "file_path": "C:\\Vedam\\exports\\multilingual_publication\\demonstrations\\telugu_telu\\pdf\\VEDA-TXT-00006_gayatri_vedic_mantra_te-Telu_draft_export.pdf",
+      "file_size_bytes": 86399,
+      "sha256": "e7e42beef1b8a74934fdf45469aa6b41063bb7e0bdbd16ef0c561e6146d51550"
+    },
+    "docx": {
+      "format_type": "docx",
+      "file_path": "C:\\Vedam\\exports\\multilingual_publication\\demonstrations\\telugu_telu\\docx\\VEDA-TXT-00006_gayatri_vedic_mantra_te-Telu_draft_export.docx",
+      "file_size_bytes": 38294,
+      "sha256": "c19d6e44e865781eac49deb9dd6511852784ee1159a194d3388b3cfc6982d692"
+    },
+    "epub": {
+      "format_type": "epub",
+      "file_path": "C:\\Vedam\\exports\\multilingual_publication\\demonstrations\\telugu_telu\\epub\\VEDA-TXT-00006_gayatri_vedic_mantra_te-Telu_draft_export.epub",
+      "file_size_bytes": 5172,
+      "sha256": "c2e40d66c48f91c2d9deadc565e3cd84797f861d729793e2017546ecb768ebb5"
+    }
+  }
+}

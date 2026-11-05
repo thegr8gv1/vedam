@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ur-Arab" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gayatri Vedic Mantra — Urdu Edition</title>
+    <meta name="description" content="Authentic publication preview of Gayatri Vedic Mantra in Urdu (Perso-Arabic).">
+    <meta name="generator" content="Vedic Heritage Digital Library Multilingual Publication Engine">
+    <style>
+        :root {
+            --royal-maroon: #800020;
+            --royal-gold: #D4AF37;
+            --dark-charcoal: #1F2937;
+            --subtle-gray: #F3F4F6;
+            --border-color: #E5E7EB;
+            --text-muted: #6B7280;
+            --bg-card: #FFFFFF;
+            --bg-body: #F9FAFB;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--dark-charcoal);
+            line-height: 1.6;
+            padding-bottom: 3rem;
+        }
+        .draft-watermark-banner {
+            background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);
+            border-bottom: 2px solid #F59E0B;
+            color: #92400E;
+            padding: 0.75rem 1.5rem;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.95rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .watermark-badge {
+            background-color: #F59E0B;
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        .publication-header {
+            background-color: var(--bg-card);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .title-devanagari {
+            font-size: 2rem;
+            color: var(--royal-maroon);
+            margin-bottom: 0.5rem;
+            font-family: 'Noto Sans Devanagari', 'Siddhanta', 'Nirmala UI', sans-serif;
+        }
+        .title-canonical {
+            font-size: 1.5rem;
+            color: #111827;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .badge-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        .badge {
+            font-size: 0.8rem;
+            padding: 0.25rem 0.6rem;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+        .badge-primary { background-color: var(--royal-maroon); color: white; }
+        .badge-secondary { background-color: #4B5563; color: white; }
+        .badge-info { background-color: #1D4ED8; color: white; }
+        .badge-outline { border: 1px solid var(--border-color); color: var(--text-muted); }
+        .status-draft { background-color: #FEF3C7; color: #92400E; }
+        .status-approved { background-color: #D1FAE5; color: #065F46; }
+        .status-submitted_for_review { background-color: #DBEAFE; color: #1E40AF; }
+        .verse-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+        .verse-header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .verse-number {
+            font-weight: 700;
+            color: var(--royal-maroon);
+            font-size: 1.1rem;
+        }
+        .verse-id {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            font-family: monospace;
+        }
+        .verse-source {
+            background-color: #FAF5EF;
+            border-left: 4px solid var(--royal-maroon);
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        .source-devanagari {
+            font-size: 1.25rem;
+            color: #4A151B;
+            margin-bottom: 0.35rem;
+            font-family: 'Noto Sans Devanagari', 'Siddhanta', 'Nirmala UI', sans-serif;
+            line-height: 1.5;
+        }
+        .source-iast {
+            font-size: 0.95rem;
+            color: #555555;
+            font-style: italic;
+            font-family: 'Charis SIL', 'Gentium Plus', 'Georgia', serif;
+        }
+        .verse-script-translit {
+            background-color: #EFF6FF;
+            border-left: 4px solid #2563EB;
+            padding: 0.85rem 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        .view-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #1E40AF;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        .script-recitation-text {
+            font-size: 1.15rem;
+            color: #1E3A8A;
+            line-height: 1.5;
+        }
+        .translation-view {
+            border-top: 1px dashed var(--border-color);
+            padding: 0.85rem 0;
+        }
+        .view-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.4rem;
+        }
+        .view-title {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #374151;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .view-content {
+            font-size: 1.05rem;
+            color: #111827;
+            line-height: 1.6;
+        }
+        .badge-mini {
+            font-size: 0.7rem;
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .missing-view {
+            padding: 0.5rem 0;
+            color: #9CA3AF;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+        .legacy-gap-banner {
+            background-color: #FEF3C7;
+            border: 1px solid #F59E0B;
+            border-radius: 6px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: #78350F;
+        }
+        .publication-footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 3rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+        }
+        .footer-disclaimer {
+            max-width: 650px;
+            margin: 0.5rem auto;
+            font-size: 0.8rem;
+            line-height: 1.4;
+        }
+        /* RTL Layout Tweaks */
+        html[dir="rtl"] .verse-source {
+            border-left: none;
+            border-right: 4px solid var(--royal-maroon);
+        }
+        html[dir="rtl"] .verse-script-translit {
+            border-left: none;
+            border-right: 4px solid #2563EB;
+        }
+    </style>
+</head>
+<body>
+    
+            <aside class="draft-watermark-banner" role="alert" aria-label="Draft Notice">
+                <div class="watermark-content">
+                    <span class="watermark-badge">&#9888; NOTICE</span>
+                    <span class="watermark-text">UNREVIEWED DRAFT — NOT FOR PUBLIC DEVOTIONAL USE</span>
+                </div>
+            </aside>
+            
+    <div class="container">
+        <header class="publication-header">
+            <h1 class="title-devanagari">सावित्रीगायत्रीमन्त्रः</h1>
+            <h2 class="title-canonical">Gayatri Vedic Mantra</h2>
+            <div class="badge-bar">
+                <span class="badge badge-primary">VEDA-TXT-00006</span>
+                <span class="badge badge-secondary">Mantra</span>
+                <span class="badge badge-info">Urdu (Perso-Arabic)</span>
+                <span class="badge badge-status status-draft">DRAFT</span>
+                <span class="badge badge-outline">Deity: Lord Surya</span>
+                <span class="badge badge-outline">Meter: Nicrid Gayatri (24 syllables: 8-8-8)</span>
+                <span class="badge badge-outline">Rishi: Maha Rishi Visvamitra</span>
+            </div>
+        </header>
+
+        
+            <section class="legacy-gap-banner" role="note">
+                <p><strong>Editorial Notice:</strong> This publication edition reflects historical translation records. "
+                "Independent Literal (1 missing) and Traditional Tatparya (1 missing) "
+                "views are currently staged in the controlled scholarly review queue.</p>
+            </section>
+            
+
+        <main class="publication-verses">
+            
+            <article class="verse-card" id="verse-1" aria-labelledby="verse-heading-1">
+                <header class="verse-header">
+                    <span class="verse-number" id="verse-heading-1">Verse 1</span>
+                    <span class="verse-id"><bdi dir="ltr">VEDA-TXT-00006-V001</bdi></span>
+                </header>
+                <div class="verse-source" dir="ltr">
+                    <p class="source-devanagari">ॐ भूर्भुव॒स्स॒वः॑ ।
+तत्स॑वि॒तुर्वरे॑ण्यं॒ भर्गो॑ दे॒वस्य॑ धीमहि ।
+धियो॒ यो नः॑ प्रचो॒दया॑त् ॥</p>
+                    <p class="source-iast">oṁ bhūrbhuva॒ssa॒vaḥ॑ ।
+tatsa॑vi॒turvare॑ṇyaṁ॒ bhargo॑ de॒vasya॑ dhīmahi ।
+dhiyo॒ yo naḥ॑ praco॒dayā॑t ॥</p>
+                </div>
+                
+                <div class="verse-script-translit" dir="rtl">
+                    <span class="view-label">Perso-Arabic Recitation:</span>
+                    <p class="script-recitation-text" style="font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Tahoma', 'Arial', sans-serif;">اومْ بھَُورَْبھَُوَ॒سَْسَ॒وَہ॑ ۔
+تَتَْسَ॑وَِ॒تَُرَْوَرَے॑نَْیَں॒ بھَرَْگَو॑ دَے॒وَسَْیَ॑ دھَِیمَہَِ ۔
+دھَِیَو॒ یَو نَہ॑ پَْرَچَو॒دَیَا॑تَْ ۔۔</p>
+                </div>
+                
+                <div class="verse-views">
+                    
+                <div class="translation-view missing-view">
+                    <span class="missing-label">&#9888; Literal Translation:</span>
+                    <span class="missing-text">Pending scholarly review & certification.</span>
+                </div>
+                
+
+                <div class="translation-view missing-view">
+                    <span class="missing-label">&#9888; Traditional Tātparya:</span>
+                    <span class="missing-text">Pending commentary reference collation.</span>
+                </div>
+                
+                </div>
+            </article>
+            
+        </main>
+
+        <footer class="publication-footer">
+            <p><strong>Vedic Heritage Platform Digital Publication Edition</strong></p>
+            <p>Generated: November 05, 2026 at 06:39 UTC | Document Hash: <code>ef523bb5b14c4cf5...</code></p>
+            <p class="footer-disclaimer">Internal scholarly preview or draft export. Raw ancient source texts are preserved intact. Unapproved translations must never be presented as scholar-certified canonical editions.</p>
+        </footer>
+    </div>
+</body>
+</html>

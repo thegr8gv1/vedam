@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="hi-Deva" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesha Pancharatnam — Hindi Edition</title>
+    <meta name="description" content="Authentic publication preview of Ganesha Pancharatnam in Hindi (Devanagari).">
+    <meta name="generator" content="Vedic Heritage Digital Library Multilingual Publication Engine">
+    <style>
+        :root {
+            --royal-maroon: #800020;
+            --royal-gold: #D4AF37;
+            --dark-charcoal: #1F2937;
+            --subtle-gray: #F3F4F6;
+            --border-color: #E5E7EB;
+            --text-muted: #6B7280;
+            --bg-card: #FFFFFF;
+            --bg-body: #F9FAFB;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--dark-charcoal);
+            line-height: 1.6;
+            padding-bottom: 3rem;
+        }
+        .draft-watermark-banner {
+            background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);
+            border-bottom: 2px solid #F59E0B;
+            color: #92400E;
+            padding: 0.75rem 1.5rem;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.95rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .watermark-badge {
+            background-color: #F59E0B;
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        .publication-header {
+            background-color: var(--bg-card);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .title-devanagari {
+            font-size: 2rem;
+            color: var(--royal-maroon);
+            margin-bottom: 0.5rem;
+            font-family: 'Noto Sans Devanagari', 'Siddhanta', 'Nirmala UI', sans-serif;
+        }
+        .title-canonical {
+            font-size: 1.5rem;
+            color: #111827;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .badge-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        .badge {
+            font-size: 0.8rem;
+            padding: 0.25rem 0.6rem;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+        .badge-primary { background-color: var(--royal-maroon); color: white; }
+        .badge-secondary { background-color: #4B5563; color: white; }
+        .badge-info { background-color: #1D4ED8; color: white; }
+        .badge-outline { border: 1px solid var(--border-color); color: var(--text-muted); }
+        .status-draft { background-color: #FEF3C7; color: #92400E; }
+        .status-approved { background-color: #D1FAE5; color: #065F46; }
+        .status-submitted_for_review { background-color: #DBEAFE; color: #1E40AF; }
+        .verse-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+        .verse-header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .verse-number {
+            font-weight: 700;
+            color: var(--royal-maroon);
+            font-size: 1.1rem;
+        }
+        .verse-id {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            font-family: monospace;
+        }
+        .verse-source {
+            background-color: #FAF5EF;
+            border-left: 4px solid var(--royal-maroon);
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        .source-devanagari {
+            font-size: 1.25rem;
+            color: #4A151B;
+            margin-bottom: 0.35rem;
+            font-family: 'Noto Sans Devanagari', 'Siddhanta', 'Nirmala UI', sans-serif;
+            line-height: 1.5;
+        }
+        .source-iast {
+            font-size: 0.95rem;
+            color: #555555;
+            font-style: italic;
+            font-family: 'Charis SIL', 'Gentium Plus', 'Georgia', serif;
+        }
+        .verse-script-translit {
+            background-color: #EFF6FF;
+            border-left: 4px solid #2563EB;
+            padding: 0.85rem 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        .view-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #1E40AF;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        .script-recitation-text {
+            font-size: 1.15rem;
+            color: #1E3A8A;
+            line-height: 1.5;
+        }
+        .translation-view {
+            border-top: 1px dashed var(--border-color);
+            padding: 0.85rem 0;
+        }
+        .view-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.4rem;
+        }
+        .view-title {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #374151;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .view-content {
+            font-size: 1.05rem;
+            color: #111827;
+            line-height: 1.6;
+        }
+        .badge-mini {
+            font-size: 0.7rem;
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .missing-view {
+            padding: 0.5rem 0;
+            color: #9CA3AF;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+        .legacy-gap-banner {
+            background-color: #FEF3C7;
+            border: 1px solid #F59E0B;
+            border-radius: 6px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: #78350F;
+        }
+        .publication-footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 3rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+        }
+        .footer-disclaimer {
+            max-width: 650px;
+            margin: 0.5rem auto;
+            font-size: 0.8rem;
+            line-height: 1.4;
+        }
+        /* RTL Layout Tweaks */
+        html[dir="rtl"] .verse-source {
+            border-left: none;
+            border-right: 4px solid var(--royal-maroon);
+        }
+        html[dir="rtl"] .verse-script-translit {
+            border-left: none;
+            border-right: 4px solid #2563EB;
+        }
+    </style>
+</head>
+<body>
+    
+            <aside class="draft-watermark-banner" role="alert" aria-label="Draft Notice">
+                <div class="watermark-content">
+                    <span class="watermark-badge">&#9888; NOTICE</span>
+                    <span class="watermark-text">UNREVIEWED DRAFT — NOT FOR PUBLIC DEVOTIONAL USE</span>
+                </div>
+            </aside>
+            
+    <div class="container">
+        <header class="publication-header">
+            <h1 class="title-devanagari">गणेशपञ्चरत्नम्</h1>
+            <h2 class="title-canonical">Ganesha Pancharatnam</h2>
+            <div class="badge-bar">
+                <span class="badge badge-primary">VEDA-TXT-00001</span>
+                <span class="badge badge-secondary">Stotra</span>
+                <span class="badge badge-info">Hindi (Devanagari)</span>
+                <span class="badge badge-status status-draft">DRAFT</span>
+                <span class="badge badge-outline">Deity: Lord Ganesha</span>
+                <span class="badge badge-outline">Meter: Vasantatilaka / Anushtubh</span>
+            </div>
+        </header>
+
+        
+            <section class="legacy-gap-banner" role="note">
+                <p><strong>Editorial Notice:</strong> This publication edition reflects historical translation records. "
+                "Independent Literal (6 missing) and Traditional Tatparya (6 missing) "
+                "views are currently staged in the controlled scholarly review queue.</p>
+            </section>
+            
+
+        <main class="publication-verses">
+            
+            <article class="verse-card" id="verse-1" aria-labelledby="verse-heading-1">
+                <header class="verse-header">
+                    <span class="verse-number" id="verse-heading-1">Verse 1</span>
+                    <span class="verse-id"><bdi dir="ltr">VEDA-TXT-00001-V001</bdi></span>
+                </header>
+                <div class="verse-source" dir="ltr">
+                    <p class="source-devanagari">मुदाकरात्तमोदकं सदा विमुक्तिसाधकं कलाधरावतंसकं विलासिलोकरक्षकम् ।
+अनायकैकनायकं विनाशितेभदैत्यकं नताशुभाशुकर्तकं नमामि तं विनायकम् ॥ १ ॥</p>
+                    <p class="source-iast">mudākarāttamōdakaṁ sadā vimuktisādhakaṁ kalādharāvataṁsakaṁ vilāsilōkarakṣakam ।
+anāyakaikanāyakaṁ vināśitēbhadaityakaṁ natāśubhāśukartakaṁ namāmi taṁ vināyakam ॥ 1 ॥</p>
+                </div>
+                
+                <div class="verse-views">
+                    
+                <div class="translation-view missing-view">
+                    <span class="missing-label">&#9888; Literal Translation:</span>
+                    <span class="missing-text">Pending scholarly review & certification.</span>
+                </div>
+                
+
+                <div class="translation-view missing-view">
+                    <span class="missing-label">&#9888; Traditional Tātparya:</span>
+                    <span class="missing-text">Pending commentary reference collation.</span>
+                </div>
+                
+
+                <div class="translation-view bhavartha-view" dir="ltr">
+                    <div class="view-header">
+                        <span class="view-title">Devotional Bhavartha</span>
+                        <span class="badge-mini status-draft">DRAFT</span>
+                    </div>
+                    <p class="view-content" style="font-family: 'Noto Sans Devanagari', 'Siddhanta', 'Nirmala UI', sans-serif;">हाथ में मोदक धारण करने वाले, भक्तों को मुक्ति प्रदान करने वाले, मस्तक पर अर्धचंद्र की शोभा वाले, लोकों के रक्षक, अनाथों के एकमात्र बंधु, गजासुर का उद्धार करने वाले, शीघ्र पापों का नाश करने वाले विनायक को मैं नमन करता हूँ।</p>
+                </div>
+                
+                </div>
+            </article>
+            
+
+            <article class="verse-card" id="verse-2" aria-labelledby="verse-heading-2">
+                <header class="verse-header">
+                    <span class="verse-number" id="verse-heading-2">Verse 2</span>
+                    <span class="verse-id"><bdi dir="ltr">VEDA-TXT-00001-V002</bdi></span>
+                </header>
+                <div class="verse-source" dir="ltr">
+                    <p class="source-devanagari">नतेतरातिभीकरं नवोदितार्कभास्वरं नमत्सुरारिनिर्जरं नताधिकापदुद्धरम् ।
+सुरेश्वरं निधीश्वरं गजेश्वरं गणेश्वरं महेश्वरं तमाश्रये परात्परं निरन्तरम् ॥ २ ॥</p>
+                    <p class="source-iast">natētarātibhīkaraṁ navōditārkabhāsvaraṁ namatsurārinirjaraṁ natādhikāpaduddharam ।
+surēśvaraṁ nidhīśvaraṁ gajēśvaraṁ gaṇēśvaraṁ mahēśvaraṁ tamāśrayē parātparaṁ nirantaram ॥ 2 ॥</p>
+                </div>
+                
+                <div class="verse-views">
+                    
+                <div class="translation-view missing-view">
+                    <span class="missing-label">&#9888; Literal Translation:</span>
+                    <span class="missing-text">Pending scholarly review & certification.</span>
+                </div>
+                
+
+                <div class="translation-view missing-view">
+                    <span class="missing-label">&#9888; Traditional Tātparya:</span>
+                    <span class="missing-text">Pending commentary reference collation.</span>
+                </div>
+                
+
+                <div class="translation-view bhavartha-view" dir="ltr">
+                    <div class="view-header">
+                        <span class="view-title">Devotional Bhavartha</span>
+                        <span class="badge-mini status-draft">DRAFT</span>
+                    </div>
+                    <p class="view-content" style="font-family: 'Noto Sans Devanagari', 'Siddhanta', 'Nirmala UI', sans-serif;">क्रोधरहित, प्रलयकारी तेज वाले, देवताओं और असुरों द्वारा वंदित, दयालु, शरणार्थियों के क्लेश दूर करने वाले, शांतस्वरूप, विघ्नों के निवारक, गजानन भगवान गणेश को मैं वंदना करता हूँ।</p>
+                </div>
+                
+                </div>
+            </article>
+            
+
+            <article class="verse-card" id="verse-3" aria-labelledby="verse-heading-3">
+                <header class="verse-header">
+                    <span class="verse-number" id="verse-heading-3">Verse 3</span>
+                    <span class="verse-id"><bdi dir="ltr">VEDA-TXT-00001-V003</bdi></span>
+                </header>
+                <div class="verse-source" dir="ltr">
+                    <p class="source-devanagari">समस्तलोकशङ्करं निरस्तदैत्यकुञ्जरं दरेतरोदरं वरं वरेभवक्त्रमक्षरम् ।
+कृपाकरं क्षमाकरं मुदाकरं यशस्करं मनस्करं नमस्कृतां नमस्करोमि भास्वरम् ॥ ३ ॥</p>
+                    <p class="source-iast">samastalōkaśaṅkaraṁ nirastadaityakuñjaraṁ darētarōdaraṁ varaṁ varēbhavaktramakṣaram ।
+kṛpākaraṁ kṣamākaraṁ mudākaraṁ yaśaskaraṁ manaskaraṁ namaskṛtāṁ namaskarōmi bhāsvaram ॥ 3 ॥</p>
+                </div>
+                
+                <div class="verse-views">
+                    
+                <div class="translation-view missing-view">
+                    <span class="missing-label">&#9888; Literal Translation:</span>
+                    <span class="missing-text">Pending scholarly review & certification.</span>
+                </div>
+                
+
+                <div class="translation-view missing-view">
+                    <span class="missing-label">&#9888; Traditional Tātparya:</span>
+                    <span class="missing-text">Pending commentary reference collation.</span>
+                </div>
+                
+
+                <div class="translation-view bhavartha-view" dir="ltr">
+                    <div class="view-header">
+                        <span class="view-title">Devotional Bhavartha</span>
+                        <span class="badge-mini status-draft">DRAFT</span>
+                    </div>
+                    <p class="view-content" style="font-family: 'Noto Sans Devanagari', 'Siddhanta', 'Nirmala UI', sans-serif;">संसार के समस्त सुखों के दाता, वेदों के सारभूत अर्थ को जानने वाले, ज्ञानियों द्वारा प्रशंसित, सामगान से प्रसन्न होने वाले, पार्वती और शंकर के प्रिय पुत्र गणेश का मैं आश्रय लेता हूँ।</p>
+                </div>
+                
+                </div>
+            </article>
+            
+
+            <article class="verse-card" id="verse-4" aria-labelledby="verse-heading-4">
+                <header class="verse-header">
+                    <span class="verse-number" id="verse-heading-4">Verse 4</span>
+                    <span class="verse-id"><bdi dir="ltr">VEDA-TXT-00001-V004</bdi></span>
+                </header>
+                <div class="verse-source" dir="ltr">
+                    <p class="source-devanagari">अकिञ्चनार्तिमार्जनं चिरन्तनोक्तिभाजनं पुरारिपूर्वनन्दनं सुरारिगर्वचर्वणम् ।
+प्रपञ्चनाशभीषणं धनञ्जयादिभूषणं कपोलदानवारणं भजे पुराणवारणम् ॥ ४ ॥</p>
+                    <p class="source-iast">akiñcanārtimārjanaṁ cirantanōktibhājanaṁ purāripūrvanandanaṁ surārigarvacarvaṇam ।
+prapañcanāśabhīṣaṇaṁ dhanañjayādibhūṣaṇaṁ kapōladānavāraṇaṁ bhajē purāṇavāraṇam ॥ 4 ॥</p>
+                </div>
+                
+                <div class="verse-views">
+                    
+                <div class="translation-view missing-view">
+                    <span class="missing-label">&#9888; Literal Translation:</span>
+                    <span class="missing-text">Pending scholarly review & certification.</span>
+                </div>
+                
+
+                <div class="translation-view missing-view">
+                    <span class="missing-label">&#9888; Traditional Tātparya:</span>
+                    <span class="missing-text">Pending commentary reference collation.</span>
+                </div>
+                
+
+                <div class="translation-view bhavartha-view" dir="ltr">
+                    <div class="view-header">
+                        <span class="view-title">Devotional Bhavartha</span>
+                        <span class="badge-mini status-draft">DRAFT</span>
+                    </div>
+                    <p class="view-content" style="font-family: 'Noto Sans Devanagari', 'Siddhanta', 'Nirmala UI', sans-serif;">दीन-दुखियों पर कृपा बरसाने वाले, प्रणव (ॐ) स्वरूप, योगियों के हृदय में वास करने वाले, निष्कलंक, असीम महिमा से युक्त, समस्त उपद्रवों के नाशक भगवान एकदंत को मैं प्रणाम करता हूँ।</p>
+                </div>
+                
+                </div>
+            </article>
+            
+
+            <article class="verse-card" id="verse-5" aria-labelledby="verse-heading-5">
+                <header class="verse-header">
+                    <span class="verse-number" id="verse-heading-5">Verse 5</span>
+                    <span class="verse-id"><bdi dir="ltr">VEDA-TXT-00001-V005</bdi></span>
+                </header>
+                <div class="verse-source" dir="ltr">
+                    <p class="source-devanagari">नितान्तकान्तदन्तकान्तिमन्तकान्तकात्मजं अचिन्त्यरूपमन्तहीनमन्तरायकृन्तनम् ।
+हृदन्तरे निरन्तरं वसन्तमेव योगिनां तमेकदन्तमेव तं विचिन्तयामि सन्ततम् ॥ ५ ॥</p>
+                    <p class="source-iast">nitāntakāntadantakāntimantakāntakātmajaṁ acintyarūpamantahīnamantarāyakṛntanam ।
+hṛdantarē nirantaraṁ vasantamēva yōgināṁ tamēkadantamēva taṁ vicintayāmi santatam ॥ 5 ॥</p>
+                </div>
+                
+                <div class="verse-views">
+                    
+                <div class="translation-view missing-view">
+                    <span class="missing-label">&#9888; Literal Translation:</span>
+                    <span class="missing-text">Pending scholarly review & certification.</span>
+                </div>
+                
+
+                <div class="translation-view missing-view">
+                    <span class="missing-label">&#9888; Traditional Tātparya:</span>
+                    <span class="missing-text">Pending commentary reference collation.</span>
+                </div>
+                
+
+                <div class="translation-view bhavartha-view" dir="ltr">
+                    <div class="view-header">
+                        <span class="view-title">Devotional Bhavartha</span>
+                        <span class="badge-mini status-draft">DRAFT</span>
+                    </div>
+                    <p class="view-content" style="font-family: 'Noto Sans Devanagari', 'Siddhanta', 'Nirmala UI', sans-serif;">विशाल कांति वाले, सुंदर गंडस्थल से मदजल बहाने वाले, सिंदूर से सुशोभित, समस्त चराचर जगत के स्वामी, मोदकप्रिय भगवान विघ्नराज को मैं बारंबार नमस्कार करता हूँ।</p>
+                </div>
+                
+                </div>
+            </article>
+            
+
+            <article class="verse-card" id="verse-6" aria-labelledby="verse-heading-6">
+                <header class="verse-header">
+                    <span class="verse-number" id="verse-heading-6">Verse 6</span>
+                    <span class="verse-id"><bdi dir="ltr">VEDA-TXT-00001-V006</bdi></span>
+                </header>
+                <div class="verse-source" dir="ltr">
+                    <p class="source-devanagari">महागणेशपञ्चरत्नमादरेण योऽन्वहम् ।
+प्रगायति प्रभातके हृदि स्मरन् गणेश्वरम् ।
+अरोगतामदोषतां सुसाहितीं सुपुत्रतां समाहितायुरष्टभूतिमभ्युपैति सोऽचिरात् ॥ ६ ॥</p>
+                    <p class="source-iast">mahāgaṇēśapañcaratnamādarēṇa yō&#x27;nvaham ।
+pragāyati prabhātakē hṛdi smaran gaṇēśvaram ।
+arōgatāmadōṣatāṁ susāhitīṁ suputratāṁ samāhitāyuraṣṭabhūtimabhyupaiti sō&#x27;cirāt ॥ 6 ॥</p>
+                </div>
+                
+                <div class="verse-views">
+                    
+                <div class="translation-view missing-view">
+                    <span class="missing-label">&#9888; Literal Translation:</span>
+                    <span class="missing-text">Pending scholarly review & certification.</span>
+                </div>
+                
+
+                <div class="translation-view missing-view">
+                    <span class="missing-label">&#9888; Traditional Tātparya:</span>
+                    <span class="missing-text">Pending commentary reference collation.</span>
+                </div>
+                
+
+                <div class="translation-view bhavartha-view" dir="ltr">
+                    <div class="view-header">
+                        <span class="view-title">Devotional Bhavartha</span>
+                        <span class="badge-mini status-draft">DRAFT</span>
+                    </div>
+                    <p class="view-content" style="font-family: 'Noto Sans Devanagari', 'Siddhanta', 'Nirmala UI', sans-serif;">जो मनुष्य प्रातःकाल उठकर एकाग्रचित्त से भगवान गणेश के इस पञ्चरत्न स्तोत्र का पाठ करता है, उसे उत्तम स्वास्थ्य, दोषरहित विद्या, विपुल धन, श्रेष्ठ संतान और दीर्घायु की प्राप्ति होती है।</p>
+                </div>
+                
+                </div>
+            </article>
+            
+        </main>
+
+        <footer class="publication-footer">
+            <p><strong>Vedic Heritage Platform Digital Publication Edition</strong></p>
+            <p>Generated: November 05, 2026 at 06:39 UTC | Document Hash: <code>85f5fcc2f809e624...</code></p>
+            <p class="footer-disclaimer">Internal scholarly preview or draft export. Raw ancient source texts are preserved intact. Unapproved translations must never be presented as scholar-certified canonical editions.</p>
+        </footer>
+    </div>
+</body>
+</html>

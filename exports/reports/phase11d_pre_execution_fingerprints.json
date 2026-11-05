@@ -1,0 +1,22 @@
+{
+  "timestamp": "20261105_002013",
+  "database_file": "database\\vedam.db",
+  "file_size": 20455424,
+  "file_sha256": "8315040257dc3e490646e6e7138f9fd8bb38eae835b84e1f15849badae7318aa",
+  "backup_path": "database\\backups\\vedam_pre_phase11d_20261105_002013.db",
+  "backup_integrity": "ok",
+  "census": {
+    "canonical_texts": 18,
+    "total_texts": 20,
+    "canonical_verses": 307,
+    "total_verses": 310,
+    "active_translations": 3070,
+    "draft_translations": 3070,
+    "archived_translations": 580,
+    "total_translation_views": 7716,
+    "legacy_gaps": 747,
+    "total_reviewers": 6,
+    "total_review_logs": 20,
+    "total_disputes": 2
+  }
+}

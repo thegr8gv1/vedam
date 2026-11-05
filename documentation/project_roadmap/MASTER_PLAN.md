@@ -2,8 +2,8 @@
 ## Master Execution Plan (Canonical Project Charter)
 
 **Document Status:** Active & Living  
-**Version:** 11.3.0  
-**Current Phase:** Phase 11C Complete (Multilingual Script Engines, Akshara Collation, and Transliteration Architecture — 338 Tests Passing 100% Green)  
+**Version:** 11.4.0  
+**Current Phase:** Phase 11D Complete (Multilingual Publication Engines, RTL Layouts & Format Exporters — 361 Tests Passing 100% Green)  
 **Workspace:** `C:\Vedam`  
 
 ---
@@ -364,5 +364,45 @@ flowchart LR
   - Full project test suite expanded to **338 tests passing with 100% pass rate in 22.48s** across 33 test modules.
   - Verified production database `database/vedam.db` is 100% bit-for-bit unmodified.
 
+#### Phase 11D: Multilingual Publication Engines, RTL Layouts & Format Exporters (COMPLETED)
+- **Format-Independent Publication Representation Model**:
+  - Implemented `automation/exporters/publication_model.py` providing `PublicationDocument`, `PublicationMetadata`, `LanguageScriptTarget`, `VerseEntry`, and `PublicationGovernance`.
+  - Maps granular translation views (`LITERAL`, `TATPARYA`, `BHAVARTHA`, `word_by_word_json`) preserving version counters, review status, and reviewer provenance.
+  - Implemented `MissingContentLedger` explicitly auditing and reporting missing views (such as the 747 legacy gap records), preventing silent data fabrication.
+  - Generates deterministic SHA-256 document content fingerprints.
+- **Multilingual Typography & Font Stack Abstraction**:
+  - Implemented `automation/exporters/typography.py` mapping all 14 platform scripts to CSS font stacks, Word font families, and ReportLab TrueType font registrations (`Nirmala.ttc`, `tahoma.ttf`, `calibri.ttf`).
+  - Documented font licensing, embedding rights, and OpenType shaping engines across scripts.
+- **BiDi & Right-to-Left (RTL) Layout Engine**:
+  - Implemented `automation/exporters/bidi_layout.py` providing bidirectional script detection and flow control for Urdu (`ur`), Kashmiri (`ks`), Sindhi (`sd`), and Arabic script (`Arab`).
+  - Implemented mixed-directionality `<bdi>` isolation wrapping embedded LTR tokens (verse IDs, numbers, Sanskrit mantras) in RTL paragraphs.
+  - Implemented standard Arabic contextual shaping (`shape_arabic_for_pdf`) mapping isolated letters to Presentation Forms-B (Initial, Medial, Final, Isolated) for ReportLab canvas rendering without third-party dependencies.
+- **Central Release Gatekeeper (`PUB-001` - `PUB-004`)**:
+  - Implemented `automation/exporters/publication_gatekeeper.py` enforcing strict preflight quality gates before permitting file export.
+  - `PUB-001`: Prohibits `approved_publication` releases when translations are in `DRAFT` status.
+  - `PUB-002`: Requires accredited human reviewer authentication for public releases.
+  - `PUB-003`: Quarantines test persona and demonstration accounts from authorizing releases.
+  - `PUB-004`: Enforces language-specific RBAC authorization.
+  - Allows `draft_export`, `internal_preview`, and `scholarly_review` with mandatory, non-removable warning banners and diagonal watermarks.
+- **Accessible HTML5 Exporter**:
+  - Implemented `automation/exporters/html_exporter.py` generating responsive, semantic HTML5 publication manuscripts with `lang` tags, `dir="rtl"` / `dir="ltr"` attributes, royal maroon styling, and strict HTML escaping protecting against XSS.
+- **Print-Ready PDF Exporter**:
+  - Implemented `automation/exporters/pdf_multilingual_exporter.py` generating archival print-ready PDFs using ReportLab with `WatermarkedNumberedCanvas` (dynamic "Page X of Y", running headers/footers, and diagonal red DRAFT watermark).
+- **Structured DOCX Exporter**:
+  - Implemented `automation/exporters/docx_multilingual_exporter.py` generating typeset Word manuscripts with bidirectional paragraph alignments, bilingual verse card tables, and DRAFT callout warnings.
+- **Reflowable EPUB 3 Exporter**:
+  - Implemented `automation/exporters/epub_exporter.py` generating standards-compliant EPUB 3 reflowable packages using standard library `zipfile` (uncompressed `mimetype` first file, `META-INF/container.xml`, `content.opf`, `nav.xhtml`, CSS, and bidirectional XHTML chapters).
+- **Unified Multilingual Publication Orchestrator**:
+  - Implemented `automation/exporters/multilingual_publication_orchestrator.py` coordinating multi-format export across all 4 formats and emitting structured JSON manifests with SHA-256 digests.
+- **Demonstration Exports**:
+  - Successfully generated 3 complete 4-format publication packages (12 physical files) in `exports/multilingual_publication/demonstrations/`:
+    1. Hindi Devanagari (`hi-Deva`): Ganesha Pancharatnam (`VEDA-TXT-00001`)
+    2. Telugu Indic (`te-Telu`): Gayatri Vedic Mantra (`VEDA-TXT-00006`)
+    3. Urdu Perso-Arabic RTL (`ur-Arab`): Gayatri Vedic Mantra (`VEDA-TXT-00006`)
+- **Automated Regression Suite**:
+  - Added 23 new isolated tests in `tests/test_phase11d_multilingual_exporters.py`.
+  - Full project test suite expanded to **361 tests passing with 100% pass rate in 21.31s** across 34 test modules.
+  - Verified production database `database/vedam.db` SHA-256 remains 100% bit-for-bit identical (`8315040257dc3e490646e6e7138f9fd8bb38eae835b84e1f15849badae7318aa`).
+
 ### Test Suite Status:
-- Automated test suite expanded to **338 tests passing with 100% pass rate in 22.48s** across 33 test modules.
+- Automated test suite expanded to **361 tests passing with 100% pass rate in 21.31s** across 34 test modules.

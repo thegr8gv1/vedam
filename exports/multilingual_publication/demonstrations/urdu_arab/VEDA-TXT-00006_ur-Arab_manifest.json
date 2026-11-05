@@ -1,0 +1,34 @@
+{
+  "content_id": "VEDA-TXT-00006",
+  "canonical_title": "Gayatri Vedic Mantra",
+  "target_bcp47": "ur-Arab",
+  "publication_channel": "draft_export",
+  "gate_verdict": "CONDITIONAL_DRAFT_ONLY",
+  "created_at": "2026-11-05T06:39:11.995289+00:00",
+  "artifacts": {
+    "html": {
+      "format_type": "html",
+      "file_path": "C:\\Vedam\\exports\\multilingual_publication\\demonstrations\\urdu_arab\\html\\VEDA-TXT-00006_gayatri_vedic_mantra_ur-Arab_draft_export.html",
+      "file_size_bytes": 12234,
+      "sha256": "d83da2b33392e61379882e21f0d26b88d9c25d13eca69596a6efbdae1bd5d739"
+    },
+    "pdf": {
+      "format_type": "pdf",
+      "file_path": "C:\\Vedam\\exports\\multilingual_publication\\demonstrations\\urdu_arab\\pdf\\VEDA-TXT-00006_gayatri_vedic_mantra_ur-Arab_draft_export.pdf",
+      "file_size_bytes": 112643,
+      "sha256": "95688d4e1328d6102eea48dfd7d11817e2565ea80c44be729df1d59af7705f47"
+    },
+    "docx": {
+      "format_type": "docx",
+      "file_path": "C:\\Vedam\\exports\\multilingual_publication\\demonstrations\\urdu_arab\\docx\\VEDA-TXT-00006_gayatri_vedic_mantra_ur-Arab_draft_export.docx",
+      "file_size_bytes": 38136,
+      "sha256": "5560bdb996b340312c6e7ffdc3f4fd2fbe9d600e276fd8c9b6918a0815651910"
+    },
+    "epub": {
+      "format_type": "epub",
+      "file_path": "C:\\Vedam\\exports\\multilingual_publication\\demonstrations\\urdu_arab\\epub\\VEDA-TXT-00006_gayatri_vedic_mantra_ur-Arab_draft_export.epub",
+      "file_size_bytes": 5000,
+      "sha256": "7847b0e6acd4eb04669551aebc9cc7cc7dd43503baa4baa15d94697d529429de"
+    }
+  }
+}

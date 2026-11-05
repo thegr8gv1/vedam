@@ -17,6 +17,11 @@ from automation.exporters.word_publication_exporter import WordPublicationExport
 from automation.validators.publication_gate import PublicationPreflightGate
 from database.connection import get_db_session
 from database.models import Text
+from automation.exporters.multilingual_publication_orchestrator import (
+    MultilingualPublicationOrchestrator,
+    PublicationArtifact,
+    PublicationManifest,
+)
 
 logger = logging.getLogger("vedam.automation.publication_orchestrator")
 

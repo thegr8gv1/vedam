@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-11-05T06:42:56.492807+00:00",
+  "database_sha256": "8315040257dc3e490646e6e7138f9fd8bb38eae835b84e1f15849badae7318aa",
+  "database_size_bytes": 20455424,
+  "immutability_verified": true,
+  "census": {
+    "integrity": "ok",
+    "canonical_texts": 18,
+    "total_texts": 20,
+    "canonical_verses": 307,
+    "total_verses": 310,
+    "active_translations": 3070,
+    "draft_translations": 3070,
+    "archived_translations": 580,
+    "total_views": 7716,
+    "legacy_gaps": 747,
+    "reviewer_profiles": 6,
+    "reviewer_roles": 29,
+    "action_logs": 20,
+    "disputes": 2,
+    "alembic_db_rev": "9f3c8a1b2d4e"
+  }
+}
