@@ -362,6 +362,8 @@ class LibraryAnalyticsEngine:
                 "role": r.primary_role.value if hasattr(r.primary_role, "value") else str(r.primary_role),
                 "is_verified": r.is_credentials_verified,
                 "is_demonstration": getattr(r, "is_demonstration", False),
+                "is_human_verified": getattr(r, "is_human_verified", False),
+                "account_category": getattr(r, "account_category", "UNKNOWN"),
                 "verification_status": getattr(r, "verification_status", "PENDING_VERIFICATION"),
                 "assignments_completed": completed_count,
                 "review_actions_logged": actions_count,

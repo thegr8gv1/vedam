@@ -146,6 +146,7 @@ class TranslationViewBackfillEngine:
             previous_text=view.view_text,
             proposed_text=view.view_text,
             scholarly_commentary=scholarly_commentary,
+            is_human_review=bool(getattr(reviewer, "is_human_verified", False)),
             created_at=datetime.now(timezone.utc),
         )
         session.add(log)

@@ -141,6 +141,7 @@ class TranslationWorkflowEngine:
                 "action_id": a.action_id,
                 "action_type": a.action_type.value,
                 "reviewer": a.reviewer.full_name if (a.reviewer and a.reviewer.full_name) else "Scholar",
+                "is_human_review": bool(getattr(a, "is_human_review", False)),
                 "previous_status": a.previous_status,
                 "new_status": a.new_status,
                 "commentary": a.scholarly_commentary,
