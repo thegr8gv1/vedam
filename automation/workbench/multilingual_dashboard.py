@@ -152,6 +152,7 @@ class MultilingualWorkbenchViewGenerator:
         actions_html = "".join(
             f"""<div class="action-item">
                 <span class="badge badge-info">{html.escape(a["action_type"])}</span>
+                <span class="badge {'badge-success' if a.get('is_human_review') else 'badge-warning'}">{'HUMAN SCHOLAR' if a.get('is_human_review') else 'SYNTHETIC / TEST'}</span>
                 <strong>{html.escape(a["reviewer_name"])}</strong>
                 <small class="text-muted">({a["timestamp"][:10]})</small>
                 <p class="action-comment">{html.escape(a["scholarly_commentary"])}</p>

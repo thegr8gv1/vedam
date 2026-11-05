@@ -373,6 +373,7 @@ async def login_handler(request: web.Request) -> web.Response:
         "verification_status": getattr(reviewer.verification_status, "value", str(reviewer.verification_status)),
         "account_category": getattr(reviewer, "account_category", "UNKNOWN"),
         "is_demonstration": reviewer.is_demonstration,
+        "is_human_verified": getattr(reviewer, "is_human_verified", False),
         "csrf_token": csrf_token,
         "session_expires_at": active_session.expires_at.isoformat(),
     })
@@ -427,6 +428,7 @@ async def get_current_user_handler(request: web.Request) -> web.Response:
             "verification_status": getattr(reviewer.verification_status, "value", str(reviewer.verification_status)),
             "account_category": getattr(reviewer, "account_category", "UNKNOWN"),
             "is_demonstration": reviewer.is_demonstration,
+            "is_human_verified": getattr(reviewer, "is_human_verified", False),
             "language_proficiency": reviewer.language_proficiency or {},
             "permissions": reviewer.permissions or [],
         },
@@ -577,6 +579,7 @@ async def submit_review_feedback_handler(request: web.Request) -> web.Response:
         "target_language": target_language,
         "action_type": action_type.value,
         "review_status": translation.review_status.value,
+        "is_human_review": action_log.is_human_review,
         "message": "Review feedback and scholarly commentary successfully recorded in audit log.",
         "translation_status_maintained": "DRAFT",
     })

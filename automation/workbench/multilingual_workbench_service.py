@@ -357,6 +357,8 @@ class MultilingualWorkbenchService:
                 "action_type": a.action_type.value,
                 "reviewer_id": a.reviewer.reviewer_id if a.reviewer else "SYSTEM",
                 "reviewer_name": a.reviewer.full_name if a.reviewer else "Scholar",
+                "is_human_review": bool(getattr(a, "is_human_review", False)),
+                "is_demonstration": bool(getattr(a.reviewer, "is_demonstration", False)) if a.reviewer else False,
                 "previous_status": a.previous_status,
                 "new_status": a.new_status,
                 "scholarly_commentary": a.scholarly_commentary,
