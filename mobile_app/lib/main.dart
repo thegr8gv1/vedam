@@ -7,6 +7,8 @@ import 'data/fixtures/authentic_puja_guides_data.dart';
 import 'data/repositories/mantra_repository.dart';
 import 'data/repositories/scripture_repository_impl.dart';
 import 'presentation/navigation/main_screen.dart';
+import 'presentation/screens/library/bookmarks_screen.dart';
+import 'presentation/screens/library/verse_learning_screen.dart';
 import 'presentation/screens/mantras/mantra_player_screen.dart';
 import 'presentation/screens/mantras/mantras_screen.dart';
 import 'data/repositories/panchangam_repository.dart';
@@ -19,6 +21,7 @@ import 'state/panchangam_state.dart';
 import 'state/app_state.dart';
 import 'state/audio_state.dart';
 import 'state/sadhana_state.dart';
+import 'state/scripture_reader_state.dart';
 import 'state/vrat_state.dart';
 
 import 'data/fixtures/authentic_scriptures_data.dart';
@@ -35,9 +38,12 @@ void main() {
   final panchangamState = PanchangamState(repository: panchangamRepository);
   final sadhanaState = SadhanaState();
   final vratState = VratState();
+  final scriptureReaderState = ScriptureReaderState();
 
   int initialTab = 0;
   int? readerScriptureId;
+  int? learnScriptureId;
+  int? openVerseNumber;
   String? openMantraId;
   bool showMantrasList = false;
   bool showPanchangam = false;
@@ -48,6 +54,8 @@ void main() {
   String? openVratId;
   String? openVratStatus;
   bool showReminders = false;
+  bool showBookmarks = false;
+  bool showPreferences = false;
 
   try {
     final tab = Uri.base.queryParameters['tab'];
@@ -59,10 +67,22 @@ void main() {
     if (tab == 'panchangam') showPanchangam = true;
     if (tab == 'vrat') showVratCalendar = true;
     if (tab == 'reminders') showReminders = true;
+    if (tab == 'bookmarks') showBookmarks = true;
+    if (Uri.base.queryParameters['prefs'] == 'true') showPreferences = true;
 
     final reader = Uri.base.queryParameters['reader'];
     if (reader != null) {
       readerScriptureId = int.tryParse(reader);
+    }
+
+    final learn = Uri.base.queryParameters['learn'];
+    if (learn != null) {
+      learnScriptureId = int.tryParse(learn);
+    }
+
+    final verse = Uri.base.queryParameters['verse'];
+    if (verse != null) {
+      openVerseNumber = int.tryParse(verse);
     }
 
     final mantra = Uri.base.queryParameters['mantra'];
@@ -99,9 +119,12 @@ void main() {
     panchangamState: panchangamState,
     sadhanaState: sadhanaState,
     vratState: vratState,
+    scriptureReaderState: scriptureReaderState,
     appState: appState,
     initialTab: initialTab,
     readerScriptureId: readerScriptureId,
+    learnScriptureId: learnScriptureId,
+    openVerseNumber: openVerseNumber,
     openMantraId: openMantraId,
     showMantrasList: showMantrasList,
     showPanchangam: showPanchangam,
@@ -112,6 +135,8 @@ void main() {
     openVratId: openVratId,
     openVratStatus: openVratStatus,
     showReminders: showReminders,
+    showBookmarks: showBookmarks,
+    showPreferences: showPreferences,
   ));
 }
 
@@ -123,9 +148,12 @@ class VedamApp extends StatelessWidget {
   final PanchangamState? panchangamState;
   final SadhanaState? sadhanaState;
   final VratState? vratState;
+  final ScriptureReaderState? scriptureReaderState;
   final AppState appState;
   final int initialTab;
   final int? readerScriptureId;
+  final int? learnScriptureId;
+  final int? openVerseNumber;
   final String? openMantraId;
   final bool showMantrasList;
   final bool showPanchangam;
@@ -136,6 +164,8 @@ class VedamApp extends StatelessWidget {
   final String? openVratId;
   final String? openVratStatus;
   final bool showReminders;
+  final bool showBookmarks;
+  final bool showPreferences;
 
   const VedamApp({
     super.key,
@@ -146,9 +176,12 @@ class VedamApp extends StatelessWidget {
     this.panchangamState,
     this.sadhanaState,
     this.vratState,
+    this.scriptureReaderState,
     required this.appState,
     this.initialTab = 0,
     this.readerScriptureId,
+    this.learnScriptureId,
+    this.openVerseNumber,
     this.openMantraId,
     this.showMantrasList = false,
     this.showPanchangam = false,
@@ -159,6 +192,8 @@ class VedamApp extends StatelessWidget {
     this.openVratId,
     this.openVratStatus,
     this.showReminders = false,
+    this.showBookmarks = false,
+    this.showPreferences = false,
   });
 
   @override
@@ -169,6 +204,7 @@ class VedamApp extends StatelessWidget {
     final pState = panchangamState ?? PanchangamState(repository: pRepo);
     final sState = sadhanaState ?? SadhanaState();
     final vState = vratState ?? VratState();
+    final rState = scriptureReaderState ?? ScriptureReaderState();
 
     return ListenableBuilder(
       listenable: appState,
@@ -180,11 +216,18 @@ class VedamApp extends StatelessWidget {
           panchangamRepository: pRepo,
           panchangamState: pState,
           vratState: vState,
+          readerState: rState,
           appState: appState,
           initialIndex: initialTab,
         );
 
-        if (showReminders) {
+        if (showBookmarks) {
+          homeWidget = BookmarksScreen(
+            repository: repository,
+            readerState: rState,
+            audioState: aState,
+          );
+        } else if (showReminders) {
           homeWidget = RemindersSettingsScreen(vratState: vState);
         } else if (openVratId != null) {
           final targetId = (openVratId == 'default' || vState.getObservanceById(openVratId!) == null)
@@ -241,6 +284,18 @@ class VedamApp extends StatelessWidget {
             mantra: m,
             audioState: aState,
           );
+        } else if (learnScriptureId != null) {
+          final s = kAuthenticScriptures.firstWhere(
+            (element) => element.id == learnScriptureId,
+            orElse: () => kAuthenticScriptures.first,
+          );
+          homeWidget = VerseLearningScreen(
+            scripture: s,
+            readerState: rState,
+            initialVerseNumber: openVerseNumber ?? 1,
+            audioState: aState,
+            initialShowPreferences: showPreferences,
+          );
         } else if (readerScriptureId != null) {
           final s = kAuthenticScriptures.firstWhere(
             (element) => element.id == readerScriptureId,
@@ -249,6 +304,8 @@ class VedamApp extends StatelessWidget {
           homeWidget = VerseReaderScreen(
             scripture: s,
             appState: appState,
+            readerState: rState,
+            audioState: aState,
           );
         }
 

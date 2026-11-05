@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../core/models/scripture.dart';
+import '../../core/models/scripture_user_data.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/text_styles.dart';
 
@@ -8,6 +9,8 @@ class ScriptureCard extends StatelessWidget {
   final bool isFavorite;
   final VoidCallback onFavoriteToggle;
   final VoidCallback onTap;
+  final ReadingProgress? progress;
+  final int bookmarkedCount;
 
   const ScriptureCard({
     super.key,
@@ -15,13 +18,24 @@ class ScriptureCard extends StatelessWidget {
     required this.isFavorite,
     required this.onFavoriteToggle,
     required this.onTap,
+    this.progress,
+    this.bookmarkedCount = 0,
   });
 
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
+    final hasProgress = progress != null && progress!.lastReadVerseNumber > 0;
 
     return Card(
+      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16),
+        side: BorderSide(
+          color: isDark ? AppColors.nightBorder : AppColors.chandanBorder,
+          width: 0.8,
+        ),
+      ),
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(16),
@@ -56,16 +70,18 @@ class ScriptureCard extends StatelessWidget {
                   IconButton(
                     icon: Icon(
                       isFavorite ? Icons.favorite : Icons.favorite_border,
-                      color: isFavorite ? AppColors.kumkumRed : (isDark ? AppColors.textLightMuted : AppColors.textDarkMuted),
+                      color: isFavorite
+                          ? AppColors.kumkumRed
+                          : (isDark ? AppColors.textLightMuted : AppColors.textDarkMuted),
                     ),
                     onPressed: onFavoriteToggle,
                     tooltip: isFavorite ? 'Remove from favorites' : 'Add to favorites',
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 8),
               Wrap(
-                spacing: 8,
+                spacing: 6,
                 runSpacing: 4,
                 children: [
                   _Badge(
@@ -78,17 +94,62 @@ class ScriptureCard extends StatelessWidget {
                     color: AppColors.goldDark,
                     isDark: isDark,
                   ),
+                  _Badge(
+                    label: '6 Scripts',
+                    color: const Color(0xFF6366F1),
+                    isDark: isDark,
+                  ),
+                  if (bookmarkedCount > 0)
+                    _Badge(
+                      label: '$bookmarkedCount Bookmarks',
+                      color: AppColors.goldPrimary,
+                      isDark: isDark,
+                    ),
                 ],
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: 10),
+              // Reading progress indicator
+              if (hasProgress) ...[
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Reading Progress: Verse ${progress!.lastReadVerseNumber} of ${scripture.verseCount}',
+                      style: AppTextStyles.caption(isDark).copyWith(
+                        fontWeight: FontWeight.bold,
+                        color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
+                      ),
+                    ),
+                    Text(
+                      '${(progress!.percentCompleted * 100).toInt()}%',
+                      style: AppTextStyles.caption(isDark).copyWith(fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 4),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(3),
+                  child: LinearProgressIndicator(
+                    value: progress!.percentCompleted,
+                    backgroundColor: isDark ? AppColors.nightBorder : const Color(0xFFE5DCD0),
+                    valueColor: const AlwaysStoppedAnimation<Color>(AppColors.saffronPrimary),
+                    minHeight: 4,
+                  ),
+                ),
+                const SizedBox(height: 8),
+              ],
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    scripture.composer.isNotEmpty ? 'By ${scripture.composer}' : scripture.sourceScripture,
-                    style: AppTextStyles.caption(isDark),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
+                  Expanded(
+                    child: Text(
+                      scripture.displayCoverageStatus,
+                      style: AppTextStyles.caption(isDark).copyWith(
+                        fontStyle: FontStyle.italic,
+                      ),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
                   ),
                   Row(
                     children: [
@@ -130,10 +191,10 @@ class _Badge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
       decoration: BoxDecoration(
         color: color.withValues(alpha: isDark ? 0.2 : 0.1),
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(16),
         border: Border.all(
           color: color.withValues(alpha: 0.4),
           width: 0.8,
@@ -142,7 +203,7 @@ class _Badge extends StatelessWidget {
       child: Text(
         label,
         style: TextStyle(
-          fontSize: 11,
+          fontSize: 10.5,
           fontWeight: FontWeight.w600,
           color: isDark ? const Color(0xFFFDE68A) : color,
         ),

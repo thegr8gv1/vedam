@@ -1,22 +1,32 @@
 import 'package:flutter/material.dart';
 import '../../../core/constants/app_constants.dart';
-import '../../../core/models/app_settings.dart';
 import '../../../core/models/scripture.dart';
+import '../../../core/models/scripture_user_data.dart';
 import '../../../core/models/verse.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/text_styles.dart';
+import '../../../data/fixtures/authentic_mantras_data.dart';
 import '../../../state/app_state.dart';
+import '../../../state/audio_state.dart';
+import '../../../state/scripture_reader_state.dart';
 import '../../widgets/sacred_app_bar.dart';
 import '../../widgets/script_selector_modal.dart';
+import 'verse_learning_screen.dart';
+import 'widgets/reading_preferences_modal.dart';
+import 'widgets/verse_note_dialog.dart';
 
 class VerseReaderScreen extends StatefulWidget {
   final Scripture scripture;
-  final AppState appState;
+  final AppState? appState;
+  final ScriptureReaderState? readerState;
+  final AudioState? audioState;
 
   const VerseReaderScreen({
     super.key,
     required this.scripture,
-    required this.appState,
+    this.appState,
+    this.readerState,
+    this.audioState,
   });
 
   @override
@@ -24,8 +34,16 @@ class VerseReaderScreen extends StatefulWidget {
 }
 
 class _VerseReaderScreenState extends State<VerseReaderScreen> {
-  bool _showTranslation = true;
   final ScrollController _scrollController = ScrollController();
+  late final ScriptureReaderState _readerState;
+  late final AppState _appState;
+
+  @override
+  void initState() {
+    super.initState();
+    _readerState = widget.readerState ?? ScriptureReaderState();
+    _appState = widget.appState ?? AppState();
+  }
 
   @override
   void dispose() {
@@ -33,30 +51,15 @@ class _VerseReaderScreenState extends State<VerseReaderScreen> {
     super.dispose();
   }
 
-  void _cycleFontScale() {
-    final current = widget.appState.textScalePreference;
-    switch (current) {
-      case TextScalePreference.normal:
-        widget.appState.setTextScalePreference(TextScalePreference.large);
-        break;
-      case TextScalePreference.large:
-        widget.appState.setTextScalePreference(TextScalePreference.extraLarge);
-        break;
-      case TextScalePreference.extraLarge:
-        widget.appState.setTextScalePreference(TextScalePreference.normal);
-        break;
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     return ListenableBuilder(
-      listenable: widget.appState,
+      listenable: Listenable.merge([_readerState, _appState]),
       builder: (context, _) {
-        final fontScale = widget.appState.fontScale;
-        final activeScript = widget.appState.activeScript;
+        final prefs = _readerState.preferences;
+        final activeScript = _appState.activeScript;
 
         return Scaffold(
           appBar: SacredAppBar(
@@ -64,7 +67,24 @@ class _VerseReaderScreenState extends State<VerseReaderScreen> {
             subtitle: '${widget.scripture.verseCount} Verses • ${activeScript.label}',
             showLogo: false,
             actions: [
-              // Script Switcher Button
+              // 1. Switch to Verse-by-Verse Learning Mode
+              IconButton(
+                icon: const Icon(Icons.school_outlined),
+                tooltip: 'Verse-by-Verse Learning Mode',
+                onPressed: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => VerseLearningScreen(
+                        scripture: widget.scripture,
+                        readerState: _readerState,
+                        audioState: widget.audioState,
+                      ),
+                    ),
+                  );
+                },
+              ),
+              // 2. Script Switcher Button
               IconButton(
                 icon: const Icon(Icons.translate),
                 tooltip: 'Switch Script (${activeScript.label})',
@@ -72,31 +92,36 @@ class _VerseReaderScreenState extends State<VerseReaderScreen> {
                   ScriptSelectorModal.show(
                     context,
                     currentScript: activeScript,
-                    onScriptSelected: (s) => widget.appState.setActiveScript(s),
+                    onScriptSelected: (s) {
+                      _readerState.updatePreferences(
+                        prefs.copyWith(preferredScript: s),
+                      );
+                      _appState.setActiveScript(s);
+                    },
                   );
                 },
               ),
-              // Font Scaler Button
+              // 3. Typography & Reading Preferences
               IconButton(
                 icon: const Icon(Icons.format_size),
-                tooltip: 'Text Size (${widget.appState.textScalePreference.label})',
-                onPressed: _cycleFontScale,
+                tooltip: 'Reading Preferences',
+                onPressed: () => ReadingPreferencesModal.show(context, _readerState),
               ),
-              // Show/Hide Translation
+              // 4. Show/Hide Translation
               IconButton(
-                icon: Icon(_showTranslation ? Icons.menu_book : Icons.menu_book_outlined),
-                tooltip: _showTranslation ? 'Hide Translation' : 'Show Translation',
+                icon: Icon(prefs.showTranslation ? Icons.menu_book : Icons.menu_book_outlined),
+                tooltip: prefs.showTranslation ? 'Hide Translation' : 'Show Translation',
                 onPressed: () {
-                  setState(() {
-                    _showTranslation = !_showTranslation;
-                  });
+                  _readerState.updatePreferences(
+                    prefs.copyWith(showTranslation: !prefs.showTranslation),
+                  );
                 },
               ),
             ],
           ),
           body: Column(
             children: [
-              // 1. Sticky Reader Setting Bar
+              // 1. Sticky Reader Settings & Status Bar
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 color: isDark ? AppColors.nightSurface : const Color(0xFFF7F2EA),
@@ -108,12 +133,21 @@ class _VerseReaderScreenState extends State<VerseReaderScreen> {
                         ScriptSelectorModal.show(
                           context,
                           currentScript: activeScript,
-                          onScriptSelected: (s) => widget.appState.setActiveScript(s),
+                          onScriptSelected: (s) {
+                            _readerState.updatePreferences(
+                              prefs.copyWith(preferredScript: s),
+                            );
+                            _appState.setActiveScript(s);
+                          },
                         );
                       },
                       child: Row(
                         children: [
-                          Icon(Icons.language, size: 16, color: isDark ? AppColors.goldGlow : AppColors.saffronPrimary),
+                          Icon(
+                            Icons.language,
+                            size: 16,
+                            color: isDark ? AppColors.goldGlow : AppColors.saffronPrimary,
+                          ),
                           const SizedBox(width: 6),
                           Text(
                             'Script: ${activeScript.label}',
@@ -127,15 +161,18 @@ class _VerseReaderScreenState extends State<VerseReaderScreen> {
                         ],
                       ),
                     ),
-                    Text(
-                      'Size: ${(fontScale * 100).toInt()}%',
-                      style: AppTextStyles.caption(isDark).copyWith(fontWeight: FontWeight.w600),
+                    InkWell(
+                      onTap: () => ReadingPreferencesModal.show(context, _readerState),
+                      child: Text(
+                        'Font: ${prefs.sanskritFontSize.toInt()}pt • Spacing: ${prefs.lineSpacing}',
+                        style: AppTextStyles.caption(isDark).copyWith(fontWeight: FontWeight.w600),
+                      ),
                     ),
                   ],
                 ),
               ),
 
-              // 2. Verse List
+              // 2. Continuous Verse List
               Expanded(
                 child: ListView.builder(
                   controller: _scrollController,
@@ -146,9 +183,10 @@ class _VerseReaderScreenState extends State<VerseReaderScreen> {
                     return _VerseReaderCard(
                       verse: verse,
                       scripture: widget.scripture,
+                      readerState: _readerState,
+                      audioState: widget.audioState,
                       activeScript: activeScript,
-                      fontScale: fontScale,
-                      showTranslation: _showTranslation,
+                      prefs: prefs,
                       isDark: isDark,
                     );
                   },
@@ -165,31 +203,43 @@ class _VerseReaderScreenState extends State<VerseReaderScreen> {
 class _VerseReaderCard extends StatelessWidget {
   final Verse verse;
   final Scripture scripture;
+  final ScriptureReaderState readerState;
+  final AudioState? audioState;
   final ScriptOption activeScript;
-  final double fontScale;
-  final bool showTranslation;
+  final ReadingPreferences prefs;
   final bool isDark;
 
   const _VerseReaderCard({
     required this.verse,
     required this.scripture,
+    required this.readerState,
+    this.audioState,
     required this.activeScript,
-    required this.fontScale,
-    required this.showTranslation,
+    required this.prefs,
     required this.isDark,
   });
 
   @override
   Widget build(BuildContext context) {
     final scriptText = verse.getTextInScript(activeScript);
+    final globalVerseId = verse.globalId(scripture.contentId);
+    final isBookmarked = readerState.isBookmarked(globalVerseId);
+    final personalNote = readerState.getNote(globalVerseId);
+
+    // Mapped audio if available
+    final mappedMantra = verse.audioMantraId != null
+        ? AuthenticMantrasData.getMantraById(verse.audioMantraId!)
+        : null;
 
     return Card(
       margin: const EdgeInsets.only(bottom: 16),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
         side: BorderSide(
-          color: isDark ? AppColors.nightBorder : AppColors.chandanBorder,
-          width: 1,
+          color: isBookmarked
+              ? AppColors.goldPrimary
+              : (isDark ? AppColors.nightBorder : AppColors.chandanBorder),
+          width: isBookmarked ? 1.5 : 1,
         ),
       ),
       child: Padding(
@@ -197,35 +247,88 @@ class _VerseReaderCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // Verse Header
+            // Verse Header & Controls
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                  decoration: BoxDecoration(
-                    color: AppColors.saffronPrimary.withValues(alpha: isDark ? 0.25 : 0.12),
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(
-                      color: AppColors.saffronPrimary.withValues(alpha: 0.4),
-                      width: 0.8,
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                      decoration: BoxDecoration(
+                        color: AppColors.saffronPrimary.withValues(alpha: isDark ? 0.25 : 0.12),
+                        borderRadius: BorderRadius.circular(12),
+                        border: Border.all(
+                          color: AppColors.saffronPrimary.withValues(alpha: 0.4),
+                          width: 0.8,
+                        ),
+                      ),
+                      child: Text(
+                        'VERSE ${verse.verseNumber}',
+                        style: TextStyle(
+                          fontSize: 11,
+                          fontWeight: FontWeight.bold,
+                          color: isDark ? const Color(0xFFFFDBC8) : AppColors.saffronDark,
+                          letterSpacing: 0.8,
+                        ),
+                      ),
                     ),
-                  ),
-                  child: Text(
-                    'VERSE ${verse.verseNumber}',
-                    style: TextStyle(
-                      fontSize: 11,
-                      fontWeight: FontWeight.bold,
-                      color: isDark ? const Color(0xFFFFDBC8) : AppColors.saffronDark,
-                      letterSpacing: 0.8,
-                    ),
-                  ),
+                    if (verse.meter.isNotEmpty) ...[
+                      const SizedBox(width: 8),
+                      Text(
+                        'Meter: ${verse.meter}',
+                        style: AppTextStyles.caption(isDark),
+                      ),
+                    ],
+                  ],
                 ),
-                if (verse.meter.isNotEmpty)
-                  Text(
-                    'Meter: ${verse.meter}',
-                    style: AppTextStyles.caption(isDark),
-                  ),
+                Row(
+                  children: [
+                    // Study Mode Jump Button
+                    IconButton(
+                      icon: const Icon(Icons.school, size: 20),
+                      tooltip: 'Learn this verse',
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => VerseLearningScreen(
+                              scripture: scripture,
+                              readerState: readerState,
+                              initialVerseNumber: verse.verseNumber,
+                              audioState: audioState,
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                    // Bookmark Button
+                    IconButton(
+                      icon: Icon(
+                        isBookmarked ? Icons.bookmark : Icons.bookmark_border,
+                        color: isBookmarked ? AppColors.goldPrimary : null,
+                        size: 20,
+                      ),
+                      tooltip: isBookmarked ? 'Remove Bookmark' : 'Bookmark Verse',
+                      onPressed: () => readerState.toggleBookmark(verse, scripture),
+                    ),
+                    // Note Button
+                    IconButton(
+                      icon: Icon(
+                        personalNote != null ? Icons.edit_note : Icons.note_add_outlined,
+                        color: personalNote != null ? AppColors.saffronPrimary : null,
+                        size: 20,
+                      ),
+                      tooltip: personalNote != null ? 'Edit Study Note' : 'Add Study Note',
+                      onPressed: () => VerseNoteDialog.show(
+                        context: context,
+                        verse: verse,
+                        scripture: scripture,
+                        readerState: readerState,
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
 
@@ -234,12 +337,19 @@ class _VerseReaderCard extends StatelessWidget {
             // Sacred Verse in Chosen Script
             SelectableText(
               scriptText,
-              style: AppTextStyles.verseDevanagari(isDark, scale: fontScale),
+              style: TextStyle(
+                fontSize: prefs.sanskritFontSize,
+                height: prefs.lineSpacing,
+                fontWeight: FontWeight.w600,
+                color: isDark ? AppColors.textLightPrimary : AppColors.textDarkPrimary,
+              ),
               textAlign: TextAlign.center,
             ),
 
-            // Transliteration (Shown if active script is not IAST)
-            if (activeScript != ScriptOption.iast && verse.iastText.isNotEmpty) ...[
+            // Transliteration (Shown if active script is not IAST and preference enabled)
+            if (prefs.showTransliteration &&
+                activeScript != ScriptOption.iast &&
+                verse.iastText.isNotEmpty) ...[
               const SizedBox(height: 12),
               Container(
                 width: double.infinity,
@@ -250,14 +360,52 @@ class _VerseReaderCard extends StatelessWidget {
                 ),
                 child: SelectableText(
                   verse.iastText,
-                  style: AppTextStyles.verseTransliteration(isDark, scale: fontScale * 0.9),
+                  style: TextStyle(
+                    fontSize: prefs.transliterationFontSize,
+                    height: prefs.lineSpacing,
+                    fontStyle: FontStyle.italic,
+                    color: isDark ? const Color(0xFFE2E8F0) : const Color(0xFF334155),
+                  ),
                   textAlign: TextAlign.center,
                 ),
               ),
             ],
 
+            // Verified Audio Control (Only if mapped)
+            if (verse.hasVerifiedAudio && mappedMantra != null && audioState != null) ...[
+              const SizedBox(height: 12),
+              ListenableBuilder(
+                listenable: audioState!,
+                builder: (context, _) {
+                  final isPlaying = audioState!.isPlaying &&
+                      audioState!.activeMantra?.id == mappedMantra.id;
+                  return OutlinedButton.icon(
+                    icon: Icon(
+                      isPlaying ? Icons.pause_circle_filled : Icons.play_circle_fill,
+                      color: isDark ? AppColors.goldGlow : AppColors.saffronPrimary,
+                    ),
+                    label: Text(
+                      isPlaying ? 'Pause Audio' : 'Chant Verse (Audio)',
+                      style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
+                      ),
+                    ),
+                    onPressed: () {
+                      if (isPlaying) {
+                        audioState!.pause();
+                      } else {
+                        audioState!.playMantra(mappedMantra);
+                      }
+                    },
+                  );
+                },
+              ),
+            ],
+
             // Translation Section
-            if (showTranslation) ...[
+            if (prefs.showTranslation) ...[
               const SizedBox(height: 16),
               const Divider(height: 1),
               const SizedBox(height: 12),
@@ -301,8 +449,8 @@ class _VerseReaderCard extends StatelessWidget {
                       SelectableText(
                         verse.draftTranslation!,
                         style: TextStyle(
-                          fontSize: 14 * fontScale,
-                          height: 1.55,
+                          fontSize: prefs.translationFontSize,
+                          height: prefs.lineSpacing,
                           color: isDark ? const Color(0xFFFEF3C7) : const Color(0xFF451A03),
                         ),
                       ),
@@ -351,6 +499,44 @@ class _VerseReaderCard extends StatelessWidget {
                   ),
                 ),
               ],
+            ],
+
+            // Personal Study Note Snippet
+            if (personalNote != null && personalNote.noteText.isNotEmpty) ...[
+              const SizedBox(height: 12),
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: isDark ? AppColors.nightSurfaceElevated : const Color(0xFFEFF6FF),
+                  borderRadius: BorderRadius.circular(8),
+                  border: Border.all(
+                    color: isDark ? Colors.blue.shade900 : Colors.blue.shade200,
+                  ),
+                ),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Icon(
+                      Icons.note,
+                      size: 14,
+                      color: isDark ? Colors.blue.shade300 : Colors.blue.shade700,
+                    ),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Text(
+                        personalNote.noteText,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: isDark ? AppColors.textLightPrimary : AppColors.textDarkPrimary,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ],
         ),

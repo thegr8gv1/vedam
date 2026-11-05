@@ -3,20 +3,39 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/text_styles.dart';
 import '../../../data/repositories/scripture_repository.dart';
 import '../../../state/app_state.dart';
+import '../../../state/audio_state.dart';
+import '../../../state/scripture_reader_state.dart';
 import '../../../state/scripture_state.dart';
 import '../../widgets/empty_state_view.dart';
 import '../../widgets/sacred_app_bar.dart';
 import '../../widgets/scripture_card.dart';
+import 'bookmarks_screen.dart';
 import 'scripture_detail_screen.dart';
+import 'widgets/reading_preferences_modal.dart';
+
+enum ReadingStatusFilter {
+  all('All'),
+  inProgress('In Progress'),
+  bookmarked('Bookmarked'),
+  completed('Completed'),
+  unread('Unread');
+
+  final String label;
+  const ReadingStatusFilter(this.label);
+}
 
 class LibraryScreen extends StatefulWidget {
   final ScriptureRepository repository;
   final AppState appState;
+  final ScriptureReaderState? readerState;
+  final AudioState? audioState;
 
   const LibraryScreen({
     super.key,
     required this.repository,
     required this.appState,
+    this.readerState,
+    this.audioState,
   });
 
   @override
@@ -25,12 +44,15 @@ class LibraryScreen extends StatefulWidget {
 
 class _LibraryScreenState extends State<LibraryScreen> {
   late final ScriptureState _scriptureState;
+  late final ScriptureReaderState _readerState;
   final TextEditingController _searchController = TextEditingController();
+  ReadingStatusFilter _readingStatusFilter = ReadingStatusFilter.all;
 
   @override
   void initState() {
     super.initState();
     _scriptureState = ScriptureState(widget.repository);
+    _readerState = widget.readerState ?? ScriptureReaderState();
   }
 
   @override
@@ -49,19 +71,65 @@ class _LibraryScreenState extends State<LibraryScreen> {
         title: 'Scripture Library',
         subtitle: 'विशाल धर्मग्रन्थालयः',
         showLogo: false,
+        actions: [
+          // Bookmarks & Notes Screen
+          IconButton(
+            icon: const Icon(Icons.bookmark_outline),
+            tooltip: 'View Bookmarks & Notes',
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => BookmarksScreen(
+                    repository: widget.repository,
+                    readerState: _readerState,
+                    audioState: widget.audioState,
+                  ),
+                ),
+              );
+            },
+          ),
+          // Reading Preferences Modal
+          IconButton(
+            icon: const Icon(Icons.tune),
+            tooltip: 'Reading Preferences',
+            onPressed: () => ReadingPreferencesModal.show(context, _readerState),
+          ),
+        ],
       ),
       body: ListenableBuilder(
-        listenable: _scriptureState,
+        listenable: Listenable.merge([_scriptureState, _readerState]),
         builder: (context, _) {
+          // Apply reading status filter on top of filtered scriptures
+          final displayed = _scriptureState.filteredScriptures.where((s) {
+            final progress = _readerState.getProgress(s.id);
+            final bookmarks = _readerState.getBookmarksForScripture(s.id);
+
+            switch (_readingStatusFilter) {
+              case ReadingStatusFilter.all:
+                return true;
+              case ReadingStatusFilter.inProgress:
+                return progress != null &&
+                    progress.completedVerseNumbers.isNotEmpty &&
+                    !progress.isCompleted;
+              case ReadingStatusFilter.bookmarked:
+                return bookmarks.isNotEmpty;
+              case ReadingStatusFilter.completed:
+                return progress != null && progress.isCompleted;
+              case ReadingStatusFilter.unread:
+                return progress == null || progress.completedVerseNumbers.isEmpty;
+            }
+          }).toList();
+
           return Column(
             children: [
               // 1. Search Bar
               Padding(
-                padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+                padding: const EdgeInsets.fromLTRB(16, 10, 16, 6),
                 child: TextField(
                   controller: _searchController,
                   decoration: InputDecoration(
-                    hintText: 'Search by title, deity, sage, or composer...',
+                    hintText: 'Search title, deity, verse text, or identifier...',
                     prefixIcon: const Icon(Icons.search, color: AppColors.saffronPrimary),
                     suffixIcon: _searchController.text.isNotEmpty
                         ? IconButton(
@@ -77,9 +145,53 @@ class _LibraryScreenState extends State<LibraryScreen> {
                 ),
               ),
 
-              // 2. Deity Filter Chips (Horizontal Scroll)
+              // 2. Reading Status Quick Filters
               SizedBox(
-                height: 42,
+                height: 38,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
+                  itemCount: ReadingStatusFilter.values.length,
+                  itemBuilder: (context, index) {
+                    final filter = ReadingStatusFilter.values[index];
+                    final isSelected = filter == _readingStatusFilter;
+
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 4),
+                      child: FilterChip(
+                        selected: isSelected,
+                        label: Text(filter.label),
+                        labelStyle: TextStyle(
+                          fontSize: 11.5,
+                          fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
+                          color: isSelected
+                              ? Colors.white
+                              : (isDark ? AppColors.textLightPrimary : AppColors.textDarkPrimary),
+                        ),
+                        selectedColor: AppColors.saffronPrimary,
+                        backgroundColor:
+                            isDark ? AppColors.nightSurface : const Color(0xFFF3ECE1),
+                        side: BorderSide(
+                          color: isSelected
+                              ? AppColors.saffronPrimary
+                              : (isDark ? AppColors.nightBorder : AppColors.chandanBorder),
+                        ),
+                        onSelected: (_) {
+                          setState(() {
+                            _readingStatusFilter = filter;
+                          });
+                        },
+                      ),
+                    );
+                  },
+                ),
+              ),
+
+              const SizedBox(height: 4),
+
+              // 3. Deity Filter Chips (Horizontal Scroll)
+              SizedBox(
+                height: 36,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -93,17 +205,18 @@ class _LibraryScreenState extends State<LibraryScreen> {
                         selected: isSelected,
                         label: Text(deity),
                         labelStyle: TextStyle(
-                          fontSize: 12,
+                          fontSize: 11,
                           fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
                           color: isSelected
-                              ? Colors.white
+                              ? (isDark ? Colors.black : Colors.white)
                               : (isDark ? AppColors.textLightPrimary : AppColors.textDarkPrimary),
                         ),
-                        selectedColor: AppColors.saffronPrimary,
-                        backgroundColor: isDark ? AppColors.nightSurface : const Color(0xFFF0EAE1),
+                        selectedColor: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                        backgroundColor:
+                            isDark ? AppColors.nightSurface : const Color(0xFFF0EAE1),
                         side: BorderSide(
                           color: isSelected
-                              ? AppColors.saffronPrimary
+                              ? AppColors.goldPrimary
                               : (isDark ? AppColors.nightBorder : AppColors.chandanBorder),
                         ),
                         onSelected: (_) => _scriptureState.setDeity(deity),
@@ -113,11 +226,11 @@ class _LibraryScreenState extends State<LibraryScreen> {
                 ),
               ),
 
-              const SizedBox(height: 6),
+              const SizedBox(height: 4),
 
-              // 3. Category Filter Chips (Horizontal Scroll)
+              // 4. Category Filter Chips (Horizontal Scroll)
               SizedBox(
-                height: 38,
+                height: 34,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -131,14 +244,15 @@ class _LibraryScreenState extends State<LibraryScreen> {
                         selected: isSelected,
                         label: Text(cat),
                         labelStyle: TextStyle(
-                          fontSize: 11,
+                          fontSize: 10.5,
                           fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
                           color: isSelected
                               ? (isDark ? Colors.black : Colors.white)
                               : (isDark ? AppColors.textLightSecondary : AppColors.textDarkSecondary),
                         ),
-                        selectedColor: isDark ? AppColors.goldGlow : AppColors.goldDark,
-                        backgroundColor: isDark ? AppColors.nightSurfaceElevated : const Color(0xFFF9F5EE),
+                        selectedColor: isDark ? AppColors.goldGlow : AppColors.saffronDark,
+                        backgroundColor:
+                            isDark ? AppColors.nightSurfaceElevated : const Color(0xFFF9F5EE),
                         side: BorderSide(
                           color: isSelected
                               ? AppColors.goldPrimary
@@ -152,27 +266,31 @@ class _LibraryScreenState extends State<LibraryScreen> {
                 ),
               ),
 
-              const SizedBox(height: 8),
+              const SizedBox(height: 6),
 
-              // 4. Results Header
+              // 5. Results Count & Reset
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      '${_scriptureState.filteredScriptures.length} Sacred Texts Available',
+                      '${displayed.length} Sacred Texts Available',
                       style: AppTextStyles.caption(isDark).copyWith(
                         fontWeight: FontWeight.w600,
                       ),
                     ),
                     if (_scriptureState.selectedCategory != 'All Categories' ||
                         _scriptureState.selectedDeity != 'All Deities' ||
+                        _readingStatusFilter != ReadingStatusFilter.all ||
                         _scriptureState.searchQuery.isNotEmpty)
                       InkWell(
                         onTap: () {
                           _searchController.clear();
                           _scriptureState.resetFilters();
+                          setState(() {
+                            _readingStatusFilter = ReadingStatusFilter.all;
+                          });
                         },
                         child: Text(
                           'Reset Filters',
@@ -187,31 +305,39 @@ class _LibraryScreenState extends State<LibraryScreen> {
                 ),
               ),
 
-              const Divider(height: 8),
+              const Divider(height: 6),
 
-              // 5. Scripture List
+              // 6. Scripture List
               Expanded(
                 child: _scriptureState.isLoading
                     ? const Center(child: CircularProgressIndicator())
-                    : _scriptureState.filteredScriptures.isEmpty
+                    : displayed.isEmpty
                         ? EmptyStateView(
-                            title: 'No Scriptures Found',
-                            message: 'Try clearing your search query or choosing another deity or category.',
+                            title: 'No Scriptures Match Criteria',
+                            message: 'Try clearing your search query or adjusting your filters.',
                             buttonText: 'Reset Filters',
                             onButtonPressed: () {
                               _searchController.clear();
                               _scriptureState.resetFilters();
+                              setState(() {
+                                _readingStatusFilter = ReadingStatusFilter.all;
+                              });
                             },
                           )
                         : ListView.builder(
                             padding: const EdgeInsets.only(bottom: 24),
-                            itemCount: _scriptureState.filteredScriptures.length,
+                            itemCount: displayed.length,
                             itemBuilder: (context, index) {
-                              final scripture = _scriptureState.filteredScriptures[index];
+                              final scripture = displayed[index];
                               final isFav = widget.appState.isFavorite(scripture.id);
+                              final progress = _readerState.getProgress(scripture.id);
+                              final bookmarks = _readerState.getBookmarksForScripture(scripture.id);
+
                               return ScriptureCard(
                                 scripture: scripture,
                                 isFavorite: isFav,
+                                progress: progress,
+                                bookmarkedCount: bookmarks.length,
                                 onFavoriteToggle: () => widget.appState.toggleFavorite(scripture.id),
                                 onTap: () {
                                   widget.appState.recordRecentlyRead(scripture.id);
@@ -221,6 +347,8 @@ class _LibraryScreenState extends State<LibraryScreen> {
                                       builder: (_) => ScriptureDetailScreen(
                                         scripture: scripture,
                                         appState: widget.appState,
+                                        readerState: _readerState,
+                                        audioState: widget.audioState,
                                       ),
                                     ),
                                   );

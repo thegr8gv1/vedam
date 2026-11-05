@@ -4,6 +4,7 @@ import '../../data/repositories/mantra_repository.dart';
 import '../../data/repositories/scripture_repository.dart';
 import '../../state/app_state.dart';
 import '../../state/audio_state.dart';
+import '../../state/scripture_reader_state.dart';
 import '../screens/favorites/favorites_screen.dart';
 import '../screens/home/home_screen.dart';
 import '../screens/library/library_screen.dart';
@@ -22,6 +23,7 @@ class MainScreen extends StatefulWidget {
   final PanchangamRepository? panchangamRepository;
   final PanchangamState? panchangamState;
   final VratState? vratState;
+  final ScriptureReaderState? readerState;
   final AppState appState;
   final int initialIndex;
 
@@ -33,6 +35,7 @@ class MainScreen extends StatefulWidget {
     this.panchangamRepository,
     this.panchangamState,
     this.vratState,
+    this.readerState,
     required this.appState,
     this.initialIndex = 0,
   });
@@ -48,6 +51,7 @@ class _MainScreenState extends State<MainScreen> {
   late final PanchangamRepository _panchangamRepository;
   late final PanchangamState _panchangamState;
   late final VratState _vratState;
+  late final ScriptureReaderState _readerState;
 
   @override
   void initState() {
@@ -60,6 +64,7 @@ class _MainScreenState extends State<MainScreen> {
     _panchangamState = widget.panchangamState ??
         PanchangamState(repository: _panchangamRepository);
     _vratState = widget.vratState ?? VratState();
+    _readerState = widget.readerState ?? ScriptureReaderState();
   }
 
   void _openPanchangamScreen() {
@@ -106,6 +111,8 @@ class _MainScreenState extends State<MainScreen> {
       LibraryScreen(
         repository: widget.repository,
         appState: widget.appState,
+        readerState: _readerState,
+        audioState: _audioState,
       ),
       SadhanaScreen(
         appState: widget.appState,

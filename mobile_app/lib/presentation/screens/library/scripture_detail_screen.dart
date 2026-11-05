@@ -4,29 +4,40 @@ import '../../../core/models/verse.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/text_styles.dart';
 import '../../../state/app_state.dart';
+import '../../../state/audio_state.dart';
+import '../../../state/scripture_reader_state.dart';
 import '../../widgets/empty_state_view.dart';
 import '../../widgets/sacred_app_bar.dart';
 import '../../widgets/script_selector_modal.dart';
+import 'verse_learning_screen.dart';
 import 'verse_reader_screen.dart';
 
 class ScriptureDetailScreen extends StatelessWidget {
   final Scripture scripture;
   final AppState appState;
+  final ScriptureReaderState? readerState;
+  final AudioState? audioState;
 
   const ScriptureDetailScreen({
     super.key,
     required this.scripture,
     required this.appState,
+    this.readerState,
+    this.audioState,
   });
 
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
+    final rState = readerState ?? ScriptureReaderState();
 
     return ListenableBuilder(
-      listenable: appState,
+      listenable: Listenable.merge([rState, appState]),
       builder: (context, _) {
         final isFav = appState.isFavorite(scripture.id);
+        final readingProgress = rState.getProgress(scripture.id);
+        final bookmarkedCount = rState.getBookmarksForScripture(scripture.id).length;
+        final hasProgress = readingProgress != null && readingProgress.lastReadVerseNumber > 0;
 
         return Scaffold(
           appBar: SacredAppBar(
@@ -41,7 +52,12 @@ class ScriptureDetailScreen extends StatelessWidget {
                   ScriptSelectorModal.show(
                     context,
                     currentScript: appState.activeScript,
-                    onScriptSelected: (s) => appState.setActiveScript(s),
+                    onScriptSelected: (s) {
+                      appState.setActiveScript(s);
+                      rState.updatePreferences(
+                        rState.preferences.copyWith(preferredScript: s),
+                      );
+                    },
                   );
                 },
               ),
@@ -107,6 +123,12 @@ class ScriptureDetailScreen extends StatelessWidget {
                           _DetailPill(label: scripture.deity, color: AppColors.goldDark, isDark: isDark),
                           _DetailPill(label: '${scripture.verseCount} Sacred Verses', color: const Color(0xFF0D9488), isDark: isDark),
                           _DetailPill(label: 'Script: ${appState.activeScript.label}', color: const Color(0xFF6366F1), isDark: isDark),
+                          if (bookmarkedCount > 0)
+                            _DetailPill(
+                              label: '$bookmarkedCount Bookmarked',
+                              color: AppColors.goldPrimary,
+                              isDark: isDark,
+                            ),
                         ],
                       ),
                     ],
@@ -115,42 +137,193 @@ class ScriptureDetailScreen extends StatelessWidget {
 
                 const SizedBox(height: 16),
 
-                // 2. Primary Read CTA Button
-                SizedBox(
-                  width: double.infinity,
-                  height: 52,
-                  child: ElevatedButton.icon(
-                    icon: const Icon(Icons.auto_stories),
-                    label: Text(
-                      'READ SCRIPTURE (1 - ${scripture.verseCount})',
-                      style: const TextStyle(fontWeight: FontWeight.bold, letterSpacing: 0.8),
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppColors.saffronPrimary,
-                      foregroundColor: Colors.white,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(14),
+                // 2. Reading Progress & Quick Resume (if devotee started reading)
+                if (hasProgress) ...[
+                  Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.all(14),
+                    decoration: BoxDecoration(
+                      color: isDark ? AppColors.nightSurfaceElevated : const Color(0xFFFFF7ED),
+                      borderRadius: BorderRadius.circular(14),
+                      border: Border.all(
+                        color: isDark ? AppColors.goldDark : AppColors.saffronPrimary.withValues(alpha: 0.5),
                       ),
-                      elevation: 2,
                     ),
-                    onPressed: () {
-                      appState.recordRecentlyRead(scripture.id);
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => VerseReaderScreen(
-                            scripture: scripture,
-                            appState: appState,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(
+                              children: [
+                                const Icon(Icons.history_edu, size: 16, color: AppColors.saffronPrimary),
+                                const SizedBox(width: 6),
+                                Text(
+                                  'Reading Progress',
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.bold,
+                                    color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Text(
+                              'Verse ${readingProgress.lastReadVerseNumber} of ${scripture.verseCount} (${(readingProgress.percentCompleted * 100).toInt()}%)',
+                              style: AppTextStyles.caption(isDark).copyWith(fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 8),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(4),
+                          child: LinearProgressIndicator(
+                            value: readingProgress.percentCompleted,
+                            backgroundColor: isDark ? AppColors.nightBorder : const Color(0xFFE2D6C5),
+                            valueColor: const AlwaysStoppedAnimation<Color>(AppColors.saffronPrimary),
+                            minHeight: 6,
                           ),
                         ),
-                      );
-                    },
+                        const SizedBox(height: 10),
+                        SizedBox(
+                          width: double.infinity,
+                          child: ElevatedButton.icon(
+                            icon: const Icon(Icons.play_arrow, size: 18),
+                            label: Text('RESUME FROM VERSE ${readingProgress.lastReadVerseNumber}'),
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: AppColors.saffronPrimary,
+                              foregroundColor: Colors.white,
+                              padding: const EdgeInsets.symmetric(vertical: 10),
+                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                            ),
+                            onPressed: () {
+                              appState.recordRecentlyRead(scripture.id);
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (_) => VerseLearningScreen(
+                                    scripture: scripture,
+                                    readerState: rState,
+                                    initialVerseNumber: readingProgress.lastReadVerseNumber,
+                                    audioState: audioState,
+                                  ),
+                                ),
+                              );
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                ],
+
+                // 3. Primary Learning & Reading CTA Buttons
+                Row(
+                  children: [
+                    // Start Verse-by-Verse Learning Mode
+                    Expanded(
+                      flex: 6,
+                      child: ElevatedButton.icon(
+                        icon: const Icon(Icons.school),
+                        label: Text(
+                          'READ SCRIPTURE (1 - ${scripture.verseCount})',
+                          style: const TextStyle(fontWeight: FontWeight.bold, letterSpacing: 0.6),
+                        ),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: AppColors.saffronPrimary,
+                          foregroundColor: Colors.white,
+                          padding: const EdgeInsets.symmetric(vertical: 15),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+                          elevation: 2,
+                        ),
+                        onPressed: () {
+                          appState.recordRecentlyRead(scripture.id);
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => VerseLearningScreen(
+                                scripture: scripture,
+                                readerState: rState,
+                                initialVerseNumber: 1,
+                                audioState: audioState,
+                              ),
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    // Continuous Scroll View
+                    Expanded(
+                      flex: 5,
+                      child: OutlinedButton.icon(
+                        icon: const Icon(Icons.auto_stories),
+                        label: const Text(
+                          'ALL VERSES',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        style: OutlinedButton.styleFrom(
+                          padding: const EdgeInsets.symmetric(vertical: 15),
+                          side: BorderSide(
+                            color: isDark ? AppColors.goldDark : AppColors.saffronPrimary,
+                            width: 1.2,
+                          ),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+                        ),
+                        onPressed: () {
+                          appState.recordRecentlyRead(scripture.id);
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => VerseReaderScreen(
+                                scripture: scripture,
+                                appState: appState,
+                                readerState: rState,
+                                audioState: audioState,
+                              ),
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+                  ],
+                ),
+
+                const SizedBox(height: 16),
+
+                // 4. Content Integrity & Coverage Disclosure
+                Card(
+                  margin: EdgeInsets.zero,
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            const Icon(Icons.verified_outlined, size: 16, color: AppColors.saffronPrimary),
+                            const SizedBox(width: 8),
+                            Text(
+                              'CONTENT COVERAGE & SCHOLARLY INTEGRITY',
+                              style: AppTextStyles.metadataTag(isDark).copyWith(fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                        const Divider(height: 16),
+                        _AttrRow(label: 'Coverage Status', value: scripture.displayCoverageStatus, isDark: isDark),
+                        _AttrRow(label: 'Canonical ID', value: scripture.contentId, isDark: isDark),
+                        _AttrRow(label: 'Translations', value: 'Section 8 Draft (0 Approved, Under Peer Review)', isDark: isDark),
+                        _AttrRow(label: 'Indic Scripts', value: 'Devanagari, IAST, Telugu, Tamil, Kannada, Malayalam', isDark: isDark),
+                      ],
+                    ),
                   ),
                 ),
 
                 const SizedBox(height: 16),
 
-                // 3. Liturgical Attribution & Provenance
+                // 5. Liturgical Attribution & Provenance
                 Card(
                   margin: EdgeInsets.zero,
                   child: Padding(
@@ -178,7 +351,6 @@ class ScriptureDetailScreen extends StatelessWidget {
                         _AttrRow(label: 'Presiding Devata', value: scripture.devata, isDark: isDark),
                         _AttrRow(label: 'Source Scripture', value: scripture.sourceScripture, isDark: isDark),
                         _AttrRow(label: 'Liturgical Practice', value: scripture.traditionalUsage, isDark: isDark),
-                        _AttrRow(label: 'Canonical ID', value: scripture.contentId, isDark: isDark),
                       ],
                     ),
                   ),
@@ -186,7 +358,7 @@ class ScriptureDetailScreen extends StatelessWidget {
 
                 const SizedBox(height: 16),
 
-                // 4. Opening Shloka Preview
+                // 6. Opening Shloka Preview
                 if (scripture.verses.isNotEmpty) ...[
                   Card(
                     margin: EdgeInsets.zero,
@@ -240,7 +412,7 @@ class ScriptureDetailScreen extends StatelessWidget {
                   const SizedBox(height: 16),
                 ],
 
-                // 5. Section 8 Governance Banner
+                // 7. Section 8 Governance Banner
                 const Section8GovernanceBanner(),
               ],
             ),
