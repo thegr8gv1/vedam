@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:vedam_app/core/models/japa_target_preset.dart';
 import 'package:vedam_app/core/models/mantra_item.dart';
 import 'package:vedam_app/core/services/audio_service.dart';
 import 'package:vedam_app/state/audio_state.dart';
@@ -102,12 +104,90 @@ class MockAudioPlaybackService implements AudioPlaybackService {
 }
 
 void main() {
+  TestWidgetsFlutterBinding.ensureInitialized();
+
+  group('Phase 16B: Traditional Presets and Custom Count Validation', () {
+    test('kJapaTraditionalPresets defines all 7 required counts with authentic labels', () {
+      expect(kJapaTraditionalPresets.length, equals(7));
+
+      final counts = kJapaTraditionalPresets.map((p) => p.count).toList();
+      expect(counts, equals([11, 21, 27, 54, 108, 111, 1008]));
+
+      final labels = kJapaTraditionalPresets.map((p) => p.traditionalLabel).toList();
+      expect(labels, [
+        '11 repetitions',
+        '21 repetitions',
+        '27 repetitions',
+        'Half Mala',
+        'One Mala',
+        '111 repetitions',
+        '1008 repetitions',
+      ]);
+
+      for (final p in kJapaTraditionalPresets) {
+        expect(p.spiritualSignificance.isNotEmpty, isTrue);
+      }
+    });
+
+    test('validateCustomJapaTarget validates positive whole integers accurately', () {
+      final validCounts = ['1', '11', '21', '27', '54', '108', '111', '1008', '5000', '100000'];
+      for (final input in validCounts) {
+        final res = validateCustomJapaTarget(input);
+        expect(res.isValid, isTrue, reason: 'Failed for $input');
+        expect(res.count, equals(int.parse(input)));
+        expect(res.errorMessage, isNull);
+      }
+    });
+
+    test('validateCustomJapaTarget rejects zero and negative counts', () {
+      final res0 = validateCustomJapaTarget('0');
+      expect(res0.isValid, isFalse);
+      expect(res0.errorMessage, contains('greater than zero'));
+
+      final resNeg = validateCustomJapaTarget('-10');
+      expect(resNeg.isValid, isFalse);
+      expect(resNeg.errorMessage, contains('greater than zero'));
+    });
+
+    test('validateCustomJapaTarget rejects decimals and formatting symbols', () {
+      final resDot = validateCustomJapaTarget('108.5');
+      expect(resDot.isValid, isFalse);
+      expect(resDot.errorMessage, contains('no decimals'));
+
+      final resComma = validateCustomJapaTarget('1,008');
+      expect(resComma.isValid, isFalse);
+      expect(resComma.errorMessage, contains('no decimals'));
+    });
+
+    test('validateCustomJapaTarget rejects empty, whitespace, and non-numeric inputs', () {
+      expect(validateCustomJapaTarget(null).isValid, isFalse);
+      expect(validateCustomJapaTarget('').isValid, isFalse);
+      expect(validateCustomJapaTarget('   ').isValid, isFalse);
+      expect(validateCustomJapaTarget('abc').isValid, isFalse);
+      expect(validateCustomJapaTarget('108 beads').isValid, isFalse);
+    });
+
+    test('validateCustomJapaTarget rejects counts exceeding practical upper bound (100,000)', () {
+      final resSafeMax = validateCustomJapaTarget('100000');
+      expect(resSafeMax.isValid, isTrue);
+      expect(resSafeMax.count, equals(100000));
+
+      final resTooLarge = validateCustomJapaTarget('100001');
+      expect(resTooLarge.isValid, isFalse);
+      expect(resTooLarge.errorMessage, contains('100000 repetitions'));
+
+      final resExtreme = validateCustomJapaTarget('99999999999');
+      expect(resExtreme.isValid, isFalse);
+    });
+  });
+
   group('AudioState & Japa Mala Repetition Engine Tests', () {
     late MockAudioPlaybackService mockAudio;
     late AudioState audioState;
     late MantraItem sampleMantra;
 
     setUp(() {
+      SharedPreferences.setMockInitialValues({});
       mockAudio = MockAudioPlaybackService();
       audioState = AudioState(audioService: mockAudio);
       sampleMantra = const MantraItem(
@@ -142,6 +222,8 @@ void main() {
       expect(audioState.remainingRepetitions, equals(108));
       expect(audioState.progressFraction, equals(0.0));
       expect(audioState.playerState, equals(PlayerState.stopped));
+      expect(audioState.autoPauseAtTarget, isTrue);
+      expect(audioState.canChangeTargetWithoutConfirmation(), isTrue);
     });
 
     test('Repeat count selection updates target accurately', () {
@@ -151,12 +233,54 @@ void main() {
       audioState.setTargetRepetitions(11);
       expect(audioState.targetRepetitions, equals(11));
 
+      audioState.setTargetRepetitions(27);
+      expect(audioState.targetRepetitions, equals(27));
+
+      audioState.setTargetRepetitions(54);
+      expect(audioState.targetRepetitions, equals(54));
+
       audioState.setTargetRepetitions(108);
       expect(audioState.targetRepetitions, equals(108));
 
       // Custom count
       audioState.setTargetRepetitions(1008);
       expect(audioState.targetRepetitions, equals(1008));
+    });
+
+    test('setTargetRepetitions ignores invalid counts (<=0 or >100,000)', () {
+      audioState.setTargetRepetitions(108);
+      audioState.setTargetRepetitions(0);
+      expect(audioState.targetRepetitions, equals(108));
+
+      audioState.setTargetRepetitions(-5);
+      expect(audioState.targetRepetitions, equals(108));
+
+      audioState.setTargetRepetitions(100001);
+      expect(audioState.targetRepetitions, equals(108));
+    });
+
+    test('Changing target mid-session strictly preserves completed repetitions', () {
+      audioState.setTargetRepetitions(108);
+      // Simulate 15 completed repetitions
+      for (int i = 0; i < 15; i++) {
+        audioState.incrementManualRepetition();
+      }
+      expect(audioState.completedRepetitions, equals(15));
+      expect(audioState.canChangeTargetWithoutConfirmation(), isFalse);
+
+      // Devotee switches target to 54
+      audioState.setTargetRepetitions(54);
+      expect(audioState.targetRepetitions, equals(54));
+      expect(audioState.completedRepetitions, equals(15)); // strictly preserved!
+      expect(audioState.remainingRepetitions, equals(39));
+      expect(audioState.isSessionCompleted, isFalse);
+
+      // Devotee switches target to 11 (which is lower than completed 15)
+      audioState.setTargetRepetitions(11);
+      expect(audioState.targetRepetitions, equals(11));
+      expect(audioState.completedRepetitions, equals(15)); // strictly preserved!
+      expect(audioState.remainingRepetitions, equals(0));
+      expect(audioState.isSessionCompleted, isTrue);
     });
 
     test('Playback state transitions: play, pause, resume, stop', () async {
@@ -178,8 +302,9 @@ void main() {
       expect(audioState.isStopped, isTrue);
     });
 
-    test('Increments count only after complete successful playback repetition', () async {
+    test('Increments count only after complete successful playback repetition with auto-pause', () async {
       audioState.setTargetRepetitions(3);
+      audioState.setAutoPauseAtTarget(true);
       await audioState.playMantra(sampleMantra);
       expect(audioState.completedRepetitions, equals(0));
 
@@ -204,6 +329,54 @@ void main() {
       expect(audioState.remainingRepetitions, equals(0));
       expect(audioState.isSessionCompleted, isTrue);
       expect(mockAudio.stopCallCount, greaterThanOrEqualTo(1));
+    });
+
+    test('Continuous chanting mode (auto-pause disabled) continues after target', () async {
+      audioState.setTargetRepetitions(2);
+      audioState.setAutoPauseAtTarget(false);
+      await audioState.playMantra(sampleMantra);
+
+      // Repetition 1
+      mockAudio.emitState(PlayerState.completed);
+      await Future.delayed(const Duration(milliseconds: 50));
+      expect(audioState.completedRepetitions, equals(1));
+
+      // Repetition 2 (target reached)
+      await Future.delayed(const Duration(milliseconds: 450));
+      mockAudio.emitState(PlayerState.completed);
+      await Future.delayed(const Duration(milliseconds: 50));
+      expect(audioState.completedRepetitions, equals(2));
+      expect(audioState.isSessionCompleted, isTrue);
+
+      // Repetition 3 (beyond target in continuous mode)
+      await Future.delayed(const Duration(milliseconds: 450));
+      mockAudio.emitState(PlayerState.completed);
+      await Future.delayed(const Duration(milliseconds: 50));
+      expect(audioState.completedRepetitions, equals(3));
+      expect(audioState.completedRepetitions, greaterThan(audioState.targetRepetitions));
+    });
+
+    test('Session completion controls: continueChanting and finishSession', () {
+      audioState.setTargetRepetitions(11);
+      for (int i = 0; i < 11; i++) {
+        audioState.incrementManualRepetition();
+      }
+      expect(audioState.isSessionCompleted, isTrue);
+      expect(audioState.hasReachedTarget, isTrue);
+
+      // Devotee chooses Continue Chanting
+      audioState.continueChanting();
+      expect(audioState.isContinuingBeyondTarget, isTrue);
+      expect(audioState.hasAcknowledgedCompletion, isTrue);
+
+      // Next chants increment seamlessly
+      audioState.incrementManualRepetition();
+      expect(audioState.completedRepetitions, equals(12));
+
+      // Devotee chooses Finish Session
+      audioState.finishSession();
+      expect(audioState.completedRepetitions, equals(12)); // count strictly preserved!
+      expect(audioState.isStopped, isTrue);
     });
 
     test('Never increments count on failed playback or playback error', () async {
@@ -251,6 +424,24 @@ void main() {
 
       audioState.toggleFavorite('TEST-MTR-001');
       expect(audioState.isFavorite('TEST-MTR-001'), isFalse);
+    });
+
+    test('SharedPreferences persistence restores target, autoPause, and completed count', () async {
+      SharedPreferences.setMockInitialValues({
+        'vedam_japa_target_v1': 54,
+        'vedam_japa_auto_pause_v1': false,
+        'vedam_japa_completed_v1': 27,
+      });
+
+      final freshState = AudioState(audioService: mockAudio);
+      await freshState.init();
+
+      expect(freshState.targetRepetitions, equals(54));
+      expect(freshState.autoPauseAtTarget, isFalse);
+      expect(freshState.completedRepetitions, equals(27));
+      expect(freshState.remainingRepetitions, equals(27));
+
+      freshState.dispose();
     });
   });
 }

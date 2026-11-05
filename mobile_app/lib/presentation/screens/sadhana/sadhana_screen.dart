@@ -13,6 +13,7 @@ import '../../../state/vrat_state.dart';
 import '../../widgets/sacred_app_bar.dart';
 import '../../widgets/section_header.dart';
 import '../mantras/mantra_player_screen.dart';
+import '../mantras/widgets/japa_target_modal.dart';
 import '../vrat/reminders_settings_screen.dart';
 import '../vrat/vrat_calendar_screen.dart';
 import 'guided_puja_screen.dart';
@@ -724,10 +725,28 @@ class _SadhanaScreenState extends State<SadhanaScreen> with WidgetsBindingObserv
                         color: isDark ? AppColors.goldGlow : AppColors.saffronPrimary,
                       ),
                     ),
-                    Text(
-                      'Target: $_targetJapaCount Repetitions',
-                      style: AppTextStyles.caption(isDark).copyWith(
-                        fontWeight: FontWeight.w600,
+                    InkWell(
+                      onTap: widget.audioState != null
+                          ? () => JapaTargetModal.show(context, widget.audioState!)
+                          : null,
+                      borderRadius: BorderRadius.circular(8),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              'Target: $_targetJapaCount Repetitions',
+                              style: AppTextStyles.caption(isDark).copyWith(
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                            if (widget.audioState != null) ...[
+                              const SizedBox(width: 4),
+                              const Icon(Icons.edit, size: 12, color: AppColors.saffronPrimary),
+                            ],
+                          ],
+                        ),
                       ),
                     ),
                     const SizedBox(height: 14),

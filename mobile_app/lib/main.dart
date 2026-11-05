@@ -11,6 +11,8 @@ import 'presentation/screens/library/bookmarks_screen.dart';
 import 'presentation/screens/library/verse_learning_screen.dart';
 import 'presentation/screens/mantras/mantra_player_screen.dart';
 import 'presentation/screens/mantras/mantras_screen.dart';
+import 'presentation/screens/mantras/widgets/japa_completion_dialog.dart';
+import 'presentation/screens/mantras/widgets/japa_target_modal.dart';
 import 'data/repositories/panchangam_repository.dart';
 import 'presentation/screens/panchangam/panchangam_screen.dart';
 import 'presentation/screens/sadhana/guided_puja_screen.dart';
@@ -56,6 +58,10 @@ void main() {
   bool showReminders = false;
   bool showBookmarks = false;
   bool showPreferences = false;
+  int? initialJapaTarget;
+  int? initialJapaCompleted;
+  bool showTargetModal = false;
+  bool showCompletionDialog = false;
 
   try {
     final tab = Uri.base.queryParameters['tab'];
@@ -69,6 +75,17 @@ void main() {
     if (tab == 'reminders') showReminders = true;
     if (tab == 'bookmarks') showBookmarks = true;
     if (Uri.base.queryParameters['prefs'] == 'true') showPreferences = true;
+    if (Uri.base.queryParameters['target_modal'] == 'true') showTargetModal = true;
+    if (Uri.base.queryParameters['completion'] == 'true') showCompletionDialog = true;
+
+    final targetParam = Uri.base.queryParameters['target'];
+    if (targetParam != null) {
+      initialJapaTarget = int.tryParse(targetParam);
+    }
+    final completedParam = Uri.base.queryParameters['completed_chants'];
+    if (completedParam != null) {
+      initialJapaCompleted = int.tryParse(completedParam);
+    }
 
     final reader = Uri.base.queryParameters['reader'];
     if (reader != null) {
@@ -137,6 +154,10 @@ void main() {
     showReminders: showReminders,
     showBookmarks: showBookmarks,
     showPreferences: showPreferences,
+    initialJapaTarget: initialJapaTarget,
+    initialJapaCompleted: initialJapaCompleted,
+    showTargetModal: showTargetModal,
+    showCompletionDialog: showCompletionDialog,
   ));
 }
 
@@ -166,6 +187,10 @@ class VedamApp extends StatelessWidget {
   final bool showReminders;
   final bool showBookmarks;
   final bool showPreferences;
+  final int? initialJapaTarget;
+  final int? initialJapaCompleted;
+  final bool showTargetModal;
+  final bool showCompletionDialog;
 
   const VedamApp({
     super.key,
@@ -194,6 +219,10 @@ class VedamApp extends StatelessWidget {
     this.showReminders = false,
     this.showBookmarks = false,
     this.showPreferences = false,
+    this.initialJapaTarget,
+    this.initialJapaCompleted,
+    this.showTargetModal = false,
+    this.showCompletionDialog = false,
   });
 
   @override
@@ -277,9 +306,40 @@ class VedamApp extends StatelessWidget {
             repository: mRepo,
             audioState: aState,
           );
+        } else if (showTargetModal) {
+          homeWidget = Scaffold(
+            appBar: AppBar(title: const Text('Japa Target Selection')),
+            body: SafeArea(
+              child: JapaTargetModal(audioState: aState),
+            ),
+          );
+        } else if (showCompletionDialog) {
+          if (initialJapaTarget != null) {
+            aState.setTargetRepetitions(initialJapaTarget!);
+          }
+          final completed = initialJapaCompleted ?? aState.targetRepetitions;
+          for (int i = 0; i < completed; i++) {
+            aState.incrementManualRepetition();
+          }
+          homeWidget = Scaffold(
+            appBar: AppBar(title: const Text('Japa Completion Notice')),
+            body: Center(
+              child: SingleChildScrollView(
+                child: JapaCompletionDialog(audioState: aState),
+              ),
+            ),
+          );
         } else if (openMantraId != null) {
           final m = mRepo.getMantraById(openMantraId!) ??
               mRepo.getAllMantras().first;
+          if (initialJapaTarget != null) {
+            aState.setTargetRepetitions(initialJapaTarget!);
+          }
+          if (initialJapaCompleted != null) {
+            for (int i = 0; i < initialJapaCompleted!; i++) {
+              aState.incrementManualRepetition();
+            }
+          }
           homeWidget = MantraPlayerScreen(
             mantra: m,
             audioState: aState,
