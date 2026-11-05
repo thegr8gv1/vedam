@@ -13,6 +13,7 @@ import 'presentation/screens/mantras/mantra_player_screen.dart';
 import 'presentation/screens/mantras/mantras_screen.dart';
 import 'presentation/screens/mantras/widgets/japa_completion_dialog.dart';
 import 'presentation/screens/mantras/widgets/japa_target_modal.dart';
+import 'presentation/screens/mantras/widgets/japa_target_selector_widget.dart';
 import 'data/repositories/panchangam_repository.dart';
 import 'presentation/screens/panchangam/panchangam_screen.dart';
 import 'presentation/screens/sadhana/guided_puja_screen.dart';
@@ -61,6 +62,7 @@ void main() {
   int? initialJapaTarget;
   int? initialJapaCompleted;
   bool showTargetModal = false;
+  bool showTargetSelector = false;
   bool showCompletionDialog = false;
 
   try {
@@ -76,6 +78,7 @@ void main() {
     if (tab == 'bookmarks') showBookmarks = true;
     if (Uri.base.queryParameters['prefs'] == 'true') showPreferences = true;
     if (Uri.base.queryParameters['target_modal'] == 'true') showTargetModal = true;
+    if (Uri.base.queryParameters['target_selector'] == 'true') showTargetSelector = true;
     if (Uri.base.queryParameters['completion'] == 'true') showCompletionDialog = true;
 
     final targetParam = Uri.base.queryParameters['target'];
@@ -157,6 +160,7 @@ void main() {
     initialJapaTarget: initialJapaTarget,
     initialJapaCompleted: initialJapaCompleted,
     showTargetModal: showTargetModal,
+    showTargetSelector: showTargetSelector,
     showCompletionDialog: showCompletionDialog,
   ));
 }
@@ -190,6 +194,7 @@ class VedamApp extends StatelessWidget {
   final int? initialJapaTarget;
   final int? initialJapaCompleted;
   final bool showTargetModal;
+  final bool showTargetSelector;
   final bool showCompletionDialog;
 
   const VedamApp({
@@ -222,6 +227,7 @@ class VedamApp extends StatelessWidget {
     this.initialJapaTarget,
     this.initialJapaCompleted,
     this.showTargetModal = false,
+    this.showTargetSelector = false,
     this.showCompletionDialog = false,
   });
 
@@ -305,6 +311,19 @@ class VedamApp extends StatelessWidget {
           homeWidget = MantrasScreen(
             repository: mRepo,
             audioState: aState,
+          );
+        } else if (showTargetSelector) {
+          if (initialJapaTarget != null) {
+            aState.setTargetRepetitions(initialJapaTarget!);
+          }
+          homeWidget = Scaffold(
+            appBar: AppBar(title: const Text('Select Chanting Target')),
+            body: SafeArea(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.all(16),
+                child: JapaTargetSelectorWidget(audioState: aState),
+              ),
+            ),
           );
         } else if (showTargetModal) {
           homeWidget = Scaffold(

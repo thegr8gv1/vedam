@@ -3,6 +3,7 @@ import 'package:vedam_app/core/models/mantra_item.dart';
 import 'package:vedam_app/core/theme/app_colors.dart';
 import 'package:vedam_app/presentation/screens/mantras/widgets/japa_completion_dialog.dart';
 import 'package:vedam_app/presentation/screens/mantras/widgets/japa_target_modal.dart';
+import 'package:vedam_app/presentation/screens/mantras/widgets/japa_target_selector_widget.dart';
 import 'package:vedam_app/presentation/widgets/visual_mala_widget.dart';
 import 'package:vedam_app/state/audio_state.dart';
 
@@ -743,6 +744,12 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                   ),
                 ),
                 const SizedBox(height: 20),
+
+                // Dedicated Japa Target Selection Interface (Phase 16B.1)
+                JapaTargetSelectorWidget(
+                  audioState: widget.audioState,
+                ),
+                const SizedBox(height: 16),
 
                 // Target Repetitions Quick Chips
                 Column(

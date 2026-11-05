@@ -361,6 +361,14 @@ class _JapaTargetModalState extends State<JapaTargetModal> {
                                 borderRadius: BorderRadius.circular(12),
                               ),
                             ),
+                            onChanged: (val) {
+                              if (val.isNotEmpty) {
+                                final res = validateCustomJapaTarget(val);
+                                setState(() => _customError = res.isValid ? null : res.errorMessage);
+                              } else {
+                                setState(() => _customError = null);
+                              }
+                            },
                             onSubmitted: (_) => _submitCustomTarget(),
                           ),
                         ),

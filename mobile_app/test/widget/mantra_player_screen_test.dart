@@ -196,8 +196,8 @@ void main() {
       expect(find.byType(JapaTargetModal), findsOneWidget);
       expect(find.text('Chanting Target (Japa Target)'), findsOneWidget);
       expect(find.text('TRADITIONAL PRESETS'), findsOneWidget);
-      expect(find.text('Half Mala'), findsOneWidget);
-      expect(find.text('One Mala'), findsOneWidget);
+      expect(find.descendant(of: find.byType(JapaTargetModal), matching: find.text('Half Mala')), findsOneWidget);
+      expect(find.descendant(of: find.byType(JapaTargetModal), matching: find.text('One Mala')), findsOneWidget);
       expect(find.text('Auto-pause audio at target completion'), findsOneWidget);
     });
 

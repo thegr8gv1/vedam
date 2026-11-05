@@ -115,7 +115,6 @@ class _MantrasScreenState extends State<MantrasScreen> {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final allCollections = ['All', ...widget.repository.getAllCollections()];
     final mantras = _getFilteredMantras();
-    final bundledCount = widget.repository.getAllMantras().where((m) => m.isBundled).length;
 
     return ListenableBuilder(
       listenable: widget.audioState,
