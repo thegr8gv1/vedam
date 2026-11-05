@@ -13,10 +13,26 @@ from indic_transliteration.sanscript import SchemeMap, SCHEMES, transliterate
 
 
 class VedicSwara:
-    """Unicode combining code points for sacred Vedic tones."""
-    UDATTA = "\u0954"          # Devanagari Acute Accent (High tone)
-    ANUDATTA = "\u0952"        # Devanagari Stress Sign Anudatta (Low tone)
-    SVARITA = "\u0951"         # Devanagari Stress Sign Udatta / Svarita (Circumflex/Rising)
+    """
+    Unicode combining code points for sacred Vedic tones and diacritics.
+    
+    Unicode Philological Specification:
+    - U+0951 is canonically named 'DEVANAGARI STRESS SIGN UDATTA' by the Unicode Standard,
+      with the official Unicode annotation: '= svarita; mostly used for svarita, with anudatta below'.
+      In Shakala Rigveda and Taittiriya Krishna Yajurveda typography, it serves as the vertical stroke
+      above marking the svarita accent (or udatta in certain historical grammars).
+    - U+0952 is canonically named 'DEVANAGARI STRESS SIGN ANUDATTA' by the Unicode Standard,
+      appearing as the horizontal line below marking the low/anudatta accent.
+    - U+0954 is 'DEVANAGARI ACUTE ACCENT'.
+    - U+1CDA is 'VEDIC TONE DOUBLE SVARITA' (Dirgha Svarita in Taittiriya / Samaveda traditions).
+    
+    Note: The traditional oral chanting realization (svara-bhedah) varies by Vedic Shakha
+    (Rigvedic Shakala, Krishna Yajurvedic Taittiriya, Shukla Yajurvedic Madhyandina) and cannot
+    be inferred solely from the Unicode character name or code point.
+    """
+    UDATTA = "\u0954"          # Devanagari Acute Accent (High tone where explicitly marked)
+    ANUDATTA = "\u0952"        # Devanagari Stress Sign Anudatta (horizontal low bar below syllable)
+    SVARITA = "\u0951"         # Devanagari Stress Sign Udatta [Unicode Name] / Svarita [Vedic Usage: vertical tick above]
     DIRGHA_SVARITA = "\u1CDA"  # Vedic Tone Double Svarita
     CHANDRABINDU = "\u0901"    # Devanagari Sign Chandrabindu
     ANUSVARA = "\u0902"        # Devanagari Sign Anusvara

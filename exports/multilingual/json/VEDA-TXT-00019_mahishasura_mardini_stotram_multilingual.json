@@ -1,0 +1,1599 @@
+{
+  "content_id": "VEDA-TXT-00019",
+  "canonical_title": "Mahishasura Mardini Stotram",
+  "devanagari_title": "महिषासुरमर्दिनिस्तोत्रम्",
+  "composer": "Adi Shankaracharya / Traditional",
+  "source_scripture": "Devi Mahatmya / Shakta Stotra Samgraha",
+  "verse_count": 21,
+  "generated_at_utc": "2026-11-05T01:05:24.426558+00:00",
+  "supported_languages": [
+    "sa",
+    "hi",
+    "te",
+    "ta",
+    "kn",
+    "mr",
+    "bn",
+    "gu",
+    "ml",
+    "or",
+    "en"
+  ],
+  "verses": [
+    {
+      "verse_number": 1,
+      "verse_type": "VERSE",
+      "original_sanskrit": "अयि गिरिनन्दिनि नन्दितमेदिनि विश्वविनोदिनि नन्दिनुते\nगिरिवरविन्ध्यशिरोऽधिनिवासिनि विष्णुविलासिनि जिष्णुनुते ।\nभगवति हे शितिकण्ठकुटुम्बिनि भूरिकुटुम्बिनि भूरिकृते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १ ॥",
+      "iast": "ayi girinandini nanditamēdini viśvavinōdini nandinutē\ngirivaravindhyaśirō'dhinivāsini viṣṇuvilāsini jiṣṇunutē ।\nbhagavati hē śitikaṇṭhakuṭumbini bhūrikuṭumbini bhūrikṛtē\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 1 ॥",
+      "transliterations": {
+        "telugu": "అయి గిరినన్దిని నన్దితమేదిని విశ్వవినోదిని నన్దినుతే\nగిరివరవిన్ధ్యశిరోఽధినివాసిని విష్ణువిలాసిని జిష్ణునుతే ।\nభగవతి హే శితికణ్ఠకుటుమ్బిని భూరికుటుమ్బిని భూరికృతే\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౧ ॥",
+        "tamil": "அயி கிரிநந்திநி நந்திதமேதிநி விஶ்வவிநோதிநி நந்திநுதே\nகிரிவரவிந்த்யஶிரோऽதிநிவாஸிநி விஷ்ணுவிலாஸிநி ஜிஷ்ணுநுதே ।\nபகவதி ஹே ஶிதிகண்டகுடும்பிநி பூரிகுடும்பிநி பூரிக்ரு'தே\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௧ ॥",
+        "kannada": "ಅಯಿ ಗಿರಿನನ್ದಿನಿ ನನ್ದಿತಮೇದಿನಿ ವಿಶ್ವವಿನೋದಿನಿ ನನ್ದಿನುತೇ\nಗಿರಿವರವಿನ್ಧ್ಯಶಿರೋಽಧಿನಿವಾಸಿನಿ ವಿಷ್ಣುವಿಲಾಸಿನಿ ಜಿಷ್ಣುನುತೇ ।\nಭಗವತಿ ಹೇ ಶಿತಿಕಣ್ಠಕುಟುಮ್ಬಿನಿ ಭೂರಿಕುಟುಮ್ಬಿನಿ ಭೂರಿಕೃತೇ\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೧ ॥",
+        "malayalam": "അയി ഗിരിനന്ദിനി നന്ദിതമേദിനി വിശ്വവിനോദിനി നന്ദിനുതേ\nഗിരിവരവിന്ധ്യശിരോഽധിനിവാസിനി വിഷ്ണുവിലാസിനി ജിഷ്ണുനുതേ ।\nഭഗവതി ഹേ ശിതികണ്ഠകുടുമ്ബിനി ഭൂരികുടുമ്ബിനി ഭൂരികൃതേ\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൧ ॥",
+        "iast": "ayi girinandini nanditamedini viśvavinodini nandinute\ngirivaravindhyaśiro'dhinivāsini viṣṇuvilāsini jiṣṇunute |\nbhagavati he śitikaṇṭhakuṭumbini bhūrikuṭumbini bhūrikṛte\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 1 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "O Daughter of the Mountain, who gladdens the earth, rejoices the cosmos, praised by Nandi! Dwelling on the crest of the magnificent Vindhya mountains, joy of Vishnu, praised by Indra! O Goddess, consort of the blue-throated Shiva, mother of the vast universe, creator of abundance! Victory to You, O Slayer of Mahishasura, with captivating braided hair, O daughter of the Mountain!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे गिरिराज हिमालय की पुत्री! पृथ्वी को आनन्दित करने वाली, समस्त विश्व का विनोद करने वाली, नन्दि द्वारा स्तुत, विन्ध्याचल के शिखर पर वास करने वाली, भगवान् विष्णु को आनन्द देने वाली, इन्द्र द्वारा पूजित, नीलकण्ठ शिव की प्राणप्रिया, निखिल ब्रह्माण्ड को अपना कुटुम्ब मानने वाली और विपुल कल्याण करने वाली हे भगवती! हे सुन्दर जटाजूट वाली, महिषासुर का संहार करने वाली शैलपुत्री! आपकी सदा जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "హిమవంతుని ముద్దుల పట్టివై, సమస్త భూమికి ఆనందమును చేకూర్చుదానా! విశ్వమును పరవశింపజేయుదానా! నందీశ్వరునిచే స్తుతింపబడుదానా! వింధ్యపర్వత శిఖరవాసినీ! శ్రీమహావిష్ణువునకు ప్రియమైనదానా! ఇంద్రునిచే పూజింపబడుదానా! నీలకంఠుడైన పరమశివుని ఇల్లాలై, విశ్వమంతటినీ కుటుంబముగా పాలించుదానా! అందమైన జటాజూటము కలదానా! మహిషాసురుని సంహరించిన ఓ పార్వతీదేవీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இமயராஜனின் திருமகளே! பூமிக்கு ஆனந்தமளிப்பவளே! அகிலத்திற்கு மகிழ்ச்சியூட்டுபவளே! நந்தியால் போற்றப்படுபவளே! விந்திய மலையுச்சியில் வீற்றிருப்பவளே! திருமாலை மகிழ்விப்பவளே! இந்திரனால் தொழப்படுபவளே! நீலகண்டனின் பத்தினியே! பிரபஞ்சத்தையே குடும்பமாகக் கொண்டவளே! எழில்மிகு சடைமுடி தரித்து, மகிஷாசுரனை வதைத்த மலைமகளே! உனக்கு வெற்றி, வெற்றி உண்டாகட்டும்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಹಿಮವಂತನ ಮುದ್ದಿನ ಮಗಳೇ! ಭೂಮಂಡಲವನ್ನು ಆನಂದಪಡಿಸುವವಳೇ! ಜಗತ್ತಿಗೆಲ್ಲ ಸಂತಸ ನೀಡುವವಳೇ! ನಂದಿಯಿಂದ ಸ್ತುತಿಸಲ್ಪಟ್ಟವಳೇ! ವಿಂಧ್ಯಪರ್ವತದ ಶಿಖರದಲ್ಲಿ ನೆಲೆಸಿರುವವಳೇ! ವಿಷ್ಣುವನ್ನು ಆನಂದಪಡಿಸುವವಳೇ! ಇಂದ್ರನಿಂದ ಪೂಜಿಸಲ್ಪಟ್ಟವಳೇ! ನೀಲಕಂಠ ಶಿವನ ರಾಣಿಯೇ! ಜಗತ್ತನ್ನೇ ಕುಟುಂಬವನ್ನಾಗಿ ಪಾಲಿಸುವ ಮಹಾತಾಯೇ! ಸುಂದರವಾದ ಜಟೆಯನ್ನು ಹೊಂದಿರುವ, ಮಹಿಷಾಸುರನನ್ನು ಮರ್ದಿಸಿದ ಹೇ ಗಿರಿಜಾಮಾತೆಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे हिमालयकन्ये! पृथ्वीला आनंदित करणारी, विश्वाला सुख देणारी, नंदीने स्तवलेली, विंध्याचल शिखरावर वास करणारी, विष्णूंना आनंद देणारी, इंद्राने पूजलेली, नीलकंठ शंकराची पत्नी, विश्वाला कुटुंब मानणारी आणि असीम कल्याण करणारी हे भगवती! सुंदर जटा धारण करणाऱ्या, महिषासुराचा संहार करणाऱ्या हे शैलपुत्री! तुझा सदैव जयजयकार असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে হিমালয়নন্দিনী! ধরণীর আনন্দবিধায়িনী! নিখিল বিশ্বের চিত্তবিনোদিনী! নন্দীপূজিতা! বিন্ধ্যপর্বতশিখরে বাসকারিণী! শ্রীবিষ্ণুর পরম হর্ষদায়িনী! দেবরাজ ইন্দ্রের আরাধ্যা! নীলকণ্ঠের সহধর্মিণী! নিখিল ব্রহ্মাণ্ডরূপ বৃহৎ পরিবারের জননী! সুন্দর কেশপাশভূষিতা, মহিষাসুরমর্দিনী হে পার্বতী! তোমার জয় হউক, পুনঃপুনঃ জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હે પર્વતરાજ હિમાલયની પુત્રી! પૃથ્વીને આનંદ આપનારાં, વિશ્વને હર્ષિત કરનારાં, નંદી દ્વારા સ્તુત, વિંધ્યાચળ શિખર પર વસનારાં, વિષ્ણુને પ્રિય, ઇન્દ્ર દ્વારા પૂજિત, નીલકંઠ શિવની પત્ની અને સમગ્ર વિશ્વને કુટુંબ માનનારાં હે જગદંબા! સુંદર જટા ધારણ કરનારાં અને મહિષાસુરનો સંહાર કરનારાં હે શૈલપુત્રી! તમારો સદાય જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഗിരിരാജനായ ഹിമവാന്റെ പുത്രിയേ! ഭൂമിക്ക് ആനന്ദമേകുന്നവളേ! വിശ്വത്തെ പരവശയാക്കുന്നവളേ! നന്ദിയാൽ സ്തുതിക്കപ്പെടുന്നവളേ! വിന്ധ്യശൈലത്തിൽ വാഴുന്നവളേ! വിഷ്ണുപ്രിയേ! ഇന്ദ്രനാൽ പൂജിക്കപ്പെടുന്നവളേ! നീലകണ്ഠന്റെ പ്രാണേശ്വരിയേ! പ്രപഞ്ചത്തെ കുടുംബമായി പോറ്റുന്നവളേ! സുന്ദരമായ ജടാമുടിയുള്ളവളും മഹിഷാസുരനെ നിഗ്രഹിച്ചവളുമായ ഹേ പാർവ്വതീ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ, ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହେ ହିମାଳୟକନ୍ୟା ! ପୃଥିବୀକୁ ଆନନ୍ଦିତ କରୁଥିବା, ସମସ୍ତ ବିଶ୍ୱକୁ ହର୍ଷିତ କରୁଥିବା, ନନ୍ଦୀଙ୍କ ଦ୍ୱାରା ସ୍ତୁତା, ବିନ୍ଧ୍ୟାଚଳ ଶିଖରବାସିନୀ, ଶ୍ରୀବିଷ୍ଣୁଙ୍କ ପ୍ରିୟା, ଇନ୍ଦ୍ରଙ୍କ ଦ୍ୱାରା ପୂଜିତା, ନୀଳକଣ୍ଠ ଶିବଙ୍କ ପାଟରାଣୀ ଏବଂ ଜଗତକୁ ପରିବାର ମାନୁଥିବା ହେ ଭଗବତୀ ! ସୁନ୍ଦର ଜଟାଧାରିଣୀ, ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ହେ ପାର୍ବତୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 2,
+      "verse_type": "VERSE",
+      "original_sanskrit": "सुरवरवर्षिणि दुर्धरधर्षिणि दुर्मुखमर्षिणि हर्षरते\nत्रिभुवनपोषिणि शङ्करतोषिणि किल्बिषमोषिणि घोषरते ।\nदनुजशोषिणी दुर्मदशोषिणि किल्बिषदोषिणि दानवरते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ २ ॥",
+      "iast": "suravaravarṣiṇi durdharadharṣiṇi durmukhamarṣiṇi harṣaratē\ntribhuvanapōṣiṇi śaṅkaratōṣiṇi kilbiṣamōṣiṇi ghōṣaratē ।\ndanujaśōṣiṇī durmadaśōṣiṇi kilbiṣadōṣiṇi dānavaratē\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 2 ॥",
+      "transliterations": {
+        "telugu": "సురవరవర్షిణి దుర్ధరధర్షిణి దుర్ముఖమర్షిణి హర్షరతే\nత్రిభువనపోషిణి శఙ్కరతోషిణి కిల్బిషమోషిణి ఘోషరతే ।\nదనుజశోషిణీ దుర్మదశోషిణి కిల్బిషదోషిణి దానవరతే\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౨ ॥",
+        "tamil": "ஸுரவரவர்ஷிணி துர்தரதர்ஷிணி துர்முகமர்ஷிணி ஹர்ஷரதே\nத்ரிபுவநபோஷிணி ஶங்கரதோஷிணி கில்பிஷமோஷிணி கோஷரதே ।\nதநுஜஶோஷிணீ துர்மதஶோஷிணி கில்பிஷதோஷிணி தாநவரதே\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௨ ॥",
+        "kannada": "ಸುರವರವರ್ಷಿಣಿ ದುರ್ಧರಧರ್ಷಿಣಿ ದುರ್ಮುಖಮರ್ಷಿಣಿ ಹರ್ಷರತೇ\nತ್ರಿಭುವನಪೋಷಿಣಿ ಶಙ್ಕರತೋಷಿಣಿ ಕಿಲ್ಬಿಷಮೋಷಿಣಿ ಘೋಷರತೇ ।\nದನುಜಶೋಷಿಣೀ ದುರ್ಮದಶೋಷಿಣಿ ಕಿಲ್ಬಿಷದೋಷಿಣಿ ದಾನವರತೇ\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೨ ॥",
+        "malayalam": "സുരവരവര്ഷിണി ദുര്ധരധര്ഷിണി ദുര്മുഖമര്ഷിണി ഹര്ഷരതേ\nത്രിഭുവനപോഷിണി ശങ്കരതോഷിണി കില്ബിഷമോഷിണി ഘോഷരതേ ।\nദനുജശോഷിണീ ദുര്മദശോഷിണി കില്ബിഷദോഷിണി ദാനവരതേ\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൨ ॥",
+        "iast": "suravaravarṣiṇi durdharadharṣiṇi durmukhamarṣiṇi harṣarate\ntribhuvanapoṣiṇi śaṅkaratoṣiṇi kilbiṣamoṣiṇi ghoṣarate |\ndanujaśoṣiṇī durmadaśoṣiṇi kilbiṣadoṣiṇi dānavarate\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 2 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Bestowing divine boons upon the celestials, overpowering the unvanquished, subduing the arrogant Durmukha demon, delighting in blissful joy! Nourishing the three worlds, pleasing to Shankara, erasing all sins! Victory to You, O Slayer of Mahishasura!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "देवताओं पर श्रेष्ठ वरदानों की वर्षा करने वाली, दुर्धर्ष दैत्यों का दमन करने वाली, दुर्मुख नामक असुर को दण्डित करने वाली, नित्य आनन्द में निमग्न, तीनों लोकों का पोषण करने वाली, भगवान् शंकर को सन्तुष्ट करने वाली, समस्त पापों को हरने वाली, शंख और तुमुल नाद में रमने वाली, दानवों के घमण्ड को सुखाने वाली हे माँ! हे सुन्दर जटा वाली, महिषासुरमर्दिनी गिरिजा! आपकी जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "దేవతలకు ఉత్తమ వరములను వర్షించుదానా! అజేయులైన రాక్షసులను అణచివేయుదానా! దుర్ముఖుడను దానవుని శిక్షించుదానా! సదానంద స్వరూపిణీ! ముల్లోకములను పోషించుచు, పరమేశ్వరుని సంతోషపెట్టుదానా! పాపములను హరించుదానా! శంఖభేరీ నాదములను ప్రీతితో ఆలకించుచు, రాక్షసుల మదమణచుదానా! అందమైన కేశపాశము గల మహిషాసురమర్దినీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தேவர்களுக்கு வரங்களை வாரி வழங்குபவளே! அடக்க முடியாத அரக்கர்களை அழிப்பவளே! துர்முகாசுரனைத் தண்டிப்பவளே! எப்போதும் ஆனந்தத்தில் திளைப்பவளே! மூவுலகையும் காப்பவளே! சங்கரனை மகிழ்விப்பவளே! பாவங்களை அழிப்பவளே! மங்கள முழக்கங்களில் லயிப்பவளே! அசுரர்களின் கொழுப்பை அடக்குபவளே! அழகிய சடைமுடி தரித்து மகிஷாசுரனை மாய்த்த தேவியே! உனக்கு வெற்றி, வெற்றி!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ದೇವತೆಗಳ ಮೇಲೆ ಶ್ರೇಷ್ಠ ವರಗಳನ್ನು ಮಳೆಗರೆಯುವವಳೇ! ದುಷ್ಟ ರಾಕ್ಷಸರನ್ನು ನಿಗ್ರಹಿಸುವವಳೇ! ದುರ್ಮುಖನೆಂಬ ಅಸುರನನ್ನು ಸಂಹರಿಸಿದವಳೇ! ಸದಾ ಆನಂದದಲ್ಲಿ ಮುಳುಗಿರುವವಳೇ! ಮೂರು ಲೋಕಗಳನ್ನು ಪೋಷಿಸಿ, ಶಂಕರನಿಗೆ ಸಂತೋಷವನ್ನು ನೀಡುವವಳೇ! ಪಾಪಗಳನ್ನು ನಾಶಪಡಿಸುವ, ಭೇರೀ-ಶಂಖನಾದಗಳಲ್ಲಿ ಸಂತಸಗೊಳ್ಳುವ, ದಾನವರ ಅಹಂಕಾರವನ್ನು ಅಡಗಿಸುವ ತಾಯೇ! ರಮ್ಯ ಜಟಾಧಾರಿಣಿಯಾದ ಮಹಿಷಾಸುರಮರ್ದಿನಿಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "देवांवर श्रेष्ठ वरदान देणारी, अजिंक्य असुरांचे दमन करणारी, दुर्मुख असुराला शिक्षा करणारी, सदा आनंदात राहणारी, तिन्ही लोकांचे पोषण करणारी, शंकरांना संतुष्ट करणारी, पापांचा नाश करणारी आणि राक्षसांचा गर्व नाहीसा करणारी हे देवी! सुंदर जटा धारण करणाऱ्या महिषासुरमर्दिनी! तुझा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "দেবগণে অভীষ্ট বরদানকারিণী! দুর্ধর্ষ দানবদলনী! দুর্মুখাসুরবিনাশিনী! সতত আনন্দময়ী! ত্রিলোকপালিনী! শঙ্করতোষিণী! পাপহারিণী! শঙ্খতুর্যনাদে প্রমোদিতা এবং দানবকুলের অহংকারচূর্ণকারিণী হে জননী! সুন্দর কেশভূষিতা মহিষাসুরমর্দিনী পার্বতী! তোমার জয় হউক, জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "દેવતાઓ પર શ્રેષ્ઠ વરદાન વરસાવનારાં, દુર્ધર્ષ દાનવોનું દમન કરનારાં, દુર્મુખ નામના દૈત્યને દંડ આપનારાં, નિત્ય આનંદમાં રહેનારાં, ત્રિભુવનનું પોષણ કરનારાં, શંકરને પ્રસન્ન રાખનારાં અને પાપોનો નાશ કરનારાં હે અંબિકા! સુંદર જટાધારી મહિષાસુરમર્દિની! તમારો જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ദേവന്മാർക്ക് ശ്രേഷ്ഠമായ വരങ്ങൾ ചൊരിയുന്നവളേ! ദുർജ്ജയരായ അസുരന്മാരെ തോൽപ്പിക്കുന്നവളേ! ദുർമുഖനെ നിഗ്രഹിച്ചവളേ! സദാനന്ദമയിയായവളേ! ത്രിലോകങ്ങളെയും പോറ്റി പരമശിവനെ സന്തോഷിപ്പിക്കുന്നവളേ! സകലപാപങ്ങളെയും ഹരിക്കുന്നവളും അസുരന്മാരുടെ മദമടക്കുന്നവളുമായ ഹേ ദേവീ! മനോഹരമായ ജടയോടുകൂടിയ മഹിഷാസുരമർദ്ദിനിയായ അംബികേ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଦେବତାମାନଙ୍କ ଉପରେ ଶ୍ରେଷ୍ଠ ବରଦାନ ବୃଷ୍ଟି କରୁଥିବା, ଦୁର୍ଦ୍ଧର୍ଷ ରାକ୍ଷସମାନଙ୍କୁ ଦଳନ କରୁଥିବା, ଦୁର୍ମୁଖ ଦୈତ୍ୟକୁ ଦଣ୍ଡ ଦେଇଥିବା, ନିତ୍ୟ ଆନନ୍ଦମୟୀ, ତ୍ରିଲୋକପାଳିନୀ, ଶଙ୍କରଙ୍କୁ ସନ୍ତୁଷ୍ଟ କରୁଥିବା, ପାପନାଶିନୀ ଏବଂ ଦାନବଙ୍କ ଗର୍ବ ଚୂର୍ଣ୍ଣ କରୁଥିବା ହେ ମାତା ! ସୁନ୍ଦର ଜଟାଯୁକ୍ତା ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 3,
+      "verse_type": "VERSE",
+      "original_sanskrit": "अयि जगदम्ब मदम्ब कदम्बवनप्रियवासिनि हासरते\nशिखरिशिरोमणि तुङ्गहिमालयशृङ्गनिजालयमध्यगते ।\nमधुमधुरे मधुकैटभगञ्जिनि कैटभभञ्जिनि रासरते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ ३ ॥",
+      "iast": "ayi jagadamba madamba kadambavanapriyavāsini hāsaratē\nśikhariśirōmaṇi tuṅgahimālayaśṛṅganijālayamadhyagatē ।\nmadhumadhurē madhukaiṭabhagañjini kaiṭabhabhañjini rāsaratē\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 3 ॥",
+      "transliterations": {
+        "telugu": "అయి జగదమ్బ మదమ్బ కదమ్బవనప్రియవాసిని హాసరతే\nశిఖరిశిరోమణి తుఙ్గహిమాలయశృఙ్గనిజాలయమధ్యగతే ।\nమధుమధురే మధుకైటభగఞ్జిని కైటభభఞ్జిని రాసరతే\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౩ ॥",
+        "tamil": "அயி ஜகதம்ப மதம்ப கதம்பவநப்ரியவாஸிநி ஹாஸரதே\nஶிகரிஶிரோமணி துங்கஹிமாலயஶ்ரு'ங்கநிஜாலயமத்யகதே ।\nமதுமதுரே மதுகைடபகஞ்ஜிநி கைடபபஞ்ஜிநி ராஸரதே\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௩ ॥",
+        "kannada": "ಅಯಿ ಜಗದಮ್ಬ ಮದಮ್ಬ ಕದಮ್ಬವನಪ್ರಿಯವಾಸಿನಿ ಹಾಸರತೇ\nಶಿಖರಿಶಿರೋಮಣಿ ತುಙ್ಗಹಿಮಾಲಯಶೃಙ್ಗನಿಜಾಲಯಮಧ್ಯಗತೇ ।\nಮಧುಮಧುರೇ ಮಧುಕೈಟಭಗಞ್ಜಿನಿ ಕೈಟಭಭಞ್ಜಿನಿ ರಾಸರತೇ\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೩ ॥",
+        "malayalam": "അയി ജഗദമ്ബ മദമ്ബ കദമ്ബവനപ്രിയവാസിനി ഹാസരതേ\nശിഖരിശിരോമണി തുങ്ഗഹിമാലയശൃങ്ഗനിജാലയമധ്യഗതേ ।\nമധുമധുരേ മധുകൈടഭഗഞ്ജിനി കൈടഭഭഞ്ജിനി രാസരതേ\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൩ ॥",
+        "iast": "ayi jagadamba madamba kadambavanapriyavāsini hāsarate\nśikhariśiromaṇi tuṅgahimālayaśṛṅganijālayamadhyagate |\nmadhumadhure madhukaiṭabhagañjini kaiṭabhabhañjini rāsarate\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 3 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "O Mother of the universe, my own mother, fond of dwelling in the fragrant Kadamba groves, rejoicing in smiles! Residing atop the lofty Himalayan peaks, crushing the demons Madhu and Kaitabha! Victory to You, O Slayer of Mahishasura!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे जगन्माता! हे मेरी अपनी माँ! कदम्ब के वनों में वास करने वाली, मन्द-मन्द मधुर हास्य बिखेरने वाली, पर्वतों के शिरोमणि उत्तुंग हिमालय के शिखरों पर अपने दिव्य भवन में विराजने वाली, शहद के समान अत्यन्त मधुर, मधु और कैटभ नामक महादैत्यों का संहार करने वाली, और दिव्य रासलीला में लीन रहने वाली हे भगवती! हे सुन्दर केशों वाली, महिषासुरमर्दिनी शैलपुत्री! आपकी सदा जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఓ జగన్మాతా! నా కన్నతల్లీ! కదంబ వనములందు వసించుట యిష్టపడుదానా! చిరునవ్వులు చిందించుదానా! పర్వతరాజైన హిమాలయ పర్వత శిఖరమునందుగల దివ్య మందిరమున వసించుదానా! తేనెవలె మిక్కిలి మధురమైనదానా! మధుకైటభులను సంహరించినదానా! దివ్య రాసక్రీడలలో మునిగితేలుదానా! సుందర జటాజూటము గల మహిషాసురమర్దినీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அகிலத்தின் அன்னையே! என் ஆருயிர்த் தாயே! கடம்ப வனத்தில் குடியிருக்க விரும்புபவளே! புன்னகை தவழும் முகத்தினளே! பர்வதங்களின் சிகரமான இமயமலையின் உச்சியில் தன் ஆலயத்தில் வீற்றிருப்பவளே! தேனினும் இனியவளே! மது, கைடப அசுரர்களை அழித்தவளே! ஆனந்த நடனத்தில் லயிப்பவளே! எழில் சடை தரித்த மகிஷாசுரமர்த்தினியே! உனக்கு வெற்றி, வெற்றி!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಜಗನ್ಮಾತೆಯೇ! ನನ್ನ ಹೆತ್ತ ತಾಯಿಯೇ! ಕದಂಬ ವನದಲ್ಲಿ ನೆಲೆಸಲು ಇಷ್ಟಪಡುವವಳೇ! ಮಂದಹಾಸ ಬೀರುವವಳೇ! ಪರ್ವತಶ್ರೇಷ್ಠ ಹಿಮಾಲಯದ ಉತ್ತುಂಗ ಶಿಖರದ ಮೇಲಿನ ದಿವ್ಯ ಮಂದಿರದಲ್ಲಿ ವಾಸಿಸುವವಳೇ! ಜೇನಿನಂತೆ ಅತ್ಯಂತ ಮಧುರವಾದವಳೇ! ಮಧು-ಕೈಟಭಾಸುರರನ್ನು ಕೊಂದವಳೇ! ದಿವ್ಯ ನೃತ್ಯದಲ್ಲಿ ಆನಂದಿಸುವ ತಾಯೇ! ರಮ್ಯ ಜಟೆಯನ್ನುಳ್ಳ ಮಹಿಷಾಸುರಮರ್ದಿನಿಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे जगन्माते! हे माझ्या माते! कदंब वनात वास करण्यास आवडणारी, मधुर हास्य करणारी, उत्तुंग हिमालय शिखरावरील आपल्या मंदिरात विराजमान असणारी, मधासारखी गोड, मधू आणि कैटभाचा नाश करणारी हे देवी! सुंदर जटा धारण करणाऱ्या महिषासुरमर्दिनी! तुझा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে জগজ্জননী! হে আমার জননী! কদম্বকাননবাসপ্রিয়ে! মধুরহাস্যময়ী! গিরিশ্রেষ্ঠ হিমালয়ের সমুচ্চ শিখরে নিজ ধামে অধিষ্ঠিতা! মধুরসুধাসম স্বভাবে শোভমানা! মধুকৈটভদলনী! দিব্য রাসরসনিপুণা! সুন্দর কেশপাশভূষিতা মহিষাসুরমর্দিনী পার্বতী! তোমার জয় হউক, জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હે જગતજનની! હે મારી માતા! કદંબવનમાં વાસ કરનારાં, મધુર હાસ્ય વેરનારાં, હિમાલયના ઉચ્ચ શિખરો પર પોતાના દિવ્ય ભવનમાં બિરાજમાન, મધ જેવી મધુર, મધુ-કૈટભનો નાશ કરનારાં હે મા! સુંદર જટાધારી મહિષાસુરમર્દિની! તમારો જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ജഗന്മാതാവേ! എന്റെ അമ്മേ! കടമ്പവനത്തിൽ വസിക്കാൻ കൊതിക്കുന്നവളേ! സുന്ദരമായി മന്ദഹസിക്കുന്നവളേ! ഹിമാലയത്തിന്റെ ഉന്നതശൃംഗങ്ങളിൽ വസിക്കുന്നവളേ! തേൻപോലെ മധുരമായവളേ! മധുകൈടഭന്മാരെ വധിച്ചവളേ! രാസലീലയിൽ മുഴുകുന്നവളേ! സുന്ദരമായ ജടയോടുകൂടിയ മഹിഷാസുരമർദ്ദിനീ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହେ ଜଗଜ୍ଜନନୀ ! ହେ ମୋର ମାତା ! କଦମ୍ବ ବନରେ ବାସ କରୁଥିବା, ମଧୁର ହାସ୍ୟବିକିରଣକାରିଣୀ, ହିମାଳୟ ଶିଖରସ୍ଥିତ ଦିବ୍ୟ ଧାମରେ ବିରାଜମାନା, ମଧୁ ପରି ମିଷ୍ଟ, ମଧୁ-କୈଟଭ ବିନାଶିନୀ ହେ ଭଗବତୀ ! ସୁନ୍ଦର ଜଟାଧାରିଣୀ ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 4,
+      "verse_type": "VERSE",
+      "original_sanskrit": "अयि शतखण्डविखण्डितरुण्डवितुण्डितशुण्डगजाधिपते\nरिपुगजगण्डविदारणचण्डपराक्रमशुण्डमृगाधिपते ।\nनिजभुजदण्डनिपातितखण्डविपातितमुण्डभटाधिपते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ ४ ॥",
+      "iast": "ayi śatakhaṇḍavikhaṇḍitaruṇḍavituṇḍitaśuṇḍagajādhipatē\nripugajagaṇḍavidāraṇacaṇḍaparākramaśuṇḍamṛgādhipatē ।\nnijabhujadaṇḍanipātitakhaṇḍavipātitamuṇḍabhaṭādhipatē\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 4 ॥",
+      "transliterations": {
+        "telugu": "అయి శతఖణ్డవిఖణ్డితరుణ్డవితుణ్డితశుణ్డగజాధిపతే\nరిపుగజగణ్డవిదారణచణ్డపరాక్రమశుణ్డమృగాధిపతే ।\nనిజభుజదణ్డనిపాతితఖణ్డవిపాతితముణ్డభటాధిపతే\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౪ ॥",
+        "tamil": "அயி ஶதகண்டவிகண்டிதருண்டவிதுண்டிதஶுண்டகஜாதிபதே\nரிபுகஜகண்டவிதாரணசண்டபராக்ரமஶுண்டம்ரு'காதிபதே ।\nநிஜபுஜதண்டநிபாதிதகண்டவிபாதிதமுண்டபடாதிபதே\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௪ ॥",
+        "kannada": "ಅಯಿ ಶತಖಣ್ಡವಿಖಣ್ಡಿತರುಣ್ಡವಿತುಣ್ಡಿತಶುಣ್ಡಗಜಾಧಿಪತೇ\nರಿಪುಗಜಗಣ್ಡವಿದಾರಣಚಣ್ಡಪರಾಕ್ರಮಶುಣ್ಡಮೃಗಾಧಿಪತೇ ।\nನಿಜಭುಜದಣ್ಡನಿಪಾತಿತಖಣ್ಡವಿಪಾತಿತಮುಣ್ಡಭಟಾಧಿಪತೇ\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೪ ॥",
+        "malayalam": "അയി ശതഖണ്ഡവിഖണ്ഡിതരുണ്ഡവിതുണ്ഡിതശുണ്ഡഗജാധിപതേ\nരിപുഗജഗണ്ഡവിദാരണചണ്ഡപരാക്രമശുണ്ഡമൃഗാധിപതേ ।\nനിജഭുജദണ്ഡനിപാതിതഖണ്ഡവിപാതിതമുണ്ഡഭടാധിപതേ\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൪ ॥",
+        "iast": "ayi śatakhaṇḍavikhaṇḍitaruṇḍavituṇḍitaśuṇḍagajādhipate\nripugajagaṇḍavidāraṇacaṇḍaparākramaśuṇḍamṛgādhipate |\nnijabhujadaṇḍanipātitakhaṇḍavipātitamuṇḍabhaṭādhipate\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 4 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Severing into a hundred pieces the torsos and trunks of the ferocious battle-elephants, mounted upon the lion whose fierce might tears through enemy beasts, crushing demon warriors with Your powerful arms! Victory to You, O Slayer of Mahishasura!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "शत्रु के विशाल हाथियों की सूंडों और धड़ों को सैकड़ों टुकड़ों में काट डालने वाली, जिनके वाहन सिंह का प्रचण्ड पराक्रम शत्रु-हाथियों के गण्डस्थलों को विदीर्ण कर देता है, और जिन्होंने अपनी बलशाली भुजाओं के प्रहार से शत्रु-सेनापतियों के मस्तकों को धड़ से अलग कर मार गिराया है, हे सुन्दर जटाओं वाली महिषासुरमर्दिनी गिरिराज-पुत्री! आपकी सदा जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "శత్రువుల గజరాజుల తొండములను, మొండెములను నూరు ముక్కలుగా ఖండించినదానా! శత్రువుల ఏనుగుల కుంభస్థలములను చీల్చివేయు భయంకర పరాక్రమముగల సింహమును వాహనముగా కలదానా! తన బాహుబలముచేతనే శత్రు సేనాపతుల శిరస్సులను ఖండించి నేలకూల్చినదానా! అందమైన జడలు ధరించిన మహిషాసురమర్దినీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "பகைவர்களின் போரானைகளின் தும்பிக்கைகளையும் உடல்களையும் நூறு துண்டுகளாக வெட்டி வீழ்த்தியவளே! எதிரிகளின் யானைகளின் மத்தகத்தைப் பிளக்கும் வீரமிக்க சிங்கத்தை வாகனமாகக் கொண்டவளே! தன் தோள்வலியால் அசுர தளபதிகளின் தலைகளை வெட்டிச் சாய்த்தவளே! அழகிய சடைமுடி தரித்து மகிஷாசுரனை வதைத்த தேவியே! உனக்கு வெற்றி, வெற்றி!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಶತ್ರುಗಳ ಆನೆಗಳ ಸೊಂಡಿಲುಗಳನ್ನು ಮತ್ತು ಮೊಂಡೆಗಳನ್ನು ನೂರಾರು ತುಂಡುಗಳಾಗಿ ಸೀಳಿದವಳೇ! ವೈರಿಗಳ ಗಜರಾಜರ ಕುಂಭಸ್ಥಳಗಳನ್ನು ಸೀಳುವ ಪ್ರಚಂಡ ಸಿಂಹವಾಹಿನಿಯೇ! ತನ್ನ ಸ್ವಂತ ತೋಳ್ಬಲದಿಂದ ಶತ್ರು ಸೇನಾಪತಿಗಳ ಶಿರಗಳನ್ನು ಕಡಿದುರುಳಿಸಿದ ತಾಯೇ! ಸುಂದರವಾದ ಜಟೆಯನ್ನು ಹೊಂದಿರುವ ಮಹಿಷಾಸುರಮರ್ದಿನಿಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "शत्रूंच्या हत्तींचे सोंड आणि धड शेकडो तुकड्यांमध्ये तोडणारी, शत्रूंच्या हत्तींची मस्तके फोडणाऱ्या पराक्रमी सिंहावर स्वार होणारी आणि आपल्या भुजांच्या बळाने शत्रूंच्या सेनापतींचे मस्तक तोडणारी हे महादेवी! सुंदर जटा धारण करणाऱ्या महिषासुरमर्दिनी! तुझा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "শত্রুগজেন্দ্রসমূহের শুণ্ড ও কবন্ধ শতখণ্ডে ছিন্নকারিণী! শত্রুহস্তীদের গণ্ডস্থল বিদীর্ণকরণে উদ্দাম বিক্রমশালী সিংহবাহনা! নিজ বাহুদণ্ডের তীব্র আঘাতে রণোন্মত্ত সৈন্যপতিদের শিরশ্ছেদকারিণী! সুন্দর কেশভূষিতা মহিষাসুরমর্দিনী পার্বতী! তোমার জয় হউক, জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "શત્રુઓના ગજરાજોની સૂંઢ અને ધડના સેંકડો ટુકડા કરી નાખનારાં, જેમનું વાહન સિંહ શત્રુઓના હાથીઓના મસ્તક ચીરી નાખે છે તેવાં, અને પોતાની ભુજાઓના બળથી શત્રુ સેનાપતિઓના મસ્તક કાપી પાડનારાં હે માં! સુંદર જટાધારી મહિષાસુરમર્દિની! તમારો જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ശത്രുക്കളുടെ പടയാനകളുടെ തുമ്പിക്കൈകളെയും ഉടലുകളെയും നൂറു കഷണങ്ങളായി വെട്ടിനുറുക്കിയവളേ! ശത്രുഹസ്തികളുടെ കുംഭസ്ഥലം പിളർക്കുന്ന ഉഗ്രപരാക്രമിയായ സിംഹത്തിന്മേൽ ഏറിയവളേ! സ്വന്തം ബാഹുബലത്താൽ അസുരസൈന്യാധിപന്മാരുടെ തലയറുത്തുവീഴ്ത്തിയവളേ! രമ്യകപർദ്ദിനിയായ മഹിഷാസുരമർദ്ദിനീ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଶତ୍ରୁମାନଙ୍କ ହାତୀମାନଙ୍କ ଶୁଣ୍ଢ ଓ ଶରୀରକୁ ଶହ ଶହ ଖଣ୍ଡ କରି କାଟିଦେଇଥିବା, ଶତ୍ରୁ-ଗଜରାଜମାନଙ୍କ କୁମ୍ଭସ୍ଥଳ ବିଦୀର୍ଣ୍ଣ କରୁଥିବା ପରାକ୍ରମୀ ସିଂହବାହିନୀ, ଏବଂ ନିଜ ବାହୁବଳରେ ଶତ୍ରୁ ସେନାପତିମାନଙ୍କ ମସ୍ତକ ଛେଦନ କରିଥିବା ହେ ମାତା ! ସୁନ୍ଦର ଜଟାଧାରିଣୀ ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 5,
+      "verse_type": "VERSE",
+      "original_sanskrit": "अयि रणदुर्मदशत्रुवधोदितदुर्धरनिर्जरशक्तिभृते\nचतुरविचारधुरीणमहाशिवदूतकृतप्रमथाधिपते ।\nदुरितदुरीहदुराशयदुर्मतिदानवदूतकृतान्तगते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ ५ ॥",
+      "iast": "ayi raṇadurmadaśatruvadhōditadurdharanirjaraśaktibhṛtē\ncaturavicāradhurīṇamahāśivadūtakṛtapramathādhipatē ।\nduritadurīhadurāśayadurmatidānavadūtakṛtāntagatē\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 5 ॥",
+      "transliterations": {
+        "telugu": "అయి రణదుర్మదశత్రువధోదితదుర్ధరనిర్జరశక్తిభృతే\nచతురవిచారధురీణమహాశివదూతకృతప్రమథాధిపతే ।\nదురితదురీహదురాశయదుర్మతిదానవదూతకృతాన్తగతే\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౫ ॥",
+        "tamil": "அயி ரணதுர்மதஶத்ருவதோதிததுர்தரநிர்ஜரஶக்திப்ரு'தே\nசதுரவிசாரதுரீணமஹாஶிவதூதக்ரு'தப்ரமதாதிபதே ।\nதுரிததுரீஹதுராஶயதுர்மதிதாநவதூதக்ரு'தாந்தகதே\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௫ ॥",
+        "kannada": "ಅಯಿ ರಣದುರ್ಮದಶತ್ರುವಧೋದಿತದುರ್ಧರನಿರ್ಜರಶಕ್ತಿಭೃತೇ\nಚತುರವಿಚಾರಧುರೀಣಮಹಾಶಿವದೂತಕೃತಪ್ರಮಥಾಧಿಪತೇ ।\nದುರಿತದುರೀಹದುರಾಶಯದುರ್ಮತಿದಾನವದೂತಕೃತಾನ್ತಗತೇ\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೫ ॥",
+        "malayalam": "അയി രണദുര്മദശത്രുവധോദിതദുര്ധരനിര്ജരശക്തിഭൃതേ\nചതുരവിചാരധുരീണമഹാശിവദൂതകൃതപ്രമഥാധിപതേ ।\nദുരിതദുരീഹദുരാശയദുര്മതിദാനവദൂതകൃതാന്തഗതേ\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൫ ॥",
+        "iast": "ayi raṇadurmadaśatruvadhoditadurdharanirjaraśaktibhṛte\ncaturavicāradhurīṇamahāśivadūtakṛtapramathādhipate |\nduritadurīhadurāśayadurmatidānavadūtakṛtāntagate\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 5 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Manifesting the irresistible collective energy of the celestials to destroy battle-crazed demons, commissioning Shiva Himself as emissary to the arrogant asura hosts, bringing destruction upon wicked messengers! Victory to You, O Slayer of Mahishasura!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "रणोन्मत्त शत्रुओं के वध के लिए दुर्धर्ष देव-शक्तियों को धारण करने वाली, जिन्होंने चतुर विचारकों में अग्रणी देवाधिदेव शिव को अपना दूत बनाया था, और कुटिल, दुराचारी, दुर्बुद्धि दानव-दूतों का काल बन जाने वाली हे माँ! हे मनोहर जटाजूट वाली, महिषासुरमर्दिनी शैलपुत्री! आपकी सदा जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "యుద్ధోన్మాదులైన శత్రువులను సంహరించుటకై దుర్ధరమైన దివ్యశక్తులను ధరించినదానా! ప్రమథగణాధిపతియైన పరమశివుని చతురతతో తన రాయబారిగా పంపినదానా! దుర్బుద్ధిగల రాక్షసదూతలకు యమునివలె మృత్యువై పరిణమించినదానా! అందమైన కేశములు గల మహిషాసురమర్దినీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "போர்வெறி கொண்ட அசுரர்களை அழிக்கத் தேவர்களின் ஆற்றல்களைத் தாங்கியவளே! மகாஞானியான பரமசிவனையே தன் தூதுவனாக அசுரர்களிடம் அனுப்பியவளே! தீய எண்ணம் கொண்ட அசுர தூதர்களுக்கு எமனாக விளங்கியவளே! எழில்மிகு சடைமுடி தரித்து மகிஷாசுரனை வதைத்த தேவியே! உனக்கு வெற்றி, வெற்றி!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಯುದ್ಧೋನ್ಮತ್ತ ವೈರಿಗಳ ಸಂಹಾರಕ್ಕಾಗಿ ಅಪ್ರತಿಮ ದೇವಶಕ್ತಿಗಳನ್ನು ಧರಿಸಿದವಳೇ! ಪ್ರಮಥಗಣಗಳ ಒಡೆಯನಾದ ಮಹಾದೇವ ಶಿವನನ್ನೇ ತನ್ನ ದೂತನನ್ನಾಗಿ ಕಳುಹಿಸಿದ ಜಾಣೆಯಾದ ದೇವಿಯೇ! ದುಷ್ಟ ರಾಕ್ಷಸದೂತರಿಗೆ ಯಮನಂತಾಗಿ ಪರಿಣಮಿಸಿದ ತಾಯೇ! ರಮ್ಯ ಜಟೆಯನ್ನುಳ್ಳ ಮಹಿಷಾಸುರಮರ್ದಿನಿಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "युद्धोन्मत्त शत्रूंचा नाश करण्यासाठी दुर्धर देवशक्ती धारण करणारी, प्रमथांचा स्वामी असणाऱ्या शिवालाच आपला दूत बनवणारी, आणि दुष्ट राक्षस दूतांसाठी काळ ठरणारी हे देवी! सुंदर जटा धारण करणाऱ्या महिषासुरमर्दिनी! तुझा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "রণোন্মত্ত শত্রুবিনাশার্থ সমুত্থিত দুর্ধর্ষ অমরশক্তিধারিণী! প্রমথপতি মহাদেব শিবকে যাঁহার চতুর দূতরূপে প্রেরণ করিয়াছিলেন! দুরভিসন্ধিপরায়ণ কুটিল দানবদূতদের জন্য সাক্ষাৎ কালস্বরূপিণী! সুন্দর কেশভূষিতা মহিষাসুরমর্দিনী পার্বতী! তোমার জয় হউক, জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "યુદ્ધમાં ઉન્મત્ત શત્રુઓનો નાશ કરવા અજેય દિવ્ય શક્તિઓ ધારણ કરનારાં, જેમણે મહાદેવ શિવને પોતાના દૂત બનાવ્યા હતાં, અને દુષ્ટ દાનવોના દૂતો માટે કાળ બનનારાં હે જગદંબા! સુંદર જટાધારી મહિષાસુરમર્દિની! તમારો જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "യുദ്ധഭ്രാന്തരായ ശത്രുക്കളെ ഒടുക്കാൻ അജയ്യമായ ദൈവികശക്തികൾ പൂണ്ടവളേ! ജ്ഞാനിയായ പരമശിവനെത്തന്നെ തന്റെ ദൂതനാക്കി അയച്ചവളേ! ദുഷ്ടരായ അസുരദൂതന്മാർക്ക് കാലനായി മാറിയവളേ! രമ്യകപർദ്ദിനിയായ മഹിഷാസുരമർദ്ദിനീ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯୁଦ୍ଧୋନ୍ମତ୍ତ ଶତ୍ରୁମାନଙ୍କୁ ବିନାଶ କରିବା ପାଇଁ ଦୁର୍ଦ୍ଧର୍ଷ ଦୈବୀ ଶକ୍ତି ଧାରଣ କରିଥିବା, ପ୍ରମଥାଧିପତି ମହାଦେବ ଶିବଙ୍କୁ ନିଜର ଦୂତ କରିଥିବା, ଏବଂ ଦୁଷ୍ଟ ଦାନବ-ଦୂତମାନଙ୍କ ପାଇଁ କାଳସ୍ୱରୂପା ହୋଇଥିବା ହେ ମାତା ! ସୁନ୍ଦର ଜଟାଧାରିଣୀ ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 6,
+      "verse_type": "VERSE",
+      "original_sanskrit": "अयि शरणागतवैरिवधूवदनार्चितचाटुवदान्यविधे\nविदुषवरार्चितपद्मपदाखिलविश्वपते दितिजार्तिहरे ।\nअविचलभक्तिकृपालुजनेष्वभयप्रदहस्तसरोरुहभाक्\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ ६ ॥",
+      "iast": "ayi śaraṇāgatavairivadhūvadanārcitacāṭuvadānyavidhē\nviduṣavarārcitapadmapadākhilaviśvapatē ditijārtiharē ।\navicalabhaktikṛpālujanēṣvabhayapradahastasarōruhabhāk\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 6 ॥",
+      "transliterations": {
+        "telugu": "అయి శరణాగతవైరివధూవదనార్చితచాటువదాన్యవిధే\nవిదుషవరార్చితపద్మపదాఖిలవిశ్వపతే దితిజార్తిహరే ।\nఅవిచలభక్తికృపాలుజనేష్వభయప్రదహస్తసరోరుహభాక్\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౬ ॥",
+        "tamil": "அயி ஶரணாகதவைரிவதூவதநார்சிதசாடுவதாந்யவிதே\nவிதுஷவரார்சிதபத்மபதாகிலவிஶ்வபதே திதிஜார்திஹரே ।\nஅவிசலபக்திக்ரு'பாலுஜநேஷ்வபயப்ரதஹஸ்தஸரோருஹபாக்\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௬ ॥",
+        "kannada": "ಅಯಿ ಶರಣಾಗತವೈರಿವಧೂವದನಾರ್ಚಿತಚಾಟುವದಾನ್ಯವಿಧೇ\nವಿದುಷವರಾರ್ಚಿತಪದ್ಮಪದಾಖಿಲವಿಶ್ವಪತೇ ದಿತಿಜಾರ್ತಿಹರೇ ।\nಅವಿಚಲಭಕ್ತಿಕೃಪಾಲುಜನೇಷ್ವಭಯಪ್ರದಹಸ್ತಸರೋರುಹಭಾಕ್\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೬ ॥",
+        "malayalam": "അയി ശരണാഗതവൈരിവധൂവദനാര്ചിതചാടുവദാന്യവിധേ\nവിദുഷവരാര്ചിതപദ്മപദാഖിലവിശ്വപതേ ദിതിജാര്തിഹരേ ।\nഅവിചലഭക്തികൃപാലുജനേഷ്വഭയപ്രദഹസ്തസരോരുഹഭാക്\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൬ ॥",
+        "iast": "ayi śaraṇāgatavairivadhūvadanārcitacāṭuvadānyavidhe\nviduṣavarārcitapadmapadākhilaviśvapate ditijārtihare |\navicalabhaktikṛpālujaneṣvabhayapradahastasaroruhabhāk\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 6 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Bestowing mercy even upon the pleading wives of surrendering enemies, whose lotus feet are revered by great sages, dispelling the afflictions of creation, extending the lotus hand of fearlessness to steady devotees! Victory to You, O Slayer of Mahishasura!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "शरणागत शत्रु-पत्नियों के दीन वचनों को सुनकर उन्हें अभय का वरदान देने वाली, श्रेष्ठ विद्वानों द्वारा पूजित चरणकमल वाली, अखिल ब्रह्माण्ड की स्वामिनी, सबकी पीड़ा हरने वाली, और निष्काम भक्ति करने वाले भक्तों को अपने वरद करकमल से अभयदान देने वाली हे करुणामयी माँ! हे सुन्दर जटाओं वाली, महिषासुरमर्दिनी शैलपुत्री! आपकी सदा जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "శరణువేడిన శత్రువుల భార్యల ప్రార్థనలను మన్నించి కరుణతో అభయమిచ్చుదానా! జ్ఞానులచే పూజింపబడిన పాదపద్మములు కలదానా! అఖిల విశ్వమునకు యజమానురాలై సర్వబాధలను నివారించుదానా! నిశ్చల భక్తిగల భక్తులకు అభయమిచ్చు దివ్య హస్తపద్మము కలదానా! అందమైన కేశపాశము గల మహిషాసురమర్దినీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "சரண் புகுந்த பகைவர்களின் மனைவிகளின் கெஞ்சுதலைக் கேட்டு அடைக்கலம் தரும் வள்ளலே! ஞானிகளால் பூஜிக்கப்படும் திருவடிகளை உடையவளே! அகிலாண்ட நாயகியே! துன்பங்களை நீக்குபவளே! நிலையான பக்தி கொண்டோருக்குத் தன் தாமரைக் கரங்களால் அபயமளிக்கும் அன்னையே! எழில் சடை தரித்த மகிஷாசுரமர்த்தினியே! உனக்கு வெற்றி, வெற்றி!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಶರಣುಬಂದ ಶತ್ರುಗಳ ಪತ್ನಿಯರ ಪ್ರಾರ್ಥನೆಯನ್ನು ಮನ್ನಿಸಿ ಕರುಣೆಯಿಂದ ಅಭಯ ನೀಡುವ ಮಹಾದಾತೆಯೇ! ಜ್ಞಾನಿಗಳಿಂದ ಪೂಜಿಸಲ್ಪಡುವ ಚರಣಕಮಲಗಳುಳ್ಳ, ಅಖಿಲ ವಿಶ್ವದ ನಾಯಕಿಯೇ! ಎಲ್ಲರ ದುಃಖಗಳನ್ನು ನಿವಾರಿಸುವ, ಅಚಲ ಭಕ್ತಿಯುಳ್ಳ ಭಕ್ತರಿಗೆ ಅಭಯಹಸ್ತವನ್ನು ನೀಡುವ ತಾಯೇ! ರಮ್ಯ ಜಟಾಧಾರಿಣಿಯಾದ ಮಹಿಷಾಸುರಮರ್ದಿನಿಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "शरणागत शत्रूंच्या स्त्रियांच्या आर्त हाकेला ओ देऊन अभय देणारी, विद्वानांनी पूजलेले चरणकमल असणारी, विश्वाची स्वामिनी, सर्वांचे दुःख हरण करणारी आणि भक्तांना अभयहस्त देणारी हे दयाळू देवी! सुंदर जटा धारण करणाऱ्या महिषासुरमर्दिनी! तुझा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "শরণাগত শত্রুপত্নীদের করুণ প্রার্থনায় সদয়া হইয়া অভয়দানকারিণী! তত্ত্বজ্ঞ পণ্ডিতগণের পূজিতচরণা নিখিল বিশ্বেশ্বরী! নিখিল তাপহারিণী! অচলা ভক্তিযুক্ত ভক্তগণকে বরাভয়প্রদ হস্তকমলে রক্ষাকারিণী! সুন্দর কেশভূষিতা মহিষাসুরমর্দিনী পার্বতী! তোমার জয় হউক, জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "શરણે આવેલા શત્રુઓની પત્નીઓની પ્રાર્થના સાંભળીને તેમને અભય આપનારાં, જ્ઞાનીઓ દ્વારા પૂજિત ચરણકમળવાળાં, સમગ્ર વિશ્વનાં સ્વામિની, ભક્તોનાં કષ્ટો હરનારાં અને અચળ ભક્તિવાળા જીવોને અભયહસ્ત આપનારાં હે માં! સુંદર જટાધારી મહિષાસુરમર્દિની! તમારો જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ശരണം പ്രാപിച്ച ശത്രുക്കളുടെ പത്നിമാർ അപേക്ഷിച്ചപ്പോൾ അവർക്ക് അഭയം നൽകിയ ഔദാര്യവതിയായവളേ! ജ്ഞാനികൾ പൂജിക്കുന്ന പാദപത്മങ്ങളുള്ള ലോകനാഥേ! ദുരിതങ്ങളകറ്റുന്നവളേ! ഭക്തിയുള്ള ജനങ്ങൾക്ക് താമരക്കൈകളാൽ അഭയമേകുന്ന അമ്മേ! രമ്യകപർദ്ദിനിയായ മഹിഷാസുരമർദ്ദിനീ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଶରଣାଗତ ଶତ୍ରୁ-ପତ୍ନୀମାନଙ୍କ ପ୍ରାର୍ଥନାରେ ସନ୍ତୁଷ୍ଟ ହୋଇ ଅଭୟ ଦେଇଥିବା, ଜ୍ଞାନୀମାନଙ୍କ ଦ୍ୱାରା ପୂଜିତ ଚରଣକମଳଯୁକ୍ତା, ନିଖିଳ ବିଶ୍ୱେଶ୍ୱରୀ, ସମସ୍ତ ଦୁଃଖହାରିଣୀ, ଏବଂ ଅଚଳ ଭକ୍ତି ଥିବା ଭକ୍ତମାନଙ୍କୁ ଅଭୟହସ୍ତ ପ୍ରଦାନକାରିଣୀ ହେ ମାତା ! ସୁନ୍ଦର ଜଟାଧାରିଣୀ ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 7,
+      "verse_type": "VERSE",
+      "original_sanskrit": "अयि निजहुङ्कृतमात्रनिराकृतधूम्रविलोचनधूम्रशते\nसमरविशोषितशोणितबीजसमुद्भवबीजलताविकृते ।\nशिवशिवशुम्भनिशुम्भमहाहवतर्पितभूतपिशाचरते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ ७ ॥",
+      "iast": "ayi nijahuṅkṛtamātranirākṛtadhūmravilōcanadhūmraśatē\nsamaraviśōṣitaśōṇitabījasamudbhavabījalatāvikṛtē ।\nśivaśivaśumbhaniśumbhamahāhavatarpitabhūtapiśācaratē\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 7 ॥",
+      "transliterations": {
+        "telugu": "అయి నిజహుఙ్కృతమాత్రనిరాకృతధూమ్రవిలోచనధూమ్రశతే\nసమరవిశోషితశోణితబీజసముద్భవబీజలతావికృతే ।\nశివశివశుమ్భనిశుమ్భమహాహవతర్పితభూతపిశాచరతే\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౭ ॥",
+        "tamil": "அயி நிஜஹுங்க்ரு'தமாத்ரநிராக்ரு'ததூம்ரவிலோசநதூம்ரஶதே\nஸமரவிஶோஷிதஶோணிதபீஜஸமுத்பவபீஜலதாவிக்ரு'தே ।\nஶிவஶிவஶும்பநிஶும்பமஹாஹவதர்பிதபூதபிஶாசரதே\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௭ ॥",
+        "kannada": "ಅಯಿ ನಿಜಹುಙ್ಕೃತಮಾತ್ರನಿರಾಕೃತಧೂಮ್ರವಿಲೋಚನಧೂಮ್ರಶತೇ\nಸಮರವಿಶೋಷಿತಶೋಣಿತಬೀಜಸಮುದ್ಭವಬೀಜಲತಾವಿಕೃತೇ ।\nಶಿವಶಿವಶುಮ್ಭನಿಶುಮ್ಭಮಹಾಹವತರ್ಪಿತಭೂತಪಿಶಾಚರತೇ\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೭ ॥",
+        "malayalam": "അയി നിജഹുങ്കൃതമാത്രനിരാകൃതധൂമ്രവിലോചനധൂമ്രശതേ\nസമരവിശോഷിതശോണിതബീജസമുദ്ഭവബീജലതാവികൃതേ ।\nശിവശിവശുമ്ഭനിശുമ്ഭമഹാഹവതര്പിതഭൂതപിശാചരതേ\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൭ ॥",
+        "iast": "ayi nijahuṅkṛtamātranirākṛtadhūmravilocanadhūmraśate\nsamaraviśoṣitaśoṇitabījasamudbhavabījalatāvikṛte |\nśivaśivaśumbhaniśumbhamahāhavatarpitabhūtapiśācarate\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 7 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Destroying the demon Dhumralochana with a solitary roar of Hum, drinking the blood of Raktabija so no demon seeds could multiply, delighting the celestial spirits in the destruction of Shumbha and Nishumbha! Victory to You, O Slayer of Mahishasura!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "केवल अपनी 'हुंकार' मात्र से ही जिसने धूम्रलोचन और उसकी सैकड़ों असुर सेना को भस्म कर दिया, युद्धभूमि में रक्तबीज के रक्त से उत्पन्न होने वाले असंख्य दानवों के बीज को सुखा देने वाली, और शुम्भ-निशुम्भ के भीषण महासंग्राम में भूत-पिशाचों को तृप्त कर देने वाली हे जगदम्बा! हे सुन्दर जटाओं वाली, महिषासुर का संहार करने वाली शैलपुत्री! आपकी सदा जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "తన ఒక్క 'హుంకారము' తోనే ధూమ్రలోచనుని, అతని వందలాది సేనలను భస్మము చేసినదానా! యుద్ధరంగమున రక్తంబొట్లు నేలరాలక మునుపే రక్తబీజుని రక్తప్రవాహమును త్రాగి ಅವನ సంతతిని అంతమొందించినదానా! శుంభ-నిశుంభులతో జరిగిన మహా సంగ్రామమున భూతప్రేతములను తృప్తిపరచినదానా! అందమైన కేశములు గల మహిషాసురమర్దినీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தன் ஒரு 'ஹூம்கார' சத்தத்தினாலேயே தூம்ரலோசனனையும் அவனது நூற்றுக்கணக்கான படைகளையும் சாம்பலாக்கியவளே! போர்க்களத்தில் ரத்தபீஜனின் குருதியிலிருந்து தோன்றிய அரக்கக் கூட்டத்தின் விதையை முற்றிலும் உலர்த்தியவளே! சும்ப-நிசும்பர்களுடனான போரில் பூதகணங்களைத் திருப்திப்படுத்தியவளே! எழில் சடை தரித்த மகிஷாசுரமர்த்தினியே! உனக்கு வெற்றி, வெற்றி!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಕೇವಲ ತನ್ನ 'ಹುಂಕಾರ' ಮಾತ್ರದಿಂದಲೇ ಧೂಮ್ರಲೋಚನನನ್ನೂ ಆತನ ನೂರಾರು ಸೇನೆಯನ್ನೂ ಭಸ್ಮಮಾಡಿದವಳೇ! ರಣರಂಗದಲ್ಲಿ ರಕ್ತಬೀಜಾಸುರನ ರಕ್ತದಿಂದ ಹುಟ್ಟುತ್ತಿದ್ದ ರಾಕ್ಷಸ ಸಂತತಿಯನ್ನು ಪೂರ್ತಿಯಾಗಿ ಬತ್ತಿಸಿ ನಿರ್ನಾಮಮಾಡಿದವಳೇ! ಶುಂಭ-ನಿಶುಂಭರ ಮಹಾಯುದ್ಧದಲ್ಲಿ ಭೂತ-ಪಿಶಾಚಿಗಳನ್ನು ತೃಪ್ತಿಪಡಿಸಿದ ಮಹಾದೇವಿಯೇ! ರಮ್ಯ ಜಟೆಯನ್ನುಳ್ಳ ಮಹಿಷಾಸುರಮರ್ದಿನಿಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "केवळ एका 'हुंकारा'ने धुम्रलोचन आणि त्याच्या सैन्याला भस्म करणारी, रणांगणावर रक्तबीजाच्या रक्ताच्या प्रत्येक थेंबातून उत्पन्न होणाऱ्या असुरांचा बीमोड करणारी, आणि शुंभ-निशुंभाच्या महायुद्धात भूत-पिशाच्चांना तृप्त करणारी हे महाशक्ती! सुंदर जटा धारण करणाऱ्या महिषासुरमर्दिनी! तुझा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যিনি এক হুংকারমাত্রেই ধূম্রলোচন ও তাহার শত শত সেনাকে ভস্মীভূত করিয়াছিলেন! সমরক্ষেত্রে রক্তবীজের শোণিতবিন্দুসম্ভূত দানববংশ সম্পূর্ণরূপে শুষ্ক করিয়াছিলেন! এবং শুম্ভ-নিশুম্ভের মহাসংগ্রামে ভূতপিশাচগণকে পরিতৃপ্ত করিয়াছিলেন! সুন্দর কেশভূষিতা মহিষাসুরমর্দিনী পার্বতী! তোমার জয় হউক, জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "માત્ર એક 'હુંકાર'થી ધૂમ્રલોચન અને તેની સેનાને ભસ્મ કરી દેનારાં, રણભૂમિમાં રક્તબીજના રક્તથી ઉત્પન્ન થતી દાનવોની વેલને સૂકવી નાખનારાં, અને શુંભ-નિશુંભના મહાસંગ્રામમાં ભૂત-પિશાચોને તૃપ્ત કરનારાં હે મહામાયા! સુંદર જટાધારી મહિષાસુરમર્દિની! તમારો જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സ്വന്തം 'ഹുങ്കാരം'കൊണ്ടുമാത്രം ധൂമ്രലോചനനെയും അവന്റെ നൂറുകണക്കിന് പടയാളികളെയും ചാരമാക്കിയവളേ! യുദ്ധക്കളത്തിൽ രക്തബീജന്റെ ചോരയിൽനിന്നുണ്ടായ അസുരപരമ്പരയെ മുഴുവൻ വറ്റിച്ചുകളഞ്ഞവളേ! ശുംഭനിശുംഭയുദ്ധത്തിൽ ഭൂതപ്രേതങ്ങളെ തൃപ്തിപ്പെടുത്തിയ അമ്മേ! രമ്യകപർദ്ദിനിയായ മഹിഷാസുരമർദ്ദിനീ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ନିଜର ଏକ 'ହୁଙ୍କାର' ମାତ୍ରରେ ଧୂମ୍ରଲୋଚନ ଓ ତାର ସୈନ୍ୟମାନଙ୍କୁ ଭସ୍ମ କରିଥିବା, ଯୁଦ୍ଧକ୍ଷେତ୍ରରେ ରକ୍ତବୀଜର ରକ୍ତରୁ ଜନ୍ମ ନେଉଥିବା ଦାନବ-ବଂଶକୁ ସମୂଳେ ଶୁଷ୍କ କରିଥିବା, ଏବଂ ଶୁମ୍ଭ-ନିଶୁମ୍ଭଙ୍କ ମହାସଂଗ୍ରାମରେ ଭୂତପିଶାଚମାନଙ୍କୁ ତୃପ୍ତ କରିଥିବା ହେ ମହାଶକ୍ତି ! ସୁନ୍ଦର ଜଟାଧାରିଣୀ ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 8,
+      "verse_type": "VERSE",
+      "original_sanskrit": "धनुरनुषङ्गविमुक्तशरोत्कलिकीर्णहरोपहताङ्गगते\nसरलविचित्रसुवर्णविचित्रविचित्रबभ्रुविचित्ररते ।\nअमृतरसप्रसृतावयवे मदिरेक्षणविह्वलभक्तहृते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ ८ ॥",
+      "iast": "dhanuranuṣaṅgavimuktaśarōtkalikīrṇaharōpahatāṅgagatē\nsaralavicitrasuvarṇavicitravicitrababhruvicitraratē ।\namṛtarasaprasṛtāvayavē madirēkṣaṇavihvalabhaktahṛtē\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 8 ॥",
+      "transliterations": {
+        "telugu": "ధనురనుషఙ్గవిముక్తశరోత్కలికీర్ణహరోపహతాఙ్గగతే\nసరలవిచిత్రసువర్ణవిచిత్రవిచిత్రబభ్రువిచిత్రరతే ।\nఅమృతరసప్రసృతావయవే మదిరేక్షణవిహ్వలభక్తహృతే\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౮ ॥",
+        "tamil": "தநுரநுஷங்கவிமுக்தஶரோத்கலிகீர்ணஹரோபஹதாங்ககதே\nஸரலவிசித்ரஸுவர்ணவிசித்ரவிசித்ரபப்ருவிசித்ரரதே ।\nஅம்ரு'தரஸப்ரஸ்ரு'தாவயவே மதிரேக்ஷணவிஹ்வலபக்தஹ்ரு'தே\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௮ ॥",
+        "kannada": "ಧನುರನುಷಙ್ಗವಿಮುಕ್ತಶರೋತ್ಕಲಿಕೀರ್ಣಹರೋಪಹತಾಙ್ಗಗತೇ\nಸರಲವಿಚಿತ್ರಸುವರ್ಣವಿಚಿತ್ರವಿಚಿತ್ರಬಭ್ರುವಿಚಿತ್ರರತೇ ।\nಅಮೃತರಸಪ್ರಸೃತಾವಯವೇ ಮದಿರೇಕ್ಷಣವಿಹ್ವಲಭಕ್ತಹೃತೇ\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೮ ॥",
+        "malayalam": "ധനുരനുഷങ്ഗവിമുക്തശരോത്കലികീര്ണഹരോപഹതാങ്ഗഗതേ\nസരലവിചിത്രസുവര്ണവിചിത്രവിചിത്രബഭ്രുവിചിത്രരതേ ।\nഅമൃതരസപ്രസൃതാവയവേ മദിരേക്ഷണവിഹ്വലഭക്തഹൃതേ\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൮ ॥",
+        "iast": "dhanuranuṣaṅgavimuktaśarotkalikīrṇaharopahatāṅgagate\nsaralavicitrasuvarṇavicitravicitrababhruvicitrarate |\namṛtarasaprasṛtāvayave madirekṣaṇavihvalabhaktahṛte\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 8 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Unleashing showers of arrows from Your celestial bow, radiant in dazzling golden ornaments of intricate design, whose divine limbs overflow with nectar, enchanting the hearts of ardent devotees! Victory to You, O Slayer of Mahishasura!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "अपने धनुष से छोड़े गए बाणों की अनवरत वर्षा से शत्रुओं के शरीरों को विदीर्ण कर देने वाली, सुवर्णमयी विचित्र और बहुरंगी तीरों से रणक्रीड़ा करने वाली, जिनके दिव्य अंग अमृत-रस के प्रवाह से आप्लावित हैं, और जिनकी मदभरी प्रेममयी चितवन भक्तों के हृदयों को मोह लेती है, हे सुन्दर जटाओं वाली, महिषासुरमर्दिनी शैलपुत्री! आपकी सदा जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "తన వింటినుండి విడువబడిన బాణముల వర్షముచే శత్రువుల శరీరములను ఛిన్నాభిన్నము చేయుదానా! బంగారముతోను చిత్రవిచిత్ర రంగులతోను కూడిన బాణములను సంధించుదానా! అమృతరసము చిందుచున్న సుందర దేహము కలదానా! తన మధురమైన కడకంటి చూపులతో భక్తుల హృదయములను ఆకర్షించుదానా! సుందర కేశములు గల మహిషాసురమర్దినీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "வில்லில் இருந்து புறப்படும் பாணங்களால் பகைவர்களின் உடல்களைத் துளைப்பவளே! விசித்திரமான தங்க அம்புகளை எய்து போர்க்களத்தில் ஆடுபவளே! அமுத ஊற்றெனப் பொழியும் திருமேனி கொண்டவளே! தன் பரவசமான கடைக்கண் பார்வையால் பக்தர்களின் உள்ளத்தைக் கொள்ளைகொள்பவளே! அழகிய சடைமுடி தரித்து மகிஷாசுரனை வதைத்த தேவியே! உனக்கு வெற்றி, வெற்றி!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ತನ್ನ ಧನುಸ್ಸಿನಿಂದ ಹೊರಹೊಮ್ಮಿದ ಬಾಣಗಳ ಮಳೆಯಿಂದ ಶತ್ರುಗಳ ಅಂಗಾಂಗಗಳನ್ನು ಛಿದ್ರಮಾಡಿದವಳೇ! ವಿಚಿತ್ರವಾದ ಚಿನ್ನದ ಬಣ್ಣಬಣ್ಣದ ಬಾಣಗಳಿಂದ ಸಮರಲೀಲೆ ಮಾಡುವವಳೇ! ಅಮೃತರಸದಿಂದ ತುಂಬಿದ ಮಂಗಳಕರ ಶರೀರವುಳ್ಳ, ಮಧುರವಾದ ಕಣ್ಣೋಟದಿಂದ ಭಕ್ತರ ಹೃದಯಗಳನ್ನು ಸೆಳೆಯುವ ತಾಯೇ! ರಮ್ಯ ಜಟೆಯನ್ನುಳ್ಳ ಮಹಿಷಾಸುರಮರ್ದಿನಿಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "आपल्या धनुष्यातून सुटलेल्या बाणांच्या वर्षावाने शत्रूंचे अवयव विदीर्ण करणारी, सुवर्ण आणि रंगीबेरंगी बाणांनी क्रीडा करणारी, अंगातून अमृताचा पाझर वाहणारी आणि प्रेमळ दृष्टीने भक्तांचे हृदय जिंकणारी हे देवी! सुंदर जटा धारण करणाऱ्या महिषासुरमर्दिनी! तुझा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "নিজ ধনুর্বিমুক্ত শরবৃষ্টিতে শত্রুদেহ ছিন্নভিন্নকারিণী! বিচিত্র সুবর্ণময় ও বহুবিধ বর্ণোজ্জ্বল বাণনিক্ষেপে রণরঙ্গকারিণী! অমৃতরসপ্রস্রবণসম অঙ্গশোভিতা এবং মদির মধুর নয়নে ভক্তহৃদয়হরণকারিণী! সুন্দর কেশভূষিতা মহিষাসুরমর্দিনী পার্বতী! তোমার জয় হউক, জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "પોતાના ધનુષ્યમાંથી છૂટેલાં બાણોની વર્ષાથી શત્રુઓનાં અંગો વિદીર્ણ કરનારાં, સુવર્ણ જેવાં વિવિધ બાણોથી યુદ્ધ ખેલનારાં, અમૃतरસથી પરિપૂર્ણ દિવ્ય અંગોવાળાં અને પોતાની પ્રેમભરી નજરથી ભક્તોનાં મન મોહી લેનારાં હે માં! સુંદર જટાધારી મહિષાસુરમર્દિની! તમારો જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "വില്ലിൽനിന്നു തൊടുത്തുവിട്ട ശരമാരികളാൽ ശത്രുക്കളുടെ അംഗങ്ങളെ തുളച്ചുകളഞ്ഞവളേ! വിചിത്രമായ പൊൻബാണംകൊണ്ട് പടവെട്ടുന്നവളേ! അമൃതരസം തുളുമ്പുന്ന തിരുമേനിയുള്ളവളും, അനുരാഗം തുളുമ്പുന്ന കണ്ണുകളാൽ ഭക്തരുടെ ഉള്ളം കവരുന്നവളുമായ അമ്മേ! രമ್ಯകപർദ്ദിനിയായ മഹിഷാസുരമർദ്ദിനീ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଧନୁରୁ ମୁକ୍ତ ହୋଇଥିବା ଶରସମୂହ ଦ୍ୱାରା ଶତ୍ରୁମାନଙ୍କ ଅଙ୍ଗପ୍ରତ୍ୟଙ୍ଗ ବିଦୀର୍ଣ୍ଣ କରିଥିବା, ସୁବର୍ଣ୍ଣ ଓ ବିଚିତ୍ର ବର୍ଣ୍ଣର ତୀରରେ ଯୁଦ୍ଧ କରୁଥିବା, ଅମୃତରସରେ ପରିପୂର୍ଣ୍ଣ ଦିବ୍ୟ ଅଙ୍ଗଯୁକ୍ତା ଏବଂ ପ୍ରେମମୟୀ ଦୃଷ୍ଟିରେ ଭକ୍ତହୃଦୟ ହରଣକାରିଣୀ ହେ ମାତା ! ସୁନ୍ଦର ଜଟାଧାରିଣୀ ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 9,
+      "verse_type": "VERSE",
+      "original_sanskrit": "सुरललनाततथेयितथेयितथाभिनयोत्तरनृत्यरते\nहासविलाससमाकुलमानसमङ्गलगानसुगीतरते ।\nक्वणितासुपूरविचित्रकङ्कणकूजितनूपुरनादरते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ ९ ॥",
+      "iast": "suralalanātatathēyitathēyitathābhinayōttaranṛtyaratē\nhāsavilāsasamākulamānasamaṅgalagānasugītaratē ।\nkvaṇitāsupūravicitrakaṅkaṇakūjitanūpuranādaratē\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 9 ॥",
+      "transliterations": {
+        "telugu": "సురలలనాతతథేయితథేయితథాభినయోత్తరనృత్యరతే\nహాసవిలాససమాకులమానసమఙ్గలగానసుగీతరతే ।\nక్వణితాసుపూరవిచిత్రకఙ్కణకూజితనూపురనాదరతే\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౯ ॥",
+        "tamil": "ஸுரலலநாதததேயிததேயிததாபிநயோத்தரந்ரு'த்யரதே\nஹாஸவிலாஸஸமாகுலமாநஸமங்கலகாநஸுகீதரதே ।\nக்வணிதாஸுபூரவிசித்ரகங்கணகூஜிதநூபுரநாதரதே\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௯ ॥",
+        "kannada": "ಸುರಲಲನಾತತಥೇಯಿತಥೇಯಿತಥಾಭಿನಯೋತ್ತರನೃತ್ಯರತೇ\nಹಾಸವಿಲಾಸಸಮಾಕುಲಮಾನಸಮಙ್ಗಲಗಾನಸುಗೀತರತೇ ।\nಕ್ವಣಿತಾಸುಪೂರವಿಚಿತ್ರಕಙ್ಕಣಕೂಜಿತನೂಪುರನಾದರತೇ\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೯ ॥",
+        "malayalam": "സുരലലനാതതഥേയിതഥേയിതഥാഭിനയോത്തരനൃത്യരതേ\nഹാസവിലാസസമാകുലമാനസമങ്ഗലഗാനസുഗീതരതേ ।\nക്വണിതാസുപൂരവിചിത്രകങ്കണകൂജിതനൂപുരനാദരതേ\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൯ ॥",
+        "iast": "suralalanātatatheyitatheyitathābhinayottaranṛtyarate\nhāsavilāsasamākulamānasamaṅgalagānasugītarate |\nkvaṇitāsupūravicitrakaṅkaṇakūjitanūpuranādarate\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 9 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Rejoicing in the dramatic rhythmic dancing of celestial maidens to rhythmic beats, delighting in auspicious songs of victory, adorned with chiming bangles and tinkling anklets! Victory to You, O Slayer of Mahishasura!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "अप्सराओं द्वारा 'तथै-तथै' आदि ताल-लय के साथ किए जाने वाले दिव्य भावपूर्ण नृत्य में रमने वाली, मन्द हास और विलास से युक्त मंगलकारी गानों और मधुर गीतों को सुनने में प्रसन्न, तथा बजती हुई सुंदर कंकणों की खनक और पाजेबों की मधुर झंकार से उल्लसित होने वाली हे माँ! हे मनोहर जटाओं वाली, महिषासुर का संहार करने वाली शैलपुत्री! आपकी सदा जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "దేవతా స్త్రీలు 'తథేయి-తథేయి' యను తాళములతో అభినయిస్తూ చేయు దివ్య నృత్యములను చూచి ఆనందించుదానా! మందహాసముతో కూడిన మంగళకరమైన సుమధుర గానములను ఆలకించుదానా! చేతి గాజుల సవ్వడులు, అందెల రవళుల మధుర నాదములలో పరవశించుదానా! అందమైన కేశములు గల మహిషాసురమర్దినీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தேவலோக மங்கையர் 'தத்தையி-தத்தையி' என்று தாளமிட்டு ஆடும் அபிநய நடனத்தில் திளைப்பவளே! புன்னகை தவழ மங்கல கானங்களின் இனிய கீதங்களைக் கேட்டு மகிழ்பவளே! வளையல்களின் ஓசையிலும் பாதச் சிலம்புகளின் இனிய ஒலியிலும் லயிப்பவளே! எழில் சடை தரித்த மகிஷாசுரமர்த்தினியே! உனக்கு வெற்றி, வெற்றி!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ದೇವಕನ್ನಿಕೆಯರು 'ತಥೇಯಿ-ತಥೇಯಿ' ಎಂಬ ತಾಳ-ಲಯಗಳೊಂದಿಗೆ ಅಭಿನಯಿಸುವ ದಿವ್ಯ ನೃತ್ಯವನ್ನು ಕಂಡು ಆನಂದಿಸುವವಳೇ! ಮಂದಹಾಸದೊಂದಿಗೆ ಮಂಗಲಕರ ಗೀತ-ಗಾಯನಗಳಲ್ಲಿ ಸಂತಸಗೊಳ್ಳುವವಳೇ! ಸುಂದರ ಕೈಬಳೆಗಳ ನಾದ ಹಾಗೂ ಕಾಲಂದುಗೆಗಳ ಝಣಝಣ ಧ್ವನಿಯಲ್ಲಿ ಮುಳುಗಿರುವ ತಾಯೇ! ರಮ್ಯ ಜಟೆಯನ್ನುಳ್ಳ ಮಹಿಷಾಸುರಮರ್ದಿನಿಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "अप्सरांच्या 'तथै-तथै' या तालावरील सुंदर नृत्यात रममाण होणारी, मंगलमय गीतांच्या सुरांनी प्रसन्न राहणारी आणि हातातील कंकण व पायातील घुंगरांच्या मधुर आवाजात उल्लसित होणारी हे देवी! सुंदर जटा धारण करणाऱ्या महिषासुरमर्दिनी! तुझा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "দেবাঙ্গনাদের 'তথেয়ি-তথেয়ি' লয়তালযুক্ত ভাবসমৃদ্ধ নৃত্যে প্রমোদিতা! স্মিতহাস্য ও উল্লাসমণ্ডিত মঙ্গলগানে অনুরক্তা! এবং সুন্দর কঙ্কণধ্বনি ও চরণের নূপুরনিক্বণে আনন্দমগ্না হে দেবী! সুন্দর কেশভূষিতা মহিষাসুরমর্দিনী পার্বতী! তোমার জয় হউক, জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "અપ્સરાઓ દ્વારા 'તથઈ-તથઈ' તાલ સાથે કરાતા દિવ્ય નૃત્યમાં રમમાણ થનારાં, મંગલકારી ગીતો અને મધુર સુરોથી પ્રસન્ન રહેનારાં, અને બંગડીઓ તથા ઝાંઝરના મધુર રણકારમાં આનંદ માણનારાં હે અંબિકા! સુંદર જટાધારી મહિષાસુરમર્દિની! તમારો જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ദേവസ്ത്രീകൾ 'തതൈ-തതൈ' എന്ന് താളത്തിൽ ചുവടുവെക്കുന്ന നൃത്തത്തിൽ ആനന്ദിക്കുന്നവളേ! പുഞ്ചിരിയോടെ മംഗളഗാനങ്ങൾ ആസ്വദിക്കുന്നവളേ! വളകളുടെയും കാൽച്ചിലമ്പുകളുടെയും മധുരമായ കിലുക്കത്തിൽ രമിക്കുന്ന അമ്മേ! രമ്യകപർദ്ദിനിയായ മഹിഷാസുരമർദ്ദിനീ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଦେବାଙ୍ଗନାମାନେ 'ତଥେୟି-ତଥେୟି' ତାଳରେ କରୁଥିବା ଦିବ୍ୟ ଅଭିନୟ ନୃତ୍ୟରେ ଆନନ୍ଦିତା, ମଧୁର ହାସ୍ୟଯୁକ୍ତ ମଙ୍ଗଳଗାନରେ ପ୍ରସନ୍ନା, ଏବଂ କଙ୍କଣର ଝଙ୍କାର ତଥା ପାଉଁଜିର ରୁଣୁଝୁଣୁ ନାଦରେ ଆନନ୍ଦମଗ୍ନା ହେ ମାତା ! ସୁନ୍ଦର ଜଟାଧାରିଣୀ ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 10,
+      "verse_type": "VERSE",
+      "original_sanskrit": "अयि सुमनःसुमनःसुमनःसुमनःसुमनोहरकान्तियुते\nश्रितरजनीरजनीरजनीरजनीरजनीकरवक्त्रवृते ।\nसुनयनविभ्रमरभ्रमरभ्रमरभ्रमरभ्रमराधिपते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १० ॥",
+      "iast": "ayi sumanaḥsumanaḥsumanaḥsumanaḥsumanōharakāntiyutē\nśritarajanīrajanīrajanīrajanīrajanīkaravakravṛtē ।\nsunayanavibhramarabhramarabhramarabhramarabhramarādhipatē\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 10 ॥",
+      "transliterations": {
+        "telugu": "అయి సుమనఃసుమనఃసుమనఃసుమనఃసుమనోహరకాన్తియుతే\nశ్రితరజనీరజనీరజనీరజనీరజనీకరవక్త్రవృతే ।\nసునయనవిభ్రమరభ్రమరభ్రమరభ్రమరభ్రమరాధిపతే\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౧౦ ॥",
+        "tamil": "அயி ஸுமநஃஸுமநஃஸுமநஃஸுமநஃஸுமநோஹரகாந்தியுதே\nஶ்ரிதரஜநீரஜநீரஜநீரஜநீரஜநீகரவக்த்ரவ்ரு'தே ।\nஸுநயநவிப்ரமரப்ரமரப்ரமரப்ரமரப்ரமராதிபதே\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௧௦ ॥",
+        "kannada": "ಅಯಿ ಸುಮನಃಸುಮನಃಸುಮನಃಸುಮನಃಸುಮನೋಹರಕಾನ್ತಿಯುತೇ\nಶ್ರಿತರಜನೀರಜನೀರಜನೀರಜನೀರಜನೀಕರವಕ್ತ್ರವೃತೇ ।\nಸುನಯನವಿಭ್ರಮರಭ್ರಮರಭ್ರಮರಭ್ರಮರಭ್ರಮರಾಧಿಪತೇ\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೧೦ ॥",
+        "malayalam": "അയി സുമനഃസുമനഃസുമനഃസുമനഃസുമനോഹരകാന്തിയുതേ\nശ്രിതരജനീരജനീരജനീരജനീരജനീകരവക്ത്രവൃതേ ।\nസുനയനവിഭ്രമരഭ്രമരഭ്രമരഭ്രമരഭ്രമരാധിപതേ\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൧൦ ॥",
+        "iast": "ayi sumanaḥsumanaḥsumanaḥsumanaḥsumanoharakāntiyute\nśritarajanīrajanīrajanīrajanīrajanīkaravaktravṛte |\nsunayanavibhramarabhramarabhramarabhramarabhramarādhipate\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 10 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Endowed with mesmerizing grace resembling the sweetest blossoms, face glowing like the tranquil moon, eyes fluttering with charming glances like black honeybees circling a lotus! Victory to You, O Slayer of Mahishasura!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "देवताओं के समान परम पावन, खिले हुए पुष्पों के समान अत्यन्त मनमोहक कान्ति से सम्पन्न, रात्रियों को प्रकाशित करने वाले पूर्णचन्द्र के समान उज्ज्वल मुखमण्डल वाली, और भ्रमरों के राजा के समान चंचल एवं सुन्दर नेत्रों से युक्त हे भगवती! हे सुन्दर जटाओं वाली, महिषासुरमर्दिनी शैलपुत्री! आपकी सदा जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "వికసించిన సుమనోహర పుష్పములవలె అత్యంత మనోజ్ఞమైన కాంతి గలదానా! రాత్రులను వెలిగించు పూర్ణచంద్రుని బోలిన ప్రకాశవంతమైన ముఖము కలదానా! తుమ్మెదలవలె చంచలములై అందమైన నేత్రములు గలదానా! మనోహర జటాజూటము గల మహిషాసురమర్దినీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "மலர்ந்த மலர்களைப் போலவும் தேவர்களைப் போலவும் பேரழகு வாய்ந்த காந்தி கொண்டவளே! இரவுகளை ஒளிரச் செய்யும் முழுமதியை ஒத்த திருமுகம் கொண்டவளே! வண்டுகளைப் போலச் சுழலும் எழில் விழிகளை உடையவளே! அழகிய சடைமுடி தரித்து மகிஷாசுரனை வதைத்த தேவியே! உனக்கு வெற்றி, வெற்றி!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಅರಳಿದ ಹೂವುಗಳಂತೆ ಅತ್ಯಂತ ಮನೋಹರವಾದ ಕಾಂತಿಯಿಂದ ಶೋಭಿಸುವವಳೇ! ರಾತ್ರಿಯನ್ನು ಬೆಳಗಿಸುವ ಪೂರ್ಣಚಂದ್ರನಂತಹ ಪ್ರಕಾಶಮಾನ ಮುಖವುಳ್ಳವಳೇ! ದುಂಬಿಗಳಂತೆ ಚಂಚಲವಾದ ಸುಂದರ ನೇತ್ರಗಳುಳ್ಳ ತಾಯೇ! ರಮ್ಯ ಜಟೆಯನ್ನುಳ್ಳ ಮಹಿಷಾಸುರಮರ್ದಿನಿಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "उमललेल्या फुलांसारखी अत्यंत मनमोहक कांती असणारी, रात्रीला उजळवणाऱ्या पौर्णिमेच्या चंद्रासारखे मुख असणारी, आणि भ्रमरासारखे चंचल व सुंदर डोळे असणारी हे देवी! सुंदर जटा धारण करणाऱ्या महिषासुरमर्दिनी! तुझा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "প্রস্ফুটিত কুসুমসমূহের ন্যায় অনুপম ও চিত্তাকর্ষক কান্তিময়ী! রজনীসমূহকে আলোকোজ্জ্বলকারিণী পূর্ণচন্দ্রের ন্যায় প্রদীপ্তবদনমণ্ডিতা! মধুলুব্ধ ভ্রমরপালের ন্যায় চঞ্চল ও সুনয়না হে জননী! সুন্দর কেশভূষিতা মহিষাসুরমর্দিনী পার্বতী! তোমার জয় হউক, জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "ખીલેલાં સુંદર પુષ્પો જેવી મનમોહક કાંતિ ધરાવનારાં, રાત્રિને અજવાળતા પૂર્ણચંદ્ર જેવાં તેજસ્વી મુખવાળાં, અને ભમરા જેવાં ચંચળ સુંદર નેત્રોવાળાં હે માં! સુંદર જટાધારી મહિષાસુરમર્દિની! તમારો જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "വിടർന്ന പൂക്കൾപോലെ മനോഹരമായ കാന്തിയുള്ളവളേ! രാത്രികളെ പ്രകാശിപ്പിക്കുന്ന പൂർണ്ണചന്ദ്രനെപ്പോലുള്ള മുഖമുള്ളവളേ! വണ്ടുകളെപ്പോലെ ചഞ്ചലമായ മനോഹരനേത്രങ്ങളുള്ള അമ്മേ! രമ്യകപർദ്ദിനിയായ മഹിഷാസുരമർദ്ദിനീ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ବିକଶିତ ପୁଷ୍ପ ପରି ଅତ୍ୟନ୍ତ ମନୋରମ କାନ୍ତିଯୁକ୍ତା, ରାତ୍ରିକୁ ଆଲୋକିତ କରୁଥିବା ପୂର୍ଣ୍ଣଚନ୍ଦ୍ର ସଦୃଶ ମୁଖମଣ୍ଡଳଯୁକ୍ତା, ଏବଂ ଭ୍ରମର ପରି ଚଞ୍ଚଳ ଓ ସୁନ୍ଦର ନୟନଶୋଭିତା ହେ ମାତା ! ସୁନ୍ଦର ଜଟାଧାରିଣୀ ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 11,
+      "verse_type": "VERSE",
+      "original_sanskrit": "सहितमहाहवमल्लमतल्लिकमल्लितरल्लकभल्लरते\nविरचितवल्लिकपल्लिकमल्लिकझिल्लिकभिल्लिकवर्गवृते ।\nशितकृतफुल्लसमुल्लसितारुणतल्लजपल्लवपादयुगे\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ ११ ॥",
+      "iast": "sahitamahāhavamallamatallikamallitarallakabhallarē\nviracitavallikapallikamallikajhillikabhillikavargavṛtē ।\nśitakṛtaphullasamullasitāruṇatallajapallavapādayugē\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 11 ॥",
+      "transliterations": {
+        "telugu": "సహితమహాహవమల్లమతల్లికమల్లితరల్లకభల్లరతే\nవిరచితవల్లికపల్లికమల్లికఝిల్లికభిల్లికవర్గవృతే ।\nశితకృతఫుల్లసముల్లసితారుణతల్లజపల్లవపాదయుగే\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౧౧ ॥",
+        "tamil": "ஸஹிதமஹாஹவமல்லமதல்லிகமல்லிதரல்லகபல்லரதே\nவிரசிதவல்லிகபல்லிகமல்லிகசில்லிகபில்லிகவர்கவ்ரு'தே ।\nஶிதக்ரு'தபுல்லஸமுல்லஸிதாருணதல்லஜபல்லவபாதயுகே\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௧௧ ॥",
+        "kannada": "ಸಹಿತಮಹಾಹವಮಲ್ಲಮತಲ್ಲಿಕಮಲ್ಲಿತರಲ್ಲಕಭಲ್ಲರತೇ\nವಿರಚಿತವಲ್ಲಿಕಪಲ್ಲಿಕಮಲ್ಲಿಕಝಿಲ್ಲಿಕಭಿಲ್ಲಿಕವರ್ಗವೃತೇ ।\nಶಿತಕೃತಫುಲ್ಲಸಮುಲ್ಲಸಿತಾರುಣತಲ್ಲಜಪಲ್ಲವಪಾದಯುಗೇ\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೧೧ ॥",
+        "malayalam": "സഹിതമഹാഹവമല്ലമതല്ലികമല്ലിതരല്ലകഭല്ലരതേ\nവിരചിതവല്ലികപല്ലികമല്ലികഝില്ലികഭില്ലികവര്ഗവൃതേ ।\nശിതകൃതഫുല്ലസമുല്ലസിതാരുണതല്ലജപല്ലവപാദയുഗേ\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൧൧ ॥",
+        "iast": "sahitamahāhavamallamatallikamallitarallakabhallarate\nviracitavallikapallikamallikajhillikabhillikavargavṛte |\nśitakṛtaphullasamullasitāruṇatallajapallavapādayuge\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 11 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Wielding spears and arrows against the formidable champion wrestlers of the demon army, worshipped by simple forest tribes, whose lotus feet glow rosy-red like freshly sprouted tender leaves! Victory to You, O Slayer of Mahishasura!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "महान् संग्राम में महाबली योद्धाओं और मल्लवीरों से घिरी रहने वाली, वनवासी भीलों और वनदेवियों द्वारा चमेली के फूलों से पूजित होने वाली, तथा नूतन खिले हुए अरुण पल्लवों के समान परम कोमल और लावण्यमयी हे माँ! हे मनोहर जटाओं वाली, महिषासुर का संहार करने वाली शैलपुत्री! आपकी सदा जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "మహాసంగ్రామమున మహావీరులైన యోధుల పోరాటములను ఆస్వాదించుదానా! అడవులలో వసించు భిల్లులు మొదలైన భక్తులచే మల్లెపూలతో పూజింపబడుదానా! అప్పుడే వికసించిన ఎర్రని చిగురుటాకులవలె అత్యంత సుకుమారమైన సౌందర్యము కలదానా! అందమైన కేశములు గల మహిషాసురమర్దినీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "போர்க்களத்தில் பெருவீரர்களின் மல்யுத்தப் போரைக் கண்டு களிப்பவளே! காட்டுவாசிகளான பில்லர்களால் மல்லிகைப் பூக்களால் வணங்கப்படுபவளே! புதிதாக மலர்ந்த செந்தளிர்களைப் போல் நளினமும் பேரழகும் கொண்ட அன்னையே! எழில் சடை தரித்த மகிஷாசுரமர்த்தினியே! உனக்கு வெற்றி, வெற்றி!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಮಹಾ ಯುದ್ಧದಲ್ಲಿ ಶೂರ ಮಲ್ಲವೀರರ ಕಾಳಗವನ್ನು ಆನಂದಿಸುವವಳೇ! ವನವಾಸಿಗಳಾದ ಭಿಲ್ಲರಿಂದ ಮಲ್ಲಿಗೆಯ ಹೂವುಗಳಿಂದ ಪೂಜಿಸಲ್ಪಡುವವಳೇ! ಹೊಸದಾಗಿ ಚಿಗುರಿದ ಕೆಂಪು ಎಲೆಗಳಂತೆ ಪರಮ ಕೋಮಲವೂ ಲಾವಣ್ಯಮಯವೂ ಆದ ತಾಯೇ! ರಮ್ಯ ಜಟೆಯನ್ನುಳ್ಳ ಮಹಿಷಾಸುರಮರ್ದಿನಿಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "महायुद्धात महाबली मल्लांच्या युद्धाने वेढलेली, वनवासी भिल्लांनी मोगऱ्याच्या फुलांनी पूजलेली, आणि ताज्या उमललेल्या लाल कोवळ्या पानांसारखी अत्यंत नाजूक व सुंदर असणारी हे देवी! सुंदर जटा धारण करणाऱ्या महिषासुरमर्दिनी! तुझा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "মহাসংগ্রামে মহাবীর মল্লযোদ্ধাদের সমরে আনন্দমগ্না! অরণ্যবাসী ভিল্লপ্রভৃতি উপজাতিগণ কর্তৃক মল্লিকাকুসমে বন্দিতা! নবপ্রস্ফুটিত অরুণবর্ণ সুকোমল কিশলয়ের ন্যায় লাবণ্যময়ী! সুন্দর কেশভূষিতা মহিষাসুরমর্দিনী পার্বতী! তোমার জয় হউক, জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "મહાયુદ્ધમાં બળવાન મલ્લ યોદ્ધાઓની વચ્ચે શોભનારાં, વનવાસી ભીલો દ્વારા ચમેલીનાં પુષ્પોથી પૂજિત, અને નવાં ખીલેલાં લાલ કૂંપળો જેવી અત્યંત સુકોમળ અને લાવણ્યમયી હે માં! સુંદર જટાધારી મહિષાસુરમર્દિની! તમારો જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "മഹാസംഗ്രാമത്തിൽ വീരയോദ്ധാക്കളുടെ പടവെട്ടലിൽ ആനന്ദിക്കുന്നവളേ! വനവാസികളായ ഭില്ലന്മാർ മുല്ലപ്പൂവുകളാൽ പൂജിക്കുന്നവളേ! പുതുതായി വിരിഞ്ഞ തളിരിലകളെപ്പോലെ കോമളയായ അമ്മേ! രമ്യകപർദ്ദിനിയായ മഹിഷാസുരമർദ്ദിനീ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ମହାସଂଗ୍ରାମରେ ବୀର ଯୋଦ୍ଧାମାନଙ୍କ ମଧ୍ୟରେ ଶୋଭିତା, ବନବାସୀ ଭିଲ୍ଲମାନଙ୍କ ଦ୍ୱାରା ମଲ୍ଲୀକୁସୁମରେ ପୂଜିତା, ଏବଂ ନବବିକଶିତ ଲାଲ କିଶଳୟ ପରି ପରମ କୋମଳା ଓ ଲାବଣ୍ୟମୟୀ ହେ ମାତା ! ସୁନ୍ଦର ଜଟାଧାରିଣୀ ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 12,
+      "verse_type": "VERSE",
+      "original_sanskrit": "अविरलगण्डगलन्मदमेदुरमत्तमत्तङ्गजराजपते\nत्रिभुवनभूषणभूतकलानिधिरूपपयोनिधिराजसुते ।\nअयि सुदतीजनलालसमानसमोहनमन्मथराजसुते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १२ ॥",
+      "iast": "aviralagaṇḍagalanmadamēduramattamattaṅgajarājapatē\ntribhuvanabhūṣaṇabhūtakalānidhirūpapayōnidhirājasutē ।\nayi sudatījanalālasamānasamōhanamanmatharājasutē\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 12 ॥",
+      "transliterations": {
+        "telugu": "అవిరలగణ్డగలన్మదమేదురమత్తమత్తఙ్గజరాజపతే\nత్రిభువనభూషణభూతకలానిధిరూపపయోనిధిరాజసుతే ।\nఅయి సుదతీజనలాలసమానసమోహనమన్మథరాజసుతే\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౧౨ ॥",
+        "tamil": "அவிரலகண்டகலந்மதமேதுரமத்தமத்தங்கஜராஜபதே\nத்ரிபுவநபூஷணபூதகலாநிதிரூபபயோநிதிராஜஸுதே ।\nஅயி ஸுததீஜநலாலஸமாநஸமோஹநமந்மதராஜஸுதே\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௧௨ ॥",
+        "kannada": "ಅವಿರಲಗಣ್ಡಗಲನ್ಮದಮೇದುರಮತ್ತಮತ್ತಙ್ಗಜರಾಜಪತೇ\nತ್ರಿಭುವನಭೂಷಣಭೂತಕಲಾನಿಧಿರೂಪಪಯೋನಿಧಿರಾಜಸುತೇ ।\nಅಯಿ ಸುದತೀಜನಲಾಲಸಮಾನಸಮೋಹನಮನ್ಮಥರಾಜಸುತೇ\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೧೨ ॥",
+        "malayalam": "അവിരലഗണ്ഡഗലന്മദമേദുരമത്തമത്തങ്ഗജരാജപതേ\nത്രിഭുവനഭൂഷണഭൂതകലാനിധിരൂപപയോനിധിരാജസുതേ ।\nഅയി സുദതീജനലാലസമാനസമോഹനമന്മഥരാജസുതേ\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൧൨ ॥",
+        "iast": "aviralagaṇḍagalanmadameduramattamattaṅgajarājapate\ntribhuvanabhūṣaṇabhūtakalānidhirūpapayonidhirājasute |\nayi sudatījanalālasamānasamohanamanmatharājasute\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 12 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Subduing raging war-elephants intoxicated with rut, daughter of the King of the Ocean, ornament of the three worlds, captivating the hearts of the noble and wise! Victory to You, O Slayer of Mahishasura!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "कनपटी से निरन्तर मद बहाने वाले मदमस्त ऐरावत जैसे गजेन्द्रों की स्वामिनी, तीनों लोकों के आभूषण चन्द्रमा के रूप में सुशोभित क्षीरसागर की कन्या, और सुन्दरी स्त्रियों के मनों को मोहने वाले कामदेव को जन्म देने वाली हे भगवती! हे मनोहर जटाओं वाली, महिषासुरमर्दिनी शैलपुत्री! आपकी सदा जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "గండస్థలములనుండి మదమును స్రవించు మదగజములకు యజమానురాలైనదానా! ముల్లోకములకు ఆభరణమైన చంద్రునికి సోదరియై క్షీరసాగరమున ఉద్భవించినదానా! జగన్మోహనుడైన మన్మథునికి తల్లియైన ఓ దేవీ! సుందర కేశములు గల మహిషాసురమర్దినీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "மதநீர் பொழியும் மத்தகத்தைக் கொண்ட மதயானைகளுக்குத் தலைவியானவளே! மூவுலகின் ஆபரணமான சந்திரனைப் போலப் பாற்கடலில் உதித்தவளே! அழகிய பெண்களின் மனதைக் கவரும் மன்மதனை ஈன்ற அன்னையே! எழில் சடை தரித்த மகிஷாசுரமர்த்தினியே! உனக்கு வெற்றி, வெற்றி!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಕೆನ್ನೆಗಳಿಂದ ಮದಜಲವನ್ನು ಸುರಿಸುವ ಮದ್ದಾನೆಗಳ ಒಡತಿಯೇ! ಮೂರು ಲೋಕಗಳಿಗೆ ಆಭರಣವಾದ ಚಂದ್ರನ ಸಹೋದರಿಯಾಗಿ ಕ್ಷೀರಸಾಗರದಲ್ಲಿ ಜನಿಸಿದವಳೇ! ಜಗತ್ತನ್ನೇ ಮೋಹಿಸುವ ಮನ್ಮಥನ ತಾಯಿಯಾದ ಮಹಾದೇವಿಯೇ! ರಮ್ಯ ಜಟೆಯನ್ನುಳ್ಳ ಮಹಿಷಾಸುರಮರ್ದಿನಿಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "गंडस्थळातून अखंड मद वाहणाऱ्या मदमस्त ऐरावताची स्वामिनी, तिन्ही लोकांचे आभूषण असणाऱ्या चंद्राची बहीण आणि क्षीरसागराची कन्या, कामदेवाला जन्म देणारी हे देवी! सुंदर जटा धारण करणाऱ्या महिषासुरमर्दिनी! तुझा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "গণ্ডদেশ হইতে নিয়ত ক্ষরিত মদধারায় স্নিগ্ধ মত্ত মাতঙ্গরাজের অধীশ্বরী! ত্রিলোকভূষণস্বরূপ চন্দ্রের সহোদরা ক্ষীরোদসাগরতনয়া! এবং মনোহরসুন্দর কামদেবের জননী হে মহাশক্তি! সুন্দর কেশভূষিতা মহিষাসুরমর্দিনী পার্বতী! তোমার জয় হউক, জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "ગંડસ્થળમાંથી નિરંતર મદ વહાવનારા મસ્ત ગજરાજોનાં સ્વામિની, ત્રણેય લોકોના આભૂષણ સમાન ચંદ્રનાં બહેન અને ક્ષીરસાગરની પુત્રી, કામદેવને જન્મ આપનારાં હે માં! સુંદર જટાધારી મહિષાસુરમર્દિની! તમારો જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "കവിളുകളിൽനിന്ന് മദജലമൊഴുകുന്ന മത്തഗജങ്ങളുടെ അധിപയായവളേ! മൂന്നുലോകങ്ങൾക്കും തിലകമായ ചന്ദ്രന്റെ സഹോദരിയായ പാൽക്കടൽപുത്രിയേ! മന്മഥന്റെ ജനനിയായ ദേവീ! രമ്യകപർദ്ദിനിയായ മഹിഷാസുരമർദ്ദിനീ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଗଣ୍ଡସ୍ଥଳରୁ ନିରନ୍ତର ମଦଜଳ ବୁହାଇଥିବା ମତ୍ତ ଗଜରାଜମାନଙ୍କ ଅଧୀଶ୍ୱରୀ, ତ୍ରିଲୋକର ଆଭୂଷଣ ଚନ୍ଦ୍ରଙ୍କ ସହୋଦରୀ ଓ ସମୁଦ୍ରକନ୍ୟା, ଏବଂ କାମଦେବଙ୍କ ଜନନୀ ହେ ଭଗବତୀ ! ସୁନ୍ଦର ଜଟାଧାରିଣୀ ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 13,
+      "verse_type": "VERSE",
+      "original_sanskrit": "कमलदलामलकोमलगानकलामलिकामलभाललते\nसकलविलासमहानिधिशैलसुतावरचारुकटाक्षनुते ।\nभ्रमरगणैरभिनन्दितचन्दनसौरभसौरभमन्दगते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १३ ॥",
+      "iast": "kamaladalāmalakōmalagānakalāmalikāmalabhālalatē\nsakalavilāsamahānidhiśailasutāvaracārukaṭākṣanutē ।\nbhramaragaṇairabhinanditacandanasaurabhasaurabhamandagatē\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 13 ॥",
+      "transliterations": {
+        "telugu": "కమలదలామలకోమలగానకలామలికామలభాలలతే\nసకలవిలాసమహానిధిశైలసుతావరచారుకటాక్షనుతే ।\nభ్రమరగణైరభినన్దితచన్దనసౌరభసౌరభమన్దగతే\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౧౩ ॥",
+        "tamil": "கமலதலாமலகோமலகாநகலாமலிகாமலபாலலதே\nஸகலவிலாஸமஹாநிதிஶைலஸுதாவரசாருகடாக்ஷநுதே ।\nப்ரமரகணைரபிநந்திதசந்தநஸௌரபஸௌரபமந்தகதே\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௧௩ ॥",
+        "kannada": "ಕಮಲದಲಾಮಲಕೋಮಲಗಾನಕಲಾಮಲಿಕಾಮಲಭಾಲಲತೇ\nಸಕಲವಿಲಾಸಮಹಾನಿಧಿಶೈಲಸುತಾವರಚಾರುಕಟಾಕ್ಷನುತೇ ।\nಭ್ರಮರಗಣೈರಭಿನನ್ದಿತಚನ್ದನಸೌರಭಸೌರಭಮನ್ದಗತೇ\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೧೩ ॥",
+        "malayalam": "കമലദലാമലകോമലഗാനകലാമലികാമലഭാലലതേ\nസകലവിലാസമഹാനിധിശൈലസുതാവരചാരുകടാക്ഷനുതേ ।\nഭ്രമരഗണൈരഭിനന്ദിതചന്ദനസൌരഭസൌരഭമന്ദഗതേ\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൧൩ ॥",
+        "iast": "kamaladalāmalakomalagānakalāmalikāmalabhālalate\nsakalavilāsamahānidhiśailasutāvaracārukaṭākṣanute |\nbhramaragaṇairabhinanditacandanasaurabhasaurabhamandagate\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 13 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Forehead radiant and smooth like a lotus petal, ocean of all grace, whose graceful sidelong glances bestow boons, moving with majestic slow steps fragrant with sandalwood adored by bees! Victory to You, O Slayer of Mahishasura!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "कमल की पंखुड़ी के समान कोमल, निर्मल और दिव्य कान्ति से सुशोभित ललाट वाली, समस्त विलासों के महासमुद्र भगवान् शिव के प्रेमपूर्ण सुन्दर कटाक्षों द्वारा प्रशंसित, और भ्रमरों के समूहों द्वारा सेवित चन्दन की सुगन्ध से सुवासित तथा मन्द-मन्द गजगामिनी हे भगवती! हे मनोहर जटाओं वाली, महिषासुर का संहार करने वाली शैलपुत्री! आपकी सदा जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "కమలదళమువలె నిర్మలముగా, కోమలమైన కాంతితో మెరయు నుదురు కలదానా! సకల శృంగార విలాసములకు నిలయుడైన పరమశివుని కటాక్ష వీక్షణములచే కొనియాడబడుదానా! తుమ్మెదలను ఆకర్షించు చందన పరిమళములతో, నెమ్మదిగా హంసవలె నడచుదానా! సుందర కేశములు గల మహిషాసురమర్దినీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தாமரை இதழ் போன்று களங்கமற்ற மென்மையான நெற்றிப் பொலிவு கொண்டவளே! சகல போகங்களின் இருப்பிடமான சங்கரனின் கடைக்கண் பார்வையால் போற்றப்படுபவளே! வண்டுகளைக் கவரும் சந்தன நறுமணத்தோடு மெல்ல அடிமேலடி வைத்து நடக்கும் அன்னையே! எழில் சடை தரித்த மகிஷாசுரமர்த்தினியே! உனக்கு வெற்றி, வெற்றி!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಕಮಲದ ಎಸಳಿನಂತೆ ನಿರ್ಮಲವೂ ಕೋಮಲವೂ ಆದ ಕಾಂತಿಯಿಂದ ಹೊಳೆಯುವ ಹಣೆಯುಳ್ಳವಳೇ! ಸಕಲ ವಿಲಾಸಗಳ ಭಂಡಾರವಾದ ಪರಮಶಿವನ ಪ್ರೇಮಪೂರಿತ ಕಟಾಕ್ಷದಿಂದ ಹೊಗಳಲ್ಪಟ್ಟವಳೇ! ದುಂಬಿಗಳನ್ನು ಆಕರ್ಷಿಸುವ ಚಂದನದ ಸುವಾಸನೆಯಿಂದ ಮಂದಗತಿಯಲ್ಲಿ ಸಾಗುವ ಮಹಾದೇವಿಯೇ! ರಮ್ಯ ಜಟೆಯನ್ನುಳ್ಳ ಮಹಿಷಾಸುರಮರ್ದಿನಿಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "कमळाच्या पाकळीसारखे निर्मळ व सुंदर कपाळ असणारी, महादेवांच्या प्रेमळ दृष्टीने प्रशंसित झालेली, आणि भ्रमरांना आकर्षित करणाऱ्या चंदनाच्या सुगंधाने युक्त अशा मंद चालीने चालणारी हे देवी! सुंदर जटा धारण करणाऱ्या महिषासुरमर्दिनी! तुझा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "পদ্মদলের ন্যায় নির্মল ও সুকোমল কান্তিময়ী অনুপম ললাটভূষিতা! নিখিল বিলাসের আধার ভূতনাথের পরম সুন্দর কটাক্ষে বন্দিতা! এবং মধুপকুলসেবিত চন্দনসুরভিতে আমোদিত মন্দগমনা হে দেবী! সুন্দর কেশভূষিতা মহিষাসুরমর্দিনী পার্বতী! তোমার জয় হউক, জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "કમળની પાંખડી જેવું નિર્મળ અને સુકોમળ લલાટ ધરાવનારાં, ભગવાન શિવના પ્રેમભર્યા કટાક્ષોથી પ્રશંસિત, અને ભમરાઓને આકર્ષતી ચંદનની સુગંધ સાથે મંદ ગતિથી ચાલનારાં હે માં! સુંદર જટાધારી મહિષાસુરમર્દિની! તમારો જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "താമരപ്പൂവിതൾപോലെ നിർമ്മലവും കോമളവുമായ തിരുനെറ്റിയുള്ളവളേ! സർവ്വവിജ്ഞാനത്തിന്റെയും നിധിയായ പരമശിവന്റെ പ്രേമാർദ്രമായ കടാക്ഷത്താൽ സ്തുതിക്കപ്പെടുന്നവളേ! വണ്ടുകളെ ആകർഷിക്കുന്ന ചന്ദനസുഗന്ധത്തോടെ സാവധാനം നടക്കുന്ന അമ്മേ! രമ്യകപർദ്ദിനിയായ മഹിഷാസുരമർദ്ദിനീ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ପଦ୍ମପାଖୁଡ଼ା ପରି ନିର୍ମଳ ଓ କୋମଳ କାନ୍ତିଯୁକ୍ତ ଲଲାଟଶୋଭିତା, ସର୍ବବିଳାସର ଭଣ୍ଡାର ଶିବଙ୍କ ପ୍ରେମମୟ କଟାକ୍ଷରେ ପ୍ରଶଂସିତା, ଏବଂ ଭ୍ରମରମାନଙ୍କୁ ଆକର୍ଷିତ କରୁଥିବା ଚନ୍ଦନ ସୁଗନ୍ଧରେ ମନ୍ଦ ମନ୍ଦ ଗମନ କରୁଥିବା ହେ ମାତା ! ସୁନ୍ଦର ଜଟାଧାରିଣୀ ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 14,
+      "verse_type": "VERSE",
+      "original_sanskrit": "करमुरलीरवकूजितकूजितकोकिलमञ्जुलमञ्जुमते\nमिलितपुलिन्दमनोहरगुञ्जितरञ्जितशैलनिकुञ्जगते ।\nनिजगुणभूतपवित्रितविश्वमनोहरनन्दनकाननभाक्\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १४ ॥",
+      "iast": "karamuralīravakūjitakūjitakōkilamañjulamañjumatē\nmilitapulindamanōharaguñjitarañjitaśailanikuñjagatē ।\nnijaguṇabhūtapavitritaviśvamanōharanandanakānanabhāk\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 14 ॥",
+      "transliterations": {
+        "telugu": "కరమురలీరవకూజితకూజితకోకిలమఞ్జులమఞ్జుమతే\nమిలితపులిన్దమనోహరగుఞ్జితరఞ్జితశైలనికుఞ్జగతే ।\nనిజగుణభూతపవిత్రితవిశ్వమనోహరనన్దనకాననభాక్\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౧౪ ॥",
+        "tamil": "கரமுரலீரவகூஜிதகூஜிதகோகிலமஞ்ஜுலமஞ்ஜுமதே\nமிலிதபுலிந்தமநோஹரகுஞ்ஜிதரஞ்ஜிதஶைலநிகுஞ்ஜகதே ।\nநிஜகுணபூதபவித்ரிதவிஶ்வமநோஹரநந்தநகாநநபாக்\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௧௪ ॥",
+        "kannada": "ಕರಮುರಲೀರವಕೂಜಿತಕೂಜಿತಕೋಕಿಲಮಞ್ಜುಲಮಞ್ಜುಮತೇ\nಮಿಲಿತಪುಲಿನ್ದಮನೋಹರಗುಞ್ಜಿತರಞ್ಜಿತಶೈಲನಿಕುಞ್ಜಗತೇ ।\nನಿಜಗುಣಭೂತಪವಿತ್ರಿತವಿಶ್ವಮನೋಹರನನ್ದನಕಾನನಭಾಕ್\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೧೪ ॥",
+        "malayalam": "കരമുരലീരവകൂജിതകൂജിതകോകിലമഞ്ജുലമഞ്ജുമതേ\nമിലിതപുലിന്ദമനോഹരഗുഞ്ജിതരഞ്ജിതശൈലനികുഞ്ജഗതേ ।\nനിജഗുണഭൂതപവിത്രിതവിശ്വമനോഹരനന്ദനകാനനഭാക്\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൧൪ ॥",
+        "iast": "karamuralīravakūjitakūjitakokilamañjulamañjumate\nmilitapulindamanoharaguñjitarañjitaśailanikuñjagate |\nnijaguṇabhūtapavitritaviśvamanoharanandanakānanabhāk\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 14 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Mind attuned to the sweet notes of the flute and the song of the cuckoo, gracing mountain bowers resonant with honeyed hums, purifying all worlds by Your virtues! Victory to You, O Slayer of Mahishasura!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हाथों में मुरली की तान से कोकिल के समान मधुर कूजन करने वाली, परम निर्मल और सुन्दर बुद्धि से सम्पन्न, वनवासी भीलों के मधुर गीतों से गुंजित पर्वत के कुंजों में विचरण करने वाली, और अपने पावन गुणों से सम्पूर्ण विश्व तथा नन्दन-वन को पवित्र करने वाली हे माँ! हे मनोहर जटाओं वाली, महिषासुर का संहार करने वाली शैलपुत्री! आपकी सदा जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "చేతిలో వేణువునూదుచు కోకిలవలె మధురముగా గానముచేయుదానా! స్వచ్ఛమైన సద్బుద్ధిగలదానా! అడవిజాతులవారి మధుర గీతములతో ప్రతిధ్వనించు పర్వత కుంజములలో విహరించుదానా! తన పవిత్ర గుణములచే సమస్త విశ్వమును మరియు నందనవనమును పవిత్రము చేయుదానా! అందమైన కేశములు గల మహిషాసురమర్దినీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "கரத்தில் புல்லாங்குழல் ஏந்திக் குயிலென இனிய நாதம் எழுப்புபவளே! தூய நற்புத்தி கொண்டவளே! மலைவாழ் மக்களின் இனிய பாடல்கள் எதிரொலிக்கும் சோலைகளில் உலாவுபவளே! தன் திவ்ய நற்குணங்களால் அகிலத்தையும் நந்தனவனத்தையும் புனிதமாக்கும் அன்னையே! எழில் சடை தரித்த மகிஷாசுரமர்த்தினியே! உனக்கு வெற்றி, வெற்றி!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಕೈಯಲ್ಲಿ ಕೊಳಲನ್ನಿಟ್ಟುಕೊಂಡು ಕೋಗಿಲೆಯಂತೆ ಇಂಪಾಗಿ ಹಾಡುವವಳೇ! ಪರಿಶುದ್ಧವಾದ ಸುಬುದ್ಧಿಯುಳ್ಳವಳೇ! ವನವಾಸಿಗಳ ಸುಮಧುರ ಗೀತೆಗಳಿಂದ ಮೊಳಗುವ ಗಿರಿಕುಂಜಗಳಲ್ಲಿ ವಿಹರಿಸುವವಳೇ! ತನ್ನ ಪಾವನ ಗುಣಗಳಿಂದ ಸಮಸ್ತ ಜಗತ್ತನ್ನೂ ನಂದನವನವನ್ನೂ ಪವಿತ್ರಗೊಳಿಸುವ ತಾಯೇ! ರಮ್ಯ ಜಟೆಯನ್ನುಳ್ಳ ಮಹಿಷಾಸುರಮರ್ದಿನಿಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हातात बासरी घेऊन कोकिळेसारखे मधुर गाणारी, निर्मळ बुद्धी असणारी, वनवासींच्या मधुर गाण्यांनी दुमदुमणाऱ्या पर्वतांच्या कुंजात फिरणारी, आणि आपल्या गुणांनी विश्वाला व नंदनवनाला पवित्र करणारी हे देवी! सुंदर जटा धारण करणाऱ्या महिषासुरमर्दिनी! तुझा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হস্তস্থিত বংশীধ্বনিতে কোকিলকূজনসম সুমধুর ধ্বনিকারিণী! পরম নির্মল বুদ্ধিশোভিতা! অরণ্যচারীদের মধুর গানে মুখরিত পর্বতকুঞ্জে বিচরণপরায়ণা! এবং নিজ পুণ্যগুণে নিখিল বিশ্ব ও সুরকানন নন্দনবন পবিত্রকারিণী! সুন্দর কেশভূষিতা মহিষাসুরমর্দিনী পার্বতী! তোমার জয় হউক, জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હાથમાં વાંસળી વગાડીને કોયલ જેવું મધુર ગાન કરનારાં, પરમ નિર્મળ બુદ્ધિવાળાં, વનવાસીઓના મધુર ગીતોથી ગૂંજતા પર્વતના કુંજોમાં વિહરનારાં, અને પોતાના સદ્ગુણોથી સમગ્ર વિશ્વ તથા નંદનવનને પવિત્ર કરનારાં હે માં! સુંદર જટાધારી મહિષાસુરમર્દિની! તમારો જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "കൈകളിൽ ഓടക്കുഴലേന്തി കുയിൽപോലെ മധുരമായി നാദമുണർത്തുന്നവളേ! നിർമ്മലമായ ബുദ്ധിയുള്ളവളേ! വനവാസികളുടെ മധുരഗാനങ്ങളാൽ മുഖരിതമായ പർവ്വതത്തോപ്പുകളിൽ വിഹരിക്കുന്നവളേ! പുണ്യഗുണങ്ങളാൽ പ്രപഞ്ചത്തെയും നന്ദനവനത്തെയും വിശുദ്ധമാക്കുന്ന അമ്മേ! രമ്യകപർദ്ദിനിയായ മഹിഷാസുരമർദ്ദിനീ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହାତରେ ବଂଶୀ ବଜାଇ କୋଇଲି ପରି ମଧୁର ଗାନ କରୁଥିବା, ନିର୍ମଳ ସୁବୁଦ୍ଧିଶୋଭିତା, ବନବାସୀମାନଙ୍କ ମଧୁର ସଙ୍ଗୀତରେ ମୁଖରିତ ପର୍ବତ କୁଞ୍ଜରେ ବିଚରଣକାରିଣୀ, ଏବଂ ନିଜ ସଦ୍‌ଗୁଣରେ ସମଗ୍ର ବିଶ୍ୱ ତଥା ନନ୍ଦନବନକୁ ପବିତ୍ର କରୁଥିବା ହେ ମାତା ! ସୁନ୍ଦର ଜଟାଧାରିଣୀ ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 15,
+      "verse_type": "VERSE",
+      "original_sanskrit": "कटितटपीतदुकूलविचित्रमयूखतिरस्कृतचन्द्ररुचे\nप्रणतसुरासुरमौलिविरञ्जितरत्नकदम्बकराजिनुते ।\nउदितमहारुणमण्डलनिर्मलकान्तिविलासविदीप्ततले\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १५ ॥",
+      "iast": "kaṭitaṭapītadukūlavicitramayūkhatiraskṛtacandrarucē\npraṇatasurāsuramaulivirañjitaratnakadambakarājinutē ।\nuditamahāruṇamaṇḍalanirmalakāntivilāsavidīptatalē\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 15 ॥",
+      "transliterations": {
+        "telugu": "కటితటపీతదుకూలవిచిత్రమయూఖతిరస్కృతచన్ద్రరుచే\nప్రణతసురాసురమౌలివిరఞ్జితరత్నకదమ్బకరాజినుతే ।\nఉదితమహారుణమణ్డలనిర్మలకాన్తివిలాసవిదీప్తతలే\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౧౫ ॥",
+        "tamil": "கடிதடபீததுகூலவிசித்ரமயூகதிரஸ்க்ரு'தசந்த்ரருசே\nப்ரணதஸுராஸுரமௌலிவிரஞ்ஜிதரத்நகதம்பகராஜிநுதே ।\nஉதிதமஹாருணமண்டலநிர்மலகாந்திவிலாஸவிதீப்ததலே\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௧௫ ॥",
+        "kannada": "ಕಟಿತಟಪೀತದುಕೂಲವಿಚಿತ್ರಮಯೂಖತಿರಸ್ಕೃತಚನ್ದ್ರರುಚೇ\nಪ್ರಣತಸುರಾಸುರಮೌಲಿವಿರಞ್ಜಿತರತ್ನಕದಮ್ಬಕರಾಜಿನುತೇ ।\nಉದಿತಮಹಾರುಣಮಣ್ಡಲನಿರ್ಮಲಕಾನ್ತಿವಿಲಾಸವಿದೀಪ್ತತಲೇ\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೧೫ ॥",
+        "malayalam": "കടിതടപീതദുകൂലവിചിത്രമയൂഖതിരസ്കൃതചന്ദ്രരുചേ\nപ്രണതസുരാസുരമൌലിവിരഞ്ജിതരത്നകദമ്ബകരാജിനുതേ ।\nഉദിതമഹാരുണമണ്ഡലനിര്മലകാന്തിവിലാസവിദീപ്തതലേ\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൧൫ ॥",
+        "iast": "kaṭitaṭapītadukūlavicitramayūkhatiraskṛtacandraruce\npraṇatasurāsuramaulivirañjitaratnakadambakarājinute |\nuditamahāruṇamaṇḍalanirmalakāntivilāsavidīptatale\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 15 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Adorned around the waist with golden-yellow silk outshining the moon, whose feet are bathed in the multicolored gem-light of bowing gods and demons, shining like the newly risen sun! Victory to You, O Slayer of Mahishasura!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "कमर में बंधी पीताम्बरी की अद्भुत किरणों से चन्द्रमा की कान्ति को भी मद्धिम कर देने वाली, नतमस्तक देवताओं और असुरों के मुकुटों में जड़े रत्नों के समूहों द्वारा पूजित, और उदित होते हुए प्रचण्ड बालसूर्य के समान निर्मल कान्ति से देदीप्यमान चरणों वाली हे माँ! हे मनोहर जटाओं वाली, महिषासुर का संहार करने वाली शैलपुत्री! आपकी सदा जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "కటిభాగమున ధరించిన పసుపుపచ్చని పట్టువస్త్రపు కాంతులతో చంద్రకాంతిని సైతం తిరస్కరించుదానా! సాష్టాంగపడిన సురాసురుల కిరీటములలోని మణుల కాంతులచే ప్రకాశించు పాదములు కలదానా! ఉదయించుచున్న సూర్యబింబమువలె నిర్మల కాంతులతో వెలుగు దివ్య పాదములు గలదానా! అందమైన కేశములు గల మహిషాసురమర్దినీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இடையில் உடுத்திய பீதாம்பரத்தின் விசித்திரக் கிரணங்களால் சந்திரனின் ஒளியையும் விஞ்சியவளே! தலைவணங்கும் தேவாசுரர்களின் முடிகளில் பதித்த மணிகளின் ஒளியால் ஒளிரும் திருவடிகளைக் கொண்டவளே! உதிக்கும் செங்கதிரவனைப் போலத் தகதகக்கும் பொற்பாதங்களை உடையவளே! எழில் சடை தரித்த மகிஷாசுரமர்த்தினியே! உனக்கு வெற்றி, வெற்றி!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಸೊಂಟದಲ್ಲಿ ಧರಿಸಿದ ಹಳದಿ ಪೀತಾಂಬರದ ದಿವ್ಯ ಕಾಂತಿಯಿಂದ ಚಂದ್ರನ ಪ್ರಕಾಶವನ್ನೂ ಮೀರಿಸುವವಳೇ! ಸಾಷ್ಟಾಂಗವೆರಗಿದ ಸುರಾಸುರರ ಕಿರೀಟಗಳಲ್ಲಿನ ರತ್ನಗಳ ಪ್ರಭೆಯಿಂದ ಬೆಳಗುವ ಚರಣಗಳುಳ್ಳವಳೇ! ಉದಯಿಸುವ ಬಾಲಸೂರ್ಯನಂತೆ ನಿರ್ಮಲವಾಗಿ ಬೆಳಗುವ ದಿವ್ಯ ಪಾದಗಳುಳ್ಳ ತಾಯೇ! ರಮ್ಯ ಜಟೆಯನ್ನುಳ್ಳ ಮಹಿಷಾಸುರಮರ್ದಿನಿಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "कमरेला नेसलेल्या पिवळ्या पीतांबराच्या प्रकाशाने चंद्राच्या कांतीलाही मागे टाकणारी, नतमस्तक देव-दानवांच्या मुकुटांतील रत्नांनी पूजलेली, आणि उगवत्या सूर्यासारखी तेजस्वी पावले असणारी हे देवी! सुंदर जटा धारण करणाऱ्या महिषासुरमर्दिनी! तुझा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "কটিতটবেষ্টিত পীতবসনপ্রভায় চন্দ্রকিরণকে পরাভূতকারিণী! অবনত সুর-অসুরগণের মুকুটমণিমালার দীপ্তিতে শোভিতচরণা! এবং প্রাতঃসূর্যমণ্ডলের নির্মল ভাস্বর কান্তিতে প্রদীপ্তপাদপদ্মা হে জননী! সুন্দর কেশভূষিতা মহিষাসুরমর্দিনী পার্বতী! তোমার জয় হউক, জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "કમરમાં બાંધેલા પીળા પીતાંબરના તેજથી ચંદ્રના પ્રકાશને પણ ઝાંખો પાડી દેનારાં, નમન કરતા દેવો-દાનવોના મુકુટના રત્નોથી પૂજિત ચરણોવાળાં, અને ઊગતા સૂર્ય જેવાં તેજસ્વી ચરણકમળ ધરાવનારાં હે માં! સુંદર જટાધારી મહિષાસુરમર્દિની! તમારો જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അരയിൽ ചുറ്റിയ മഞ്ഞപ്പട്ടിന്റെ പ്രഭയാൽ ചന്ദ്രകാന്തിയെപ്പോലും തോൽപ്പിക്കുന്നവളേ! വണങ്ങുന്ന ദേവാസുരന്മാരുടെ കിരീടങ്ങളിലെ രത്നക്കൂട്ടങ്ങളാൽ തിളങ്ങുന്ന കാൽത്തളിരുകളുള്ളവളേ! ഉദയസൂര്യനെപ്പോലെ വിളങ്ങുന്ന പാദങ്ങളുള്ള അമ്മേ! രമ್ಯകപർദ്ദിനിയായ മഹിഷാസുരമർദ്ദിനീ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "କଟିଦେଶରେ ପରିଧାନ କରିଥିବା ପୀତାମ୍ବରର କିରଣରେ ଚନ୍ଦ୍ରକାନ୍ତିକୁ ତୁଚ୍ଛ କରୁଥିବା, ନତମସ୍ତକ ଦେବାସୁରମାନଙ୍କ ମୁକୁଟର ରତ୍ନଶୋଭାରେ ପୂଜିତଚରଣା, ଏବଂ ଉଦିତ ବାଳସୂର୍ଯ୍ୟ ପରି ତେଜୋମୟ ପାଦପଦ୍ମଯୁକ୍ତା ହେ ମାତା ! ସୁନ୍ଦର ଜଟାଧାରିଣୀ ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 16,
+      "verse_type": "VERSE",
+      "original_sanskrit": "सुरनरवन्दितपादसरोरुहमुद्रितसर्वशुभप्रपते\nकुमुदविकाससुहासविलाससुशोभितदिव्यमुखाम्बुरुहे ।\nशिशिरशिलातलवासितपुष्पपरागसुगन्धितचन्द्रसुते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १६ ॥",
+      "iast": "suranaravanditapādasarōruhamudritasarvaśubhaprapatē\nkumudavikāsasuhāsavilāsasuśōbhitadivyamukhāmburuhē ।\nśiśiraśilātalavāsitapuṣpaparāgasugandhitacandrasutē\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 16 ॥",
+      "transliterations": {
+        "telugu": "సురనరవన్దితపాదసరోరుహముద్రితసర్వశుభప్రపతే\nకుముదవికాససుహాసవిలాససుశోభితదివ్యముఖామ్బురుహే ।\nశిశిరశిలాతలవాసితపుష్పపరాగసుగన్ధితచన్ద్రసుతే\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౧౬ ॥",
+        "tamil": "ஸுரநரவந்திதபாதஸரோருஹமுத்ரிதஸர்வஶுபப்ரபதே\nகுமுதவிகாஸஸுஹாஸவிலாஸஸுஶோபிததிவ்யமுகாம்புருஹே ।\nஶிஶிரஶிலாதலவாஸிதபுஷ்பபராகஸுகந்திதசந்த்ரஸுதே\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௧௬ ॥",
+        "kannada": "ಸುರನರವನ್ದಿತಪಾದಸರೋರುಹಮುದ್ರಿತಸರ್ವಶುಭಪ್ರಪತೇ\nಕುಮುದವಿಕಾಸಸುಹಾಸವಿಲಾಸಸುಶೋಭಿತದಿವ್ಯಮುಖಾಮ್ಬುರುಹೇ ।\nಶಿಶಿರಶಿಲಾತಲವಾಸಿತಪುಷ್ಪಪರಾಗಸುಗನ್ಧಿತಚನ್ದ್ರಸುತೇ\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೧೬ ॥",
+        "malayalam": "സുരനരവന്ദിതപാദസരോരുഹമുദ്രിതസര്വശുഭപ്രപതേ\nകുമുദവികാസസുഹാസവിലാസസുശോഭിതദിവ്യമുഖാമ്ബുരുഹേ ।\nശിശിരശിലാതലവാസിതപുഷ്പപരാഗസുഗന്ധിതചന്ദ്രസുതേ\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൧൬ ॥",
+        "iast": "suranaravanditapādasaroruhamudritasarvaśubhaprapate\nkumudavikāsasuhāsavilāsasuśobhitadivyamukhāmburuhe |\nśiśiraśilātalavāsitapuṣpaparāgasugandhitacandrasute\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 16 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Whose lotus feet, worshipped by gods and humans, impress auspiciousness upon all creation, whose face blossoms with a smile like night-blooming water lilies, fragrant with mountain wildflowers! Victory to You, O Slayer of Mahishasura!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "देवताओं और मनुष्यों द्वारा वन्दित चरणकमलों से समस्त शुभ फलों की मुहर लगाने वाली, कुमुदिनी के समान खिलने वाले मधुर हास्य से सुशोभित मुखकमल वाली, और शीतल पर्वतीय शिलाओं पर बिखरे पुष्प-पराग से सुगन्धित होने वाली हे भगवती! हे मनोहर जटाओं वाली, महिषासुर का संहार करने वाली शैलपुत्री! आपकी सदा जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "దేవతలు, మానవులచే పూజింపబడిన పాదపద్మములతో సర్వ శుభములను ముద్రించి ప్రసాదించుదానా! తెల్లకలువవలె వికసించు చిరునవ్వుతో ప్రకాశించు దివ్య ముఖపద్మము కలదానా! చల్లని హిమశిలలపై పరిమళించు పూలపరాగముచే సుగంధభరితమైన ఓ దేవీ! సుందర కేశములు గల మహిషాసురమర్దినీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தேவர்களும் மனிதர்களும் தொழும் தன் பொற்பாதங்களால் சகல மங்கலங்களையும் முத்திரையிட்டு அருள்பவளே! அல்லி மலர் போல மலர்ந்த புன்னகையால் சுடர்விடும் முகத்தாமரை கொண்டவளே! பனிப்பாறைகளில் சிந்திய பூந்தாதுக்களின் நறுமணம் கமழும் அன்னையே! எழில் சடை தரித்த மகிஷாசுரமர்த்தினியே! உனக்கு வெற்றி, வெற்றி!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ದೇವತೆಗಳು ಮತ್ತು ಮಾನವರಿಂದ ಪೂಜಿಸಲ್ಪಟ್ಟ ಪಾದಕಮಲಗಳಿಂದ ಸಕಲ ಶುಭಗಳನ್ನು ಮುದ್ರಿಸಿ ಅನುಗ್ರಹಿಸುವವಳೇ! ಕನ್ನೈದಿಲೆಯಂತೆ ಅರಳುವ ಮಂದಹಾಸದಿಂದ ಶೋಭಿಸುವ ದಿವ್ಯ ಮುಖಕಮಲವುಳ್ಳವಳೇ! ತಂಪಾದ ಹಿಮಶಿಲೆಗಳ ಮೇಲಿನ ಪುಷ್ಪಪರಾಗದಿಂದ ಸುಗಂಧಿತಳಾದ ಮಹಾತಾಯೇ! ರಮ್ಯ ಜಟೆಯನ್ನುಳ್ಳ ಮಹಿಷಾಸುರಮರ್ದಿನಿಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "देव आणि मानवांनी पूजलेल्या चरणकमलांनी सर्व शुभ फळे प्रदान करणारी, कुमुदिनीसारख्या उमललेल्या हास्याने शोभणारे मुख असणारी, आणि थंडगार हिमालयाच्या खडकांवरील फुलांच्या परागाने सुगंधित झालेली हे देवी! सुंदर जटा धारण करणाऱ्या महिषासुरमर्दिनी! तुझा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "দেব-মানববন্দিত চরণকমলে সর্বশুভের মুদ্রা অঙ্কনকারিণী! কুমুদবিকাশের ন্যায় মধুর হাস্যে সুশোভিত দিব্য মুখারবিন্দধারিণী! এবং তুষারশীতল শৈলশিলায় স্থিত কুসুমপরাগে সুরভিতকান্তি হে জননী! সুন্দর কেশভূষিতা মহিষাসুরমর্দিনী পার্বতী! তোমার জয় হউক, জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "દેવો અને મનુષ્યો દ્વારા વંદિત ચરણકમળોથી સર્વ શુભ ફળ આપનારાં, પોયણી જેવી મીઠી મુસ્કાનથી શોભતા મુખકમળવાળાં, અને શીતળ પર્વતીય શિલાઓ પરના પુષ્પ-પરાગથી સુવાસિત હે માં! સુંદર જટાધારી મહિષાસુરમર્દિની! તમારો જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ദേവന്മാരും മനുഷ്യരും വണങ്ങുന്ന പാദപത്മങ്ങളാൽ സകല മംഗളങ്ങളും മുദ്രണം ചെയ്യുന്നവളേ! ആമ്പൽപ്പൂവുപോലെ വിടരുന്ന പുഞ്ചിരിയാൽ ശോഭിക്കുന്ന തിരുമുഖമുള്ളവളേ! ഹിമശിലകളിലെ പൂമ്പൊടിയാൽ സുഗന്ധം പരത്തുന്ന അമ്മേ! രമ്യകപർദ്ദിനിയായ മഹിഷാസുരമർദ്ദിനീ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଦେବତା ଓ ମାନବମାନଙ୍କ ଦ୍ୱାରା ବନ୍ଦିତ ପାଦପଦ୍ମରେ ସକଳ ଶୁଭଫଳ ଅଙ୍କିତ କରୁଥିବା, କଇଁଫୁଲ ପରି ମଧୁର ହାସ୍ୟରେ ଶୋଭିତ ଦିବ୍ୟ ମୁଖମଣ୍ଡଳଯୁକ୍ତା, ଏବଂ ଶୀତଳ ପର୍ବତ ଶିଳାର ପୁଷ୍ପପରାଗରେ ସୁବାସିତା ହେ ମାତା ! ସୁନ୍ଦର ଜଟାଧାରିଣୀ ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 17,
+      "verse_type": "VERSE",
+      "original_sanskrit": "अयि मयि दीनदयालुदयानिकुरुम्बकमेदुरनेत्ररुचे\nनिजपदकञ्जसमाश्रितदीनसुभक्तजनार्तिहरप्रभवे ।\nकुरु दयया मयि दासममन्दमपारभवार्णवतारणतः\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १७ ॥",
+      "iast": "ayi mayi dīnadayāludayānikurumbakamēduranētrarucē\nnijapadakañjasamāśritadīnasubaktajanārtiharaprabhavē ।\nkuru dayayā mayi dāsamamandamaipārabhavārṇavatāraṇataḥ\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 17 ॥",
+      "transliterations": {
+        "telugu": "అయి మయి దీనదయాలుదయానికురుమ్బకమేదురనేత్రరుచే\nనిజపదకఞ్జసమాశ్రితదీనసుభక్తజనార్తిహరప్రభవే ।\nకురు దయయా మయి దాసమమన్దమపారభవార్ణవతారణతః\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౧౭ ॥",
+        "tamil": "அயி மயி தீநதயாலுதயாநிகுரும்பகமேதுரநேத்ரருசே\nநிஜபதகஞ்ஜஸமாஶ்ரிததீநஸுபக்தஜநார்திஹரப்ரபவே ।\nகுரு தயயா மயி தாஸமமந்தமபாரபவார்ணவதாரணதஃ\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௧௭ ॥",
+        "kannada": "ಅಯಿ ಮಯಿ ದೀನದಯಾಲುದಯಾನಿಕುರುಮ್ಬಕಮೇದುರನೇತ್ರರುಚೇ\nನಿಜಪದಕಞ್ಜಸಮಾಶ್ರಿತದೀನಸುಭಕ್ತಜನಾರ್ತಿಹರಪ್ರಭವೇ ।\nಕುರು ದಯಯಾ ಮಯಿ ದಾಸಮಮನ್ದಮಪಾರಭವಾರ್ಣವತಾರಣತಃ\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೧೭ ॥",
+        "malayalam": "അയി മയി ദീനദയാലുദയാനികുരുമ്ബകമേദുരനേത്രരുചേ\nനിജപദകഞ്ജസമാശ്രിതദീനസുഭക്തജനാര്തിഹരപ്രഭവേ ।\nകുരു ദയയാ മയി ദാസമമന്ദമപാരഭവാര്ണവതാരണതഃ\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൧൭ ॥",
+        "iast": "ayi mayi dīnadayāludayānikurumbakameduranetraruce\nnijapadakañjasamāśritadīnasubhaktajanārtiharaprabhave |\nkuru dayayā mayi dāsamamandamapārabhavārṇavatāraṇataḥ\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 17 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "O Merciful Mother! Cast Your gaze overflowing with kindness upon me, Your humble servant, dispelling all suffering and ferrying me safely across the fathomless ocean of worldly existence! Victory to You, O Slayer of Mahishasura!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "दीनों पर असीम दया करने वाली, दया के घने प्रवाह से भरे कृपा-नेत्रों वाली, अपने चरणकमलों का आश्रय लेने वाले असहाय भक्तों के समस्त दुःखों को दूर करने में समर्थ, हे माँ! मुझ दीन को अपना नित्य दास स्वीकार कर इस अपार भवसागर से पार उतारने की अहैतुकी कृपा करो! हे मनोहर जटाओं वाली, महिषासुरमर्दिनी शैलपुत्री! आपकी सदा जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "దీనులపై అపారమైన దయగలదానా! కరుణారసముతో తొణికిసలాడు చూపులు కలదానా! తన పాదపద్మములను ఆశ్రయించిన భక్తుల కష్టములను రూపుమాపగల సమర్థురాలా! ఓ అమ్మా! నాయందు దయయుంచి నన్ను నీ దాసునిగా స్వీకరించి, ఈ అంతులేని సంసార సముద్రమును దాటించుము! అందమైన కేశములు గల మహిషాసురమర్దినీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "எளியோரிடம் அளப்பரிய கருணை பொழியும் விழிகளை உடையவளே! தன் திருவடித் தாமரைகளைச் சரணடைந்த ஏழை பக்தர்களின் துயரங்களைத் தீர்க்கும் பேராற்றல் படைத்தவளே! அம்மா, என் மீது கருணை கூர்ந்து என்னை உனது அடியானாக ஏற்று, இந்த எல்லையற்ற பிறவிக் கடலைக் கடக்கச் செய்வாயாக! எழில் சடை தரித்த மகிஷாசுரமர்த்தினியே! உனக்கு வெற்றி, வெற்றி!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ದೀನರ ಮೇಲೆ ಅಪಾರ ಕರುಣೆ ತೋರುವ, ದಯಾಮೃತ ತುಂಬಿದ ದೃಷ್ಟಿಯುಳ್ಳವಳೇ! ತನ್ನ ಪಾದಕಮಲಗಳನ್ನು ಆಶ್ರಯಿಸಿದ ಭಕ್ತರ ಸಕಲ ಕಷ್ಟಗಳನ್ನು ನಿವಾರಿಸಬಲ್ಲ ಸರ್ವಶಕ್ತಳಾದ ತಾಯೇ! ನನ್ನ ಮೇಲೆ ದಯೆಯಿಟ್ಟು నన్ను ನಿನ್ನ ದಾಸನನ್ನಾಗಿ ಸ್ವೀಕರಿಸಿ, ಈ ಅಪಾರ ಸಂಸಾರ ಸಾಗರವನ್ನು ದಾಟಿಸು! ರಮ್ಯ ಜಟೆಯನ್ನುಳ್ಳ ಮಹಿಷಾಸುರಮರ್ದಿನಿಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "दीनांवर असीम दया करणारी, करुणेने भरलेली दृष्टी असणारी, आपल्या चरणांचा आश्रय घेतलेल्या भक्तांचे सर्व दुःख दूर करण्यास समर्थ असणारी हे देवी! माझ्यावर कृपा करून मला तुझा दास बनव आणि या अथांग भवसागरातून पार कर! सुंदर जटा धारण करणाऱ्या महिषासुरमर्दिनी! तुझा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "দীনবৎसला! প্রগাঢ় কৃপাবারিধারায় পরিপূর্ণা নেত্রকান্তিযুক্তা! নিজ চরণারবিন্দাশ্রিত ভক্তবৃন্দের সন্তাপনিবারণসমর্থা! হে জননী, করুণাবশতঃ আমাকে নিজ চরণে নিত্যদাসরূপে বরণ করিয়া এই অপার সংসারসাগর পার করিয়া দাও! সুন্দর কেশভূষিতা মহিষাসুরমর্দিনী পার্বতী! তোমার জয় হউক, জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "દીનો પર અનંત દયા કરનારાં, કરુણાથી છલકાતાં નેત્રોવાળાં, પોતાના ચરણકમળનો આશ્રય લેનારા ભક્તોનાં દુઃખો દૂર કરવા સમર્થ હે માં! મારા પર દયા કરીને મને તમારો દાસ બનાવી આ અપાર ભવસાગરમાંથી પાર ઉતારો! સુંદર જટાધારી મહિષાસુરમર્દિની! તમારો જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ദരിദ്രരിൽ കനിവു ചൊരിയുന്ന കാരുണ്യാർദ്രമായ തൃക്കണ്ണുകളുള്ളവളേ! പാദപത്മങ്ങളെ ശരണം പ്രാപിച്ച ഭക്തരുടെ ദുരിതങ്ങൾ തീർക്കുന്ന സർവ്വേശ്വരിയേ! ദയവായി എന്നെ നിന്റെ ദാസനാക്കി, ഈ അഗാധമായ ഭവസമുദ്രം കടത്തേണമേ അമ്മേ! രമ്യകപർദ്ദിനിയായ മഹിഷാസുരമർദ്ദിനീ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଦୀନଜନଙ୍କ ଉପରେ ଅସୀମ କରୁଣା ବର୍ଷଣକାରୀ, ଦୟାରସରେ ପୂର୍ଣ୍ଣ କଟାକ୍ଷଯୁକ୍ତା, ନିଜ ପାଦପଦ୍ମ ଆଶ୍ରିତ ଭକ୍ତମାନଙ୍କ ସକଳ ଦୁଃଖ ଦୂର କରିବାରେ ସମର୍ଥା ହେ ମାତା ! ମୋ ଉପରେ କୃପା କରି ମୋତେ ନିଜର ଦାସ ରୂପେ ସ୍ୱୀକାର କର ଏବଂ ଏହି ଅପାର ସଂସାର ସାଗରରୁ ତାରିଦିଅ ! ସୁନ୍ଦର ଜଟାଧାରିଣୀ ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 18,
+      "verse_type": "VERSE",
+      "original_sanskrit": "पदकमलं करुणानिलये वरिवस्यति योऽनुदिनं स शिवे\nस कथं न भवेत्स कथं न भवेत्तव भावनया शुचिमानजनः ।\nतव विमलेन्दुकुलं वदनं विचिन्तयतो हृदये ननु किम्\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १८ ॥",
+      "iast": "padakamalaṁ karuṇānilayē varivasyati yō'nudinaṁ sa śivē\nsa kathaṁ na bhavētsa kathaṁ na bhavēttava bhāvanayā śucimānajanaḥ ।\ntava vimalēndukulaṁ vadanaṁ vicintayatō hṛdayē nanu kim\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 18 ॥",
+      "transliterations": {
+        "telugu": "పదకమలం కరుణానిలయే వరివస్యతి యోఽనుదినం స శివే\nస కథం న భవేత్స కథం న భవేత్తవ భావనయా శుచిమానజనః ।\nతవ విమలేన్దుకులం వదనం విచిన్తయతో హృదయే నను కిమ్\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౧౮ ॥",
+        "tamil": "பதகமலம் கருணாநிலயே வரிவஸ்யதி யோऽநுதிநம் ஸ ஶிவே\nஸ கதம் ந பவேத்ஸ கதம் ந பவேத்தவ பாவநயா ஶுசிமாநஜநஃ ।\nதவ விமலேந்துகுலம் வதநம் விசிந்தயதோ ஹ்ரு'தயே நநு கிம்\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௧௮ ॥",
+        "kannada": "ಪದಕಮಲಂ ಕರುಣಾನಿಲಯೇ ವರಿವಸ್ಯತಿ ಯೋಽನುದಿನಂ ಸ ಶಿವೇ\nಸ ಕಥಂ ನ ಭವೇತ್ಸ ಕಥಂ ನ ಭವೇತ್ತವ ಭಾವನಯಾ ಶುಚಿಮಾನಜನಃ ।\nತವ ವಿಮಲೇನ್ದುಕುಲಂ ವದನಂ ವಿಚಿನ್ತಯತೋ ಹೃದಯೇ ನನು ಕಿಮ್\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೧೮ ॥",
+        "malayalam": "പദകമലം കരുണാനിലയേ വരിവസ്യതി യോഽനുദിനം സ ശിവേ\nസ കഥം ന ഭവേത്സ കഥം ന ഭവേത്തവ ഭാവനയാ ശുചിമാനജനഃ ।\nതവ വിമലേന്ദുകുലം വദനം വിചിന്തയതോ ഹൃദയേ നനു കിമ്\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൧൮ ॥",
+        "iast": "padakamalaṃ karuṇānilaye varivasyati yo'nudinaṃ sa śive\nsa kathaṃ na bhavetsa kathaṃ na bhavettava bhāvanayā śucimānajanaḥ |\ntava vimalendukulaṃ vadanaṃ vicintayato hṛdaye nanu kim\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 18 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Whoever daily serves Your lotus feet, O abode of compassion, O Auspicious Shivaa — how could that person not become purified and exalted through Your contemplation? Victory to You, O Slayer of Mahishasura!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे करुणामयी शिवप्रिया! जो मनुष्य प्रतिदिन आपके चरणकमलों की निष्काम सेवा-पूजा करता है, वह आपके पावन ध्यान के प्रभाव से परम पवित्र क्यों न हो जाएगा? और जो अपने हृदय में आपके निर्मल चन्द्रमा के समान पावन मुखमण्डल का चिन्तन करता है, उसे भला कौन-सा ऐश्वर्य और कल्याण सुलभ नहीं होता? हे सुन्दर जटाओं वाली, महिषासुर का संहार करने वाली शैलपुत्री! आपकी सदा जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "కరుణానిలయురాలవైన ఓ శివా! ఎవరు ప్రతిదినము నీ పాదపద్మములను సేవించునో, అతడు నీ దివ్య ధ్యానముచే పవిత్రుడై ఎందుకు తీరడు? స్వచ్ఛమైన పూర్ణచంద్రుని బోలిన నీ ముఖారవిందమును హృదయమున ధ్యానించు భక్తునికి లభించని శ్రేయస్సు ఏముండును? అందమైన కేశములు గల మహిషాసురమర్దినీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "கருணையின் இருப்பிடமான மங்களரூபிணியே! உனது திருவடித் தாமரைகளை நாள்தோறும் வணங்கும் மனிதன், உன்னைத் தியானிப்பதனால் பரிசுத்தமானவனாக எவ்வாறு ஆகாமல் போவான்? களங்கமற்ற சந்திரன் போன்ற உனது திருமுகத்தை இதயத்தில் நினைப்பவனுக்குக் கிடைக்காத பேறுதான் ஏது? எழில் சடை தரித்த மகிஷாசுரமர்த்தினியே! உனக்கு வெற்றி, வெற்றி!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಕರುಣೆಯ ತಾಣವಾದ ಹೇ ಮಂಗಳಮಯಿಯೇ! ಯಾರು ಪ್ರತಿದಿನವೂ ನಿನ್ನ ಪಾದಕಮಲಗಳನ್ನು ಪೂಜಿಸುವರೋ, ಅವರು ನಿನ್ನ ಪಾವನ ಧ್ಯಾನದಿಂದ ಪರಮ ಪವಿತ್ರರಾಗದೇ ಇರಲು ಹೇಗೆ ಸಾಧ್ಯ? ನಿರ್ಮಲ ಚಂದ್ರನಂತಹ ನಿನ್ನ ಮುಖಕಮಲವನ್ನು ಹೃದಯದಲ್ಲಿ ನೆನೆಯುವವನಿಗೆ ಸಿದ್ಧಿಸದ ಮಂಗಳವೇನಿದೆ? ರಮ್ಯ ಜಟೆಯನ್ನುಳ್ಳ ಮಹಿಷಾಸುರಮರ್ದಿನಿಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे करुणेचे माहेरघर असणाऱ्या शिवाची प्रियतमा! जो रोज तुझ्या चरणकमलांची सेवा करतो, तो तुझ्या ध्यानाने पवित्र का होणार नाही? आणि चंद्रासारख्या तुझ्या सुंदर मुखाचे हृदयात चिंतन करणाऱ्याला कोणती गोष्ट दुर्लभ राहील? सुंदर जटा धारण करणाऱ्या महिषासुरमर्दिनी! तुझा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে করুণার আলয়স্বরূপা শিবানী! যিনি প্রতিদিন তোমার চরণপদ্ম সেবা করেন, তিনি তোমার পবিত্র ধ্যানে কেনই বা পরম শুদ্ধচরিত্র হইবেন না? এবং যিনি হৃদয়ে তোমার বিমলেন্দুসদৃশ মুখমণ্ডল নিরন্তর চিন্তা করেন, তাঁহার নিকট অপাপবিদ্ধ পরম সৌভাগ্য কি অধরা থাকিতে পারে? সুন্দর কেশভূষিতা মহিষাসুরমর্দিনী পার্বতী! তোমার জয় হউক, জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હે કરુણાનાં ધામ શિવપ્રિયા! જે મનુષ્ય પ્રતિદિન આપના ચરણકમળની સેવા કરે છે, તે આપના ધ્યાનના પ્રભાવથી પવિત્ર કેમ ન બને? અને નિર્મળ ચંદ્ર જેવા આપના મુખનું હૃદયમાં ચિંતન કરનારને કયું કલ્યાણ સુલભ નથી થતું? સુંદર જટાધારી મહિષાસુરમર્દિની! તમારો જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "കാരുണ്യത്തിന്റെ ഇരിപ്പിടമായ മംഗളസ്വരൂപിണീ! നിന്റെ പാദപത്മങ്ങളെ നിത്യവും സേവിക്കുന്നവൻ നിന്റെ ധ്യാനത്താൽ എങ്ങനെയാണ് വിശുദ്ധനാകാതിരിക്കുക? നിർമ്മലചന്ദ്രതുല്യമായ തിരുമുഖത്തെ ഹൃദയത്തിൽ ധ്യാനിക്കുന്നവന് കൈവരാത്തതായി എന്താണുള്ളത്? രമ്യകപർദ്ദിനിയായ മഹിഷാസുരമർദ്ദിനീ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହେ କରୁଣାର ନିଳୟ ଶିବାନୀ ! ଯିଏ ପ୍ରତିଦିନ ଆପଣଙ୍କ ପାଦପଦ୍ମ ସେବା କରେ, ସେ ଆପଣଙ୍କ ପବିତ୍ର ଧ୍ୟାନରେ କିପରି ବା ପବିତ୍ର ନ ହେବ ? ଏବଂ ନିର୍ମଳ ଚନ୍ଦ୍ର ସଦୃଶ ଆପଣଙ୍କ ଶ୍ରୀମୁଖକୁ ହୃଦୟରେ ଚିନ୍ତନ କରୁଥିବା ବ୍ୟକ୍ତିକୁ କେଉଁ ସୌଭାଗ୍ୟ ପ୍ରାପ୍ତ ନ ହୁଏ ? ସୁନ୍ଦର ଜଟାଧାରିଣୀ ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 19,
+      "verse_type": "VERSE",
+      "original_sanskrit": "स्तुतिभिरमन्दमुदारगुणाभिरुदीरितदिव्यगुणाम्बुनिधे\nभजति यतो दयया स नरः समवाप्नुत एव परां मुदितम् ।\nजननि तवैव पदाब्जपरागसुगन्धिनिवेशितमानसतो\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १९ ॥",
+      "iast": "stutibhiramandamadāraguṇābhirudīritadivyaguṇāmbunidhē\nbhajati yatō dayayā sa naraḥ samavāpnuta ēva parāṁ muditam ।\njanani tavaiva padābjaparāgasugandhinivēśitamānasatō\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 19 ॥",
+      "transliterations": {
+        "telugu": "స్తుతిభిరమన్దముదారగుణాభిరుదీరితదివ్యగుణామ్బునిధే\nభజతి యతో దయయా స నరః సమవాప్నుత ఏవ పరాం ముదితమ్ ।\nజనని తవైవ పదాబ్జపరాగసుగన్ధినివేశితమానసతో\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౧౯ ॥",
+        "tamil": "ஸ்துதிபிரமந்தமுதாரகுணாபிருதீரிததிவ்யகுணாம்புநிதே\nபஜதி யதோ தயயா ஸ நரஃ ஸமவாப்நுத ஏவ பராம் முதிதம் ।\nஜநநி தவைவ பதாப்ஜபராகஸுகந்திநிவேஶிதமாநஸதோ\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௧௯ ॥",
+        "kannada": "ಸ್ತುತಿಭಿರಮನ್ದಮುದಾರಗುಣಾಭಿರುದೀರಿತದಿವ್ಯಗುಣಾಮ್ಬುನಿಧೇ\nಭಜತಿ ಯತೋ ದಯಯಾ ಸ ನರಃ ಸಮವಾಪ್ನುತ ಏವ ಪರಾಂ ಮುದಿತಮ್ ।\nಜನನಿ ತವೈವ ಪದಾಬ್ಜಪರಾಗಸುಗನ್ಧಿನಿವೇಶಿತಮಾನಸತೋ\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೧೯ ॥",
+        "malayalam": "സ്തുതിഭിരമന്ദമുദാരഗുണാഭിരുദീരിതദിവ്യഗുണാമ്ബുനിധേ\nഭജതി യതോ ദയയാ സ നരഃ സമവാപ്നുത ഏവ പരാം മുദിതമ് ।\nജനനി തവൈവ പദാബ്ജപരാഗസുഗന്ധിനിവേശിതമാനസതോ\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൧൯ ॥",
+        "iast": "stutibhiramandamudāraguṇābhirudīritadivyaguṇāmbunidhe\nbhajati yato dayayā sa naraḥ samavāpnuta eva parāṃ muditam |\njanani tavaiva padābjaparāgasugandhiniveśitamānasato\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 19 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Whoever praises Your divine virtues through these exalted hymns, anchoring their mind upon the fragrant dust of Your lotus feet, attains supreme bliss and liberation! Victory to You, O Slayer of Mahishasura!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "उदार और दिव्य सद्गुणों से भरपूर पावन स्तुतियों द्वारा गाए जाने वाले दिव्य गुणों के अगाध महासागर हे माँ! जो मनुष्य आपकी कृपा से आपका भजन करता है, वह निश्चय ही परम आनन्द को प्राप्त करता है! हे माता! आपके चरणकमलों के सुगन्धित पराग में जिसका मन लीन हो जाता है, वह धन्य हो जाता है! हे मनोहर जटाओं वाली, महिषासुर का संहार करने वाली शैलपुत्री! आपकी सदा जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "దివ్యమైన సద్గుణములతో నిండిన స్తోత్రములచే కొనియాడబడు గుణసాగరురాలవైన ఓ దేవీ! నీ దయతో నిన్ను భజించు మానవుడు నిస్సందేహముగా పరమానందమును పొందును! ఓ తల్లీ! నీ పాదపద్మముల సుగంధ పూరిత పరాగమునందు తన మనస్సును నిలిపిన భక్తుడు ధన్యుడగును! అందమైన కేశములు గల మహిషాసురమర్దినీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "உயர்ந்த நற்குணங்கள் நிறைந்த ஸ்தோத்திரங்களால் போற்றப்படும் திவ்ய குணக்கடலே! உனது திருவருளால் உன்னைத் துதிக்கும் மனிதன் நிச்சயமாகப் பேரின்பத்தை அடைகிறான்! தாயே, உனது திருவடித் தாமரையின் வாசனை மிகுந்த மகரந்தத்தில் மனதை நிலைநிறுத்துபவன் பரமானந்தத்தை எய்துகிறான்! எழில் சடை தரித்த மகிஷாசுரமர்த்தினியே! உனக்கு வெற்றி, வெற்றி!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಶ್ರೇಷ್ಠ ಸದ್ಗುಣಗಳಿಂದ ಕೂಡಿದ ಸ್ತೋತ್ರಗಳಿಂದ ಸ್ತುತಿಸಲ್ಪಡುವ ದಿವ್ಯಗುಣಗಳ ಸಾಗರವೇ! ನಿನ್ನ ಕೃಪೆಯಿಂದ ನಿನ್ನನ್ನು ಭಜಿಸುವ ಮನುಷ್ಯನು ನಿಶ್ಚಯವಾಗಿಯೂ ಪರಮಾನಂದವನ್ನು ಹೊಂದುತ್ತಾನೆ! ತಾಯೇ, ನಿನ್ನ ಪಾದಕಮಲಗಳ ಪರಿಮಳಯುಕ್ತ ಪರಾಗದಲ್ಲಿ ಮನಸ್ಸನ್ನಿಟ್ಟ ಭಕ್ತನು ಪರಮ ಧನ್ಯನಾಗುತ್ತಾನೆ! ರಮ್ಯ ಜಟೆಯನ್ನುಳ್ಳ ಮಹಿಷಾಸುರಮರ್ದಿನಿಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "दिव्य गुणांनी भरलेल्या स्तुतींनी स्तवलेली गुणांची महासागर असणारी हे देवी! तुझ्या कृपेने जो तुझे भजन करतो, तो निश्चितच परमानंद प्राप्त करतो! हे माते! तुझ्या चरणकमलांच्या सुगंधात मन रमवणारा भक्त धन्य होतो! सुंदर जटा धारण करणाऱ्या महिषासुरमर्दिनी! तुझा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "উদার ও দিব্য সদ্গুণসংবলিত স্তোত্রমালায় নিয়ত কীর্তিত অনুপম গুণসমূহের মহাসমুদ্র হে জননী! যে মানব তোমার কৃপায় তোমার ভজনা করে, সে নিঃসন্দেহে পরমানন্দ লাভ করে! হে মাতা! তোমার পাদপদ্মের সুরভিত পরাগে যাহার চিত্ত নিমগ্ন, তাহার কল্যাণ অবধারিত! সুন্দর কেশভূষিতা মহিষাসুরমর্দিনী পার্বতী! তোমার জয় হউক, জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "દિવ્ય સદ્ગુણોથી ભરેલી સ્તુતિઓ દ્વારા વર્ણવાયેલા ગુણોના અગાધ સાગર સમાન હે માં! આપની કૃપાથી જે મનુષ્ય આપનું ભજન કરે છે, તે ચોક્કસ પરમાનંદ પ્રાપ્ત કરે છે! હે માતા! આપના ચરણકમળની સુગંધમાં જેનું મન લીન થઈ જાય છે, તે ધન્ય બને છે! સુંદર જટાધારી મહિષાસુરમર્દિની! તમારો જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഉദാരമായ സൽഗുണങ്ങളാൽ സ്തുതിക്കപ്പെടുന്ന ഗുണസമുദ്രമേ! അങ്ങയുടെ കാരുണ്യത്താൽ അങ്ങയെ ഭജിക്കുന്ന മനുഷ്യൻ നിശ്ചയമായും പരമാനന്ദം നേടുന്നു! അമ്മേ, അങ്ങയുടെ തിരുപ്പാദങ്ങളിലെ സുഗന്ധമുള്ള പൂമ്പൊടിയിൽ മനസ്സുറപ്പിക്കുന്നവൻ ധന്യനായിത്തീരുന്നു! രമ്യകപർദ്ദിനിയായ മഹിഷാസുരമർദ്ദിനീ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଉଦାର ଦିବ୍ୟ ସଦ୍‌ଗୁଣପୂର୍ଣ୍ଣ ସ୍ତୁତି ଦ୍ୱାରା ବନ୍ଦିତ ଗୁଣରତ୍ନାକର ହେ ମାତା ! ଆପଣଙ୍କ କୃପାରେ ଯେଉଁ ମନୁଷ୍ୟ ଭଜନ କରେ, ସେ ଅବଶ୍ୟ ପରମାନନ୍ଦ ଲାଭ କରେ ! ହେ ଜନନୀ ! ଆପଣଙ୍କ ପାଦପଦ୍ମର ସୁବାସିତ ପରାଗରେ ଯାହାର ମନ ଲୀନ ରହେ, ସେ ଧନ୍ୟ ହୁଏ ! ସୁନ୍ଦର ଜଟାଧାରିଣୀ ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 20,
+      "verse_type": "VERSE",
+      "original_sanskrit": "कनकप्रभावरनिर्मलकान्तिविराजितदिव्यशरीरधरे\nकमलासनविष्णुमहेशसुरेश्वरवन्दितपादयुगे ।\nपरमशुभप्रदचित्तविभावनतारकपुण्यकृते सुखदे\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ २० ॥",
+      "iast": "kanakaprabhāvaranirmalakāntivirājitadivyaśarīradharē\nkamalāsanaviṣṇumahēśasurēśvaravanditapādayugē ।\nparamaśubhapadacittavibhāvanatārakapuṇyakṛtē sukhadē\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 20 ॥",
+      "transliterations": {
+        "telugu": "కనకప్రభావరనిర్మలకాన్తివిరాజితదివ్యశరీరధరే\nకమలాసనవిష్ణుమహేశసురేశ్వరవన్దితపాదయుగే ।\nపరమశుభప్రదచిత్తవిభావనతారకపుణ్యకృతే సుఖదే\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౨౦ ॥",
+        "tamil": "கநகப்ரபாவரநிர்மலகாந்திவிராஜிததிவ்யஶரீரதரே\nகமலாஸநவிஷ்ணுமஹேஶஸுரேஶ்வரவந்திதபாதயுகே ।\nபரமஶுபப்ரதசித்தவிபாவநதாரகபுண்யக்ரு'தே ஸுகதே\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௨௦ ॥",
+        "kannada": "ಕನಕಪ್ರಭಾವರನಿರ್ಮಲಕಾನ್ತಿವಿರಾಜಿತದಿವ್ಯಶರೀರಧರೇ\nಕಮಲಾಸನವಿಷ್ಣುಮಹೇಶಸುರೇಶ್ವರವನ್ದಿತಪಾದಯುಗೇ ।\nಪರಮಶುಭಪ್ರದಚಿತ್ತವಿಭಾವನತಾರಕಪುಣ್ಯಕೃತೇ ಸುಖದೇ\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೨೦ ॥",
+        "malayalam": "കനകപ്രഭാവരനിര്മലകാന്തിവിരാജിതദിവ്യശരീരധരേ\nകമലാസനവിഷ്ണുമഹേശസുരേശ്വരവന്ദിതപാദയുഗേ ।\nപരമശുഭപ്രദചിത്തവിഭാവനതാരകപുണ്യകൃതേ സുഖദേ\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൨൦ ॥",
+        "iast": "kanakaprabhāvaranirmalakāntivirājitadivyaśarīradhare\nkamalāsanaviṣṇumaheśasureśvaravanditapādayuge |\nparamaśubhapradacittavibhāvanatārakapuṇyakṛte sukhade\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 20 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Dazzling with a golden aura of transcendental beauty, whose feet are revered by Brahma, Vishnu, Shiva, and Indra, granting highest peace, salvation, and joy to pure hearts! Victory to You, O Slayer of Mahishasura!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "स्वर्ण की दमक के समान निर्मल और देदीप्यमान कान्ति से सुशोभित दिव्य देह को धारण करने वाली, ब्रह्मा, विष्णु, महेश और देवेन्द्र द्वारा पूजित चरणयुगल वाली, चित्त को परम पावन करने वाले विचार देने वाली, भवसागर से तारने वाले पुण्यों की खान तथा नित्य सुख देने वाली हे माँ! हे मनोहर जटाओं वाली, महिषासुर का संहार करने वाली शैलपुत्री! आपकी सदा जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "మేలిమి బంగారపు కాంతివలె నిర్మలముగా ప్రకాశించు దివ్య శరీరమును ధరించినదానా! బ్రహ్మ, విష్ణు, మహేశ్వరులు మరియు దేవేంద్రునిచే పూజింపబడు పాదద్వయము కలదానా! మనస్సునకు పరమ పవిత్ర భావనలను కలిగించుచు, సంసారమును దాటించు పుణ్యములను ప్రసాదించి సుఖమిచ్చు తల్లీ! అందమైన కేశములు గల మహిషాసురమర్దినీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தங்கத்தைப் போல் தூய ஜோதியுடன் மிளிரும் திவ்ய திருமேனி கொண்டவளே! பிரம்மா, விஷ்ணு, சிவன், தேவேந்திரன் ஆகியோரால் தொழப்படும் திருவடிகளை உடையவளே! உள்ளத்திற்குப் பரம மங்கலமான சிந்தனைகளைத் தந்து, பிறவிப் பெருங்கடலைக் கடக்கும் புண்ணியத்தை வழங்கிப் பேரின்பம் அருளும் தாயே! எழில் சடை தரித்த மகிஷாசுரமர்த்தினியே! உனக்கு வெற்றி, வெற்றி!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಚಿನ್ನದ ಹೊಳಪಿನಂತೆ ನಿರ್ಮಲವೂ ಪ್ರಕಾಶಮಾನವೂ ಆದ ದಿವ್ಯ ಶರೀರವನ್ನು ಧರಿಸಿರುವವಳೇ! ಬ್ರಹ್ಮ, ವಿಷ್ಣು, ಮಹೇಶ್ವರರು ಮತ್ತು ದೇವೇಂದ್ರನಿಂದ ಪೂಜಿಸಲ್ಪಡುವ ಪಾದಗಳುಳ್ಳವಳೇ! ಮನಸ್ಸಿಗೆ ಪರಮ ಮಂಗಳಕರ ಭಾವನೆಗಳನ್ನು ನೀಡಿ, ಭವಸಾಗರವನ್ನು ದಾಟಿಸುವ ಪುಣ್ಯವನ್ನು ಕರುಣಿಸಿ ಸುಖ ನೀಡುವ ತಾಯೇ! ರಮ್ಯ ಜಟೆಯನ್ನುಳ್ಳ ಮಹಿಷಾಸುರಮರ್ದಿನಿಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "सोन्यासारखी निर्मळ आणि तेजस्वी कांती असणारे दिव्य शरीर धारण करणारी, ब्रह्मा, विष्णू, महेश आणि इंद्राने पूजलेले चरण असणारी, मनाला परम पावन विचार देणारी आणि भवसागरातून तारून सुख देणारी हे देवी! सुंदर जटा धारण करणाऱ्या महिषासुरमर्दिनी! तुझा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তপ্তকাঞ্চনের ন্যায় নির্মল ও ভাস্বর কান্তিময় দিব্যদেহধারিণী! ব্রহ্মা, বিষ্ণু, মহেশ্বর ও দেবরাজ ইন্দ্রের পূজিতচরণযুগলা! চিত্তে পরমশুভ ভাবনার সঞ্চারিণী, সংসারতারক পুণ্যের বিধায়িনী এবং পরমসৌখ্যদায়িনী হে জননী! সুন্দর কেশভূষিতা মহিষাসুরমর্দিনী পার্বতী! তোমার জয় হউক, জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "સોના જેવી નિર્મળ અને ચમકદાર દિવ્ય કાયા ધારણ કરનારાં, બ્રહ્મા, વિષ્ણુ, મહેશ અને ઇન્દ્ર દ્વારા પૂજિત ચરણોવાળાં, ચિત્તને પવિત્ર ભાવનાઓ આપનારાં, સંસારમાંથી તારનારું પુણ્ય આપી સુખ દેનારાં હે માં! સુંદર જટાધારી મહિષાસુરમર્દિની! તમારો જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "തങ്കപ്രഭപോലെ നിർമ്മലമായി തിളങ്ങുന്ന തിരുമേനിയുള്ളവളേ! ബ്രഹ്മാവും വിഷ്ണുവും മഹേശ്വരനും ഇന്ദ്രനും വണങ്ങുന്ന പാദങ്ങളുള്ളവളേ! മനസ്സിന് പരമമംഗളമായ ഭാവങ്ങൾ പകർന്ന്, സംസാരസമുദ്രം കടത്തുന്ന പുണ്യവും ശാശ്വതസുഖവും നൽകുന്ന അമ്മേ! രമ്യകപർദ്ദിനിയായ മഹിഷാസുരമർദ്ദിനീ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସୁବର୍ଣ୍ଣର ଆଭା ପରି ନିର୍ମଳ ଓ ଉଜ୍ଜ୍ୱଳ କାନ୍ତିଯୁକ୍ତ ଦିବ୍ୟ ଶରୀରଧାରିଣୀ, ବ୍ରହ୍ମା, ବିଷ୍ଣୁ, ମହେଶ୍ୱର ଓ ଇନ୍ଦ୍ରଙ୍କ ଦ୍ୱାରା ପୂଜିତ ଚରଣଯୁଗଳା, ଚିତ୍ତକୁ ପବିତ୍ର ଭାବନା ପ୍ରଦାନକାରୀ, ସଂସାରରୁ ତାରଣକାରୀ ପୁଣ୍ୟ ପ୍ରଦାୟିନୀ ଓ ସୁଖଦାତ୍ରୀ ହେ ମାତା ! ସୁନ୍ଦର ଜଟାଧାରିଣୀ ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 21,
+      "verse_type": "VERSE",
+      "original_sanskrit": "कनकल्सत्कलसिन्धुजलैरनुषिञ्चिनु ते गुणरङ्गभुवम्\nभजति स किं न शचीकुचकुम्भतटीपरिरम्भसुखानुरतम् ।\nतव चरणं शरणं करवाणि नतामरवाणि निवासि शिवे\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ २१ ॥",
+      "iast": "kanakalsatkala sindhujalairanuṣiñcinu tē guṇaraṅgabhuvam\nbhajati sa kiṁ na śacīkucakumbhataṭīparirambhasukhānuratam ।\ntava caraṇaṁ śaraṇaṁ karavāṇi natāmaravāṇi nivāsi śivē\njaya jaya hē mahiṣāsuramardini ramyakapardini śailasutē ॥ 21 ॥",
+      "transliterations": {
+        "telugu": "కనకల్సత్కలసిన్ధుజలైరనుషిఞ్చిను తే గుణరఙ్గభువమ్\nభజతి స కిం న శచీకుచకుమ్భతటీపరిరమ్భసుఖానురతమ్ ।\nతవ చరణం శరణం కరవాణి నతామరవాణి నివాసి శివే\nజయ జయ హే మహిషాసురమర్దిని రమ్యకపర్దిని శైలసుతే ॥ ౨౧ ॥",
+        "tamil": "கநகல்ஸத்கலஸிந்துஜலைரநுஷிஞ்சிநு தே குணரங்கபுவம்\nபஜதி ஸ கிம் ந ஶசீகுசகும்பதடீபரிரம்பஸுகாநுரதம் ।\nதவ சரணம் ஶரணம் கரவாணி நதாமரவாணி நிவாஸி ஶிவே\nஜய ஜய ஹே மஹிஷாஸுரமர்திநி ரம்யகபர்திநி ஶைலஸுதே ॥ ௨௧ ॥",
+        "kannada": "ಕನಕಲ್ಸತ್ಕಲಸಿನ್ಧುಜಲೈರನುಷಿಞ್ಚಿನು ತೇ ಗುಣರಙ್ಗಭುವಮ್\nಭಜತಿ ಸ ಕಿಂ ನ ಶಚೀಕುಚಕುಮ್ಭತಟೀಪರಿರಮ್ಭಸುಖಾನುರತಮ್ ।\nತವ ಚರಣಂ ಶರಣಂ ಕರವಾಣಿ ನತಾಮರವಾಣಿ ನಿವಾಸಿ ಶಿವೇ\nಜಯ ಜಯ ಹೇ ಮಹಿಷಾಸುರಮರ್ದಿನಿ ರಮ್ಯಕಪರ್ದಿನಿ ಶೈಲಸುತೇ ॥ ೨೧ ॥",
+        "malayalam": "കനകല്സത്കലസിന്ധുജലൈരനുഷിഞ്ചിനു തേ ഗുണരങ്ഗഭുവമ്\nഭജതി സ കിം ന ശചീകുചകുമ്ഭതടീപരിരമ്ഭസുഖാനുരതമ് ।\nതവ ചരണം ശരണം കരവാണി നതാമരവാണി നിവാസി ശിവേ\nജയ ജയ ഹേ മഹിഷാസുരമര്ദിനി രമ്യകപര്ദിനി ശൈലസുതേ ॥ ൨൧ ॥",
+        "iast": "kanakalsatkalasindhujalairanuṣiñcinu te guṇaraṅgabhuvam\nbhajati sa kiṃ na śacīkucakumbhataṭīparirambhasukhānuratam |\ntava caraṇaṃ śaraṇaṃ karavāṇi natāmaravāṇi nivāsi śive\njaya jaya he mahiṣāsuramardini ramyakapardini śailasute || 21 ||"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Whoever bathes Your sanctum with golden waters and worships You with pure devotion attains all celestial glory and divine peace. O Auspicious Mother, refuge of the gods, I surrender unto Your sacred lotus feet! Victory to You, O Slayer of Mahishasura!",
+          "translator": "Platform Editorial Synthesis (Traditional Bhashyas; Awaiting Scholarly Panel)",
+          "review_status": "DRAFT"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जो साधक स्वर्ण-कलशों में भरे समुद्र के पावन जल से आपके गुण-मन्दिर का अभिषेक करता है, क्या वह इन्द्र के स्वर्गीय सुखों से भी श्रेष्ठ ब्रह्मानन्द को प्राप्त नहीं कर लेता? हे समस्त देवताओं की वन्दनीय वाणी की स्वामिनी, हे परम कल्याणमयी शिवे! मैं आपके पावन चरणों की अनन्य शरण लेता हूँ! हे मनोहर जटाओं वाली, महिषासुर का संहार करने वाली शैलपुत्री! आपकी सदा जय हो, जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "బంగారు కలశములలో నింపిన సముద్ర జలములతో నీ దివ్య గుణాలయమును అభిషేకించు భక్తుడు దేవేంద్రుని సుఖములకన్నా మిన్నయైన పరమానందమును పొందకుండునా? దేవతలందరిచే స్తుతింపబడు ఓ పరమకల్యాణదాయినీ! నీ దివ్య పాదపద్మములను నేను శరణువేడుచున్నాను! అందమైన కేశములు గల మహిషాసురమర్దినీ! నీకు జయము, జయము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "பொற்குடங்களில் நிரம்பிய சமுத்திர நீரால் உனது திருக்குணங்களை அபிஷேகம் செய்யும் பக்தன், இந்திரனின் தேவலோக சுகத்தைக் காட்டிலும் உயர்ந்த பேரின்பத்தை அடையாமல் போவானா? தேவர்கள் அனைவரும் போற்றும் மங்களரூபிணியே! உன் பொற்பாதங்களை நான் முழுமையாகச் சரணடைகின்றேன்! எழில் சடை தரித்த மகிஷாசுரமர்த்தினியே! உனக்கு வெற்றி, வெற்றி!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಚಿನ್ನದ ಕಳಶಗಳಲ್ಲಿ ತುಂಬಿದ ಸಾಗರ ಜಲದಿಂದ ನಿನ್ನ ಸದ್ಗುಣಗಳ ಮಂದಿರವನ್ನು ಅಭಿಷೇಕಿಸುವ ಭಕ್ತನು ದೇವೇಂದ್ರನ ಸುಖಕ್ಕಿಂತಲೂ ಮಿಗಿಲಾದ ಪರಮಾನಂದವನ್ನು ಪಡೆಯದೇ ಇರುವನೇ? ಸಕಲ ದೇವತೆಗಳಿಂದ ಸ್ತುತಿಸಲ್ಪಡುವ ಹೇ ಮಂಗಳಮಯಿಯೇ! ನಿನ್ನ ದಿವ್ಯ ಪಾದಕಮಲಗಳನ್ನು ನಾನು ಶರಣುಹೊಂದುತ್ತೇನೆ! ರಮ್ಯ ಜಟೆಯನ್ನುಳ್ಳ ಮಹಿಷಾಸುರಮರ್ದಿನಿಯೇ! ನಿನಗೆ ಜಯವಾಗಲಿ, ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "सुवर्णकलशात भरलेल्या समुद्राच्या पाण्याने जो तुझ्या गुणांच्या मंदिराला अभिषेक करतो, तो इंद्राच्या सुखापेक्षाही श्रेष्ठ आनंद का मिळवणार नाही? देवांनी वंदन केलेल्या हे परम कल्याणकारी देवी! मी तुझ्या चरणांची शरण घेतो! सुंदर जटा धारण करणाऱ्या महिषासुरमर्दिनी! तुझा जय असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যিনি সুবর্ণকুম্ভস্থিত ক্ষীরোদবারিতে তোমার গুণমণ্ডিত পাদপীঠের অভিষেক করেন, তিনি কি ইন্দ্রের দিব্য ঐশ্বর্যসুখের অপেক্ষাও পরম আনন্দ প্রাপ্ত হন না? প্রণত দেবগণের বন্দিতা হে পরমকল্যাণময়ী শিবে! আমি তোমার চরণকমলে পূর্ণ আত্মসমর্পণপূর্বক শরণ লইলাম! সুন্দর কেশভূষিতা মহিষাসুরমর্দিনী পার্বতী! তোমার জয় হউক, জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "સોનાના કળશમાં ભરેલા સમુદ્રજળથી જે આપના ગુણમંદિરનો અભિષેક કરે છે, તે ઇન્દ્રના સ્વર્ગીય સુખથી પણ શ્રેષ્ઠ પરમાનંદ કેમ ન મેળવે? દેવતાઓ દ્વારા વંદિત વાણીસ્વરૂપા હે કલ્યાણમયી શિવે! હું આપના ચરણકમળનું શરણ ગ્રહણ કરું છું! સુંદર જટાધારી મહિષાસુરમર્દિની! તમારો જય હો, જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "പൊൻകുടങ്ങളിൽ നിറഞ്ഞ സമുദ്രജലത്താൽ നിന്റെ പുണ്യഗുണങ്ങളെ അഭിഷേകം ചെയ്യുന്ന ഭക്തൻ ദേവേന്ദ്രന്റെ സുഖത്തെക്കാൾ ഉന്നതമായ പരമാനന്ദം നേടാതിരിക്കുമോ? സകലദേവന്മാരും വണങ്ങുന്ന മംഗളസ്വരൂപിണീ! നിന്റെ പാദപത്മങ്ങളെ ഞാൻ ശരണം പ്രാപിക്കുന്നു! രಮ್ಯകപർദ്ദിനിയായ മഹിಷാസുരമർദ്ദിനീ! അങ്ങേയ്ക്ക് ജയമുണ്ടാകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସ୍ୱର୍ଣ୍ଣକଳସରେ ପରିପୂର୍ଣ୍ଣ ସମୁଦ୍ରଜଳରେ ଯିଏ ଆପଣଙ୍କ ଗୁଣମଣ୍ଡପର ଅଭିଷେକ କରେ, ସେ କ’ଣ ଇନ୍ଦ୍ରଙ୍କ ସ୍ୱର୍ଗସୁଖଠାରୁ ମଧ୍ୟ ଶ୍ରେଷ୍ଠ ପରମାନନ୍ଦ ଲାଭ କରେ ନାହିଁ ? ସମସ୍ତ ଦେବତାଙ୍କ ଦ୍ୱାରା ବନ୍ଦିତା ହେ ପରମକଲ୍ୟାଣମୟୀ ଶିବେ ! ମୁଁ ଆପଣଙ୍କ ପାଦପଦ୍ମରେ ଶରଣ ନେଉଛି ! ସୁନ୍ଦର ଜଟାଧାରିଣୀ ମହିଷାସୁରମର୍ଦ୍ଦିନୀ ! ତୁମର ଜୟ ହେଉ, ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    }
+  ]
+}

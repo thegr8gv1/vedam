@@ -1,0 +1,447 @@
+{
+  "content_id": "VEDA-TXT-00003",
+  "canonical_title": "Aditya Hrudayam",
+  "devanagari_title": "आदित्यहृदयम्",
+  "meter": "Anushtubh (Epic 32-syllable)",
+  "primary_deity": "Lord Surya",
+  "original_language": "sa",
+  "total_verses": 31,
+  "generated_at_utc": "2026-11-05T01:05:23.640044+00:00",
+  "cues": [
+    {
+      "verse_number": 1,
+      "verse_id": "VEDA-TXT-00003-V001",
+      "original_text": "ततो युद्धपरिश्रान्तं समरे चिन्तया स्थितम् । रावणं चाग्रतो दृष्ट्वा युद्धाय समुपस्थितम् ॥ १ ॥",
+      "iast_phonetic": "tato yuddhaparishrāntaṁ samare cintayā sthitam । rāvaṇaṁ cāgrato dṛṣṭvā yuddhāya samupasthitam ॥ 1 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "ततो युद्धपरिश्रान्तं समरे चिन्तया स्थितम् । रावणं चाग्रतो दृष्ट्वा युद्धाय समुपस्थितम् ॥ १ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 2,
+      "verse_id": "VEDA-TXT-00003-V002",
+      "original_text": "दैवतैश्च समागम्य द्रष्टुमभ्यागतो रणम् । उपगम्याब्रवीद्राममगस्त्यो भगवानृषिः ॥ २ ॥",
+      "iast_phonetic": "daivataiśca samāgamya draṣṭumabhyāgato raṇam । upagamyābravīdrāmamagastyo bhagavānṛṣiḥ ॥ 2 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "दैवतैश्च समागम्य द्रष्टुमभ्यागतो रणम् । उपगम्याब्रवीद्राममगस्त्यो भगवानृषिः ॥ २ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 3,
+      "verse_id": "VEDA-TXT-00003-V003",
+      "original_text": "राम राम महाबाहो शृणु गुह्यं सनातनम् । येन सर्वानरीन् वत्स समरे विजयिष्यसे ॥ ३ ॥",
+      "iast_phonetic": "rāma rāma mahābāho śṛṇu guhyaṁ sanātanam । yena sarvānarīn vatsa samare vijayiṣyase ॥ 3 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "राम राम महाबाहो शृणु गुह्यं सनातनम् । येन सर्वानरीन् वत्स समरे विजयिष्यसे ॥ ३ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 4,
+      "verse_id": "VEDA-TXT-00003-V004",
+      "original_text": "आदित्यहृदयं पुण्यं सर्वशत्रुविनाशनम् । जयावहं जपेन्नित्यमक्षयं परमं शिवम् ॥ ४ ॥",
+      "iast_phonetic": "ādityahṛdayaṁ puṇyaṁ sarvaśatruvināśanam । jayāvahaṁ japennityamakṣayaṁ paramaṁ śivam ॥ 4 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "आदित्यहृदयं पुण्यं सर्वशत्रुविनाशनम् । जयावहं जपेन्नित्यमक्षयं परमं शिवम् ॥ ४ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 5,
+      "verse_id": "VEDA-TXT-00003-V005",
+      "original_text": "सर्वमङ्गलमाङ्गल्यं सर्वपापप्रणाशनम् । चिन्ताशोकप्रशमनमायुर्वर्धनमुत्तमम् ॥ ५ ॥",
+      "iast_phonetic": "sarvamaṅgalamāṅgalyaṁ sarvapāpapraṇāśanam । cintāśokapraśamanamāyurvardhanamuttamam ॥ 5 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "सर्वमङ्गलमाङ्गल्यं सर्वपापप्रणाशनम् । चिन्ताशोकप्रशमनमायुर्वर्धनमुत्तमम् ॥ ५ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 6,
+      "verse_id": "VEDA-TXT-00003-V006",
+      "original_text": "रश्मिमन्तं समुद्यन्तं देवासुरनमस्कृतम् । पूजयस्व विवस्वन्तं भास्करं भुवनेश्वरम् ॥ ६ ॥",
+      "iast_phonetic": "raśmimantaṁ samudyantaṁ devāsuranamaskṛtam । pūjayasva vivasvantaṁ bhāskaraṁ bhuvaneśvaram ॥ 6 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "रश्मिमन्तं समुद्यन्तं देवासुरनमस्कृतम् । पूजयस्व विवस्वन्तं भास्करं भुवनेश्वरम् ॥ ६ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 7,
+      "verse_id": "VEDA-TXT-00003-V007",
+      "original_text": "सर्वदेवात्मको ह्येष तेजस्वी रश्मिभावनः । एष देवासुरगणांल्लोकान् पाति गभस्तिभिः ॥ ७ ॥",
+      "iast_phonetic": "sarvadevātmako hyeṣa tejasvī raśmibhāvanaḥ । eṣa devāsuragaṇāṁllokān pāti gabhastibhiḥ ॥ 7 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "सर्वदेवात्मको ह्येष तेजस्वी रश्मिभावनः । एष देवासुरगणांल्लोकान् पाति गभस्तिभिः ॥ ७ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 8,
+      "verse_id": "VEDA-TXT-00003-V008",
+      "original_text": "एष ब्रह्मा च विष्णुश्च शिवः स्कन्दः प्रजापतिः । महेन्द्रो धनदः कालो यमः सोमो ह्यपां पतिः ॥ ८ ॥",
+      "iast_phonetic": "eṣa brahmā ca viṣṇuśca śivaḥ skandaḥ prajāpatiḥ । mahendro dhanadaḥ kālo yamaḥ somo hyapāṁ patiḥ ॥ 8 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "एष ब्रह्मा च विष्णुश्च शिवः स्कन्दः प्रजापतिः । महेन्द्रो धनदः कालो यमः सोमो ह्यपां पतिः ॥ ८ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 9,
+      "verse_id": "VEDA-TXT-00003-V009",
+      "original_text": "पितरो वसवः साध्या ह्यश्विनौ मरुतो मनुः । वायुर्वह्निः प्रजाप्राण ऋतुकर्ता प्रभाकरः ॥ ९ ॥",
+      "iast_phonetic": "pitaro vasavaḥ sādhyā hyaśvinau maruto manuḥ । vāyurvahniḥ prajāprāṇa ṛtukartā prabhākaraḥ ॥ 9 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "पितरो वसवः साध्या ह्यश्विनौ मरुतो मनुः । वायुर्वह्निः प्रजाप्राण ऋतुकर्ता प्रभाकरः ॥ ९ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 10,
+      "verse_id": "VEDA-TXT-00003-V010",
+      "original_text": "आदित्यः सविता सूर्यः खगः पूषा गभस्तिमान् । सुवर्णसदृशो भानुर्हिरण्यरेता दिवाकरः ॥ १० ॥",
+      "iast_phonetic": "ādityaḥ savitā sūryaḥ khagaḥ pūṣā gabhastimān । suvarṇasadṛśo bhānurhiraṇyaretā divākaraḥ ॥ 10 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "आदित्यः सविता सूर्यः खगः पूषा गभस्तिमान् । सुवर्णसदृशो भानुर्हिरण्यरेता दिवाकरः ॥ १० ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 11,
+      "verse_id": "VEDA-TXT-00003-V011",
+      "original_text": "हरिदश्वः सहस्रार्चिः सप्तसप्तिर्मरीचिमान् । तिमिरोन्मथनः शम्भुस्त्वष्टा मार्तण्ड अंशुमान् ॥ ११ ॥",
+      "iast_phonetic": "haridaśvaḥ sahasrārciḥ saptasaptirmarīcimān । timironmathanaḥ śambhustvaṣṭā mārtaṇḍa aṁśumān ॥ 11 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "हरिदश्वः सहस्रार्चिः सप्तसप्तिर्मरीचिमान् । तिमिरोन्मथनः शम्भुस्त्वष्टा मार्तण्ड अंशुमान् ॥ ११ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 12,
+      "verse_id": "VEDA-TXT-00003-V012",
+      "original_text": "हिरण्यगर्भः शिशिरस्तपनो भास्करो रविः । अग्निगर्भोऽदितेः पुत्रः शङ्खः शिशिरनाशनः ॥ १२ ॥",
+      "iast_phonetic": "hiraṇyagarbhaḥ śiśirastapano bhāskaro raviḥ । agnigarbho'diteḥ putraḥ śaṅkhaḥ śiśiranāśanaḥ ॥ 12 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "हिरण्यगर्भः शिशिरस्तपनो भास्करो रविः । अग्निगर्भोऽदितेः पुत्रः शङ्खः शिशिरनाशनः ॥ १२ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 13,
+      "verse_id": "VEDA-TXT-00003-V013",
+      "original_text": "व्योमनाथस्तमोभेदी ऋग्यजुःसामपारगः । घनवृष्टिरपां मित्रो विन्ध्यवीथीप्लवङ्गमः ॥ १३ ॥",
+      "iast_phonetic": "vyomanāthastamobhedī ṛgyajuḥsāmapāragaḥ । ghanavṛṣṭirapāṁ mitro vindhyavīthīplavaṅgamaḥ ॥ 13 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "व्योमनाथस्तमोभेदी ऋग्यजुःसामपारगः । घनवृष्टिरपां मित्रो विन्ध्यवीथीप्लवङ्गमः ॥ १३ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 14,
+      "verse_id": "VEDA-TXT-00003-V014",
+      "original_text": "आतपी मण्डली मृत्युः पिङ्गलः सर्वतापनः । कविर्विश्वो महातेजा रक्तः सर्वभवोद्भवः ॥ १४ ॥",
+      "iast_phonetic": "ātapī maṇḍalī mṛtyuḥ piṅgalaḥ sarvatāpanaḥ । kavirviśvo mahātejā raktaḥ sarvabhavodbhavaḥ ॥ 14 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "आतपी मण्डली मृत्युः पिङ्गलः सर्वतापनः । कविर्विश्वो महातेजा रक्तः सर्वभवोद्भवः ॥ १४ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 15,
+      "verse_id": "VEDA-TXT-00003-V015",
+      "original_text": "नक्षत्रग्रहताराणामधिपो विश्वभावनः । तेजसामपि तेजस्वी द्वादशात्मन् नमोऽस्तु ते ॥ १५ ॥",
+      "iast_phonetic": "nakṣatragrahatārāṇāmadhipo viśvabhāvanaḥ । tejasāmapi tejasvī dvādaśātman namo'stu te ॥ 15 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "नक्षत्रग्रहताराणामधिपो विश्वभावनः । तेजसामपि तेजस्वी द्वादशात्मन् नमोऽस्तु ते ॥ १५ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 16,
+      "verse_id": "VEDA-TXT-00003-V016",
+      "original_text": "नमः पूर्वाय गिरये पश्चिमायाद्रये नमः । ज्योतिर्गणानां पतये दिनाधिपतये नमः ॥ १६ ॥",
+      "iast_phonetic": "namaḥ pūrvāya giraye paścimāyādraye namaḥ । jyotirgaṇānāṁ pataye dinādhipataye namaḥ ॥ 16 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "नमः पूर्वाय गिरये पश्चिमायाद्रये नमः । ज्योतिर्गणानां पतये दिनाधिपतये नमः ॥ १६ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 17,
+      "verse_id": "VEDA-TXT-00003-V017",
+      "original_text": "जयाय जयभद्राय हर्यश्वाय नमो नमः । नमो नमः सहस्रांशो आदित्याय नमो नमः ॥ १७ ॥",
+      "iast_phonetic": "jayāya jayabhadrāya haryaśvāya namo namaḥ । namo namaḥ sahasrāṁśo ādityāya namo namaḥ ॥ 17 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "जयाय जयभद्राय हर्यश्वाय नमो नमः । नमो नमः सहस्रांशो आदित्याय नमो नमः ॥ १७ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 18,
+      "verse_id": "VEDA-TXT-00003-V018",
+      "original_text": "नम उग्राय वीराय सारङ्गाय नमो नमः । नमः पद्मप्रबोधाय मार्ताण्डाय नमो नमः ॥ १८ ॥",
+      "iast_phonetic": "nama ugrāya vīrāya sāraṅgāya namo namaḥ । namaḥ padmaprabodhāya mārtāṇḍāya namo namaḥ ॥ 18 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "नम उग्राय वीराय सारङ्गाय नमो नमः । नमः पद्मप्रबोधाय मार्ताण्डाय नमो नमः ॥ १८ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 19,
+      "verse_id": "VEDA-TXT-00003-V019",
+      "original_text": "ब्रह्मेशानाच्युतेशाय सूर्यायादित्यवर्चसे । भास्वते सर्वभक्षाय रौद्राय वपुषे नमः ॥ १९ ॥",
+      "iast_phonetic": "brahmeśānācyuteśāya sūryāyādityavarcase । bhāsvate sarvabhakṣāya raudrāya vapuṣe namaḥ ॥ 19 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "ब्रह्मेशानाच्युतेशाय सूर्यायादित्यवर्चसे । भास्वते सर्वभक्षाय रौद्राय वपुषे नमः ॥ १९ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 20,
+      "verse_id": "VEDA-TXT-00003-V020",
+      "original_text": "तमोघ्नाय हिमघ्नाय शत्रुघ्नायामितात्मने । कृतघ्नघ्नाय देवाय ज्योतिषां पतये नमः ॥ २० ॥",
+      "iast_phonetic": "tamoghnāya himaghnāya śatrughnāyāmitātmane । kṛtaghnaghnāya devāya jyotiṣāṁ pataye namaḥ ॥ 20 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "तमोघ्नाय हिमघ्नाय शत्रुघ्नायामितात्मने । कृतघ्नघ्नाय देवाय ज्योतिषां पतये नमः ॥ २० ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 21,
+      "verse_id": "VEDA-TXT-00003-V021",
+      "original_text": "तप्तचामीकराभाय वह्नये विश्वकर्मणे । नमस्तमोऽभिनिघ्नाय रुचये लोकसाक्षिणे ॥ २१ ॥",
+      "iast_phonetic": "taptacāmīkarābhāya vahnaye viśvakarmaṇe । namastamo'bhinighnāya rucaye lokasākṣiṇe ॥ 21 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "तप्तचामीकराभाय वह्नये विश्वकर्मणे । नमस्तमोऽभिनिघ्नाय रुचये लोकसाक्षिणे ॥ २१ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 22,
+      "verse_id": "VEDA-TXT-00003-V022",
+      "original_text": "नाशयत्येष वै भूतं तदेव सृजति प्रभुः । पायत्येष तपत्येष वर्षत्येष गभस्तिभिः ॥ २२ ॥",
+      "iast_phonetic": "nāśayatyeṣa vai bhūtaṁ tadeva sṛjati prabhuḥ । pāyatyeṣa tapatyeṣa varṣatyeṣa gabhastibhiḥ ॥ 22 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "नाशयत्येष वै भूतं तदेव सृजति प्रभुः । पायत्येष तपत्येष वर्षत्येष गभस्तिभिः ॥ २२ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 23,
+      "verse_id": "VEDA-TXT-00003-V023",
+      "original_text": "एष सुप्तेषु जागर्ति भूतेषु परिनिष्ठितः । एष एवाग्निहोत्रं च फलं चैवाग्निहोत्रिणाम् ॥ २३ ॥",
+      "iast_phonetic": "eṣa supteṣu jāgarti bhūteṣu pariniṣṭhitaḥ । eṣa evāgnihotraṁ ca phalaṁ caivāgnihotriṇām ॥ 23 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "एष सुप्तेषु जागर्ति भूतेषु परिनिष्ठितः । एष एवाग्निहोत्रं च फलं चैवाग्निहोत्रिणाम् ॥ २३ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 24,
+      "verse_id": "VEDA-TXT-00003-V024",
+      "original_text": "वेदाश्च क्रतवश्चैव क्रतूनां फलमेव च । यानि कृत्यानि लोकेषु सर्व एष रविः प्रभुः ॥ २४ ॥",
+      "iast_phonetic": "vedāśca kratavaścaiva kratūnāṁ phalameva ca । yāni kṛtyāni lokeṣu sarva eṣa raviḥ prabhuḥ ॥ 24 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "वेदाश्च क्रतवश्चैव क्रतूनां फलमेव च । यानि कृत्यानि लोकेषु सर्व एष रविः प्रभुः ॥ २४ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 25,
+      "verse_id": "VEDA-TXT-00003-V025",
+      "original_text": "एनमापत्सु कृच्छ्रेषु कान्तारेषु भयेषु च । कीर्तयन् पुरुषः कश्चिन्नावसीदति राघव ॥ २५ ॥",
+      "iast_phonetic": "enamāpatsu kṛcchreṣu kāntāreṣu bhayeṣu ca । kīrtayan puruṣaḥ kaścinnāvasīdati rāghava ॥ 25 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "एनमापत्सु कृच्छ्रेषु कान्तारेषु भयेषु च । कीर्तयन् पुरुषः कश्चिन्नावसीदति राघव ॥ २५ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 26,
+      "verse_id": "VEDA-TXT-00003-V026",
+      "original_text": "पूजयस्वैनमेकाग्रो देवदेवं जगत्पतिम् । एतत् त्रिगुणितं जप्त्वा युद्धेषु विजयिष्यसे ॥ २६ ॥",
+      "iast_phonetic": "pūjayasvainamekāgro devadevaṁ jagatpatim । etat triguṇitaṁ japtvā yuddheṣu vijayiṣyase ॥ 26 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "पूजयस्वैनमेकाग्रो देवदेवं जगत्पतिम् । एतत् त्रिगुणितं जप्त्वा युद्धेषु विजयिष्यसे ॥ २६ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 27,
+      "verse_id": "VEDA-TXT-00003-V027",
+      "original_text": "अस्मिन् क्षणे महाबाहो रावणं त्वं वधिष्यसि । एवमुक्त्वा तदागस्त्यो जगाम च यथागतम् ॥ २७ ॥",
+      "iast_phonetic": "asmin kṣaṇe mahābāho rāvaṇaṁ tvaṁ vadhiṣyasi । evamuktvā tadāgastyo jagāma ca yathāgatam ॥ 27 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "अस्मिन् क्षणे महाबाहो रावणं त्वं वधिष्यसि । एवमुक्त्वा तदागस्त्यो जगाम च यथागतम् ॥ २७ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 28,
+      "verse_id": "VEDA-TXT-00003-V028",
+      "original_text": "एतच्छ्रुत्वा महातेजा नष्टशोकोऽभवत्तदा । धारयामास सुप्रीतो राघवः प्रयतात्मवान् ॥ २८ ॥",
+      "iast_phonetic": "etacchrutvā mahātejā naṣṭaśoko'bhavattadā । dhārayāmāsa suprīto rāghavaḥ prayatātmavān ॥ 28 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "एतच्छ्रुत्वा महातेजा नष्टशोकोऽभवत्तदा । धारयामास सुप्रीतो राघवः प्रयतात्मवान् ॥ २८ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 29,
+      "verse_id": "VEDA-TXT-00003-V029",
+      "original_text": "आदित्यं प्रेक्ष्य जप्त्वा तु परं हर्षमवाप्तवान् । त्रिराचम्य शुचिर्भूत्वा धनुरादाय वीर्यवान् ॥ २९ ॥",
+      "iast_phonetic": "ādityaṁ prekṣya japtvā tu paraṁ harṣamavāptavān । trirācamya śucirbhūtvā dhanurādāya vīryavān ॥ 29 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "आदित्यं प्रेक्ष्य जप्त्वा तु परं हर्षमवाप्तवान् । त्रिराचम्य शुचिर्भूत्वा धनुरादाय वीर्यवान् ॥ २९ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 30,
+      "verse_id": "VEDA-TXT-00003-V030",
+      "original_text": "रावणं प्रेक्ष्य हृष्टात्मा युद्धाय समुपागमत् । सर्वयत्नेन महता वधे तस्य धृतोऽभवत् ॥ ३० ॥",
+      "iast_phonetic": "rāvaṇaṁ prekṣya hṛṣṭātmā yuddhāya samupāgamat । sarvayatnena mahatā vadhe tasya dhṛto'bhavat ॥ 30 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "रावणं प्रेक्ष्य हृष्टात्मा युद्धाय समुपागमत् । सर्वयत्नेन महता वधे तस्य धृतोऽभवत् ॥ ३० ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 31,
+      "verse_id": "VEDA-TXT-00003-V031",
+      "original_text": "अथ रविरवदन्निरीक्ष्य रामं मुदितमनाः परमं प्रहृष्यमाणः । निशिचरपतिसंक्षयं विदित्वा सुरगणमध्यगतो वचस्त्वरेति ॥ ३१ ॥",
+      "iast_phonetic": "atha raviravadannirīkṣya rāmaṁ muditamanāḥ paramaṁ prahṛṣyamāṇaḥ । niśicarapatisaṁkṣayaṁ viditvā suragaṇamadhyagato vacastvareti ॥ 31 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "अथ रविरवदन्निरीक्ष्य रामं मुदितमनाः परमं प्रहृष्यमाणः । निशिचरपतिसंक्षयं विदित्वा सुरगणमध्यगतो वचस्त्वरेति ॥ ३१ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    }
+  ],
+  "translation_reference_note": "Audio recording must recite only the immutable original sacred verse text; translations and regional explanations must be recorded as separate commentary tracks."
+}

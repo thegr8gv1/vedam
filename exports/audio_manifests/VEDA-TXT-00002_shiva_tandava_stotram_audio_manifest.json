@@ -1,0 +1,237 @@
+{
+  "content_id": "VEDA-TXT-00002",
+  "canonical_title": "Shiva Tandava Stotram",
+  "devanagari_title": "शिवताण्डवस्तोत्रम्",
+  "meter": "Panchachamara",
+  "primary_deity": "Lord Shiva",
+  "original_language": "sa",
+  "total_verses": 16,
+  "generated_at_utc": "2026-11-05T01:05:22.990641+00:00",
+  "cues": [
+    {
+      "verse_number": 1,
+      "verse_id": "VEDA-TXT-00002-V001",
+      "original_text": "जटाटवीगलज्जलप्रवाहपावितस्थले गलेऽवलम्ब्य लम्बितां भुजङ्गतुङ्गमालिकाम् ।\nडमड्डमड्डमड्डमन्निनादवड्डमर्वयं चकार चण्डताण्डवं तनोतु नः शिवः शिवम् ॥ १ ॥",
+      "iast_phonetic": "jaṭāṭavīgalajjala-pravāha-pāvitasthale gale'valambya lambitāṁ bhujaṅgatuṅgamālikām ।\nḍamaḍ-ḍamaḍ-ḍamaḍ-ḍaman-ninādavad-ḍamarvayaṁ cakāra caṇḍatāṇḍavaṁ tanotu naḥ śivaḥ śivam ॥ 1 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "जटाटवीगलज्जलप्रवाहपावितस्थले गलेऽवलम्ब्य लम्बितां भुजङ्गतुङ्गमालिकाम् ।\nडमड्डमड्डमड्डमन्निनादवड्डमर्वयं चकार चण्डताण्डवं तनोतु नः शिवः शिवम् ॥ १ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 2,
+      "verse_id": "VEDA-TXT-00002-V002",
+      "original_text": "जटाकटाहसम्भ्रमभ्रमन्निलिम्पनिर्झरी-विलोलवीचिवल्लरीविराजमानमूर्धनि ।\nधगद्धगद्धगज्ज्वलल्ललाटपट्टपावके किशोरचन्द्रशेखरे रतिः प्रतिक्षणं मम ॥ २ ॥",
+      "iast_phonetic": "jaṭākaṭāhasambhramabhramannilimpanirjharī-vilōlavīcivallarīvirājamānamūrdhani ।\ndhagaddhagaddhagajjvalallalāṭapaṭṭapāvakē kiśōracandraśēkharē ratiḥ pratikṣaṇaṁ mama ॥ 2 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "जटाकटाहसम्भ्रमभ्रमन्निलिम्पनिर्झरी-विलोलवीचिवल्लरीविराजमानमूर्धनि ।\nधगद्धगद्धगज्ज्वलल्ललाटपट्टपावके किशोरचन्द्रशेखरे रतिः प्रतिक्षणं मम ॥ २ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 3,
+      "verse_id": "VEDA-TXT-00002-V003",
+      "original_text": "धराधरेन्द्रनन्दिनीविलासबन्धुबन्धुर-स्फुरद्दिगन्तसन्ततिप्रमोदमानमानसे ।\nकृपाकटाक्षधोरणीनिरुद्धदुर्धरापदि क्वचिद्दिगम्बरे मनो विनोदमेतु वस्तुनि ॥ ३ ॥",
+      "iast_phonetic": "dharādharendranandinī-vilāsabandhubandhura-sphuraddiganta-santati-pramodamāna-mānase ।\nkṛpākaṭākṣa-dhoraṇī-niruddha-durdharāpadi kvaciddigambare mano vinodametu vastuni ॥ 3 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "धराधरेन्द्रनन्दिनीविलासबन्धुबन्धुर-स्फुरद्दिगन्तसन्ततिप्रमोदमानमानसे ।\nकृपाकटाक्षधोरणीनिरुद्धदुर्धरापदि क्वचिद्दिगम्बरे मनो विनोदमेतु वस्तुनि ॥ ३ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 4,
+      "verse_id": "VEDA-TXT-00002-V004",
+      "original_text": "जटाभुजङ्गपिङ्गलस्फुरत्फणामणिप्रभा-कदम्बकुङ्कुमद्रवप्रलिप्तदिग्वधूमुखे ।\nमदान्धसिन्धुरस्फुरत्त्वगुत्तरीयमेदुरे मनो विनोदमद्भुतं बिभर्तु भूतभर्तरि ॥ ४ ॥",
+      "iast_phonetic": "jaṭābhujaṅga-piṅgala-sphuratphaṇā-maṇiprabhā-kadambakuṅkuma-dravapralipta-digvadhūmukhe ।\nmadāndha-sindhura-sphurattvag-uttarīyamedure mano vinodamadbhutaṁ bibhartu bhūtabhartari ॥ 4 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "जटाभुजङ्गपिङ्गलस्फुरत्फणामणिप्रभा-कदम्बकुङ्कुमद्रवप्रलिप्तदिग्वधूमुखे ।\nमदान्धसिन्धुरस्फुरत्त्वगुत्तरीयमेदुरे मनो विनोदमद्भुतं बिभर्तु भूतभर्तरि ॥ ४ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 5,
+      "verse_id": "VEDA-TXT-00002-V005",
+      "original_text": "सहस्रलोचनप्रभृत्यशेषलेखशेखर-प्रसूनधूलिधोरणीविधूसराङ्घ्रिपीठभूः ।\nभुजङ्गराजमालया निबद्धजाटजूटकः श्रियै चिराय जायतां चकोरबन्धुशेखरः ॥ ५ ॥",
+      "iast_phonetic": "sahasralōcanaprabhṛtyaśēṣalēkhaśēkhara-prasūnadhūlidhōraṇīvidhūsarāṅghripīṭhabhūḥ ।\nbhujaṅgarājamālayā nibaddhajāṭajūṭakaḥ śriyai cirāya jāyatāṁ cakōrabandhuśēkharaḥ ॥ 5 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "सहस्रलोचनप्रभृत्यशेषलेखशेखर-प्रसूनधूलिधोरणीविधूसराङ्घ्रिपीठभूः ।\nभुजङ्गराजमालया निबद्धजाटजूटकः श्रियै चिराय जायतां चकोरबन्धुशेखरः ॥ ५ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 6,
+      "verse_id": "VEDA-TXT-00002-V006",
+      "original_text": "ललाटचत्वरज्वलद्धनञ्जयस्फुलिङ्गभा-निपीतपञ्चसायकं नमन्निलिम्पनायकम् ।\nसुधामयूखलेखया विराजमानशेखरं महाकपालिसम्पदे शिरोजटालमस्तु नः ॥ ६ ॥",
+      "iast_phonetic": "lalāṭacatvarajvaladdhanañjayasphuliṅgabhā-nipīpapañcasāyakaṁ namannilimpanāyakam ।\nsudhāmayūkhalēkhayā virājamānaśēkharaṁ mahākapālisampadē śirōjaṭālamastu naḥ ॥ 6 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "ललाटचत्वरज्वलद्धनञ्जयस्फुलिङ्गभा-निपीतपञ्चसायकं नमन्निलिम्पनायकम् ।\nसुधामयूखलेखया विराजमानशेखरं महाकपालिसम्पदे शिरोजटालमस्तु नः ॥ ६ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 7,
+      "verse_id": "VEDA-TXT-00002-V007",
+      "original_text": "करालभालपट्टिकाधगद्धगद्धगज्ज्वल-द्धनञ्जयाहुतीकृतप्रचण्डपञ्चसायके ।\nधराधरेन्द्रनन्दिनीकुचाग्रचित्रपत्रक-प्रकल्पनैकशिल्पिनि त्रिलोचने रतिर्मम ॥ ७ ॥",
+      "iast_phonetic": "karālabhālapaṭṭikādhagaddhagaddhagajjvala-ddhanañjayāhutīkṛtapracaṇḍapañcasāyakē ।\ndharādharendranandinīkucāgracitrapatraka-prakalpanaikaśilpini trilōcanē ratirmama ॥ 7 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "करालभालपट्टिकाधगद्धगद्धगज्ज्वल-द्धनञ्जयाहुतीकृतप्रचण्डपञ्चसायके ।\nधराधरेन्द्रनन्दिनीकुचाग्रचित्रपत्रक-प्रकल्पनैकशिल्पिनि त्रिलोचने रतिर्मम ॥ ७ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 8,
+      "verse_id": "VEDA-TXT-00002-V008",
+      "original_text": "नवीनमेघमण्डलीनिरुद्धदुर्धरस्फुरत्-कुहूनिशीथिनीतमःप्रबन्धबद्धकन्धरः ।\nनिलिम्पनिर्झरीधरस्तनोतु कृत्तिसिन्धुरः कलानिधानबन्धुरः श्रियं जगद्धुरन्धरः ॥ ८ ॥",
+      "iast_phonetic": "navīnamēghamaṇḍalīniruddhadurdharasphurat-kuhūnīśīthinītamaḥprabandhabaddhakandharaḥ ।\nnilimpanirjharīdharastanōtu kṛttisindhuraḥ kalānidhānabandhuraḥ śriyaṁ jagaddhurandharaḥ ॥ 8 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "नवीनमेघमण्डलीनिरुद्धदुर्धरस्फुरत्-कुहूनिशीथिनीतमःप्रबन्धबद्धकन्धरः ।\nनिलिम्पनिर्झरीधरस्तनोतु कृत्तिसिन्धुरः कलानिधानबन्धुरः श्रियं जगद्धुरन्धरः ॥ ८ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 9,
+      "verse_id": "VEDA-TXT-00002-V009",
+      "original_text": "प्रफुल्लनीलपङ्कजप्रपञ्चकालिमप्रभा-वलम्बिकण्ठकन्दलीरुचिप्रबद्धकन्धरम् ।\nस्मरच्छिदं पुरच्छिदं भवच्छिदं मखच्छिदं गजच्छिदान्धकच्छिदं तमन्तकच्छिदं भजे ॥ ९ ॥",
+      "iast_phonetic": "praphullanīlapaṅkajaprapañcakālimaprabhā-valambikaṇṭhakandalīruciprabaddhakandharam ।\nsmaracchidaṁ puracchidaṁ bhavacchidaṁ makhacchidaṁ gajacchidāndhakacchidaṁ tamantakacchidaṁ bhajē ॥ 9 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "प्रफुल्लनीलपङ्कजप्रपञ्चकालिमप्रभा-वलम्बिकण्ठकन्दलीरुचिप्रबद्धकन्धरम् ।\nस्मरच्छिदं पुरच्छिदं भवच्छिदं मखच्छिदं गजच्छिदान्धकच्छिदं तमन्तकच्छिदं भजे ॥ ९ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 10,
+      "verse_id": "VEDA-TXT-00002-V010",
+      "original_text": "अखर्वसर्वमङ्गलाकलामन्दमञ्जरी-रसप्रवाहमाधुरीविजृम्भणामधुव्रतम् ।\nस्मरान्तकं पुरान्तकं भवान्तकं मखान्तकं गजान्तकान्धकान्तकं तमन्तकान्तकं भजे ॥ १० ॥",
+      "iast_phonetic": "akharvasarvamaṅgalākalāmandamañjarī-rasapravāhamādhurīvijṛmbhaṇāmadhuvratam ।\nsmarāntakaṁ purāntakaṁ bhavāntakaṁ makhāntakaṁ gajāntakāndhakāntakaṁ tamantakāntakaṁ bhajē ॥ 10 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "अखर्वसर्वमङ्गलाकलामन्दमञ्जरी-रसप्रवाहमाधुरीविजृम्भणामधुव्रतम् ।\nस्मरान्तकं पुरान्तकं भवान्तकं मखान्तकं गजान्तकान्धकान्तकं तमन्तकान्तकं भजे ॥ १० ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 11,
+      "verse_id": "VEDA-TXT-00002-V011",
+      "original_text": "जयत्वदभ्रविभ्रमभ्रमद्भुजङ्गमश्वस-द्विनिर्गमत्क्रमस्फुरत्करालभालहव्यवाट् ।\nधिमिद्धिमिद्धिमिध्वनन्मृदङ्गतुङ्गमङ्गल-ध्वनिक्रमप्रवर्तितप्रचण्डताण्डवः शिवः ॥ ११ ॥",
+      "iast_phonetic": "jayatvadabhravibhramabhramadbhujaṅgamaśvasa-dvinirgamatkramasphuratkarālabhālahavyavāṭ ।\ndhimid-dhimid-dhimidhvanan-mṛdaṅgatuṅgamaṅgala-dhvanikramapravartitapracaṇḍatāṇḍavaḥ śivaḥ ॥ 11 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "जयत्वदभ्रविभ्रमभ्रमद्भुजङ्गमश्वस-द्विनिर्गमत्क्रमस्फुरत्करालभालहव्यवाट् ।\nधिमिद्धिमिद्धिमिध्वनन्मृदङ्गतुङ्गमङ्गल-ध्वनिक्रमप्रवर्तितप्रचण्डताण्डवः शिवः ॥ ११ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 12,
+      "verse_id": "VEDA-TXT-00002-V012",
+      "original_text": "दृषद्विचित्रतल्पयोर्भुजङ्गमौक्तिकस्रजोर्-गरिष्ठरत्नलोष्ठयोः सुहृद्विपक्षपक्षयोः ।\nतृणारविन्दचक्षुषोः प्रजामहीमहेन्द्रयोः समं प्रवर्तयन्मनः कदा सदाशिवं भजे ॥ १२ ॥",
+      "iast_phonetic": "dṛṣadvicitratalpayōrbhujaṅgamauktikasrajōr-gariṣṭharatnalōṣṭhayōḥ suhṛdvipakṣapakṣayōḥ ।\ntṛṇāravindacakṣuṣōḥ prajāmahīmahēndrayōḥ samaṁ pravartayanmanaḥ kadā sadāśivaṁ bhajē ॥ 12 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "दृषद्विचित्रतल्पयोर्भुजङ्गमौक्तिकस्रजोर्-गरिष्ठरत्नलोष्ठयोः सुहृद्विपक्षपक्षयोः ।\nतृणारविन्दचक्षुषोः प्रजामहीमहेन्द्रयोः समं प्रवर्तयन्मनः कदा सदाशिवं भजे ॥ १२ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 13,
+      "verse_id": "VEDA-TXT-00002-V013",
+      "original_text": "कदा निलिम्पनिर्झरीनिकेतनोत्तरे वसन् विमुक्तदुर्मतिः सदा शिरःस्थमञ्जलिं वहन् ।\nविमुक्तलोललोचनो ललामभाललग्नकः शिवेति मन्त्रमुच्चरन् कदा सुखी भवाम्यहम् ॥ १३ ॥",
+      "iast_phonetic": "kadā nilimpanirjharīnikētanōttarē vasan vimuktadurmatiḥ sadā śiraḥsthamañjaliṁ vahan ।\nvimuktalōlalōcanō lalāmabhālalagnakaḥ śivēti mantramuccaran kadā sukhī bhavāmyaham ॥ 13 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "कदा निलिम्पनिर्झरीनिकेतनोत्तरे वसन् विमुक्तदुर्मतिः सदा शिरःस्थमञ्जलिं वहन् ।\nविमुक्तलोललोचनो ललामभाललग्नकः शिवेति मन्त्रमुच्चरन् कदा सुखी भवाम्यहम् ॥ १३ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 14,
+      "verse_id": "VEDA-TXT-00002-V014",
+      "original_text": "इमं हि नित्यमेवमुक्तमुत्तमोत्तमं स्तवं पठन्स्मरन्ब्रुवन्नरो विशुद्धिमेति सन्ततम् ।\nहरे गुरौ सुभक्तिमाशु याति नान्यथा गतिं विमोहनं हि देहिनां सुशङ्करस्य चिन्तनम् ॥ १४ ॥",
+      "iast_phonetic": "imaṁ hi nityamēvamuktamuttamōttamaṁ stavaṁ paṭhansmaranbruvannarō viśuddhimēti santatam ।\nharē gurau subhaktimāśu yāti nānyathā gatiṁ vimōhanaṁ hi dēhināṁ suśaṅkarasya cintanam ॥ 14 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "इमं हि नित्यमेवमुक्तमुत्तमोत्तमं स्तवं पठन्स्मरन्ब्रुवन्नरो विशुद्धिमेति सन्ततम् ।\nहरे गुरौ सुभक्तिमाशु याति नान्यथा गतिं विमोहनं हि देहिनां सुशङ्करस्य चिन्तनम् ॥ १४ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 15,
+      "verse_id": "VEDA-TXT-00002-V015",
+      "original_text": "पूजावसानसमये दशवक्त्रगीतं यः शम्भुपूजनपरं पठति प्रदोषे ।\nतस्य स्थिरां रथगजेन्द्रतुरङ्गयुक्तां लक्ष्मीं सदैव सुमुखीं प्रददाति शम्भुः ॥ १५ ॥",
+      "iast_phonetic": "pūjāvasānasamayē daśavaktragītaṁ yaḥ śambhupūjanaparaṁ paṭhati pradōṣē ।\ntasya sthirāṁ rathagajēndraturaṅgayuktāṁ lakṣmīṁ sadaiva sumukhīṁ pradadāti śambhuḥ ॥ 15 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "पूजावसानसमये दशवक्त्रगीतं यः शम्भुपूजनपरं पठति प्रदोषे ।\nतस्य स्थिरां रथगजेन्द्रतुरङ्गयुक्तां लक्ष्मीं सदैव सुमुखीं प्रददाति शम्भुः ॥ १५ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    },
+    {
+      "verse_number": 16,
+      "verse_id": "VEDA-TXT-00002-V016",
+      "original_text": "इति श्रीरावणकृतं शिवताण्डवस्तोत्रं सम्पूर्णम् ।\nॐ नमः शिवाय ॥ १६ ॥",
+      "iast_phonetic": "iti śrīrāvaṇakṛtaṁ śivatāṇḍavastōtraṁ sampūrṇam ।\nōṁ namaḥ śivāya ॥ 16 ॥",
+      "pause_after_verse_sec": 2.0,
+      "has_vedic_swaras": false,
+      "swara_annotations": null,
+      "regional_script_rendering": "इति श्रीरावणकृतं शिवताण्डवस्तोत्रं सम्पूर्णम् ।\nॐ नमः शिवाय ॥ १६ ॥",
+      "pronunciation_notes": [
+        "Full stop at double danda (॥)."
+      ],
+      "studio_recording_notes": "Standard stotra recitation tempo; observe half-verse pause at single danda (।)."
+    }
+  ],
+  "translation_reference_note": "Audio recording must recite only the immutable original sacred verse text; translations and regional explanations must be recorded as separate commentary tracks."
+}

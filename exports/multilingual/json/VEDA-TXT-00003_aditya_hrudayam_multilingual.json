@@ -1,0 +1,2318 @@
+{
+  "content_id": "VEDA-TXT-00003",
+  "canonical_title": "Aditya Hrudayam",
+  "devanagari_title": "आदित्यहृदयम्",
+  "composer": "Maharishi Valmiki / Sage Agastya",
+  "source_scripture": "Valmiki Ramayana, Yuddha Kanda, Sarga 105",
+  "verse_count": 31,
+  "generated_at_utc": "2026-11-05T01:05:23.620818+00:00",
+  "supported_languages": [
+    "sa",
+    "hi",
+    "te",
+    "ta",
+    "kn",
+    "mr",
+    "bn",
+    "gu",
+    "ml",
+    "or",
+    "en"
+  ],
+  "verses": [
+    {
+      "verse_number": 1,
+      "verse_type": "VERSE",
+      "original_sanskrit": "ततो युद्धपरिश्रान्तं समरे चिन्तया स्थितम् । रावणं चाग्रतो दृष्ट्वा युद्धाय समुपस्थितम् ॥ १ ॥",
+      "iast": "tato yuddhaparishrāntaṁ samare cintayā sthitam । rāvaṇaṁ cāgrato dṛṣṭvā yuddhāya samupasthitam ॥ 1 ॥",
+      "transliterations": {
+        "telugu": "తతో యుద్ధపరిశ్రాన్తం సమరే చిన్తయా స్థితమ్ । రావణం చాగ్రతో దృష్ట్వా యుద్ధాయ సముపస్థితమ్ ॥ ౧ ॥",
+        "tamil": "ததோ யுத்தபரிஶ்ராந்தம் ஸமரே சிந்தயா ஸ்திதம் । ராவணம் சாக்ரதோ த்ரு'ஷ்ட்வா யுத்தாய ஸமுபஸ்திதம் ॥ ௧ ॥",
+        "kannada": "ತತೋ ಯುದ್ಧಪರಿಶ್ರಾನ್ತಂ ಸಮರೇ ಚಿನ್ತಯಾ ಸ್ಥಿತಮ್ । ರಾವಣಂ ಚಾಗ್ರತೋ ದೃಷ್ಟ್ವಾ ಯುದ್ಧಾಯ ಸಮುಪಸ್ಥಿತಮ್ ॥ ೧ ॥",
+        "malayalam": "തതോ യുദ്ധപരിശ്രാന്തം സമരേ ചിന്തയാ സ്ഥിതമ് । രാവണം ചാഗ്രതോ ദൃഷ്ട്വാ യുദ്ധായ സമുപസ്ഥിതമ് ॥ ൧ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Then, beholding Sri Rama standing exhausted on the battlefield, absorbed in deep contemplation, and seeing Ravana nearby duly prepared for combat...",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "उस समय युद्धभूमि में निरंतर युद्ध से थके हुए और रण-चिंता में स्थित श्रीरामचन्द्रजी को तथा सामने युद्ध के लिए तत्पर खड़े रावण को देखकर...",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆ సమయమున యుద్ధరంగమున దీర్ఘకాల యుద్ధముచే అలసినవాడై, చింతాక్రాంతుడై నిలబడిన శ్రీరాముని, మరియు ఎదురుగా యుద్ధసన్నద్ధుడై యున్న రావణుని చూచి...",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அப்போது போர்க்களத்தில் இடைவிடாத போரினால் இளைப்புற்று, ஆழ்ந்த சிந்தனையோடு நின்றிருந்த ஸ்ரீராமரையும், எதிரே போருக்குத் தயாராக நின்ற ராவணனையும் கண்டு...",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಆ ಸಮಯದಲ್ಲಿ ಯುದ್ಧರಂಗದಲ್ಲಿ ದೀರ್ಘ ಕಾಳಗದಿಂದ ದಣಿದು, ಚಿಂತಾಕ್ರಾಂತರಾಗಿ ನಿಂತಿದ್ದ ಶ್ರೀರಾಮಚಂದ್ರರನ್ನೂ, ಎದುರಿಗೆ ಯುದ್ಧಕ್ಕೆ ಸನ್ನದ್ಧನಾಗಿ ನಿಂತಿದ್ದ ರಾವಣನನ್ನೂ ಕಂಡು...",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "त्या वेळी रणांगणावर अखंड युद्धाने थकलेल्या व चिंतातुर उभ्या राहिलेल्या श्रीरामांना आणि समोर युद्धासाठी सज्ज असलेल्या रावणाला पाहून...",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তখন রণস্থলে দীর্ঘ যুদ্ধের শ্রমে পরিশ্রান্ত ও চিন্তান্বিত অবস্থায় স্থিত শ্রীরামচন্দ্রকে এবং সম্মুখে সমরোদ্যত রাবণকে অবলোকন করিয়া...",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તે સમયે રણભૂમિમાં દીર્ઘ યુદ્ધથી થાકેલા અને ચિંતાતુર ઊભેલા શ્રીરામચંદ્રજીને તેમજ સામે યુદ્ધ માટે તત્પર રાવણને જોઈને...",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അപ്പോൾ യുദ്ധക്കളത്തിൽ ദീർഘമായ പോരാട്ടത്താൽ ക്ഷീണിതനായി, ചിന്താധീനനായി നിന്ന ശ്രീരാമനെയും മുന്നിൽ പോരിനു തയ്യാറായി നിന്ന രാവണനെയും കണ്ട്...",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସେହି ସମୟରେ ଯୁଦ୍ଧକ୍ଷେତ୍ରରେ ନିରନ୍ତର ଯୁଦ୍ଧରେ କ୍ଳାନ୍ତ ଓ ଚିନ୍ତାମଗ୍ନ ଶ୍ରୀରାମଚନ୍ଦ୍ରଙ୍କୁ ତଥା ସମ୍ମୁଖରେ ଯୁଦ୍ଧ ପାଇଁ ଉପସ୍ଥିତ ରାବଣକୁ ଦେଖି...",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 2,
+      "verse_type": "VERSE",
+      "original_sanskrit": "दैवतैश्च समागम्य द्रष्टुमभ्यागतो रणम् । उपगम्याब्रवीद्राममगस्त्यो भगवानृषिः ॥ २ ॥",
+      "iast": "daivataiśca samāgamya draṣṭumabhyāgato raṇam । upagamyābravīdrāmamagastyo bhagavānṛṣiḥ ॥ 2 ॥",
+      "transliterations": {
+        "telugu": "దైవతైశ్చ సమాగమ్య ద్రష్టుమభ్యాగతో రణమ్ । ఉపగమ్యాబ్రవీద్రామమగస్త్యో భగవానృషిః ॥ ౨ ॥",
+        "tamil": "தைவதைஶ்ச ஸமாகம்ய த்ரஷ்டுமப்யாகதோ ரணம் । உபகம்யாப்ரவீத்ராமமகஸ்த்யோ பகவாந்ரு'ஷிஃ ॥ ௨ ॥",
+        "kannada": "ದೈವತೈಶ್ಚ ಸಮಾಗಮ್ಯ ದ್ರಷ್ಟುಮಭ್ಯಾಗತೋ ರಣಮ್ । ಉಪಗಮ್ಯಾಬ್ರವೀದ್ರಾಮಮಗಸ್ತ್ಯೋ ಭಗವಾನೃಷಿಃ ॥ ೨ ॥",
+        "malayalam": "ദൈവതൈശ്ച സമാഗമ്യ ദ്രഷ്ടുമഭ്യാഗതോ രണമ് । ഉപഗമ്യാബ്രവീദ്രാമമഗസ്ത്യോ ഭഗവാനൃഷിഃ ॥ ൨ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "...the revered Sage Agastya, who had joined the assemblage of gods to witness the battle, approached Rama and spoke as follows:",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "देवताओं के साथ युद्ध देखने आए परम तेजस्वी महर्षि अगस्त्य ने भगवान् श्रीराम के समीप जाकर यह वचन कहे।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "దేవతలతో కూడి ఆ మహాయుద్ధమును వీక్షించుటకు విచ్చేసిన పరమ పూజ్యుడైన అగస్త్య మహర్షి శ్రీరాముని సమీపించి ఇట్లు పలికెను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தேவர்களோடு கூடி அந்தப் போரைக் காண வந்திருந்த தவவலிமை மிக்க அகஸ்திய முனிவர் ஸ்ரீராமபிரானை அணுகி இவ்வார்த்தைகளைக் கூறினார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ದೇವತೆಗಳೊಂದಿಗೆ ಆ ಮಹಾಸಂಗ್ರಾಮವನ್ನು ನೋಡಲು ಬಂದಿದ್ದ ಪರಮ ತಪಸ್ವಿಯಾದ ಅಗಸ್ತ್ಯ ಮಹರ್ಷಿಗಳು ಶ್ರೀರಾಮನ ಬಳಿಗೆ ಬಂದು ಹೀಗೆ ನುಡಿದರು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "देवांसमवेत हे युद्ध पाहण्यासाठी आलेले परम तपस्वी महर्षी अगस्त्य श्रीरामांजवळ आले आणि त्यांनी हे वचन म्हटले.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "দেবগণের সহিত সংগ্রাম দর্শন করিতে সমাগত পরম তেজস্বী অগস্ত্য মুনি শ্রীরামচন্দ্রের সমীপে উপস্থিত হইয়া এই কথা বলিলেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "દેવતાઓ સાથે તે મહાયુદ્ધ જોવા આવેલા પરમ તપસ્વી અગસ્ત્ય મુનિ શ્રીરામ પાસે આવ્યા અને આ વચનો કહ્યાં.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ദേവന്മാരോടൊപ്പം ആ മഹായുദ്ധം കാണാൻ എത്തിയ പരമതപസ്വിയായ അഗസ്ത്യമഹർഷി ശ്രീരാമന്റെ അടുത്തെത്തി ഇപ്രകാരം അരുളിച്ചെയ്തു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଦେବତାମାନଙ୍କ ସହିତ ଯୁଦ୍ଧ ଦେଖିବାକୁ ଆସିଥିବା ପରମ ତେଜସ୍ୱୀ ଅଗସ୍ତ୍ୟ ମୁନି ଶ୍ରୀରାମଙ୍କ ନିକଟକୁ ଆସି ଏହି କଥା କହିଲେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 3,
+      "verse_type": "VERSE",
+      "original_sanskrit": "राम राम महाबाहो शृणु गुह्यं सनातनम् । येन सर्वानरीन् वत्स समरे विजयिष्यसे ॥ ३ ॥",
+      "iast": "rāma rāma mahābāho śṛṇu guhyaṁ sanātanam । yena sarvānarīn vatsa samare vijayiṣyase ॥ 3 ॥",
+      "transliterations": {
+        "telugu": "రామ రామ మహాబాహో శృణు గుహ్యం సనాతనమ్ । యేన సర్వానరీన్ వత్స సమరే విజయిష్యసే ॥ ౩ ॥",
+        "tamil": "ராம ராம மஹாபாஹோ ஶ்ரு'ணு குஹ்யம் ஸநாதநம் । யேந ஸர்வாநரீந் வத்ஸ ஸமரே விஜயிஷ்யஸே ॥ ௩ ॥",
+        "kannada": "ರಾಮ ರಾಮ ಮಹಾಬಾಹೋ ಶೃಣು ಗುಹ್ಯಂ ಸನಾತನಮ್ । ಯೇನ ಸರ್ವಾನರೀನ್ ವತ್ಸ ಸಮರೇ ವಿಜಯಿಷ್ಯಸೇ ॥ ೩ ॥",
+        "malayalam": "രാമ രാമ മഹാബാഹോ ശൃണു ഗുഹ്യം സനാതനമ് । യേന സര്വാനരീന് വത്സ സമരേ വിജയിഷ്യസേ ॥ ൩ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'O Rama! O mighty-armed Rama! Listen to this eternal secret, by which, my child, you shall conquer all your adversaries on the battlefield.'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे महाबाहो राम! हे वत्स! इस सनातन एवं परम गोपनीय रहस्य को सुनो, जिसके प्रभाव से तुम युद्ध में अपने समस्त शत्रुओं पर विजय प्राप्त करोगे।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఓ మహాబాహో రామా! ఓ వత్సా! సకల శత్రువులను యుద్ధరంగమున జయించుటకు తోడ్పడు ఈ సనాతనమైన, పరమ రహస్యమైన ఉపదేశమును వినుము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "மகாபாகுவே ராமா! அன்புக் குழந்தாய்! போர்க்களத்தில் பகைவர் அனைவரையும் நீ வெல்வதற்கு உதவும் இந்த நித்தியமான, பரம ரகசிய உபதேசத்தைக் கேட்பாயாக!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಹೇ ಮಹಾಬಾಹು ರಾಮನೇ! ಮಗು, ಸಮರದಲ್ಲಿ ಸಕಲ ಶತ್ರುಗಳನ್ನೂ ಜಯಿಸಲು ಕಾರಣವಾಗುವ ಈ ಸನಾತನವೂ ಪರಮ ರಹಸ್ಯವೂ ಆದ ವಿದ್ಯೆಯನ್ನು ಆಲಿಸು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे महाबाहू रामा! हे बाळा, या सनातन आणि अत्यंत गोपनीय रहस्याला ऐક, ज्याच्या योगाने तू रणांगणात सर्व शत्रूंवर निश्चित विजय मिळवशील.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে মহাবাহু রাম! হে বৎস! এই সনাতন ও পরম গোপনীয় রহস্য শ্রবণ কর, যাহার প্রভাবে তুমি সংগ্রামে সমস্ত শত্রুকে পরাভূত করিতে পারিবে।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હે મહાબાહુ રામ! હે વત્સ! આ સનાતન અને પરમ રહસ્યમય ઉપદેશ સાંભળ, જેના પ્રભાવથી તું યુદ્ધમાં સર્વ શત્રુઓ પર વિજય પ્રાપ્ત કરીશ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഹേ മഹാബാഹോ രാമാ! എന്റെ പ്രിയ വത്സാ! സമരാങ്കണത്തിൽ സകല ശത്രുക്കളെയും ജയിക്കാൻ സഹായിക്കുന്ന ഈ സനാതനവും പരമരഹസ്യവുമായ ഉപദേശം കേട്ടാലും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହେ ମହାବାହୁ ରାମ! ହେ ବତ୍ସ! ଏହି ସନାତନ ଓ ପରମ ଗୋପନୀୟ ରହସ୍ୟ ଶ୍ରବଣ କର, ଯାହାର ପ୍ରଭାବରେ ତୁମେ ଯୁଦ୍ଧରେ ସମସ୍ତ ଶତ୍ରୁଙ୍କୁ ପରାଜିତ କରିବ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 4,
+      "verse_type": "PHALASRUTI",
+      "original_sanskrit": "आदित्यहृदयं पुण्यं सर्वशत्रुविनाशनम् । जयावहं जपेन्नित्यमक्षयं परमं शिवम् ॥ ४ ॥",
+      "iast": "ādityahṛdayaṁ puṇyaṁ sarvaśatruvināśanam । jayāvahaṁ japennityamakṣayaṁ paramaṁ śivam ॥ 4 ॥",
+      "transliterations": {
+        "telugu": "ఆదిత్యహృదయం పుణ్యం సర్వశత్రువినాశనమ్ । జయావహం జపేన్నిత్యమక్షయం పరమం శివమ్ ॥ ౪ ॥",
+        "tamil": "ஆதித்யஹ்ரு'தயம் புண்யம் ஸர்வஶத்ருவிநாஶநம் । ஜயாவஹம் ஜபேந்நித்யமக்ஷயம் பரமம் ஶிவம் ॥ ௪ ॥",
+        "kannada": "ಆದಿತ್ಯಹೃದಯಂ ಪುಣ್ಯಂ ಸರ್ವಶತ್ರುವಿನಾಶನಮ್ । ಜಯಾವಹಂ ಜಪೇನ್ನಿತ್ಯಮಕ್ಷಯಂ ಪರಮಂ ಶಿವಮ್ ॥ ೪ ॥",
+        "malayalam": "ആദിത്യഹൃദയം പുണ്യം സര്വശത്രുവിനാശനമ് । ജയാവഹം ജപേന്നിത്യമക്ഷയം പരമം ശിവമ് ॥ ൪ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'This holy hymn, Aditya Hrudayam, destroys all foes, brings victory, and should be recited constantly; it is inexhaustible, supreme, and all-auspicious.'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "यह 'आदित्य-हृदय' स्तोत्र परम पवित्र है, समस्त शत्रुओं का नाश करने वाला, विजय प्रदान करने वाला, अक्षय फल देने वाला और परम कल्याणकारी है; इसका नित्य पाठ करना चाहिए।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఈ 'ఆదిత్యహృదయము' పరమ పవిత్రమైనది, సర్వశత్రువులను సంహరించునది, సకల విజయములను ప్రసాదించునది, నాశనము లేని అక్షయ ఫలములను, పరమ మంగళమును చేకూర్చునది; దీనిని ప్రతిదినము జపించవలెను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இந்த 'ஆதித்ய ஹிருதயம்' மிகவும் புனிதமானது, சர்வ சத்துருக்களையும் அழிக்கவல்லது, வெற்றியைத் தருவது, அழியாத நன்மைகளையும் பரம மங்கலத்தையும் நல்குவது; இதனை நித்தம் ஜபிக்க வேண்டும்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಈ 'ಆದಿತ್ಯಹೃದಯ' ಸ್ತೋತ್ರವು ಪರಮ ಪವಿತ್ರವಾದದ್ದು, ಸರ್ವ ಶತ್ರುಗಳನ್ನು ನಾಶಮಾಡುವಂತದ್ದು, ವಿಜಯದಾಯಕವಾದದ್ದು, ಅಕ್ಷಯವಾದ ಪುಣ್ಯವನ್ನೂ ಪರಮ ಕಲ್ಯಾಣವನ್ನೂ ನೀಡುವಂತದ್ದು; ಇದನ್ನು ನಿತ್ಯವೂ ಜಪಿಸಬೇಕು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे 'आदित्यहृदय' स्तोत्र परम पवित्र आहे, सर्व शत्रूंचा नाश करणारे, विजय मिळवून देणारे, अक्षय फळ देणारे आणि अत्यंत कल्याणकारी आहे; याचे नित्य पठण करावे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "এই 'আদিত্যহৃদয়' স্তোত্রম পরম পবিত্র, সর্বশত্রুনাশক, বিজয়প্রদায়ক, অক্ষয় ফলদাতা এবং পরম মঙ্গলময়; ইহার নিত্য পাঠ করা কর্তব্য।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આ 'આદિત્યહૃદય' સ્તોત્ર પરમ પવિત્ર છે, સર્વ શત્રુઓનો નાશ કરનારું, વિજય આપનારું, અક્ષય ફળ આપનારું અને પરમ કલ્યાણકારી છે; તેનો નિત્ય પાઠ કરવો જોઈએ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഈ 'ആദിത്യഹൃദയം' പരമപവിത്രവും, സർവ്വ ശത്രുക്കളെയും നശിപ്പിക്കുന്നതും, വിജയം തരുന്നതും, അക്ഷയമായ പുണ്യവും പരമമംഗളവും നൽകുന്നതുമാണ്; ഇതു നിത്യവും ജപിക്കണം.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଏହି 'ଆଦିତ୍ୟହୃଦୟ' ସ୍ତୋତ୍ର ପରମ ପବିତ୍ର, ସର୍ବଶତ୍ରୁ ବିନାଶକ, ବିଜୟ ପ୍ରଦାନକାରୀ, ଅକ୍ଷୟ ଫଳଦାୟୀ ଏବଂ ପରମ କଲ୍ୟାଣମୟ; ଏହାକୁ ନିତ୍ୟ ଜପ କରିବା ଉଚିତ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 5,
+      "verse_type": "PHALASRUTI",
+      "original_sanskrit": "सर्वमङ्गलमाङ्गल्यं सर्वपापप्रणाशनम् । चिन्ताशोकप्रशमनमायुर्वर्धनमुत्तमम् ॥ ५ ॥",
+      "iast": "sarvamaṅgalamāṅgalyaṁ sarvapāpapraṇāśanam । cintāśokapraśamanamāyurvardhanamuttamam ॥ 5 ॥",
+      "transliterations": {
+        "telugu": "సర్వమఙ్గలమాఙ్గల్యం సర్వపాపప్రణాశనమ్ । చిన్తాశోకప్రశమనమాయుర్వర్ధనముత్తమమ్ ॥ ౫ ॥",
+        "tamil": "ஸர்வமங்கலமாங்கல்யம் ஸர்வபாபப்ரணாஶநம் । சிந்தாஶோகப்ரஶமநமாயுர்வர்தநமுத்தமம் ॥ ௫ ॥",
+        "kannada": "ಸರ್ವಮಙ್ಗಲಮಾಙ್ಗಲ್ಯಂ ಸರ್ವಪಾಪಪ್ರಣಾಶನಮ್ । ಚಿನ್ತಾಶೋಕಪ್ರಶಮನಮಾಯುರ್ವರ್ಧನಮುತ್ತಮಮ್ ॥ ೫ ॥",
+        "malayalam": "സര്വമങ്ഗലമാങ്ഗല്യം സര്വപാപപ്രണാശനമ് । ചിന്താശോകപ്രശമനമായുര്വര്ധനമുത്തമമ് ॥ ൫ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'It is the blessing of all blessings, dispeller of all sins, allayer of anxieties and grief, and the supreme enhancer of longevity.'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "यह समस्त मंगलों का भी मंगल है, समस्त पापों का पूर्ण नाश करने वाला है, चिंता और शोक को शांत करने वाला तथा आयु को बढ़ाने वाला सर्वोत्तम स्तोत्र है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఇది సకల మంగళములలోకెల్లా పరమ మంగళప్రదమైనది, సమస్త పాపములను పటాపంచలు చేయునది, సకల చింతలను శోకములను శమింపజేయునది, ఆయురారోగ్యములను వృద్ధిచేయు శ్రేష్ఠమైన స్తోత్రము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "மங்கலங்கள் எல்லாவற்றிலும் மேலான மங்கலம், பாவங்களை அடியோடு அழிப்பது, கவலைகளையும் துயரங்களையும் போக்குவது, ஆயுளை நீட்டிக்கச் செய்யும் மிகச் சிறந்த உபதேசம் இதுவாகும்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಇದು ಸಮಸ್ತ ಮಂಗಳಗಳಲ್ಲಿಯೂ ಅತ್ಯಂತ ಮಂಗಳಕರವಾದದ್ದು, ಸಕಲ ಪಾಪನಾಶಕವಾದದ್ದು, ಚಿಂತೆ ಮತ್ತು ದುಃಖಗಳನ್ನು ಪರಿಹರಿಸುವಂತದ್ದು ಹಾಗೂ ಆಯುಸ್ಸನ್ನು ವೃದ್ಧಿಸುವ ಶ್ರೇಷ್ಠ ಸ್ತೋತ್ರವಾಗಿದೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे सर्व मंगलांमध्ये परम मंगल आहे, सर्व पापांचे पूर्ण क्षालन करणारे, चिंता व दुःख दूर करणारे आणि आयुष्य वाढवणारे सर्वोत्तम स्तोत्र आहे.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "ইহা সর্বমঙ্গলেরও পরম মঙ্গলস্বরূপ, সর্বপাপনাশক, যাবতীয় চিন্তা ও শোকের উপশমকারী এবং পরম আয়ুর্বর্ধক উত্তম স্তোত্র।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આ સર્વ મંગલોનું પણ પરમ મંગળ છે, સર્વ પાપોનો નાશ કરનારું છે, ચિંતા અને શોકને દૂર કરનારું તથા આયુષ્ય વધારનારું સર્વોત્તમ સ્તોત્ર છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഇത് സർവ്വമംഗളങ്ങളിലും വെച്ച് പരമമംഗളകരമായതും, സർവ്വപാപങ്ങളെയും നശിപ്പിക്കുന്നതും, ചിന്തയും ദുഃഖവും ശമിപ്പിക്കുന്നതും, ആയുസ്സ് വർദ്ധിപ്പിക്കുന്നതുമായ ഉത്തമസ്തോത്രമാണ്.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଏହା ସମସ୍ତ ମଙ୍ଗଳ ମଧ୍ୟରେ ପରମ ମଙ୍ଗଳମୟ, ସକଳ ପାପ ବିନାଶକ, ଚିନ୍ତା ଓ ଶୋକକୁ ଦୂର କରୁଥିବା ତଥା ଆୟୁ ବୃଦ୍ଧିକାରୀ ସର୍ବୋତ୍ତମ ସ୍ତୋତ୍ର ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 6,
+      "verse_type": "VERSE",
+      "original_sanskrit": "रश्मिमन्तं समुद्यन्तं देवासुरनमस्कृतम् । पूजयस्व विवस्वन्तं भास्करं भुवनेश्वरम् ॥ ६ ॥",
+      "iast": "raśmimantaṁ samudyantaṁ devāsuranamaskṛtam । pūjayasva vivasvantaṁ bhāskaraṁ bhuvaneśvaram ॥ 6 ॥",
+      "transliterations": {
+        "telugu": "రశ్మిమన్తం సముద్యన్తం దేవాసురనమస్కృతమ్ । పూజయస్వ వివస్వన్తం భాస్కరం భువనేశ్వరమ్ ॥ ౬ ॥",
+        "tamil": "ரஶ்மிமந்தம் ஸமுத்யந்தம் தேவாஸுரநமஸ்க்ரு'தம் । பூஜயஸ்வ விவஸ்வந்தம் பாஸ்கரம் புவநேஶ்வரம் ॥ ௬ ॥",
+        "kannada": "ರಶ್ಮಿಮನ್ತಂ ಸಮುದ್ಯನ್ತಂ ದೇವಾಸುರನಮಸ್ಕೃತಮ್ । ಪೂಜಯಸ್ವ ವಿವಸ್ವನ್ತಂ ಭಾಸ್ಕರಂ ಭುವನೇಶ್ವರಮ್ ॥ ೬ ॥",
+        "malayalam": "രശ്മിമന്തം സമുദ്യന്തം ദേവാസുരനമസ്കൃതമ് । പൂജയസ്വ വിവസ്വന്തം ഭാസ്കരം ഭുവനേശ്വരമ് ॥ ൬ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'Worship the effulgent Lord of the universe, the Sun, endowed with golden rays, rising gloriously, adored by both gods and demons, the maker of light.'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "किरणों से सुशोभित, उदित हो रहे, देवों और असुरों दोनों द्वारा पूजित, परम तेजस्वी और समस्त संसार के स्वामी भगवान् भास्कर (सूर्यदेव) की तुम पूजा करो।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "సహస్ర కిరణములతో ప్రకాశించువాడు, ఉదయించుచున్నవాడు, దేవదానవులందరిచే నమస్కరింపబడువాడు, దివ్య తేజోమయుడు, సమస్త లోకములకు నాథుడైన ఆ సూర్యభగవానుని నీవు ఆరాధింపుము.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "கிரணங்களால் ஒளிவீசுபவரும், உதயமாயெழுபவரும், தேவர்களாலும் அசுரர்களாலும் வணங்கப்படுபவரும், பேரொளிப் பிழம்பாய் விளங்கும் அகிலத்தின் ஈசனுமான அந்த சூரிய பகவானை நீ வழிபடுவாயாக.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಅನಂತ ಕಿರಣಗಳಿಂದ ಬೆಳಗುವ, ಉದಯಿಸುತ್ತಿರುವ, ದೇವತೆಗಳು ಮತ್ತು ಅಸುರರಿಬ್ಬರಿಂದಲೂ ವಂದಿಸಲ್ಪಡುವ, ಲೋಕನಾಥನಾದ ಭಾಸ್ಕರ ಸೂರ್ಯದೇವನನ್ನು ನೀನು ಪೂಜಿಸು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "किरणांनी प्रकाशणाऱ्या, उदयाला येणाऱ्या, देव आणि दानव दोघांनीही वंदिलेल्या, अत्यंत तेजस्वी व जगताचे स्वामी असणाऱ्या भगवान सूर्यदेवांची तू पूजा कर.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "অনন্ত কিরণমালাযুক্ত, প্রাতঃকালে সমুদ্যত, সুর ও অসুর উভয় কর্তৃক বন্দিত, পরমতাপসী ও নিখিলভুবনেশ্বর ভগবান ভাস্করের তুমি আরাধনা কর।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "કિરણોથી સુશોભિત, ઉદય પામી રહેલા, દેવો અને દાનવો બંને દ્વારા પૂજિત, પરમ તેજસ્વી અને સમગ્ર જગતના સ્વામી ભગવાન સૂર્યદેવની તું પૂજા કર.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "രശ്മികളാൽ ശോഭിക്കുന്നവനും, ഉദിച്ചുയരുന്നവനും, ദേവാസുരന്മാരാൽ വന്ദിക്കപ്പെടുന്നവനും, ലോകനാഥനുമായ ആ ഭാസ്കരനെ നീ പൂജിച്ചാലും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "କିରଣମାଳାରେ ସୁଶୋଭିତ, ଉଦୟ ହେଉଥିବା, ଦେବ ଓ ଦାନବ ଉଭୟଙ୍କ ଦ୍ୱାରା ବନ୍ଦିତ, ପରମ ତେଜସ୍ୱୀ ଓ ଜଗତର ସ୍ୱାମୀ ଭଗବାନ ସୂର୍ଯ୍ୟଦେବଙ୍କୁ ତୁମେ ପୂଜା କର ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 7,
+      "verse_type": "VERSE",
+      "original_sanskrit": "सर्वदेवात्मको ह्येष तेजस्वी रश्मिभावनः । एष देवासुरगणांल्लोकान् पाति गभस्तिभिः ॥ ७ ॥",
+      "iast": "sarvadevātmako hyeṣa tejasvī raśmibhāvanaḥ । eṣa devāsuragaṇāṁllokān pāti gabhastibhiḥ ॥ 7 ॥",
+      "transliterations": {
+        "telugu": "సర్వదేవాత్మకో హ్యేష తేజస్వీ రశ్మిభావనః । ఏష దేవాసురగణాంల్లోకాన్ పాతి గభస్తిభిః ॥ ౭ ॥",
+        "tamil": "ஸர்வதேவாத்மகோ ஹ்யேஷ தேஜஸ்வீ ரஶ்மிபாவநஃ । ஏஷ தேவாஸுரகணாம்ல்லோகாந் பாதி கபஸ்திபிஃ ॥ ௭ ॥",
+        "kannada": "ಸರ್ವದೇವಾತ್ಮಕೋ ಹ್ಯೇಷ ತೇಜಸ್ವೀ ರಶ್ಮಿಭಾವನಃ । ಏಷ ದೇವಾಸುರಗಣಾಂಲ್ಲೋಕಾನ್ ಪಾತಿ ಗಭಸ್ತಿಭಿಃ ॥ ೭ ॥",
+        "malayalam": "സര്വദേവാത്മകോ ഹ്യേഷ തേജസ്വീ രശ്മിഭാവനഃ । ഏഷ ദേവാസുരഗണാംല്ലോകാന് പാതി ഗഭസ്തിഭിഃ ॥ ൭ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'He is the soul of all gods, full of splendor, creator of the rays; He protects the realms of gods, demons, and all beings by His penetrating rays.'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "ये सूर्यदेव ही समस्त देवताओं के स्वरूप हैं; परम तेजस्वी और किरणों को उत्पन्न करने वाले हैं। ये अपनी अमृतमयी किरणों से देवों, असुरों और समस्त लोकों का निरंतर पालन-पोषण करते हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఈ సూర్యుడే సమస్త దేవతా స్వరూపుడు; పరమ తేజోవంతుడు, సమస్త కిరణములను సృష్టించువాడు. ఈయనయే తన దివ్య కిరణముల ద్వారా దేవతలను, అసురులను మరియు సమస్త లోకములను నిత్యము రక్షించి పోషించుచున్నాడు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இந்த சூரிய பகவானே சகல தேவதைகளின் திருவுருவமாவார்; அளப்பரிய ஒளியுடையவர்; கிரணங்களை உருவாக்குபவர். தனது கிரணங்களால் இவர் தேவர்கள், அசுரர்கள் மற்றும் சகல உலகங்களையும் காத்துப் போற்றுகிறார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಈ ಸೂರ್ಯದೇವನೇ ಸಮಸ್ತ ದೇವತೆಗಳ ಸ್ವರೂಪನಾಗಿದ್ದಾನೆ; ಪರಮ ತೇಜಸ್ವಿಯೂ, ಕಿರಣಗಳ ಜನಕನೂ ಆಗಿದ್ದಾನೆ. ಈತನು ತನ್ನ ರಶ್ಮಿಗಳಿಂದ ದೇವತೆಗಳು, ಅಸುರರು ಹಾಗೂ ಸಕಲ ಲೋಕಗಳನ್ನು ರಕ್ಷಿಸಿ ಪೋಷಿಸುತ್ತಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे सूर्यदेवच सर्व देवतांचे स्वरूप आहेत; अत्यंत तेजस्वी आणि किरणांचे उगमस्थान आहेत. ते आपल्या दिव्य किरणांनी देव, दानव आणि सर्व लोकांचे निरंतर रक्षण व पोषण करतात.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "এই সূর্যদেবই সমস্ত দেবতার মূর্তিস্বরূপ; পরম তেজস্বী ও রশ্মিমালার স্রষ্টা। ইনি নিজ দিব্য কিরণজালে দেবগণ, অসুরগণ ও সমস্ত লোকসমূহকে সতত রক্ষা ও পালন করেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આ સૂર્યદેવ જ સર્વ દેવતાઓના સ્વરૂપ છે; પરમ તેજસ્વી અને કિરણોના સર્જક છે. તેઓ પોતાની દિવ્ય કિરણોથી દેવો, દાનવો અને સમગ્ર જગતનું રક્ષણ અને પોષણ કરે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഈ സൂര്യഭഗവാൻ തന്നെയാണ് സർവ്വദേവതകളുടെയും സ്വരൂപം; പരമതേജസ്വിയും കിരണങ്ങളുടെ ഉറവിടവുമാണ്. അവൻ തന്റെ രശ്മികളാൽ ദേവാസുരന്മാരെയും സമസ്ത ലോകങ്ങളെയും കാത്തുരക്ഷിക്കുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଏହି ସୂର୍ଯ୍ୟଦେବ ହିଁ ସମସ୍ତ ଦେବତାଙ୍କର ସ୍ୱରୂପ; ପରମ ତେଜସ୍ୱୀ ଓ କିରଣମାଳାର ଜନକ । ସେ ଆପଣାର କିରଣ ଦ୍ୱାରା ଦେବ, ଦାନବ ଓ ସମସ୍ତ ଲୋକଙ୍କୁ ସଦା ପାଳନ ଓ ରକ୍ଷା କରନ୍ତି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 8,
+      "verse_type": "VERSE",
+      "original_sanskrit": "एष ब्रह्मा च विष्णुश्च शिवः स्कन्दः प्रजापतिः । महेन्द्रो धनदः कालो यमः सोमो ह्यपां पतिः ॥ ८ ॥",
+      "iast": "eṣa brahmā ca viṣṇuśca śivaḥ skandaḥ prajāpatiḥ । mahendro dhanadaḥ kālo yamaḥ somo hyapāṁ patiḥ ॥ 8 ॥",
+      "transliterations": {
+        "telugu": "ఏష బ్రహ్మా చ విష్ణుశ్చ శివః స్కన్దః ప్రజాపతిః । మహేన్ద్రో ధనదః కాలో యమః సోమో హ్యపాం పతిః ॥ ౮ ॥",
+        "tamil": "ஏஷ ப்ரஹ்மா ச விஷ்ணுஶ்ச ஶிவஃ ஸ்கந்தஃ ப்ரஜாபதிஃ । மஹேந்த்ரோ தநதஃ காலோ யமஃ ஸோமோ ஹ்யபாம் பதிஃ ॥ ௮ ॥",
+        "kannada": "ಏಷ ಬ್ರಹ್ಮಾ ಚ ವಿಷ್ಣುಶ್ಚ ಶಿವಃ ಸ್ಕನ್ದಃ ಪ್ರಜಾಪತಿಃ । ಮಹೇನ್ದ್ರೋ ಧನದಃ ಕಾಲೋ ಯಮಃ ಸೋಮೋ ಹ್ಯಪಾಂ ಪತಿಃ ॥ ೮ ॥",
+        "malayalam": "ഏഷ ബ്രഹ്മാ ച വിഷ്ണുശ്ച ശിവഃ സ്കന്ദഃ പ്രജാപതിഃ । മഹേന്ദ്രോ ധനദഃ കാലോ യമഃ സോമോ ഹ്യപാം പതിഃ ॥ ൮ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'He is Brahma, Vishnu, Shiva, Skanda, Prajapati; He is Indra, Kubera (lord of wealth), Kala (time), Yama, Soma (moon), and Varuna (lord of waters).'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "यही सूर्यदेव ब्रह्मा, विष्णु, शिव, कार्तिकेय, प्रजापति, इन्द्र, कुबेर, काल, यमराज, चन्द्रमा और वरुण देव हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఈ సూర్యభగవానుడే బ్రహ్మ, విష్ణువు, శివుడు, కుమారస్వామి, ప్రజాపతి, దేవేంద్రుడు, కుబేరుడు, కాలము, యముడు, చంద్రుడు మరియు వరుణదేవుడు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இவரே பிரம்மா, விஷ்ணு, சிவன், கந்தன், பிரஜாபதி, இந்திரன், குபேரன், காலதேவன், எமன், சந்திரன் மற்றும் வருண பகவானாவார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಈ ಸೂರ್ಯನೇ ಬ್ರಹ್ಮ, ವಿಷ್ಣು, ಶಿವ, ಸ್ಕಂದ, ಪ್ರಜಾಪತಿ, ಇಂದ್ರ, ಕುಬೇರ, ಕಾಲ, ಯಮ, ಚಂದ್ರ ಮತ್ತು ವರುಣದೇವನಾಗಿದ್ದಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे सूर्यदेवच ब्रह्मा, विष्णू, शिव, कार्तिकेय, प्रजापती, इंद्र, कुबेर, काळ, यमराज, चंद्र आणि वरुणदेव आहेत.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "ইনিই ব্রহ্মা, বিষ্ণু, শিব, কার্তিকেয়, প্রজাপতি, মহেন্দ্র, কুবের, কাল, যম, সোম এবং বরুণদেব।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આ સૂર્યદેવ જ બ્રહ્મા, વિષ્ણુ, શિવ, કાર્તિકેય, પ્રજાપતિ, ઇન્દ્ર, કુબેર, કાળ, યમરાજ, ચંદ્ર અને વરુણદેવ છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഇവൻ തന്നെയാണ് ബ്രഹ്മാവും വിഷ്ണുവും ശിവനും സുബ്രഹ്മണ്യനും പ്രജാപതിയും ഇന്ദ്രനും കുബേരനും കാലനും യമനും ചന്ദ്രനും വരുണനും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଏହି ସୂର୍ଯ୍ୟଦେବ ହିଁ ବ୍ରହ୍ମା, ବିଷ୍ଣୁ, ଶିବ, କାର୍ତ୍ତିକେୟ, ପ୍ରଜାପତି, ଇନ୍ଦ୍ର, କୁବେର, କାଳ, ଯମରାଜ, ଚନ୍ଦ୍ର ଓ ବରୁଣଦେବ ଅଟନ୍ତି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 9,
+      "verse_type": "VERSE",
+      "original_sanskrit": "पितरो वसवः साध्या ह्यश्विनौ मरुतो मनुः । वायुर्वह्निः प्रजाप्राण ऋतुकर्ता प्रभाकरः ॥ ९ ॥",
+      "iast": "pitaro vasavaḥ sādhyā hyaśvinau maruto manuḥ । vāyurvahniḥ prajāprāṇa ṛtukartā prabhākaraḥ ॥ 9 ॥",
+      "transliterations": {
+        "telugu": "పితరో వసవః సాధ్యా హ్యశ్వినౌ మరుతో మనుః । వాయుర్వహ్నిః ప్రజాప్రాణ ఋతుకర్తా ప్రభాకరః ॥ ౯ ॥",
+        "tamil": "பிதரோ வஸவஃ ஸாத்யா ஹ்யஶ்விநௌ மருதோ மநுஃ । வாயுர்வஹ்நிஃ ப்ரஜாப்ராண ரு'துகர்தா ப்ரபாகரஃ ॥ ௯ ॥",
+        "kannada": "ಪಿತರೋ ವಸವಃ ಸಾಧ್ಯಾ ಹ್ಯಶ್ವಿನೌ ಮರುತೋ ಮನುಃ । ವಾಯುರ್ವಹ್ನಿಃ ಪ್ರಜಾಪ್ರಾಣ ಋತುಕರ್ತಾ ಪ್ರಭಾಕರಃ ॥ ೯ ॥",
+        "malayalam": "പിതരോ വസവഃ സാധ്യാ ഹ്യശ്വിനൌ മരുതോ മനുഃ । വായുര്വഹ്നിഃ പ്രജാപ്രാണ ഋതുകര്താ പ്രഭാകരഃ ॥ ൯ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'He is the Pitris, Vasus, Sadhyas, the Ashvins, Maruts, Manu; He is Vayu, Agni, the vital breath of all creatures, creator of the seasons, and the source of light.'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "ये ही पितर, आठ वसु, साध्यगण, अश्विनीकुमार, मरुद्गण, मनु, वायु, अग्नि, समस्त प्रजाओं के प्राण, छहों ऋतुओं के विधाता और प्रकाश के आदि स्रोत (प्रभाकर) हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఈయనయే పితృదేవతలు, అష్టవసువులు, సాధ్యులు, అశ్వినీదేవతలు, మరుద్గణములు, మనువు, వాయువు, అగ్ని, సమస్త ప్రాణుల ప్రాణశక్తి, ఋతువులను సృష్టించువాడు మరియు ప్రభాకరుడు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இவரே பித்ருக்கள், அஷ்ட வசுக்கள், சாத்தியர்கள், அஸ்வினி தேவர்கள், மருத்துக் கணங்கள், மனு, வாயு, அக்னி, அனைத்து உயிர்களின் பிராணன், பருவ காலங்களை உருவாக்குபவர் மற்றும் ஒளி நாயகன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಈತನೇ ಪಿತೃಗಳು, ಅಷ್ಟವಸುಗಳು, ಸಾಧ್ಯರು, ಅಶ್ವಿನೀದೇವತೆಗಳು, ಮರುದ್ಗಣಗಳು, ಮನು, ವಾಯು, ಅಗ್ನಿ, ಸಮಸ್ತ ಪ್ರಜೆಗಳ ಪ್ರಾಣ, ಋತುಗಳ ಜನಕ ಮತ್ತು ಪ್ರಭಾಕರನಾಗಿದ್ದಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हेच पितर, अष्टवसू, साध्यगण, अश्विनीकुमार, मरुद्गण, मनु, वायू, अग्नी, सर्व प्राण्यांचे प्राण, ऋतूंचे निर्माता आणि प्रकाशाचे उगमस्थान (प्रभाकर) आहेत.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "ইনিই পিতৃপুরুষগণ, অষ্টবসু, সাধ্যগণ, অশ্বিনীকুমারদ্বয়, মরুৎগণ, মনু, বায়ু, অগ্নি, নিখিল জীবের প্রাণ, ষড়ঋতুর বিধাতা এবং আলোকের পরম উৎস প্রভাকর।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આ જ પિતૃઓ, આઠ વસુઓ, સાધ્યગણ, અશ્વિનીકુમારો, મરુદ્ગણ, મનુ, વાયુ, અગ્નિ, સર્વ પ્રજાના પ્રાણ, ઋતુઓના નિર્માતા અને પ્રકાશના પુંજ (પ્રભાકર) છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഇവൻ തന്നെയാണ് പിതൃക്കളും അഷ്ടവസുക്കളും സാദ്ധ്യന്മാരും അശ്വിനീദേവന്മാരും മരുത്തുക്കളും മനുവും വായുവും അഗ്നിയും സകലജീവികളുടെ പ്രാണനും ഋതുക്കളുടെ സൃഷ്ടികർത്താവും പ്രഭാകരനും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଏହି ହିଁ ପିତୃଗଣ, ଅଷ୍ଟବସୁ, ସାଧ୍ୟଗଣ, ଅଶ୍ୱିନୀକୁମାର, ମରୁଦ୍ଗଣ, ମନୁ, ବାୟୁ, ଅଗ୍ନି, ସମସ୍ତ ପ୍ରାଣୀଙ୍କର ପ୍ରାଣ, ଋତୁମାନଙ୍କର ସ୍ରଷ୍ଟା ଏବଂ ପ୍ରଭାକର ଅଟନ୍ତି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 10,
+      "verse_type": "VERSE",
+      "original_sanskrit": "आदित्यः सविता सूर्यः खगः पूषा गभस्तिमान् । सुवर्णसदृशो भानुर्हिरण्यरेता दिवाकरः ॥ १० ॥",
+      "iast": "ādityaḥ savitā sūryaḥ khagaḥ pūṣā gabhastimān । suvarṇasadṛśo bhānurhiraṇyaretā divākaraḥ ॥ 10 ॥",
+      "transliterations": {
+        "telugu": "ఆదిత్యః సవితా సూర్యః ఖగః పూషా గభస్తిమాన్ । సువర్ణసదృశో భానుర్హిరణ్యరేతా దివాకరః ॥ ౧౦ ॥",
+        "tamil": "ஆதித்யஃ ஸவிதா ஸூர்யஃ ககஃ பூஷா கபஸ்திமாந் । ஸுவர்ணஸத்ரு'ஶோ பாநுர்ஹிரண்யரேதா திவாகரஃ ॥ ௧௦ ॥",
+        "kannada": "ಆದಿತ್ಯಃ ಸವಿತಾ ಸೂರ್ಯಃ ಖಗಃ ಪೂಷಾ ಗಭಸ್ತಿಮಾನ್ । ಸುವರ್ಣಸದೃಶೋ ಭಾನುರ್ಹಿರಣ್ಯರೇತಾ ದಿವಾಕರಃ ॥ ೧೦ ॥",
+        "malayalam": "ആദിത്യഃ സവിതാ സൂര്യഃ ഖഗഃ പൂഷാ ഗഭസ്തിമാന് । സുവര്ണസദൃശോ ഭാനുര്ഹിരണ്യരേതാ ദിവാകരഃ ॥ ൧൦ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'He is Aditya, Savita (procreator), Surya (mover), Khaga (sky-traveler), Pusha (nourisher), Gabhastiman (radiant), golden in beauty, Hiranyareta (golden seed), maker of day.'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "ये अदिति-पुत्र आदित्य, जगत् के उत्पादक सविता, प्रकाशमान सूर्य, आकाशगामी खग, पोषक पूषा, किरणों से युक्त गभस्तिमान, सुवर्ण-सदृश तेजस्वी, दीप्तिमान भानु, सुवर्ण-बीज हिरण्यरेता और दिन के निर्माता दिवाकर हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఈయనయే అదితిపుత్రుడైన ఆదిత్యుడు, సృష్టికర్తయైన సవిత, సూర్యుడు, ఆకాశగామియైన ఖగుడు, పోషకుడైన పూష, కిరణములు గల గభస్తిమంతుడు, సువర్ణకాంతి గల భానుడు, హిరణ్యరేతస్సు మరియు దివాకరుడు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இவரே அதிதியின் மைந்தரான ஆதித்யன், உலகைப் படைத்த சவிதா, சூரியன், வானில் உலவும் ககன், ஊட்டமளிக்கும் பூஷா, கிரணங்களை உடைய கபஸ்திமான், பொன்னிறமான பானு, பிரபஞ்ச விதையான ஹிரண்யரேதஸ் மற்றும் திவாகரன்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಈತನೇ ಅದಿತಿಪುತ್ರನಾದ ಆದಿತ್ಯ, ಜಗತ್ ಸೃಷ್ಟಿಕರ್ತ ಸವಿತಾ, ಸೂರ್ಯ, ಆಕಾಶದಲ್ಲಿ ಸಂಚರಿಸುವ ಖಗ, ಜಗತ್ಪೋಷಕ ಪೂಷಾ, ಕಿರಣಗಳುಳ್ಳ ಗಭಸ್ತಿಮಾನ್, ಸುವರ್ಣವರ್ಣದ ಭಾನು, ಹಿರಣ್ಯರೇತಸ್ಸು ಮತ್ತು ದಿವಾಕರನಾಗಿದ್ದಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हेच आदितीपुत्र आदित्य, सृष्टीचे उत्पादक सविता, सूर्य, आकाशात फिरणारे खग, जगाचे पोषण करणारे पूषा, किरणयुक्त गभस्तिमान, सुवर्णकांतीचे भानू, हिरण्यरेता आणि दिवसाचे जनक दिवाकर आहेत.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "ইনিই অদিতিনন্দন আদিত্য, সৃষ্টিকর্তা সবিতা, সূর্য, আকাশচারী খগ, নিখিলপোষক পূষা, রশ্মিমান গভস্তিমান, সুবর্ণবর্ণ ভানু, সৃষ্টিবীজ হিরণ্যরেতা এবং দিবসের প্রবর্তক দিবাকর।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આ જ અદિતિપુત્ર આદિત્ય, જગતના સર્જક સવિતા, સૂર્ય, આકાશમાં વિચરતા ખગ, પોષક પૂષા, કિરણવાન ગભસ્તિમાન, સુવર્ણ જેવા ભાનુ, હિરણ્યરેતા અને દિવસના નિર્માતા દિવાકર છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഇവൻ തന്നെയാണ് അദിതിപുത്രനായ ആദിത്യനും സവിതയും സൂര്യനും ആകാശസഞ്ചാരിയായ ഖഗനും പോഷകനായ പൂഷാവും കിരണങ്ങളുള്ള ഗഭസ്തിമാനും സുവർണ്ണവർണ്ണനായ ഭാനുവും ഹിരണ്യരേതസ്സും ദിവാകരനും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଏହି ହିଁ ଅଦିତିପୁତ୍ର ଆଦିତ୍ୟ, ସୃଷ୍ଟିକର୍ତ୍ତା ସବିତା, ସୂର୍ଯ୍ୟ, ଆକାଶଗାମୀ ଖଗ, ଜଗତ୍‌ପୋଷକ ପୂଷା, କିରଣବାନ ଗଭସ୍ତିମାନ, ସୁବର୍ଣ୍ଣତୁଲ୍ୟ ଭାନୁ, ହିରଣ୍ୟରେତା ଓ ଦିବସର ନିର୍ମାତା ଦିବାକର ଅଟନ୍ତି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 11,
+      "verse_type": "VERSE",
+      "original_sanskrit": "हरिदश्वः सहस्रार्चिः सप्तसप्तिर्मरीचिमान् । तिमिरोन्मथनः शम्भुस्त्वष्टा मार्तण्ड अंशुमान् ॥ ११ ॥",
+      "iast": "haridaśvaḥ sahasrārciḥ saptasaptirmarīcimān । timironmathanaḥ śambhustvaṣṭā mārtaṇḍa aṁśumān ॥ 11 ॥",
+      "transliterations": {
+        "telugu": "హరిదశ్వః సహస్రార్చిః సప్తసప్తిర్మరీచిమాన్ । తిమిరోన్మథనః శమ్భుస్త్వష్టా మార్తణ్డ అంశుమాన్ ॥ ౧౧ ॥",
+        "tamil": "ஹரிதஶ்வஃ ஸஹஸ்ரார்சிஃ ஸப்தஸப்திர்மரீசிமாந் । திமிரோந்மதநஃ ஶம்புஸ்த்வஷ்டா மார்தண்ட அம்ஶுமாந் ॥ ௧௧ ॥",
+        "kannada": "ಹರಿದಶ್ವಃ ಸಹಸ್ರಾರ್ಚಿಃ ಸಪ್ತಸಪ್ತಿರ್ಮರೀಚಿಮಾನ್ । ತಿಮಿರೋನ್ಮಥನಃ ಶಮ್ಭುಸ್ತ್ವಷ್ಟಾ ಮಾರ್ತಣ್ಡ ಅಂಶುಮಾನ್ ॥ ೧೧ ॥",
+        "malayalam": "ഹരിദശ്വഃ സഹസ്രാര്ചിഃ സപ്തസപ്തിര്മരീചിമാന് । തിമിരോന്മഥനഃ ശമ്ഭുസ്ത്വഷ്ടാ മാര്തണ്ഡ അംശുമാന് ॥ ൧൧ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'He has emerald steeds, thousand rays, seven horses, brilliant beams; dispeller of darkness, Shambhu (giver of happiness), Tvashta (shaper), Martanda, effulgent One.'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "श्याम-हरित अश्वों वाले, सहस्रों किरणों से दीप्त, सात घोड़ों के रथ वाले, तेजोमय मरीचियों से युक्त, अंधकार का समूल नाश करने वाले, कल्याणकारी शम्भु, देव-शिल्पी त्वष्टा, ब्रह्माण्ड-अण्ड से प्रकट मार्तण्ड और अंशुमान् हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "శ్యామలాశ్వములు గలవాడు, వేలకొలది కిరణములు కలవాడు, సప్తాశ్వ రథారూఢుడు, తేజోకిరణములు కలవాడు, చీకట్లను పారద్రోలువాడు, మంగళప్రదుడైన శంభువు, త్వష్ట, మార్తాండుడు మరియు అంశుమంతుడు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "பச்சை நிறக் குதிரைகளை உடையவர், ஆயிரம் கிரணங்களால் ஒளிர்பவர், ஏழு குதிரைகள் பூட்டிய தேரினை உடையவர், பேரொளி உடையவர், இருளை அழிப்பவர், மங்கலம் நல்கும் சம்பு, துவஷ்டா, மார்த்தாண்டன் மற்றும் அம்சுமான்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಹಸಿರು-ಕಪ್ಪು ಕುದುರೆಗಳುಳ್ಳ, ಸಹಸ್ರ ಕಿರಣಗಳಿಂದ ಬೆಳಗುವ, ಸಪ್ತಾಶ್ವ ರಥಾರೂಢನಾದ, ಕತ್ತಲೆಯನ್ನು ನಾಶಮಾಡುವ, ಕಲ್ಯಾಣಕಾರಕ ಶಂಭು, ದೇವಶಿಲ್ಪಿ ತ್ವಷ್ಟಾ, ಬ್ರಹ್ಮಾಂಡಾಂಡ ಸಂಭವ ಮಾರ್ತಾಂಡ ಮತ್ತು ಅಂಶುಮಾನನಾಗಿದ್ದಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हरित अश्व असणारे, सहस्र किरणांनी तळपणारे, सात घोड्यांच्या रथावर बसणारे, अंधकाराचा समूळ नाश करणारे, कल्याणकारी शंभू, त्वष्टा, मार्तंड आणि अंशुमान आहेत.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "শ্যামলাশ্বযুক্ত, সহস্ররশ্মিমণ্ডিত, সপ্তাশ্বরথারূঢ়, কিরণমালী, তিমিরবিনাশক, পরমকল্যাণময় শম্ভু, দেবশিল্পী ত্বষ্টা, মহাব্রহ্মাণ্ডজাত মার্তণ্ড এবং অংশুমান।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "શ્યામ-હરિત અશ્વોવાળા, સહસ્ર કિરણોથી દીપતા, સાત ઘોડાના રથવાળા, અંધકારનો નાશ કરનારા, કલ્યાણકારી શંભુ, ત્વષ્ટા, માર્તંડ અને અંશુમાન છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "പച്ചക്കുതിരകളോടുകൂടിയവനും, ആയിരം കിരണങ്ങളുള്ളവനും, ഏഴു കുതിരകളുടെ തേരിലേറിയവനും, ഇരുളിനെ നശിപ്പിക്കുന്നവനും, മംഗളസ്വരൂപനായ ശംഭുവും, ത്വഷ്ടാവും, മാർത്താണ്ഡനും അംശുമാനുമാണ്.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଶ୍ୟାମଳ-ହରିତ ଅଶ୍ୱବାନ, ସହସ୍ର କିରଣରେ ଦୀପ୍ତ, ସାତ ଘୋଡ଼ାର ରଥରେ ବିରାଜମାନ, ଅନ୍ଧକାର ନାଶକ, କଲ୍ୟାଣକାରୀ ଶମ୍ଭୁ, ତ୍ୱଷ୍ଟା, ମାର୍ତ୍ତଣ୍ଡ ଓ ଅଂଶୁମାନ ଅଟନ୍ତି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 12,
+      "verse_type": "VERSE",
+      "original_sanskrit": "हिरण्यगर्भः शिशिरस्तपनो भास्करो रविः । अग्निगर्भोऽदितेः पुत्रः शङ्खः शिशिरनाशनः ॥ १२ ॥",
+      "iast": "hiraṇyagarbhaḥ śiśirastapano bhāskaro raviḥ । agnigarbho'diteḥ putraḥ śaṅkhaḥ śiśiranāśanaḥ ॥ 12 ॥",
+      "transliterations": {
+        "telugu": "హిరణ్యగర్భః శిశిరస్తపనో భాస్కరో రవిః । అగ్నిగర్భోఽదితేః పుత్రః శఙ్ఖః శిశిరనాశనః ॥ ౧౨ ॥",
+        "tamil": "ஹிரண்யகர்பஃ ஶிஶிரஸ்தபநோ பாஸ்கரோ ரவிஃ । அக்நிகர்போऽதிதேஃ புத்ரஃ ஶங்கஃ ஶிஶிரநாஶநஃ ॥ ௧௨ ॥",
+        "kannada": "ಹಿರಣ್ಯಗರ್ಭಃ ಶಿಶಿರಸ್ತಪನೋ ಭಾಸ್ಕರೋ ರವಿಃ । ಅಗ್ನಿಗರ್ಭೋಽದಿತೇಃ ಪುತ್ರಃ ಶಙ್ಖಃ ಶಿಶಿರನಾಶನಃ ॥ ೧೨ ॥",
+        "malayalam": "ഹിരണ്യഗര്ഭഃ ശിശിരസ്തപനോ ഭാസ്കരോ രവിഃ । അഗ്നിഗര്ഭോഽദിതേഃ പുത്രഃ ശങ്ഖഃ ശിശിരനാശനഃ ॥ ൧൨ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'He is Hiranyagarbha, cool soothing light, heat-giver, maker of light, Ravi; Agni-wombed, son of Aditi, soothing like a conch, dispeller of winter cold.'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "ये हिरण्यगर्भ (सृष्टि के आदि कारण), शीतल सुख देने वाले, तपते हुए सूर्य, प्रकाशदाता भास्कर, स्तुत्य रवि, गर्भ में अग्नि धारण करने वाले, माता अदिति के पुत्र, शंख के समान पावन और शीत-कष्ट का निवारण करने वाले हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఈయనయే హిరణ్యగర్భుడు, చల్లని సుఖమునిచ్చు శిశిరుడు, తపింపజేయు తపనుడు, భాస్కరుడు, స్తుతింపదగిన రవి, గర్భమందు అగ్నిని ధరించినవాడు, అదితిపుత్రుడు, శంఖము వలె పవిత్రుడు మరియు శీతల బాధలను పోగొట్టువాడు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இவரே ஹிரண்யகர்ப்பர், குளிர்ச்சியான அமைதி தருபவர், அனல் கக்கும் தபனர், பாஸ்கரன், போற்றத்தக்க ரவி, அக்னியைத் தன்னுள் கொண்டவர், அதிதியின் மைந்தர், சங்கு போல் தூயவர் மற்றும் பனியைப் போக்குபவர்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಈತನೇ ಹಿರಣ್ಯಗರ್ಭ, ಶೀತಲ ಸುಖ ನೀಡುವ ಶಿಶಿರ, ತಪಿಸುವ ತಪನ, ಭಾಸ್ಕರ, ಸ್ತುತ್ಯನಾದ ರವಿ, ಗರ್ಭದಲ್ಲಿ ಅಗ್ನಿಯನ್ನು ಹೊತ್ತವನು, ಅದಿತಿಪುತ್ರ, ಶಂಖದಂತೆ ಪವಿತ್ರ ಮತ್ತು ಹಿಮ-ಶೀತದ ಬಾಧೆಯನ್ನು ಪರಿಹರಿಸುವವನಾಗಿದ್ದಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हेच हिरण्यगर्भ, शीतलता देणारे, प्रखर उष्णता देणारे तपन, भास्कर, स्तुत्य रवी, गर्भात अग्नी धारण करणारे, आदितीचे पुत्र, शंखासारखे पवित्र आणि थंडीचा नाश करणारे आहेत.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "ইনিই হিরণ্যগর্ভ, শীতলসুখপ্রদ শিশির, প্রখর তাপযুক্ত তপন, ভাস্কর, স্তুতিযোগ্য রবি, অগ্নিগর্ভ, অদিতিপুত্র, শঙ্খবৎ শুভ্র এবং হিমকষ্টনিবারক।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આ જ હિરણ્યગર્ભ, શીતળ સુખ આપનારા, તપતા સૂર્ય, ભાસ્કર, સ્તુત્ય રવિ, ગર્ભમાં અગ્નિ ધરનારા, અદિતિપુત્ર, શંખ સમાન પવિત્ર અને શીતળતાનું નિવારણ કરનારા છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഇവൻ തന്നെയാണ് ഹിരണ്യഗർഭനും, തണുപ്പു നൽകുന്ന ശിശിരനും, ചുട്ടുപൊള്ളിക്കുന്ന തപനനും, ഭാസ്കരനും, രവിയും, അഗ്നിഗർഭനും, അദിതിപുത്രനും, ശംഖുപോലെ നിർമ്മലനും, മഞ്ഞകറ്റുന്നവനും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଏହି ହିଁ ହିରଣ୍ୟଗର୍ଭ, ଶୀତଳ ସୁଖଦାୟୀ ଶିଶିର, ଉତ୍ତାପ ପ୍ରଦାନକାରୀ ତପନ, ଭାସ୍କର, ରବି, ଅଗ୍ନିଗର୍ଭ, ଅଦିତିପୁତ୍ର, ଶଙ୍ଖତୁଲ୍ୟ ପବିତ୍ର ଓ ଶୀତ-କଷ୍ଟ ନିବାରକ ଅଟନ୍ତି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 13,
+      "verse_type": "VERSE",
+      "original_sanskrit": "व्योमनाथस्तमोभेदी ऋग्यजुःसामपारगः । घनवृष्टिरपां मित्रो विन्ध्यवीथीप्लवङ्गमः ॥ १३ ॥",
+      "iast": "vyomanāthastamobhedī ṛgyajuḥsāmapāragaḥ । ghanavṛṣṭirapāṁ mitro vindhyavīthīplavaṅgamaḥ ॥ 13 ॥",
+      "transliterations": {
+        "telugu": "వ్యోమనాథస్తమోభేదీ ఋగ్యజుఃసామపారగః । ఘనవృష్టిరపాం మిత్రో విన్ధ్యవీథీప్లవఙ్గమః ॥ ౧౩ ॥",
+        "tamil": "வ்யோமநாதஸ்தமோபேதீ ரு'க்யஜுஃஸாமபாரகஃ । கநவ்ரு'ஷ்டிரபாம் மித்ரோ விந்த்யவீதீப்லவங்கமஃ ॥ ௧௩ ॥",
+        "kannada": "ವ್ಯೋಮನಾಥಸ್ತಮೋಭೇದೀ ಋಗ್ಯಜುಃಸಾಮಪಾರಗಃ । ಘನವೃಷ್ಟಿರಪಾಂ ಮಿತ್ರೋ ವಿನ್ಧ್ಯವೀಥೀಪ್ಲವಙ್ಗಮಃ ॥ ೧೩ ॥",
+        "malayalam": "വ്യോമനാഥസ്തമോഭേദീ ഋഗ്യജുഃസാമപാരഗഃ । ഘനവൃഷ്ടിരപാം മിത്രോ വിന്ധ്യവീഥീപ്ലവങ്ഗമഃ ॥ ൧൩ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'Lord of the firmament, piercer of darkness, master of Rig, Yajur, and Sama Vedas; bringer of rain, friend of waters, gliding across the Vindhya pathway.'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "ये आकाश के स्वामी (व्योमनाथ), अंधकार के नाशक, ऋग्, यजुः और सामवेद के पारगामी ज्ञाता, प्रचुर वृष्टि कराने वाले, जलों के मित्र और विन्ध्य पर्वत के आकाश-मार्ग में द्रुत गति से विचरण करने वाले हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆకాశమునకు అధిపతియైన వ్యోమనాథుడు, చీకట్లను చీల్చువాడు, ఋగ్యజుస్సామ వేదములలో నిష్ణాతుడు, సమృద్ధిగా వర్షమును కురిపించువాడు, జలములకు మిత్రుడు మరియు వింధ్య పర్వత ఆకాశ మార్గమున వేగముగా పయనించువాడు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "வான மண்டலத்தின் அதிபதி (வியோமநாதர்), இருளைப் பிளப்பவர், ரிக்-யஜுர்-சாம வேதங்களின் சாரமாய் விளங்குபவர், பெருமழையைப் பொழிவிப்பவர், நீரின் தோழர் மற்றும் விந்திய மலையின் வான்வழியே விரைந்து செல்பவர்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಆಕಾಶದ ಪ್ರಭು (ವ್ಯೋಮನಾಥ), ಅಂಧಕಾರವನ್ನು ಭೇದಿಸುವವನು, ಋಗ್-ಯಜುರ್-ಸಾಮ ವೇದಗಳ ಪಾರಂಗತ, ಉತ್ತಮ ಮಳೆಯನ್ನು ಸುರಿಸುವವನು, ಜಲದ ಮಿತ್ರ ಮತ್ತು ವಿಂಧ್ಯ ಪರ್ವತದ ಆಕಾಶಮಾರ್ಗದಲ್ಲಿ ವೇಗವಾಗಿ ಸಂಚರಿಸುವವನಾಗಿದ್ದಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे आकाशाचे स्वामी (व्योमनाथ), अंधकाराचे भेदक, ऋग्, यजु व सामवेदात पारंगत, उत्तम पाऊस पाडणारे, जलांचे मित्र आणि विंध्य पर्वताच्या आकाशमार्गात वेगाने संचार करणारे आहेत.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "আকাশের অধিপতি ব্যোমনাথ, তিমিরভেদী, ঋক-যজুঃ-সামবেদের পারঙ্গম তত্ত্ব, প্রচুর বারিবর্ষক, জলের মিত্র এবং বিন্ধ্যাচলের গগনমার্গে দ্রুতগতিতে বিচরণকারী।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આ આકાશના સ્વામી (વ્યોમનાથ), અંધકારના ભેદક, ઋગ્, યજુ અને સામવેદમાં પારંગત, પુષ્કળ વૃષ્ટિ કરાવનારા, જળના મિત્ર અને વિંધ્યાચળના આકાશમાર્ગે તીવ્ર ગતિથી વિચરનારા છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ആകാശത്തിന്റെ നാഥനായ വ്യോമനാഥനും, ഇരുളിനെ ഭേദിക്കുന്നവനും, ഋഗ്-യജുർ-സാമ വേദങ്ങളുടെ പൊരുളായവനും, പെരുമഴ പെയ്യിക്കുന്നവനും, ജലത്തിന്റെ മിത്രവും, വിന്ധ്യപർവ്വതത്തിനു മീതേ അതിവേഗം സഞ്ചരിക്കുന്നവനുമാണ്.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଆକାଶର ସ୍ୱାମୀ (ବ୍ୟୋମନାଥ), ଅନ୍ଧକାରଭେଦୀ, ଋକ୍-ଯଜୁଃ-ସାମବେଦର ପାରଙ୍ଗମ, ପ୍ରଚୁର ବୃଷ୍ଟି ପ୍ରଦାନକାରୀ, ଜଳର ମିତ୍ର ଏବଂ ବିନ୍ଧ୍ୟାଚଳର ଆକାଶମାର୍ଗରେ ଦ୍ରୁତଗତିରେ ବିଚରଣକାରୀ ଅଟନ୍ତି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 14,
+      "verse_type": "VERSE",
+      "original_sanskrit": "आतपी मण्डली मृत्युः पिङ्गलः सर्वतापनः । कविर्विश्वो महातेजा रक्तः सर्वभवोद्भवः ॥ १४ ॥",
+      "iast": "ātapī maṇḍalī mṛtyuḥ piṅgalaḥ sarvatāpanaḥ । kavirviśvo mahātejā raktaḥ sarvabhavodbhavaḥ ॥ 14 ॥",
+      "transliterations": {
+        "telugu": "ఆతపీ మణ్డలీ మృత్యుః పిఙ్గలః సర్వతాపనః । కవిర్విశ్వో మహాతేజా రక్తః సర్వభవోద్భవః ॥ ౧౪ ॥",
+        "tamil": "ஆதபீ மண்டலீ ம்ரு'த்யுஃ பிங்கலஃ ஸர்வதாபநஃ । கவிர்விஶ்வோ மஹாதேஜா ரக்தஃ ஸர்வபவோத்பவஃ ॥ ௧௪ ॥",
+        "kannada": "ಆತಪೀ ಮಣ್ಡಲೀ ಮೃತ್ಯುಃ ಪಿಙ್ಗಲಃ ಸರ್ವತಾಪನಃ । ಕವಿರ್ವಿಶ್ವೋ ಮಹಾತೇಜಾ ರಕ್ತಃ ಸರ್ವಭವೋದ್ಭವಃ ॥ ೧೪ ॥",
+        "malayalam": "ആതപീ മണ്ഡലീ മൃത്യുഃ പിങ്ഗലഃ സര്വതാപനഃ । കവിര്വിശ്വോ മഹാതേജാ രക്തഃ സര്വഭവോദ്ഭവഃ ॥ ൧൪ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'Creator of heat, circular orb, death (to darkness), tawny One, all-scorcher; omniscient seer, cosmic form, exceedingly brilliant, reddish, source of all existence.'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "ये तीव्र ताप उत्पन्न करने वाले, गोलाकार बिम्ब वाले, शत्रुओं के लिए मृत्यु-रूप, पिंगल वर्ण, सबको तपाने वाले, सर्वज्ञ कवि, विश्वरूप, महातेजस्वी, रक्तिम आभा वाले और सम्पूर्ण सृष्टि की उत्पत्ति के मूल कारण हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "తీవ్రమైన తాపమును కలిగించువాడు, గుండ్రని మండలము కలవాడు, శత్రువులకు మృత్యుస్వరూపుడు, బంగారు పసుపు వర్ణము కలవాడు, సర్వమును తపింపజేయువాడు, సర్వజ్ఞుడైన కవి, విశ్వరూపుడు, మహా తేజోవంతుడు మరియు సమస్త సృష్టికి మూలకారకుడు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "வெப்பத்தை உண்டாக்குபவர், வட்ட வடிவ மண்டலமாய் விளங்குபவர், பகைவருக்குக் காலனானவர், பொன்னிறத்தவர், யாவற்றையும் தவிக்கச் செய்பவர், எல்லாமறிந்த கவிஞர், விஸ்வரூபி, பேரொளியுடையவர் மற்றும் அனைத்துப் பிறவிகளின் தோற்றுவாய்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ತೀವ್ರ ತಾಪವನ್ನುಂಟುಮಾಡುವ, ಗೋಳಾಕಾರ ಬಿಂಬವುಳ್ಳ, ಶತ್ರುಗಳಿಗೆ ಮೃತ್ಯುಸ್ವರೂಪನಾದ, ಹೊಂಬಣ್ಣದ, ಎಲ್ಲವನ್ನೂ ತಪಿಸುವ, ಸರ್ವಜ್ಞ ಕವಿ, ವಿಶ್ವರೂಪಿ, ಮಹಾತೇಜಸ್ವಿ ಮತ್ತು ಸಕಲ ಸೃಷ್ಟಿಯ ಉಗಮ ಸ್ಥಾನವಾಗಿದ್ದಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तीव्र उष्णता निर्माण करणारे, गोलाकार बिंब असणारे, शत्रूंसाठी मृत्यूस्वरूप, पिवळसर-लाल कांतियुक्त, सर्वांना तपावणारे, सर्वज्ञ कवी, विश्वरूप, महातेजस्वी आणि सर्व सृष्टीच्या उत्पत्तीचे मूळ कारण आहेत.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তীব্র উত্তাপদায়ক, মণ্ডলাকার বিম্বযুক্ত, শত্রুর পক্ষে সাক্ষাৎ মৃত্যুস্বরূপ, পিঙ্গলবর্ণ, সর্বতাপক, সর্বদর্শী কবি, বিশ্বরূপ, মহাতেজা এবং নিখিল সৃষ্টির পরম উৎপত্তিস্থল।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તીવ્ર તાપ ઉત્પન્ન કરનારા, ગોળાકાર બિંબવાળા, શત્રુઓ માટે મૃત્યુરૂપ, પિંગળ વર્ણ, સર્વને તપાવનારા, સર્વજ્ઞ કવિ, વિશ્વરૂપ, મહાતેજસ્વી અને સમગ્ર સૃષ્ટિના મૂળ કારણ છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "തീവ്രമായ ചൂടുണ്ടാക്കുന്നവനും, വട്ടത്തിലുള്ള മണ്ഡലമുള്ളവനും, ശത്രുക്കൾക്ക് മൃത്യുവായവനും, സ്വർണ്ണവർണ്ണനും, സർവ്വജ്ഞനായ കവിയും, വിശ്വരൂപനും, പരമതേജസ്വിയും, സർവ്വചരാചരങ്ങളുടെയും ഉത്ഭവകാരണവുമാണ്.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତୀବ୍ର ଉତ୍ତାପ ସୃଷ୍ଟିକାରୀ, ଗୋଲାକାର ବିମ୍ବଧାରୀ, ଶତ୍ରୁଙ୍କ ପାଇଁ ମୃତ୍ୟୁସ୍ୱରୂପ, ପିଙ୍ଗଳ ବର୍ଣ୍ଣ, ସର୍ବଜ୍ଞ କବି, ବିଶ୍ୱରୂପ, ମହାତେଜସ୍ୱୀ ଏବଂ ସମଗ୍ର ସୃଷ୍ଟିର ଉତ୍ପତ୍ତିର ମୂଳ କାରଣ ଅଟନ୍ତି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 15,
+      "verse_type": "VERSE",
+      "original_sanskrit": "नक्षत्रग्रहताराणामधिपो विश्वभावनः । तेजसामपि तेजस्वी द्वादशात्मन् नमोऽस्तु ते ॥ १५ ॥",
+      "iast": "nakṣatragrahatārāṇāmadhipo viśvabhāvanaḥ । tejasāmapi tejasvī dvādaśātman namo'stu te ॥ 15 ॥",
+      "transliterations": {
+        "telugu": "నక్షత్రగ్రహతారాణామధిపో విశ్వభావనః । తేజసామపి తేజస్వీ ద్వాదశాత్మన్ నమోఽస్తు తే ॥ ౧౫ ॥",
+        "tamil": "நக்ஷத்ரக்ரஹதாராணாமதிபோ விஶ்வபாவநஃ । தேஜஸாமபி தேஜஸ்வீ த்வாதஶாத்மந் நமோऽஸ்து தே ॥ ௧௫ ॥",
+        "kannada": "ನಕ್ಷತ್ರಗ್ರಹತಾರಾಣಾಮಧಿಪೋ ವಿಶ್ವಭಾವನಃ । ತೇಜಸಾಮಪಿ ತೇಜಸ್ವೀ ದ್ವಾದಶಾತ್ಮನ್ ನಮೋಽಸ್ತು ತೇ ॥ ೧೫ ॥",
+        "malayalam": "നക്ഷത്രഗ്രഹതാരാണാമധിപോ വിശ്വഭാവനഃ । തേജസാമപി തേജസ്വീ ദ്വാദശാത്മന് നമോഽസ്തു തേ ॥ ൧൫ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'Ruler of lunar constellations, planets, and stars; generator of the universe; most brilliant of all lustres; O Twelve-souled Sun, salutations unto You!'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "नक्षत्रों, ग्रहों और तारों के अधिपति, सम्पूर्ण विश्व की रक्षा करने वाले, समस्त तेजों में भी परम तेजस्वी, बारह स्वरूपों में प्रकट होने वाले हे भगवान् सूर्य! आपको हमारा कोटि-कोटि प्रणाम है!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "సమస్త నక్షత్రములకు, గ్రహములకు, తారలకు ప్రభువైనవాడు, విశ్వమును భావింపజేయువాడు, సకల తేజస్సులలోకెల్లా పరమ తేజోవంతుడు, ద్వాదశాదిత్య స్వరూపుడైన ఓ సూర్యభగవానుడా! నీకు ప్రణామములు!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "நட்சத்திரங்கள், கிரகங்கள், விண்மீன்கள் அனைத்திற்கும் தலைவரானவரே, உலகங்களை உருவாக்குபவரே, பேரொளிகளுக்கெல்லாம் பேரொளியாய் திகழ்பவரே, பன்னிரு உருவங்களில் அருள்பவரே, உமக்கு எமது நமஸ்காரங்கள்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ನಕ್ಷತ್ರಗಳು, ಗ್ರಹಗಳು ಮತ್ತು ತಾರೆಗಳ ಅಧಿಪತಿಯೂ, ವಿಶ್ವಪಾಲಕನೂ, ಸಮಸ್ತ ತೇಜಸ್ಸುಗಳಿಗಿಂತಲೂ ಪರಮ ತೇಜಸ್ವಿಯೂ, ಹನ್ನೆರಡು ರೂಪಗಳಿಂದ ಬೆಳಗುವ ಶ್ರೀ ಸೂರ್ಯದೇವನೇ, ನಿನಗೆ ನಮಸ್ಕಾರಗಳು!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "नक्षत्रे, ग्रह आणि ताऱ्यांचे अधिपती, विश्वाचे पालनकर्ते, सर्व तेजांमध्येही परम तेजस्वी आणि बारा स्वरूपांत प्रकट होणाऱ्या हे सूर्यदेवा, आपणांस कोटी-कोटी प्रणाम असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "নক্ষত্র, গ্রহ ও তারকাসমূহের অধিপতি, বিশ্বভাবন, সমস্ত তেজেরও পরম তেজস্বী জ্যোতি, দ্বাদশাদিত্যরূপী হে ভগবান সূর্য, আপনাকে শতকোটি প্রণাম!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "નક્ષત્રો, ગ્રહો અને તારાઓના અધિપતિ, વિશ્વપાલક, સર્વ તેજમાં પરમ તેજસ્વી અને બાર સ્વરૂપોમાં પ્રગટ થનારા હે સૂર્યદેવ! આપને અમારા વારંવાર પ્રણામ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "നക്ഷത്രങ്ങൾക്കും ഗ്രഹങ്ങൾക്കും താരാഗണങ്ങൾക്കും അധിപനും, ലോകപാലകനും, എല്ലാ തേജസ്സുകളിലും വെച്ച് പരമതേജസ്വിയും, പന്ത്രണ്ടു രൂപങ്ങളോടുകൂടിയവനുമായ സൂര്യഭഗവാനേ, അങ്ങേയ്ക്ക് പ്രണാമം!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ନକ୍ଷତ୍ର, ଗ୍ରହ ଓ ତାରାମାନଙ୍କର ଅଧିପତି, ବିଶ୍ୱପାଳକ, ସମସ୍ତ ତେଜ ମଧ୍ୟରେ ପରମ ତେଜସ୍ୱୀ ଏବଂ ଦ୍ୱାଦଶ ରୂପରେ ପ୍ରକଟ ହେଉଥିବା ହେ ସୂର୍ଯ୍ୟଦେବ! ଆପଣଙ୍କୁ ଆମର କୋଟି କୋଟି ପ୍ରଣାମ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 16,
+      "verse_type": "VERSE",
+      "original_sanskrit": "नमः पूर्वाय गिरये पश्चिमायाद्रये नमः । ज्योतिर्गणानां पतये दिनाधिपतये नमः ॥ १६ ॥",
+      "iast": "namaḥ pūrvāya giraye paścimāyādraye namaḥ । jyotirgaṇānāṁ pataye dinādhipataye namaḥ ॥ 16 ॥",
+      "transliterations": {
+        "telugu": "నమః పూర్వాయ గిరయే పశ్చిమాయాద్రయే నమః । జ్యోతిర్గణానాం పతయే దినాధిపతయే నమః ॥ ౧౬ ॥",
+        "tamil": "நமஃ பூர்வாய கிரயே பஶ்சிமாயாத்ரயே நமஃ । ஜ்யோதிர்கணாநாம் பதயே திநாதிபதயே நமஃ ॥ ௧௬ ॥",
+        "kannada": "ನಮಃ ಪೂರ್ವಾಯ ಗಿರಯೇ ಪಶ್ಚಿಮಾಯಾದ್ರಯೇ ನಮಃ । ಜ್ಯೋತಿರ್ಗಣಾನಾಂ ಪತಯೇ ದಿನಾಧಿಪತಯೇ ನಮಃ ॥ ೧೬ ॥",
+        "malayalam": "നമഃ പൂര്വായ ഗിരയേ പശ്ചിമായാദ്രയേ നമഃ । ജ്യോതിര്ഗണാനാം പതയേ ദിനാധിപതയേ നമഃ ॥ ൧൬ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'Salutations to the eastern mount of sunrise, salutations to the western mount of sunset; salutations to the Lord of stellar hosts and the Sovereign of the day!'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "पूर्व दिशा के उदयाचल पर्वत को प्रणाम; पश्चिम दिशा के अस्ताचल पर्वत को प्रणाम! समस्त ज्योतिर्गणों के स्वामी और दिन के अधिपति भगवान् सूर्य को बारम्बार प्रणाम!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "తూర్పునందలి ఉదయాచల పర్వతమునకు నమస్కారము; పడమటి అస్తాచల పర్వతమునకు నమస్కారము! సమస్త జ్యోతిర్మండలములకు అధిపతియు, పగటికి ప్రభువైన సూర్యదేవునకు ప్రణామములు!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "கிழக்கில் உதயமாகும் உதயகிரி பர்வதத்திற்கு நமஸ்காரம்; மேற்கில் மறையும் அஸ்தகிரி பர்வதத்திற்கு நமஸ்காரம்! ஜோதி மண்டலங்களின் தலைவரும், பகலின் அதிபதியுமான சூரியனுக்கு நமஸ்காரம்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಪೂರ್ವದ ಉದಯಾಚಲ ಪರ್ವತಕ್ಕೆ ನಮಸ್ಕಾರ; ಪಶ್ಚಿಮದ ಅಸ್ತಾಚಲ ಪರ್ವತಕ್ಕೆ ನಮಸ್ಕಾರ! ಸಮಸ್ತ ಜ್ಯೋತಿರ್ಗಣಗಳ ಪ್ರಭುವೂ ಹಗಲಿನ ಒಡೆಯನೂ ಆದ ಸೂರ್ಯದೇವನಿಗೆ ನಮಸ್ಕಾರಗಳು!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "पूर्वेकडील उदयाचल पर्वताला नमन; पश्चिमेकडील अस्ताचल पर्वताला नमन! सर्व तेजोगणांचे स्वामी आणि दिवसाचे अधिपती सूर्यदेवाला पुनःपुन्हा प्रणाम!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "পূর্বদিকের উদয়াচল পর্বতকে প্রণাম; পশ্চিমদিকের অস্তাচল পর্বতকে প্রণাম! জ্যোতির্মণ্ডলীর অধিপতি এবং দিবসের প্রভুকে পুনঃপুনঃ প্রণাম!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "પૂર્વના ઉદયાચલ પર્વતને પ્રણામ; પશ્ચિમના અસ્તાચલ પર્વતને પ્રણામ! સમસ્ત જ્યોતિર્વિષયોના સ્વામી અને દિવસના અધિપતિ સૂર્યદેવને વારંવાર પ્રણામ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "കിഴക്കുദിക്കുന്ന ഉദയാചലത്തിന് പ്രണാമം; പടിഞ്ഞാറസ്തമിക്കുന്ന അസ്താചലത്തിന് പ്രണാമം! ജ്യോതിർഗോളങ്ങളുടെ നാഥനും പകലിന്റെ അധിപനുമായ സൂര്യന് പ്രണാമം!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ପୂର୍ବ ଦିଗର ଉଦୟାଚଳ ପର୍ବତକୁ ପ୍ରଣାମ; ପଶ୍ଚିମ ଦିଗର ଅସ୍ତାଚଳ ପର୍ବତକୁ ପ୍ରଣାମ ! ସମସ୍ତ ଜ୍ୟୋତିର୍ଗଣଙ୍କ ସ୍ୱାମୀ ଓ ଦିବସର ଅଧିପତି ସୂର୍ଯ୍ୟଦେବଙ୍କୁ ବାରମ୍ବାର ପ୍ରଣାମ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 17,
+      "verse_type": "VERSE",
+      "original_sanskrit": "जयाय जयभद्राय हर्यश्वाय नमो नमः । नमो नमः सहस्रांशो आदित्याय नमो नमः ॥ १७ ॥",
+      "iast": "jayāya jayabhadrāya haryaśvāya namo namaḥ । namo namaḥ sahasrāṁśo ādityāya namo namaḥ ॥ 17 ॥",
+      "transliterations": {
+        "telugu": "జయాయ జయభద్రాయ హర్యశ్వాయ నమో నమః । నమో నమః సహస్రాంశో ఆదిత్యాయ నమో నమః ॥ ౧౭ ॥",
+        "tamil": "ஜயாய ஜயபத்ராய ஹர்யஶ்வாய நமோ நமஃ । நமோ நமஃ ஸஹஸ்ராம்ஶோ ஆதித்யாய நமோ நமஃ ॥ ௧௭ ॥",
+        "kannada": "ಜಯಾಯ ಜಯಭದ್ರಾಯ ಹರ್ಯಶ್ವಾಯ ನಮೋ ನಮಃ । ನಮೋ ನಮಃ ಸಹಸ್ರಾಂಶೋ ಆದಿತ್ಯಾಯ ನಮೋ ನಮಃ ॥ ೧೭ ॥",
+        "malayalam": "ജയായ ജയഭദ്രായ ഹര്യശ്വായ നമോ നമഃ । നമോ നമഃ സഹസ്രാംശോ ആദിത്യായ നമോ നമഃ ॥ ൧൭ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'Salutations to the Victorious One, giver of auspicious triumph! Salutations to Him of green steeds! Salutations to the Thousand-Rayed Aditya!'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "विजय स्वरूप भगवान् सूर्य को प्रणाम; कल्याणकारी विजय देने वाले को प्रणाम; हरित-श्याम अश्वों वाले को नमन! सहस्र किरणों वाले भगवान् आदित्य को बारम्बार प्रणाम!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "విజయస్వరూపునకు నమస్కారము; శుభకరమైన విజయమును ప్రసాదించువానికి నమస్కారము; శ్యామలాశ్వములు గలవానికి నమస్కారము! వేలకొలది కిరణములు గల అదితిపుత్రుడైన ఆదిత్యునకు మాటిమాటికి ప్రణామములు!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "வெற்றி வடிவினருக்கு நமஸ்காரம்; மங்கல வெற்றியை அருள்பவருக்கு நமஸ்காரம்; பச்சைக் குதிரைகளையுடையவருக்கு நமஸ்காரம்! ஆயிரம் கதிர்களைக் கொண்ட அதிதியின் மைந்தரான ஆதித்யனுக்கு மீண்டும் மீண்டும் நமஸ்காரம்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ವಿಜಯಸ್ವರೂಪನಿಗೆ ನಮಸ್ಕಾರ; ಮಂಗಳಕರ ವಿಜಯದಾಯಕನಿಗೆ ನಮಸ್ಕಾರ; ಶ್ಯಾಮಲಾಶ್ವಗಳುಳ್ಳವನಿಗೆ ನಮಸ್ಕಾರ! ಸಹಸ್ರ ಕಿರಣಗಳುಳ್ಳ ಅದಿತಿಪುತ್ರ ಆದಿತ್ಯನಿಗೆ ಪುನಃ ಪುನಃ ನಮಸ್ಕಾರಗಳು!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "विजयस्वरूप सूर्यदेवाला नमन; कल्याणकारी विजय देणाऱ्याला नमन; हरित अश्व असणाऱ्याला नमन! सहस्र किरणांच्या आदित्य भगवंताला वारंवार प्रणाम!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "বিজয়স্বরূপ প্রভুকে প্রণাম; শুভকর বিজয়প্রদাতাকে প্রণাম; শ্যামলাশ্বধারীকে প্রণাম! সহস্রকিরণবিশিষ্ট অদিতিনন্দন আদিত্যকে পুনঃপুনঃ প্রণাম!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "વિજયસ્વરૂપ સૂર્યદેવને પ્રણામ; મંગલ વિજય આપનારાને પ્રણામ; હરિત અશ્વોવાળાને પ્રણામ! સહસ્ર કિરણોવાળા આદિત્ય ભગવાનને વારંવાર પ્રણામ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "വിജയസ്വരൂപന് പ്രണാമം; മംഗളകരമായ വിജയം നൽകുന്നവന് പ്രണാമം; പച്ചക്കുതിരകളുള്ളവന് പ്രണാമം! ആയിരം കിരണങ്ങളുള്ള അദിതിപുത്രനായ ആദിത്യന് വീണ്ടും വീണ്ടും പ്രണാമം!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ବିଜୟସ୍ୱରୂପ ସୂର୍ଯ୍ୟଦେବଙ୍କୁ ପ୍ରଣାମ; ମଙ୍ଗଳମୟ ବିଜୟ ପ୍ରଦାନକାରୀଙ୍କୁ ପ୍ରଣାମ; ଶ୍ୟାମଳ ଅଶ୍ୱବାନଙ୍କୁ ପ୍ରଣାମ ! ସହସ୍ର କିରଣଯୁକ୍ତ ଆଦିତ୍ୟଙ୍କୁ ବାରମ୍ବାର ପ୍ରଣାମ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 18,
+      "verse_type": "VERSE",
+      "original_sanskrit": "नम उग्राय वीराय सारङ्गाय नमो नमः । नमः पद्मप्रबोधाय मार्ताण्डाय नमो नमः ॥ १८ ॥",
+      "iast": "nama ugrāya vīrāya sāraṅgāya namo namaḥ । namaḥ padmaprabodhāya mārtāṇḍāya namo namaḥ ॥ 18 ॥",
+      "transliterations": {
+        "telugu": "నమ ఉగ్రాయ వీరాయ సారఙ్గాయ నమో నమః । నమః పద్మప్రబోధాయ మార్తాణ్డాయ నమో నమః ॥ ౧౮ ॥",
+        "tamil": "நம உக்ராய வீராய ஸாரங்காய நமோ நமஃ । நமஃ பத்மப்ரபோதாய மார்தாண்டாய நமோ நமஃ ॥ ௧௮ ॥",
+        "kannada": "ನಮ ಉಗ್ರಾಯ ವೀರಾಯ ಸಾರಙ್ಗಾಯ ನಮೋ ನಮಃ । ನಮಃ ಪದ್ಮಪ್ರಬೋಧಾಯ ಮಾರ್ತಾಣ್ಡಾಯ ನಮೋ ನಮಃ ॥ ೧೮ ॥",
+        "malayalam": "നമ ഉഗ്രായ വീരായ സാരങ്ഗായ നമോ നമഃ । നമഃ പദ്മപ്രബോധായ മാര്താണ്ഡായ നമോ നമഃ ॥ ൧൮ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'Salutations to the Terrible One, the Valiant One, the Swift Traveler! Salutations to the Awakener of lotuses, the glorious Martanda!'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "उग्र स्वरूप भगवान् सूर्य को प्रणाम; वीर पुरुष को प्रणाम; तीव्रगामी सारंग को प्रणाम! कमलों को खिलाने वाले तथा ब्रह्माण्ड-उत्पन्न मार्तण्ड को बारम्बार प्रणाम!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఉగ్ర స్వరూపునకు నమస్కారము; మహావీరునకు నమస్కారము; శీఘ్రగామియైన సారంగునకు నమస్కారము! పద్మములను వికసింపజేయువానికి, మార్తాండునకు పునఃపునః ప్రణామములు!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "உக்கிரமானவருக்கு நமஸ்காரம்; தீரமிக்க வீரருக்கு நமஸ்காரம்; விரைந்து செல்லும் சாரங்கனுக்கு நமஸ்காரம்! தாமரைகளை மலரச் செய்பவரும், அண்டத்திலுதித்த மார்த்தாண்டனுமான சூரியனுக்கு மீண்டும் மீண்டும் நமஸ்காரம்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಉಗ್ರಸ್ವರೂಪನಿಗೆ ನಮಸ್ಕಾರ; ಶೂರವೀರನಿಗೆ ನಮಸ್ಕಾರ; ಶೀಘ್ರಗಾಮಿಯಾದ ಸಾರಂಗನಿಗೆ ನಮಸ್ಕಾರ! ಕಮಲಗಳನ್ನು ಅರಳಿಸುವವನಿಗೆ, ಮಾರ್ತಾಂಡ ಸೂರ್ಯನಿಗೆ ಪುನಃ ಪುನಃ ಪ್ರಣಾಮಗಳು!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "उग्र स्वरूप असणाऱ्याला नमन; वीर पुरुषाला नमन; शीघ्रगामी सारंगाला नमन! कमळांना उमलवणाऱ्या आणि मार्तंड सूर्याला वारंवार प्रणाम!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "উগ্ররূপীকে প্রণাম; মহাবীরকে প্রণাম; দ্রুতগামী সারঙ্গকে প্রণাম! কমলবিকাশক ও মার্তণ্ডদেবকে পুনঃপুনঃ শতকোটি প্রণাম!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "ઉગ્ર સ્વરૂપ સૂર્યદેવને પ્રણામ; મહાવીરને પ્રણામ; શીઘ્રગામી સારંગને પ્રણામ! કમળોને ખીલવનારા અને માર્તંડ ભગવાનને વારંવાર પ્રણામ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഉഗ്രരൂപന് പ്രണാമം; വീരന് പ്രണാമം; വേഗത്തിൽ സഞ്ചരിക്കുന്ന സാരംഗന് പ്രണാമം! താമരകളെ വിടർത്തുന്നവനും മാർത്താണ്ഡനുമായ സൂര്യന് വീണ്ടും വീണ്ടും പ്രണാമം!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଉଗ୍ର ସ୍ୱରୂପ ସୂର୍ଯ୍ୟଦେବଙ୍କୁ ପ୍ରଣାମ; ବୀର ପୁରୁଷଙ୍କୁ ପ୍ରଣାମ; ଶୀଘ୍ରଗାମୀ ସାରଙ୍ଗଙ୍କୁ ପ୍ରଣାମ ! ପଦ୍ମକୁ ବିକଶିତ କରୁଥିବା ତଥା ମାର୍ତ୍ତଣ୍ଡ ଭଗବାନଙ୍କୁ ବାରମ୍ବାର ପ୍ରଣାମ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 19,
+      "verse_type": "VERSE",
+      "original_sanskrit": "ब्रह्मेशानाच्युतेशाय सूर्यायादित्यवर्चसे । भास्वते सर्वभक्षाय रौद्राय वपुषे नमः ॥ १९ ॥",
+      "iast": "brahmeśānācyuteśāya sūryāyādityavarcase । bhāsvate sarvabhakṣāya raudrāya vapuṣe namaḥ ॥ 19 ॥",
+      "transliterations": {
+        "telugu": "బ్రహ్మేశానాచ్యుతేశాయ సూర్యాయాదిత్యవర్చసే । భాస్వతే సర్వభక్షాయ రౌద్రాయ వపుషే నమః ॥ ౧౯ ॥",
+        "tamil": "ப்ரஹ்மேஶாநாச்யுதேஶாய ஸூர்யாயாதித்யவர்சஸே । பாஸ்வதே ஸர்வபக்ஷாய ரௌத்ராய வபுஷே நமஃ ॥ ௧௯ ॥",
+        "kannada": "ಬ್ರಹ್ಮೇಶಾನಾಚ್ಯುತೇಶಾಯ ಸೂರ್ಯಾಯಾದಿತ್ಯವರ್ಚಸೇ । ಭಾಸ್ವತೇ ಸರ್ವಭಕ್ಷಾಯ ರೌದ್ರಾಯ ವಪುಷೇ ನಮಃ ॥ ೧೯ ॥",
+        "malayalam": "ബ്രഹ്മേശാനാച്യുതേശായ സൂര്യായാദിത്യവര്ചസേ । ഭാസ്വതേ സര്വഭക്ഷായ രൌദ്രായ വപുഷേ നമഃ ॥ ൧൯ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'Lord of Brahma, Shiva, and Achyuta; Surya possessing Aditya's luster; luminous One, consumer of all things, embodiment of Rudra, salutations!'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "ब्रह्मा, शिव और विष्णु के भी परम स्वामी सूर्यदेव को प्रणाम; आदित्य-तेज से संपन्न, प्रकाशमान, प्रलयकाल में सबको भस्म करने वाले और रौद्र स्वरूप वाले भगवान् सूर्य को प्रणाम!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "బ్రహ్మ, విష్ణు, మహేశ్వరులకు సైతము అధిపతియైన సూర్యునకు నమస్కారము; ఆదిత్య తేజస్సుతో విలసిల్లువాడు, ప్రకాశమానుడు, ప్రళయకాలమున సర్వమును భస్మమొనర్చువాడు, రౌద్ర స్వరూపుడైన సూర్యభగవానునకు ప్రణామములు!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "பிரம்மா, சிவன், அச்சுதன் ஆகியோர்க்கும் இறைவனான சூரியனுக்கு நமஸ்காரம்; ஆதித்ய தேஜஸ் கொண்டவரும், பேரொளி உடையவரும், அனைத்தையும் அழிக்கவல்லவரும், ருத்ர ரூபம் கொண்டவருமான சூரியனுக்கு நமஸ்காரம்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಬ್ರಹ್ಮ, ಈಶಾನ ಮತ್ತು ವಿಷ್ಣುವಿಗೂ ಅಧೀಶ್ವರನಾದ ಸೂರ್ಯನಿಗೆ ನಮಸ್ಕಾರ; ಆದಿತ್ಯ ತೇಜಸ್ಸುಳ್ಳ, ಪ್ರಕಾಶಮಾನನಾದ, ಪ್ರಳಯಕಾಲದಲ್ಲಿ ಸರ್ವವನ್ನೂ ಭಸ್ಮಮಾಡುವ ರೌದ್ರರೂಪಿಯಾದ ಸೂರ್ಯನಿಗೆ ಪ್ರಣಾಮಗಳು!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "ब्रह्मा, विष्णू आणि महेश यांच्याही अधिपती असणाऱ्या सूर्यदेवाला नमन; आदित्य-तेजाने युक्त, प्रकाशमान, प्रलयकाळी सर्व भस्म करणाऱ्या व रौद्र रूप असणाऱ्या शिवाला नमन!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "ব্রহ্মা, শিব ও বিষ্ণুরও পরমেশ্বর সূর্যদেবকে প্রণাম; আদিত্যতেজোযুক্ত, জ্যোতির্ময়, প্রলয়কালে সর্বভক্ষক এবং রৌদ্ররূপী প্রভুকে প্রণাম!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "બ્રહ્મા, શિવ અને વિષ્ણુના પણ પરમ સ્વામી સૂર્યદેવને પ્રણામ; આદિત્ય-તેજથી સંપન્ન, પ્રકાશમાન, પ્રલયકાળે સર્વને ભસ્મ કરનારા અને રૌદ્ર સ્વરૂપવાળા પ્રભુને પ્રણામ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ബ്രഹ്മാവിനും ശിവനും വിഷ്ണുവിനും നാഥനായ സൂര്യന് പ്രണാമം; ആദിത്യതേജസ്സുള്ളവനും, പ്രകാശസ്വരൂപനും, സർവ്വഭക്ഷകനും, രൗദ്രരൂപനുമായ സൂര്യന് പ്രണാമം!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ବ୍ରହ୍ମା, ଶିବ ଓ ବିଷ୍ଣୁଙ୍କର ମଧ୍ୟ ପରମେଶ୍ୱର ସୂର୍ଯ୍ୟଦେବଙ୍କୁ ପ୍ରଣାମ; ଆଦିତ୍ୟ-ତେଜରେ ସମ୍ପନ୍ନ, ପ୍ରକାଶମାନ, ପ୍ରଳୟକାଳରେ ସର୍ବଭକ୍ଷକ ଓ ରୌଦ୍ର ରୂପଧାରୀଙ୍କୁ ପ୍ରଣାମ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 20,
+      "verse_type": "VERSE",
+      "original_sanskrit": "तमोघ्नाय हिमघ्नाय शत्रुघ्नायामितात्मने । कृतघ्नघ्नाय देवाय ज्योतिषां पतये नमः ॥ २० ॥",
+      "iast": "tamoghnāya himaghnāya śatrughnāyāmitātmane । kṛtaghnaghnāya devāya jyotiṣāṁ pataye namaḥ ॥ 20 ॥",
+      "transliterations": {
+        "telugu": "తమోఘ్నాయ హిమఘ్నాయ శత్రుఘ్నాయామితాత్మనే । కృతఘ్నఘ్నాయ దేవాయ జ్యోతిషాం పతయే నమః ॥ ౨౦ ॥",
+        "tamil": "தமோக்நாய ஹிமக்நாய ஶத்ருக்நாயாமிதாத்மநே । க்ரு'தக்நக்நாய தேவாய ஜ்யோதிஷாம் பதயே நமஃ ॥ ௨௦ ॥",
+        "kannada": "ತಮೋಘ್ನಾಯ ಹಿಮಘ್ನಾಯ ಶತ್ರುಘ್ನಾಯಾಮಿತಾತ್ಮನೇ । ಕೃತಘ್ನಘ್ನಾಯ ದೇವಾಯ ಜ್ಯೋತಿಷಾಂ ಪತಯೇ ನಮಃ ॥ ೨೦ ॥",
+        "malayalam": "തമോഘ്നായ ഹിമഘ്നായ ശത്രുഘ്നായാമിതാത്മനേ । കൃതഘ്നഘ്നായ ദേവായ ജ്യോതിഷാം പതയേ നമഃ ॥ ൨൦ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'Destroyer of darkness, dispeller of frost, slayer of enemies, immeasurable Soul; destroyer of the ungrateful, divine Lord of lights, salutations!'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "अंधकार का नाश करने वाले, शीत का निवारण करने वाले, शत्रुओं का संहार करने वाले, असीम आत्मा वाले, कृतघ्न मनुष्यों का दंड करने वाले, और समस्त ज्योतियों के अधिपति भगवान् सूर्य को नमस्कार!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "చీకట్లను పారద్రోలువాడు, మంచు-చలిని పోగొట్టువాడు, శత్రువులను సంహరించువాడు, అపరిమిత మహిమాన్వితుడు, కృతఘ్నులను శిక్షించువాడు, సమస్త జ్యోతులకు ప్రభువైన ఆ దివ్య సూర్యభగవానునకు నమస్కారము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இருளைப் போக்குபவர், குளிரை விரட்டுபவர், பகைவர்களை அழிப்பவர், எல்லையற்ற மகிமையுடையவர், நன்றி மறந்தோரைத் தண்டிப்பவர், ஜோதிகளுக்கெல்லாம் தலைவரான தேவனுக்கு நமஸ்காரம்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಅಂಧಕಾರವನ್ನು ನಾಶಮಾಡುವ, ಚಳಿಯನ್ನು ಹೋಗಲಾಡಿಸುವ, ಶತ್ರುಗಳನ್ನು ಸಂಹರಿಸುವ, ಅಪರಿಮಿತ ಆತ್ಮವುಳ್ಳ, ಕೃತಘ್ನರನ್ನು ದಂಡಿಸುವ, ಸಕಲ ಜ್ಯೋತಿಗಳ ಅಧಿಪತಿಯಾದ ದೇವನಿಗೆ ನಮಸ್ಕಾರಗಳು!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "अंधकाराचा नाश करणारे, थंडीचे निवारण करणारे, शत्रूंचा संहार करणारे, अमित आत्मस्वरूप असणारे, कृतघ्नांना दंड देणारे आणि सर्व तेजांचे अधिपती सूर्यदेवाला नमन असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "অন্ধকারনাশক, হিমনিবারক, শত্রুসংহারক, অমিতাত্মা, কৃতঘ্নদের দণ্ডদাতা এবং জ্যোতিষ্কমণ্ডলীর অধিপতি ভগবান সূর্যকে প্রণাম!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "અંધકારનો નાશ કરનારા, શીતળતાને દૂર કરનારા, શત્રુઓનો સંહાર કરનારા, અસીમ આત્માવાળા, કૃતઘ્નીઓને દંડ આપનારા અને સર્વ જ્યોતિઓના અધિપતિ સૂર્યદેવને નમસ્કાર!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഇരുളിനെ ഇല്ലാതാക്കുന്നവനും, തണുപ്പകറ്റുന്നവനും, ശത്രുക്കളെ നശിപ്പിക്കുന്നവനും, അളവറ്റ ആത്മാവുള്ളവനും, കൃതഘ്നരെ ശിക്ഷിക്കുന്നവനും, ജ്യോതിസ്സുകളുടെ നാഥനുമായ ദേവന് പ്രണാമം!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଅନ୍ଧକାର ନାଶକ, ଶୀତ ନିବାରକ, ଶତ୍ରୁ ସଂହାରକ, ଅମିତାତ୍ମା, କୃତଘ୍ନମାନଙ୍କୁ ଦଣ୍ଡଦାତା ଏବଂ ସମସ୍ତ ଜ୍ୟୋତିର ଅଧିପତି ଭଗବାନ ସୂର୍ଯ୍ୟଙ୍କୁ ନମସ୍କାର !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 21,
+      "verse_type": "VERSE",
+      "original_sanskrit": "तप्तचामीकराभाय वह्नये विश्वकर्मणे । नमस्तमोऽभिनिघ्नाय रुचये लोकसाक्षिणे ॥ २१ ॥",
+      "iast": "taptacāmīkarābhāya vahnaye viśvakarmaṇe । namastamo'bhinighnāya rucaye lokasākṣiṇe ॥ 21 ॥",
+      "transliterations": {
+        "telugu": "తప్తచామీకరాభాయ వహ్నయే విశ్వకర్మణే । నమస్తమోఽభినిఘ్నాయ రుచయే లోకసాక్షిణే ॥ ౨౧ ॥",
+        "tamil": "தப்தசாமீகராபாய வஹ்நயே விஶ்வகர்மணே । நமஸ்தமோऽபிநிக்நாய ருசயே லோகஸாக்ஷிணே ॥ ௨௧ ॥",
+        "kannada": "ತಪ್ತಚಾಮೀಕರಾಭಾಯ ವಹ್ನಯೇ ವಿಶ್ವಕರ್ಮಣೇ । ನಮಸ್ತಮೋಽಭಿನಿಘ್ನಾಯ ರುಚಯೇ ಲೋಕಸಾಕ್ಷಿಣೇ ॥ ೨೧ ॥",
+        "malayalam": "തപ്തചാമീകരാഭായ വഹ്നയേ വിശ്വകര്മണേ । നമസ്തമോഽഭിനിഘ്നായ രുചയേ ലോകസാക്ഷിണേ ॥ ൨൧ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'Radiant like molten gold, fiery form, maker of all things; salutations to the vanquisher of gloom, the effulgent Witness of the worlds!'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "तपे हुए शुद्ध स्वर्ण के समान कान्ति वाले, अग्नि स्वरूप, विश्व का निर्माण करने वाले विश्वकर्मा, घोर अंधकार के नाशक, परम प्रकाशमान और समस्त लोकों के कर्मों के साक्षी (लोकसाक्षी) भगवान् सूर्य को नमन!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "పుటము పెట్టిన బంగారము వలె మెరయువాడు, అగ్నిస్వరూపుడు, విశ్వనిర్మాతయైన విశ్వకర్మ, గాఢాంధకారమును పటాపంచలు చేయువాడు, పరమ కాంతిమంతుడు మరియు సమస్త లోకముల కర్మలకు సాక్షియైన సూర్యునకు నమస్కారము!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "புடமிட்ட தங்கத்தைப் போல் ஜொலிப்பவரும், அக்னி வடிவானவரும், பிரபஞ்ச சிற்பியுமான விஸ்வகர்மா, பேரிருளை அழிப்பவர், தூய பேரொளியானவர் மற்றும் உலகங்களின் சாட்சியாய் விளங்கும் சூரியனுக்கு நமஸ்காரம்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಕುಲುಮೆಯಲ್ಲಿ ಕಾಯಿಸಿದ ಚಿನ್ನದಂತೆ ಹೊಳೆಯುವ, ಅಗ್ನಿಸ್ವರೂಪನಾದ, ಜಗನ್ನಿರ್ಮಾತೃ ವಿಶ್ವಕರ್ಮ, ಗಾಢ ಕತ್ತಲೆಯನ್ನು ನಾಶಮಾಡುವ, ಪರಮ ತೇಜಸ್ವಿ ಮತ್ತು ಸಕಲ ಲೋಕಗಳ ಕರ್ಮಸಾಕ್ಷಿಯಾದ ಸೂರ್ಯನಿಗೆ ನಮಸ್ಕಾರಗಳು!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तपवलेल्या सोन्यासारखे तेज असणाऱ्या, अग्निरूप, विश्वाची रचना करणाऱ्या विश्वकर्मा, अंधकाराचा नाश करणाऱ्या, अत्यंत प्रकाशमान आणि सर्व लोकांच्या कर्मांचे साक्षी असणाऱ्या सूर्याला नमन असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তপ্ত কাঞ্চনের ন্যায় দ্যুতিমান, অগ্নিরূপী, নিখিলবিশ্বের স্থপতি বিশ্বকর্মা, তিমিরাবরণভেদক, পরমজ্যোতিঃ এবং সর্বলোকের কর্মসাক্ষী ভগবান সূর্যকে প্রণাম!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તપાવેલા શુદ્ધ સુવર્ણ સમાન તેજસ્વી, અગ્નિરૂપ, વિશ્વનું નિર્માણ કરનારા વિશ્વકર્મા, ઘોર અંધકારનો નાશ કરનારા, પરમ પ્રકાશવાન અને સર્વ લોકોના સાક્ષી સૂર્યદેવને નમસ્કાર!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഉരുക്കിയ തങ്കംപോലെ തിളങ്ങുന്നവനും, അഗ്നിരൂപനും, പ്രപഞ്ചശില്പിയായ വിശ്വകർമ്മാവും, ഇരുളിനെ നശിപ്പിക്കുന്നവനും, ലോകസാക്ഷിയുമായ സൂര്യന് പ്രണാമം!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତପ୍ତ ସୁବର୍ଣ୍ଣତୁଲ୍ୟ କାନ୍ତିମୟ, ଅଗ୍ନିସ୍ୱରୂପ, ବିଶ୍ୱର ନିର୍ମାତା ବିଶ୍ୱକର୍ମା, ଘୋର ଅନ୍ଧକାର ନାଶକ, ପରମ ପ୍ରକାଶମାନ ଏବଂ ସମସ୍ତ ଲୋକଙ୍କ କର୍ମର ସାକ୍ଷୀ (ଲୋକସାକ୍ଷୀ) ସୂର୍ଯ୍ୟଙ୍କୁ ନମସ୍କାର !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 22,
+      "verse_type": "VERSE",
+      "original_sanskrit": "नाशयत्येष वै भूतं तदेव सृजति प्रभुः । पायत्येष तपत्येष वर्षत्येष गभस्तिभिः ॥ २२ ॥",
+      "iast": "nāśayatyeṣa vai bhūtaṁ tadeva sṛjati prabhuḥ । pāyatyeṣa tapatyeṣa varṣatyeṣa gabhastibhiḥ ॥ 22 ॥",
+      "transliterations": {
+        "telugu": "నాశయత్యేష వై భూతం తదేవ సృజతి ప్రభుః । పాయత్యేష తపత్యేష వర్షత్యేష గభస్తిభిః ॥ ౨౨ ॥",
+        "tamil": "நாஶயத்யேஷ வை பூதம் ததேவ ஸ்ரு'ஜதி ப்ரபுஃ । பாயத்யேஷ தபத்யேஷ வர்ஷத்யேஷ கபஸ்திபிஃ ॥ ௨௨ ॥",
+        "kannada": "ನಾಶಯತ್ಯೇಷ ವೈ ಭೂತಂ ತದೇವ ಸೃಜತಿ ಪ್ರಭುಃ । ಪಾಯತ್ಯೇಷ ತಪತ್ಯೇಷ ವರ್ಷತ್ಯೇಷ ಗಭಸ್ತಿಭಿಃ ॥ ೨೨ ॥",
+        "malayalam": "നാശയത്യേഷ വൈ ഭൂതം തദേവ സൃജതി പ്രഭുഃ । പായത്യേഷ തപത്യേഷ വര്ഷത്യേഷ ഗഭസ്തിഭിഃ ॥ ൨൨ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'This Sovereign Lord dissolves all created beings and recreates them anew; with His rays He absorbs water, He generates heat, and He pours forth rain.'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "ये प्रभु सूर्य ही प्रलयकाल में सम्पूर्ण सृष्टि का संहार करते हैं और पुनः इसी की रचना करते हैं। ये ही अपनी किरणों से संसार को तपाते हैं, जल को सोखते हैं और पुनः वर्षा के रूप में अमृत बरसाते हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఈ పరమేశ్వరుడే ప్రళయకాలమున సమస్త సృష్టిని లయమొనర్చి, తిరిగి సృష్టించుచున్నాడు. ఈయనయే తన కిరణములచే లోకములను తపింపజేయుచు, జలములను గ్రహించి, మరల వర్షరూపమున కురిపించుచున్నాడు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இந்தப் பிரபுவே ஊழிக் காலத்தில் பிரபஞ்சத்தை அழித்து, மீண்டும் சிருஷ்டிக்கிறார். இவரே தமது கிரணங்களால் உலகைச் சுட்டெரிக்கிறார்; நீரை உறிஞ்சி, மீண்டும் மழையாய்ப் பொழிகிறார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಈ ಸೂರ್ಯಪ್ರಭುವೇ ಪ್ರಳಯಕಾಲದಲ್ಲಿ ಸೃಷ್ಟಿಯನ್ನೆಲ್ಲ ಸಂಹರಿಸಿ ಪುನಃ ಸೃಷ್ಟಿಸುತ್ತಾನೆ. ಈತನೇ ತನ್ನ ಕಿರಣಗಳಿಂದ ಜಗತ್ತನ್ನು ಕಾಯಿಸುತ್ತಾನೆ, ನೀರನ್ನು ಹೀರಿ ಮತ್ತೆ ಮಳೆಯನ್ನಾಗಿ ಸುರಿಸುತ್ತಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे सूर्यप्रभूच प्रलयकाळी संपूर्ण विश्वाचा संहार करतात आणि पुन्हा त्याची निर्मिती करतात. तेच आपल्या किरणांनी जगाला उष्णता देतात, जल शोषून घेतात आणि पुन्हा पर्जन्याच्या रूपाने अमृत वर्षाव करतात.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "এই প্রভু সূর্যই প্রলয়কালে নিখিল সৃষ্টির সংহার করেন এবং তিনিই পুনরায় সৃষ্টি করেন। ইনিই নিজ কিরণজালে জগৎকে উত্তপ্ত করেন, জলরাশি আকর্ষণ করেন এবং পুনর্বার মেঘরূপে বর্ষণ করেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આ સૂર્યપ્રભુ જ પ્રલયકાળે સમગ્ર સૃષ્ટિનો સંહાર કરે છે અને પુનઃ તેનું સર્જન કરે છે. તેઓ જ પોતાની કિરણોથી જગતને તપાવે છે, જળ શોષી લે છે અને ફરી વર્ષારૂપે અમૃત વરસાવે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഈ ഭഗവാൻ തന്നെയാണ് പ്രളയകാലത്ത് പ്രപഞ്ചത്തെ മുഴുവൻ നശിപ്പിക്കുന്നതും വീണ്ടും സൃഷ്ടിക്കുന്നതും. അവൻ തന്റെ രശ്മികളാൽ ലോകത്തെ തപിപ്പിക്കുകയും, ജലം വറ്റിക്കുകയും, വീണ്ടും മഴയായി പെയ്യിക്കുകയും ചെയ്യുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଏହି ପ୍ରଭୁ ସୂର୍ଯ୍ୟ ହିଁ ପ୍ରଳୟକାଳରେ ସମସ୍ତ ସୃଷ୍ଟିର ସଂହାର କରନ୍ତି ଏବଂ ପୁନର୍ବାର ସୃଷ୍ଟି କରନ୍ତି । ସେ ହିଁ ନିଜ କିରଣରେ ଜଗତକୁ ତପ୍ତ କରନ୍ତି, ଜଳ ଶୋଷଣ କରନ୍ତି ଏବଂ ପୁନଶ୍ଚ ବୃଷ୍ଟି ରୂପରେ ବର୍ଷଣ କରନ୍ତି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 23,
+      "verse_type": "VERSE",
+      "original_sanskrit": "एष सुप्तेषु जागर्ति भूतेषु परिनिष्ठितः । एष एवाग्निहोत्रं च फलं चैवाग्निहोत्रिणाम् ॥ २३ ॥",
+      "iast": "eṣa supteṣu jāgarti bhūteṣu pariniṣṭhitaḥ । eṣa evāgnihotraṁ ca phalaṁ caivāgnihotriṇām ॥ 23 ॥",
+      "transliterations": {
+        "telugu": "ఏష సుప్తేషు జాగర్తి భూతేషు పరినిష్ఠితః । ఏష ఏవాగ్నిహోత్రం చ ఫలం చైవాగ్నిహోత్రిణామ్ ॥ ౨౩ ॥",
+        "tamil": "ஏஷ ஸுப்தேஷு ஜாகர்தி பூதேஷு பரிநிஷ்டிதஃ । ஏஷ ஏவாக்நிஹோத்ரம் ச பலம் சைவாக்நிஹோத்ரிணாம் ॥ ௨௩ ॥",
+        "kannada": "ಏಷ ಸುಪ್ತೇಷು ಜಾಗರ್ತಿ ಭೂತೇಷು ಪರಿನಿಷ್ಠಿತಃ । ಏಷ ಏವಾಗ್ನಿಹೋತ್ರಂ ಚ ಫಲಂ ಚೈವಾಗ್ನಿಹೋತ್ರಿಣಾಮ್ ॥ ೨೩ ॥",
+        "malayalam": "ഏഷ സുപ്തേഷു ജാഗര്തി ഭൂതേഷു പരിനിഷ്ഠിതഃ । ഏഷ ഏവാഗ്നിഹോത്രം ച ഫലം ചൈവാഗ്നിഹോത്രിണാമ് ॥ ൨൩ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'He remains awake within sleeping beings, dwelling in all hearts; He is the Agnihotra sacrifice itself and the ultimate fruit of the sacrificers.'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "समस्त प्राणियों के सो जाने पर भी उनके भीतर अंतर्यामी रूप में ये सूर्यदेव सदा जाग्रत रहते हैं। यही अग्निहोत्र यज्ञ हैं और यही अग्निहोत्री साधकों को मिलने वाला परम फल भी हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "సమస్త ప్రాణులు నిద్రించుచున్నను వారి అంతరంగమున ఈయనయే సదా మేల్కొనియుండును. ఈయనయే అగ్నిహోత్ర యజ్ఞము మరియు అగ్నిహోత్రమును ఆచరించువారికి లభించు దివ్య ఫలము కూడా ఈయనయే.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "எல்லா உயிர்களும் உறங்கும் போதும், அவற்றின் உள்ளே உறங்காது விழித்திருப்பவர் இவரே. அக்னிஹோத்ர யாகமும் இவரே; அந்த யாகத்தைச் செய்பவர்களுக்குக் கிடைக்கும் நற்பயனும் இவரே.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಸಕಲ ಜೀವರಾಶಿಗಳು ಮಲಗಿದ್ದಾಗಲೂ ಅವರ ಅಂತರ್ಯಾಮಿಯಾಗಿ ಈ ಸೂರ್ಯದೇವನು ಸದಾ ಜಾಗೃತನಾಗಿರುತ್ತಾನೆ. ಈತನೇ ಅಗ್ನಿಹೋತ್ರ ಯಜ್ಞವೂ ಮತ್ತು ಆ ಯಜ್ಞವನ್ನು ಮಾಡುವವರಿಗೆ ದೊರೆಯುವ ಪರಮ ಫಲವೂ ಆಗಿದ್ದಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "सर्व प्राणी झोपलेले असतानाही त्यांच्या अंतर्यामी हे सूर्यदेव सदैव जागे असतात. हेच अग्निहोत्र यज्ञ आहेत आणि अग्निहोत्र करणाऱ्यांना मिळणारे फळही हेच आहेत.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "সমস্ত জীব সুপ্ত হইলেও তাঁহাদিগের অন্তরে অন্তর্যামী রূপে ইনি সতত জাগ্রত থাকেন। ইনিই অগ্নিহোত্র যজ্ঞ এবং ইনিই অগ্নিহোত্রী সাধকগণের পরম ফলস্বরূপ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "સર્વ પ્રાણીઓ ઊંઘતા હોય ત્યારે પણ તેમના ભીતર અંતર્યામીરૂપે આ સૂર્યદેવ સદા જાગૃત રહે છે. તેઓ જ અગ્નિહોત્ર યજ્ઞ છે અને અગ્નિહોત્રી સાધકોનું પરમ ફળ પણ તેઓ જ છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സർവ്വ ജീവജാലങ്ങളും ഉറങ്ങുമ്പോഴും അവരുടെ ഉള്ളിൽ സദാ ഉണർന്നിരിക്കുന്നത് ഇവനാണ്. ഇവൻ തന്നെയാണ് അഗ്നിഹോത്രയാഗവും ആ യാഗം ചെയ്യുന്നവർക്കു ലഭിക്കുന്ന ഉത്തമഫലവും.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସମସ୍ତ ପ୍ରାଣୀ ଶୋଇଥିବା ବେଳେ ମଧ୍ୟ ସେମାନଙ୍କ ଭିତରେ ଅନ୍ତର୍ଯ୍ୟାମୀ ରୂପରେ ଏହି ସୂର୍ଯ୍ୟଦେବ ସଦା ଜାଗ୍ରତ ରହନ୍ତି । ଏହି ହିଁ ଅଗ୍ନିହୋତ୍ର ଯଜ୍ଞ ଏବଂ ଏହି ହିଁ ସାଧକମାନଙ୍କର ପରମ ଫଳ ଅଟନ୍ତି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 24,
+      "verse_type": "VERSE",
+      "original_sanskrit": "वेदाश्च क्रतवश्चैव क्रतूनां फलमेव च । यानि कृत्यानि लोकेषु सर्व एष रविः प्रभुः ॥ २४ ॥",
+      "iast": "vedāśca kratavaścaiva kratūnāṁ phalameva ca । yāni kṛtyāni lokeṣu sarva eṣa raviḥ prabhuḥ ॥ 24 ॥",
+      "transliterations": {
+        "telugu": "వేదాశ్చ క్రతవశ్చైవ క్రతూనాం ఫలమేవ చ । యాని కృత్యాని లోకేషు సర్వ ఏష రవిః ప్రభుః ॥ ౨౪ ॥",
+        "tamil": "வேதாஶ்ச க்ரதவஶ்சைவ க்ரதூநாம் பலமேவ ச । யாநி க்ரு'த்யாநி லோகேஷு ஸர்வ ஏஷ ரவிஃ ப்ரபுஃ ॥ ௨௪ ॥",
+        "kannada": "ವೇದಾಶ್ಚ ಕ್ರತವಶ್ಚೈವ ಕ್ರತೂನಾಂ ಫಲಮೇವ ಚ । ಯಾನಿ ಕೃತ್ಯಾನಿ ಲೋಕೇಷು ಸರ್ವ ಏಷ ರವಿಃ ಪ್ರಭುಃ ॥ ೨೪ ॥",
+        "malayalam": "വേദാശ്ച ക്രതവശ്ചൈവ ക്രതൂനാം ഫലമേവ ച । യാനി കൃത്യാനി ലോകേഷു സര്വ ഏഷ രവിഃ പ്രഭുഃ ॥ ൨൪ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'The Vedas, the rituals, and the rewards of all sacrifices, and whatsoever actions occur across worlds—all are Lord Ravi alone.'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "समस्त वेद, समस्त यज्ञ, उन यज्ञों के पुण्य फल और संसार में जितने भी शुभ कर्म किए जाते हैं, वे सब साक्षात् भगवान् सूर्य ही हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "సమస్త వేదములు, సకల యజ్ఞములు, ఆ యజ్ఞముల ఫలములు మరియు లోకమునందు చేయబడు సకల పుణ్యకార్యములు సమస్తమూ ఈ రవిభగవానుడే.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "வேதங்கள், யாகங்கள், அந்த யாகங்களின் பயன்கள் மற்றும் உலகங்களில் செய்யப்படும் அனைத்து நற்காரியங்களும் இந்த சூரிய பகவானே ஆவர்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಸಕಲ ವೇದಗಳು, ಸಮಸ್ತ ಯಜ್ಞಗಳು, ಆ ಯಜ್ಞಗಳ ಫಲಗಳು ಮತ್ತು ಜಗತ್ತಿನಲ್ಲಿ ನಡೆಯುವ ಎಲ್ಲಾ ಶುಭಕಾರ್ಯಗಳೂ ಸಾಕ್ಷಾತ್ ಸೂರ್ಯಭಗವಾನನೇ ಆಗಿದ್ದಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "सर्व वेद, सर्व यज्ञ, त्या यज्ञांची फळे आणि जगातील सर्व सत्कर्मे ही साक्षात भगवान सूर्यदेवच आहेत.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "নিখিল বেদ, সমস্ত যজ্ঞ, সেই যজ্ঞসমূহের পুণ্যফল এবং সংসারে অনুষ্ঠিত সমস্ত শুভকর্ম—এই সমস্তই সাক্ষাৎ ভগবান সূর্য।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "સમસ્ત વેદો, સર્વ યજ્ઞો, તે યજ્ઞોનાં પુણ્યફળ અને સંસારમાં થતાં સઘળાં શુભકર્મો સાક્ષાત્ ભગવાન સૂર્ય જ છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സകല വേദങ്ങളും, എല്ലാ യജ്ഞങ്ങളും, അവയുടെ ഫലങ്ങളും, ലോകത്തിൽ ചെയ്യപ്പെടുന്ന സകല സദ്കർമ്മങ്ങളും സാക്ഷാൽ സൂര്യൻ തന്നെയാണ്.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସମସ୍ତ ବେଦ, ସକଳ ଯଜ୍ଞ, ସେହି ଯଜ୍ଞର ପୁଣ୍ୟଫଳ ଏବଂ ସଂସାରର ସମସ୍ତ ଶୁଭକର୍ମ ସାକ୍ଷାତ ଭଗବାନ ସୂର୍ଯ୍ୟ ହିଁ ଅଟନ୍ତି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 25,
+      "verse_type": "PHALASRUTI",
+      "original_sanskrit": "एनमापत्सु कृच्छ्रेषु कान्तारेषु भयेषु च । कीर्तयन् पुरुषः कश्चिन्नावसीदति राघव ॥ २५ ॥",
+      "iast": "enamāpatsu kṛcchreṣu kāntāreṣu bhayeṣu ca । kīrtayan puruṣaḥ kaścinnāvasīdati rāghava ॥ 25 ॥",
+      "transliterations": {
+        "telugu": "ఏనమాపత్సు కృచ్ఛ్రేషు కాన్తారేషు భయేషు చ । కీర్తయన్ పురుషః కశ్చిన్నావసీదతి రాఘవ ॥ ౨౫ ॥",
+        "tamil": "ஏநமாபத்ஸு க்ரு'ச்ச்ரேஷு காந்தாரேஷு பயேஷு ச । கீர்தயந் புருஷஃ கஶ்சிந்நாவஸீததி ராகவ ॥ ௨௫ ॥",
+        "kannada": "ಏನಮಾಪತ್ಸು ಕೃಚ್ಛ್ರೇಷು ಕಾನ್ತಾರೇಷು ಭಯೇಷು ಚ । ಕೀರ್ತಯನ್ ಪುರುಷಃ ಕಶ್ಚಿನ್ನಾವಸೀದತಿ ರಾಘವ ॥ ೨೫ ॥",
+        "malayalam": "ഏനമാപത്സു കൃച്ഛ്രേഷു കാന്താരേഷു ഭയേഷു ച । കീര്തയന് പുരുഷഃ കശ്ചിന്നാവസീദതി രാഘവ ॥ ൨൫ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'O Raghava! Any man who recites this hymn in perils, severe distress, wildernesses, or fearful situations shall never succumb to despair.'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे रघुनन्दन! जो भी मनुष्य संकटों में, घोर विपत्ति में, बीहड़ वनों में अथवा किसी भी प्रकार के भय के समय इन भगवान् सूर्य का कीर्तन करता है, वह कभी दुखी या परास्त नहीं होता!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఓ రాఘవా! ఆపదలయందు, తీవ్ర సంకటములయందు, అరణ్యములయందు, భయము కలిగిన సమయములయందు ఈ సూర్యభగవానుని కీర్తించు మానవుడు ఎన్నడూ దుఃఖమును గాని, పరాజయమును గాని పొందడు!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "ஹே ராகவா! ஆபத்துக்களிலோ, கொடிய துன்பங்களிலோ, அடர்ந்த காடுகளிலோ, அச்சம் தரும் நிலைகளிலோ இந்த சூரியனைத் துதிக்கும் எவனொருவனும் ஒருபோதும் துன்பத்தில் மூழ்குவதில்லை!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಹೇ ರಾಘವನೇ! ಸಂಕಷ್ಟಗಳಲ್ಲಿ, ಕಠಿಣ ಆಪತ್ತುಗಳಲ್ಲಿ, ದಟ್ಟ ಅರಣ್ಯಗಳಲ್ಲಿ ಅಥವಾ ಯಾವುದೇ ಭಯದ ಸಂದರ್ಭದಲ್ಲಿ ಈ ಸೂರ್ಯದೇವನನ್ನು ಸ್ತುತಿಸುವ ಮಾನವನು ಎಂದಿಗೂ ನಾಶವಾಗುವುದಿಲ್ಲ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे रघुनंदना! संकटात, घोर विपत्तीत, घनदाट जंगलात किंवा कोणत्याही भीतीप्रसंगी जो मनुष्य या सूर्यदेवांचे कीर्तन करतो, तो कधीही पराभूत किंवा दुःखी होत नाही!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে রঘুনন্দন! যে কোনো ব্যক্তি বিপদে, ঘোর সংকটে, গভীর অরণ্যে অথবা ভয়াবহ পরিস্থিতিতে এই সূর্যদেবের কীর্তন করিলে কদাচ বিনষ্ট বা ব্যথিত হয় না!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હે રઘુનંદન! જે પણ મનુષ્ય સંકટોમાં, ઘોર વિપત્તિમાં, વનમાં કે કોઈપણ ભયના સમયે આ સૂર્યદેવનું કીર્તન કરે છે, તે કદી દુઃખી કે પરાજિત થતો નથી!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഹേ രാഘവാ! ആപത്തുകളിലോ, കൊടിയ ദുരിതങ്ങളിലോ, കൊടുംകാടുകളിലോ, ഭയം നിറഞ്ഞ സന്ദർഭങ്ങളിലോ ഈ സൂര്യനെ സ്തുതിക്കുന്നവൻ ഒരിക്കലും തളരുകയോ നശിക്കുകയോ ഇല്ല!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହେ ରଘୁନନ୍ଦନ! ଯେଉଁ ବ୍ୟକ୍ତି ସଙ୍କଟରେ, ଘୋର ବିପଦରେ, ଅରଣ୍ୟରେ କିମ୍ବା ଯେକୌଣସି ଭୟ ସମୟରେ ଏହି ସୂର୍ଯ୍ୟଦେବଙ୍କ କୀର୍ତ୍ତନ କରେ, ସେ କେବେହେଲେ ଦୁଃଖୀ ବା ପରାଜିତ ହୁଏ ନାହିଁ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 26,
+      "verse_type": "PHALASRUTI",
+      "original_sanskrit": "पूजयस्वैनमेकाग्रो देवदेवं जगत्पतिम् । एतत् त्रिगुणितं जप्त्वा युद्धेषु विजयिष्यसे ॥ २६ ॥",
+      "iast": "pūjayasvainamekāgro devadevaṁ jagatpatim । etat triguṇitaṁ japtvā yuddheṣu vijayiṣyase ॥ 26 ॥",
+      "transliterations": {
+        "telugu": "పూజయస్వైనమేకాగ్రో దేవదేవం జగత్పతిమ్ । ఏతత్ త్రిగుణితం జప్త్వా యుద్ధేషు విజయిష్యసే ॥ ౨౬ ॥",
+        "tamil": "பூஜயஸ்வைநமேகாக்ரோ தேவதேவம் ஜகத்பதிம் । ஏதத் த்ரிகுணிதம் ஜப்த்வா யுத்தேஷு விஜயிஷ்யஸே ॥ ௨௬ ॥",
+        "kannada": "ಪೂಜಯಸ್ವೈನಮೇಕಾಗ್ರೋ ದೇವದೇವಂ ಜಗತ್ಪತಿಮ್ । ಏತತ್ ತ್ರಿಗುಣಿತಂ ಜಪ್ತ್ವಾ ಯುದ್ಧೇಷು ವಿಜಯಿಷ್ಯಸೇ ॥ ೨೬ ॥",
+        "malayalam": "പൂജയസ്വൈനമേകാഗ്രോ ദേവദേവം ജഗത്പതിമ് । ഏതത് ത്രിഗുണിതം ജപ്ത്വാ യുദ്ധേഷു വിജയിഷ്യസേ ॥ ൨൬ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'Worship with single-pointed devotion this God of gods, Sovereign of the universe. Reciting this thrice, you shall attain victory in battles!'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "तुम एकाग्रचित्त होकर इन देवाधिदेव जगत्पति सूर्य की पूजा करो! इस स्तोत्र का तीन बार जप करने से तुम इस भीषण युद्ध में अवश्य ही विजयी होओगे!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "నీవు ఏకాగ్రచిత్తముతో దేవాదిదేవుడైన ఆ జగత్పతి సూర్యుని పూజింపుము! ఈ దివ్య స్తోత్రమును మూడు పర్యాయములు జపించినచో నీవు ఈ యుద్ధమునందు నిస్సందేహముగా విజయోత్సాహుడవు కాగలవు!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "தேவாதி தேவரும் அகிலத்தின் தலைவருமான இந்த சூரியனை நீ ஒருமுகப்பட்ட மனதோடு வழிபடுவாயாக! இந்த ஸ்தோத்திரத்தை மும்முறை ஜபிப்பதன் மூலம் நீ போரில் நிச்சயமாக வெற்றி பெறுவாய்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ನೀನು ಏಕಾಗ್ರಚಿತ್ತದಿಂದ ದೇವದೇವನಾದ ಆ ಜಗತ್ಪತಿ ಸೂರ್ಯನನ್ನು ಪೂಜಿಸು! ಈ ಸ್ತೋತ್ರವನ್ನು ಮೂರು ಬಾರಿ ಜಪಿಸುವುದರಿಂದ ನೀನು ಈ ಯುದ್ಧದಲ್ಲಿ ಖಂಡಿತವಾಗಿಯೂ ಜಯಶಾಲಿಯಾಗುವೆ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तू एकाग्र मनाने देवांचे देव आणि जगाचे स्वामी असणाऱ्या सूर्यदेवाची पूजा कर! या स्तोत्राचा तीन वेळा जप केल्याने तू या युद्धात निश्चितपणे विजयी होशील!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তুমি একাগ্রচিত্তে দেবাদিদেব জগৎপতি সূর্যের আরাধনা কর! এই স্তোত্র তিনবার জপ করিলে তুমি নিশ্চয়ই এই মহাসংগ্রামে বিজয়ী হইবে!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "તું એકાગ્રચિત્તે દેવાધિદેવ જગતપતિ સૂર્યદેવની પૂજા કર! આ સ્તોત્રનો ત્રણ વાર જપ કરવાથી તું આ યુદ્ધમાં અવશ્ય વિજયી થઈશ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഏകാഗ്രമനസ്സോടെ ദേവാദിദേവനും ജഗൽപതിയുമായ ഈ സൂര്യനെ നീ പൂജിച്ചാലും! ഈ സ്തോത്രം മൂന്നുതവണ ജപിച്ചാൽ ഈ യുദ്ധത്തിൽ നീ നിശ്ചയമായും വിജയിക്കും!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତୁମେ ଏକାଗ୍ରଚିତ୍ତରେ ଦେବାଧିଦେବ ଜଗତ୍‌ପତି ସୂର୍ଯ୍ୟଦେବଙ୍କୁ ପୂଜା କର ! ଏହି ସ୍ତୋତ୍ରକୁ ତିନିଥର ଜପ କଲେ ତୁମେ ଯୁଦ୍ଧରେ ନିଶ୍ଚୟ ବିଜୟୀ ହେବ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 27,
+      "verse_type": "VERSE",
+      "original_sanskrit": "अस्मिन् क्षणे महाबाहो रावणं त्वं वधिष्यसि । एवमुक्त्वा तदागस्त्यो जगाम च यथागतम् ॥ २७ ॥",
+      "iast": "asmin kṣaṇe mahābāho rāvaṇaṁ tvaṁ vadhiṣyasi । evamuktvā tadāgastyo jagāma ca yathāgatam ॥ 27 ॥",
+      "transliterations": {
+        "telugu": "అస్మిన్ క్షణే మహాబాహో రావణం త్వం వధిష్యసి । ఏవముక్త్వా తదాగస్త్యో జగామ చ యథాగతమ్ ॥ ౨౭ ॥",
+        "tamil": "அஸ்மிந் க்ஷணே மஹாபாஹோ ராவணம் த்வம் வதிஷ்யஸி । ஏவமுக்த்வா ததாகஸ்த்யோ ஜகாம ச யதாகதம் ॥ ௨௭ ॥",
+        "kannada": "ಅಸ್ಮಿನ್ ಕ್ಷಣೇ ಮಹಾಬಾಹೋ ರಾವಣಂ ತ್ವಂ ವಧಿಷ್ಯಸಿ । ಏವಮುಕ್ತ್ವಾ ತದಾಗಸ್ತ್ಯೋ ಜಗಾಮ ಚ ಯಥಾಗತಮ್ ॥ ೨೭ ॥",
+        "malayalam": "അസ്മിന് ക്ഷണേ മഹാബാഹോ രാവണം ത്വം വധിഷ്യസി । ഏവമുക്ത്വാ തദാഗസ്ത്യോ ജഗാമ ച യഥാഗതമ് ॥ ൨൭ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "''In this very hour, O mighty-armed hero, you shall slay Ravana!' Having thus spoken, Sage Agastya departed as he had come.'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "हे महाबाहो! इसी मुहूर्त में तुम रावण का वध करोगे! ऐसा कहकर महर्षि अगस्त्य जैसे आए थे, वैसे ही चले गए।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఓ మహాబాహో! ఈ శుభ ముహూర్తమునందే నీవు రావణుని సంహరించెదవు! అని చెప్పి అగస్త్య మహర్షి వచ్చినట్లే వెడలిపోయెను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "மகாபாகுவே! இந்த சுப முகூர்த்தத்திலேயே நீ ராவணனைக் கொல்வாய்! என்று கூறிவிட்டு அகஸ்திய முனிவர் வந்த வழியே திரும்பினார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಹೇ ಮಹಾಬಾಹು ರಾಮನೇ! ಈ ಮುಹೂರ್ತದಲ್ಲೇ ನೀನು ರಾವಣನನ್ನು ಸಂಹರಿಸುವೆ! ಎಂದು ನುಡಿದು ಅಗಸ್ತ್ಯ ಮಹರ್ಷಿಗಳು ಬಂದಂತೆಯೇ ತೆರಳಿದರು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "हे महाबाहू! याच क्षणी तू रावणाचा वध करशील! असे सांगून महर्षी अगस्त्य जसे आले होते तसेच निघून गेले.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "হে মহাবাহু! এই মুহূর্তেই তুমি রাবণকে বধ করিবে! এই কথা বলিয়া মহর্ষি অগস্ত্য যেরূপ আসিয়াছিলেন, সেইরূপ প্রস্থান করিলেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હે મહાબાહુ! આ જ ક્ષણે તું રાવણનો વધ કરીશ! આવું કહીને મહર્ષિ અગસ્ત્ય જેમ આવ્યા હતા તેમ પ્રસ્થાન કરી ગયા.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഹേ മഹാബാഹോ! ഈ മുഹൂർത്തത്തിൽത്തന്നെ നീ രാവണനെ വധിക്കും! ഇപ്രകാരം പറഞ്ഞുകൊണ്ട് അഗസ്ത്യമഹർഷി വന്നതുപോലെതന്നെ മടങ്ങിപ്പോയി.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ହେ ମହାବାହୁ! ଏହି ମୁହୂର୍ତ୍ତରେ ହିଁ ତୁମେ ରାବଣକୁ ବଧ କରିବ ! ଏହା କହି ମହର୍ଷି ଅଗସ୍ତ୍ୟ ଯେପରି ଆସିଥିଲେ ସେହିପରି ଫେରିଗଲେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 28,
+      "verse_type": "VERSE",
+      "original_sanskrit": "एतच्छ्रुत्वा महातेजा नष्टशोकोऽभवत्तदा । धारयामास सुप्रीतो राघवः प्रयतात्मवान् ॥ २८ ॥",
+      "iast": "etacchrutvā mahātejā naṣṭaśoko'bhavattadā । dhārayāmāsa suprīto rāghavaḥ prayatātmavān ॥ 28 ॥",
+      "transliterations": {
+        "telugu": "ఏతచ్ఛ్రుత్వా మహాతేజా నష్టశోకోఽభవత్తదా । ధారయామాస సుప్రీతో రాఘవః ప్రయతాత్మవాన్ ॥ ౨౮ ॥",
+        "tamil": "ஏதச்ச்ருத்வா மஹாதேஜா நஷ்டஶோகோऽபவத்ததா । தாரயாமாஸ ஸுப்ரீதோ ராகவஃ ப்ரயதாத்மவாந் ॥ ௨௮ ॥",
+        "kannada": "ಏತಚ್ಛ್ರುತ್ವಾ ಮಹಾತೇಜಾ ನಷ್ಟಶೋಕೋಽಭವತ್ತದಾ । ಧಾರಯಾಮಾಸ ಸುಪ್ರೀತೋ ರಾಘವಃ ಪ್ರಯತಾತ್ಮವಾನ್ ॥ ೨೮ ॥",
+        "malayalam": "ഏതച്ഛ്രുത്വാ മഹാതേജാ നഷ്ടശോകോഽഭവത്തദാ । ധാരയാമാസ സുപ്രീതോ രാഘവഃ പ്രയതാത്മവാന് ॥ ൨൮ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'Hearing this, the immensely resplendent Raghava was instantly freed from sorrow; highly pleased, he held this sacred hymn firmly in his purified mind.'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "महर्षि अगस्त्य के इन वचनों को सुनकर परम तेजस्वी श्रीराम का समस्त शोक दूर हो गया; वे अत्यंत प्रसन्न हुए और उन्होंने मन को वश में रखकर इस दिव्य स्तोत्र को धारण किया।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "అగస్త్య మహర్షి యొక్క ఈ దివ్య వచనములను విని పరమ తేజోవంతుడైన శ్రీరాముడు సకల శోకములను వీడి, పరమ ప్రసన్నుడై, మనస్సును స్థిరపరచి ఆ స్తోత్రమును భక్తితో స్మరించెను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அகஸ்தியரின் இந்த உபதேசத்தைக் கேட்ட மகா தேஜஸ்வியான ஸ்ரீராமர் தன் துயரங்களையெல்லாம் நீக்கினார்; பேரானந்தமடைந்து, மனதை ஒருமுகப்படுத்தி அந்த திவ்ய ஸ்தோத்திரத்தைத் தியானித்தார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಅಗಸ್ತ್ಯರ ಈ ಮಾತುಗಳನ್ನು ಕೇಳಿ ಮಹಾತೇಜಸ್ವಿಯಾದ ಶ್ರೀರಾಮನ ಸಕಲ ದುಃಖವು ಪರಿಹಾರವಾಯಿತು; ಆತನು ಪರಮ ಪ್ರಸನ್ನನಾಗಿ, ಮನಸ್ಸನ್ನು ನಿಯಂತ್ರಿಸಿ ಈ ದಿವ್ಯ ಸ್ತೋತ್ರವನ್ನು ಧಾರಣೆ ಮಾಡಿದನು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "महर्षी अगस्त्यांचे हे शब्द ऐकून महातेजस्वी श्रीरामांचे सर्व दुःख नाहीसे झाले; ते अत्यंत प्रसन्न झाले आणि त्यांनी मनाला एकाग्र करून या दिव्य स्तोत्राचे चिंतन केले.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "মহর্ষি অগস্ত্যের এই বাণী শ্রবণ করিয়া মহাতেজস্বী শ্রীরামচন্দ্র সর্বশোকমুক্ত হইলেন; তিনি পরম প্রীত হইয়া সংযতচিত্তে এই দিব্য স্তোত্র অন্তরে ধারণ করিলেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "મહર્ષિ અગસ્ત્યનાં આ વચનો સાંભળીને પરમ તેજસ્વી શ્રીરામનો સર્વ શોક દૂર થઈ ગયો; તેઓ અત્યંત પ્રસન્ન થયા અને મનને સ્થિર કરી આ દિવ્ય સ્તોત્રનું ચિંતન કર્યું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അഗസ്ത്യന്റെ ഈ വാക്കുകൾ കേട്ട മഹാതേജസ്വിയായ ശ്രീരാമൻ ദുഃഖമെല്ലാം നീങ്ങി, അത്യധികം പ്രസാദിച്ച്, മനസ്സിനെ ഏകാഗ്രമാക്കി ആ ദിവ്യസ്തോത്രത്തെ ധ്യാനിച്ചു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ମହର୍ଷି ଅଗସ୍ତ୍ୟଙ୍କ ଏହି ବାଣୀ ଶୁଣି ମହାତେଜସ୍ୱୀ ଶ୍ରୀରାମ ସର୍ବଶୋକମୁକ୍ତ ହେଲେ; ସେ ଅତ୍ୟନ୍ତ ପ୍ରସନ୍ନ ହୋଇ ମନକୁ ସ୍ଥିର କରି ଏହି ଦିବ୍ୟ ସ୍ତୋତ୍ର ଧାରଣ କଲେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 29,
+      "verse_type": "VERSE",
+      "original_sanskrit": "आदित्यं प्रेक्ष्य जप्त्वा तु परं हर्षमवाप्तवान् । त्रिराचम्य शुचिर्भूत्वा धनुरादाय वीर्यवान् ॥ २९ ॥",
+      "iast": "ādityaṁ prekṣya japtvā tu paraṁ harṣamavāptavān । trirācamya śucirbhūtvā dhanurādāya vīryavān ॥ 29 ॥",
+      "transliterations": {
+        "telugu": "ఆదిత్యం ప్రేక్ష్య జప్త్వా తు పరం హర్షమవాప్తవాన్ । త్రిరాచమ్య శుచిర్భూత్వా ధనురాదాయ వీర్యవాన్ ॥ ౨౯ ॥",
+        "tamil": "ஆதித்யம் ப்ரேக்ஷ்ய ஜப்த்வா து பரம் ஹர்ஷமவாப்தவாந் । த்ரிராசம்ய ஶுசிர்பூத்வா தநுராதாய வீர்யவாந் ॥ ௨௯ ॥",
+        "kannada": "ಆದಿತ್ಯಂ ಪ್ರೇಕ್ಷ್ಯ ಜಪ್ತ್ವಾ ತು ಪರಂ ಹರ್ಷಮವಾಪ್ತವಾನ್ । ತ್ರಿರಾಚಮ್ಯ ಶುಚಿರ್ಭೂತ್ವಾ ಧನುರಾದಾಯ ವೀರ್ಯವಾನ್ ॥ ೨೯ ॥",
+        "malayalam": "ആദിത്യം പ്രേക്ഷ്യ ജപ്ത്വാ തു പരം ഹര്ഷമവാപ്തവാന് । ത്രിരാചമ്യ ശുചിര്ഭൂത്വാ ധനുരാദായ വീര്യവാന് ॥ ൨൯ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'Gazing upon the Sun and reciting the hymn, He experienced supreme joy; sipping water thrice (Achamana), purified, the valiant Rama seized His bow.'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "भगवान् सूर्य की ओर देखकर और इस स्तोत्र का जप करके श्रीराम परम आनंद से भर गए; उन्होंने तीन बार आचमन कर स्वयं को शुद्ध किया और पराक्रमी होकर अपने धनुष को उठाया।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "సూర్యభగవానుని దర్శించి, ఆ స్తోత్రమును జపించి శ్రీరాముడు పరమానందమును పొందెను; మూడు మార్లు ఆచమనము చేసి పవిత్రుడై, ఆ మహావీరుడు తన దివ్య ధనుస్సును చేతబట్టెను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "சூரிய பகவானைப் பார்த்து, அந்த ஸ்தோத்திரத்தை ஜபித்து ஸ்ரீராமர் பேரானந்தம் அடைந்தார்; மும்முறை ஆசமனம் செய்து உடலும் மனமும் தூய்மை பெற்று, தனது வீர வில்லான கோதண்டத்தை ஏந்தினார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಸೂರ್ಯದೇವನನ್ನು ದೃಷ್ಟಿಸಿ, ಆ ಸ್ತೋತ್ರವನ್ನು ಜಪಿಸಿ ಶ್ರೀರಾಮನು ಪರಮಾನಂದವನ್ನು ಹೊಂದಿದನು; ಮೂರು ಬಾರಿ ಆಚಮನ ಮಾಡಿ ಶುಚಿಯಾಗಿ, ಆ ಮಹಾವೀರನು ತನ್ನ ಧನುಸ್ಸನ್ನು ಕೈಗೆತ್ತಿಕೊಂಡನು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "सूर्यदेवांकडे पाहून आणि या स्तोत्राचा जप करून श्रीराम परमानंदाने भरून गेले; त्यांनी तीनदा आचमन करून स्वतःला शुद्ध केले आणि पराक्रमी होऊन आपले धनुष्य उचलले.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "সূর্যদেবকে প্রত্যক্ষ করিয়া এবং এই স্তোত্র জপ করিয়া শ্রীরামচন্দ্র পরমানন্দ প্রাপ্ত হইলেন; তিনবার আচমন করিয়া শুচি হইয়া মহাবীর নিজ কোদণ্ড ধনু গ্রহণ করিলেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "સૂર્યદેવ તરફ જોઈને અને આ સ્તોત્રનો જપ કરીને શ્રીરામ પરમ આનંદથી ભરાઈ ગયા; તેમણે ત્રણ વાર આચમન કરીને પવિત્ર થઈ પરાક્રમી ભાવે પોતાનું ધનુષ્ય ઉપાડ્યું.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സൂര്യഭഗവാനെ നോക്കി ആ സ്തോത്രം ജപിച്ച ശ്രീരാമൻ പരമാനന്ദം പ്രാപിച്ചു; മൂന്നുതവണ ആചമനം ചെയ്തു ശുദ്ധനായി, ആ വീരനായകൻ തന്റെ വില്ലെടുത്തു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସୂର୍ଯ୍ୟଦେବଙ୍କୁ ଦର୍ଶନ କରି ଓ ଏହି ସ୍ତୋତ୍ର ଜପ କରି ଶ୍ରୀରାମ ପରମାନନ୍ଦ ଲାଭ କଲେ; ତିନିଥର ଆଚମନ କରି ଶୁଦ୍ଧ ହୋଇ ସେହି ମହାବୀର ଆପଣାର କୋଦଣ୍ଡ ଧନୁ ଧାରଣ କଲେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 30,
+      "verse_type": "VERSE",
+      "original_sanskrit": "रावणं प्रेक्ष्य हृष्टात्मा युद्धाय समुपागमत् । सर्वयत्नेन महता वधे तस्य धृतोऽभवत् ॥ ३० ॥",
+      "iast": "rāvaṇaṁ prekṣya hṛṣṭātmā yuddhāya samupāgamat । sarvayatnena mahatā vadhe tasya dhṛto'bhavat ॥ 30 ॥",
+      "transliterations": {
+        "telugu": "రావణం ప్రేక్ష్య హృష్టాత్మా యుద్ధాయ సముపాగమత్ । సర్వయత్నేన మహతా వధే తస్య ధృతోఽభవత్ ॥ ౩౦ ॥",
+        "tamil": "ராவணம் ப்ரேக்ஷ்ய ஹ்ரு'ஷ்டாத்மா யுத்தாய ஸமுபாகமத் । ஸர்வயத்நேந மஹதா வதே தஸ்ய த்ரு'தோऽபவத் ॥ ௩௦ ॥",
+        "kannada": "ರಾವಣಂ ಪ್ರೇಕ್ಷ್ಯ ಹೃಷ್ಟಾತ್ಮಾ ಯುದ್ಧಾಯ ಸಮುಪಾಗಮತ್ । ಸರ್ವಯತ್ನೇನ ಮಹತಾ ವಧೇ ತಸ್ಯ ಧೃತೋಽಭವತ್ ॥ ೩೦ ॥",
+        "malayalam": "രാവണം പ്രേക്ഷ്യ ഹൃഷ്ടാത്മാ യുദ്ധായ സമുപാഗമത് । സര്വയത്നേന മഹതാ വധേ തസ്യ ധൃതോഽഭവത് ॥ ൩൦ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'Beholding Ravana with high spirits, Rama stepped forward to battle; with all his formidable prowess, he became resolute upon his destruction.'",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "रावण को सामने देखकर प्रसन्नचित्त श्रीराम युद्ध के लिए आगे बढ़े और अपने समस्त पुरुषार्थ व पराक्रम से उसका वध करने के लिए दृढ़-संकल्पित हुए।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఎదురుగా ఉన్న రావణుని చూచి సంతోషభరిత హృదయముతో శ్రీరాముడు యుద్ధమునకు ముందడుగు వేసెను; తన సర్వశక్తులనొడ్డి ఆ రాక్షసరాజును సంహరించుటకు సంకల్పించెను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "முன்னே நின்ற ராவணனைக் கண்டு உள்ளம் மகிழ்ந்த ஸ்ரீராமர் போர்க்களத்தில் முன்னேறிச் சென்றார்; தனது முழு வீரத்தையும் செலுத்தி அவனை வதம் செய்ய உறுதி பூண்டார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ರಾವಣನನ್ನು ಕಂಡು ಪ್ರಸನ್ನಚಿತ್ತನಾದ ಶ್ರೀರಾಮನು ಯುದ್ಧಕ್ಕೆ ಮುಂದಾದನು ಮತ್ತು ತನ್ನ ಸಮಸ್ತ ಪರಾಕ್ರಮದಿಂದ ಆತನನ್ನು ಸಂಹರಿಸಲು ದೃಢಸಂಕಲ್ಪ ಮಾಡಿದನು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "रावणाला समोर पाहून प्रसन्न अंतःकरणाने श्रीराम युद्धासाठी पुढे सरसावले आणि आपल्या संपूर्ण सामर्थ्याने त्याचा वध करण्याचा त्यांनी दृढ संकल्प केला.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "সম্মুখে রাবণকে দেখিয়া প্রফুল্লচিত্তে শ্রীরামচন্দ্র সমরাঙ্গনে অগ্রসর হইলেন এবং নিজ সর্বশক্তি প্রয়োগ করিয়া তাহাকে বধ করিতে কৃতসংকল্প হইলেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "રાવણને સામે જોઈને પ્રસન્નચિત્તે શ્રીરામ યુદ્ધ માટે આગળ વધ્યા અને પોતાના સમગ્ર પરાક્રમથી તેનો વધ કરવા માટે દૃઢસંકલ્પ થયા.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "മുന്നിൽ നിൽക്കുന്ന രാവണനെക്കണ്ട് മനസ്സിൽ സന്തോഷത്തോടെ ശ്രീരാമൻ യുദ്ധത്തിനൊരുങ്ങി; തന്റെ സർവ്വശക്തിയുമെടുത്തു രാവണനെ വധിക്കാൻ ദൃഢനിശ്ചയം ചെയ്തു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ରାବଣକୁ ସମ୍ମୁଖରେ ଦେଖି ପ୍ରସନ୍ନ ଚିତ୍ତରେ ଶ୍ରୀରାମ ଯୁଦ୍ଧ ପାଇଁ ଅଗ୍ରସର ହେଲେ ଏବଂ ନିଜର ସମସ୍ତ ଶକ୍ତି ପ୍ରୟୋଗ କରି ତାକୁ ବଧ କରିବା ପାଇଁ ଦୃଢ଼ ସଂକଳ୍ପ ନେଲେ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 31,
+      "verse_type": "VERSE",
+      "original_sanskrit": "अथ रविरवदन्निरीक्ष्य रामं मुदितमनाः परमं प्रहृष्यमाणः । निशिचरपतिसंक्षयं विदित्वा सुरगणमध्यगतो वचस्त्वरेति ॥ ३१ ॥",
+      "iast": "atha raviravadannirīkṣya rāmaṁ muditamanāḥ paramaṁ prahṛṣyamāṇaḥ । niśicarapatisaṁkṣayaṁ viditvā suragaṇamadhyagato vacastvareti ॥ 31 ॥",
+      "transliterations": {
+        "telugu": "అథ రవిరవదన్నిరీక్ష్య రామం ముదితమనాః పరమం ప్రహృష్యమాణః । నిశిచరపతిసంక్షయం విదిత్వా సురగణమధ్యగతో వచస్త్వరేతి ॥ ౩౧ ॥",
+        "tamil": "அத ரவிரவதந்நிரீக்ஷ்ய ராமம் முதிதமநாஃ பரமம் ப்ரஹ்ரு'ஷ்யமாணஃ । நிஶிசரபதிஸம்க்ஷயம் விதித்வா ஸுரகணமத்யகதோ வசஸ்த்வரேதி ॥ ௩௧ ॥",
+        "kannada": "ಅಥ ರವಿರವದನ್ನಿರೀಕ್ಷ್ಯ ರಾಮಂ ಮುದಿತಮನಾಃ ಪರಮಂ ಪ್ರಹೃಷ್ಯಮಾಣಃ । ನಿಶಿಚರಪತಿಸಂಕ್ಷಯಂ ವಿದಿತ್ವಾ ಸುರಗಣಮಧ್ಯಗತೋ ವಚಸ್ತ್ವರೇತಿ ॥ ೩೧ ॥",
+        "malayalam": "അഥ രവിരവദന്നിരീക്ഷ്യ രാമം മുദിതമനാഃ പരമം പ്രഹൃഷ്യമാണഃ । നിശിചരപതിസംക്ഷയം വിദിത്വാ സുരഗണമധ്യഗതോ വചസ്ത്വരേതി ॥ ൩൧ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "'Then the Sun god, gazing down upon Rama with a joyful heart and supreme delight, knowing the imminent demise of the King of Night-Stalkers, spoke from amidst the assembly of gods: 'Make haste!''",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "तब देवगणों के मध्य स्थित भगवान् सूर्य ने अत्यंत हर्षित मन से श्रीराम को देखकर और राक्षसराज रावण के आसन्न विनाश को जानकर परम प्रसन्नतापूर्वक कहा — 'शीघ्रता करो (शत्रु का वध करो)!'",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "అప్పుడు దేవతా సమూహము మధ్యన కొలువైయున్న సూర్యభగవానుడు పరమ సంతోషముతో శ్రీరాముని వీక్షించి, రాక్షసరాజైన రావణుని వినాశము ఆసన్నమైనదని ఎరిగి, మహదానందముతో 'త్వరపడుము (శత్రువును సంహరింపుము)!' అని పలికెను.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அப்போது தேவர்கள் நடுவே விளங்கிய சூரிய பகவான், பெருமகிழ்ச்சியோடு ஸ்ரீராமரைக் கண்டு, அரக்கர் தலைவனான ராவணனின் முடிவு நெருங்கிவிட்டதை உணர்ந்து, 'விரைந்து முடிப்பாயாக!' என்று ஆணையிட்டார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಆಗ ದೇವತೆಗಳ ನಡುವೆ ವಿರಾಜಮಾನನಾಗಿದ್ದ ಸೂರ್ಯಭಗವಾನನು ಅತೀವ ಸಂತೋಷದಿಂದ ಶ್ರೀರಾಮನನ್ನು ನೋಡಿ, ರಾಕ್ಷಸರಾಜ ರಾವಣನ ಅಂತ್ಯವು ಸನ್ನಿಹಿತವಾಯಿತೆಂದು ತಿಳಿದು 'ಬೇಗ ಮುಗಿಸು (ಶತ್ರುವನ್ನು ಸಂಹರಿಸು)!' ಎಂದು ನುಡಿದನು.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "तेव्हा देवगणांच्या मध्यभागी विराजमान सूर्यदेवांनी अत्यंत आनंदित मनाने श्रीरामांकडे पाहिले आणि राक्षसराज रावणाचा विनाश समीप आल्याचे जाणून अत्यंत आनंदाने म्हटले — 'त्वरा कर (शत्रूचा संहार कर)!'",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "তখন দেবমণ্ডলীর মধ্যে বিরাজিত ভগবান সূর্য পরম হর্ষোৎফুল্লচিত্তে শ্রীরামচন্দ্রকে অবলোকন করিয়া এবং নিশাচরপতি রাবণের আসন্ন বিনাশ উপলব্ধি করিয়া সানন্দে আদেশ করিলেন—'শীঘ্র কর (শত্রু বধ কর)!'",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "ત્યારે દેવગણોની મધ્યમાં બિરાજમાન ભગવાન સૂર્યદેવે અત્યંત હર્ષિત મને શ્રીરામ તરફ જોયું અને રાક્ષસરાજ રાવણનો વિનાશ નજીક જાણીને પરમ પ્રસન્નતાથી કહ્યું — 'ઉતાવળ કર (શત્રુનો વધ કર)!'",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "അപ്പോൾ ദേവന്മാരുടെ നടുവിലിരുന്ന സൂര്യഭഗവാൻ അതീവ സന്തോഷത്തോടെ ശ്രീരാമനെ നോക്കി, രാക്ഷസരാജാവായ രാവണന്റെ നാശം ആസന്നമായി എന്നറിഞ്ഞ്, 'വേഗമാകട്ടെ (ശത്രുവിനെ വധിച്ചാലും)!' എന്ന് ആനന്ദത്തോടെ അരുളിച്ചെയ്തു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ତେବେ ଦେବତାମାନଙ୍କ ମଧ୍ୟରେ ବିରାଜମାନ ଭଗବାନ ସୂର୍ଯ୍ୟଦେବ ଅତ୍ୟନ୍ତ ଆନନ୍ଦିତ ମନରେ ଶ୍ରୀରାମଙ୍କୁ ଦେଖିଲେ ଏବଂ ରାକ୍ଷସରାଜ ରାବଣର ଆସନ୍ନ ବିନାଶ ଜାଣି ପରମ ପ୍ରସନ୍ନତାର ସହ କହିଲେ — 'ଶୀଘ୍ର କର (ଶତ୍ରୁକୁ ବଧ କର) !'",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    }
+  ]
+}

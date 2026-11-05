@@ -1,0 +1,1208 @@
+{
+  "content_id": "VEDA-TXT-00002",
+  "canonical_title": "Shiva Tandava Stotram",
+  "devanagari_title": "शिवताण्डवस्तोत्रम्",
+  "composer": "Lankadhipati Ravana",
+  "source_scripture": "Traditional Shaiva Itihasa-Purana Canon",
+  "verse_count": 16,
+  "generated_at_utc": "2026-11-05T01:05:22.977484+00:00",
+  "supported_languages": [
+    "sa",
+    "hi",
+    "te",
+    "ta",
+    "kn",
+    "mr",
+    "bn",
+    "gu",
+    "ml",
+    "or",
+    "en"
+  ],
+  "verses": [
+    {
+      "verse_number": 1,
+      "verse_type": "VERSE",
+      "original_sanskrit": "जटाटवीगलज्जलप्रवाहपावितस्थले गलेऽवलम्ब्य लम्बितां भुजङ्गतुङ्गमालिकाम् ।\nडमड्डमड्डमड्डमन्निनादवड्डमर्वयं चकार चण्डताण्डवं तनोतु नः शिवः शिवम् ॥ १ ॥",
+      "iast": "jaṭāṭavīgalajjala-pravāha-pāvitasthale gale'valambya lambitāṁ bhujaṅgatuṅgamālikām ।\nḍamaḍ-ḍamaḍ-ḍamaḍ-ḍaman-ninādavad-ḍamarvayaṁ cakāra caṇḍatāṇḍavaṁ tanotu naḥ śivaḥ śivam ॥ 1 ॥",
+      "transliterations": {
+        "telugu": "జటాటవీగలజ్జలప్రవాహపావితస్థలే గలేఽవలమ్బ్య లమ్బితాం భుజఙ్గతుఙ్గమాలికామ్ ।\nడమడ్డమడ్డమడ్డమన్నినాదవడ్డమర్వయం చకార చణ్డతాణ్డవం తనోతు నః శివః శివమ్ ॥ ౧ ॥",
+        "tamil": "ஜடாடவீகலஜ்ஜலப்ரவாஹபாவிதஸ்தலே கலேऽவலம்ப்ய லம்பிதாம் புஜங்கதுங்கமாலிகாம் ।\nடமட்டமட்டமட்டமந்நிநாதவட்டமர்வயம் சகார சண்டதாண்டவம் தநோது நஃ ஶிவஃ ஶிவம் ॥ ௧ ॥",
+        "kannada": "ಜಟಾಟವೀಗಲಜ್ಜಲಪ್ರವಾಹಪಾವಿತಸ್ಥಲೇ ಗಲೇಽವಲಮ್ಬ್ಯ ಲಮ್ಬಿತಾಂ ಭುಜಙ್ಗತುಙ್ಗಮಾಲಿಕಾಮ್ ।\nಡಮಡ್ಡಮಡ್ಡಮಡ್ಡಮನ್ನಿನಾದವಡ್ಡಮರ್ವಯಂ ಚಕಾರ ಚಣ್ಡತಾಣ್ಡವಂ ತನೋತು ನಃ ಶಿವಃ ಶಿವಮ್ ॥ ೧ ॥",
+        "malayalam": "ജടാടവീഗലജ്ജലപ്രവാഹപാവിതസ്ഥലേ ഗലേഽവലമ്ബ്യ ലമ്ബിതാം ഭുജങ്ഗതുങ്ഗമാലികാമ് ।\nഡമഡ്ഡമഡ്ഡമഡ്ഡമന്നിനാദവഡ്ഡമര്വയം ചകാര ചണ്ഡതാണ്ഡവം തനോതു നഃ ശിവഃ ശിവമ് ॥ ൧ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "May Lord Shiva extend auspiciousness unto us—He on whose neck hangs the garland of the supreme serpent, His holy neck sanctified by the waters cascading from the dense forest of His matted locks, as His damaru emits the resonant sound 'damad-damad-damad-damad' while He performs the impassioned cosmic Tandava dance.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जिनके सघन जटा रूपी वन से गिरती हुई पावन गंगा की धाराओं से जिनका कंठ-प्रदेश पवित्र है, जिन्होंने अपने गले में विशाल सर्पों की माला धारण कर रखी है, और जो 'डम-डम-डम-डम' करते डमरू के नाद के साथ प्रचण्ड ताण्डव नृत्य कर रहे हैं, वे भगवान् शिव हम सभी का परम कल्याण करें!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "దట్టమైన జటాజూటమను అరణ్యము నుండి జాలువారు గంగా ప్రవాహముచే పవిత్రమైన కంఠము కలవాడు, మెడలో పొడవైన సర్పరాజుల హారమును ధరించినవాడు, 'డమ-డమ-డమ'యని మోగు డమరుక నాదముతో ప్రచండ తాండవ నృత్యమును చేయు ఆ పరమశివుడు మనకు సకల మంగళములను ప్రసాదించుగాక!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "அடர்ந்த சடைக்காட்டிலிருந்து வழியும் கங்கை நதியின் பிரவாகத்தால் தூய்மையான திருக்கழுத்தை உடையவரும், கழுத்தில் நீண்ட பாம்பு மாலையை அணிந்தவரும், 'டம-டம'வென ஒலிக்கும் உடுக்கை முழங்க அனல் பறக்கும் தாண்டவம் ஆடும் அந்த சிவபெருமான் நமக்கு மங்கலங்களை அருளட்டும்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ದಟ್ಟವಾದ ಜಟೆಯೆಂಬ ಅರಣ್ಯದಿಂದ ಹರಿಯುವ ಗಂಗಾ ಪ್ರವಾಹದಿಂದ ಪವಿತ್ರವಾದ ಕೊರಳುಳ್ಳ, ಕುತ್ತಿಗೆಯಲ್ಲಿ ದೊಡ್ಡ ಸರ್ಪಮಾಲೆಯನ್ನು ಧರಿಸಿರುವ, 'ಡಮ-ಡಮ' ಎಂದು ಮೊಳಗುವ ಡಮರುಗ ನಾದದೊಂದಿಗೆ ಪ್ರಚಂಡ ತಾಂಡವ ನೃತ್ಯ ಮಾಡುತ್ತಿರುವ ಆ ಪರಮಶಿವನು ನಮಗೆ ಸಕಲ ಮಂಗಳಗಳನ್ನು ಕರುಣಿಸಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "ज्यांच्या जटांच्या वनातून वाहणाऱ्या गंगेच्या प्रवाहाने ज्यांचा कंठ पवित्र झाला आहे, ज्यांनी गळ्यात महासर्पांची माळ घातली आहे आणि जे 'डम-डम' असा नाद करणाऱ्या डमरूच्या तालावर प्रचंड तांडव करत आहेत, ते भगवान शिव आमचे परम कल्याण करोत!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যাঁহার ঘন জটাজালরূপ অরণ্য হইতে প্রবহমানা গঙ্গার ধারায় কণ্ঠদেশ পবিত্র, যিনি গলায় বিশাল সর্পহার ধারণ করিয়াছেন এবং 'ডম-ডম-ডম-ডম' ডমরুধ্বনিতে প্রচণ্ড তাণ্ডব নৃত্য করিতেছেন, সেই পরমশিব আমাদের পরম কল্যাণ করুন!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જેમની ઘનઘોર જટા રૂપી વનમાંથી વહેતી ગંગાના પ્રવાહથી જેમના કંઠ પવિત્ર છે, ગળામાં મોટા સર્પની માળા પહેરી છે અને જે 'ડમ-ડમ' ડમરુના નાદ સાથે પ્રચંડ તાંડવ કરી રહ્યા છે, તે ભગવાન શિવ આપણું સદાય મંગળ કરો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "നിബിഡമായ ജടയാകുന്ന കാട്ടിൽനിന്നൊഴുകുന്ന ഗംഗാപ്രവാഹത്താൽ പവിത്രമായ കഴുത്തോടുകൂടിയവനും, പാമ്പുകളുടെ മാലയണിഞ്ഞവനും, 'ഡമ-ഡമ' എന്ന ഡമരുനാദത്തോടെ ഉഗ്രതാണ്ഡവമാടുന്നവനുമായ ആ പരമശിവൻ നമുക്ക് സർവ്വമംഗളങ്ങളും നൽകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯାହାଙ୍କ ଘଞ୍ଚ ଜଟାରୂପୀ ଅରଣ୍ୟରୁ ପ୍ରବାହିତ ଗଙ୍ଗାଧାରାରେ କଣ୍ଠଦେଶ ପବିତ୍ର, ଯିଏ ଗଳାରେ ବିଶାଳ ସର୍ପମାଳା ଧାରଣ କରିଛନ୍ତି ଏବଂ 'ଡମ-ଡମ' ଡମରୁ ନାଦରେ ପ୍ରଚଣ୍ଡ ତାଣ୍ଡବ କରୁଛନ୍ତି, ସେହି ଶିବ ଆମର ପରମ କଲ୍ୟାଣ କରନ୍ତୁ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 2,
+      "verse_type": "VERSE",
+      "original_sanskrit": "जटाकटाहसम्भ्रमभ्रमन्निलिम्पनिर्झरी-विलोलवीचिवल्लरीविराजमानमूर्धनि ।\nधगद्धगद्धगज्ज्वलल्ललाटपट्टपावके किशोरचन्द्रशेखरे रतिः प्रतिक्षणं मम ॥ २ ॥",
+      "iast": "jaṭākaṭāhasambhramabhramannilimpanirjharī-vilōlavīcivallarīvirājamānamūrdhani ।\ndhagaddhagaddhagajjvalallalāṭapaṭṭapāvakē kiśōracandraśēkharē ratiḥ pratikṣaṇaṁ mama ॥ 2 ॥",
+      "transliterations": {
+        "telugu": "జటాకటాహసమ్భ్రమభ్రమన్నిలిమ్పనిర్ఝరీ-విలోలవీచివల్లరీవిరాజమానమూర్ధని ।\nధగద్ధగద్ధగజ్జ్వలల్లలాటపట్టపావకే కిశోరచన్ద్రశేఖరే రతిః ప్రతిక్షణం మమ ॥ ౨ ॥",
+        "tamil": "ஜடாகடாஹஸம்ப்ரமப்ரமந்நிலிம்பநிர்சரீ-விலோலவீசிவல்லரீவிராஜமாநமூர்தநி ।\nதகத்தகத்தகஜ்ஜ்வலல்லலாடபட்டபாவகே கிஶோரசந்த்ரஶேகரே ரதிஃ ப்ரதிக்ஷணம் மம ॥ ௨ ॥",
+        "kannada": "ಜಟಾಕಟಾಹಸಮ್ಭ್ರಮಭ್ರಮನ್ನಿಲಿಮ್ಪನಿರ್ಝರೀ-ವಿಲೋಲವೀಚಿವಲ್ಲರೀವಿರಾಜಮಾನಮೂರ್ಧನಿ ।\nಧಗದ್ಧಗದ್ಧಗಜ್ಜ್ವಲಲ್ಲಲಾಟಪಟ್ಟಪಾವಕೇ ಕಿಶೋರಚನ್ದ್ರಶೇಖರೇ ರತಿಃ ಪ್ರತಿಕ್ಷಣಂ ಮಮ ॥ ೨ ॥",
+        "malayalam": "ജടാകടാഹസമ്ഭ്രമഭ്രമന്നിലിമ്പനിര്ഝരീ-വിലോലവീചിവല്ലരീവിരാജമാനമൂര്ധനി ।\nധഗദ്ധഗദ്ധഗജ്ജ്വലല്ലലാടപട്ടപാവകേ കിശോരചന്ദ്രശേഖരേ രതിഃ പ്രതിക്ഷണം മമ ॥ ൨ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "May my constant devotion abide in Lord Shiva, upon whose head shines the celestial river Ganges with waving spray rippling within the cauldron of His matted locks, whose forehead blazes with the leaping flame 'dhagad-dhagad-dhagad', and who is crowned by the crescent moon.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जिनके जटा-कटाह में चंचलतापूर्वक घूमती हुई देवनदी गंगा की तरंग-लताएँ सुशोभित हैं, जिनके ललाट पर 'धग-धग' करती प्रचण्ड अग्नि प्रज्वलित है और जिनके मस्तक पर बालचन्द्र सुशोभित हैं, उन देवाधिदेव शिव में मेरा मन प्रतिक्षण अनुरक्त रहे!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "జటాజూటమను పాత్రయందు గిరగిర తిరుగుచున్న ఆకాశగంగ యొక్క తరంగలతలచే ప్రకాశించు శిరస్సు కలవాడు, నుదుటి యందు 'ధగ-ధగ'యని మండుచున్న అగ్నినేత్రము కలవాడు, శిరస్సున బాలచంద్రుని ధరించిన ఆ పరమేశ్వరుని యందు నా భక్తి ప్రతిక్షణము నిలచుగాక!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "சடைமுடியில் சுழன்றோடும் தேவநதியான கங்கையின் அலைகளால் அலங்கரிக்கப்பட்ட திருமுடியைக் கொண்டவரும், நெற்றியில் 'தக-தக'வென எரியும் நெருப்புக் கண்ணையுடையவரும், பிறைச் சந்திரனைச் சூடியவருமான அந்த சிவபெருமானிடம் என் உள்ளம் எப்போதும் நிலைக்கட்டும்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಜಟೆಯೆಂಬ ಪಾತ್ರೆಯಲ್ಲಿ ಗಿರಗಿಟನೆ ತಿರುಗುತ್ತಿರುವ ಆಕಾಶಗಂಗೆಯ ಅಲೆಗಳಿಂದ ಶೋಭಿತವಾದ ಶಿರಸ್ಸುಳ್ಳ, ಹಣೆಯಲ್ಲಿ 'ಧಗ-ಧಗ' ಎಂದು ಉರಿಯುವ ಅಗ್ನಿಯುಳ್ಳ, ಎಳೆಯ ಚಂದ್ರನನ್ನು ಧರಿಸಿರುವ ಆ ಮಹಾದೇವನಲ್ಲಿ ನನ್ನ ಭಕ್ತಿಯು ಪ್ರತಿಕ್ಷಣವೂ ಸ್ಥಿರವಾಗಿರಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "ज्यांच्या जटांच्या भांड्यात वेगवान फिरणाऱ्या गंगेच्या लाटा शोभत आहेत, ज्यांच्या कपाळावर 'धग-धग' करणारा प्रचंड अग्नी जळत आहे आणि ज्यांच्या मस्तकावर बालचंद्र विराजमान आहे, त्या शिवाच्या चरणी माझे प्रेम क्षणोक्षणी वाढत राहो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যাঁহার জটাকুন্ডের অভ্যন্তরে চঞ্চলভাবে ঘূর্ণায়মান দেবনদী গঙ্গার তরঙ্গমালায় মস্তক সুশোভিত, ললাটপটে 'ধক-ধক' জ্বলন্ত হুতাশন এবং চূড়ায় বালচন্দ্র বিরাজমান, সেই মহেশ্বরে আমার চিত্ত প্রতিক্ষণ অনুরক্ত হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જેમની જટાના કટોરામાં ઘૂમરીઓ લેતી આકાશગંગાના તરંગોથી જેઓ શોભે છે, જેમના લલાટ પર 'ધગ-ધગ' અગ્નિ પ્રજ્વળે છે અને મસ્તક પર બાળચંદ્ર બિરાજે છે, તે સદાશિવમાં મારું મન પ્રતિક્ષણ લીન રહે!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ജടാകടാഹത്തിൽ ചുറ്റിത്തിരിയുന്ന ആകാശഗംഗയുടെ തിരമാലകളാൽ ശോഭിക്കുന്ന ശിരസ്സുള്ളവനും, നെറ്റിയിൽ 'ധഗ-ധഗ'യെന്നു കത്തുന്ന തൃക്കണ്ണുള്ളവനും, ചന്ദ്രക്കല ചൂടിയവനുമായ ആ പരമേശ്വരനിൽ എന്റെ ഭക്തി എപ്പോഴും നിറഞ്ഞുനിൽക്കട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯାହାଙ୍କ ଜଟା-କୁଣ୍ଡରେ ଚଞ୍ଚଳ ଭାବେ ଘୂରୁଥିବା ଦେବନଦୀ ଗଙ୍ଗାର ତରଙ୍ଗରେ ମସ୍ତକ ଶୋଭିତ, କପାଳରେ 'ଧଗ-ଧଗ' ପ୍ରଚଣ୍ଡ ଅଗ୍ନି ପ୍ରଜ୍ଜ୍ୱଳିତ ଏବଂ ମସ୍ତକରେ ବାଳଚନ୍ଦ୍ର ବିରାଜମାନ, ସେହି ଶିବଙ୍କ ଠାରେ ମୋର ମନ ପ୍ରତିକ୍ଷଣ ନିମଗ୍ନ ରହୁ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 3,
+      "verse_type": "VERSE",
+      "original_sanskrit": "धराधरेन्द्रनन्दिनीविलासबन्धुबन्धुर-स्फुरद्दिगन्तसन्ततिप्रमोदमानमानसे ।\nकृपाकटाक्षधोरणीनिरुद्धदुर्धरापदि क्वचिद्दिगम्बरे मनो विनोदमेतु वस्तुनि ॥ ३ ॥",
+      "iast": "dharādharendranandinī-vilāsabandhubandhura-sphuraddiganta-santati-pramodamāna-mānase ।\nkṛpākaṭākṣa-dhoraṇī-niruddha-durdharāpadi kvaciddigambare mano vinodametu vastuni ॥ 3 ॥",
+      "transliterations": {
+        "telugu": "ధరాధరేన్ద్రనన్దినీవిలాసబన్ధుబన్ధుర-స్ఫురద్దిగన్తసన్తతిప్రమోదమానమానసే ।\nకృపాకటాక్షధోరణీనిరుద్ధదుర్ధరాపది క్వచిద్దిగమ్బరే మనో వినోదమేతు వస్తుని ॥ ౩ ॥",
+        "tamil": "தராதரேந்த்ரநந்திநீவிலாஸபந்துபந்துர-ஸ்புரத்திகந்தஸந்ததிப்ரமோதமாநமாநஸே ।\nக்ரு'பாகடாக்ஷதோரணீநிருத்ததுர்தராபதி க்வசித்திகம்பரே மநோ விநோதமேது வஸ்துநி ॥ ௩ ॥",
+        "kannada": "ಧರಾಧರೇನ್ದ್ರನನ್ದಿನೀವಿಲಾಸಬನ್ಧುಬನ್ಧುರ-ಸ್ಫುರದ್ದಿಗನ್ತಸನ್ತತಿಪ್ರಮೋದಮಾನಮಾನಸೇ ।\nಕೃಪಾಕಟಾಕ್ಷಧೋರಣೀನಿರುದ್ಧದುರ್ಧರಾಪದಿ ಕ್ವಚಿದ್ದಿಗಮ್ಬರೇ ಮನೋ ವಿನೋದಮೇತು ವಸ್ತುನಿ ॥ ೩ ॥",
+        "malayalam": "ധരാധരേന്ദ്രനന്ദിനീവിലാസബന്ധുബന്ധുര-സ്ഫുരദ്ദിഗന്തസന്തതിപ്രമോദമാനമാനസേ ।\nകൃപാകടാക്ഷധോരണീനിരുദ്ധദുര്ധരാപദി ക്വചിദ്ദിഗമ്ബരേ മനോ വിനോദമേതു വസ്തുനി ॥ ൩ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "May my mind find bliss in that omnipresent Lord who wears space as His garment, whose mind rejoices in the playful glances of Parvati (daughter of the King of Mountains), and whose continuous cascades of compassionate glances dispel the most insurmountable adversities.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "पर्वतराज हिमाचल की कन्या माता पार्वती के विलास से जिनका मन परम प्रसन्न रहता है, जिनकी कृपा-कटाक्ष की अविरल धारा से भक्तों के असह्य कष्ट दूर हो जाते हैं, उन दिशाओं को ही वस्त्र रूप में धारण करने वाले दिगम्बर भगवान् शिव में मेरा मन परमानन्द प्राप्त करे!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "పర్వతరాజపుత్రియైన పార్వతీదేవి సహచర్యమున సదా ఆనందించు మనస్సు కలవాడు, తన కరుణాకటాక్ష వీక్షణములచే భక్తుల దుర్భర సంకటములను పారద్రోలువాడు, దిక్కులనే వస్త్రములుగా ధరించిన ఆ దిగంబర పరమేశ్వరుని యందు నా మనస్సు పరమానందమును పొందుగాక!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இமவான் புதல்வியான பார்வதி தேவியின் அன்பினால் மனம் மகிழ்பவரும், தனது கருணை பொழியும் கடைக்கண் பார்வையால் தாங்கவொண்ணாத் துன்பங்களை விரட்டுபவரும், திசைகளையே ஆடையாய் அணிந்தவருமான அந்த திகம்பர சிவனின்பால் என் மனம் பேரானந்தம் அடையட்டும்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಪರ್ವತರಾಜನ ಪುತ್ರಿಯಾದ ಪಾರ್ವತೀದೇವಿಯ ಸಂಗದಲ್ಲಿ ಆನಂದಿಸುವ ಮನಸ್ಸುಳ್ಳ, ಕರುಣಾಪೂರ್ಣ ಕಟಾಕ್ಷದಿಂದ ಭಕ್ತರ ಅಸಹ್ಯ ಸಂಕಷ್ಟಗಳನ್ನು ಪರಿಹರಿಸುವ, ದಿಕ್ಕುಗಳನ್ನೇ ವಸ್ತ್ರವಾಗಿ ಧರಿಸಿದ ಆ ದಿಗಂಬರ ಶಿವನಲ್ಲಿ ನನ್ನ ಮನಸ್ಸು ಆನಂದವನ್ನು ಕಾಣಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "पर्वतराजकन्या पार्वतीच्या सहवासात ज्यांचे मन अत्यंत आनंदित होते, ज्यांच्या कृपादृष्टीच्या प्रवाहाने भक्तांची महासंकटे नष्ट होतात, त्या दिशांचीच वस्त्रे परिधान करणाऱ्या दिगंबर शिवामध्ये माझे मन रमून जावो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "পর্বতরাজকন্যা পার্বতীর দিব্য সান্নিধ্যে যাঁহার মন সতত প্রমোদিত, যাঁহার কৃপাকটাক্ষের অবিচ্ছিন্ন ধারায় ভক্তের দুর্বিষহ সংকট বিদূরিত হয়, সেই দিগম্বর মহেশ্বরে আমার চিত্ত পরমানন্দ লাভ করুক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "પર્વતરાજની કન્યા પાર્વતીજીના સાન્નિધ્યથી જેઓ સદા પ્રસન્નચિત્ત છે, જેમની કૃપાદૃષ્ટિના પ્રવાહથી ભક્તોનાં અસહ્ય સંકટો દૂર થાય છે, તે દિગંબર ભગવાન શિવમાં મારું મન પરમાનંદ પામે!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "പാർവ്വതീദേവിയുടെ സാമീപ്യത്താൽ സദാ സന്തോഷിക്കുന്ന മനസ്സോടുകൂടിയവനും, കാരുണ്യകടാക്ഷങ്ങളാൽ ഭക്തരുടെ കൊടിയ ദുരിതങ്ങളെ തീർക്കുന്നവനും, ദിക്കുകളെ വസ്ത്രമാക്കിയവനുമായ ആ ദിഗംബരനിൽ എന്റെ മനസ്സ് ആനന്ദം കണ്ടെത്തട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ପର୍ବତରାଜ କନ୍ୟା ପାର୍ବତୀଙ୍କ ସାନ୍ନିଧ୍ୟରେ ଯାହାଙ୍କ ମନ ସଦା ପ୍ରସନ୍ନ, ଯାହାଙ୍କ କୃପାଦୃଷ୍ଟିର ପ୍ରବାହରେ ଭକ୍ତଙ୍କ ଦୁଃସହ ସଙ୍କଟ ଦୂର ହୁଏ, ସେହି ଦିଗମ୍ବର ଶିବଙ୍କ ଠାରେ ମୋର ମନ ପରମାନନ୍ଦ ଲାଭ କରୁ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 4,
+      "verse_type": "VERSE",
+      "original_sanskrit": "जटाभुजङ्गपिङ्गलस्फुरत्फणामणिप्रभा-कदम्बकुङ्कुमद्रवप्रलिप्तदिग्वधूमुखे ।\nमदान्धसिन्धुरस्फुरत्त्वगुत्तरीयमेदुरे मनो विनोदमद्भुतं बिभर्तु भूतभर्तरि ॥ ४ ॥",
+      "iast": "jaṭābhujaṅga-piṅgala-sphuratphaṇā-maṇiprabhā-kadambakuṅkuma-dravapralipta-digvadhūmukhe ।\nmadāndha-sindhura-sphurattvag-uttarīyamedure mano vinodamadbhutaṁ bibhartu bhūtabhartari ॥ 4 ॥",
+      "transliterations": {
+        "telugu": "జటాభుజఙ్గపిఙ్గలస్ఫురత్ఫణామణిప్రభా-కదమ్బకుఙ్కుమద్రవప్రలిప్తదిగ్వధూముఖే ।\nమదాన్ధసిన్ధురస్ఫురత్త్వగుత్తరీయమేదురే మనో వినోదమద్భుతం బిభర్తు భూతభర్తరి ॥ ౪ ॥",
+        "tamil": "ஜடாபுஜங்கபிங்கலஸ்புரத்பணாமணிப்ரபா-கதம்பகுங்குமத்ரவப்ரலிப்ததிக்வதூமுகே ।\nமதாந்தஸிந்துரஸ்புரத்த்வகுத்தரீயமேதுரே மநோ விநோதமத்புதம் பிபர்து பூதபர்தரி ॥ ௪ ॥",
+        "kannada": "ಜಟಾಭುಜಙ್ಗಪಿಙ್ಗಲಸ್ಫುರತ್ಫಣಾಮಣಿಪ್ರಭಾ-ಕದಮ್ಬಕುಙ್ಕುಮದ್ರವಪ್ರಲಿಪ್ತದಿಗ್ವಧೂಮುಖೇ ।\nಮದಾನ್ಧಸಿನ್ಧುರಸ್ಫುರತ್ತ್ವಗುತ್ತರೀಯಮೇದುರೇ ಮನೋ ವಿನೋದಮದ್ಭುತಂ ಬಿಭರ್ತು ಭೂತಭರ್ತರಿ ॥ ೪ ॥",
+        "malayalam": "ജടാഭുജങ്ഗപിങ്ഗലസ്ഫുരത്ഫണാമണിപ്രഭാ-കദമ്ബകുങ്കുമദ്രവപ്രലിപ്തദിഗ്വധൂമുഖേ ।\nമദാന്ധസിന്ധുരസ്ഫുരത്ത്വഗുത്തരീയമേദുരേ മനോ വിനോദമദ്ഭുതം ബിഭര്തു ഭൂതഭര്തരി ॥ ൪ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "May my mind find wondrous delight in the Sustainer of all living beings, whose serried snakes with reddish hoods shed gem-radiance smearing the faces of the quarters like liquid saffron, and whose thick upper garment is fashioned from the skin of the intoxicated elephant.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जिनके जटाओं में लिपटे नागों के फणों की मणियों की लाल-पीली कान्ति से दिशा-रूपी वधुओं के मुख कुंकुम-रंग से रंगे प्रतीत होते हैं, और जो मदमत्त गजासुर की विशाल त्वचा का उत्तरीय वस्त्र धारण किए हुए हैं, उन समस्त प्राणियों के पालक (भूतभर्ता) शिव में मेरा मन अद्भुत आनंद प्राप्त करे!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "జటల యందలి సర్పముల రత్నకాంతులచే దిక్కులనెడు స్త్రీల ముఖములు కుంకుమ రంగుతో శోభిల్లుచుండగా, మదపుటేనుగు చర్మమును ఉత్తరీయముగా ధరించి ప్రకాశించు సమస్త భూతకోటికి ప్రభువైన ఆ పరమశివుని యందు నా మనస్సు అద్భుతానందమును పొందుగాక!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "சடைமுடியில் சுற்றியிருக்கும் பாம்புகளின் மாணிக்க மணிகளின் ஒளியினால் திசைகள் யாவும் குங்குமப்பூ குழம்பால் பூசப்பட்டது போல் விளங்க, கஜாசுரனின் தோலை மேலாடையாய் அணிந்த அனைத்து உயிர்களின் தலைவனான அந்த சிவனிடம் என் மனம் வியத்தகு ஆனந்தம் காணட்டும்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಜಟೆಯ ಸರ್ಪಗಳ ರತ್ನಕಾಂತಿಯಿಂದ ದಿಕ್ಕುಗಳೆಂಬ ವಧುಗಳ ಮುಖಗಳು ಕುಂಕುಮ ಲೇಪಿತವಾದಂತೆ ಶೋಭಿಸುತ್ತಿರಲು, ಮದ್ದಾನೆಯ ಚರ್ಮವನ್ನು ಹೊದಿಕೆಯಾಗಿ ಧರಿಸಿದ ಸಕಲ ಜೀವರಾಶಿಗಳ ಒಡೆಯನಾದ ಆ ಶಿವನಲ್ಲಿ ನನ್ನ ಮನಸ್ಸು ಅದ್ಭುತ ಆನಂದವನ್ನು ಪಡೆಯಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "ज्यांच्या जटांमधील सर्पांच्या मण्यांच्या लालसर तेजाने दिशांचे मुख कुंकवाने माखल्यासारखे दिसते, आणि ज्यांनी उन्मत्त हत्तीचे कातडे पांघरले आहे, त्या सर्व भूतांच्या पालक शिवामध्ये माझे मन असीम आनंद पावो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যাঁহার জটাবেষ্টিত সর্পসমূহের ফণামণির উজ্জ্বল প্রভায় দিকবধুগণের মুখমণ্ডল কুমকুমের দ্বারা চর্চিত বলিয়া প্রতিভাত হয় এবং যিনি মত্ত গজের চর্মের উত্তরীয় ধারণ করিয়াছেন, নিখিল জীবের পালক সেই ভূতনাথে আমার চিত্ত আনন্দ লাভ করুক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જેમની જટાના સર્પોની મણિઓના તેજથી દિશારૂપી કન્યાઓનાં મુખ કંકુવર્ણાં શોભે છે અને જેમણે ગજચર્મનું ઉત્તરીય ધારણ કર્યું છે, તે સર્વ જીવોના પાલક ભૂતભાવાન શિવમાં મારું મન અદ્ભુત આનંદ અનુભવે!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ജടയിലെ പാമ്പുകളുടെ മാണിക്യകാന്തിയേറ്റു ദിക്കുകളാകുന്ന വധുമാരുടെ മുഖങ്ങൾ കുങ്കുമമണിഞ്ഞതുപോലെ തിളങ്ങുമ്പോൾ, ആനത്തോലുടുത്തു വിളങ്ങുന്ന സർവ്വഭൂതങ്ങളുടെയും നാഥനായ ആ പരമശിവനിൽ എന്റെ മനസ്സ് ആനന്ദിക്കട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯାହାଙ୍କ ଜଟାରେ ସର୍ପମଣିର ତେଜରେ ଦିଗବଧୂମାନଙ୍କ ମୁଖ କୁଙ୍କୁମ ରଙ୍ଗରେ ରଙ୍ଗିନ ଦେଖାଯାଏ, ଏବଂ ଯିଏ ଗଜଚର୍ମର ଉତ୍ତରୀୟ ଧାରଣ କରିଛନ୍ତି, ସମସ୍ତ ପ୍ରାଣୀଙ୍କ ପାଳକ ସେହି ଭୂତଭର୍ତ୍ତା ଶିବଙ୍କ ଠାରେ ମୋର ମନ ଅଦ୍ଭୁତ ଆନନ୍ଦ ପାଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 5,
+      "verse_type": "VERSE",
+      "original_sanskrit": "सहस्रलोचनप्रभृत्यशेषलेखशेखर-प्रसूनधूलिधोरणीविधूसराङ्घ्रिपीठभूः ।\nभुजङ्गराजमालया निबद्धजाटजूटकः श्रियै चिराय जायतां चकोरबन्धुशेखरः ॥ ५ ॥",
+      "iast": "sahasralōcanaprabhṛtyaśēṣalēkhaśēkhara-prasūnadhūlidhōraṇīvidhūsarāṅghripīṭhabhūḥ ।\nbhujaṅgarājamālayā nibaddhajāṭajūṭakaḥ śriyai cirāya jāyatāṁ cakōrabandhuśēkharaḥ ॥ 5 ॥",
+      "transliterations": {
+        "telugu": "సహస్రలోచనప్రభృత్యశేషలేఖశేఖర-ప్రసూనధూలిధోరణీవిధూసరాఙ్ఘ్రిపీఠభూః ।\nభుజఙ్గరాజమాలయా నిబద్ధజాటజూటకః శ్రియై చిరాయ జాయతాం చకోరబన్ధుశేఖరః ॥ ౫ ॥",
+        "tamil": "ஸஹஸ்ரலோசநப்ரப்ரு'த்யஶேஷலேகஶேகர-ப்ரஸூநதூலிதோரணீவிதூஸராங்க்ரிபீடபூஃ ।\nபுஜங்கராஜமாலயா நிபத்தஜாடஜூடகஃ ஶ்ரியை சிராய ஜாயதாம் சகோரபந்துஶேகரஃ ॥ ௫ ॥",
+        "kannada": "ಸಹಸ್ರಲೋಚನಪ್ರಭೃತ್ಯಶೇಷಲೇಖಶೇಖರ-ಪ್ರಸೂನಧೂಲಿಧೋರಣೀವಿಧೂಸರಾಙ್ಘ್ರಿಪೀಠಭೂಃ ।\nಭುಜಙ್ಗರಾಜಮಾಲಯಾ ನಿಬದ್ಧಜಾಟಜೂಟಕಃ ಶ್ರಿಯೈ ಚಿರಾಯ ಜಾಯತಾಂ ಚಕೋರಬನ್ಧುಶೇಖರಃ ॥ ೫ ॥",
+        "malayalam": "സഹസ്രലോചനപ്രഭൃത്യശേഷലേഖശേഖര-പ്രസൂനധൂലിധോരണീവിധൂസരാങ്ഘ്രിപീഠഭൂഃ ।\nഭുജങ്ഗരാജമാലയാ നിബദ്ധജാടജൂടകഃ ശ്രിയൈ ചിരായ ജായതാം ചകോരബന്ധുശേഖരഃ ॥ ൫ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "May that Lord whose footstool is made grey by the dense pollen falling from the garlanded diadems of all gods including thousand-eyed Indra, whose matted locks are bound by the serpent king, and who wears the moon (kin of the chakora bird) as his crest, bestow enduring auspiciousness upon us.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "इन्द्र आदि समस्त देवताओं के मुकुटों में सजी पुष्पमालाओं के परागकणों से जिनके चरण-कमलों का पीठ धूसरित हो जाता है, जिन्होंने नागराज की माला से अपनी जटाओं को बांध रखा है और मस्तक पर चकोर-सखा चन्द्रमा को धारण किया है, वे भगवान् शिव हमें चिरस्थायी ऐश्वर्य और कल्याण प्रदान करें!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఇంద్రాది దేవతల కిరీటముల యందలి దివ్య పుష్పముల పరాగముచే ధూసరమైన పాదపీఠము కలవాడు, నాగరాజు హారముతో జటలను బంధించినవాడు, చంద్రుని శిరస్సున ధరించిన ఆ పరమేశ్వరుడు మనకు చిరకాల సంపదలను, శ్రేయస్సును అనుగ్రహించుగాక!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இந்திரன் முதலான தேவர்களின் முடிகளிலுள்ள மலர்களின் மகரந்தப் பொடிகளால் பாதபீடம் சூழப்பட்டவரும், நாகராஜனின் மாலையால் சடைகளை இறுகக் கட்டியவரும், சந்திரன் சூடியவருமான அந்த சிவபெருமான் நமக்கு என்றென்றும் அழியாத மங்கலச் செல்வத்தை அருளட்டும்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಇಂದ್ರನೇ ಮೊದಲಾದ ಸಮಸ್ತ ದೇವತೆಗಳ ಕಿರೀಟಗಳ ಪುಷ್ಪಪರಾಗದಿಂದ ಧೂಸರಿತವಾದ ಪಾದಪೀಠವುಳ್ಳ, ಸರ್ಪರಾಜ ಮಾಲೆಯಿಂದ ಜಟೆಯನ್ನು ಕಟ್ಟಿಕೊಂಡಿರುವ, ಚಂದ್ರಮೌಳಿಯಾದ ಆ ಪರಮಶಿವನು ನಮಗೆ ಶಾಶ್ವತ ಸಕಲ ಸಮೃದ್ಧಿಯನ್ನು ದಯಪಾಲಿಸಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "इंद्र इत्यादी सर्व देवांच्या मुकुटांवरील फुलांच्या परागाने ज्यांचे पाय धूसर झाले आहेत, ज्यांनी नागराजाच्या माळेने आपल्या जटा बांधल्या आहेत आणि मस्तकावर चंद्राला धारण केले आहे, ते शिव आम्हांला चिरंतन समृद्धी देवोत!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "ইন্দ্রাদি সমস্ত দেবগণের মুকুটের পুষ্পরেণু দ্বারা যাঁহার পাদপীঠ ধূসরিত, নাগরাজের মালায় যাঁহার জটাজুট আবদ্ধ এবং মস্তকে চকোরসখা চন্দ্র শোভিত, সেই শঙ্কর আমাদিগকে চিরস্থায়ী পরম ঐশ্বর্য দান করুন!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "ઇન્દ્રાદિ સર્વ દેવોના મુકુટોનાં પુષ્પોના પરાગથી જેમના ચરણપીઠ રજવાળાં બને છે, નાગરાજની માળાથી જટા બાંધી છે અને મસ્તક પર ચંદ્ર ધારણ કર્યો છે, તે સદાશિવ આપણને ચિરંતન કલ્યાણ અને ઐશ્વર્ય આપે!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഇന്ദ്രൻ തുടങ്ങിയ ദേവന്മാരുടെ കിരീടങ്ങളിലെ പൂമ്പൊടികളാൽ പാദപീഠം മൂടപ്പെട്ടവനും, സർപ്പരാജമാലയാൽ ജട ബന്ധിച്ചവനും, ചന്ദ്രനെ ചൂടിയവനുമായ ആ പരമേശ്വരൻ നമുക്ക് ശാശ്വതമായ ഐശ്വര്യം നൽകട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଇନ୍ଦ୍ରାଦି ସମସ୍ତ ଦେବତାଙ୍କ ମୁକୁଟର ପୁଷ୍ପପରାଗରେ ଯାହାଙ୍କ ପାଦପୀଠ ଧୂସରିତ, ନାଗରାଜଙ୍କ ମାଳାରେ ଜଟା ଆବଦ୍ଧ ଏବଂ ମସ୍ତକରେ ଚନ୍ଦ୍ର ଶୋଭିତ, ସେହି ଶିବ ଆମକୁ ଚିରନ୍ତନ ଐଶ୍ୱର୍ଯ୍ୟ ଓ ମଙ୍ଗଳ ପ୍ରଦାନ କରନ୍ତୁ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 6,
+      "verse_type": "VERSE",
+      "original_sanskrit": "ललाटचत्वरज्वलद्धनञ्जयस्फुलिङ्गभा-निपीतपञ्चसायकं नमन्निलिम्पनायकम् ।\nसुधामयूखलेखया विराजमानशेखरं महाकपालिसम्पदे शिरोजटालमस्तु नः ॥ ६ ॥",
+      "iast": "lalāṭacatvarajvaladdhanañjayasphuliṅgabhā-nipīpapañcasāyakaṁ namannilimpanāyakam ।\nsudhāmayūkhalēkhayā virājamānaśēkharaṁ mahākapālisampadē śirōjaṭālamastu naḥ ॥ 6 ॥",
+      "transliterations": {
+        "telugu": "లలాటచత్వరజ్వలద్ధనఞ్జయస్ఫులిఙ్గభా-నిపీతపఞ్చసాయకం నమన్నిలిమ్పనాయకమ్ ।\nసుధామయూఖలేఖయా విరాజమానశేఖరం మహాకపాలిసమ్పదే శిరోజటాలమస్తు నః ॥ ౬ ॥",
+        "tamil": "லலாடசத்வரஜ்வலத்தநஞ்ஜயஸ்புலிங்கபா-நிபீதபஞ்சஸாயகம் நமந்நிலிம்பநாயகம் ।\nஸுதாமயூகலேகயா விராஜமாநஶேகரம் மஹாகபாலிஸம்பதே ஶிரோஜடாலமஸ்து நஃ ॥ ௬ ॥",
+        "kannada": "ಲಲಾಟಚತ್ವರಜ್ವಲದ್ಧನಞ್ಜಯಸ್ಫುಲಿಙ್ಗಭಾ-ನಿಪೀತಪಞ್ಚಸಾಯಕಂ ನಮನ್ನಿಲಿಮ್ಪನಾಯಕಮ್ ।\nಸುಧಾಮಯೂಖಲೇಖಯಾ ವಿರಾಜಮಾನಶೇಖರಂ ಮಹಾಕಪಾಲಿಸಮ್ಪದೇ ಶಿರೋಜಟಾಲಮಸ್ತು ನಃ ॥ ೬ ॥",
+        "malayalam": "ലലാടചത്വരജ്വലദ്ധനഞ്ജയസ്ഫുലിങ്ഗഭാ-നിപീതപഞ്ചസായകം നമന്നിലിമ്പനായകമ് ।\nസുധാമയൂഖലേഖയാ വിരാജമാനശേഖരം മഹാകപാലിസമ്പദേ ശിരോജടാലമസ്തു നഃ ॥ ൬ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "May the matted hair of that Great Bearer of the Skull yield spiritual wealth unto us—He who consumed Kamadeva (the god with five arrows) in the sparks of the fire blazing upon the courtyard of His forehead, who is bowed down to by the rulers of the gods, and whose head is adorned by the streak of the nectar-beamed moon.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जिन्होंने अपने ललाट-प्रांगण में प्रज्वलित अग्नि के स्फुलिंगों से कामदेव (पंचबाण) को भस्म कर दिया, जिन्हें देवराज इन्द्र शीश नवाते हैं, और जिनका मस्तक अमृत-किरण चन्द्रकला से दैदीप्यमान है, उन महाकपाली भगवान् शिव की जटाएँ हमें परम ऐश्वर्य और सिद्धि प्रदान करें!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "లలాట రంగస్థలమున మండుచున్న అగ్నికణములచే మన్మథుని భస్మమొనర్చినవాడు, దేవేంద్రునిచే నమస్కరింపబడువాడు, అమృత కిరణములు చిమ్ము చంద్రరేఖతో శోభిల్లు శిరస్సు కలవాడైన ఆ మహాకపాలియొక్క జటాజూటము మనకు సమస్త సంపదలను సమకూర్చుగాక!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "நெற்றி மேடையில் கொழுந்துவிட்டு எரியும் நெருப்புப் பொறிகளால் மன்மதனை எரித்துச் சாம்பலாக்கியவரும், இந்திரனால் வணங்கப்படுபவரும், அமுதக் கிரணங்களைப் பொழியும் சந்திரனைச் சூடியவருமான அந்த மஹாகபாலியின் திருச்சடைகள் நமக்கு மேலான செல்வத்தை வழங்கட்டும்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಹಣೆಯ ರಂಗದಲ್ಲಿ ಉರಿಯುವ ಅಗ್ನಿ ಕಿಡಿಗಳಿಂದ ಕಾಮದೇವನನ್ನು ಸುಟ್ಟುಹಾಕಿದ, ದೇವೇಂದ್ರನಿಂದ ವಂದಿಸಲ್ಪಡುವ, ಅಮೃತಕಿರಣದ ಚಂದ್ರನಿಂದ ಬೆಳಗುವ ಆ ಮಹಾಕಪಾಲಿಯ ಜಟೆಗಳು ನಮಗೆ ಪರಮ ಐಶ್ವರ್ಯವನ್ನು ನೀಡಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "ज्यांनी आपल्या कपाळावरील अग्नीच्या ठिणग्यांनी कामदेवाला भस्म केले, ज्यांना देवराज इंद्र नमन करतो आणि ज्यांच्या मस्तकावर अमृतकिरणांचा चंद्र विराजतो, त्या महाकपाली शंकराच्या जटा आम्हांला परम कल्याण देवोत!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যিনি ললাটঅগ্নিস্ফুলিঙ্গে পঞ্চবাণ কামদেবকে ভস্মীভূত করিয়াছিলেন, দেবরাজ ইন্দ্র যাঁহাকে প্রণাম করেন এবং অমৃতরশ্মি চন্দ্ররেখা যাঁহার চূড়ায় ভাস্বর, সেই মহাকপালীর জটাজুট আমাদিগকে পরম সমৃদ্ধি প্রদান করুক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જેમણે પોતાના લલાટની અગ્નિની ચિનગારીઓથી કામદેવને ભસ્મ કર્યો, ઇન્દ્ર જેમને પ્રણામ કરે છે અને જેમના મસ્તક પર અમૃતમયી ચંદ્રકળા શોભે છે, તે મહાકપાલી શિવની જટા આપણને પરમ ઐશ્વર્ય આપે!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "നെറ്റിയിലെ അഗ്നിസ്ഫുലിംഗങ്ങളാൽ കാമദേവനെ ഭസ്മമാക്കിയവനും, ഇന്ദ്രനാൽ വന്ദിക്കപ്പെടുന്നവനും, അമൃതകിരണങ്ങൾ ചൊരിയുന്ന ചന്ദ്രനെ ചൂടിയവനുമായ ആ മഹാകപാലിയുടെ ജട നമുക്ക് സർവ്വ ഐശ്വര്യങ്ങളും പ്രധാനം ചെയ്യട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯିଏ ନିଜ କପାଳର ଅଗ୍ନି ଶିଖାରେ କାମଦେବଙ୍କୁ ଭସ୍ମ କରିଦେଲେ, ଇନ୍ଦ୍ର ଯାହାଙ୍କୁ ପ୍ରଣାମ କରନ୍ତି ଏବଂ ଯାହାଙ୍କ ମସ୍ତକରେ ଅମୃତକିରଣ ଚନ୍ଦ୍ର ଶୋଭିତ, ସେହି ମହାକପାଳୀ ଶିବଙ୍କ ଜଟା ଆମକୁ ପରମ ସମୃଦ୍ଧି ପ୍ରଦାନ କରୁ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 7,
+      "verse_type": "VERSE",
+      "original_sanskrit": "करालभालपट्टिकाधगद्धगद्धगज्ज्वल-द्धनञ्जयाहुतीकृतप्रचण्डपञ्चसायके ।\nधराधरेन्द्रनन्दिनीकुचाग्रचित्रपत्रक-प्रकल्पनैकशिल्पिनि त्रिलोचने रतिर्मम ॥ ७ ॥",
+      "iast": "karālabhālapaṭṭikādhagaddhagaddhagajjvala-ddhanañjayāhutīkṛtapracaṇḍapañcasāyakē ।\ndharādharendranandinīkucāgracitrapatraka-prakalpanaikaśilpini trilōcanē ratirmama ॥ 7 ॥",
+      "transliterations": {
+        "telugu": "కరాలభాలపట్టికాధగద్ధగద్ధగజ్జ్వల-ద్ధనఞ్జయాహుతీకృతప్రచణ్డపఞ్చసాయకే ।\nధరాధరేన్ద్రనన్దినీకుచాగ్రచిత్రపత్రక-ప్రకల్పనైకశిల్పిని త్రిలోచనే రతిర్మమ ॥ ౭ ॥",
+        "tamil": "கராலபாலபட்டிகாதகத்தகத்தகஜ்ஜ்வல-த்தநஞ்ஜயாஹுதீக்ரு'தப்ரசண்டபஞ்சஸாயகே ।\nதராதரேந்த்ரநந்திநீகுசாக்ரசித்ரபத்ரக-ப்ரகல்பநைகஶில்பிநி த்ரிலோசநே ரதிர்மம ॥ ௭ ॥",
+        "kannada": "ಕರಾಲಭಾಲಪಟ್ಟಿಕಾಧಗದ್ಧಗದ್ಧಗಜ್ಜ್ವಲ-ದ್ಧನಞ್ಜಯಾಹುತೀಕೃತಪ್ರಚಣ್ಡಪಞ್ಚಸಾಯಕೇ ।\nಧರಾಧರೇನ್ದ್ರನನ್ದಿನೀಕುಚಾಗ್ರಚಿತ್ರಪತ್ರಕ-ಪ್ರಕಲ್ಪನೈಕಶಿಲ್ಪಿನಿ ತ್ರಿಲೋಚನೇ ರತಿರ್ಮಮ ॥ ೭ ॥",
+        "malayalam": "കരാലഭാലപട്ടികാധഗദ്ധഗദ്ധഗജ്ജ്വല-ദ്ധനഞ്ജയാഹുതീകൃതപ്രചണ്ഡപഞ്ചസായകേ ।\nധരാധരേന്ദ്രനന്ദിനീകുചാഗ്രചിത്രപത്രക-പ്രകല്പനൈകശില്പിനി ത്രിലോചനേ രതിര്മമ ॥ ൭ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "May my constant devotion be in the Three-Eyed Lord, who offered the fierce god of love as an oblation into the blazing fire flashing 'dhagad-dhagad-dhagad' across His terrible forehead, and who is the sole artist drawing decorative designs upon the bosom of Parvati, daughter of the mountain king.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जिन्होंने अपने विकराल ललाट पर 'धग-धग' जलती हुई अग्नि में प्रचण्ड कामदेव को आहुति बना दिया, और जो पर्वतराज-पुत्री पार्वती के वक्षःस्थल पर भक्ति-शृंगार की चित्र-रचना करने वाले अद्वितीय शिल्पी हैं, उन त्रिनेत्रधारी भगवान् शिव में मेरा अनन्य प्रेम सदा बना रहे!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "భీకరమైన నుదుటియందు 'ధగ-ధగ'యని మండుచున్న అగ్నియందు మన్మథుని ఆహుతిగా హోమము చేసినవాడు, పర్వతరాజపుత్రి పార్వతికి అలంకార రచనలు చేయు అద్వితీయ దివ్య శిల్పియైన ఆ త్రినేత్రుని యందు నా హృదయపూర్వక భక్తి స్థిరపడుగాక!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "நெற்றியில் 'தக-தக'வெனப் பற்றி எரியும் நெருப்பில் காமனை ஆகுதியாய் ஆக்கியவரும், மலைமகளான பார்வதி தேவிக்கு ஒப்பனைகள் செய்யும் ஒப்புயர்வற்ற கலைஞருமான அந்த முக்கண்ணனிடம் என் பக்தி என்றும் நிலைத்திருக்கட்டும்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ತಮ್ಮ ವಿಶಾಲ ಹಣೆಯಲ್ಲಿ 'ಧಗ-ಧಗ' ಎಂದು ಉರಿಯುವ ಅಗ್ನಿಯಲ್ಲಿ ಕಾಮದೇವನನ್ನು ಆಹುತಿಯನ್ನಾಗಿ ಮಾಡಿದ, ಗಿರಿರಾಜಪುತ್ರಿ ಪಾರ್ವತಿಗೆ ಶೃಂಗಾರ ರಚಿಸುವ ಅದ್ವಿತೀಯ ಕಲಾವಿದನಾದ ಆ ಮುಕ್ಕಣ್ಣ ಶಿವನಲ್ಲಿ ನನ್ನ ಪ್ರೇಮವು ಸದಾ ನೆಲೆಸಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "ज्यांनी आपल्या विशाल कपाळावर 'धग-धग' जळणाऱ्या अग्नीमध्ये कामदेवाला आहुती बनवले, आणि जे गिरिराजकन्या पार्वतीला शृंगारित करणारे अद्वितीय कलाकार आहेत, त्या त्रिनेत्र शंकरामध्ये माझे प्रेम सदैव राहो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যাঁহার ভীষণ ললাটপটে 'ধক-ধক' জ্বলন্ত অনলে কামদেবকে আহুতি করা হইয়াছিল, এবং যিনি গিরিরাজতনয়া পার্বতীর অঙ্গরাগরচনার একমাত্র দিব্য শিল্পী, সেই ত্রিনেত্র মহাদেবে আমার অচলা প্রীতি বিরাজ করুক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જેમણે પોતાના વિશાળ લલાટ પર 'ધગ-ધગ' બળતી અગ્નિમાં કામદેવની આહુતિ આપી દીધી અને જે પાર્વતીજીના શૃંગારના અદ્વિતીય કલાકાર છે, તે ત્રિનેત્ર શિવમાં મારો પ્રેમ સદાય રહે!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "നെറ്റിത്തടത്തിൽ 'ധഗ-ധഗ'യെന്നു കത്തിയ അഗ്നിയിൽ കാമദേവനെ ഹോമിച്ചവനും, പാർവ്വതീദേവിയെ അലങ്കരിക്കുന്ന ദിവ്യശില്പിയുമായ ആ ത്രിനേത്രനിൽ എന്റെ സ്നേഹം സദാ നിലനിൽക്കട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯିଏ ନିଜ କରାଳ କପାଳରେ 'ଧଗ-ଧଗ' ଜଳୁଥିବା ଅଗ୍ନିରେ କାମଦେବଙ୍କୁ ଆହୁତି ଦେଲେ ଏବଂ ପାର୍ବତୀଙ୍କ ଅଙ୍ଗରାଗର ଅଦ୍ୱିତୀୟ ଶିଳ୍ପୀ ଅଟନ୍ତି, ସେହି ତ୍ରିନେତ୍ର ଶିବଙ୍କ ଠାରେ ମୋର ଭକ୍ତି ସର୍ବଦା ରହୁ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 8,
+      "verse_type": "VERSE",
+      "original_sanskrit": "नवीनमेघमण्डलीनिरुद्धदुर्धरस्फुरत्-कुहूनिशीथिनीतमःप्रबन्धबद्धकन्धरः ।\nनिलिम्पनिर्झरीधरस्तनोतु कृत्तिसिन्धुरः कलानिधानबन्धुरः श्रियं जगद्धुरन्धरः ॥ ८ ॥",
+      "iast": "navīnamēghamaṇḍalīniruddhadurdharasphurat-kuhūnīśīthinītamaḥprabandhabaddhakandharaḥ ।\nnilimpanirjharīdharastanōtu kṛttisindhuraḥ kalānidhānabandhuraḥ śriyaṁ jagaddhurandharaḥ ॥ 8 ॥",
+      "transliterations": {
+        "telugu": "నవీనమేఘమణ్డలీనిరుద్ధదుర్ధరస్ఫురత్-కుహూనిశీథినీతమఃప్రబన్ధబద్ధకన్ధరః ।\nనిలిమ్పనిర్ఝరీధరస్తనోతు కృత్తిసిన్ధురః కలానిధానబన్ధురః శ్రియం జగద్ధురన్ధరః ॥ ౮ ॥",
+        "tamil": "நவீநமேகமண்டலீநிருத்ததுர்தரஸ்புரத்-குஹூநிஶீதிநீதமஃப்ரபந்தபத்தகந்தரஃ ।\nநிலிம்பநிர்சரீதரஸ்தநோது க்ரு'த்திஸிந்துரஃ கலாநிதாநபந்துரஃ ஶ்ரியம் ஜகத்துரந்தரஃ ॥ ௮ ॥",
+        "kannada": "ನವೀನಮೇಘಮಣ್ಡಲೀನಿರುದ್ಧದುರ್ಧರಸ್ಫುರತ್-ಕುಹೂನಿಶೀಥಿನೀತಮಃಪ್ರಬನ್ಧಬದ್ಧಕನ್ಧರಃ ।\nನಿಲಿಮ್ಪನಿರ್ಝರೀಧರಸ್ತನೋತು ಕೃತ್ತಿಸಿನ್ಧುರಃ ಕಲಾನಿಧಾನಬನ್ಧುರಃ ಶ್ರಿಯಂ ಜಗದ್ಧುರನ್ಧರಃ ॥ ೮ ॥",
+        "malayalam": "നവീനമേഘമണ്ഡലീനിരുദ്ധദുര്ധരസ്ഫുരത്-കുഹൂനിശീഥിനീതമഃപ്രബന്ധബദ്ധകന്ധരഃ ।\nനിലിമ്പനിര്ഝരീധരസ്തനോതു കൃത്തിസിന്ധുരഃ കലാനിധാനബന്ധുരഃ ശ്രിയം ജഗദ്ധുരന്ധരഃ ॥ ൮ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "May that Bearer of the burden of the universe grant prosperity unto us—He whose throat has the deep darkness of a new moon midnight veiled by fresh rain-clouds, who holds the celestial river, wears elephant hide, and is adorned by the moon, the repository of all divine arts.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "नवीन मेघमालाओं से घिरी अमावस्या की अर्धरात्रि के गहन अंधकार के समान जिनका कंठ-प्रदेश श्यामवर्ण (नीलकंठ) है, जो देवनदी गंगा को धारण करते हैं, गजासुर का चर्म पहने हैं, चन्द्रकला से सुशोभित हैं और जो सम्पूर्ण जगत् के भार को वहन करने वाले हैं, वे भगवान् शिव हमारा कल्याण विस्तार करें!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "క్రొత్త మేఘములతో కప్పబడిన అమావాస్య అర్ధరాత్రి చీకటి వలె నల్లనైన కంఠము కలవాడు, గంగాధరుడు, ఏనుగు చర్మమును ధరించినవాడు, చంద్రకళా శోభితుడు, ఈ విశ్వభారమునంతటినీ వహించు ఆ పరమేశ్వరుడు మనకు శుభములను చేకూర్చుగాక!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "கார்மேகங்கள் சூழ்ந்த அமாவாசை நள்ளிரவின் இருளைப் போல் கருமை நிறைந்த நீலகண்டத்தை உடையவரும், கங்கையைத் தாங்கியவரும், யானைத் தோலை உடுத்தியவரும், பிறைமதி அணிந்தவரும், உலக பாரத்தைச் சுமப்பவருமான அந்த ஈசன் நமக்கு நலன்களை அருளட்டும்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಹೊಸ ಮೋಡಗಳಿಂದ ಆವೃತವಾದ ಅಮಾವಾಸ್ಯೆಯ ಮಧ್ಯರಾತ್ರಿಯ ಕತ್ತಲೆಯಂತೆ ಕಪ್ಪಾದ ಕಂಠವುಳ್ಳ (ನೀಲಕಂಠ), ಗಂಗಾಧರನೂ, ಆನೆಯ ಚರ್ಮವನ್ನು ಹೊದ್ದವನೂ, ಚಂದ್ರಕಲೆಯಿಂದ ಸುಂದರನಾದ, ವಿಶ್ವದ ಭಾರವನ್ನು ಹೊರುವ ಆ ಶಿವನು ನಮಗೆ ಸಕಲ ಸೌಭಾಗ್ಯಗಳನ್ನು ನೀಡಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "नवीन मेघांनी वेढलेल्या अमावस्येच्या रात्रीच्या अंधकाराप्रमाणे ज्यांचा कंठ सावळा (नीलकंठ) आहे, जे गंगेला धारण करतात, हत्तीचे चर्म पांघरतात, चंद्राने सुशोभित आहेत आणि विश्वाचा भार वाहतात, ते शिव आमचे कल्याण करोत!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "নবমেঘমালায় সমাচ্ছন্ন অমাবস্যার নিশীথতমিস্রার ন্যায় যাঁহার কণ্ঠদেশ শ্যামলবর্ণ (নীলকণ্ঠ), যিনি সুরধুনী গঙ্গাধারী, গজচর্মপরিধায়ী, চন্দ্রকলাভূষিত এবং নিখিল জগতের ভারবাহী, সেই ভগবান শঙ্কর আমাদের সমৃদ্ধি বিস্তার করুন!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "નવાં વાદળોથી ઘેરાયેલી અમાસની મધ્યરાત્રિના અંધકાર જેવો જેમના કંઠ શ્યામ છે (નીલકંઠ), જેઓ ગંગાજીને ધરે છે, ગજચર્મ ઓઢે છે અને જગતનો ભાર વહન કરે છે, તે શિવ અમારું કલ્યાણ કરે!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "കാർമേഘങ്ങൾ മൂടിയ അമാവാസി അർദ്ധരാത്രിയിലെ ഇരുട്ടുപോലെ കറുത്ത കണ്ഠമുള്ളവനും (നീലകണ്ഠൻ), ഗംഗയെ ചൂടിയവനും, ആനത്തോലുടുത്തവനും, ചന്ദ്രക്കലയാൽ മനോഹരനും, പ്രപഞ്ചഭാരം താങ്ങുന്നവനുമായ ആ പരമേശ്വരൻ നമുക്ക് ഐശ്വര്യം പകരട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ନୂଆ ମେଘରେ ଆଚ୍ଛାଦିତ ଅମାବାସ୍ୟାର ଗଭୀର ଅନ୍ଧକାର ଭଳି ଯାହାଙ୍କ କଣ୍ଠ କୃଷ୍ଣବର୍ଣ୍ଣ (ନୀଳକଣ୍ଠ), ଯିଏ ଗଙ୍ଗାଧର, ଗଜଚର୍ମ ପରିଧାୟୀ, ଚନ୍ଦ୍ରକଳା ବିଭୂଷିତ ଓ ଜଗତର ଭାରବାହୀ, ସେହି ଶିବ ଆମର କଲ୍ୟାଣ କରନ୍ତୁ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 9,
+      "verse_type": "VERSE",
+      "original_sanskrit": "प्रफुल्लनीलपङ्कजप्रपञ्चकालिमप्रभा-वलम्बिकण्ठकन्दलीरुचिप्रबद्धकन्धरम् ।\nस्मरच्छिदं पुरच्छिदं भवच्छिदं मखच्छिदं गजच्छिदान्धकच्छिदं तमन्तकच्छिदं भजे ॥ ९ ॥",
+      "iast": "praphullanīlapaṅkajaprapañcakālimaprabhā-valambikaṇṭhakandalīruciprabaddhakandharam ।\nsmaracchidaṁ puracchidaṁ bhavacchidaṁ makhacchidaṁ gajacchidāndhakacchidaṁ tamantakacchidaṁ bhajē ॥ 9 ॥",
+      "transliterations": {
+        "telugu": "ప్రఫుల్లనీలపఙ్కజప్రపఞ్చకాలిమప్రభా-వలమ్బికణ్ఠకన్దలీరుచిప్రబద్ధకన్ధరమ్ ।\nస్మరచ్ఛిదం పురచ్ఛిదం భవచ్ఛిదం మఖచ్ఛిదం గజచ్ఛిదాన్ధకచ్ఛిదం తమన్తకచ్ఛిదం భజే ॥ ౯ ॥",
+        "tamil": "ப்ரபுல்லநீலபங்கஜப்ரபஞ்சகாலிமப்ரபா-வலம்பிகண்டகந்தலீருசிப்ரபத்தகந்தரம் ।\nஸ்மரச்சிதம் புரச்சிதம் பவச்சிதம் மகச்சிதம் கஜச்சிதாந்தகச்சிதம் தமந்தகச்சிதம் பஜே ॥ ௯ ॥",
+        "kannada": "ಪ್ರಫುಲ್ಲನೀಲಪಙ್ಕಜಪ್ರಪಞ್ಚಕಾಲಿಮಪ್ರಭಾ-ವಲಮ್ಬಿಕಣ್ಠಕನ್ದಲೀರುಚಿಪ್ರಬದ್ಧಕನ್ಧರಮ್ ।\nಸ್ಮರಚ್ಛಿದಂ ಪುರಚ್ಛಿದಂ ಭವಚ್ಛಿದಂ ಮಖಚ್ಛಿದಂ ಗಜಚ್ಛಿದಾನ್ಧಕಚ್ಛಿದಂ ತಮನ್ತಕಚ್ಛಿದಂ ಭಜೇ ॥ ೯ ॥",
+        "malayalam": "പ്രഫുല്ലനീലപങ്കജപ്രപഞ്ചകാലിമപ്രഭാ-വലമ്ബികണ്ഠകന്ദലീരുചിപ്രബദ്ധകന്ധരമ് ।\nസ്മരച്ഛിദം പുരച്ഛിദം ഭവച്ഛിദം മഖച്ഛിദം ഗജച്ഛിദാന്ധകച്ഛിദം തമന്തകച്ഛിദം ഭജേ ॥ ൯ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "I worship Him who severed the pride of Kama, destroyed the Three Cities of Tripura, broke worldly bondage, destroyed Daksha's sacrifice, slew the demon Gajasura and Andhaka, and conquered the God of Death (Yama)—He whose throat reflects the lustrous blackness of an open blue lotus.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "खिले हुए नीलकमल की श्याम कान्ति को भी मात देने वाले सुन्दर कंठ वाले, जिन्होंने कामदेव, त्रिपुरासुर, संसार-बंधन, दक्ष-यज्ञ, गजासुर, अंधकासुर और स्वयं मृत्यु के देवता यमराज का भी संहार किया, उन परमेश्वर शिव का मैं नित्य भजन करता हूँ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "వికసించిన నల్లకలువ కాంతిని పోలిన శ్యామల వర్ణపు కంఠము గలవాడు; కాముని, త్రిపురాసురులను, సంసార బంధములను, దక్ష యజ్ఞమును, గజాసురుని, అంధకాసురుని మరియు యముని సైతము సంహరించిన ఆ పరమశివుని నేను సదా భజించుచున్నాను!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "மலர்ந்த நீலோற்பல மலரின் நீல நிறத்தை மிஞ்சும் திருக்கழுத்தைக் கொண்டவரும், காமதேவன், திரிபுராசுரர்கள், பிறவித் துயர்கள், தக்ஷ யாகம், கஜாசுரன், அந்தகாசுரன், எமதர்மன் ஆகிய அனைவரையும் அழித்தவருமான அந்த சிவனை நான் தொழுகிறேன்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಅರಳಿದ ನೀಲಕಮಲದ ಕಪ್ಪು ಕಾಂತಿಯನ್ನೂ ಮೀರಿಸುವ ಸುಂದರ ಕಂಠವುಳ್ಳ, ಕಾಮದೇವ, ತ್ರಿಪುರಾಸುರ, ಸಂಸಾರ ಬಂಧನ, ದಕ್ಷಯಜ್ಞ, ಗಜಾಸುರ, ಅಂಧಕಾಸುರ ಮತ್ತು ಯಮರಾಜನನ್ನೇ ಜಯಿಸಿದ ಆ ಪರಮಶಿವನನ್ನು ನಾನು ಭಜಿಸುತ್ತೇನೆ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "उमललेल्या नीलकमलाच्या श्यामल प्रभेलाही लाजवणाऱ्या सुंदर कंठ असणाऱ्या; कामदेव, त्रिपुरासुर, संसारबंधन, दक्षयज्ञ, गजासूर, अंधकासूर आणि खुद्द यमराजाचाही नाश करणाऱ्या त्या शिवाला मी भजतो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "প্রস্ফুটিত নীলপদ্মের কৃষ্ণকান্তিকে অতিক্রমকারী সুন্দর শ্যামলকণ্ঠযুক্ত; যিনি কামদেব, ত্রিপুরাসুর, ভববন্ধন, দক্ষযজ্ঞ, গজাসুর, অন্ধকাসুর এবং যমরাজকেও বিনাশ করিয়াছেন, সেই পরমেশ্বর শিবকে আমি ভজনা করি!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "ખીલેલા નીલકમળની શ્યામ શોભાને પણ લજવતા સુંદર કંઠવાળા; કામદેવ, ત્રિપુરાસુર, સંસાર-બંધન, દક્ષયજ્ઞ, ગજાસુર, અંધકાસુર અને યમરાજનો પણ નાશ કરનારા તે શિવનું હું ભજન કરું છું!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "വിരിഞ്ഞ നീലത്താമരയുടെ ശ്യാമവർണ്ണത്തെപ്പോലും തോൽപ്പിക്കുന്ന സുന്ദരമായ കഴുത്തോടുകൂടിയവനും; കാമദേവൻ, ത്രിപുരന്മാർ, സംസാരദുഃഖം, ദക്ഷയാഗം, ഗജാസുരൻ, അന്ധകാസുരൻ, യമൻ എന്നിവരെയെല്ലാം നിഗ്രഹിച്ചവനുമായ ആ ശിവനെ ഞാൻ ഭജിക്കുന്നു!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଫୁଟିଥିବା ନୀଳପଦ୍ମର ଶ୍ୟାମଳ କାନ୍ତିକୁ ମଧ୍ୟ ଲଜ୍ଜିତ କରୁଥିବା ସୁନ୍ଦର କଣ୍ଠବିଶିଷ୍ଟ; କାମଦେବ, ତ୍ରିପୁରାସୁର, ସଂସାର ବନ୍ଧନ, ଦକ୍ଷଯଜ୍ଞ, ଗଜାସୁର, ଅନ୍ଧକାସୁର ଓ ଯମରାଜଙ୍କୁ ମଧ୍ୟ ବିନାଶ କରିଥିବା ସେହି ଶିବଙ୍କୁ ମୁଁ ଭଜନ କରୁଛି !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 10,
+      "verse_type": "VERSE",
+      "original_sanskrit": "अखर्वसर्वमङ्गलाकलामन्दमञ्जरी-रसप्रवाहमाधुरीविजृम्भणामधुव्रतम् ।\nस्मरान्तकं पुरान्तकं भवान्तकं मखान्तकं गजान्तकान्धकान्तकं तमन्तकान्तकं भजे ॥ १० ॥",
+      "iast": "akharvasarvamaṅgalākalāmandamañjarī-rasapravāhamādhurīvijṛmbhaṇāmadhuvratam ।\nsmarāntakaṁ purāntakaṁ bhavāntakaṁ makhāntakaṁ gajāntakāndhakāntakaṁ tamantakāntakaṁ bhajē ॥ 10 ॥",
+      "transliterations": {
+        "telugu": "అఖర్వసర్వమఙ్గలాకలామన్దమఞ్జరీ-రసప్రవాహమాధురీవిజృమ్భణామధువ్రతమ్ ।\nస్మరాన్తకం పురాన్తకం భవాన్తకం మఖాన్తకం గజాన్తకాన్ధకాన్తకం తమన్తకాన్తకం భజే ॥ ౧౦ ॥",
+        "tamil": "அகர்வஸர்வமங்கலாகலாமந்தமஞ்ஜரீ-ரஸப்ரவாஹமாதுரீவிஜ்ரு'ம்பணாமதுவ்ரதம் ।\nஸ்மராந்தகம் புராந்தகம் பவாந்தகம் மகாந்தகம் கஜாந்தகாந்தகாந்தகம் தமந்தகாந்தகம் பஜே ॥ ௧௦ ॥",
+        "kannada": "ಅಖರ್ವಸರ್ವಮಙ್ಗಲಾಕಲಾಮನ್ದಮಞ್ಜರೀ-ರಸಪ್ರವಾಹಮಾಧುರೀವಿಜೃಮ್ಭಣಾಮಧುವ್ರತಮ್ ।\nಸ್ಮರಾನ್ತಕಂ ಪುರಾನ್ತಕಂ ಭವಾನ್ತಕಂ ಮಖಾನ್ತಕಂ ಗಜಾನ್ತಕಾನ್ಧಕಾನ್ತಕಂ ತಮನ್ತಕಾನ್ತಕಂ ಭಜೇ ॥ ೧೦ ॥",
+        "malayalam": "അഖര്വസര്വമങ്ഗലാകലാമന്ദമഞ്ജരീ-രസപ്രവാഹമാധുരീവിജൃമ്ഭണാമധുവ്രതമ് ।\nസ്മരാന്തകം പുരാന്തകം ഭവാന്തകം മഖാന്തകം ഗജാന്തകാന്ധകാന്തകം തമന്തകാന്തകം ഭജേ ॥ ൧൦ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "I worship Him who ended Kama, destroyed Tripura, destroyed cycle of birth, ended the ego of Daksha, slew Gajasura, ended Andhaka, and conquered Death—He who is the honey-bee drinking the expanding nectar-stream flowing from the blossoming cluster of all auspicious arts.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "कल्याणमयी माता पार्वती के समस्त कला-पुंज रूपी मंजरी के मधुर रस-प्रवाह का पान करने वाले भ्रमर के समान, कामदेव का अंत करने वाले, त्रिपुरासुर का अंत करने वाले, संसार-भय का अंत करने वाले, दक्ष-यज्ञ का अंत करने वाले, गजासुर और अंधकासुर का अंत करने वाले, और स्वयं काल के भी काल (महाकाल) भगवान् शिव का मैं भजन करता हूँ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "సకల కళాస్వరూపిణియైన సర్వమంగళా పార్వతీదేవి దివ్య సౌందర్య మకరందమును ఆస్వాదించు తుమ్మెద వంటివాడు; కాముని, త్రిపురాసురుని, భవబంధములను, దక్షయజ్ఞమును, గజాసురాంధకాసురులను మరియు యమునికే యముడైన ఆ పరమేశ్వరుని నేను నిత్యము ఆరాధించుచున్నాను!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "மங்கல நாயகியான பார்வதி தேவியின் சகல கலைகளின் தேன் வெள்ளத்தைப் பருகும் வண்டு போன்றவரும், காமன், திரிபுரம், பிறவிப் பிணி, தக்ஷன், கஜாசுரன், அந்தகன் ஆகியோரையும் எமனுக்கே எமனாய் விளங்கும் காலசம்ஹார மூர்த்தியையும் நான் போற்றுகிறேன்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಸರ್ವಮಂಗಳೆಯಾದ ಪಾರ್ವತಿಯ ಸಕಲ ಕಲೆಗಳೆಂಬ ಹೂಗೊಂಚಲಿನ ಮಕರಂದವನ್ನು ಸವಿಯುವ ದುಂಬಿಯಂತಿರುವ, ಕಾಮ-ತ್ರಿಪುರ-ಭವ-ದಕ್ಷಯಜ್ಞ-ಗಜಾಸುರ-ಅಂಧಕಾಸುರರನ್ನು ಮುಗಿಸಿದ ಹಾಗೂ ಯಮನಿಗೇ ಯಮನಾದ ಆ ಕಾಲಕಾಲ ಮಹಾದೇವನನ್ನು ನಾನು ಭಜಿಸುತ್ತೇನೆ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "सर्वमंगला पार्वतीच्या कलांच्या गुच्छातून वाहणाऱ्या मधुर रसाचे प्राशन करणाऱ्या भुंग्यासारख्या, कामदेव, त्रिपुरासूर, संसारबंधन, दक्षयज्ञ, गजासूर व अंधकासुराचा अंत करणाऱ्या आणि काळाचाही काळ असणाऱ्या महाकालाला मी भजतो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "সর্বমঙ্গলা পার্বতীর সর্বকলাকুসুমের মধুরসধারাপায়ী ভ্রমরসদৃশ; কাম, ত্রিপুরা, ভব, যজ্ঞ, গজ ও অন্ধকাসুরকে সংহারকারী এবং কালেরও কালস্বরূপ সেই মহাদেবকে আমি বন্দনা করি!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "સર્વમંગલા પાર્વતીજીની કળાઓના મંજરીરસનું પાન કરતા ભમરા સમાન; કામદેવ, ત્રિપુરાસુર, ભવબંધન, દક્ષયજ્ઞ, ગજાસુર અને અંધકાસુરનો અંત આણનારા તેમજ કાળના પણ કાળ તે શિવનું હું ભજન કરું છું!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "സർവ്വമംഗളയായ പാർവ്വതിയുടെ കലകളാകുന്ന പൂങ്കുലയിലെ തേൻകുടിക്കുന്ന വണ്ടിനെപ്പോലെയുള്ളവനും, കാമൻ, ത്രിപുരൻ, ഭവദുഃഖം, യാഗം, ഗജാസുരൻ, അന്ധകാസുരൻ എന്നിവരെ ഇല്ലാതാക്കിയവനും, കാലന്റെ കാലനുമായ ആ ഭഗവാനെ ഞാൻ ഭജിക്കുന്നു!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ସର୍ବମଙ୍ଗଳା ପାର୍ବତୀଙ୍କ ସକଳ କଳାରୂପୀ ପୁଷ୍ପର ମଧୁରସ ପାନ କରୁଥିବା ଭ୍ରମର ସଦୃଶ; କାମଦେବ, ତ୍ରିପୁରାସୁର, ଭବଭୟ, ଦକ୍ଷଯଜ୍ଞ, ଗଜାସୁର, ଅନ୍ଧକାସୁର ଓ କାଳର ମଧ୍ୟ କାଳ (ମହାକାଳ) ସେହି ଶିବଙ୍କୁ ମୁଁ ଭଜନ କରୁଛି !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 11,
+      "verse_type": "VERSE",
+      "original_sanskrit": "जयत्वदभ्रविभ्रमभ्रमद्भुजङ्गमश्वस-द्विनिर्गमत्क्रमस्फुरत्करालभालहव्यवाट् ।\nधिमिद्धिमिद्धिमिध्वनन्मृदङ्गतुङ्गमङ्गल-ध्वनिक्रमप्रवर्तितप्रचण्डताण्डवः शिवः ॥ ११ ॥",
+      "iast": "jayatvadabhravibhramabhramadbhujaṅgamaśvasa-dvinirgamatkramasphuratkarālabhālahavyavāṭ ।\ndhimid-dhimid-dhimidhvanan-mṛdaṅgatuṅgamaṅgala-dhvanikramapravartitapracaṇḍatāṇḍavaḥ śivaḥ ॥ 11 ॥",
+      "transliterations": {
+        "telugu": "జయత్వదభ్రవిభ్రమభ్రమద్భుజఙ్గమశ్వస-ద్వినిర్గమత్క్రమస్ఫురత్కరాలభాలహవ్యవాట్ ।\nధిమిద్ధిమిద్ధిమిధ్వనన్మృదఙ్గతుఙ్గమఙ్గల-ధ్వనిక్రమప్రవర్తితప్రచణ్డతాణ్డవః శివః ॥ ౧౧ ॥",
+        "tamil": "ஜயத்வதப்ரவிப்ரமப்ரமத்புஜங்கமஶ்வஸ-த்விநிர்கமத்க்ரமஸ்புரத்கராலபாலஹவ்யவாட் ।\nதிமித்திமித்திமித்வநந்ம்ரு'தங்கதுங்கமங்கல-த்வநிக்ரமப்ரவர்திதப்ரசண்டதாண்டவஃ ஶிவஃ ॥ ௧௧ ॥",
+        "kannada": "ಜಯತ್ವದಭ್ರವಿಭ್ರಮಭ್ರಮದ್ಭುಜಙ್ಗಮಶ್ವಸ-ದ್ವಿನಿರ್ಗಮತ್ಕ್ರಮಸ್ಫುರತ್ಕರಾಲಭಾಲಹವ್ಯವಾಟ್ ।\nಧಿಮಿದ್ಧಿಮಿದ್ಧಿಮಿಧ್ವನನ್ಮೃದಙ್ಗತುಙ್ಗಮಙ್ಗಲ-ಧ್ವನಿಕ್ರಮಪ್ರವರ್ತಿತಪ್ರಚಣ್ಡತಾಣ್ಡವಃ ಶಿವಃ ॥ ೧೧ ॥",
+        "malayalam": "ജയത്വദഭ്രവിഭ്രമഭ്രമദ്ഭുജങ്ഗമശ്വസ-ദ്വിനിര്ഗമത്ക്രമസ്ഫുരത്കരാലഭാലഹവ്യവാട് ।\nധിമിദ്ധിമിദ്ധിമിധ്വനന്മൃദങ്ഗതുങ്ഗമങ്ഗല-ധ്വനിക്രമപ്രവര്തിതപ്രചണ്ഡതാണ്ഡവഃ ശിവഃ ॥ ൧൧ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Victory to Shiva! In whose forehead blazes the terrible sacrificial fire fueled by the hissed breath of the wildly whirling serpents, and whose impassioned cosmic Tandava dance proceeds in unison with the solemn, auspicious rhythm of the mridanga beating 'dhimid-dhimid-dhimid'!",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जिनके मस्तक पर घूमते हुए विशाल सर्पों की फुंकार से जिनके ललाट की भीषण अग्नि और अधिक धधक उठती है, और जो 'धिमि-धिमि-धिमि' बजते हुए मृदंग की गंभीर मांगलिक ध्वनि की ताल पर प्रचंड तांडव नृत्य कर रहे हैं, उन देवाधिदेव भगवान् शिव की सदा जय हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "శిరస్సున తిరుగుచున్న భయంకర సర్పముల బుసల గాలిచే నుదుటి అగ్ని మరింత ప్రజ్వరిల్లగా, 'ధిమి-ధిమి-ధిమి'యని మ్రోగు మృదంగ మంగళ ధ్వనుల తాళమునకు అనుగుణముగా ప్రచండ తాండవము చేయు ఆ పరమశివునకు జయమగుగాక!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "சடையில் சீறும் பாம்புகளின் மூச்சுக் காற்றினால் நெற்றிக்கண் நெருப்பு மேலும் கொழுந்துவிட்டு எரிய, 'திமி-திமி'யென முழங்கும் மிருதங்க மங்கல ஓசைக்கேற்ப அனல் தாண்டவம் ஆடும் அந்த சிவபெருமானுக்கு வெற்றி உண்டாகட்டும்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಶಿರದಲ್ಲಿ ಸುತ್ತುತ್ತಿರುವ ಮಹಾಸರ್ಪಗಳ ಉಸಿರಾಟದ ಗಾಳಿಯಿಂದ ಹಣೆಯ ಅಗ್ನಿಯು ಮತ್ತಷ್ಟು ಜ್ವಲಿಸುತ್ತಿರಲು, 'ಧಿಮಿ-ಧಿಮಿ-ಧಿಮಿ' ಎಂದು ಮೊಳಗುವ ಮೃದಂಗದ ಮಂಗಲ ನಾದಕ್ಕೆ ತಕ್ಕಂತೆ ಪ್ರಚಂಡ ತಾಂಡವವಾಡುತ್ತಿರುವ ಆ ಪರಮಶಿವನಿಗೆ ಜಯವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "ज्यांच्या मस्तकावर फिरणाऱ्या महासर्पांच्या फुत्कारामुळे कपाळावरील अग्नी आणखी भडकतो, आणि जे 'धिमी-धिमी' वाजणाऱ्या मृदुंगाच्या मंगल स्वरांवर प्रचंड तांडव करत आहेत, त्या भगवान शिवाची सदैव जयजयकार असो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যাঁহার মস্তকে ঘূর্ণমান কালসর্পের বিষাক্ত নিঃশ্বাসে ললাটঅনল আরও প্রজ্বলিত হয় এবং যিনি 'ধিমি-ধিমি' মৃদঙ্গধ্বনির গম্ভীর তালে প্রচণ্ড তাণ্ডব নৃত্য করিতেছেন, সেই পরমেশ্বর শিবের জয় হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જેમના મસ્તક પર ઘૂમતા સર્પોના ફૂંફાડાથી લલાટની અગ્નિ વધુ પ્રચંડ બને છે અને જે 'ધિમિ-ધિમિ' મૃદંગના માંગલિક નાદ સાથે પ્રચંડ તાંડવ કરે છે, તે ભગવાન શિવનો સદાય જય હો!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ശിരസ്സിൽ ചുറ്റിത്തിരിയുന്ന പാമ്പുകളുടെ ചീറ്റലിനാൽ നെറ്റിയിലെ അഗ്നി കൂടുതൽ ആളിപ്പടരുമ്പോൾ, 'ധിമി-ധിമി' എന്ന മൃദംഗനാദത്തിനൊത്തു പ്രചണ്ഡതാണ്ഡവമാടുന്ന ആ പരമശിവന് ജയം ഭവിക്കട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯାହାଙ୍କ ମସ୍ତକରେ ଘୂରୁଥିବା ବିଶାଳ ସର୍ପମାନଙ୍କ ଫୁତ୍କାରରେ କପାଳର ଅଗ୍ନି ଆହୁରି ପ୍ରଜ୍ଜ୍ୱଳିତ ହେଉଛି, ଏବଂ ଯିଏ 'ଧିମି-ଧିମି' ମୃଦଙ୍ଗ ନାଦର ତାଳରେ ପ୍ରଚଣ୍ଡ ତାଣ୍ଡବ କରୁଛନ୍ତି, ସେହି ଶିବଙ୍କର ଜୟ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 12,
+      "verse_type": "VERSE",
+      "original_sanskrit": "दृषद्विचित्रतल्पयोर्भुजङ्गमौक्तिकस्रजोर्-गरिष्ठरत्नलोष्ठयोः सुहृद्विपक्षपक्षयोः ।\nतृणारविन्दचक्षुषोः प्रजामहीमहेन्द्रयोः समं प्रवर्तयन्मनः कदा सदाशिवं भजे ॥ १२ ॥",
+      "iast": "dṛṣadvicitratalpayōrbhujaṅgamauktikasrajōr-gariṣṭharatnalōṣṭhayōḥ suhṛdvipakṣapakṣayōḥ ।\ntṛṇāravindacakṣuṣōḥ prajāmahīmahēndrayōḥ samaṁ pravartayanmanaḥ kadā sadāśivaṁ bhajē ॥ 12 ॥",
+      "transliterations": {
+        "telugu": "దృషద్విచిత్రతల్పయోర్భుజఙ్గమౌక్తికస్రజోర్-గరిష్ఠరత్నలోష్ఠయోః సుహృద్విపక్షపక్షయోః ।\nతృణారవిన్దచక్షుషోః ప్రజామహీమహేన్ద్రయోః సమం ప్రవర్తయన్మనః కదా సదాశివం భజే ॥ ౧౨ ॥",
+        "tamil": "த்ரு'ஷத்விசித்ரதல்பயோர்புஜங்கமௌக்திகஸ்ரஜோர்-கரிஷ்டரத்நலோஷ்டயோஃ ஸுஹ்ரு'த்விபக்ஷபக்ஷயோஃ ।\nத்ரு'ணாரவிந்தசக்ஷுஷோஃ ப்ரஜாமஹீமஹேந்த்ரயோஃ ஸமம் ப்ரவர்தயந்மநஃ கதா ஸதாஶிவம் பஜே ॥ ௧௨ ॥",
+        "kannada": "ದೃಷದ್ವಿಚಿತ್ರತಲ್ಪಯೋರ್ಭುಜಙ್ಗಮೌಕ್ತಿಕಸ್ರಜೋರ್-ಗರಿಷ್ಠರತ್ನಲೋಷ್ಠಯೋಃ ಸುಹೃದ್ವಿಪಕ್ಷಪಕ್ಷಯೋಃ ।\nತೃಣಾರವಿನ್ದಚಕ್ಷುಷೋಃ ಪ್ರಜಾಮಹೀಮಹೇನ್ದ್ರಯೋಃ ಸಮಂ ಪ್ರವರ್ತಯನ್ಮನಃ ಕದಾ ಸದಾಶಿವಂ ಭಜೇ ॥ ೧೨ ॥",
+        "malayalam": "ദൃഷദ്വിചിത്രതല്പയോര്ഭുജങ്ഗമൌക്തികസ്രജോര്-ഗരിഷ്ഠരത്നലോഷ്ഠയോഃ സുഹൃദ്വിപക്ഷപക്ഷയോഃ ।\nതൃണാരവിന്ദചക്ഷുഷോഃ പ്രജാമഹീമഹേന്ദ്രയോഃ സമം പ്രവര്തയന്മനഃ കദാ സദാശിവം ഭജേ ॥ ൧൨ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "When will I worship Sadashiva with an equanimous mind that sees no difference between a hard stone and a splendid bed, a serpent and a pearl garland, a precious gem and a lump of clay, a friend and an enemy, a blade of grass and a lotus eye, or a common subject and a mighty emperor?",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "कठोर पत्थर और कोमल सुंदर शय्या में, विषैले सर्प और मोतियों की माला में, बहुमूल्य रत्न और मिट्टी के ढेले में, मित्र और शत्रु में, तिनके और कमलनयनी सुन्दरी में, तथा साधारण प्रजा और सम्राट में समान भाव रखकर, मैं कब सदाशिव की निष्काम भाव से आराधना कर सकूँगा?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "కఠినమైన రాతియందును, పూలపాన్పునందును, విషసర్పమునందును, ముత్యాలహారమునందును, అమూల్య రత్నమునందును, మట్టిబెడ్డయందును, మిత్రునియందును, శత్రువునందును, గడ్డిపరకయందును, కమలాక్షియందును, సామాన్య ప్రజయందును, చక్రవర్తియందును సమాన దృష్టి కలవాడనై నేను ఎప్పుడు ఆ సదాశివుని ఆరాధించెదను?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "கடினமான கல்லையும் பஞ்சு மெத்தையையும், பாம்பையும் முத்து மாலையையும், விலைமதிப்பற்ற ரத்தினத்தையும் வெறும் மண்ணையும், நண்பனையும் பகைவனையும், துரும்பையும் மலர்க் கண்ணாளையும், எளிய குடிமகனையும் பேரரசனையும் சமமாகப் பார்க்கும் பக்குவத்தோடு நான் எப்போது சதாசிவனை வழிபடுவேன்?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಕಠಿಣ ಕಲ್ಲು ಮತ್ತು ಸುಂದರ ಹಾಸಿಗೆಯಲ್ಲಿ, ವಿಷಸರ್ಪ ಮತ್ತು ಮುತ್ತಿನ ಹಾರದಲ್ಲಿ, ಬೆಲೆಯುಳ್ಳ ರತ್ನ ಮತ್ತು ಮಣ್ಣಿನ ಹೆಂಟೆಯಲ್ಲಿ, ಮಿತ್ರ ಮತ್ತು ಶತ್ರುವಿನಲ್ಲಿ, ಹುಲ್ಲು ಮತ್ತು ಕಮಲಾಕ್ಷಿಯಲ್ಲಿ, ಜನಸಾಮಾನ್ಯ ಮತ್ತು ಚಕ್ರವರ್ತಿಯಲ್ಲಿ ಸಮಭಾವವನ್ನು ಹೊಂದಿ ನಾನು ಯಾವಾಗ ಸದಾಶಿವನನ್ನು ಆರಾಧಿಸುವೆನೋ?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "कठोर दगड आणि कोमल शय्या, विषारी साप आणि मोत्यांची माळ, मौल्यवान रत्न आणि मातीचे ढेकूळ, मित्र आणि शत्रू, गवताची काडी आणि कमलनयनी, सामान्य प्रजा आणि सम्राट यांना समान मानून मी कधी सदाशिवाची समभावाने भक्ती करू शकेन?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "কঠিন প্রস্তর ও কোমল শয্যা, বিষধর সর্প ও মুক্তাহার, বহুমূল্য রত্ন ও মৃৎখণ্ড, মিত্র ও শত্রু, তৃণের তন্তু ও পদ্মনেত্রা রমণী, সাধারণ প্রজা ও মহীপতি সম্রাট—উভয়ে সমদৃষ্টি লাভ করিয়া আমি কবে সেই সদাশিবের আরাধনা করিব?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "કઠોર પથ્થર અને સુંદર શય્યામાં, સર્પ અને મોતીની માળામાં, બહુમૂલ્ય રત્ન અને માટીના ઢેફામાં, મિત્ર અને શત્રુમાં, તણખલા અને કમળનયનીમાં, સાધારણ પ્રજા અને સમ્રાટમાં સમભાવ રાખીને હું ક્યારે સદાશિવની ભક્તિ કરી શકીશ?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "കല്ലിനെയും മെത്തയെയും, പാമ്പിനെയും മുത്തുമാലയെയും, രത്നത്തെയും മൺകട്ടയെയും, മിത്രത്തെയും ശത്രുവിനെയും, പുല്ലിനെയും താമരക്കണ്ണിയെയും, സാധാരണക്കാരനെയും ചക്രവർത്തിയെയും സമഭാവത്തോടെ കണ്ടുകൊണ്ട് ഞാൻ എപ്പോഴാണ് സദാശിവനെ ഭജിക്കുക?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "କଠୋର ପଥର ଓ ସୁକୋମଳ ଶଯ୍ୟା, ବିଷଧର ସର୍ପ ଓ ମୁକ୍ତାମାଳା, ବହୁମୂଲ୍ୟ ରତ୍ନ ଓ ମାଟିପିଣ୍ଡୁଳା, ମିତ୍ର ଓ ଶତ୍ରୁ, ଘାସ ଓ କମଳନୟନୀ, ସାଧାରଣ ପ୍ରଜା ଓ ସମ୍ରାଟଙ୍କ ଠାରେ ସମଦୃଷ୍ଟି ରଖି ମୁଁ କେବେ ସଦାଶିବଙ୍କୁ ଆରାଧନା କରିବି ?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 13,
+      "verse_type": "VERSE",
+      "original_sanskrit": "कदा निलिम्पनिर्झरीनिकेतनोत्तरे वसन् विमुक्तदुर्मतिः सदा शिरःस्थमञ्जलिं वहन् ।\nविमुक्तलोललोचनो ललामभाललग्नकः शिवेति मन्त्रमुच्चरन् कदा सुखी भवाम्यहम् ॥ १३ ॥",
+      "iast": "kadā nilimpanirjharīnikētanōttarē vasan vimuktadurmatiḥ sadā śiraḥsthamañjaliṁ vahan ।\nvimuktalōlalōcanō lalāmabhālalagnakaḥ śivēti mantramuccaran kadā sukhī bhavāmyaham ॥ 13 ॥",
+      "transliterations": {
+        "telugu": "కదా నిలిమ్పనిర్ఝరీనికేతనోత్తరే వసన్ విముక్తదుర్మతిః సదా శిరఃస్థమఞ్జలిం వహన్ ।\nవిముక్తలోలలోచనో లలామభాలలగ్నకః శివేతి మన్త్రముచ్చరన్ కదా సుఖీ భవామ్యహమ్ ॥ ౧౩ ॥",
+        "tamil": "கதா நிலிம்பநிர்சரீநிகேதநோத்தரே வஸந் விமுக்ததுர்மதிஃ ஸதா ஶிரஃஸ்தமஞ்ஜலிம் வஹந் ।\nவிமுக்தலோலலோசநோ லலாமபாலலக்நகஃ ஶிவேதி மந்த்ரமுச்சரந் கதா ஸுகீ பவாம்யஹம் ॥ ௧௩ ॥",
+        "kannada": "ಕದಾ ನಿಲಿಮ್ಪನಿರ್ಝರೀನಿಕೇತನೋತ್ತರೇ ವಸನ್ ವಿಮುಕ್ತದುರ್ಮತಿಃ ಸದಾ ಶಿರಃಸ್ಥಮಞ್ಜಲಿಂ ವಹನ್ ।\nವಿಮುಕ್ತಲೋಲಲೋಚನೋ ಲಲಾಮಭಾಲಲಗ್ನಕಃ ಶಿವೇತಿ ಮನ್ತ್ರಮುಚ್ಚರನ್ ಕದಾ ಸುಖೀ ಭವಾಮ್ಯಹಮ್ ॥ ೧೩ ॥",
+        "malayalam": "കദാ നിലിമ്പനിര്ഝരീനികേതനോത്തരേ വസന് വിമുക്തദുര്മതിഃ സദാ ശിരഃസ്ഥമഞ്ജലിം വഹന് ।\nവിമുക്തലോലലോചനോ ലലാമഭാലലഗ്നകഃ ശിവേതി മന്ത്രമുച്ചരന് കദാ സുഖീ ഭവാമ്യഹമ് ॥ ൧൩ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "When shall I dwell on the holy banks of the celestial river Ganges, rid of all wicked thoughts, holding my folded hands over my head, free from wandering desires, meditating on the Lord with the brilliant forehead, uttering the sacred mantra 'Shiva', and abide in supreme bliss?",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "मैं कब देवनदी गंगा के पावन तट के कुंज में निवास करते हुए, समस्त दुर्बुद्धि का त्याग कर, सिर पर हाथ जोड़े, ललाट पर तिलक लगाए, अश्रुपूर्ण विह्वल नेत्रों से केवल 'शिव-शिव' महामंत्र का उच्चारण करता हुआ परम शांति व आनंद को प्राप्त करूँगा?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఆకాశగంగా తీరమునందలి ఏకాంత కుంజమున నివసించుచు, కుటిల భావములను వీడి, శిరస్సుపై దోసిలి ఒగ్గి, భక్తిపారవశ్యముతో కూడిన నేత్రములతో 'శివ... శివ' అను దివ్య మంత్రమును ఉచ్చరించుచు నేను ఎప్పుడు పరమానందమును పొందెదను?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "புனித கங்கை நதிக்கரையின் தனிமையான சோலையில் வசித்து, தீய எண்ணங்களை விடுத்து, தலையின் மேல் கைகூப்பி, கண்களில் பக்திப் பெருக்குடன் 'சிவ... சிவ...' என்ற திருமந்திரத்தை உச்சரித்து நான் எப்போது மெய்யான ஆனந்தத்தை அடைவேன்?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಪವಿತ್ರ ಗಂಗಾತೀರದ ಏಕಾಂತ ಕುಂಜದಲ್ಲಿ ವಾಸಿಸುತ್ತಾ, ದುರ್ಬುದ್ಧಿಯನ್ನು ತೊರೆದು, ತಲೆಯ ಮೇಲೆ ಕೈಮುಗಿದು, ಭಕ್ತಿಪರವಶ ಕಣ್ಣುಗಳಿಂದ 'ಶಿವ... ಶಿವ...' ಎಂಬ ಮಂತ್ರವನ್ನು ಜಪಿಸುತ್ತಾ ನಾನು ಯಾವಾಗ ಪರಮಾನಂದವನ್ನು ಪಡೆಯುವೆನೋ?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "मी कधी पवित्र गंगेच्या तीरावर एकांत कुंजात राहून, सर्व दुर्बुद्धी सोडून, डोक्यावर हात जोडून, भक्तीने पाणावलेल्या डोळ्यांनी 'शिव... शिव...' असा जप करत परमानंदात लीन होईन?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "কবে আমি দেবনদী গঙ্গার তীরে নির্জন কুঞ্জে বাস করিয়া, সমস্ত কুচিন্তা বিসর্জন দিয়া, মস্তকে অঞ্জলি বাঁধিয়া এবং সজলনয়নে কেবল 'শিব... শিব...' মহামন্ত্র উচ্চারণ করিতে করিতে পরমানন্দ লাভ করিব?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "હું ક્યારે પવિત્ર ગંગાકિનારે એકાંત કુંજમાં રહીને, સર્વ દુર્બુદ્ધિ ત્યજીને, મસ્તક પર હાથ જોડીને, અશ્રુભીની આંખે 'શિવ... શિવ...' મંત્રનો જપ કરતાં પરમ સુખને પામીશ?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "പവിത്രമായ ഗംഗാതീരത്തെ ഏകാന്തതയിൽ വസിച്ച്, ദുർവിചാരങ്ങളെല്ലാം വെടിഞ്ഞു, തലയ്ക്കു മീതെ കൈകൂപ്പി, ഭക്തിനിറഞ്ഞ കണ്ണുകളോടെ 'ശിവ... ശിവ...' എന്ന മന്ത്രം ഉച്ചരിച്ചു ഞാൻ എപ്പോഴാണ് പരമാനന്ദം പ്രാപിക്കുക?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ମୁଁ କେବେ ଦେବନଦୀ ଗଙ୍ଗା ତଟର ଏକାନ୍ତ କୁଞ୍ଜରେ ବାସ କରି, ସମସ୍ତ କୁବିଚାର ତ୍ୟାଗ କରି, ମସ୍ତକରେ ହାତ ଯୋଡ଼ି ଭକ୍ତିପୂର୍ଣ୍ଣ ନୟନରେ 'ଶିବ... ଶିବ...' ମହାମନ୍ତ୍ର ଉଚ୍ଚାରଣ କରି ପରମ ଶାନ୍ତି ଓ ଆନନ୍ଦ ଲାଭ କରିବି ?",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 14,
+      "verse_type": "VERSE",
+      "original_sanskrit": "इमं हि नित्यमेवमुक्तमुत्तमोत्तमं स्तवं पठन्स्मरन्ब्रुवन्नरो विशुद्धिमेति सन्ततम् ।\nहरे गुरौ सुभक्तिमाशु याति नान्यथा गतिं विमोहनं हि देहिनां सुशङ्करस्य चिन्तनम् ॥ १४ ॥",
+      "iast": "imaṁ hi nityamēvamuktamuttamōttamaṁ stavaṁ paṭhansmaranbruvannarō viśuddhimēti santatam ।\nharē gurau subhaktimāśu yāti nānyathā gatiṁ vimōhanaṁ hi dēhināṁ suśaṅkarasya cintanam ॥ 14 ॥",
+      "transliterations": {
+        "telugu": "ఇమం హి నిత్యమేవముక్తముత్తమోత్తమం స్తవం పఠన్స్మరన్బ్రువన్నరో విశుద్ధిమేతి సన్తతమ్ ।\nహరే గురౌ సుభక్తిమాశు యాతి నాన్యథా గతిం విమోహనం హి దేహినాం సుశఙ్కరస్య చిన్తనమ్ ॥ ౧౪ ॥",
+        "tamil": "இமம் ஹி நித்யமேவமுக்தமுத்தமோத்தமம் ஸ்தவம் படந்ஸ்மரந்ப்ருவந்நரோ விஶுத்திமேதி ஸந்ததம் ।\nஹரே குரௌ ஸுபக்திமாஶு யாதி நாந்யதா கதிம் விமோஹநம் ஹி தேஹிநாம் ஸுஶங்கரஸ்ய சிந்தநம் ॥ ௧௪ ॥",
+        "kannada": "ಇಮಂ ಹಿ ನಿತ್ಯಮೇವಮುಕ್ತಮುತ್ತಮೋತ್ತಮಂ ಸ್ತವಂ ಪಠನ್ಸ್ಮರನ್ಬ್ರುವನ್ನರೋ ವಿಶುದ್ಧಿಮೇತಿ ಸನ್ತತಮ್ ।\nಹರೇ ಗುರೌ ಸುಭಕ್ತಿಮಾಶು ಯಾತಿ ನಾನ್ಯಥಾ ಗತಿಂ ವಿಮೋಹನಂ ಹಿ ದೇಹಿನಾಂ ಸುಶಙ್ಕರಸ್ಯ ಚಿನ್ತನಮ್ ॥ ೧೪ ॥",
+        "malayalam": "ഇമം ഹി നിത്യമേവമുക്തമുത്തമോത്തമം സ്തവം പഠന്സ്മരന്ബ്രുവന്നരോ വിശുദ്ധിമേതി സന്തതമ് ।\nഹരേ ഗുരൌ സുഭക്തിമാശു യാതി നാന്യഥാ ഗതിം വിമോഹനം ഹി ദേഹിനാം സുശങ്കരസ്യ ചിന്തനമ് ॥ ൧൪ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Whoever daily recites, remembers, and chants this peerless supreme hymn attains perpetual inner purity. He swiftly gains deep devotion to Lord Shiva, the supreme Guru; for there is no other refuge, and contemplation upon the auspicious Lord dissolves all worldly delusion.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जो मनुष्य प्रतिदिन इस उत्तमोत्तम स्तोत्र का पाठ, स्मरण और गान करता है, वह निरंतर परम शुद्धि को प्राप्त करता है। वह जगद्गुरु भगवान् शिव के चरणों में अचल भक्ति प्राप्त करता है और जीवन के समस्त मोह-बंधनों से सदा के लिए मुक्त हो जाता है।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఎవరైతే ప్రతిదినము ఈ సర్వోత్కృష్ట స్తోత్రమును పఠించుచు, స్మరించుచు, గానము చేయుదురో, వారు సదా అంతఃశుద్ధిని పొందుదురు. వారు జగద్గురువైన పరమశివుని యందు అచంచల భక్తిని పొంది, సమస్త మోహముల నుండి విముక్తులగుదురు.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "எவர் ஒருவர் தினமும் இந்த மிகச் சிறந்த ஸ்தோத்திரத்தைப் படிக்கிறாரோ, தியானிக்கிறாரோ, பாடுகிறாரோ, அவர் எப்போதும் உள்ளத்தூய்மை அடைகிறார்; அவர் ஜகத்குருவான சிவனிடம் உறுதியான பக்தி பெற்று, மாயையிலிருந்து விடுபடுகிறார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಯಾವಾತನು ನಿತ್ಯವೂ ಈ ಶ್ರೇಷ್ಠಾತಿಶ್ರೇಷ್ಠ ಸ್ತೋತ್ರವನ್ನು ಪಠಿಸುವನೋ, ಸ್ಮರಿಸುವನೋ, ಆತನು ಸದಾ ಪರಿಶುದ್ಧನಾಗುತ್ತಾನೆ; ಜಗದ್ಗುರು ಶಿವನಲ್ಲಿ ಅಚಲ ಭಕ್ತಿಯನ್ನು ಪಡೆದು, ಸಮಸ್ತ ಮೋಹಗಳಿಂದ ಮುಕ್ತನಾಗುತ್ತಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जो मनुष्य दररोज या सर्वोत्कृष्ट स्तोत्राचे पठण, स्मरण व गान करतो, तो निरंतर परम शुद्ध होतो; जगद्गुरू शंकराच्या चरणी त्याला दृढ भक्ती लाभते आणि तो सर्व मोहातून मुक्त होतो.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যিনি প্রত্যহ এই সর্বোত্তম স্তোত্র পাঠ, স্মরণ ও কীর্তন করেন, তিনি নিত্য পবিত্রতা লাভ করেন; তিনি পরমগুরু শঙ্করের পাদপদ্মে অচলা ভক্তি প্রাপ্ত হন এবং মায়ামোহ হইতে মুক্তি লাভ করেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જે મનુષ્ય નિત્ય આ સર્વોત્તમ સ્તોત્રનો પાઠ, સ્મરણ અને કીર્તન કરે છે, તે સદાય પરમ પવિત્રતા પામે છે; તે જગદ્ગુરુ શિવમાં અચલ ભક્તિ પામીને સંસારના મોહમાંથી મુક્ત થાય છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഈ ഉത്തമോത്തമമായ സ്തോത്രം ദിവസവും ജപിക്കുകയും സ്മരിക്കുകയും ചെയ്യുന്നവൻ സദാ ശുദ്ധി നേടുന്നു; ജഗദ്ഗുരുവായ പരമേശ്വരനിൽ അചഞ്ചലമായ ഭക്തി നേടി അവൻ സകല വ്യാമോഹങ്ങളിൽനിന്നും മുക്തനാകുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯେଉଁ ବ୍ୟକ୍ତି ପ୍ରତିଦିନ ଏହି ସର୍ବୋତ୍ତମ ସ୍ତୋତ୍ର ପାଠ, ସ୍ମରଣ ଓ କୀର୍ତ୍ତନ କରେ, ସେ ନିରନ୍ତର ପରମ ଶୁଦ୍ଧି ଲାଭ କରେ; ସେ ଜଗଦ୍‌ଗୁରୁ ଶିବଙ୍କ ଠାରେ ଅଚଳ ଭକ୍ତି ଲାଭ କରି ମୋହମୁକ୍ତ ହୁଏ ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 15,
+      "verse_type": "PHALASRUTI",
+      "original_sanskrit": "पूजावसानसमये दशवक्त्रगीतं यः शम्भुपूजनपरं पठति प्रदोषे ।\nतस्य स्थिरां रथगजेन्द्रतुरङ्गयुक्तां लक्ष्मीं सदैव सुमुखीं प्रददाति शम्भुः ॥ १५ ॥",
+      "iast": "pūjāvasānasamayē daśavaktragītaṁ yaḥ śambhupūjanaparaṁ paṭhati pradōṣē ।\ntasya sthirāṁ rathagajēndraturaṅgayuktāṁ lakṣmīṁ sadaiva sumukhīṁ pradadāti śambhuḥ ॥ 15 ॥",
+      "transliterations": {
+        "telugu": "పూజావసానసమయే దశవక్త్రగీతం యః శమ్భుపూజనపరం పఠతి ప్రదోషే ।\nతస్య స్థిరాం రథగజేన్ద్రతురఙ్గయుక్తాం లక్ష్మీం సదైవ సుముఖీం ప్రదదాతి శమ్భుః ॥ ౧౫ ॥",
+        "tamil": "பூஜாவஸாநஸமயே தஶவக்த்ரகீதம் யஃ ஶம்புபூஜநபரம் படதி ப்ரதோஷே ।\nதஸ்ய ஸ்திராம் ரதகஜேந்த்ரதுரங்கயுக்தாம் லக்ஷ்மீம் ஸதைவ ஸுமுகீம் ப்ரததாதி ஶம்புஃ ॥ ௧௫ ॥",
+        "kannada": "ಪೂಜಾವಸಾನಸಮಯೇ ದಶವಕ್ತ್ರಗೀತಂ ಯಃ ಶಮ್ಭುಪೂಜನಪರಂ ಪಠತಿ ಪ್ರದೋಷೇ ।\nತಸ್ಯ ಸ್ಥಿರಾಂ ರಥಗಜೇನ್ದ್ರತುರಙ್ಗಯುಕ್ತಾಂ ಲಕ್ಷ್ಮೀಂ ಸದೈವ ಸುಮುಖೀಂ ಪ್ರದದಾತಿ ಶಮ್ಭುಃ ॥ ೧೫ ॥",
+        "malayalam": "പൂജാവസാനസമയേ ദശവക്ത്രഗീതം യഃ ശമ്ഭുപൂജനപരം പഠതി പ്രദോഷേ ।\nതസ്യ സ്ഥിരാം രഥഗജേന്ദ്രതുരങ്ഗയുക്താം ലക്ഷ്മീം സദൈവ സുമുഖീം പ്രദദാതി ശമ്ഭുഃ ॥ ൧൫ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Whoever, after completing Shiva's worship, recites at dusk (Pradosha) this hymn sung by the Ten-Headed Ravana, to him Lord Shambhu grants enduring prosperity endowed with chariots, noble elephants, and horses, accompanied by the gracious favor of Lakshmi forever.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "जो साधक प्रदोष काल में शिव-पूजा के समापन पर दशमुख रावण द्वारा रचित इस स्तोत्र का पाठ करता है, भगवान् शम्भु उसे रथ, हाथी और घोड़ों से परिपूर्ण स्थिर लक्ष्मी और प्रसन्नता सदैव प्रदान करते हैं।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఎవరైతే ప్రదోష సమయమున శివపూజ ముగింపులో దశకంఠుడైన రావణునిచే రచింపబడిన ఈ స్తోత్రమును పఠింతురో, వారికి శంభువు రథగజతురగాది వాహనములతో కూడిన శాశ్వత లక్ష్మీకటాక్షమును సదా అనుగ్రహించును.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "பிரதோஷ காலத்தில் சிவபூஜையின் முடிவில் ராவணனால் பாடப்பட்ட இந்த ஸ்தோத்திரத்தைப் பாராயணம் செய்பவருக்கு, தேர்கள், யானைகள், குதிரைகள் நிரம்பிய நிலையான செல்வத்தை சிவபெருமான் எப்போதும் அருள்வார்.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಯಾವ ಸಾಧಕನು ಪ್ರದೋಷ ಕಾಲದಲ್ಲಿ ಶಿವಪೂಜೆಯ ಕೊನೆಯಲ್ಲಿ ರಾವಣ ವಿರಚಿತ ಈ ಸ್ತೋತ್ರವನ್ನು ಪಠಿಸುವನೋ, ಭಗವಾನ್ ಶಂಭುವು ಅವನಿಗೆ ರಥ, ಆನೆ, ಕುದುರೆಗಳಿಂದ ಕೂಡಿದ ಅಚಲವಾದ ಲಕ್ಷ್ಮೀಕೃಪೆಯನ್ನು ಸದಾ ಕರುಣಿಸುತ್ತಾನೆ.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "जो साधक प्रदोष समयी शिवपूजेच्या शेवटी रावणाने रचलेल्या या स्तोत्राचे पठण करतो, भगवान शंकर त्याला रथ, हत्ती व घोड्यांनी युक्त स्थिर लक्ष्मी व सुख कायम प्रदान करतात.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "যিনি প্রদোষকালে শিবপূজার সমাপনে দশানন রাবণ রচিত এই স্তোত্র পাঠ করেন, ভগবান শম্ভু তাঁহাকে রথ, হস্তী ও অশ্বসমন্বিত চিরস্থায়ী সমৃদ্ধি প্রদান করেন।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "જે ભક્ત પ્રદોષ કાળમાં શિવપૂજાના અંતે રાવણ રચિત આ સ્તોત્રનો પાઠ કરે છે, તેને ભગવાન શંભુ રથ, હાથી અને અશ્વોથી યુક્ત સ્થિર લક્ષ્મી સદાય પ્રદાન કરે છે.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "പ്രദോഷസമയത്തു ശിവപൂജയുടെ ഒടുവിൽ രാവണനാൽ രചിക്കപ്പെട്ട ഈ സ്തോത്രം ജപിക്കുന്നവന്, രഥങ്ങളും ആനകളും കുതിരകളും നിറഞ്ഞ ശാശ്വതമായ ഐശ്വര്യം പരമശിവൻ സദാ നൽകുന്നു.",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଯେଉଁ ସାଧକ ପ୍ରଦୋଷ କାଳରେ ଶିବପୂଜା ଶେଷରେ ରାବଣ ରଚିତ ଏହି ସ୍ତୋତ୍ର ପାଠ କରେ, ଭଗବାନ ଶମ୍ଭୁ ତାଙ୍କୁ ରଥ, ହସ୍ତୀ ଓ ଅଶ୍ୱରେ ପରିପୂର୍ଣ୍ଣ ଅଚଳା ଲକ୍ଷ୍ମୀ ସର୍ବଦା ପ୍ରଦାନ କରନ୍ତି ।",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    },
+    {
+      "verse_number": 16,
+      "verse_type": "PHALASRUTI",
+      "original_sanskrit": "इति श्रीरावणकृतं शिवताण्डवस्तोत्रं सम्पूर्णम् ।\nॐ नमः शिवाय ॥ १६ ॥",
+      "iast": "iti śrīrāvaṇakṛtaṁ śivatāṇḍavastōtraṁ sampūrṇam ।\nōṁ namaḥ śivāya ॥ 16 ॥",
+      "transliterations": {
+        "telugu": "ఇతి శ్రీరావణకృతం శివతాణ్డవస్తోత్రం సమ్పూర్ణమ్ ।\nఓం నమః శివాయ ॥ ౧౬ ॥",
+        "tamil": "இதி ஶ்ரீராவணக்ரு'தம் ஶிவதாண்டவஸ்தோத்ரம் ஸம்பூர்ணம் ।\nௐ நமஃ ஶிவாய ॥ ௧௬ ॥",
+        "kannada": "ಇತಿ ಶ್ರೀರಾವಣಕೃತಂ ಶಿವತಾಣ್ಡವಸ್ತೋತ್ರಂ ಸಮ್ಪೂರ್ಣಮ್ ।\nಓಂ ನಮಃ ಶಿವಾಯ ॥ ೧೬ ॥",
+        "malayalam": "ഇതി ശ്രീരാവണകൃതം ശിവതാണ്ഡവസ്തോത്രം സമ്പൂര്ണമ് ।\nഓം നമഃ ശിവായ ॥ ൧൬ ॥"
+      },
+      "translations": {
+        "en": {
+          "type": "BHAVARTHA",
+          "text": "Thus concludes the Shiva Tandava Stotram composed by Ravana. Om Namah Shivaya.",
+          "translator": "Vedic Heritage Scholarly Commission",
+          "review_status": "APPROVED"
+        },
+        "hi": {
+          "type": "BHAVARTHA",
+          "text": "इस प्रकार श्रीरावण विरचित पावन शिवताण्डव स्तोत्र सम्पूर्ण हुआ। ॐ नमः शिवाय! सबका कल्याण और मंगल हो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "te": {
+          "type": "BHAVARTHA",
+          "text": "ఇట్లు శ్రీ రావణ విరచిత పవిత్ర శివతాండవ స్తోత్రము సంపూర్ణము. ఓం నమః శివాయ! సమస్త లోకములకు శుభము కలుగుగాక!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ta": {
+          "type": "BHAVARTHA",
+          "text": "இத்துடன் ஸ்ரீராவணனால் அருளப்பட்ட திவ்ய சிவ தாண்டவ ஸ்தோத்திரம் நிறைவுற்றது. ஓம் நம சிவாய! அனைவருக்கும் மங்கலம் உண்டாகட்டும்!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "kn": {
+          "type": "BHAVARTHA",
+          "text": "ಹೀಗೆ ಶ್ರೀ ರಾವಣ ವಿರಚಿತ ಪವಿತ್ರ ಶಿವತಾಂಡವ ಸ್ತೋತ್ರವು ಸಂಪೂರ್ಣವಾಯಿತು. ಓಂ ನಮಃ ಶಿವಾಯ! ಎಲ್ಲರಿಗೂ ಮಂಗಳವಾಗಲಿ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "mr": {
+          "type": "BHAVARTHA",
+          "text": "अशा प्रकारे श्रीरावण रचित पवित्र शिवतांडव स्तोत्र संपूर्ण झाले. ॐ नमः शिवाय! सर्वांचे मंगल होवो!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "bn": {
+          "type": "BHAVARTHA",
+          "text": "এইরূপে শ্রীরাবণ বিরচিত পবিত্র শিবতাণ্ডব স্তোত্র সমাপ্ত হইল। ওঁ নমঃ শিবায়! সকলের মঙ্গল হউক!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "gu": {
+          "type": "BHAVARTHA",
+          "text": "આ રીતે શ્રીરાવણ રચિત પવિત્ર શિવતાંડવ સ્તોત્ર સંપૂર્ણ થયું. ૐ નમઃ શિવાય! સૌનું કલ્યાણ થાઓ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "ml": {
+          "type": "BHAVARTHA",
+          "text": "ഇപ്രകാരം രാവണനാൽ രചിക്കപ്പെട്ട പവിത്രമായ ശിവതാണ്ഡവ സ്തോത്രം സമാപിച്ചു. ഓം നമഃ ശിവായ! സർവ്വമംഗളങ്ങളും ഭവിക്കട്ടെ!",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        },
+        "or": {
+          "type": "BHAVARTHA",
+          "text": "ଏହିପରି ଶ୍ରୀରାବଣ ବିରଚିତ ପବିତ୍ର ଶିବତାଣ୍ଡବ ସ୍ତୋତ୍ର ସମ୍ପୂର୍ଣ୍ଣ ହେଲା । ଓଁ ନମଃ ଶିବାୟ ! ସମସ୍ତଙ୍କର ମଙ୍ଗଳ ହେଉ !",
+          "translator": "Platform Multilingual Localization Engine (Editorial Stotra Synthesis; Awaiting Accredited Scholar Panel)",
+          "review_status": "DRAFT"
+        }
+      }
+    }
+  ]
+}

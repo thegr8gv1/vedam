@@ -50,20 +50,31 @@ The platform is designed to preserve, transliterate, and translate texts across 
 
 ---
 
-## 3. Vedic Swaras & Unicode Combining Characters
+## 3. Vedic Swaras, Unicode Encoding & Recension Conventions
 
-Vedic texts (Rigveda, Yajurveda, Samaveda, Atharvaveda, and associated Suktas) contain sacred musical accents that indicate tone and cadence:
+Vedic texts (Rigveda, Yajurveda, Samaveda, Atharvaveda, and associated Suktas) contain sacred liturgical accents that govern pitch, inflection, and recitation cadence.
 
-### Standard Unicode Encoding:
-1. **Anudatta (Grave / Lower Tone):** Combining low line below the syllable — `U+0952` (`॒`).
-   - Example: `सु॒गन्धिं॑` (Anudatta on `ग`).
-2. **Svarita (Acute / Rising Tone):** Combining vertical line above the syllable — `U+0951` (`॑`).
-   - Example: `त्र्य॑म्बकं` (Svarita on `त्र्य`).
-3. **Udatta (High Tone):** Usually unmarked in Madhyandina / Shakala traditions, or marked with `U+0954`.
-4. **Dirgha Svarita:** Double acute combining mark — `U+1CDA`.
+### Standard Unicode Encoding & Philological Conventions:
+1. **`U+0952` (`॒`) — DEVANAGARI STRESS SIGN ANUDATTA:**
+   - Visual glyph: Combining horizontal line below the accented syllable.
+   - Recension practice: Represents the lower tone (*anudatta*) across both Shakala Rigveda and Taittiriya Krishna Yajurveda traditions.
+   - Example: In `सु॒गन्धिं॑`, the syllable `ग` carries the anudatta underline.
+2. **`U+0951` (`॑`) — DEVANAGARI STRESS SIGN UDATTA [Unicode Name] / SVARITA [Vedic Usage]:**
+   - Visual glyph: Combining vertical stroke above the accented syllable.
+   - Unicode Standard Note: Historically designated `DEVANAGARI STRESS SIGN UDATTA` in Unicode 1.0, with the official Unicode annotation: *"= svarita; mostly used for svarita, with anudatta below (U+0952)"*.
+   - Recension practice: In standard printed critical editions of the Shakala Rigveda (Max Müller, VSM) and Taittiriya Aranyaka / Samhita (Anandashrama), this stroke marks the *svarita* (rising/falling pitch). In these recensions, *udatta* (high pitch) is traditionally left unmarked between anudatta and svarita.
+   - Example: In `त्र्य॑म्बकं`, the syllable `त्र्य` carries the vertical svarita tick above.
+3. **`U+0954` (`॓`) — DEVANAGARI ACUTE ACCENT:**
+   - Used where explicit marking of high pitch (*udatta*) is required in specialized grammatical treaties.
+4. **`U+1CDA` (`᳚`) — VEDIC TONE DOUBLE SVARITA:**
+   - Double vertical stroke above used in Taittiriya and Samaveda chant notations for extended / prolonged svarita (*dirgha svarita*).
+
+> [!WARNING]
+> **Recension Distinction:**
+> The complete traditional chanting realization (*svara-uccāraṇa*) cannot be inferred solely from a Unicode character code point. Oral performance varies fundamentally between Shakala Rigvedic tradition, Taittiriya Krishna Yajurvedic tradition, and Madhyandina Shukla Yajurvedic tradition. Our digital library preserves source edition graphemes without reconstructing or altering historical typographical conventions.
 
 ### Normalization Guardrails:
 When cleaning or normalizing text in `automation/cleaners/`:
 - **Never strip Unicode combining characters** in ranges `U+0951` to `U+0954` or `U+1CD0` to `U+1CF6`.
-- Stripping swaras alters the sacred phonetic vibration of Vedic mantras.
-- For non-Vedic classical stotras (e.g., Ganesha Pancharatnam, Shiva Tandava), swaras are absent; poetic meter (*Chandas*) governs the rhythm.
+- Stripping swaras alters the sacred phonetic vibration and textual authenticity of Vedic mantras.
+- For non-Vedic classical stotras (e.g., Ganesha Pancharatnam, Shiva Tandava, Kanakadhara, Mahishasura Mardini), swara diacritics are absent; poetic meter (*Chandas*) governs the rhythm.
