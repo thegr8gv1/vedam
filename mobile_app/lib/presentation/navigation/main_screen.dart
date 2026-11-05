@@ -1,20 +1,28 @@
 import 'package:flutter/material.dart';
+import '../../core/services/audio_service.dart';
+import '../../data/repositories/mantra_repository.dart';
 import '../../data/repositories/scripture_repository.dart';
 import '../../state/app_state.dart';
+import '../../state/audio_state.dart';
 import '../screens/favorites/favorites_screen.dart';
 import '../screens/home/home_screen.dart';
 import '../screens/library/library_screen.dart';
+import '../screens/mantras/mantras_screen.dart';
 import '../screens/sadhana/sadhana_screen.dart';
 import '../screens/settings/settings_screen.dart';
 
 class MainScreen extends StatefulWidget {
   final ScriptureRepository repository;
+  final MantraRepository? mantraRepository;
+  final AudioState? audioState;
   final AppState appState;
   final int initialIndex;
 
   const MainScreen({
     super.key,
     required this.repository,
+    this.mantraRepository,
+    this.audioState,
     required this.appState,
     this.initialIndex = 0,
   });
@@ -25,17 +33,34 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   late int _currentIndex;
+  late final MantraRepository _mantraRepository;
+  late final AudioState _audioState;
 
   @override
   void initState() {
     super.initState();
     _currentIndex = widget.initialIndex;
+    _mantraRepository = widget.mantraRepository ?? MantraRepositoryImpl();
+    _audioState = widget.audioState ??
+        AudioState(audioService: AudioPlaybackServiceImpl());
   }
 
   void _onTabSelected(int index) {
     setState(() {
       _currentIndex = index;
     });
+  }
+
+  void _openMantrasScreen() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => MantrasScreen(
+          repository: _mantraRepository,
+          audioState: _audioState,
+        ),
+      ),
+    );
   }
 
   @override
@@ -45,6 +70,7 @@ class _MainScreenState extends State<MainScreen> {
         repository: widget.repository,
         appState: widget.appState,
         onNavigateToTab: _onTabSelected,
+        onOpenMantras: _openMantrasScreen,
       ),
       LibraryScreen(
         repository: widget.repository,
@@ -52,6 +78,7 @@ class _MainScreenState extends State<MainScreen> {
       ),
       SadhanaScreen(
         appState: widget.appState,
+        onOpenMantras: _openMantrasScreen,
       ),
       FavoritesScreen(
         repository: widget.repository,

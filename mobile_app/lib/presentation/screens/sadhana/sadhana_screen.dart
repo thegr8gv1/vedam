@@ -7,8 +7,13 @@ import '../../widgets/section_header.dart';
 
 class SadhanaScreen extends StatefulWidget {
   final AppState appState;
+  final VoidCallback? onOpenMantras;
 
-  const SadhanaScreen({super.key, required this.appState});
+  const SadhanaScreen({
+    super.key,
+    required this.appState,
+    this.onOpenMantras,
+  });
 
   @override
   State<SadhanaScreen> createState() => _SadhanaScreenState();
@@ -47,6 +52,59 @@ class _SadhanaScreenState extends State<SadhanaScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            if (widget.onOpenMantras != null)
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+                child: Card(
+                  elevation: 0,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                    side: BorderSide(
+                      color: AppColors.saffronPrimary.withAlpha(120),
+                      width: 1,
+                    ),
+                  ),
+                  color: isDark ? AppColors.nightSurfaceElevated : AppColors.creamBackground,
+                  child: InkWell(
+                    onTap: widget.onOpenMantras,
+                    borderRadius: BorderRadius.circular(16),
+                    child: Padding(
+                      padding: const EdgeInsets.all(16),
+                      child: Row(
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                              color: AppColors.saffronPrimary,
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: const Icon(Icons.music_note, color: Colors.white, size: 24),
+                          ),
+                          const SizedBox(width: 14),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Text(
+                                  'Mantra Library & Audio Japa',
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                                ),
+                                const SizedBox(height: 2),
+                                Text(
+                                  'Chant with 455 Master Recordings & 108 Beads',
+                                  style: AppTextStyles.caption(isDark),
+                                ),
+                              ],
+                            ),
+                          ),
+                          const Icon(Icons.arrow_forward_ios, size: 14, color: AppColors.saffronPrimary),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
             // 1. Japa Mala Counter Card
             Card(
               margin: const EdgeInsets.all(16),

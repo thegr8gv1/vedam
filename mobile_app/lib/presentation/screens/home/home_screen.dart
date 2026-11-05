@@ -19,12 +19,14 @@ class HomeScreen extends StatelessWidget {
   final ScriptureRepository repository;
   final AppState appState;
   final Function(int tabIndex) onNavigateToTab;
+  final VoidCallback? onOpenMantras;
 
   const HomeScreen({
     super.key,
     required this.repository,
     required this.appState,
     required this.onNavigateToTab,
+    this.onOpenMantras,
   });
 
   @override
@@ -163,10 +165,10 @@ class HomeScreen extends StatelessWidget {
                       Expanded(
                         child: _PortalCard(
                           title: 'Mantras & Chanting',
-                          subtitle: 'Gayatri, Vedic hymns',
+                          subtitle: '455 Master Recordings',
                           icon: Icons.graphic_eq,
                           accentColor: const Color(0xFF0D9488),
-                          onTap: () => onNavigateToTab(1),
+                          onTap: onOpenMantras ?? () => onNavigateToTab(1),
                         ),
                       ),
                       const SizedBox(width: 12),
