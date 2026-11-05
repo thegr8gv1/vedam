@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Vedic Scholarly Review Workbench — Gayatri Vedic Mantra [ur-Arab]</title>
+<style>
+  :root {
+    --bg-primary: #0a0e14;
+    --bg-surface: #111822;
+    --bg-card: #16202c;
+    --bg-card-hover: #1e2c3d;
+    --border-color: #243447;
+    --border-subtle: #1b2636;
+    --accent-gold: #e5b567;
+    --accent-gold-soft: rgba(229, 181, 103, 0.15);
+    --accent-teal: #4fd1c5;
+    --accent-teal-soft: rgba(79, 209, 197, 0.15);
+    --accent-maroon: #800020;
+    --accent-coral: #fc8181;
+    --accent-green: #48bb78;
+    --accent-green-soft: rgba(72, 187, 120, 0.15);
+    --accent-blue: #63b3ed;
+    --text-primary: #f7fafc;
+    --text-secondary: #a0aec0;
+    --text-muted: #718096;
+    --font-sanskrit: 'Noto Sans Devanagari', 'Siddhanta', 'Nirmala UI', serif;
+    --font-indic: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Tahoma', 'Arial', sans-serif;
+    --font-iast: 'Charis SIL', 'Gentium Plus', 'Georgia', serif;
+    --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-ui);
+    line-height: 1.5;
+    padding: 16px 24px;
+    font-size: 14px;
+  }
+
+  /* Focus visible accessibility */
+  *:focus-visible {
+    outline: 2px solid var(--accent-gold);
+    outline-offset: 2px;
+  }
+
+  /* Header bar */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .logo-title h1 {
+    font-size: 1.45rem;
+    color: var(--accent-gold);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: -0.01em;
+  }
+  .logo-title p {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+  }
+  .header-badges {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .gov-pill {
+    background-color: var(--accent-gold-soft);
+    border: 1px solid var(--accent-gold);
+    color: var(--accent-gold);
+    padding: 4px 10px;
+    border-radius: 16px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .gov-pill-green {
+    background-color: var(--accent-green-soft);
+    border-color: var(--accent-green);
+    color: var(--accent-green);
+  }
+  .gov-pill-draft {
+    background-color: rgba(237, 137, 54, 0.15);
+    border: 1px solid #ed8936;
+    color: #f6ad55;
+    font-weight: bold;
+  }
+
+  /* Governance Census Notice Bar */
+  .notice-bar {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+    font-size: 0.8rem;
+  }
+  .notice-item-label { color: var(--text-muted); display: block; font-size: 0.7rem; text-transform: uppercase; }
+  .notice-item-val { color: var(--text-primary); font-weight: 600; }
+
+  /* Interactive Navigation Bar */
+  .control-grid {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1.2fr 1fr 1fr 1.6fr;
+    gap: 12px;
+    align-items: flex-end;
+  }
+  @media (max-width: 1400px) {
+    .control-grid { grid-template-columns: 1fr 1fr 1fr; }
+  }
+  @media (max-width: 800px) {
+    .control-grid { grid-template-columns: 1fr; }
+  }
+  .control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .control-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+  }
+  select, input, textarea {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    width: 100%;
+    transition: border-color 0.15s ease;
+  }
+  select:hover, input:hover, textarea:hover {
+    border-color: var(--accent-gold);
+  }
+
+  /* 6-Column Workbench Grid */
+  .workbench-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 1600px) {
+    .workbench-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (max-width: 1000px) {
+    .workbench-grid { grid-template-columns: 1fr; }
+  }
+
+  /* Column Card Styling */
+  .col-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    min-height: 620px;
+  }
+  .col-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+  }
+  .col-header h2 {
+    font-size: 0.95rem;
+    color: var(--accent-gold);
+    font-weight: 600;
+  }
+  .col-badge {
+    background-color: var(--accent-teal-soft);
+    color: var(--accent-teal);
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+
+  /* Typography text containers */
+  .indic-source-box {
+    font-family: var(--font-sanskrit);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    border-radius: 6px;
+    border-left: 3px solid var(--accent-maroon);
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  .iast-box {
+    font-family: var(--font-iast);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--accent-gold);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  .view-content-box {
+    font-family: var(--font-indic);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #f0f4f8;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    flex-grow: 1;
+    word-break: break-word;
+  }
+  .meta-row {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .meta-row strong { color: var(--text-primary); }
+
+  /* Legacy Gap Alert */
+  .legacy-gap-box {
+    background-color: rgba(237, 137, 54, 0.1);
+    border: 1px solid rgba(237, 137, 54, 0.4);
+    border-radius: 6px;
+    padding: 12px;
+    color: #fbd38d;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+  .legacy-gap-box strong { display: block; margin-bottom: 4px; color: #f6ad55; }
+
+  /* Badges */
+  .badge {
+    font-size: 0.68rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .badge-success { background-color: var(--accent-green-soft); color: var(--accent-green); border: 1px solid var(--accent-green); }
+  .badge-warning { background-color: rgba(237, 137, 54, 0.15); color: #f6ad55; border: 1px solid #ed8936; }
+  .badge-danger { background-color: rgba(245, 101, 101, 0.15); color: var(--accent-coral); border: 1px solid var(--accent-coral); }
+  .badge-info { background-color: rgba(99, 179, 237, 0.15); color: var(--accent-blue); border: 1px solid var(--accent-blue); }
+  .badge-muted { background-color: rgba(113, 128, 150, 0.2); color: var(--text-secondary); }
+
+  /* Transliterations Accordion / Scroll */
+  .proj-container {
+    overflow-y: auto;
+    max-height: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-right: 4px;
+  }
+  .proj-card {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--border-subtle);
+    border-radius: 6px;
+    padding: 8px 10px;
+  }
+  .proj-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+  .proj-name { font-size: 0.75rem; color: var(--accent-gold); font-weight: 600; }
+  .proj-text { font-size: 0.95rem; line-height: 1.5; color: #edf2f7; }
+  .proj-warn { font-size: 0.7rem; color: #f6ad55; margin-top: 4px; }
+
+  /* Action Form in Col 6 */
+  .auth-banner {
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    font-size: 0.78rem;
+    line-height: 1.4;
+  }
+  .auth-granted { background-color: var(--accent-green-soft); border: 1px solid var(--accent-green); color: #9ae6b4; }
+  .auth-denied { background-color: rgba(245, 101, 101, 0.15); border: 1px solid var(--accent-coral); color: #feb2b2; }
+  .auth-demo { background-color: rgba(237, 137, 54, 0.15); border: 1px solid #ed8936; color: #fbd38d; }
+
+  .action-form textarea {
+    min-height: 70px;
+    resize: vertical;
+    margin-bottom: 8px;
+  }
+  .btn-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+  .btn {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: opacity 0.15s ease;
+  }
+  .btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+  .btn-approve { background-color: #2f855a; color: #fff; }
+  .btn-correct { background-color: #2b6cb0; color: #fff; }
+  .btn-revise { background-color: #d69e2e; color: #000; }
+  .btn-dispute { background-color: #c53030; color: #fff; }
+
+  .action-item {
+    border-left: 2px solid var(--accent-teal);
+    padding-left: 8px;
+    margin-bottom: 8px;
+    font-size: 0.78rem;
+  }
+  .action-comment { color: var(--text-secondary); margin-top: 2px; }
+
+  .dispute-box {
+    background-color: rgba(245, 101, 101, 0.1);
+    border: 1px solid rgba(245, 101, 101, 0.3);
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    font-size: 0.78rem;
+  }
+  .dispute-title { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px; }
+  .dispute-desc { color: var(--text-secondary); }
+
+  /* Unicode Expandable Diagnostics */
+  .diagnostics-section {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+  }
+  details.diag-drawer summary {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent-teal);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+  }
+  .diag-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.8rem;
+  }
+  .diag-cell {
+    background-color: var(--bg-card);
+    padding: 8px 10px;
+    border-radius: 6px;
+  }
+  .diag-label { color: var(--text-muted); font-size: 0.7rem; }
+  .diag-val { font-weight: 600; color: var(--text-primary); }
+  .codepoint-pill-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 8px;
+  }
+  .cp-pill {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-subtle);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.68rem;
+    font-family: monospace;
+    color: var(--accent-gold);
+  }
+
+  /* Publication Preview Section */
+  .pub-preview-section {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+  }
+  .pub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .pub-header h3 {
+    font-size: 1rem;
+    color: var(--accent-gold);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .pub-formats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  @media (max-width: 1100px) {
+    .pub-formats-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 600px) {
+    .pub-formats-grid { grid-template-columns: 1fr; }
+  }
+  .pub-format-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .pub-format-card.limited-preview {
+    border-color: #ed8936;
+    background-color: rgba(237, 137, 54, 0.05);
+  }
+  .format-title {
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .format-desc {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+  }
+  .format-warn {
+    font-size: 0.72rem;
+    color: #fbd38d;
+    background-color: rgba(237, 137, 54, 0.15);
+    padding: 4px 6px;
+    border-radius: 4px;
+    margin-top: 4px;
+    line-height: 1.3;
+  }
+</style>
+</head>
+<body>
+
+<header role="banner">
+  <div class="logo-title">
+    <h1>
+      <span>&#2384;</span>
+      <bdi>Vedic Scholarly Review Workbench</bdi>
+    </h1>
+    <p>Multilingual Script-Aware Scholarly Review, Non-Destructive Diagnostics & RBAC-Governed Publication Platform</p>
+  </div>
+  <div class="header-badges">
+    <div class="gov-pill gov-pill-draft" role="status">
+      &#9888; <bdi>UNREVIEWED DRAFT — NOT FOR PUBLIC DEVOTIONAL USE</bdi>
+    </div>
+    <div class="gov-pill" role="status">
+      Gate: <bdi>CONDITIONAL_DRAFT_ONLY</bdi>
+    </div>
+    <div class="gov-pill gov-pill-green" role="status">
+      Rule PUB-010 / PUB-011 Active
+    </div>
+  </div>
+</header>
+
+<!-- Governance & Quality Census Bar -->
+<section class="notice-bar" aria-label="Governance and Corpus Census">
+  <div>
+    <span class="notice-item-label">Reviewer Authenticity (Rule REV-005)</span>
+    <span class="notice-item-val" style="color:var(--accent-gold);">0 Living Humans Approved (Onboarding In-Flight)</span>
+    <small style="color:var(--text-muted); display:block;">5 Synthetic Personas, 1 Demo Sandbox</small>
+  </div>
+  <div>
+    <span class="notice-item-label">Legacy TranslationView Gaps (Rule PUB-011)</span>
+    <span class="notice-item-val" style="color:#f6ad55;">747 Staged Missing Records</span>
+    <small style="color:var(--text-muted); display:block;">Gaps Preserved Transparently (No Auto-Fill)</small>
+  </div>
+  <div>
+    <span class="notice-item-label">Corpus Scale & Active Translations</span>
+    <span class="notice-item-val" style="color:var(--accent-teal);">18 Texts (307 Verses) | 3,070 Active Translations</span>
+    <small style="color:var(--text-muted); display:block;">100% Retained in DRAFT Lifecycle</small>
+  </div>
+  <div>
+    <span class="notice-item-label">Script & Typography Support</span>
+    <span class="notice-item-val" style="color:#68d391;">22 Languages + English | 14 Scripts</span>
+    <small style="color:var(--text-muted); display:block;">Directionality: <bdi>RTL</bdi> (RTL)</small>
+  </div>
+</section>
+
+<!-- Interactive Control Navigation Bar -->
+<section class="control-grid" aria-label="Workbench Navigation and Filters">
+  <div class="control-group">
+    <label for="comp-select" class="control-label">Sacred Composition:</label>
+    <select id="comp-select" onchange="alert('In production, switching compositions reloads live database record.')">
+      <option value="VEDA-TXT-00001" >VEDA-TXT-00001 — Ganesha Pancharatnam (6 verses)</option><option value="VEDA-TXT-00002" >VEDA-TXT-00002 — Shiva Tandava Stotram (16 verses)</option><option value="VEDA-TXT-00003" >VEDA-TXT-00003 — Aditya Hrudayam (31 verses)</option><option value="VEDA-TXT-00004" >VEDA-TXT-00004 — Madhurashtakam (9 verses)</option><option value="VEDA-TXT-00005" >VEDA-TXT-00005 — Mahamrityunjaya Vedic Mantra (1 verses)</option><option value="VEDA-TXT-00006" selected>VEDA-TXT-00006 — Gayatri Vedic Mantra (1 verses)</option><option value="VEDA-TXT-00007" >VEDA-TXT-00007 — Sri Suktam (16 verses)</option><option value="VEDA-TXT-00008" >VEDA-TXT-00008 — Hanuman Chalisa (43 verses)</option><option value="VEDA-TXT-00010" >VEDA-TXT-00010 — Mahalakshmi Ashtakam (10 verses)</option><option value="VEDA-TXT-00011" >VEDA-TXT-00011 — Lingashtakam (9 verses)</option><option value="VEDA-TXT-00012" >VEDA-TXT-00012 — Sankata Nashana Ganesha Stotram (8 verses)</option><option value="VEDA-TXT-00013" >VEDA-TXT-00013 — Venkateswara Suprabhatam (70 verses)</option><option value="VEDA-TXT-00014" >VEDA-TXT-00014 — Purusha Suktam (16 verses)</option><option value="VEDA-TXT-00015" >VEDA-TXT-00015 — Durga Suktam (7 verses)</option><option value="VEDA-TXT-00016" >VEDA-TXT-00016 — Narayana Suktam (12 verses)</option><option value="VEDA-TXT-00017" >VEDA-TXT-00017 — Surya Ashtakam (10 verses)</option><option value="VEDA-TXT-00018" >VEDA-TXT-00018 — Kanakadhara Stotram (21 verses)</option><option value="VEDA-TXT-00019" >VEDA-TXT-00019 — Mahishasura Mardini Stotram (21 verses)</option>
+    </select>
+  </div>
+  <div class="control-group">
+    <label for="verse-select" class="control-label">Verse / Stanza:</label>
+    <select id="verse-select">
+      <option value="1" selected>Verse 1 (MANTRA) — VEDA-TXT-00006-V001</option>
+    </select>
+  </div>
+  <div class="control-group">
+    <label for="lang-select" class="control-label">Target Language:</label>
+    <select id="lang-select" onchange="alert('Switching target language updates translation views and script options.')">
+      <option value="sa"  data-dir="ltr" data-primary-script="Deva">Sanskrit (संस्कृतम्) [LTR]</option><option value="hi"  data-dir="ltr" data-primary-script="Deva">Hindi (हिन्दी) [LTR]</option><option value="te"  data-dir="ltr" data-primary-script="Telu">Telugu (తెలుగు) [LTR]</option><option value="ta"  data-dir="ltr" data-primary-script="Taml">Tamil (தமிழ்) [LTR]</option><option value="kn"  data-dir="ltr" data-primary-script="Knda">Kannada (ಕನ್ನಡ) [LTR]</option><option value="ml"  data-dir="ltr" data-primary-script="Mlym">Malayalam (മലയാളം) [LTR]</option><option value="bn"  data-dir="ltr" data-primary-script="Beng">Bengali (বাংলা) [LTR]</option><option value="gu"  data-dir="ltr" data-primary-script="Gujr">Gujarati (ગુજરાતી) [LTR]</option><option value="mr"  data-dir="ltr" data-primary-script="Deva">Marathi (मराठी) [LTR]</option><option value="or"  data-dir="ltr" data-primary-script="Orya">Odia (ଓଡ଼ିଆ) [LTR]</option><option value="pa"  data-dir="ltr" data-primary-script="Guru">Punjabi (ਪੰਜਾਬੀ) [LTR]</option><option value="as"  data-dir="ltr" data-primary-script="Beng">Assamese (অসমীয়া) [LTR]</option><option value="mai"  data-dir="ltr" data-primary-script="Deva">Maithili (मैथिली) [LTR]</option><option value="ne"  data-dir="ltr" data-primary-script="Deva">Nepali (नेपाली) [LTR]</option><option value="kok"  data-dir="ltr" data-primary-script="Deva">Konkani (कोंकणी) [LTR]</option><option value="doi"  data-dir="ltr" data-primary-script="Deva">Dogri (डोगरी) [LTR]</option><option value="brx"  data-dir="ltr" data-primary-script="Deva">Bodo (बर') [LTR]</option><option value="sat"  data-dir="ltr" data-primary-script="Olck">Santali (ᱥᱟᱱᱛᱟᱲᱤ) [LTR]</option><option value="ks"  data-dir="rtl" data-primary-script="Arab">Kashmiri (کٲشُر) [RTL]</option><option value="sd"  data-dir="rtl" data-primary-script="Arab">Sindhi (سنڌي / सिन्धी) [RTL]</option><option value="mni"  data-dir="ltr" data-primary-script="Beng">Manipuri (মৈতৈলোন্) [LTR]</option><option value="ur" selected data-dir="rtl" data-primary-script="Arab">Urdu (اُردُو) [RTL]</option><option value="en"  data-dir="ltr" data-primary-script="Latn">English (English) [LTR]</option>
+    </select>
+  </div>
+  <div class="control-group">
+    <label for="script-select" class="control-label">Target Script:</label>
+    <select id="script-select">
+      <option value="Arab" selected>Perso-Arabic (اُردُو / العربية) [RTL]</option><option value="Deva" >Devanagari (देवनागरी) [LTR]</option><option value="Latn" >Latin (IAST / English) (Latin) [LTR]</option>
+    </select>
+  </div>
+  <div class="control-group">
+    <label for="mode-select" class="control-label">Orthographic Mode:</label>
+    <select id="mode-select">
+      <option value="standard">Standard Orthography</option>
+    </select>
+  </div>
+  <div class="control-group">
+    <label for="reviewer-select" class="control-label">Simulate Reviewer Persona (RBAC):</label>
+    <select id="reviewer-select">
+      <option value="REV-ADMIN-001" >REV-ADMIN-001 — Mahamahopadhyaya Dr. S. K. Sharma (EDITORIAL_BOARD) [VERIFIED]</option><option value="REV-PROD-VEDIC" selected>REV-PROD-VEDIC — Dr. K. Ramanathan Ghanapathi (VEDIC_RECENSION) [VERIFIED]</option><option value="REV-PROD-CLASSICAL" >REV-PROD-CLASSICAL — Prof. Vidvan V. Shastri (SANSKRIT_GRAMMAR) [VERIFIED]</option><option value="REV-PROD-AWADHI" >REV-PROD-AWADHI — Dr. R. C. Shukla (AWADHI_SPECIALIST) [VERIFIED]</option><option value="REV-DEMO-SIM" >REV-DEMO-SIM — Simulated Reviewer (Test Harness) (SANSKRIT_TEXTUAL) [DEMO]</option><option value="REV-APPLICANT-PENDING" >REV-APPLICANT-PENDING — Sri Aniket Verma (HINDI_TRANSLATOR) [PENDING_VERIFICATION]</option><option value="GUEST" >Guest Scholar (Unauthenticated)</option>
+    </select>
+  </div>
+</section>
+
+<!-- 6-Column Workbench Workspace -->
+<main class="workbench-grid" role="region" aria-label="Scholarly Review Columns">
+
+  <!-- COLUMN 1: Original Sanskrit Source -->
+  <article class="col-card" aria-labelledby="col1-heading">
+    <div class="col-header">
+      <h2 id="col1-heading"><bdi>1. Original Source</bdi></h2>
+      <span class="col-badge">Col 1</span>
+    </div>
+    <div class="meta-row"><span><bdi>Scripture:</bdi></span><strong><bdi>Gayatri Vedic Mantra</bdi></strong></div>
+    <div class="meta-row"><span><bdi>Verse ID:</bdi></span><strong><bdi>VEDA-TXT-00006-V001</bdi></strong></div>
+    <div class="meta-row"><span><bdi>Meter:</bdi></span><strong><bdi>Gayatri (8-8-8 syllables)</bdi></strong></div>
+    <div class="meta-row"><span><bdi>Vedic Accents:</bdi></span><strong><bdi>Preserved & Highlighted</bdi></strong></div>
+    
+    <div class="indic-source-box" lang="sa" dir="ltr">ॐ भूर्भुव॒स्स॒वः॑ ।
+तत्स॑वि॒तुर्वरे॑ण्यं॒ भर्गो॑ दे॒वस्य॑ धीमहि ।
+धियो॒ यो नः॑ प्रचो॒दया॑त् ॥</div>
+    <div class="iast-box" lang="sa-Latn" dir="ltr">oṁ bhūrbhuva॒ssa॒vaḥ॑ ।
+tatsa॑vi॒turvare॑ṇyaṁ॒ bhargo॑ de॒vasya॑ dhīmahi ।
+dhiyo॒ yo naḥ॑ praco॒dayā॑t ॥</div>
+
+    <div class="meta-row"><span><bdi>Composer / Rishi:</bdi></span><strong><bdi>Brahmarshi Vishvamitra (Gathina)</bdi></strong></div>
+    <div class="meta-row"><span><bdi>Verse Type:</bdi></span><strong><bdi>MANTRA</bdi></strong></div>
+  </article>
+
+  <!-- COLUMN 2: Script Projections & Transliterations -->
+  <article class="col-card" aria-labelledby="col2-heading">
+    <div class="col-header">
+      <h2 id="col2-heading"><bdi>2. Transliterations</bdi></h2>
+      <span class="col-badge">Col 2</span>
+    </div>
+    <div class="meta-row"><span><bdi>Source Script:</bdi></span><strong><bdi>Devanagari (Deva)</bdi></strong></div>
+    <div class="meta-row"><span><bdi>Target Projection:</bdi></span><strong><bdi>Perso-Arabic</bdi></strong></div>
+    <div class="meta-row"><span class="badge badge-info"><bdi>Phonetic Projection Only — Not a Translation</bdi></span></div>
+
+    <div class="proj-container" role="region" aria-label="Script Projections List">
+      
+            <div class="proj-card" dir="ltr">
+              <div class="proj-head">
+                <span class="proj-name"><bdi>Devanagari</bdi> (Deva)</span>
+                <span class="badge badge-success"><bdi>REVERSIBLE</bdi></span>
+              </div>
+              <div class="proj-text">ॐ भूर्भुव॒स्स॒वः॑ ।
+तत्स॑वि॒तुर्वरे॑ण्यं॒ भर्गो॑ दे॒वस्य॑ धीमहि ।
+धियो॒ यो नः॑ प्रचो॒दया॑त् ॥</div>
+              
+            </div>
+            
+            <div class="proj-card" dir="ltr">
+              <div class="proj-head">
+                <span class="proj-name"><bdi>Telugu</bdi> (Telu)</span>
+                <span class="badge badge-success"><bdi>REVERSIBLE</bdi></span>
+              </div>
+              <div class="proj-text">ఓం భూర్భువ॒స్స॒వః॑ ।
+తత్స॑వి॒తుర్వరే॑ణ్యం॒ భర్గో॑ దే॒వస్య॑ ధీమహి ।
+ధియో॒ యో నః॑ ప్రచో॒దయా॑త్ ॥</div>
+              
+            </div>
+            
+            <div class="proj-card" dir="ltr">
+              <div class="proj-head">
+                <span class="proj-name"><bdi>Tamil</bdi> (Taml)</span>
+                <span class="badge badge-danger"><bdi>LOSSY</bdi></span>
+              </div>
+              <div class="proj-text">ௐ பூர்புவ॒ஸ்ஸ॒வஃ॑ ।
+தத்ஸ॑வி॒துர்வரே॑ண்யம்॒ பர்கோ॑ தே॒வஸ்ய॑ தீமஹி ।
+தியோ॒ யோ நஃ॑ ப்ரசோ॒தயா॑த் ॥</div>
+              <div class="proj-warn">⚠ Conversion from &#x27;Deva&#x27; to &#x27;Taml&#x27; is lossy. Character distinctions may be merged.</div>
+            </div>
+            
+            <div class="proj-card" dir="ltr">
+              <div class="proj-head">
+                <span class="proj-name"><bdi>Grantha</bdi> (Gran)</span>
+                <span class="badge badge-success"><bdi>REVERSIBLE</bdi></span>
+              </div>
+              <div class="proj-text">𑍐 𑌭𑍂𑌰𑍍𑌭𑍁𑌵॒𑌸𑍍𑌸॒𑌵𑌃॑ ।
+𑌤𑌤𑍍𑌸॑𑌵𑌿॒𑌤𑍁𑌰𑍍𑌵𑌰𑍇॑𑌣𑍍𑌯𑌂॒ 𑌭𑌰𑍍𑌗𑍋॑ 𑌦𑍇॒𑌵𑌸𑍍𑌯॑ 𑌧𑍀𑌮𑌹𑌿 ।
+𑌧𑌿𑌯𑍋॒ 𑌯𑍋 𑌨𑌃॑ 𑌪𑍍𑌰𑌚𑍋॒𑌦𑌯𑌾॑𑌤𑍍 ॥</div>
+              
+            </div>
+            
+            <div class="proj-card" dir="ltr">
+              <div class="proj-head">
+                <span class="proj-name"><bdi>Kannada</bdi> (Knda)</span>
+                <span class="badge badge-success"><bdi>REVERSIBLE</bdi></span>
+              </div>
+              <div class="proj-text">ಓಂ ಭೂರ್ಭುವ॒ಸ್ಸ॒ವಃ॑ ।
+ತತ್ಸ॑ವಿ॒ತುರ್ವರೇ॑ಣ್ಯಂ॒ ಭರ್ಗೋ॑ ದೇ॒ವಸ್ಯ॑ ಧೀಮಹಿ ।
+ಧಿಯೋ॒ ಯೋ ನಃ॑ ಪ್ರಚೋ॒ದಯಾ॑ತ್ ॥</div>
+              
+            </div>
+            
+            <div class="proj-card" dir="ltr">
+              <div class="proj-head">
+                <span class="proj-name"><bdi>Malayalam</bdi> (Mlym)</span>
+                <span class="badge badge-success"><bdi>REVERSIBLE</bdi></span>
+              </div>
+              <div class="proj-text">ഓം ഭൂര്ഭുവ॒സ്സ॒വഃ॑ ।
+തത്സ॑വി॒തുര്വരേ॑ണ്യം॒ ഭര്ഗോ॑ ദേ॒വസ്യ॑ ധീമഹി ।
+ധിയോ॒ യോ നഃ॑ പ്രചോ॒ദയാ॑ത് ॥</div>
+              
+            </div>
+            
+            <div class="proj-card" dir="ltr">
+              <div class="proj-head">
+                <span class="proj-name"><bdi>Bengali-Assamese</bdi> (Beng)</span>
+                <span class="badge badge-success"><bdi>REVERSIBLE</bdi></span>
+              </div>
+              <div class="proj-text">ওঁ ভূর্ভুব॒স্স॒বঃ॑ ।
+তত্স॑বি॒তুর্বরে॑ণ্যং॒ ভর্গো॑ দে॒বস্য॑ ধীমহি ।
+ধিযো॒ যো নঃ॑ প্রচো॒দযা॑ত্ ॥</div>
+              
+            </div>
+            
+            <div class="proj-card" dir="ltr">
+              <div class="proj-head">
+                <span class="proj-name"><bdi>Gujarati</bdi> (Gujr)</span>
+                <span class="badge badge-success"><bdi>REVERSIBLE</bdi></span>
+              </div>
+              <div class="proj-text">ૐ ભૂર્ભુવ॒સ્સ॒વઃ॑ ।
+તત્સ॑વિ॒તુર્વરે॑ણ્યં॒ ભર્ગો॑ દે॒વસ્ય॑ ધીમહિ ।
+ધિયો॒ યો નઃ॑ પ્રચો॒દયા॑ત્ ॥</div>
+              
+            </div>
+            
+            <div class="proj-card" dir="ltr">
+              <div class="proj-head">
+                <span class="proj-name"><bdi>Gurmukhi</bdi> (Guru)</span>
+                <span class="badge badge-warning"><bdi>CONDITIONALLY_REVERSIBLE</bdi></span>
+              </div>
+              <div class="proj-text">ੴ ਭੂਰ੍ਭੁਵ॒ਸ੍ਸ॒ਵਃੑ ।
+ਤਤ੍ਸੑਵਿ॒ਤੁਰ੍ਵਰੇੑਣ੍ਯਂ॒ ਭਰ੍ਗੋੑ ਦੇ॒ਵਸ੍ਯੑ ਧੀਮਹਿ ।
+ਧਿਯੋ॒ ਯੋ ਨਃੑ ਪ੍ਰਚੋ॒ਦਯਾੑਤ੍ ॥</div>
+              <div class="proj-warn">⚠ Conversion from &#x27;Deva&#x27; to &#x27;Guru&#x27; is conditionally reversible depending on orthographic context.</div>
+            </div>
+            
+            <div class="proj-card" dir="ltr">
+              <div class="proj-head">
+                <span class="proj-name"><bdi>Odia</bdi> (Orya)</span>
+                <span class="badge badge-warning"><bdi>CONDITIONALLY_REVERSIBLE</bdi></span>
+              </div>
+              <div class="proj-text">ଓଁ ଭୂର୍ଭୁଵ॒ସ୍ସ॒ଵଃ॑ ।
+ତତ୍ସ॑ଵି॒ତୁର୍ଵରେ॑ଣ୍ଯଂ॒ ଭର୍ଗୋ॑ ଦେ॒ଵସ୍ଯ॑ ଧୀମହି ।
+ଧିଯୋ॒ ଯୋ ନଃ॑ ପ୍ରଚୋ॒ଦଯା॑ତ୍ ॥</div>
+              <div class="proj-warn">⚠ Conversion from &#x27;Deva&#x27; to &#x27;Orya&#x27; is conditionally reversible depending on orthographic context.</div>
+            </div>
+            
+            <div class="proj-card" dir="ltr">
+              <div class="proj-head">
+                <span class="proj-name"><bdi>Ol Chiki</bdi> (Olck)</span>
+                <span class="badge badge-danger"><bdi>LOSSY</bdi></span>
+              </div>
+              <div class="proj-text">ᱳᱸ ᱵᱷᱚᱩᱻᱨᱚᱵᱷᱚᱩᱣᱚ॒ᱥᱚᱥᱚ॒ᱣᱚᱷ॑ ᱾
+ᱛᱚᱛᱚᱥᱚ॑ᱣᱚᱤ॒ᱛᱚᱩᱨᱚᱣᱚᱨᱚᱮ॑ᱬᱚᱭᱚᱝ॒ ᱵᱷᱚᱨᱚᱜᱚᱳ॑ ᱫᱚᱮ॒ᱣᱚᱥᱚᱭᱚ॑ ᱫᱷᱚᱤᱻᱢᱚᱦᱚᱤ ᱾
+ᱫᱷᱚᱤᱭᱚᱳ॒ ᱭᱚᱳ ᱱᱚᱷ॑ ᱯᱚᱨᱚᱪᱚᱳ॒ᱫᱚᱭᱚᱟ॑ᱛᱚ ᱿</div>
+              <div class="proj-warn">⚠ Conversion from &#x27;Deva&#x27; to &#x27;Olck&#x27; is lossy. Character distinctions may be merged.</div>
+            </div>
+            
+            <div class="proj-card" dir="ltr">
+              <div class="proj-head">
+                <span class="proj-name"><bdi>Meetei Mayek</bdi> (Mtei)</span>
+                <span class="badge badge-danger"><bdi>LOSSY</bdi></span>
+              </div>
+              <div class="proj-text">ꯑꯣꯪ ꯚꯨꯔ꯭ꯚꯨꯋ॒ꯁ꯭ꯁ॒ꯋꯍ꯭॑ ।
+ꯇꯇ꯭ꯁ॑ꯋꯤ॒ꯇꯨꯔ꯭ꯋꯔꯦ॑ꯅ꯭ꯌꯪ॒ ꯚꯔ꯭ꯒꯣ॑ ꯗꯦ॒ꯋꯁ꯭ꯌ॑ ꯙꯤꯃꯍꯤ ।
+ꯙꯤꯌꯣ॒ ꯌꯣ ꯅꯍ꯭॑ ꯄ꯭ꯔꯆꯣ॒ꯗꯌꯥ॑ꯇ꯭ ॥</div>
+              <div class="proj-warn">⚠ Conversion from &#x27;Deva&#x27; to &#x27;Mtei&#x27; is lossy. Character distinctions may be merged.</div>
+            </div>
+            
+            <div class="proj-card" dir="rtl">
+              <div class="proj-head">
+                <span class="proj-name"><bdi>Perso-Arabic</bdi> (Arab)</span>
+                <span class="badge badge-danger"><bdi>LOSSY</bdi></span>
+              </div>
+              <div class="proj-text">اومْ بھَُورَْبھَُوَ॒سَْسَ॒وَہ॑ ۔
+تَتَْسَ॑وَِ॒تَُرَْوَرَے॑نَْیَں॒ بھَرَْگَو॑ دَے॒وَسَْیَ॑ دھَِیمَہَِ ۔
+دھَِیَو॒ یَو نَہ॑ پَْرَچَو॒دَیَا॑تَْ ۔۔</div>
+              <div class="proj-warn">⚠ Conversion from &#x27;Deva&#x27; to &#x27;Arab&#x27; is lossy. Character distinctions may be merged.</div>
+            </div>
+            
+            <div class="proj-card" dir="ltr">
+              <div class="proj-head">
+                <span class="proj-name"><bdi>Latin (IAST / English)</bdi> (Latn)</span>
+                <span class="badge badge-success"><bdi>REVERSIBLE</bdi></span>
+              </div>
+              <div class="proj-text">oṃ bhūrbhuva̱ssa̱va̭ḥ |
+tatsa̭vi̱turvarḙṇya̱ṃ bhargo̭ de̱vasya̭ dhīmahi |
+dhiyo̱ yo na̭ḥ praco̱dayā̭t ||</div>
+              
+            </div>
+            
+    </div>
+  </article>
+
+  <!-- COLUMN 3: Literal Translation View -->
+  <article class="col-card" aria-labelledby="col3-heading">
+    <div class="col-header">
+      <h2 id="col3-heading"><bdi>3. Literal Translation</bdi></h2>
+      <span class="col-badge">Col 3</span>
+    </div>
+    <div class="meta-row">
+      <span><bdi>Status:</bdi></span>
+      <span class="badge badge-warning"><bdi>PENDING_REVIEW</bdi></span>
+    </div>
+    <div class="meta-row"><span><bdi>Source:</bdi></span><strong><bdi>Padachheda Syntactical Analysis</bdi></strong></div>
+
+    <div class="legacy-gap-box" dir="ltr"><strong>&#9888; STAGED IN 747 GAP QUEUE</strong>Literal translation view is pending scholarly collation in the Legacy 747 Gap Queue.</div>
+
+    <div class="view-content-box" lang="ur" dir="rtl">
+      <span dir="ltr">View pending scholarly extraction.</span>
+    </div>
+
+    <div class="meta-row" style="margin-top:auto;"><span><bdi>Padachheda Analysis:</bdi></span></div>
+    <div class="meta-row" style="color:var(--text-secondary); font-size:0.75rem;">
+      <bdi>Grammatical dissection recorded in database.</bdi>
+    </div>
+  </article>
+
+  <!-- COLUMN 4: Traditional Tatparya View -->
+  <article class="col-card" aria-labelledby="col4-heading">
+    <div class="col-header">
+      <h2 id="col4-heading"><bdi>4. Traditional Tatparya</bdi></h2>
+      <span class="col-badge">Col 4</span>
+    </div>
+    <div class="meta-row">
+      <span><bdi>Status:</bdi></span>
+      <span class="badge badge-warning"><bdi>PENDING_REVIEW</bdi></span>
+    </div>
+    <div class="meta-row"><span><bdi>Commentator:</bdi></span><strong><bdi>Traditional Sampradaya Commentary</bdi></strong></div>
+
+    <div class="legacy-gap-box" dir="ltr"><strong>&#9888; STAGED IN 747 GAP QUEUE</strong>Traditional Tatparya commentary is pending sampradaya exegesis in the Legacy 747 Gap Queue.</div>
+
+    <div class="view-content-box" lang="ur" dir="rtl">
+      <span dir="ltr">Commentary collation pending authorized human review.</span>
+    </div>
+
+    <div class="meta-row" style="margin-top:auto;"><span><bdi>Source Reference:</bdi></span><strong><bdi>Classical Exegesis</bdi></strong></div>
+  </article>
+
+  <!-- COLUMN 5: Devotional Bhavartha View -->
+  <article class="col-card" aria-labelledby="col5-heading">
+    <div class="col-header">
+      <h2 id="col5-heading"><bdi>5. Devotional Bhavartha</bdi></h2>
+      <span class="col-badge">Col 5</span>
+    </div>
+    <div class="meta-row">
+      <span><bdi>Target Language:</bdi></span>
+      <strong><bdi>Urdu (Arab)</bdi></strong>
+    </div>
+    <div class="meta-row">
+      <span><bdi>Directionality:</bdi></span>
+      <span class="badge badge-info"><bdi>RTL</bdi></span>
+    </div>
+
+    <div class="view-content-box" lang="ur" dir="rtl" style="border-left: 3px solid var(--accent-gold);">
+      <span dir="ltr">Translation pending regional language draft.</span>
+    </div>
+
+    <div class="meta-row" style="margin-top:auto;">
+      <span><bdi>Review Status:</bdi></span>
+      <span class="badge badge-warning"><bdi>NOT_FOUND</bdi></span>
+    </div>
+    <div class="meta-row"><span><bdi>Liturgical Purpose:</bdi></span><strong><bdi>Daily Bhakti Chanting</bdi></strong></div>
+  </article>
+
+  <!-- COLUMN 6: Reviewer RBAC Governance & Audit -->
+  <article class="col-card" aria-labelledby="col6-heading">
+    <div class="col-header">
+      <h2 id="col6-heading"><bdi>6. Reviewer RBAC & Actions</bdi></h2>
+      <span class="col-badge">Col 6</span>
+    </div>
+
+    <div class="auth-banner auth-denied">
+      <strong><bdi>Reviewer Authorization Status:</bdi></strong><br/>
+      <bdi>Unauthorized: Reviewer lacks certified credential for language &#x27;UR&#x27;. Read-only consultation only.</bdi>
+    </div>
+
+    <div class="meta-row">
+      <span><bdi>Reviewer ID:</bdi></span>
+      <strong><bdi>REV-PROD-VEDIC</bdi></strong>
+    </div>
+    <div class="meta-row">
+      <span><bdi>Primary Role:</bdi></span>
+      <strong><bdi>VEDIC_RECENSION</bdi></strong>
+    </div>
+    <div class="meta-row">
+      <span><bdi>Accreditation:</bdi></span>
+      <span class="badge badge-info"><bdi>VERIFIED</bdi></span>
+    </div>
+
+    <div class="action-form" style="margin-top:8px;">
+      <label for="correction-notes" class="control-label"><bdi>Scholarly Correction / Rationale:</bdi></label>
+      <textarea id="correction-notes" placeholder="Enter grammatical, theological, or idiomatic commentary..." disabled></textarea>
+      
+      <div class="btn-grid">
+        <button class="btn btn-approve" disabled>Approve View</button>
+        <button class="btn btn-correct" disabled>Approve w/ Edits</button>
+        <button class="btn btn-revise" disabled>Request Revision</button>
+        <button class="btn btn-dispute" disabled>Flag Dispute</button>
+      </div>
+    </div>
+
+    <div class="meta-row"><span><bdi>Audit History (8 logs):</bdi></span></div>
+    <div style="overflow-y:auto; max-height:140px; margin-bottom:8px;">
+      <div class="action-item">
+                <span class="badge badge-info">APPROVE</span>
+                <strong>Dr. K. Ramanathan Ghanapathi</strong>
+                <small class="text-muted">(2026-11-05)</small>
+                <p class="action-comment">Clarified lexical difference: &#x27;bhargaḥ&#x27; indicates sins-destroying spiritual effulgence (avidya-dahaka tejas), not merely physical sunlight.</p>
+            </div><div class="action-item">
+                <span class="badge badge-info">APPROVE</span>
+                <strong>Dr. K. Ramanathan Ghanapathi</strong>
+                <small class="text-muted">(2026-11-05)</small>
+                <p class="action-comment">Verified 24-syllable Vedic Tripada Gayatri meter (8 + 8 + 8 aksharas). Quarters correspond to Pingala Chhandas Sutra 3.1.</p>
+            </div><div class="action-item">
+                <span class="badge badge-info">APPROVE</span>
+                <strong>Dr. K. Ramanathan Ghanapathi</strong>
+                <small class="text-muted">(2026-11-05)</small>
+                <p class="action-comment">Recitation pronunciation verified: Udatta accent on &#x27;tat&#x27;, Svarita on &#x27;vareṇyam&#x27;, Anudatta on &#x27;dhīmahi&#x27;. Nasalization of final m/anusvara must follow Paniniya Shiksha nasal phonetic articulation.</p>
+            </div><div class="action-item">
+                <span class="badge badge-info">APPROVE_WITH_CORRECTIONS</span>
+                <strong>Dr. K. Ramanathan Ghanapathi</strong>
+                <small class="text-muted">(2026-11-05)</small>
+                <p class="action-comment">Refined grammatical translation of &#x27;vareṇyam&#x27; as a kṛtya-pratyaya (gerundive) from root vṛñ, meaning &#x27;the supreme choice / worshipful effulgence&#x27;. Rigvedic Shakha Padapatha: tat | savituḥ | vareṇyam | bhargaḥ | devasya | dhīmahi | dhiyaḥ | yaḥ | naḥ | pracodayāt ||</p>
+            </div><div class="action-item">
+                <span class="badge badge-info">APPROVE</span>
+                <strong>Dr. K. Ramanathan Ghanapathi</strong>
+                <small class="text-muted">(2026-11-05)</small>
+                <p class="action-comment">Clarified lexical difference: &#x27;bhargaḥ&#x27; indicates sins-destroying spiritual effulgence (avidya-dahaka tejas), not merely physical sunlight.</p>
+            </div><div class="action-item">
+                <span class="badge badge-info">APPROVE</span>
+                <strong>Dr. K. Ramanathan Ghanapathi</strong>
+                <small class="text-muted">(2026-11-05)</small>
+                <p class="action-comment">Verified 24-syllable Vedic Tripada Gayatri meter (8 + 8 + 8 aksharas). Quarters correspond to Pingala Chhandas Sutra 3.1.</p>
+            </div><div class="action-item">
+                <span class="badge badge-info">APPROVE</span>
+                <strong>Dr. K. Ramanathan Ghanapathi</strong>
+                <small class="text-muted">(2026-11-05)</small>
+                <p class="action-comment">Recitation pronunciation verified: Udatta accent on &#x27;tat&#x27;, Svarita on &#x27;vareṇyam&#x27;, Anudatta on &#x27;dhīmahi&#x27;. Nasalization of final m/anusvara must follow Paniniya Shiksha nasal phonetic articulation.</p>
+            </div><div class="action-item">
+                <span class="badge badge-info">APPROVE_WITH_CORRECTIONS</span>
+                <strong>Dr. K. Ramanathan Ghanapathi</strong>
+                <small class="text-muted">(2026-11-05)</small>
+                <p class="action-comment">Refined grammatical translation of &#x27;vareṇyam&#x27; as a kṛtya-pratyaya (gerundive) from root vṛñ, meaning &#x27;the supreme choice / worshipful effulgence&#x27;. Rigvedic Shakha Padapatha: tat | savituḥ | vareṇyam | bhargaḥ | devasya | dhīmahi | dhiyaḥ | yaḥ | naḥ | pracodayāt ||</p>
+            </div>
+    </div>
+
+    <div class="meta-row"><span><bdi>Preserved Disputes:</bdi></span></div>
+    <div style="overflow-y:auto; max-height:100px;">
+      <div class="dispute-box">
+                <div class="dispute-title"><strong>Dispute: Sampradaya Exegetical Dispute on &#x27;Tat Savitur Vareṇyam&#x27;</strong> <span class="badge badge-danger">OPEN</span></div>
+                <p class="dispute-desc">Open for traditional sampradaya resolution.</p>
+            </div><div class="dispute-box">
+                <div class="dispute-title"><strong>Dispute: Sampradaya Exegetical Dispute on &#x27;Tat Savitur Vareṇyam&#x27;</strong> <span class="badge badge-danger">OPEN</span></div>
+                <p class="dispute-desc">Open for traditional sampradaya resolution.</p>
+            </div>
+    </div>
+  </article>
+
+</main>
+
+<!-- Expandable Unicode & Vedic Svara Diagnostics Panel -->
+<section class="diagnostics-section" aria-label="Unicode and Svara Diagnostics">
+  <details class="diag-drawer">
+    <summary>
+      <span>&#128269;</span>
+      <bdi>Non-Destructive Unicode & Vedic Svara Diagnostics Panel</bdi>
+      <span class="badge badge-success" style="margin-left:auto;">Read-Only Diagnostic — 100% Database Immutability Guaranteed</span>
+    </summary>
+    
+    <div class="diag-grid">
+      <div class="diag-cell">
+        <span class="diag-label">NFC Normalized</span>
+        <div class="diag-val" style="color:var(--accent-green);">PASSED (True)</div>
+      </div>
+      <div class="diag-cell">
+        <span class="diag-label">NFD Normalized</span>
+        <div class="diag-val">True</div>
+      </div>
+      <div class="diag-cell">
+        <span class="diag-label">Character / UTF-8 Byte Count</span>
+        <div class="diag-val">93 chars / 255 bytes</div>
+      </div>
+      <div class="diag-cell">
+        <span class="diag-label">Vedic Swaras (Tones)</span>
+        <div class="diag-val" style="color:var(--accent-gold);">14 tone accents (U+0952, U+0952, U+0951, U+0951, U+0952, U+0951, U+0952, U+0951, U+0952, U+0951, U+0952, U+0951, U+0952, U+0951)</div>
+      </div>
+      <div class="diag-cell">
+        <span class="diag-label">Combining Marks Count</span>
+        <div class="diag-val">40 combining marks</div>
+      </div>
+      <div class="diag-cell">
+        <span class="diag-label">Control Chars (ZWJ / ZWNJ)</span>
+        <div class="diag-val">ZWJ: False | ZWNJ: False</div>
+      </div>
+      <div class="diag-cell">
+        <span class="diag-label">Script Purity & Detection</span>
+        <div class="diag-val">Deva (Pure: True)</div>
+      </div>
+    </div>
+
+    <div style="margin-top:10px;">
+      <span class="diag-label">Codepoints Breakdown (First 25 characters):</span>
+      <div class="codepoint-pill-box">
+        <span class="cp-pill">U+0950 (DEVANAGARI OM)</span><span class="cp-pill">U+0020 (SPACE)</span><span class="cp-pill">U+092D (DEVANAGARI LETTER BHA)</span><span class="cp-pill">U+0942 (DEVANAGARI VOWEL SIGN UU)</span><span class="cp-pill">U+0930 (DEVANAGARI LETTER RA)</span><span class="cp-pill">U+094D (DEVANAGARI SIGN VIRAMA)</span><span class="cp-pill">U+092D (DEVANAGARI LETTER BHA)</span><span class="cp-pill">U+0941 (DEVANAGARI VOWEL SIGN U)</span><span class="cp-pill">U+0935 (DEVANAGARI LETTER VA)</span><span class="cp-pill">U+0952 (DEVANAGARI STRESS SIGN ANUDATTA)</span><span class="cp-pill">U+0938 (DEVANAGARI LETTER SA)</span><span class="cp-pill">U+094D (DEVANAGARI SIGN VIRAMA)</span><span class="cp-pill">U+0938 (DEVANAGARI LETTER SA)</span><span class="cp-pill">U+0952 (DEVANAGARI STRESS SIGN ANUDATTA)</span><span class="cp-pill">U+0935 (DEVANAGARI LETTER VA)</span><span class="cp-pill">U+0903 (DEVANAGARI SIGN VISARGA)</span><span class="cp-pill">U+0951 (DEVANAGARI STRESS SIGN UDATTA)</span><span class="cp-pill">U+0020 (SPACE)</span><span class="cp-pill">U+0964 (DEVANAGARI DANDA)</span><span class="cp-pill">U+000A (UNKNOWN)</span><span class="cp-pill">U+0924 (DEVANAGARI LETTER TA)</span><span class="cp-pill">U+0924 (DEVANAGARI LETTER TA)</span><span class="cp-pill">U+094D (DEVANAGARI SIGN VIRAMA)</span><span class="cp-pill">U+0938 (DEVANAGARI LETTER SA)</span><span class="cp-pill">U+0951 (DEVANAGARI STRESS SIGN UDATTA)</span>
+      </div>
+    </div>
+  </details>
+</section>
+
+<!-- Publication Preflight & Gatekeeper Preview Section -->
+<section class="pub-preview-section" aria-label="Publication Preflight and Gatekeeper Status">
+  <div class="pub-header">
+    <h3>
+      <span>&#128196;</span>
+      <bdi>Publication Preflight Gating & Multi-Format Exporter Preview</bdi>
+    </h3>
+    <div style="display:flex; gap:8px; align-items:center;">
+      <span class="badge badge-warning">Gate Verdict: CONDITIONAL_DRAFT_ONLY</span>
+      <span class="badge badge-info">Channel: draft_export</span>
+    </div>
+  </div>
+
+  <div class="pub-formats-grid">
+    <!-- HTML Format -->
+    <div class="pub-format-card">
+      <div class="format-title">
+        <span>HTML Web Edition</span>
+        <span class="badge badge-success">READY</span>
+      </div>
+      <div class="format-desc">Native browser DirectWrite/HarfBuzz complex shaping with <bdi> isolation.</div>
+    </div>
+
+    <!-- DOCX Format -->
+    <div class="pub-format-card">
+      <div class="format-title">
+        <span>Word (.docx) Manuscript</span>
+        <span class="badge badge-success">READY</span>
+      </div>
+      <div class="format-desc">Microsoft Word OOXML with <w:bidi/> paragraph bidirectional flow.</div>
+    </div>
+
+    <!-- EPUB 3 Format -->
+    <div class="pub-format-card">
+      <div class="format-title">
+        <span>EPUB 3 Package</span>
+        <span class="badge badge-success">READY</span>
+      </div>
+      <div class="format-desc">IDPF EPUB 3.2 package with RTL spine navigation for Arabic.</div>
+    </div>
+
+    <!-- PDF Format with MANDATORY Limited Preview Only Badge -->
+    <div class="pub-format-card limited-preview">
+      <div class="format-title">
+        <span>PDF Edition</span>
+        <span class="badge badge-warning" style="background-color:#ed8936; color:#000;">LIMITED PREVIEW ONLY</span>
+      </div>
+      <div class="format-desc">ReportLab PDF exporter is strictly restricted to draft layout preview.</div>
+      <div class="format-warn">
+        <strong>&#9888; NOT PRINT-READY:</strong> ReportLab core lacks OpenType GSUB/GPOS shaping for Indic conjuncts and matra reordering. Output restricted to internal proofreading drafts.
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
