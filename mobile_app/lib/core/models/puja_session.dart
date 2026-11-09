@@ -20,6 +20,7 @@ class PujaSession {
   final List<String> preparedMaterials;
   final PujaSessionStatus status;
   final String? linkedJapaSessionId;
+  final Map<String, String> japaStepBindings;
   final int durationSeconds;
 
   const PujaSession({
@@ -33,6 +34,7 @@ class PujaSession {
     this.preparedMaterials = const [],
     this.status = PujaSessionStatus.active,
     this.linkedJapaSessionId,
+    this.japaStepBindings = const {},
     this.durationSeconds = 0,
   });
 
@@ -56,6 +58,7 @@ class PujaSession {
     List<String>? preparedMaterials,
     PujaSessionStatus? status,
     String? linkedJapaSessionId,
+    Map<String, String>? japaStepBindings,
     int? durationSeconds,
   }) {
     return PujaSession(
@@ -69,6 +72,7 @@ class PujaSession {
       preparedMaterials: preparedMaterials ?? List.from(this.preparedMaterials),
       status: status ?? this.status,
       linkedJapaSessionId: linkedJapaSessionId ?? this.linkedJapaSessionId,
+      japaStepBindings: japaStepBindings ?? Map.from(this.japaStepBindings),
       durationSeconds: durationSeconds ?? this.durationSeconds,
     );
   }
@@ -84,6 +88,7 @@ class PujaSession {
         'prepared_materials': preparedMaterials,
         'status': status.name,
         'linked_japa_session_id': linkedJapaSessionId,
+        'japa_step_bindings': japaStepBindings,
         'duration_seconds': durationSeconds,
       };
 
@@ -115,6 +120,9 @@ class PujaSession {
           const [],
       status: parsedStatus,
       linkedJapaSessionId: json['linked_japa_session_id'] as String?,
+      japaStepBindings: (json['japa_step_bindings'] as Map<String, dynamic>?)
+              ?.map((k, v) => MapEntry(k, v.toString())) ??
+          const {},
       durationSeconds: json['duration_seconds'] as int? ?? 0,
     );
   }

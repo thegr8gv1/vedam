@@ -423,6 +423,19 @@ class SadhanaState extends ChangeNotifier {
     notifyListeners();
   }
 
+  void recordJapaStepFulfillment(String stepId, String japaSessionId) {
+    if (_activePujaSession == null) return;
+    final updatedBindings = Map<String, String>.from(_activePujaSession!.japaStepBindings);
+    updatedBindings[stepId] = japaSessionId;
+    _activePujaSession = _activePujaSession!.copyWith(
+      japaStepBindings: updatedBindings,
+      linkedJapaSessionId: japaSessionId,
+      lastUpdatedTime: DateTime.now(),
+    );
+    _pujaSessionService?.saveActiveSession(_activePujaSession!);
+    notifyListeners();
+  }
+
   void pausePujaSession() {
     if (_activeGuide != null) {
       _isGuidePaused = true;

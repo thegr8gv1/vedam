@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../core/models/japa_practice_session.dart';
 import '../../../core/models/puja_guide.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/text_styles.dart';
@@ -34,6 +35,7 @@ class GuidedPujaScreen extends StatefulWidget {
 
 class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
   final Set<String> _fulfilledJapaStepIds = {};
+  final Map<String, String> _stepJapaSessionBindings = {};
 
   @override
   void initState() {
@@ -41,6 +43,15 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
     widget.sadhanaState.addListener(_onStateChange);
     if (widget.sadhanaState.activeGuide?.id != widget.guide.id) {
       widget.sadhanaState.startPujaSession(widget.guide);
+    }
+    _restoreJapaStepBindings();
+  }
+
+  void _restoreJapaStepBindings() {
+    final activePuja = widget.sadhanaState.activePujaSession;
+    if (activePuja != null && activePuja.japaStepBindings.isNotEmpty) {
+      _stepJapaSessionBindings.addAll(activePuja.japaStepBindings);
+      _fulfilledJapaStepIds.addAll(activePuja.japaStepBindings.keys);
     }
   }
 
@@ -51,6 +62,7 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
   }
 
   void _onStateChange() {
+    _restoreJapaStepBindings();
     if (mounted) setState(() {});
   }
 
@@ -63,6 +75,10 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
 
     if (mantra != null && aState != null) {
       final targetRepetitions = step.targetRepetitions ?? 108;
+      final baselineStartTime = DateTime.now();
+      final priorActiveSessionId = aState.activeSession?.id;
+      final priorHistoryCount = aState.sessionHistory.length;
+
       if (aState.targetRepetitions != targetRepetitions && !aState.hasActiveOrPausedSession) {
         aState.setTargetRepetitions(targetRepetitions);
       }
@@ -80,14 +96,37 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
       );
 
       if (!mounted) return;
-      final completedCount = aState.completedRepetitions;
-      final isMatchingMantra = aState.activeMantra?.id == step.linkedMantraId;
-      final isTargetReached = isMatchingMantra && (aState.hasReachedTarget || completedCount >= targetRepetitions);
 
-      if (isTargetReached) {
+      // Identify newly completed session
+      JapaPracticeSession? candidateSession;
+      if (aState.sessionHistory.length > priorHistoryCount) {
+        final newest = aState.sessionHistory.first;
+        if (newest.mantraId == step.linkedMantraId) {
+          candidateSession = newest;
+        }
+      }
+      if (candidateSession == null && aState.activeSession != null) {
+        final act = aState.activeSession!;
+        if (act.mantraId == step.linkedMantraId) {
+          candidateSession = act;
+        }
+      }
+
+      // Validate session identity and completion
+      final bool isSessionValid = candidateSession != null &&
+          candidateSession.mantraId == step.linkedMantraId &&
+          candidateSession.completedRepetitions >= targetRepetitions &&
+          candidateSession.status != JapaSessionStatus.paused &&
+          candidateSession.status != JapaSessionStatus.abandoned &&
+          (candidateSession.lastUpdatedTime.isAfter(baselineStartTime.subtract(const Duration(seconds: 2))) ||
+              candidateSession.id != priorActiveSessionId);
+
+      if (isSessionValid) {
         setState(() {
           _fulfilledJapaStepIds.add(step.id);
+          _stepJapaSessionBindings[step.id] = candidateSession!.id;
         });
+        widget.sadhanaState.recordJapaStepFulfillment(step.id, candidateSession.id);
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('॥ जप पूर्णम् ॥ Japa target ($targetRepetitions chants) completed.'),
@@ -96,11 +135,14 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
           ),
         );
       } else {
+        final completedCount = (candidateSession != null)
+            ? candidateSession.completedRepetitions
+            : ((aState.activeMantra?.id == step.linkedMantraId) ? aState.completedRepetitions : 0);
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(
               'Japa in progress: $completedCount of $targetRepetitions completed. '
-              'Complete target to fulfill step.',
+              'Complete target in an active session to fulfill step.',
             ),
             duration: const Duration(seconds: 2),
           ),
@@ -249,13 +291,9 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
   }
 
   Widget _buildStepView(bool isDark, PujaStep step) {
-    final isMatchingMantra = widget.audioState?.activeMantra?.id == step.linkedMantraId;
-    final isTargetReached = _fulfilledJapaStepIds.contains(step.id) ||
-        (widget.audioState != null &&
-            isMatchingMantra &&
-            (widget.audioState!.hasReachedTarget ||
-                (step.targetRepetitions != null &&
-                    widget.audioState!.completedRepetitions >= step.targetRepetitions!)));
+    final isTargetReached = step.linkedMantraId == null ||
+        _fulfilledJapaStepIds.contains(step.id) ||
+        (widget.sadhanaState.activePujaSession?.japaStepBindings.containsKey(step.id) ?? false);
 
     return ListView(
       padding: const EdgeInsets.fromLTRB(18, 12, 18, 24),
