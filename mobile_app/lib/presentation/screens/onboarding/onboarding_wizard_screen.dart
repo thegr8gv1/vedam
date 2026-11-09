@@ -588,7 +588,6 @@ class _OnboardingWizardScreenState extends State<OnboardingWizardScreen> {
   Widget _buildStep2LanguageAndScript(bool isDark) {
     const supportedLangs = [
       {'code': 'en', 'label': 'English', 'native': 'English'},
-      {'code': 'sa', 'label': 'Sanskrit', 'native': 'संस्कृतम्'},
       {'code': 'te', 'label': 'Telugu', 'native': 'తెలుగు'},
       {'code': 'ta', 'label': 'Tamil', 'native': 'தமிழ்'},
       {'code': 'kn', 'label': 'Kannada', 'native': 'ಕನ್ನಡ'},

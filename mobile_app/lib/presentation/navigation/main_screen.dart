@@ -1,3 +1,4 @@
+import '../../l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import '../../core/services/audio_service.dart';
 import '../../data/repositories/mantra_repository.dart';
@@ -166,36 +167,41 @@ class _MainScreenState extends State<MainScreen> {
         index: _currentIndex,
         children: screens,
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _currentIndex,
-        onTap: _onTabSelected,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.temple_hindu_outlined),
-            activeIcon: Icon(Icons.temple_hindu),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.menu_book_outlined),
-            activeIcon: Icon(Icons.menu_book),
-            label: 'Library',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.self_improvement_outlined),
-            activeIcon: Icon(Icons.self_improvement),
-            label: 'Sadhana',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.favorite_border),
-            activeIcon: Icon(Icons.favorite),
-            label: 'Saved',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings_outlined),
-            activeIcon: Icon(Icons.settings),
-            label: 'Settings',
-          ),
-        ],
+      bottomNavigationBar: Builder(
+        builder: (context) {
+          final l10n = AppLocalizations.of(context);
+          return BottomNavigationBar(
+            currentIndex: _currentIndex,
+            onTap: _onTabSelected,
+            items: [
+              BottomNavigationBarItem(
+                icon: const Icon(Icons.temple_hindu_outlined),
+                activeIcon: const Icon(Icons.temple_hindu),
+                label: l10n?.navHome ?? 'Home',
+              ),
+              BottomNavigationBarItem(
+                icon: const Icon(Icons.menu_book_outlined),
+                activeIcon: const Icon(Icons.menu_book),
+                label: l10n?.navLibrary ?? 'Library',
+              ),
+              BottomNavigationBarItem(
+                icon: const Icon(Icons.self_improvement_outlined),
+                activeIcon: const Icon(Icons.self_improvement),
+                label: l10n?.navSadhana ?? 'Sadhana',
+              ),
+              BottomNavigationBarItem(
+                icon: const Icon(Icons.favorite_border),
+                activeIcon: const Icon(Icons.favorite),
+                label: l10n?.navSaved ?? 'Saved',
+              ),
+              BottomNavigationBarItem(
+                icon: const Icon(Icons.settings_outlined),
+                activeIcon: const Icon(Icons.settings),
+                label: l10n?.navSettings ?? 'Settings',
+              ),
+            ],
+          );
+        },
       ),
     );
   }

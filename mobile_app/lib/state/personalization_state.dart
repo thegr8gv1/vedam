@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../core/models/app_settings.dart';
 import '../core/models/devotee_preferences.dart';
 import '../core/models/devotional_reminder.dart';
 import '../core/models/panchangam_data.dart';
@@ -129,6 +130,7 @@ class PersonalizationState extends ChangeNotifier {
 
   void _syncToDependencies() {
     _appState?.setActiveScript(_preferences.scriptureScript);
+    _appState?.setInterfaceLanguage(InterfaceLanguage.fromCode(_preferences.interfaceLanguage));
     _panchangamState?.setLocation(_preferences.panchangamLocation);
     _audioState?.setTargetRepetitions(_preferences.sadhanaGoals.japaTarget);
   }
@@ -171,6 +173,7 @@ class PersonalizationState extends ChangeNotifier {
 
   Future<void> setInterfaceLanguage(String lang) async {
     _preferences = _preferences.copyWith(interfaceLanguage: lang);
+    _appState?.setInterfaceLanguage(InterfaceLanguage.fromCode(lang));
     await _save();
   }
 

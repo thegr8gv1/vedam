@@ -1,3 +1,4 @@
+import '../../../../l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/models/puja_guide.dart';
 import '../../../../core/theme/app_colors.dart';
@@ -83,14 +84,19 @@ class DailyRoutineCard extends StatelessWidget {
                       ),
                       const SizedBox(width: 8),
                       Flexible(
-                        child: Text(
-                          'DAILY SPIRITUAL ROUTINE',
-                          style: AppTextStyles.metadataTag(isDark).copyWith(
-                            color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
-                            fontWeight: FontWeight.w700,
-                            letterSpacing: 0.8,
-                          ),
-                          overflow: TextOverflow.ellipsis,
+                        child: Builder(
+                          builder: (context) {
+                            final l10n = AppLocalizations.of(context);
+                            return Text(
+                              (l10n?.homeDailyRoutine ?? 'DAILY SPIRITUAL ROUTINE').toUpperCase(),
+                              style: AppTextStyles.metadataTag(isDark).copyWith(
+                                color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
+                                fontWeight: FontWeight.w700,
+                                letterSpacing: 0.8,
+                              ),
+                              overflow: TextOverflow.ellipsis,
+                            );
+                          },
                         ),
                       ),
                     ],
@@ -243,9 +249,13 @@ class DailyRoutineCard extends StatelessWidget {
                 final isDone = sadhanaState.completedPracticeIds.contains(practice.id);
                 return Padding(
                   padding: const EdgeInsets.only(bottom: 6),
-                  child: InkWell(
-                    onTap: () => sadhanaState.togglePracticeCompletion(practice.id),
-                    borderRadius: BorderRadius.circular(8),
+                  child: Semantics(
+                    button: true,
+                    label: 'Sadhana practice: ${practice.title}',
+                    value: isDone ? 'Completed' : 'Not completed',
+                    child: InkWell(
+                      onTap: () => sadhanaState.togglePracticeCompletion(practice.id),
+                      borderRadius: BorderRadius.circular(8),
                     child: Container(
                       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
                       decoration: BoxDecoration(
@@ -290,6 +300,7 @@ class DailyRoutineCard extends StatelessWidget {
                       ),
                     ),
                   ),
+                  ),
                 );
               }),
             ],
@@ -301,34 +312,38 @@ class DailyRoutineCard extends StatelessWidget {
               children: [
                 if (defaultGuide != null)
                   Expanded(
-                    child: OutlinedButton.icon(
-                      icon: const Icon(Icons.wb_sunny_outlined, size: 15),
-                      label: const Text('Start Guided Puja', style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold)),
-                      style: OutlinedButton.styleFrom(
-                        foregroundColor: AppColors.saffronPrimary,
-                        side: const BorderSide(color: AppColors.saffronPrimary, width: 1.2),
-                        padding: const EdgeInsets.symmetric(vertical: 10),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                    child: SizedBox(
+                      height: 48,
+                      child: OutlinedButton.icon(
+                        icon: const Icon(Icons.wb_sunny_outlined, size: 16),
+                        label: const Text('Start Guided Puja', style: TextStyle(fontSize: 11.5, fontWeight: FontWeight.bold)),
+                        style: OutlinedButton.styleFrom(
+                          foregroundColor: AppColors.saffronPrimary,
+                          side: const BorderSide(color: AppColors.saffronPrimary, width: 1.2),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                        ),
+                        onPressed: () => _startOrResumePuja(context, defaultGuide),
                       ),
-                      onPressed: () => _startOrResumePuja(context, defaultGuide),
                     ),
                   ),
                 const SizedBox(width: 10),
                 Expanded(
-                  child: ElevatedButton.icon(
-                    icon: const Icon(Icons.format_list_bulleted, size: 15),
-                    label: const Text('Full Routine', style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold)),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: isDark ? AppColors.nightSurfaceElevated : AppColors.creamBackground,
-                      foregroundColor: isDark ? AppColors.goldLight : AppColors.goldDark,
-                      side: BorderSide(
-                        color: isDark ? AppColors.nightBorder : AppColors.chandanBorder,
+                  child: SizedBox(
+                    height: 48,
+                    child: ElevatedButton.icon(
+                      icon: const Icon(Icons.format_list_bulleted, size: 16),
+                      label: const Text('Full Routine', style: TextStyle(fontSize: 11.5, fontWeight: FontWeight.bold)),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: isDark ? AppColors.nightSurfaceElevated : AppColors.creamBackground,
+                        foregroundColor: isDark ? AppColors.goldLight : AppColors.goldDark,
+                        side: BorderSide(
+                          color: isDark ? AppColors.nightBorder : AppColors.chandanBorder,
+                        ),
+                        elevation: 0,
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                       ),
-                      padding: const EdgeInsets.symmetric(vertical: 10),
-                      elevation: 0,
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                      onPressed: onOpenSadhana,
                     ),
-                    onPressed: onOpenSadhana,
                   ),
                 ),
               ],

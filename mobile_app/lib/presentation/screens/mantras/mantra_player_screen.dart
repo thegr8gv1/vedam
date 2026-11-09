@@ -524,6 +524,47 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                 ),
                 const SizedBox(height: 14),
 
+                // Offline Audio Availability Indicator
+                Container(
+                  margin: const EdgeInsets.only(bottom: 12),
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                  decoration: BoxDecoration(
+                    color: currentMantra.isBundled
+                        ? (isDark ? const Color(0xFF1B2E1D) : const Color(0xFFEDF7ED))
+                        : (isDark ? const Color(0xFF2E2415) : const Color(0xFFFFF8EC)),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: currentMantra.isBundled
+                          ? (isDark ? Colors.green.shade700 : Colors.green.shade300)
+                          : (isDark ? Colors.orange.shade700 : Colors.orange.shade300),
+                    ),
+                  ),
+                  child: Row(
+                    children: [
+                      Icon(
+                        currentMantra.isBundled ? Icons.offline_pin_outlined : Icons.cloud_outlined,
+                        size: 16,
+                        color: currentMantra.isBundled ? Colors.green : Colors.orange,
+                      ),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          currentMantra.isBundled
+                              ? 'Offline Ready • Bundled Authentic Audio'
+                              : 'Online Master Vault • Manual Japa Available Offline',
+                          style: TextStyle(
+                            fontSize: 11,
+                            fontWeight: FontWeight.w600,
+                            color: currentMantra.isBundled
+                                ? (isDark ? Colors.green.shade300 : Colors.green.shade800)
+                                : (isDark ? Colors.orange.shade300 : Colors.orange.shade800),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
                 // Active Target Banner & Target Selector Button
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),

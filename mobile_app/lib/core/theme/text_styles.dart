@@ -2,6 +2,17 @@ import 'package:flutter/material.dart';
 import 'app_colors.dart';
 
 class AppTextStyles {
+  /// Robust font fallbacks for Pan-Indic scripts across Android, Web, and desktop platforms.
+  static const List<String> indicFontFamilyFallback = [
+    'Noto Sans Devanagari',
+    'Noto Sans Telugu',
+    'Noto Sans Tamil',
+    'Noto Sans Kannada',
+    'Noto Sans Malayalam',
+    'Roboto',
+    'sans-serif',
+  ];
+
   // Headings
   static TextStyle titleLarge(bool isDark) => TextStyle(
         fontSize: 22,
@@ -23,12 +34,13 @@ class AppTextStyles {
         color: isDark ? AppColors.textLightPrimary : AppColors.textDarkPrimary,
       );
 
-  // Sacred Verse Styles
+  // Sacred Verse Styles with guaranteed Indic font fallbacks
   static TextStyle verseDevanagari(bool isDark, {double scale = 1.0}) => TextStyle(
         fontSize: 20 * scale,
         fontWeight: FontWeight.w600,
         height: 1.75,
         letterSpacing: 0.4,
+        fontFamilyFallback: indicFontFamilyFallback,
         color: isDark ? const Color(0xFFFFF7ED) : const Color(0xFF1F1610),
       );
 
@@ -38,6 +50,7 @@ class AppTextStyles {
         fontWeight: FontWeight.w500,
         height: 1.6,
         letterSpacing: 0.2,
+        fontFamilyFallback: indicFontFamilyFallback,
         color: isDark ? AppColors.textLightSecondary : AppColors.textDarkSecondary,
       );
 
@@ -45,6 +58,7 @@ class AppTextStyles {
         fontSize: 15 * scale,
         fontWeight: FontWeight.w400,
         height: 1.6,
+        fontFamilyFallback: indicFontFamilyFallback,
         color: isDark ? AppColors.textLightPrimary : AppColors.textDarkPrimary,
       );
 

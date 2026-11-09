@@ -30,8 +30,11 @@ class VisualMalaWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         // 1. Sacred Stats Header
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        Semantics(
+          label: 'Japa Mala Chanting Counter',
+          value: '$completedCount of $targetCount chants completed',
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
           decoration: BoxDecoration(
             color: isDark ? AppColors.nightSurface : AppColors.ivorySurface,
             borderRadius: BorderRadius.circular(16),
@@ -75,6 +78,7 @@ class VisualMalaWidget extends StatelessWidget {
               ),
             ],
           ),
+        ),
         ),
 
         // 2. Target Completed Sacred Badge (if target reached)

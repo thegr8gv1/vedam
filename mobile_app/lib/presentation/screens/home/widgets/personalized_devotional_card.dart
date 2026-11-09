@@ -220,28 +220,21 @@ class PersonalizedDevotionalCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
+                      const Icon(Icons.self_improvement, size: 16, color: AppColors.goldPrimary),
+                      const SizedBox(width: 6),
                       Expanded(
-                        child: Row(
-                          children: [
-                            const Icon(Icons.self_improvement, size: 16, color: AppColors.goldPrimary),
-                            const SizedBox(width: 6),
-                            Flexible(
-                              child: Text(
-                                'Daily Sadhana Targets',
-                                style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.bold,
-                                  color: isDark ? AppColors.goldLight : AppColors.goldDark,
-                                ),
-                                overflow: TextOverflow.ellipsis,
-                              ),
-                            ),
-                          ],
+                        child: Text(
+                          'Daily Sadhana Targets',
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                            color: isDark ? AppColors.goldLight : AppColors.goldDark,
+                          ),
+                          overflow: TextOverflow.ellipsis,
                         ),
                       ),
-                      const SizedBox(width: 8),
+                      const SizedBox(width: 6),
                       Text(
                         'Script: ${personalizationState.scriptureScript.label}',
                         style: TextStyle(
@@ -257,12 +250,15 @@ class PersonalizedDevotionalCard extends StatelessWidget {
                   // Goal 1: Japa
                   if (goals.hasJapaGoal) ...[
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
-                          'Japa Repetitions',
-                          style: TextStyle(fontSize: 11, color: isDark ? AppColors.textLightMuted : AppColors.textDarkMuted),
+                        Expanded(
+                          child: Text(
+                            'Japa Repetitions',
+                            style: TextStyle(fontSize: 11, color: isDark ? AppColors.textLightMuted : AppColors.textDarkMuted),
+                            overflow: TextOverflow.ellipsis,
+                          ),
                         ),
+                        const SizedBox(width: 8),
                         Text(
                           '${audioState.completedRepetitions} / ${goals.japaTarget}',
                           style: TextStyle(

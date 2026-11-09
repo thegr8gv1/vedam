@@ -474,6 +474,7 @@ class _VerseLearningScreenState extends State<VerseLearningScreen> {
                                 fontSize: prefs.sanskritFontSize,
                                 height: prefs.lineSpacing,
                                 fontWeight: FontWeight.w600,
+                                fontFamilyFallback: AppTextStyles.indicFontFamilyFallback,
                                 color: isDark
                                     ? AppColors.textLightPrimary
                                     : AppColors.textDarkPrimary,

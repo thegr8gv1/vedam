@@ -28,3 +28,25 @@ enum ContentDisplayMode {
   final String label;
   const ContentDisplayMode(this.label);
 }
+
+enum InterfaceLanguage {
+  english('en', 'English', 'English'),
+  telugu('te', 'Telugu', 'తెలుగు'),
+  tamil('ta', 'Tamil', 'தமிழ்'),
+  kannada('kn', 'Kannada', 'ಕನ್ನಡ'),
+  malayalam('ml', 'Malayalam', 'മലയാളം');
+
+  final String code;
+  final String label;
+  final String nativeLabel;
+  const InterfaceLanguage(this.code, this.label, this.nativeLabel);
+
+  Locale get locale => Locale(code);
+
+  static InterfaceLanguage fromCode(String code) {
+    for (final l in InterfaceLanguage.values) {
+      if (l.code == code) return l;
+    }
+    return InterfaceLanguage.english;
+  }
+}

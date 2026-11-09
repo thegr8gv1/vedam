@@ -41,44 +41,38 @@ class DailyVerseCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Expanded(
-                  child: Row(
-                    children: [
-                      const Icon(
-                        Icons.wb_sunny_outlined,
-                        size: 18,
-                        color: AppColors.saffronPrimary,
-                      ),
-                      const SizedBox(width: 6),
-                      Flexible(
-                        child: Text(
-                          'DAILY DEVOTIONAL DARSHAN',
-                          style: AppTextStyles.metadataTag(isDark).copyWith(
-                            fontWeight: FontWeight.w700,
-                            letterSpacing: 0.8,
-                          ),
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                      ),
-                    ],
+                const Padding(
+                  padding: EdgeInsets.only(top: 2),
+                  child: Icon(
+                    Icons.wb_sunny_outlined,
+                    size: 16,
+                    color: AppColors.saffronPrimary,
                   ),
                 ),
                 const SizedBox(width: 8),
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-                  decoration: BoxDecoration(
-                    color: isDark ? const Color(0xFF332314) : AppColors.saffronLight,
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Text(
-                    darshan.dateString,
-                    style: TextStyle(
-                      fontSize: 10,
-                      fontWeight: FontWeight.w600,
-                      color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
-                    ),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'DAILY DEVOTIONAL DARSHAN',
+                        style: AppTextStyles.metadataTag(isDark).copyWith(
+                          fontWeight: FontWeight.w700,
+                          letterSpacing: 0.6,
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        darshan.dateString,
+                        style: TextStyle(
+                          fontSize: 10.5,
+                          fontWeight: FontWeight.w600,
+                          color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],

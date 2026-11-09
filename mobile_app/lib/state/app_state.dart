@@ -6,12 +6,15 @@ class AppState extends ChangeNotifier {
   ThemePreference _themePreference = ThemePreference.system;
   TextScalePreference _textScalePreference = TextScalePreference.normal;
   ScriptOption _activeScript = ScriptOption.devanagari;
+  InterfaceLanguage _interfaceLanguage = InterfaceLanguage.english;
   final Set<int> _favoriteScriptureIds = {1, 2, 5}; // Ganesha Pancharatnam, Shiva Tandava, Mahamrityunjaya pre-favorited
   final List<int> _recentlyReadScriptureIds = [1, 2, 7, 8];
 
   ThemePreference get themePreference => _themePreference;
   TextScalePreference get textScalePreference => _textScalePreference;
   ScriptOption get activeScript => _activeScript;
+  InterfaceLanguage get interfaceLanguage => _interfaceLanguage;
+  Locale get locale => _interfaceLanguage.locale;
   Set<int> get favoriteScriptureIds => Set.unmodifiable(_favoriteScriptureIds);
   List<int> get recentlyReadScriptureIds => List.unmodifiable(_recentlyReadScriptureIds);
 
@@ -35,6 +38,13 @@ class AppState extends ChangeNotifier {
   void setActiveScript(ScriptOption script) {
     if (_activeScript != script) {
       _activeScript = script;
+      notifyListeners();
+    }
+  }
+
+  void setInterfaceLanguage(InterfaceLanguage lang) {
+    if (_interfaceLanguage != lang) {
+      _interfaceLanguage = lang;
       notifyListeners();
     }
   }

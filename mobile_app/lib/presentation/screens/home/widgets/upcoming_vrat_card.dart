@@ -103,74 +103,70 @@ class UpcomingVratCard extends StatelessWidget {
           children: [
             // Header Row
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Expanded(
-                  child: Row(
-                    children: [
-                      const Icon(
-                        Icons.event_note,
-                        size: 18,
-                        color: AppColors.saffronPrimary,
-                      ),
-                      const SizedBox(width: 8),
-                      Flexible(
-                        child: Text(
-                          'UPCOMING VRAT & OBSERVANCES',
-                          style: AppTextStyles.metadataTag(isDark).copyWith(
-                            color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
-                            fontWeight: FontWeight.w700,
-                            letterSpacing: 0.8,
-                          ),
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                      ),
-                    ],
+                const Padding(
+                  padding: EdgeInsets.only(top: 2),
+                  child: Icon(
+                    Icons.event_note,
+                    size: 16,
+                    color: AppColors.saffronPrimary,
                   ),
                 ),
                 const SizedBox(width: 8),
-                Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    InkWell(
-                      onTap: () => _openFestivalCalendar(context),
-                      borderRadius: BorderRadius.circular(8),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                        child: Text(
-                          'Festivals',
-                          style: TextStyle(
-                            fontSize: 11,
-                            fontWeight: FontWeight.bold,
-                            color: isDark ? AppColors.goldLight : AppColors.saffronDark,
-                          ),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'UPCOMING VRAT & OBSERVANCES',
+                        style: AppTextStyles.metadataTag(isDark).copyWith(
+                          color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
+                          fontWeight: FontWeight.w700,
+                          letterSpacing: 0.6,
                         ),
                       ),
-                    ),
-                    const Text(' • ', style: TextStyle(fontSize: 11, color: Colors.grey)),
-                    InkWell(
-                      onTap: () => _openVratCalendar(context),
-                      borderRadius: BorderRadius.circular(8),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text(
-                              'My Vrat',
+                      const SizedBox(height: 2),
+                      Wrap(
+                        spacing: 6,
+                        crossAxisAlignment: WrapCrossAlignment.center,
+                        children: [
+                          InkWell(
+                            onTap: () => _openFestivalCalendar(context),
+                            borderRadius: BorderRadius.circular(8),
+                            child: Text(
+                              'Festivals',
                               style: TextStyle(
                                 fontSize: 11,
                                 fontWeight: FontWeight.bold,
                                 color: isDark ? AppColors.goldLight : AppColors.saffronDark,
                               ),
                             ),
-                            const SizedBox(width: 2),
-                            const Icon(Icons.arrow_forward_ios, size: 10, color: AppColors.saffronPrimary),
-                          ],
-                        ),
+                          ),
+                          const Text('•', style: TextStyle(fontSize: 10, color: Colors.grey)),
+                          InkWell(
+                            onTap: () => _openVratCalendar(context),
+                            borderRadius: BorderRadius.circular(8),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Text(
+                                  'My Vrat',
+                                  style: TextStyle(
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.bold,
+                                    color: isDark ? AppColors.goldLight : AppColors.saffronDark,
+                                  ),
+                                ),
+                                const SizedBox(width: 2),
+                                const Icon(Icons.arrow_forward_ios, size: 9, color: AppColors.goldPrimary),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ],
             ),

@@ -1,3 +1,4 @@
+import '../../../../l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/models/mantra_item.dart';
 import '../../../../core/theme/app_colors.dart';
@@ -111,14 +112,19 @@ class DashboardJapaCard extends StatelessWidget {
                       ),
                       const SizedBox(width: 8),
                       Flexible(
-                        child: Text(
-                          'DAILY JAPA PRACTICE',
-                          style: AppTextStyles.metadataTag(isDark).copyWith(
-                            color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
-                            fontWeight: FontWeight.w700,
-                            letterSpacing: 0.8,
-                          ),
-                          overflow: TextOverflow.ellipsis,
+                        child: Builder(
+                          builder: (context) {
+                            final l10n = AppLocalizations.of(context);
+                            return Text(
+                              (l10n?.homeJapaPractice ?? 'DAILY JAPA PRACTICE').toUpperCase(),
+                              style: AppTextStyles.metadataTag(isDark).copyWith(
+                                color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
+                                fontWeight: FontWeight.w700,
+                                letterSpacing: 0.8,
+                              ),
+                              overflow: TextOverflow.ellipsis,
+                            );
+                          },
                         ),
                       ),
                     ],
@@ -320,45 +326,64 @@ class DashboardJapaCard extends StatelessWidget {
             const SizedBox(height: 12),
 
             // Actions: Tap-to-Chant (+1) and Start/Continue Chanting Player
-            Row(
-              children: [
-                Expanded(
-                  child: SizedBox(
-                    height: 44,
-                    child: OutlinedButton.icon(
-                      icon: const Icon(Icons.touch_app, size: 16),
-                      label: const Text('Count Bead (+1)', style: TextStyle(fontSize: 11.5, fontWeight: FontWeight.bold)),
-                      style: OutlinedButton.styleFrom(
-                        foregroundColor: AppColors.saffronPrimary,
-                        side: const BorderSide(color: AppColors.saffronPrimary, width: 1.2),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+            Builder(
+              builder: (context) {
+                final l10n = AppLocalizations.of(context);
+                final beadLabel = l10n?.japaTapToCount ?? 'Count Bead (+1)';
+                final playLabel = completed > 0
+                    ? (l10n?.audioResume ?? 'Continue Chanting')
+                    : (l10n?.japaStartChanting ?? 'Start Chanting');
+
+                return Row(
+                  children: [
+                    Expanded(
+                      child: Semantics(
+                        button: true,
+                        label: 'Count Japa bead, increment chant count',
+                        value: '$completed of $target completed',
+                        child: SizedBox(
+                          height: 48,
+                          child: OutlinedButton.icon(
+                            icon: const Icon(Icons.touch_app, size: 18),
+                            label: Text(beadLabel, style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold)),
+                            style: OutlinedButton.styleFrom(
+                              foregroundColor: AppColors.saffronPrimary,
+                              side: const BorderSide(color: AppColors.saffronPrimary, width: 1.2),
+                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                            ),
+                            onPressed: () {
+                              audioState.incrementManualRepetition();
+                            },
+                          ),
+                        ),
                       ),
-                      onPressed: () {
-                        audioState.incrementManualRepetition();
-                      },
                     ),
-                  ),
-                ),
-                const SizedBox(width: 10),
-                Expanded(
-                  child: SizedBox(
-                    height: 44,
-                    child: ElevatedButton.icon(
-                      icon: Icon(isPlaying ? Icons.pause : Icons.play_arrow, size: 18),
-                      label: Text(
-                        completed > 0 ? 'Continue Chanting' : 'Start Chanting',
-                        style: const TextStyle(fontSize: 11.5, fontWeight: FontWeight.bold),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Semantics(
+                        button: true,
+                        label: isPlaying ? 'Pause mantra chanting' : playLabel,
+                        child: SizedBox(
+                          height: 48,
+                          child: ElevatedButton.icon(
+                            icon: Icon(isPlaying ? Icons.pause : Icons.play_arrow, size: 20),
+                            label: Text(
+                              playLabel,
+                              style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                            ),
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: AppColors.saffronPrimary,
+                              foregroundColor: Colors.white,
+                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                            ),
+                            onPressed: () => _openMantraPlayer(context, mantra),
+                          ),
+                        ),
                       ),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: AppColors.saffronPrimary,
-                        foregroundColor: Colors.white,
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-                      ),
-                      onPressed: () => _openMantraPlayer(context, mantra),
                     ),
-                  ),
-                ),
-              ],
+                  ],
+                );
+              },
             ),
           ],
         ),

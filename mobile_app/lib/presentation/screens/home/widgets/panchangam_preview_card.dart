@@ -52,46 +52,48 @@ class PanchangamPreviewCard extends StatelessWidget {
             children: [
               // Header Row
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Expanded(
-                    child: Row(
-                      children: [
-                        const Icon(
-                          Icons.calendar_today_outlined,
-                          size: 18,
-                          color: AppColors.goldPrimary,
-                        ),
-                        const SizedBox(width: 8),
-                        Flexible(
-                          child: Text(
-                            'TODAY\'S PANCHANGAM',
-                            style: AppTextStyles.metadataTag(isDark).copyWith(
-                              color: isDark ? AppColors.goldGlow : AppColors.goldDark,
-                              fontWeight: FontWeight.w700,
-                              letterSpacing: 0.8,
-                            ),
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                        ),
-                      ],
+                  const Padding(
+                    padding: EdgeInsets.only(top: 2),
+                    child: Icon(
+                      Icons.calendar_today_outlined,
+                      size: 16,
+                      color: AppColors.goldPrimary,
                     ),
                   ),
                   const SizedBox(width: 8),
-                  Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text(
-                        calcData != null
-                            ? calcData.vara.name
-                            : darshan.dayName,
-                        style: AppTextStyles.caption(isDark).copyWith(
-                          fontWeight: FontWeight.bold,
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'TODAY\'S PANCHANGAM',
+                          style: AppTextStyles.metadataTag(isDark).copyWith(
+                            color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                            fontWeight: FontWeight.w700,
+                            letterSpacing: 0.6,
+                          ),
                         ),
-                      ),
-                      const SizedBox(width: 4),
-                      const Icon(Icons.arrow_forward_ios, size: 12, color: AppColors.goldPrimary),
-                    ],
+                        const SizedBox(height: 2),
+                        Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Flexible(
+                              child: Text(
+                                calcData != null ? calcData.vara.name : darshan.dayName,
+                                style: AppTextStyles.caption(isDark).copyWith(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                                overflow: TextOverflow.ellipsis,
+                              ),
+                            ),
+                            const SizedBox(width: 4),
+                            const Icon(Icons.arrow_forward_ios, size: 10, color: AppColors.goldPrimary),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),

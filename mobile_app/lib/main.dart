@@ -1,3 +1,4 @@
+import 'l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'core/constants/app_constants.dart';
 import 'core/models/app_settings.dart';
@@ -124,6 +125,19 @@ void main() {
       appState.setThemePreference(ThemePreference.dark);
     } else if (theme == 'light') {
       appState.setThemePreference(ThemePreference.light);
+    }
+
+    final langParam = Uri.base.queryParameters['lang'];
+    if (langParam != null) {
+      appState.setInterfaceLanguage(InterfaceLanguage.fromCode(langParam));
+      personalizationState.setInterfaceLanguage(langParam);
+    }
+
+    final scaleParam = Uri.base.queryParameters['scale'];
+    if (scaleParam == 'large') {
+      appState.setTextScalePreference(TextScalePreference.large);
+    } else if (scaleParam == 'extralarge') {
+      appState.setTextScalePreference(TextScalePreference.extraLarge);
     }
 
     final targetParam = Uri.base.queryParameters['target'];
@@ -573,6 +587,17 @@ class VedamApp extends StatelessWidget {
           theme: AppTheme.lightTheme,
           darkTheme: AppTheme.darkTheme,
           themeMode: appState.themeMode,
+          locale: appState.locale,
+          localizationsDelegates: AppLocalizations.localizationsDelegates,
+          supportedLocales: AppLocalizations.supportedLocales,
+          builder: (context, child) {
+            return MediaQuery(
+              data: MediaQuery.of(context).copyWith(
+                textScaler: TextScaler.linear(appState.fontScale),
+              ),
+              child: child!,
+            );
+          },
           home: homeWidget,
         );
       },

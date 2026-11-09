@@ -1,0 +1,197 @@
+{
+  "@@locale": "en",
+  "appTitle": "Vedam",
+  "@appTitle": {
+    "description": "Application title"
+  },
+  "navHome": "Home",
+  "navLibrary": "Library",
+  "navSadhana": "Sadhana",
+  "navSaved": "Saved",
+  "navSettings": "Settings",
+
+  "offlineModeBanner": "Offline Mode — Local scriptures & practices available",
+  "offlineUnavailableAudio": "Audio requires network connection",
+  "offlineAvailable": "Available Offline",
+  "offlineIndicator": "Offline",
+
+  "homeDailyDarshan": "Daily Darshan",
+  "homePanchangamPreview": "Today's Panchangam",
+  "homeDailyRoutine": "Daily Spiritual Routine",
+  "homeJapaPractice": "Daily Japa Practice",
+  "homeUpcomingVrat": "Upcoming Vrat & Observances",
+  "homeScriptureProgress": "Scripture Reading",
+  "homeFestivalCalendar": "Festival & Observance Calendar",
+  "homeDevotionalFocus": "Devotional Focus",
+  "homeQuickAccess": "Quick Devotional Access",
+
+  "settingsTitle": "Settings & Preferences",
+  "settingsLanguage": "Interface Language",
+  "settingsLanguageSubtitle": "Select application language",
+  "settingsScript": "Scripture Script",
+  "settingsScriptSubtitle": "Primary script for Vedic verses",
+  "settingsTheme": "Appearance Theme",
+  "settingsThemeSacredLight": "Sacred Light (Saffron & Marble)",
+  "settingsThemeTempleNight": "Temple Night (Obsidian & Gold)",
+  "settingsThemeSystem": "System Default",
+  "settingsTextScale": "Text Scaling & Readability",
+  "settingsTextScaleRegular": "Regular",
+  "settingsTextScaleLarge": "Large",
+  "settingsTextScaleExtraLarge": "Spiritual Focus (Extra Large)",
+  "settingsDevotionalFocus": "Devotional Focus",
+  "settingsSadhanaGoals": "Daily Sadhana Targets",
+  "settingsReminders": "Devotional Reminders",
+  "settingsLocation": "Panchangam Location",
+  "settingsRerunOnboarding": "Re-run Devotee Onboarding",
+  "settingsAbout": "About Vedam",
+
+  "libraryTitle": "Scripture Library",
+  "librarySearchPlaceholder": "Search sacred scriptures, stotras...",
+  "libraryVerseCount": "{count} verses",
+  "@libraryVerseCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "libraryRecent": "Recently Read",
+  "libraryFavorites": "Favorites",
+  "libraryAll": "All Scriptures",
+
+  "readerVerse": "Verse {number}",
+  "@readerVerse": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "readerVerseOf": "Verse {current} of {total}",
+  "@readerVerseOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "readerSourceText": "Source Text",
+  "readerTransliteration": "Transliteration",
+  "readerTranslation": "Translation (Draft)",
+  "readerCommentary": "Commentary",
+  "readerScholarlyDisclaimer": "Translation under review. Consult verified traditional commentary.",
+  "readerLearningMode": "Focused Learning Mode",
+
+  "japaTitle": "Japa Practice",
+  "japaTargetLabel": "Target: {count} Chants",
+  "@japaTargetLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "japaCompletedChants": "{completed} of {target} Chants",
+  "@japaCompletedChants": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "japaChantsRemaining": "{count} remaining",
+  "@japaChantsRemaining": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "japaMalaCompleted": "{count} Mala Completed",
+  "@japaMalaCompleted": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "japaTapToCount": "Tap to Count",
+  "japaTargetSelector": "Select Japa Target",
+  "japaCustomCount": "Custom Count",
+  "japaStartChanting": "Start Chanting",
+  "japaReset": "Reset Count",
+
+  "audioPlay": "Play",
+  "audioPause": "Pause",
+  "audioResume": "Resume",
+  "audioStop": "Stop",
+  "audioBundledOffline": "Bundled (Available Offline)",
+  "audioStreamingNetwork": "Online Stream",
+
+  "sadhanaTitle": "Daily Sadhana",
+  "sadhanaMorning": "Pratah Smaranam (Morning)",
+  "sadhanaEvening": "Sayam Sandhya (Evening)",
+  "sadhanaDailyPuja": "Daily Puja Guides",
+  "sadhanaStep": "Step {step} of {total}",
+  "@sadhanaStep": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "sadhanaComplete": "Completed",
+  "sadhanaMarkComplete": "Mark Step Complete",
+
+  "panchangamTitle": "Panchangam",
+  "panchangamTithi": "Tithi",
+  "panchangamNakshatra": "Nakshatra",
+  "panchangamYoga": "Yoga",
+  "panchangamKarana": "Karana",
+  "panchangamSunrise": "Sunrise",
+  "panchangamSunset": "Sunset",
+  "panchangamRahuKalam": "Rahu Kalam",
+  "panchangamYamagandam": "Yamagandam",
+  "panchangamGulika": "Gulika Kalam",
+
+  "vratTitle": "Vrat & Observances",
+  "vratAdd": "Add to My Vrats",
+  "vratAdded": "Added to Observances",
+  "vratActive": "Active Observance",
+  "vratCompleted": "Observance Completed",
+
+  "festivalCalendarTitle": "Festival & Observance Calendar",
+  "festivalUpcoming": "Upcoming Festivals",
+  "festivalRegional": "Regional Observance",
+  "festivalSignificance": "Spiritual Significance",
+  "festivalPujaGuide": "Related Puja Guide",
+
+  "onboardingWelcome": "Welcome to Vedam",
+  "onboardingSubtitle": "Your personal companion for authentic Vedic devotion and spiritual practice.",
+  "onboardingStepLanguage": "Interface Language & Scripture Script",
+  "onboardingStepInterests": "Devotional Focus",
+  "onboardingStepSadhana": "Daily Sadhana Targets",
+  "onboardingStepLocation": "Panchangam Location",
+  "onboardingStepReminders": "Devotional Reminders",
+  "onboardingGetStarted": "Begin Sadhana",
+  "onboardingNext": "Next",
+  "onboardingBack": "Back",
+  "onboardingSkip": "Skip for now",
+
+  "commonSave": "Save",
+  "commonCancel": "Cancel",
+  "commonDone": "Done",
+  "commonClose": "Close",
+  "commonConfirm": "Confirm",
+  "commonRetry": "Retry",
+  "commonSearch": "Search"
+}

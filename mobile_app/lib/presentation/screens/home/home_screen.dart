@@ -1,3 +1,4 @@
+import '../../widgets/offline_status_banner.dart';
 import 'package:flutter/material.dart';
 import '../../../core/models/app_settings.dart';
 import '../../../core/models/daily_darshan.dart';
@@ -211,7 +212,11 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        // 1. Welcome & Date Header
+                        // 1. Devotional Offline Availability Notice
+                        const OfflineStatusBanner(isOffline: true),
+                        const SizedBox(height: 6),
+
+                        // 2. Welcome & Date Header
                         DevotionalWelcomeHeader(
                           currentDate: _currentDate,
                           panchangamState: widget.panchangamState,
