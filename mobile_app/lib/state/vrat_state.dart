@@ -12,6 +12,13 @@ class VratState extends ChangeNotifier {
   static const String _prefsKeyReminders = 'vrat_user_reminders_v1';
   static const String _prefsKeyPermission = 'vrat_reminder_permission_v1';
 
+  static const String fastingSafetyAdvisory =
+      'Devotional fasting (Upavasa) and dietary austerities are strictly optional spiritual practices. '
+      'Individuals with medical conditions, diabetes, hypoglycemia, taking daily prescriptions, '
+      'elderly devotees, pregnant or nursing individuals, and young children should always prioritize nutrition, '
+      'hydration, and bodily health. Skipping, postponing, or modifying an observance carries zero spiritual deficit: '
+      'genuine Upavasa is dwelling near the Divine in heart, mind, and compassionate conduct.';
+
   final SharedPreferences? _injectedPrefs;
   final ReminderService _reminderService;
 
@@ -210,6 +217,55 @@ class VratState extends ChangeNotifier {
     }
   }
 
+  Future<void> markObservanceCompleted(String id, {String? personalNotes}) async {
+    await updateObservanceStatus(id, ObservanceStatus.completed, personalNotes: personalNotes);
+  }
+
+  Future<void> markObservanceSkipped(String id, {String? reason}) async {
+    final idx = _observances.indexWhere((o) => o.id == id);
+    if (idx != -1) {
+      final current = _observances[idx];
+      final updatedNotes = reason != null && reason.trim().isNotEmpty
+          ? (current.personalNotes.isNotEmpty
+              ? '${current.personalNotes}\n[Skipped: $reason]'
+              : '[Skipped: $reason]')
+          : current.personalNotes;
+      await updateObservanceStatus(id, ObservanceStatus.skipped, personalNotes: updatedNotes);
+    }
+  }
+
+  Future<void> markObservanceInProgress(String id) async {
+    await updateObservanceStatus(id, ObservanceStatus.inProgress);
+  }
+
+  Future<void> rescheduleObservance(String id, String newDate) async {
+    final idx = _observances.indexWhere((o) => o.id == id);
+    if (idx != -1) {
+      final current = _observances[idx];
+      _observances[idx] = current.copyWith(targetDate: newDate);
+      await _saveObservances();
+
+      // Update linked reminder scheduledDate if present
+      final linkedReminder = getReminderForVrat(id);
+      if (linkedReminder != null) {
+        final updatedReminder = linkedReminder.copyWith(scheduledDate: newDate);
+        await updateReminder(updatedReminder);
+      }
+      notifyListeners();
+    }
+  }
+
+  Future<void> clearPastObservances() async {
+    _observances.removeWhere((o) =>
+        o.status == ObservanceStatus.completed ||
+        o.status == ObservanceStatus.skipped ||
+        o.status == ObservanceStatus.cancelled);
+    await _saveObservances();
+    notifyListeners();
+  }
+
+  Future<void> clearHistory() => clearPastObservances();
+
   Future<void> toggleChecklistItem(String vratId, String checklistItemId) async {
     final idx = _observances.indexWhere((o) => o.id == vratId);
     if (idx != -1) {
@@ -349,6 +405,14 @@ class VratState extends ChangeNotifier {
         observationNote = (tithi.toLowerCase().contains('chaturthi') && paksha.toLowerCase().contains('krishna'))
             ? 'Today is Krishna Chaturthi ($tithi). Auspicious for evening moonrise Sankashti adoration.'
             : 'Today is $tithi ($paksha). Sankashti Chaturthi is observed on Krishna Paksha Chaturthi.';
+        break;
+      case VratType.monthlyShivaratri:
+        observationNote = (tithi.toLowerCase().contains('chaturdashi') && paksha.toLowerCase().contains('krishna'))
+            ? 'Today is Krishna Chaturdashi ($tithi). Auspicious for evening and midnight Masa Shivaratri prayer.'
+            : 'Today is $tithi ($paksha). Masa Shivaratri is observed on the 14th waning lunar day (Krishna Chaturdashi).';
+        break;
+      case VratType.navaratri:
+        observationNote = 'Navaratri sacred cycle. Auspicious for daily adoration of the Divine Mother with prayers and sacred lamp.';
         break;
       case VratType.custom:
         observationNote = 'Today\'s calculated celestial state: $tithi, $nakshatra Nakshatra.';

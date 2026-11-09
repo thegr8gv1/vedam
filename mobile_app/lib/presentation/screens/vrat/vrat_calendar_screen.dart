@@ -50,6 +50,36 @@ class _VratCalendarScreenState extends State<VratCalendarScreen> {
     if (mounted) setState(() {});
   }
 
+  void _confirmClearHistory(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Clear Observance History?'),
+        content: const Text(
+          'This will clear past completed, skipped, or cancelled observances. Your upcoming planned practices will remain intact.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('CANCEL'),
+          ),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.redAccent,
+              foregroundColor: Colors.white,
+            ),
+            onPressed: () {
+              widget.vratState.clearPastObservances();
+              Navigator.pop(ctx);
+              setState(() {});
+            },
+            child: const Text('CLEAR HISTORY'),
+          ),
+        ],
+      ),
+    );
+  }
+
   Color _getStatusColor(ObservanceStatus status) {
     switch (status) {
       case ObservanceStatus.planned:
@@ -122,10 +152,14 @@ class _VratCalendarScreenState extends State<VratCalendarScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // Header Row: Date & Status Badge
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              Wrap(
+                alignment: WrapAlignment.spaceBetween,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                spacing: 8,
+                runSpacing: 6,
                 children: [
                   Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
                       const Icon(Icons.calendar_today, size: 14, color: AppColors.saffronPrimary),
                       const SizedBox(width: 6),
@@ -134,6 +168,26 @@ class _VratCalendarScreenState extends State<VratCalendarScreen> {
                         style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
                       ),
                     ],
+                  ),
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                    decoration: BoxDecoration(
+                      color: obs.isManuallyCreated
+                          ? (isDark ? Colors.purple.shade900.withAlpha(100) : Colors.purple.shade50)
+                          : (isDark ? AppColors.goldDark.withAlpha(50) : const Color(0xFFF3E7D3)),
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                    child: Text(
+                      obs.isManuallyCreated ? 'PERSONAL DATE' : 'TRADITIONAL CALENDAR',
+                      style: TextStyle(
+                        fontSize: 9,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 0.4,
+                        color: obs.isManuallyCreated
+                            ? (isDark ? Colors.purple.shade200 : Colors.purple.shade800)
+                            : (isDark ? AppColors.goldGlow : AppColors.goldDark),
+                      ),
+                    ),
                   ),
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
@@ -181,6 +235,17 @@ class _VratCalendarScreenState extends State<VratCalendarScreen> {
                   ),
                 ],
               ),
+              if (obs.timingNotes != null) ...[
+                const SizedBox(height: 4),
+                Text(
+                  obs.timingNotes!,
+                  style: TextStyle(
+                    fontSize: 11,
+                    fontStyle: FontStyle.italic,
+                    color: isDark ? const Color(0xFFB8A692) : const Color(0xFF6F5E4B),
+                  ),
+                ),
+              ],
               const SizedBox(height: 8),
 
               // Panchangam calculated snippet if available
@@ -196,9 +261,12 @@ class _VratCalendarScreenState extends State<VratCalendarScreen> {
                     children: [
                       const Icon(Icons.wb_sunny_outlined, size: 12, color: AppColors.saffronPrimary),
                       const SizedBox(width: 5),
-                      Text(
-                        'Panchangam: ${obs.panchangamSnapshot!.tithiName} (${obs.panchangamSnapshot!.paksha})',
-                        style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w500),
+                      Flexible(
+                        child: Text(
+                          'Panchangam: ${obs.panchangamSnapshot!.tithiName} (${obs.panchangamSnapshot!.paksha})',
+                          style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w500),
+                          overflow: TextOverflow.ellipsis,
+                        ),
                       ),
                     ],
                   ),
@@ -211,9 +279,11 @@ class _VratCalendarScreenState extends State<VratCalendarScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
-                      '$completedCount of $totalCount preparation steps ready',
-                      style: AppTextStyles.caption(isDark),
+                    Expanded(
+                      child: Text(
+                        '$completedCount of $totalCount preparation steps ready',
+                        style: AppTextStyles.caption(isDark),
+                      ),
                     ),
                     const Icon(Icons.arrow_forward_ios, size: 12, color: Colors.grey),
                   ],
@@ -286,31 +356,45 @@ class _VratCalendarScreenState extends State<VratCalendarScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // 1. Non-authoritative Informational Banner
+            // 1. Non-authoritative Informational & Fasting Safety Banner
             Container(
               margin: const EdgeInsets.all(16),
-              padding: const EdgeInsets.all(12),
+              padding: const EdgeInsets.all(14),
               decoration: BoxDecoration(
                 color: isDark ? AppColors.nightSurfaceElevated : const Color(0xFFFFF9ED),
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(14),
                 border: Border.all(
-                  color: Colors.amber.withAlpha(120),
+                  color: Colors.amber.withAlpha(140),
                   width: 1.0,
                 ),
               ),
-              child: Row(
+              child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Icon(Icons.info_outline, size: 20, color: AppColors.saffronPrimary),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: Text(
-                      'Personal Devotional Planner: Fasting rules, Parana times, and auspicious dates differ by sampradaya and regional lineage. This tool helps you organize your own practice without declaring universal mandates.',
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: isDark ? Colors.amber[200] : const Color(0xFF7A4F01),
-                        height: 1.3,
+                  Row(
+                    children: [
+                      const Icon(Icons.health_and_safety_outlined, size: 18, color: AppColors.saffronPrimary),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          'DEVOTIONAL PLANNING & FASTING GUIDANCE',
+                          style: TextStyle(
+                            fontSize: 11,
+                            fontWeight: FontWeight.bold,
+                            letterSpacing: 0.5,
+                            color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                          ),
+                        ),
                       ),
+                    ],
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    'Personal Devotional Planner: ${VratState.fastingSafetyAdvisory}',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: isDark ? Colors.amber[100] : const Color(0xFF5D4037),
+                      height: 1.35,
                     ),
                   ),
                 ],
@@ -357,6 +441,18 @@ class _VratCalendarScreenState extends State<VratCalendarScreen> {
                     label: const Text('Sankashti'),
                     selected: _filterType == VratType.sankashtiChaturthi,
                     onSelected: (_) => setState(() => _filterType = VratType.sankashtiChaturthi),
+                  ),
+                  const SizedBox(width: 8),
+                  FilterChip(
+                    label: const Text('Shivaratri'),
+                    selected: _filterType == VratType.monthlyShivaratri,
+                    onSelected: (_) => setState(() => _filterType = VratType.monthlyShivaratri),
+                  ),
+                  const SizedBox(width: 8),
+                  FilterChip(
+                    label: const Text('Navaratri'),
+                    selected: _filterType == VratType.navaratri,
+                    onSelected: (_) => setState(() => _filterType = VratType.navaratri),
                   ),
                   const SizedBox(width: 8),
                   FilterChip(
@@ -410,9 +506,20 @@ class _VratCalendarScreenState extends State<VratCalendarScreen> {
             if (pastList.isNotEmpty) ...[
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: Text(
-                  'PAST DEVOTIONAL HISTORY (${pastList.length})',
-                  style: AppTextStyles.metadataTag(isDark),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'PAST DEVOTIONAL HISTORY (${pastList.length})',
+                      style: AppTextStyles.metadataTag(isDark),
+                    ),
+                    TextButton.icon(
+                      icon: const Icon(Icons.delete_sweep, size: 16),
+                      label: const Text('Clear History', style: TextStyle(fontSize: 12)),
+                      style: TextButton.styleFrom(foregroundColor: Colors.redAccent),
+                      onPressed: () => _confirmClearHistory(context),
+                    ),
+                  ],
                 ),
               ),
               const SizedBox(height: 6),
