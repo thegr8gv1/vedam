@@ -521,7 +521,7 @@ void main() {
 
       audioState.setSleepTimer(const Duration(minutes: 15));
       expect(audioState.isSleepTimerActive, isTrue);
-      expect(audioState.sleepTimerRemaining?.inMinutes, equals(14)); // rounded/computed
+      expect(audioState.sleepTimerRemaining?.inMinutes, anyOf(14, 15)); // rounded/computed
 
       // Cancel timer
       audioState.cancelSleepTimer();

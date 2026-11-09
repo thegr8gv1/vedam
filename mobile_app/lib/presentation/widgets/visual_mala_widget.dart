@@ -48,33 +48,39 @@ class VisualMalaWidget extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              _buildStatColumn(
-                context,
-                label: 'COMPLETED',
-                value: extraChants > 0 ? '$completedCount (+$extraChants)' : '$completedCount',
-                color: AppColors.saffronPrimary,
+              Expanded(
+                child: _buildStatColumn(
+                  context,
+                  label: 'COMPLETED',
+                  value: extraChants > 0 ? '$completedCount (+$extraChants)' : '$completedCount',
+                  color: AppColors.saffronPrimary,
+                ),
               ),
               Container(
                 height: 36,
                 width: 1,
                 color: isDark ? AppColors.nightBorder : AppColors.chandanBorder,
               ),
-              _buildStatColumn(
-                context,
-                label: 'TARGET',
-                value: '$targetCount',
-                color: isDark ? AppColors.goldLight : AppColors.goldDark,
+              Expanded(
+                child: _buildStatColumn(
+                  context,
+                  label: 'TARGET',
+                  value: '$targetCount',
+                  color: isDark ? AppColors.goldLight : AppColors.goldDark,
+                ),
               ),
               Container(
                 height: 36,
                 width: 1,
                 color: isDark ? AppColors.nightBorder : AppColors.chandanBorder,
               ),
-              _buildStatColumn(
-                context,
-                label: 'REMAINING',
-                value: '${targetCount > completedCount ? targetCount - completedCount : 0}',
-                color: isDark ? AppColors.textLightMuted : AppColors.textDarkMuted,
+              Expanded(
+                child: _buildStatColumn(
+                  context,
+                  label: 'REMAINING',
+                  value: '${targetCount > completedCount ? targetCount - completedCount : 0}',
+                  color: isDark ? AppColors.textLightMuted : AppColors.textDarkMuted,
+                ),
               ),
             ],
           ),
@@ -163,14 +169,16 @@ class VisualMalaWidget extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                malaTitle,
+              Expanded(
+                child: Text(
+                  malaTitle,
                 style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.bold,
                   letterSpacing: 0.8,
                   color: isDark ? AppColors.goldLight : AppColors.goldDark,
                 ),
+              ),
               ),
               Text(
                 '$progressPct%',
@@ -197,12 +205,15 @@ class VisualMalaWidget extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(width: 6),
-                Text(
-                  'ॐ Sumeru (Guru Bead) — Classical 108 Count',
-                  style: TextStyle(
-                    fontSize: 10,
-                    fontStyle: FontStyle.italic,
-                    color: isDark ? AppColors.goldLight : AppColors.goldDark,
+                Expanded(
+                  child: Text(
+                    'ॐ Sumeru (Guru Bead) — Classical 108 Count',
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      fontSize: 10,
+                      fontStyle: FontStyle.italic,
+                      color: isDark ? AppColors.goldLight : AppColors.goldDark,
+                    ),
                   ),
                 ),
               ],
@@ -416,21 +427,27 @@ class VisualMalaWidget extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text(
-          label,
-          style: const TextStyle(
-            fontSize: 10,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 0.6,
+        FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(
+            label,
+            style: const TextStyle(
+              fontSize: 10,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 0.6,
+            ),
           ),
         ),
         const SizedBox(height: 4),
-        Text(
-          value,
-          style: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-            color: color,
+        FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(
+            value,
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: color,
+            ),
           ),
         ),
       ],

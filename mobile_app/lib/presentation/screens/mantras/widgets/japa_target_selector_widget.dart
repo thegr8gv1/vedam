@@ -269,6 +269,10 @@ class _JapaTargetSelectorWidgetState extends State<JapaTargetSelectorWidget> {
           LayoutBuilder(
             builder: (context, constraints) {
               final crossAxisCount = constraints.maxWidth > 500 ? 3 : 2;
+              final textScale = MediaQuery.textScalerOf(context).scale(1.0);
+              final ratio = constraints.maxWidth > 500
+                  ? 2.2
+                  : (textScale > 1.1 ? 1.35 : 1.8);
               return GridView.builder(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
@@ -277,7 +281,7 @@ class _JapaTargetSelectorWidgetState extends State<JapaTargetSelectorWidget> {
                   crossAxisCount: crossAxisCount,
                   crossAxisSpacing: 10,
                   mainAxisSpacing: 10,
-                  childAspectRatio: constraints.maxWidth > 500 ? 2.2 : 1.9,
+                  childAspectRatio: ratio,
                 ),
                 itemBuilder: (context, index) {
                   final preset = kJapaTraditionalPresets[index];
