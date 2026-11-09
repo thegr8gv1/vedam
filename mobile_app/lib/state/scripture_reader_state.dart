@@ -76,6 +76,9 @@ class ScriptureReaderState extends ChangeNotifier {
   // Personal Study Notes
   VerseNote? getNote(String globalVerseId) => _notes[globalVerseId];
 
+  List<VerseNote> getNotesForScripture(int scriptureId) =>
+      _notes.values.where((n) => n.scriptureId == scriptureId).toList();
+
   Future<void> saveNote(Verse verse, Scripture scripture, String noteText) async {
     final gId = verse.globalId(scripture.contentId);
     final trimmed = noteText.trim();
