@@ -342,9 +342,11 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                // Deity & Collection Tag Row
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                // Deity, Audio Scope & Collection Tag Row
+                Wrap(
+                  spacing: 8,
+                  runSpacing: 8,
+                  crossAxisAlignment: WrapCrossAlignment.center,
                   children: [
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
@@ -364,7 +366,39 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                       ),
                     ),
                     Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                      decoration: BoxDecoration(
+                        color: isDark ? AppColors.nightSurfaceElevated : AppColors.creamBackground,
+                        borderRadius: BorderRadius.circular(12),
+                        border: Border.all(
+                          color: isDark ? AppColors.goldDark : AppColors.saffronLight,
+                          width: 1.0,
+                        ),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(
+                            Icons.graphic_eq,
+                            size: 13,
+                            color: isDark ? AppColors.goldGlow : AppColors.saffronPrimary,
+                          ),
+                          const SizedBox(width: 4),
+                          Text(
+                            currentMantra.durationSeconds <= 60
+                                ? 'Single Verse / Mantra'
+                                : 'Extended Recitation',
+                            style: TextStyle(
+                              fontSize: 10,
+                              fontWeight: FontWeight.bold,
+                              color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                       decoration: BoxDecoration(
                         color: currentMantra.isBundled
                             ? Colors.green.withAlpha(30)

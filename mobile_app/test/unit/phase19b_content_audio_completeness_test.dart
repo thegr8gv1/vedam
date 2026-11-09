@@ -1,12 +1,9 @@
-import 'dart:convert';
 import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vedam_app/core/models/app_settings.dart';
-import 'package:vedam_app/core/models/scripture.dart';
 import 'package:vedam_app/core/models/verse.dart';
 import 'package:vedam_app/data/fixtures/authentic_mantras_data.dart';
-import 'package:vedam_app/data/fixtures/authentic_scriptures_data.dart';
 import 'package:vedam_app/data/repositories/mantra_repository.dart';
 import 'package:vedam_app/data/repositories/scripture_repository_impl.dart';
 import 'package:vedam_app/state/app_state.dart';

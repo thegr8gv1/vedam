@@ -1,3 +1,4 @@
+import '../../../core/models/mantra_item.dart';
 import 'package:flutter/material.dart';
 import '../../../core/constants/app_constants.dart';
 import '../../../core/models/scripture.dart';
@@ -79,6 +80,7 @@ class _VerseReaderScreenState extends State<VerseReaderScreen> {
                         scripture: widget.scripture,
                         readerState: _readerState,
                         audioState: widget.audioState,
+                        appState: _appState,
                       ),
                     ),
                   );
@@ -185,6 +187,7 @@ class _VerseReaderScreenState extends State<VerseReaderScreen> {
                       scripture: widget.scripture,
                       readerState: _readerState,
                       audioState: widget.audioState,
+                      appState: _appState,
                       activeScript: activeScript,
                       prefs: prefs,
                       isDark: isDark,
@@ -205,6 +208,7 @@ class _VerseReaderCard extends StatelessWidget {
   final Scripture scripture;
   final ScriptureReaderState readerState;
   final AudioState? audioState;
+  final AppState? appState;
   final ScriptOption activeScript;
   final ReadingPreferences prefs;
   final bool isDark;
@@ -214,10 +218,62 @@ class _VerseReaderCard extends StatelessWidget {
     required this.scripture,
     required this.readerState,
     this.audioState,
+    this.appState,
     required this.activeScript,
     required this.prefs,
     required this.isDark,
   });
+
+  void _playOrShowVaultFallback(BuildContext context, MantraItem mantra) async {
+    if (audioState == null) return;
+    if (audioState!.isPlaying && audioState!.activeMantra?.id == mantra.id) {
+      await audioState!.pause();
+      return;
+    }
+    await audioState!.playMantra(mantra);
+    if (audioState!.errorMessage != null && context.mounted) {
+      showDialog<void>(
+        context: context,
+        builder: (ctx) => AlertDialog(
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          title: const Row(
+            children: [
+              Icon(Icons.inventory_2_outlined, color: Colors.orange),
+              SizedBox(width: 8),
+              Expanded(child: Text('Vault Archive Recording')),
+            ],
+          ),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Recording: ${mantra.filename}\nDuration: ${mantra.formattedDuration}',
+                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+              ),
+              const SizedBox(height: 10),
+              const Text(
+                'This master recording is preserved in the desktop vault (C:\\ttv youtube premium\\Mantras\\). '
+                'To keep the mobile app size compact (<100MB), it is not bundled for offline audio playback in this release.\n\n'
+                'You can practice chanting along with the script display and transliteration.',
+                style: TextStyle(fontSize: 13, height: 1.4),
+              ),
+            ],
+          ),
+          actions: [
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.saffronPrimary,
+                foregroundColor: Colors.white,
+              ),
+              onPressed: () => Navigator.pop(ctx),
+              child: const Text('Understood'),
+            ),
+          ],
+        ),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -297,6 +353,7 @@ class _VerseReaderCard extends StatelessWidget {
                               readerState: readerState,
                               initialVerseNumber: verse.verseNumber,
                               audioState: audioState,
+                              appState: appState,
                             ),
                           ),
                         );
@@ -393,13 +450,7 @@ class _VerseReaderCard extends StatelessWidget {
                         color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
                       ),
                     ),
-                    onPressed: () {
-                      if (isPlaying) {
-                        audioState!.pause();
-                      } else {
-                        audioState!.playMantra(mappedMantra);
-                      }
-                    },
+                    onPressed: () => _playOrShowVaultFallback(context, mappedMantra),
                   );
                 },
               ),

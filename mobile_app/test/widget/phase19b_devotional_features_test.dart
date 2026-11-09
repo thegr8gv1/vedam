@@ -82,9 +82,6 @@ class _MockAudioService implements AudioPlaybackService {
   }
 
   @override
-  Future<void> setVolume(double volume) async {}
-
-  @override
   Future<void> setPlaybackRate(double rate) async {}
 
   @override

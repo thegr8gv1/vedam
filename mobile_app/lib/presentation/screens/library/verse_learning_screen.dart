@@ -1,3 +1,4 @@
+import '../../../state/app_state.dart';
 import 'package:flutter/material.dart';
 import '../../../core/constants/app_constants.dart';
 import '../../../core/models/scripture.dart';
@@ -22,6 +23,7 @@ class VerseLearningScreen extends StatefulWidget {
   final ScriptureReaderState readerState;
   final int? initialVerseNumber;
   final AudioState? audioState;
+  final AppState? appState;
   final bool initialShowPreferences;
 
   const VerseLearningScreen({
@@ -30,6 +32,7 @@ class VerseLearningScreen extends StatefulWidget {
     required this.readerState,
     this.initialVerseNumber,
     this.audioState,
+    this.appState,
     this.initialShowPreferences = false,
   });
 
@@ -286,7 +289,7 @@ class _VerseLearningScreenState extends State<VerseLearningScreen> {
                     MaterialPageRoute(
                       builder: (_) => VerseReaderScreen(
                         scripture: widget.scripture,
-                        appState: null,
+                        appState: widget.appState,
                         readerState: widget.readerState,
                         audioState: widget.audioState,
                       ),
@@ -881,6 +884,57 @@ class _VerseAudioPlayerCard extends StatelessWidget {
     required this.isDark,
   });
 
+  void _playOrShowVaultFallback(BuildContext context) async {
+    if (audioState == null) return;
+    if (audioState!.isPlaying && audioState!.activeMantra?.id == mantra.id) {
+      await audioState!.pause();
+      return;
+    }
+    await audioState!.playMantra(mantra);
+    if (audioState!.errorMessage != null && context.mounted) {
+      showDialog<void>(
+        context: context,
+        builder: (ctx) => AlertDialog(
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          title: const Row(
+            children: [
+              Icon(Icons.inventory_2_outlined, color: Colors.orange),
+              SizedBox(width: 8),
+              Expanded(child: Text('Vault Archive Recording')),
+            ],
+          ),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Recording: ${mantra.filename}\nDuration: ${mantra.formattedDuration}',
+                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+              ),
+              const SizedBox(height: 10),
+              const Text(
+                'This master recording is preserved in the desktop vault (C:\\ttv youtube premium\\Mantras\\). '
+                'To keep the mobile app size compact (<100MB), it is not bundled for offline audio playback in this release.\n\n'
+                'You can practice chanting along with the script display and transliteration.',
+                style: TextStyle(fontSize: 13, height: 1.4),
+              ),
+            ],
+          ),
+          actions: [
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.saffronPrimary,
+                foregroundColor: Colors.white,
+              ),
+              onPressed: () => Navigator.pop(ctx),
+              child: const Text('Understood'),
+            ),
+          ],
+        ),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     if (audioState == null) return const SizedBox.shrink();
@@ -916,13 +970,7 @@ class _VerseAudioPlayerCard extends StatelessWidget {
                   color: isDark ? AppColors.goldGlow : AppColors.saffronPrimary,
                 ),
                 tooltip: isPlayingCurrent ? 'Pause Audio' : 'Play Verified Audio',
-                onPressed: () {
-                  if (isPlayingCurrent) {
-                    audioState!.pause();
-                  } else {
-                    audioState!.playMantra(mantra);
-                  }
-                },
+                onPressed: () => _playOrShowVaultFallback(context),
               ),
               const SizedBox(width: 8),
               Expanded(

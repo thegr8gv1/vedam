@@ -57,6 +57,7 @@ class AudioState extends ChangeNotifier {
 
   // Idempotent double-counting prevention guard
   int _lastCompletionTimestampMs = 0;
+  int _lastManualTapTimestampMs = 0;
   bool _isTransitioningRepetition = false;
 
   StreamSubscription<PlayerState>? _stateSub;
@@ -380,8 +381,28 @@ class AudioState extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Manual bead increment (shares state with audio repetitions)
-  void incrementManualRepetition() {
+  int manualTapDebounceMs = 0;
+
+  /// Set manual bead tap debounce window in milliseconds (e.g. 250-300ms).
+  void setManualTapDebounceMs(int ms) {
+    manualTapDebounceMs = ms;
+  }
+
+  /// Manual bead increment (shares state with audio repetitions).
+  /// [debounceMs]: optional threshold (e.g. 250-300ms) to prevent accidental double-taps in UI.
+  /// If null, falls back to [manualTapDebounceMs]. If 0, increments unconditionally.
+  bool incrementManualRepetition({int? debounceMs}) {
+    final effectiveDebounce = debounceMs ?? manualTapDebounceMs;
+    if (effectiveDebounce > 0) {
+      final now = DateTime.now().millisecondsSinceEpoch;
+      final delta = now - _lastManualTapTimestampMs;
+      if (delta < effectiveDebounce) {
+        return false;
+      }
+      _lastManualTapTimestampMs = now;
+    } else {
+      _lastManualTapTimestampMs = DateTime.now().millisecondsSinceEpoch;
+    }
     _completedRepetitions++;
     _saveSessionProgress();
 
@@ -391,6 +412,7 @@ class AudioState extends ChangeNotifier {
     } else {
       notifyListeners();
     }
+    return true;
   }
 
   /// Acknowledge completion alert (prevents multiple dialog popups)
@@ -444,6 +466,7 @@ class AudioState extends ChangeNotifier {
     _isContinuingBeyondTarget = false;
     _hasTriggeredCompletionAlert = false;
     _isTransitioningRepetition = false;
+    _lastManualTapTimestampMs = 0;
     _errorMessage = null;
     _clearSessionProgress();
     _audioService.stop();

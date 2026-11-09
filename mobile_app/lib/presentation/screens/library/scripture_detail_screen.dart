@@ -216,6 +216,7 @@ class ScriptureDetailScreen extends StatelessWidget {
                                     readerState: rState,
                                     initialVerseNumber: readingProgress.lastReadVerseNumber,
                                     audioState: audioState,
+                                    appState: appState,
                                   ),
                                 ),
                               );
@@ -257,6 +258,7 @@ class ScriptureDetailScreen extends StatelessWidget {
                                 readerState: rState,
                                 initialVerseNumber: 1,
                                 audioState: audioState,
+                                appState: appState,
                               ),
                             ),
                           );
