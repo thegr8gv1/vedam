@@ -282,6 +282,16 @@ class DefaultVratTemplatesData {
       repeatDaily: true,
     ),
     const DevotionalReminder(
+      id: 'rem_daily_japa',
+      type: ReminderType.mantraJapa,
+      title: 'Mantra Japa Practice',
+      body: 'Quiet time for your sacred mala chant and mindful japa meditation.',
+      hour: 12,
+      minute: 0,
+      isEnabled: false,
+      repeatDaily: true,
+    ),
+    const DevotionalReminder(
       id: 'rem_evening_sandhya',
       type: ReminderType.eveningPrayer,
       title: 'Sandhyā Dīpa Prayer',

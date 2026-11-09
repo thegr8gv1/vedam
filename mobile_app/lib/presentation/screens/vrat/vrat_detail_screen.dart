@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/text_styles.dart';
 import '../../../core/models/vrat_observance.dart';
+import '../../../core/models/devotional_reminder.dart';
 import '../../../data/fixtures/authentic_mantras_data.dart';
 import '../../../data/fixtures/authentic_puja_guides_data.dart';
 import '../../../data/repositories/mantra_repository.dart';
@@ -129,6 +130,136 @@ class _VratDetailScreenState extends State<VratDetailScreen> {
       const SnackBar(
         content: Text('Personal notes saved.'),
         duration: Duration(seconds: 1),
+      ),
+    );
+  }
+
+  Widget _buildObservanceReminderCard(BuildContext context, VratObservance obs, bool isDark) {
+    final reminder = widget.vratState.getReminderForVrat(obs.id);
+
+    return Card(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16),
+        side: BorderSide(
+          color: isDark ? AppColors.nightBorder : AppColors.chandanBorder,
+        ),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Icon(
+                  reminder != null && reminder.isEnabled ? Icons.alarm_on : Icons.alarm,
+                  size: 20,
+                  color: isDark ? AppColors.goldGlow : AppColors.saffronPrimary,
+                ),
+                const SizedBox(width: 8),
+                Text(
+                  'OBSERVANCE REMINDER',
+                  style: AppTextStyles.metadataTag(isDark),
+                ),
+                const Spacer(),
+                if (reminder != null)
+                  Switch(
+                    value: reminder.isEnabled,
+                    activeThumbColor: AppColors.saffronPrimary,
+                    onChanged: (val) async {
+                      await widget.vratState.toggleReminder(reminder.id, val);
+                      if (mounted) setState(() {});
+                    },
+                  ),
+              ],
+            ),
+            const SizedBox(height: 6),
+            if (reminder == null) ...[
+              Text(
+                'Schedule Morning Observance Notification',
+                style: TextStyle(
+                  fontWeight: FontWeight.w600,
+                  color: isDark ? AppColors.textLightPrimary : AppColors.textDarkPrimary,
+                ),
+              ),
+              const SizedBox(height: 4),
+              Text(
+                'Receive a peaceful reminder at 6:00 AM on ${obs.targetDate} in your local device timezone.',
+                style: AppTextStyles.caption(isDark),
+              ),
+              const SizedBox(height: 10),
+              OutlinedButton.icon(
+                icon: const Icon(Icons.add_alarm, size: 18),
+                label: const Text('SET REMINDER (6:00 AM)'),
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: isDark ? AppColors.goldGlow : AppColors.saffronPrimary,
+                  side: BorderSide(
+                    color: isDark ? AppColors.goldGlow : AppColors.saffronPrimary,
+                  ),
+                ),
+                onPressed: () async {
+                  final newRem = DevotionalReminder(
+                    id: 'rem_vrat_${obs.id}',
+                    type: ReminderType.personalVrat,
+                    title: '${obs.title} Reminder',
+                    body: 'Today is your planned observance of ${obs.title}. May your practice be peaceful.',
+                    scheduledDate: obs.targetDate,
+                    hour: 6,
+                    minute: 0,
+                    isEnabled: true,
+                    repeatDaily: false,
+                    linkedVratId: obs.id,
+                  );
+                  await widget.vratState.addReminder(newRem);
+                  if (mounted) setState(() {});
+                },
+              ),
+            ] else ...[
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Scheduled for ${reminder.formattedTime}',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: isDark ? AppColors.textLightPrimary : AppColors.textDarkPrimary,
+                          ),
+                        ),
+                        Text(
+                          reminder.isEnabled
+                              ? 'Active on ${obs.targetDate} (device timezone)'
+                              : 'Reminder paused (disabled)',
+                          style: AppTextStyles.caption(isDark),
+                        ),
+                      ],
+                    ),
+                  ),
+                  TextButton.icon(
+                    icon: const Icon(Icons.access_time, size: 16),
+                    label: const Text('Change Time'),
+                    onPressed: () async {
+                      final current = TimeOfDay(hour: reminder.hour, minute: reminder.minute);
+                      final picked = await showTimePicker(
+                        context: context,
+                        initialTime: current,
+                      );
+                      if (picked != null) {
+                        final updated = reminder.copyWith(hour: picked.hour, minute: picked.minute);
+                        await widget.vratState.updateReminder(updated);
+                        if (mounted) setState(() {});
+                      }
+                    },
+                  ),
+                ],
+              ),
+            ],
+          ],
+        ),
       ),
     );
   }
@@ -444,6 +575,10 @@ class _VratDetailScreenState extends State<VratDetailScreen> {
                 ),
               ),
             ),
+            const SizedBox(height: 18),
+
+            // Devotional Reminder for this Observance
+            _buildObservanceReminderCard(context, obs, isDark),
             const SizedBox(height: 18),
 
             // 4. Preparation Checklist

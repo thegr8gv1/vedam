@@ -72,6 +72,14 @@ class VratState extends ChangeNotifier {
     }
   }
 
+  DevotionalReminder? getReminderForVrat(String vratId) {
+    try {
+      return _reminders.firstWhere((r) => r.linkedVratId == vratId);
+    } catch (_) {
+      return null;
+    }
+  }
+
   // Initialization and persistence
   Future<void> _initialize() async {
     await _reminderService.initialize();

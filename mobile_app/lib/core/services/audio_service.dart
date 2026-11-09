@@ -46,8 +46,11 @@ class AudioPlaybackServiceImpl implements AudioPlaybackService {
   AudioPlaybackServiceImpl({
     AudioPlayer? player,
     this.localVaultDirectory = r'C:\ttv youtube premium\Mantras',
+    bool configureGlobalContext = true,
   }) : _player = player ?? AudioPlayer() {
-    _initAudioContext();
+    if (configureGlobalContext) {
+      _initAudioContext();
+    }
     _initListeners();
   }
 
@@ -58,7 +61,9 @@ class AudioPlaybackServiceImpl implements AudioPlaybackService {
           stayAwake: true,
           focus: AudioContextConfigFocus.gain,
         ).build(),
-      );
+      ).catchError((e) {
+        debugPrint('AudioContext init note (handled): $e');
+      });
     } catch (e) {
       debugPrint('AudioContext init note: $e');
     }
@@ -116,6 +121,35 @@ class AudioPlaybackServiceImpl implements AudioPlaybackService {
         await _player.stop();
         await _player.play(AssetSource(assetPath));
       } else {
+        // Platform check: Master audio vault fallback is only available on desktop platforms with access to the vault folder.
+        if (kIsWeb) {
+          _currentState = PlayerState.stopped;
+          _playerStateController.add(PlayerState.stopped);
+          throw const FileSystemException(
+            'Master vault recordings are preserved in the desktop audio vault and not bundled for web playback. 31 core essential mantras are bundled for offline chanting.',
+          );
+        }
+
+        if (!Platform.isWindows) {
+          _currentState = PlayerState.stopped;
+          _playerStateController.add(PlayerState.stopped);
+          throw const FileSystemException(
+            'Master vault recordings are preserved in the desktop audio vault and not bundled for mobile offline playback. 31 core essential mantras are bundled for offline chanting.',
+          );
+        }
+
+        // On Windows Desktop: verify vault directory existence safely before querying files
+        final vaultDir = Directory(localVaultDirectory);
+        if (!vaultDir.existsSync()) {
+          debugPrint('Local master audio vault folder not found: $localVaultDirectory');
+          _currentState = PlayerState.stopped;
+          _playerStateController.add(PlayerState.stopped);
+          throw FileSystemException(
+            'Master audio vault directory not configured or not accessible',
+            localVaultDirectory,
+          );
+        }
+
         // Check if file exists in local storage vault
         final localFilePath = '$localVaultDirectory\\${item.filename}';
         final file = File(localFilePath);
