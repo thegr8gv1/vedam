@@ -59,6 +59,7 @@ void main() {
     appState: appState,
     panchangamState: panchangamState,
     audioState: audioState,
+    reminderService: vratState.reminderService,
   );
 
   int initialTab = 0;
@@ -322,6 +323,7 @@ class VedamApp extends StatelessWidget {
           appState: appState,
           panchangamState: pState,
           audioState: aState,
+          reminderService: vState.reminderService,
         );
 
     return ListenableBuilder(

@@ -302,7 +302,7 @@ class VratState extends ChangeNotifier {
   Future<void> deleteReminder(String reminderId) async {
     _reminders.removeWhere((r) => r.id == reminderId);
     await _saveReminders();
-    await _reminderService.cancelReminder(reminderId);
+    await _reminderService.releaseReminderId(reminderId);
     notifyListeners();
   }
 

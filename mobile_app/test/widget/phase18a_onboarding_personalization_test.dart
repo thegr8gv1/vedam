@@ -89,6 +89,19 @@ class _MockReminderService implements ReminderService {
   Future<ReminderPermissionStatus> requestPermission() async => permissionStatus;
 
   @override
+  Future<int> getOrCreateNotificationId(String id) async => id.hashCode.abs() % 2147483647;
+
+  @override
+  Future<void> releaseReminderId(String reminderId) async {}
+
+  @override
+  Future<void> showImmediateNotification({
+    required String id,
+    required String title,
+    required String body,
+  }) async {}
+
+  @override
   Future<void> scheduleReminder(DevotionalReminder reminder) async {
     scheduled.add(reminder);
   }
