@@ -50,6 +50,22 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
   }
 
   @override
+  void didUpdateWidget(covariant MantraPlayerScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.audioState != oldWidget.audioState) {
+      oldWidget.audioState.removeListener(_onAudioStateChanged);
+      widget.audioState.addListener(_onAudioStateChanged);
+    }
+    if (widget.mantra.id != oldWidget.mantra.id) {
+      if (widget.mantra.isBundled) {
+        widget.audioState.playMantra(widget.mantra, resetSessionCount: true);
+      } else {
+        widget.audioState.stop();
+      }
+    }
+  }
+
+  @override
   void dispose() {
     widget.audioState.removeListener(_onAudioStateChanged);
     super.dispose();
@@ -737,6 +753,7 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                         color: currentMantra.isBundled ? AppColors.saffronPrimary : Colors.grey,
                       ),
                       child: IconButton(
+                        key: const ValueKey('primary_play_pause_button'),
                         iconSize: 42,
                         color: Colors.white,
                         icon: Icon(

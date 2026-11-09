@@ -316,7 +316,7 @@ class _JapaTargetSelectorWidgetState extends State<JapaTargetSelectorWidget> {
       onTap: () => _attemptSetTarget(preset.count),
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
         decoration: BoxDecoration(
           color: isSelected
               ? AppColors.saffronPrimary.withAlpha(isDark ? 45 : 30)
