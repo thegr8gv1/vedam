@@ -3,6 +3,7 @@
 // and explicit sourcing/variance disclosures.
 
 class PujaStep {
+  final String id;
   final int stepNumber;
   final String stepName;
   final String? upacharaName;
@@ -15,8 +16,12 @@ class PujaStep {
   final String? linkedMantraId;
   final String? linkedMantraTitle;
   final List<String> expandedInstructions;
+  final bool isOptional;
+  final int? targetRepetitions;
+  final String? stepType;
 
   const PujaStep({
+    String? id,
     required this.stepNumber,
     required this.stepName,
     this.upacharaName,
@@ -29,9 +34,13 @@ class PujaStep {
     this.linkedMantraId,
     this.linkedMantraTitle,
     this.expandedInstructions = const [],
-  });
+    this.isOptional = false,
+    this.targetRepetitions,
+    this.stepType,
+  }) : id = id ?? 'step_$stepNumber';
 
   Map<String, dynamic> toJson() => {
+        'id': id,
         'step_number': stepNumber,
         'step_name': stepName,
         'upachara_name': upacharaName,
@@ -44,11 +53,16 @@ class PujaStep {
         'linked_mantra_id': linkedMantraId,
         'linked_mantra_title': linkedMantraTitle,
         'expanded_instructions': expandedInstructions,
+        'is_optional': isOptional,
+        'target_repetitions': targetRepetitions,
+        'step_type': stepType,
       };
 
   factory PujaStep.fromJson(Map<String, dynamic> json) {
+    final stepNum = json['step_number'] as int? ?? 1;
     return PujaStep(
-      stepNumber: json['step_number'] as int? ?? 1,
+      id: json['id'] as String? ?? 'step_$stepNum',
+      stepNumber: stepNum,
       stepName: json['step_name'] as String? ?? '',
       upacharaName: json['upachara_name'] as String?,
       actionDescription: json['action_description'] as String? ?? '',
@@ -63,6 +77,9 @@ class PujaStep {
               ?.map((e) => e.toString())
               .toList() ??
           const [],
+      isOptional: json['is_optional'] as bool? ?? false,
+      targetRepetitions: json['target_repetitions'] as int?,
+      stepType: json['step_type'] as String?,
     );
   }
 }
@@ -77,6 +94,8 @@ class PujaGuide {
   final String purposeAndContext;
   final List<String> preparation;
   final List<String> materialsList;
+  final List<String> requiredMaterials;
+  final List<String> optionalMaterials;
   final List<PujaStep> steps;
   final int estimatedDurationMinutes;
   final String editorialStatus;
@@ -96,6 +115,8 @@ class PujaGuide {
     required this.purposeAndContext,
     required this.preparation,
     required this.materialsList,
+    List<String>? requiredMaterials,
+    this.optionalMaterials = const [],
     required this.steps,
     this.estimatedDurationMinutes = 10,
     this.editorialStatus = 'Verified Editorial Guide',
@@ -104,7 +125,7 @@ class PujaGuide {
     required this.sourceInfo,
     required this.regionalVarianceNote,
     required this.lastReviewedDate,
-  });
+  }) : requiredMaterials = requiredMaterials ?? materialsList;
 
   Map<String, dynamic> toJson() => {
         'id': id,
@@ -116,6 +137,8 @@ class PujaGuide {
         'purpose_and_context': purposeAndContext,
         'preparation': preparation,
         'materials_list': materialsList,
+        'required_materials': requiredMaterials,
+        'optional_materials': optionalMaterials,
         'steps': steps.map((s) => s.toJson()).toList(),
         'estimated_duration_minutes': estimatedDurationMinutes,
         'editorial_status': editorialStatus,
@@ -127,6 +150,19 @@ class PujaGuide {
       };
 
   factory PujaGuide.fromJson(Map<String, dynamic> json) {
+    final matList = (json['materials_list'] as List<dynamic>?)
+            ?.map((e) => e.toString())
+            .toList() ??
+        const [];
+    final reqMat = (json['required_materials'] as List<dynamic>?)
+            ?.map((e) => e.toString())
+            .toList() ??
+        matList;
+    final optMat = (json['optional_materials'] as List<dynamic>?)
+            ?.map((e) => e.toString())
+            .toList() ??
+        const [];
+
     return PujaGuide(
       id: json['id'] as String,
       title: json['title'] as String,
@@ -139,10 +175,9 @@ class PujaGuide {
               ?.map((e) => e.toString())
               .toList() ??
           const [],
-      materialsList: (json['materials_list'] as List<dynamic>?)
-              ?.map((e) => e.toString())
-              .toList() ??
-          const [],
+      materialsList: matList,
+      requiredMaterials: reqMat,
+      optionalMaterials: optMat,
       steps: (json['steps'] as List<dynamic>?)
               ?.map((e) => PujaStep.fromJson(e as Map<String, dynamic>))
               .toList() ??

@@ -30,6 +30,18 @@ class AuthenticPujaGuidesData {
         'Incense stick (Dhupa) and Lit oil lamp (Deepa)',
         'Clean fruit, jaggery, or sweet offering (Naivedyam)',
       ],
+      requiredMaterials: [
+        'Murti or picture of Lord Ganesha',
+        'Clean water in a cup (Achamana patra) with a small spoon',
+        'Sandalwood paste (Chandan) and Kumkum',
+        'Lit oil lamp (Deepa)',
+      ],
+      optionalMaterials: [
+        'Fresh flower(s) or unbroken yellow rice (Akshata)',
+        'Incense stick (Dhupa)',
+        'Clean fruit, jaggery, or sweet offering (Naivedyam)',
+        'Small brass prayer bell (Ghanta)',
+      ],
       estimatedDurationMinutes: 10,
       editorialStatus: 'Verified Editorial Guide',
       contentVerificationStatus: 'Curated Traditional Grihya Paddhati',
@@ -45,8 +57,10 @@ class AuthenticPujaGuidesData {
       lastReviewedDate: '2026-11-05',
       steps: [
         PujaStep(
+          id: 'ganesh_step_1_dhyanam',
           stepNumber: 1,
           stepName: 'Dhyānam & Prārthanā (Meditation & Invocation)',
+          targetRepetitions: 11,
           upacharaName: 'Dhyānam',
           actionDescription:
               'Sit with a straight posture. Bring palms together before your heart in Anjali Mudra. Visualize Lord Ganesha seated on a lotus, smiling with compassionate eyes.',
@@ -67,6 +81,7 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'ganesh_step_2_gandham',
           stepNumber: 2,
           stepName: 'Gandham Samarpayāmi (Offering Sandalwood Paste)',
           upacharaName: 'Gandham',
@@ -88,8 +103,11 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'ganesh_step_3_pushpam',
           stepNumber: 3,
           stepName: 'Puṣpam Samarpayāmi (Offering Flowers / Akshata)',
+          isOptional: true,
+          targetRepetitions: 11,
           upacharaName: 'Puṣpam',
           actionDescription:
               'Offer a fresh red flower (hibiscus is dear to Ganesha) or a pinch of clean Akshata at the feet of the deity with reverence.',
@@ -109,6 +127,7 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'ganesh_step_4_dhupam_deepam',
           stepNumber: 4,
           stepName: 'Dhūpam & Dīpam Darśayāmi (Incense & Lamp Offering)',
           upacharaName: 'Dhūpa & Dīpa',
@@ -128,8 +147,10 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'ganesh_step_5_naivedyam',
           stepNumber: 5,
           stepName: 'Naivedyam & Praṇāma (Sweet Offering & Surrender)',
+          targetRepetitions: 11,
           upacharaName: 'Naivedyam',
           actionDescription:
               'Place a piece of clean fresh fruit, jaggery, or pure water before the deity. Conclude with bowing down with both hands folded in total surrender.',
@@ -193,8 +214,10 @@ class AuthenticPujaGuidesData {
       lastReviewedDate: '2026-11-05',
       steps: [
         PujaStep(
+          id: 'shiva_step_1_dhyanam',
           stepNumber: 1,
           stepName: 'Dhyānam (Meditation on the Supreme Auspiciousness)',
+          targetRepetitions: 11,
           upacharaName: 'Dhyānam',
           actionDescription:
               'Close your eyes and visualize Lord Shiva seated in deep meditation on Mount Kailash, serene and compassionate.',
@@ -213,6 +236,7 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'shiva_step_2_abhishekam',
           stepNumber: 2,
           stepName: 'Jala Abhiṣekam (Offering Pure Water)',
           upacharaName: 'Snānam',
@@ -231,8 +255,10 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'shiva_step_3_bilva',
           stepNumber: 3,
           stepName: 'Bhasma & Bilva Samarpaṇam (Sacred Ash & Bilva Leaf)',
+          isOptional: true,
           upacharaName: 'Gandham & Puṣpam',
           actionDescription:
               'Apply a three-line mark of sacred ash (Tripundra) with Chandan. Offer a Bilva leaf with the stem pointed away, or white blossoms.',
@@ -249,6 +275,7 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'shiva_step_4_dhupa_deepa',
           stepNumber: 4,
           stepName: 'Dhūpa-Dīpa Samarpaṇam (Incense and Light)',
           upacharaName: 'Dhūpa & Dīpa',
@@ -267,8 +294,10 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'shiva_step_5_mrityunjaya',
           stepNumber: 5,
           stepName: 'Mahāmṛtyuñjaya Japa & Praṇāma (Peace and Surrender)',
+          targetRepetitions: 11,
           upacharaName: 'Praṇāma',
           actionDescription:
               'Sit quietly and chant the Mahamrityunjaya Mantra three times. Bow down in prostration.',
@@ -329,8 +358,10 @@ class AuthenticPujaGuidesData {
       lastReviewedDate: '2026-11-05',
       steps: [
         PujaStep(
+          id: 'vishnu_step_1_dhyanam',
           stepNumber: 1,
           stepName: 'Dhyānam (Meditation on the Cosmic Sustainer)',
+          targetRepetitions: 11,
           upacharaName: 'Dhyānam',
           actionDescription:
               'Close your eyes and meditate on Lord Vishnu resting upon the cosmic serpent Ananta, peaceful and smiling, radiating serene blue grace.',
@@ -349,6 +380,7 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'vishnu_step_2_acamana_gandha',
           stepNumber: 2,
           stepName: 'Ācamana & Gandha (Purification & Sandalwood)',
           upacharaName: 'Gandham',
@@ -367,8 +399,10 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'vishnu_step_3_tulasi',
           stepNumber: 3,
           stepName: 'Tulasī & Puṣpam (Offering Sacred Tulasi & Flowers)',
+          isOptional: true,
           upacharaName: 'Puṣpam',
           actionDescription:
               'Offer a green Tulasi leaf or sprig at the feet of Lord Vishnu, with yellow marigolds or fragrant blossoms.',
@@ -385,6 +419,7 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'vishnu_step_4_dhupa_deepa',
           stepNumber: 4,
           stepName: 'Dhūpa & Dīpa (Incense & Lamp)',
           upacharaName: 'Dhūpa & Dīpa',
@@ -403,8 +438,10 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'vishnu_step_5_naivedyam',
           stepNumber: 5,
           stepName: 'Naivedyam & Praṇāma (Sweet Offering & Bowing)',
+          targetRepetitions: 11,
           upacharaName: 'Naivedyam',
           actionDescription:
               'Offer clean fruit, sweet rice, or water. Bow down with complete faith in the protective shelter of Vishnu.',
@@ -462,8 +499,10 @@ class AuthenticPujaGuidesData {
       lastReviewedDate: '2026-11-05',
       steps: [
         PujaStep(
+          id: 'lakshmi_step_1_dhyanam',
           stepNumber: 1,
           stepName: 'Dhyānam & Mahālakṣmī Gāyatrī',
+          targetRepetitions: 11,
           upacharaName: 'Dhyānam',
           actionDescription:
               'Sit before the lamp. Fold palms and envision Mother Lakshmi seated upon a golden lotus, blessing with fearlessness and boundless grace.',
@@ -482,6 +521,7 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'lakshmi_step_2_kunkuma',
           stepNumber: 2,
           stepName: 'Kuṅkuma & Gandham (Offering Kumkum & Sandalwood)',
           upacharaName: 'Gandham',
@@ -500,6 +540,7 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'lakshmi_step_3_pushpa',
           stepNumber: 3,
           stepName: 'Puṣpa Samarpaṇam (Offering Fresh Flowers)',
           upacharaName: 'Puṣpam',
@@ -518,8 +559,10 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'lakshmi_step_4_dipa',
           stepNumber: 4,
           stepName: 'Dīpa Samarpaṇam (Offering the Sacred Flame)',
+          targetRepetitions: 11,
           upacharaName: 'Dīpam',
           actionDescription:
               'Reverently circle the oil lamp before the image of Mahalakshmi.',
@@ -538,8 +581,10 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'lakshmi_step_5_astakam',
           stepNumber: 5,
           stepName: 'Mahālakṣmyaṣṭakam & Praṇāma (Prayer of Gratitude)',
+          isOptional: true,
           upacharaName: 'Praṇāma',
           actionDescription:
               'Recite the famous verse from the Mahalakshmyashtakam and bow down with surrender.',
@@ -593,6 +638,7 @@ class AuthenticPujaGuidesData {
       lastReviewedDate: '2026-11-05',
       steps: [
         PujaStep(
+          id: 'morning_step_1_kara_darshanam',
           stepNumber: 1,
           stepName: 'Kara Darśanam (Beholding the Palms upon Waking)',
           upacharaName: 'Smaraṇam',
@@ -611,6 +657,7 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'morning_step_2_bhumi_vandana',
           stepNumber: 2,
           stepName: 'Bhūmi Vandanā (Asking Forgiveness of Mother Earth)',
           upacharaName: 'Praṇāma',
@@ -629,8 +676,10 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'morning_step_3_surya_gayatri',
           stepNumber: 3,
           stepName: 'Sūrya Prārthanā & Gāyatrī (Solar Illumination)',
+          targetRepetitions: 11,
           upacharaName: 'Japa',
           actionDescription:
               'Turn toward the east (or imagine the rising golden sun) and chant the Gayatri Mantra three times.',
@@ -649,8 +698,10 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'morning_step_4_pavamana',
           stepNumber: 4,
           stepName: 'Pavamāna Mantra (Prayer for Transcendence)',
+          targetRepetitions: 3,
           upacharaName: 'Prārthanā',
           actionDescription:
               'Conclude with hands folded in Anjali Mudra, seeking truth, light, and immortality.',
@@ -706,6 +757,7 @@ class AuthenticPujaGuidesData {
       lastReviewedDate: '2026-11-05',
       steps: [
         PujaStep(
+          id: 'evening_step_1_dipa_prajvalanam',
           stepNumber: 1,
           stepName: 'Dīpa Prajvalanam (Lighting the Sacred Lamp)',
           upacharaName: 'Dīpam',
@@ -724,6 +776,7 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'evening_step_2_shubham_karoti',
           stepNumber: 2,
           stepName: 'Śubhaṁ Karoti (Prayer for Inner Illumination)',
           upacharaName: 'Prārthanā',
@@ -742,8 +795,10 @@ class AuthenticPujaGuidesData {
           ],
         ),
         PujaStep(
+          id: 'evening_step_3_shanti_patha',
           stepNumber: 3,
           stepName: 'Śānti Pāṭha (Universal Peace Invocation)',
+          targetRepetitions: 3,
           upacharaName: 'Śānti',
           actionDescription:
               'Close your eyes in stillness. Conclude by sending peaceful vibrations to all living beings.',
