@@ -58,6 +58,27 @@ class Scripture {
     return true;
   }
 
+  /// Whether original Sanskrit text is present.
+  bool get hasOriginalSanskrit => verses.any((v) => v.devanagariText.trim().isNotEmpty);
+
+  /// Whether Roman/IAST transliteration is present.
+  bool get hasTransliteration => verses.any((v) => v.iastText.trim().isNotEmpty);
+
+  /// Whether draft translations are present.
+  bool get hasTranslation => verses.any((v) => v.hasDraftTranslation);
+
+  /// Whether scholarly commentary is present on any verses.
+  bool get hasCommentary => verses.any((v) => v.hasCommentary);
+
+  /// Whether verified chanting audio is available.
+  bool get hasAudio => verses.any((v) => v.hasVerifiedAudio);
+
+  /// Number of verses with verified audio.
+  int get versesWithAudioCount => verses.where((v) => v.hasVerifiedAudio).length;
+
+  /// Number of verses with draft translations.
+  int get versesWithTranslationCount => verses.where((v) => v.hasDraftTranslation).length;
+
   String get firstVerseDevanagari {
     if (verses.isNotEmpty) {
       return verses.first.devanagariText;

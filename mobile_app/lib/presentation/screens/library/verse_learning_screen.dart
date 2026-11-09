@@ -314,12 +314,13 @@ class _VerseLearningScreenState extends State<VerseLearningScreen> {
 
               // 2. Verse Navigation Sub-Header
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
                 color: isDark ? AppColors.nightSurface : const Color(0xFFF7F2EA),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    InkWell(
+                    Flexible(
+                      child: InkWell(
                       onTap: () => _showVerseJumperModal(context),
                       borderRadius: BorderRadius.circular(8),
                       child: Padding(
@@ -361,6 +362,7 @@ class _VerseLearningScreenState extends State<VerseLearningScreen> {
                           ],
                         ),
                       ),
+                    ),
                     ),
                     Row(
                       children: [
@@ -614,15 +616,17 @@ class _VerseLearningScreenState extends State<VerseLearningScreen> {
                                           : AppColors.draftWarning,
                                     ),
                                     const SizedBox(width: 8),
-                                    Text(
-                                      'BHAVARTHA (STUDY TRANSLATION)',
-                                      style: TextStyle(
-                                        fontSize: 11.5,
-                                        fontWeight: FontWeight.bold,
-                                        letterSpacing: 0.6,
-                                        color: isDark
-                                            ? const Color(0xFFFCD34D)
-                                            : const Color(0xFF92400E),
+                                    Expanded(
+                                      child: Text(
+                                        'BHAVARTHA (STUDY TRANSLATION)',
+                                        style: TextStyle(
+                                          fontSize: 11.5,
+                                          fontWeight: FontWeight.bold,
+                                          letterSpacing: 0.6,
+                                          color: isDark
+                                              ? const Color(0xFFFCD34D)
+                                              : const Color(0xFF92400E),
+                                        ),
                                       ),
                                     ),
                                   ],
@@ -699,6 +703,146 @@ class _VerseLearningScreenState extends State<VerseLearningScreen> {
                           ),
                         ],
                       ],
+
+                      // Word-by-Word Meaning (Padartha)
+                      if (verse.hasWordByWord) ...[
+                        const SizedBox(height: 14),
+                        Container(
+                          width: double.infinity,
+                          padding: const EdgeInsets.all(14),
+                          decoration: BoxDecoration(
+                            color: isDark ? AppColors.nightSurfaceElevated : const Color(0xFFF7F3EE),
+                            borderRadius: BorderRadius.circular(12),
+                            border: Border.all(color: isDark ? AppColors.nightBorder : AppColors.chandanBorder, width: 0.8),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'WORD-BY-WORD MEANING (PADARTHA)',
+                                style: AppTextStyles.metadataTag(isDark).copyWith(fontSize: 10.5, fontWeight: FontWeight.bold),
+                              ),
+                              const SizedBox(height: 8),
+                              Wrap(
+                                spacing: 8,
+                                runSpacing: 6,
+                                children: verse.wordByWord!.entries.map((e) {
+                                  return Container(
+                                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                    decoration: BoxDecoration(
+                                      color: isDark ? AppColors.nightSurface : Colors.white,
+                                      borderRadius: BorderRadius.circular(6),
+                                      border: Border.all(color: AppColors.goldPrimary.withAlpha(80), width: 0.6),
+                                    ),
+                                    child: RichText(
+                                      text: TextSpan(
+                                        children: [
+                                          TextSpan(
+                                            text: '${e.key} ',
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
+                                            ),
+                                          ),
+                                          TextSpan(
+                                            text: '= ${e.value}',
+                                            style: TextStyle(
+                                              color: isDark ? AppColors.textLightSecondary : AppColors.textDarkSecondary,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  );
+                                }).toList(),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+
+                      // Traditional Commentary & Tatparya
+                      const SizedBox(height: 14),
+                      Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.all(14),
+                        decoration: BoxDecoration(
+                          color: isDark ? AppColors.nightSurfaceElevated : const Color(0xFFFAF7F2),
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(color: isDark ? AppColors.nightBorder : AppColors.chandanBorder, width: 0.8),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                const Icon(Icons.menu_book, size: 14, color: AppColors.goldPrimary),
+                                const SizedBox(width: 6),
+                                Expanded(
+                                  child: Text(
+                                    'TRADITIONAL COMMENTARY & TATPARYA',
+                                    style: AppTextStyles.metadataTag(isDark).copyWith(fontSize: 10.5, fontWeight: FontWeight.bold),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 8),
+                            if (verse.hasCommentary) ...[
+                              SelectableText(
+                                verse.commentary!,
+                                style: TextStyle(
+                                  fontSize: prefs.translationFontSize - 1,
+                                  height: 1.4,
+                                  fontStyle: FontStyle.italic,
+                                  color: isDark ? AppColors.textLightPrimary : AppColors.textDarkPrimary,
+                                ),
+                              ),
+                              if (verse.sourceReference != null) ...[
+                                const SizedBox(height: 6),
+                                Text(
+                                  'Source: ${verse.sourceReference!}',
+                                  style: AppTextStyles.caption(isDark).copyWith(fontSize: 10.5),
+                                ),
+                              ],
+                            ] else ...[
+                              Text(
+                                'Traditional Commentary: Awaiting authorized scholarly compilation from verified Bhashya sources.',
+                                style: AppTextStyles.caption(isDark).copyWith(fontStyle: FontStyle.italic, fontSize: 11),
+                              ),
+                            ],
+                          ],
+                        ),
+                      ),
+
+                      // Canonical Reference & Provenance Banner
+                      const SizedBox(height: 14),
+                      Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                        decoration: BoxDecoration(
+                          color: isDark ? AppColors.nightSurface : const Color(0xFFF5F0E8),
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(color: isDark ? AppColors.nightBorder : AppColors.chandanBorder, width: 0.8),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'SCRIPTURE & PROVENANCE',
+                              style: AppTextStyles.metadataTag(isDark).copyWith(fontSize: 10, fontWeight: FontWeight.bold),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              '${widget.scripture.canonicalTitle} (${widget.scripture.devanagariTitle}) • ${widget.scripture.sourceScripture}',
+                              style: AppTextStyles.caption(isDark).copyWith(fontWeight: FontWeight.w600),
+                            ),
+                            Text(
+                              'Composer: ${widget.scripture.composer} • Rishi: ${widget.scripture.rishi}',
+                              style: AppTextStyles.caption(isDark).copyWith(fontSize: 11),
+                            ),
+                          ],
+                        ),
+                      ),
 
                       // Personal Study Note Preview
                       if (personalNote != null &&

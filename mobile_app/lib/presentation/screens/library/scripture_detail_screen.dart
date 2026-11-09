@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../core/models/scripture.dart';
 import '../../../core/models/verse.dart';
+import '../../../core/models/scripture_user_data.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/text_styles.dart';
 import '../../../state/app_state.dart';
@@ -304,6 +305,56 @@ class ScriptureDetailScreen extends StatelessWidget {
 
                 const SizedBox(height: 16),
 
+                // Study Utilities: Bookmarks & Notes
+                Builder(
+                  builder: (context) {
+                    final bookmarks = rState.getBookmarksForScripture(scripture.id);
+                    final notes = rState.getNotesForScripture(scripture.id);
+                    if (bookmarks.isEmpty && notes.isEmpty) {
+                      return const SizedBox.shrink();
+                    }
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: 16),
+                      child: Row(
+                        children: [
+                          if (bookmarks.isNotEmpty)
+                            Expanded(
+                              child: OutlinedButton.icon(
+                                icon: const Icon(Icons.bookmark_added, size: 16, color: AppColors.saffronPrimary),
+                                label: Text(
+                                  'BOOKMARKS (${bookmarks.length})',
+                                  style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                                ),
+                                style: OutlinedButton.styleFrom(
+                                  padding: const EdgeInsets.symmetric(vertical: 10),
+                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                                ),
+                                onPressed: () => _showBookmarksSheet(context, scripture, bookmarks, rState, audioState, appState, isDark),
+                              ),
+                            ),
+                          if (bookmarks.isNotEmpty && notes.isNotEmpty)
+                            const SizedBox(width: 10),
+                          if (notes.isNotEmpty)
+                            Expanded(
+                              child: OutlinedButton.icon(
+                                icon: const Icon(Icons.edit_note, size: 18, color: AppColors.goldPrimary),
+                                label: Text(
+                                  'NOTES (${notes.length})',
+                                  style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                                ),
+                                style: OutlinedButton.styleFrom(
+                                  padding: const EdgeInsets.symmetric(vertical: 10),
+                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                                ),
+                                onPressed: () => _showNotesSheet(context, scripture, notes, rState, audioState, appState, isDark),
+                              ),
+                            ),
+                        ],
+                      ),
+                    );
+                  },
+                ),
+
                 // 4. Content Integrity & Coverage Disclosure
                 Card(
                   margin: EdgeInsets.zero,
@@ -316,9 +367,11 @@ class ScriptureDetailScreen extends StatelessWidget {
                           children: [
                             const Icon(Icons.verified_outlined, size: 16, color: AppColors.saffronPrimary),
                             const SizedBox(width: 8),
-                            Text(
-                              'CONTENT COVERAGE & SCHOLARLY INTEGRITY',
-                              style: AppTextStyles.metadataTag(isDark).copyWith(fontWeight: FontWeight.bold),
+                            Expanded(
+                              child: Text(
+                                'CONTENT COVERAGE & SCHOLARLY INTEGRITY',
+                                style: AppTextStyles.metadataTag(isDark).copyWith(fontWeight: FontWeight.bold),
+                              ),
                             ),
                           ],
                         ),
@@ -327,6 +380,70 @@ class ScriptureDetailScreen extends StatelessWidget {
                         _AttrRow(label: 'Canonical ID', value: scripture.contentId, isDark: isDark),
                         _AttrRow(label: 'Translations', value: 'Section 8 Draft (0 Approved, Under Peer Review)', isDark: isDark),
                         _AttrRow(label: 'Indic Scripts', value: 'Devanagari, IAST, Telugu, Tamil, Kannada, Malayalam', isDark: isDark),
+                      ],
+                    ),
+                  ),
+                ),
+
+                const SizedBox(height: 16),
+
+                // Content Completeness & Availability
+                Card(
+                  margin: EdgeInsets.zero,
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            const Icon(Icons.fact_check_outlined, size: 16, color: AppColors.saffronPrimary),
+                            const SizedBox(width: 8),
+                            Expanded(
+                              child: Text(
+                                'CONTENT AVAILABILITY & COMPLETENESS',
+                                style: AppTextStyles.metadataTag(isDark).copyWith(fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ],
+                        ),
+                        const Divider(height: 16),
+                        _CompletenessRow(
+                          label: 'Original Indic Text',
+                          status: scripture.hasOriginalSanskrit ? 'Available (${scripture.verseCount} Verses in Devanagari)' : 'Unavailable',
+                          isAvailable: scripture.hasOriginalSanskrit,
+                          isDark: isDark,
+                        ),
+                        _CompletenessRow(
+                          label: 'Roman Transliteration',
+                          status: scripture.hasTransliteration ? 'Available (IAST & 4 Regional Scripts)' : 'Unavailable',
+                          isAvailable: scripture.hasTransliteration,
+                          isDark: isDark,
+                        ),
+                        _CompletenessRow(
+                          label: 'English Translation',
+                          status: scripture.hasTranslation
+                              ? 'Available (${scripture.versesWithTranslationCount}/${scripture.verseCount} verses • Section 8 DRAFT)'
+                              : 'Under Translation Compilation',
+                          isAvailable: scripture.hasTranslation,
+                          isDark: isDark,
+                        ),
+                        _CompletenessRow(
+                          label: 'Scholarly Commentary',
+                          status: scripture.hasCommentary
+                              ? 'Available on Selected Verses'
+                              : 'Under Scholarly Review & Compilation',
+                          isAvailable: scripture.hasCommentary,
+                          isDark: isDark,
+                        ),
+                        _CompletenessRow(
+                          label: 'Chanting Audio',
+                          status: scripture.hasAudio
+                              ? 'Available (${scripture.versesWithAudioCount}/${scripture.verseCount} verses)'
+                              : 'Text-Only Study (No Audio Mapped)',
+                          isAvailable: scripture.hasAudio,
+                          isDark: isDark,
+                        ),
                       ],
                     ),
                   ),
@@ -346,11 +463,13 @@ class ScriptureDetailScreen extends StatelessWidget {
                           children: [
                             const Icon(Icons.account_balance, size: 18, color: AppColors.goldPrimary),
                             const SizedBox(width: 8),
-                            Text(
-                              'TRADITIONAL ATTRIBUTION & PROVENANCE',
-                              style: AppTextStyles.metadataTag(isDark).copyWith(
-                                fontWeight: FontWeight.bold,
-                                letterSpacing: 0.6,
+                            Expanded(
+                              child: Text(
+                                'TRADITIONAL ATTRIBUTION & PROVENANCE',
+                                style: AppTextStyles.metadataTag(isDark).copyWith(
+                                  fontWeight: FontWeight.bold,
+                                  letterSpacing: 0.6,
+                                ),
                               ),
                             ),
                           ],
@@ -381,9 +500,11 @@ class ScriptureDetailScreen extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text(
-                                'OPENING SHLOKA (VERSE 1)',
-                                style: AppTextStyles.metadataTag(isDark),
+                              Expanded(
+                                child: Text(
+                                  'OPENING SHLOKA (VERSE 1)',
+                                  style: AppTextStyles.metadataTag(isDark),
+                                ),
                               ),
                               Text(
                                 appState.activeScript.label,
@@ -432,7 +553,188 @@ class ScriptureDetailScreen extends StatelessWidget {
       },
     );
   }
+
+  void _showBookmarksSheet(
+    BuildContext context,
+    Scripture scripture,
+    List<VerseBookmark> bookmarks,
+    ScriptureReaderState rState,
+    AudioState? audioState,
+    AppState appState,
+    bool isDark,
+  ) {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: isDark ? AppColors.nightSurface : Colors.white,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (ctx) {
+        return SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Bookmarked Verses (${bookmarks.length})',
+                      style: AppTextStyles.titleMedium(isDark),
+                    ),
+                    IconButton(
+                      icon: const Icon(Icons.close),
+                      onPressed: () => Navigator.pop(ctx),
+                    ),
+                  ],
+                ),
+                const Divider(),
+                Flexible(
+                  child: ListView.separated(
+                    shrinkWrap: true,
+                    itemCount: bookmarks.length,
+                    separatorBuilder: (_, _) => const Divider(height: 1),
+                    itemBuilder: (_, index) {
+                      final b = bookmarks[index];
+                      return ListTile(
+                        leading: CircleAvatar(
+                          backgroundColor: AppColors.saffronPrimary.withValues(alpha: 0.15),
+                          child: Text(
+                            '',
+                            style: const TextStyle(
+                              color: AppColors.saffronPrimary,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        title: Text('Verse ', style: const TextStyle(fontWeight: FontWeight.w600)),
+                        subtitle: Text(
+                          b.verseSnippet,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTextStyles.caption(isDark),
+                        ),
+                        trailing: const Icon(Icons.chevron_right),
+                        onTap: () {
+                          Navigator.pop(ctx);
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => VerseLearningScreen(
+                                scripture: scripture,
+                                readerState: rState,
+                                initialVerseNumber: b.verseNumber,
+                                audioState: audioState,
+                                appState: appState,
+                              ),
+                            ),
+                          );
+                        },
+                      );
+                    },
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  void _showNotesSheet(
+    BuildContext context,
+    Scripture scripture,
+    List<VerseNote> notes,
+    ScriptureReaderState rState,
+    AudioState? audioState,
+    AppState appState,
+    bool isDark,
+  ) {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: isDark ? AppColors.nightSurface : Colors.white,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (ctx) {
+        return SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Personal Study Notes (${notes.length})',
+                      style: AppTextStyles.titleMedium(isDark),
+                    ),
+                    IconButton(
+                      icon: const Icon(Icons.close),
+                      onPressed: () => Navigator.pop(ctx),
+                    ),
+                  ],
+                ),
+                const Divider(),
+                Flexible(
+                  child: ListView.separated(
+                    shrinkWrap: true,
+                    itemCount: notes.length,
+                    separatorBuilder: (_, _) => const Divider(height: 1),
+                    itemBuilder: (_, index) {
+                      final n = notes[index];
+                      return ListTile(
+                        leading: CircleAvatar(
+                          backgroundColor: AppColors.goldPrimary.withValues(alpha: 0.2),
+                          child: Text(
+                            '',
+                            style: const TextStyle(
+                              color: AppColors.goldDark,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        title: Text('Verse ', style: const TextStyle(fontWeight: FontWeight.w600)),
+                        subtitle: Text(
+                          n.noteText,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTextStyles.caption(isDark),
+                        ),
+                        trailing: const Icon(Icons.chevron_right),
+                        onTap: () {
+                          Navigator.pop(ctx);
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => VerseLearningScreen(
+                                scripture: scripture,
+                                readerState: rState,
+                                initialVerseNumber: n.verseNumber,
+                                audioState: audioState,
+                                appState: appState,
+                              ),
+                            ),
+                          );
+                        },
+                      );
+                    },
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
 }
+
 
 class _DetailPill extends StatelessWidget {
   final String label;
@@ -489,6 +791,59 @@ class _AttrRow extends StatelessWidget {
               style: TextStyle(
                 fontSize: 13,
                 color: isDark ? AppColors.textLightPrimary : AppColors.textDarkPrimary,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+
+class _CompletenessRow extends StatelessWidget {
+  final String label;
+  final String status;
+  final bool isAvailable;
+  final bool isDark;
+
+  const _CompletenessRow({
+    required this.label,
+    required this.status,
+    required this.isAvailable,
+    required this.isDark,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final statusColor = isAvailable
+        ? (isDark ? AppColors.goldDark : AppColors.verifiedGreen)
+        : (isDark ? AppColors.textLightSecondary : AppColors.textDarkSecondary);
+    final iconData = isAvailable ? Icons.check_circle_outline : Icons.pending_outlined;
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 5),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(iconData, size: 16, color: statusColor),
+          const SizedBox(width: 8),
+          SizedBox(
+            width: 140,
+            child: Text(
+              label,
+              style: AppTextStyles.caption(isDark).copyWith(
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+          Expanded(
+            child: Text(
+              status,
+              style: TextStyle(
+                fontSize: 12,
+                color: statusColor,
+                fontWeight: isAvailable ? FontWeight.w500 : FontWeight.normal,
               ),
             ),
           ),

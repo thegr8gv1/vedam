@@ -20,6 +20,8 @@ class Verse {
   final String meter;
   final Map<String, String> transliterations;
   final String? draftTranslation;
+  final String? literalTranslation;
+  final Map<String, String>? wordByWord;
   final String translationStatus;
   final bool isApproved;
   final String? commentary;
@@ -35,6 +37,8 @@ class Verse {
     this.meter = '',
     this.transliterations = const {},
     this.draftTranslation,
+    this.literalTranslation,
+    this.wordByWord,
     this.translationStatus = 'DRAFT',
     this.isApproved = false,
     this.commentary,
@@ -77,6 +81,18 @@ class Verse {
   /// True if a draft meaning is available for study.
   bool get hasDraftTranslation =>
       draftTranslation != null && draftTranslation!.trim().isNotEmpty;
+
+  /// True if a literal word-aligned translation is available.
+  bool get hasLiteralTranslation =>
+      literalTranslation != null && literalTranslation!.trim().isNotEmpty;
+
+  /// True if word-by-word grammatical/lexical breakdown exists.
+  bool get hasWordByWord =>
+      wordByWord != null && wordByWord!.isNotEmpty;
+
+  /// True if multiple translation perspectives are available for comparison.
+  bool get hasAlternativeTranslations =>
+      hasDraftTranslation && hasLiteralTranslation;
 
   /// True if authorized scholarly commentary exists.
   bool get hasCommentary =>
