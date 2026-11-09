@@ -5,12 +5,15 @@ import '../../../core/theme/text_styles.dart';
 import '../../../data/repositories/mantra_repository.dart';
 import '../../../state/audio_state.dart';
 import '../../../state/sadhana_state.dart';
-import '../mantras/mantra_player_screen.dart';
+import '../japa/japa_practice_screen.dart';
+import 'widgets/puja_guide_overview_modal.dart';
+import 'widgets/puja_history_modal.dart';
+import 'widgets/puja_preparation_modal.dart';
 
 /// Step-by-step guided puja worship experience.
 /// Presents one worship step at a time with readable Sanskrit, transliteration,
-/// action instructions, linked mantra audio player integration, pause/resume,
-/// and calm devotional completion.
+/// action instructions, optional step skipping, linked Japa practice integration,
+/// pause/resume, and calm devotional completion.
 class GuidedPujaScreen extends StatefulWidget {
   final PujaGuide guide;
   final SadhanaState sadhanaState;
@@ -35,7 +38,7 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
     super.initState();
     widget.sadhanaState.addListener(_onStateChange);
     if (widget.sadhanaState.activeGuide?.id != widget.guide.id) {
-      widget.sadhanaState.startGuide(widget.guide);
+      widget.sadhanaState.startPujaSession(widget.guide);
     }
   }
 
@@ -49,25 +52,58 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
     if (mounted) setState(() {});
   }
 
-  void _openLinkedMantra(String mantraId) {
+  Future<void> _openLinkedJapa(PujaStep step) async {
     final mRepo = widget.mantraRepository ?? MantraRepositoryImpl();
     final aState = widget.audioState;
 
-    final mantra = mRepo.getMantraById(mantraId);
+    if (step.linkedMantraId == null) return;
+    final mantra = mRepo.getMantraById(step.linkedMantraId!);
+
     if (mantra != null && aState != null) {
-      Navigator.push(
+      final targetRepetitions = step.targetRepetitions ?? 108;
+      if (aState.targetRepetitions != targetRepetitions && !aState.hasActiveOrPausedSession) {
+        aState.setTargetRepetitions(targetRepetitions);
+      }
+
+      // Open Phase 21A JapaPracticeScreen strictly WITHOUT autoplay
+      await Navigator.push<bool>(
         context,
         MaterialPageRoute(
-          builder: (_) => MantraPlayerScreen(
-            mantra: mantra,
+          builder: (_) => JapaPracticeScreen(
             audioState: aState,
+            mantraRepository: mRepo,
+            initialMantra: mantra,
           ),
         ),
       );
+
+      if (!mounted) return;
+      final completedCount = aState.completedRepetitions;
+      final isTargetReached = aState.hasReachedTarget || completedCount >= targetRepetitions;
+
+      if (isTargetReached) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('॥ जप पूर्णम् ॥ Japa target ($targetRepetitions chants) completed.'),
+            backgroundColor: Colors.green.shade700,
+            duration: const Duration(seconds: 3),
+          ),
+        );
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+              'Japa in progress: $completedCount of $targetRepetitions completed. '
+              'Complete target to fulfill step.',
+            ),
+            duration: const Duration(seconds: 2),
+          ),
+        );
+      }
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('Mantra "$mantraId" is in contemplation mode.'),
+          content: Text('Mantra "${step.linkedMantraId}" is available in manual contemplation mode.'),
           duration: const Duration(seconds: 2),
         ),
       );
@@ -87,6 +123,14 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
             onPressed: () => Navigator.pop(ctx, false),
             child: const Text('Continue Worship'),
           ),
+          TextButton(
+            onPressed: () {
+              widget.sadhanaState.abandonPujaSession();
+              Navigator.pop(ctx, true);
+            },
+            style: TextButton.styleFrom(foregroundColor: Colors.redAccent),
+            child: const Text('Abandon'),
+          ),
           ElevatedButton(
             onPressed: () => Navigator.pop(ctx, true),
             style: ElevatedButton.styleFrom(
@@ -100,7 +144,7 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
     );
 
     if (shouldExit == true) {
-      widget.sadhanaState.pauseGuide();
+      widget.sadhanaState.pausePujaSession();
       return true;
     }
     return false;
@@ -143,15 +187,46 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
           ),
           centerTitle: true,
           actions: [
+            // Preparation Checklist button
+            IconButton(
+              icon: const Icon(Icons.inventory_2_outlined),
+              tooltip: 'Preparation & Materials',
+              onPressed: () => PujaPreparationModal.show(
+                context: context,
+                guide: widget.guide,
+                sadhanaState: widget.sadhanaState,
+              ),
+            ),
+            // Steps overview
+            IconButton(
+              icon: const Icon(Icons.format_list_numbered),
+              tooltip: 'Steps Overview',
+              onPressed: () => PujaGuideOverviewModal.show(
+                context: context,
+                guide: widget.guide,
+                currentStepIndex: state.activeGuideStepIndex,
+                onStart: () {},
+              ),
+            ),
+            // History
+            IconButton(
+              icon: const Icon(Icons.history),
+              tooltip: 'Puja History',
+              onPressed: () => PujaHistoryModal.show(
+                context: context,
+                sadhanaState: widget.sadhanaState,
+              ),
+            ),
+            // Pause / Resume
             if (!isCompleted)
               IconButton(
                 icon: Icon(state.isGuidePaused ? Icons.play_arrow : Icons.pause),
-                tooltip: state.isGuidePaused ? 'Resume Session' : 'Pause Session',
+                tooltip: state.isGuidePaused ? 'Resume Worship' : 'Pause Worship',
                 onPressed: () {
                   if (state.isGuidePaused) {
-                    state.resumeGuide();
+                    state.resumePujaSession();
                   } else {
-                    state.pauseGuide();
+                    state.pausePujaSession();
                   }
                 },
               ),
@@ -162,18 +237,21 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
             : currentStep == null
                 ? const Center(child: Text('No steps available'))
                 : _buildStepView(isDark, currentStep),
-        bottomNavigationBar: isCompleted ? null : _buildStepNavigationBar(isDark),
+        bottomNavigationBar: isCompleted ? null : _buildStepNavigationBar(isDark, currentStep),
       ),
     );
   }
 
   Widget _buildStepView(bool isDark, PujaStep step) {
-    final state = widget.sadhanaState;
+    final isTargetReached = widget.audioState != null &&
+        (widget.audioState!.hasReachedTarget ||
+            (step.targetRepetitions != null &&
+                widget.audioState!.completedRepetitions >= step.targetRepetitions!));
 
     return ListView(
       padding: const EdgeInsets.fromLTRB(18, 12, 18, 24),
       children: [
-        // 1. Upachara Tag & Step Title
+        // 1. Upachara & Optional Tag & Step Title
         Row(
           children: [
             if (step.upacharaName != null) ...[
@@ -194,6 +272,25 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
                     fontWeight: FontWeight.bold,
                     letterSpacing: 0.8,
                     color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 8),
+            ],
+            if (step.isOptional) ...[
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                decoration: BoxDecoration(
+                  color: isDark ? Colors.white12 : Colors.black12,
+                  borderRadius: BorderRadius.circular(6),
+                ),
+                child: Text(
+                  'OPTIONAL',
+                  style: TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.bold,
+                    color: isDark ? Colors.white70 : Colors.black54,
+                    letterSpacing: 0.6,
                   ),
                 ),
               ),
@@ -334,19 +431,56 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
               ],
             ),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 14),
         ],
 
-        // 5. Linked Audio / Japa Practice Button
+        // 5. Source Attribution & Provenance
+        if (step.scripturalSource != null && step.scripturalSource!.isNotEmpty) ...[
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+            decoration: BoxDecoration(
+              color: isDark ? const Color(0xFF221A12) : const Color(0xFFF9F5EC),
+              borderRadius: BorderRadius.circular(10),
+              border: Border.all(
+                color: isDark ? AppColors.goldGlow.withAlpha(60) : AppColors.goldPrimary.withAlpha(60),
+                width: 0.8,
+              ),
+            ),
+            child: Row(
+              children: [
+                const Icon(Icons.menu_book_outlined, size: 16, color: AppColors.goldPrimary),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: Text(
+                    'Source: ${step.scripturalSource!}',
+                    style: TextStyle(
+                      fontSize: 11,
+                      fontStyle: FontStyle.italic,
+                      color: isDark ? const Color(0xFFBCAAA4) : const Color(0xFF5D4037),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 14),
+        ],
+
+        // 6. Linked Japa Practice Card
         if (step.linkedMantraId != null) ...[
           Card(
-            color: isDark ? const Color(0xFF2C1F14) : const Color(0xFFFFF6EA),
+            color: isTargetReached
+                ? (isDark ? const Color(0xFF162D1C) : const Color(0xFFE8F5E9))
+                : (isDark ? const Color(0xFF2C1F14) : const Color(0xFFFFF6EA)),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(14),
-              side: const BorderSide(color: AppColors.saffronPrimary, width: 1),
+              side: BorderSide(
+                color: isTargetReached ? Colors.green : AppColors.saffronPrimary,
+                width: 1,
+              ),
             ),
             child: InkWell(
-              onTap: () => _openLinkedMantra(step.linkedMantraId!),
+              onTap: () => _openLinkedJapa(step),
               borderRadius: BorderRadius.circular(14),
               child: Padding(
                 padding: const EdgeInsets.all(14),
@@ -355,10 +489,14 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
                     Container(
                       padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
-                        color: AppColors.saffronPrimary,
+                        color: isTargetReached ? Colors.green : AppColors.saffronPrimary,
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      child: const Icon(Icons.music_note, color: Colors.white, size: 22),
+                      child: Icon(
+                        isTargetReached ? Icons.check_circle : Icons.music_note,
+                        color: Colors.white,
+                        size: 22,
+                      ),
                     ),
                     const SizedBox(width: 14),
                     Expanded(
@@ -368,10 +506,10 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
                           Row(
                             children: [
                               Text(
-                                'LINKED CHANTING PRACTICE',
+                                isTargetReached ? 'JAPA TARGET FULFILLED' : 'LINKED CHANTING PRACTICE',
                                 style: AppTextStyles.metadataTag(isDark).copyWith(
                                   fontSize: 10,
-                                  color: AppColors.saffronPrimary,
+                                  color: isTargetReached ? Colors.green : AppColors.saffronPrimary,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -379,12 +517,18 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
                               Container(
                                 padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 1),
                                 decoration: BoxDecoration(
-                                  color: Colors.green.withAlpha(40),
+                                  color: (isTargetReached ? Colors.green : Colors.amber).withAlpha(40),
                                   borderRadius: BorderRadius.circular(4),
                                 ),
-                                child: const Text(
-                                  'AUDIO READY',
-                                  style: TextStyle(fontSize: 9, fontWeight: FontWeight.bold, color: Colors.green),
+                                child: Text(
+                                  isTargetReached
+                                      ? 'VERIFIED'
+                                      : (step.targetRepetitions != null ? '${step.targetRepetitions} CHANTS' : 'JAPA'),
+                                  style: TextStyle(
+                                    fontSize: 9,
+                                    fontWeight: FontWeight.bold,
+                                    color: isTargetReached ? Colors.green : (isDark ? Colors.amber[200] : Colors.amber[900]),
+                                  ),
                                 ),
                               ),
                             ],
@@ -395,13 +539,19 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
                             style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
                           ),
                           Text(
-                            'Chant with 108 Japa Counter & Return to Step ${state.activeGuideStepIndex + 1}',
+                            isTargetReached
+                                ? 'Target completed. Devotee may proceed to next step.'
+                                : 'Tap to open Japa practice (${step.targetRepetitions ?? 108} target) • No autoplay',
                             style: AppTextStyles.caption(isDark),
                           ),
                         ],
                       ),
                     ),
-                    const Icon(Icons.arrow_forward_ios, size: 14, color: AppColors.saffronPrimary),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      size: 14,
+                      color: isTargetReached ? Colors.green : AppColors.saffronPrimary,
+                    ),
                   ],
                 ),
               ),
@@ -410,7 +560,7 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
           const SizedBox(height: 14),
         ],
 
-        // 6. Expanded Instructions
+        // 7. Expanded Instructions
         if (step.expandedInstructions.isNotEmpty) ...[
           ExpansionTile(
             title: Text(
@@ -441,11 +591,12 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
     );
   }
 
-  Widget _buildStepNavigationBar(bool isDark) {
+  Widget _buildStepNavigationBar(bool isDark, PujaStep? currentStep) {
     final state = widget.sadhanaState;
     final isFirstStep = state.activeGuideStepIndex == 0;
     final isLastStep = state.activeGuideStepIndex == widget.guide.steps.length - 1;
     final progress = (state.activeGuideStepIndex + 1) / widget.guide.steps.length;
+    final isOptional = currentStep?.isOptional ?? false;
 
     return Container(
       padding: const EdgeInsets.fromLTRB(16, 10, 16, 16),
@@ -479,7 +630,7 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
                   Expanded(
                     flex: 1,
                     child: OutlinedButton.icon(
-                      onPressed: state.previousGuideStep,
+                      onPressed: state.previousPujaStep,
                       icon: const Icon(Icons.arrow_back, size: 16),
                       label: const Text('PREVIOUS'),
                       style: OutlinedButton.styleFrom(
@@ -488,11 +639,30 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
                       ),
                     ),
                   ),
-                if (!isFirstStep) const SizedBox(width: 12),
+                if (!isFirstStep) const SizedBox(width: 8),
+
+                // Skip optional step button if optional
+                if (isOptional) ...[
+                  Expanded(
+                    flex: 1,
+                    child: OutlinedButton.icon(
+                      onPressed: state.skipOptionalPujaStep,
+                      icon: const Icon(Icons.skip_next, size: 16),
+                      label: const Text('SKIP'),
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: isDark ? Colors.white70 : Colors.black87,
+                        padding: const EdgeInsets.symmetric(vertical: 12),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                ],
+
                 Expanded(
                   flex: isFirstStep ? 2 : 1,
                   child: ElevatedButton.icon(
-                    onPressed: state.nextGuideStep,
+                    onPressed: state.completeCurrentPujaStep,
                     icon: Icon(isLastStep ? Icons.check_circle : Icons.arrow_forward, size: 18),
                     label: Text(
                       isLastStep ? 'COMPLETE WORSHIP' : 'NEXT STEP',
@@ -560,7 +730,7 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
               child: Text(
                 'May the peace, purity, and spiritual grace cultivated during this sacred practice '
                 'abide with you and inspire noble actions throughout the day.\n\n'
-                'Your daily routine has recorded this practice as completed.',
+                'Your worship record has been saved locally to your private devotional history.',
                 style: AppTextStyles.verseMeaning(isDark).copyWith(fontSize: 13, height: 1.45),
                 textAlign: TextAlign.center,
               ),

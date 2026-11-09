@@ -25,6 +25,7 @@ import 'widgets/sadhana_history_modal.dart';
 import '../japa/japa_practice_screen.dart';
 import 'widgets/customize_routine_modal.dart';
 import 'widgets/puja_guide_overview_modal.dart';
+import 'widgets/puja_history_modal.dart';
 
 class SadhanaScreen extends StatefulWidget {
   final AppState appState;
@@ -207,6 +208,11 @@ class _SadhanaScreenState extends State<SadhanaScreen> with WidgetsBindingObserv
         showLogo: false,
         actions: [
           IconButton(
+            icon: const Icon(Icons.temple_hindu_outlined),
+            tooltip: 'Puja Practice History',
+            onPressed: () => PujaHistoryModal.show(context: context, sadhanaState: _state),
+          ),
+          IconButton(
             icon: const Icon(Icons.history_edu),
             tooltip: 'Sadhana Practice History',
             onPressed: () => SadhanaHistoryModal.show(context, _state),
@@ -272,6 +278,111 @@ class _SadhanaScreenState extends State<SadhanaScreen> with WidgetsBindingObserv
                         ),
                       ),
                   ],
+                ),
+              ),
+
+            // Active Guided Puja Banner (if in progress or paused)
+            if (_state.hasActiveGuideSession && _state.activeGuide != null)
+              Card(
+                margin: const EdgeInsets.fromLTRB(16, 4, 16, 10),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16),
+                  side: const BorderSide(color: AppColors.saffronPrimary, width: 1.5),
+                ),
+                color: isDark ? const Color(0xFF2A1C10) : const Color(0xFFFFF6E6),
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Container(
+                                width: 8,
+                                height: 8,
+                                decoration: const BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: AppColors.saffronPrimary,
+                                ),
+                              ),
+                              const SizedBox(width: 8),
+                              Text(
+                                'ACTIVE GUIDED PUJA',
+                                style: TextStyle(
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.bold,
+                                  letterSpacing: 0.8,
+                                  color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                            decoration: BoxDecoration(
+                              color: isDark ? const Color(0xFF3A2814) : const Color(0xFFF3E7D3),
+                              borderRadius: BorderRadius.circular(6),
+                            ),
+                            child: Text(
+                              _state.isGuidePaused ? 'PAUSED' : 'IN PROGRESS',
+                              style: TextStyle(
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold,
+                                color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 10),
+                      Text(
+                        _state.activeGuide!.title,
+                        style: AppTextStyles.titleMedium(isDark).copyWith(fontSize: 16),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        'Step ${_state.activeGuideStepIndex + 1} of ${_state.activeGuide!.steps.length}: ${_state.currentGuideStep?.stepName ?? ""}',
+                        style: AppTextStyles.caption(isDark),
+                      ),
+                      const SizedBox(height: 14),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: ElevatedButton.icon(
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (_) => GuidedPujaScreen(
+                                      guide: _state.activeGuide!,
+                                      sadhanaState: _state,
+                                      mantraRepository: widget.mantraRepository,
+                                      audioState: widget.audioState,
+                                    ),
+                                  ),
+                                );
+                              },
+                              icon: const Icon(Icons.play_arrow, size: 18),
+                              label: const Text('RESUME PUJA'),
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.saffronPrimary,
+                                foregroundColor: Colors.white,
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 10),
+                          TextButton(
+                            onPressed: () => _state.abandonPujaSession(),
+                            child: const Text('Abandon', style: TextStyle(color: Colors.redAccent)),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
 
