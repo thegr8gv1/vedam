@@ -3,8 +3,11 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../core/models/guided_sadhana.dart';
 import '../core/models/guided_sadhana_session.dart';
 import '../core/models/puja_guide.dart';
+import '../core/models/puja_session.dart';
 import '../core/models/sadhana_practice.dart';
 import '../core/services/guided_sadhana_session_service.dart';
+import '../core/services/puja_session_service.dart';
+import '../data/fixtures/authentic_puja_guides_data.dart';
 import '../data/fixtures/authentic_sadhana_plans_data.dart';
 import '../data/fixtures/default_sadhana_practices_data.dart';
 
@@ -19,6 +22,7 @@ class SadhanaState extends ChangeNotifier {
   final SharedPreferences? _injectedPrefs;
   SharedPreferences? _prefs;
   GuidedSadhanaSessionService? _sadhanaSessionService;
+  PujaSessionService? _pujaSessionService;
 
   final List<SadhanaPractice> _allCatalogPractices = List.from(DefaultSadhanaPracticesData.allCatalogPractices);
   List<SadhanaPractice> _activeRoutine = [];
@@ -30,6 +34,9 @@ class SadhanaState extends ChangeNotifier {
   int _activeGuideStepIndex = 0;
   bool _isGuidePaused = false;
   bool _isGuideCompleted = false;
+  PujaSession? _activePujaSession;
+  List<PujaSession> _pujaHistory = [];
+  Set<String> _preparedMaterials = {};
 
   // Active Guided Sadhana Flow Session
   GuidedSadhanaPlan? _activeSadhanaPlan;
@@ -74,6 +81,10 @@ class SadhanaState extends ChangeNotifier {
   bool get isGuidePaused => _isGuidePaused;
   bool get isGuideCompleted => _isGuideCompleted;
   bool get hasActiveGuideSession => _activeGuide != null && !_isGuideCompleted;
+  PujaSession? get activePujaSession => _activePujaSession;
+  List<PujaSession> get pujaHistory => List.unmodifiable(_pujaHistory);
+  Set<String> get preparedMaterials => Set.unmodifiable(_preparedMaterials);
+  bool isMaterialPrepared(String material) => _preparedMaterials.contains(material);
 
   PujaStep? get currentGuideStep {
     if (_activeGuide == null || _activeGuide!.steps.isEmpty) return null;
@@ -111,6 +122,7 @@ class SadhanaState extends ChangeNotifier {
   Future<void> _initialize() async {
     _prefs = _injectedPrefs ?? await SharedPreferences.getInstance();
     _sadhanaSessionService = GuidedSadhanaSessionService(_prefs!);
+    _pujaSessionService = PujaSessionService(_prefs!);
     _loadFromStorage();
   }
 
@@ -152,6 +164,19 @@ class SadhanaState extends ChangeNotifier {
         _activeSadhanaPlan = AuthenticSadhanaPlansData.getPlanById(_activeSadhanaSession!.sadhanaId);
       }
       _sadhanaHistory = _sadhanaSessionService!.loadSessionHistory();
+    }
+
+    // Load active guided puja session and history
+    if (_pujaSessionService != null) {
+      _activePujaSession = _pujaSessionService!.loadActiveSession();
+      if (_activePujaSession != null) {
+        _activeGuide = AuthenticPujaGuidesData.getGuideById(_activePujaSession!.guideId);
+        _activeGuideStepIndex = _activePujaSession!.currentStepIndex;
+        _isGuidePaused = _activePujaSession!.isPaused;
+        _isGuideCompleted = _activePujaSession!.isCompleted;
+        _preparedMaterials = _activePujaSession!.preparedMaterials.toSet();
+      }
+      _pujaHistory = _pujaSessionService!.loadSessionHistory();
     }
 
     notifyListeners();
@@ -255,64 +280,196 @@ class SadhanaState extends ChangeNotifier {
     }
   }
 
-  // --- Guided Puja Session Management ---
+  // --- Guided Puja Session Management (Enhanced Phase 21C) ---
 
-  void startGuide(PujaGuide guide, {int stepIndex = 0}) {
+  void startPujaSession(PujaGuide guide, {int stepIndex = 0}) {
     _activeGuide = guide;
-    _activeGuideStepIndex = stepIndex.clamp(0, guide.steps.isNotEmpty ? guide.steps.length - 1 : 0);
-    _isGuidePaused = false;
     _isGuideCompleted = false;
+
+    // Check if an active session already exists for this guide to avoid duplicate sessions
+    if (_activePujaSession != null && _activePujaSession!.guideId == guide.id && !_activePujaSession!.isCompleted) {
+      _activeGuideStepIndex = _activePujaSession!.currentStepIndex.clamp(0, guide.steps.length - 1);
+      _isGuidePaused = _activePujaSession!.isPaused;
+      _preparedMaterials = _activePujaSession!.preparedMaterials.toSet();
+    } else {
+      _activeGuideStepIndex = stepIndex.clamp(0, guide.steps.isNotEmpty ? guide.steps.length - 1 : 0);
+      _isGuidePaused = false;
+      final now = DateTime.now();
+      _activePujaSession = PujaSession(
+        id: 'puja_${guide.id}_${now.millisecondsSinceEpoch}',
+        guideId: guide.id,
+        startTime: now,
+        lastUpdatedTime: now,
+        currentStepIndex: _activeGuideStepIndex,
+        completedStepIds: [],
+        skippedStepIds: [],
+        preparedMaterials: _preparedMaterials.toList(),
+        status: PujaSessionStatus.active,
+      );
+      _pujaSessionService?.saveActiveSession(_activePujaSession!);
+    }
     notifyListeners();
   }
 
-  void nextGuideStep() {
+  void completeCurrentPujaStep() {
     if (_activeGuide == null) return;
+    final currentStep = currentGuideStep;
+    final stepId = currentStep?.id ?? 'step_${_activeGuideStepIndex + 1}';
+
+    final updatedCompleted = List<String>.from(_activePujaSession?.completedStepIds ?? []);
+    if (!updatedCompleted.contains(stepId)) {
+      updatedCompleted.add(stepId);
+    }
+
     if (_activeGuideStepIndex < _activeGuide!.steps.length - 1) {
       _activeGuideStepIndex++;
       _isGuidePaused = false;
+      _activePujaSession = _activePujaSession?.copyWith(
+        currentStepIndex: _activeGuideStepIndex,
+        completedStepIds: updatedCompleted,
+        lastUpdatedTime: DateTime.now(),
+      );
+      if (_activePujaSession != null) {
+        _pujaSessionService?.saveActiveSession(_activePujaSession!);
+      }
       notifyListeners();
     } else {
-      completeGuide();
+      _activePujaSession = _activePujaSession?.copyWith(
+        completedStepIds: updatedCompleted,
+        lastUpdatedTime: DateTime.now(),
+      );
+      finishPujaSession();
     }
   }
 
-  void previousGuideStep() {
+  void skipOptionalPujaStep() {
+    if (_activeGuide == null) return;
+    final currentStep = currentGuideStep;
+    if (currentStep == null || !currentStep.isOptional) return;
+
+    final stepId = currentStep.id;
+    final updatedSkipped = List<String>.from(_activePujaSession?.skippedStepIds ?? []);
+    if (!updatedSkipped.contains(stepId)) {
+      updatedSkipped.add(stepId);
+    }
+
+    if (_activeGuideStepIndex < _activeGuide!.steps.length - 1) {
+      _activeGuideStepIndex++;
+      _isGuidePaused = false;
+      _activePujaSession = _activePujaSession?.copyWith(
+        currentStepIndex: _activeGuideStepIndex,
+        skippedStepIds: updatedSkipped,
+        lastUpdatedTime: DateTime.now(),
+      );
+      if (_activePujaSession != null) {
+        _pujaSessionService?.saveActiveSession(_activePujaSession!);
+      }
+      notifyListeners();
+    } else {
+      _activePujaSession = _activePujaSession?.copyWith(
+        skippedStepIds: updatedSkipped,
+        lastUpdatedTime: DateTime.now(),
+      );
+      finishPujaSession();
+    }
+  }
+
+  void previousPujaStep() {
     if (_activeGuide == null) return;
     if (_activeGuideStepIndex > 0) {
       _activeGuideStepIndex--;
       _isGuidePaused = false;
       _isGuideCompleted = false;
+      _activePujaSession = _activePujaSession?.copyWith(
+        currentStepIndex: _activeGuideStepIndex,
+        lastUpdatedTime: DateTime.now(),
+      );
+      if (_activePujaSession != null) {
+        _pujaSessionService?.saveActiveSession(_activePujaSession!);
+      }
       notifyListeners();
     }
   }
 
-  void goToStep(int index) {
+  void goToPujaStep(int index) {
     if (_activeGuide == null) return;
     if (index >= 0 && index < _activeGuide!.steps.length) {
       _activeGuideStepIndex = index;
       _isGuidePaused = false;
+      _activePujaSession = _activePujaSession?.copyWith(
+        currentStepIndex: _activeGuideStepIndex,
+        lastUpdatedTime: DateTime.now(),
+      );
+      if (_activePujaSession != null) {
+        _pujaSessionService?.saveActiveSession(_activePujaSession!);
+      }
       notifyListeners();
     }
   }
 
-  void pauseGuide() {
+  void toggleMaterialPrepared(String material) {
+    if (_preparedMaterials.contains(material)) {
+      _preparedMaterials.remove(material);
+    } else {
+      _preparedMaterials.add(material);
+    }
+    _activePujaSession = _activePujaSession?.copyWith(
+      preparedMaterials: _preparedMaterials.toList(),
+      lastUpdatedTime: DateTime.now(),
+    );
+    if (_activePujaSession != null) {
+      _pujaSessionService?.saveActiveSession(_activePujaSession!);
+    }
+    notifyListeners();
+  }
+
+  void pausePujaSession() {
     if (_activeGuide != null) {
       _isGuidePaused = true;
+      _activePujaSession = _activePujaSession?.copyWith(
+        status: PujaSessionStatus.paused,
+        lastUpdatedTime: DateTime.now(),
+      );
+      if (_activePujaSession != null) {
+        _pujaSessionService?.saveActiveSession(_activePujaSession!);
+      }
       notifyListeners();
     }
   }
 
-  void resumeGuide() {
+  void resumePujaSession() {
     if (_activeGuide != null) {
       _isGuidePaused = false;
+      _activePujaSession = _activePujaSession?.copyWith(
+        status: PujaSessionStatus.active,
+        lastUpdatedTime: DateTime.now(),
+      );
+      if (_activePujaSession != null) {
+        _pujaSessionService?.saveActiveSession(_activePujaSession!);
+      }
       notifyListeners();
     }
   }
 
-  void completeGuide() {
+  void finishPujaSession() {
     if (_activeGuide != null) {
       _isGuideCompleted = true;
       _isGuidePaused = false;
+
+      if (_activePujaSession != null) {
+        final duration = DateTime.now().difference(_activePujaSession!.startTime).inSeconds;
+        final finishedSession = _activePujaSession!.copyWith(
+          status: PujaSessionStatus.completed,
+          durationSeconds: duration > 0 ? duration : 60,
+          lastUpdatedTime: DateTime.now(),
+        );
+        _pujaHistory = [
+          finishedSession,
+          ..._pujaHistory.where((s) => s.id != finishedSession.id).take(49),
+        ];
+        _pujaSessionService?.recordCompletedSession(finishedSession);
+        _activePujaSession = null;
+      }
 
       // Automatically link to corresponding practice completion if present
       final matchingPractice = _activeRoutine.firstWhere(
@@ -330,6 +487,32 @@ class SadhanaState extends ChangeNotifier {
     }
   }
 
+  void abandonPujaSession() {
+    if (_activePujaSession != null) {
+      _pujaSessionService?.abandonActiveSession(_activePujaSession!);
+      _activePujaSession = null;
+    }
+    _activeGuide = null;
+    _activeGuideStepIndex = 0;
+    _isGuidePaused = false;
+    _isGuideCompleted = false;
+    notifyListeners();
+  }
+
+  void clearPujaHistory() {
+    _pujaSessionService?.clearHistory();
+    _pujaHistory = [];
+    notifyListeners();
+  }
+
+  // Backward compatible aliases
+  void startGuide(PujaGuide guide, {int stepIndex = 0}) => startPujaSession(guide, stepIndex: stepIndex);
+  void nextGuideStep() => completeCurrentPujaStep();
+  void previousGuideStep() => previousPujaStep();
+  void goToStep(int index) => goToPujaStep(index);
+  void pauseGuide() => pausePujaSession();
+  void resumeGuide() => resumePujaSession();
+  void completeGuide() => finishPujaSession();
   void exitGuide() {
     _activeGuide = null;
     _activeGuideStepIndex = 0;
