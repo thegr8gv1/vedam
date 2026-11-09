@@ -77,30 +77,26 @@ class PujaGuideOverviewModal extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Row(
-                        children: [
-                          Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-                            decoration: BoxDecoration(
-                              color: isDark ? const Color(0xFF3A2814) : const Color(0xFFF3E7D3),
-                              borderRadius: BorderRadius.circular(6),
-                            ),
-                            child: Text(
-                              guide.editorialStatus.toUpperCase(),
-                              style: TextStyle(
-                                fontSize: 10,
-                                fontWeight: FontWeight.bold,
-                                letterSpacing: 0.6,
-                                color: isDark ? AppColors.goldGlow : AppColors.goldDark,
-                              ),
-                            ),
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                        decoration: BoxDecoration(
+                          color: isDark ? const Color(0xFF3A2814) : const Color(0xFFF3E7D3),
+                          borderRadius: BorderRadius.circular(6),
+                        ),
+                        child: Text(
+                          'Editorially curated traditional guide — awaiting independent scholarly verification.',
+                          style: TextStyle(
+                            fontSize: 10,
+                            fontWeight: FontWeight.w600,
+                            letterSpacing: 0.3,
+                            color: isDark ? AppColors.goldGlow : AppColors.goldDark,
                           ),
-                          const SizedBox(width: 8),
-                          Text(
-                            '~${guide.estimatedDurationMinutes} mins',
-                            style: AppTextStyles.caption(isDark),
-                          ),
-                        ],
+                        ),
+                      ),
+                      const SizedBox(height: 6),
+                      Text(
+                        '~${guide.estimatedDurationMinutes} mins',
+                        style: AppTextStyles.caption(isDark),
                       ),
                       const SizedBox(height: 6),
                       Text(

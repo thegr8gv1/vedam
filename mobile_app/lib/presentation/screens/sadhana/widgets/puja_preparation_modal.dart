@@ -181,7 +181,7 @@ class PujaPreparationModal extends StatelessWidget {
                     const SizedBox(height: 18),
                   ],
 
-                  // 2. Required Materials (Samagri)
+                  // 2. Traditional Core Materials (Samagri)
                   Row(
                     children: [
                       Text(
@@ -196,7 +196,7 @@ class PujaPreparationModal extends StatelessWidget {
                           borderRadius: BorderRadius.circular(4),
                         ),
                         child: const Text(
-                          'MANDATORY',
+                          'TRADITIONAL CORE',
                           style: TextStyle(
                             fontSize: 9,
                             fontWeight: FontWeight.bold,
@@ -207,11 +207,21 @@ class PujaPreparationModal extends StatelessWidget {
                       ),
                     ],
                   ),
+                  const SizedBox(height: 4),
+                  Text(
+                    'Samagri varies across family lineage (Kulachara) and Sampradaya. Bhavana (devotion) takes precedence over physical items.',
+                    style: TextStyle(
+                      fontSize: 11,
+                      fontStyle: FontStyle.italic,
+                      color: isDark ? const Color(0xFFB8A692) : const Color(0xFF6F5E4B),
+                      height: 1.35,
+                    ),
+                  ),
                   const SizedBox(height: 6),
                   ...guide.requiredMaterials.map((material) {
                     final isChecked = sadhanaState.isMaterialPrepared(material);
                     return Semantics(
-                      label: 'Required material: $material, ${isChecked ? "prepared" : "not prepared"}',
+                      label: 'Traditional core material: $material, ${isChecked ? "prepared" : "not prepared"}',
                       child: InkWell(
                         onTap: () => sadhanaState.toggleMaterialPrepared(material),
                         borderRadius: BorderRadius.circular(8),

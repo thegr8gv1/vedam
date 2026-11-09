@@ -33,6 +33,8 @@ class GuidedPujaScreen extends StatefulWidget {
 }
 
 class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
+  final Set<String> _fulfilledJapaStepIds = {};
+
   @override
   void initState() {
     super.initState();
@@ -79,9 +81,13 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
 
       if (!mounted) return;
       final completedCount = aState.completedRepetitions;
-      final isTargetReached = aState.hasReachedTarget || completedCount >= targetRepetitions;
+      final isMatchingMantra = aState.activeMantra?.id == step.linkedMantraId;
+      final isTargetReached = isMatchingMantra && (aState.hasReachedTarget || completedCount >= targetRepetitions);
 
       if (isTargetReached) {
+        setState(() {
+          _fulfilledJapaStepIds.add(step.id);
+        });
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('॥ जप पूर्णम् ॥ Japa target ($targetRepetitions chants) completed.'),
@@ -243,10 +249,13 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
   }
 
   Widget _buildStepView(bool isDark, PujaStep step) {
-    final isTargetReached = widget.audioState != null &&
-        (widget.audioState!.hasReachedTarget ||
-            (step.targetRepetitions != null &&
-                widget.audioState!.completedRepetitions >= step.targetRepetitions!));
+    final isMatchingMantra = widget.audioState?.activeMantra?.id == step.linkedMantraId;
+    final isTargetReached = _fulfilledJapaStepIds.contains(step.id) ||
+        (widget.audioState != null &&
+            isMatchingMantra &&
+            (widget.audioState!.hasReachedTarget ||
+                (step.targetRepetitions != null &&
+                    widget.audioState!.completedRepetitions >= step.targetRepetitions!)));
 
     return ListView(
       padding: const EdgeInsets.fromLTRB(18, 12, 18, 24),
@@ -587,6 +596,38 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
                 .toList(),
           ),
         ],
+
+        // 8. Scholarly Verification & Curation Disclosure
+        const SizedBox(height: 14),
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+          decoration: BoxDecoration(
+            color: isDark ? const Color(0xFF221A12) : const Color(0xFFF9F5EC),
+            borderRadius: BorderRadius.circular(8),
+            border: Border.all(
+              color: isDark ? AppColors.goldGlow.withAlpha(50) : AppColors.goldPrimary.withAlpha(50),
+              width: 0.8,
+            ),
+          ),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Icon(Icons.info_outline, size: 14, color: AppColors.goldPrimary),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  'Editorially curated traditional guide — awaiting independent scholarly verification.',
+                  style: TextStyle(
+                    fontSize: 10,
+                    fontStyle: FontStyle.italic,
+                    color: isDark ? const Color(0xFFBCAAA4) : const Color(0xFF5D4037),
+                    height: 1.35,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       ],
     );
   }
