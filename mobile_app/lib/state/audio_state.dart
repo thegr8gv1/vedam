@@ -2,9 +2,11 @@ import 'dart:async';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../core/models/japa_practice_session.dart';
 import '../core/models/japa_target_preset.dart';
 import '../core/models/mantra_item.dart';
 import '../core/services/audio_service.dart';
+import '../core/services/japa_session_service.dart';
 
 /// Available devotional repeat modes.
 enum DevotionalRepeatMode {
@@ -29,6 +31,7 @@ class AudioState extends ChangeNotifier {
 
   final AudioPlaybackService _audioService;
   final SharedPreferences? _injectedPrefs;
+  final JapaSessionService _japaSessionService;
 
   MantraItem? _activeMantra;
   PlayerState _playerState = PlayerState.stopped;
@@ -59,6 +62,17 @@ class AudioState extends ChangeNotifier {
   int _lastCompletionTimestampMs = 0;
   int _lastManualTapTimestampMs = 0;
   bool _isTransitioningRepetition = false;
+  bool _isDisposed = false;
+
+  @override
+  void notifyListeners() {
+    if (_isDisposed) return;
+    super.notifyListeners();
+  }
+
+  // Japa practice session and history
+  JapaPracticeSession? _activeSession;
+  List<JapaPracticeSession> _sessionHistory = [];
 
   StreamSubscription<PlayerState>? _stateSub;
   StreamSubscription<Duration>? _positionSub;
@@ -67,8 +81,11 @@ class AudioState extends ChangeNotifier {
   AudioState({
     required AudioPlaybackService audioService,
     SharedPreferences? prefs,
+    JapaSessionService? japaSessionService,
   })  : _audioService = audioService,
-        _injectedPrefs = prefs {
+        _injectedPrefs = prefs,
+        _japaSessionService =
+            japaSessionService ?? JapaSessionService(prefs: prefs) {
     _initAudioListeners();
     init();
   }
@@ -104,7 +121,9 @@ class AudioState extends ChangeNotifier {
     try {
       final prefs = await _getPrefs();
       final savedTarget = prefs.getInt(_prefsKeyTargetRepetitions);
-      if (savedTarget != null && savedTarget > 0 && savedTarget <= kMaxPracticalJapaTarget) {
+      if (savedTarget != null &&
+          savedTarget > 0 &&
+          savedTarget <= kMaxPracticalJapaTarget) {
         _targetRepetitions = savedTarget;
       }
 
@@ -114,7 +133,7 @@ class AudioState extends ChangeNotifier {
       }
 
       final savedCompleted = prefs.getInt(_prefsKeyCompletedRepetitions);
-      if (savedCompleted != null && savedCompleted >= 0) {
+      if (_completedRepetitions == 0 && savedCompleted != null && savedCompleted >= 0) {
         _completedRepetitions = savedCompleted;
       }
 
@@ -135,6 +154,15 @@ class AudioState extends ChangeNotifier {
       if (savedFavs != null) {
         _favoriteMantraIds.clear();
         _favoriteMantraIds.addAll(savedFavs);
+      }
+
+      // Restore session history and active session without incrementing counts
+      _sessionHistory = await _japaSessionService.loadSessionHistory();
+      final recoveredSession = await _japaSessionService.loadActiveSession();
+      if (_completedRepetitions == 0 && recoveredSession != null) {
+        _activeSession = recoveredSession;
+        _completedRepetitions = recoveredSession.completedRepetitions;
+        _targetRepetitions = recoveredSession.targetRepetitions;
       }
 
       notifyListeners();
@@ -208,8 +236,9 @@ class AudioState extends ChangeNotifier {
 
   int get targetRepetitions => _targetRepetitions;
   int get completedRepetitions => _completedRepetitions;
-  int get remainingRepetitions =>
-      _targetRepetitions > _completedRepetitions ? _targetRepetitions - _completedRepetitions : 0;
+  int get remainingRepetitions => _targetRepetitions > _completedRepetitions
+      ? _targetRepetitions - _completedRepetitions
+      : 0;
 
   bool get isSessionCompleted => _completedRepetitions >= _targetRepetitions;
   bool get hasReachedTarget => isSessionCompleted;
@@ -218,9 +247,19 @@ class AudioState extends ChangeNotifier {
   bool get hasAcknowledgedCompletion => _hasTriggeredCompletionAlert;
   bool get autoPauseAtTarget => _autoPauseAtTarget;
 
+  // Session & History Getters
+  JapaPracticeSession? get activeSession => _activeSession;
+  List<JapaPracticeSession> get sessionHistory =>
+      List.unmodifiable(_sessionHistory);
+  bool get hasActiveOrPausedSession =>
+      _activeSession != null &&
+      (_activeSession!.status == JapaSessionStatus.active ||
+          _activeSession!.status == JapaSessionStatus.paused);
+
   // Counting Mode Indicators
   bool get isAudioChantingMode => isPlaying || isPaused;
-  String get countingModeLabel => isAudioChantingMode ? 'Audio-Assisted Chanting' : 'Manual Bead Chanting';
+  String get countingModeLabel =>
+      isAudioChantingMode ? 'Audio-Assisted Chanting' : 'Manual Bead Chanting';
 
   // Playlist Navigation Getters
   List<MantraItem> get playlist => List.unmodifiable(_playlist);
@@ -356,6 +395,14 @@ class AudioState extends ChangeNotifier {
       _isContinuingBeyondTarget = false;
     }
 
+    if (_activeSession != null) {
+      _activeSession = _activeSession!.copyWith(
+        targetRepetitions: count,
+        lastUpdatedTime: DateTime.now(),
+      );
+      _japaSessionService.saveActiveSession(_activeSession!);
+    }
+
     _saveTargetPreference();
     notifyListeners();
   }
@@ -374,10 +421,81 @@ class AudioState extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Devotee elects to conclude the chanting session
+  /// Conclude and record the practice session
   void finishSession() {
     _hasTriggeredCompletionAlert = true;
     stop();
+
+    if (_activeSession != null) {
+      final finishedSession = _activeSession!.copyWith(
+        completedRepetitions: _completedRepetitions,
+        targetRepetitions: _targetRepetitions,
+        status: JapaSessionStatus.completed,
+        lastUpdatedTime: DateTime.now(),
+      );
+      _japaSessionService.recordCompletedSession(finishedSession).then((_) {
+        _japaSessionService.loadSessionHistory().then((history) {
+          _sessionHistory = history;
+        });
+      });
+      _activeSession = null;
+    }
+
+    notifyListeners();
+  }
+
+  /// Deliberately abandon current active session.
+  /// If legitimate progress was made (>0), archives as abandoned so effort is preserved.
+  Future<void> abandonSession() async {
+    await stop();
+    await _japaSessionService.abandonActiveSession();
+    _activeSession = null;
+    _completedRepetitions = 0;
+    _isContinuingBeyondTarget = false;
+    _hasTriggeredCompletionAlert = false;
+    await _clearSessionProgress();
+    _sessionHistory = await _japaSessionService.loadSessionHistory();
+    notifyListeners();
+  }
+
+  /// Pause current practice session (manual or audio).
+  void pauseSession() {
+    if (isPlaying) {
+      pause();
+    } else if (_activeSession != null) {
+      _activeSession = _activeSession!.copyWith(
+        status: JapaSessionStatus.paused,
+        lastUpdatedTime: DateTime.now(),
+      );
+      _japaSessionService.saveActiveSession(_activeSession!);
+      notifyListeners();
+    }
+  }
+
+  /// Resume paused practice session.
+  void resumeSession() {
+    if (isPaused) {
+      resume();
+    } else if (_activeSession != null) {
+      _activeSession = _activeSession!.copyWith(
+        status: JapaSessionStatus.active,
+        lastUpdatedTime: DateTime.now(),
+      );
+      _japaSessionService.saveActiveSession(_activeSession!);
+      notifyListeners();
+    }
+  }
+
+  /// Refresh practice history list from storage.
+  Future<void> refreshHistory() async {
+    _sessionHistory = await _japaSessionService.loadSessionHistory();
+    notifyListeners();
+  }
+
+  /// Clear practice history
+  Future<void> clearPracticeHistory() async {
+    await _japaSessionService.clearHistory();
+    _sessionHistory = [];
     notifyListeners();
   }
 
@@ -386,6 +504,41 @@ class AudioState extends ChangeNotifier {
   /// Set manual bead tap debounce window in milliseconds (e.g. 250-300ms).
   void setManualTapDebounceMs(int ms) {
     manualTapDebounceMs = ms;
+  }
+
+  /// Helper to create or update active session upon repetition increment.
+  void _updateActiveSessionOnIncrement(JapaCountingMode mode) {
+    final now = DateTime.now();
+    if (_activeSession == null) {
+      final mantraId = _activeMantra?.id ?? 'VEDA-MTR-0001';
+      final mantraTitle = _activeMantra?.title ?? 'Om Namah Shivaya';
+      final deity = _activeMantra?.deity;
+      _activeSession = JapaPracticeSession(
+        id: 'japa_${now.millisecondsSinceEpoch}',
+        mantraId: mantraId,
+        mantraTitle: mantraTitle,
+        deity: deity,
+        targetRepetitions: _targetRepetitions,
+        completedRepetitions: _completedRepetitions,
+        countingMode: mode,
+        startTime: now,
+        lastUpdatedTime: now,
+        status: JapaSessionStatus.active,
+      );
+    } else {
+      final existingMode = _activeSession!.countingMode;
+      final newMode = (existingMode != mode && existingMode != JapaCountingMode.mixed)
+          ? JapaCountingMode.mixed
+          : existingMode;
+      _activeSession = _activeSession!.copyWith(
+        completedRepetitions: _completedRepetitions,
+        targetRepetitions: _targetRepetitions,
+        countingMode: newMode,
+        lastUpdatedTime: now,
+        status: JapaSessionStatus.active,
+      );
+    }
+    _japaSessionService.saveActiveSession(_activeSession!);
   }
 
   /// Manual bead increment (shares state with audio repetitions).
@@ -405,13 +558,9 @@ class AudioState extends ChangeNotifier {
     }
     _completedRepetitions++;
     _saveSessionProgress();
+    _updateActiveSessionOnIncrement(JapaCountingMode.manual);
 
-    if (_completedRepetitions >= _targetRepetitions && !_isContinuingBeyondTarget) {
-      // Reached or passed target
-      notifyListeners();
-    } else {
-      notifyListeners();
-    }
+    notifyListeners();
     return true;
   }
 
@@ -421,12 +570,48 @@ class AudioState extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Sets active mantra without triggering audio playback.
+  /// Ideal for opening Japa practice in manual chanting mode without sudden autoplay.
+  void setActiveMantraWithoutPlaying(MantraItem mantra) {
+    if (_activeMantra?.id == mantra.id) return;
+    _activeMantra = mantra;
+
+    // If an existing session belonged to a different mantra and had progress, archive it
+    if (_activeSession != null && _activeSession!.mantraId != mantra.id) {
+      if (_activeSession!.completedRepetitions > 0) {
+        _japaSessionService.recordCompletedSession(
+          _activeSession!.copyWith(
+            status: JapaSessionStatus.abandoned,
+            lastUpdatedTime: DateTime.now(),
+          ),
+        );
+      }
+      _activeSession = null;
+      _completedRepetitions = 0;
+      _isContinuingBeyondTarget = false;
+      _hasTriggeredCompletionAlert = false;
+      _clearSessionProgress();
+    }
+    notifyListeners();
+  }
+
   // Play mantra
-  Future<void> playMantra(MantraItem mantra, {bool resetSessionCount = true}) async {
+  Future<void> playMantra(MantraItem mantra,
+      {bool resetSessionCount = true}) async {
     _errorMessage = null;
     _activeMantra = mantra;
 
     if (resetSessionCount) {
+      // If previous session had counts, archive before resetting
+      if (_activeSession != null && _activeSession!.completedRepetitions > 0) {
+        await _japaSessionService.recordCompletedSession(
+          _activeSession!.copyWith(
+            status: JapaSessionStatus.abandoned,
+            lastUpdatedTime: DateTime.now(),
+          ),
+        );
+      }
+      _activeSession = null;
       _completedRepetitions = 0;
       _isContinuingBeyondTarget = false;
       _hasTriggeredCompletionAlert = false;
@@ -435,6 +620,14 @@ class AudioState extends ChangeNotifier {
 
     try {
       await _audioService.playMantra(mantra);
+      if (_activeSession != null &&
+          _activeSession!.status == JapaSessionStatus.paused) {
+        _activeSession = _activeSession!.copyWith(
+          status: JapaSessionStatus.active,
+          lastUpdatedTime: DateTime.now(),
+        );
+        await _japaSessionService.saveActiveSession(_activeSession!);
+      }
     } catch (e) {
       _errorMessage = 'Playback error: $e';
       notifyListeners();
@@ -444,6 +637,15 @@ class AudioState extends ChangeNotifier {
   Future<void> pause() async {
     _errorMessage = null;
     await _audioService.pause();
+    if (_activeSession != null &&
+        _activeSession!.status == JapaSessionStatus.active) {
+      _activeSession = _activeSession!.copyWith(
+        status: JapaSessionStatus.paused,
+        lastUpdatedTime: DateTime.now(),
+      );
+      await _japaSessionService.saveActiveSession(_activeSession!);
+    }
+    notifyListeners();
   }
 
   Future<void> resume() async {
@@ -451,6 +653,15 @@ class AudioState extends ChangeNotifier {
     if (_activeMantra != null) {
       await _audioService.resume();
     }
+    if (_activeSession != null &&
+        _activeSession!.status == JapaSessionStatus.paused) {
+      _activeSession = _activeSession!.copyWith(
+        status: JapaSessionStatus.active,
+        lastUpdatedTime: DateTime.now(),
+      );
+      await _japaSessionService.saveActiveSession(_activeSession!);
+    }
+    notifyListeners();
   }
 
   Future<void> stop() async {
@@ -462,6 +673,16 @@ class AudioState extends ChangeNotifier {
   }
 
   void resetSession() {
+    if (_activeSession != null && _activeSession!.completedRepetitions > 0) {
+      final abandoned = _activeSession!.copyWith(
+        status: JapaSessionStatus.abandoned,
+        lastUpdatedTime: DateTime.now(),
+      );
+      _japaSessionService.recordCompletedSession(abandoned);
+    } else {
+      _japaSessionService.clearActiveSession();
+    }
+    _activeSession = null;
     _completedRepetitions = 0;
     _isContinuingBeyondTarget = false;
     _hasTriggeredCompletionAlert = false;
@@ -489,7 +710,6 @@ class AudioState extends ChangeNotifier {
     if (_isTransitioningRepetition) return;
 
     final now = DateTime.now().millisecondsSinceEpoch;
-    // Guard: ignore spurious rapid callbacks within 400ms
     if (now - _lastCompletionTimestampMs < 400) {
       return;
     }
@@ -498,10 +718,12 @@ class AudioState extends ChangeNotifier {
     _lastCompletionTimestampMs = now;
     _completedRepetitions++;
     _saveSessionProgress();
+    _updateActiveSessionOnIncrement(JapaCountingMode.audio);
     notifyListeners();
 
     // Check if target count is achieved
-    if (_completedRepetitions >= _targetRepetitions && !_isContinuingBeyondTarget) {
+    if (_completedRepetitions >= _targetRepetitions &&
+        !_isContinuingBeyondTarget) {
       // Reached target
       _isTransitioningRepetition = false;
 
@@ -549,6 +771,7 @@ class AudioState extends ChangeNotifier {
 
   @override
   void dispose() {
+    _isDisposed = true;
     _sleepTimer?.cancel();
     _stateSub?.cancel();
     _positionSub?.cancel();
