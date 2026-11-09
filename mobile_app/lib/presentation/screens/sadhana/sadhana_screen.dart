@@ -12,13 +12,17 @@ import '../../../state/sadhana_state.dart';
 import '../../../state/vrat_state.dart';
 import '../../widgets/sacred_app_bar.dart';
 import '../../widgets/section_header.dart';
-import '../mantras/mantra_player_screen.dart';
 
 import 'package:vedam_app/presentation/screens/japa/widgets/japa_history_modal.dart';
 import '../mantras/widgets/japa_target_modal.dart';
 import '../vrat/reminders_settings_screen.dart';
 import '../vrat/vrat_calendar_screen.dart';
 import 'guided_puja_screen.dart';
+import '../../../core/models/guided_sadhana.dart';
+import '../../../data/fixtures/authentic_sadhana_plans_data.dart';
+import 'guided_sadhana_screen.dart';
+import 'widgets/sadhana_history_modal.dart';
+import '../japa/japa_practice_screen.dart';
 import 'widgets/customize_routine_modal.dart';
 import 'widgets/puja_guide_overview_modal.dart';
 
@@ -144,6 +148,20 @@ class _SadhanaScreenState extends State<SadhanaScreen> with WidgetsBindingObserv
     );
   }
 
+  void _openGuidedSadhana(GuidedSadhanaPlan plan) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => GuidedSadhanaScreen(
+          plan: plan,
+          sadhanaState: _state,
+          audioState: widget.audioState,
+          mantraRepository: widget.mantraRepository,
+        ),
+      ),
+    );
+  }
+
   void _openLinkedMantra(String mantraId) {
     final mRepo = widget.mantraRepository ?? MantraRepositoryImpl();
     final aState = widget.audioState;
@@ -153,9 +171,10 @@ class _SadhanaScreenState extends State<SadhanaScreen> with WidgetsBindingObserv
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (_) => MantraPlayerScreen(
-            mantra: mantra,
+          builder: (_) => JapaPracticeScreen(
+            initialMantra: mantra,
             audioState: aState,
+            mantraRepository: mRepo,
           ),
         ),
       );
@@ -186,6 +205,13 @@ class _SadhanaScreenState extends State<SadhanaScreen> with WidgetsBindingObserv
         title: 'Daily Sadhana',
         subtitle: 'नित्य पूजा एवं साधना',
         showLogo: false,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.history_edu),
+            tooltip: 'Sadhana Practice History',
+            onPressed: () => SadhanaHistoryModal.show(context, _state),
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.only(bottom: 40),
@@ -246,6 +272,90 @@ class _SadhanaScreenState extends State<SadhanaScreen> with WidgetsBindingObserv
                         ),
                       ),
                   ],
+                ),
+              ),
+
+            // Active Guided Sadhana Banner (if in progress or paused)
+            if (_state.hasActiveOrPausedSadhanaSession && _state.activeSadhanaPlan != null)
+              Card(
+                margin: const EdgeInsets.fromLTRB(16, 4, 16, 10),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16),
+                  side: const BorderSide(color: AppColors.saffronPrimary, width: 1.5),
+                ),
+                color: isDark ? const Color(0xFF2A1C10) : const Color(0xFFFFF6E6),
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Container(
+                                width: 8,
+                                height: 8,
+                                decoration: const BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: AppColors.saffronPrimary,
+                                ),
+                              ),
+                              const SizedBox(width: 8),
+                              Text(
+                                'ACTIVE GUIDED SADHANA',
+                                style: TextStyle(
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.bold,
+                                  letterSpacing: 0.8,
+                                  color: isDark ? AppColors.goldGlow : AppColors.saffronPrimary,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Text(
+                            'Step ${_state.currentSadhanaStepIndex + 1} of ${_state.totalSadhanaStepsCount}',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: isDark ? AppColors.textLightMuted : AppColors.textDarkMuted,
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        _state.activeSadhanaPlan!.title,
+                        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                      const SizedBox(height: 12),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: ElevatedButton.icon(
+                              icon: const Icon(Icons.play_arrow, size: 18),
+                              label: const Text('RESUME PRACTICE'),
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.saffronPrimary,
+                                foregroundColor: Colors.white,
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                              ),
+                              onPressed: () => _openGuidedSadhana(_state.activeSadhanaPlan!),
+                            ),
+                          ),
+                          const SizedBox(width: 10),
+                          OutlinedButton(
+                            style: OutlinedButton.styleFrom(
+                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                            ),
+                            onPressed: () => _state.abandonSadhana(),
+                            child: const Text('Conclude Early'),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
 
@@ -578,6 +688,99 @@ class _SadhanaScreenState extends State<SadhanaScreen> with WidgetsBindingObserv
               }),
 
             const SizedBox(height: 20),
+
+            // 3b. Guided Sadhana Practice Flows Section
+            SectionHeader(
+              title: 'Guided Sadhana Practice Flows',
+              subtitle: 'Structured traditional sequences integrated with daily Japa',
+            ),
+
+            ...AuthenticSadhanaPlansData.allPlans.map((plan) {
+              final isThisActive = _state.activeSadhanaPlan?.id == plan.id && _state.hasActiveOrPausedSadhanaSession;
+              return Card(
+                margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(14),
+                  side: BorderSide(
+                    color: isThisActive
+                        ? AppColors.saffronPrimary
+                        : (isDark ? AppColors.nightBorder : AppColors.chandanBorder),
+                    width: isThisActive ? 1.5 : 1.0,
+                  ),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                            decoration: BoxDecoration(
+                              color: isDark ? const Color(0xFF332312) : const Color(0xFFF7EEDD),
+                              borderRadius: BorderRadius.circular(6),
+                            ),
+                            child: Text(
+                              plan.category.displayName.toUpperCase(),
+                              style: TextStyle(
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold,
+                                color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                              ),
+                            ),
+                          ),
+                          Text(
+                            '~${plan.estimatedMinutes} mins • ${plan.steps.length} Steps',
+                            style: AppTextStyles.caption(isDark),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        plan.title,
+                        style: AppTextStyles.titleSmall(isDark).copyWith(fontSize: 15),
+                      ),
+                      if (plan.sanskritTitle.isNotEmpty)
+                        Text(
+                          plan.sanskritTitle,
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontFamily: 'Devanagari',
+                            color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                          ),
+                        ),
+                      const SizedBox(height: 6),
+                      Text(
+                        plan.shortDescription,
+                        style: AppTextStyles.bodySmall(isDark),
+                      ),
+                      const SizedBox(height: 12),
+                      SizedBox(
+                        width: double.infinity,
+                        height: 40,
+                        child: ElevatedButton.icon(
+                          icon: Icon(isThisActive ? Icons.play_arrow : Icons.self_improvement, size: 16),
+                          label: Text(
+                            isThisActive ? 'RESUME PRACTICE' : 'BEGIN GUIDED PRACTICE',
+                            style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: isThisActive ? Colors.green.shade700 : AppColors.saffronPrimary,
+                            foregroundColor: Colors.white,
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                          ),
+                          onPressed: () => _openGuidedSadhana(plan),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              );
+            }),
+
+            const SizedBox(height: 16),
 
             // 4. Guided Puja Catalog Section
             SectionHeader(
