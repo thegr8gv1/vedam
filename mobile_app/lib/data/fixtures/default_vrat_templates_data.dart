@@ -31,6 +31,9 @@ class DefaultVratTemplatesData {
           associatedMantraId: 'VEDA-MTR-0378',
           panchangamSnapshot: panchangamSnapshot,
           createdAt: timestamp,
+          isManuallyCreated: false,
+          sourceAttribution: 'Drik Panchanga / Bhagavata Smriti Tradition',
+          timingNotes: 'Fasting from sunrise to next day sunrise; Parana observed on Dvadashi morning.',
           checklist: const [
             VratChecklistItem(
               id: 'chk_eka_prep',
@@ -80,6 +83,9 @@ class DefaultVratTemplatesData {
           associatedMantraId: 'VEDA-MTR-0429',
           panchangamSnapshot: panchangamSnapshot,
           createdAt: timestamp,
+          isManuallyCreated: false,
+          sourceAttribution: 'Shaiva Grihya / Skanda Purana Tradition',
+          timingNotes: 'Observed during evening twilight (Godhuli Vela) on Trayodashi Tithi.',
           checklist: const [
             VratChecklistItem(
               id: 'chk_pra_mind',
@@ -124,6 +130,9 @@ class DefaultVratTemplatesData {
           associatedMantraId: 'VEDA-MTR-0415',
           panchangamSnapshot: panchangamSnapshot,
           createdAt: timestamp,
+          isManuallyCreated: false,
+          sourceAttribution: 'Universal Vedic / Satyanarayana Grihya Tradition',
+          timingNotes: 'Full moon day contemplation and evening moonrise Arghya.',
           checklist: const [
             VratChecklistItem(
               id: 'chk_pur_morning',
@@ -163,6 +172,9 @@ class DefaultVratTemplatesData {
           associatedMantraId: 'VEDA-MTR-0448',
           panchangamSnapshot: panchangamSnapshot,
           createdAt: timestamp,
+          isManuallyCreated: false,
+          sourceAttribution: 'Pitru Smriti Grihya Tradition',
+          timingNotes: 'New moon morning prayer, quiet remembrance, and selfless charity.',
           checklist: const [
             VratChecklistItem(
               id: 'chk_ama_morning',
@@ -202,6 +214,9 @@ class DefaultVratTemplatesData {
           associatedMantraId: 'VEDA-MTR-0454',
           panchangamSnapshot: panchangamSnapshot,
           createdAt: timestamp,
+          isManuallyCreated: false,
+          sourceAttribution: 'Ganapatya Grihya Tradition',
+          timingNotes: 'Daytime fasting concludes following moonrise Arghya and Ganesha worship.',
           checklist: const [
             VratChecklistItem(
               id: 'chk_san_sankalpa',
@@ -231,6 +246,95 @@ class DefaultVratTemplatesData {
           ],
         );
 
+      case VratType.monthlyShivaratri:
+        return VratObservance(
+          id: 'vrat_${dateClean}_shivaratri',
+          type: VratType.monthlyShivaratri,
+          title: 'Masa Shivaratri Adoration',
+          sanskritTitle: 'मास शिवरात्रि व्रतम्',
+          targetDate: targetDate,
+          location: location,
+          tradition: 'Shaiva Grihya',
+          calendarConvention: convention,
+          personalIntention: 'Deep stillness, meditation on Shiva, and dissolving ego in divine silence.',
+          associatedPujaGuideId: 'guide_shiva_puja',
+          associatedMantraId: 'VEDA-MTR-0429',
+          panchangamSnapshot: panchangamSnapshot,
+          createdAt: timestamp,
+          isManuallyCreated: false,
+          sourceAttribution: 'Shaiva Grihya / Shiva Purana Tradition',
+          timingNotes: 'Observed on Krishna Chaturdashi; Nishita Kala midnight contemplation is auspicious.',
+          checklist: const [
+            VratChecklistItem(
+              id: 'chk_shiv_morning',
+              title: 'Morning resolution: gentle speech, peace of mind, and inner stillness.',
+              category: 'preparation',
+            ),
+            VratChecklistItem(
+              id: 'chk_shiv_materials',
+              title: 'Keep clean water, Bilva leaves, and incense ready for evening prayer.',
+              category: 'preparation',
+            ),
+            VratChecklistItem(
+              id: 'chk_shiv_puja',
+              title: 'Perform Shiva Pancha Upachara or silent Linga contemplation.',
+              category: 'ritual',
+            ),
+            VratChecklistItem(
+              id: 'chk_shiv_japa',
+              title: 'Chant Om Namah Shivaya or Maha Mrityunjaya Mantra (108 repetitions).',
+              category: 'contemplation',
+            ),
+            VratChecklistItem(
+              id: 'chk_shiv_night',
+              title: 'Nocturnal reflection: sit quietly in meditation during quiet night hours.',
+              category: 'contemplation',
+            ),
+          ],
+        );
+
+      case VratType.navaratri:
+        return VratObservance(
+          id: 'vrat_${dateClean}_navaratri',
+          type: VratType.navaratri,
+          title: 'Navaratri Devotional Observance',
+          sanskritTitle: 'नवरात्रि व्रतम्',
+          targetDate: targetDate,
+          location: location,
+          tradition: 'Shakta / Universal',
+          calendarConvention: convention,
+          personalIntention: 'Honoring the Divine Mother, overcoming inner darkness, and renewing spiritual devotion.',
+          associatedPujaGuideId: 'guide_lakshmi_puja',
+          associatedMantraId: 'VEDA-MTR-0415',
+          panchangamSnapshot: panchangamSnapshot,
+          createdAt: timestamp,
+          isManuallyCreated: false,
+          sourceAttribution: 'Devi Mahatmya / Shakta Grihya Tradition',
+          timingNotes: 'Nine-night observance with evening lamp, Devi stotras, and Sattvic food.',
+          checklist: const [
+            VratChecklistItem(
+              id: 'chk_nava_altar',
+              title: 'Clean the prayer altar and adorn it with fresh fragrant flowers.',
+              category: 'preparation',
+            ),
+            VratChecklistItem(
+              id: 'chk_nava_lamp',
+              title: 'Light the sacred Akhanda / evening lamp with ghee or sesame oil.',
+              category: 'ritual',
+            ),
+            VratChecklistItem(
+              id: 'chk_nava_stotra',
+              title: 'Recite Devi Mahatmya, Lalita Sahasranama, or Sri Suktam.',
+              category: 'contemplation',
+            ),
+            VratChecklistItem(
+              id: 'chk_nava_dana',
+              title: 'Kindness and dana: share sweets, fruits, or aid with community.',
+              category: 'contemplation',
+            ),
+          ],
+        );
+
       case VratType.custom:
         return VratObservance(
           id: 'vrat_${dateClean}_custom_${DateTime.now().millisecondsSinceEpoch % 1000}',
@@ -244,6 +348,9 @@ class DefaultVratTemplatesData {
           personalIntention: 'Dedicated personal spiritual practice and contemplation.',
           panchangamSnapshot: panchangamSnapshot,
           createdAt: timestamp,
+          isManuallyCreated: true,
+          sourceAttribution: 'Personal Devotee Tradition',
+          timingNotes: 'Observed according to personal schedule and devotional sankalpa.',
           checklist: const [
             VratChecklistItem(
               id: 'chk_cus_intention',

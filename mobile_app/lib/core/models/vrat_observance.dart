@@ -8,6 +8,8 @@ enum VratType {
   purnima,
   amavasya,
   sankashtiChaturthi,
+  monthlyShivaratri,
+  navaratri,
   custom,
 }
 
@@ -133,6 +135,10 @@ class VratObservance {
   final VratPanchangamSnapshot? panchangamSnapshot;
   final String createdAt;
   final String? completedAt;
+  final bool isManuallyCreated;
+  final String? sourceAttribution;
+  final String fastingNotice;
+  final String? timingNotes;
 
   const VratObservance({
     required this.id,
@@ -152,6 +158,11 @@ class VratObservance {
     this.panchangamSnapshot,
     required this.createdAt,
     this.completedAt,
+    this.isManuallyCreated = false,
+    this.sourceAttribution,
+    this.fastingNotice =
+        'Fasting and dietary restrictions are traditional options. Devotees managing health conditions, taking medication, elderly devotees, pregnant individuals, and children should prioritize nourishment and health. Observance is fulfilled through devotion and right action (Dharma), not bodily affliction.',
+    this.timingNotes,
   });
 
   VratObservance copyWith({
@@ -172,6 +183,10 @@ class VratObservance {
     VratPanchangamSnapshot? panchangamSnapshot,
     String? createdAt,
     String? completedAt,
+    bool? isManuallyCreated,
+    String? sourceAttribution,
+    String? fastingNotice,
+    String? timingNotes,
   }) {
     return VratObservance(
       id: id ?? this.id,
@@ -191,6 +206,10 @@ class VratObservance {
       panchangamSnapshot: panchangamSnapshot ?? this.panchangamSnapshot,
       createdAt: createdAt ?? this.createdAt,
       completedAt: completedAt ?? this.completedAt,
+      isManuallyCreated: isManuallyCreated ?? this.isManuallyCreated,
+      sourceAttribution: sourceAttribution ?? this.sourceAttribution,
+      fastingNotice: fastingNotice ?? this.fastingNotice,
+      timingNotes: timingNotes ?? this.timingNotes,
     );
   }
 
@@ -212,6 +231,10 @@ class VratObservance {
         'panchangam_snapshot': panchangamSnapshot?.toJson(),
         'created_at': createdAt,
         'completed_at': completedAt,
+        'is_manually_created': isManuallyCreated,
+        'source_attribution': sourceAttribution,
+        'fasting_notice': fastingNotice,
+        'timing_notes': timingNotes,
       };
 
   factory VratObservance.fromJson(Map<String, dynamic> json) {
@@ -259,6 +282,11 @@ class VratObservance {
           : null,
       createdAt: json['created_at'] as String? ?? '',
       completedAt: json['completed_at'] as String?,
+      isManuallyCreated: json['is_manually_created'] as bool? ?? false,
+      sourceAttribution: json['source_attribution'] as String?,
+      fastingNotice: json['fasting_notice'] as String? ??
+          'Fasting and dietary restrictions are traditional options. Devotees managing health conditions, taking medication, elderly devotees, pregnant individuals, and children should prioritize nourishment and health. Observance is fulfilled through devotion and right action (Dharma), not bodily affliction.',
+      timingNotes: json['timing_notes'] as String?,
     );
   }
 }
