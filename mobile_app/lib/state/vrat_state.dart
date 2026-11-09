@@ -256,10 +256,27 @@ class VratState extends ChangeNotifier {
   }
 
   Future<void> clearPastObservances() async {
-    _observances.removeWhere((o) =>
-        o.status == ObservanceStatus.completed ||
-        o.status == ObservanceStatus.skipped ||
-        o.status == ObservanceStatus.cancelled);
+    final pastIds = _observances
+        .where((o) =>
+            o.status == ObservanceStatus.completed ||
+            o.status == ObservanceStatus.skipped ||
+            o.status == ObservanceStatus.cancelled)
+        .map((o) => o.id)
+        .toSet();
+
+    // Cancel and remove linked reminders for past observances
+    final remindersToRemove = _reminders
+        .where((r) => r.linkedVratId != null && pastIds.contains(r.linkedVratId))
+        .toList();
+    for (final rem in remindersToRemove) {
+      await _reminderService.cancelReminder(rem.id);
+      _reminders.removeWhere((r) => r.id == rem.id);
+    }
+    if (remindersToRemove.isNotEmpty) {
+      await _saveReminders();
+    }
+
+    _observances.removeWhere((o) => pastIds.contains(o.id));
     await _saveObservances();
     notifyListeners();
   }
@@ -358,6 +375,7 @@ class VratState extends ChangeNotifier {
   Future<void> deleteReminder(String reminderId) async {
     _reminders.removeWhere((r) => r.id == reminderId);
     await _saveReminders();
+    await _reminderService.cancelReminder(reminderId);
     await _reminderService.releaseReminderId(reminderId);
     notifyListeners();
   }

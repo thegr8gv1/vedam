@@ -693,6 +693,24 @@ class _VratDetailScreenState extends State<VratDetailScreen> {
                         ),
                       ],
                     ),
+                    const SizedBox(height: 10),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                      decoration: BoxDecoration(
+                        color: isDark ? AppColors.nightSurface : const Color(0xFFF7F3EE),
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(
+                          color: isDark ? AppColors.nightBorder : AppColors.chandanBorder,
+                          width: 0.8,
+                        ),
+                      ),
+                      child: Text(
+                        obs.isManuallyCreated
+                            ? 'Date Source: Manually planned personal date.'
+                            : 'Date Source: Curated traditional template reference date. Exact Tithi observance requires local sunrise and Sampradaya verification.',
+                        style: AppTextStyles.caption(isDark).copyWith(fontSize: 11),
+                      ),
+                    ),
                     if (obs.personalIntention.isNotEmpty) ...[
                       const SizedBox(height: 14),
                       Container(

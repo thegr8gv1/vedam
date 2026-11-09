@@ -390,7 +390,10 @@ class _VratCalendarScreenState extends State<VratCalendarScreen> {
                   ),
                   const SizedBox(height: 6),
                   Text(
-                    'Personal Devotional Planner: ${VratState.fastingSafetyAdvisory}',
+                    'Personal Devotional Planner: ${VratState.fastingSafetyAdvisory}\n\n'
+                    'Calendar Date Notice: Observance dates from curated templates are reference starting points. '
+                    'Because Tithi timings depend on local sunrise, longitude, and Sampradaya tradition, '
+                    'devotees should verify exact fast dates with their local temple or family Panchanga.',
                     style: TextStyle(
                       fontSize: 12,
                       color: isDark ? Colors.amber[100] : const Color(0xFF5D4037),
