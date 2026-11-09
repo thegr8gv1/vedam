@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/text_styles.dart';
 import '../../../core/models/vrat_observance.dart';
+import '../../../core/models/mantra_item.dart';
 import '../../../data/fixtures/authentic_mantras_data.dart';
 import '../../../data/fixtures/authentic_puja_guides_data.dart';
 import '../../../data/fixtures/default_vrat_templates_data.dart';
@@ -167,6 +168,7 @@ class _AddEditVratModalState extends State<AddEditVratModal> {
         personalIntention: _intentionController.text.trim(),
         associatedPujaGuideId: _selectedPujaGuideId,
         associatedMantraId: _selectedMantraId,
+        isManuallyCreated: true,
       );
 
       widget.vratState.addObservance(observance);
@@ -183,6 +185,7 @@ class _AddEditVratModalState extends State<AddEditVratModal> {
         associatedPujaGuideId: _selectedPujaGuideId,
         associatedMantraId: _selectedMantraId,
         panchangamSnapshot: snapshot ?? widget.existingObservance!.panchangamSnapshot,
+        isManuallyCreated: true,
       );
 
       widget.vratState.updateObservance(observance);
@@ -263,6 +266,12 @@ class _AddEditVratModalState extends State<AddEditVratModal> {
                     break;
                   case VratType.sankashtiChaturthi:
                     label = 'Sankashti';
+                    break;
+                  case VratType.monthlyShivaratri:
+                    label = 'Shivaratri';
+                    break;
+                  case VratType.navaratri:
+                    label = 'Navaratri';
                     break;
                   case VratType.custom:
                     label = 'Custom';
@@ -369,27 +378,28 @@ class _AddEditVratModalState extends State<AddEditVratModal> {
             const SizedBox(height: 6),
             DropdownButtonFormField<CalendarConvention>(
               initialValue: _selectedConvention,
+              isExpanded: true,
               decoration: const InputDecoration(border: OutlineInputBorder(), isDense: true),
               items: const [
                 DropdownMenuItem(
                   value: CalendarConvention.traditionalRegional,
-                  child: Text('Traditional Regional Lineage'),
+                  child: Text('Traditional Regional Lineage', overflow: TextOverflow.ellipsis),
                 ),
                 DropdownMenuItem(
                   value: CalendarConvention.amanta,
-                  child: Text('Amanta (Month ends on Amavasya)'),
+                  child: Text('Amanta (Month ends on Amavasya)', overflow: TextOverflow.ellipsis),
                 ),
                 DropdownMenuItem(
                   value: CalendarConvention.purnimanta,
-                  child: Text('Purnimanta (Month ends on Purnima)'),
+                  child: Text('Purnimanta (Month ends on Purnima)', overflow: TextOverflow.ellipsis),
                 ),
                 DropdownMenuItem(
                   value: CalendarConvention.solarDrik,
-                  child: Text('Solar Drik Astronomical System'),
+                  child: Text('Solar Drik Astronomical System', overflow: TextOverflow.ellipsis),
                 ),
                 DropdownMenuItem(
                   value: CalendarConvention.custom,
-                  child: Text('Custom Household Tradition'),
+                  child: Text('Custom Household Tradition', overflow: TextOverflow.ellipsis),
                 ),
               ],
               onChanged: (val) {
@@ -402,13 +412,15 @@ class _AddEditVratModalState extends State<AddEditVratModal> {
             Text('LINKED GUIDED PUJA (OPTIONAL)', style: AppTextStyles.metadataTag(isDark)),
             const SizedBox(height: 6),
             DropdownButtonFormField<String?>(
+              key: ValueKey('puja_$_selectedPujaGuideId'),
               initialValue: _selectedPujaGuideId,
+              isExpanded: true,
               decoration: const InputDecoration(border: OutlineInputBorder(), isDense: true),
               items: [
                 const DropdownMenuItem(value: null, child: Text('None (Independent Observance)')),
                 ...AuthenticPujaGuidesData.allGuides.map((g) => DropdownMenuItem(
                       value: g.id,
-                      child: Text('${g.title} (${g.deity})'),
+                      child: Text('${g.title} (${g.deity})', overflow: TextOverflow.ellipsis),
                     )),
               ],
               onChanged: (val) => setState(() => _selectedPujaGuideId = val),
@@ -418,17 +430,34 @@ class _AddEditVratModalState extends State<AddEditVratModal> {
             // Associated Mantra
             Text('LINKED DEVOTIONAL MANTRA (OPTIONAL)', style: AppTextStyles.metadataTag(isDark)),
             const SizedBox(height: 6),
-            DropdownButtonFormField<String?>(
-              initialValue: _selectedMantraId,
-              decoration: const InputDecoration(border: OutlineInputBorder(), isDense: true),
-              items: [
-                const DropdownMenuItem(value: null, child: Text('None (General Prayer)')),
-                ...AuthenticMantrasData.allMantras.take(20).map((m) => DropdownMenuItem(
-                      value: m.id,
-                      child: Text('${m.title} (${m.deity})'),
-                    )),
-              ],
-              onChanged: (val) => setState(() => _selectedMantraId = val),
+            Builder(
+              builder: (ctx) {
+                final mantras = AuthenticMantrasData.allMantras;
+                final selectedMantra = _selectedMantraId != null
+                    ? AuthenticMantrasData.getMantraById(_selectedMantraId!)
+                    : null;
+                final dropdownMantras = <MantraItem>[
+                  ?selectedMantra,
+                  ...mantras.take(20),
+                ];
+                final seenIds = <String>{};
+                final uniqueMantras = dropdownMantras.where((m) => seenIds.add(m.id)).toList();
+
+                return DropdownButtonFormField<String?>(
+                  key: ValueKey('mantra_$_selectedMantraId'),
+                  initialValue: _selectedMantraId,
+                  isExpanded: true,
+                  decoration: const InputDecoration(border: OutlineInputBorder(), isDense: true),
+                  items: [
+                    const DropdownMenuItem(value: null, child: Text('None (General Prayer)')),
+                    ...uniqueMantras.map((m) => DropdownMenuItem(
+                          value: m.id,
+                          child: Text('${m.title} (${m.deity})', overflow: TextOverflow.ellipsis),
+                        )),
+                  ],
+                  onChanged: (val) => setState(() => _selectedMantraId = val),
+                );
+              },
             ),
             const SizedBox(height: 12),
 

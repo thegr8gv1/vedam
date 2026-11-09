@@ -157,11 +157,12 @@ class _VratDetailScreenState extends State<VratDetailScreen> {
                   color: isDark ? AppColors.goldGlow : AppColors.saffronPrimary,
                 ),
                 const SizedBox(width: 8),
-                Text(
-                  'OBSERVANCE REMINDER',
-                  style: AppTextStyles.metadataTag(isDark),
+                Expanded(
+                  child: Text(
+                    'OBSERVANCE REMINDER',
+                    style: AppTextStyles.metadataTag(isDark),
+                  ),
                 ),
-                const Spacer(),
                 if (reminder != null)
                   Switch(
                     value: reminder.isEnabled,
@@ -345,6 +346,49 @@ class _VratDetailScreenState extends State<VratDetailScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // 0. Fasting Safety Advisory Banner
+            Container(
+              margin: const EdgeInsets.only(bottom: 16),
+              padding: const EdgeInsets.all(14),
+              decoration: BoxDecoration(
+                color: isDark ? const Color(0xFF221A12) : const Color(0xFFFFF9ED),
+                borderRadius: BorderRadius.circular(14),
+                border: Border.all(color: Colors.amber.shade700.withAlpha(120), width: 1.0),
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Icon(Icons.health_and_safety_outlined, size: 20, color: AppColors.saffronPrimary),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'TRADITIONAL FASTING & HEALTH ADVISORY',
+                          style: TextStyle(
+                            fontSize: 11,
+                            fontWeight: FontWeight.bold,
+                            letterSpacing: 0.5,
+                            color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          obs.fastingNotice,
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: isDark ? Colors.amber[100] : const Color(0xFF5D4037),
+                            height: 1.35,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
             // 1. Status Bar & Status Selector
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
@@ -356,58 +400,143 @@ class _VratDetailScreenState extends State<VratDetailScreen> {
                   width: 1.2,
                 ),
               ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
+                  Wrap(
+                    alignment: WrapAlignment.spaceBetween,
+                    crossAxisAlignment: WrapCrossAlignment.center,
+                    spacing: 8,
+                    runSpacing: 4,
                     children: [
-                      Container(
-                        width: 10,
-                        height: 10,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: _getStatusColor(obs.status),
-                        ),
+                      Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 10,
+                            height: 10,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: _getStatusColor(obs.status),
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          Text(
+                            _getStatusLabel(obs.status),
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: _getStatusColor(obs.status),
+                              letterSpacing: 0.5,
+                            ),
+                          ),
+                        ],
                       ),
-                      const SizedBox(width: 8),
-                      Text(
-                        _getStatusLabel(obs.status),
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: _getStatusColor(obs.status),
-                          letterSpacing: 0.5,
+                      PopupMenuButton<ObservanceStatus>(
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              'CHANGE STATUS',
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.bold,
+                                color: isDark ? AppColors.goldGlow : AppColors.saffronPrimary,
+                              ),
+                            ),
+                            const Icon(Icons.arrow_drop_down),
+                          ],
                         ),
+                        onSelected: (newStatus) {
+                          widget.vratState.updateObservanceStatus(obs.id, newStatus);
+                          setState(() {});
+                        },
+                        itemBuilder: (_) => ObservanceStatus.values
+                            .map((s) => PopupMenuItem(
+                                  value: s,
+                                  child: Text(_getStatusLabel(s)),
+                                ))
+                            .toList(),
                       ),
                     ],
                   ),
-                  PopupMenuButton<ObservanceStatus>(
-                    child: Row(
-                      children: [
-                        Text(
-                          'CHANGE STATUS',
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.bold,
-                            color: isDark ? AppColors.goldGlow : AppColors.saffronPrimary,
-                          ),
-                        ),
-                        const Icon(Icons.arrow_drop_down),
-                      ],
-                    ),
-                    onSelected: (newStatus) {
-                      widget.vratState.updateObservanceStatus(obs.id, newStatus);
-                      setState(() {});
-                    },
-                    itemBuilder: (_) => ObservanceStatus.values
-                        .map((s) => PopupMenuItem(
-                              value: s,
-                              child: Text(_getStatusLabel(s)),
-                            ))
-                        .toList(),
+                  const SizedBox(height: 8),
+                  Wrap(
+                    spacing: 6,
+                    runSpacing: 4,
+                    children: [
+                      ChoiceChip(
+                        label: const Text('Planned', style: TextStyle(fontSize: 11)),
+                        selected: obs.status == ObservanceStatus.planned,
+                        onSelected: (val) {
+                          if (val) {
+                            widget.vratState.updateObservanceStatus(obs.id, ObservanceStatus.planned);
+                            setState(() {});
+                          }
+                        },
+                      ),
+                      ChoiceChip(
+                        label: const Text('In Progress', style: TextStyle(fontSize: 11)),
+                        selected: obs.status == ObservanceStatus.inProgress,
+                        onSelected: (val) {
+                          if (val) {
+                            widget.vratState.markObservanceInProgress(obs.id);
+                            setState(() {});
+                          }
+                        },
+                      ),
+                      ChoiceChip(
+                        label: const Text('Completed', style: TextStyle(fontSize: 11)),
+                        selected: obs.status == ObservanceStatus.completed,
+                        onSelected: (val) {
+                          if (val) {
+                            widget.vratState.markObservanceCompleted(obs.id);
+                            setState(() {});
+                          }
+                        },
+                      ),
+                      ChoiceChip(
+                        label: const Text('Skipped', style: TextStyle(fontSize: 11)),
+                        selected: obs.status == ObservanceStatus.skipped,
+                        onSelected: (val) {
+                          if (val) {
+                            widget.vratState.markObservanceSkipped(obs.id);
+                            setState(() {});
+                          }
+                        },
+                      ),
+                    ],
                   ),
                 ],
               ),
             ),
+            if (obs.status == ObservanceStatus.skipped) ...[
+              const SizedBox(height: 8),
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: isDark ? Colors.grey.shade900 : Colors.grey.shade100,
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.grey.shade400),
+                ),
+                child: Row(
+                  children: [
+                    const Icon(Icons.favorite_border, size: 16, color: AppColors.saffronPrimary),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Text(
+                        'Devotee Comfort Note: Skipping or postponing an observance due to health, work, or family circumstances carries zero spiritual deficit or fault. Bhavana (devotion in heart) is supreme.',
+                        style: TextStyle(
+                          fontSize: 11,
+                          fontStyle: FontStyle.italic,
+                          color: isDark ? Colors.grey.shade300 : Colors.grey.shade800,
+                          height: 1.35,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
             const SizedBox(height: 16),
 
             // 2. Observance Hero Card
@@ -438,16 +567,102 @@ class _VratDetailScreenState extends State<VratDetailScreen> {
                       style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 12),
-                    Row(
+                    Wrap(
+                      crossAxisAlignment: WrapCrossAlignment.center,
+                      spacing: 8,
+                      runSpacing: 4,
                       children: [
-                        const Icon(Icons.event, size: 16, color: AppColors.saffronPrimary),
-                        const SizedBox(width: 6),
-                        Text(
-                          obs.targetDate,
-                          style: const TextStyle(fontWeight: FontWeight.w600),
+                        Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            const Icon(Icons.event, size: 16, color: AppColors.saffronPrimary),
+                            const SizedBox(width: 6),
+                            Text(
+                              obs.targetDate,
+                              style: const TextStyle(fontWeight: FontWeight.w600),
+                            ),
+                          ],
+                        ),
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                          decoration: BoxDecoration(
+                            color: obs.isManuallyCreated
+                                ? (isDark ? Colors.purple.shade900.withAlpha(100) : Colors.purple.shade50)
+                                : (isDark ? AppColors.goldDark.withAlpha(50) : const Color(0xFFF3E7D3)),
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          child: Text(
+                            obs.isManuallyCreated ? 'PERSONAL PLANNED DATE' : 'TRADITIONAL CALENDAR',
+                            style: TextStyle(
+                              fontSize: 9,
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: 0.4,
+                              color: obs.isManuallyCreated
+                                  ? (isDark ? Colors.purple.shade200 : Colors.purple.shade800)
+                                  : (isDark ? AppColors.goldGlow : AppColors.goldDark),
+                            ),
+                          ),
+                        ),
+                        IconButton(
+                          icon: const Icon(Icons.edit_calendar, size: 18),
+                          tooltip: 'Reschedule Date',
+                          padding: EdgeInsets.zero,
+                          constraints: const BoxConstraints(),
+                          onPressed: () async {
+                            final current = DateTime.tryParse(obs.targetDate) ?? DateTime.now();
+                            final picked = await showDatePicker(
+                              context: context,
+                              initialDate: current,
+                              firstDate: DateTime.now().subtract(const Duration(days: 365)),
+                              lastDate: DateTime.now().add(const Duration(days: 730)),
+                            );
+                            if (picked != null) {
+                              final y = picked.year.toString().padLeft(4, '0');
+                              final m = picked.month.toString().padLeft(2, '0');
+                              final d = picked.day.toString().padLeft(2, '0');
+                              await widget.vratState.rescheduleObservance(obs.id, '$y-$m-$d');
+                              setState(() {});
+                            }
+                          },
                         ),
                       ],
                     ),
+                    if (obs.timingNotes != null) ...[
+                      const SizedBox(height: 6),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Icon(Icons.schedule, size: 14, color: AppColors.goldPrimary),
+                          const SizedBox(width: 6),
+                          Expanded(
+                            child: Text(
+                              obs.timingNotes!,
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontStyle: FontStyle.italic,
+                                color: isDark ? const Color(0xFFB8A692) : const Color(0xFF6F5E4B),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                    if (obs.sourceAttribution != null) ...[
+                      const SizedBox(height: 4),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Icon(Icons.menu_book_outlined, size: 14, color: AppColors.saffronPrimary),
+                          const SizedBox(width: 6),
+                          Expanded(
+                            child: Text(
+                              'Tradition Source: ${obs.sourceAttribution!}',
+                              style: AppTextStyles.caption(isDark),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
                     const SizedBox(height: 6),
                     Row(
                       children: [
@@ -525,9 +740,11 @@ class _VratDetailScreenState extends State<VratDetailScreen> {
                       children: [
                         const Icon(Icons.wb_sunny_outlined, size: 18, color: AppColors.saffronPrimary),
                         const SizedBox(width: 8),
-                        Text(
-                          'ASTRONOMICAL PANCHANGAM',
-                          style: AppTextStyles.metadataTag(isDark),
+                        Expanded(
+                          child: Text(
+                            'ASTRONOMICAL PANCHANGAM',
+                            style: AppTextStyles.metadataTag(isDark),
+                          ),
                         ),
                       ],
                     ),
@@ -582,8 +799,11 @@ class _VratDetailScreenState extends State<VratDetailScreen> {
             const SizedBox(height: 18),
 
             // 4. Preparation Checklist
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            Wrap(
+              alignment: WrapAlignment.spaceBetween,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              spacing: 8,
+              runSpacing: 4,
               children: [
                 Text(
                   'PREPARATION CHECKLIST ($completedCount of $totalCount)',
