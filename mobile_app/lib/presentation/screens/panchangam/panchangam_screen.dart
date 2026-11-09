@@ -5,15 +5,31 @@ import '../../../core/theme/text_styles.dart';
 import '../../../data/repositories/panchangam_repository.dart';
 import '../../../state/panchangam_state.dart';
 import 'widgets/location_selector_modal.dart';
+import '../../../core/models/festival_event.dart';
+import '../../../core/models/vrat_observance.dart';
+import '../../../data/fixtures/authentic_festival_catalog_data.dart';
+import '../../../data/repositories/mantra_repository.dart';
+import '../../../state/audio_state.dart';
+import '../../../state/sadhana_state.dart';
+import '../../../state/vrat_state.dart';
+import '../festivals/festival_detail_screen.dart';
 
 class PanchangamScreen extends StatefulWidget {
   final PanchangamState state;
   final PanchangamRepository repository;
+  final VratState? vratState;
+  final SadhanaState? sadhanaState;
+  final MantraRepository? mantraRepository;
+  final AudioState? audioState;
 
   const PanchangamScreen({
     super.key,
     required this.state,
     required this.repository,
+    this.vratState,
+    this.sadhanaState,
+    this.mantraRepository,
+    this.audioState,
   });
 
   @override
@@ -38,6 +54,57 @@ class _PanchangamScreenState extends State<PanchangamScreen> {
 
   void _onStateChange() {
     if (mounted) setState(() {});
+  }
+
+  void _openObservanceDetails(BuildContext context, Observance obs) {
+    final query = obs.name.toLowerCase();
+    final match = AuthenticFestivalCatalogData.allEvents.cast<FestivalEvent?>().firstWhere(
+      (e) {
+        if (e == null) return false;
+        final name = e.name.toLowerCase();
+        final skt = e.sanskritName.toLowerCase();
+        return name.contains(query) ||
+            query.contains(name) ||
+            skt.contains(obs.sanskritName.toLowerCase());
+      },
+      orElse: () => null,
+    );
+
+    final eventToOpen = match ??
+        FestivalEvent(
+          id: 'panchangam_${obs.name.replaceAll(' ', '_').toLowerCase()}',
+          name: obs.name,
+          sanskritName: obs.sanskritName,
+          category: FestivalCategory.regionalObservance,
+          targetDate: widget.state.selectedDate.toIso8601String().split('T').first,
+          deity: 'Presiding Deity of the Day',
+          masa: 'Kartika (Purnimanta) / Ashvina (Amanta)',
+          paksha: widget.state.data?.paksha ?? 'Shukla Paksha',
+          tithi: widget.state.data?.tithi.name ?? 'Dashami',
+          nakshatra: widget.state.data?.nakshatra.name ?? 'Ashwini',
+          timingRule: 'Observed during prevailing astrological tithi',
+          timingWindow: 'Full day devotional observance',
+          significance: obs.description,
+          calculationConvention: 'Drik Ganita / Lahiri Ayanamsa',
+          sourceName: 'Panchangam Liturgical Tradition',
+          sourceReference: obs.disclaimer ?? 'Traditional Hindu Almanac Ephemeris',
+          regionalVariations: 'Observed according to local Panchangam ephemeris calculations and sampradaya customs.',
+          suggestedVratType: VratType.custom,
+        );
+
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => FestivalDetailScreen(
+          event: eventToOpen,
+          vratState: widget.vratState ?? VratState(),
+          panchangamState: widget.state,
+          sadhanaState: widget.sadhanaState,
+          mantraRepository: widget.mantraRepository,
+          audioState: widget.audioState,
+        ),
+      ),
+    );
   }
 
   Future<void> _pickDate() async {
@@ -420,6 +487,50 @@ class _PanchangamScreenState extends State<PanchangamScreen> {
                         ],
                       ),
                     ],
+                    const SizedBox(height: 8),
+                    InkWell(
+                      onTap: () => _openObservanceDetails(context, obs),
+                      borderRadius: BorderRadius.circular(8),
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                        decoration: BoxDecoration(
+                          color: AppColors.goldPrimary.withAlpha(isDark ? 30 : 20),
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(
+                            color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                            width: 0.8,
+                          ),
+                        ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(
+                              Icons.menu_book,
+                              size: 14,
+                              color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                            ),
+                            const SizedBox(width: 6),
+                            Flexible(
+                              child: Text(
+                                'View Observance Details & Guided Practices',
+                                overflow: TextOverflow.ellipsis,
+                              style: TextStyle(
+                                fontSize: 11,
+                                fontWeight: FontWeight.bold,
+                                color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                              ),
+                              ),
+                            ),
+                            const SizedBox(width: 4),
+                            Icon(
+                              Icons.arrow_forward_ios,
+                              size: 10,
+                              color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -441,11 +552,13 @@ class _PanchangamScreenState extends State<PanchangamScreen> {
               children: [
                 const Icon(Icons.wb_sunny_outlined, size: 18, color: AppColors.goldPrimary),
                 const SizedBox(width: 8),
-                Text(
-                  'CELESTIAL TIMINGS (SURYODAYA & CHANDRODAYA)',
-                  style: AppTextStyles.metadataTag(isDark).copyWith(
-                    color: isDark ? AppColors.goldGlow : AppColors.goldDark,
-                    fontWeight: FontWeight.w700,
+                Expanded(
+                  child: Text(
+                    'CELESTIAL TIMINGS (SURYODAYA & CHANDRODAYA)',
+                    style: AppTextStyles.metadataTag(isDark).copyWith(
+                      color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                      fontWeight: FontWeight.w700,
+                    ),
                   ),
                 ),
               ],
@@ -528,18 +641,23 @@ class _PanchangamScreenState extends State<PanchangamScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Row(
-                  children: [
-                    const Icon(Icons.auto_stories_outlined, size: 18, color: AppColors.goldPrimary),
-                    const SizedBox(width: 8),
-                    Text(
-                      'THE FIVE LIMBS (पञ्चाङ्गानि)',
-                      style: AppTextStyles.metadataTag(isDark).copyWith(
-                        color: isDark ? AppColors.goldGlow : AppColors.goldDark,
-                        fontWeight: FontWeight.w700,
+                Expanded(
+                  child: Row(
+                    children: [
+                      const Icon(Icons.auto_stories_outlined, size: 18, color: AppColors.goldPrimary),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          'THE FIVE LIMBS (पञ्चाङ्गानि)',
+                          style: AppTextStyles.metadataTag(isDark).copyWith(
+                            color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                            fontWeight: FontWeight.w700,
+                          ),
+                          overflow: TextOverflow.ellipsis,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
@@ -841,11 +959,14 @@ class _PanchangamElementTile extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
-              label,
-              style: AppTextStyles.caption(isDark).copyWith(
-                fontWeight: FontWeight.w600,
-                color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+            Expanded(
+              child: Text(
+                label,
+                style: AppTextStyles.caption(isDark).copyWith(
+                  fontWeight: FontWeight.w600,
+                  color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                ),
+                overflow: TextOverflow.ellipsis,
               ),
             ),
             if (endTime != null)
@@ -925,10 +1046,14 @@ class _MuhurtaRow extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                name,
-                style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
+              Expanded(
+                child: Text(
+                  name,
+                  style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
+                  overflow: TextOverflow.ellipsis,
+                ),
               ),
+              const SizedBox(width: 8),
               Text(
                 timing,
                 style: TextStyle(

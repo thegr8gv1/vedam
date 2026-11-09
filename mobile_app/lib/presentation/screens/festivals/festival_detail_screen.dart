@@ -242,7 +242,9 @@ class _FestivalDetailScreenState extends State<FestivalDetailScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     // Category & Deity Badges
-                    Row(
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 6,
                       children: [
                         Container(
                           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
@@ -261,7 +263,6 @@ class _FestivalDetailScreenState extends State<FestivalDetailScreen> {
                             ),
                           ),
                         ),
-                        const SizedBox(width: 8),
                         Container(
                           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                           decoration: BoxDecoration(
@@ -347,11 +348,13 @@ class _FestivalDetailScreenState extends State<FestivalDetailScreen> {
                         children: [
                           const Icon(Icons.access_time_outlined, size: 16, color: AppColors.saffronPrimary),
                           const SizedBox(width: 8),
-                          Text(
-                            'PANCHANGAM COORDINATES & TIMING',
-                            style: AppTextStyles.metadataTag(isDark).copyWith(
-                              fontWeight: FontWeight.bold,
-                              letterSpacing: 0.8,
+                          Expanded(
+                            child: Text(
+                              'PANCHANGAM COORDINATES & TIMING',
+                              style: AppTextStyles.metadataTag(isDark).copyWith(
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: 0.8,
+                              ),
                             ),
                           ),
                         ],
@@ -388,11 +391,13 @@ class _FestivalDetailScreenState extends State<FestivalDetailScreen> {
                         children: [
                           const Icon(Icons.menu_book_outlined, size: 16, color: AppColors.saffronPrimary),
                           const SizedBox(width: 8),
-                          Text(
-                            'SPIRITUAL SIGNIFICANCE & CONTEMPLATION',
-                            style: AppTextStyles.metadataTag(isDark).copyWith(
-                              fontWeight: FontWeight.bold,
-                              letterSpacing: 0.8,
+                          Expanded(
+                            child: Text(
+                              'SPIRITUAL SIGNIFICANCE & CONTEMPLATION',
+                              style: AppTextStyles.metadataTag(isDark).copyWith(
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: 0.8,
+                              ),
                             ),
                           ),
                         ],
@@ -426,11 +431,13 @@ class _FestivalDetailScreenState extends State<FestivalDetailScreen> {
                         children: [
                           const Icon(Icons.verified_outlined, size: 16, color: Colors.green),
                           const SizedBox(width: 8),
-                          Text(
-                            'AUTHENTIC SOURCING & REGIONAL VARIATIONS',
-                            style: AppTextStyles.metadataTag(isDark).copyWith(
-                              fontWeight: FontWeight.bold,
-                              letterSpacing: 0.8,
+                          Expanded(
+                            child: Text(
+                              'AUTHENTIC SOURCING & REGIONAL VARIATIONS',
+                              style: AppTextStyles.metadataTag(isDark).copyWith(
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: 0.8,
+                              ),
                             ),
                           ),
                         ],

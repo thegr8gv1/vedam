@@ -31,19 +31,22 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
     super.initState();
     widget.audioState.addListener(_onAudioStateChanged);
 
-    if (widget.playlist != null && widget.playlist!.isNotEmpty) {
-      widget.audioState.setPlaylist(widget.playlist!);
-    }
-
-    if (widget.audioState.activeMantra?.id != widget.mantra.id) {
-      if (widget.mantra.isBundled) {
-        widget.audioState.playMantra(widget.mantra, resetSessionCount: true);
-      } else {
-        // Set active mantra in state without triggering audio playback
-        // to maintain clean manual Japa mode
-        widget.audioState.stop();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      if (widget.playlist != null && widget.playlist!.isNotEmpty) {
+        widget.audioState.setPlaylist(widget.playlist!);
       }
-    }
+
+      if (widget.audioState.activeMantra?.id != widget.mantra.id) {
+        if (widget.mantra.isBundled) {
+          widget.audioState.playMantra(widget.mantra, resetSessionCount: true);
+        } else {
+          // Set active mantra in state without triggering audio playback
+          // to maintain clean manual Japa mode
+          widget.audioState.stop();
+        }
+      }
+    });
   }
 
   @override
@@ -506,17 +509,20 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                         color: state.isAudioChantingMode ? AppColors.saffronPrimary : AppColors.goldDark,
                       ),
                       const SizedBox(width: 8),
-                      Text(
-                        state.isAudioChantingMode
-                            ? 'COUNTING MODE: Audio-Assisted (+1 on completed recording)'
-                            : 'COUNTING MODE: Manual Touch (+1 on bead tap)',
-                        style: TextStyle(
-                          fontSize: 11,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 0.4,
-                          color: state.isAudioChantingMode
-                              ? AppColors.saffronPrimary
-                              : (isDark ? AppColors.goldLight : AppColors.goldDark),
+                      Flexible(
+                        child: Text(
+                          state.isAudioChantingMode
+                              ? 'COUNTING MODE: Audio-Assisted (+1 on completed recording)'
+                              : 'COUNTING MODE: Manual Touch (+1 on bead tap)',
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            fontSize: 11,
+                            fontWeight: FontWeight.bold,
+                            letterSpacing: 0.4,
+                            color: state.isAudioChantingMode
+                                ? AppColors.saffronPrimary
+                                : (isDark ? AppColors.goldLight : AppColors.goldDark),
+                          ),
                         ),
                       ),
                     ],
@@ -799,9 +805,12 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const Text(
-                          'Target Repetitions (Mala Count):',
-                          style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                        const Expanded(
+                          child: Text(
+                            'Target Repetitions (Mala Count):',
+                            style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                            overflow: TextOverflow.ellipsis,
+                          ),
                         ),
                         InkWell(
                           onTap: () => _showCustomCountDialog(context),

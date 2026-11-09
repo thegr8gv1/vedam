@@ -260,7 +260,7 @@ class ScriptureProgressCard extends StatelessWidget {
                   // Continue Reading Action Button
                   SizedBox(
                     width: double.infinity,
-                    height: 42,
+                    height: 48,
                     child: ElevatedButton.icon(
                       icon: const Icon(Icons.auto_stories, size: 16),
                       label: Text(

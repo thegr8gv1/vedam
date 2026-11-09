@@ -56,7 +56,11 @@ class _VerseLearningScreenState extends State<VerseLearningScreen> {
       _currentIndex = 0;
     }
 
-    _recordProgress();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) {
+        _recordProgress();
+      }
+    });
 
     if (widget.initialShowPreferences) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -561,11 +565,14 @@ class _VerseLearningScreenState extends State<VerseLearningScreen> {
                                   : AppColors.textDarkMuted,
                             ),
                             const SizedBox(width: 6),
-                            Text(
-                              'Audio recording not yet mapped for this verse',
-                              style: AppTextStyles.caption(isDark).copyWith(
-                                fontSize: 11,
-                                fontStyle: FontStyle.italic,
+                            Flexible(
+                              child: Text(
+                                'Audio recording not yet mapped for this verse',
+                                style: AppTextStyles.caption(isDark).copyWith(
+                                  fontSize: 11,
+                                  fontStyle: FontStyle.italic,
+                                ),
+                                overflow: TextOverflow.ellipsis,
                               ),
                             ),
                           ],

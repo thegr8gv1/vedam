@@ -60,26 +60,32 @@ class SacredAppBar extends StatelessWidget implements PreferredSizeWidget {
             ),
             const SizedBox(width: 10),
           ],
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text(
-                title ?? AppConstants.appName,
-                style: AppTextStyles.titleMedium(isDark).copyWith(
-                  fontWeight: FontWeight.w800,
-                  letterSpacing: 1.0,
-                ),
-              ),
-              if (subtitle != null || showLogo)
+          Flexible(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: [
                 Text(
-                  subtitle ?? AppConstants.appSanskritName,
-                  style: AppTextStyles.caption(isDark).copyWith(
-                    color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
-                    fontWeight: FontWeight.w600,
+                  title ?? AppConstants.appName,
+                  style: AppTextStyles.titleMedium(isDark).copyWith(
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: 1.0,
                   ),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                 ),
-            ],
+                if (subtitle != null || showLogo)
+                  Text(
+                    subtitle ?? AppConstants.appSanskritName,
+                    style: AppTextStyles.caption(isDark).copyWith(
+                      color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
+                      fontWeight: FontWeight.w600,
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+              ],
+            ),
           ),
         ],
       ),

@@ -18,7 +18,7 @@ import '../../widgets/empty_state_view.dart';
 import '../../widgets/sacred_app_bar.dart';
 import '../../widgets/section_header.dart';
 import '../festivals/festival_calendar_screen.dart';
-import '../library/scripture_detail_screen.dart';
+import '../library/verse_learning_screen.dart';
 import 'widgets/daily_routine_card.dart';
 import 'widgets/daily_verse_card.dart';
 import 'widgets/dashboard_japa_card.dart';
@@ -260,12 +260,15 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
           onReadFull: () async {
             final mrityunjaya = await widget.repository.getScriptureById(5);
             if (mrityunjaya != null && context.mounted) {
+              widget.appState.recordRecentlyRead(mrityunjaya.id);
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (_) => ScriptureDetailScreen(
+                  builder: (_) => VerseLearningScreen(
                     scripture: mrityunjaya,
-                    appState: widget.appState,
+                    readerState: reader,
+                    audioState: audio,
+                    initialVerseNumber: 1,
                   ),
                 ),
               );
@@ -377,12 +380,15 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                     onReadFull: () async {
                       final mrityunjaya = await widget.repository.getScriptureById(5);
                       if (mrityunjaya != null && context.mounted) {
+                        widget.appState.recordRecentlyRead(mrityunjaya.id);
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (_) => ScriptureDetailScreen(
+                            builder: (_) => VerseLearningScreen(
                               scripture: mrityunjaya,
-                              appState: widget.appState,
+                              readerState: reader,
+                              audioState: audio,
+                              initialVerseNumber: 1,
                             ),
                           ),
                         );

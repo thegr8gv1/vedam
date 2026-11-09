@@ -90,6 +90,10 @@ class _MainScreenState extends State<MainScreen> {
         builder: (_) => PanchangamScreen(
           state: _panchangamState,
           repository: _panchangamRepository,
+          vratState: _vratState,
+          sadhanaState: _sadhanaState,
+          mantraRepository: _mantraRepository,
+          audioState: _audioState,
         ),
       ),
     );
@@ -151,6 +155,9 @@ class _MainScreenState extends State<MainScreen> {
         repository: widget.repository,
         appState: widget.appState,
         onNavigateToTab: _onTabSelected,
+        readerState: _readerState,
+        audioState: _audioState,
+        mantraRepository: _mantraRepository,
       ),
       SettingsScreen(
         appState: widget.appState,
