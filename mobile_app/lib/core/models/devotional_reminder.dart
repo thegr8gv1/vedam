@@ -17,6 +17,7 @@ class DevotionalReminder {
   final String body;
   final int hour; // 0-23
   final int minute; // 0-59
+  final int second; // 0-59
   final bool isEnabled;
   final bool repeatDaily;
   final String? scheduledDate; // YYYY-MM-DD for one-off Vrat reminders
@@ -30,6 +31,7 @@ class DevotionalReminder {
     required this.body,
     required this.hour,
     required this.minute,
+    this.second = 0,
     this.isEnabled = true,
     this.repeatDaily = true,
     this.scheduledDate,
@@ -51,6 +53,7 @@ class DevotionalReminder {
     String? body,
     int? hour,
     int? minute,
+    int? second,
     bool? isEnabled,
     bool? repeatDaily,
     String? scheduledDate,
@@ -64,6 +67,7 @@ class DevotionalReminder {
       body: body ?? this.body,
       hour: hour ?? this.hour,
       minute: minute ?? this.minute,
+      second: second ?? this.second,
       isEnabled: isEnabled ?? this.isEnabled,
       repeatDaily: repeatDaily ?? this.repeatDaily,
       scheduledDate: scheduledDate ?? this.scheduledDate,
@@ -79,6 +83,7 @@ class DevotionalReminder {
         'body': body,
         'hour': hour,
         'minute': minute,
+        'second': second,
         'is_enabled': isEnabled,
         'repeat_daily': repeatDaily,
         'scheduled_date': scheduledDate,
@@ -101,6 +106,7 @@ class DevotionalReminder {
       body: json['body'] as String? ?? '',
       hour: json['hour'] as int? ?? 6,
       minute: json['minute'] as int? ?? 0,
+      second: json['second'] as int? ?? 0,
       isEnabled: json['is_enabled'] as bool? ?? true,
       repeatDaily: json['repeat_daily'] as bool? ?? true,
       scheduledDate: json['scheduled_date'] as String?,

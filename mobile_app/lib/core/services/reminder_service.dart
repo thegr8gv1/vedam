@@ -27,6 +27,8 @@ abstract class ReminderService {
     required String title,
     required String body,
   });
+  Future<List<PendingNotificationRequest>> getPendingNotificationRequests();
+  Future<List<ActiveNotification>> getActiveNotifications();
 }
 
 class LocalNotificationReminderService implements ReminderService {
@@ -242,17 +244,29 @@ class LocalNotificationReminderService implements ReminderService {
             day,
             reminder.hour,
             reminder.minute,
+            reminder.second,
           );
 
           if (scheduledDate.isAfter(now)) {
-            await _notificationsPlugin.zonedSchedule(
-              id: notifId,
-              title: reminder.title,
-              body: reminder.body,
-              scheduledDate: scheduledDate,
-              notificationDetails: notifDetails,
-              androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
-            );
+            try {
+              await _notificationsPlugin.zonedSchedule(
+                id: notifId,
+                title: reminder.title,
+                body: reminder.body,
+                scheduledDate: scheduledDate,
+                notificationDetails: notifDetails,
+                androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+              );
+            } catch (_) {
+              await _notificationsPlugin.zonedSchedule(
+                id: notifId,
+                title: reminder.title,
+                body: reminder.body,
+                scheduledDate: scheduledDate,
+                notificationDetails: notifDetails,
+                androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
+              );
+            }
           }
         }
       } else {
@@ -264,24 +278,55 @@ class LocalNotificationReminderService implements ReminderService {
           now.day,
           reminder.hour,
           reminder.minute,
+          reminder.second,
         );
 
         if (scheduledDate.isBefore(now)) {
           scheduledDate = scheduledDate.add(const Duration(days: 1));
         }
 
-        await _notificationsPlugin.zonedSchedule(
-          id: notifId,
-          title: reminder.title,
-          body: reminder.body,
-          scheduledDate: scheduledDate,
-          notificationDetails: notifDetails,
-          androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
-          matchDateTimeComponents: DateTimeComponents.time,
-        );
+        try {
+          await _notificationsPlugin.zonedSchedule(
+            id: notifId,
+            title: reminder.title,
+            body: reminder.body,
+            scheduledDate: scheduledDate,
+            notificationDetails: notifDetails,
+            androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+            matchDateTimeComponents: DateTimeComponents.time,
+          );
+        } catch (_) {
+          await _notificationsPlugin.zonedSchedule(
+            id: notifId,
+            title: reminder.title,
+            body: reminder.body,
+            scheduledDate: scheduledDate,
+            notificationDetails: notifDetails,
+            androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
+            matchDateTimeComponents: DateTimeComponents.time,
+          );
+        }
       }
     } catch (e) {
       debugPrint('Error scheduling reminder (gracefully handled): $e');
+    }
+  }
+
+  @override
+  Future<List<PendingNotificationRequest>> getPendingNotificationRequests() async {
+    try {
+      return await _notificationsPlugin.pendingNotificationRequests();
+    } catch (_) {
+      return [];
+    }
+  }
+
+  @override
+  Future<List<ActiveNotification>> getActiveNotifications() async {
+    try {
+      return await _notificationsPlugin.getActiveNotifications();
+    } catch (_) {
+      return [];
     }
   }
 
@@ -431,5 +476,28 @@ class MockReminderService implements ReminderService {
       'body': body,
       'timestamp': DateTime.now().toIso8601String(),
     });
+  }
+
+  @override
+  Future<List<PendingNotificationRequest>> getPendingNotificationRequests() async {
+    return scheduledReminders.values.map((r) {
+      final notifId = allocatedNotifIds[r.id] ?? r.id.hashCode.abs() % 2147483647;
+      return PendingNotificationRequest(notifId, r.title, r.body, null);
+    }).toList();
+  }
+
+  @override
+  Future<List<ActiveNotification>> getActiveNotifications() async {
+    return deliveredNotifications.map((d) {
+      final id = d['id'] as int? ?? 1;
+      final title = d['title'] as String?;
+      final body = d['body'] as String?;
+      return ActiveNotification(
+        id: id,
+        channelId: 'vedam_devotional_reminders',
+        title: title,
+        body: body,
+      );
+    }).toList();
   }
 }

@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vedam_app/core/models/devotee_preferences.dart';
@@ -115,6 +116,12 @@ class _MockReminderService implements ReminderService {
   Future<void> cancelAllReminders() async {
     scheduled.clear();
   }
+
+  @override
+  Future<List<PendingNotificationRequest>> getPendingNotificationRequests() async => [];
+
+  @override
+  Future<List<ActiveNotification>> getActiveNotifications() async => [];
 }
 
 void main() {
