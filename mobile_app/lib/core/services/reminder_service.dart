@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
@@ -35,12 +36,27 @@ class LocalNotificationReminderService implements ReminderService {
   final Map<String, int> _idRegistry = {};
   bool _isInitialized = false;
   bool _registryLoaded = false;
+  Future<void>? _lock;
 
   LocalNotificationReminderService({
     FlutterLocalNotificationsPlugin? notificationsPlugin,
     SharedPreferences? prefs,
   })  : _notificationsPlugin = notificationsPlugin ?? FlutterLocalNotificationsPlugin(),
         _injectedPrefs = prefs;
+
+  Future<T> _synchronized<T>(Future<T> Function() action) async {
+    final previous = _lock;
+    final completer = Completer<void>();
+    _lock = completer.future;
+    if (previous != null) {
+      await previous.catchError((_) {});
+    }
+    try {
+      return await action();
+    } finally {
+      completer.complete();
+    }
+  }
 
   @override
   Future<void> initialize() async {
@@ -80,16 +96,21 @@ class LocalNotificationReminderService implements ReminderService {
     try {
       final prefs = _injectedPrefs ?? await SharedPreferences.getInstance();
       final raw = prefs.getString(_prefsKeyIdRegistry);
-      if (raw != null) {
-        final decoded = jsonDecode(raw) as Map<String, dynamic>;
-        _idRegistry.clear();
-        decoded.forEach((k, v) {
-          if (v is int) _idRegistry[k] = v;
-        });
+      if (raw != null && raw.trim().isNotEmpty) {
+        final decoded = jsonDecode(raw);
+        if (decoded is Map) {
+          _idRegistry.clear();
+          decoded.forEach((k, v) {
+            if (k is String && v is int && v > 0) {
+              _idRegistry[k] = v;
+            }
+          });
+        }
       }
       _registryLoaded = true;
     } catch (e) {
-      debugPrint('Registry load note (handled): $e');
+      debugPrint('Registry load note (safely reset to empty): $e');
+      _idRegistry.clear();
       _registryLoaded = true;
     }
   }
@@ -104,7 +125,7 @@ class LocalNotificationReminderService implements ReminderService {
   }
 
   @override
-  Future<int> getOrCreateNotificationId(String id) async {
+  Future<int> getOrCreateNotificationId(String id) => _synchronized(() async {
     await _ensureRegistryLoaded();
     if (_idRegistry.containsKey(id)) {
       return _idRegistry[id]!;
@@ -124,10 +145,10 @@ class LocalNotificationReminderService implements ReminderService {
     _idRegistry[id] = candidate;
     await _saveRegistry();
     return candidate;
-  }
+  });
 
   @override
-  Future<void> releaseReminderId(String reminderId) async {
+  Future<void> releaseReminderId(String reminderId) => _synchronized(() async {
     await _ensureRegistryLoaded();
     if (_idRegistry.containsKey(reminderId)) {
       final notifId = _idRegistry.remove(reminderId)!;
@@ -136,7 +157,7 @@ class LocalNotificationReminderService implements ReminderService {
         await _notificationsPlugin.cancel(id: notifId);
       } catch (_) {}
     }
-  }
+  });
 
   @override
   Future<ReminderPermissionStatus> getPermissionStatus() async {
@@ -320,12 +341,27 @@ class MockReminderService implements ReminderService {
   final Map<String, int> allocatedNotifIds = {};
   final List<Map<String, dynamic>> deliveredNotifications = [];
   int requestPermissionCallCount = 0;
+  Future<void>? _lock;
+
+  Future<T> _synchronized<T>(Future<T> Function() action) async {
+    final previous = _lock;
+    final completer = Completer<void>();
+    _lock = completer.future;
+    if (previous != null) {
+      await previous.catchError((_) {});
+    }
+    try {
+      return await action();
+    } finally {
+      completer.complete();
+    }
+  }
 
   @override
   Future<void> initialize() async {}
 
   @override
-  Future<int> getOrCreateNotificationId(String id) async {
+  Future<int> getOrCreateNotificationId(String id) => _synchronized(() async {
     if (allocatedNotifIds.containsKey(id)) {
       return allocatedNotifIds[id]!;
     }
@@ -338,13 +374,13 @@ class MockReminderService implements ReminderService {
     }
     allocatedNotifIds[id] = candidate;
     return candidate;
-  }
+  });
 
   @override
-  Future<void> releaseReminderId(String reminderId) async {
+  Future<void> releaseReminderId(String reminderId) => _synchronized(() async {
     allocatedNotifIds.remove(reminderId);
     scheduledReminders.remove(reminderId);
-  }
+  });
 
   @override
   Future<ReminderPermissionStatus> getPermissionStatus() async {
@@ -354,7 +390,9 @@ class MockReminderService implements ReminderService {
   @override
   Future<ReminderPermissionStatus> requestPermission() async {
     requestPermissionCallCount++;
-    currentPermission = ReminderPermissionStatus.granted;
+    if (currentPermission == ReminderPermissionStatus.notDetermined) {
+      currentPermission = ReminderPermissionStatus.granted;
+    }
     return currentPermission;
   }
 
