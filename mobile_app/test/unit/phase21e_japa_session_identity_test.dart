@@ -2,7 +2,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vedam_app/core/models/japa_practice_session.dart';
 import 'package:vedam_app/core/models/puja_guide.dart';
-import 'package:vedam_app/core/models/puja_session.dart';
 import 'package:vedam_app/data/fixtures/authentic_puja_guides_data.dart';
 import 'package:vedam_app/state/sadhana_state.dart';
 
@@ -41,6 +40,7 @@ void main() {
         lastUpdatedTime: DateTime.now().subtract(const Duration(days: 1)),
         status: JapaSessionStatus.completed,
       );
+      expect(oldSession.status, JapaSessionStatus.completed);
 
       // Verify that activePuja does not consider the step fulfilled by the old session
       expect(activePuja!.japaStepBindings.containsKey(japaStep.id), isFalse);
