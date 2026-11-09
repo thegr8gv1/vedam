@@ -124,7 +124,7 @@ class _VerseNoteDialogState extends State<VerseNoteDialog> {
                   const SizedBox(width: 6),
                   Expanded(
                     child: Text(
-                      'Private & on-device only. Separate from scholarly annotations.',
+                      'Personal devotee reflection. Stored privately on-device; not verified commentary.',
                       style: TextStyle(
                         fontSize: 10.5,
                         fontStyle: FontStyle.italic,

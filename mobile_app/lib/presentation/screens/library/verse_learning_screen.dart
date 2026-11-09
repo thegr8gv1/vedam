@@ -722,27 +722,32 @@ class _VerseLearningScreenState extends State<VerseLearningScreen> {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Row(
-                                    children: [
-                                      Icon(
-                                        Icons.note,
-                                        size: 14,
-                                        color: isDark
-                                            ? Colors.blue.shade300
-                                            : Colors.blue.shade700,
-                                      ),
-                                      const SizedBox(width: 6),
-                                      Text(
-                                        'YOUR PERSONAL STUDY NOTE',
-                                        style: TextStyle(
-                                          fontSize: 11,
-                                          fontWeight: FontWeight.bold,
+                                  Expanded(
+                                    child: Row(
+                                      children: [
+                                        Icon(
+                                          Icons.note,
+                                          size: 14,
                                           color: isDark
                                               ? Colors.blue.shade300
-                                              : Colors.blue.shade800,
+                                              : Colors.blue.shade700,
                                         ),
-                                      ),
-                                    ],
+                                        const SizedBox(width: 6),
+                                        Flexible(
+                                          child: Text(
+                                            'PERSONAL DEVOTEE REFLECTION',
+                                            overflow: TextOverflow.ellipsis,
+                                            style: TextStyle(
+                                              fontSize: 11,
+                                              fontWeight: FontWeight.bold,
+                                              color: isDark
+                                                  ? Colors.blue.shade300
+                                                  : Colors.blue.shade800,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                   InkWell(
                                     onTap: () => VerseNoteDialog.show(

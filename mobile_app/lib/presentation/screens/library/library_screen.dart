@@ -24,6 +24,15 @@ enum ReadingStatusFilter {
   const ReadingStatusFilter(this.label);
 }
 
+enum AudioAvailabilityFilter {
+  all('All Formats'),
+  audioOnly('Chanting Audio'),
+  textOnly('Text Study');
+
+  final String label;
+  const AudioAvailabilityFilter(this.label);
+}
+
 class LibraryScreen extends StatefulWidget {
   final ScriptureRepository repository;
   final AppState appState;
@@ -47,6 +56,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
   late final ScriptureReaderState _readerState;
   final TextEditingController _searchController = TextEditingController();
   ReadingStatusFilter _readingStatusFilter = ReadingStatusFilter.all;
+  AudioAvailabilityFilter _audioFilter = AudioAvailabilityFilter.all;
 
   @override
   void initState() {
@@ -100,24 +110,36 @@ class _LibraryScreenState extends State<LibraryScreen> {
       body: ListenableBuilder(
         listenable: Listenable.merge([_scriptureState, _readerState]),
         builder: (context, _) {
-          // Apply reading status filter on top of filtered scriptures
+          // Apply reading status and audio availability filters on top of filtered scriptures
           final displayed = _scriptureState.filteredScriptures.where((s) {
             final progress = _readerState.getProgress(s.id);
             final bookmarks = _readerState.getBookmarksForScripture(s.id);
 
+            bool matchesStatus;
             switch (_readingStatusFilter) {
               case ReadingStatusFilter.all:
-                return true;
+                matchesStatus = true;
               case ReadingStatusFilter.inProgress:
-                return progress != null &&
+                matchesStatus = progress != null &&
                     progress.completedVerseNumbers.isNotEmpty &&
                     !progress.isCompleted;
               case ReadingStatusFilter.bookmarked:
-                return bookmarks.isNotEmpty;
+                matchesStatus = bookmarks.isNotEmpty;
               case ReadingStatusFilter.completed:
-                return progress != null && progress.isCompleted;
+                matchesStatus = progress != null && progress.isCompleted;
               case ReadingStatusFilter.unread:
-                return progress == null || progress.completedVerseNumbers.isEmpty;
+                matchesStatus = progress == null || progress.completedVerseNumbers.isEmpty;
+            }
+            if (!matchesStatus) return false;
+
+            final hasAudio = s.verses.any((v) => v.audioMantraId != null);
+            switch (_audioFilter) {
+              case AudioAvailabilityFilter.all:
+                return true;
+              case AudioAvailabilityFilter.audioOnly:
+                return hasAudio;
+              case AudioAvailabilityFilter.textOnly:
+                return !hasAudio;
             }
           }).toList();
 
@@ -266,6 +288,60 @@ class _LibraryScreenState extends State<LibraryScreen> {
                 ),
               ),
 
+              const SizedBox(height: 4),
+
+              // 4b. Audio Availability Filter Chips (Horizontal Scroll)
+              SizedBox(
+                height: 34,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
+                  itemCount: AudioAvailabilityFilter.values.length,
+                  itemBuilder: (context, index) {
+                    final af = AudioAvailabilityFilter.values[index];
+                    final isSelected = af == _audioFilter;
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 4),
+                      child: FilterChip(
+                        avatar: Icon(
+                          af == AudioAvailabilityFilter.audioOnly
+                              ? Icons.volume_up
+                              : (af == AudioAvailabilityFilter.textOnly
+                                  ? Icons.menu_book
+                                  : Icons.layers),
+                          size: 14,
+                          color: isSelected
+                              ? Colors.white
+                              : (isDark ? AppColors.goldLight : AppColors.saffronPrimary),
+                        ),
+                        selected: isSelected,
+                        label: Text(af.label),
+                        labelStyle: TextStyle(
+                          fontSize: 10.5,
+                          fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
+                          color: isSelected
+                              ? Colors.white
+                              : (isDark ? AppColors.textLightPrimary : AppColors.textDarkPrimary),
+                        ),
+                        selectedColor: const Color(0xFF10B981),
+                        backgroundColor:
+                            isDark ? AppColors.nightSurface : const Color(0xFFF3ECE1),
+                        side: BorderSide(
+                          color: isSelected
+                              ? const Color(0xFF10B981)
+                              : (isDark ? AppColors.nightBorder : AppColors.chandanBorder),
+                        ),
+                        onSelected: (_) {
+                          setState(() {
+                            _audioFilter = af;
+                          });
+                        },
+                      ),
+                    );
+                  },
+                ),
+              ),
+
               const SizedBox(height: 6),
 
               // 5. Results Count & Reset
@@ -283,6 +359,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
                     if (_scriptureState.selectedCategory != 'All Categories' ||
                         _scriptureState.selectedDeity != 'All Deities' ||
                         _readingStatusFilter != ReadingStatusFilter.all ||
+                        _audioFilter != AudioAvailabilityFilter.all ||
                         _scriptureState.searchQuery.isNotEmpty)
                       InkWell(
                         onTap: () {
@@ -290,6 +367,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
                           _scriptureState.resetFilters();
                           setState(() {
                             _readingStatusFilter = ReadingStatusFilter.all;
+                            _audioFilter = AudioAvailabilityFilter.all;
                           });
                         },
                         child: Text(
@@ -321,6 +399,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
                               _scriptureState.resetFilters();
                               setState(() {
                                 _readingStatusFilter = ReadingStatusFilter.all;
+                                _audioFilter = AudioAvailabilityFilter.all;
                               });
                             },
                           )

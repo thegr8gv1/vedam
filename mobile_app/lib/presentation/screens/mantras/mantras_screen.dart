@@ -3,6 +3,7 @@ import 'package:vedam_app/core/models/mantra_item.dart';
 import 'package:vedam_app/core/theme/app_colors.dart';
 import 'package:vedam_app/data/repositories/mantra_repository.dart';
 import 'package:vedam_app/presentation/screens/mantras/mantra_player_screen.dart';
+import 'package:vedam_app/presentation/widgets/empty_state_view.dart';
 import 'package:vedam_app/state/audio_state.dart';
 
 class MantrasScreen extends StatefulWidget {
@@ -22,7 +23,9 @@ class MantrasScreen extends StatefulWidget {
 class _MantrasScreenState extends State<MantrasScreen> {
   final TextEditingController _searchController = TextEditingController();
   String _selectedCollection = 'All';
+  String _selectedDeity = 'All';
   bool _bundledOnly = false;
+  bool _favoritesOnly = false;
   String _searchQuery = '';
 
   @override
@@ -32,17 +35,32 @@ class _MantrasScreenState extends State<MantrasScreen> {
   }
 
   List<MantraItem> _getFilteredMantras() {
-    List<MantraItem> list;
-    if (_searchQuery.isNotEmpty) {
-      list = widget.repository.searchMantras(_searchQuery);
-    } else if (_selectedCollection != 'All') {
-      list = widget.repository.getMantrasByCollection(_selectedCollection);
-    } else {
-      list = widget.repository.getAllMantras();
+    List<MantraItem> list = widget.repository.getAllMantras();
+
+    if (_searchQuery.trim().isNotEmpty) {
+      final q = _searchQuery.trim().toLowerCase();
+      list = list.where((m) =>
+          m.title.toLowerCase().contains(q) ||
+          m.deity.toLowerCase().contains(q) ||
+          m.mantraText.toLowerCase().contains(q) ||
+          m.significance.toLowerCase().contains(q) ||
+          m.id.toLowerCase().contains(q)).toList();
+    }
+
+    if (_selectedCollection != 'All') {
+      list = list.where((m) => m.collection.toLowerCase() == _selectedCollection.toLowerCase()).toList();
+    }
+
+    if (_selectedDeity != 'All') {
+      list = list.where((m) => m.deity.toLowerCase() == _selectedDeity.toLowerCase()).toList();
     }
 
     if (_bundledOnly) {
       list = list.where((m) => m.isBundled).toList();
+    }
+
+    if (_favoritesOnly) {
+      list = list.where((m) => widget.audioState.isFavorite(m.id)).toList();
     }
 
     return list;
@@ -114,7 +132,13 @@ class _MantrasScreenState extends State<MantrasScreen> {
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final allCollections = ['All', ...widget.repository.getAllCollections()];
+    final allDeities = ['All', ...widget.repository.getAllDeities()];
     final mantras = _getFilteredMantras();
+    final hasActiveFilter = _selectedCollection != 'All' ||
+        _selectedDeity != 'All' ||
+        _bundledOnly ||
+        _favoritesOnly ||
+        _searchQuery.isNotEmpty;
 
     return ListenableBuilder(
       listenable: widget.audioState,
@@ -158,9 +182,9 @@ class _MantrasScreenState extends State<MantrasScreen> {
                 ),
               ),
 
-              // Filter Controls: Collections and Offline Toggle
+              // Filter Controls Row 1: Offline Ready & Favorites Toggle
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 2),
                 child: Row(
                   children: [
                     FilterChip(
@@ -180,48 +204,137 @@ class _MantrasScreenState extends State<MantrasScreen> {
                       },
                     ),
                     const SizedBox(width: 8),
-                    Expanded(
-                      child: SingleChildScrollView(
-                        scrollDirection: Axis.horizontal,
-                        child: Row(
-                          children: allCollections.map((col) {
-                            final isSel = _selectedCollection == col;
-                            return Padding(
-                              padding: const EdgeInsets.only(right: 6),
-                              child: ChoiceChip(
-                                label: Text(col, style: const TextStyle(fontSize: 11)),
-                                selected: isSel,
-                                selectedColor: AppColors.saffronPrimary.withAlpha(60),
-                                onSelected: (sel) {
-                                  if (sel) {
-                                    setState(() {
-                                      _selectedCollection = col;
-                                    });
-                                  }
-                                },
-                              ),
-                            );
-                          }).toList(),
-                        ),
+                    FilterChip(
+                      avatar: Icon(
+                        _favoritesOnly ? Icons.favorite : Icons.favorite_border,
+                        size: 16,
+                        color: _favoritesOnly ? Colors.white : AppColors.kumkumRed,
                       ),
+                      label: Text(
+                        'Favorites (${widget.audioState.favoriteMantraIds.length})',
+                        style: const TextStyle(fontSize: 11),
+                      ),
+                      selected: _favoritesOnly,
+                      selectedColor: AppColors.kumkumRed,
+                      checkmarkColor: Colors.white,
+                      onSelected: (val) {
+                        setState(() {
+                          _favoritesOnly = val;
+                        });
+                      },
                     ),
                   ],
                 ),
               ),
 
-              // Mantras Count Header with Now Chanting Indicator
+              // Filter Controls Row 2: Deity Selection Chips
+              SizedBox(
+                height: 36,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  padding: const EdgeInsets.symmetric(horizontal: 14),
+                  itemCount: allDeities.length,
+                  itemBuilder: (context, index) {
+                    final deity = allDeities[index];
+                    final isSel = _selectedDeity == deity;
+                    return Padding(
+                      padding: const EdgeInsets.only(right: 6),
+                      child: ChoiceChip(
+                        label: Text(deity, style: const TextStyle(fontSize: 11)),
+                        selected: isSel,
+                        selectedColor: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                        labelStyle: TextStyle(
+                          fontSize: 11,
+                          fontWeight: isSel ? FontWeight.bold : FontWeight.normal,
+                          color: isSel ? (isDark ? Colors.black : Colors.white) : null,
+                        ),
+                        onSelected: (sel) {
+                          if (sel) {
+                            setState(() {
+                              _selectedDeity = deity;
+                            });
+                          }
+                        },
+                      ),
+                    );
+                  },
+                ),
+              ),
+
+              // Filter Controls Row 3: Collection Selection Chips
+              SizedBox(
+                height: 34,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  padding: const EdgeInsets.symmetric(horizontal: 14),
+                  itemCount: allCollections.length,
+                  itemBuilder: (context, index) {
+                    final col = allCollections[index];
+                    final isSel = _selectedCollection == col;
+                    return Padding(
+                      padding: const EdgeInsets.only(right: 6),
+                      child: ChoiceChip(
+                        label: Text(col, style: const TextStyle(fontSize: 10.5)),
+                        selected: isSel,
+                        selectedColor: AppColors.saffronPrimary.withAlpha(isDark ? 80 : 50),
+                        labelStyle: TextStyle(
+                          fontSize: 10.5,
+                          fontWeight: isSel ? FontWeight.bold : FontWeight.normal,
+                          color: isSel ? AppColors.saffronPrimary : null,
+                        ),
+                        onSelected: (sel) {
+                          if (sel) {
+                            setState(() {
+                              _selectedCollection = col;
+                            });
+                          }
+                        },
+                      ),
+                    );
+                  },
+                ),
+              ),
+
+              // Mantras Count Header with Now Chanting Indicator & Reset Filters
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
-                      '${mantras.length} Sacred Mantras Available',
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold,
-                        color: isDark ? AppColors.textLightMuted : AppColors.textDarkMuted,
-                      ),
+                    Row(
+                      children: [
+                        Text(
+                          '${mantras.length} Sacred Mantras Available',
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                            color: isDark ? AppColors.textLightMuted : AppColors.textDarkMuted,
+                          ),
+                        ),
+                        if (hasActiveFilter) ...[
+                          const SizedBox(width: 8),
+                          InkWell(
+                            onTap: () {
+                              _searchController.clear();
+                              setState(() {
+                                _selectedCollection = 'All';
+                                _selectedDeity = 'All';
+                                _bundledOnly = false;
+                                _favoritesOnly = false;
+                                _searchQuery = '';
+                              });
+                            },
+                            child: Text(
+                              'Reset Filters',
+                              style: TextStyle(
+                                fontSize: 11,
+                                fontWeight: FontWeight.bold,
+                                color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ],
                     ),
                     if (widget.audioState.isPlaying && widget.audioState.activeMantra != null)
                       GestureDetector(
@@ -263,15 +376,21 @@ class _MantrasScreenState extends State<MantrasScreen> {
               // Mantra List View
               Expanded(
                 child: mantras.isEmpty
-                    ? Center(
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Icon(Icons.search_off, size: 48, color: isDark ? AppColors.textLightMuted : AppColors.textDarkMuted),
-                            const SizedBox(height: 8),
-                            const Text('No mantras found matching your search.'),
-                          ],
-                        ),
+                    ? EmptyStateView(
+                        title: 'No Mantras Found',
+                        message:
+                            'No sacred chants match the active search query or deity/collection filters.',
+                        buttonText: 'Reset Filters',
+                        onButtonPressed: () {
+                          _searchController.clear();
+                          setState(() {
+                            _selectedCollection = 'All';
+                            _selectedDeity = 'All';
+                            _bundledOnly = false;
+                            _favoritesOnly = false;
+                            _searchQuery = '';
+                          });
+                        },
                       )
                     : ListView.builder(
                         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
@@ -327,20 +446,36 @@ class _MantrasScreenState extends State<MantrasScreen> {
                                     ),
                                   ),
                                   if (mantra.isBundled)
-                                    const Padding(
-                                      padding: EdgeInsets.only(left: 4),
-                                      child: Icon(Icons.offline_pin, size: 14, color: Colors.green),
+                                    Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                                      decoration: BoxDecoration(
+                                        color: Colors.green.withAlpha(isDark ? 40 : 25),
+                                        borderRadius: BorderRadius.circular(6),
+                                        border: Border.all(color: Colors.green.withAlpha(100), width: 0.8),
+                                      ),
+                                      child: const Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        children: [
+                                          Icon(Icons.offline_pin, size: 12, color: Colors.green),
+                                          SizedBox(width: 3),
+                                          Text(
+                                            'Offline Audio',
+                                            style: TextStyle(fontSize: 9.5, fontWeight: FontWeight.bold, color: Colors.green),
+                                          ),
+                                        ],
+                                      ),
                                     )
                                   else
                                     Container(
                                       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                                       decoration: BoxDecoration(
-                                        color: Colors.orange.withAlpha(20),
+                                        color: Colors.orange.withAlpha(isDark ? 40 : 20),
                                         borderRadius: BorderRadius.circular(6),
+                                        border: Border.all(color: Colors.orange.withAlpha(100), width: 0.8),
                                       ),
                                       child: const Text(
-                                        'Vault',
-                                        style: TextStyle(fontSize: 9, fontWeight: FontWeight.bold, color: Colors.orange),
+                                        'Manual Japa (Vault)',
+                                        style: TextStyle(fontSize: 9.5, fontWeight: FontWeight.bold, color: Colors.orange),
                                       ),
                                     ),
                                 ],

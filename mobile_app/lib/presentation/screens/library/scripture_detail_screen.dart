@@ -122,6 +122,15 @@ class ScriptureDetailScreen extends StatelessWidget {
                           _DetailPill(label: scripture.category, color: AppColors.saffronPrimary, isDark: isDark),
                           _DetailPill(label: scripture.deity, color: AppColors.goldDark, isDark: isDark),
                           _DetailPill(label: '${scripture.verseCount} Sacred Verses', color: const Color(0xFF0D9488), isDark: isDark),
+                          _DetailPill(
+                            label: scripture.verses.any((v) => v.audioMantraId != null)
+                                ? 'Chanting Audio Available'
+                                : 'Text Study',
+                            color: scripture.verses.any((v) => v.audioMantraId != null)
+                                ? const Color(0xFF10B981)
+                                : const Color(0xFF6B7280),
+                            isDark: isDark,
+                          ),
                           _DetailPill(label: 'Script: ${appState.activeScript.label}', color: const Color(0xFF6366F1), isDark: isDark),
                           if (bookmarkedCount > 0)
                             _DetailPill(
@@ -474,7 +483,7 @@ class _AttrRow extends StatelessWidget {
           ),
           Expanded(
             child: Text(
-              value.isNotEmpty ? value : 'Traditional Canonical',
+              value.trim().isNotEmpty ? value : 'Unspecified in canonical record',
               style: TextStyle(
                 fontSize: 13,
                 color: isDark ? AppColors.textLightPrimary : AppColors.textDarkPrimary,
