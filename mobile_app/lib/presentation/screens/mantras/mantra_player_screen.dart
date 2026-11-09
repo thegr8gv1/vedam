@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:vedam_app/core/models/mantra_item.dart';
 import 'package:vedam_app/core/theme/app_colors.dart';
+import 'package:vedam_app/presentation/screens/japa/japa_practice_screen.dart';
+import 'package:vedam_app/presentation/screens/japa/widgets/japa_history_modal.dart';
 import 'package:vedam_app/presentation/screens/mantras/widgets/japa_completion_dialog.dart';
 import 'package:vedam_app/presentation/screens/mantras/widgets/japa_target_modal.dart';
 import 'package:vedam_app/presentation/screens/mantras/widgets/japa_target_selector_widget.dart';
@@ -11,12 +13,14 @@ class MantraPlayerScreen extends StatefulWidget {
   final MantraItem mantra;
   final AudioState audioState;
   final List<MantraItem>? playlist;
+  final bool autoPlay;
 
   const MantraPlayerScreen({
     super.key,
     required this.mantra,
     required this.audioState,
     this.playlist,
+    this.autoPlay = true,
   });
 
   @override
@@ -38,12 +42,12 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
       }
 
       if (widget.audioState.activeMantra?.id != widget.mantra.id) {
-        if (widget.mantra.isBundled) {
+        if (widget.autoPlay && widget.mantra.isBundled) {
           widget.audioState.playMantra(widget.mantra, resetSessionCount: true);
         } else {
           // Set active mantra in state without triggering audio playback
           // to maintain clean manual Japa mode
-          widget.audioState.stop();
+          widget.audioState.setActiveMantraWithoutPlaying(widget.mantra);
         }
       }
     });
@@ -57,10 +61,10 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
       widget.audioState.addListener(_onAudioStateChanged);
     }
     if (widget.mantra.id != oldWidget.mantra.id) {
-      if (widget.mantra.isBundled) {
+      if (widget.autoPlay && widget.mantra.isBundled) {
         widget.audioState.playMantra(widget.mantra, resetSessionCount: true);
       } else {
-        widget.audioState.stop();
+        widget.audioState.setActiveMantraWithoutPlaying(widget.mantra);
       }
     }
   }
@@ -335,6 +339,11 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
           appBar: AppBar(
             title: Text(currentMantra.title),
             actions: [
+              IconButton(
+                icon: const Icon(Icons.history),
+                tooltip: 'Practice History',
+                onPressed: () => JapaHistoryModal.show(context, widget.audioState),
+              ),
               IconButton(
                 icon: Icon(
                   widget.audioState.isSleepTimerActive ? Icons.bedtime : Icons.bedtime_outlined,
@@ -841,7 +850,28 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                     },
                   ),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 10),
+                Center(
+                  child: TextButton.icon(
+                    icon: const Icon(Icons.self_improvement, size: 18),
+                    label: const Text('Open Dedicated Japa Practice Mode'),
+                    style: TextButton.styleFrom(
+                      foregroundColor: AppColors.saffronPrimary,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => JapaPracticeScreen(
+                            audioState: widget.audioState,
+                            initialMantra: currentMantra,
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+                const SizedBox(height: 16),
 
                 // Dedicated Japa Target Selection Interface (Phase 16B.1)
                 JapaTargetSelectorWidget(

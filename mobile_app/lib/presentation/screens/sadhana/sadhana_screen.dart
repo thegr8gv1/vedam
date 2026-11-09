@@ -13,6 +13,8 @@ import '../../../state/vrat_state.dart';
 import '../../widgets/sacred_app_bar.dart';
 import '../../widgets/section_header.dart';
 import '../mantras/mantra_player_screen.dart';
+
+import 'package:vedam_app/presentation/screens/japa/widgets/japa_history_modal.dart';
 import '../mantras/widgets/japa_target_modal.dart';
 import '../vrat/reminders_settings_screen.dart';
 import '../vrat/vrat_calendar_screen.dart';
@@ -709,10 +711,20 @@ class _SadhanaScreenState extends State<SadhanaScreen> with WidgetsBindingObserv
                             ),
                           ],
                         ),
-                        IconButton(
-                          icon: const Icon(Icons.refresh, size: 20),
-                          tooltip: 'Reset Counter',
-                          onPressed: _resetManualJapa,
+                        Row(
+                          children: [
+                            if (widget.audioState != null)
+                              IconButton(
+                                icon: const Icon(Icons.history, size: 20),
+                                tooltip: 'Chanting History',
+                                onPressed: () => JapaHistoryModal.show(context, widget.audioState!),
+                              ),
+                            IconButton(
+                              icon: const Icon(Icons.refresh, size: 20),
+                              tooltip: 'Reset Counter',
+                              onPressed: _resetManualJapa,
+                            ),
+                          ],
                         ),
                       ],
                     ),

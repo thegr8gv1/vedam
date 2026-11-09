@@ -5,6 +5,8 @@ import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/text_styles.dart';
 import '../../../../data/repositories/mantra_repository.dart';
 import '../../../../state/audio_state.dart';
+import 'package:vedam_app/presentation/screens/japa/japa_practice_screen.dart';
+import 'package:vedam_app/presentation/screens/japa/widgets/japa_history_modal.dart';
 import '../../mantras/mantra_player_screen.dart';
 
 /// Japa & Mantra Practice card on the Devotee Home Dashboard.
@@ -73,6 +75,19 @@ class DashboardJapaCard extends StatelessWidget {
     );
   }
 
+  void _openJapaPractice(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => JapaPracticeScreen(
+          audioState: audioState,
+          mantraRepository: mantraRepository,
+          initialMantra: _resolveActiveMantra(),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
@@ -130,9 +145,14 @@ class DashboardJapaCard extends StatelessWidget {
                     ],
                   ),
                 ),
-                const SizedBox(width: 8),
+                IconButton(
+                  icon: const Icon(Icons.history, size: 20),
+                  tooltip: 'Chanting History',
+                  onPressed: () => JapaHistoryModal.show(context, audioState),
+                ),
+                const SizedBox(width: 4),
                 InkWell(
-                  onTap: () => _openMantraPlayer(context, mantra),
+                  onTap: () => _openJapaPractice(context),
                   borderRadius: BorderRadius.circular(8),
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
@@ -140,7 +160,7 @@ class DashboardJapaCard extends StatelessWidget {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Text(
-                          'Mantra Player',
+                          'Japa Practice',
                           style: TextStyle(
                             fontSize: 11,
                             fontWeight: FontWeight.bold,
