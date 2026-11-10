@@ -12,6 +12,7 @@ class SankalpaService {
   static const String keyGender = 'vedam_sankalpa_gender';
   static const String keyRiverBasin = 'vedam_sankalpa_river_basin';
   static const String keyDeity = 'vedam_sankalpa_deity';
+  static const String keyAnonymous = 'vedam_sankalpa_anonymous';
 
   final SharedPreferences? _injectedPrefs;
   SharedPreferences? _prefs;
@@ -39,7 +40,8 @@ class SankalpaService {
     final name = prefs.getString(keyName) ?? 'Devotee';
     final genderStr = prefs.getString(keyGender) ?? 'unspecified';
     final riverStr = prefs.getString(keyRiverBasin) ?? 'pavitraDeshe';
-    final deity = prefs.getString(keyDeity) ?? 'Sri Parameshwara / Narayana';
+    final deity = prefs.getString(keyDeity) ?? 'Sri Parameshwara';
+    final isAnon = prefs.getBool(keyAnonymous) ?? false;
 
     SankalpaGender gender = SankalpaGender.unspecified;
     if (genderStr == 'male') gender = SankalpaGender.male;
@@ -62,6 +64,7 @@ class SankalpaService {
       deityName: deity,
       date: date ?? DateTime.now(),
       panchangam: panchangam,
+      isAnonymous: isAnon,
     );
   }
 
@@ -72,6 +75,7 @@ class SankalpaService {
     required SankalpaGender gender,
     required RiverBasinOption riverBasin,
     required String deityName,
+    bool isAnonymous = false,
   }) async {
     final prefs = await _getPrefs();
     await prefs.setString(keyGotra, gotra.trim());
@@ -79,54 +83,74 @@ class SankalpaService {
     await prefs.setString(keyGender, gender.name);
     await prefs.setString(keyRiverBasin, riverBasin.name);
     await prefs.setString(keyDeity, deityName.trim());
+    await prefs.setBool(keyAnonymous, isAnonymous);
   }
 
   /// Generate complete, structured Vedic Sankalpa based on input parameters.
   SankalpaOutput generateSankalpa(SankalpaInput input) {
     final date = input.date;
+    final isApproximate = input.panchangam == null;
 
     // 1. Calculate astronomical variables
     final samvatsara = _calculateSamvatsara(date);
     final ayana = _calculateAyana(date);
     final ritu = _calculateRitu(date);
     final masa = _calculateMasa(date, input.panchangam);
-    final paksha = input.panchangam?.paksha ?? _approximatePaksha(date);
-    final tithi = input.panchangam?.tithi.sanskritName ?? _approximateTithi(date);
-    final vara = input.panchangam?.vara.sanskritName ?? _calculateVara(date);
-    final nakshatra = input.panchangam?.nakshatra.sanskritName ?? _approximateNakshatra(date);
+    final pakshaRaw = input.panchangam?.paksha ?? _approximatePaksha(date);
+    final tithiRaw = input.panchangam?.tithi.sanskritName ?? _approximateTithi(date);
+    final varaRaw = input.panchangam?.vara.sanskritName ?? _calculateVara(date);
+    final nakshatraRaw = input.panchangam?.nakshatra.sanskritName ?? _approximateNakshatra(date);
+
+    // Declension helpers
+    final ayanaDeclined = _declineAyana(ayana);
+    final pakshaDeclined = _declinePaksha(pakshaRaw);
+    final varaDeclined = _declineVara(varaRaw);
+    final tithiDeclined = _declineTithi(tithiRaw);
 
     // 2. Format devotee identity strings
-    final gotraFormatted = input.gotra.trim().isNotEmpty ? input.gotra.trim() : 'विष्णु';
-    final devoteeFormatted = input.devoteeName.trim().isNotEmpty ? input.devoteeName.trim() : 'भक्त';
-
+    final isAnon = input.isAnonymous || input.devoteeName.trim().isEmpty;
     String gotraSanskrit;
     String gotraIast;
     String gotraEnglish;
-    if (gotraFormatted.toLowerCase().contains('gotra') || gotraFormatted.contains('गोत्र')) {
-      gotraSanskrit = '$gotraFormatted-गोत्रोत्पन्नस्य';
-      gotraIast = '${_toIast(gotraFormatted)}-gotrotpannasya';
-      gotraEnglish = 'born of $gotraFormatted gotra';
-    } else {
-      gotraSanskrit = '$gotraFormatted-गोत्रस्य';
-      gotraIast = '${_toIast(gotraFormatted)}-gotrasya';
-      gotraEnglish = 'of $gotraFormatted gotra';
-    }
-
     String nameSanskrit;
     String nameIast;
-    if (input.gender == SankalpaGender.female) {
-      nameSanskrit = '$devoteeFormatted नामधेयायाः';
-      nameIast = '${_toIast(devoteeFormatted)} nāmadheyāyāḥ';
-    } else if (input.gender == SankalpaGender.male) {
-      nameSanskrit = '$devoteeFormatted शर्मणः';
-      nameIast = '${_toIast(devoteeFormatted)} śarmaṇaḥ';
+    String devoteeFormatted;
+
+    if (isAnon) {
+      gotraSanskrit = '';
+      gotraIast = '';
+      gotraEnglish = 'as a humble seeker';
+      nameSanskrit = 'मम आत्मनः';
+      nameIast = 'mama ātmanaḥ';
+      devoteeFormatted = 'Devotee';
     } else {
-      nameSanskrit = '$devoteeFormatted नामधेयस्य';
-      nameIast = '${_toIast(devoteeFormatted)} nāmadheyasya';
+      final rawGotra = input.gotra.trim().isNotEmpty ? input.gotra.trim() : 'विष्णु';
+      devoteeFormatted = input.devoteeName.trim().isNotEmpty ? input.devoteeName.trim() : 'भक्त';
+
+      if (rawGotra.toLowerCase().contains('gotra') || rawGotra.contains('गोत्र')) {
+        gotraSanskrit = '$rawGotra-गोत्रोत्पन्नस्य';
+        gotraIast = '${_toIast(rawGotra)}-gotrotpannasya';
+        gotraEnglish = 'born of $rawGotra gotra';
+      } else {
+        gotraSanskrit = '$rawGotra-गोत्रस्य';
+        gotraIast = '${_toIast(rawGotra)}-gotrasya';
+        gotraEnglish = 'of $rawGotra gotra';
+      }
+
+      if (input.gender == SankalpaGender.female) {
+        nameSanskrit = '$devoteeFormatted नामधेयायाः';
+        nameIast = '${_toIast(devoteeFormatted)} nāmadheyāyāḥ';
+      } else if (input.gender == SankalpaGender.male) {
+        nameSanskrit = '$devoteeFormatted शर्मणः';
+        nameIast = '${_toIast(devoteeFormatted)} śarmaṇaḥ';
+      } else {
+        nameSanskrit = '$devoteeFormatted नामधेयस्य';
+        nameIast = '${_toIast(devoteeFormatted)} nāmadheyasya';
+      }
     }
 
     // 3. Construct Section 1: Cosmic Time (Universal Invocation)
-    final comp1 = const SankalpaComponent(
+    const comp1 = SankalpaComponent(
       sectionTitle: 'Cosmic Invocation & Epoch (कालोद्देश)',
       sanskritText: 'ॐ विष्णुर्विष्णुर्विष्णुः श्रीमद्भगवतो महापुरुषस्य विष्णोराज्ञया प्रवर्तमानस्य '
           'अद्य ब्रह्मणो द्वितीयपरार्धे श्रीश्वेतवाराहकल्पे वैवस्वतमन्वन्तरे अष्टाविंशतितमे '
@@ -135,7 +159,7 @@ class SankalpaService {
           'adya brahmaṇo dvitīya-parārdhe śrī-śveta-vārāha-kalpe vaivasvata-manvantare aṣṭā-viṃśatitame '
           'kali-yuge kali-prathama-caraṇe',
       englishMeaning: 'Om. In supreme remembrance of Lord Vishnu, under the divine governance of the Cosmic Being, '
-          'in the second half of Brahma’s cosmic life, in the Sveta Varaha Kalpa, in the Vaivasvata Manvantara, '
+          'in the second half of Brahma’s cosmic lifespan, in the Sveta Varaha Kalpa, in the Vaivasvata Manvantara, '
           'in the 28th Kali Yuga, in its first quarter...',
     );
 
@@ -150,35 +174,45 @@ class SankalpaService {
           'अस्मिन् वर्तमाने व्यावहारिक चान्द्रमानेन',
       iastText: 'jambūdvīpe bhāratavarṣe bharatakhaṇḍe meroḥ dakṣiṇe pārśve $riverIast '
           'asmin vartamāne vyāvahārika cāndramānena',
-      englishMeaning: 'In the sacred realm of Jambu Dweepa, in Bharata Varsha, in Bharata Khanda, '
-          'to the south of Mount Meru, in $riverEnglish, in this current civil and lunar reckoning...',
+      englishMeaning: 'In the sacred continent of Jambu Dweepa, in Bharata Varsha, in Bharata Khanda, '
+          'to the south of Mount Meru, in $riverEnglish, in this ongoing civil and lunar reckoning...',
     );
 
     // 5. Construct Section 3: Panchangam Astronomical Coordinates (Kala)
     final comp3 = SankalpaComponent(
       sectionTitle: 'Daily Panchangam Coordinates (पञ्चाङ्ग)',
-      sanskritText: '$samvatsara नाम संवत्सरे, $ayana अयने, $ritu ऋतौ, $masa मासे, $paksha पक्षे, '
-          '$tithi शुभतिथौ, $vara वासरे, $nakshatra शुभनक्षत्रे, शुभयोगे शुभकरणे एवं गुणविशेषण विशिष्टायां शुभपुण्यतिथौ',
-      iastText: '${_toIast(samvatsara)} nāma saṃvatsare, ${_toIast(ayana)} ayane, ${_toIast(ritu)} ṛtau, '
-          '${_toIast(masa)} māse, ${_toIast(paksha)} pakṣe, ${_toIast(tithi)} śubha-tithau, '
-          '${_toIast(vara)} vāsare, ${_toIast(nakshatra)} śubha-nakṣatre, śubha-yoge śubha-karaṇe '
+      sanskritText: '$samvatsara-नाम-संवत्सरे, $ayanaDeclined, $ritu-ऋतौ, $masa-मासे, $pakshaDeclined, '
+          '$tithiDeclined, $varaDeclined, $nakshatraRaw-शुभनक्षत्रे, शुभयोगे शुभकरणे एवं गुणविशेषण विशिष्टायां शुभपुण्यतिथौ',
+      iastText: '${_toIast(samvatsara)}-nāma-saṃvatsare, ${_toIast(ayanaDeclined)}, ${_toIast(ritu)}-ṛtau, '
+          '${_toIast(masa)}-māse, ${_toIast(pakshaDeclined)}, ${_toIast(tithiDeclined)}, '
+          '${_toIast(varaDeclined)}, ${_toIast(nakshatraRaw)}-śubha-nakṣatre, śubha-yoge śubha-karaṇe '
           'evaṃ guṇa-viśeṣaṇa viśiṣṭāyāṃ śubha-puṇya-tithau',
       englishMeaning: 'In the $samvatsara year, during $ayana, in the $ritu season, in the month of $masa, '
-          'in $paksha, on the auspicious lunar day of $tithi, on $vara, under the $nakshatra asterism, '
-          'blessed with auspicious yoga and karana, on this sacred day endowed with all divine virtues...',
+          'in $pakshaRaw, on the auspicious lunar day of $tithiRaw, on $varaRaw, under the $nakshatraRaw asterism, '
+          'endowed with auspicious yoga and karana, on this sacred day blessed with all divine celestial virtues...',
     );
 
     // 6. Construct Section 4: Lineage & Devotee Identity (Yajamana)
+    final lineageSanskrit = isAnon
+        ? 'मम आत्मनः श्रुतिस्मृतिपुराणोक्त-फलप्राप्त्यर्थं सहकुटुम्बस्य क्षेमस्थैर्यधैर्यवीर्यविजयायुरारोग्यैश्वर्याभिवृद्ध्यर्थं समस्तदुरितक्षयद्वारा'
+        : '$gotraSanskrit $nameSanskrit मम आत्मनः श्रुतिस्मृतिपुराणोक्त-फलप्राप्त्यर्थं '
+            'सहकुटुम्बस्य क्षेमस्थैर्यधैर्यवीर्यविजयायुरारोग्यैश्वर्याभिवृद्ध्यर्थं समस्तदुरितक्षयद्वारा';
+    final lineageIast = isAnon
+        ? 'mama ātmanaḥ śruti-smṛti-purāṇokta-phala-prāptyarthaṃ sahakuṭumbasya kṣema-sthairya-dhairya-vīrya-vijayāyur-ārogyaiśvaryābhivṛddhyarthaṃ samasta-durita-kṣaya-dvārā'
+        : '$gotraIast $nameIast mama ātmanaḥ śruti-smṛti-purāṇokta-phala-prāptyarthaṃ '
+            'sahakuṭumbasya kṣema-sthairya-dhairya-vīrya-vijayāyur-ārogyaiśvaryābhivṛddhyarthaṃ samasta-durita-kṣaya-dvārā';
+    final lineageEnglish = isAnon
+        ? 'For myself, as a humble seeker, for the attainment of the fruits promised in the Sruti, Smriti, and Puranas, '
+            'for the cultivation of peace, courage, stability, victory, longevity, health, and spiritual abundance for myself and family, and through the dissolution of all accumulated afflictions...'
+        : '$gotraEnglish, known as $devoteeFormatted, for the attainment of the fruits promised in '
+            'the Sruti, Smriti, and Puranas, for the cultivation of peace, courage, stability, victory, '
+            'longevity, health, and spiritual abundance for myself and family, and through the dissolution of all accumulated afflictions...';
+
     final comp4 = SankalpaComponent(
       sectionTitle: 'Lineage & Devotee Identity (यजमानगोत्रनाम)',
-      sanskritText: '$gotraSanskrit $nameSanskrit मम आत्मनः श्रुतिस्मृतिपुराणोक्त फलप्राप्त्यर्थं '
-          'मम सहकुटुम्बस्य क्षेमस्थैर्यधैर्यवीर्यविजयायुरारोग्यैश्वर्याभिवृद्ध्यर्थं समस्तदुरितक्षयद्वारा',
-      iastText: '$gotraIast $nameIast mama ātmanaḥ śruti-smṛti-purāṇokta phala-prāptyarthaṃ '
-          'mama sahakuṭumbasya kṣema-sthairya-dhairya-vīrya-vijayāyur-ārogyaiśvaryābhivṛddhyarthaṃ samasta-durita-kṣaya-dvārā',
-      englishMeaning: '$gotraEnglish, known as $devoteeFormatted, for the attainment of the fruits promised in '
-          'the Sruti, Smriti, and Puranas, for the cultivation of peace, courage, steadfastness, victory, '
-          'longevity, radiant health, and spiritual abundance for myself and family, and through the dissolution '
-          'of all accumulated afflictions...',
+      sanskritText: lineageSanskrit,
+      iastText: lineageIast,
+      englishMeaning: lineageEnglish,
     );
 
     // 7. Construct Section 5: Prayojana (Ritual Purpose)
@@ -201,11 +235,15 @@ class SankalpaService {
     final shortPurposeIast = _shortPurposeIast(input.purpose);
     final shortPurposeEnglish = _shortPurposeEnglish(input.purpose);
 
-    final shortSanskrit = 'ॐ अद्य $tithi तिथौ $vara वासरे $gotraSanskrit $nameSanskrit '
-        'मम समस्तदुरितक्षयपूर्वकं श्री ${input.deityName} प्रीत्यर्थं $shortPurposeSanskrit करिष्ये ॥';
-    final shortIast = 'oṃ adya ${_toIast(tithi)} tithau ${_toIast(vara)} vāsare $gotraIast $nameIast '
-        'mama samasta-durita-kṣaya-pūrvakaṃ śrī ${input.deityName} prītyarthaṃ $shortPurposeIast kariṣye ||';
-    final shortEnglish = 'Om. On this $tithi lunar day, on $vara, $gotraEnglish, $devoteeFormatted, '
+    final shortIdentitySanskrit = isAnon ? 'मम' : '$gotraSanskrit $nameSanskrit मम';
+    final shortIdentityIast = isAnon ? 'mama' : '$gotraIast $nameIast mama';
+    final shortIdentityEnglish = isAnon ? 'I,' : '$gotraEnglish, $devoteeFormatted,';
+
+    final shortSanskrit = 'ॐ अद्य $tithiDeclined $varaDeclined $shortIdentitySanskrit '
+        'समस्तदुरितक्षयपूर्वकं श्री ${input.deityName} प्रीत्यर्थं $shortPurposeSanskrit करिष्ये ॥';
+    final shortIast = 'oṃ adya ${_toIast(tithiDeclined)} ${_toIast(varaDeclined)} $shortIdentityIast '
+        'samasta-durita-kṣaya-pūrvakaṃ śrī ${input.deityName} prītyarthaṃ $shortPurposeIast kariṣye ||';
+    final shortEnglish = 'Om. On this $tithiRaw lunar day, on $varaRaw, $shortIdentityEnglish '
         'for the dissolution of all obstacles and the supreme grace of ${input.deityName}, '
         'I resolve to perform $shortPurposeEnglish.';
 
@@ -221,15 +259,50 @@ class SankalpaService {
       ayana: ayana,
       ritu: ritu,
       masa: masa,
-      paksha: paksha,
-      tithi: tithi,
-      vara: vara,
-      nakshatra: nakshatra,
+      paksha: pakshaRaw,
+      tithi: tithiRaw,
+      vara: varaRaw,
+      nakshatra: nakshatraRaw,
       date: date,
+      isApproximateFallback: isApproximate,
     );
   }
 
-  // --- Helper Methods ---
+  // --- Declension Helpers ---
+
+  String _declineAyana(String ayana) {
+    if (ayana.contains('उत्तरायण') || ayana.toLowerCase().contains('uttarayana')) {
+      return 'उत्तरायणे';
+    } else if (ayana.contains('दक्षिणायन') || ayana.toLowerCase().contains('dakshinayana')) {
+      return 'दक्षिणायने';
+    }
+    return '$ayana-अयने';
+  }
+
+  String _declinePaksha(String paksha) {
+    if (paksha.contains('शुक्ल') || paksha.toLowerCase().contains('shukla')) {
+      return 'शुक्लपक्षे';
+    } else if (paksha.contains('कृष्ण') || paksha.toLowerCase().contains('krishna')) {
+      return 'कृष्णपक्षे';
+    }
+    return '$paksha-पक्षे';
+  }
+
+  String _declineVara(String vara) {
+    if (vara.endsWith('वासर') || vara.endsWith('वासरे')) {
+      return vara.endsWith('वासरे') ? vara : '$vara\u0947';
+    }
+    return '$vara-वासरे';
+  }
+
+  String _declineTithi(String tithi) {
+    if (tithi.endsWith('शुभतिथौ') || tithi.endsWith('तिथौ')) {
+      return tithi;
+    }
+    return '$tithi-शुभतिथौ';
+  }
+
+  // --- Astronomical Calculations ---
 
   static const List<String> _samvatsaras = [
     'प्रभव', 'विभव', 'शुक्ल', 'प्रमोद', 'प्रजापति', 'अङ्गिरस', 'श्रीमुख', 'भाव', 'युव', 'धातु',
@@ -241,11 +314,7 @@ class SankalpaService {
   ];
 
   String _calculateSamvatsara(DateTime date) {
-    // Gregorian to Hindu Jovian Samvatsara index calculation
-    // Epoch: Kali Yuga 5125 corresponds to Krodhi (#38) starting Chaitra 2024.
-    // Index offset formula: (Year + 9) % 60 gives traditional Samvatsara index.
     int year = date.year;
-    // Before Chaitra (approx March 25 - April 10), it belongs to previous samvatsara
     if (date.month < 4 || (date.month == 4 && date.day < 9)) {
       year -= 1;
     }
@@ -255,7 +324,6 @@ class SankalpaService {
   }
 
   String _calculateAyana(DateTime date) {
-    // Uttarayana: Makara Sankranti (approx Jan 14) to Karka Sankranti (approx Jul 16)
     final dayOfYear = date.difference(DateTime(date.year, 1, 1)).inDays + 1;
     if (dayOfYear >= 14 && dayOfYear < 197) {
       return 'उत्तरायण';
@@ -265,14 +333,13 @@ class SankalpaService {
   }
 
   String _calculateRitu(DateTime date) {
-    // 6 Vedic Seasons (Vasanta, Grishma, Varsha, Sharad, Hemanta, Shishira)
     final m = date.month;
-    if (m == 3 || m == 4) return 'वसन्त'; // Chaitra - Vaishakha
-    if (m == 5 || m == 6) return 'ग्रीष्म'; // Jyeshtha - Ashadha
-    if (m == 7 || m == 8) return 'वर्षा'; // Shravana - Bhadrapada
-    if (m == 9 || m == 10) return 'शरद्'; // Ashvina - Kartika
-    if (m == 11 || m == 12) return 'हेमन्त'; // Margashirsha - Pausha
-    return 'शिशिर'; // Magha - Phalguna (Jan - Feb)
+    if (m == 3 || m == 4) return 'वसन्त';
+    if (m == 5 || m == 6) return 'ग्रीष्म';
+    if (m == 7 || m == 8) return 'वर्षा';
+    if (m == 9 || m == 10) return 'शरद्';
+    if (m == 11 || m == 12) return 'हेमन्त';
+    return 'शिशिर';
   }
 
   String _calculateMasa(DateTime date, DailyPanchangamData? panchangam) {
@@ -283,11 +350,10 @@ class SankalpaService {
         }
       }
     }
-    // Solar / Lunar month approximation based on calendar month
     const masasList = [
-      'पौष / माघ', 'माघ / फाल्गुन', 'फाल्गुन / चैत्र', 'चैत्र / वैशाख',
-      'वैशाख / ज्येष्ठ', 'ज्येष्ठ / आषाढ', 'आषाढ / श्रावण', 'श्रावण / भाद्रपद',
-      'भाद्रपद / आश्विन', 'आश्विन / कार्तिक', 'कार्तिक / मार्गशीर्ष', 'मार्गशीर्ष / पौष'
+      'पौष', 'माघ', 'फाल्गुन', 'चैत्र',
+      'वैशाख', 'ज्येष्ठ', 'आषाढ', 'श्रावण',
+      'भाद्रपद', 'आश्विन', 'कार्तिक', 'मार्गशीर्ष'
     ];
     return masasList[(date.month - 1) % 12];
   }
@@ -295,26 +361,24 @@ class SankalpaService {
   String _calculateVara(DateTime date) {
     switch (date.weekday) {
       case DateTime.monday:
-        return 'इन्दु / सोम';
+        return 'सोमवासर';
       case DateTime.tuesday:
-        return 'भौम / मङ्गल';
+        return 'भौमवासर';
       case DateTime.wednesday:
-        return 'सौम्य / बुध';
+        return 'सौम्यवासर';
       case DateTime.thursday:
-        return 'गुरु / बृहस्पति';
+        return 'गुरुवासर';
       case DateTime.friday:
-        return 'भृगु / शुक्र';
+        return 'भृगुवासर';
       case DateTime.saturday:
-        return 'स्थिर / मन्द / शनि';
+        return 'स्थिरवासर';
       case DateTime.sunday:
       default:
-        return 'भानु / रवि';
+        return 'भानुवासर';
     }
   }
 
   String _approximatePaksha(DateTime date) {
-    // Synodic lunar phase approximation (29.530588 days)
-    // Reference new moon: Jan 11, 2024 11:57 UTC
     final refNewMoon = DateTime.utc(2024, 1, 11, 11, 57);
     final diffDays = date.toUtc().difference(refNewMoon).inSeconds / 86400.0;
     final phaseDays = diffDays % 29.530588;
@@ -342,7 +406,6 @@ class SankalpaService {
       'विशाखा', 'अनुराधा', 'ज्येष्ठा', 'मूल', 'पूर्वाषाढा', 'उत्तराषाढा', 'श्रवण',
       'धनिष्ठा', 'शतभिषा', 'पूर्वाभाद्रपदा', 'उत्तराभाद्रपदा', 'रेवती'
     ];
-    // Sidereal Moon orbital period is ~27.321661 days
     final refEpoch = DateTime.utc(2024, 1, 1, 0, 0);
     final days = date.toUtc().difference(refEpoch).inSeconds / 86400.0;
     final index = (days % 27.321661 / (27.321661 / 27)).floor() % 27;
@@ -354,8 +417,8 @@ class SankalpaService {
     switch (input.purpose) {
       case SankalpaPurpose.dailySadhana:
         return (
-          sanskrit: 'श्री $deity प्रीत्यर्थं प्रातः/सायं नित्यकर्म नित्यसाधनां करिष्ये ॥',
-          iast: 'śrī ${_toIast(deity)} prītyarthaṃ prātaḥ/sāyaṃ nitya-karma nitya-sādhanāṃ kariṣye ||',
+          sanskrit: 'श्री $deity प्रीत्यर्थं नित्यकर्म-नित्यसाधनां करिष्ये ॥',
+          iast: 'śrī ${_toIast(deity)} prītyarthaṃ nitya-karma-nitya-sādhanāṃ kariṣye ||',
           english: 'For the divine grace and pleasure of Sri $deity, I resolve to undertake my daily devotional contemplation and sadhana.',
         );
       case SankalpaPurpose.japaPractice:
@@ -372,8 +435,8 @@ class SankalpaService {
         );
       case SankalpaPurpose.vratObservance:
         return (
-          sanskrit: 'श्री $deity प्रीत्यर्थं अन्तःकरणशुद्धये व्रत/उपवास नियमधारणं करिष्ये ॥',
-          iast: 'śrī ${_toIast(deity)} prītyarthaṃ antaḥ-karaṇa-śuddhaye vrata/upavāsa niyama-dhāraṇaṃ kariṣye ||',
+          sanskrit: 'श्री $deity प्रीत्यर्थं अन्तःकरणशुद्धये व्रतोपवास-नियमधारणं करिष्ये ॥',
+          iast: 'śrī ${_toIast(deity)} prītyarthaṃ antaḥ-karaṇa-śuddhaye vratopavāsa-niyama-dhāraṇaṃ kariṣye ||',
           english: 'For the supreme pleasure of Sri $deity, and for inner mental and spiritual purification, I resolve to undertake this sacred vrat and fasting observance.',
         );
       case SankalpaPurpose.sandhyavandanam:
@@ -451,7 +514,6 @@ class SankalpaService {
   }
 
   String _toIast(String devanagariText) {
-    // Practical phonetic transliteration dictionary for key liturgical terms
     final map = {
       'प्रभव': 'prabhava', 'विभव': 'vibhava', 'शुक्ल': 'śukla', 'प्रमोद': 'pramoda',
       'प्रजापति': 'prajāpati', 'अङ्गिरस': 'aṅgirasa', 'श्रीमुख': 'śrīmukha', 'भाव': 'bhāva',
@@ -469,24 +531,24 @@ class SankalpaService {
       'रौद्र': 'raudra', 'दुर्मति': 'durmati', 'दुन्दुभि': 'dundubhi', 'रुधिरोद्गारी': 'rudhirodgārī',
       'रक्ताक्षी': 'raktākṣī', 'क्रोधन': 'krodhana', 'क्षय': 'kṣaya',
       'उत्तरायण': 'uttarāyaṇa', 'दक्षिणायन': 'dakṣiṇāyana',
+      'उत्तरायणे': 'uttarāyaṇe', 'दक्षिणायने': 'dakṣiṇāyane',
       'वसन्त': 'vasanta', 'ग्रीष्म': 'grīṣma', 'वर्षा': 'varṣā', 'शरद्': 'śarad',
       'हेमन्त': 'hemanta', 'शिशिर': 'śiśira',
-      'कृष्ण': 'kṛṣṇa',
+      'शुक्लपक्षे': 'śukla-pakṣe', 'कृष्णपक्षे': 'kṛṣṇa-pakṣe',
       'प्रतिपदा': 'pratipadā', 'द्वितीया': 'dvitīyā', 'तृतीया': 'tṛtīyā', 'चतुर्थी': 'caturthī',
       'पञ्चमी': 'pañcamī', 'षष्ठी': 'ṣaṣṭhī', 'सप्तमी': 'saptamī', 'अष्टमी': 'aṣṭamī',
       'नवमी': 'navamī', 'दशमी': 'daśamī', 'एकादशी': 'ekādaśī', 'द्वादशी': 'dvādaśī',
       'त्रयोदशी': 'trayodaśī', 'चतुर्दशी': 'caturdaśī', 'पूर्णिमा': 'pūrṇimā', 'अमावस्या': 'amāvāsyā',
-      'इन्दु / सोम': 'indu / soma', 'भौम / मङ्गल': 'bhauma / maṅgala', 'सौम्य / बुध': 'saumya / budha',
-      'गुरु / बृहस्पति': 'guru / bṛhaspati', 'भृगु / शुक्र': 'bhṛgu / śukra',
-      'स्थिर / मन्द / शनि': 'sthira / manda / śani', 'भानु / रवि': 'bhānu / ravi',
+      'सोमवासर': 'somavāsara', 'भौमवासर': 'bhaumavāsara', 'सौम्यवासर': 'saumyavāsara',
+      'गुरुवासर': 'guruvāsara', 'भृगुवासर': 'bhṛguvāsara', 'स्थिरवासर': 'sthiravāsara', 'भानुवासर': 'bhānuvāsara',
+      'सोमवासरे': 'somavāsare', 'भौमवासरे': 'bhaumavāsare', 'सौम्यवासरे': 'saumyavāsare',
+      'गुरुवासरे': 'guruvāsare', 'भृगुवासरे': 'bhṛguvāsare', 'स्थिरवासरे': 'sthiravāsare', 'भानुवासरे': 'bhānuvāsare',
       'विष्णु': 'viṣṇu', 'शिव': 'śiva', 'कश्यप': 'kaśyapa', 'भारद्वाज': 'bhāradvāja',
       'वसिष्ठ': 'vasiṣṭha', 'गौतम': 'gautama', 'विश्वामित्र': 'viśvāmitra', 'जमदग्नि': 'jamadagni',
       'अत्रि': 'atri', 'अङ्गिरा': 'aṅgirā', 'श्रीपरमेश्वर': 'śrī-parameśvara',
     };
 
     if (map.containsKey(devanagariText)) return map[devanagariText]!;
-
-    // Return original if unknown (preserves user-inputted Roman script cleanly)
     return devanagariText;
   }
 }

@@ -59,6 +59,7 @@ class _SankalpaGeneratorModalState extends State<SankalpaGeneratorModal> {
   late SankalpaGender _gender;
   bool _useIast = false;
   bool _useShortVersion = false;
+  bool _isAnonymous = false;
   bool _showCustomization = false;
   bool _showStructuralBreakdown = false;
   bool _isProfileLoaded = false;
@@ -92,6 +93,7 @@ class _SankalpaGeneratorModalState extends State<SankalpaGeneratorModal> {
         _nameController.text = saved.devoteeName;
         _gender = saved.gender;
         _riverBasin = saved.riverBasin;
+        _isAnonymous = saved.isAnonymous;
         if (widget.initialDeity == null || widget.initialDeity!.isEmpty) {
           _deityController.text = saved.deityName;
         }
@@ -112,6 +114,7 @@ class _SankalpaGeneratorModalState extends State<SankalpaGeneratorModal> {
       customIntention: _customIntentionController.text.trim(),
       date: DateTime.now(),
       panchangam: widget.panchangam,
+      isAnonymous: _isAnonymous,
     );
 
     setState(() {
@@ -126,12 +129,13 @@ class _SankalpaGeneratorModalState extends State<SankalpaGeneratorModal> {
       gender: _gender,
       riverBasin: _riverBasin,
       deityName: _deityController.text.trim(),
+      isAnonymous: _isAnonymous,
     );
 
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Devotee lineage and preferences saved for future Sankalpas.'),
+          content: Text('Devotee preferences saved locally for future recitations.'),
           duration: Duration(seconds: 2),
         ),
       );
@@ -194,6 +198,8 @@ class _SankalpaGeneratorModalState extends State<SankalpaGeneratorModal> {
                       _buildCustomizationAccordion(isDark),
                       const SizedBox(height: 14),
                       _buildStructuralBreakdownAccordion(isDark),
+                      const SizedBox(height: 14),
+                      _buildScholarlyDisclosureCard(isDark),
                       const SizedBox(height: 24),
                     ],
                   )
@@ -319,31 +325,76 @@ class _SankalpaGeneratorModalState extends State<SankalpaGeneratorModal> {
 
   Widget _buildPanchangamSummaryChip(bool isDark) {
     final out = _generatedOutput!;
+    final isOffline = out.isApproximateFallback;
+
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
       decoration: BoxDecoration(
         color: isDark ? AppColors.nightSurfaceElevated : AppColors.goldLight.withValues(alpha: 0.4),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: isDark ? Colors.grey[800]! : AppColors.chandanBorder,
+          color: isOffline
+              ? (isDark ? Colors.amber[800]!.withValues(alpha: 0.6) : Colors.amber[600]!)
+              : (isDark ? Colors.grey[800]! : AppColors.chandanBorder),
         ),
       ),
-      child: Row(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Icon(Icons.calendar_month, color: AppColors.goldPrimary, size: 18),
-          const SizedBox(width: 10),
-          Expanded(
-            child: Text(
-              '${out.samvatsara} • ${out.ayana} • ${out.ritu} • ${out.paksha} • ${out.tithi} • ${out.vara}',
-              style: TextStyle(
-                fontSize: 11.5,
-                fontWeight: FontWeight.w500,
-                color: isDark ? Colors.grey[300] : AppColors.textDarkPrimary,
+          Row(
+            children: [
+              Icon(
+                isOffline ? Icons.offline_bolt_outlined : Icons.calendar_month,
+                color: isOffline ? Colors.amber[700] : AppColors.goldPrimary,
+                size: 16,
               ),
-              overflow: TextOverflow.ellipsis,
-              maxLines: 1,
-            ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  '${out.samvatsara} • ${out.ayana} • ${out.ritu} • ${out.paksha} • ${out.tithi} • ${out.vara}',
+                  style: TextStyle(
+                    fontSize: 11.5,
+                    fontWeight: FontWeight.w500,
+                    color: isDark ? Colors.grey[300] : AppColors.textDarkPrimary,
+                  ),
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 1,
+                ),
+              ),
+              const SizedBox(width: 6),
+              Container(
+                key: const Key('chip_panchangam_source'),
+                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                decoration: BoxDecoration(
+                  color: isOffline ? Colors.amber[900]?.withValues(alpha: 0.3) : Colors.green[900]?.withValues(alpha: 0.2),
+                  borderRadius: BorderRadius.circular(4),
+                  border: Border.all(
+                    color: isOffline ? Colors.amber[600]! : Colors.green[600]!,
+                    width: 0.8,
+                  ),
+                ),
+                child: Text(
+                  isOffline ? 'APPROXIMATE • OFFLINE' : 'LIVE PANCHANGAM',
+                  style: TextStyle(
+                    fontSize: 9,
+                    fontWeight: FontWeight.bold,
+                    color: isOffline ? Colors.amber[300] : Colors.green[400],
+                  ),
+                ),
+              ),
+            ],
           ),
+          if (isOffline) ...[
+            const SizedBox(height: 4),
+            Text(
+              'Astronomical coordinates approximated mathematically. Live ephemeris will refresh when connected.',
+              style: TextStyle(
+                fontSize: 10,
+                fontStyle: FontStyle.italic,
+                color: isDark ? Colors.amber[200] : Colors.brown[600],
+              ),
+            ),
+          ],
         ],
       ),
     );
@@ -378,20 +429,25 @@ class _SankalpaGeneratorModalState extends State<SankalpaGeneratorModal> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Row(
-                children: [
-                  const Icon(Icons.auto_stories, color: AppColors.saffronPrimary, size: 16),
-                  const SizedBox(width: 6),
-                  Text(
-                    _useShortVersion ? 'SANKALPA (CONCISE)' : 'VEDIC SANKALPA (SACRED TEXT)',
-                    style: TextStyle(
-                      fontSize: 10.5,
-                      fontWeight: FontWeight.bold,
-                      letterSpacing: 0.8,
-                      color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
+              Expanded(
+                child: Row(
+                  children: [
+                    const Icon(Icons.auto_stories, color: AppColors.saffronPrimary, size: 16),
+                    const SizedBox(width: 6),
+                    Flexible(
+                      child: Text(
+                        _useShortVersion ? 'SANKALPA (CONCISE)' : 'VEDIC SANKALPA (SACRED TEXT)',
+                        style: TextStyle(
+                          fontSize: 10.5,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 0.8,
+                          color: isDark ? AppColors.goldGlow : AppColors.saffronDark,
+                        ),
+                        overflow: TextOverflow.ellipsis,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
               IconButton(
                 icon: const Icon(Icons.copy, size: 18, color: AppColors.goldPrimary),
@@ -520,6 +576,7 @@ class _SankalpaGeneratorModalState extends State<SankalpaGeneratorModal> {
         ),
       ),
       child: ExpansionTile(
+        key: const Key('tile_personalization'),
         initiallyExpanded: _showCustomization,
         onExpansionChanged: (val) {
           setState(() {
@@ -536,44 +593,67 @@ class _SankalpaGeneratorModalState extends State<SankalpaGeneratorModal> {
           ),
         ),
         subtitle: Text(
-          '${_gotraController.text} • ${_nameController.text} • ${_riverBasin.displayName.split(' ')[0]}',
+          _isAnonymous
+              ? 'Universal Seeker (मम आत्मनः)'
+              : '${_gotraController.text} • ${_nameController.text} • ${_riverBasin.displayName.split(' ')[0]}',
           style: TextStyle(fontSize: 11, color: isDark ? Colors.grey[400] : Colors.grey[600]),
         ),
         childrenPadding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
         children: [
-          Row(
-            children: [
-              Expanded(
-                child: TextField(
-                  controller: _gotraController,
-                  decoration: const InputDecoration(
-                    labelText: 'Devotee Gotra',
-                    hintText: 'e.g. Kashyapa / Vishnu',
-                    isDense: true,
-                  ),
-                  onChanged: (_) => _regenerate(),
-                ),
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: TextField(
-                  controller: _nameController,
-                  decoration: const InputDecoration(
-                    labelText: 'Devotee Name',
-                    hintText: 'e.g. Ramesh',
-                    isDense: true,
-                  ),
-                  onChanged: (_) => _regenerate(),
-                ),
-              ),
-            ],
+          // Anonymous mode toggle
+          SwitchListTile(
+            key: const Key('switch_anonymous'),
+            contentPadding: EdgeInsets.zero,
+            title: const Text('Anonymous / Universal Contemplation', style: TextStyle(fontSize: 12.5, fontWeight: FontWeight.w600)),
+            subtitle: const Text('Omits personal lineage from Sankalpa; formats recitation as a universal seeker (मम आत्मनः).', style: TextStyle(fontSize: 11)),
+            value: _isAnonymous,
+            activeThumbColor: AppColors.saffronPrimary,
+            onChanged: (val) {
+              setState(() {
+                _isAnonymous = val;
+                _regenerate();
+              });
+            },
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 8),
+
+          if (!_isAnonymous) ...[
+            Row(
+              children: [
+                Expanded(
+                  child: TextField(
+                    controller: _gotraController,
+                    decoration: const InputDecoration(
+                      labelText: 'Devotee Gotra',
+                      hintText: 'e.g. Kashyapa / Vishnu',
+                      isDense: true,
+                    ),
+                    onChanged: (_) => _regenerate(),
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: TextField(
+                    controller: _nameController,
+                    decoration: const InputDecoration(
+                      labelText: 'Devotee Name',
+                      hintText: 'e.g. Ramesh',
+                      isDense: true,
+                    ),
+                    onChanged: (_) => _regenerate(),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
+          ],
+
           Row(
             children: [
               Expanded(
                 child: DropdownButtonFormField<RiverBasinOption>(
                   initialValue: _riverBasin,
+                  isExpanded: true,
                   decoration: const InputDecoration(
                     labelText: 'Sacred River / Kshetra',
                     isDense: true,
@@ -581,7 +661,11 @@ class _SankalpaGeneratorModalState extends State<SankalpaGeneratorModal> {
                   items: RiverBasinOption.values.map((river) {
                     return DropdownMenuItem(
                       value: river,
-                      child: Text(river.displayName, style: const TextStyle(fontSize: 12)),
+                      child: Text(
+                        river.displayName,
+                        style: const TextStyle(fontSize: 12),
+                        overflow: TextOverflow.ellipsis,
+                      ),
                     );
                   }).toList(),
                   onChanged: (val) {
@@ -594,29 +678,53 @@ class _SankalpaGeneratorModalState extends State<SankalpaGeneratorModal> {
                   },
                 ),
               ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: DropdownButtonFormField<SankalpaGender>(
-                  initialValue: _gender,
-                  decoration: const InputDecoration(
-                    labelText: 'Declension Suffix',
-                    isDense: true,
+              if (!_isAnonymous) ...[
+                const SizedBox(width: 12),
+                Expanded(
+                  child: DropdownButtonFormField<SankalpaGender>(
+                    initialValue: _gender,
+                    isExpanded: true,
+                    decoration: const InputDecoration(
+                      labelText: 'Declension Suffix',
+                      isDense: true,
+                    ),
+                    items: const [
+                      DropdownMenuItem(
+                        value: SankalpaGender.unspecified,
+                        child: Text(
+                          'Universal (नामधेयस्य)',
+                          style: TextStyle(fontSize: 12),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                      DropdownMenuItem(
+                        value: SankalpaGender.male,
+                        child: Text(
+                          'Male (शर्मणः)',
+                          style: TextStyle(fontSize: 12),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                      DropdownMenuItem(
+                        value: SankalpaGender.female,
+                        child: Text(
+                          'Female (नामधेयायाः)',
+                          style: TextStyle(fontSize: 12),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                    ],
+                    onChanged: (val) {
+                      if (val != null) {
+                        setState(() {
+                          _gender = val;
+                          _regenerate();
+                        });
+                      }
+                    },
                   ),
-                  items: const [
-                    DropdownMenuItem(value: SankalpaGender.unspecified, child: Text('Universal (नामधेयस्य)', style: TextStyle(fontSize: 12))),
-                    DropdownMenuItem(value: SankalpaGender.male, child: Text('Male (शर्मणः)', style: TextStyle(fontSize: 12))),
-                    DropdownMenuItem(value: SankalpaGender.female, child: Text('Female (नामधेयायाः)', style: TextStyle(fontSize: 12))),
-                  ],
-                  onChanged: (val) {
-                    if (val != null) {
-                      setState(() {
-                        _gender = val;
-                        _regenerate();
-                      });
-                    }
-                  },
                 ),
-              ),
+              ],
             ],
           ),
           const SizedBox(height: 12),
@@ -725,6 +833,37 @@ class _SankalpaGeneratorModalState extends State<SankalpaGeneratorModal> {
             ),
           );
         }).toList(),
+      ),
+    );
+  }
+
+  Widget _buildScholarlyDisclosureCard(bool isDark) {
+    return Container(
+      key: const Key('card_scholarly_disclosure'),
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: isDark ? const Color(0xFF261D13) : const Color(0xFFFFFBF2),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(
+          color: isDark ? AppColors.goldDark.withValues(alpha: 0.3) : AppColors.goldPrimary.withValues(alpha: 0.3),
+        ),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Icon(Icons.info_outline, color: AppColors.goldPrimary, size: 18),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Text(
+              'Traditional Recitation Template: The generated Sanskrit is a classical-style recitation aid based on Smriti traditions. Specific phrasing, Gotra pravaras, and Desha formulas naturally vary across sampradayas, regional traditions, and Vedic shakhas. This guide does not replace personal instruction from a qualified family priest or acharya.',
+              style: TextStyle(
+                fontSize: 11,
+                height: 1.4,
+                color: isDark ? Colors.grey[400] : AppColors.textDarkSecondary,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

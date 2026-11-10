@@ -49,7 +49,9 @@ extension SankalpaPurposeExtension on SankalpaPurpose {
 /// Traditional sacred river basin or geographic kshetra for Desha Sankalpa.
 enum RiverBasinOption {
   ganga,
-  godavari,
+  godavari, // Maintained for backward compatibility, designates South Bank
+  godavariDakshine,
+  godavariUttare,
   kaveri,
   krishna,
   narmada,
@@ -63,7 +65,10 @@ extension RiverBasinOptionExtension on RiverBasinOption {
       case RiverBasinOption.ganga:
         return 'Ganga Basin (गङ्गा तीरे)';
       case RiverBasinOption.godavari:
-        return 'Godavari Basin (गोदावरी तीरे)';
+      case RiverBasinOption.godavariDakshine:
+        return 'Godavari (South Bank / दक्षिणे तीरे)';
+      case RiverBasinOption.godavariUttare:
+        return 'Godavari (North Bank / उत्तरे तीरे)';
       case RiverBasinOption.kaveri:
         return 'Kaveri Basin (कावेरी तीरे)';
       case RiverBasinOption.krishna:
@@ -82,7 +87,10 @@ extension RiverBasinOptionExtension on RiverBasinOption {
       case RiverBasinOption.ganga:
         return 'गङ्गातीरे';
       case RiverBasinOption.godavari:
-        return 'गोदावर्याः दक्षिणे/उत्तरे तीरे';
+      case RiverBasinOption.godavariDakshine:
+        return 'गोदावर्याः दक्षिणे तीरे';
+      case RiverBasinOption.godavariUttare:
+        return 'गोदावर्याः उत्तरे तीरे';
       case RiverBasinOption.kaveri:
         return 'कावेर्याः तीरे';
       case RiverBasinOption.krishna:
@@ -92,7 +100,7 @@ extension RiverBasinOptionExtension on RiverBasinOption {
       case RiverBasinOption.yamuna:
         return 'यमुनातीरे';
       case RiverBasinOption.pavitraDeshe:
-        return 'अस्मिन् पुण्यदेशे';
+        return 'पुण्यदेशे';
     }
   }
 
@@ -101,7 +109,10 @@ extension RiverBasinOptionExtension on RiverBasinOption {
       case RiverBasinOption.ganga:
         return 'gaṅgātīre';
       case RiverBasinOption.godavari:
-        return 'godāvaryāḥ dakṣiṇe/uttare tīre';
+      case RiverBasinOption.godavariDakshine:
+        return 'godāvaryāḥ dakṣiṇe tīre';
+      case RiverBasinOption.godavariUttare:
+        return 'godāvaryāḥ uttare tīre';
       case RiverBasinOption.kaveri:
         return 'kāveryāḥ tīre';
       case RiverBasinOption.krishna:
@@ -111,7 +122,7 @@ extension RiverBasinOptionExtension on RiverBasinOption {
       case RiverBasinOption.yamuna:
         return 'yamunātīre';
       case RiverBasinOption.pavitraDeshe:
-        return 'asmin puṇyadeśe';
+        return 'puṇyadeśe';
     }
   }
 }
@@ -134,6 +145,7 @@ class SankalpaInput {
   final String? customIntention;
   final DateTime date;
   final DailyPanchangamData? panchangam;
+  final bool isAnonymous;
 
   const SankalpaInput({
     this.gotra = 'Vishnu',
@@ -141,10 +153,11 @@ class SankalpaInput {
     this.gender = SankalpaGender.unspecified,
     this.purpose = SankalpaPurpose.dailySadhana,
     this.riverBasin = RiverBasinOption.pavitraDeshe,
-    this.deityName = 'Sri Parameshwara / Narayana',
+    this.deityName = 'Sri Parameshwara',
     this.customIntention,
     required this.date,
     this.panchangam,
+    this.isAnonymous = false,
   });
 
   SankalpaInput copyWith({
@@ -157,6 +170,7 @@ class SankalpaInput {
     String? customIntention,
     DateTime? date,
     DailyPanchangamData? panchangam,
+    bool? isAnonymous,
   }) {
     return SankalpaInput(
       gotra: gotra ?? this.gotra,
@@ -168,6 +182,7 @@ class SankalpaInput {
       customIntention: customIntention ?? this.customIntention,
       date: date ?? this.date,
       panchangam: panchangam ?? this.panchangam,
+      isAnonymous: isAnonymous ?? this.isAnonymous,
     );
   }
 }
@@ -212,6 +227,8 @@ class SankalpaOutput {
   final String vara;
   final String nakshatra;
   final DateTime date;
+  final bool isApproximateFallback;
+  final String scholarlyDisclaimer;
 
   const SankalpaOutput({
     required this.components,
@@ -230,5 +247,7 @@ class SankalpaOutput {
     required this.vara,
     required this.nakshatra,
     required this.date,
+    this.isApproximateFallback = false,
+    this.scholarlyDisclaimer = 'Traditional Recitation Template: This generated text is a classical Smriti-style recitation aid. Specific phrasing, Gotra pravaras, and Desha formulas naturally vary across sampradayas, Vedic shakhas, and regional traditions. It does not replace personal guidance from a qualified family priest or acharya.',
   });
 }
