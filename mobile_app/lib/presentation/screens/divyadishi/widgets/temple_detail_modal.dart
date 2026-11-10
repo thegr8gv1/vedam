@@ -3,6 +3,7 @@ import 'package:vedam_app/core/models/bearing_result.dart';
 import 'package:vedam_app/core/models/temple.dart';
 import 'package:vedam_app/core/theme/app_colors.dart';
 import 'package:vedam_app/state/divyadishi_state.dart';
+import 'live_compass_sheet.dart';
 
 /// Modal bottom sheet displaying detailed temple information, coordinate provenance,
 /// transparency disclaimers, and calculated geographic initial bearing.
@@ -392,6 +393,26 @@ class TempleDetailModal extends StatelessWidget {
                   ),
                 ),
               ],
+            ),
+          ),
+          const SizedBox(height: 10),
+          SizedBox(
+            width: double.infinity,
+            child: OutlinedButton.icon(
+              onPressed: () {
+                LiveCompassSheet.show(
+                  context,
+                  state: state,
+                  selectedTemple: temple,
+                );
+              },
+              icon: const Icon(Icons.explore_outlined, size: 18),
+              label: const Text('Open Live Compass (Optional)'),
+              style: OutlinedButton.styleFrom(
+                foregroundColor: AppColors.saffronDark,
+                side: const BorderSide(color: AppColors.saffronPrimary),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+              ),
             ),
           ),
         ],

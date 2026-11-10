@@ -4,6 +4,7 @@ import 'package:vedam_app/core/models/sacred_origin.dart';
 import 'package:vedam_app/core/models/temple.dart';
 import 'package:vedam_app/core/theme/app_colors.dart';
 import 'package:vedam_app/state/divyadishi_state.dart';
+import 'widgets/live_compass_sheet.dart';
 import 'widgets/temple_detail_modal.dart';
 
 /// Screen presenting the DivyaDishi Sacred Temple Directory.
@@ -137,6 +138,16 @@ class _TempleDirectoryScreenState extends State<TempleDirectoryScreen> {
               ],
             ),
             actions: [
+              IconButton(
+                icon: const Icon(Icons.explore_outlined, color: AppColors.saffronPrimary),
+                tooltip: 'Live Sacred Compass',
+                onPressed: () {
+                  LiveCompassSheet.show(
+                    context,
+                    state: _state,
+                  );
+                },
+              ),
               TextButton.icon(
                 onPressed: _showOriginDialog,
                 icon: const Icon(Icons.location_on, size: 16, color: AppColors.saffronPrimary),
