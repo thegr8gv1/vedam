@@ -10,6 +10,8 @@ import '../japa/japa_practice_screen.dart';
 import 'widgets/puja_guide_overview_modal.dart';
 import 'widgets/puja_history_modal.dart';
 import 'widgets/puja_preparation_modal.dart';
+import 'widgets/sankalpa_generator_modal.dart';
+import '../../../core/models/sankalpa_model.dart';
 
 /// Step-by-step guided puja worship experience.
 /// Presents one worship step at a time with readable Sanskrit, transliteration,
@@ -235,6 +237,16 @@ class _GuidedPujaScreenState extends State<GuidedPujaScreen> {
           ),
           centerTitle: true,
           actions: [
+            // Vedic Sankalpa Generator button
+            IconButton(
+              icon: const Icon(Icons.wb_sunny_outlined),
+              tooltip: 'Vedic Sankalpa Generator',
+              onPressed: () => SankalpaGeneratorModal.show(
+                context: context,
+                initialPurpose: SankalpaPurpose.shodashopacharaPuja,
+                initialDeity: widget.guide.title,
+              ),
+            ),
             // Preparation Checklist button
             IconButton(
               icon: const Icon(Icons.inventory_2_outlined),

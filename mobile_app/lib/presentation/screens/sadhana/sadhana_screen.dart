@@ -22,6 +22,8 @@ import '../../../core/models/guided_sadhana.dart';
 import '../../../data/fixtures/authentic_sadhana_plans_data.dart';
 import 'guided_sadhana_screen.dart';
 import 'widgets/sadhana_history_modal.dart';
+import 'widgets/sankalpa_generator_modal.dart';
+import '../../../core/models/sankalpa_model.dart';
 import '../japa/japa_practice_screen.dart';
 import 'widgets/customize_routine_modal.dart';
 import 'widgets/puja_guide_overview_modal.dart';
@@ -207,6 +209,15 @@ class _SadhanaScreenState extends State<SadhanaScreen> with WidgetsBindingObserv
         subtitle: 'नित्य पूजा एवं साधना',
         showLogo: false,
         actions: [
+          IconButton(
+            icon: const Icon(Icons.wb_sunny_outlined),
+            tooltip: 'Vedic Sankalpa Generator',
+            onPressed: () => SankalpaGeneratorModal.show(
+              context: context,
+              panchangam: widget.panchangamState?.data,
+              initialPurpose: SankalpaPurpose.dailySadhana,
+            ),
+          ),
           IconButton(
             icon: const Icon(Icons.temple_hindu_outlined),
             tooltip: 'Puja Practice History',
@@ -522,6 +533,68 @@ class _SadhanaScreenState extends State<SadhanaScreen> with WidgetsBindingObserv
                       'Perform each worship discipline with shraddha (steadfast reverence) and a calm presence. '
                       'True sadhana is measured by sincerity and devotion, free of pressure.',
                       style: AppTextStyles.verseMeaning(isDark).copyWith(fontSize: 12, height: 1.35),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+
+            // 2a. Daily Vedic Sankalpa Card
+            Card(
+              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(16),
+                side: BorderSide(
+                  color: isDark ? AppColors.goldDark.withAlpha(120) : AppColors.goldPrimary.withAlpha(120),
+                ),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: AppColors.saffronPrimary.withAlpha(30),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: const Icon(Icons.wb_sunny_outlined, color: AppColors.saffronPrimary, size: 24),
+                    ),
+                    const SizedBox(width: 14),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'DAILY VEDIC SANKALPA',
+                            style: AppTextStyles.metadataTag(isDark).copyWith(
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: 0.8,
+                              color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                            ),
+                          ),
+                          const SizedBox(height: 2),
+                          Text(
+                            'Formulate sacred intention aligned with live Panchangam coordinates',
+                            style: AppTextStyles.verseMeaning(isDark).copyWith(fontSize: 11.5, height: 1.3),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    ElevatedButton(
+                      onPressed: () => SankalpaGeneratorModal.show(
+                        context: context,
+                        panchangam: widget.panchangamState?.data,
+                        initialPurpose: SankalpaPurpose.dailySadhana,
+                      ),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: AppColors.saffronPrimary,
+                        foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+                        textStyle: const TextStyle(fontSize: 11, fontWeight: FontWeight.bold),
+                      ),
+                      child: const Text('GENERATE'),
                     ),
                   ],
                 ),

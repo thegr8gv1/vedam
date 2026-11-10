@@ -13,6 +13,8 @@ import '../../../state/audio_state.dart';
 import '../../../state/sadhana_state.dart';
 import '../../../state/vrat_state.dart';
 import '../festivals/festival_detail_screen.dart';
+import '../../../core/models/sankalpa_model.dart';
+import '../sadhana/widgets/sankalpa_generator_modal.dart';
 
 class PanchangamScreen extends StatefulWidget {
   final PanchangamState state;
@@ -164,6 +166,15 @@ class _PanchangamScreenState extends State<PanchangamScreen> {
         ),
         centerTitle: true,
         actions: [
+          IconButton(
+            icon: const Icon(Icons.wb_sunny_outlined),
+            tooltip: 'Generate Vedic Sankalpa',
+            onPressed: () => SankalpaGeneratorModal.show(
+              context: context,
+              panchangam: data,
+              initialPurpose: SankalpaPurpose.dailySadhana,
+            ),
+          ),
           IconButton(
             icon: const Icon(Icons.refresh),
             tooltip: 'Refresh Astronomical Ephemeris',
@@ -379,6 +390,68 @@ class _PanchangamScreenState extends State<PanchangamScreen> {
       children: [
         // 1. Observances Banner (if present)
         if (data.observances.isNotEmpty) _buildObservancesBanner(isDark, data.observances),
+
+        // 1b. Daily Vedic Sankalpa Card
+        Card(
+          margin: const EdgeInsets.only(bottom: 14),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+            side: BorderSide(
+              color: isDark ? AppColors.goldDark.withAlpha(120) : AppColors.goldPrimary.withAlpha(120),
+            ),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(14),
+            child: Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: AppColors.saffronPrimary.withAlpha(30),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: const Icon(Icons.wb_sunny_outlined, color: AppColors.saffronPrimary, size: 24),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'TODAY\'S VEDIC SANKALPA',
+                        style: AppTextStyles.metadataTag(isDark).copyWith(
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 0.8,
+                          color: isDark ? AppColors.goldGlow : AppColors.goldDark,
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        'Bind current Panchangam coordinates to your sacred ritual intention',
+                        style: AppTextStyles.verseMeaning(isDark).copyWith(fontSize: 11.5, height: 1.3),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: 8),
+                ElevatedButton(
+                  onPressed: () => SankalpaGeneratorModal.show(
+                    context: context,
+                    panchangam: data,
+                    initialPurpose: SankalpaPurpose.dailySadhana,
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.saffronPrimary,
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+                    textStyle: const TextStyle(fontSize: 11, fontWeight: FontWeight.bold),
+                  ),
+                  child: const Text('GENERATE'),
+                ),
+              ],
+            ),
+          ),
+        ),
 
         // 2. Celestial Sun & Moon Card
         _buildSunMoonCard(isDark, data.sunMoon),
