@@ -91,9 +91,17 @@ class DivyaDishiState extends ChangeNotifier {
         reason: 'Select an origin to calculate geographic direction',
       );
     }
+    final isApprox = _selectedOrigin!.isApproximate ||
+        temple.verificationStatus != CoordinateVerificationStatus.verified ||
+        temple.pointType != CoordinatePointType.innerSanctum;
+
     return _calculator.calculateBearing(
       origin: _selectedOrigin!.coordinate,
       destination: temple.coordinate,
+      isApproximate: isApprox,
+      provisionalDisclaimer: isApprox
+          ? 'Calculated from ${_selectedOrigin!.isApproximate ? "approximate city origin" : "origin"} to ${_selectedOrigin!.isApproximate ? "provisional temple coordinate" : "temple location"}. Devotional orientation aid only.'
+          : null,
     );
   }
 

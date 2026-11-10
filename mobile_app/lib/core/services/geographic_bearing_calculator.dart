@@ -16,7 +16,15 @@ class GeographicBearingCalculator {
   BearingResult calculateBearing({
     required GeographicCoordinate origin,
     required GeographicCoordinate destination,
-  }) => calculateInitialBearing(origin: origin, destination: destination);
+    bool isApproximate = false,
+    String? provisionalDisclaimer,
+  }) =>
+      calculateInitialBearing(
+        origin: origin,
+        destination: destination,
+        isApproximate: isApproximate,
+        provisionalDisclaimer: provisionalDisclaimer,
+      );
 
   /// Calculates the initial great-circle forward azimuth (bearing) from [origin] to [destination].
   ///
@@ -28,6 +36,8 @@ class GeographicBearingCalculator {
   static BearingResult calculateInitialBearing({
     required GeographicCoordinate origin,
     required GeographicCoordinate destination,
+    bool isApproximate = false,
+    String? provisionalDisclaimer,
   }) {
     // 1. Check for identical or sub-meter coincident coordinates
     final dLatRaw = (origin.latitude - destination.latitude).abs();
@@ -85,6 +95,8 @@ class GeographicBearingCalculator {
     return BearingResult.calculated(
       degrees: normalizedBearing,
       distanceKm: distanceKm,
+      isApproximate: isApproximate,
+      provisionalDisclaimer: provisionalDisclaimer,
     );
   }
 }
