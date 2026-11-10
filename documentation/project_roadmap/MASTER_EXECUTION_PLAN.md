@@ -32,7 +32,8 @@ The Vedam platform unites authentic Vedic scripture preservation, multilingual s
 - **Phase 22C (Completed):** DivyaDishi: Opt-In Live Compass, Heading Quality & Sensor Lifecycle (Foreground-only, opt-in sensor activation, native Android rotation vector with accelerometer+magnetometer fallback, Magnetic vs True North separation, serene 8-cardinal dial).
 - **Phase 22D (Completed):** DivyaDishi: Offline Magnetic Declination, True-Heading Correction & Approximate Sacred Alignment (Pure Dart NOAA WMM-2025/2020 spherical harmonic engine, True Heading normalization, shortest signed turn angle guidance, provisional coordinate safeguard with explicit user opt-in and dual uncertainty disclosures).
 - **Phase 23 (Completed):** Pre-Beta Hardening, Release Readiness & Beta Build Preparation (Verified 547 backend and 589 mobile tests with 100% pass rate; Android release candidate 69.2 MB; accessibility & dynamic scaling hardening; 10 core launch texts mapped; zero DB writes).
-- **Phase 24 (Upcoming):** Core Devotional Text Scholar Review & Certification (Human Acceptance Track A — Real Sanskrit scholars certify core launch texts in database).
+- **Phase 24 Readiness (Completed):** Scholar Certification Protocol, Review Packet Design & Release-Claim Verification (Forensic audit of 10 core launch texts [177 verses, 1,770 translations, 0 approved]; designed scholar eligibility, independent review, and quorum protocol; audited Android manifest and Web worker caching; designed authentic sample review packet; prepared Phase 24 governance authorization checklist; zero DB writes).
+- **Phase 24 (Upcoming Execution):** Core Devotional Text Scholar Review & Certification (Human Acceptance Track A — Pending user governance authorization).
 - **Phase 25:** Devotee Usability & Accessibility Testing (Human Acceptance Track B — Everyday devotees usability evaluation).
 - **Phase 26:** Physical Multi-Device Technical Beta & Field Testing (Human Acceptance Track C — Real Android hardware and browser matrix).
 - **Phase 27:** Beta Defect Triage, Remediation & Regression Closure (Human Acceptance Track D — 0 P0/P1 defects; concludes human testing).
@@ -326,15 +327,22 @@ Following the comprehensive audit in `VEDAM_MASTER_COMPLETION_AND_HUMAN_ACCEPTAN
    - Compiled reproducible beta artifacts: Android release APK (69.2 MB, SHA-256: `89A51525...`) and Web release.
    - Reconciled privacy boundaries: devotee app is 100% on-device private; scholarly backend is restricted to canon governance.
    - Mapped 10 core launch texts in `database/vedam.db` as the mandatory scope for Phase 24.
-2. **Phase 24 (Upcoming): Core Devotional Text Scholar Review & Certification (Track A)**
-   - Onboards verified human scholars (`is_human_verified = True`) to review and approve 10 core launch texts in `database/vedam.db`.
-3. **Phase 25 (Mandatory): Devotee Usability & Accessibility Testing (Track B)**
+2. **Phase 24 Readiness (Completed): Scholar Certification Protocol & Release-Claim Verification**
+   - Forensic audit of 10 core launch texts (177 verses, 1,770 translations across 10 languages, all in `DRAFT`).
+   - Formulated multi-disciplinary scholar eligibility, independent review, and quorum resolution protocols.
+   - Designed complete, authentic sample review packet for `VEDA-TXT-00005` (Mahamrityunjaya Mantra).
+   - Audited release APK (0 network permissions verified) and Web caching limitations.
+   - Compiled formal Phase 24 authorization checklist for user governance approval.
+3. **Phase 24 Execution (Upcoming): Core Devotional Text Scholar Review & Certification (Track A)**
+   - Requires explicit user authorization of the Phase 24 Checklist before database write unlock.
+   - Onboards verified human scholars (`is_human_verified = True`) to review and certify 10 core launch texts in `database/vedam.db`.
+4. **Phase 25 (Mandatory): Devotee Usability & Accessibility Testing (Track B)**
    - 25–30 real devotees across senior, householder, and youth cohorts; $\ge 90\%$ completion, SUS $\ge 85$.
-4. **Phase 26 (Mandatory): Physical Multi-Device Technical Beta & Field Testing (Track C)**
+5. **Phase 26 (Mandatory): Physical Multi-Device Technical Beta & Field Testing (Track C)**
    - 10+ real Android devices (flagship and budget) and browsers; sensor calibration, audio interruptions, offline durability.
-5. **Phase 27 (Mandatory): Beta Defect Triage, Remediation & Regression Closure (Track D)**
+6. **Phase 27 (Mandatory): Beta Defect Triage, Remediation & Regression Closure (Track D)**
    - Zero P0/P1 defects; 100% automated regression pass rate. **Concludes Human Testing.**
-6. **Phase 28 (Mandatory): Production Release, Infrastructure & Launch Approval**
+7. **Phase 28 (Mandatory): Production Release, Infrastructure & Launch Approval**
    - Hardened VPS deployment, cold-storage DB recovery runbook, Play Store publishing. **Concludes Version 1.0 Development.**
 
 ### Post-Launch Enhancements (Version 1.1+):

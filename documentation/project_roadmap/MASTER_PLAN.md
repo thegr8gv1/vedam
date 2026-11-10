@@ -472,7 +472,8 @@ osniff, SAMEORIGIN, CSP, XSS filter, strict referrer) across all responses.
 
 ### Bounded Path to Version 1.0 Public Release:
 - **Phase 23 (Completed):** Pre-Beta Hardening, Release Readiness & Beta Build Preparation.
-- **Phase 24 (Upcoming):** Core Devotional Text Scholar Review & Certification (Human Acceptance Track A).
+- **Phase 24 Readiness (Completed):** Scholar Certification Protocol, Review Packet Design & Release-Claim Verification.
+- **Phase 24 Execution (Upcoming):** Core Devotional Text Scholar Review & Certification (Human Acceptance Track A — Pending user governance authorization).
 - **Phase 25 (Mandatory):** Devotee Usability & Accessibility Testing (Human Acceptance Track B).
 - **Phase 26 (Mandatory):** Physical Multi-Device Technical Beta & Field Testing (Human Acceptance Track C).
 - **Phase 27 (Mandatory):** Beta Defect Triage, Remediation & Regression Closure (Human Acceptance Track D — Concludes Human Testing).
