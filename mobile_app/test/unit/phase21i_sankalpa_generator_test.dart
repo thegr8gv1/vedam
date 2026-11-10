@@ -124,9 +124,9 @@ void main() {
       expect(output.nakshatra, equals('पुष्य'));
       expect(output.paksha, equals('शुक्ल'));
       expect(output.masa, equals('Kartika Masa'));
-      expect(output.sanskritFull, contains('गोदावर्याः'));
+      expect(output.sanskritFull, contains('गोदावर्याः दक्षिणे तीरे'));
       expect(output.sanskritFull, contains('Sita नामधेयायाः'));
-      expect(output.sanskritFull, contains('व्रत/उपवास नियमधारणं करिष्ये'));
+      expect(output.sanskritFull, contains('व्रतोपवास-नियमधारणं करिष्ये'));
     });
 
     test('Generates distinct prayer intentions across all ritual purposes', () {
@@ -164,7 +164,7 @@ void main() {
         purpose: SankalpaPurpose.vratObservance,
         date: date,
       ));
-      expect(vrat.sanskritFull, contains('व्रत/उपवास नियमधारणं करिष्ये'));
+      expect(vrat.sanskritFull, contains('व्रतोपवास-नियमधारणं करिष्ये'));
       expect(vrat.shortSanskrit, contains('व्रतनियमधारणं करिष्ये'));
 
       // 5. Sandhyavandanam
