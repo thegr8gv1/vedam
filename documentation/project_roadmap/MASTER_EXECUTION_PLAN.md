@@ -21,7 +21,8 @@ The Vedam platform unites authentic Vedic scripture preservation, multilingual s
 - **Phase 21E:** Scripture Learning, Verse-by-Verse Study & Content Trust (Devanagari, IAST transliteration, word-by-word padartha, authentic audio pronunciation).
 - **Phase 21F:** Devotional Audio Library & Practice Integration (Offline bundled library, audio controls, background playback).
 - **Phase 21G:** Audio Integrity, Cross-Feature Validation & Product Roadmap Readiness (Audio vault reconciliation, tokenized anti-double-counting completion integrity, DivyaDishi roadmap formulation).
-- **Phase 21H (Current):** Phase 21G Regression Evidence Audit & DivyaDishi Temple Directory Planning (Test suite regression audit, ear-approved vs bundled track provenance audit, provisional 20-temple seed dataset integration).
+- **Phase 21H:** Phase 21G Regression Evidence Audit & DivyaDishi Temple Directory Planning (Test suite regression audit, ear-approved vs bundled track provenance audit, provisional 20-temple seed dataset integration).
+- **Phase 21I (Current):** Vedic Sankalpa Generator, Recitation Guide & DivyaDishi Roadmap Refinement (Daily & situational Sankalpa builder integrating live Panchangam, devotee lineage, Devanagari/IAST recitation, and DivyaDishi origin/reference accuracy guidelines).
 
 ---
 
@@ -152,18 +153,26 @@ id,temple_name,city,state_country,latitude,longitude,coordinate_status,source_no
 ---
 
 ### Coordinate Verification Plan (Future Implementation Gate)
-Before any provisional coordinate is promoted to verified status (`VERIFIED_SANCTUM_COORDINATES`), a formal six-step verification protocol must be executed:
+Before any provisional coordinate is promoted to verified status (`VERIFIED_SANCTUM_COORDINATES` or `VERIFIED_ENTRANCE_COORDINATES`), a formal seven-step verification protocol must be executed:
 
-1. **Physical Destination Identity:** Confirm the exact physical destination refers to the *Garbhagriha* (sanctum sanctorum) / Moola Virat, not the outer perimeter or entrance gopuram.
+1. **Reference Point Specification & Identity (Entrance vs Center vs Sanctum):**
+   - Explicitly document whether the coordinate represents the primary accessible entrance/gateway (e.g., Rajagopuram, Mahadwara), the temple compound center, or the inner sanctum (*Garbhagriha* / Moola Virat).
+   - Prefer an independently verified accessible designated entrance or public gateway when inner sanctum coordinates are unavailable or uncertain.
+   - Tag each entry with its specific reference point classification: `ENTRANCE_GATEWAY`, `COMPOUND_CENTER`, or `INNER_SANCTUM`.
+   - Preserve metadata for every coordinate: reference point classification, attribution source URL/authority, verification date, and confidence level (`PROVISIONAL`, `COMMUNITY_VERIFIED`, `AUTHORITY_VERIFIED`).
 2. **Authority & Benchmark Cross-Referencing:** Cross-reference coordinates against official temple devasthanams, state tourism/archaeological departments, and Survey of India / national geospatial benchmark data.
 3. **Settlement vs Sanctum Disambiguation:**
    - **Vaishno Devi Bhawan vs Katra Town:** The sacred Bhawan sits high in the Trikuta Mountains, approximately 13 km by foot from Katra base town ($32.99^\circ\text{ N}, 74.93^\circ\text{ E}$). The sanctum coordinate must point to the Holy Cave Bhawan ($33.0299^\circ\text{ N}, 74.9482^\circ\text{ E}$), not Katra town center.
    - **Badrinath & Kedarnath:** High-altitude Himalayan shrines must point to the actual temple structure, strictly distinguishing it from helipads, trek starting points, or surrounding settlement clusters.
    - **Muktinath Temple vs Mustang District:** Mustang is an extensive Himalayan region (3,570 km²). The coordinates must pin the sacred 108 water sprouts (*Muktidhara*) and temple compound at Ranipauwa/Chumig Gyatsa, not the general district center (Jomsom).
-   - **Large Temple Complexes:** Massive enclosures like Srirangam (156 acres, 7 concentric prakaras) and Rameswaram produce divergent readings depending on whether an entrance Rajagopuram or the inner sanctum is pinned. Pinned coordinates must strictly identify the Garbhagriha.
+   - **Large Temple Complexes:** Massive enclosures like Srirangam (156 acres, 7 concentric prakaras) and Rameswaram produce divergent readings depending on whether an entrance Rajagopuram or the inner sanctum is pinned. Pinned coordinates must strictly identify the Garbhagriha or clearly label the reference point as the Rajagopuram entrance.
 4. **Audit Trail Documentation:** Record the verification source URL, retrieval date, methodology, and verification sign-off for each entry.
 5. **Precision & Ambiguity Logging:** Record coordinate precision down to 4 decimal places ($\sim 11\text{ m}$ resolution) and log any ambiguity.
-6. **Scholarly / Human Review Gate:** Require independent human reviewer sign-off before status promotion.
+6. **Origin Accuracy Limitations (GPS vs City/Region Selector):**
+   - Explicitly document that device GPS and manually selected city/region represent different accuracy tiers.
+   - When a manual city or regional centroid is used, it acts as an *approximate origin*; the bearing UI must clearly disclose this limitation (e.g., "Approximate direction based on city location").
+   - Location permissions remain 100% optional; manual city selection is always available as a zero-permission alternative.
+7. **Scholarly / Human Review Gate:** Require independent human reviewer sign-off before status promotion.
 
 ---
 
@@ -181,8 +190,10 @@ The initial 20 temples serve as a seed research set. The production DivyaDishi d
 ## 4. DivyaDishi Implementation Boundaries & Devotional Invariants
 
 - **Geographic Orientation vs Spiritual Merit:** Directional alignment is purely a physical, geographic measurement to assist devotional focus. It is never presented as a metric of spiritual merit, purity, or religious correctness.
-- **Optional & Privacy-Preserving:** Location permissions must remain 100% optional. The app must function fully without location permissions by providing an offline city/region selector. GPS coordinates are processed exclusively on-device in volatile memory and never logged, transmitted, or retained.
-- **Zero Sensor / GPS Code in Phase 21H:** Phase 21H is strictly a planning, documentation, and regression-audit phase. No sensor, compass, GPS, or UI code is introduced.
+- **Optional & Privacy-Preserving Origin Hierarchy:** Location permissions must remain 100% optional. The app must function fully without location permissions by providing an offline city/region selector. GPS coordinates are processed exclusively on-device in volatile memory and never logged, transmitted, or retained.
+- **Origin Accuracy Transparency:** The system explicitly distinguishes high-precision GPS origins from manual city/region selections. Manual city selection is treated as an approximate origin, and the UI will clearly indicate this limitation to the devotee.
+- **Reference Point Rigor:** Pinned coordinates must specify their reference point type (`ENTRANCE_GATEWAY`, `COMPOUND_CENTER`, or `INNER_SANCTUM`). In public or disputed shrines, an accessible designated entrance is preferred over speculative sanctum pinning.
+- **Zero Sensor / GPS Code in Phase 21I:** Phase 21I focuses on the core user-facing Vedic Sankalpa Generator and recitation guide. No sensor, compass, GPS, bearing calculation, or navigation UI code is introduced.
 - **Zero Production Database Changes:** No alterations, migrations, or tables added to `database/vedam.db`.
 - **Zero Translation Status Bypass:** All 3,070 translations strictly preserved in `DRAFT` status; 0 approved.
 - **Section 8 Governance:** Human-review requirements remain strictly intact.

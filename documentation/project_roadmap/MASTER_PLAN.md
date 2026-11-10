@@ -453,7 +453,8 @@ osniff, SAMEORIGIN, CSP, XSS filter, strict referrer) across all responses.
 - **Phase 21A–21F:** Daily Japa Practice (21A), Guided Sadhana (21B), Structured Puja Guides (21C), Vrat & Observance Tracking (21D), Scripture Learning (21E), and Devotional Audio Library (21F).
 - **Phase 21G:** Audio Integrity, Cross-Feature Validation & Product Roadmap Readiness. Reconciled 456 master WAV recordings with 455 individual catalog mantras and 1 compilation track; hardened Japa completion integrity with playback instance tokens.
 - **Phase 21H:** Regression Evidence Audit & DivyaDishi Temple Directory Planning. Audited Phase 20A/21A/21G test integrity, resolved ear-approved vs bundled track provenance, and integrated provisional 20-temple research seed dataset.
-- **Future Feature Roadmap — DivyaDishi (Divine Direction):** Complete feature specification and initial 20-temple provisional directory added to documentation/project_roadmap/MASTER_EXECUTION_PLAN.md (Status: PLANNED — NOT YET IMPLEMENTED). Details smart temple direction alignment, 20 provisional temples, verification workflow, temple-specific devotional audio, and Tirumala Tirupati pilot.
+- **Phase 21I:** Vedic Sankalpa Generator, Recitation Guide & DivyaDishi Roadmap Refinement. Implemented authentic Vedic Sankalpa generator integrating live Panchangam, devotee lineage, multi-purpose prayojana recitation (Japa, Puja, Vrat, Sadhana), Devanagari/IAST script, and DivyaDishi origin accuracy/reference point guidelines.
+- **Future Feature Roadmap — DivyaDishi (Divine Direction):** Complete feature specification and initial 20-temple provisional directory in documentation/project_roadmap/MASTER_EXECUTION_PLAN.md (Status: PLANNED — NOT YET IMPLEMENTED; origin accuracy hierarchy and reference point protocols established; zero sensor/GPS code in Phase 21I).
 
 ### Test Suite Status:
 - Backend scholarly test suite: **405 tests passing with 100% pass rate** across 36 test modules.
