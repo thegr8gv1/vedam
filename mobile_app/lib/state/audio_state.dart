@@ -59,11 +59,24 @@ class AudioState extends ChangeNotifier {
 
   final Set<String> _favoriteMantraIds = {};
 
-  // Idempotent double-counting prevention guard
+  // Idempotent double-counting prevention guard and playback instance tokens
   int _lastCompletionTimestampMs = 0;
   int _lastManualTapTimestampMs = 0;
   bool _isTransitioningRepetition = false;
   bool _isDisposed = false;
+
+  // Strict Japa completion integrity tokens
+  int _currentPlaybackToken = 0;
+  int _lastHandledPlaybackToken = -1;
+  String? _playbackTrackId;
+  String? _playbackSessionId;
+  bool _isAudioPlayingOrActive = false;
+
+  int get currentPlaybackToken => _currentPlaybackToken;
+  int get lastHandledPlaybackToken => _lastHandledPlaybackToken;
+  String? get playbackTrackId => _playbackTrackId;
+  String? get playbackSessionId => _playbackSessionId;
+  bool get isAudioPlayingOrActive => _isAudioPlayingOrActive;
 
   @override
   void notifyListeners() {
@@ -455,6 +468,9 @@ class AudioState extends ChangeNotifier {
   /// Deliberately abandon current active session.
   /// If legitimate progress was made (>0), archives as abandoned so effort is preserved.
   Future<void> abandonSession() async {
+    _currentPlaybackToken++;
+    _isAudioPlayingOrActive = false;
+    _playbackSessionId = null;
     await stop();
     await _japaSessionService.abandonActiveSession();
     _activeSession = null;
@@ -608,6 +624,10 @@ class AudioState extends ChangeNotifier {
       {bool resetSessionCount = true}) async {
     _errorMessage = null;
     _activeMantra = mantra;
+    _currentPlaybackToken++;
+    _playbackTrackId = mantra.id;
+    _playbackSessionId = _activeSession?.id;
+    _isAudioPlayingOrActive = true;
 
     if (resetSessionCount) {
       // If previous session had counts, archive before resetting
@@ -644,6 +664,7 @@ class AudioState extends ChangeNotifier {
 
   Future<void> pause() async {
     _errorMessage = null;
+    _isAudioPlayingOrActive = false;
     await _audioService.pause();
     if (_activeSession != null &&
         _activeSession!.status == JapaSessionStatus.active) {
@@ -658,6 +679,7 @@ class AudioState extends ChangeNotifier {
 
   Future<void> resume() async {
     _errorMessage = null;
+    _isAudioPlayingOrActive = true;
     if (_activeMantra != null) {
       await _audioService.resume();
     }
@@ -673,6 +695,8 @@ class AudioState extends ChangeNotifier {
   }
 
   Future<void> stop() async {
+    _currentPlaybackToken++;
+    _isAudioPlayingOrActive = false;
     _isTransitioningRepetition = false;
     _isLoading = false;
     await _audioService.stop();
@@ -687,6 +711,9 @@ class AudioState extends ChangeNotifier {
   }
 
   void resetSession() {
+    _currentPlaybackToken++;
+    _isAudioPlayingOrActive = false;
+    _playbackSessionId = null;
     if (_activeSession != null && _activeSession!.completedRepetitions > 0) {
       final abandoned = _activeSession!.copyWith(
         status: JapaSessionStatus.abandoned,
@@ -718,11 +745,39 @@ class AudioState extends ChangeNotifier {
     notifyListeners();
   }
 
-  // Repetition and Japa logic with anti-double-counting barrier
+  // Hardened Repetition and Japa logic with multi-condition completion integrity
   Future<void> _handlePlaybackCompleted() async {
+    // Condition 1: Must have an active mantra matching playback track identity
     if (_activeMantra == null) return;
+    if (_playbackTrackId != null && _activeMantra!.id != _playbackTrackId) {
+      return; // Stale completion event from a different track
+    }
+
+    // Condition 2: Active playback flag check (must be actively playing, not paused or stopped)
+    if (!_isAudioPlayingOrActive) {
+      return; // Playback was paused, stopped, or abandoned; completion is invalid
+    }
+
+    // Condition 3: In-flight repetition lock
     if (_isTransitioningRepetition) return;
 
+    // Condition 4: Session identity and active status check
+    if (_activeSession != null) {
+      if (_playbackSessionId != null && _activeSession!.id != _playbackSessionId) {
+        return; // Stale completion event from a different session
+      }
+      if (_activeSession!.status == JapaSessionStatus.abandoned ||
+          _activeSession!.status == JapaSessionStatus.completed) {
+        return; // Abandoned or completed session cannot accept new completions
+      }
+    }
+
+    // Condition 5: Single completion per playback run (cannot process same playback token twice)
+    if (_currentPlaybackToken == _lastHandledPlaybackToken) {
+      return; // Duplicate completion event from identical playback run
+    }
+
+    // Condition 6: Anti-rapid fire debounce guard
     final now = DateTime.now().millisecondsSinceEpoch;
     if (now - _lastCompletionTimestampMs < 400) {
       return;
@@ -730,6 +785,7 @@ class AudioState extends ChangeNotifier {
 
     _isTransitioningRepetition = true;
     _lastCompletionTimestampMs = now;
+    _lastHandledPlaybackToken = _currentPlaybackToken;
     _completedRepetitions++;
     _saveSessionProgress();
     _updateActiveSessionOnIncrement(JapaCountingMode.audio);
@@ -743,6 +799,7 @@ class AudioState extends ChangeNotifier {
 
       if (_autoPauseAtTarget) {
         // Stop audio playback at target and signal session completion
+        _isAudioPlayingOrActive = false;
         await _audioService.stop();
         notifyListeners();
         return;
@@ -753,6 +810,7 @@ class AudioState extends ChangeNotifier {
     switch (_repeatMode) {
       case DevotionalRepeatMode.repeatOff:
         // Do not loop; stop playback after single completion
+        _isAudioPlayingOrActive = false;
         await _audioService.stop();
         _isTransitioningRepetition = false;
         notifyListeners();
@@ -764,6 +822,7 @@ class AudioState extends ChangeNotifier {
           await playNextMantra();
           return;
         } else {
+          _isAudioPlayingOrActive = false;
           await _audioService.stop();
           _isTransitioningRepetition = false;
           notifyListeners();
@@ -771,7 +830,11 @@ class AudioState extends ChangeNotifier {
         }
 
       case DevotionalRepeatMode.repeatOne:
-        // Continue repeating current mantra
+        // Continue repeating current mantra with fresh playback token for the next repetition
+        _currentPlaybackToken++;
+        _playbackTrackId = _activeMantra!.id;
+        _playbackSessionId = _activeSession?.id;
+        _isAudioPlayingOrActive = true;
         try {
           await _audioService.playMantra(_activeMantra!);
         } catch (e) {
