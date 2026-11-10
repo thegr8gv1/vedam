@@ -28,6 +28,8 @@ import '../japa/japa_practice_screen.dart';
 import 'widgets/customize_routine_modal.dart';
 import 'widgets/puja_guide_overview_modal.dart';
 import 'widgets/puja_history_modal.dart';
+import '../../../state/orchestrator_state.dart';
+import 'orchestrator/nitya_sadhana_dashboard.dart';
 
 class SadhanaScreen extends StatefulWidget {
   final AppState appState;
@@ -36,6 +38,7 @@ class SadhanaScreen extends StatefulWidget {
   final MantraRepository? mantraRepository;
   final AudioState? audioState;
   final PanchangamState? panchangamState;
+  final OrchestratorState? orchestratorState;
   final VoidCallback? onOpenMantras;
   final VoidCallback? onOpenPanchangam;
   final VoidCallback? onOpenLibrary;
@@ -48,6 +51,7 @@ class SadhanaScreen extends StatefulWidget {
     this.mantraRepository,
     this.audioState,
     this.panchangamState,
+    this.orchestratorState,
     this.onOpenMantras,
     this.onOpenPanchangam,
     this.onOpenLibrary,
@@ -60,6 +64,7 @@ class SadhanaScreen extends StatefulWidget {
 class _SadhanaScreenState extends State<SadhanaScreen> with WidgetsBindingObserver {
   late final SadhanaState _state;
   late final VratState _vratState;
+  late final OrchestratorState _orchestratorState;
   int _manualJapaCount = 0;
   final int _targetJapa = 108;
 
@@ -83,7 +88,9 @@ class _SadhanaScreenState extends State<SadhanaScreen> with WidgetsBindingObserv
     WidgetsBinding.instance.addObserver(this);
     _state = widget.sadhanaState ?? SadhanaState();
     _vratState = widget.vratState ?? VratState();
+    _orchestratorState = widget.orchestratorState ?? OrchestratorState();
     _state.addListener(_onStateChange);
+    _orchestratorState.addListener(_onStateChange);
     widget.audioState?.addListener(_onStateChange);
     _state.checkDateRollOver();
   }
@@ -92,6 +99,7 @@ class _SadhanaScreenState extends State<SadhanaScreen> with WidgetsBindingObserv
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
     _state.removeListener(_onStateChange);
+    _orchestratorState.removeListener(_onStateChange);
     widget.audioState?.removeListener(_onStateChange);
     super.dispose();
   }
@@ -291,6 +299,18 @@ class _SadhanaScreenState extends State<SadhanaScreen> with WidgetsBindingObserv
                   ],
                 ),
               ),
+
+            // Nitya Sadhana Practice Flow Hub
+            NityaSadhanaDashboard(
+              orchestratorState: _orchestratorState,
+              appState: widget.appState,
+              sadhanaState: _state,
+              audioState: widget.audioState,
+              panchangamState: widget.panchangamState,
+              vratState: _vratState,
+              mantraRepository: widget.mantraRepository,
+            ),
+            const SizedBox(height: 12),
 
             // Active Guided Puja Banner (if in progress or paused)
             if (_state.hasActiveGuideSession && _state.activeGuide != null)

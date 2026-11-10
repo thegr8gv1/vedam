@@ -14,6 +14,7 @@ import '../screens/mantras/mantras_screen.dart';
 import '../screens/sadhana/sadhana_screen.dart';
 import '../screens/settings/settings_screen.dart';
 import '../../data/repositories/panchangam_repository.dart';
+import '../../state/orchestrator_state.dart';
 import '../../state/panchangam_state.dart';
 import '../../state/personalization_state.dart';
 import '../../state/vrat_state.dart';
@@ -27,6 +28,7 @@ class MainScreen extends StatefulWidget {
   final PanchangamState? panchangamState;
   final SadhanaState? sadhanaState;
   final VratState? vratState;
+  final OrchestratorState? orchestratorState;
   final ScriptureReaderState? readerState;
   final PersonalizationState? personalizationState;
   final AppState appState;
@@ -41,6 +43,7 @@ class MainScreen extends StatefulWidget {
     this.panchangamState,
     this.sadhanaState,
     this.vratState,
+    this.orchestratorState,
     this.readerState,
     this.personalizationState,
     required this.appState,
@@ -59,6 +62,7 @@ class _MainScreenState extends State<MainScreen> {
   late final PanchangamState _panchangamState;
   late final SadhanaState _sadhanaState;
   late final VratState _vratState;
+  late final OrchestratorState _orchestratorState;
   late final ScriptureReaderState _readerState;
   late final PersonalizationState _personalizationState;
 
@@ -74,6 +78,7 @@ class _MainScreenState extends State<MainScreen> {
         PanchangamState(repository: _panchangamRepository);
     _sadhanaState = widget.sadhanaState ?? SadhanaState();
     _vratState = widget.vratState ?? VratState();
+    _orchestratorState = widget.orchestratorState ?? OrchestratorState();
     _readerState = widget.readerState ?? ScriptureReaderState();
     _personalizationState = widget.personalizationState ??
         PersonalizationState(
@@ -147,6 +152,7 @@ class _MainScreenState extends State<MainScreen> {
         audioState: _audioState,
         panchangamState: _panchangamState,
         vratState: _vratState,
+        orchestratorState: _orchestratorState,
         onOpenMantras: _openMantrasScreen,
         onOpenPanchangam: _openPanchangamScreen,
         onOpenLibrary: () => _onTabSelected(1),
