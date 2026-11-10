@@ -194,6 +194,36 @@ class OrchestratorState extends ChangeNotifier {
     _safeNotify();
   }
 
+  /// Concludes an active session early (before reaching the last step),
+  /// recording only genuinely completed steps into the devotional journal.
+  /// If zero steps were completed, the session is cleared without journal entry.
+  Future<void> concludeEarly({PracticeSequence? sequence}) async {
+    if (_activeSession == null) return;
+
+    final seq = sequence ?? activeSequence;
+    final completedCount = _activeSession!.completedStepsCount;
+
+    if (seq != null && completedCount > 0) {
+      final concludedSession = _activeSession!.copyWith(
+        isCompleted: true,
+        isPaused: false,
+        completedAt: DateTime.now(),
+        lastUpdatedAt: DateTime.now(),
+      );
+
+      await _service.recordCompletedSession(
+        session: concludedSession,
+        sequence: seq,
+      );
+    }
+
+    await _service.clearActiveSession();
+    _activeSession = null;
+    _journalEntries = await _service.loadJournalEntries();
+    _streakReport = await _service.getStreakReport();
+    _safeNotify();
+  }
+
   /// Marks current step as completed and either advances to next enabled step
   /// or concludes the session and logs it into the local private journal.
   Future<void> completeStep(int stepIndex, {PracticeSequence? sequence}) async {

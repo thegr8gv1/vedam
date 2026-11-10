@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import '../../../../core/models/japa_practice_session.dart';
 import '../../../../core/models/orchestrator_session.dart';
 import '../../../../core/models/practice_sequence.dart';
 import '../../../../core/theme/app_colors.dart';
@@ -87,6 +88,8 @@ class _SequenceExecutionModalState extends State<SequenceExecutionModal> {
   Timer? _contemplationTimer;
   int _contemplationSecondsRemaining = 0;
   bool _isTimerRunning = false;
+  bool _isCompletingStep = false;
+  final Map<String, bool> _stepVerifiedByFeature = {};
 
   @override
   void initState() {
@@ -151,29 +154,39 @@ class _SequenceExecutionModalState extends State<SequenceExecutionModal> {
   }
 
   Future<void> _handleCompleteStep(int stepIndex) async {
+    if (_isCompletingStep) return;
+    _isCompletingStep = true;
     _contemplationTimer?.cancel();
     _isTimerRunning = false;
 
-    final session = widget.orchestratorState.activeSession;
-    if (session == null) return;
+    try {
+      final session = widget.orchestratorState.activeSession;
+      if (session == null) return;
 
-    // Check if this is the last enabled step
-    int nextEnabled = -1;
-    for (int i = stepIndex + 1; i < widget.sequence.steps.length; i++) {
-      if (widget.sequence.steps[i].isEnabled) {
-        nextEnabled = i;
-        break;
+      // Check if this is the last enabled step
+      int nextEnabled = -1;
+      for (int i = stepIndex + 1; i < widget.sequence.steps.length; i++) {
+        if (widget.sequence.steps[i].isEnabled) {
+          nextEnabled = i;
+          break;
+        }
       }
-    }
 
-    if (nextEnabled == -1) {
-      // Session completing! Show warm completion screen
-      setState(() {
-        _isCompletedView = true;
-      });
-      await widget.orchestratorState.completeStep(stepIndex, sequence: widget.sequence);
-    } else {
-      await widget.orchestratorState.completeStep(stepIndex, sequence: widget.sequence);
+      if (nextEnabled == -1) {
+        // Session completing! Show warm completion screen
+        setState(() {
+          _isCompletedView = true;
+        });
+        await widget.orchestratorState.completeStep(stepIndex, sequence: widget.sequence);
+      } else {
+        await widget.orchestratorState.completeStep(stepIndex, sequence: widget.sequence);
+      }
+    } finally {
+      if (mounted) {
+        setState(() {
+          _isCompletingStep = false;
+        });
+      }
     }
   }
 
@@ -216,41 +229,60 @@ class _SequenceExecutionModalState extends State<SequenceExecutionModal> {
   }
 
   Future<void> _confirmAbandon() async {
-    final confirmed = await showDialog<bool>(
+    final session = widget.orchestratorState.activeSession;
+    final completedCount = session?.completedStepsCount ?? 0;
+
+    final action = await showDialog<String>(
       context: context,
       builder: (ctx) => AlertDialog(
         title: const Text('Conclude or Exit Practice?'),
-        content: const Text(
-          'Would you like to pause and save your progress to resume later, or conclude this practice?',
+        content: Text(
+          completedCount > 0
+              ? 'You have completed $completedCount practice step${completedCount > 1 ? "s" : ""}. Would you like to pause and resume later, conclude practice early and record completed steps, or discard this session?'
+              : 'Would you like to pause and save your progress to resume later, or discard this session?',
         ),
         actions: [
           TextButton(
-            onPressed: () => Navigator.pop(ctx, false),
+            onPressed: () => Navigator.pop(ctx, 'pause'),
             child: const Text('Pause & Save'),
           ),
+          if (completedCount > 0)
+            ElevatedButton(
+              onPressed: () => Navigator.pop(ctx, 'conclude'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.goldPrimary,
+                foregroundColor: Colors.black,
+              ),
+              child: const Text('Conclude Practice Early'),
+            ),
           ElevatedButton(
-            onPressed: () => Navigator.pop(ctx, true),
+            onPressed: () => Navigator.pop(ctx, 'abandon'),
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.red.shade700,
               foregroundColor: Colors.white,
             ),
-            child: const Text('Conclude Without Saving'),
+            child: const Text('Discard Session'),
           ),
         ],
       ),
     );
 
-    if (confirmed == null) return;
+    if (action == null) return;
 
-    if (confirmed) {
+    if (action == 'pause') {
+      await _pauseAndClose();
+    } else if (action == 'conclude') {
+      setState(() {
+        _isCompletedView = true;
+      });
+      await widget.orchestratorState.concludeEarly(sequence: widget.sequence);
+    } else if (action == 'abandon') {
       await widget.orchestratorState.abandonSession();
       if (mounted) Navigator.pop(context);
-    } else {
-      await _pauseAndClose();
     }
   }
 
-  void _launchPracticeActivity(PracticeStep step) {
+  Future<void> _launchPracticeActivity(PracticeStep step) async {
     switch (step.stepType) {
       case PracticeStepType.sankalpa:
         SankalpaGeneratorModal.show(
@@ -266,7 +298,7 @@ class _SequenceExecutionModalState extends State<SequenceExecutionModal> {
           orElse: () => AuthenticPujaGuidesData.allGuides.first,
         );
         final sadhanaState = widget.sadhanaState ?? SadhanaState();
-        Navigator.of(context).push(
+        await Navigator.of(context).push(
           MaterialPageRoute(
             builder: (_) => GuidedPujaScreen(
               guide: guide,
@@ -276,11 +308,23 @@ class _SequenceExecutionModalState extends State<SequenceExecutionModal> {
             ),
           ),
         );
+        if (!mounted) return;
+        // Verify genuine completion state from underlying Puja session
+        if (sadhanaState.isGuideCompleted) {
+          setState(() {
+            _stepVerifiedByFeature[step.id] = true;
+          });
+        }
         break;
 
       case PracticeStepType.japa:
         if (widget.audioState != null) {
-          Navigator.of(context).push(
+          final targetReps = step.targetRepetitions ?? 108;
+          final baselineTime = DateTime.now();
+          final priorHistoryCount = widget.audioState!.sessionHistory.length;
+          final priorActiveSessionId = widget.audioState!.activeSession?.id;
+
+          await Navigator.of(context).push(
             MaterialPageRoute(
               builder: (_) => JapaPracticeScreen(
                 audioState: widget.audioState!,
@@ -288,6 +332,22 @@ class _SequenceExecutionModalState extends State<SequenceExecutionModal> {
               ),
             ),
           );
+
+          if (!mounted) return;
+          // Verify genuine completion meeting target repetitions with token integrity
+          if (widget.audioState!.sessionHistory.length > priorHistoryCount) {
+            final newest = widget.audioState!.sessionHistory.first;
+            final isSessionValid = newest.completedRepetitions >= targetReps &&
+                newest.status != JapaSessionStatus.paused &&
+                newest.status != JapaSessionStatus.abandoned &&
+                (newest.lastUpdatedTime.isAfter(baselineTime.subtract(const Duration(seconds: 2))) ||
+                    newest.id != priorActiveSessionId);
+            if (isSessionValid) {
+              setState(() {
+                _stepVerifiedByFeature[step.id] = true;
+              });
+            }
+          }
         }
         break;
 
@@ -297,7 +357,7 @@ class _SequenceExecutionModalState extends State<SequenceExecutionModal> {
             (m) => m.id == step.resourceId,
             orElse: () => widget.mantraRepository!.getAllMantras().first,
           );
-          Navigator.of(context).push(
+          await Navigator.of(context).push(
             MaterialPageRoute(
               builder: (_) => MantraPlayerScreen(
                 mantra: mantra,
@@ -315,7 +375,7 @@ class _SequenceExecutionModalState extends State<SequenceExecutionModal> {
           orElse: () => kAuthenticScriptures.first,
         );
         final readerState = widget.scriptureReaderState ?? ScriptureReaderState();
-        Navigator.of(context).push(
+        await Navigator.of(context).push(
           MaterialPageRoute(
             builder: (_) => VerseLearningScreen(
               scripture: scripture,
@@ -329,7 +389,7 @@ class _SequenceExecutionModalState extends State<SequenceExecutionModal> {
 
       case PracticeStepType.vratObservance:
         final vratState = widget.vratState ?? VratState();
-        Navigator.of(context).push(
+        await Navigator.of(context).push(
           MaterialPageRoute(
             builder: (_) => VratCalendarScreen(
               vratState: vratState,
@@ -725,7 +785,7 @@ class _SequenceExecutionModalState extends State<SequenceExecutionModal> {
 
         // Bottom Progression Controls
         Container(
-          padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
+          padding: const EdgeInsets.fromLTRB(20, 10, 20, 20),
           decoration: BoxDecoration(
             color: isDark ? const Color(0xFF1E1E2C) : Colors.white,
             border: Border(
@@ -734,43 +794,88 @@ class _SequenceExecutionModalState extends State<SequenceExecutionModal> {
               ),
             ),
           ),
-          child: Row(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
-              // Skip step button (if optional)
-              if (currentStep?.isOptional ?? true)
-                Expanded(
-                  child: OutlinedButton(
-                    onPressed: () => _handleSkipStep(currentIndex),
-                    style: OutlinedButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(vertical: 14),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12),
+              if (currentStep != null && (_stepVerifiedByFeature[currentStep.id] == true))
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                  margin: const EdgeInsets.only(bottom: 8),
+                  decoration: BoxDecoration(
+                    color: Colors.green.withAlpha(30),
+                    borderRadius: BorderRadius.circular(6),
+                  ),
+                  child: const Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(Icons.check_circle, color: Colors.green, size: 14),
+                      SizedBox(width: 6),
+                      Text(
+                        'Verified via completed practice session',
+                        style: TextStyle(
+                          color: Colors.green,
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                )
+              else
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 6),
+                  child: Text(
+                    'Devotee self-confirmation (for altar worship or quiet contemplation)',
+                    textAlign: TextAlign.center,
+                    style: theme.textTheme.labelSmall?.copyWith(
+                      color: isDark ? Colors.white54 : Colors.black45,
+                      fontStyle: FontStyle.italic,
+                    ),
+                  ),
+                ),
+              Row(
+                children: [
+                  // Skip step button (if optional)
+                  if (currentStep?.isOptional ?? true)
+                    Expanded(
+                      child: OutlinedButton(
+                        onPressed: () => _handleSkipStep(currentIndex),
+                        style: OutlinedButton.styleFrom(
+                          padding: const EdgeInsets.symmetric(vertical: 14),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                        ),
+                        child: const Text('Skip Step'),
                       ),
                     ),
-                    child: const Text('Skip Step'),
-                  ),
-                ),
-              if (currentStep?.isOptional ?? true) const SizedBox(width: 12),
-              // Complete step button
-              Expanded(
-                flex: 2,
-                child: ElevatedButton(
-                  onPressed: () => _handleCompleteStep(currentIndex),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.goldPrimary,
-                    foregroundColor: Colors.black,
-                    padding: const EdgeInsets.symmetric(vertical: 14),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
+                  if (currentStep?.isOptional ?? true) const SizedBox(width: 12),
+                  // Complete step button
+                  Expanded(
+                    flex: 2,
+                    child: ElevatedButton(
+                      onPressed: () => _handleCompleteStep(currentIndex),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: AppColors.goldPrimary,
+                        foregroundColor: Colors.black,
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ),
+                      child: Text(
+                        (currentStep != null && (_stepVerifiedByFeature[currentStep.id] == true))
+                            ? (currentIndex >= steps.length - 1 || currentStepNumber == totalEnabled
+                                ? 'Complete Sadhana (Verified)'
+                                : 'Verified Complete • Next')
+                            : (currentIndex >= steps.length - 1 || currentStepNumber == totalEnabled
+                                ? 'Confirm Complete Sadhana'
+                                : 'Confirm Complete & Next'),
+                        style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                      ),
                     ),
                   ),
-                  child: Text(
-                    currentIndex >= steps.length - 1 || currentStepNumber == totalEnabled
-                        ? 'Complete Sadhana'
-                        : 'Mark Complete & Next',
-                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
-                  ),
-                ),
+                ],
               ),
             ],
           ),

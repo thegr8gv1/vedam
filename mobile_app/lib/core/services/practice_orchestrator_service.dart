@@ -276,7 +276,7 @@ class PracticeOrchestratorService {
     final totalPracticeDays = dateObjs.length;
     final lastPracticeDate = dateObjs.last;
 
-    // Calculate longest consecutive streak
+    // Calculate longest consecutive streak using UTC calendar space
     int longest = 0;
     int currentRun = 0;
     DateTime? prevDate;
@@ -298,13 +298,13 @@ class PracticeOrchestratorService {
       prevDate = d;
     }
 
-    // Calculate current streak relative to referenceNow (today)
-    final today = DateTime(ref.year, ref.month, ref.day);
+    // Calculate current streak relative to referenceNow (today) in UTC calendar space
+    final today = DateTime.utc(ref.year, ref.month, ref.day);
     final yesterday = today.subtract(const Duration(days: 1));
 
     int current = 0;
     final lastDateNormalized =
-        DateTime(lastPracticeDate.year, lastPracticeDate.month, lastPracticeDate.day);
+        DateTime.utc(lastPracticeDate.year, lastPracticeDate.month, lastPracticeDate.day);
 
     // Active streak requires practice today or yesterday
     if (lastDateNormalized == today || lastDateNormalized == yesterday) {
@@ -313,7 +313,7 @@ class PracticeOrchestratorService {
 
       for (int i = dateObjs.length - 2; i >= 0; i--) {
         final d = dateObjs[i];
-        final dNorm = DateTime(d.year, d.month, d.day);
+        final dNorm = DateTime.utc(d.year, d.month, d.day);
         if (dNorm == targetPrev) {
           current++;
           targetPrev = targetPrev.subtract(const Duration(days: 1));
@@ -327,7 +327,8 @@ class PracticeOrchestratorService {
       currentStreak: current,
       longestStreak: longest,
       totalPracticeDays: totalPracticeDays,
-      lastPracticeDate: lastPracticeDate,
+      lastPracticeDate:
+          DateTime(lastPracticeDate.year, lastPracticeDate.month, lastPracticeDate.day),
     );
   }
 
@@ -348,20 +349,27 @@ class PracticeOrchestratorService {
 
     // If live panchangam data is present and has documented observances, surface it
     if (panchangam != null && panchangam.observances.isNotEmpty) {
-      final obs = panchangam.observances.first;
-      return PanchangamRecommendation(
-        title: 'Today’s Observance: ${obs.name}',
-        description: obs.description.isNotEmpty
-            ? obs.description
-            : 'Consider aligning your Sankalpa and daily prayer with today’s sacred observance.',
-        suggestedStepType: PracticeStepType.sankalpa,
-        isLive: true,
-      );
+      final validObservances =
+          panchangam.observances.where((o) => o.name.trim().isNotEmpty).toList();
+      if (validObservances.isNotEmpty) {
+        final obs = validObservances.first;
+        return PanchangamRecommendation(
+          title: 'Today’s Observance: ${obs.name}',
+          description: obs.description.trim().isNotEmpty
+              ? obs.description
+              : 'Consider aligning your Sankalpa and daily prayer with today’s sacred observance.',
+          suggestedStepType: PracticeStepType.sankalpa,
+          isLive: true,
+        );
+      }
     }
 
     // Transparent fallback when panchangam is approximate or offline
     final isLive = panchangam != null;
-    final varaName = panchangam?.vara.name ?? _weekdayName(now.weekday);
+    final varaName =
+        (panchangam?.vara.name != null && panchangam!.vara.name.trim().isNotEmpty)
+            ? panchangam.vara.name
+            : _weekdayName(now.weekday);
 
     return PanchangamRecommendation(
       title: 'Daily Practice • $varaName',
@@ -398,7 +406,7 @@ class PracticeOrchestratorService {
     final m = int.tryParse(parts[1]);
     final d = int.tryParse(parts[2]);
     if (y == null || m == null || d == null) return null;
-    return DateTime(y, m, d);
+    return DateTime.utc(y, m, d);
   }
 
   String _weekdayName(int weekday) {
