@@ -1,4 +1,4 @@
-package org.vedam.vedam_app
+package com.vedam.myapp
 
 import android.content.Context
 import android.hardware.Sensor
