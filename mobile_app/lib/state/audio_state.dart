@@ -35,6 +35,7 @@ class AudioState extends ChangeNotifier {
 
   MantraItem? _activeMantra;
   PlayerState _playerState = PlayerState.stopped;
+  bool _isLoading = false;
   Duration _position = Duration.zero;
   Duration _duration = Duration.zero;
 
@@ -77,6 +78,7 @@ class AudioState extends ChangeNotifier {
   StreamSubscription<PlayerState>? _stateSub;
   StreamSubscription<Duration>? _positionSub;
   StreamSubscription<Duration>? _durationSub;
+  StreamSubscription<bool>? _loadingSub;
 
   AudioState({
     required AudioPlaybackService audioService,
@@ -106,6 +108,11 @@ class AudioState extends ChangeNotifier {
 
     _durationSub = _audioService.durationStream.listen((dur) {
       _duration = dur;
+      notifyListeners();
+    });
+
+    _loadingSub = _audioService.loadingStream.listen((loading) {
+      _isLoading = loading;
       notifyListeners();
     });
   }
@@ -227,6 +234,7 @@ class AudioState extends ChangeNotifier {
   // Getters
   MantraItem? get activeMantra => _activeMantra;
   PlayerState get playerState => _playerState;
+  bool get isLoading => _isLoading;
   bool get isPlaying => _playerState == PlayerState.playing;
   bool get isPaused => _playerState == PlayerState.paused;
   bool get isStopped => _playerState == PlayerState.stopped;
@@ -665,11 +673,17 @@ class AudioState extends ChangeNotifier {
   }
 
   Future<void> stop() async {
+    _isTransitioningRepetition = false;
+    _isLoading = false;
     await _audioService.stop();
+    _position = Duration.zero;
+    notifyListeners();
   }
 
   Future<void> seek(Duration newPosition) async {
+    _position = newPosition;
     await _audioService.seek(newPosition);
+    notifyListeners();
   }
 
   void resetSession() {
@@ -776,6 +790,7 @@ class AudioState extends ChangeNotifier {
     _stateSub?.cancel();
     _positionSub?.cancel();
     _durationSub?.cancel();
+    _loadingSub?.cancel();
     _audioService.dispose();
     super.dispose();
   }

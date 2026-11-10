@@ -42,6 +42,12 @@ class MockAudioServiceForTesting implements AudioPlaybackService {
   @override
   MantraItem? get activeMantra => _active;
 
+  @override
+  bool get isLoading => false;
+
+  @override
+  Stream<bool> get loadingStream => const Stream.empty();
+
   void emitState(PlayerState state) {
     _currentState = state;
     _stateController.add(state);

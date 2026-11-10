@@ -9,10 +9,12 @@ abstract class AudioPlaybackService {
   Stream<PlayerState> get playerStateStream;
   Stream<Duration> get positionStream;
   Stream<Duration> get durationStream;
+  Stream<bool> get loadingStream;
   PlayerState get playerState;
   Duration get currentPosition;
   Duration get totalDuration;
   MantraItem? get activeMantra;
+  bool get isLoading;
 
   Future<void> playMantra(MantraItem item);
   Future<void> pause();
@@ -35,7 +37,9 @@ class AudioPlaybackServiceImpl implements AudioPlaybackService {
   final _playerStateController = StreamController<PlayerState>.broadcast();
   final _positionController = StreamController<Duration>.broadcast();
   final _durationController = StreamController<Duration>.broadcast();
+  final _loadingController = StreamController<bool>.broadcast();
 
+  bool _isLoading = false;
   PlayerState _currentState = PlayerState.stopped;
   Duration _currentPosition = Duration.zero;
   Duration _totalDuration = Duration.zero;
@@ -96,6 +100,12 @@ class AudioPlaybackServiceImpl implements AudioPlaybackService {
   Stream<Duration> get durationStream => _durationController.stream;
 
   @override
+  Stream<bool> get loadingStream => _loadingController.stream;
+
+  @override
+  bool get isLoading => _isLoading;
+
+  @override
   PlayerState get playerState => _currentState;
 
   @override
@@ -111,6 +121,8 @@ class AudioPlaybackServiceImpl implements AudioPlaybackService {
   Future<void> playMantra(MantraItem item) async {
     _activeMantra = item;
     _currentPosition = Duration.zero;
+    _isLoading = true;
+    _loadingController.add(true);
 
     try {
       if (item.isBundled && item.bundledAssetPath != null) {
@@ -206,6 +218,7 @@ class AudioPlaybackServiceImpl implements AudioPlaybackService {
     await _playerStateController.close();
     await _positionController.close();
     await _durationController.close();
+    await _loadingController.close();
     await _player.dispose();
   }
 }
