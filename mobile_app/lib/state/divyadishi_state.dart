@@ -2,15 +2,17 @@ import 'package:flutter/foundation.dart';
 import '../core/models/bearing_result.dart';
 import '../core/models/sacred_origin.dart';
 import '../core/models/temple.dart';
+import '../core/services/compass_service.dart';
 import '../core/services/geographic_bearing_calculator.dart';
 import '../core/services/temple_directory_service.dart';
 
 /// State management for the DivyaDishi (Divine Direction) feature.
 /// Manages the temple directory, origin selection (with zero device GPS permissions),
-/// search/filtering, and geographic bearing calculations.
+/// search/filtering, geographic bearing calculations, and foreground-only live compass.
 class DivyaDishiState extends ChangeNotifier {
   final TempleDirectoryService _directoryService;
   final GeographicBearingCalculator _calculator;
+  final CompassService compassService;
 
   SacredOrigin? _selectedOrigin;
   String _searchQuery = '';
@@ -23,9 +25,11 @@ class DivyaDishiState extends ChangeNotifier {
   DivyaDishiState({
     TempleDirectoryService? directoryService,
     GeographicBearingCalculator? calculator,
+    CompassService? compassService,
     SacredOrigin? initialOrigin,
   })  : _directoryService = directoryService ?? TempleDirectoryService(),
         _calculator = calculator ?? const GeographicBearingCalculator(),
+        compassService = compassService ?? CompassService(),
         _selectedOrigin = initialOrigin {
     _applyFilters();
   }
@@ -113,5 +117,11 @@ class DivyaDishiState extends ChangeNotifier {
       status: _selectedStatus,
     );
     notifyListeners();
+  }
+
+  @override
+  void dispose() {
+    compassService.dispose();
+    super.dispose();
   }
 }
