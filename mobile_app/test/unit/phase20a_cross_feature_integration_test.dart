@@ -191,7 +191,8 @@ void main() {
       expect(audioState.completedRepetitions, equals(0),
           reason: 'Stopping incomplete playback must not increment repetition count');
 
-      // Count only increments when PlayerState.completed is signaled
+      // Count only increments when playback is active and PlayerState.completed is signaled
+      await audioState.playMantra(sampleMantra);
       mockService.simulateComplete();
       await pumpEventQueue();
       expect(audioState.completedRepetitions, equals(1),

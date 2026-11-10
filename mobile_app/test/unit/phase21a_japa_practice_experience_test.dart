@@ -241,7 +241,8 @@ void main() {
       await audioState.stop();
       expect(audioState.completedRepetitions, equals(0));
 
-      // Genuine completion increments by exactly 1
+      // Play again and genuine completion increments by exactly 1
+      await audioState.playMantra(testMantra);
       mockAudio.emitState(PlayerState.completed);
       await Future.delayed(const Duration(milliseconds: 50));
       expect(audioState.completedRepetitions, equals(1));
