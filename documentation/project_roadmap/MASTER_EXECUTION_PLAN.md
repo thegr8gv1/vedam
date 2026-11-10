@@ -197,3 +197,52 @@ The initial 20 temples serve as a seed research set. The production DivyaDishi d
 - **Zero Production Database Changes:** No alterations, migrations, or tables added to `database/vedam.db`.
 - **Zero Translation Status Bypass:** All 3,070 translations strictly preserved in `DRAFT` status; 0 approved.
 - **Section 8 Governance:** Human-review requirements remain strictly intact.
+
+---
+
+## 5. Phase 21L: Daily Devotional Flow Orchestrator & Sequence Hub (COMPLETED)
+
+### Overview
+Phase 21L establishes a calm, unified daily devotional practice experience (`NityaSadhanaDashboard`) connecting Vedam's existing Sankalpa Generator, Japa Practice, Guided Puja, Devotional Audio Library, Vrat Observance, and Scripture Study features into customizable morning, evening, and custom sequences.
+
+### Key Capabilities Delivered
+1. **Customizable Practice Sequences:**
+   - Pre-seeded with authentic Morning Sadhana (*Prātaḥ Sankalpa*, *Daily Ganesha Puja*, *Gayatri Mahamantra Japa*, *Scripture Study*) and Evening Sadhana (*Evening Chanting*, *Shiva/Mrityunjaya Japa*, *Silent Gratitude*).
+   - Full user step management: enable/disable, toggle optional vs required, reorder via `ReorderableListView`, custom duration estimates, add/remove steps.
+2. **Resumable Step-by-Step Flow Runner:**
+   - Active session persistence across app restarts and navigation interruptions.
+   - Distinctive progress bar, current step details, direct integration launching dedicated tools (Sankalpa modal, Guided Puja screen, Japa screen, Audio player, Scripture learner, Vrat calendar).
+   - Dedicated quiet reflection / contemplation timer right on screen.
+   - Pause, save, skip optional steps, or conclude early.
+   - Concludes with sacred closing peace invocation (*Om Shanti Shanti Shanti*).
+3. **Strict Zero Autoplay Invariant:**
+   - Audio tracks and Japa counting beads never autoplay upon entering practice steps; playback commands require explicit devotee interaction.
+4. **Private On-Device Journal & Non-Inflationary Streak Tracking:**
+   - 100% private, on-device SharedPreferences storage.
+   - Pure timezone-safe streak calculator enforcing single-day multi-session non-inflation (multiple practices on one day count as exactly 1 practice day).
+   - "Clear Journal History" with confirmation alert, preserving independent Japa/Puja/Vrat records.
+5. **Conservative Contextual Panchangam Recommendations:**
+   - Sourced from verified daily astronomical coordinates (Vara/Tithi/Observances).
+   - Transparent provenance tagging (`Live Calculation` vs `Offline Approximation`).
+   - Non-mandatory, gentle suggestions with 1-tap dismissal persisting for the remainder of the calendar day.
+6. **Multiplatform Verification:**
+   - 471 tests passing (100% pass rate) with 0 failures.
+   - 0 `flutter analyze` issues.
+   - Android Debug APK, Android Release APK (68.7 MB, well below 100MB limit, SHA-256 `251E4DBC3CD28A825A75B135B0215BC9D6A769A923E15C2E344B2FA8F2DCCF98`), Web Release build.
+   - Production database completely untouched: SHA-256 `0B3500F36434217D0E35B1B3F0BB1E12C4598B406177D11979E1FC2A46B7AB97`, size 20,455,424 bytes, Alembic `e3a7b1c9f2d5`, exactly 3,070 `DRAFT` translations, 0 approved, 0 human reviewers.
+
+---
+
+## 6. Next Feature: Phase 22 — DivyaDishi (Divine Direction) Foundation
+
+With the core devotional practice suite (Japa, Puja, Vrat, Scripture, Audio, Sankalpa, and Flow Orchestration) complete and hardened, the project is now ready to begin **Phase 22: DivyaDishi Foundation**.
+
+### Phase 22 Architecture Gates & Requirements:
+1. **Verification of Provisional Coordinates:** Execute the 7-step coordinate verification protocol on the 20-temple seed dataset (`documentation/project_roadmap/MASTER_EXECUTION_PLAN.md`).
+2. **Two-Tier Origin Architecture:**
+   - Tier 1: Zero-permission offline City/Region selector (approximate origin, clear UI disclosure).
+   - Tier 2: Optional device GPS origin (high precision, on-device ephemeral memory only).
+3. **Sensor & Bearing Safety:**
+   - Compass & magnetometer sensor fusion with geomagnetic declination correction (WMM/IGRF model).
+   - Calm, non-judgmental devotional compass dial pointing toward the selected sacred Kshetra.
+   - Strict adherence to the spiritual merit invariant: orientation is purely geographic.
