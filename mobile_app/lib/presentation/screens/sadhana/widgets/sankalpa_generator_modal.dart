@@ -594,8 +594,8 @@ class _SankalpaGeneratorModalState extends State<SankalpaGeneratorModal> {
         ),
         subtitle: Text(
           _isAnonymous
-              ? 'Universal Seeker (मम आत्मनः)'
-              : '${_gotraController.text} • ${_nameController.text} • ${_riverBasin.displayName.split(' ')[0]}',
+              ? 'Personal Details Hidden • ${_riverBasin.displayName.split(' ')[0]}'
+              : '${_gotraController.text.trim().isNotEmpty ? _gotraController.text.trim() : 'No Gotra'} • ${_nameController.text.trim().isNotEmpty ? _nameController.text.trim() : 'Devotee'} • ${_riverBasin.displayName.split(' ')[0]}',
           style: TextStyle(fontSize: 11, color: isDark ? Colors.grey[400] : Colors.grey[600]),
         ),
         childrenPadding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
@@ -604,8 +604,8 @@ class _SankalpaGeneratorModalState extends State<SankalpaGeneratorModal> {
           SwitchListTile(
             key: const Key('switch_anonymous'),
             contentPadding: EdgeInsets.zero,
-            title: const Text('Anonymous / Universal Contemplation', style: TextStyle(fontSize: 12.5, fontWeight: FontWeight.w600)),
-            subtitle: const Text('Omits personal lineage from Sankalpa; formats recitation as a universal seeker (मम आत्मनः).', style: TextStyle(fontSize: 11)),
+            title: const Text('Hide Personal Details', style: TextStyle(fontSize: 12.5, fontWeight: FontWeight.w600)),
+            subtitle: const Text('Omits personal lineage identifiers from the recitation (uses first-person phrasing "मम आत्मनः").', style: TextStyle(fontSize: 11)),
             value: _isAnonymous,
             activeThumbColor: AppColors.saffronPrimary,
             onChanged: (val) {
@@ -624,8 +624,9 @@ class _SankalpaGeneratorModalState extends State<SankalpaGeneratorModal> {
                   child: TextField(
                     controller: _gotraController,
                     decoration: const InputDecoration(
-                      labelText: 'Devotee Gotra',
-                      hintText: 'e.g. Kashyapa / Vishnu',
+                      labelText: 'Devotee Gotra (Optional)',
+                      hintText: 'e.g. Kashyapa',
+                      helperText: 'Leave blank to omit Gotra if unspecified or unknown',
                       isDense: true,
                     ),
                     onChanged: (_) => _regenerate(),
@@ -855,7 +856,7 @@ class _SankalpaGeneratorModalState extends State<SankalpaGeneratorModal> {
           const SizedBox(width: 10),
           Expanded(
             child: Text(
-              'Traditional Recitation Template: The generated Sanskrit is a classical-style recitation aid based on Smriti traditions. Specific phrasing, Gotra pravaras, and Desha formulas naturally vary across sampradayas, regional traditions, and Vedic shakhas. This guide does not replace personal instruction from a qualified family priest or acharya.',
+              'Traditional Recitation Template: The generated Sanskrit is a classical-style recitation aid based on Smriti traditions. Specific phrasing, Gotra pravaras, and Desha formulas naturally vary across sampradayas, regional traditions, and Vedic shakhas. This guide does not claim universal ritual authority or replace personal instruction from a qualified family purohita or acharya. Unspecified Gotra values are omitted to avoid fabricating lineage attributes.',
               style: TextStyle(
                 fontSize: 11,
                 height: 1.4,

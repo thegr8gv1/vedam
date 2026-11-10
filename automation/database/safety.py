@@ -15,6 +15,11 @@ from typing import Any, Dict, List, Optional, Tuple
 
 logger = logging.getLogger("vedam.database.safety")
 
+# Canonical production database baselines (Post-Phase 13 schema migration e3a7b1c9f2d5)
+CANONICAL_PRODUCTION_DB_SIZE = 20455424
+CANONICAL_PRODUCTION_DB_SHA256 = "0b3500f36434217d0e35b1b3f0bb1e12c4598b406177d11979e1fc2a46b7ab97"
+CANONICAL_ALEMBIC_VERSION = "e3a7b1c9f2d5"
+
 
 class ProductionDatabaseProtectionError(RuntimeError):
     """Raised when test execution or an unauthorized harness attempts to access the production database."""

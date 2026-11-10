@@ -148,7 +148,7 @@ class SankalpaInput {
   final bool isAnonymous;
 
   const SankalpaInput({
-    this.gotra = 'Vishnu',
+    this.gotra = '',
     this.devoteeName = 'Devotee',
     this.gender = SankalpaGender.unspecified,
     this.purpose = SankalpaPurpose.dailySadhana,

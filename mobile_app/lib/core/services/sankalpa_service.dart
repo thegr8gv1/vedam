@@ -36,7 +36,7 @@ class SankalpaService {
     SankalpaPurpose purpose = SankalpaPurpose.dailySadhana,
   }) async {
     final prefs = await _getPrefs();
-    final gotra = prefs.getString(keyGotra) ?? 'Vishnu';
+    final gotra = prefs.getString(keyGotra) ?? '';
     final name = prefs.getString(keyName) ?? 'Devotee';
     final genderStr = prefs.getString(keyGender) ?? 'unspecified';
     final riverStr = prefs.getString(keyRiverBasin) ?? 'pavitraDeshe';
@@ -109,9 +109,9 @@ class SankalpaService {
 
     // 2. Format devotee identity strings
     final isAnon = input.isAnonymous || input.devoteeName.trim().isEmpty;
-    String gotraSanskrit;
-    String gotraIast;
-    String gotraEnglish;
+    String gotraSanskrit = '';
+    String gotraIast = '';
+    String gotraEnglish = '';
     String nameSanskrit;
     String nameIast;
     String devoteeFormatted;
@@ -119,22 +119,26 @@ class SankalpaService {
     if (isAnon) {
       gotraSanskrit = '';
       gotraIast = '';
-      gotraEnglish = 'as a humble seeker';
+      gotraEnglish = '';
       nameSanskrit = 'मम आत्मनः';
       nameIast = 'mama ātmanaḥ';
-      devoteeFormatted = 'Devotee';
+      devoteeFormatted = '';
     } else {
-      final rawGotra = input.gotra.trim().isNotEmpty ? input.gotra.trim() : 'विष्णु';
+      final rawGotra = input.gotra.trim();
       devoteeFormatted = input.devoteeName.trim().isNotEmpty ? input.devoteeName.trim() : 'भक्त';
 
-      if (rawGotra.toLowerCase().contains('gotra') || rawGotra.contains('गोत्र')) {
-        gotraSanskrit = '$rawGotra-गोत्रोत्पन्नस्य';
-        gotraIast = '${_toIast(rawGotra)}-gotrotpannasya';
-        gotraEnglish = 'born of $rawGotra gotra';
-      } else {
-        gotraSanskrit = '$rawGotra-गोत्रस्य';
-        gotraIast = '${_toIast(rawGotra)}-gotrasya';
-        gotraEnglish = 'of $rawGotra gotra';
+      // Conservative Gotra handling:
+      // Omit Gotra if unspecified by the user. Never silently fabricate Vishnu or any other Gotra.
+      if (rawGotra.isNotEmpty) {
+        if (rawGotra.toLowerCase().contains('gotra') || rawGotra.contains('गोत्र')) {
+          gotraSanskrit = '$rawGotra-गोत्रोत्पन्नस्य';
+          gotraIast = '${_toIast(rawGotra)}-gotrotpannasya';
+          gotraEnglish = 'born of $rawGotra gotra';
+        } else {
+          gotraSanskrit = '$rawGotra-गोत्रस्य';
+          gotraIast = '${_toIast(rawGotra)}-gotrasya';
+          gotraEnglish = 'of $rawGotra gotra';
+        }
       }
 
       if (input.gender == SankalpaGender.female) {
@@ -193,20 +197,32 @@ class SankalpaService {
     );
 
     // 6. Construct Section 4: Lineage & Devotee Identity (Yajamana)
-    final lineageSanskrit = isAnon
-        ? 'मम आत्मनः श्रुतिस्मृतिपुराणोक्त-फलप्राप्त्यर्थं सहकुटुम्बस्य क्षेमस्थैर्यधैर्यवीर्यविजयायुरारोग्यैश्वर्याभिवृद्ध्यर्थं समस्तदुरितक्षयद्वारा'
-        : '$gotraSanskrit $nameSanskrit मम आत्मनः श्रुतिस्मृतिपुराणोक्त-फलप्राप्त्यर्थं '
-            'सहकुटुम्बस्य क्षेमस्थैर्यधैर्यवीर्यविजयायुरारोग्यैश्वर्याभिवृद्ध्यर्थं समस्तदुरितक्षयद्वारा';
-    final lineageIast = isAnon
-        ? 'mama ātmanaḥ śruti-smṛti-purāṇokta-phala-prāptyarthaṃ sahakuṭumbasya kṣema-sthairya-dhairya-vīrya-vijayāyur-ārogyaiśvaryābhivṛddhyarthaṃ samasta-durita-kṣaya-dvārā'
-        : '$gotraIast $nameIast mama ātmanaḥ śruti-smṛti-purāṇokta-phala-prāptyarthaṃ '
-            'sahakuṭumbasya kṣema-sthairya-dhairya-vīrya-vijayāyur-ārogyaiśvaryābhivṛddhyarthaṃ samasta-durita-kṣaya-dvārā';
-    final lineageEnglish = isAnon
-        ? 'For myself, as a humble seeker, for the attainment of the fruits promised in the Sruti, Smriti, and Puranas, '
-            'for the cultivation of peace, courage, stability, victory, longevity, health, and spiritual abundance for myself and family, and through the dissolution of all accumulated afflictions...'
-        : '$gotraEnglish, known as $devoteeFormatted, for the attainment of the fruits promised in '
-            'the Sruti, Smriti, and Puranas, for the cultivation of peace, courage, stability, victory, '
-            'longevity, health, and spiritual abundance for myself and family, and through the dissolution of all accumulated afflictions...';
+    final String lineageSanskrit;
+    final String lineageIast;
+    final String lineageEnglish;
+
+    if (isAnon) {
+      lineageSanskrit = 'मम आत्मनः श्रुतिस्मृतिपुराणोक्त-फलप्राप्त्यर्थं सहकुटुम्बस्य '
+          'क्षेमस्थैर्यधैर्यवीर्यविजयायुरारोग्यैश्वर्याभिवृद्ध्यर्थं समस्तदुरितक्षयद्वारा';
+      lineageIast = 'mama ātmanaḥ śruti-smṛti-purāṇokta-phala-prāptyarthaṃ sahakuṭumbasya '
+          'kṣema-sthairya-dhairya-vīrya-vijayāyur-ārogyaiśvaryābhivṛddhyarthaṃ samasta-durita-kṣaya-dvārā';
+      lineageEnglish = 'For myself, for the attainment of the fruits promised in the Sruti, Smriti, and Puranas, '
+          'for the cultivation of peace, courage, stability, victory, longevity, health, and spiritual abundance for myself and family, and through the dissolution of all accumulated afflictions...';
+    } else {
+      final idPrefixSanskrit = gotraSanskrit.isNotEmpty ? '$gotraSanskrit $nameSanskrit' : nameSanskrit;
+      final idPrefixIast = gotraIast.isNotEmpty ? '$gotraIast $nameIast' : nameIast;
+      final idPrefixEnglish = gotraEnglish.isNotEmpty
+          ? '$gotraEnglish, known as $devoteeFormatted,'
+          : 'Known as $devoteeFormatted,';
+
+      lineageSanskrit = '$idPrefixSanskrit मम आत्मनः श्रुतिस्मृतिपुराणोक्त-फलप्राप्त्यर्थं '
+          'सहकुटुम्बस्य क्षेमस्थैर्यधैर्यवीर्यविजयायुरारोग्यैश्वर्याभिवृद्ध्यर्थं समस्तदुरितक्षयद्वारा';
+      lineageIast = '$idPrefixIast mama ātmanaḥ śruti-smṛti-purāṇokta-phala-prāptyarthaṃ '
+          'sahakuṭumbasya kṣema-sthairya-dhairya-vīrya-vijayāyur-ārogyaiśvaryābhivṛddhyarthaṃ samasta-durita-kṣaya-dvārā';
+      lineageEnglish = '$idPrefixEnglish for the attainment of the fruits promised in '
+          'the Sruti, Smriti, and Puranas, for the cultivation of peace, courage, stability, victory, '
+          'longevity, health, and spiritual abundance for myself and family, and through the dissolution of all accumulated afflictions...';
+    }
 
     final comp4 = SankalpaComponent(
       sectionTitle: 'Lineage & Devotee Identity (यजमानगोत्रनाम)',
@@ -235,9 +251,15 @@ class SankalpaService {
     final shortPurposeIast = _shortPurposeIast(input.purpose);
     final shortPurposeEnglish = _shortPurposeEnglish(input.purpose);
 
-    final shortIdentitySanskrit = isAnon ? 'मम' : '$gotraSanskrit $nameSanskrit मम';
-    final shortIdentityIast = isAnon ? 'mama' : '$gotraIast $nameIast mama';
-    final shortIdentityEnglish = isAnon ? 'I,' : '$gotraEnglish, $devoteeFormatted,';
+    final shortIdentitySanskrit = isAnon
+        ? 'मम'
+        : (gotraSanskrit.isNotEmpty ? '$gotraSanskrit $nameSanskrit मम' : '$nameSanskrit मम');
+    final shortIdentityIast = isAnon
+        ? 'mama'
+        : (gotraIast.isNotEmpty ? '$gotraIast $nameIast mama' : '$nameIast mama');
+    final shortIdentityEnglish = isAnon
+        ? 'I,'
+        : (gotraEnglish.isNotEmpty ? '$gotraEnglish, $devoteeFormatted,' : '$devoteeFormatted,');
 
     final shortSanskrit = 'ॐ अद्य $tithiDeclined $varaDeclined $shortIdentitySanskrit '
         'समस्तदुरितक्षयपूर्वकं श्री ${input.deityName} प्रीत्यर्थं $shortPurposeSanskrit करिष्ये ॥';
