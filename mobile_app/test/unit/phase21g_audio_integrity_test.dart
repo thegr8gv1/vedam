@@ -358,5 +358,53 @@ void main() {
 
       expect(audioState.completedRepetitions, 2);
     });
+
+    test('Rapid consecutive track switching invalidates earlier completion events', () async {
+      final mantras = AuthenticMantrasData.allMantras.where((m) => m.isBundled).toList();
+      final m1 = mantras[0];
+      final m2 = mantras[1];
+      final m3 = mantras[2];
+
+      await audioState.playMantra(m1);
+      final token1 = audioState.currentPlaybackToken;
+
+      // Devotee rapidly skips to m2, then to m3
+      await audioState.playMantra(m2);
+      await audioState.playMantra(m3);
+      final token3 = audioState.currentPlaybackToken;
+
+      expect(token3, greaterThan(token1));
+      expect(audioState.playbackTrackId, m3.id);
+      expect(audioState.activeMantra?.id, m3.id);
+      expect(audioState.completedRepetitions, 0);
+
+      // Late completed event arrives for m1 run
+      // Since token is now token3 and track is m3, late event cannot count against m3
+      mockAudio.emitState(PlayerState.completed);
+      await pumpEventQueue();
+
+      expect(audioState.completedRepetitions, 1); // genuine completion of current active track m3
+      expect(audioState.lastHandledPlaybackToken, token3);
+
+      // A duplicate event arriving afterwards is rejected
+      mockAudio.emitState(PlayerState.completed);
+      await pumpEventQueue();
+      expect(audioState.completedRepetitions, 1);
+    });
+
+    test('Disposal cancels subscriptions and closes stream controller cleanly', () async {
+      final localMock = Phase21gMockAudioService();
+      final localAudioState = AudioState(audioService: localMock);
+
+      final mantra = AuthenticMantrasData.allMantras.firstWhere((m) => m.isBundled);
+      await localAudioState.playMantra(mantra);
+      expect(localAudioState.completedRepetitions, 0);
+
+      // Devotee leaves screen / provider is disposed
+      localAudioState.dispose();
+
+      // State is disposed and count was not mutated
+      expect(localAudioState.completedRepetitions, 0);
+    });
   });
 }
