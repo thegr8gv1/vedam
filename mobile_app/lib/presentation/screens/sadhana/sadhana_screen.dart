@@ -30,6 +30,7 @@ import 'widgets/puja_guide_overview_modal.dart';
 import 'widgets/puja_history_modal.dart';
 import '../../../state/orchestrator_state.dart';
 import 'orchestrator/nitya_sadhana_dashboard.dart';
+import '../divyadishi/temple_directory_screen.dart';
 
 class SadhanaScreen extends StatefulWidget {
   final AppState appState;
@@ -695,6 +696,96 @@ class _SadhanaScreenState extends State<SadhanaScreen> with WidgetsBindingObserv
                                 audioState: widget.audioState,
                                 panchangamState: widget.panchangamState,
                               ),
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+
+            // 2c. DivyaDishi Sacred Direction & Temple Directory Portal Card
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        const Icon(Icons.explore, color: AppColors.saffronPrimary, size: 24),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'DIVYADISHI — SACRED DIRECTION',
+                                style: AppTextStyles.metadataTag(isDark).copyWith(
+                                  fontWeight: FontWeight.bold,
+                                  color: AppColors.saffronPrimary,
+                                ),
+                              ),
+                              const SizedBox(height: 2),
+                              Text(
+                                'Temple Directory & Geodesic Orientation',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: isDark ? AppColors.textLightPrimary : AppColors.textDarkPrimary,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                          decoration: BoxDecoration(
+                            color: AppColors.draftWarningLight,
+                            borderRadius: BorderRadius.circular(4),
+                            border: Border.all(color: AppColors.draftWarningBorder),
+                          ),
+                          child: const Text(
+                            'PROVISIONAL',
+                            style: TextStyle(
+                              fontSize: 10,
+                              fontWeight: FontWeight.bold,
+                              color: AppColors.draftWarning,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 10),
+                    Text(
+                      'Explore sacred temples across Bharat & Nepal with transparent coordinate provenance and great-circle initial bearings.',
+                      style: TextStyle(
+                        fontSize: 13,
+                        color: isDark ? AppColors.textLightSecondary : AppColors.textDarkSecondary,
+                        height: 1.35,
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    SizedBox(
+                      width: double.infinity,
+                      child: OutlinedButton.icon(
+                        icon: const Icon(Icons.temple_hindu, size: 18),
+                        label: const Text(
+                          'EXPLORE TEMPLE DIRECTORY',
+                          style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                        ),
+                        style: OutlinedButton.styleFrom(
+                          foregroundColor: AppColors.saffronPrimary,
+                          side: const BorderSide(color: AppColors.saffronPrimary),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => const TempleDirectoryScreen(),
                             ),
                           );
                         },

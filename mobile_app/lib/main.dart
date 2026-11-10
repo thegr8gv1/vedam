@@ -42,6 +42,7 @@ import 'presentation/screens/onboarding/onboarding_wizard_screen.dart';
 import 'data/fixtures/authentic_festival_catalog_data.dart';
 import 'data/fixtures/authentic_scriptures_data.dart';
 import 'presentation/screens/library/verse_reader_screen.dart';
+import 'presentation/screens/divyadishi/temple_directory_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -87,6 +88,7 @@ void main() {
   String? openFestivalId;
   bool showOnboarding = false;
   int? initialOnboardingStep;
+  bool showDivyaDishi = false;
 
   String? cardParam;
 
@@ -111,6 +113,9 @@ void main() {
     if (tab == 'bookmarks') showBookmarks = true;
     if (tab == 'onboarding' || Uri.base.queryParameters['onboarding'] == 'true') {
       showOnboarding = true;
+    }
+    if (tab == 'divyadishi' || tab == 'temples' || Uri.base.queryParameters['divyadishi'] == 'true') {
+      showDivyaDishi = true;
     }
     final stepStr = Uri.base.queryParameters['onboarding_step'] ?? Uri.base.queryParameters['step'];
     if (stepStr != null) {
@@ -228,6 +233,7 @@ void main() {
     personalizationState: personalizationState,
     showOnboarding: showOnboarding,
     initialOnboardingStep: initialOnboardingStep,
+    showDivyaDishi: showDivyaDishi,
   ));
 }
 
@@ -268,6 +274,7 @@ class VedamApp extends StatelessWidget {
   final String? openFestivalId;
   final bool showOnboarding;
   final int? initialOnboardingStep;
+  final bool showDivyaDishi;
 
   const VedamApp({
     super.key,
@@ -307,6 +314,7 @@ class VedamApp extends StatelessWidget {
     this.openFestivalId,
     this.showOnboarding = false,
     this.initialOnboardingStep,
+    this.showDivyaDishi = false,
   });
 
   @override
@@ -450,6 +458,8 @@ class VedamApp extends StatelessWidget {
               ),
             ),
           );
+        } else if (showDivyaDishi || cardParam == 'divyadishi') {
+          homeWidget = const TempleDirectoryScreen();
         } else if (showBookmarks) {
           homeWidget = BookmarksScreen(
             repository: repository,
