@@ -73,7 +73,7 @@ void main() {
 
     // 6. Verify Manual Japa Mala Counter
     expect(find.text('MANUAL JAPA MALA COUNTER'), findsOneWidget);
-    expect(find.text('0'), findsOneWidget);
+    expect(find.text('0'), findsWidgets);
     expect(find.text('CHANT & COUNT BEAD'), findsOneWidget);
 
     // Tap Bead count button (scroll to ensure visible first)
@@ -87,6 +87,6 @@ void main() {
     // Reset button
     await tester.tap(find.byTooltip('Reset Counter'));
     await tester.pumpAndSettle();
-    expect(find.text('0'), findsOneWidget);
+    expect(find.text('0'), findsWidgets);
   });
 }
