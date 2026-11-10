@@ -14,6 +14,10 @@ from pathlib import Path
 import pytest
 from aiohttp.test_utils import TestClient, TestServer
 
+from automation.database.safety import (
+    CANONICAL_PRODUCTION_DB_SHA256,
+    CANONICAL_PRODUCTION_DB_SIZE,
+)
 from automation.workbench.auth import (
     AuthService,
     PermissionDeniedError,
@@ -932,13 +936,10 @@ def test_phase12b_production_database_untouched():
     db_path = Path("database/vedam.db")
     assert db_path.exists(), "Production database does not exist"
 
-    expected_sha256 = "8315040257dc3e490646e6e7138f9fd8bb38eae835b84e1f15849badae7318aa"
-    expected_size = 20455424
-
     with open(db_path, "rb") as f:
         actual_sha256 = hashlib.sha256(f.read()).hexdigest()
 
     actual_size = os.path.getsize(db_path)
 
-    assert actual_size == expected_size, f"Production DB size changed! Expected {expected_size}, got {actual_size}"
-    assert actual_sha256 == expected_sha256, f"Production DB SHA-256 altered! Expected {expected_sha256}, got {actual_sha256}"
+    assert actual_size == CANONICAL_PRODUCTION_DB_SIZE, f"Production DB size changed! Expected {CANONICAL_PRODUCTION_DB_SIZE}, got {actual_size}"
+    assert actual_sha256 == CANONICAL_PRODUCTION_DB_SHA256, f"Production DB SHA-256 altered! Expected {CANONICAL_PRODUCTION_DB_SHA256}, got {actual_sha256}"

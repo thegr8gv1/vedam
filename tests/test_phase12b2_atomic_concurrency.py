@@ -24,6 +24,10 @@ from sqlalchemy.exc import OperationalError
 from sqlalchemy.orm import Session, sessionmaker
 from sqlalchemy.pool import NullPool
 
+from automation.database.safety import (
+    CANONICAL_PRODUCTION_DB_SHA256,
+    CANONICAL_PRODUCTION_DB_SIZE,
+)
 from automation.workbench.auth import (
     AuthService,
     PermissionDeniedError,
@@ -772,11 +776,9 @@ def test_phase12b2_production_database_untouched():
     Verifies that the live production database remains bit-for-bit identical to its baseline.
     """
     prod_path = Path("database/vedam.db")
-    expected_sha256 = "8315040257dc3e490646e6e7138f9fd8bb38eae835b84e1f15849badae7318aa"
-    expected_size = 20455424
 
     assert prod_path.exists(), "Production database file missing!"
-    assert prod_path.stat().st_size == expected_size, f"Size changed: {prod_path.stat().st_size} != {expected_size}"
+    assert prod_path.stat().st_size == CANONICAL_PRODUCTION_DB_SIZE, f"Size changed: {prod_path.stat().st_size} != {CANONICAL_PRODUCTION_DB_SIZE}"
 
     h = hashlib.sha256()
     with open(prod_path, "rb") as f:
@@ -784,4 +786,4 @@ def test_phase12b2_production_database_untouched():
             h.update(chunk)
     actual_sha256 = h.hexdigest()
 
-    assert actual_sha256 == expected_sha256, f"Production DB mutated! {actual_sha256} != {expected_sha256}"
+    assert actual_sha256 == CANONICAL_PRODUCTION_DB_SHA256, f"Production DB mutated! {actual_sha256} != {CANONICAL_PRODUCTION_DB_SHA256}"

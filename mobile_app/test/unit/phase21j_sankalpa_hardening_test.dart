@@ -163,7 +163,7 @@ void main() {
       expect(out.sanskritFull, isNot(contains('Kashyapa')));
       expect(out.sanskritFull, isNot(contains('SecretDevotee')));
       expect(out.iastFull, isNot(contains('SecretDevotee')));
-      expect(out.englishFull, contains('as a humble seeker'));
+      expect(out.englishFull, contains('For myself, for the attainment'));
     });
 
     test('6. Gender declensions apply correctly for Male, Female, and Unspecified', () {
@@ -197,13 +197,14 @@ void main() {
     test('7. Empty and irregular Gotra/Name inputs recover safely', () {
       final date = DateTime(2025, 4, 15);
 
-      // Empty Gotra defaults to Vishnu
+      // Empty Gotra is safely omitted, never silently fabricated as Vishnu
       final emptyGotra = service.generateSankalpa(SankalpaInput(
         gotra: '',
         devoteeName: 'Arjuna',
         date: date,
       ));
-      expect(emptyGotra.sanskritFull, contains('विष्णु-गोत्रस्य'));
+      expect(emptyGotra.sanskritFull, isNot(contains('गोत्रस्य')));
+      expect(emptyGotra.sanskritFull, contains('Arjuna नामधेयस्य मम आत्मनः'));
 
       // Gotra with existing 'gotra' suffix doesn't double-suffix
       final suffixedGotra = service.generateSankalpa(SankalpaInput(
@@ -213,6 +214,14 @@ void main() {
       ));
       expect(suffixedGotra.sanskritFull, contains('Kashyapa-gotra-गोत्रोत्पन्नस्य'));
       expect(suffixedGotra.sanskritFull, isNot(contains('gotra-गोत्रस्य-गोत्रस्य')));
+
+      // Explicitly supplied Vishnu gotra is respected when user enters it
+      final explicitVishnu = service.generateSankalpa(SankalpaInput(
+        gotra: 'Vishnu',
+        devoteeName: 'Arjuna',
+        date: date,
+      ));
+      expect(explicitVishnu.sanskritFull, contains('Vishnu-गोत्रस्य'));
 
       // Empty name defaults safely
       final emptyName = service.generateSankalpa(SankalpaInput(

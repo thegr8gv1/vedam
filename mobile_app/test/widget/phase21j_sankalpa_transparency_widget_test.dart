@@ -125,7 +125,7 @@ void main() {
 
       expect(disclosureFinder, findsOneWidget);
       expect(find.textContaining('Traditional Recitation Template'), findsOneWidget);
-      expect(find.textContaining('qualified family priest or acharya'), findsOneWidget);
+      expect(find.textContaining('qualified family purohita or acharya'), findsOneWidget);
     });
 
     testWidgets('4. Toggling Anonymous switch updates formula to universal seeker and hides name inputs', (tester) async {
@@ -148,7 +148,7 @@ void main() {
       expect(anonSwitchFinder, findsOneWidget);
 
       // Verify name fields are initially visible
-      expect(find.text('Devotee Gotra'), findsOneWidget);
+      expect(find.text('Devotee Gotra (Optional)'), findsOneWidget);
       expect(find.text('Devotee Name'), findsOneWidget);
 
       // Toggle anonymous mode ON
@@ -156,7 +156,7 @@ void main() {
       await tester.pumpAndSettle();
 
       // Gotra and Name fields should now be hidden
-      expect(find.text('Devotee Gotra'), findsNothing);
+      expect(find.text('Devotee Gotra (Optional)'), findsNothing);
       expect(find.text('Devotee Name'), findsNothing);
 
       // Scroll back up to recitation card

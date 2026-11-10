@@ -13,6 +13,10 @@ from pathlib import Path
 import pytest
 from aiohttp.test_utils import TestClient, TestServer
 
+from automation.database.safety import (
+    CANONICAL_PRODUCTION_DB_SHA256,
+    CANONICAL_PRODUCTION_DB_SIZE,
+)
 from automation.workbench.auth import (
     AuthService,
     hash_password,
@@ -978,12 +982,11 @@ def test_scenario_30_production_database_untouched():
     """Scenario 30: Absolute safety invariant: production database SHA-256 and size remain bit-for-bit unchanged."""
     prod_path = Path("database/vedam.db")
     assert prod_path.exists()
-    assert prod_path.stat().st_size == 20455424
+    assert prod_path.stat().st_size == CANONICAL_PRODUCTION_DB_SIZE
 
     hasher = hashlib.sha256()
     with open(prod_path, "rb") as f:
         while chunk := f.read(65536):
             hasher.update(chunk)
 
-    expected_sha256 = "8315040257dc3e490646e6e7138f9fd8bb38eae835b84e1f15849badae7318aa"
-    assert hasher.hexdigest() == expected_sha256
+    assert hasher.hexdigest() == CANONICAL_PRODUCTION_DB_SHA256
