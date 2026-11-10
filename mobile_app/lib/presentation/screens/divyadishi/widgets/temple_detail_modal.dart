@@ -282,22 +282,40 @@ class TempleDetailModal extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Row(
-                children: [
-                  Icon(Icons.explore, color: AppColors.saffronPrimary, size: 20),
-                  SizedBox(width: 8),
-                  Text(
-                    'Sacred Bearing & Direction',
+              const Icon(Icons.explore, color: AppColors.saffronPrimary, size: 20),
+              const SizedBox(width: 8),
+              const Expanded(
+                child: Text(
+                  'Sacred Bearing & Direction',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14,
+                    color: AppColors.textDarkPrimary,
+                  ),
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+              const SizedBox(width: 6),
+              if (bearing.isApproximate) ...[
+                Container(
+                  margin: const EdgeInsets.only(right: 6),
+                  padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                  decoration: BoxDecoration(
+                    color: AppColors.draftWarningLight,
+                    borderRadius: BorderRadius.circular(4),
+                    border: Border.all(color: AppColors.draftWarningBorder),
+                  ),
+                  child: const Text(
+                    'APPROX',
                     style: TextStyle(
+                      fontSize: 10,
                       fontWeight: FontWeight.bold,
-                      fontSize: 15,
-                      color: AppColors.textDarkPrimary,
+                      color: AppColors.draftWarning,
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                 decoration: BoxDecoration(
@@ -331,6 +349,19 @@ class TempleDetailModal extends StatelessWidget {
               ),
             ],
           ),
+          if (bearing.traditionVariant != null) ...[
+            const SizedBox(height: 8),
+            Center(
+              child: Text(
+                'Variant Tradition: ${bearing.traditionVariant}',
+                style: const TextStyle(
+                  fontSize: 11,
+                  fontStyle: FontStyle.italic,
+                  color: AppColors.textDarkSecondary,
+                ),
+              ),
+            ),
+          ],
           const SizedBox(height: 12),
           Container(
             padding: const EdgeInsets.all(8),
@@ -343,7 +374,7 @@ class TempleDetailModal extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'From: ${state.selectedOrigin!.name}',
+                  'From: ${state.selectedOrigin!.name} (±${state.selectedOrigin!.accuracyRadiusKm.toStringAsFixed(0)} km centroid uncertainty)',
                   style: const TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.w600,
@@ -351,9 +382,10 @@ class TempleDetailModal extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 2),
-                const Text(
-                  'Great-circle forward azimuth calculation. Provided as an aid for devotional orientation, not a mandatory ritual injunction.',
-                  style: TextStyle(
+                Text(
+                  bearing.provisionalDisclaimer ??
+                      'Great-circle forward azimuth calculation. Provided as an aid for devotional orientation, not a mandatory ritual injunction.',
+                  style: const TextStyle(
                     fontSize: 11,
                     color: AppColors.textDarkSecondary,
                     height: 1.3,
@@ -399,28 +431,44 @@ class TempleDetailModal extends StatelessWidget {
   }
 
   Widget _buildCoordinateProvenanceCard(BuildContext context) {
+    final statusColor = temple.verificationStatus == CoordinateVerificationStatus.verified
+        ? Colors.green.shade700
+        : AppColors.draftWarning;
+    final statusBgColor = temple.verificationStatus == CoordinateVerificationStatus.verified
+        ? Colors.green.shade50
+        : AppColors.draftWarningLight;
+    final statusBorderColor = temple.verificationStatus == CoordinateVerificationStatus.verified
+        ? Colors.green.shade300
+        : AppColors.draftWarningBorder;
+
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
-        color: AppColors.draftWarningLight,
+        color: statusBgColor,
         borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: AppColors.draftWarningBorder),
+        border: Border.all(color: statusBorderColor),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             children: [
-              const Icon(Icons.warning_amber_rounded, color: AppColors.draftWarning, size: 20),
+              Icon(
+                temple.verificationStatus == CoordinateVerificationStatus.verified
+                    ? Icons.verified_outlined
+                    : Icons.warning_amber_rounded,
+                color: statusColor,
+                size: 20,
+              ),
               const SizedBox(width: 8),
               Expanded(
                 child: Text(
                   temple.verificationStatus.label.toUpperCase(),
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 13,
-                    color: AppColors.draftWarning,
+                    color: statusColor,
                     letterSpacing: 0.5,
                   ),
                 ),
@@ -430,7 +478,7 @@ class TempleDetailModal extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: AppColors.ivorySurface,
                   borderRadius: BorderRadius.circular(4),
-                  border: Border.all(color: AppColors.draftWarningBorder),
+                  border: Border.all(color: statusBorderColor),
                 ),
                 child: Text(
                   temple.pointType.label,
@@ -453,11 +501,77 @@ class TempleDetailModal extends StatelessWidget {
               fontFamily: 'monospace',
             ),
           ),
-          const SizedBox(height: 6),
+          if (temple.hasCoordinateChanged) ...[
+            const SizedBox(height: 4),
+            Text(
+              'Original Record: ${temple.originalCoordinate!.formatted} (Refined site preserved in audit ledger)',
+              style: TextStyle(
+                fontSize: 11,
+                fontStyle: FontStyle.italic,
+                color: Colors.brown.shade700,
+                fontFamily: 'monospace',
+              ),
+            ),
+          ],
+          const SizedBox(height: 8),
+          if (temple.sourceName.isNotEmpty) ...[
+            Text(
+              'Source Authority: ${temple.sourceName}',
+              style: const TextStyle(
+                fontSize: 11,
+                fontWeight: FontWeight.w600,
+                color: AppColors.textDarkPrimary,
+              ),
+            ),
+          ],
+          if (temple.sourceUrl != null) ...[
+            const SizedBox(height: 2),
+            Text(
+              'Reference URL: ${temple.sourceUrl}',
+              style: const TextStyle(
+                fontSize: 10,
+                color: AppColors.textDarkSecondary,
+                fontFamily: 'monospace',
+              ),
+            ),
+          ],
+          if (temple.corroborationSources.isNotEmpty) ...[
+            const SizedBox(height: 4),
+            Text(
+              'Corroboration: ${temple.corroborationSources.join(" • ")}',
+              style: const TextStyle(
+                fontSize: 10,
+                color: AppColors.textDarkSecondary,
+              ),
+            ),
+          ],
+          if (temple.verificationNotes != null && temple.verificationNotes!.isNotEmpty) ...[
+            const SizedBox(height: 6),
+            Text(
+              temple.verificationNotes!,
+              style: const TextStyle(
+                fontSize: 11,
+                color: AppColors.textDarkSecondary,
+                height: 1.35,
+              ),
+            ),
+          ],
+          if (temple.verificationDate != null) ...[
+            const SizedBox(height: 4),
+            Text(
+              'Audit Date: ${temple.verificationDate!.toIso8601String().split("T").first}',
+              style: const TextStyle(
+                fontSize: 10,
+                color: AppColors.textDarkMuted,
+              ),
+            ),
+          ],
+          const SizedBox(height: 8),
+          const Divider(height: 12),
           const Text(
-            'PROVISIONAL COORDINATE NOTICE: This coordinate is user-supplied and provisional. Independent geodetic verification and ground-truthing are pending before final certification.',
+            'GEODETIC TRANSPARENCY NOTICE: Coordinate identifies the temple compound / architectural complex center derived from official trust and archaeological records. Subterranean Garbhagriha geodetic benchmark ground-truthing remains pending before final certification.',
             style: TextStyle(
-              fontSize: 11,
+              fontSize: 10.5,
               color: AppColors.textDarkPrimary,
               height: 1.35,
             ),

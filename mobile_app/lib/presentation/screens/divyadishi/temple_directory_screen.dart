@@ -54,7 +54,7 @@ class _TempleDirectoryScreenState extends State<TempleDirectoryScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  'Choose an approximate city center to calculate great-circle directions. Zero device location permissions are requested.',
+                  'Choose an approximate municipal city centroid to calculate great-circle directions. Zero device location permissions are requested; each origin carries ±15 km uncertainty.',
                   style: TextStyle(fontSize: 12, color: AppColors.textDarkSecondary),
                 ),
                 const SizedBox(height: 12),
@@ -87,7 +87,7 @@ class _TempleDirectoryScreenState extends State<TempleDirectoryScreen> {
                             ),
                           ),
                           subtitle: Text(
-                            'Approx: ${origin.coordinate.latitude.toStringAsFixed(2)}°, ${origin.coordinate.longitude.toStringAsFixed(2)}°',
+                            'Approx: ${origin.coordinate.latitude.toStringAsFixed(2)}°, ${origin.coordinate.longitude.toStringAsFixed(2)}° (±${origin.accuracyRadiusKm.toStringAsFixed(0)} km • ${origin.region})',
                             style: const TextStyle(fontSize: 11),
                           ),
                           onTap: () {
@@ -219,7 +219,7 @@ class _TempleDirectoryScreenState extends State<TempleDirectoryScreen> {
           const SizedBox(width: 8),
           Expanded(
             child: Text(
-              'PROVISIONAL DIRECTORY: Coordinates are user-supplied and pending independent geodetic verification. Bearing calculations are geographic orientation aids without ritual mandate.',
+              'AUDITED DIRECTORY: Coordinates identify temple compound complexes from trust & survey records (Garbhagriha geodetic ground-truthing pending). Bearing calculations are geographic orientation aids.',
               style: TextStyle(
                 fontSize: 11,
                 fontWeight: FontWeight.w500,
@@ -379,22 +379,48 @@ class _TempleDirectoryScreenState extends State<TempleDirectoryScreen> {
                     ),
                   ),
                   // Provenance Tag
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                    decoration: BoxDecoration(
-                      color: AppColors.draftWarningLight,
-                      borderRadius: BorderRadius.circular(4),
-                      border: Border.all(color: AppColors.draftWarningBorder),
-                    ),
-                    child: const Text(
-                      'UNVERIFIED',
-                      style: TextStyle(
-                        fontSize: 10,
-                        fontWeight: FontWeight.bold,
-                        color: AppColors.draftWarning,
-                        letterSpacing: 0.4,
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                        decoration: BoxDecoration(
+                          color: temple.verificationStatus == CoordinateVerificationStatus.verified
+                              ? Colors.green.shade50
+                              : AppColors.draftWarningLight,
+                          borderRadius: BorderRadius.circular(4),
+                          border: Border.all(
+                            color: temple.verificationStatus == CoordinateVerificationStatus.verified
+                                ? Colors.green.shade300
+                                : AppColors.draftWarningBorder,
+                          ),
+                        ),
+                        child: Text(
+                          temple.verificationStatus == CoordinateVerificationStatus.verified
+                              ? 'VERIFIED'
+                              : temple.verificationStatus == CoordinateVerificationStatus.pendingVerification
+                                  ? 'PENDING'
+                                  : 'UNVERIFIED',
+                          style: TextStyle(
+                            fontSize: 10,
+                            fontWeight: FontWeight.bold,
+                            color: temple.verificationStatus == CoordinateVerificationStatus.verified
+                                ? Colors.green.shade700
+                                : AppColors.draftWarning,
+                            letterSpacing: 0.4,
+                          ),
+                        ),
                       ),
-                    ),
+                      const SizedBox(height: 2),
+                      Text(
+                        temple.pointType.label,
+                        style: const TextStyle(
+                          fontSize: 9.5,
+                          color: AppColors.textDarkMuted,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
@@ -454,6 +480,24 @@ class _TempleDirectoryScreenState extends State<TempleDirectoryScreen> {
                         '(${bearing.sanskritDirection ?? ''})',
                         style: const TextStyle(fontSize: 11, color: AppColors.saffronDark),
                       ),
+                      if (bearing.isApproximate) ...[
+                        const SizedBox(width: 6),
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
+                          decoration: BoxDecoration(
+                            color: AppColors.draftWarningLight,
+                            borderRadius: BorderRadius.circular(3),
+                          ),
+                          child: const Text(
+                            'approx',
+                            style: TextStyle(
+                              fontSize: 9,
+                              fontWeight: FontWeight.w600,
+                              color: AppColors.draftWarning,
+                            ),
+                          ),
+                        ),
+                      ],
                       const Spacer(),
                       Text(
                         '${bearing.distanceKm!.toStringAsFixed(0)} km',
