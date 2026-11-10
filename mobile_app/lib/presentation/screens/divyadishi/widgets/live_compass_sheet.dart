@@ -1,18 +1,23 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import '../../../../core/models/bearing_result.dart';
+import '../../../../core/models/corrected_heading_reading.dart';
+import '../../../../core/models/declination_model.dart';
 import '../../../../core/models/heading_model.dart';
 import '../../../../core/models/temple.dart';
 import '../../../../core/services/compass_service.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../../../state/divyadishi_state.dart';
 
-/// Modal bottom sheet presenting the opt-in, foreground-only live device compass.
+/// Modal bottom sheet presenting the opt-in, foreground-only live device compass
+/// with offline World Magnetic Model (WMM) declination correction and approximate sacred alignment.
 ///
 /// Governance & Correctness Guarantees:
 /// - Explicit Start/Stop controls; zero background execution.
 /// - Unregistered immediately on pause or disposal.
 /// - Strictly prevents equating Magnetic North with True North.
+/// - Declination sourced 100% offline via official NOAA WMM models.
+/// - Withholds precise turn angles for pending temples by default; requires explicit opt-in.
 /// - Retains all PENDING coordinate and approximate origin transparency disclaimers.
 class LiveCompassSheet extends StatefulWidget {
   final DivyaDishiState state;
@@ -50,6 +55,7 @@ class LiveCompassSheet extends StatefulWidget {
 
 class _LiveCompassSheetState extends State<LiveCompassSheet> with WidgetsBindingObserver {
   late final CompassService _compassService;
+  bool _showApproximateAlignment = false;
 
   @override
   void initState() {
@@ -97,6 +103,17 @@ class _LiveCompassSheetState extends State<LiveCompassSheet> with WidgetsBinding
         builder: (context, _) {
           final reading = _compassService.reading;
           final isActive = _compassService.isActive;
+          final declination = widget.state.currentDeclination;
+          final corrected = widget.state.getCorrectedHeading(reading);
+
+          RelativeSacredAlignment? alignment;
+          if (widget.selectedTemple != null && bearing != null && bearing.isAvailable) {
+            alignment = widget.state.calculateRelativeAlignment(
+              widget.selectedTemple!,
+              reading,
+              userOptedIn: _showApproximateAlignment,
+            );
+          }
 
           return SingleChildScrollView(
             child: Column(
@@ -161,15 +178,15 @@ class _LiveCompassSheetState extends State<LiveCompassSheet> with WidgetsBinding
                 ],
 
                 // 5. Central Compass Dial
-                _buildCompassVisualizer(reading),
+                _buildCompassVisualizer(reading, corrected),
                 const SizedBox(height: 16),
 
                 // 6. Heading Readout & Quality Badges
-                _buildHeadingReadout(reading),
+                _buildHeadingReadout(reading, corrected, declination),
                 const SizedBox(height: 12),
 
                 // 7. Reference & Alignment Transparency Notice
-                _buildAlignmentNotice(reading, bearing),
+                _buildAlignmentNotice(reading, corrected, declination, bearing, alignment),
                 const SizedBox(height: 12),
 
                 // 8. Interference & Calibration Guidance
@@ -268,9 +285,13 @@ class _LiveCompassSheetState extends State<LiveCompassSheet> with WidgetsBinding
     );
   }
 
-  Widget _buildCompassVisualizer(HeadingReading reading) {
-    final heading = reading.hasValidHeading ? reading.heading! : 0.0;
-    final angleRad = -heading * (math.pi / 180.0);
+  Widget _buildCompassVisualizer(HeadingReading reading, CorrectedHeadingReading corrected) {
+    // When valid offline declination is applied, align dial to True North
+    final displayHeading = corrected.isAvailable && corrected.trueHeading != null
+        ? corrected.trueHeading!
+        : (reading.hasValidHeading ? reading.heading! : 0.0);
+
+    final angleRad = -displayHeading * (math.pi / 180.0);
 
     return Container(
       width: 190,
@@ -281,7 +302,7 @@ class _LiveCompassSheetState extends State<LiveCompassSheet> with WidgetsBinding
         border: Border.all(
           color: reading.state == HeadingSensorState.lowAccuracy
               ? AppColors.draftWarningBorder
-              : AppColors.saffronPrimary.withAlpha(80),
+              : (corrected.isAvailable ? Colors.teal.shade400 : AppColors.saffronPrimary.withAlpha(80)),
           width: 3,
         ),
         boxShadow: [
@@ -300,7 +321,7 @@ class _LiveCompassSheetState extends State<LiveCompassSheet> with WidgetsBinding
             angle: angleRad,
             child: CustomPaint(
               size: const Size(180, 180),
-              painter: _CompassDialPainter(),
+              painter: _CompassDialPainter(isTrueNorth: corrected.isAvailable),
             ),
           ),
           // Fixed Lubber Line (top indicator)
@@ -310,7 +331,7 @@ class _LiveCompassSheetState extends State<LiveCompassSheet> with WidgetsBinding
               width: 4,
               height: 12,
               decoration: BoxDecoration(
-                color: AppColors.saffronPrimary,
+                color: corrected.isAvailable ? Colors.teal.shade700 : AppColors.saffronPrimary,
                 borderRadius: BorderRadius.circular(2),
               ),
             ),
@@ -321,7 +342,7 @@ class _LiveCompassSheetState extends State<LiveCompassSheet> with WidgetsBinding
             children: [
               if (reading.hasValidHeading) ...[
                 Text(
-                  '${reading.heading!.toStringAsFixed(0)}°',
+                  '${displayHeading.toStringAsFixed(0)}°',
                   style: const TextStyle(
                     fontSize: 32,
                     fontWeight: FontWeight.bold,
@@ -329,11 +350,19 @@ class _LiveCompassSheetState extends State<LiveCompassSheet> with WidgetsBinding
                   ),
                 ),
                 Text(
-                  _cardinalLabel(reading.heading!),
-                  style: const TextStyle(
+                  _cardinalLabel(displayHeading),
+                  style: TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.w600,
-                    color: AppColors.saffronPrimary,
+                    color: corrected.isAvailable ? Colors.teal.shade800 : AppColors.saffronPrimary,
+                  ),
+                ),
+                Text(
+                  corrected.isAvailable ? 'True North' : 'Magnetic',
+                  style: TextStyle(
+                    fontSize: 9.5,
+                    fontWeight: FontWeight.w500,
+                    color: corrected.isAvailable ? Colors.teal.shade600 : AppColors.textDarkMuted,
                   ),
                 ),
               ] else ...[
@@ -361,40 +390,75 @@ class _LiveCompassSheetState extends State<LiveCompassSheet> with WidgetsBinding
     );
   }
 
-  Widget _buildHeadingReadout(HeadingReading reading) {
+  Widget _buildHeadingReadout(
+    HeadingReading reading,
+    CorrectedHeadingReading corrected,
+    DeclinationResult? declination,
+  ) {
     return Column(
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+        Wrap(
+          alignment: WrapAlignment.center,
+          spacing: 6,
+          runSpacing: 6,
           children: [
-            // Reference Badge
+            // Sensor Badge (Measured Reference)
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
               decoration: BoxDecoration(
-                color: reading.reference == HeadingReference.trueNorth
-                    ? Colors.teal.shade50
-                    : AppColors.goldLight,
+                color: AppColors.goldLight,
                 borderRadius: BorderRadius.circular(6),
-                border: Border.all(
-                  color: reading.reference == HeadingReference.trueNorth
-                      ? Colors.teal.shade300
-                      : AppColors.goldPrimary,
-                ),
+                border: Border.all(color: AppColors.goldPrimary),
               ),
               child: Text(
                 reading.reference.label.toUpperCase(),
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 10,
                   fontWeight: FontWeight.bold,
-                  color: reading.reference == HeadingReference.trueNorth
-                      ? Colors.teal.shade800
-                      : AppColors.textDarkPrimary,
+                  color: AppColors.textDarkPrimary,
                 ),
               ),
             ),
-            const SizedBox(width: 8),
 
-            // Accuracy Badge
+            // Corrected True Heading Badge (if declination applied)
+            if (corrected.isAvailable)
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                decoration: BoxDecoration(
+                  color: Colors.teal.shade50,
+                  borderRadius: BorderRadius.circular(6),
+                  border: Border.all(color: Colors.teal.shade300),
+                ),
+                child: Text(
+                  'TRUE NORTH (${declination?.modelName ?? "WMM"})',
+                  style: TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.teal.shade800,
+                  ),
+                ),
+              ),
+
+            // Declination Badge (if available)
+            if (declination != null && declination.isValid)
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                decoration: BoxDecoration(
+                  color: Colors.blueGrey.shade50,
+                  borderRadius: BorderRadius.circular(6),
+                  border: Border.all(color: Colors.blueGrey.shade300),
+                ),
+                child: Text(
+                  'DECLINATION: ${declination.formattedDeclination}',
+                  style: TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey.shade800,
+                  ),
+                ),
+              ),
+
+            // Sensor Accuracy Badge
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
               decoration: BoxDecoration(
@@ -427,6 +491,24 @@ class _LiveCompassSheetState extends State<LiveCompassSheet> with WidgetsBinding
             ),
           ],
         ),
+
+        // Subtitle Provenance Information
+        if (corrected.isAvailable && declination != null) ...[
+          const SizedBox(height: 6),
+          Text(
+            'Measured Sensor: ${reading.heading!.toStringAsFixed(1)}° Mag • Origin: ${declination.originNameWithProvenance}',
+            textAlign: TextAlign.center,
+            style: const TextStyle(fontSize: 10.5, color: AppColors.textDarkSecondary),
+          ),
+        ] else if (widget.state.selectedOrigin == null) ...[
+          const SizedBox(height: 6),
+          const Text(
+            'Select an approximate city origin to calculate geomagnetic declination for True North.',
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 10.5, color: AppColors.textDarkMuted),
+          ),
+        ],
+
         if (reading.state == HeadingSensorState.stale) ...[
           const SizedBox(height: 6),
           const Text(
@@ -438,67 +520,226 @@ class _LiveCompassSheetState extends State<LiveCompassSheet> with WidgetsBinding
     );
   }
 
-  Widget _buildAlignmentNotice(HeadingReading reading, BearingResult? bearing) {
+  Widget _buildAlignmentNotice(
+    HeadingReading reading,
+    CorrectedHeadingReading corrected,
+    DeclinationResult? declination,
+    BearingResult? bearing,
+    RelativeSacredAlignment? alignment,
+  ) {
     if (widget.selectedTemple == null || bearing == null || !bearing.isAvailable) {
       return const SizedBox.shrink();
     }
 
-    if (reading.reference == HeadingReference.magnetic) {
+    // Case A: Corrected True Heading available & alignment evaluated
+    if (corrected.isAvailable && alignment != null) {
+      if (!_showApproximateAlignment) {
+        return Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(12),
+          decoration: BoxDecoration(
+            color: Colors.amber.shade50,
+            borderRadius: BorderRadius.circular(10),
+            border: Border.all(color: Colors.amber.shade300),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Icon(Icons.shield_outlined, size: 16, color: Colors.amber.shade900),
+                  const SizedBox(width: 6),
+                  Text(
+                    'Magnetic vs True North Notice',
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.amber.shade900,
+                    ),
+                  ),
+                  const Spacer(),
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                    decoration: BoxDecoration(
+                      color: Colors.amber.shade100,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                    child: Text(
+                      'Destination Coordinate Safeguard',
+                      style: TextStyle(
+                        fontSize: 10,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.amber.shade900,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 6),
+              Text(
+                'Your device compass measures Magnetic North. The sacred bearing to ${widget.selectedTemple!.name} is '
+                'calculated relative to True Geographic North (${bearing.degrees!.toStringAsFixed(1)}° True). '
+                'Destination coordinates are marked PENDING verification (${widget.selectedTemple!.pointType.label}). '
+                'Turn-angle alignment is withheld by default.',
+                style: TextStyle(fontSize: 11, color: Colors.brown.shade800, height: 1.35),
+              ),
+              const SizedBox(height: 8),
+              SizedBox(
+                width: double.infinity,
+                child: OutlinedButton.icon(
+                  onPressed: () => setState(() => _showApproximateAlignment = true),
+                  icon: const Icon(Icons.compass_calibration_outlined, size: 16),
+                  label: const Text('Show Approximate Alignment Comparison'),
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: AppColors.saffronDark,
+                    side: const BorderSide(color: AppColors.saffronPrimary),
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    textStyle: const TextStyle(fontSize: 11, fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        );
+      }
+
+      // Devotee has opted in to view approximate alignment comparison
       return Container(
         width: double.infinity,
-        padding: const EdgeInsets.all(10),
+        padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(
-          color: AppColors.draftWarningLight,
-          borderRadius: BorderRadius.circular(8),
-          border: Border.all(color: AppColors.draftWarningBorder),
+          color: Colors.teal.shade50,
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: Colors.teal.shade300, width: 1.5),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Row(
+            Row(
               children: [
-                Icon(Icons.info_outline, size: 16, color: AppColors.draftWarning),
-                SizedBox(width: 6),
-                Text(
-                  'Magnetic vs True North Notice',
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                    color: AppColors.draftWarning,
+                const Icon(Icons.explore_rounded, size: 18, color: AppColors.saffronDark),
+                const SizedBox(width: 6),
+                const Expanded(
+                  child: Text(
+                    'APPROXIMATE TEMPLE-COMPLEX ALIGNMENT',
+                    style: TextStyle(
+                      fontSize: 11.5,
+                      fontWeight: FontWeight.bold,
+                      color: AppColors.saffronDark,
+                      letterSpacing: 0.3,
+                    ),
+                  ),
+                ),
+                InkWell(
+                  onTap: () => setState(() => _showApproximateAlignment = false),
+                  child: const Padding(
+                    padding: EdgeInsets.all(2),
+                    child: Icon(Icons.visibility_off_outlined, size: 16, color: AppColors.textDarkMuted),
                   ),
                 ),
               ],
             ),
-            const SizedBox(height: 4),
-            Text(
-              'Your device compass measures Magnetic North. The sacred bearing to ${widget.selectedTemple!.name} is calculated relative to True Geographic North (${bearing.degrees!.toStringAsFixed(1)}° True). Turn-angle alignment is withheld because magnetic declination is not applied.',
-              style: TextStyle(
-                fontSize: 11,
-                color: Colors.brown.shade800,
-                height: 1.35,
+            const SizedBox(height: 8),
+
+            // Large relative turn guidance
+            Center(
+              child: Column(
+                children: [
+                  Text(
+                    alignment.formattedGuidance,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: alignment.hasValidTurnAngle && alignment.turnAngleDegrees!.abs() <= 5.0
+                          ? Colors.teal.shade900
+                          : AppColors.saffronDark,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    'Current: ${corrected.trueHeading!.toStringAsFixed(1)}° True • Temple: ${bearing.degrees!.toStringAsFixed(1)}° True',
+                    style: const TextStyle(fontSize: 11, color: AppColors.textDarkSecondary),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 8),
+
+            // Dual uncertainty disclaimer
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: Colors.white.withAlpha(180),
+                borderRadius: BorderRadius.circular(6),
+                border: Border.all(color: Colors.teal.shade100),
+              ),
+              child: Text(
+                alignment.dualUncertaintyDisclaimer,
+                style: TextStyle(fontSize: 10, color: Colors.teal.shade900, height: 1.3),
               ),
             ),
           ],
         ),
       );
-    } else if (reading.reference == HeadingReference.trueNorth && reading.hasValidHeading) {
-      final relativeAngle = reading.calculateRelativeAngle(targetBearingTrue: bearing.degrees!);
+    }
+
+    // Case B: No origin selected
+    if (widget.state.selectedOrigin == null) {
       return Container(
         width: double.infinity,
         padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
-          color: Colors.teal.shade50,
+          color: AppColors.creamBackground,
           borderRadius: BorderRadius.circular(8),
-          border: Border.all(color: Colors.teal.shade200),
+          border: Border.all(color: AppColors.chandanBorder),
         ),
         child: Text(
-          'True North Relative Bearing: ${relativeAngle != null ? "${relativeAngle.toStringAsFixed(0)}° clockwise" : "Unavailable"}. Orientation aid only.',
-          style: TextStyle(fontSize: 11, color: Colors.teal.shade900),
+          'Select an approximate city origin to calculate geomagnetic declination and enable sacred alignment comparison to ${widget.selectedTemple!.name}.',
+          style: const TextStyle(fontSize: 11, color: AppColors.textDarkSecondary, height: 1.3),
         ),
       );
     }
 
-    return const SizedBox.shrink();
+    // Case C: Magnetic fallback when declination unavailable or reading uncorrected
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        color: AppColors.draftWarningLight,
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: AppColors.draftWarningBorder),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Row(
+            children: [
+              Icon(Icons.info_outline, size: 16, color: AppColors.draftWarning),
+              SizedBox(width: 6),
+              Text(
+                'Magnetic vs True North Notice',
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.draftWarning,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 4),
+          Text(
+            'Your device compass measures Magnetic North. The sacred bearing to ${widget.selectedTemple!.name} is calculated relative to True Geographic North (${bearing.degrees!.toStringAsFixed(1)}° True). '
+            '${corrected.unavailabilityReason ?? "Turn-angle alignment is withheld until True North correction is available."}',
+            style: TextStyle(
+              fontSize: 11,
+              color: Colors.brown.shade800,
+              height: 1.35,
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
   Widget _buildInterferenceGuidance(HeadingReading reading) {
@@ -581,6 +822,10 @@ class _LiveCompassSheetState extends State<LiveCompassSheet> with WidgetsBinding
 
 /// Custom painter rendering the 8-cardinal compass rose dial.
 class _CompassDialPainter extends CustomPainter {
+  final bool isTrueNorth;
+
+  const _CompassDialPainter({this.isTrueNorth = false});
+
   @override
   void paint(Canvas canvas, Size size) {
     final center = Offset(size.width / 2, size.height / 2);
@@ -591,7 +836,7 @@ class _CompassDialPainter extends CustomPainter {
       ..strokeWidth = 1.5;
 
     final northPaint = Paint()
-      ..color = AppColors.saffronPrimary
+      ..color = isTrueNorth ? Colors.teal.shade700 : AppColors.saffronPrimary
       ..strokeWidth = 2.5;
 
     // Draw cardinal ticks
@@ -614,5 +859,6 @@ class _CompassDialPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
+  bool shouldRepaint(covariant _CompassDialPainter oldDelegate) =>
+      oldDelegate.isTrueNorth != isTrueNorth;
 }

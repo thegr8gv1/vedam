@@ -1,20 +1,27 @@
 import 'package:flutter/foundation.dart';
 import '../core/models/bearing_result.dart';
+import '../core/models/corrected_heading_reading.dart';
+import '../core/models/declination_model.dart';
+import '../core/models/heading_model.dart';
 import '../core/models/sacred_origin.dart';
 import '../core/models/temple.dart';
 import '../core/services/compass_service.dart';
 import '../core/services/geographic_bearing_calculator.dart';
+import '../core/services/geomagnetic_declination_service.dart';
 import '../core/services/temple_directory_service.dart';
 
 /// State management for the DivyaDishi (Divine Direction) feature.
 /// Manages the temple directory, origin selection (with zero device GPS permissions),
-/// search/filtering, geographic bearing calculations, and foreground-only live compass.
+/// search/filtering, geographic bearing calculations, foreground live compass,
+/// and offline geomagnetic declination for True North correction and relative sacred alignment.
 class DivyaDishiState extends ChangeNotifier {
   final TempleDirectoryService _directoryService;
   final GeographicBearingCalculator _calculator;
   final CompassService compassService;
+  final GeomagneticDeclinationService _declinationService;
 
   SacredOrigin? _selectedOrigin;
+  DeclinationResult? _currentDeclination;
   String _searchQuery = '';
   String? _selectedCountry;
   TempleTradition? _selectedTradition;
@@ -26,16 +33,23 @@ class DivyaDishiState extends ChangeNotifier {
     TempleDirectoryService? directoryService,
     GeographicBearingCalculator? calculator,
     CompassService? compassService,
+    GeomagneticDeclinationService? declinationService,
     SacredOrigin? initialOrigin,
   })  : _directoryService = directoryService ?? TempleDirectoryService(),
         _calculator = calculator ?? const GeographicBearingCalculator(),
         compassService = compassService ?? CompassService(),
+        _declinationService = declinationService ?? const GeomagneticDeclinationService(),
         _selectedOrigin = initialOrigin {
+    if (_selectedOrigin != null) {
+      _currentDeclination = _declinationService.calculateDeclination(origin: _selectedOrigin!);
+    }
     _applyFilters();
   }
 
   // Getters
   SacredOrigin? get selectedOrigin => _selectedOrigin;
+  DeclinationResult? get currentDeclination => _currentDeclination;
+  GeomagneticDeclinationService get declinationService => _declinationService;
   String get searchQuery => _searchQuery;
   String? get selectedCountry => _selectedCountry;
   TempleTradition? get selectedTradition => _selectedTradition;
@@ -46,10 +60,19 @@ class DivyaDishiState extends ChangeNotifier {
   List<String> get availableCountries => _directoryService.getAvailableCountries();
   List<TempleTradition> get availableTraditions => _directoryService.getAvailableTraditions();
 
-  /// Updates the origin point for bearing calculations.
+  /// Updates the origin point for bearing and declination calculations.
+  ///
+  /// CRITICAL PRIVACY & INVARIANT:
+  /// When origin changes, previous declination is immediately invalidated and recalculated
+  /// for the new origin. Zero location history is stored.
   void setOrigin(SacredOrigin? origin) {
     if (_selectedOrigin != origin) {
       _selectedOrigin = origin;
+      if (origin != null) {
+        _currentDeclination = _declinationService.calculateDeclination(origin: origin);
+      } else {
+        _currentDeclination = null;
+      }
       notifyListeners();
     }
   }
@@ -106,6 +129,33 @@ class DivyaDishiState extends ChangeNotifier {
       provisionalDisclaimer: isApprox
           ? 'Calculated from ${_selectedOrigin!.isApproximate ? "approximate city origin" : "origin"} to ${_selectedOrigin!.isApproximate ? "provisional temple coordinate" : "temple location"}. Devotional orientation aid only.'
           : null,
+    );
+  }
+
+  /// Derives the true geographic heading from raw magnetic compass reading and current declination.
+  CorrectedHeadingReading getCorrectedHeading(HeadingReading raw) {
+    return CorrectedHeadingReading.fromReadingAndDeclination(
+      raw: raw,
+      declination: _currentDeclination,
+      expectedOrigin: _selectedOrigin,
+    );
+  }
+
+  /// Evaluates relative sacred alignment between current heading and a target temple.
+  /// Requires explicit [userOptedIn] when target coordinates are provisional.
+  RelativeSacredAlignment calculateRelativeAlignment(
+    Temple temple,
+    HeadingReading raw, {
+    bool userOptedIn = false,
+  }) {
+    final corrected = getCorrectedHeading(raw);
+    final bearing = calculateBearing(temple);
+    return RelativeSacredAlignment.evaluate(
+      correctedHeading: corrected,
+      targetBearing: bearing,
+      targetTemple: temple,
+      currentOrigin: _selectedOrigin,
+      userOptedIn: userOptedIn,
     );
   }
 
