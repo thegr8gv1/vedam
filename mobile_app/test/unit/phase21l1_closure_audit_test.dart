@@ -8,6 +8,7 @@ import 'package:vedam_app/core/models/practice_sequence.dart';
 import 'package:vedam_app/core/services/japa_session_service.dart';
 import 'package:vedam_app/core/services/practice_orchestrator_service.dart';
 import 'package:vedam_app/core/services/puja_session_service.dart';
+import 'package:vedam_app/core/models/puja_session.dart';
 import 'package:vedam_app/state/orchestrator_state.dart';
 
 void main() {
@@ -209,6 +210,17 @@ void main() {
         ),
       );
 
+      await pujaService.recordCompletedSession(
+        PujaSession(
+          id: 'puja_1',
+          guideId: 'ganesha-puja-simple',
+          currentStepIndex: 5,
+          status: PujaSessionStatus.completed,
+          startTime: DateTime.now(),
+          lastUpdatedTime: DateTime.now(),
+        ),
+      );
+
       final sequence = PracticeSequence.defaultMorning();
       final session = OrchestratorSession(
         sessionId: 'orch_1',
@@ -230,8 +242,9 @@ void main() {
 
       // Orchestrator journal wiped
       expect((await orchestratorService.loadJournalEntries()), isEmpty);
-      // Japa history untouched!
+      // Japa and Puja history untouched!
       expect((await japaService.loadSessionHistory()).length, equals(1));
+      expect(pujaService.loadSessionHistory().length, equals(1));
     });
   });
 

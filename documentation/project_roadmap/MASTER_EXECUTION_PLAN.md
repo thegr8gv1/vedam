@@ -2,8 +2,8 @@
 
 **Status:** Living Canonical Roadmap Document  
 **Repository:** `C:\Vedam`  
-**Current Phase:** Phase 21H (Phase 21G Regression Evidence Audit & DivyaDishi Temple Directory Planning)  
-**Target Milestone:** Devotional Practice Expansion & Spatial Devotional Orientation
+**Current Phase:** Phase 22A (DivyaDishi Foundation: Temple Directory, Coordinate Integrity & Sacred Direction Architecture - COMPLETED)  
+**Target Milestone:** DivyaDishi Sacred Orientation & Live Directional Navigation
 
 ---
 
@@ -22,7 +22,12 @@ The Vedam platform unites authentic Vedic scripture preservation, multilingual s
 - **Phase 21F:** Devotional Audio Library & Practice Integration (Offline bundled library, audio controls, background playback).
 - **Phase 21G:** Audio Integrity, Cross-Feature Validation & Product Roadmap Readiness (Audio vault reconciliation, tokenized anti-double-counting completion integrity, DivyaDishi roadmap formulation).
 - **Phase 21H:** Phase 21G Regression Evidence Audit & DivyaDishi Temple Directory Planning (Test suite regression audit, ear-approved vs bundled track provenance audit, provisional 20-temple seed dataset integration).
-- **Phase 21I (Current):** Vedic Sankalpa Generator, Recitation Guide & DivyaDishi Roadmap Refinement (Daily & situational Sankalpa builder integrating live Panchangam, devotee lineage, Devanagari/IAST recitation, and DivyaDishi origin/reference accuracy guidelines).
+- **Phase 21I:** Vedic Sankalpa Generator, Recitation Guide & DivyaDishi Roadmap Refinement (Daily & situational Sankalpa builder integrating live Panchangam, devotee lineage, Devanagari/IAST recitation, and DivyaDishi origin/reference accuracy guidelines).
+- **Phase 21J:** Sankalpa Correctness, Transparency & Regression Hardening (Audited Sanskrit grammar, Gotra defaulting, audio-sankalpa synergy).
+- **Phase 21K:** Sankalpa Default Safety, Privacy Terminology & Backend Test Debt (Refined Gotra lineage options, zero-cloud privacy transparency, backend test stabilization).
+- **Phase 21L:** Daily Devotional Flow Orchestrator & Sequence Hub (Nitya Sadhana Dashboard, multi-practice sequencing, on-device journal tracking).
+- **Phase 21L.1:** Nitya Sadhana Closure Audit & Completion Hardening (Verified completion locks, DST-safe date math, strict Panchangam recommendation provenance).
+- **Phase 22A (Completed):** DivyaDishi Foundation: Temple Directory, Coordinate Integrity & Sacred Direction Architecture (20-temple provisional directory with explicit unverified status, pure geodetic bearing calculation engine, approximate city origin selection, browsing UI, and zero sensor dependencies).
 
 ---
 
@@ -233,16 +238,26 @@ Phase 21L establishes a calm, unified daily devotional practice experience (`Nit
 
 ---
 
-## 6. Next Feature: Phase 22 — DivyaDishi (Divine Direction) Foundation
+## 6. Phase 22A: DivyaDishi Foundation — Temple Directory, Coordinate Integrity & Sacred Direction Architecture (COMPLETED)
 
-With the core devotional practice suite (Japa, Puja, Vrat, Scripture, Audio, Sankalpa, and Flow Orchestration) complete and hardened, the project is now ready to begin **Phase 22: DivyaDishi Foundation**.
+Phase 22A establishes the foundational geodetic coordinate architecture and directory browsing experience for DivyaDishi:
+- **Provisional Sacred Temple Dataset:** Initial 20 user-researched temples accurately modeled with geodetic coordinates, point types (`innerSanctum`, `compoundCenter`), and transparent `userSuppliedUnverified` verification status.
+- **Pure Geodetic Calculation Engine:** Standalone, platform-independent great-circle forward azimuth formula with strict $[0.0, 360.0)^\circ$ normalization, antimeridian date-line crossing logic, Haversine geodesic distance, and sub-meter / identical coordinate detection.
+- **Two-Tier Origin Architecture (Tier 1 Implemented):** Purely offline, zero-permission approximate city origin selection with 13 canonical spiritual cities (Varanasi, Delhi, Mumbai, Bengaluru, Chennai, Kolkata, Hyderabad, Tirupati, Ayodhya, Ujjain, Madurai, Haridwar, Kathmandu).
+- **Presentation & Browsing UI:** Comprehensive Temple Directory Screen with live search (name, deity, city, state, country, alternate names), country filter chips, tradition filter dropdown, prominent provisional coordinate warnings, and detail modal with great-circle bearing previews.
+- **Devotional Hub Integration:** Direct portal card embedded in `SadhanaScreen` for convenient devotee access.
+- **Verification Gates:**
+  - 534 tests passing across full Flutter test suite (42 Phase 22A-specific tests).
+  - 0 `flutter analyze` issues.
+  - Multiplatform verified: Web release build succeeded, Android release APK built at 68.9 MB (< 100 MB budget).
+  - Zero production database mutations: SHA-256 `0B3500F36434217D0E35B1B3F0BB1E12C4598B406177D11979E1FC2A46B7AB97` strictly verified.
 
-### Phase 22 Architecture Gates & Requirements:
-1. **Verification of Provisional Coordinates:** Execute the 7-step coordinate verification protocol on the 20-temple seed dataset (`documentation/project_roadmap/MASTER_EXECUTION_PLAN.md`).
-2. **Two-Tier Origin Architecture:**
-   - Tier 1: Zero-permission offline City/Region selector (approximate origin, clear UI disclosure).
-   - Tier 2: Optional device GPS origin (high precision, on-device ephemeral memory only).
-3. **Sensor & Bearing Safety:**
-   - Compass & magnetometer sensor fusion with geomagnetic declination correction (WMM/IGRF model).
-   - Calm, non-judgmental devotional compass dial pointing toward the selected sacred Kshetra.
-   - Strict adherence to the spiritual merit invariant: orientation is purely geographic.
+---
+
+## 7. Next Feature: Phase 22B — Live Compass Heading & Sensor Fusion Architecture
+
+With the temple directory, coordinate integrity models, approximate origin selection, and mathematical bearing engine completed in Phase 22A, Phase 22B will address real-time directional orientation:
+1. **Device Sensor Integration Planning:** Compass / magnetometer sensor streaming with low-pass filtering and jitter reduction.
+2. **Magnetic Declination Compensation:** World Magnetic Model (WMM) integration to translate magnetic heading to true geographic heading.
+3. **Calm Compass Presentation:** Serene, non-judgmental devotional dial showing relative bearing toward the selected sacred shrine.
+4. **Battery & Permission Lifecycle:** On-demand sensor subscription with instant teardown on screen pause/exit and zero background location tracking.

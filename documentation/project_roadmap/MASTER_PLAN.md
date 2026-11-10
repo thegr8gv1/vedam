@@ -457,9 +457,11 @@ osniff, SAMEORIGIN, CSP, XSS filter, strict referrer) across all responses.
 - **Phase 21J:** Sankalpa Correctness, Transparency & Regression Hardening. Audited Sankalpa formulas, hardened live vs offline Panchangam indicators, added anonymous devotee toggle, and expanded regression coverage.
 - **Phase 21K:** Sankalpa Default Safety, Privacy Terminology & Backend Test Debt. Addressed Gotra default safety (omitting empty Gotra rather than silently fabricating defaults), renamed privacy controls to honest "Hide Personal Details", and resolved backend test debt without modifying production DB.
 - **Phase 21L:** Daily Devotional Flow Orchestrator & Sequence Hub (Nitya Sadhana Dashboard). Unified morning, evening, and custom practice sequences connecting Sankalpa, Puja, Japa, Audio, Scripture Study, and Vrat features with active session continuity, private on-device journal, non-inflationary streak tracking, and dismissible Panchangam recommendations with strict zero autoplay.
-- **Future Feature Roadmap — DivyaDishi (Divine Direction):** Complete feature specification and initial 20-temple provisional directory in documentation/project_roadmap/MASTER_EXECUTION_PLAN.md (Status: PLANNED FOR PHASE 22; origin accuracy hierarchy and reference point protocols established; strictly zero sensor/GPS/magnetometer code in Phase 21L).
+- **Phase 21L.1:** Nitya Sadhana Closure Audit — Completion Integrity, Streak Dates & Recommendation Provenance. Implemented async completion locks, DST-safe calendar day calculations in UTC space, and rigorous recommendation provenance for Panchangam suggestions.
+- **Phase 22A:** DivyaDishi Foundation — Temple Directory, Coordinate Integrity & Sacred Direction Architecture. Delivered provisional 20-temple directory marked explicitly as `userSuppliedUnverified`, pure great-circle bearing and distance calculation engine with antimeridian wrapping and sub-meter identical detection, approximate city origin selection (13 canonical cities, zero sensor permissions), Temple Directory screen with live search and filters, temple detail modal, and Sadhana screen integration.
 
 ### Test Suite Status:
 - Backend scholarly test suite: **405 tests passing with 100% pass rate** across 36 test modules.
-- Mobile application test suite: **471 tests passing with 100% pass rate** across all devotional modules (unit, widget, integration).
-- Multiplatform builds verified: Android Debug APK, Android Release APK (68.7 MB, <100MB limit, SHA-256 `251E4DBC3CD28A825A75B135B0215BC9D6A769A923E15C2E344B2FA8F2DCCF98`), Web Release build.
+- Mobile application test suite: **534 tests passing with 100% pass rate** across all devotional modules (unit, widget, integration).
+- Static analysis: **0 issues** across entire Flutter workspace (`flutter analyze`).
+- Multiplatform builds verified: Android Debug APK, Android Release APK (68.9 MB, <100MB limit), Web Release build.
