@@ -20,7 +20,7 @@ class MantraPlayerScreen extends StatefulWidget {
     required this.mantra,
     required this.audioState,
     this.playlist,
-    this.autoPlay = true,
+    this.autoPlay = false,
   });
 
   @override
@@ -411,8 +411,8 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                           const SizedBox(width: 4),
                           Text(
                             currentMantra.durationSeconds <= 60
-                                ? 'Single Verse / Mantra'
-                                : 'Extended Recitation',
+                                ? 'Single Chant'
+                                : 'Extended',
                             style: TextStyle(
                               fontSize: 10,
                               fontWeight: FontWeight.bold,
@@ -725,9 +725,11 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                 ],
 
                 // Playback & Playlist Controls Row
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
+                FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
                     // Repeat Mode Toggle
                     IconButton(
                       icon: Icon(
@@ -765,9 +767,18 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                         key: const ValueKey('primary_play_pause_button'),
                         iconSize: 42,
                         color: Colors.white,
-                        icon: Icon(
-                          state.isPlaying ? Icons.pause : Icons.play_arrow,
-                        ),
+                        icon: state.isLoading
+                            ? const SizedBox(
+                                width: 24,
+                                height: 24,
+                                child: CircularProgressIndicator(
+                                  strokeWidth: 2.5,
+                                  valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                                ),
+                              )
+                            : Icon(
+                                state.isPlaying ? Icons.pause : Icons.play_arrow,
+                              ),
                         onPressed: () {
                           if (!currentMantra.isBundled) {
                             _showUnavailableRecordingDialog(context, currentMantra);
@@ -794,7 +805,18 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                           ? () => state.playNextMantra()
                           : null,
                     ),
-                    const SizedBox(width: 8),
+                    const SizedBox(width: 6),
+
+                    // Stop Button
+                    IconButton(
+                      icon: const Icon(Icons.stop, size: 28),
+                      constraints: const BoxConstraints(minWidth: 48, minHeight: 48),
+                      tooltip: 'Stop Playback',
+                      onPressed: (state.isPlaying || state.isPaused)
+                          ? () => state.stop()
+                          : null,
+                    ),
+                    const SizedBox(width: 6),
 
                     // Playback Speed Toggle
                     InkWell(
@@ -821,6 +843,7 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                     ),
                   ],
                 ),
+              ),
                 const SizedBox(height: 16),
 
                 // Manual Tap-to-Chant Accessible Button (>=48dp touch target)
@@ -883,15 +906,15 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    Wrap(
+                      alignment: WrapAlignment.spaceBetween,
+                      crossAxisAlignment: WrapCrossAlignment.center,
+                      spacing: 8,
+                      runSpacing: 4,
                       children: [
-                        const Expanded(
-                          child: Text(
-                            'Target Repetitions (Mala Count):',
-                            style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
-                            overflow: TextOverflow.ellipsis,
-                          ),
+                        const Text(
+                          'Target Repetitions (Mala Count):',
+                          style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
                         ),
                         InkWell(
                           onTap: () => _showCustomCountDialog(context),
@@ -974,8 +997,9 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                               color: isDark ? AppColors.goldLight : AppColors.goldDark,
                             ),
                             const SizedBox(width: 6),
-                            Text(
-                              'SPIRITUAL SIGNIFICANCE',
+                            Expanded(
+                              child: Text(
+                                'SPIRITUAL SIGNIFICANCE',
                               style: TextStyle(
                                 fontSize: 11,
                                 fontWeight: FontWeight.bold,
@@ -983,8 +1007,9 @@ class _MantraPlayerScreenState extends State<MantraPlayerScreen> {
                                 color: isDark ? AppColors.goldLight : AppColors.goldDark,
                               ),
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
+                      ),
                         const SizedBox(height: 8),
                         Text(
                           currentMantra.significance,

@@ -84,8 +84,8 @@ void main() {
       expect(find.widgetWithText(ChoiceChip, '111'), findsOneWidget);
       expect(find.widgetWithText(ChoiceChip, '1008'), findsOneWidget);
 
-      // Play/Pause button
-      expect(find.byIcon(Icons.pause), findsOneWidget); // Plays automatically on entry
+      // Play/Pause button - Strict NO AUTOPLAY on entry
+      expect(find.byIcon(Icons.play_arrow), findsOneWidget);
     });
 
     testWidgets('Tapping repeat mode chip updates target repetitions when session unstarted',

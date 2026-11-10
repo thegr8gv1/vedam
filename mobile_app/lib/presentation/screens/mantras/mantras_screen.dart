@@ -513,6 +513,14 @@ class _MantrasScreenState extends State<MantrasScreen> {
                                           color: isDark ? AppColors.textLightMuted : AppColors.textDarkMuted,
                                         ),
                                       ),
+                                      const SizedBox(width: 8),
+                                      Text(
+                                        '• ${mantra.repetitionRepresentationLabel}',
+                                        style: TextStyle(
+                                          fontSize: 10,
+                                          color: isDark ? AppColors.textLightMuted : AppColors.textDarkMuted,
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 ],

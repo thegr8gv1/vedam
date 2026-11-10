@@ -145,7 +145,7 @@ void main() {
       await restoredState.init();
       final restoredProgress = restoredState.getProgress(gita.id);
       expect(restoredProgress, isNotNull);
-      expect(restoredProgress!.lastReadVerseNumber, equals(progress!.lastReadVerseNumber));
+      expect(restoredProgress!.lastReadVerseNumber, equals(progress.lastReadVerseNumber));
       expect(restoredProgress.completedVerseNumbers.length, equals(progress.completedVerseNumbers.length));
     });
 

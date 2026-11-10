@@ -50,6 +50,12 @@ class MantraItem {
     return '$mins:${secs.toString().padLeft(2, '0')}';
   }
 
+  /// Number of authentic chant repetitions represented by this audio recording clip (1 repetition).
+  int get repetitionCount => 1;
+
+  /// Devotional repetition representation label.
+  String get repetitionRepresentationLabel => '$repetitionCount Chant';
+
   /// Copy with changes.
   MantraItem copyWith({
     String? id,

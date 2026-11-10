@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vedam_app/core/models/scripture.dart';
-import 'package:vedam_app/core/models/verse.dart';
 import 'package:vedam_app/data/fixtures/authentic_scriptures_data.dart';
 import 'package:vedam_app/presentation/screens/library/scripture_detail_screen.dart';
 import 'package:vedam_app/presentation/screens/library/verse_learning_screen.dart';
