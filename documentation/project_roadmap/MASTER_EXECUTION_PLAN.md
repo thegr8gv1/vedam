@@ -271,10 +271,26 @@ Phase 22B establishes rigorous evidence and cultural transparency for temple coo
 
 ---
 
-## 8. Next Feature: Phase 22C — Live Compass Heading, Sensor Fusion & Sacred Direction Guidance
+## 8. Phase 22C: DivyaDishi — Opt-In Live Compass, Heading Quality & Sensor Lifecycle (COMPLETED)
 
-With coordinate provenance, physical point types, origin uncertainty disclosures, and scriptural terminology rigorously verified, Phase 22C will address real-time directional orientation:
-1. **Device Sensor Integration:** Magnetometer and accelerometer sensor streams via reactive Flutter sensor plugins with low-pass filtering and jitter reduction.
-2. **True North & Magnetic Declination:** Offline World Magnetic Model (WMM) or geomagnetic calculation to adjust magnetic heading to true geographic bearing.
-3. **Calm Compass Presentation:** Serene, devotional visual dial presenting relative sacred direction toward the chosen temple with graceful smoothing and no intrusive gamification.
-4. **Lifecycle & Privacy Guards:** Instant sensor teardown on screen pause/disposal; zero background sensor execution; zero location telemetry.
+Phase 22C establishes an optional, privacy-first, foreground-only live compass experience:
+- **Foreground-Only Sensor Lifecycle:** Completely opt-in activation via explicit "Start Live Compass" and "Stop Compass" controls. Sensor streams automatically pause when backgrounded and tear down immediately on sheet disposal. Zero background tracking, zero GPS, zero network telemetry.
+- **Native Android Platform Channel:** Implemented `EventChannel('org.vedam.vedam_app/compass')` in `MainActivity.kt` utilizing `Sensor.TYPE_ROTATION_VECTOR` with fallback to `Sensor.TYPE_ACCELEROMETER` + `Sensor.TYPE_MAGNETIC_FIELD`. Zero additional third-party dependencies added to `pubspec.yaml`.
+- **True North vs Magnetic North Separation:** Strictly enforces the invariant that Magnetic headings are never directly compared to Great-Circle True North temple bearings without verified declination. When heading reference is `MAGNETIC`, turn-angle alignment is withheld with a clear educational notice explaining the difference.
+- **Heading Domain Model:** Implemented `HeadingReading`, `HeadingReference`, `HeadingAccuracy`, and `HeadingSensorState` supporting strict $[0.0, 360.0)^\circ$ degree normalization, safe rejection of non-finite/null inputs, and staleness detection.
+- **Devotional Compass Presentation:** Delivered `LiveCompassSheet` featuring a calm 8-cardinal dial visualizer, digital readout, reference and accuracy badges, magnetic interference guidance, target temple metadata (retaining `PENDING` coordinate badges), and devotional orientation disclaimers.
+- **Verification Gates:**
+  - 567 tests passing with 100% pass rate (22 Phase 22C tests; 75 DivyaDishi tests).
+  - 0 `flutter analyze` issues.
+  - Multiplatform verified: Android Debug APK, Android Release APK (69.1 MB, < 100 MB ceiling), Web Release build.
+  - Production database `database/vedam.db` completely untouched: SHA-256 `0B3500F36434217D0E35B1B3F0BB1E12C4598B406177D11979E1FC2A46B7AB97` strictly verified.
+
+---
+
+## 9. Next Feature: Phase 22D — Offline Magnetic Declination & Relative Sacred Alignment
+
+With the live compass, heading quality states, and lifecycle teardown established in Phase 22C, Phase 22D will address offline magnetic declination to support safe relative orientation:
+1. **Offline Declination Model:** Purely offline, zero-network World Magnetic Model (WMM) or regional lookup table based on selected approximate municipal origins to convert magnetic heading to true heading.
+2. **Relative Sacred Bearing Dial:** Serene relative pointer showing devotional orientation toward the chosen temple once true heading is safely approximated.
+3. **Accuracy & Tolerance Bands:** Visual indication of directional confidence based on sensor quality and origin uncertainty ($\pm 15$ km).
+4. **Privacy & Offline Integrity:** Continued zero-permission, foreground-only execution.
