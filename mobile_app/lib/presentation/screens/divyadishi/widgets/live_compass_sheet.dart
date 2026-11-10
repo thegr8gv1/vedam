@@ -161,6 +161,7 @@ class _LiveCompassSheetState extends State<LiveCompassSheet> with WidgetsBinding
                     ),
                     IconButton(
                       icon: const Icon(Icons.close, color: AppColors.textDarkMuted),
+                      tooltip: 'Close Compass',
                       onPressed: () => Navigator.of(context).pop(),
                     ),
                   ],
@@ -630,12 +631,12 @@ class _LiveCompassSheetState extends State<LiveCompassSheet> with WidgetsBinding
                     ),
                   ),
                 ),
-                InkWell(
-                  onTap: () => setState(() => _showApproximateAlignment = false),
-                  child: const Padding(
-                    padding: EdgeInsets.all(2),
-                    child: Icon(Icons.visibility_off_outlined, size: 16, color: AppColors.textDarkMuted),
-                  ),
+                IconButton(
+                  tooltip: 'Hide approximate alignment',
+                  icon: const Icon(Icons.visibility_off_outlined, size: 18, color: AppColors.textDarkMuted),
+                  onPressed: () => setState(() => _showApproximateAlignment = false),
+                  padding: const EdgeInsets.all(4),
+                  constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
                 ),
               ],
             ),

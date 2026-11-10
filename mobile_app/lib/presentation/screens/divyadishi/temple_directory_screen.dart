@@ -45,7 +45,9 @@ class _TempleDirectoryScreenState extends State<TempleDirectoryScreen> {
             children: [
               Icon(Icons.location_city, color: AppColors.saffronPrimary),
               SizedBox(width: 8),
-              Text('Select Origin Point', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+              Expanded(
+                child: Text('Select Origin Point', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+              ),
             ],
           ),
           content: SizedBox(
