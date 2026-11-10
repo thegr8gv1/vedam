@@ -448,5 +448,12 @@ osniff, SAMEORIGIN, CSP, XSS filter, strict referrer) across all responses.
   - Full project test suite expanded to **405 tests passing with 100% pass rate in 24.48s** across 36 test modules.
   - Verified production database database/vedam.db SHA-256 remains 100% bit-for-bit identical (8315040257dc3e490646e6e7138f9fd8bb38eae835b84e1f15849badae7318aa).
 
+### Mobile Devotional Application Roadmap (Phases 20A–21G & Beyond)
+- **Phase 20A–20E:** Audio vault ingestion, device notification reminders, offline audio streaming, and verified multiplatform mobile runtime.
+- **Phase 21A–21F:** Daily Japa Practice (21A), Guided Sadhana (21B), Structured Puja Guides (21C), Vrat & Observance Tracking (21D), Scripture Learning (21E), and Devotional Audio Library (21F).
+- **Phase 21G:** Audio Integrity, Cross-Feature Validation & Product Roadmap Readiness. Reconciled 456 master WAV recordings with 455 individual catalog mantras and 1 compilation track; hardened Japa completion integrity with playback instance tokens.
+- **Future Feature Roadmap — DivyaDishi (Divine Direction):** Complete feature specification added to documentation/project_roadmap/MASTER_EXECUTION_PLAN.md (Status: PLANNED — NOT YET IMPLEMENTED). Details smart temple direction alignment, Indian temple directory, temple-specific devotional audio, and Tirumala Tirupati pilot.
+
 ### Test Suite Status:
-- Automated test suite expanded to **405 tests passing with 100% pass rate in 24.48s** across 36 test modules.
+- Backend scholarly test suite: **405 tests passing with 100% pass rate** across 36 test modules.
+- Mobile application test suite: Comprehensive unit, widget, and integration test coverage across all devotional practices.
