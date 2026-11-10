@@ -248,20 +248,20 @@ void main() {
       expect(find.text('Step 1 of 2'), findsOneWidget);
       expect(find.text('Initial Resolve'), findsOneWidget);
       expect(find.text('Open Sankalpa Generator'), findsOneWidget);
-      expect(find.text('Mark Complete & Next'), findsOneWidget);
+      expect(find.text('Confirm Complete & Next'), findsOneWidget);
 
       // Advance step 1
-      await tester.tap(find.text('Mark Complete & Next'));
+      await tester.tap(find.text('Confirm Complete & Next'));
       await tester.pumpAndSettle();
 
       // Now at step 2
       expect(find.text('Step 2 of 2'), findsOneWidget);
       expect(find.text('Quiet Reflection'), findsOneWidget);
       expect(find.text('Skip Step'), findsOneWidget);
-      expect(find.text('Complete Sadhana'), findsOneWidget);
+      expect(find.text('Confirm Complete Sadhana'), findsOneWidget);
 
       // Complete session
-      await tester.tap(find.text('Complete Sadhana'));
+      await tester.tap(find.text('Confirm Complete Sadhana'));
       await tester.pumpAndSettle();
 
       // Verify concluding screen
