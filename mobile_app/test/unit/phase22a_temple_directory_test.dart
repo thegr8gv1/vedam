@@ -12,16 +12,17 @@ void main() {
       expect(temples.length, equals(20));
     });
 
-    test('All 20 initial temples are marked as USER_SUPPLIED_UNVERIFIED', () {
+    test('All 20 initial temples are marked as PENDING_VERIFICATION (compound center)', () {
       final temples = AuthenticTemplesData.initialTemples;
       for (final temple in temples) {
         expect(
           temple.verificationStatus,
-          equals(CoordinateVerificationStatus.userSuppliedUnverified),
-          reason: 'Temple ${temple.name} must be marked as userSuppliedUnverified',
+          equals(CoordinateVerificationStatus.pendingVerification),
+          reason: 'Temple ${temple.name} must be marked as pendingVerification',
         );
         expect(temple.verificationStatus.isVerified, isFalse);
         expect(temple.verificationStatus.needsNotice, isTrue);
+        expect(temple.pointType, equals(CoordinatePointType.compoundCenter));
       }
     });
 

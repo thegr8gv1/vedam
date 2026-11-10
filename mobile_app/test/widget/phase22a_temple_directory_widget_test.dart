@@ -30,7 +30,7 @@ void main() {
       expect(find.text('Provisional Sacred Temples'), findsOneWidget);
 
       // Verify Warning Banner
-      expect(find.textContaining('PROVISIONAL DIRECTORY: Coordinates are user-supplied'), findsOneWidget);
+      expect(find.textContaining('AUDITED DIRECTORY: Coordinates identify temple compound complexes'), findsOneWidget);
 
       // Verify Origin Status Bar
       expect(find.text('No origin selected (Bearings uncalculated)'), findsOneWidget);
@@ -44,9 +44,9 @@ void main() {
       expect(find.text('India'), findsOneWidget);
       expect(find.text('Nepal'), findsOneWidget);
 
-      // Verify initial cards and UNVERIFIED tags
+      // Verify initial cards and PENDING tags
       expect(find.text('Somnath Temple'), findsOneWidget);
-      expect(find.text('UNVERIFIED'), findsWidgets);
+      expect(find.text('PENDING'), findsWidgets);
     });
 
     testWidgets('Search query filters temple list in UI', (tester) async {
@@ -151,7 +151,7 @@ void main() {
       // Verify modal content
       expect(find.byType(TempleDetailModal), findsOneWidget);
       expect(find.text('Somnath Temple'), findsWidgets);
-      expect(find.textContaining('PROVISIONAL COORDINATE NOTICE'), findsOneWidget);
+      expect(find.textContaining('GEODETIC TRANSPARENCY NOTICE'), findsOneWidget);
       expect(find.text('Sacred Bearing & Direction'), findsOneWidget);
       expect(find.text('Traditional Dishā'), findsOneWidget);
       expect(find.text('Great-Circle Distance'), findsOneWidget);
