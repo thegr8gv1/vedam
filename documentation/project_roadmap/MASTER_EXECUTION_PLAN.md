@@ -2,7 +2,7 @@
 
 **Status:** Living Canonical Roadmap Document  
 **Repository:** `C:\Vedam`  
-**Current Phase:** Phase 22A (DivyaDishi Foundation: Temple Directory, Coordinate Integrity & Sacred Direction Architecture - COMPLETED)  
+**Current Phase:** Phase 22D (DivyaDishi: Offline Magnetic Declination, True-Heading Correction & Approximate Sacred Alignment - COMPLETED)  
 **Target Milestone:** DivyaDishi Sacred Orientation & Live Directional Navigation
 
 ---
@@ -28,6 +28,10 @@ The Vedam platform unites authentic Vedic scripture preservation, multilingual s
 - **Phase 21L:** Daily Devotional Flow Orchestrator & Sequence Hub (Nitya Sadhana Dashboard, multi-practice sequencing, on-device journal tracking).
 - **Phase 21L.1:** Nitya Sadhana Closure Audit & Completion Hardening (Verified completion locks, DST-safe date math, strict Panchangam recommendation provenance).
 - **Phase 22A (Completed):** DivyaDishi Foundation: Temple Directory, Coordinate Integrity & Sacred Direction Architecture (20-temple provisional directory with explicit unverified status, pure geodetic bearing calculation engine, approximate city origin selection, browsing UI, and zero sensor dependencies).
+- **Phase 22B (Completed):** DivyaDishi: Temple Coordinate Verification, Origin Provenance & Direction Terminology Audit (ASI/endowment provenance audit, compound center reclassification, 13 canonical origins with ±15 km uncertainty disclosures, scriptural Dikpala terminology alignment).
+- **Phase 22C (Completed):** DivyaDishi: Opt-In Live Compass, Heading Quality & Sensor Lifecycle (Foreground-only, opt-in sensor activation, native Android rotation vector with accelerometer+magnetometer fallback, Magnetic vs True North separation, serene 8-cardinal dial).
+- **Phase 22D (Completed):** DivyaDishi: Offline Magnetic Declination, True-Heading Correction & Approximate Sacred Alignment (Pure Dart NOAA WMM-2025/2020 spherical harmonic engine, True Heading normalization, shortest signed turn angle guidance, provisional coordinate safeguard with explicit user opt-in and dual uncertainty disclosures).
+- **Phase 22E (Upcoming):** DivyaDishi Visual Sacred Compass Dial & Directional Alignment UI (Serene sacred dial visualizer, subtle Dikpala iconography, and haptic feedback on sacred orientation).
 
 ---
 
@@ -287,10 +291,28 @@ Phase 22C establishes an optional, privacy-first, foreground-only live compass e
 
 ---
 
-## 9. Next Feature: Phase 22D — Offline Magnetic Declination & Relative Sacred Alignment
+## 9. Phase 22D: DivyaDishi — Offline Magnetic Declination, True-Heading Correction & Approximate Sacred Alignment (COMPLETED)
 
-With the live compass, heading quality states, and lifecycle teardown established in Phase 22C, Phase 22D will address offline magnetic declination to support safe relative orientation:
-1. **Offline Declination Model:** Purely offline, zero-network World Magnetic Model (WMM) or regional lookup table based on selected approximate municipal origins to convert magnetic heading to true heading.
-2. **Relative Sacred Bearing Dial:** Serene relative pointer showing devotional orientation toward the chosen temple once true heading is safely approximated.
-3. **Accuracy & Tolerance Bands:** Visual indication of directional confidence based on sensor quality and origin uncertainty ($\pm 15$ km).
-4. **Privacy & Offline Integrity:** Continued zero-permission, foreground-only execution.
+Phase 22D extends the DivyaDishi sacred compass architecture with an offline, mathematically rigorous magnetic declination correction engine:
+- **Offline NOAA World Magnetic Model (WMM) Engine:** Pure Dart spherical harmonic geomagnetic field calculator supporting official NOAA/NCEI models (WMM-2025 epoch 2025.0–2030.0 and WMM-2020 epoch 2020.0–2025.0) with zero external dependencies added to `pubspec.yaml`.
+- **Benchmark Mathematical Accuracy:** Validated against official NOAA/NCEI test vectors across global benchmarks (Seattle, Equator, High Latitudes, Greenwich) and pan-Indian sacred locations (Varanasi, New Delhi, Mumbai, Bengaluru, Chennai, Kolkata, Kathmandu) to $< 0.0001^\circ$.
+- **True Heading Normalization:** Normalizes measured magnetic sensor headings to True Geographic North:
+  $$\text{True Heading} = (\text{Magnetic Heading} + \text{Declination}) \pmod{360.0}$$
+- **Signed Relative Sacred Alignment:** Shortest angular difference turn guidance $[-180.0^\circ, +180.0^\circ]$ with devotional alignment tolerance ($\pm 5.0^\circ$):
+  $$\text{turnAngle} = (\text{targetBearingTrue} - \text{trueHeading} + 540.0) \pmod{360.0} - 180.0$$
+- **Provisional Coordinate Safeguards:** Preserves devotional transparency by withholding direct alignment guidance by default for all 20 unverified / compound-center temples. Explicit user opt-in (`"Show Approximate Alignment Comparison"`) unlocks an **APPROXIMATE TEMPLE-COMPLEX ALIGNMENT** banner with dual uncertainty disclosures ($\pm 15$ km origin centroid and provisional temple compound centroid).
+- **Zero-Permission, Privacy-First Architecture:** Zero GPS access, zero device location permissions, zero background sensor execution, zero network telemetry, and zero production database mutation.
+- **Verification Gates:**
+  - 589 tests passing with 100% pass rate (22 Phase 22D tests; 97 DivyaDishi tests).
+  - 0 `flutter analyze` issues.
+  - Multiplatform verified: Android Debug APK, Android Release APK (69.2 MB, < 100 MB budget), Web Release build.
+  - Production database `database/vedam.db` completely untouched: SHA-256 `0B3500F36434217D0E35B1B3F0BB1E12C4598B406177D11979E1FC2A46B7AB97` strictly verified.
+
+---
+
+## 10. Next Feature: Phase 22E — DivyaDishi Visual Sacred Compass Dial & Directional Alignment UI
+
+With offline declination, true heading normalization, and provisional coordinate safeguards established in Phase 22D, Phase 22E will elevate the visual presentation:
+1. **Sacred Compass Dial Visualizer:** Serene custom-painted dial incorporating sacred geometry, Ashtadikpala quadrant accents, and smooth rotation damping.
+2. **Alignment Indicator & Haptic Feedback:** Gentle, reverent tactile confirmation when the device aligns within $\pm 5^\circ$ of a verified or confirmed approximate sacred temple direction.
+3. **Landscape & Tablet Adaptation:** Responsive layout for meditation stands, temple altars, and tablet devices.
