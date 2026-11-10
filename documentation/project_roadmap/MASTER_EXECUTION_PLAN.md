@@ -2,7 +2,7 @@
 
 **Status:** Living Canonical Roadmap Document  
 **Repository:** `C:\Vedam`  
-**Current Phase:** Phase 21G (Audio Integrity, Cross-Feature Validation & Product Roadmap Readiness)  
+**Current Phase:** Phase 21H (Phase 21G Regression Evidence Audit & DivyaDishi Temple Directory Planning)  
 **Target Milestone:** Devotional Practice Expansion & Spatial Devotional Orientation
 
 ---
@@ -20,7 +20,8 @@ The Vedam platform unites authentic Vedic scripture preservation, multilingual s
 - **Phase 21D:** Vrat, Upavasa & Religious Observance Tracking (Ekadashi, Pradosham, Sankashti, fasting guidelines, sankalpa tracking).
 - **Phase 21E:** Scripture Learning, Verse-by-Verse Study & Content Trust (Devanagari, IAST transliteration, word-by-word padartha, authentic audio pronunciation).
 - **Phase 21F:** Devotional Audio Library & Practice Integration (Offline bundled library, audio controls, background playback).
-- **Phase 21G (Current):** Audio Integrity, Cross-Feature Validation & Product Roadmap Readiness (Audio vault reconciliation, tokenized anti-double-counting completion integrity, DivyaDishi roadmap formulation).
+- **Phase 21G:** Audio Integrity, Cross-Feature Validation & Product Roadmap Readiness (Audio vault reconciliation, tokenized anti-double-counting completion integrity, DivyaDishi roadmap formulation).
+- **Phase 21H (Current):** Phase 21G Regression Evidence Audit & DivyaDishi Temple Directory Planning (Test suite regression audit, ear-approved vs bundled track provenance audit, provisional 20-temple seed dataset integration).
 
 ---
 
@@ -29,7 +30,7 @@ The Vedam platform unites authentic Vedic scripture preservation, multilingual s
 ### Status: `PLANNED — NOT YET IMPLEMENTED`
 
 > [!IMPORTANT]
-> **Planning & Architectural Specification Only**: No magnetometer, GPS, sensor, or temple rendering code is implemented during Phase 21G. Implementation will commence in an upcoming dedicated phase after sensor calibration research and battery-efficiency profiling are completed.
+> **Planning & Architectural Specification Only**: No magnetometer, GPS, sensor, location permission, bearing calculation, or temple rendering code is implemented during Phase 21H. Implementation will commence in an upcoming dedicated phase after sensor calibration research and battery-efficiency profiling are completed.
 
 ---
 
@@ -47,10 +48,10 @@ The Vedam platform unites authentic Vedic scripture preservation, multilingual s
 ---
 
 ### Section B: Indian Temple Directory & Sacred Geography
-- **Canonical Coverage:** A verified offline directory of major sacred pilgrimage centers (*Maha Kshetras*):
+- **Canonical Coverage Target:** A verified offline directory of major sacred pilgrimage centers (*Maha Kshetras*):
   - **12 Jyotirlingas:** Somnath, Mallikarjuna, Mahakaleshwar, Omkareshwar, Kedarnath, Bhimashankar, Kashi Vishwanath, Trimbakeshwar, Baidyanath, Nageshwar, Ramanathaswamy (Rameswaram), Grishneshwar.
-  - **108 Divya Desams:** Starting with Srirangam, Tirumala Venkateswara, Kanchipuram Varadharaja, Badrinath, Dwarka, and Ahobilam.
-  - **51 Shakti Peethas:** Kamakhya, Kalighat, Vaishno Devi, Chamundeshwari, Meenakshi Amman, and Kanchi Kamakshi.
+  - **108 Divya Desams:** Srirangam, Tirumala Venkateswara, Kanchipuram Varadharaja, Badrinath, Dwarka, Ahobilam, Muktinath, and pan-Indian kshetras.
+  - **51 Shakti Peethas:** Kamakhya, Kalighat, Vaishno Devi, Chamundeshwari, Meenakshi Amman, Kanchi Kamakshi, and related pithas.
   - **Pancha Bhoota Sthalas:** Chidambaram (Akasha), Kalahasti (Vayu), Tiruvannamalai (Agni), Tiruvanaikaval (Jala), Kanchipuram (Prithvi).
 - **Metadata Attributes:**
   - Precise geographic latitude and longitude coordinates of the Moola Virat (sanctum sanctorum).
@@ -109,17 +110,79 @@ The pilot implementation for DivyaDishi will focus on the sacred abode of Kaliyu
   - *Sri Venkateswara Prapatti*
   - *Sri Venkateswara Mangalasasanam*
   - *Govinda Namavali*
-- **Devotional Interaction Flow:**
-  1. Devotee opens DivyaDishi $\rightarrow$ Sacred Ananda Nilayam compass dial rotates to indicate direct line of sight to Tirumala.
-  2. Compass indicates distance (in km and nautical miles) and relative bearing.
-  3. Devotee physically turns to face Tirumala $\rightarrow$ screen glows golden with haptic confirmation.
-  4. One-touch initiation of Sri Venkateswara Suprabhatam or 108 Govinda Namavali Japa session aligned toward the Lord.
 
 ---
 
-## 3. Governance and Invariant Declarations
+## 3. DivyaDishi — Initial 20-Temple Directory (Provisional Research Dataset)
 
-- **Zero Database Changes:** No alterations to `database/vedam.db`.
-- **Zero Translation Status Bypass:** All 3,070 translations strictly preserved in DRAFT state.
-- **Section 8 Human-Review Guardrails:** All human-review and reviewer-profile invariants preserved.
-- **Mobile Bundle Ceiling:** Any future assets for DivyaDishi must respect the $<100\text{ MB}$ release APK ceiling.
+### Status: `PLANNED — NOT YET IMPLEMENTED`
+
+> [!CAUTION]
+> **Provisional Seed Research Data Notice**: The coordinates listed below represent user-supplied research data for DivyaDishi roadmap formulation. They have **NOT** yet undergone formal geospatial or survey verification. All entries are explicitly classified with `coordinate_status: USER_SUPPLIED_UNVERIFIED`. They must not be described as official, authoritative, surveyed, or verified.
+
+### Proposed Directory Data Schema:
+```
+id,temple_name,city,state_country,latitude,longitude,coordinate_status,source_notes
+```
+
+### Initial 20-Temple Research Dataset:
+| ID | Temple Name | City / Region | State / Country | Latitude | Longitude | Coordinate Status | Source Notes |
+|:---|:---|:---|:---|:---:|:---:|:---|:---|
+| 1 | Tirumala Venkateswara Swamy Temple | Tirumala, Tirupati | Andhra Pradesh, India | 13.6833 | 79.3472 | USER_SUPPLIED_UNVERIFIED | Coordinates supplied by user for DivyaDishi planning; independent verification pending. |
+| 2 | Kashi Vishwanath Temple | Varanasi | Uttar Pradesh, India | 25.3109 | 83.0107 | USER_SUPPLIED_UNVERIFIED | Coordinates supplied by user for DivyaDishi planning; independent verification pending. |
+| 3 | Jagannath Temple | Puri | Odisha, India | 19.8047 | 85.8183 | USER_SUPPLIED_UNVERIFIED | Coordinates supplied by user for DivyaDishi planning; independent verification pending. |
+| 4 | Vaishno Devi Temple / Bhawan | Katra | Jammu & Kashmir, India | 33.0299 | 74.9482 | USER_SUPPLIED_UNVERIFIED | Coordinates supplied by user for DivyaDishi planning; independent verification pending. |
+| 5 | Badrinath Temple | Badrinath | Uttarakhand, India | 30.7433 | 79.4938 | USER_SUPPLIED_UNVERIFIED | Coordinates supplied by user for DivyaDishi planning; independent verification pending. |
+| 6 | Kedarnath Temple | Kedarnath | Uttarakhand, India | 30.7352 | 79.0669 | USER_SUPPLIED_UNVERIFIED | Coordinates supplied by user for DivyaDishi planning; independent verification pending. |
+| 7 | Somnath Temple | Prabhas Patan | Gujarat, India | 20.8880 | 70.4013 | USER_SUPPLIED_UNVERIFIED | Coordinates supplied by user for DivyaDishi planning; independent verification pending. |
+| 8 | Dwarkadhish Temple | Dwarka | Gujarat, India | 22.2376 | 68.9678 | USER_SUPPLIED_UNVERIFIED | Coordinates supplied by user for DivyaDishi planning; independent verification pending. |
+| 9 | Ramanathaswamy Temple | Rameswaram | Tamil Nadu, India | 9.2881 | 79.3174 | USER_SUPPLIED_UNVERIFIED | Coordinates supplied by user for DivyaDishi planning; independent verification pending. |
+| 10 | Mahakaleshwar Jyotirlinga | Ujjain | Madhya Pradesh, India | 23.1828 | 75.7683 | USER_SUPPLIED_UNVERIFIED | Coordinates supplied by user for DivyaDishi planning; independent verification pending. |
+| 11 | Meenakshi Amman Temple | Madurai | Tamil Nadu, India | 9.9195 | 78.1193 | USER_SUPPLIED_UNVERIFIED | Coordinates supplied by user for DivyaDishi planning; independent verification pending. |
+| 12 | Ram Janmabhoomi Temple | Ayodhya | Uttar Pradesh, India | 26.7939 | 82.1966 | USER_SUPPLIED_UNVERIFIED | Coordinates supplied by user for DivyaDishi planning; independent verification pending. |
+| 13 | Krishna Janmabhoomi Temple | Mathura | Uttar Pradesh, India | 27.5050 | 77.6737 | USER_SUPPLIED_UNVERIFIED | Coordinates supplied by user for DivyaDishi planning; independent verification pending. |
+| 14 | Ranganathaswamy Temple | Srirangam | Tamil Nadu, India | 10.8625 | 78.6897 | USER_SUPPLIED_UNVERIFIED | Coordinates supplied by user for DivyaDishi planning; independent verification pending. |
+| 15 | Brihadeeswarar Temple | Thanjavur | Tamil Nadu, India | 10.7831 | 79.1325 | USER_SUPPLIED_UNVERIFIED | Coordinates supplied by user for DivyaDishi planning; independent verification pending. |
+| 16 | Kamakhya Temple | Guwahati | Assam, India | 26.1664 | 91.7054 | USER_SUPPLIED_UNVERIFIED | Coordinates supplied by user for DivyaDishi planning; independent verification pending. |
+| 17 | Sree Padmanabhaswamy Temple | Thiruvananthapuram | Kerala, India | 8.4827 | 76.9436 | USER_SUPPLIED_UNVERIFIED | Coordinates supplied by user for DivyaDishi planning; independent verification pending. |
+| 18 | Pashupatinath Temple | Kathmandu | Nepal | 27.7105 | 85.3487 | USER_SUPPLIED_UNVERIFIED | Coordinates supplied by user for DivyaDishi planning; independent verification pending. |
+| 19 | Janaki Mandir | Janakpur | Nepal | 26.7304 | 85.9257 | USER_SUPPLIED_UNVERIFIED | Coordinates supplied by user for DivyaDishi planning; independent verification pending. |
+| 20 | Muktinath Temple | Mustang, Gandaki Province | Nepal | 28.8167 | 83.8717 | USER_SUPPLIED_UNVERIFIED | Coordinates supplied by user for DivyaDishi planning; independent verification pending. |
+
+---
+
+### Coordinate Verification Plan (Future Implementation Gate)
+Before any provisional coordinate is promoted to verified status (`VERIFIED_SANCTUM_COORDINATES`), a formal six-step verification protocol must be executed:
+
+1. **Physical Destination Identity:** Confirm the exact physical destination refers to the *Garbhagriha* (sanctum sanctorum) / Moola Virat, not the outer perimeter or entrance gopuram.
+2. **Authority & Benchmark Cross-Referencing:** Cross-reference coordinates against official temple devasthanams, state tourism/archaeological departments, and Survey of India / national geospatial benchmark data.
+3. **Settlement vs Sanctum Disambiguation:**
+   - **Vaishno Devi Bhawan vs Katra Town:** The sacred Bhawan sits high in the Trikuta Mountains, approximately 13 km by foot from Katra base town ($32.99^\circ\text{ N}, 74.93^\circ\text{ E}$). The sanctum coordinate must point to the Holy Cave Bhawan ($33.0299^\circ\text{ N}, 74.9482^\circ\text{ E}$), not Katra town center.
+   - **Badrinath & Kedarnath:** High-altitude Himalayan shrines must point to the actual temple structure, strictly distinguishing it from helipads, trek starting points, or surrounding settlement clusters.
+   - **Muktinath Temple vs Mustang District:** Mustang is an extensive Himalayan region (3,570 km²). The coordinates must pin the sacred 108 water sprouts (*Muktidhara*) and temple compound at Ranipauwa/Chumig Gyatsa, not the general district center (Jomsom).
+   - **Large Temple Complexes:** Massive enclosures like Srirangam (156 acres, 7 concentric prakaras) and Rameswaram produce divergent readings depending on whether an entrance Rajagopuram or the inner sanctum is pinned. Pinned coordinates must strictly identify the Garbhagriha.
+4. **Audit Trail Documentation:** Record the verification source URL, retrieval date, methodology, and verification sign-off for each entry.
+5. **Precision & Ambiguity Logging:** Record coordinate precision down to 4 decimal places ($\sim 11\text{ m}$ resolution) and log any ambiguity.
+6. **Scholarly / Human Review Gate:** Require independent human reviewer sign-off before status promotion.
+
+---
+
+### Future Directory Expansion Strategy
+The initial 20 temples serve as a seed research set. The production DivyaDishi directory will systematically expand to:
+- **12 Jyotirlingas:** Complete coverage across all 12 holy shrines of Lord Shiva.
+- **108 Divya Desams:** All 108 Vishnu kshetras sung by the Alvars (105 in India, 1 in Nepal - Muktinath, 2 celestial - Tirupparkadal & Paramapadam represented via Manasa Pooja).
+- **51 Shakti Peethas:** Complete sacred geography of the Devi traditions across India, Nepal, Bangladesh, and Sri Lanka.
+- **Pancha Bhoota Sthalas:** The 5 elemental manifestations of Lord Shiva in South India.
+- **Regional & Heritage Pilgrimage Centers:** Major kshetras across all Indian states and neighboring Himalayan pilgrim routes.
+- **Manasa Teertha Yatra:** Mental circumambulation for elderly devotees, hospital patients, or devotees unable to travel physically.
+
+---
+
+## 4. DivyaDishi Implementation Boundaries & Devotional Invariants
+
+- **Geographic Orientation vs Spiritual Merit:** Directional alignment is purely a physical, geographic measurement to assist devotional focus. It is never presented as a metric of spiritual merit, purity, or religious correctness.
+- **Optional & Privacy-Preserving:** Location permissions must remain 100% optional. The app must function fully without location permissions by providing an offline city/region selector. GPS coordinates are processed exclusively on-device in volatile memory and never logged, transmitted, or retained.
+- **Zero Sensor / GPS Code in Phase 21H:** Phase 21H is strictly a planning, documentation, and regression-audit phase. No sensor, compass, GPS, or UI code is introduced.
+- **Zero Production Database Changes:** No alterations, migrations, or tables added to `database/vedam.db`.
+- **Zero Translation Status Bypass:** All 3,070 translations strictly preserved in `DRAFT` status; 0 approved.
+- **Section 8 Governance:** Human-review requirements remain strictly intact.
